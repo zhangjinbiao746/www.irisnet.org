@@ -298,6 +298,7 @@
                         model.push(v);
                     })
                     model[index].is = true;
+                    history.pushState({},'', model[index].href);
                     _this.$store.state.messages.head.txt = model;
                 });
             }
