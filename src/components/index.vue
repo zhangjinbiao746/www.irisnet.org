@@ -15,7 +15,7 @@
                     <div class="comm">
                         <div class="div_h">
                         </div>
-                        <a class="item" @mouseenter="commHide" @mouseleave="commShow">
+                        <a class="item" style="    margin-right: 10px;" @mouseenter="commHide" @mouseleave="commShow">
                             <img :src="comm">
                             Community
                             <div></div>
@@ -150,61 +150,67 @@
                             <div class="collaboration" style="padding-bottom: 28vh">
                                 {{$store.state.messages.roadmap.title}}
                             </div>
-                            <div>
-                                <div class="roadmap_warp" @mouseover="textShow(0)" @mouseout="textHide(0)">
-                                    <div class="roadmap_list">
-                                        <div class="roadmap_text" v-show="list[0].is" style="bottom: 32px;left: -166px;">
-                                            {{$store.state.messages.roadmap.list[0].txt}}
-                                            <div class="s"></div>
-                                        </div>
+                            <div style="position: relative;">
+                                <img src="../assets/roadmapList.gif" style="width: 860px;margin: 0 auto"/>
+                                <div class="roadmap_warp" style="top: 0;" @mouseover="textShow(0)"
+                                     @mouseout="textHide(0)">
+                                    <div class="roadmap_list_gif">
+                                        <div class="div1"></div>
+                                        <div class="img imgdiv" v-show="!list[0].is"></div>
+                                        <img class="img" v-show="list[0].is" src="../assets/Roadmap.gif"/>
+                                    </div>
+                                    <div class="roadmap_text" v-show="list[0].is"
+                                         style="bottom: 106px;left: -100px;">
+                                        {{$store.state.messages.roadmap.list[0].txt}}
+                                        <div class="s"></div>
                                     </div>
                                     <img :src="$store.state.messages.roadmap.list[0].img"/>
                                 </div>
-                                <div style="float: left;margin-left: -64px;margin-top: 0px;">
-                                    <img src="../assets/rainbow.png" style="width: 264px"/>
-                                </div>
-                                <div class="roadmap_warp" style="margin-left: -69px; margin-top: -92px;"
+                                <div class="roadmap_warp" style="top: 0;margin-left: 382px; margin-top: -92px;"
                                      @mouseover="textShow(1)" @mouseout="textHide(1)">
                                     <img :src="$store.state.messages.roadmap.list[1].img" style="padding-bottom: 20px"/>
-                                    <div class="roadmap_list" style="position: relative">
-                                        <div v-show="list[1].is" class="roadmap_text"
-                                             style="bottom: -250px;left: -162px;">
-                                            {{$store.state.messages.roadmap.list[1].txt}}
-                                            <div class="d"></div>
-                                        </div>
+                                    <div class="roadmap_list_gif">
+                                        <div class="div1"></div>
+                                        <div class="img imgdiv" v-show="!list[1].is"></div>
+                                        <img class="img" v-show="list[1].is" src="../assets/Roadmap.gif"/>
                                     </div>
-
+                                    <div class="roadmap_text" v-show="list[1].is"
+                                         style="    bottom: -252px;left: -98px;">
+                                        {{$store.state.messages.roadmap.list[1].txt}}
+                                        <div class="d"></div>
+                                    </div>
                                 </div>
-                                <div style="float: left;margin-left: -69px; margin-top: 0px;">
-                                    <img src="../assets/rainbow.png" style="width: 264px;transform:rotate(180deg);"/>
-                                </div>
-                                <div class="roadmap_warp" style="margin-left: -68px;" @mouseover="textShow(2)"
-                                     @mouseout="textHide(2)">
-                                    <div class="roadmap_list">
-                                        <div class="roadmap_text" v-show="list[2].is"
-                                             style=" top: -196px;    left: -166px;">
-                                            {{$store.state.messages.roadmap.list[2].txt}}
-                                            <div class="s" style="top: 142px;"></div>
-                                        </div>
+                                <div class="roadmap_warp" style="top: 0;margin-left: 670px; "
+                                     @mouseover="textShow(2)" @mouseout="textHide(2)">
+                                    <div class="roadmap_list_gif">
+                                        <div class="div1"></div>
+                                        <div class="img imgdiv" v-show="!list[2].is"></div>
+                                        <img class="img" v-show="list[2].is" src="../assets/Roadmap.gif"/>
+                                    </div>
+                                    <div class="roadmap_text" v-show="list[2].is"
+                                         style="bottom: 106px;left: -100px;">
+                                        {{$store.state.messages.roadmap.list[2].txt}}
+                                        <div class="s"></div>
                                     </div>
                                     <img :src="$store.state.messages.roadmap.list[2].img"/>
                                 </div>
-                                <div style="float: left;margin-left: -70px; margin-top: 0px;">
-                                    <img src="../assets/rainbow.png" style="width: 264px"/>
-                                </div>
-                                <div class="roadmap_warp" style="margin-left:-46px; margin-top: -92px;" @mouseover="textShow(3)" @mouseout="textHide(3)">
+                                <div class="roadmap_warp" style="top: 0;margin-left: 966px; margin-top: -92px;"
+                                     @mouseover="textShow(3)" @mouseout="textHide(3)">
                                     <img :src="$store.state.messages.roadmap.list[3].img" style="padding-bottom: 20px"/>
-                                    <div class="roadmap_list">
-                                        <div class="roadmap_text" v-show="list[3].is" style="top: 32px;left: -162px;">
-                                            {{$store.state.messages.roadmap.list[3].txt}}
-                                            <div class="d"></div>
-                                        </div>
+                                    <div class="roadmap_list_gif">
+                                        <div class="div1"></div>
+                                        <div class="img imgdiv" v-show="!list[3].is"></div>
+                                        <img class="img" v-show="list[3].is" src="../assets/Roadmap.gif"/>
                                     </div>
-
+                                    <div class="roadmap_text" v-show="list[3].is"
+                                         style="bottom: -182px;left: -96px; width: 276px;">
+                                        {{$store.state.messages.roadmap.list[3].txt}}
+                                        <div class="d"></div>
+                                    </div>
                                 </div>
                             </div>
                             <a href="#/0/5" style="clear: both;display: block">
-                                <img :src="$store.state.messages.next" class="what_btn" style="    margin-top: 20vh;"/>
+                                <img :src="$store.state.messages.next" class="what_btn" style="margin-top: 32vh;"/>
                             </a>
                         </section>
                         <section data-transition="slide">
@@ -213,11 +219,14 @@
                                     Contact
                                 </div>
                                 <div class="contact_warp">
-                                    <div class="contact_list" v-for="item in $store.state.messages.index.img"
-                                         @mouseover="overShow(item)" @mouseout="outHide(item)">
-                                        <img :src="item.src"/>
-                                        <div>{{item.txt}}</div>
-                                    </div>
+                                    <a :href="item.href" target="_blank"
+                                       v-for="item in $store.state.messages.index.img">
+                                        <div class="contact_list"
+                                             @mouseover="overShow(item)" @mouseout="outHide(item)">
+                                            <img :src="item.src"/>
+                                            <div>{{item.txt}}</div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </section>
@@ -298,7 +307,7 @@
                         model.push(v);
                     })
                     model[index].is = true;
-                    history.pushState({},'', model[index].href);
+                    history.pushState({}, '', model[index].href);
                     _this.$store.state.messages.head.txt = model;
                 });
             }
@@ -357,7 +366,7 @@
                 img {
                     padding-top: 6px;
                     float: left;
-                    margin-right: 4px;
+                    margin-right: 8px;
                 }
                 .item_cn {
                     display: none;
@@ -495,7 +504,7 @@
             margin-top: 20vh;
             background-image: url('../../public/iris_bg.png');
             background-repeat: no-repeat;
-            box-shadow:0 0 20px #080B0F;
+            box-shadow: 0 0 20px #080B0F;
             background-position: center top;
             .what_img {
                 float: left;
@@ -593,8 +602,9 @@
         .roadmap_warp {
             float: left;
             cursor: pointer;
-            position: relative;
             margin-left: 100px;
+            position: relative;
+            position: absolute;
             .roadmap_list {
                 width: 16px;
                 height: 16px;
@@ -605,6 +615,34 @@
                 position: relative;
                 &:hover {
                     animation: spin 3s linear infinite;
+                }
+            }
+            .roadmap_list_gif {
+                width: 16px;
+                height: 16px;
+                position: relative;
+                .div1 {
+                    position: absolute;
+                    top: 0;
+                    left: 62px;
+                    width: 22px;
+                    height: 22px;
+                    background: #fff;
+                    border-radius: 50%;
+                }
+                .img {
+                    position: absolute;
+                    top: -19px;
+                    left: 63px;
+                    width: 20px;
+                }
+                .imgdiv {
+                    background: #00aeef;
+                    height: 18px;
+                    width: 18px;
+                    border-radius: 50%;
+                    top: 2px;
+                    left: 64px;
                 }
             }
             .roadmap_text {
@@ -648,7 +686,7 @@
             }
         }
         .contact {
-            box-shadow:0 0 20px #080B0F;
+            box-shadow: 0 0 20px #080B0F;
             height: 540px;
             width: 650px;
             background: #141426;

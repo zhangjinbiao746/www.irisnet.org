@@ -36,12 +36,14 @@ export const message = {
             {
                 "src": "../public/telegran.png",
                 "src_selected": "../public/telegran_selected.png",
-                "txt": "Telegram"
+                "txt": "Telegram",
+                "href":"https://t.me/irisnetwork"
             },
             {
                 "src": "../public/twitter.png",
                 "src_selected": "../public/twitter_selected.png",
-                "txt": "Twitter"
+                "txt": "Twitter",
+                "href":"https://twitter.com/irisnetwork"
             },
 
             {
@@ -57,12 +59,14 @@ export const message = {
             {
                 "src": "../public/reddit.png",
                 "src_selected": "../public/reddit_selected.png",
-                "txt": "reddit"
+                "txt": "reddit",
+
             },
             {
                 "src": "../public/riot.png",
                 "src_selected": "../public/riot_selected.png",
-                "txt": "riot"
+                "txt": "riot",
+                "href":"https://riot.im/app/#/room/#iris:matrix.org"
             },
             {
                 "src": "../public/wechat.png",
@@ -72,7 +76,8 @@ export const message = {
             {
                 "src": "../public/weibo.png",
                 "src_selected": "../public/weibo_selected.png",
-                "txt": "weibo"
+                "txt": "weibo",
+                "href":"https://weibo.com/u/6455513027"
             },
         ]
     },
