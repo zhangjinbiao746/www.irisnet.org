@@ -41,7 +41,7 @@ export function createApp() {
         next()
     })
     //Vue.prototype.UrlSrc='../public/';
-    Vue.prototype.UrlSrc=process.env.NODE_ENV=='development'?'../public/':'http://d29xkc1uszfq9u.cloudfront.net/public/';
+    Vue.prototype.UrlSrc=process.env.NODE_ENV=='development'?'../public/':'https://d29xkc1uszfq9u.cloudfront.net/public/';
     const app = new Vue({
         router,
         store,
