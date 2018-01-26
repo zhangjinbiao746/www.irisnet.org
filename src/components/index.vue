@@ -3,10 +3,10 @@
         <div id="index" class="index">
             <div class="head">
                 <div class="center">
-                    <a href="#"><img :src="$store.state.messages.logo" style="width: 130px;"/></a>
+                    <a href="#"><img :src="UrlSrc+$store.state.messages.logo" style="width: 130px;"/></a>
                     <div class="item_en">
-                        <div @mouseenter="downShow" @mouseleave="downHide" class="item" s>
-                            <img :src="down"/> English
+                        <div @mouseenter="downShow" @mouseleave="downHide" class="item" >
+                            <img :src="UrlSrc+down"/> English
                         </div>
                         <a class="item_cn">
                             中文
@@ -16,7 +16,7 @@
                         <div class="div_h">
                         </div>
                         <a class="item" style="    margin-right: 10px;" @mouseenter="commHide" @mouseleave="commShow">
-                            <img :src="comm">
+                            <img :src="UrlSrc+comm">
                             Community
                             <div></div>
                         </a>
@@ -44,14 +44,15 @@
                                     </div>
                                 </div>
                                 <a href="#/0/1" class="home_btn">
-                                    <img :src="$store.state.messages.home.src"/>
+                                    <img :src="UrlSrc+$store.state.messages.home.src"/>
                                 </a>
                             </div>
                         </section>
                         <section data-transition="slide">
                             <div class="what">
-                                <div class="what_img">
-                                    <img :src="$store.state.messages.logo"/>
+                                <div class="what_img" style="position: relative">
+                                    <img :src="UrlSrc+$store.state.messages.logo"/>
+                                    <div class="what_img_txt"  v-html="$store.state.messages.about.imgtxt"></div>
                                 </div>
                                 <div class="what_txt">
                                     <div>
@@ -69,13 +70,13 @@
                                 </div>
                             </div>
                             <a href="#/0/2">
-                                <img :src="$store.state.messages.next" class="what_btn"/>
+                                <img :src="UrlSrc+$store.state.messages.next" class="what_btn"/>
                             </a>
                         </section>
                         <section data-transition="slide">
                             <div class="what">
                                 <div class="what_img">
-                                    <img :src="$store.state.messages.network.src" style="margin-top: 80px;"/>
+                                    <img :src="UrlSrc+$store.state.messages.network.src" style="margin-top: 80px;"/>
                                 </div>
                                 <div class="what_txt" style="width: 432px;margin-top: 90px">
                                     <div style="font-size: 24px;">
@@ -96,7 +97,7 @@
                                 </div>
                             </div>
                             <a href="#/0/3">
-                                <img :src="$store.state.messages.next" class="what_btn"/>
+                                <img :src="UrlSrc+$store.state.messages.next" class="what_btn"/>
                             </a>
                         </section>
                         <section data-transition="slide">
@@ -111,7 +112,7 @@
                                         <div></div>
                                         <div></div>
                                     </div>
-                                    <img :src="$store.state.messages.collaboration.list[0].img"
+                                    <img :src="UrlSrc+$store.state.messages.collaboration.list[0].img"
                                          class="collaboration_img"/>
                                     <div class="collaboration_title">
                                         {{$store.state.messages.collaboration.list[0].title}}
@@ -131,7 +132,7 @@
                                         <div></div>
                                         <div></div>
                                     </div>
-                                    <img :src="$store.state.messages.collaboration.list[$index].img"
+                                    <img :src="UrlSrc+$store.state.messages.collaboration.list[$index].img"
                                          class="collaboration_img"/>
                                     <div class="collaboration_title">
                                         {{$store.state.messages.collaboration.list[$index].title}}
@@ -143,7 +144,7 @@
                                 </a>
                             </div>
                             <a href="#/0/4" style="display: block;clear: both;">
-                                <img :src="$store.state.messages.next" class="what_btn" style="    margin-top: 12vh;"/>
+                                <img :src="UrlSrc+$store.state.messages.next" class="what_btn" style="    margin-top: 17vh;"/>
                             </a>
                         </section>
                         <section data-transition="slide">
@@ -164,11 +165,11 @@
                                         {{$store.state.messages.roadmap.list[0].txt}}
                                         <div class="s"></div>
                                     </div>
-                                    <img :src="$store.state.messages.roadmap.list[0].img"/>
+                                    <img :src="UrlSrc+$store.state.messages.roadmap.list[0].img"/>
                                 </div>
                                 <div class="roadmap_warp" style="top: 0;margin-left: 382px; margin-top: -92px;"
                                      @mouseover="textShow(1)" @mouseout="textHide(1)">
-                                    <img :src="$store.state.messages.roadmap.list[1].img" style="padding-bottom: 20px"/>
+                                    <img :src="UrlSrc+$store.state.messages.roadmap.list[1].img" style="padding-bottom: 20px"/>
                                     <div class="roadmap_list_gif">
                                         <div class="div1"></div>
                                         <div class="img imgdiv" v-show="!list[1].is"></div>
@@ -192,11 +193,11 @@
                                         {{$store.state.messages.roadmap.list[2].txt}}
                                         <div class="s"></div>
                                     </div>
-                                    <img :src="$store.state.messages.roadmap.list[2].img"/>
+                                    <img :src="UrlSrc+$store.state.messages.roadmap.list[2].img"/>
                                 </div>
                                 <div class="roadmap_warp" style="top: 0;margin-left: 966px; margin-top: -92px;"
                                      @mouseover="textShow(3)" @mouseout="textHide(3)">
-                                    <img :src="$store.state.messages.roadmap.list[3].img" style="padding-bottom: 20px"/>
+                                    <img :src="UrlSrc+$store.state.messages.roadmap.list[3].img" style="padding-bottom: 20px"/>
                                     <div class="roadmap_list_gif">
                                         <div class="div1"></div>
                                         <div class="img imgdiv" v-show="!list[3].is"></div>
@@ -210,20 +211,20 @@
                                 </div>
                             </div>
                             <a href="#/0/5" style="clear: both;display: block">
-                                <img :src="$store.state.messages.next" class="what_btn" style="margin-top: 32vh;"/>
+                                <img :src="UrlSrc+$store.state.messages.next" class="what_btn" style="margin-top: 33vh;"/>
                             </a>
                         </section>
                         <section data-transition="slide">
                             <div class="contact">
                                 <div class="contact_title">
-                                    Contact
+                                    {{$store.state.messages.contact.title}}
                                 </div>
                                 <div class="contact_warp">
-                                    <a :href="item.href" target="_blank"
-                                       v-for="item in $store.state.messages.index.img">
+                                    <a :href="item.href" target="_blank" @click="blank(item.txt)"
+                                       v-for="item in $store.state.messages.contact.img">
                                         <div class="contact_list"
                                              @mouseover="overShow(item)" @mouseout="outHide(item)">
-                                            <img :src="item.src"/>
+                                            <img :src="UrlSrc+item.src"/>
                                             <div>{{item.txt}}</div>
                                         </div>
                                     </a>
@@ -231,6 +232,20 @@
                             </div>
                         </section>
                     </section>
+                </div>
+            </div>
+            <div class="wechat" v-show="wechatIs" @click="wechatIs=false">
+                <div class="wechat_warp">
+                    <div class="cancel" >
+                        <img src="../assets/cancel.png"  />
+                    </div>
+                    <img src="../assets/wechat.png" class="wechat_img"/>
+                    <div class="wechat_title">
+                        Scan QR code
+                    </div>
+                    <div class="wechat_txt">
+                        to follow our Subscriptions
+                    </div>
                 </div>
             </div>
         </div>
@@ -254,8 +269,9 @@
                     {is: false},
                     {is: false},
                 ],
-                comm: '../public/community.png',
-                down: '../public/arrow.png'
+                comm: 'community.png',
+                down: 'arrow.png',
+                wechatIs:false
             }
         },
         methods: {
@@ -286,6 +302,11 @@
                     v.is = false;
                 })
                 this.list[index].is = true;
+            },
+            blank(item){
+                if(item=='wechat'){
+                    this.wechatIs=true;
+                }
             }
         },
         mounted: function () {
@@ -296,7 +317,8 @@
             if (process.env.VUE_ENV === 'client') {
                 Reveal.initialize({
                     progress: false,
-                    mouseWheel: true
+                    mouseWheel: true,
+                    controls:false
                 });
                 let _this = this;
                 Reveal.addEventListener('slidechanged', function (event) {
@@ -315,13 +337,44 @@
     }
 </script>
 
-<style lang='less'>
+<style scoped lang='less'>
+    html, body {
+        min-width: 1200px;
+        overflow: inherit !important;
+    }
+
     .index {
         flex: 1;
         height: 100vh;
         background: url('../../public/irisnet-background.jpg');
         background-size: cover;
-        position: relative;;
+        position: relative;
+        .wechat{
+            position: relative;position: fixed;height: 100%;width: 100%;top: 0;background-color:rgba(0,0,0,0.6);z-index: 12;
+            .wechat_warp{
+                position: relative;position: absolute;color:#5c5c7c;text-align: center;height: 368px;width: 368px;background: #141426;border-radius: 8px;top: 50%;left: 50%;margin-top: -184px;margin-left: -184px;
+                .cancel{
+                    width: 10px;height: 10px;border-radius: 50%;background: #ed3d3d;position: absolute;margin-top: 14px;right: 14px;cursor: pointer;
+                    img{
+                        margin-top: 2px; margin-left: 2px; float: left;display: none;
+                    }
+                    &:hover{
+                       img{
+                           display: block;
+                       }
+                    }
+                }
+                .wechat_img{
+                    margin-top: 50px;margin-bottom: 30px;    width: 180px;
+                }
+                .wechat_title{
+                    font-size: 24px;
+                }
+                .wechat_txt{
+                    font-size: 18px;margin-top: 14px;
+                }
+            }
+        }
         .head {
             position: absolute;
             top: 0;
@@ -493,7 +546,6 @@
                 color: #000;
             }
         }
-
         .what {
             overflow: hidden;
             width: 1064px;
@@ -509,7 +561,18 @@
             .what_img {
                 float: left;
                 line-height: 583px;
-                margin-left: 80px
+                margin-left: 80px;
+                position: relative;
+                .what_img_txt {
+                    position: absolute;
+                    top: 290px;
+                    left: 120px;
+                    text-align: left;
+                    width: 240px;
+                    font-size: 12px;
+                    line-height: 22px;
+                    color: #bfbfbf;
+                }
             }
 
             .what_txt {
@@ -532,7 +595,8 @@
             }
         }
         .what_btn {
-            margin-top: 4vh
+            margin-top: 4vh;
+            cursor: pointer;
         }
         .collaboration {
             font-size: 20px;
@@ -742,6 +806,10 @@
         zoom: normal !important;
         height: 100% !important;
         min-height: 100% !important;
+        transform: translate(-50%, -50%) scale(1.0) !important;
+        left: 50% !important;
+        top: 50% !important;
+        margin-top: 0% !important;;
     }
 
     .controls {
