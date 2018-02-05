@@ -249,18 +249,20 @@
                 </div>
             </div>
         </div>
+        <foot></foot>
     </div>
 </template>
 
 <script>
     import $ from 'jquery'
-
+    import foot from './foot'
     let Reveal
     if (process.env.VUE_ENV === 'client') {
         Reveal = require('reveal.js')
     }
     export default {
         name: 'index',
+        components:{foot},
         data() {
             return {
                 list: [
@@ -551,7 +553,7 @@
             width: 1064px;
             margin: 0 auto;
             height: 540px;
-            border-radius: 40px;
+            border-radius: 12px;
             background: #141426;
             margin-top: 20vh;
             background-image: url('../../public/iris_bg.png');
@@ -610,7 +612,7 @@
                 float: left;
                 width: 180px;
                 height: 170px;
-                border-radius: 20px;
+                border-radius: 10px;
                 background: #fff;
                 position: relative;
                 cursor: pointer;

@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="app" style="height: 100%">
         <router-view/>
     </div>
 </template>
@@ -11,7 +11,9 @@
             resize(_this) {
                 _this.is = $(window).width() > 768
                 if (_this.is) {
-                   _this.$router.replace('/');
+                   if(_this.$route.path.indexOf('app')!=-1){
+                       _this.$router.replace('/');
+                   }
                 } else {
                     _this.$router.replace('/app');
                     window.onload = function () {

@@ -1,0 +1,8 @@
+{
+  "name":"www.irisnet.org",
+  "cwd":"./",
+  "script":"server.js",
+  "env":{
+    "NODE_ENV":"production"
+  }
+}
