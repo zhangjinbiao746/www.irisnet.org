@@ -2,7 +2,7 @@
   "publicPath": "https://d29xkc1uszfq9u.cloudfront.net/dist/",
   "all": [
     "roadmapList.gif?5b02a01b1ec3ace0561ca992d7c96907",
-    "irispattern.png?d635a8574194bd23121cc584cf472c28",
+    "privacy.png?d635a8574194bd23121cc584cf472c28",
     "iris_bg.png?591aaf66c5e9ae83f2e6031c7dcb38ce",
     "Roadmap.gif?33bda90c81e2b984b879861567d2d10e",
     "irispattern.png?5db6d1c43120eea148149b56b7ec706f",
@@ -11,14 +11,14 @@
     "meangra.png?e1c15c0819f31f3b6df0a2f38ac3e514",
     "diagram.png?8623ffa6140d1717eabec7edc7a70b41",
     "vendor.cc25a160272c9ccc3410.js",
-    "app.bd3ea1150909826c9a56.js",
-    "manifest.e7b17df8863da813eb48.js",
-    "common.bd3ea1150909826c9a56.css"
+    "app.3ad2135377058397bf0c.js",
+    "manifest.edf4ce825a24733652bd.js",
+    "common.3ad2135377058397bf0c.css"
   ],
   "initial": [
-    "manifest.e7b17df8863da813eb48.js",
+    "manifest.edf4ce825a24733652bd.js",
     "vendor.cc25a160272c9ccc3410.js",
-    "app.bd3ea1150909826c9a56.js"
+    "app.3ad2135377058397bf0c.js"
   ],
   "async": [],
   "modules": {
@@ -36,6 +36,16 @@
     ],
     "37252230": [
       9
+    ],
+    "40788238": [
+      10,
+      12,
+      3,
+      4,
+      5,
+      0,
+      7,
+      8
     ],
     "48023233": [
       9
@@ -777,7 +787,7 @@
       7,
       8
     ],
-    "e5f7b66a": [
+    "33b37648": [
       10,
       12,
       3,
@@ -797,7 +807,7 @@
       7,
       8
     ],
-    "1dc7f2a2": [
+    "65bbca90": [
       10,
       12,
       3,
@@ -817,7 +827,7 @@
       7,
       8
     ],
-    "fcc39c74": [
+    "62e3441a": [
       10,
       12,
       3,
@@ -827,7 +837,7 @@
       7,
       8
     ],
-    "79c5f690": [
+    "6928fa71": [
       10,
       12,
       3,
@@ -847,7 +857,7 @@
       7,
       8
     ],
-    "234d95f8": [
+    "01843653": [
       10,
       12,
       3,
@@ -858,16 +868,6 @@
       8
     ],
     "6e151eec": [
-      10,
-      12,
-      3,
-      4,
-      5,
-      0,
-      7,
-      8
-    ],
-    "6e0f0bd5": [
       10,
       12,
       3,

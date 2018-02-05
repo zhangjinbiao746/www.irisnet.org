@@ -43,7 +43,7 @@
     }
 </script>
 
-<style lang='less'>
+<style scoped lang='less'>
     html, body {
         overflow: inherit !important;
     }
@@ -59,7 +59,7 @@
             width: 100%
         }
         .warp {
-            background: url('../../public/irispattern.png');
+            background: url('../../public/privacy.png');
             background-repeat: no-repeat;
             background-attachment:fixed;
             background-position:  36% 180px;

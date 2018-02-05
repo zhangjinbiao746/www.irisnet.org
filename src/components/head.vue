@@ -55,7 +55,7 @@
     }
 </script>
 
-<style  lang='less'>
+<style scoped  lang='less'>
     .head {
         position: fixed;
         top: 0;

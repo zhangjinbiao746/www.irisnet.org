@@ -25,7 +25,7 @@ module.exports = {
     output: {
         path: resolve('dist'),
         publicPath: isProd ? 'https://d29xkc1uszfq9u.cloudfront.net/dist/' : '/dist/',
-        //publicPath:  '/dist/',
+        //  publicPath:  '/dist/',
         filename: '[name].[chunkhash].js'
     },
     resolve: {
