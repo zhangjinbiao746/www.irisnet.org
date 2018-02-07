@@ -1,9 +1,9 @@
 <template>
     <div class="foot">
         Copyright © 2018 IRIS Foundation Ltd. All rights reserved.
-        <a href="/privacy" target="_blank">Privacy</a>
+        <a :href="'/privacy/?lang='+$store.state.lang" target="_blank">Privacy</a>
         &
-        <a href="/terms" target="_blank">Terms</a>
+        <a :href="'/terms?lang='+$store.state.lang" target="_blank">Terms</a>
     </div>
 </template>
 

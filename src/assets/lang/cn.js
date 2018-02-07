@@ -5,29 +5,29 @@ export const message = {
         'txt': [
             {
                 'txt': "主页",
-                "href": "/#",
+                "href": "#",
                 "is": true
             },
             {
                 'txt': "关于我们",
-                "href": "/#/0/1"
+                "href": "#/0/1"
             },
             {
                 'txt': "网络",
-                "href": "/#/0/2"
+                "href": "#/0/2"
             },
             {
                 'txt': "合作方",
-                "href": "/#/0/3",
+                "href": "#/0/3",
             },
             {
                 'txt': "路线图",
-                "href": "/#/0/4",
+                "href": "#/0/4",
             },
 
             {
                 'txt': "联系方式",
-                "href": "/#/0/6",
+                "href": "#/0/6",
             }
         ]
     },
@@ -82,8 +82,6 @@ export const message = {
                 "href": "https://weibo.com/u/6455513027"
             },
         ],
-        "title": "合作方"
-    },
     "collaboration": {
         "title": "合作方",
         "txt": [
@@ -124,6 +122,7 @@ export const message = {
         ]
     },
     "roadmap": {
+
         "title": '路线图',
         "list": [
             {
@@ -151,11 +150,13 @@ export const message = {
         ]
     },
     "home": {
+
         "title": 'IRIS网络',
         "txt": '跨链服务基础协议 <br> 新一代分布式商业生态的技术基础',
         "src": 'iristext-small.png'
     },
     "about": {
+
         "title": '核心创新',
         "imgtxt": " 助力打造 <br> 分布式商业应用",
         "txt": [
