@@ -24,8 +24,8 @@ module.exports = {
         : '#cheap-module-source-map',
     output: {
         path: resolve('dist'),
-        publicPath: isProd ? 'https://d29xkc1uszfq9u.cloudfront.net/dist/' : '/dist/',
-        //  publicPath:  '/dist/',
+        publicPath: isProd ? 'https://st.irisnet.org/dist/' : '/dist/',
+       // publicPath:  '/dist/',
         filename: '[name].[chunkhash].js'
     },
     resolve: {

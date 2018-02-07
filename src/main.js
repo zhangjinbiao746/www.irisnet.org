@@ -25,7 +25,7 @@ export function createApp() {
     const store = createStore()
     Vue.use(VueI18n)
 
-    const i18n = new VueI18n({
+    let i18n = new VueI18n({
         locale: store.state.lang,    // 语言标识
         messages: {
             'CN': require('./assets/lang/cn'),   // 中文语言包
@@ -33,6 +33,7 @@ export function createApp() {
         }
     })
     store.state.messages = i18n.messages[store.state.lang]['message']
+
     router.beforeEach((to, from, next) => {
         if ((to.query.lang) && (to.query.lang == 'EN' || to.query.lang == 'CN')) {
             store.state.lang = to.query.lang;
@@ -41,7 +42,7 @@ export function createApp() {
         next()
     })
     //Vue.prototype.UrlSrc='../public/';
-    Vue.prototype.UrlSrc=process.env.NODE_ENV=='development'?'../public/':'https://d29xkc1uszfq9u.cloudfront.net/public/';
+    Vue.prototype.UrlSrc = process.env.NODE_ENV == 'development' ? '../public/' : 'https://st.irisnet.org/public/';
     const app = new Vue({
         router,
         store,

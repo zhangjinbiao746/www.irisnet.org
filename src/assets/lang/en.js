@@ -1,5 +1,6 @@
 export const message = {
     "logo": 'irisnet.png',
+    // "test":'public/whiteDw.png',
     "next": 'what_next.png',
     "head": {
         'txt': [
@@ -84,10 +85,11 @@ export const message = {
         ],
         "title": "Contact"
     },
+
     "collaboration": {
         "title": "Collaboration",
         "txt": [
-            'Core Technology Team',
+            'Core Development Team',
             'Strategic Parteners'
         ],
         "list": [
@@ -157,9 +159,9 @@ export const message = {
     },
     "about": {
         "title": 'Key Innovations:',
-        "imgtxt": " Facilitating construction of <br> distributed business applications",
+        "imgtxt": " Facilitate construction of <br> distributed business applications",
         "txt": [
-            'Incorporation of a service oriented infrastructure into Cosmos',
+            'Incorporation of a service-oriented infrastructure into Cosmos',
             'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems',
             'Interoperability of those services across an internet of blockchains'
         ]
@@ -167,11 +169,11 @@ export const message = {
     "network": {
         "title": 'Network Design',
         "txt": [
-            'Defines standard ABCI transaction types supporting' +
-            'registration, binding, invocation, query, profiling and' +
+            'Definition of standard ABCI transaction types supporting ' +
+            'registration, binding, invocation, query, profiling and ' +
             'governance of IRIS Services (a.k.a. iServices)',
-            'iService providers act as adaptors of business logic' +
-            'residing in public and consortium blockchains as well' +
+            'iService providers act as adaptors of business logic ' +
+            'residing in public and consortium blockchains as well ' +
             'as enterprise legacy systems',
             'iServices can be invoked across an internet of ' +
             'blockchains over an extended IBC protocl'
@@ -414,8 +416,8 @@ export const message = {
             {
                 'title': "Introduction",
                 "txtList": [
-                    'This website (“our website”) is owned and operated by IRIS Foundation Limited, a company limited by ' +
-                    'guarantee and incorporated in Hong Kong (“the Foundation”, “we” or “us”).  Each reference in these terms ' +
+                    'This website ("our website") is owned and operated by IRIS Foundation Limited, a company limited by ' +
+                    'guarantee and incorporated in Hong Kong (“the Foundation”, "we" or "us").  Each reference in these terms ' +
                     'of use to “our website” includes all materials that we make available to you on our website.',
                     'By using our website, you agree to comply with these terms of use.  Please check this page each time you use our website, ' +
                     'as we may update these terms from time to time.',
@@ -516,5 +518,9 @@ export const message = {
                 ]
             },
         ]
+    },
+    "qr":{
+        "title":" Scan QR code",
+        "txt":" to follow our Subscriptions"
     }
 }
