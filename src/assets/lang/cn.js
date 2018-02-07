@@ -82,10 +82,8 @@ export const message = {
                 "href": "https://weibo.com/u/6455513027"
             },
         ],
-        "title": "Contact"
-    },
     "collaboration": {
-        "title": "Collaboration",
+        "title": "合作方",
         "txt": [
             'Core Technology Team',
             'Strategic Parteners'
@@ -124,7 +122,8 @@ export const message = {
         ]
     },
     "roadmap": {
-        "title": 'Roadmap',
+
+        "title": '路线图',
         "list": [
             {
                 "img": "roadmap/Pangu.png",
@@ -151,12 +150,14 @@ export const message = {
         ]
     },
     "home": {
-        "title": 'IRIS Network',
+
+        "title": 'IRIS网络',
         "txt": '跨链服务基础协议 <br> 新一代分布式商业生态的技术基础',
         "src": 'iristext-small.png'
     },
     "about": {
-        "title": '创新点',
+
+        "title": '核心创新',
         "imgtxt": " 助力打造 <br> 分布式商业应用",
         "txt": [
             '将面向服务的基础设施融入到Cosmos网络中',
