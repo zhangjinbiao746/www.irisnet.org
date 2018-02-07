@@ -414,8 +414,8 @@ export const message = {
             {
                 'title': "Introduction",
                 "txtList": [
-                    'This website (“our website”) is owned and operated by IRIS Foundation Limited, a company limited by ' +
-                    'guarantee and incorporated in Hong Kong (“the Foundation”, “we” or “us”).  Each reference in these terms ' +
+                    'This website ("our website") is owned and operated by IRIS Foundation Limited, a company limited by ' +
+                    'guarantee and incorporated in Hong Kong (“the Foundation”, "we" or "us").  Each reference in these terms ' +
                     'of use to “our website” includes all materials that we make available to you on our website.',
                     'By using our website, you agree to comply with these terms of use.  Please check this page each time you use our website, ' +
                     'as we may update these terms from time to time.',
