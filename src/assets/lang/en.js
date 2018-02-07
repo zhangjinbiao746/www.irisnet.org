@@ -157,9 +157,9 @@ export const message = {
     },
     "about": {
         "title": 'Key Innovations:',
-        "imgtxt": " Facilitating construction of <br> distributed business applications",
+        "imgtxt": " Facilitate construction of <br> distributed business applications",
         "txt": [
-            'Incorporation of a service oriented infrastructure into Cosmos',
+            'Incorporation of a service-oriented infrastructure into Cosmos',
             'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems',
             'Interoperability of those services across an internet of blockchains'
         ]
@@ -167,11 +167,11 @@ export const message = {
     "network": {
         "title": 'Network Design',
         "txt": [
-            'Defines standard ABCI transaction types supporting' +
-            'registration, binding, invocation, query, profiling and' +
+            'Definition of standard ABCI transaction types supporting ' +
+            'registration, binding, invocation, query, profiling and ' +
             'governance of IRIS Services (a.k.a. iServices)',
-            'iService providers act as adaptors of business logic' +
-            'residing in public and consortium blockchains as well' +
+            'iService providers act as adaptors of business logic ' +
+            'residing in public and consortium blockchains as well ' +
             'as enterprise legacy systems',
             'iServices can be invoked across an internet of ' +
             'blockchains over an extended IBC protocl'

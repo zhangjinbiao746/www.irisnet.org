@@ -152,24 +152,23 @@ export const message = {
     },
     "home": {
         "title": 'IRIS Network',
-        "txt": 'Interchain Service Infrastructure and Protocol <br> Technology Foundation for a Distributed Business Ecosystem',
+        "txt": '跨链服务基础协议 <br> 新一代分布式商业生态的技术基础',
         "src": 'iristext-small.png'
     },
     "about": {
-        "title": 'Key Innovations:',
-        "imgtxt": " Facilitating construction of <br> distributed business applications",
+        "title": '创新点:',
+        "imgtxt": " 助力打造 <br> 分布式商业应用",
         "txt": [
-            'Incorporation of a service oriented infrastructure into Cosmos',
-            'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems',
-            'Interoperability of those services across an internet of blockchains'
+            '将面向服务的基础设施融入到Cosmos网络中',
+            '整合由异构系统提供的商业服务，包括公共链、联盟链以及现有系统',
+            '通过区块链互联网实现服务的互联互通'
         ]
     },
     "network": {
-        "title": 'Network Design',
+        "title": '网络设计',
         "txt": [
-            'Defines standard ABCI transaction types supporting' +
-            'registration, binding, invocation, query, profiling and' +
-            'governance of IRIS Services (a.k.a. iServices)',
+            '通过标准的ABCI交易实现IRIS服务（也称为iServices）的' +
+            '注册，绑定，调用，查询，分析和管理',
             'iService providers act as adaptors of business logic' +
             'residing in public and consortium blockchains as well' +
             'as enterprise legacy systems',
