@@ -82,11 +82,13 @@ export const message = {
                 "href": "https://weibo.com/u/6455513027"
             },
         ],
+        "title": "联系方式"
+    },
     "collaboration": {
         "title": "合作方",
         "txt": [
-            'Core Technology Team',
-            'Strategic Parteners'
+            '核心技术团队',
+            '战略合作伙伴'
         ],
         "list": [
             {
@@ -158,7 +160,7 @@ export const message = {
     "about": {
 
         "title": '核心创新',
-        "imgtxt": " 助力打造 <br> 分布式商业应用",
+        "imgtxt": " 助力打造分布式商业应用",
         "txt": [
             '将面向服务的基础设施融入到Cosmos网络中',
             '整合由异构系统提供的商业服务，包括公共链、联盟链以及现有系统',
@@ -513,5 +515,11 @@ export const message = {
                 ]
             },
         ]
+    },
+    "qr":{
+        "title":" 请扫描二维码",
+        "txt":" 关注公众号"
     }
+
+
 }

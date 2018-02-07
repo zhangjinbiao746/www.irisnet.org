@@ -1,5 +1,6 @@
 export const message = {
     "logo": 'irisnet.png',
+    // "test":'public/whiteDw.png',
     "next": 'what_next.png',
     "head": {
         'txt': [
@@ -84,6 +85,7 @@ export const message = {
         ],
         "title": "Contact"
     },
+
     "collaboration": {
         "title": "Collaboration",
         "txt": [
@@ -516,5 +518,9 @@ export const message = {
                 ]
             },
         ]
+    },
+    "qr":{
+        "title":" Scan QR code",
+        "txt":" to follow our Subscriptions"
     }
 }

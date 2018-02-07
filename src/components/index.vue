@@ -99,9 +99,9 @@
                                     <div>
                                         {{$store.state.messages.network.txt[2]}}
                                     </div>
-                                    <!--<div>-->
-                                    <!--<img src="../assets/whiteDw.png" style="cursor: pointer"/>-->
-                                    <!--</div>-->
+                                    <div>
+                                        <!--<img :src="$store.state.messages.test" style="cursor: pointer"/>-->
+                                    </div>
                                 </div>
                             </div>
                             <a href="#/0/3">
@@ -249,10 +249,10 @@
                     </div>
                     <img src="../assets/wechat.png" class="wechat_img"/>
                     <div class="wechat_title">
-                        Scan QR code
+                       {{$store.state.messages.qr.title}}
                     </div>
                     <div class="wechat_txt">
-                        to follow our Subscriptions
+                        {{$store.state.messages.qr.txt}}
                     </div>
                 </div>
             </div>
@@ -314,7 +314,7 @@
                 this.list[index].is = true;
             },
             blank(item){
-                if(item=='wechat'){
+                if(item=='wechat'||item=='微信'){
                     this.wechatIs=true;
                 }
             }
