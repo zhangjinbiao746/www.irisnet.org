@@ -1,13 +1,22 @@
 <template>
     <div class="head">
         <div class="center">
-            <a href="#"><img :src="UrlSrc+$store.state.messages.logo" style="width: 130px;"/></a>
-            <div class="item_en">
+            <a href="/"><img :src="UrlSrc+$store.state.messages.logo" style="width: 130px;"/></a>
+
+            <div class="item_en" v-if="$store.state.lang=='EN'">
                 <div @mouseenter="downShow" @mouseleave="downHide" class="item">
                     <img :src="UrlSrc+down"/> English
                 </div>
-                <a class="item_cn">
+                <a class="item_cn" href="?lang=CN">
                     中文
+                </a>
+            </div>
+            <div class="item_en" v-if="$store.state.lang=='CN'">
+                <div @mouseenter="downShow" @mouseleave="downHide" class="item">
+                    <img :src="UrlSrc+down"/>中文
+                </div>
+                <a class="item_cn" href="?lang=EN">
+                     English
                 </a>
             </div>
             <div class="comm">
@@ -20,7 +29,7 @@
                 </a>
             </div>
             <div style="float: right">
-                <a :href="item.href" v-for="item in $store.state.messages.head.txt" class="item">
+                <a :href="'/?lang='+$store.state.lang+item.href" v-for="item in $store.state.messages.head.txt" class="item">
                     {{item.txt}}
                     <div></div>
                 </a>

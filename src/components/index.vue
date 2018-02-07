@@ -4,12 +4,20 @@
             <div class="head">
                 <div class="center">
                     <a href="#"><img :src="UrlSrc+$store.state.messages.logo" style="width: 130px;"/></a>
-                    <div class="item_en">
-                        <div @mouseenter="downShow" @mouseleave="downHide" class="item" >
+                    <div class="item_en" v-if="$store.state.lang=='EN'">
+                        <div @mouseenter="downShow" @mouseleave="downHide" class="item">
                             <img :src="UrlSrc+down"/> English
                         </div>
-                        <a class="item_cn">
+                        <a class="item_cn" href="?lang=CN">
                             中文
+                        </a>
+                    </div>
+                    <div class="item_en" v-if="$store.state.lang=='CN'">
+                        <div @mouseenter="downShow" @mouseleave="downHide" class="item">
+                            <img :src="UrlSrc+down"/>中文
+                        </div>
+                        <a class="item_cn" href="?lang=EN">
+                            English
                         </a>
                     </div>
                     <div class="comm">
@@ -176,7 +184,7 @@
                                         <img class="img" v-show="list[1].is" src="../assets/Roadmap.gif"/>
                                     </div>
                                     <div class="roadmap_text" v-show="list[1].is"
-                                         style="    bottom: -252px;left: -98px;">
+                                         style="   top:134px;left: -98px;">
                                         {{$store.state.messages.roadmap.list[1].txt}}
                                         <div class="d"></div>
                                     </div>
@@ -204,7 +212,7 @@
                                         <img class="img" v-show="list[3].is" src="../assets/Roadmap.gif"/>
                                     </div>
                                     <div class="roadmap_text" v-show="list[3].is"
-                                         style="bottom: -182px;left: -96px; width: 276px;">
+                                         style="    top: 134px;left: -96px; width: 276px;">
                                         {{$store.state.messages.roadmap.list[3].txt}}
                                         <div class="d"></div>
                                     </div>
@@ -340,10 +348,7 @@
 </script>
 
 <style scoped lang='less'>
-    html, body {
-        min-width: 1200px;
-        overflow: inherit !important;
-    }
+
 
     .index {
         flex: 1;
@@ -592,6 +597,7 @@
                 div:first-child {
                     margin-top: 0;
                     font-size: 24px;
+                    font-weight: bold;
                     margin-bottom: 50px;
                 }
             }

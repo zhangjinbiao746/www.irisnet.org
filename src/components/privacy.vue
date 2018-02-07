@@ -44,9 +44,7 @@
 </script>
 
 <style scoped lang='less'>
-    html, body {
-        overflow: inherit !important;
-    }
+
 
     .index {
         min-height: 100%;
