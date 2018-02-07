@@ -87,7 +87,7 @@ export const message = {
     "collaboration": {
         "title": "Collaboration",
         "txt": [
-            'Core Technology Team',
+            'Core Development Team',
             'Strategic Parteners'
         ],
         "list": [
