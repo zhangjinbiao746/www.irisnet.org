@@ -4,29 +4,29 @@ export const message = {
     "head": {
         'txt': [
             {
-                'txt': "Home",
+                'txt': "主页",
                 "href": "/#",
                 "is": true
             },
             {
-                'txt': "About",
+                'txt': "关于我们",
                 "href": "/#/0/1"
             },
             {
-                'txt': "Network",
+                'txt': "网络",
                 "href": "/#/0/2"
             },
             {
-                'txt': "Collaboration",
+                'txt': "合作方",
                 "href": "/#/0/3",
             },
             {
-                'txt': "Roadmap",
+                'txt': "路线图",
                 "href": "/#/0/4",
             },
 
             {
-                'txt': "Contact",
+                'txt': "联系方式",
                 "href": "/#/0/6",
             }
         ]
@@ -73,12 +73,12 @@ export const message = {
             {
                 "src": "wechat.png",
                 "src_selected": "wechat_selected.png",
-                "txt": "wechat"
+                "txt": "微信"
             },
             {
                 "src": "weibo.png",
                 "src_selected": "weibo_selected.png",
-                "txt": "weibo",
+                "txt": "微博",
                 "href": "https://weibo.com/u/6455513027"
             },
         ],
@@ -93,7 +93,7 @@ export const message = {
         "list": [
             {
                 "img": "collaboration/bianjie.png",
-                "title": "BIANJIE.AI",
+                "title": "边界智能",
                 "text": "bianjie.ai",
                 "href": "https://bianjie.ai"
             },
@@ -111,13 +111,13 @@ export const message = {
             },
             {
                 "img": "collaboration/wancloud.png",
-                "title": "WanCoud",
+                "title": "万云",
                 "text": "wancloud.io",
                 "href": "https://www.wancloud.io"
             },
             {
                 "img": "collaboration/base.png",
-                "title": "Newchainbase",
+                "title": "万向新链加速器",
                 "text": "newchainbase.com",
                 "href": "http://www.newchainbase.com"
             }
@@ -128,25 +128,25 @@ export const message = {
         "list": [
             {
                 "img": "roadmap/Pangu.png",
-                "txt": "As the first stage of the IRIS project, we will focus on having the IRIS Hub up and running as one " +
-                "of the earliest regional hubs that connect to the Cosmos Hub; we’ll get a couple of public blockchains " +
-                "to connect to the IRIS Hub as “zones”, and release an initial version of the mobile client for the IRIS Network."
+                "txt": "作为IRIS项目的第一阶段，我们将专注于实现IRIS枢纽作为连接到Cosmos Hub的最早的区域枢纽之一。" +
+                "我们将一些公有链以“分区”的形式连接到IRIS Hub。" +
+                "并为IRIS网络发布最初版本的移动客户端"
             },
             {
                 "img": "roadmap/NUWA.png",
-                "txt": "The is the stage where we will build out the fundamental IRIS Service Layer: upgrade the network to enable " +
-                "service definition, binding, invocation and query; have a beta version of the IRIS SDK ready for developers and  upgrade the" +
-                " mobile client to support IRIS Services; form strategic alliances with service providers and have more zones connected the IRIS Hub."
+                "txt": "在这一阶段，我们将建立IRIS基本服务层： " +
+                "升级网络以实现服务定义，绑定，调用和查询; 为开发者准备了beta版的IRIS SDK，" +
+                "并升级移动客户端以支持IRIS服务; 与服务提供商形成战略联盟，并有更多的分区连接IRIS枢纽。"
             },
             {
                 "img": "roadmap/kuafu.png",
-                "txt": "Upgrade the network to support advanced IRIS Service governance features, such as profiling and dispute resolution; keep " +
-                "improving the SDK and mobile client; rapidly expand the network to connect with more zones and integrate more service providers."
+                "txt": "升级网络以支持复杂的IRIS服务管理功能，例如：" +
+                "分析和争议解决; 不断完善SDK和手机客户端; 加速拓展网络，连接更多的分区，整合更多的服务提供商。"
             },
             {
                 "img": "roadmap/houyi.png",
-                "txt": "Move toward the realization of a distributed business ecosystem, through relentless technology innovations," +
-                " effective community building and sustained developer empowerment."
+                "txt": "通过不懈的技术创新，完善的社区建设和可持续的开发者授权" +
+                "实现分布式商业生态系统。"
             }
         ]
     },
