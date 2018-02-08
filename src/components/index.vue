@@ -230,10 +230,10 @@
                                 <div class="contact_warp">
                                     <a :href="item.href" target="_blank" @click="blank(item.txt)"
                                        v-for="item in $store.state.messages.contact.img">
-                                        <div class="contact_list"
-                                             @mouseover="overShow(item)" @mouseout="outHide(item)">
-                                            <img :src="UrlSrc+item.src"/>
-                                            <div>{{item.txt}}</div>
+                                        <div class="contact_list">
+                                            <img  class="src" :src="UrlSrc+item.src"/>
+                                            <img class="src_selected"  :src="UrlSrc+item.src_selected" />
+                                            <div>{{item.txt}} {{item.is}}</div>
                                         </div>
                                     </a>
                                 </div>
@@ -297,13 +297,6 @@
             commHide() {
                 this.comm = '../public/community_selected.png';
             },
-            overShow(item) {
-                item.img = item.src;
-                item.src = item.src_selected
-            },
-            outHide(item) {
-                item.src = item.img;
-            },
             textShow(index) {
                 this.list[index].is = true;
             },
@@ -314,7 +307,7 @@
                 this.list[index].is = true;
             },
             blank(item){
-                if(item=='wechat'||item=='微信'){
+                if(item=='Wechat'){
                     this.wechatIs=true;
                 }
             }
@@ -782,10 +775,19 @@
                     border-radius: 6px;
                     text-align: left;
                     cursor: pointer;
+                    .src_selected{
+                        display: none;
+                    }
                     &:hover {
                         background: #2b2e4e;
                         div {
                             color: #fff;
+                        }
+                        .src{
+                            display: none;
+                        }
+                        .src_selected{
+                            display: block;
                         }
                     }
                     img {
