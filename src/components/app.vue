@@ -5,12 +5,17 @@
             <div class="head">
                 <img src="../assets/app/irislogo.png" class="imglogo">
                 <div class="div_en" >
-                    En
+                    <a href="?lang=CN" v-if="$store.state.lang!='CN'">
+                        CN
+                    </a>
+                    <a href="?lang=EN" v-if="$store.state.lang=='CN'">
+                        EN
+                    </a>
                     <img src="../assets/app/list.png" @click="menuIs=!menuIs"/>
                 </div>
             </div>
             <div class="menu" v-show="menuIs">
-                <a :href="item.href" @click="menuIs=false" v-for="item in $store.state.messages.head.txt">
+                <a :href="'app#'+item.href" @click="menuIs=false" v-for="item in $store.state.messages.head.txt">
                     {{item.txt}}
                 </a>
             </div>
@@ -103,9 +108,10 @@
                                             </div>
                                             <div class="collaboration_div_txt">
                                                 {{$store.state.messages.collaboration.txt[0]}}
+                                                <div class="collaboration_div1" style="width: 92px;top: 28px"></div>
+                                                <div class="collaboration_div1" style="width: 26px;top:29px"></div>
                                             </div>
-                                            <div class="collaboration_div1" style="width: 92px;top: 18px"></div>
-                                            <div class="collaboration_div1" style="width: 26px;top:19px"></div>
+
                                         </div>
                                     </div>
                                 </a>
@@ -122,12 +128,13 @@
                                                 {{$store.state.messages.collaboration.list[$index].text}}
                                             </div>
                                             <div class="collaboration_div_txt" v-if="$index===1">
-                                                {{$store.state.messages.collaboration.txt[0]}}
+                                                {{$store.state.messages.collaboration.txt[1]}}
+                                                <div v-if="$index===1" class="collaboration_div1"
+                                                     style="width: 92px;top: 28px"></div>
+                                                <div v-if="$index===1" class="collaboration_div1"
+                                                     style="width: 26px;top:29px"></div>
                                             </div>
-                                            <div v-if="$index===1" class="collaboration_div1"
-                                                 style="width: 92px;top: 18px"></div>
-                                            <div v-if="$index===1" class="collaboration_div1"
-                                                 style="width: 26px;top:19px"></div>
+
                                         </div>
                                     </div>
                                 </a>
@@ -435,6 +442,7 @@
                             text-indent: 6px;
                         }
                         .collaboration_div_txt {
+                            position: relative;
                             position: absolute;
                             width: 130px;
                             left: -162px;
@@ -446,7 +454,6 @@
                             position: absolute;
                             height: 1px;
                             background: #fff;
-                            left: -162px;
                         }
                     }
                 }

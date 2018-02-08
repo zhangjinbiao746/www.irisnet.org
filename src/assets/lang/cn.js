@@ -99,8 +99,8 @@ export const message = {
             },
             {
                 "img": "collaboration/cosmos.png",
-                "title": "COSMOS",
-                "text": "cosmos.nerwork",
+                "title": "ICF/COSMOS",
+                "text": "cosmos.network",
                 "href": "https://cosmos.network"
             },
             {
