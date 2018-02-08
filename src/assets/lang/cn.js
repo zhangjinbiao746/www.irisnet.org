@@ -55,30 +55,30 @@ export const message = {
             {
                 "src": "mail.png",
                 "src_selected": "mail_selected.png",
-                "txt": "email",
+                "txt": "Email",
                 "href": "mailto:contact@irisnet.org"
             },
             {
                 "src": "reddit.png",
                 "src_selected": "reddit_selected.png",
-                "txt": "reddit",
+                "txt": "Reddit",
 
             },
             {
                 "src": "riot.png",
                 "src_selected": "riot_selected.png",
-                "txt": "riot",
+                "txt": "Riot",
                 "href": "https://riot.im/app/#/room/#iris:matrix.org"
             },
             {
                 "src": "wechat.png",
                 "src_selected": "wechat_selected.png",
-                "txt": "微信"
+                "txt": "Wechat"
             },
             {
                 "src": "weibo.png",
                 "src_selected": "weibo_selected.png",
-                "txt": "微博",
+                "txt": "Weibo",
                 "href": "https://weibo.com/u/6455513027"
             },
         ],
