@@ -11,24 +11,24 @@ export const message = {
             },
             {
                 'txt': "About",
-                "href": "/#/0/1"
+                "href": "#/0/1"
             },
             {
                 'txt': "Network",
-                "href": "/#/0/2"
+                "href": "#/0/2"
             },
             {
                 'txt': "Collaboration",
-                "href": "/#/0/3",
+                "href": "#/0/3",
             },
             {
                 'txt': "Roadmap",
-                "href": "/#/0/4",
+                "href": "#/0/4",
             },
 
             {
                 'txt': "Contact",
-                "href": "/#/0/6",
+                "href": "#/0/6",
             }
         ]
     },
@@ -101,8 +101,8 @@ export const message = {
             },
             {
                 "img": "collaboration/cosmos.png",
-                "title": "COSMOS",
-                "text": "cosmos.nerwork",
+                "title": "ICF/COSMOS",
+                "text": "cosmos.network",
                 "href": "https://cosmos.network"
             },
             {
