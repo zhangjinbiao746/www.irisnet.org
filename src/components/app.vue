@@ -167,7 +167,10 @@
                                         <div class="roadmap_radius"></div>
                                         <img class="roadmap_img" @click="txtShow(2)"
                                              :src="UrlSrc+img($store.state.messages.roadmap.list[2].img)">
-                                        <div class="roadmap_txt" v-show="list[2].is" style="top: -174px;">
+                                        <div v-if="$store.state.lang!='CN'" class="roadmap_txt" v-show="list[2].is" style="top: -174px;">
+                                            {{$store.state.messages.roadmap.list[2].txt}}
+                                        </div>
+                                        <div v-if="$store.state.lang=='CN'" class="roadmap_txt" v-show="list[2].is" style="top: 0px;">
                                             {{$store.state.messages.roadmap.list[2].txt}}
                                         </div>
                                     </div>
@@ -175,8 +178,11 @@
                                         <div class="roadmap_radius"></div>
                                         <img class="roadmap_img" @click="txtShow(3)"
                                              :src="UrlSrc+img($store.state.messages.roadmap.list[3].img)">
-                                        <div class="roadmap_txt" v-show="list[3].is" style="top: -130px;">
+                                        <div v-if="$store.state.lang!='CN'" class="roadmap_txt" v-show="list[3].is" style="top: -130px;">
                                             {{$store.state.messages.roadmap.list[3].txt}}
+                                        </div>
+                                        <div v-if="$store.state.lang=='CN'" class="roadmap_txt" v-show="list[3].is" style="top: -108px;">
+                                            {{$store.state.messages.roadmap.list[2].txt}}
                                         </div>
                                     </div>
                                 </div>
@@ -240,7 +246,7 @@
                 this.list[index].is = true;
             },
             blank(item) {
-                if (item == 'wechat') {
+                if (item == 'Wechat') {
                     this.wechatIs = true;
                 }
             }
@@ -444,6 +450,7 @@
                         .collaboration_div_txt {
                             position: relative;
                             position: absolute;
+                            text-align: left;
                             width: 130px;
                             left: -162px;
                             top: 0;
