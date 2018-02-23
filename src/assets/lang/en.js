@@ -1,6 +1,7 @@
 export const message = {
     "logo": 'irisnet.png',
-    // "test":'public/whiteDw.png',
+    "white":'public/whiteDw.png',
+    "whiteHref":"https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md",
     "next": 'what_next.png',
     "head": {
         'txt': [
@@ -12,6 +13,10 @@ export const message = {
             {
                 'txt': "About",
                 "href": "#/0/1"
+            },
+            {
+                'txt': "Whitpaper",
+                "href": "https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md"
             },
             {
                 'txt': "Network",

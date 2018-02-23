@@ -1,5 +1,7 @@
 export const message = {
     "logo": 'irisnet.png',
+    "white":'public/whiteDwCn.png',
+    "whiteHref":"https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md",
     "next": 'what_next.png',
     "head": {
         'txt': [
@@ -13,6 +15,10 @@ export const message = {
                 "href": "#/0/1"
             },
             {
+                'txt': "白皮书",
+                "href": "https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md"
+            },
+            {
                 'txt': "网络",
                 "href": "#/0/2"
             },
@@ -24,7 +30,6 @@ export const message = {
                 'txt': "路线图",
                 "href": "#/0/4",
             },
-
             {
                 'txt': "联系方式",
                 "href": "#/0/6",
@@ -37,7 +42,7 @@ export const message = {
                 "src": "telegran.png",
                 "src_selected": "telegran_selected.png",
                 "txt": "Telegram",
-                "href": "https://t.me/irisnetwork"
+                "href": "https://t.me/irisnetworkcn"
             },
             {
                 "src": "twitter.png",

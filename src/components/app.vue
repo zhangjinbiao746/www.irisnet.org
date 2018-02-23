@@ -15,9 +15,14 @@
                 </div>
             </div>
             <div class="menu" v-show="menuIs">
-                <a :href="'app#'+item.href" @click="menuIs=false" v-for="item in $store.state.messages.head.txt">
-                    {{item.txt}}
-                </a>
+               <section v-for="item in $store.state.messages.head.txt">
+                   <a v-if="item.href.indexOf('ttp')==-1" :href="'app#'+item.href" @click="menuIs=false" >
+                       {{item.txt}}
+                   </a>
+                   <a v-if="item.href.indexOf('ttp')!=-1" :href="'h'+item.href" @click="menuIs=false" >
+                       {{item.txt}}
+                   </a>
+               </section>
             </div>
             <div class="reveal ">
                 <div class="slides ">
@@ -57,6 +62,11 @@
                                         </div>
                                         <div class="about_div" style="width: 250px;">
                                             {{$store.state.messages.about.txt[2]}}
+                                        </div>
+                                        <div>
+                                            <a :href="$store.state.messages.whiteHref">
+                                                <img :src="$store.state.messages.white" style="cursor: pointer;    float: initial;"/>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -258,6 +268,15 @@
             }
         },
         mounted: function () {
+            this.$store.state.messages.head.txt.forEach(v=>{
+                if(v.href=='#/0/4'){
+                    v.href='#/0/5'
+                }
+                if(v.href=='#/0/3'){
+                    v.href='#/0/4';
+                }
+
+            })
             this.$store.state.messages.head.txt.forEach(v => {
                 v.href = v.href.substr(1, v.href.length)
             })
@@ -270,11 +289,15 @@
                 let _this = this;
                 Reveal.addEventListener('slidechanged', function (event) {
                     let index = event.indexv;
+
                     let model = [];
                     _this.$store.state.messages.head.txt.forEach((v) => {
                         v.is = false;
                         model.push(v);
                     })
+                    if(index>=2){
+                        index++;
+                    }
                     _this.$store.state.messages.head.txt = model;
                 });
             }
