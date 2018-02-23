@@ -75,6 +75,11 @@
                                     <div>
                                         {{$store.state.messages.about.txt[2]}}
                                     </div>
+                                    <div>
+                                       <a :href="$store.state.messages.whiteHref">
+                                           <img :src="$store.state.messages.white" style="cursor: pointer"/>
+                                       </a>
+                                    </div>
                                 </div>
                             </div>
                             <a href="#/0/2">
@@ -99,9 +104,7 @@
                                     <div>
                                         {{$store.state.messages.network.txt[2]}}
                                     </div>
-                                    <div>
-                                        <!--<img :src="$store.state.messages.test" style="cursor: pointer"/>-->
-                                    </div>
+
                                 </div>
                             </div>
                             <a href="#/0/3">
@@ -331,6 +334,9 @@
                         v.is = false;
                         model.push(v);
                     })
+                    if(index>=2){
+                        index++;
+                    }
                     model[index].is = true;
                     history.pushState({}, '', model[index].href);
                     _this.$store.state.messages.head.txt = model;
