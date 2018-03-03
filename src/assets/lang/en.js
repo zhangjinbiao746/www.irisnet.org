@@ -15,7 +15,7 @@ export const message = {
                 "href": "#/0/1"
             },
             {
-                'txt': "Whitpaper",
+                'txt': "Whitepaper",
                 "href": "https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md"
             },
             {
