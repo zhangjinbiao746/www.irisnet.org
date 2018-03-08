@@ -177,7 +177,7 @@ export const message = {
         "txt": [
             '通过标准的ABCI交易实现IRIS服务（也称为iServices）的' +
             '注册，绑定，调用，查询，分析和管理',
-            'iiService提供商充当公共链、联盟区块链以及现有企业系统中业务逻辑的适配器',
+            'iService提供商充当公共链、联盟区块链以及现有企业系统中业务逻辑的适配器',
             '可以通过扩展的IBC协议在区块链互联网中调用iServices'
         ],
         "src": 'white.png'
