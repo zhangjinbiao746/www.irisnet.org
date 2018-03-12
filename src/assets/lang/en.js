@@ -95,7 +95,7 @@ export const message = {
         "title": "Collaboration",
         "txt": [
             'Core Development Team',
-            'Strategic Parteners'
+            'Strategic Partners'
         ],
         "list": [
             {
@@ -167,7 +167,7 @@ export const message = {
         "imgtxt": " Facilitate construction of <br> distributed business applications",
         "txt": [
             'Incorporation of a service-oriented infrastructure into Cosmos',
-            'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems',
+            'Integration of business services offered by heterogeneous systems, including public & consortium chains as well as legacy systems',
             'Interoperability of those services across an internet of blockchains'
         ]
     },
