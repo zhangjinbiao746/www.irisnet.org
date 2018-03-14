@@ -16,7 +16,7 @@ export const message = {
             },
             {
                 'txt': "白皮书",
-                "href": "https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md"
+                "href": "https://github.com/irisnet/irisnet/blob/master/白皮书.md"
             },
             {
                 'txt': "网络",
