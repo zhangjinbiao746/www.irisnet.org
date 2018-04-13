@@ -422,18 +422,16 @@
                 });
                 let _this = this;
                 Reveal.addEventListener('slidechanged', function (event) {
-                    index = event.indexv;
+                    let index = event.indexv;
                     let model = [];
                     _this.$store.state.messages.head.txt.forEach((v) => {
                         v.is = false;
-                        localStorage.setItem("hash",index)
                         model.push(v);
                     });
                     //去掉白皮书数组长度发生改变，跳转出现问题故注释掉。
                     // if(index>=2){
                     //     index++;
                     // }
-                    let index = localStorage.getItem("hash");
                     model[index].is = true;
                     history.pushState({}, '', model[index].href);
                     _this.$store.state.messages.head.txt = model;
