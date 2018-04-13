@@ -414,6 +414,19 @@
                 v.is = false;
             })
             this.list[0].is = true;
+            let lang = this.$store.state.lang;
+            let state = false;
+            if(lang = "EN"){
+                state = true
+                if(state == true) {
+                    sessionStorage.clear()
+                }
+            }else {
+                state = false
+                if(state == false) {
+                    sessionStorage.clear()
+                }
+            }
             if (process.env.VUE_ENV === 'client') {
                 Reveal.initialize({
                     progress: false,
@@ -421,20 +434,26 @@
                     controls:false
                 });
                 let _this = this;
+                let modulList = _this.$store.state.messages.head.txt;
+                for (let i = 0; i < modulList.length; i++) {
+                    modulList[i].is = false;
+                }
+                let hashIndex = sessionStorage.getItem("hash");
+                if(hashIndex){
+                    modulList[hashIndex].is = true;
+                }else {
+                    modulList[0].is = true;
+                }
+                _this.$store.state.messages.head.txt = modulList;
                 Reveal.addEventListener('slidechanged', function (event) {
                     let index = event.indexv;
-                    let model = [];
-                    _this.$store.state.messages.head.txt.forEach((v) => {
-                        v.is = false;
-                        model.push(v);
-                    });
-                    //去掉白皮书数组长度发生改变，跳转出现问题故注释掉。
-                    // if(index>=2){
-                    //     index++;
-                    // }
-                    model[index].is = true;
-                    history.pushState({}, '', model[index].href);
-                    _this.$store.state.messages.head.txt = model;
+                    sessionStorage.setItem("hash",index);
+                    for (let i = 0; i < modulList.length; i ++) {
+                        modulList[i].is = false;
+                    }
+                    modulList[index].is = true;
+                    history.pushState({}, '', modulList[index].href);
+                    _this.$store.state.messages.head.txt = modulList;
                 });
             }
         }
