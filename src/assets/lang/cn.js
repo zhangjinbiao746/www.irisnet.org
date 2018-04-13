@@ -14,10 +14,10 @@ export const message = {
                 'txt': "关于我们",
                 "href": "#/0/1"
             },
-            {
-                'txt': "白皮书",
-                "href": "https://github.com/irisnet/irisnet/blob/master/白皮书.md"
-            },
+            // {
+            //     'txt': "白皮书",
+            //     "href": "https://github.com/irisnet/irisnet/blob/master/白皮书.md"
+            // },
             {
                 'txt': "网络",
                 "href": "#/0/2"
@@ -104,7 +104,7 @@ export const message = {
             },
             {
                 "img": "collaboration/cosmos.png",
-                "title": "ICF/COSMOS",
+                "title": "COSMOS",
                 "text": "cosmos.network",
                 "href": "https://cosmos.network"
             },
@@ -125,8 +125,39 @@ export const message = {
                 "title": "万向新链加速器",
                 "text": "newchainbase.com",
                 "href": "http://www.newchainbase.com"
-            }
-        ]
+            },
+            {
+                "img": "collaboration/waterdrip.png",
+                "title": "水滴资本",
+                "text": "waterdrip.io",
+                "href": "http://waterdrip.io/"
+            },
+            {
+                "img": "collaboration/medishares.png",
+                "title": "Medishares",
+                "text": "medishares.org",
+                "href": "https://medishares.org"
+            },
+            {
+                "img": "collaboration/transference.png",
+                "title": "Transference",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img": "collaboration/bkfund.png",
+                "title": "BKFund",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img": "collaboration/timestamp.png",
+                "title": "Timestamp",
+                "text": "",
+                "href": ""
+            },
+        ],
+        "btnTxt":"合作方"
     },
     "roadmap": {
 
@@ -170,7 +201,9 @@ export const message = {
             '将面向服务的基础设施融入到Cosmos网络中',
             '整合由异构系统提供的商业服务，包括公共链、联盟链以及现有系统',
             '通过区块链互联网实现服务的互联互通'
-        ]
+        ],
+        "btnTxt":"白皮书",
+        "checkTxt":"网络设计"
     },
     "network": {
         "title": '网络设计',

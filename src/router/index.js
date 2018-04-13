@@ -6,6 +6,7 @@ import app from '@/components/app'
 import privacy from '@/components/privacy'
 import terms from '@/components/terms'
 import login from '@/components/login'
+import newIndex from "@/components/newIndex"
 Vue.use(Router)
 
 export function createRouter() {
@@ -14,9 +15,14 @@ export function createRouter() {
         routes: [
             {
                 path: '/',
-                name: 'index',
-                component: index
+                name: 'newIndex',
+                component: newIndex
             },
+            // {
+            //     path: '/',
+            //     name: 'index',
+            //     component: index
+            // },
             {
                 path: '/login',
                 name: 'login',

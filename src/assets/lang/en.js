@@ -14,10 +14,10 @@ export const message = {
                 'txt': "About",
                 "href": "#/0/1"
             },
-            {
-                'txt': "Whitepaper",
-                "href": "https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md"
-            },
+            // {
+            //     'txt': "Whitepaper",
+            //     "href": "https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md"
+            // },
             {
                 'txt': "Network",
                 "href": "#/0/2"
@@ -106,7 +106,7 @@ export const message = {
             },
             {
                 "img": "collaboration/cosmos.png",
-                "title": "ICF/COSMOS",
+                "title": "COSMOS",
                 "text": "cosmos.network",
                 "href": "https://cosmos.network"
             },
@@ -127,8 +127,39 @@ export const message = {
                 "title": "Newchainbase",
                 "text": "newchainbase.com",
                 "href": "http://www.newchainbase.com"
-            }
-        ]
+            },
+            {
+                "img": "collaboration/waterdrip.png",
+                "title": "WaterDrip",
+                "text": "waterdrip.io",
+                "href": "http://waterdrip.io/"
+            },
+            {
+                "img": "collaboration/medishares.png",
+                "title": "Medishares",
+                "text": "medishares.org",
+                "href": "https://medishares.org"
+            },
+            {
+                "img": "collaboration/transference.png",
+                "title": "Transference",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img": "collaboration/bkfund.png",
+                "title": "BKFund",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img": "collaboration/timestamp.png",
+                "title": "Timestamp",
+                "text": "",
+                "href": ""
+            },
+        ],
+        "btnTxt":"Collaboration"
     },
     "roadmap": {
         "title": 'Roadmap',
@@ -163,13 +194,15 @@ export const message = {
         "src": 'iristext-small.png'
     },
     "about": {
-        "title": 'Key Innovations:',
+        "title": 'Key Innovations',
         "imgtxt": " Facilitate construction of <br> distributed business applications",
         "txt": [
             'Incorporation of a service-oriented infrastructure into Cosmos',
             'Integration of business services offered by heterogeneous systems, including public & consortium chains as well as legacy systems',
             'Interoperability of those services across an internet of blockchains'
-        ]
+        ],
+        "btnTxt":"WHITEPAPER",
+        "checkTxt":"CHECK NETWORK"
     },
     "network": {
         "title": 'Network Design',
