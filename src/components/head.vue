@@ -71,7 +71,7 @@
         z-index: 10;
         width: 100%;
         height: 70px;
-        background: #141426;
+        background: #0b0b18;
         .comm {
             float: right;
             position: relative;
@@ -140,17 +140,18 @@
             position: relative;
             font-size: 14px;
             div {
-                width: 30px;
-                margin: 0 auto;
+                width: 24px;
                 height: 2px;
-                background: #572d79;
+                background: #fff;
                 margin-top: 20px;
+                margin-left: 2px;
                 display: none;
             }
             &:hover {
-                color: #fff;
+                color: #724be3;
                 div {
                     display: block;
+                    animation: nav-line 0.2s
                 }
             }
         }
@@ -163,6 +164,14 @@
         }
         .item:last-child {
             margin-right: 40px;
+        }
+        @keyframes nav-line{
+            from{
+                width: 0;
+            }
+            to{
+                width: 24px;
+            }
         }
     }
 </style>

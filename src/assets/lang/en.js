@@ -8,12 +8,10 @@ export const message = {
             {
                 'txt': "Home",
                 "href": "/#",
-                "is": true
             },
             {
                 'txt': "About",
                 "href": "#/0/1",
-                "is": ""
             },
             // {
             //     'txt': "Whitepaper",
@@ -22,23 +20,19 @@ export const message = {
             {
                 'txt': "Network",
                 "href": "#/0/2",
-                "is": ""
             },
             {
                 'txt': "Collaboration",
                 "href": "#/0/3",
-                "is": ""
             },
             {
                 'txt': "Roadmap",
                 "href": "#/0/4",
-                "is": ""
             },
 
             {
                 'txt': "Contact",
-                "href": "#/0/6",
-                "is": ""
+                "href": "#/0/5",
             }
         ]
     },

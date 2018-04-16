@@ -99,43 +99,44 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="img_right_container">
-                                <div class="img_containter_top">
-                                    <div class="img_default_containter">
-                                        <img src="../../public/iris.png" >
+                                <div class="img_right_container">
+                                    <div class="img_containter_top">
+                                        <div class="img_default_containter">
+                                            <img src="../../public/iris.png" >
+                                        </div>
+                                        <div class="rectangle_default_container">
+                                            <img src="../../public/Rectangle_one.png">
+                                        </div>
                                     </div>
-                                    <div class="rectangle_default_container">
-                                        <img src="../../public/Rectangle_one.png">
+                                    <div class="img_container_bottom">
+                                        <div>
+                                            <div class="img_default_containter">
+                                                <img src="../../public/exchange.png">
+                                            </div>
+                                            <div class="rectangle_default_container">
+                                                <img src="../../public/Rectangle_two.png">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="img_default_containter">
+                                                <img src="../../public/cosmos.png">
+                                            </div>
+                                            <div class="rectangle_default_container">
+                                                <img src="../../public/Rectangle_three.png">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="img_default_containter">
+                                                <img src="../../public/appliaction.png">
+                                            </div>
+                                            <div class="rectangle_default_container">
+                                                <img src="../../public/Rectangle_four.png">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="img_container_bottom">
-                                    <div>
-                                        <div class="img_default_containter">
-                                            <img src="../../public/exchange.png">
-                                        </div>
-                                        <div class="rectangle_default_container">
-                                            <img src="../../public/Rectangle_two.png">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="img_default_containter">
-                                            <img src="../../public/cosmos.png">
-                                        </div>
-                                        <div class="rectangle_default_container">
-                                            <img src="../../public/Rectangle_three.png">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="img_default_containter">
-                                            <img src="../../public/appliaction.png">
-                                        </div>
-                                        <div class="rectangle_default_container">
-                                            <img src="../../public/Rectangle_four.png">
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
+
                         </section>
 
                         <section data-transition="slide">
@@ -167,68 +168,72 @@
                         </section>
 
                         <section data-transition="slide">
-                            <div class="collaboration">
-                                {{$store.state.messages.collaboration.title}}
-                                <div class="line"></div>
-                            </div>
-                            <div class="collaboration_title_txt">
-                                <p>
-                                    {{$store.state.messages.collaboration.txt[0]}}
-                                </p>
-                                <p>
-                                    {{$store.state.messages.collaboration.txt[1]}}
-                                </p>
-                            </div>
-                            <div class="collaboration_warp">
-                                <a class="collaboration_list" style="margin-left: 40px; margin-right: 10px;"
-                                   :href="$store.state.messages.collaboration.list[0].href" target="_blank">
+                            <div class="what">
+                                <div class="collaboration">
+                                    {{$store.state.messages.collaboration.title}}
+                                    <div class="line"></div>
+                                </div>
+                                <div class="collaboration_title_txt">
+                                    <p>
+                                        {{$store.state.messages.collaboration.txt[0]}}
+                                    </p>
+                                    <p>
+                                        {{$store.state.messages.collaboration.txt[1]}}
+                                    </p>
+                                </div>
+                                <div class="collaboration_warp">
+                                    <a class="collaboration_list" style="margin-left: 40px; margin-right: 10px;"
+                                       :href="$store.state.messages.collaboration.list[0].href" target="_blank">
 
-                                    <div class="collaboration_list_item">
-                                        <div class="collaboration_img_container">
-                                            <img :src="UrlSrc+$store.state.messages.collaboration.list[0].img"/>
-                                        </div>
-                                        <div>
-                                            <div class="collaboration_title">
-                                                {{$store.state.messages.collaboration.list[0].title}}
-                                                <div class="collaboration_title_line"></div>
-                                                <div class="collaboration_text">
-                                                    {{$store.state.messages.collaboration.list[0].text}}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div style="margin-left: 240px;">
-                                    <a class="collaboration_list"
-                                       style="margin-left: 60px "
-                                       v-for="(item,$index) in $store.state.messages.collaboration.list"
-                                       v-if="$index!==0" :href="item.href" :target="item.text ? '_blank ': '' ">
                                         <div class="collaboration_list_item">
                                             <div class="collaboration_img_container">
-                                                <img :src="UrlSrc+$store.state.messages.collaboration.list[$index].img"/>
+                                                <img :src="UrlSrc+$store.state.messages.collaboration.list[0].img"/>
                                             </div>
                                             <div>
-                                                <div :class="item.text ? 'collaboration_title ' : 'collaboration_title_none' ">
-                                                    {{$store.state.messages.collaboration.list[$index].title}}
-                                                    <div v-if="item.text" class="collaboration_title_line"></div>
+                                                <div class="collaboration_title">
+                                                    {{$store.state.messages.collaboration.list[0].title}}
+                                                    <div class="collaboration_title_line"></div>
                                                     <div class="collaboration_text">
-                                                        {{$store.state.messages.collaboration.list[$index].text}}
+                                                        {{$store.state.messages.collaboration.list[0].text}}
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </a>
+                                    <div style="margin-left: 240px;">
+                                        <a class="collaboration_list"
+                                           style="margin-left: 60px "
+                                           v-for="(item,$index) in $store.state.messages.collaboration.list"
+                                           v-if="$index!==0" :href="item.href" :target="item.text ? '_blank ': '' ">
+                                            <div class="collaboration_list_item">
+                                                <div class="collaboration_img_container">
+                                                    <img :src="UrlSrc+$store.state.messages.collaboration.list[$index].img"/>
+                                                </div>
+                                                <div>
+                                                    <div :class="item.text ? 'collaboration_title ' : 'collaboration_title_none' ">
+                                                        {{$store.state.messages.collaboration.list[$index].title}}
+                                                        <div v-if="item.text" class="collaboration_title_line"></div>
+                                                        <div class="collaboration_text">
+                                                            {{$store.state.messages.collaboration.list[$index].text}}
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </section>
 
                         <section data-transition="slide">
-                            <div class="collaboration" style="margin-bottom: 24vh">
-                                {{$store.state.messages.roadmap.title}}
-                                <div class="line"></div>
-                            </div>
-                            <div style="position: relative;">
+                            <div class="what">
+                                <div class="collaboration" style="margin-top: 90px;" >
+                                    {{$store.state.messages.roadmap.title}}
+                                    <div class="line"></div>
+                                </div>
+
+                                <div style="position: relative; margin-top: 170px">
                                 <img src="../../public/wave.png" style="width: 1200px;margin: 0 auto"/>
 
                                 <div class="roadmap_warp" style="top: 45px; margin-left: 160px;" @mouseover="textShow(0)"
@@ -265,7 +270,7 @@
                                         <div class="img imgdiv" v-show="!list[1].is"></div>
                                     </div>
                                     <transition name="animation">
-                                        <div class="roadmap_text" v-show="list[1].is" style="top:210px; width: 250px">
+                                        <div class="roadmap_text" v-show="list[1].is" style="top:190px; width: 290px">
                                             {{$store.state.messages.roadmap.list[1].txt}}
                                         </div>
                                     </transition>
@@ -305,30 +310,33 @@
                                         <div class="img imgdiv" v-show="!list[3].is"></div>
                                     </div>
                                     <transition name="animation">
-                                        <div class="roadmap_text" v-show="list[3].is" style="top: 210px;left: -40px; width: 250px">
+                                        <div class="roadmap_text" v-show="list[3].is" style="top: 210px;left: -40px; width: 290px">
                                             {{$store.state.messages.roadmap.list[3].txt}}
                                         </div>
                                     </transition>
                                     <div class="bottom-line" v-show="list[3].is"></div>
                                 </div>
                             </div>
+                        </div>
                         </section>
 
                         <section data-transition="slide">
-                            <div class="contact">
-                                <div class="contact_title">
-                                    {{$store.state.messages.contact.title}}
-                                    <div class="line"></div>
-                                </div>
-                                <div class="contact_warp">
-                                    <a :href="item.href" target="_blank" @click="blank(item.txt)"
-                                       v-for="item in $store.state.messages.contact.img">
-                                        <div class="contact_list">
-                                            <img  class="src" :src="UrlSrc+item.src"/>
-                                            <img class="src_selected"  :src="UrlSrc+item.src_selected" />
-                                            <div>{{item.txt}} {{item.is}}</div>
-                                        </div>
-                                    </a>
+                            <div class="what">
+                                <div class="contact">
+                                    <div class="contact_title">
+                                        {{$store.state.messages.contact.title}}
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="contact_warp">
+                                        <a :href="item.href" target="_blank" @click="blank(item.txt)"
+                                           v-for="item in $store.state.messages.contact.img">
+                                            <div class="contact_list">
+                                                <img  class="src" :src="UrlSrc+item.src"/>
+                                                <img class="src_selected"  :src="UrlSrc+item.src_selected" />
+                                                <div>{{item.txt}} {{item.is}}</div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -351,7 +359,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <foot></foot>
     </div>
@@ -406,27 +413,17 @@
                 if(item=='Wechat'){
                     this.wechatIs=true;
                 }
+            },
+            getPath(){
+                return this.$route.hash.split("/")[2]||0
             }
 
         },
         mounted: function () {
+            this.$store.commit('changeItemIs',this.getPath());
             this.list.forEach((v) => {
                 v.is = false;
-            })
-            this.list[0].is = true;
-            let lang = this.$store.state.lang;
-            let state = false;
-            if(lang = "EN"){
-                state = true
-                if(state == true) {
-                    sessionStorage.clear()
-                }
-            }else {
-                state = false
-                if(state == false) {
-                    sessionStorage.clear()
-                }
-            }
+            });
             if (process.env.VUE_ENV === 'client') {
                 Reveal.initialize({
                     progress: false,
@@ -434,26 +431,21 @@
                     controls:false
                 });
                 let _this = this;
-                let modulList = _this.$store.state.messages.head.txt;
-                for (let i = 0; i < modulList.length; i++) {
-                    modulList[i].is = false;
-                }
-                let hashIndex = sessionStorage.getItem("hash");
-                if(hashIndex){
-                    modulList[hashIndex].is = true;
-                }else {
-                    modulList[0].is = true;
-                }
-                _this.$store.state.messages.head.txt = modulList;
+                this.list[0].is = true;
                 Reveal.addEventListener('slidechanged', function (event) {
                     let index = event.indexv;
-                    sessionStorage.setItem("hash",index);
-                    for (let i = 0; i < modulList.length; i ++) {
-                        modulList[i].is = false;
-                    }
-                    modulList[index].is = true;
-                    history.pushState({}, '', modulList[index].href);
-                    _this.$store.state.messages.head.txt = modulList;
+                    let model = [];
+                    _this.$store.state.messages.head.txt.forEach((v) => {
+                        v.is = false;
+                        model.push(v);
+                    });
+                    //去掉白皮书数组长度发生改变，跳转出现问题故注释掉。
+                    // if(index>=2){
+                    //     index++;
+                    // }
+                    model[index].is = true;
+                    history.pushState({}, '', model[index].href);
+                    _this.$store.state.messages.head.txt = model;
                 });
             }
         }
@@ -717,7 +709,7 @@
         .collaboration {
             font-size: 30px;
             font-weight: bold;
-            margin-top: 30vh;
+            margin-top: 90px;
             color: #fff;
             text-align: left;
             animation: txtanim 1s linear;
@@ -883,10 +875,10 @@
             .roadmap_text {
                 border-radius: 16px;
                 position: absolute;
-                left: -35px;
-                bottom: 190px;
+                left: -50px;
+                bottom: 180px;
                 color: #fff;
-                width: 250px;
+                width: 290px;
                 text-align: left;
                 font-size: 12px;
                 line-height: 18px;
@@ -896,31 +888,31 @@
             }
         }
         .top-line{
-            height: 90px;
+            height: 70px;
             width: 2px;
             background: #eeeeee;
             position: absolute;
             left: 73px;
-            bottom: 90px;
+            bottom: 95px;
             margin-top: 10px;
             animation: top-line 0.4s;
             /*display: none;*/
             /*transition: opacity 0.4s;*/
         }
         .bottom-line{
-            height: 90px;
+            height: 70px;
             width: 2px;
             background: #eeeeee;
             position: absolute;
             left: 73px;
-            top: 108px;
+            top: 112px;
         }
         .contact {
             box-shadow: 0 0 20px #080B0F;
             height: 540px;
             margin: 0 auto;
-            margin-top: 30vh;
             overflow: hidden;
+            margin-top: 90px;
             .contact_title {
                 font-size: 30px;
                 color: #fff;
@@ -1024,7 +1016,7 @@
         height: 484px;
         position: absolute;
         right: 0;
-        top: 232px;
+        top: 220px;
         animation:imgRotate 40s infinite linear  ;
         img{
             width: 100%;
@@ -1036,7 +1028,7 @@
         height: 180px;
         position: absolute;
         right: 152px;
-        top: 375px;
+        top: 355px;
         img{
             width: 100%;
         }
@@ -1180,7 +1172,7 @@
             height: 0;
         }
         to{
-            height: 90px;
+            height: 70px;
         }
     }
     @keyframes nav-line{

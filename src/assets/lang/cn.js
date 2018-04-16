@@ -8,12 +8,10 @@ export const message = {
             {
                 'txt': "主页",
                 "href": "#",
-                "is": true
             },
             {
                 'txt': "关于我们",
                 "href": "#/0/1",
-                "is": ""
             },
             // {
             //     'txt': "白皮书",
@@ -22,22 +20,18 @@ export const message = {
             {
                 'txt': "网络",
                 "href": "#/0/2",
-                "is": ""
             },
             {
                 'txt': "合作方",
                 "href": "#/0/3",
-                "is": ""
             },
             {
                 'txt': "路线图",
                 "href": "#/0/4",
-                "is": ""
             },
             {
                 'txt': "联系方式",
-                "href": "#/0/6",
-                "is": ""
+                "href": "#/0/5",
             }
         ]
     },

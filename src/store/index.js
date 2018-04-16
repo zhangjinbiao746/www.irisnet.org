@@ -10,6 +10,14 @@ export function createStore () {
     state: {
       musicList:[],
       lang:'EN'
+    },
+    mutations:{
+        changeItemIs(state,payload){
+            this.state.messages.head.txt[payload].is = true;
+            let obj = Object.assign({},this.state.messages);
+            this.state.messages=obj
+            // this.$set(this.state.messages.head.txt,payload,true)
+        }
     }
   })
 }
