@@ -7,6 +7,10 @@ import privacy from '@/components/privacy'
 import terms from '@/components/terms'
 import login from '@/components/login'
 import newIndex from "@/components/newIndex"
+import newApp from "@/components/newApp"
+import appPrivacy from '@/components/appPrivacy'
+import appTerms from '@/components/appTerms'
+import community from '@/components/community'
 Vue.use(Router)
 
 export function createRouter() {
@@ -38,13 +42,33 @@ export function createRouter() {
                 name: 'terms',
                 component: terms
             },
+            // {
+            //     path: '/app',
+            //     name: 'app',
+            //     component: app
+            // },
             {
-                path: '/app',
-                name: 'app',
-                component: app
-            }
+                path: '/newApp',
+                name: 'newApp',
+                component: newApp,
+            },
 
+            {
+                path: '/community',
+                name: 'community',
+                component: community
+            },
+            {
+                path: '/appPrivacy',
+                name: 'appPrivacy',
+                component: appPrivacy
+            },
 
+            {
+                path: '/appTerms',
+                name: 'appTerms',
+                component: appTerms
+            },
         ]
     })
 }

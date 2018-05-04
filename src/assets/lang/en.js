@@ -7,8 +7,7 @@ export const message = {
         'txt': [
             {
                 'txt': "Home",
-                "href": "/#",
-                "is": true
+                "href": "#",
             },
             {
                 'txt': "About",
@@ -33,8 +32,16 @@ export const message = {
 
             {
                 'txt': "Contact",
-                "href": "#/0/6",
-            }
+                "href": "#/0/5",
+            },
+        //     {
+        //         'txt': "privacy",
+        //         "href": "/appPrivacy",
+        //     },
+        //     {
+        //         'txt': "terms",
+        //         "href": "/appTerms",
+        //     }
         ]
     },
     "contact": {
@@ -201,7 +208,7 @@ export const message = {
             'Integration of business services offered by heterogeneous systems, including public & consortium chains as well as legacy systems',
             'Interoperability of those services across an internet of blockchains'
         ],
-        "btnTxt":"WHITEPAPER",
+        "btnTxt":"WHITE PAPER",
         "checkTxt":"CHECK NETWORK"
     },
     "network": {
@@ -560,5 +567,10 @@ export const message = {
     "qr":{
         "title":" Scan QR code",
         "txt":" to follow our Subscriptions"
+    },
+    "community":{
+        "title":"Community",
+        "coming":"Coming soon"
+
     }
 }

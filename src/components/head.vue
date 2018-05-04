@@ -2,7 +2,6 @@
     <div class="head">
         <div class="center">
             <a href="/"><img :src="UrlSrc+$store.state.messages.logo" style="width: 130px;"/></a>
-
             <div class="item_en" v-if="$store.state.lang=='EN'">
                 <div @mouseenter="downShow" @mouseleave="downHide" class="item">
                     <img :src="UrlSrc+down"/> English

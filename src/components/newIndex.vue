@@ -112,7 +112,7 @@
                                 <div class="img_container_bottom">
                                     <div>
                                         <div class="img_default_containter">
-                                            <img src="../../public/exchange.png">
+                                            <img src="../../public/chain.png">
                                         </div>
                                         <div class="rectangle_default_container">
                                             <img src="../../public/Rectangle_two.png">
@@ -128,7 +128,7 @@
                                     </div>
                                     <div>
                                         <div class="img_default_containter">
-                                            <img src="../../public/appliaction.png">
+                                            <img src="../../public/Rectangle-five.png">
                                         </div>
                                         <div class="rectangle_default_container">
                                             <img src="../../public/Rectangle_four.png">
@@ -202,7 +202,7 @@
                                     <a class="collaboration_list"
                                        style="margin-left: 60px "
                                        v-for="(item,$index) in $store.state.messages.collaboration.list"
-                                       v-if="$index!==0" :href="item.href" :target="item.text ? '_blank ': '' ">
+                                       v-if="$index!==0" :href="item.href ? item.href : 'javascript:void(0);' " :target="item.text ? '_blank ': '' ">
                                         <div class="collaboration_list_item">
                                             <div class="collaboration_img_container">
                                                 <img :src="UrlSrc+$store.state.messages.collaboration.list[$index].img"/>
@@ -406,14 +406,22 @@
                 if(item=='Wechat'){
                     this.wechatIs=true;
                 }
+            },
+            getPath(){
+                return this.$route.hash.split("/")[2]||0
             }
-
+        },
+        created(){
+            // this.$store.commit('changeItemIs',this.getPath())
         },
         mounted: function () {
+            console.log(this.$route)
+            this.$store.commit('changeItemIs',this.getPath())
             this.list.forEach((v) => {
                 v.is = false;
             })
             this.list[0].is = true;
+            // this.$store.commit('changeItemIs',this.$route.fullPath)
             if (process.env.VUE_ENV === 'client') {
                 Reveal.initialize({
                     progress: false,

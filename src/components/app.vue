@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img src="../assets/app/meangra.png" style="width: 100%"/>
+        <!--<img  src="../../public/app/irispattern-background.png" style="position:absolute;left:0; top:0;right:0;bottom:0;margin:auto;width:100%;background: #141426"/>-->
         <div class="app">
             <div class="head">
                 <img src="../assets/app/irislogo.png" class="imglogo">
@@ -27,6 +27,7 @@
             <div class="reveal ">
                 <div class="slides ">
                     <section>
+
                         <section data-transition="slide">
                             <div class="home">
                                 <div class="home-left">
@@ -37,13 +38,22 @@
                                 </div>
                                 <div class="home_img">
                                     <a href="#/0/1">
-                                        <img class="button" src="../assets/app/button.png"/>
+                                        <!--<img class="button" src="../assets/app/button.png"/>-->
+                                        <div>
+                                            <span class="button">WHAT IS IRISNET</span>
+                                        </div>
                                     </a>
                                     <br/>
-                                    <img class="community" src="../assets/app/community.png"/>
+                                    <div class="community-container">
+                                        <span class="community-img-container">
+                                            <img src="../../public/app/community-purple.png">
+                                        </span>
+                                        <span>Community</span>
+                                    </div>
                                 </div>
                             </div>
                         </section>
+
                         <section data-transition="slide">
                             <div class="about">
                                 <img class="irispattern" src="../assets/app/irispattern.png"/>
@@ -72,6 +82,7 @@
                                 </div>
                             </div>
                         </section>
+
                         <section data-transition="slide">
                             <div class="network">
                                 <img class="irispattern" src="../assets/app/irispattern.png"/>
@@ -81,6 +92,7 @@
                                 </div>
                             </div>
                         </section>
+
                         <section data-transition="slide">
                             <div class="network_txt">
                                 <img src="../assets/app/irispattern.png"/>
@@ -100,6 +112,7 @@
                                 </div>
                             </div>
                         </section>
+
                         <section data-transition="slide">
                             <div class="collaboration">
                                 <div class="collaboration_title">
@@ -150,6 +163,7 @@
                                 </a>
                             </div>
                         </section>
+
                         <section data-transition="slide">
                             <div class="roadmap">
                                 <div class="roadmap_title">
@@ -198,6 +212,7 @@
                                 </div>
                             </div>
                         </section>
+
                         <section data-transition="slide">
                             <div class="contact">
                                 <div class="contact_title">
@@ -218,6 +233,7 @@
                             </div>
                         </section>
                     </section>
+
                 </div>
             </div>
             <div class="wechat" v-show="wechatIs" @click="wechatIs=false">
@@ -601,12 +617,12 @@
         }
 
         .home {
+            margin-top: 50%;
             .home-left {
                 margin-left: 10%;
                 text-align: left;
                 .home_title {
                     font-size: 30px;
-                    margin-top: 34%;
                     font-weight: bold;
                 }
                 .home_txt {
@@ -620,12 +636,36 @@
                 text-align: center;
                 margin-top: 20%;
                 .button {
-                    width: 182px;
+                    display: inline-block;
+                    padding: 16px 30px;
+                    color: #fff;
+                    background: #724be3;
+                    border-radius: 24px;
+
                 }
-                .community {
-                    width: 110px;
-                    margin-top: 6%;
+                .community-container{
+                    width: 113px;
+                    margin: 0 auto;
+                    color: #fff;
+                    border-radius: 24px;
+                    border: 1px solid #fff;
+                    display: flex;
+                    justify-content: center;
+                    padding: 14px 45px 14px 33px;
+                    .community-img-container{
+                        width: 18px;
+                        height: 18px;
+                        img{
+                            width: 18px;
+                        }
+                    }
+                    span{
+                        padding-left: 15px;
+                        color: #724be3;
+                    }
                 }
+
+
             }
         }
 
@@ -734,6 +774,10 @@
         .present {
             top: 0 !important;
             height: 100%;
+            width: 100%;
+            /*background: #141626 url("../../public/app/irispattern-background.png") no-repeat fixed center;*/
+            /*background-size: 375px;*/
+
         }
     }
 

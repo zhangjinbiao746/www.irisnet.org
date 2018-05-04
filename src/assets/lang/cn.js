@@ -8,7 +8,6 @@ export const message = {
             {
                 'txt': "主页",
                 "href": "#",
-                "is": true
             },
             {
                 'txt': "关于我们",
@@ -32,7 +31,7 @@ export const message = {
             },
             {
                 'txt': "联系方式",
-                "href": "#/0/6",
+                "href": "#/0/5",
             }
         ]
     },
@@ -557,7 +556,11 @@ export const message = {
     "qr":{
         "title":" 请扫描二维码",
         "txt":" 关注公众号"
-    }
+    },
+    "community":{
+        "title":"社区",
+        "coming":"敬请期待"
 
+    }
 
 }
