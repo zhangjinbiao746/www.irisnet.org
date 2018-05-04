@@ -11,7 +11,7 @@ export const message = {
             },
             {
                 'txt': "关于我们",
-                "href": "#/0/1"
+                "href": "#/0/1",
             },
             // {
             //     'txt': "白皮书",
@@ -19,7 +19,7 @@ export const message = {
             // },
             {
                 'txt': "网络",
-                "href": "#/0/2"
+                "href": "#/0/2",
             },
             {
                 'txt': "合作方",

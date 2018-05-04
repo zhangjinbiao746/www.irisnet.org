@@ -7,11 +7,11 @@ export const message = {
         'txt': [
             {
                 'txt': "Home",
-                "href": "#",
+                "href": "/#",
             },
             {
                 'txt': "About",
-                "href": "#/0/1"
+                "href": "#/0/1",
             },
             // {
             //     'txt': "Whitepaper",
@@ -19,7 +19,7 @@ export const message = {
             // },
             {
                 'txt': "Network",
-                "href": "#/0/2"
+                "href": "#/0/2",
             },
             {
                 'txt': "Collaboration",

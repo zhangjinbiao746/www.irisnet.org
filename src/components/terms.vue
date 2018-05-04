@@ -49,7 +49,7 @@
     .index {
         min-height: 100%;
         position: relative;
-        background: #141426;
+        background: #0b0b18;
 
 
         .h110 {
@@ -94,7 +94,7 @@
                     padding: 30px 8px;
                     div {
                         font-size: 16px;
-                        color: #d4d5de;
+                        color: #fff;
                         line-height: 26px;
                         margin-top: 28px;
                         span {
