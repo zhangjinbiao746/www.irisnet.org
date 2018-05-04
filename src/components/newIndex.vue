@@ -202,44 +202,23 @@
                                     <a class="collaboration_list"
                                        style="margin-left: 60px "
                                        v-for="(item,$index) in $store.state.messages.collaboration.list"
-                                       v-if="$index!==0" :href="item.href ? item.href : 'javascript:void(0);' " :target="item.text ? '_blank ': '' ">
+                                       v-if="$index!==0" :href="item.href" :target="item.text ? '_blank ': '' ">
                                         <div class="collaboration_list_item">
                                             <div class="collaboration_img_container">
-                                                <img :src="UrlSrc+$store.state.messages.collaboration.list[0].img"/>
+                                                <img :src="UrlSrc+$store.state.messages.collaboration.list[$index].img"/>
                                             </div>
                                             <div>
-                                                <div class="collaboration_title">
-                                                    {{$store.state.messages.collaboration.list[0].title}}
-                                                    <div class="collaboration_title_line"></div>
+                                                <div :class="item.text ? 'collaboration_title ' : 'collaboration_title_none' ">
+                                                    {{$store.state.messages.collaboration.list[$index].title}}
+                                                    <div v-if="item.text" class="collaboration_title_line"></div>
                                                     <div class="collaboration_text">
-                                                        {{$store.state.messages.collaboration.list[0].text}}
+                                                        {{$store.state.messages.collaboration.list[$index].text}}
                                                     </div>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </a>
-                                    <div style="margin-left: 240px;">
-                                        <a class="collaboration_list"
-                                           style="margin-left: 60px "
-                                           v-for="(item,$index) in $store.state.messages.collaboration.list"
-                                           v-if="$index!==0" :href="item.href" :target="item.text ? '_blank ': '' ">
-                                            <div class="collaboration_list_item">
-                                                <div class="collaboration_img_container">
-                                                    <img :src="UrlSrc+$store.state.messages.collaboration.list[$index].img"/>
-                                                </div>
-                                                <div>
-                                                    <div :class="item.text ? 'collaboration_title ' : 'collaboration_title_none' ">
-                                                        {{$store.state.messages.collaboration.list[$index].title}}
-                                                        <div v-if="item.text" class="collaboration_title_line"></div>
-                                                        <div class="collaboration_text">
-                                                            {{$store.state.messages.collaboration.list[$index].text}}
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
                             </div>
