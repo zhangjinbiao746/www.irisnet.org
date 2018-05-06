@@ -125,7 +125,7 @@ export const message = {
             },
             {
                 "img": "collaboration/wancloud.png",
-                "title": "WanCoud",
+                "title": "WanCloud",
                 "text": "wancloud.io",
                 "href": "https://www.wancloud.io"
             },

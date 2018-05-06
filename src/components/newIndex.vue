@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div id="index" class="index">
+        <div id="index" class="index" style="background: #0b0b18">
             <!--头部-->
-            <div class="head">
-                <div class="center">
+            <div class="head" style="position: fixed;background: #0b0b18" >
+                <div class="center1" style="margin: 0 5%;">
                     <a href="#"><img :src="UrlSrc+$store.state.messages.logo" style="width: 130px;"/></a>
                     <div class="item_en" v-if="$store.state.lang=='EN'">
                         <div @mouseenter="downShow" @mouseleave="downHide" class="item">
@@ -31,27 +31,26 @@
                         </a>
                     </div>
                     <div style="float: right">
-                        <a :href="item.href" v-for="item in $store.state.messages.head.txt" class="item"
-                           :class="{'item_selected':item.is}">
+                        <router-link  v-for="(item,index) in $store.state.messages.head.txt" class="item"
+                           :class="{'item_selected':item.is}" :to="item.href" :key="index" @click.native="showIndex(index)">
                             {{item.txt}}
                             <div></div>
-                        </a>
+                        </router-link>
                     </div>
+
                 </div>
             </div>
             <!--内容区-->
-            <div class="reveal center">
-                <div class="slides center">
+            <div class="container-center">
+                <div id="#" class="what" >
+                    <div class="home" style="display: flex;">
+                        <div class="hone-text-container">
+                            <div class="home_warp">
+                                <div class="home_txt" v-show="true">
+                                    {{$store.state.messages.home.title}}
+                                </div>
 
-                    <section>
-                        <section data-transition="slide">
-                            <div class="center home">
-                                <div class="home_warp">
-                                    <div class="home_txt" v-show="true">
-                                        {{$store.state.messages.home.title}}
-                                    </div>
-
-                                    <div class="home_txt1" v-html="$store.state.messages.home.txt"></div>
+                                <div class="home_txt1" v-html="$store.state.messages.home.txt">
                                 </div>
                             </div>
                             <a href="#/0/1">
@@ -59,287 +58,284 @@
                                     <span class="home_what_txt">WHAT IS IRISNET</span>
                                 </div>
                             </a>
+                        </div>
+                        <div class="home-container" >
                             <div class="layer_img">
                                 <img src="../../public/layer1.png">
                             </div>
                             <div class="irispattern_img">
                                 <img src="../../public/irispattern.png" alt="">
                             </div>
-                        </section>
+                        </div>
+                    </div>
+                </div>
+                <div id="#/0/1" class="what">
+                    <div class="innovation-container">
 
-                        <section data-transition="slide">
-                            <div class="what">
-                                <div class="what_txt">
-                                    <div class="what_txt_title">
-                                        {{$store.state.messages.about.title}}
-                                        <div class="line" style="margin-top: 10px"></div>
-                                    </div>
-                                    <div class="what_txt_list_two">
-                                        {{$store.state.messages.about.txt[0]}}
-                                    </div>
-                                    <div class="what_txt_list_center">
-                                        {{$store.state.messages.about.txt[1]}}
-                                    </div>
-                                    <div class="what_txt_list_four">
-                                        {{$store.state.messages.about.txt[2]}}
-                                    </div>
-                                    <div class="about_tab">
-                                        <a href="https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md" target="_blank">
-                                            <div class="about_what">
-                                                <span class="about_what_txt">{{$store.state.messages.about.btnTxt}}</span>
-                                                <i class="guide_right">
-                                                    <img src="../../public/arrowhead.png">
-                                                </i>
-                                            </div>
-                                        </a>
-                                        <a href="#/0/2">
-                                            <div class="about_what_check">
-                                                <span class="about_what_check_txt">{{$store.state.messages.about.checkTxt}}</span>
-                                            </div>
-                                        </a>
-                                    </div>
+                    <div class="what_txt">
+                        <div class="what_txt_title">
+                            {{$store.state.messages.about.title}}
+                            <div class="line" style="margin-top: 10px"></div>
+                        </div>
+                        <div class="what_txt_list_two">
+                            {{$store.state.messages.about.txt[0]}}
+                        </div>
+                        <div class="what_txt_list_center">
+                            {{$store.state.messages.about.txt[1]}}
+                        </div>
+                        <div class="what_txt_list_four">
+                            {{$store.state.messages.about.txt[2]}}
+                        </div>
+                        <div class="about_tab">
+                            <a href="https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md" target="_blank">
+                                <div class="about_what">
+                                    <span class="about_what_txt">{{$store.state.messages.about.btnTxt}}</span>
+                                    <i class="guide_right">
+                                        <img src="../../public/arrowhead.png">
+                                    </i>
                                 </div>
-                                <div class="img_right_container">
-                                    <div class="img_containter_top">
-                                        <div class="img_default_containter">
-                                            <img src="../../public/chain.png">
-                                        </div>
-                                        <div class="rectangle_default_container">
-                                            <img src="../../public/Rectangle_one.png">
-                                        </div>
-                                    </div>
-                                    <div class="img_container_bottom">
-                                        <div>
-                                            <div class="img_default_containter">
-                                                <img src="../../public/exchange.png">
-                                            </div>
-                                            <div class="rectangle_default_container">
-                                                <img src="../../public/Rectangle_two.png">
-                                            </div>
-                                        </div>
-                                       <div>
-                                            <div class="img_default_containter">
-                                                <img src="../../public/cosmos.png">
-                                            </div>
-                                            <div class="rectangle_default_container">
-                                                <img src="../../public/Rectangle_three.png">
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="img_default_containter">
-                                                <img src="../../public/Rectangle-five.png">
-                                            </div>
-                                            <div class="rectangle_default_container">
-                                                <img src="../../public/Rectangle_four.png">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
+                            </a>
+                            <a href="#/0/2">
+                                <div class="about_what_check">
+                                    <span class="about_what_check_txt">{{$store.state.messages.about.checkTxt}}</span>
                                 </div>
-                        </section>
-
-                        <section data-transition="slide">
-                            <div class="what">
-                                <div class="what_txt" style="width: 582px;margin-top: 90px">
-                                    <div class="what_txt_title" style="font-size: 30px;">
-                                        {{$store.state.messages.network.title}}
-                                        <div class="line" style="margin-top: 10px"></div>
-                                    </div>
-                                    <div class="what_txt_list_two">
-                                        {{$store.state.messages.network.txt[0]}}
-                                    </div>
-                                    <div class="what_txt_list_center">
-                                        {{$store.state.messages.network.txt[1]}}
-                                    </div>
-                                    <div class="what_txt_list_four">
-                                        {{$store.state.messages.network.txt[2]}}
-                                    </div>
-                                    <a href="#/0/4" style="margin-top: 45px;display: inline-block">
-                                        <div class="collaboration_btn">
-                                        <span>
-                                            {{$store.state.messages.collaboration.btnTxt}}
-                                        </span>
-                                        </div>
-                                    </a>
-                                </div>
-                                    <img :src="UrlSrc+$store.state.messages.network.src" style="margin-top: 80px;margin-left: 30px"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img_right_container">
+                        <div class="img_containter_top">
+                            <div class="img_default_containter">
+                                <img src="../../public/chain.png">
                             </div>
-                        </section>
-
-                        <section data-transition="slide">
-                            <div class="what">
-                                <div class="collaboration">
-                                    {{$store.state.messages.collaboration.title}}
-                                    <div class="line"></div>
+                            <div class="rectangle_default_container">
+                                <img src="../../public/Rectangle_one.png">
+                            </div>
+                        </div>
+                        <div class="img_container_bottom">
+                            <div>
+                                <div class="img_default_containter">
+                                    <img src="../../public/exchange.png">
                                 </div>
-                                <div class="collaboration_title_txt">
-                                    <p>
-                                        {{$store.state.messages.collaboration.txt[0]}}
-                                    </p>
-                                    <p>
-                                        {{$store.state.messages.collaboration.txt[1]}}
-                                    </p>
-                                </div>
-                                <div class="collaboration_warp">
-                                    <a class="collaboration_list" style="margin-left: 40px; margin-right: 10px;"
-                                       :href="$store.state.messages.collaboration.list[0].href" target="_blank">
-                                    <div class="collaboration_list_item">
-                                        <div class="collaboration_img_container">
-                                            <img :src="UrlSrc+$store.state.messages.collaboration.list[0].img"/>
-                                        </div>
-                                        <div>
-                                            <div class="collaboration_title">
-                                                {{$store.state.messages.collaboration.list[0].title}}
-                                                <div class="collaboration_title_line"></div>
-                                                <div class="collaboration_text">
-                                                    {{$store.state.messages.collaboration.list[0].text}}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div style="margin-left: 240px;">
-                                    <a class="collaboration_list"
-                                       style="margin-left: 60px "
-                                       v-for="(item,$index) in $store.state.messages.collaboration.list"
-                                       v-if="$index!==0" :href="item.href" :target="item.text ? '_blank ': '' ">
-                                        <div class="collaboration_list_item">
-                                            <div class="collaboration_img_container">
-                                                <img :src="UrlSrc+$store.state.messages.collaboration.list[$index].img"/>
-                                            </div>
-                                            <div>
-                                                <div :class="item.text ? 'collaboration_title ' : 'collaboration_title_none' ">
-                                                    {{$store.state.messages.collaboration.list[$index].title}}
-                                                    <div v-if="item.text" class="collaboration_title_line"></div>
-                                                    <div class="collaboration_text">
-                                                        {{$store.state.messages.collaboration.list[$index].text}}
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </a>
+                                <div class="rectangle_default_container">
+                                    <img src="../../public/Rectangle_two.png">
                                 </div>
                             </div>
+                           <div>
+                                <div class="img_default_containter">
+                                    <img src="../../public/cosmos.png">
+                                </div>
+                                <div class="rectangle_default_container">
+                                    <img src="../../public/Rectangle_three.png">
+                                </div>
                             </div>
-                        </section>
-
-                        <section data-transition="slide">
-                            <div class="what">
-                                <div class="collaboration" style="margin-top: 90px;" >
-                                    {{$store.state.messages.roadmap.title}}
-                                    <div class="line"></div>
+                            <div>
+                                <div class="img_default_containter">
+                                    <img src="../../public/Rectangle-five.png">
                                 </div>
-
-                                <div style="position: relative; margin-top: 170px">
-                                <img src="../../public/wave.png" style="width: 1200px;margin: 0 auto"/>
-
-                                <div class="roadmap_warp" style="top: 45px; margin-left: 160px;" @mouseover="textShow(0)"
-                                     @mouseout="textHide(0)">
-                                    <div class="roadmap_list_gif">
-                                        <div class="div1">
-                                            <img  src="../../public/Ellipse.png">
-                                        </div>
-                                    </div>
-                                    <transition name="animation">
-                                        <div class="roadmap_text animation" v-show="list[0].is" >
-                                            {{$store.state.messages.roadmap.list[0].txt}}
-                                        </div>
-                                    </transition>
-
-                                    <div class="top-line" v-show="list[0].is"></div>
-
-                                    <div class="roadmap-text">
-                                        <p>PANGU</p>
-                                        <p>JAN 2018-JUN 2018</p>
-                                    </div>
-                                </div>
-
-                                <div class="roadmap_warp" style="top: -10px;margin-left: 402px; margin-top: -72px;"
-                                     @mouseover="textShow(1)" @mouseout="textHide(1)">
-                                    <div class="roadmap-text" style="padding-bottom: 14px">
-                                        <p>NUWA</p>
-                                        <p>JUL 2018-NOV2018</p>
-                                    </div>
-                                    <div class="roadmap_list_gif">
-                                        <div class="div1">
-                                            <img  src="../../public/Ellipse.png">
-                                        </div>
-                                        <div class="img imgdiv" v-show="!list[1].is"></div>
-                                    </div>
-                                    <transition name="animation">
-                                        <div class="roadmap_text" v-show="list[1].is" style="top:190px; width: 290px">
-                                            {{$store.state.messages.roadmap.list[1].txt}}
-                                        </div>
-                                    </transition>
-                                    <div class="bottom-line" v-show="list[1].is"></div>
-                                </div>
-
-                                <div class="roadmap_warp" style="top: 45px; margin-left: 650px; "
-                                     @mouseover="textShow(2)" @mouseout="textHide(2)">
-                                    <div class="roadmap_list_gif">
-                                        <div class="div1">
-                                            <img  src="../../public/Ellipse.png">
-                                        </div>
-                                        <div class="img imgdiv" v-show="!list[2].is"></div>
-                                    </div>
-                                    <transition name="animation">
-                                        <div class="roadmap_text" v-show="list[2].is">
-                                            {{$store.state.messages.roadmap.list[2].txt}}
-                                        </div>
-                                    </transition>
-                                    <div class="top-line" v-show="list[2].is"></div>
-                                    <div class="roadmap-text">
-                                        <p>KUAFU</p>
-                                        <p>DEC 2018-MAY 2018</p>
-                                    </div>
-                                </div>
-
-                                <div class="roadmap_warp" style="top: -10px;margin-left: 906px; margin-top: -72px;"
-                                     @mouseover="textShow(3)" @mouseout="textHide(3)">
-                                    <div class="roadmap-text" style="padding-bottom: 14px">
-                                        <p>HOUYI</p>
-                                        <p>NEYOND JUN 2019</p>
-                                    </div>
-                                    <div class="roadmap_list_gif">
-                                        <div class="div1">
-                                            <img  src="../../public/Ellipse.png">
-                                        </div>
-                                        <div class="img imgdiv" v-show="!list[3].is"></div>
-                                    </div>
-                                    <transition name="animation">
-                                        <div class="roadmap_text" v-show="list[3].is" style="top: 210px;left: -40px; width: 290px">
-                                            {{$store.state.messages.roadmap.list[3].txt}}
-                                        </div>
-                                    </transition>
-                                    <div class="bottom-line" v-show="list[3].is"></div>
+                                <div class="rectangle_default_container">
+                                    <img src="../../public/Rectangle_four.png">
                                 </div>
                             </div>
                         </div>
-                        </section>
+                        </div>
+                    </div>
+                </div>
 
-                        <section data-transition="slide">
-                            <div class="what">
-                                <div class="contact">
-                                    <div class="contact_title">
-                                        {{$store.state.messages.contact.title}}
-                                        <div class="line"></div>
-                                    </div>
-                                    <div class="contact_warp">
-                                        <a :href="item.href" target="_blank" @click="blank(item.txt)"
-                                           v-for="item in $store.state.messages.contact.img">
-                                            <div class="contact_list">
-                                                <img  class="src" :src="UrlSrc+item.src"/>
-                                                <img class="src_selected"  :src="UrlSrc+item.src_selected" />
-                                                <div>{{item.txt}} {{item.is}}</div>
-                                            </div>
-                                        </a>
+                <div id="#/0/2" class="what">
+                    <div class="network-container">
+                        <div class="what_txt" >
+                            <div class="what_txt_title" style="font-size: 30px;">
+                                {{$store.state.messages.network.title}}
+                                <div class="line" style="margin-top: 10px"></div>
+                            </div>
+                            <div class="what_txt_list_two">
+                                {{$store.state.messages.network.txt[0]}}
+                            </div>
+                            <div class="what_txt_list_center">
+                                {{$store.state.messages.network.txt[1]}}
+                            </div>
+                            <div class="what_txt_list_four">
+                                {{$store.state.messages.network.txt[2]}}
+                            </div>
+                            <a href="#/0/3" style="margin-top: 45px;display: inline-block">
+                                <div class="collaboration_btn">
+                                    <span>
+                                        {{$store.state.messages.collaboration.btnTxt}}
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div style="margin-left: 80px; margin-top: 50px;">
+                            <img :src="UrlSrc+$store.state.messages.network.src" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="#/0/3" class="what">
+                    <div class="collaboration">
+                        {{$store.state.messages.collaboration.title}}
+                        <div class="line"></div>
+                    </div>
+                    <div class="collaboration_title_txt">
+                        <p>
+                            {{$store.state.messages.collaboration.txt[0]}}
+                        </p>
+                        <p>
+                            {{$store.state.messages.collaboration.txt[1]}}
+                        </p>
+                    </div>
+                    <div class="collaboration_warp">
+                        <a class="collaboration_list" style="margin-left: 40px; margin-right: 10px;"
+                           :href="$store.state.messages.collaboration.list[0].href" target="_blank">
+                        <div class="collaboration_list_item">
+                            <div class="collaboration_img_container">
+                                <img :src="UrlSrc+$store.state.messages.collaboration.list[0].img"/>
+                            </div>
+                            <div>
+                                <div class="collaboration_title">
+                                    {{$store.state.messages.collaboration.list[0].title}}
+                                    <div class="collaboration_title_line"></div>
+                                    <div class="collaboration_text">
+                                        {{$store.state.messages.collaboration.list[0].text}}
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                    </section>
+                        </div>
+                    </a>
+                    <div style="margin-left: 240px;">
+                        <a class="collaboration_list"
+                           style="margin-left: 60px "
+                           v-for="(item,$index) in $store.state.messages.collaboration.list"
+                           v-if="$index!==0" :href="item.href" :target="item.text ? '_blank ': '' ">
+                            <div class="collaboration_list_item">
+                                <div class="collaboration_img_container">
+                                    <img :src="UrlSrc+$store.state.messages.collaboration.list[$index].img"/>
+                                </div>
+                                <div>
+                                    <div :class="item.text ? 'collaboration_title ' : 'collaboration_title_none' ">
+                                        {{$store.state.messages.collaboration.list[$index].title}}
+                                        <div v-if="item.text" class="collaboration_title_line"></div>
+                                        <div class="collaboration_text">
+                                            {{$store.state.messages.collaboration.list[$index].text}}
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                </div>
+
+                <div id="#/0/4" class="what">
+                    <div class="collaboration">
+                        {{$store.state.messages.roadmap.title}}
+                        <div class="line"></div>
+                    </div>
+
+                    <div style="position: relative;margin-top: 250px">
+                            <img src="../../public/wave.png" />
+                        <div class="roadmap_warp" style="top: 45px; margin-left: 160px;" @mouseover="textShow(0)"
+                         @mouseout="textHide(0)">
+                        <div class="roadmap_list_gif">
+                            <div class="div1">
+                                <img  src="../../public/Ellipse.png">
+                            </div>
+                        </div>
+                        <transition name="animation">
+                            <div class="roadmap_text animation" v-show="list[0].is" >
+                                {{$store.state.messages.roadmap.list[0].txt}}
+                            </div>
+                        </transition>
+
+                        <div class="top-line" v-show="list[0].is"></div>
+
+                        <div class="roadmap-text">
+                            <p>PANGU</p>
+                            <p>JAN 2018-JUN 2018</p>
+                        </div>
+                    </div>
+
+                    <div class="roadmap_warp" style="top: -10px;margin-left: 402px; margin-top: -72px;"
+                         @mouseover="textShow(1)" @mouseout="textHide(1)">
+                        <div class="roadmap-text" style="padding-bottom: 14px">
+                            <p>NUWA</p>
+                            <p>JUL 2018-NOV 2018</p>
+                        </div>
+                        <div class="roadmap_list_gif">
+                            <div class="div1">
+                                <img  src="../../public/Ellipse.png">
+                            </div>
+                            <div class="img imgdiv" v-show="!list[1].is"></div>
+                        </div>
+                        <transition name="animation">
+                            <div class="roadmap_text" v-show="list[1].is" style="top:190px; width: 290px">
+                                {{$store.state.messages.roadmap.list[1].txt}}
+                            </div>
+                        </transition>
+                        <div class="bottom-line" v-show="list[1].is"></div>
+                    </div>
+
+                    <div class="roadmap_warp" style="top: 45px; margin-left: 650px; "
+                         @mouseover="textShow(2)" @mouseout="textHide(2)">
+                        <div class="roadmap_list_gif">
+                            <div class="div1">
+                                <img  src="../../public/Ellipse.png">
+                            </div>
+                            <div class="img imgdiv" v-show="!list[2].is"></div>
+                        </div>
+                        <transition name="animation">
+                            <div class="roadmap_text" v-show="list[2].is">
+                                {{$store.state.messages.roadmap.list[2].txt}}
+                            </div>
+                        </transition>
+                        <div class="top-line" v-show="list[2].is"></div>
+                        <div class="roadmap-text">
+                            <p>KUAFU</p>
+                            <p>DEC 2018-MAY 2018</p>
+                        </div>
+                    </div>
+
+                    <div class="roadmap_warp" style="top: -10px;margin-left: 906px; margin-top: -72px;"
+                         @mouseover="textShow(3)" @mouseout="textHide(3)">
+                        <div class="roadmap-text" style="padding-bottom: 14px">
+                            <p>HOUYI</p>
+                            <p>NEYOND JUN 2019</p>
+                        </div>
+                        <div class="roadmap_list_gif">
+                            <div class="div1">
+                                <img  src="../../public/Ellipse.png">
+                            </div>
+                            <div class="img imgdiv" v-show="!list[3].is"></div>
+                        </div>
+                        <transition name="animation">
+                            <div class="roadmap_text" v-show="list[3].is" style="top: 210px;left: -40px; width: 290px">
+                                {{$store.state.messages.roadmap.list[3].txt}}
+                            </div>
+                        </transition>
+                        <div class="bottom-line" v-show="list[3].is"></div>
+                    </div>
+                </div>
+            </div>
+
+                <div id="#/0/5" class="what">
+                    <div class="contact">
+                        <div class="contact_title">
+                            {{$store.state.messages.contact.title}}
+                            <div class="line"></div>
+                        </div>
+                        <div class="contact_warp">
+                            <a :href="item.href" target="_blank" @click="blank(item.txt)"
+                               v-for="item in $store.state.messages.contact.img">
+                                <div class="contact_list">
+                                    <img  class="src" :src="UrlSrc+item.src"/>
+                                    <img class="src_selected"  :src="UrlSrc+item.src_selected" />
+                                    <div>{{item.txt}} {{item.is}}</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -386,6 +382,19 @@
             }
         },
         methods: {
+            roll() {
+                if (document.getElementById(this.$route.hash)) {
+                    //window.scrollTo(0, document.getElementById(this.$route.hash).offsetTop-80)
+                    this.scroll(document.getElementById(this.$route.hash).offsetTop + 100)
+                    console.log(document.getElementById(this.$route.hash).offsetTop,999999999);
+                }
+            },
+            scroll(top) {
+                $('body,html').animate({
+                        scrollTop: top
+                    }, 500
+                );
+            },
             downShow() {
                 this.down = '../public/down.png';
             },
@@ -414,13 +423,22 @@
             },
             getPath(){
                 return this.$route.hash.split("/")[2]||0
+            },
+            showIndex(index){
+                let model = [];
+                this.$store.state.messages.head.txt.forEach((v) => {
+                    v.is = false;
+                    model.push(v);
+                });
+                model[index].is = true;
+                history.pushState({}, '', model[index].href);
+                this.$store.state.messages.head.txt = model;
             }
         },
         created(){
             // this.$store.commit('changeItemIs',this.getPath())
         },
         mounted: function () {
-            console.log(this.$route)
             this.$store.commit('changeItemIs',this.getPath())
             this.list.forEach((v) => {
                 v.is = false;
@@ -433,25 +451,30 @@
                     mouseWheel: true,
                     controls:false
                 });
-                let _this = this;
+                // let _this = this;
                 this.list[0].is = true;
-                Reveal.addEventListener('slidechanged', function (event) {
-                    let index = event.indexv;
-                    let model = [];
-                    _this.$store.state.messages.head.txt.forEach((v) => {
-                        v.is = false;
-                        model.push(v);
-                    });
-                    //去掉白皮书数组长度发生改变，跳转出现问题故注释掉。
-                    // if(index>=2){
-                    //     index++;
-                    // }
-                    model[index].is = true;
-                    history.pushState({}, '', model[index].href);
-                    _this.$store.state.messages.head.txt = model;
-                });
+                // Reveal.addEventListener('slidechanged', function (event) {
+                //     let index = event.indexv;
+                //     let model = [];
+                //     _this.$store.state.messages.head.txt.forEach((v) => {
+                //         v.is = false;
+                //         model.push(v);
+                //     });
+                //     //去掉白皮书数组长度发生改变，跳转出现问题故注释掉。
+                //     // if(index>=2){
+                //     //     index++;
+                //     // }
+                //     model[index].is = true;
+                //     history.pushState({}, '', model[index].href);
+                //     _this.$store.state.messages.head.txt = model;
+                // });
             }
-        }
+            this.roll();
+            this.is = true;
+        },
+        watch: {
+            '$route': 'roll'
+        },
     }
 </script>
 
@@ -527,9 +550,6 @@
                         display: block;
                     }
                 }
-                .item {
-                    margin-right: 0;
-                }
                 img {
                     padding-top: 6px;
                     float: left;
@@ -597,7 +617,7 @@
             .home_warp {
                 overflow: hidden;
                 .home_txt {
-                    margin-top: 30vh;
+                    margin-top: 40px;
                     font-size: 52px;
                     width: 672px;
                     font-weight: bold;
@@ -665,11 +685,9 @@
             }
         }
         .what {
-            overflow: hidden;
-            height: 540px;
-            border-radius: 12px;
-            margin-top: 20vh;
-            box-shadow: 0 0 20px #080B0F;
+            background: #0b0b18;
+            height: 600px;
+            padding-top: 200px;
             .what_img {
                 /*float: left;*/
                 /*line-height: 583px;*/
@@ -688,8 +706,7 @@
             }
 
             .what_txt {
-                float: left;
-                margin-top: 114px;
+                /*margin-top: 114px;*/
                 color: #fff;
                 width: 548px;
                 text-align: left;
@@ -712,7 +729,6 @@
         .collaboration {
             font-size: 30px;
             font-weight: bold;
-            margin-top: 90px;
             color: #fff;
             text-align: left;
             animation: txtanim 1s linear;
@@ -915,7 +931,6 @@
             height: 540px;
             margin: 0 auto;
             overflow: hidden;
-            margin-top: 90px;
             .contact_title {
                 font-size: 30px;
                 color: #fff;
@@ -971,9 +986,7 @@
     }
 
     @media (max-height: 800px) {
-        .what {
-            margin-top: 12vh !important;
-        }
+
     }
 
     .slides {
@@ -1005,6 +1018,7 @@
         border-radius: 24px;
         margin-top: 40px;
         opacity: 0;
+        text-align: center;
         animation: opacityShow 0.5s  1.1s;
         animation-fill-mode: forwards;
 
@@ -1015,23 +1029,23 @@
         line-height: 48px;
     }
     .layer_img{
-        width: 484px;
-        height: 484px;
+        width: 464px;
+        height: 464px;
         position: absolute;
-        right: 0;
-        top: 220px;
-        animation:imgRotate 40s infinite linear  ;
+        right: 5%;
+        top: 180px;
         img{
             width: 100%;
             height:100%;
+            animation: imgRotate 40s  infinite  linear  ;
         }
     }
     .irispattern_img{
         width: 180px;
         height: 180px;
-        position: absolute;
-        right: 152px;
-        top: 355px;
+        position: relative;
+        right: 83%;
+        top: 330px;
         img{
             width: 100%;
         }
@@ -1096,9 +1110,7 @@
         animation: txtanim 1s linear;
     }
     .img_right_container{
-        position: absolute;
-        right: 0;
-        top: 32vh;
+        margin-top: 5%;
     }
     .img_default_containter{
         animation: imgTranslate 2s infinite linear alternate;
@@ -1117,6 +1129,7 @@
     .img_container_bottom{
         display: flex;
         margin-top: 30px;
+        text-align: center;
         div{
             padding: 0 10px;
         }
@@ -1153,6 +1166,7 @@
             margin-top: 14px;
             font-size: 18px;
             color: #61cbff;
+            text-align: center;
         }
         p:nth-child(2){
             margin-top: 10px;
@@ -1187,11 +1201,20 @@
         }
     }
     @keyframes imgRotate {
-        from{
-            transform: rotate(0deg)
+       0%{
+            transform: rotate(0deg);
+           -webkit-transform:rotate(0deg);  /*兼容-webkit-引擎浏览器*/
+           -moz-transform:rotate(0deg);
+       }
+        50%{
+            transform:rotate(180deg);
+            -webkit-transform:rotate(180deg);  /*兼容-webkit-引擎浏览器*/
+            -moz-transform:rotate(180deg);
         }
-        to{
-            transform:rotate(360deg)
+        100%{
+            transform:rotate(360deg);
+            -webkit-transform:rotate(360deg);  /*兼容-webkit-引擎浏览器*/
+            -moz-transform:rotate(360deg);
         }
     }
     @keyframes imgTranslate {
@@ -1227,5 +1250,24 @@
         to{
             opacity: 1;
         }
+    }
+    .innovation-container{
+        display: flex;
+    }
+    .container-center{
+        padding: 0 5%;
+        background: #0b0b18;
+        overflow: hidden !important;
+    }
+    .network-container{
+        display: flex;
+    }
+    .img_containter_top{
+        text-align: center;
+    }
+    .home-container{
+        position: absolute;
+        top: -60%;
+        right: 0
     }
 </style>

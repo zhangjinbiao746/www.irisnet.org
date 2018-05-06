@@ -24,12 +24,9 @@
                     </a>
                 </section>
             </div>
-            <div class="reveal ">
-                <div class="slides ">
-                    <section>
-
-                        <section data-transition="slide" style="background: #0b0b18 url('../../public/app/irispattern-background.png') no-repeat fixed center;background-size: 375px;">
-                            <div class="home">
+                <div style="width: 100%;background: #0b0b18">
+                    <div style="width: 100%;height: auto">
+                            <div id="#" class="home" style="background: #0b0b18 url('../../public/app/irispattern-background.png') no-repeat  center;background-size: 375px;">
                                 <div class="home-left">
                                     <div class="home_title">
                                         {{$store.state.messages.home.title}}
@@ -50,24 +47,9 @@
                                         <span>Community</span>
                                     </div>
                                 </div>
-                                <div class="protocol-container">
-                                    <div class="protocol-distance" @click="goToAppPrivacy">
-                                        <span>Privacy</span>
-                                        <div class="bottom-line"></div>
-                                    </div>
-                                    <div style="padding: 10px 0">
-                                        &
-                                    </div>
-                                    <div class="protocol-distance" @click="goToAppTerms">
-                                        <span>Terms</span>
-                                        <div class="bottom-line"></div>
-                                    </div>
-                                </div>
                             </div>
-                        </section>
 
-                        <section data-transition="slide" style="background: #0b0b18">
-                            <div class="about">
+                            <div id="#/0/1" class="about">
                                 <div class="about_warp">
                                     <div class="about_txt">
                                         <div class="title-txt">
@@ -130,12 +112,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
 
-                        <section data-transition="slide"style="background:#0b0b18 ">
-                            <div class="network">
+                            <div id="#/0/2"   class="network">
                                 <div class="network_title">
-                                    <div class="what_txt_title" style="font-size: 30px;margin-bottom: 10px;">
+                                    <div class="what_txt_title" style="font-size: 30px;margin-bottom: 10px;color:#fff">
                                         {{$store.state.messages.network.title}}
                                         <div class="nav-line"></div>
                                     </div>
@@ -151,11 +131,8 @@
                                     <img src="../assets/app/diagram.png"/>
                                 </div>
                             </div>
-                        </section>
 
-
-                        <section data-transition="slide">
-                            <div class="collaboration">
+                            <div id="#/0/3"  class="collaboration">
                                 <div class="collaboration_title" >
                                     {{$store.state.messages.collaboration.title}}
                                     <div class="nav-line"></div>
@@ -188,7 +165,7 @@
                                 <div class="collaboration_div_txt">
                                     {{$store.state.messages.collaboration.txt[1]}}
                                 </div>
-                                <div style=" margin-left: 20px;display: flex; flex-wrap: wrap">
+                                <div style=" margin-left: 5%;display: flex; flex-wrap: wrap">
                                     <a class="collaboration_href"
                                        v-for="(item,$index) in $store.state.messages.collaboration.list" v-if="$index!==0"
                                        :href="item.href ? item.href : 'javascript:void(0);'" :target="item.text ? '_blank ': '' " >
@@ -211,10 +188,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </section>
 
-                        <section data-transition="slide">
-                            <div class="roadmap">
+                            <div id="#/0/4"  class="roadmap">
                                 <div class="roadmap_title">
                                     {{$store.state.messages.roadmap.title}}
                                     <div class="nav-line"></div>
@@ -292,9 +267,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                        <section data-transition="slide" style="background: #0b0b18">
-                            <div class="contact">
+
+                            <div id="#/0/5"  class="contact">
                                 <div class="contact_title">
                                     {{$store.state.messages.contact.title}}
                                     <div class="nav-line"></div>
@@ -311,15 +285,25 @@
                                         </div>
                                     </a>
                                 </div>
+                                <div class="bottom-container">
+                                    <div class="protocol-container">
+                                        <div class="protocol-distance" @click="goToAppPrivacy">
+                                            <span>Privacy</span>
+                                            <div class="bottom-line"></div>
+                                        </div>
+                                        <div style="padding: 10px 0">
+                                            &
+                                        </div>
+                                        <div class="protocol-distance" @click="goToAppTerms">
+                                            <span>Terms</span>
+                                            <div class="bottom-line"></div>
+                                        </div>
+                                    </div>
+                                    <span>Copyright © 2018 IRIS Foundation Ltd. All rights reserved.</span>
+                                </div>
                             </div>
-
-                            <div class="bottom">
-                                Copyright © 2018 IRIS Foundation Ltd. All rights reserved.
-                            </div>
-                        </section>
-                    </section>
+                    </div>
                 </div>
-            </div>
             <div class="wechat" v-show="wechatIs" @click="wechatIs=false">
                 <div class="wechat_warp">
                     <img src="../assets/wechat.png" class="wechat_img"/>
@@ -384,7 +368,19 @@
             },
             gotoCommunity(){
                 this.$router.push({path:'/community'})
-            }
+            },
+            roll() {
+                this.is = false;
+                if (document.getElementById(this.$route.hash)) {
+                    this.scroll(document.getElementById(this.$route.hash).offsetTop - 100)
+                }
+            },
+            scroll(top) {
+                $('body,html').animate({
+                        scrollTop: top
+                    }, 500
+                );
+            },
         },
 
         mounted: function () {
@@ -399,30 +395,36 @@
                     mouseWheel: true,
                     controls:false
                 });
-                let _this = this;
-                Reveal.addEventListener('slidechanged', function (event) {
-                    let index = event.indexv;
-
-                    let model = [];
-                    _this.$store.state.messages.head.txt.forEach((v) => {
-                        v.is = false;
-                        model.push(v);
-                    })
-                    if(index>=2){
-                        index++;
-                    }
-                    _this.$store.state.messages.head.txt = model;
-                });
+                // let _this = this;
+                // Reveal.addEventListener('slidechanged', function (event) {
+                //     let index = event.indexv;
+                //
+                //     let model = [];
+                //     _this.$store.state.messages.head.txt.forEach((v) => {
+                //         v.is = false;
+                //         model.push(v);
+                //     })
+                //     if(index>=2){
+                //         index++;
+                //     }
+                //     _this.$store.state.messages.head.txt = model;
+                // });
+                this.roll();
+                if ('addEventListener' in document) {
+                    document.addEventListener('DOMContentLoaded', function () {
+                        FastClick.attach(document.body);
+                    }, false);
+                }
             }
         },
-
+        watch: {
+            '$route': 'roll'
+        }
     }
 </script>
 
 <style scoped lang='less'>
     .app {
-        position: fixed;
-        min-height: 100%;
         top: 0;
         width: 100%;
         .menu {
@@ -442,7 +444,7 @@
         }
         .contact {
             width: 100%;
-            margin: 0 20px;
+            height: 600px;
             border-radius: 10px;
             position: relative;
             .contact_title {
@@ -450,15 +452,18 @@
                 padding-top: 24px;
                 font-weight: bold;
                 font-size: 30px;
+                color: #fff;
+                padding-left: 5%;
             }
             .contact_div {
                 padding-top: 54px;
+                padding-left: 5%;
                 padding-bottom: 24px;
                 overflow: hidden;
                 .contact_radius {
                     margin-top: 4%;
                     float: left;
-                    width: 42%;
+                    width: 45%;
                     height: 60px;
                     background: #1d1f37;
                     margin-right: 5%;
@@ -466,7 +471,7 @@
                     img {
                         margin-top: 12px;
                         width: 36px;
-                        margin-left: 10%;
+                        margin-left: 8%;
                         float: left;
                     }
                     div {
@@ -536,12 +541,15 @@
             }
         }
         .collaboration {
+            min-height: 600px;
+            height: auto;
             .collaboration_title {
                 margin-top: 20px;
                 text-align: left;
                 /*font-weight: bold;*/
                 font-size: 30px;
                 margin-left: 5%;
+                color: #fff;
             }
             .collaboration_href {
                 overflow: hidden;
@@ -576,11 +584,9 @@
         }
 
         .network {
-            background: #141426;
+            height: 600px;
             margin: 0 auto;
             border-radius: 10px;
-            box-shadow: 0 0 20px #080B0F;
-            margin-top: 3vh;
             position: relative;
             .irispattern {
                 width: 100%;
@@ -649,12 +655,11 @@
         }
 
         .about {
-            min-height: 60vh;
+            height: 600px;
             /*background: #141426;*/
             margin: 0 auto;
             border-radius: 10px;
             /*box-shadow: 0 0 20px #080B0F;*/
-            margin-top:3vh;
             position: relative;
             .irispattern {
                 width: 100%;
@@ -677,7 +682,7 @@
                     color: #bfbfbf;
                 }
                 .about_txt {
-                    margin: 0 20px;
+                    margin: 0 5%;
                     text-align: left;
                     padding-bottom: 20px;
                     .about_div {
@@ -692,13 +697,16 @@
         }
 
         .home {
-            margin-top: 50%;
+            padding-top: 10%;
+            padding:10% 5% 10%;
+            height: 667px;
             .home-left {
-                margin-left: 10%;
                 text-align: left;
+                margin-top: 50%;
                 .home_title {
                     font-size: 30px;
                     font-weight: bold;
+                    color: #fff;
                 }
                 .home_txt {
                     font-size: 12px;
@@ -746,14 +754,14 @@
         }
 
         .roadmap {
-            height: 100%;
+            height: 600px;
             margin: 0 5%;
             .roadmap_title {
                 margin-top: 20px;
                 text-align: left;
                 font-weight: bold;
                 font-size: 30px;
-
+                color: #fff;
             }
             .roadmap_warp {
                 text-align: center;
@@ -816,13 +824,15 @@
                     .roadmap_txt {
                         position: absolute;
                         top: 7px;
-                        left: 50px;
+                        left: 60px;
                         border-radius: 6px;
                         line-height: 14px;
                         font-size: 12px;
-                        width: 180px;
+                        min-width: 155px;
+                        width: auto;
                         text-align: left;
                         opacity: 0;
+                        color: #fff;
                     }
                 }
             }
@@ -832,6 +842,8 @@
             background: #141426;
             height: 60px;
             width: 100%;
+            position: fixed;
+            z-index: 100;
             .imglogo {
                 width: 112px;
                 margin-top: 12px;
@@ -851,10 +863,10 @@
             }
         }
 
-        .reveal {
-            width: 100% !important;
-            position: fixed !important;
-        }
+        /*.reveal {*/
+            /*width: 100% !important;*/
+            /*position: fixed !important;*/
+        /*}*/
 
     }
 
@@ -885,6 +897,7 @@
     }
     .title-txt{
         font-size: 30px;
+        color: #fff;
     }
     .img_right_container{
         margin-top: 40px;
@@ -1198,23 +1211,20 @@
         height: 3px;
         background: #724be3;
     }
-    .bottom{
-        position: fixed;
-        bottom: 60px;
+    .bottom-container{
         width: 100%;
         line-height: 30px;
         background: #0f0f1f ;
         text-align: center;
         color: #3b3b5f ;
         font-size: 12px;
+        position: absolute;
+        bottom: 0
     }
     .protocol-container{
         display: flex;
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 70px;
         color: #3563c1;
+        justify-content: center;
     }
     .protocol-distance{
         padding: 10px 5px;
