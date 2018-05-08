@@ -95,17 +95,17 @@
                                     </i>
                                 </div>
                             </a>
-                            <a href="#/0/2">
-                                <div class="about_what_check">
-                                    <span class="about_what_check_txt">{{$store.state.messages.about.checkTxt}}</span>
-                                </div>
-                            </a>
+                            <!--<a href="#/0/2">-->
+                                <!--<div class="about_what_check">-->
+                                    <!--<span class="about_what_check_txt">{{$store.state.messages.about.checkTxt}}</span>-->
+                                <!--</div>-->
+                            <!--</a>-->
                         </div>
                     </div>
                     <div class="img_right_container">
                         <div class="img_containter_top">
                             <div class="img_default_containter">
-                                <img src="../../public/chain.png">
+                                <img src="../../public/iris.png">
                             </div>
                             <div class="rectangle_default_container">
                                 <img src="../../public/Rectangle_one.png">
@@ -114,7 +114,7 @@
                         <div class="img_container_bottom">
                             <div>
                                 <div class="img_default_containter">
-                                    <img src="../../public/exchange.png">
+                                    <img src="../../public/chain.png">
                                 </div>
                                 <div class="rectangle_default_container">
                                     <img src="../../public/Rectangle_two.png">
@@ -157,13 +157,13 @@
                             <div class="what_txt_list_four">
                                 {{$store.state.messages.network.txt[2]}}
                             </div>
-                            <a href="#/0/3" style="margin-top: 45px;display: inline-block">
-                                <div class="collaboration_btn">
-                                    <span>
-                                        {{$store.state.messages.collaboration.btnTxt}}
-                                    </span>
-                                </div>
-                            </a>
+                            <!--<a href="#/0/3" style="margin-top: 45px;display: inline-block">-->
+                                <!--<div class="collaboration_btn">-->
+                                    <!--<span>-->
+                                        <!--{{$store.state.messages.collaboration.btnTxt}}-->
+                                    <!--</span>-->
+                                <!--</div>-->
+                            <!--</a>-->
                         </div>
                         <div style="margin-left: 80px; margin-top: 50px;">
                             <img :src="UrlSrc+$store.state.messages.network.src" />
@@ -253,7 +253,7 @@
 
                         <div class="roadmap-text">
                             <p>PANGU</p>
-                            <p>JAN 2018-JUN 2018</p>
+                            <p>JAN 2018-JUL 2018</p>
                         </div>
                     </div>
 
@@ -261,7 +261,7 @@
                          @mouseover="textShow(1)" @mouseout="textHide(1)">
                         <div class="roadmap-text" style="padding-bottom: 14px">
                             <p>NUWA</p>
-                            <p>JUL 2018-NOV 2018</p>
+                            <p>AUG 2018-NOV 2018</p>
                         </div>
                         <div class="roadmap_list_gif">
                             <div class="div1">

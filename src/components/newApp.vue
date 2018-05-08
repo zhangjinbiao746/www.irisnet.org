@@ -206,7 +206,7 @@
                                             <span>PANGU</span>
                                             <p>JAN 2018 </p>
                                             <p> | </p>
-                                            <p>JUN 2018</p>
+                                            <p>JUL 2018</p>
                                         </div>
                                         <div class="roadmap_txt" :class=" list[0].is ? 'showOpacity' : '' " >
                                             {{$store.state.messages.roadmap.list[0].txt}}
@@ -220,7 +220,7 @@
                                         </div>
                                         <div class="roadmap_img" @click="txtShow(1)">
                                             <span>NUWA</span>
-                                            <p>JUL 2018 </p>
+                                            <p>AUG 2018 </p>
                                             <p> | </p>
                                             <p>NOV 2018</p>
                                         </div>

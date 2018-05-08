@@ -62,7 +62,7 @@ export const message = {
             {
                 "src": "github.png",
                 "src_selected": "github_selected.png",
-                "txt": "Github",
+                "txt": "GitHub",
                 "href": "https://github.com/irisnet"
             },
             {
@@ -173,7 +173,7 @@ export const message = {
         "list": [
             {
                 "img": "roadmap/Pangu.png",
-                "txt": "As the first stage of the IRIS project, we will focus on having the IRIS Hub up and running as one " +
+                "txt": "As the first stage of the irisnet project, we will focus on having the IRIS Hub up and running as one " +
                 "of the earliest regional hubs that connect to the Cosmos Hub; we’ll get a couple of public blockchains " +
                 "to connect to the IRIS Hub as “zones”, and release an initial version of the mobile client for the IRIS Network."
             },
@@ -197,7 +197,7 @@ export const message = {
     },
     "home": {
         "title": 'IRIS Network',
-        "txt": 'Interchain Service Infrastructure and Protocol <br> Technology Foundation for a Distributed Business Ecosystem',
+        "txt": 'Inter-chain Service Infrastructure and Protocol <br> Technology Foundation for a Distributed Business Ecosystem',
         "src": 'iristext-small.png'
     },
     "about": {
@@ -221,7 +221,7 @@ export const message = {
             'residing in public and consortium blockchains as well ' +
             'as enterprise legacy systems',
             'iServices can be invoked across an internet of ' +
-            'blockchains over an extended IBC protocl'
+            'blockchains over an extended IBC protocol'
         ],
         "src": 'white.png'
     },
