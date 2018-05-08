@@ -164,7 +164,7 @@ export const message = {
         "list": [
             {
                 "img": "roadmap/Pangu.png",
-                "txt": "作为IRIS项目的第一阶段，我们将专注于实现IRIS枢纽作为连接到Cosmos Hub的最早的区域枢纽之一。" +
+                "txt": "作为irisnet项目的第一阶段，我们将专注于实现IRIS枢纽作为连接到Cosmos Hub的最早的区域枢纽之一。" +
                 "我们将一些公有链以“分区”的形式连接到IRIS Hub。" +
                 "并为IRIS网络发布最初版本的移动客户端"
             },
