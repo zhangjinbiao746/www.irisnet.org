@@ -90,10 +90,210 @@ export const message = {
     },
     "collaboration": {
         "title": "合作方",
+
+
+
+
+        "core":{
+            "title":"核心技术团队",
+            "img":"collaboration/core.png",
+            "list":[
+                {
+                    "pos":-56*0,
+                    "title":"BIANJIE.AI",
+                    "href":""
+                }
+            ]
+        },
+
+        "strategy":{
+            "title":"战略合作伙伴",
+            "img":"collaboration/strategy.png",
+            "list":[
+                {
+                    "pos":-56*0,
+                    "title":"Cosmos",
+                    "href":"https://cosmos.network"
+                },
+                {
+                    "pos":-56*1,
+                    "title":"Tendermint",
+                    "href":"https://tendermint.com"
+                },
+                {
+                    "pos":-56*2,
+                    "title":"NewChainBase",
+                    "href":"http://www.newchainbase.com"
+                },
+                {
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":"https://www.hashgard.io/#/"
+                }
+            ]
+        },
+
+        "investment":{
+            "title":"投资方",
+            "img":"collaboration/investment.png",
+            "list":[
+                {
+                    "pos":-56*0,
+                    "title":"Amino Capital",
+                    "href":"http://www.aminocapital.com"
+                },
+                {
+                    "pos":-56*1,
+                    "title":"8维资本",
+                    "href":""
+                },
+                {
+                    "pos":-56*2,
+                    "title":"BIHU",
+                    "href":"https://bihu.com/"
+                },
+                {
+                    "pos":-56*3,
+                    "title":"BitsAngel",
+                    "href":""
+                },
+                {
+                    "pos":-56*4,
+                    "title":"BKFund",
+                    "href":""
+                },
+                {
+                    "pos":-56*5,
+                    "title":"Byzantium",
+                    "href":""
+                },
+                {
+                    "pos":-56*6,
+                    "title":"Chain PE",
+                    "href":"http://www.chainpe.com"
+                },
+                {
+                    "pos":-56*7,
+                    "title":"Chainpool",
+                    "href":"chainpool.io"
+                },
+                {
+                    "pos":-56*8,
+                    "title":"Coefficient Ventures",
+                    "href":"http://coefficient.network"
+                },
+                {
+                    "pos":-56*9,
+                    "title":"共识资本",
+                    "href":"consensuscapital.ca"
+                },
+                {
+                    "pos":-56*10,
+                    "title":"读数资本",
+                    "href":""
+                },
+                {
+                    "pos":-56*11,
+                    "title":"Genblock Capital",
+                    "href":"https://genblock.capital"
+                },
+                {
+                    "pos":-56*12,
+                    "title":"Hayek Capital",
+                    "href":""
+                },
+                {
+                    "pos":-56*13,
+                    "title":"INK",
+                    "href":"http://ink.one"
+                },
+                {
+                    "pos":-56*14,
+                    "title":"LinkVC",
+                    "href":"http://www.linkvc.com"
+                },
+                {
+                    "pos":-56*15,
+                    "title":"Medishares",
+                    "href":"http://medishares.org/"
+                },
+                {
+                    "pos":-56*16,
+                    "title":"Milestone",
+                    "href":"http://www.milestonevc.com/index.html"
+                },
+                {
+                    "pos":-56*17,
+                    "title":"NEO GLOBAL CAPITAL",
+                    "href":"http://ngc.fund"
+                },
+                {
+                    "pos":-56*18,
+                    "title":"Origin Capital",
+                    "href":"http://www.theorigincapital.com"
+                },
+                {
+                    "pos":-56*19,
+                    "title":"satoshi fund",
+                    "href":"https://satoshi.fund"
+                },
+                {
+                    "pos":-56*20,
+                    "title":"SV Insight",
+                    "href":"https://www.siliconvalleyinsight.com/"
+                },
+                {
+                    "pos":-56*21,
+                    "title":"时戳资本",
+                    "href":""
+                },
+                {
+                    "pos":-56*22,
+                    "title":"Transference Capital",
+                    "href":""
+                },
+                {
+                    "pos":-56*23,
+                    "title":"U Network",
+                    "href":"https://u.network"
+                },
+                {
+                    "pos":-56*24,
+                    "title":"Waterdrip Capital",
+                    "href":"http://waterdrip.io"
+                },
+                {
+                    "pos":-56*25,
+                    "title":"一道资本",
+                    "href":""
+                }
+            ]
+        },
+
+        "counsel":{
+            "title":"Counsel",
+            "img":"collaboration/counsel.png",
+
+            "list":[
+                {
+                    "pos":-56*0,
+                    "title":"E&Y",
+                    "href":"http://www.ey.com"
+                },
+                {
+                    "pos":-56*1,
+                    "title":"KWM",
+                    "href":"http://www.kwm.com/"
+                },
+            ]
+        },
+
+
         "txt": [
             '核心技术团队',
             '战略合作伙伴'
         ],
+
         "list": [
             {
                 "img": "collaboration/bianjie.png",
@@ -151,7 +351,7 @@ export const message = {
             },
             {
                 "img": "collaboration/timestamp.png",
-                "title": "Timestamp",
+                "title": "时戳资本",
                 "text": "",
                 "href": ""
             },
