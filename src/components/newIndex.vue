@@ -482,6 +482,7 @@
 
 
     .index {
+
         flex: 1;
         height: 100vh;
         position: relative;

@@ -2,6 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import index from '@/components/index'
+
+import index_v2 from '@/components/index_v2.vue'
+
 import app from '@/components/app'
 import privacy from '@/components/privacy'
 import terms from '@/components/terms'
@@ -20,8 +23,13 @@ export function createRouter() {
             {
                 path: '/',
                 name: 'newIndex',
-                component: newIndex
+                component: index_v2
             },
+            //{
+            //    path: '/',
+            //    name: 'newIndex',
+            //    component: newIndex
+            //},
             // {
             //     path: '/',
             //     name: 'index',
