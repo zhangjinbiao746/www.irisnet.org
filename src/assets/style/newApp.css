@@ -1,3 +1,6 @@
+#app {
+  background-color: #0b0b18;
+}
 .app {
   top: 0;
   width: 100%;
@@ -23,6 +26,7 @@
 }
 .app .contact {
   width: 100%;
+  marigin-top: 200px;
   border-radius: 10px;
 }
 .app .contact .contact_title {
@@ -170,8 +174,9 @@
   font-family: "PingFang SC";
 }
 .app .network .network_title img {
-  width: 100%;
-  margin-top: 20px;
+  display: block;
+  width: 90%;
+  margin: 40px  auto  auto;
 }
 .app .what_txt_list_two {
   font-size: 12px;
@@ -256,7 +261,7 @@
 }
 .app .home .home-left {
   text-align: left;
-  margin-top: 50%;
+  margin-top: 20%;
 }
 .app .home .home-left .home_title {
   font-size: 30px;
@@ -383,7 +388,7 @@
   width: auto;
   text-align: left;
   opacity: 0;
-  color: #fff;
+  color: #d4d5de;
 }
 .app .head {
   background: #141426;
@@ -794,7 +799,7 @@ body {
   animation-fill-mode: forwards;
 }
 .collaboration_wrap {
-  margin: 200px 34px auto;
+  margin: 0px 34px auto;
 }
 .collaboration_wrap h2 {
   color: #fff;

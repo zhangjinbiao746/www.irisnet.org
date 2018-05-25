@@ -3,42 +3,52 @@
         <div id="index" class="index" style="background: #0b0b18">
             <!--头部-->
             <div class="head" style="position: fixed;background: #0b0b18">
-                <div class="center1" style="margin: 0 5%;">
-                    <a href="#"><img :src="UrlSrc+$store.state.messages.logo" style="width: 130px;"/></a>
-                    <div class="item_en" v-if="$store.state.lang=='EN'">
-                        <div @mouseenter="downShow" @mouseleave="downHide" class="item">
-                            <img :src="UrlSrc+down"/> English
-                        </div>
-                        <a class="item_cn" href="?lang=CN">
-                            中文
-                        </a>
-                    </div>
-                    <div class="item_en" v-if="$store.state.lang=='CN'">
-                        <div @mouseenter="downShow" @mouseleave="downHide" class="item">
-                            <img :src="UrlSrc+down"/>中文
-                        </div>
-                        <a class="item_cn" href="?lang=EN">
-                            English
-                        </a>
-                    </div>
-                    <div class="comm">
-                        <div class="div_h">
-                        </div>
-                        <a class="item" style="margin-right: 10px;" @mouseenter="commHide" @mouseleave="commShow">
-                            <img :src="UrlSrc+comm">
-                            Community
-                            <div></div>
-                        </a>
-                    </div>
-                    <div style="float: right">
-                        <router-link v-for="(item,index) in $store.state.messages.head.txt" class="item"
-                                     :class="{'item_selected':item.is}" :to="item.href" :key="index"
-                                     @click.native="showIndex(index)">
+                <div class="center1 head-content">
+
+                    <!--左侧logo-->
+                    <a class="head-layout-left" href="#"><img :src="UrlSrc+$store.state.messages.logo" style="width: 130px;"/></a>
+
+                    <!--右侧内容-->
+                    <div class="head-layout-right">
+
+                        <!--导航-->
+                        <router-link v-for="(item,index) in $store.state.messages.head.txt" class="item" :class="{'item_selected':item.is}" :to="item.href" :key="index" @click.native="showIndex(index)">
                             {{item.txt}}
                             <div></div>
                         </router-link>
-                    </div>
 
+                        <!--分割线-->
+                        <div class="hr_vertical"></div>
+
+                        <!--Community-->
+                        <div class="comm">
+                            <!--<div class="div_h"></div>-->
+                            <a class="item" style="margin-right: 10px;" @mouseenter="commHide" @mouseleave="commShow">
+                                <img :src="UrlSrc+comm">
+                                Community
+                                <div></div>
+                            </a>
+                        </div>
+
+                        <!--语言切换-->
+                        <div class="item_en" v-if="$store.state.lang=='EN'">
+                            <div @mouseenter="downShow" @mouseleave="downHide" class="item">
+                                <img :src="UrlSrc+down"/> English
+                            </div>
+                            <a class="item_cn" href="?lang=CN">
+                                中文
+                            </a>
+                        </div>
+                        <div class="item_en" v-if="$store.state.lang=='CN'">
+                            <div @mouseenter="downShow" @mouseleave="downHide" class="item">
+                                <img :src="UrlSrc+down"/>中文
+                            </div>
+                            <a class="item_cn" href="?lang=EN">
+                                English
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <!--内容区-->
@@ -144,6 +154,180 @@
                         </div>
                     </div>
 
+
+                    <div id="#/0/2" class="what">
+                        <div class="network-container">
+                            <div class="what_txt">
+                                <div class="what_txt_title" style="font-size: 30px;">
+                                    {{$store.state.messages.network.title}}
+                                    <div class="line" style="margin-top: 10px"></div>
+                                </div>
+                                <div class="what_txt_list_two">
+                                    {{$store.state.messages.network.txt[0]}}
+                                </div>
+                                <div class="what_txt_list_center">
+                                    {{$store.state.messages.network.txt[1]}}
+                                </div>
+                                <div class="what_txt_list_four">
+                                    {{$store.state.messages.network.txt[2]}}
+                                </div>
+                                <!--<a href="#/0/3" style="margin-top: 45px;display: inline-block">-->
+                                <!--<div class="collaboration_btn">-->
+                                <!--<span>-->
+                                <!--{{$store.state.messages.collaboration.btnTxt}}-->
+                                <!--</span>-->
+                                <!--</div>-->
+                                <!--</a>-->
+                            </div>
+                            <div class="network-img">
+                                <img :src="UrlSrc+$store.state.messages.network.src"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Roadmap -->
+                    <div id="#/0/4" class="what">
+                        <div class="collaboration">
+                            {{$store.state.messages.roadmap.title}}
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="roadmap-container-wrap">
+                            <!--roadmap-container：包含真实内容+占位div-->
+                            <!--由于真实内容太高，会显露过多空白，所以在容器内绝对定位；并且使用占位div来支撑高度-->
+                            <div class="roadmap-container">
+
+                                <!--roadmap-container-layout用于4分块的布局-->
+                                <div class="roadmap-container-layout">
+
+                                    <!--4个分块-->
+                                    <div class="roadmap-item roadmap-item-bottom ">
+                                        <p v-show="roadmapIsShowIdx === 0">
+                                            {{$store.state.messages.roadmap.list[0].txt}}</p>
+                                        <hr v-show="roadmapIsShowIdx === 0" :class="['hr_ver']">
+                                        <img @mouseover="mapToggle(0)" src="../../public/Ellipse.png">
+                                        <h5 @mouseover="mapToggle(0)"><strong>PANGU</strong><span>JAN 2018 - JUL 2018</span>
+                                        </h5>
+                                    </div>
+
+                                    <div class="roadmap-item roadmap-item-top">
+                                        <h5 @mouseover="mapToggle(1)"><strong>NUWA</strong><span> AUG 2018 - NOV 2018</span>
+                                        </h5>
+                                        <img @mouseover="mapToggle(1)" src="../../public/Ellipse.png">
+                                        <hr v-show="roadmapIsShowIdx === 1" class="hr_ver">
+                                        <p v-show="roadmapIsShowIdx === 1">
+                                            {{$store.state.messages.roadmap.list[1].txt}}</p>
+                                    </div>
+
+                                    <div class="roadmap-item roadmap-item-bottom">
+                                        <p v-show="roadmapIsShowIdx === 2">
+                                            {{$store.state.messages.roadmap.list[2].txt}}</p>
+                                        <hr v-show="roadmapIsShowIdx === 2" class="hr_ver">
+                                        <img @mouseover="mapToggle(2)" src="../../public/Ellipse.png">
+                                        <h5 @mouseover="mapToggle(2)"><strong>KUAFU</strong><span>DEC 2018 - MAY 2018</span>
+                                        </h5>
+                                    </div>
+
+                                    <div class="roadmap-item roadmap-item-top">
+                                        <h5 @mouseover="mapToggle(3)">
+                                            <strong>HOUYI</strong>
+                                            <span>BEYOND   JUN 2019</span>
+                                        </h5>
+                                        <img @mouseover="mapToggle(3)" src="../../public/Ellipse.png">
+                                        <hr v-show="roadmapIsShowIdx === 3" class="hr_ver">
+                                        <p v-show="roadmapIsShowIdx === 3">
+                                            {{$store.state.messages.roadmap.list[2].txt}}</p>
+                                    </div>
+
+                                </div>
+
+
+                                <!--<div class="roadmap_warp"  @mouseover="textShow(0)" @mouseout="textHide(0)">-->
+                                <!--<div class="roadmap_list_gif">-->
+                                <!--<div class="div1">-->
+                                <!--<img src="../../public/Ellipse.png">-->
+                                <!--</div>-->
+                                <!--</div>-->
+                                <!--<transition name="animation">-->
+                                <!--<div class="roadmap_text animation" v-show="list[0].is">-->
+                                <!--{{$store.state.messages.roadmap.list[0].txt}}-->
+                                <!--</div>-->
+                                <!--</transition>-->
+
+                                <!--<div class="top-line" v-show="list[0].is"></div>-->
+
+                                <!--<div class="roadmap-text">-->
+                                <!--<p>PANGU</p>-->
+                                <!--<p>JAN 2018-JUL 2018</p>-->
+                                <!--</div>-->
+                                <!--</div>-->
+
+                                <!--<div class="roadmap_warp"  @mouseover="textShow(1)" @mouseout="textHide(1)">-->
+                                <!--<div class="roadmap-text" style="padding-bottom: 14px">-->
+                                <!--<p>NUWA</p>-->
+                                <!--<p>AUG 2018-NOV 2018</p>-->
+                                <!--</div>-->
+                                <!--<div class="roadmap_list_gif">-->
+                                <!--<div class="div1">-->
+                                <!--<img src="../../public/Ellipse.png">-->
+                                <!--</div>-->
+                                <!--<div class="img imgdiv" v-show="!list[1].is"></div>-->
+                                <!--</div>-->
+                                <!--<transition name="animation">-->
+                                <!--<div class="roadmap_text" v-show="list[1].is" style="top:190px; width: 290px">-->
+                                <!--{{$store.state.messages.roadmap.list[1].txt}}-->
+                                <!--</div>-->
+                                <!--</transition>-->
+                                <!--<div class="bottom-line" v-show="list[1].is"></div>-->
+                                <!--</div>-->
+
+                                <!--<div class="roadmap_warp"  @mouseover="textShow(2)" @mouseout="textHide(2)">-->
+                                <!--<div class="roadmap_list_gif">-->
+                                <!--<div class="div1">-->
+                                <!--<img src="../../public/Ellipse.png">-->
+                                <!--</div>-->
+                                <!--<div class="img imgdiv" v-show="!list[2].is"></div>-->
+                                <!--</div>-->
+                                <!--<transition name="animation">-->
+                                <!--<div class="roadmap_text" v-show="list[2].is">-->
+                                <!--{{$store.state.messages.roadmap.list[2].txt}}-->
+                                <!--</div>-->
+                                <!--</transition>-->
+                                <!--<div class="top-line" v-show="list[2].is"></div>-->
+                                <!--<div class="roadmap-text">-->
+                                <!--<p>KUAFU</p>-->
+                                <!--<p>DEC 2018-MAY 2018</p>-->
+                                <!--</div>-->
+                                <!--</div>-->
+
+                                <!--<div class="roadmap_warp"  @mouseover="textShow(3)" @mouseout="textHide(3)">-->
+                                <!--<div class="roadmap-text" style="padding-bottom: 14px">-->
+                                <!--<p>HOUYI</p>-->
+                                <!--<p>NEYOND JUN 2019</p>-->
+                                <!--</div>-->
+                                <!--<div class="roadmap_list_gif">-->
+                                <!--<div class="div1">-->
+                                <!--<img src="../../public/Ellipse.png">-->
+                                <!--</div>-->
+                                <!--<div class="img imgdiv" v-show="!list[3].is"></div>-->
+                                <!--</div>-->
+                                <!--<transition name="animation">-->
+                                <!--<div class="roadmap_text" v-show="list[3].is"-->
+                                <!--style="top: 210px;left: -40px; width: 290px">-->
+                                <!--{{$store.state.messages.roadmap.list[3].txt}}-->
+                                <!--</div>-->
+                                <!--</transition>-->
+                                <!--<div class="bottom-line" v-show="list[3].is"></div>-->
+                                <!--</div>-->
+
+
+                            </div>
+                            <div class="roadmap-container-placeholder"></div>
+                        </div>
+                    </div>
+
+                    <!--合作伙伴-->
                     <div id="#/0/3" class="what">
 
                         <div class="collaboration_wrap">
@@ -176,136 +360,9 @@
                                 </article>
                             </div>
 
-
-                        </div>
-
-
-
-                    </div>
-
-                    <div id="#/0/2" class="what">
-                        <div class="network-container">
-                            <div class="what_txt">
-                                <div class="what_txt_title" style="font-size: 30px;">
-                                    {{$store.state.messages.network.title}}
-                                    <div class="line" style="margin-top: 10px"></div>
-                                </div>
-                                <div class="what_txt_list_two">
-                                    {{$store.state.messages.network.txt[0]}}
-                                </div>
-                                <div class="what_txt_list_center">
-                                    {{$store.state.messages.network.txt[1]}}
-                                </div>
-                                <div class="what_txt_list_four">
-                                    {{$store.state.messages.network.txt[2]}}
-                                </div>
-                                <!--<a href="#/0/3" style="margin-top: 45px;display: inline-block">-->
-                                <!--<div class="collaboration_btn">-->
-                                <!--<span>-->
-                                <!--{{$store.state.messages.collaboration.btnTxt}}-->
-                                <!--</span>-->
-                                <!--</div>-->
-                                <!--</a>-->
-                            </div>
-                            <div style="margin-left: 80px; margin-top: 50px;">
-                                <img :src="UrlSrc+$store.state.messages.network.src"/>
-                            </div>
                         </div>
 
                     </div>
-
-                    <div id="#/0/4" class="what">
-                        <div class="collaboration">
-                            {{$store.state.messages.roadmap.title}}
-                            <div class="line"></div>
-                        </div>
-
-                        <div style="position: relative;margin-top: 250px">
-                            <img src="../../public/wave.png"/>
-                            <div class="roadmap_warp" style="top: 45px; margin-left: 160px;" @mouseover="textShow(0)"
-                                 @mouseout="textHide(0)">
-                                <div class="roadmap_list_gif">
-                                    <div class="div1">
-                                        <img src="../../public/Ellipse.png">
-                                    </div>
-                                </div>
-                                <transition name="animation">
-                                    <div class="roadmap_text animation" v-show="list[0].is">
-                                        {{$store.state.messages.roadmap.list[0].txt}}
-                                    </div>
-                                </transition>
-
-                                <div class="top-line" v-show="list[0].is"></div>
-
-                                <div class="roadmap-text">
-                                    <p>PANGU</p>
-                                    <p>JAN 2018-JUL 2018</p>
-                                </div>
-                            </div>
-
-                            <div class="roadmap_warp" style="top: -10px;margin-left: 402px; margin-top: -72px;"
-                                 @mouseover="textShow(1)" @mouseout="textHide(1)">
-                                <div class="roadmap-text" style="padding-bottom: 14px">
-                                    <p>NUWA</p>
-                                    <p>AUG 2018-NOV 2018</p>
-                                </div>
-                                <div class="roadmap_list_gif">
-                                    <div class="div1">
-                                        <img src="../../public/Ellipse.png">
-                                    </div>
-                                    <div class="img imgdiv" v-show="!list[1].is"></div>
-                                </div>
-                                <transition name="animation">
-                                    <div class="roadmap_text" v-show="list[1].is" style="top:190px; width: 290px">
-                                        {{$store.state.messages.roadmap.list[1].txt}}
-                                    </div>
-                                </transition>
-                                <div class="bottom-line" v-show="list[1].is"></div>
-                            </div>
-
-                            <div class="roadmap_warp" style="top: 45px; margin-left: 650px; "
-                                 @mouseover="textShow(2)" @mouseout="textHide(2)">
-                                <div class="roadmap_list_gif">
-                                    <div class="div1">
-                                        <img src="../../public/Ellipse.png">
-                                    </div>
-                                    <div class="img imgdiv" v-show="!list[2].is"></div>
-                                </div>
-                                <transition name="animation">
-                                    <div class="roadmap_text" v-show="list[2].is">
-                                        {{$store.state.messages.roadmap.list[2].txt}}
-                                    </div>
-                                </transition>
-                                <div class="top-line" v-show="list[2].is"></div>
-                                <div class="roadmap-text">
-                                    <p>KUAFU</p>
-                                    <p>DEC 2018-MAY 2018</p>
-                                </div>
-                            </div>
-
-                            <div class="roadmap_warp" style="top: -10px;margin-left: 906px; margin-top: -72px;"
-                                 @mouseover="textShow(3)" @mouseout="textHide(3)">
-                                <div class="roadmap-text" style="padding-bottom: 14px">
-                                    <p>HOUYI</p>
-                                    <p>NEYOND JUN 2019</p>
-                                </div>
-                                <div class="roadmap_list_gif">
-                                    <div class="div1">
-                                        <img src="../../public/Ellipse.png">
-                                    </div>
-                                    <div class="img imgdiv" v-show="!list[3].is"></div>
-                                </div>
-                                <transition name="animation">
-                                    <div class="roadmap_text" v-show="list[3].is"
-                                         style="top: 210px;left: -40px; width: 290px">
-                                        {{$store.state.messages.roadmap.list[3].txt}}
-                                    </div>
-                                </transition>
-                                <div class="bottom-line" v-show="list[3].is"></div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div id="#/0/5" class="what">
                         <div class="contact">
                             <div class="contact_title">
@@ -356,9 +413,11 @@
     }
     export default {
         name: 'index',
-        components: {foot,CompCollaborationItem},
+        components: {foot, CompCollaborationItem},
         data() {
             return {
+                roadmapIsShowIdx: -1,
+                // list可废弃
                 list: [
                     {is: false},
                     {is: false},
@@ -372,6 +431,7 @@
         },
         computed: {
             ...mapState({
+                // 合作伙伴内容
                 collaboration_title: state=>state.messages.collaboration.title,
                 collaboration_core: state=>state.messages.collaboration.core,
                 collaboration_strategy: state=>state.messages.collaboration.strategy,
@@ -405,9 +465,16 @@
             commHide() {
                 this.comm = '../public/community_selected.png';
             },
+
+            // 控制Roadmap显示哪一项
+            mapToggle(idx){
+                this.roadmapIsShowIdx = idx;
+            },
+            // textShow可废弃
             textShow(index) {
                 this.list[index].is = true;
             },
+            // textHIde可废弃
             textHide(index) {
                 this.list.forEach((v) => {
                     v.is = false;

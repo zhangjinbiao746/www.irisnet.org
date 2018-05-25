@@ -133,46 +133,6 @@
                         </div>
                     </div>
 
-
-                    <div id="#/0/3" class="collaboration">
-
-
-                        <div class="collaboration_wrap">
-                            <h2>{{collaboration_title}}</h2>
-                            <div class="nav-line"></div>
-
-                            <div class="collaboration_one_col">
-                                <article class="investment">
-                                    <h4>{{collaboration_core.title}}</h4>
-                                    <comp-collaboration-item :info="collaboration_core"></comp-collaboration-item>
-                                </article>
-                            </div>
-
-                            <div class="collaboration_one_col">
-                                <article class="investment">
-                                    <h4>{{collaboration_strategy.title}}</h4>
-                                    <comp-collaboration-item :info="collaboration_strategy"></comp-collaboration-item>
-                                </article>
-                            </div>
-
-                            <div class="collaboration_one_col">
-                                <article class="investment">
-                                    <h4>{{collaboration_investment.title}}</h4>
-                                    <comp-collaboration-item :info="collaboration_investment"></comp-collaboration-item>
-                                </article>
-                            </div>
-
-                            <div class="collaboration_one_col">
-                                <article class="investment">
-                                    <h4>{{collaboration_counsel.title}}</h4>
-                                    <comp-collaboration-item :info="collaboration_counsel"></comp-collaboration-item>
-                                </article>
-                            </div>
-
-
-                        </div>
-                    </div>
-
                     <div id="#/0/4" class="roadmap">
                         <div class="roadmap_title">
                             {{$store.state.messages.roadmap.title}}
@@ -256,7 +216,46 @@
                         </div>
                     </div>
 
-                    <div id="#/0/5" class="contact">
+                    <div id="#/0/3" class="collaboration">
+
+
+                        <div class="collaboration_wrap">
+                            <h2>{{collaboration_title}}</h2>
+                            <div class="nav-line"></div>
+
+                            <div class="collaboration_one_col">
+                                <article class="investment">
+                                    <h4>{{collaboration_core.title}}</h4>
+                                    <comp-collaboration-item :info="collaboration_core"></comp-collaboration-item>
+                                </article>
+                            </div>
+
+                            <div class="collaboration_one_col">
+                                <article class="investment">
+                                    <h4>{{collaboration_strategy.title}}</h4>
+                                    <comp-collaboration-item :info="collaboration_strategy"></comp-collaboration-item>
+                                </article>
+                            </div>
+
+                            <div class="collaboration_one_col">
+                                <article class="investment">
+                                    <h4>{{collaboration_investment.title}}</h4>
+                                    <comp-collaboration-item :info="collaboration_investment"></comp-collaboration-item>
+                                </article>
+                            </div>
+
+                            <div class="collaboration_one_col">
+                                <article class="investment">
+                                    <h4>{{collaboration_counsel.title}}</h4>
+                                    <comp-collaboration-item :info="collaboration_counsel"></comp-collaboration-item>
+                                </article>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div id="#/0/5" class="contact" style="margin-top:100px;;">
                         <div class="contact_title">
                             {{$store.state.messages.contact.title}}
                             <div class="nav-line"></div>
