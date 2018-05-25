@@ -34,14 +34,15 @@
     /*@import "../../assets/style/index.less";*/
 
     .collaboration_list{
-    //display: flex;
-    //flex-wrap: wrap;
-    //align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    /*align-content: center;*/
+        justify-content: flex-start;
     }
        .collaboration_item{
            overflow: hidden;
            cursor: pointer;
-           margin:20px 20px auto auto;
+           margin:20px 10px auto ;
            display: inline-block;
     .collaboration_logo{
         display: block;
