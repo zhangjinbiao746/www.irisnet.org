@@ -947,9 +947,9 @@
 }
 .roadmap-container .roadmap-item-top {
   align-self: flex-start;
-  margin-top: 290px;
+  margin-top: 310px;
 }
 .roadmap-container .roadmap-item-bottom {
   align-self: flex-end;
-  margin-bottom: 290px;
+  margin-bottom: 310px;
 }
