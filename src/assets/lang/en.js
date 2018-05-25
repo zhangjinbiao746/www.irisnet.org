@@ -22,12 +22,12 @@ export const message = {
                 "href": "#/0/2",
             },
             {
-                'txt': "Collaboration",
-                "href": "#/0/3",
-            },
-            {
                 'txt': "Roadmap",
                 "href": "#/0/4",
+            },
+            {
+                'txt': "Collaboration",
+                "href": "#/0/3",
             },
 
             {
