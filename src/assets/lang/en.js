@@ -149,7 +149,7 @@ export const message = {
         },
 
         "investment":{
-            "title":"Investment",
+            "title":"Investment Institutions",
             "img":"collaboration/investment.png",
             "list":[
                 {
@@ -255,7 +255,7 @@ export const message = {
                 {
                     "pos":-56*20,
                     "title":"SV Insight",
-                    "href":"https://www.siliconvalleyinsight.com/"
+                    "href":"http://www.svinsight.com"
                 },
                 {
                     "pos":-56*21,
