@@ -122,7 +122,7 @@ export const message = {
         },
 
         "strategy":{
-            "title":"Strategy Partners",
+            "title":"Strategic partners",
             "img":"collaboration/strategy.png",
             "list":[
                 {
@@ -190,7 +190,7 @@ export const message = {
                 {
                     "pos":-56*7,
                     "title":"Chainpool",
-                    "href":"chainpool.io"
+                    "href":"https://chainpool.io/"
                 },
                 {
                     "pos":-56*8,
@@ -200,7 +200,7 @@ export const message = {
                 {
                     "pos":-56*9,
                     "title":"Consesuscapital",
-                    "href":"consensuscapital.ca"
+                    "href":"http://consensuscapital.ca"
                 },
                 {
                     "pos":-56*10,
