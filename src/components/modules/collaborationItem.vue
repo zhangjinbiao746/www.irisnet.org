@@ -1,6 +1,7 @@
 <template>
     <div class="collaboration_list">
         <a class="collaboration_item"
+           @mouseenter="enterShow(item.href)"
            v-for="item in info.list"
            :href="item.href || 'javascript:void(0)'"
         >
@@ -10,13 +11,14 @@
                 backgroundPositionY:item.pos+'px'
            }"
             ></i>
-            <h5>{{item.title}}</h5>
+            <h5
+            >{{item.title}}</h5>
         </a>
     </div>
 </template>
 
 <script type="text/ecmascript-6">
-
+import $ from "jquery"
     export default {
         data(){
             return {}
@@ -25,7 +27,23 @@
             info: {}
         },
 
-        methods: {}
+        methods: {
+           // 业务需求，有链接的时候有hover效果。
+            showHover(){
+                $('.collaboration_itemnone').removeClass('collaboration_itemnone').addClass('collaboration_item')
+            },
+            removeHover(){
+                $('.collaboration_item').removeClass('collaboration_item').addClass('collaboration_itemnone')
+
+            },
+            enterShow(data){
+                if(data !==""){
+                    this.showHover()
+                }else {
+                    this.removeHover()
+                }
+            },
+        }
     }
 </script>
 
@@ -66,6 +84,33 @@
         text-indent: 10px;
     }
     }
+       .collaboration_itemnone{
+           overflow: hidden;
+           cursor: pointer;
+           margin:20px 10px auto ;
+           display: inline-block;
+           .collaboration_logo{
+               display: block;
+               width:56px;
+               height:56px;
+               position: absolute;
+               border:2px solid #5252a3;
+               border-radius:56px;
+           }
+           h5{
+               color: #6677e8;
+               height:42px;
+               line-height:42px;
+               background-color:#141430;
+               margin:9px auto 9px 40px;
+
+               text-align: center;
+               border-radius:8px;
+               padding:0 10px;
+               width:170px;
+               text-indent: 10px;
+           }
+       }
     .collaboration_item:hover{
     .collaboration_logo{
         border-color: #1f97f8;
@@ -75,6 +120,8 @@
         text-decoration:underline;
     }
     }
-
+    .a-none-line{
+        text-decoration: none !important;
+    }
 
 </style>
