@@ -101,7 +101,7 @@ export const message = {
                 {
                     "pos":-56*0,
                     "title":"BIANJIE.AI",
-                    "href":""
+                    "href":"https://www.bianjie.ai/"
                 }
             ]
         },
@@ -154,7 +154,7 @@ export const message = {
                 },
                 {
                     "pos":-56*3,
-                    "title":"BitsAngel",
+                    "title":"BA Capital",
                     "href":""
                 },
                 {
@@ -174,12 +174,12 @@ export const message = {
                 },
                 {
                     "pos":-56*7,
-                    "title":"Chainpool",
+                    "title":"Chain Pool",
                     "href":"https://chainpool.io"
                 },
                 {
                     "pos":-56*8,
-                    "title":"Coefficient Ventures",
+                    "title":"Coefficient",
                     "href":"http://coefficient.network"
                 },
                 {
@@ -194,17 +194,17 @@ export const message = {
                 },
                 {
                     "pos":-56*11,
-                    "title":"Genblock Capital",
+                    "title":"Genblock",
                     "href":"https://genblock.capital"
                 },
                 {
                     "pos":-56*12,
-                    "title":"Hayek Capital",
+                    "title":"Hayak",
                     "href":""
                 },
                 {
                     "pos":-56*13,
-                    "title":"INK",
+                    "title":"Ink Labs",
                     "href":"http://ink.one"
                 },
                 {
@@ -214,17 +214,17 @@ export const message = {
                 },
                 {
                     "pos":-56*15,
-                    "title":"Medishares",
+                    "title":"Medi Shares",
                     "href":"http://medishares.org/"
                 },
                 {
                     "pos":-56*16,
-                    "title":"Milestone",
+                    "title":"MILESTONE",
                     "href":"http://www.milestonevc.com/index.html"
                 },
                 {
                     "pos":-56*17,
-                    "title":"NEO GLOBAL CAPITAL",
+                    "title":"NEO GLOBAL",
                     "href":"http://ngc.fund"
                 },
                 {
@@ -234,7 +234,7 @@ export const message = {
                 },
                 {
                     "pos":-56*19,
-                    "title":"satoshi fund",
+                    "title":"Satoshi Fund",
                     "href":"https://satoshi.fund"
                 },
                 {
@@ -249,7 +249,7 @@ export const message = {
                 },
                 {
                     "pos":-56*22,
-                    "title":"Transference Capital",
+                    "title":"Transference Fund",
                     "href":""
                 },
                 {
@@ -259,7 +259,7 @@ export const message = {
                 },
                 {
                     "pos":-56*24,
-                    "title":"Waterdrip Capital",
+                    "title":"WATERDRIP CAPITAL",
                     "href":"http://waterdrip.io"
                 },
                 {

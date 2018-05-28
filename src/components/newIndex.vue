@@ -55,7 +55,7 @@
                             </div>
                             <a href="#/0/1">
                                 <div class="home_what">
-                                    <span class="home_what_txt">WHAT IS IRISNET</span>
+                                    <span class="home_what_txt">What is IRISnet</span>
                                 </div>
                             </a>
                         </div>

@@ -116,7 +116,7 @@ export const message = {
                 {
                     "pos":-56*0,
                     "title":"BIANJIE.AI",
-                    "href":""
+                    "href":"https://www.bianjie.ai/"
                 }
             ]
         },
@@ -159,7 +159,7 @@ export const message = {
                 },
                 {
                     "pos":-56*1,
-                    "title":"8 Decimal capital",
+                    "title":"8 Decimal",
                     "href":""
                 },
                 {
@@ -169,7 +169,7 @@ export const message = {
                 },
                 {
                     "pos":-56*3,
-                    "title":"BitsAngel",
+                    "title":"BA Capital",
                     "href":""
                 },
                 {
@@ -189,37 +189,37 @@ export const message = {
                 },
                 {
                     "pos":-56*7,
-                    "title":"Chainpool",
+                    "title":"Chain Pool",
                     "href":"https://chainpool.io/"
                 },
                 {
                     "pos":-56*8,
-                    "title":"Coefficient Ventures",
+                    "title":"Coefficient",
                     "href":"http://coefficient.network"
                 },
                 {
                     "pos":-56*9,
-                    "title":"Consesuscapital",
+                    "title":"Consensus",
                     "href":"http://consensuscapital.ca"
                 },
                 {
                     "pos":-56*10,
-                    "title":"DUSHU",
+                    "title":"Dushu",
                     "href":""
                 },
                 {
                     "pos":-56*11,
-                    "title":"Genblock Capital",
+                    "title":"Genblock",
                     "href":"https://genblock.capital"
                 },
                 {
                     "pos":-56*12,
-                    "title":"Hayek Capital",
+                    "title":"Hayak",
                     "href":""
                 },
                 {
                     "pos":-56*13,
-                    "title":"INK",
+                    "title":"Ink Labs",
                     "href":"http://ink.one"
                 },
                 {
@@ -229,17 +229,17 @@ export const message = {
                 },
                 {
                     "pos":-56*15,
-                    "title":"Medishares",
+                    "title":"Medi Shares",
                     "href":"http://medishares.org/"
                 },
                 {
                     "pos":-56*16,
-                    "title":"Milestone",
+                    "title":"MILESTONE",
                     "href":"http://www.milestonevc.com/index.html"
                 },
                 {
                     "pos":-56*17,
-                    "title":"NEO GLOBAL CAPITAL",
+                    "title":"NEO GLOBAL",
                     "href":"http://ngc.fund"
                 },
                 {
@@ -249,7 +249,7 @@ export const message = {
                 },
                 {
                     "pos":-56*19,
-                    "title":"satoshi fund",
+                    "title":"Satoshi Fund",
                     "href":"https://satoshi.fund"
                 },
                 {
@@ -259,12 +259,12 @@ export const message = {
                 },
                 {
                     "pos":-56*21,
-                    "title":"Timestamp Capital",
+                    "title":"Timestamp",
                     "href":""
                 },
                 {
                     "pos":-56*22,
-                    "title":"Transference Capital",
+                    "title":"Transference Fund",
                     "href":""
                 },
                 {
@@ -274,7 +274,7 @@ export const message = {
                 },
                 {
                     "pos":-56*24,
-                    "title":"Waterdrip Capital",
+                    "title":"WATERDRIP CAPITAL",
                     "href":"http://waterdrip.io"
                 },
                 {
@@ -293,12 +293,12 @@ export const message = {
                 {
                     "pos":-56*0,
                     "title":"E&Y",
-                    "href":"http://www.ey.com"
+                    "href":""
                 },
                 {
                     "pos":-56*1,
                     "title":"KWM",
-                    "href":"http://www.kwm.com/"
+                    "href":""
                 },
             ]
         },
@@ -375,7 +375,7 @@ export const message = {
         "list": [
             {
                 "img": "roadmap/Pangu.png",
-                "txt": "As the first stage of the irisnet project, we will focus on having the IRIS Hub up and running as one " +
+                "txt": "As the first stage of the IRISnet project, we will focus on having the IRIS Hub up and running as one " +
                 "of the earliest regional hubs that connect to the Cosmos Hub; we’ll get a couple of public blockchains " +
                 "to connect to the IRIS Hub as “zones”, and release an initial version of the mobile client for the IRIS Network."
             },

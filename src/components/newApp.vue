@@ -37,7 +37,7 @@
                         <div class="home_img">
                             <a href="#/0/1">
                                 <div style="margin-bottom: 10px;">
-                                    <span class="button">WHAT IS IRISNET</span>
+                                    <span class="button">What is IRISnet</span>
                                 </div>
                             </a>
                             <br/>

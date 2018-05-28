@@ -40,7 +40,7 @@
                                     <a href="#/0/1">
                                         <!--<img class="button" src="../assets/app/button.png"/>-->
                                         <div>
-                                            <span class="button">WHAT IS IRISNET</span>
+                                            <span class="button">What is IRISnet</span>
                                         </div>
                                     </a>
                                     <br/>
