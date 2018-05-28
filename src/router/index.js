@@ -2,10 +2,18 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import index from '@/components/index'
+
+import index_v2 from '@/components/index_v2.vue'
+
 import app from '@/components/app'
 import privacy from '@/components/privacy'
 import terms from '@/components/terms'
 import login from '@/components/login'
+import newIndex from "@/components/newIndex"
+import newApp from "@/components/newApp"
+import appPrivacy from '@/components/appPrivacy'
+import appTerms from '@/components/appTerms'
+import community from '@/components/community'
 Vue.use(Router)
 
 export function createRouter() {
@@ -14,9 +22,19 @@ export function createRouter() {
         routes: [
             {
                 path: '/',
-                name: 'index',
-                component: index
+                name: 'newIndex',
+                component: index_v2
             },
+            //{
+            //    path: '/',
+            //    name: 'newIndex',
+            //    component: newIndex
+            //},
+            // {
+            //     path: '/',
+            //     name: 'index',
+            //     component: index
+            // },
             {
                 path: '/login',
                 name: 'login',
@@ -32,13 +50,33 @@ export function createRouter() {
                 name: 'terms',
                 component: terms
             },
+            // {
+            //     path: '/app',
+            //     name: 'app',
+            //     component: app
+            // },
             {
-                path: '/app',
-                name: 'app',
-                component: app
-            }
+                path: '/newApp',
+                name: 'newApp',
+                component: newApp,
+            },
 
+            {
+                path: '/community',
+                name: 'community',
+                component: community
+            },
+            {
+                path: '/appPrivacy',
+                name: 'appPrivacy',
+                component: appPrivacy
+            },
 
+            {
+                path: '/appTerms',
+                name: 'appTerms',
+                component: appTerms
+            },
         ]
     })
 }

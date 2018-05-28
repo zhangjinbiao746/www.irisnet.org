@@ -1,35 +1,47 @@
 export const message = {
     "logo": 'irisnet.png',
-    // "test":'public/whiteDw.png',
+    "white":'public/whiteDw.png',
+    "whiteHref":"https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md",
     "next": 'what_next.png',
     "head": {
         'txt': [
             {
                 'txt': "Home",
                 "href": "/#",
-                "is": true
             },
             {
                 'txt': "About",
-                "href": "#/0/1"
+                "href": "#/0/1",
             },
+            // {
+            //     'txt': "Whitepaper",
+            //     "href": "https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md"
+            // },
             {
                 'txt': "Network",
-                "href": "#/0/2"
-            },
-            {
-                'txt': "Collaboration",
-                "href": "#/0/3",
+                "href": "#/0/2",
             },
             {
                 'txt': "Roadmap",
                 "href": "#/0/4",
             },
+            {
+                'txt': "Collaboration",
+                "href": "#/0/3",
+            },
 
             {
                 'txt': "Contact",
-                "href": "#/0/6",
-            }
+                "href": "#/0/5",
+            },
+        //     {
+        //         'txt': "privacy",
+        //         "href": "/appPrivacy",
+        //     },
+        //     {
+        //         'txt': "terms",
+        //         "href": "/appTerms",
+        //     }
         ]
     },
     "contact": {
@@ -50,7 +62,7 @@ export const message = {
             {
                 "src": "github.png",
                 "src_selected": "github_selected.png",
-                "txt": "Github",
+                "txt": "GitHub",
                 "href": "https://github.com/irisnet"
             },
             {
@@ -86,12 +98,212 @@ export const message = {
         "title": "Contact"
     },
 
+
+
+
+
     "collaboration": {
         "title": "Collaboration",
         "txt": [
             'Core Development Team',
-            'Strategic Parteners'
+            'Strategic Partners'
         ],
+
+        "core":{
+            "title":"Core Technology Team",
+            "img":"collaboration/core.png",
+            "list":[
+                {
+                    "pos":-56*0,
+                    "title":"BIANJIE.AI",
+                    "href":"https://www.bianjie.ai/"
+                }
+            ]
+        },
+
+        "strategy":{
+            "title":"Strategic partners",
+            "img":"collaboration/strategy.png",
+            "list":[
+                {
+                    "pos":-56*0,
+                    "title":"Cosmos",
+                    "href":"https://cosmos.network"
+                },
+                {
+                    "pos":-56*1,
+                    "title":"Tendermint",
+                    "href":"https://tendermint.com"
+                },
+                {
+                    "pos":-56*2,
+                    "title":"NewChainBase",
+                    "href":"http://www.newchainbase.com"
+                },
+                {
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":"https://www.hashgard.io/#/"
+                }
+            ]
+        },
+
+        "investment":{
+            "title":"Investment Institutions",
+            "img":"collaboration/investment.png",
+            "list":[
+                {
+                    "pos":-56*0,
+                    "title":"Amino Capital",
+                    "href":"http://www.aminocapital.com"
+                },
+                {
+                    "pos":-56*1,
+                    "title":"8 Decimal",
+                    "href":""
+                },
+                {
+                    "pos":-56*2,
+                    "title":"BIHU",
+                    "href":"https://bihu.com/"
+                },
+                {
+                    "pos":-56*3,
+                    "title":"BA Capital",
+                    "href":""
+                },
+                {
+                    "pos":-56*4,
+                    "title":"BKFund",
+                    "href":""
+                },
+                {
+                    "pos":-56*5,
+                    "title":"Byzantium",
+                    "href":""
+                },
+                {
+                    "pos":-56*6,
+                    "title":"Chain PE",
+                    "href":"http://www.chainpe.com"
+                },
+                {
+                    "pos":-56*7,
+                    "title":"Chain Pool",
+                    "href":"https://chainpool.io/"
+                },
+                {
+                    "pos":-56*8,
+                    "title":"Coefficient",
+                    "href":"http://coefficient.network"
+                },
+                {
+                    "pos":-56*9,
+                    "title":"Consensus",
+                    "href":"http://consensuscapital.ca"
+                },
+                {
+                    "pos":-56*10,
+                    "title":"Dushu",
+                    "href":""
+                },
+                {
+                    "pos":-56*11,
+                    "title":"Genblock",
+                    "href":"https://genblock.capital"
+                },
+                {
+                    "pos":-56*12,
+                    "title":"Hayak",
+                    "href":""
+                },
+                {
+                    "pos":-56*13,
+                    "title":"Ink Labs",
+                    "href":"http://ink.one"
+                },
+                {
+                    "pos":-56*14,
+                    "title":"LinkVC",
+                    "href":"http://www.linkvc.com"
+                },
+                {
+                    "pos":-56*15,
+                    "title":"Medi Shares",
+                    "href":"http://medishares.org/"
+                },
+                {
+                    "pos":-56*16,
+                    "title":"MILESTONE",
+                    "href":"http://www.milestonevc.com/index.html"
+                },
+                {
+                    "pos":-56*17,
+                    "title":"NEO GLOBAL",
+                    "href":"http://ngc.fund"
+                },
+                {
+                    "pos":-56*18,
+                    "title":"Origin Capital",
+                    "href":"http://www.theorigincapital.com"
+                },
+                {
+                    "pos":-56*19,
+                    "title":"Satoshi Fund",
+                    "href":"https://satoshi.fund"
+                },
+                {
+                    "pos":-56*20,
+                    "title":"SV Insight",
+                    "href":"http://www.svinsight.com"
+                },
+                {
+                    "pos":-56*21,
+                    "title":"Timestamp",
+                    "href":""
+                },
+                {
+                    "pos":-56*22,
+                    "title":"Transference Fund",
+                    "href":""
+                },
+                {
+                    "pos":-56*23,
+                    "title":"U Network",
+                    "href":"https://u.network"
+                },
+                {
+                    "pos":-56*24,
+                    "title":"WATERDRIP CAPITAL",
+                    "href":"http://waterdrip.io"
+                },
+                {
+                    "pos":-56*25,
+                    "title":"一道资本",
+                    "href":""
+                }
+            ]
+        },
+
+        "counsel":{
+            "title":"Counsel",
+            "img":"collaboration/counsel.png",
+
+            "list":[
+                {
+                    "pos":-56*0,
+                    "title":"E&Y",
+                    "href":""
+                },
+                {
+                    "pos":-56*1,
+                    "title":"KWM",
+                    "href":""
+                },
+            ]
+        },
+
+
         "list": [
             {
                 "img": "collaboration/bianjie.png",
@@ -101,7 +313,7 @@ export const message = {
             },
             {
                 "img": "collaboration/cosmos.png",
-                "title": "ICF/COSMOS",
+                "title": "COSMOS",
                 "text": "cosmos.network",
                 "href": "https://cosmos.network"
             },
@@ -113,7 +325,7 @@ export const message = {
             },
             {
                 "img": "collaboration/wancloud.png",
-                "title": "WanCoud",
+                "title": "WanCloud",
                 "text": "wancloud.io",
                 "href": "https://www.wancloud.io"
             },
@@ -122,15 +334,48 @@ export const message = {
                 "title": "Newchainbase",
                 "text": "newchainbase.com",
                 "href": "http://www.newchainbase.com"
-            }
-        ]
+            },
+            {
+                "img": "collaboration/waterdrip.png",
+                "title": "WaterDrip",
+                "text": "waterdrip.io",
+                "href": "http://waterdrip.io/"
+            },
+            {
+                "img": "collaboration/medishares.png",
+                "title": "Medishares",
+                "text": "medishares.org",
+                "href": "https://medishares.org"
+            },
+            {
+                "img": "collaboration/transference.png",
+                "title": "Transference",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img": "collaboration/bkfund.png",
+                "title": "BKFund",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img": "collaboration/timestamp.png",
+                "title": "Timestamp",
+                "text": "",
+                "href": ""
+            },
+        ],
+        "btnTxt":"Collaboration"
     },
+
+
     "roadmap": {
         "title": 'Roadmap',
         "list": [
             {
                 "img": "roadmap/Pangu.png",
-                "txt": "As the first stage of the IRIS project, we will focus on having the IRIS Hub up and running as one " +
+                "txt": "As the first stage of the IRISnet project, we will focus on having the IRIS Hub up and running as one " +
                 "of the earliest regional hubs that connect to the Cosmos Hub; we’ll get a couple of public blockchains " +
                 "to connect to the IRIS Hub as “zones”, and release an initial version of the mobile client for the IRIS Network."
             },
@@ -154,17 +399,19 @@ export const message = {
     },
     "home": {
         "title": 'IRIS Network',
-        "txt": 'Interchain Service Infrastructure and Protocol <br> Technology Foundation for a Distributed Business Ecosystem',
+        "txt": 'Inter-chain Service Infrastructure and Protocol <br> Technology Foundation for a Distributed Business Ecosystem',
         "src": 'iristext-small.png'
     },
     "about": {
-        "title": 'Key Innovations:',
+        "title": 'Key Innovations',
         "imgtxt": " Facilitate construction of <br> distributed business applications",
         "txt": [
             'Incorporation of a service-oriented infrastructure into Cosmos',
-            'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems',
+            'Integration of business services offered by heterogeneous systems, including public & consortium chains as well as legacy systems',
             'Interoperability of those services across an internet of blockchains'
-        ]
+        ],
+        "btnTxt":"WHITE PAPER",
+        "checkTxt":"CHECK NETWORK"
     },
     "network": {
         "title": 'Network Design',
@@ -176,7 +423,7 @@ export const message = {
             'residing in public and consortium blockchains as well ' +
             'as enterprise legacy systems',
             'iServices can be invoked across an internet of ' +
-            'blockchains over an extended IBC protocl'
+            'blockchains over an extended IBC protocol'
         ],
         "src": 'white.png'
     },
@@ -522,5 +769,10 @@ export const message = {
     "qr":{
         "title":" Scan QR code",
         "txt":" to follow our Subscriptions"
+    },
+    "community":{
+        "title":"Community",
+        "coming":"Coming soon"
+
     }
 }

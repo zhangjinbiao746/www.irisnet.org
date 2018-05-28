@@ -24,7 +24,6 @@
 
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="h110"></div>
@@ -49,7 +48,7 @@
     .index {
         min-height: 100%;
         position: relative;
-        background: #141426;
+        background: #0b0b18;
 
 
         .h110 {

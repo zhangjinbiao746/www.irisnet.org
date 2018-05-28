@@ -1,33 +1,37 @@
 export const message = {
     "logo": 'irisnet.png',
+    "white":'public/whiteDwCn.png',
+    "whiteHref":"https://github.com/irisnet/irisnet/blob/master/白皮书.md",
     "next": 'what_next.png',
     "head": {
         'txt': [
             {
                 'txt': "主页",
                 "href": "#",
-                "is": true
             },
             {
                 'txt': "关于我们",
-                "href": "#/0/1"
+                "href": "#/0/1",
             },
+            // {
+            //     'txt': "白皮书",
+            //     "href": "https://github.com/irisnet/irisnet/blob/master/白皮书.md"
+            // },
             {
                 'txt': "网络",
-                "href": "#/0/2"
+                "href": "#/0/2",
+            },
+            {
+                'txt': "路线图",
+                "href": "#/0/4",
             },
             {
                 'txt': "合作方",
                 "href": "#/0/3",
             },
             {
-                'txt': "路线图",
-                "href": "#/0/4",
-            },
-
-            {
                 'txt': "联系方式",
-                "href": "#/0/6",
+                "href": "#/0/5",
             }
         ]
     },
@@ -37,7 +41,7 @@ export const message = {
                 "src": "telegran.png",
                 "src_selected": "telegran_selected.png",
                 "txt": "Telegram",
-                "href": "https://t.me/irisnetwork"
+                "href": "https://t.me/irisnetworkcn"
             },
             {
                 "src": "twitter.png",
@@ -86,10 +90,210 @@ export const message = {
     },
     "collaboration": {
         "title": "合作方",
+
+
+
+
+        "core":{
+            "title":"核心技术团队",
+            "img":"collaboration/core.png",
+            "list":[
+                {
+                    "pos":-56*0,
+                    "title":"BIANJIE.AI",
+                    "href":"https://www.bianjie.ai/"
+                }
+            ]
+        },
+
+        "strategy":{
+            "title":"战略合作伙伴",
+            "img":"collaboration/strategy.png",
+            "list":[
+                {
+                    "pos":-56*0,
+                    "title":"Cosmos",
+                    "href":"https://cosmos.network"
+                },
+                {
+                    "pos":-56*1,
+                    "title":"Tendermint",
+                    "href":"https://tendermint.com"
+                },
+                {
+                    "pos":-56*2,
+                    "title":"NewChainBase",
+                    "href":"http://www.newchainbase.com"
+                },
+                {
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":"https://www.hashgard.io/#/"
+                }
+            ]
+        },
+
+        "investment":{
+            "title":"投资方",
+            "img":"collaboration/investment.png",
+            "list":[
+                {
+                    "pos":-56*0,
+                    "title":"Amino Capital",
+                    "href":"http://www.aminocapital.com"
+                },
+                {
+                    "pos":-56*1,
+                    "title":"8维资本",
+                    "href":""
+                },
+                {
+                    "pos":-56*2,
+                    "title":"BIHU",
+                    "href":"https://bihu.com/"
+                },
+                {
+                    "pos":-56*3,
+                    "title":"BA Capital",
+                    "href":""
+                },
+                {
+                    "pos":-56*4,
+                    "title":"BKFund",
+                    "href":""
+                },
+                {
+                    "pos":-56*5,
+                    "title":"Byzantium",
+                    "href":""
+                },
+                {
+                    "pos":-56*6,
+                    "title":"Chain PE",
+                    "href":"http://www.chainpe.com"
+                },
+                {
+                    "pos":-56*7,
+                    "title":"Chain Pool",
+                    "href":"https://chainpool.io"
+                },
+                {
+                    "pos":-56*8,
+                    "title":"Coefficient",
+                    "href":"http://coefficient.network"
+                },
+                {
+                    "pos":-56*9,
+                    "title":"共识资本",
+                    "href":"http://consensuscapital.ca"
+                },
+                {
+                    "pos":-56*10,
+                    "title":"读数资本",
+                    "href":""
+                },
+                {
+                    "pos":-56*11,
+                    "title":"Genblock",
+                    "href":"https://genblock.capital"
+                },
+                {
+                    "pos":-56*12,
+                    "title":"Hayak",
+                    "href":""
+                },
+                {
+                    "pos":-56*13,
+                    "title":"Ink Labs",
+                    "href":"http://ink.one"
+                },
+                {
+                    "pos":-56*14,
+                    "title":"LinkVC",
+                    "href":"http://www.linkvc.com"
+                },
+                {
+                    "pos":-56*15,
+                    "title":"Medi Shares",
+                    "href":"http://medishares.org/"
+                },
+                {
+                    "pos":-56*16,
+                    "title":"MILESTONE",
+                    "href":"http://www.milestonevc.com/index.html"
+                },
+                {
+                    "pos":-56*17,
+                    "title":"NEO GLOBAL",
+                    "href":"http://ngc.fund"
+                },
+                {
+                    "pos":-56*18,
+                    "title":"Origin Capital",
+                    "href":"http://www.theorigincapital.com"
+                },
+                {
+                    "pos":-56*19,
+                    "title":"Satoshi Fund",
+                    "href":"https://satoshi.fund"
+                },
+                {
+                    "pos":-56*20,
+                    "title":"SV Insight",
+                    "href":"http://www.svinsight.com"
+                },
+                {
+                    "pos":-56*21,
+                    "title":"时戳资本",
+                    "href":""
+                },
+                {
+                    "pos":-56*22,
+                    "title":"Transference Fund",
+                    "href":""
+                },
+                {
+                    "pos":-56*23,
+                    "title":"U Network",
+                    "href":"https://u.network"
+                },
+                {
+                    "pos":-56*24,
+                    "title":"WATERDRIP CAPITAL",
+                    "href":"http://waterdrip.io"
+                },
+                {
+                    "pos":-56*25,
+                    "title":"一道资本",
+                    "href":""
+                }
+            ]
+        },
+
+        "counsel":{
+            "title":"Counsel",
+            "img":"collaboration/counsel.png",
+
+            "list":[
+                {
+                    "pos":-56*0,
+                    "title":"E&Y",
+                    "href":"http://www.ey.com"
+                },
+                {
+                    "pos":-56*1,
+                    "title":"KWM",
+                    "href":"http://www.kwm.com/"
+                },
+            ]
+        },
+
+
         "txt": [
             '核心技术团队',
             '战略合作伙伴'
         ],
+
         "list": [
             {
                 "img": "collaboration/bianjie.png",
@@ -99,7 +303,7 @@ export const message = {
             },
             {
                 "img": "collaboration/cosmos.png",
-                "title": "ICF/COSMOS",
+                "title": "COSMOS",
                 "text": "cosmos.network",
                 "href": "https://cosmos.network"
             },
@@ -120,8 +324,39 @@ export const message = {
                 "title": "万向新链加速器",
                 "text": "newchainbase.com",
                 "href": "http://www.newchainbase.com"
-            }
-        ]
+            },
+            {
+                "img": "collaboration/waterdrip.png",
+                "title": "水滴资本",
+                "text": "waterdrip.io",
+                "href": "http://waterdrip.io/"
+            },
+            {
+                "img": "collaboration/medishares.png",
+                "title": "Medishares",
+                "text": "medishares.org",
+                "href": "https://medishares.org"
+            },
+            {
+                "img": "collaboration/transference.png",
+                "title": "Transference",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img": "collaboration/bkfund.png",
+                "title": "BKFund",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img": "collaboration/timestamp.png",
+                "title": "时戳资本",
+                "text": "",
+                "href": ""
+            },
+        ],
+        "btnTxt":"合作方"
     },
     "roadmap": {
 
@@ -129,7 +364,7 @@ export const message = {
         "list": [
             {
                 "img": "roadmap/Pangu.png",
-                "txt": "作为IRIS项目的第一阶段，我们将专注于实现IRIS枢纽作为连接到Cosmos Hub的最早的区域枢纽之一。" +
+                "txt": "作为irisnet项目的第一阶段，我们将专注于实现IRIS枢纽作为连接到Cosmos Hub的最早的区域枢纽之一。" +
                 "我们将一些公有链以“分区”的形式连接到IRIS Hub。" +
                 "并为IRIS网络发布最初版本的移动客户端"
             },
@@ -165,14 +400,16 @@ export const message = {
             '将面向服务的基础设施融入到Cosmos网络中',
             '整合由异构系统提供的商业服务，包括公共链、联盟链以及现有系统',
             '通过区块链互联网实现服务的互联互通'
-        ]
+        ],
+        "btnTxt":"白皮书",
+        "checkTxt":"网络设计"
     },
     "network": {
         "title": '网络设计',
         "txt": [
             '通过标准的ABCI交易实现IRIS服务（也称为iServices）的' +
             '注册，绑定，调用，查询，分析和管理',
-            'iiService提供商充当公共链、联盟区块链以及现有企业系统中业务逻辑的适配器',
+            'iService提供商充当公共链、联盟区块链以及现有企业系统中业务逻辑的适配器',
             '可以通过扩展的IBC协议在区块链互联网中调用iServices'
         ],
         "src": 'white.png'
@@ -519,7 +756,11 @@ export const message = {
     "qr":{
         "title":" 请扫描二维码",
         "txt":" 关注公众号"
-    }
+    },
+    "community":{
+        "title":"社区",
+        "coming":"敬请期待"
 
+    }
 
 }
