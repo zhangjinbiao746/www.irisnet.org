@@ -76,7 +76,7 @@
                                     <img src="../../public/layer1.png">
                                 </div>
                                 <div class="irispattern_img">
-                                    <img src="../../public/irispattern.png" alt="">
+                                    <img src="../../public/irisnetpattern.png" alt="">
                                 </div>
                             </div>
                         </div>
