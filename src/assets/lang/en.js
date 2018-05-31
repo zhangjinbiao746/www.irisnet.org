@@ -74,7 +74,7 @@ export const message = {
             {
                 "src": "bluemedium.png",
                 "src_selected": "redmedium-selected.png",
-                "txt": "Reddit",
+                "txt": "Medium",
 
             },
             {
