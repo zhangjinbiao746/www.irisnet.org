@@ -66,7 +66,7 @@ export const message = {
                 "src": "bluemedium.png",
                 "src_selected": "redmedium-selected.png",
                 "txt": "Medium",
-
+                "href": "https://medium.com/irisnet-blog"
             },
             {
                 "src": "riot.png",
