@@ -72,10 +72,10 @@ export const message = {
                 "href": "mailto:contact@irisnet.org"
             },
             {
-                "src": "reddit.png",
-                "src_selected": "reddit_selected.png",
-                "txt": "Reddit",
-
+                "src": "bluemedium.png",
+                "src_selected": "redmedium-selected.png",
+                "txt": "Medium",
+                "href": "https://medium.com/irisnet-blog"
             },
             {
                 "src": "riot.png",

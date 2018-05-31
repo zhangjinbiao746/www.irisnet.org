@@ -24,8 +24,8 @@ module.exports = {
         : '#cheap-module-source-map',
     output: {
         path: resolve('dist'),
-        publicPath: isProd ? 'https://www.bianjie.ai/irisnet/dist/' : '/dist/',
-       // publicPath:  '/dist/',
+        // publicPath: isProd ? 'https://www.bianjie.ai/irisnet/dist/' : '/dist/',
+       publicPath:  '/dist/',
         filename: '[name].[chunkhash].js'
     },
     resolve: {
