@@ -41,8 +41,8 @@ export function createApp() {
         }
         next()
     })
-    //Vue.prototype.UrlSrc='../public/';
-    Vue.prototype.UrlSrc = process.env.NODE_ENV == 'development' ? '../public/' : 'https://www.bianjie.ai/irisnet/public/';
+    Vue.prototype.UrlSrc='../public/';
+    // Vue.prototype.UrlSrc = process.env.NODE_ENV == 'development' ? '../public/' : 'https://www.bianjie.ai/irisnet/public/';
     const app = new Vue({
         router,
         store,
