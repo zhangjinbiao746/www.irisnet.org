@@ -40,13 +40,6 @@
                                     <span class="button">What is IRISnet</span>
                                 </div>
                             </a>
-                            <br/>
-                            <div class="community-container" @click="gotoCommunity">
-                                        <span class="community-img-container">
-                                            <img src="../../public/app/community-purple.png">
-                                        </span>
-                                <span>Community</span>
-                            </div>
                         </div>
                     </div>
 
