@@ -36,17 +36,10 @@
                         </div>
                         <div class="home_img">
                             <a href="#/0/1">
-                                <div style="margin-bottom: 10px;">
+                                <div class="irisnet-btn" style="margin-bottom: 10px;">
                                     <span class="button">What is IRISnet</span>
                                 </div>
                             </a>
-                            <br/>
-                            <div class="community-container" @click="gotoCommunity">
-                                        <span class="community-img-container">
-                                            <img src="../../public/app/community-purple.png">
-                                        </span>
-                                <span>Community</span>
-                            </div>
                         </div>
                     </div>
 
