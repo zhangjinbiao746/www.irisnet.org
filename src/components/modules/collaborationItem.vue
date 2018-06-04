@@ -4,6 +4,7 @@
            @mouseenter="enterShow(item.href)"
            v-for="item in info.list"
            :href="item.href || 'javascript:void(0)'"
+           :target=" item.href ? '_blank': ''"
         >
             <i class="collaboration_logo"
                :style="{
