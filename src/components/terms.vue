@@ -92,9 +92,10 @@
                     float: right;
                     border-top: 1px solid #2e3148;
                     padding: 30px 8px;
+                    color: #d4d5de;
                     div {
                         font-size: 16px;
-                        color: #fff;
+                        color: #d4d5de;
                         line-height: 26px;
                         margin-top: 28px;
                         span {
