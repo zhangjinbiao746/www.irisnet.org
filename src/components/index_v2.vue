@@ -331,13 +331,13 @@
                                     <h4>{{collaboration_core.title}}</h4>
                                     <comp-collaboration-item :info="collaboration_core"></comp-collaboration-item>
                                 </article>
-
+                            </div>
+                            <div class="collaboration_two_col">
                                 <article class="strategy">
                                     <h4>{{collaboration_strategy.title}}</h4>
                                     <comp-collaboration-item :info="collaboration_strategy"></comp-collaboration-item>
                                 </article>
                             </div>
-
                             <div class="collaboration_one_col">
                                 <article class="investment">
                                     <h4>{{collaboration_investment.title}}</h4>
