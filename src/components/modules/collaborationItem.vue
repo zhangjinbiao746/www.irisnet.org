@@ -46,7 +46,7 @@
 
 <style scoped lang='less'>
     /*@import "../../assets/style/index.less";*/
-    @media only screen and (max-width: 450px){
+    @media only screen and (max-width: 330px){
         .collaboration_list{
             display: flex;
             flex-wrap: wrap;
@@ -55,12 +55,12 @@
         .collaboration_item{
             overflow: hidden;
             cursor: pointer;
-            margin: 10px 5px 10px 0;
+            margin: 10px 5px 5px 0;
             display: inline-block;
             .collaboration_logo{
                 display: block;
-                width: 130px;
-                height: 50px;
+                width: 120px;
+                height: 44px;
                 cursor: hand;
                 img{
                     width: 100%;
@@ -70,11 +70,46 @@
         .collaboration_itemnone{
             overflow: hidden;
             cursor: pointer;
-            margin: 10px 5px;
+            margin: 10px 5px 5px 0;
             display: inline-block;
             .collaboration_logo{
                 display: block;
-                width: 130px;
+                width: 120px;
+                height: 44px;
+                cursor: default;
+                img{width: 100%;}
+            }
+        }
+    }
+    @media only screen and(min-width: 330px) and (max-width: 450px){
+        .collaboration_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .collaboration_item{
+            overflow: hidden;
+            cursor: pointer;
+            margin: 10px 5px 5px 5px;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 140px;
+                height: 52px;
+                cursor: hand;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .collaboration_itemnone{
+            overflow: hidden;
+            cursor: pointer;
+            margin: 10px 5px 5px 5px;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 140px;
                 height: 50px;
                 cursor: default;
                 img{width: 100%;}
