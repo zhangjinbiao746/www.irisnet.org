@@ -323,9 +323,7 @@ export const message = {
                     "pos":-56*1,
                     "title":"KWM",
                     "href":"http://www.kwm.com/"
-                },
-                //占位
-                {},{},
+                }
             ]
         },
 

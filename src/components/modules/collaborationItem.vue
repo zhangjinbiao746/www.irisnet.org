@@ -10,6 +10,11 @@
                 <img :src="UrlSrc+item.img" alt="">
             </div>
         </a>
+        <!--占位-->
+        <div v-if="info.list.length < 3" class="collaboration_zanwei_logo">
+        </div>
+        <div v-if="info.list.length < 3" class="collaboration_zanwei_logo two_logo">
+        </div>
     </div>
 </template>
 
@@ -45,12 +50,19 @@
 
 
 <style scoped lang='less'>
+
     /*@import "../../assets/style/index.less";*/
     @media only screen and (max-width: 330px){
         .collaboration_list{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+        }
+        .collaboration_zanwei_logo{
+            width: 236px;
+            height: 85px;
+            margin:20px 5px 20px ;
+            display: none;
         }
         .collaboration_item{
             overflow: hidden;
@@ -87,6 +99,12 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+        .collaboration_zanwei_logo{
+            width: 236px;
+            height: 85px;
+            margin:20px 5px 20px ;
+            display: none;
+        }
         .collaboration_item{
             overflow: hidden;
             cursor: pointer;
@@ -122,6 +140,12 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+        .collaboration_zanwei_logo{
+            width: 236px;
+            height: 85px;
+            margin:20px 5px 20px ;
+            display: none;
+        }
         .collaboration_item{
             overflow: hidden;
             cursor: pointer;
@@ -155,6 +179,12 @@
             margin: 0 15%;
             justify-content: space-between;
         }
+        .collaboration_zanwei_logo{
+            width: 236px;
+            height: 85px;
+            margin:20px 5px 20px ;
+            display: none;
+        }
         .collaboration_item{
             overflow: hidden;
             cursor: pointer;
@@ -187,6 +217,19 @@
             margin: 0 5%;
             justify-content: space-between;
         }
+        .collaboration_zanwei_logo{
+            width: 236px;
+            height: 85px;
+            margin:20px 5px 20px ;
+        }
+        .two_logo{
+            display: none;
+        }
+        /*#collaboration_three_list{*/
+            /*display: flex;*/
+            /*margin: 0 5%;*/
+            /*justify-content: flex-start;*/
+        /*}*/
         .collaboration_item{
             overflow: hidden;
             cursor: pointer;
@@ -219,6 +262,14 @@
             margin: 0 5%;
             justify-content: space-between;
         }
+        .collaboration_zanwei_logo{
+            width: 236px;
+            height: 85px;
+            margin:20px 5px 20px ;
+        }
+        .two_logo{
+            display: none;
+        }
         .collaboration_item{
             overflow: hidden;
             cursor: pointer;
@@ -250,6 +301,11 @@
             flex-wrap: wrap;
             justify-content: space-between;
         }
+        .collaboration_zanwei_logo{
+            width: 236px;
+            height: 85px;
+            margin:20px 5px 20px ;
+        }
         .collaboration_item{
             overflow: hidden;
             cursor: pointer;
@@ -280,6 +336,11 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
+        }
+        .collaboration_zanwei_logo{
+            width: 236px;
+            height: 85px;
+            margin:20px 5px auto ;
         }
         .collaboration_item{
             overflow: hidden;
