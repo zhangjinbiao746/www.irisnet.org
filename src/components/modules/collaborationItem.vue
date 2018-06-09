@@ -4,21 +4,17 @@
            @mouseenter="enterShow(item.href)"
            v-for="item in info.list"
            :href="item.href || 'javascript:void(0)'"
+           :target=" item.href ? '_blank': ''"
         >
-            <i class="collaboration_logo"
-               :style="{
-                backgroundImage:'url('+UrlSrc+info.img+')',
-                backgroundPositionY:item.pos+'px'
-           }"
-            ></i>
-            <h5
-            >{{item.title}}</h5>
+            <div class="collaboration_logo">
+                <img :src="UrlSrc+item.img" alt="">
+            </div>
         </a>
     </div>
 </template>
 
 <script type="text/ecmascript-6">
-import $ from "jquery"
+    import $ from "jquery"
     export default {
         data(){
             return {}
@@ -28,7 +24,7 @@ import $ from "jquery"
         },
 
         methods: {
-           // 业务需求，有链接的时候有hover效果。
+            // 业务需求，有链接的时候有hover效果。
             showHover(){
                 $('.collaboration_itemnone').removeClass('collaboration_itemnone').addClass('collaboration_item')
             },
@@ -50,76 +46,272 @@ import $ from "jquery"
 
 <style scoped lang='less'>
     /*@import "../../assets/style/index.less";*/
+    @media only screen and (max-width: 330px){
+        .collaboration_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .collaboration_item{
+            overflow: hidden;
+            cursor: pointer;
+            margin: 10px 5px 5px 0;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 120px;
+                height: 44px;
+                cursor: hand;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .collaboration_itemnone{
+            overflow: hidden;
+            cursor: pointer;
+            margin: 10px 5px 5px 0;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 120px;
+                height: 44px;
+                cursor: default;
+                img{width: 100%;}
+            }
+        }
+    }
+    @media only screen and(min-width: 330px) and (max-width: 450px){
+        .collaboration_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .collaboration_item{
+            overflow: hidden;
+            cursor: pointer;
+            margin: 10px 5px 5px 5px;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 140px;
+                height: 52px;
+                cursor: hand;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .collaboration_itemnone{
+            overflow: hidden;
+            cursor: pointer;
+            margin: 10px 5px 5px 5px;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 140px;
+                height: 50px;
+                cursor: default;
+                img{width: 100%;}
+            }
+        }
+    }
+    @media only screen and(min-width: 450px)and (max-width: 800px){
+        .collaboration_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .collaboration_item{
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 13px;
+            margin:20px 5px auto ;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 85px;
+                cursor: hand;
+            }
+        }
+        .collaboration_itemnone{
+            overflow: hidden;
+            cursor: pointer;
+            margin: 20px 5px auto ;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 85px;
+                cursor: default;
+            }
+        }
+    }
+    @media only screen and (min-width:800px) and ( max-width: 925px){
+        .collaboration_list{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 15%;
+            justify-content: space-between;
+        }
+        .collaboration_item{
+            overflow: hidden;
+            cursor: pointer;
+            margin:20px 5px 20px ;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 86px;
+                cursor: hand;
+            }
+        }
+        .collaboration_itemnone{
+            overflow: hidden;
+            cursor: pointer;
+            margin: 20px 5px 20px;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 86px;
+                cursor: default;
+            }
+        }
+    }
+    @media only screen and (min-width:925px) and ( max-width: 1024px){
+        .collaboration_list{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 5%;
+            justify-content: space-between;
+        }
+        .collaboration_item{
+            overflow: hidden;
+            cursor: pointer;
+            margin:20px 5px 20px;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 86px;
+                cursor: hand;
+            }
+        }
+        .collaboration_itemnone{
+            overflow: hidden;
+            cursor: pointer;
+            margin: 20px 5px 20px;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 86px;
+                cursor: default;
+            }
+        }
+    }
+    @media only screen and( min-width: 1024px) and ( max-width: 1200px){
+        .collaboration_list{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 5%;
+            justify-content: space-between;
+        }
+        .collaboration_item{
+            overflow: hidden;
+            cursor: pointer;
+            margin:20px 5px 20px ;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 86px;
+                cursor: hand;
+            }
+        }
+        .collaboration_itemnone{
+            overflow: hidden;
+            cursor: pointer;
+            margin: 20px 5px 20px ;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 86px;
+                cursor: default;
+            }
+        }
+    }
+    @media only screen and( min-width: 1200px) and ( max-width: 1380px){
+        .collaboration_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .collaboration_item{
+            overflow: hidden;
+            cursor: pointer;
+            margin:20px 5px ;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 86px;
+                cursor: hand;
+            }
+        }
+        .collaboration_itemnone{
+            overflow: hidden;
+            cursor: pointer;
+            margin: 20px 5px ;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 86px;
+                cursor: default;
+            }
+        }
+    }
+    @media only screen and ( min-width: 1380px){
+        .collaboration_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .collaboration_item{
+            overflow: hidden;
+            cursor: pointer;
+            margin:20px 5px auto ;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 86px;
+                cursor: hand;
 
-    .collaboration_list{
-    display: flex;
-    flex-wrap: wrap;
-    /*align-content: center;*/
-        justify-content: flex-start;
+            }
+        }
+        .collaboration_itemnone{
+            overflow: hidden;
+            cursor: pointer;
+            margin: 20px 5px auto ;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 86px;
+                cursor: default;
+            }
+        }
     }
-       .collaboration_item{
-           overflow: hidden;
-           cursor: pointer;
-           margin:20px 10px auto ;
-           display: inline-block;
-    .collaboration_logo{
-        display: block;
-        width:56px;
-        height:56px;
-        position: absolute;
-        border:2px solid #5252a3;
-        border-radius:56px;
-    }
-    h5{
-        color: #6677e8;
-        height:42px;
-        line-height:42px;
-        background-color:#141430;
-        margin:9px auto 9px 40px;
-
-        text-align: center;
-        border-radius:8px;
-        padding:0 10px;
-        width:170px;
-        text-indent: 10px;
-    }
-    }
-       .collaboration_itemnone{
-           overflow: hidden;
-           cursor: pointer;
-           margin:20px 10px auto ;
-           display: inline-block;
-           .collaboration_logo{
-               display: block;
-               width:56px;
-               height:56px;
-               position: absolute;
-               border:2px solid #5252a3;
-               border-radius:56px;
-           }
-           h5{
-               color: #6677e8;
-               height:42px;
-               line-height:42px;
-               background-color:#141430;
-               margin:9px auto 9px 40px;
-
-               text-align: center;
-               border-radius:8px;
-               padding:0 10px;
-               width:170px;
-               text-indent: 10px;
-           }
-       }
-    .collaboration_item:hover{
-    .collaboration_logo{
-        border-color: #1f97f8;
-    }
-    h5{
-        color: #1f97f8;
-        text-decoration:underline;
-    }
-    }
+    /*.collaboration_item:hover{*/
+        /*.collaboration_logo{*/
+            /*border-color: #1f97f8;*/
+        /*}*/
+    /*}*/
     .a-none-line{
         text-decoration: none !important;
     }
