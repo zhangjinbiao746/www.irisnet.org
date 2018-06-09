@@ -21,14 +21,6 @@
                         <div class="hr_vertical"></div>
 
                         <!--Community-->
-                        <div class="comm">
-                            <!--<div class="div_h"></div>-->
-                            <a class="item" style="margin-right: 10px;" @mouseenter="commHide" @mouseleave="commShow">
-                                <img :src="UrlSrc+comm">
-                                Community
-                                <div></div>
-                            </a>
-                        </div>
 
                         <!--语言切换-->
                         <div class="item_en" v-if="$store.state.lang=='EN'">
@@ -225,7 +217,7 @@
                                             {{$store.state.messages.roadmap.list[2].txt}}</p>
                                         <hr v-show="roadmapIsShowIdx === 2" class="hr_ver">
                                         <img @mouseover="mapToggle(2)" src="../../public/Ellipse.png">
-                                        <h5 @mouseover="mapToggle(2)"><strong>KUAFU</strong><span>DEC 2018 - MAY 2018</span>
+                                        <h5 @mouseover="mapToggle(2)"><strong>KUAFU</strong><span>DEC 2018 - MAY 2019</span>
                                         </h5>
                                     </div>
 
@@ -339,13 +331,13 @@
                                     <h4>{{collaboration_core.title}}</h4>
                                     <comp-collaboration-item :info="collaboration_core"></comp-collaboration-item>
                                 </article>
-
+                            </div>
+                            <div class="collaboration_two_col">
                                 <article class="strategy">
                                     <h4>{{collaboration_strategy.title}}</h4>
                                     <comp-collaboration-item :info="collaboration_strategy"></comp-collaboration-item>
                                 </article>
                             </div>
-
                             <div class="collaboration_one_col">
                                 <article class="investment">
                                     <h4>{{collaboration_investment.title}}</h4>

@@ -248,7 +248,7 @@
                         </div>
                     </div>
 
-                    <div id="#/0/5" class="contact" style="margin-top:100px;;">
+                    <div id="#/0/5" class="contact">
                         <div class="contact_title">
                             {{$store.state.messages.contact.title}}
                             <div class="nav-line"></div>

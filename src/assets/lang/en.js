@@ -34,14 +34,14 @@ export const message = {
                 'txt': "Contact",
                 "href": "#/0/5",
             },
-        //     {
-        //         'txt': "privacy",
-        //         "href": "/appPrivacy",
-        //     },
-        //     {
-        //         'txt': "terms",
-        //         "href": "/appTerms",
-        //     }
+            //     {
+            //         'txt': "privacy",
+            //         "href": "/appPrivacy",
+            //     },
+            //     {
+            //         'txt': "terms",
+            //         "href": "/appTerms",
+            //     }
         ]
     },
     "contact": {
@@ -72,10 +72,10 @@ export const message = {
                 "href": "mailto:contact@irisnet.org"
             },
             {
-                "src": "reddit.png",
-                "src_selected": "reddit_selected.png",
-                "txt": "Reddit",
-
+                "src": "bluemedium.png",
+                "src_selected": "redmedium-selected.png",
+                "txt": "Medium",
+                "href": "https://medium.com/irisnet-blog"
             },
             {
                 "src": "riot.png",
@@ -111,13 +111,13 @@ export const message = {
 
         "core":{
             "title":"Core Technology Team",
-            "img":"collaboration/core.png",
             "list":[
                 {
+                    "img":"collaboration/bianjieai.png",
                     "pos":-56*0,
                     "title":"BIANJIE.AI",
                     "href":"https://www.bianjie.ai/"
-                }
+                },
             ]
         },
 
@@ -126,21 +126,25 @@ export const message = {
             "img":"collaboration/strategy.png",
             "list":[
                 {
+                    "img":"collaboration/newcosmos.png",
                     "pos":-56*0,
                     "title":"Cosmos",
                     "href":"https://cosmos.network"
                 },
                 {
+                    "img":"collaboration/newtendermint.png",
                     "pos":-56*1,
                     "title":"Tendermint",
                     "href":"https://tendermint.com"
                 },
                 {
+                    "img":"collaboration/wanyun.png",
                     "pos":-56*2,
                     "title":"NewChainBase",
                     "href":"http://www.newchainbase.com"
                 },
                 {
+                    "img":"collaboration/hashgard.png",
                     "pos":-56*3,
                     "title":"Hashgard",
                     "href":"https://www.hashgard.io/#/"
@@ -150,138 +154,176 @@ export const message = {
 
         "investment":{
             "title":"Investment Institutions",
-            "img":"collaboration/investment.png",
             "list":[
                 {
+                    "img":"collaboration/AminoCapital.png",
                     "pos":-56*0,
                     "title":"Amino Capital",
                     "href":"http://www.aminocapital.com"
                 },
                 {
+                    "img":"collaboration/bawei.png",
                     "pos":-56*1,
                     "title":"8 Decimal",
                     "href":""
                 },
                 {
+                    "img":"collaboration/bihu.png",
                     "pos":-56*2,
                     "title":"BIHU",
                     "href":"https://bihu.com/"
                 },
                 {
+                    "img":"collaboration/bt.png",
                     "pos":-56*3,
                     "title":"BA Capital",
                     "href":""
                 },
                 {
+                    "img":"collaboration/newBKfund.png",
                     "pos":-56*4,
                     "title":"BKFund",
                     "href":""
                 },
                 {
+                    "img":"collaboration/bzt.png",
                     "pos":-56*5,
                     "title":"Byzantium",
                     "href":""
                 },
                 {
+                    "img":"collaboration/chainPEter.png",
                     "pos":-56*6,
                     "title":"Chain PE",
                     "href":"http://www.chainpe.com"
                 },
                 {
+                    "img":"collaboration/cp.png",
                     "pos":-56*7,
                     "title":"Chain Pool",
                     "href":"https://chainpool.io/"
                 },
                 {
+                    "img":"collaboration/coefficient.png",
                     "pos":-56*8,
                     "title":"Coefficient",
                     "href":"http://coefficient.network"
                 },
                 {
+                    "img":"collaboration/gszb.png",
                     "pos":-56*9,
                     "title":"Consensus",
                     "href":"http://consensuscapital.ca"
                 },
                 {
+                    "img":"collaboration/dsjj.png",
                     "pos":-56*10,
                     "title":"Dushu",
                     "href":""
                 },
                 {
+                    "img":"collaboration/genblock.png",
                     "pos":-56*11,
                     "title":"Genblock",
                     "href":"https://genblock.capital"
                 },
                 {
+                    "img":"collaboration/hayek.png",
                     "pos":-56*12,
                     "title":"Hayak",
                     "href":""
                 },
                 {
+                    "img":"collaboration/ink.png",
                     "pos":-56*13,
                     "title":"Ink Labs",
                     "href":"http://ink.one"
                 },
                 {
+                    "img":"collaboration/linkvc.png",
                     "pos":-56*14,
                     "title":"LinkVC",
                     "href":"http://www.linkvc.com"
                 },
                 {
+                    "img":"collaboration/newmedishares.png",
                     "pos":-56*15,
                     "title":"Medi Shares",
                     "href":"http://medishares.org/"
                 },
                 {
+                    "img":"collaboration/js.png",
                     "pos":-56*16,
                     "title":"MILESTONE",
                     "href":"http://www.milestonevc.com/index.html"
                 },
                 {
+                    "img":"collaboration/ngc.png",
                     "pos":-56*17,
                     "title":"NEO GLOBAL",
                     "href":"http://ngc.fund"
                 },
                 {
+                    "img":"collaboration/y.png",
                     "pos":-56*18,
                     "title":"Origin Capital",
                     "href":"http://www.theorigincapital.com"
                 },
                 {
+                    "img":"collaboration/satoshifund.png",
                     "pos":-56*19,
                     "title":"Satoshi Fund",
                     "href":"https://satoshi.fund"
                 },
                 {
+                    "img":"collaboration/ggtm.png",
                     "pos":-56*20,
                     "title":"SV Insight",
                     "href":"http://www.svinsight.com"
                 },
                 {
+                    "img":"collaboration/sczb.png",
                     "pos":-56*21,
                     "title":"Timestamp",
                     "href":""
                 },
                 {
+                    "img":"collaboration/hxjj.png",
                     "pos":-56*22,
                     "title":"Transference Fund",
                     "href":""
                 },
                 {
+                    "img":"collaboration/unetwork.png",
                     "pos":-56*23,
                     "title":"U Network",
                     "href":"https://u.network"
                 },
                 {
+                    "img":"collaboration/jhct.png",
                     "pos":-56*24,
+                    "title":"UNITY VENTURES",
+                    "href":"http://www.unityvc.com"
+                },
+                {
+                    "img":"collaboration/ua.png",
+                    "pos":-56*25,
+                    "title":"Univalues Associates",
+                    "href":""
+                },
+                {
+                    "img":"collaboration/sdzb.png",
+                    "pos":-56*25,
                     "title":"WATERDRIP CAPITAL",
                     "href":"http://waterdrip.io"
                 },
                 {
+                    "img":"collaboration/ydzb.png",
                     "pos":-56*25,
-                    "title":"一道资本",
+                    "title":"",
                     "href":""
                 }
+
             ]
         },
 
@@ -291,15 +333,19 @@ export const message = {
 
             "list":[
                 {
+                    "img":"collaboration/ey.png",
                     "pos":-56*0,
                     "title":"E&Y",
                     "href":""
                 },
                 {
+                    "img":"collaboration/king.png",
                     "pos":-56*1,
                     "title":"KWM",
                     "href":""
                 },
+                //占位
+                {},{},
             ]
         },
 
