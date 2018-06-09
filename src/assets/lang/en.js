@@ -343,9 +343,7 @@ export const message = {
                     "pos":-56*1,
                     "title":"KWM",
                     "href":""
-                },
-                //占位
-                {},{},
+                }
             ]
         },
 
