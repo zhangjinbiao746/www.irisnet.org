@@ -8,8 +8,7 @@ import VueI18n from 'vue-i18n'
 import 'babel-polyfill'
 
 require('reveal.js/css/reveal.css')
-
-var Mailchimp = require('mailchimp-api-v3')
+// var Mailchimp = require('mailchimp-api-v3')
 
 Vue.mixin({
     beforeMount() {
@@ -51,7 +50,7 @@ export function createApp() {
         render: h => h(App)
     })
 
-			/*var mailchimp = new Mailchimp('617e8ebd7915e6e4d5e95adad27003b5-us18');
+            /*var mailchimp = new Mailchimp('617e8ebd7915e6e4d5e95adad27003b5-us18');
 
             var callback = function (err, result) {
                 if (err) {
