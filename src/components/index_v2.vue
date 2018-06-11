@@ -77,7 +77,7 @@
                         <div class="innovation-container">
 
                             <div class="what_txt">
-                                <div class="what_txt_title">
+                                <div class="what_txt_title" style="color: #fff">
                                     {{$store.state.messages.about.title}}
                                     <div class="line" style="margin-top: 10px"></div>
                                 </div>
@@ -150,7 +150,7 @@
                     <div id="#/0/2" class="what">
                         <div class="network-container">
                             <div class="what_txt">
-                                <div class="what_txt_title" style="font-size: 30px;">
+                                <div class="what_txt_title" style="font-size: 30px;color: #fff">
                                     {{$store.state.messages.network.title}}
                                     <div class="line" style="margin-top: 10px"></div>
                                 </div>
@@ -361,15 +361,30 @@
                                 {{$store.state.messages.contact.title}}
                                 <div class="line"></div>
                             </div>
+                           <div class="mail-container">
+                               <div class="getmail-container">
+                                   <span>Get Newsletter</span>
+                               </div>
+                               <div class="ipt-container">
+                                   <input v-model="mailaddress" type="text" placeholder="Enter your Email address">
+                               </div>
+                               <div class="sub-container" @click="commitMaile">
+                                   <span>Subscribe</span>
+                               </div>
+                           </div>
                             <div class="contact_warp">
                                 <a :href="item.href" target="_blank" @click="blank(item.txt)"
                                    v-for="item in $store.state.messages.contact.img">
                                     <div class="contact_list">
                                         <img class="src" :src="UrlSrc+item.src"/>
                                         <img class="src_selected" :src="UrlSrc+item.src_selected"/>
-                                        <div>{{item.txt}} {{item.is}}</div>
                                     </div>
                                 </a>
+                            </div>
+                            <div class="info-contianer">
+                                <p>IRISnet is named after Greek goddess iris</p>
+                                <p>said to be the personification of the rainbow and the faithful messenger</p>
+                                <p>between heaven and humanith</p>
                             </div>
                         </div>
                     </div>
@@ -418,7 +433,8 @@
                 ],
                 comm: 'community.png',
                 down: 'arrow.png',
-                wechatIs: false
+                wechatIs: false,
+                mailaddress: ""
             }
         },
         computed: {
@@ -490,10 +506,30 @@
                 model[index].is = true;
                 history.pushState({}, '', model[index].href);
                 this.$store.state.messages.head.txt = model;
+            },
+            commitMaile(){
+                var Mailchimp = require('../../node_modules/mailchimp-api-v3/index');
+                var mailchimp = new Mailchimp('617e8ebd7915e6e4d5e95adad27003b5-us18');
+                var callback = function (err, result) {
+                    if (err) {
+                        console.log('error', err);
+                    }
+                    console.log(result);
+
+                }
+
+                mailchimp.request({
+                    method : 'post',
+                    path : '/lists/{list_id}/members',
+                    path_params : {
+                        list_id:"fae0215d25"
+                    },
+                    body : {
+                        "email_address":this.mailaddress, "status":"subscribed"
+                    },
+
+                }, callback);
             }
-        },
-        created(){
-            // this.$store.commit('changeItemIs',this.getPath())
         },
         mounted: function () {
             this.$store.commit('changeItemIs', this.getPath())
