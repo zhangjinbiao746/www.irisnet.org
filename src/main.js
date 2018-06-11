@@ -9,6 +9,8 @@ import 'babel-polyfill'
 
 require('reveal.js/css/reveal.css')
 
+var Mailchimp = require('mailchimp-api-v3')
+
 Vue.mixin({
     beforeMount() {
         const {asyncData} = this.$options
@@ -48,5 +50,35 @@ export function createApp() {
         store,
         render: h => h(App)
     })
+
+			/*var mailchimp = new Mailchimp('617e8ebd7915e6e4d5e95adad27003b5-us18');
+
+            var callback = function (err, result) {
+                if (err) {
+                    console.log('error', err);
+                }
+                console.log(result);
+
+            }
+
+            mailchimp.request({
+                method : 'post',
+                path : '/lists/{list_id}/members',
+                path_params : {
+                    list_id:"fae0215d25"
+                },
+                body : {
+                    "email_address":"xiao.xianming@oncloudit.com", "status":"subscribed"
+                },
+
+            }, callback);*/
+
+
     return {app, router, store}
 }
+
+
+
+
+
+
