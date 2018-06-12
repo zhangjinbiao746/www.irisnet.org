@@ -231,89 +231,7 @@
                                         <p v-show="roadmapIsShowIdx === 3">
                                             {{$store.state.messages.roadmap.list[2].txt}}</p>
                                     </div>
-
                                 </div>
-
-
-                                <!--<div class="roadmap_warp"  @mouseover="textShow(0)" @mouseout="textHide(0)">-->
-                                <!--<div class="roadmap_list_gif">-->
-                                <!--<div class="div1">-->
-                                <!--<img src="../../public/Ellipse.png">-->
-                                <!--</div>-->
-                                <!--</div>-->
-                                <!--<transition name="animation">-->
-                                <!--<div class="roadmap_text animation" v-show="list[0].is">-->
-                                <!--{{$store.state.messages.roadmap.list[0].txt}}-->
-                                <!--</div>-->
-                                <!--</transition>-->
-
-                                <!--<div class="top-line" v-show="list[0].is"></div>-->
-
-                                <!--<div class="roadmap-text">-->
-                                <!--<p>PANGU</p>-->
-                                <!--<p>JAN 2018-JUL 2018</p>-->
-                                <!--</div>-->
-                                <!--</div>-->
-
-                                <!--<div class="roadmap_warp"  @mouseover="textShow(1)" @mouseout="textHide(1)">-->
-                                <!--<div class="roadmap-text" style="padding-bottom: 14px">-->
-                                <!--<p>NUWA</p>-->
-                                <!--<p>AUG 2018-NOV 2018</p>-->
-                                <!--</div>-->
-                                <!--<div class="roadmap_list_gif">-->
-                                <!--<div class="div1">-->
-                                <!--<img src="../../public/Ellipse.png">-->
-                                <!--</div>-->
-                                <!--<div class="img imgdiv" v-show="!list[1].is"></div>-->
-                                <!--</div>-->
-                                <!--<transition name="animation">-->
-                                <!--<div class="roadmap_text" v-show="list[1].is" style="top:190px; width: 290px">-->
-                                <!--{{$store.state.messages.roadmap.list[1].txt}}-->
-                                <!--</div>-->
-                                <!--</transition>-->
-                                <!--<div class="bottom-line" v-show="list[1].is"></div>-->
-                                <!--</div>-->
-
-                                <!--<div class="roadmap_warp"  @mouseover="textShow(2)" @mouseout="textHide(2)">-->
-                                <!--<div class="roadmap_list_gif">-->
-                                <!--<div class="div1">-->
-                                <!--<img src="../../public/Ellipse.png">-->
-                                <!--</div>-->
-                                <!--<div class="img imgdiv" v-show="!list[2].is"></div>-->
-                                <!--</div>-->
-                                <!--<transition name="animation">-->
-                                <!--<div class="roadmap_text" v-show="list[2].is">-->
-                                <!--{{$store.state.messages.roadmap.list[2].txt}}-->
-                                <!--</div>-->
-                                <!--</transition>-->
-                                <!--<div class="top-line" v-show="list[2].is"></div>-->
-                                <!--<div class="roadmap-text">-->
-                                <!--<p>KUAFU</p>-->
-                                <!--<p>DEC 2018-MAY 2018</p>-->
-                                <!--</div>-->
-                                <!--</div>-->
-
-                                <!--<div class="roadmap_warp"  @mouseover="textShow(3)" @mouseout="textHide(3)">-->
-                                <!--<div class="roadmap-text" style="padding-bottom: 14px">-->
-                                <!--<p>HOUYI</p>-->
-                                <!--<p>NEYOND JUN 2019</p>-->
-                                <!--</div>-->
-                                <!--<div class="roadmap_list_gif">-->
-                                <!--<div class="div1">-->
-                                <!--<img src="../../public/Ellipse.png">-->
-                                <!--</div>-->
-                                <!--<div class="img imgdiv" v-show="!list[3].is"></div>-->
-                                <!--</div>-->
-                                <!--<transition name="animation">-->
-                                <!--<div class="roadmap_text" v-show="list[3].is"-->
-                                <!--style="top: 210px;left: -40px; width: 290px">-->
-                                <!--{{$store.state.messages.roadmap.list[3].txt}}-->
-                                <!--</div>-->
-                                <!--</transition>-->
-                                <!--<div class="bottom-line" v-show="list[3].is"></div>-->
-                                <!--</div>-->
-
-
                             </div>
                             <div class="roadmap-container-placeholder"></div>
                         </div>
@@ -362,13 +280,15 @@
                                 <div class="line"></div>
                             </div>
                            <div class="mail-container">
-                               <form method="post">
-                                           <div class="form-group">
-                                             <label for="email">Email Address</label>
-                                             <input type="email" class="form-control" name="email">
-                                           </div>
-                                           <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                                         </form>
+                               <div class="getmail-container">
+                                   <span>Get Newsletter</span>
+                               </div>
+                               <div class="ipt-container">
+                                   <input v-model="mailaddress" type="text" placeholder="Enter your Email address">
+                               </div>
+                               <div class="sub-container" @click="commitMaile">
+                                   <span>Subscribe</span>
+                               </div>
                            </div>
                             <div class="contact_warp">
                                 <a :href="item.href" target="_blank" @click="blank(item.txt)"
@@ -412,6 +332,7 @@
     import foot from './foot'
     import {mapState} from 'vuex'
     import CompCollaborationItem from '@/components/modules/collaborationItem.vue'
+    import axios from "axios"
     let Reveal
     if (process.env.VUE_ENV === 'client') {
         Reveal = require('reveal.js')
@@ -499,9 +420,14 @@
                 this.$store.state.messages.head.txt = model;
             },
             commitMaile(){
-
+                axios({
+                    method: 'post',
+                    url:"/",
+                    data: {
+                        email:this.mailaddress,
+                    }
+                });
             }
-
         },
         mounted: function () {
             this.roll();
