@@ -2,6 +2,10 @@ const fs = require('fs')
 const path = require('path')
 const LRU = require('lru-cache')
 const express = require('express')
+const request = require('request')
+var cors = require('cors')
+
+const bodyParser = require('body-parser');
 const favicon = require('serve-favicon')
 const compression = require('compression')
 const resolve = file => path.resolve(__dirname, file)
@@ -15,6 +19,34 @@ const serverInfo =
   `vue-server-renderer/${require('vue-server-renderer/package.json').version}`
 
 const app = express()
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.route('/')
+    .post((req, res, next) => {
+        request({
+            url: 'https://us18.api.mailchimp.com/3.0/lists/25c2f2356f/members',
+            method: 'POST',
+            headers: {
+                'Authorization': 'apikey 5544ff992834463df3bf84f31ee6b8d6-us18',
+                'Content-Type': 'application/json'
+            },
+            json: {
+                'email_address': req.body.email,
+                'status': 'subscribed'
+            }
+        }, function(err, response, body) {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log(body)
+                res.redirect('/');
+            }
+        });
+    });
+
+
+
+console.log("====================");
 
 const template = fs.readFileSync(resolve('index.html'), 'utf-8')
 
@@ -132,6 +164,7 @@ function render (req, res) {
 app.get('*', isProd ? render : (req, res) => {
   readyPromise.then(() => render(req, res))
 })
+
 
 const port = process.env.PORT || 3000
 app.listen(port, () => {

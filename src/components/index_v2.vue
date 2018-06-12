@@ -362,15 +362,13 @@
                                 <div class="line"></div>
                             </div>
                            <div class="mail-container">
-                               <div class="getmail-container">
-                                   <span>Get Newsletter</span>
-                               </div>
-                               <div class="ipt-container">
-                                   <input v-model="mailaddress" type="text" placeholder="Enter your Email address">
-                               </div>
-                               <div class="sub-container" @click="commitMaile">
-                                   <span>Subscribe</span>
-                               </div>
+                               <form method="post">
+                                           <div class="form-group">
+                                             <label for="email">Email Address</label>
+                                             <input type="email" class="form-control" name="email">
+                                           </div>
+                                           <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                         </form>
                            </div>
                             <div class="contact_warp">
                                 <a :href="item.href" target="_blank" @click="blank(item.txt)"
@@ -502,28 +500,8 @@
             },
             commitMaile(){
 
-                // var Mailchimp = require('mailchimp-api-v3/index');
-                // var mailchimp = Mailchimp('617e8ebd7915e6e4d5e95adad27003b5-us18');
-                //
-                // var callback = function (err, result) {
-                //     if (err) {
-                //         console.log('error', err);
-                //     }
-                //     console.log(result);
-                // }
-                //
-                // mailchimp.request({
-                //     method : 'post',
-                //     path : '/lists/+{list_id}/members',
-                //     path_params : {
-                //         list_id:"fae0215d25"
-                //   },
-                //     body : {
-                //         "email_address":_this.mailaddress, "status":"subscribed"
-                //     },
-                //
-                // }, callback);
             }
+
         },
         mounted: function () {
             this.roll();

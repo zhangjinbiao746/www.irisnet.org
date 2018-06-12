@@ -19,6 +19,15 @@ function resolve(dir) {
 
 
 module.exports = {
+    proxyTable: {
+        "/api" : {
+            target:"https://us18.api.mailchimp.com/3.0/lists/25c2f2356f/members/",
+            changeOrigin: true,
+            pathRewrite: {
+                "^/api":''
+            }
+        }
+    },
     devtool: isProd
         ? false
         : '#cheap-module-source-map',
