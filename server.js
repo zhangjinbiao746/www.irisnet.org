@@ -37,8 +37,10 @@ app.route('/')
         }, function(err, response, body) {
             if (err) {
                 console.log(err);
+				res.send(error);
             } else {
-                console.log(body)
+                console.log(body);
+				res.send(body);
             }
         });
     });
