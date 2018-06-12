@@ -3,7 +3,7 @@ const path = require('path')
 const LRU = require('lru-cache')
 const express = require('express')
 const request = require('request')
-var cors = require('cors')
+
 
 const bodyParser = require('body-parser');
 const favicon = require('serve-favicon')
