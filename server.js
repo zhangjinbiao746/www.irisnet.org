@@ -39,7 +39,6 @@ app.route('/')
                 console.log(err);
             } else {
                 console.log(body)
-                res.redirect('/');
             }
         });
     });
