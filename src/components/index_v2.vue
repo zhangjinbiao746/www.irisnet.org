@@ -424,13 +424,6 @@
         data() {
             return {
                 roadmapIsShowIdx: -1,
-                // list可废弃
-                list: [
-                    {is: false},
-                    {is: false},
-                    {is: false},
-                    {is: false},
-                ],
                 comm: 'community.png',
                 down: 'arrow.png',
                 wechatIs: false,
@@ -508,60 +501,31 @@
                 this.$store.state.messages.head.txt = model;
             },
             commitMaile(){
-                var Mailchimp = require('../../node_modules/mailchimp-api-v3/index');
-                var mailchimp = new Mailchimp('617e8ebd7915e6e4d5e95adad27003b5-us18');
-                var callback = function (err, result) {
-                    if (err) {
-                        console.log('error', err);
-                    }
-                    console.log(result);
 
-                }
-
-                mailchimp.request({
-                    method : 'post',
-                    path : '/lists/{list_id}/members',
-                    path_params : {
-                        list_id:"fae0215d25"
-                    },
-                    body : {
-                        "email_address":this.mailaddress, "status":"subscribed"
-                    },
-
-                }, callback);
+                // var Mailchimp = require('mailchimp-api-v3/index');
+                // var mailchimp = Mailchimp('617e8ebd7915e6e4d5e95adad27003b5-us18');
+                //
+                // var callback = function (err, result) {
+                //     if (err) {
+                //         console.log('error', err);
+                //     }
+                //     console.log(result);
+                // }
+                //
+                // mailchimp.request({
+                //     method : 'post',
+                //     path : '/lists/+{list_id}/members',
+                //     path_params : {
+                //         list_id:"fae0215d25"
+                //   },
+                //     body : {
+                //         "email_address":_this.mailaddress, "status":"subscribed"
+                //     },
+                //
+                // }, callback);
             }
         },
         mounted: function () {
-            this.$store.commit('changeItemIs', this.getPath())
-            this.list.forEach((v) => {
-                v.is = false;
-            })
-            this.list[0].is = true;
-            // this.$store.commit('changeItemIs',this.$route.fullPath)
-            if (process.env.VUE_ENV === 'client') {
-                Reveal.initialize({
-                    progress: false,
-                    mouseWheel: true,
-                    controls: false
-                });
-                // let _this = this;
-                this.list[0].is = true;
-                // Reveal.addEventListener('slidechanged', function (event) {
-                //     let index = event.indexv;
-                //     let model = [];
-                //     _this.$store.state.messages.head.txt.forEach((v) => {
-                //         v.is = false;
-                //         model.push(v);
-                //     });
-                //     //去掉白皮书数组长度发生改变，跳转出现问题故注释掉。
-                //     // if(index>=2){
-                //     //     index++;
-                //     // }
-                //     model[index].is = true;
-                //     history.pushState({}, '', model[index].href);
-                //     _this.$store.state.messages.head.txt = model;
-                // });
-            }
             this.roll();
             this.is = true;
         },
