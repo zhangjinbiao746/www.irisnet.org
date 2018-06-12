@@ -2,7 +2,7 @@
     <div>
         <div id="index" class="index" style="background: #0b0b18">
             <!--头部-->
-            <div class="head" style="position: fixed;background: #0b0b18">
+            <div class="head" >
                 <div class="center1 head-content">
 
                     <!--左侧logo-->
@@ -229,7 +229,7 @@
                                         <img @mouseover="mapToggle(3)" src="../../public/Ellipse.png">
                                         <hr v-show="roadmapIsShowIdx === 3" class="hr_ver">
                                         <p v-show="roadmapIsShowIdx === 3">
-                                            {{$store.state.messages.roadmap.list[2].txt}}</p>
+                                            {{$store.state.messages.roadmap.list[3].txt}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -273,23 +273,38 @@
                         </div>
 
                     </div>
-                    <div id="#/0/5" class="what">
-                        <div class="contact">
+
+                </div>
+                <div id="#/0/5" class="what" style="padding:0">
+                    <div style="background: #0f0f1f;">
+                        <div class="contact" style="max-width:1250px;">
                             <div class="contact_title">
                                 {{$store.state.messages.contact.title}}
                                 <div class="line"></div>
                             </div>
-                           <div class="mail-container">
-                               <div class="getmail-container">
-                                   <span>Get Newsletter</span>
-                               </div>
-                               <div class="ipt-container">
-                                   <input v-model="mailaddress" type="text" placeholder="Enter your Email address">
-                               </div>
-                               <div class="sub-container" @click="commitMaile">
-                                   <span>Subscribe</span>
-                               </div>
-                           </div>
+
+                            <div class="mail-container">
+
+                                <div class="getmail-container">
+                                    <span>Get Newsletter</span>
+                                </div>
+
+                                <div class="ipt-container">
+                                    <div class="errcontainer">
+                                        <div class="wrong-container">
+                                            <img src="../../public/wrong.png" alt="">
+                                        </div>
+                                        <div>
+                                            <span>Invalid Email address</span>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                    <input v-model="mailaddress" type="text" placeholder="Enter your Email address">
+                                </div>
+                                <div class="sub-container" @click="commitMaile">
+                                    <span>Subscribe</span>
+                                </div>
+                            </div>
                             <div class="contact_warp">
                                 <a :href="item.href" target="_blank" @click="blank(item.txt)"
                                    v-for="item in $store.state.messages.contact.img">
@@ -300,9 +315,9 @@
                                 </a>
                             </div>
                             <div class="info-contianer">
-                                <p>IRISnet is named after Greek goddess iris</p>
-                                <p>said to be the personification of the rainbow and the faithful messenger</p>
-                                <p>between heaven and humanith</p>
+                                <p>{{$store.state.messages.contactList[0].infotitle}}</p>
+                                <p>{{$store.state.messages.contactList[1].infotitle}}</p>
+                                <p>{{$store.state.messages.contactList[2].infotitle}}</p>
                             </div>
                         </div>
                     </div>
@@ -420,13 +435,22 @@
                 this.$store.state.messages.head.txt = model;
             },
             commitMaile(){
+                let address =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if(address.exec(this.mailaddress)){
+                    alert(5555)
+                }
                 axios({
                     method: 'post',
                     url:"/",
                     data: {
                         email:this.mailaddress,
                     }
-                });
+                }).then((data)=>{
+                    console.log(data)
+                })
+                .catch((e)=>{
+                    console.log(e)
+                })
             }
         },
         mounted: function () {
