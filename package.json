@@ -32,7 +32,8 @@
     "vuex": "^3.0.1",
     "webpack-hot-middleware": "^2.20.0",
     "webpack-node-externals": "^1.6.0",
-    "mailchimp-api-v3":"1.12.0"
+    "request": "^2.81.0",
+    "body-parser": "^1.17.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
