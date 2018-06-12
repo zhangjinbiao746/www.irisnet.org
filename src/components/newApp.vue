@@ -259,9 +259,6 @@
                                v-for="item in $store.state.messages.contact.img">
                                 <div class="contact_radius">
                                     <img :src="UrlSrc+item.src"/>
-                                    <div>
-                                        {{item.txt}}
-                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -378,37 +375,10 @@
         },
         mounted: function () {
             this.path = this.$route.path
-            console.log(this.path)
             this.$store.state.messages.head.txt.forEach(v => {
                 v.href = v.href.substr(1, v.href.length)
             })
-            if (process.env.VUE_ENV === 'client') {
-                Reveal.initialize({
-                    progress: false,
-                    mouseWheel: true,
-                    controls: false
-                });
-                // let _this = this;
-                // Reveal.addEventListener('slidechanged', function (event) {
-                //     let index = event.indexv;
-                //
-                //     let model = [];
-                //     _this.$store.state.messages.head.txt.forEach((v) => {
-                //         v.is = false;
-                //         model.push(v);
-                //     })
-                //     if(index>=2){
-                //         index++;
-                //     }
-                //     _this.$store.state.messages.head.txt = model;
-                // });
-                this.roll();
-                if ('addEventListener' in document) {
-                    document.addEventListener('DOMContentLoaded', function () {
-                        FastClick.attach(document.body);
-                    }, false);
-                }
-            }
+            this.roll();
         },
         watch: {
             '$route': 'roll'
@@ -418,5 +388,4 @@
 
 <style scoped lang='less'>
     @import "../assets/style/newApp.less";
-
 </style>

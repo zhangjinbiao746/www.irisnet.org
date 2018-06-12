@@ -6,10 +6,7 @@ import {createRouter} from './router/index.js'
 import {createStore} from './store'
 import VueI18n from 'vue-i18n'
 import 'babel-polyfill'
-
 require('reveal.js/css/reveal.css')
-// var Mailchimp = require('mailchimp-api-v3')
-
 Vue.mixin({
     beforeMount() {
         const {asyncData} = this.$options
