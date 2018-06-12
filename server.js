@@ -45,10 +45,6 @@ app.route('/')
         });
     });
 
-
-
-console.log("====================");
-
 const template = fs.readFileSync(resolve('index.html'), 'utf-8')
 
 function createRenderer (bundle, options) {
