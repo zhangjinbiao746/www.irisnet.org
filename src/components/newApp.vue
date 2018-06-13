@@ -264,7 +264,7 @@
                                         <img src="../../public/wrong.png" alt="">
                                     </div>
                                     <div>
-                                        <span>Invalid Email address</span>
+                                        <span>{{$store.state.messages.errEmail.err}}</span>
                                     </div>
                                     <div></div>
                                 </div>
