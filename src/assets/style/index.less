@@ -529,7 +529,7 @@
                 width: 40px;
                 height: 40px;
                 cursor: pointer;
-                margin: 0 16px;
+                margin: 0 8px;
                 .src_selected {
                     display: none;
                 }
@@ -750,9 +750,9 @@
 }
 
 .line {
-    width: 60px;
+    width: 40px;
     height: 2px;
-    margin-top: 10px;
+    margin-top: 20px;
     background: #774be3;
     animation: line 1s;
 }
@@ -1095,9 +1095,13 @@
     line-height: 40px;
     background: #0f0f1f;
     border-radius: 4px;
+    font-size: 20px;
+    font-weight: 900;
 }
 .ipt-container{
     width: 30%;
+    position: relative;
+    top: -40px;
    input{
        width: 100%;
        height: 40px;
@@ -1109,7 +1113,10 @@
     input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
         color: #3b3b5f;
     }
-
+    input:focus{
+        border-color: #7585ff;
+        //box-shadow: 0 0 15px #7585ff;
+    }
 }
 .info-contianer{
     text-align: center;
@@ -1121,17 +1128,35 @@
     }
 }
 .errcontainer{
-    background: #f66;
+    background: #cf1a1b;
     height: 30px;
     line-height: 30px;
     color: #fff;
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 .wrong-container{
     width: 15px;
     height: 15px;
+    margin: 0 15px 0 0;
     img{
         width: 100%;
     }
+}
+.sancontainer{
+    width: 12px;
+    height: 12px;
+    background: #cf1a1b;
+    transform: rotate(45deg) ;
+    position: relative;
+    top: 23px;
+    left: 12px;
+}
+.showerrcontainer{
+    visibility: hidden;
+}
+.hiderrcontainer{
 }
 
 

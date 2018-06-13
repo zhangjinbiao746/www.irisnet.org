@@ -58,7 +58,7 @@
                                     </div>
                                 </div>
                                 <a href="#/0/1">
-                                    <div class="home_what">
+                                    <div class="home_what" @click="jump">
                                         <span class="home_what_txt">What is IRISnet</span>
                                     </div>
                                 </a>
@@ -79,7 +79,7 @@
                             <div class="what_txt">
                                 <div class="what_txt_title" style="color: #fff">
                                     {{$store.state.messages.about.title}}
-                                    <div class="line" style="margin-top: 10px"></div>
+                                    <div class="line" style="margin-top: 20px"></div>
                                 </div>
                                 <div class="what_txt_list_two">
                                     {{$store.state.messages.about.txt[0]}}
@@ -152,7 +152,7 @@
                             <div class="what_txt">
                                 <div class="what_txt_title" style="font-size: 30px;color: #fff">
                                     {{$store.state.messages.network.title}}
-                                    <div class="line" style="margin-top: 10px"></div>
+                                    <div class="line" style="margin-top: 20px"></div>
                                 </div>
                                 <div class="what_txt_list_two">
                                     {{$store.state.messages.network.txt[0]}}
@@ -275,7 +275,7 @@
                     </div>
 
                 </div>
-                <div id="#/0/5" class="what" style="padding:0">
+                <div id="#/0/5" class="what" style="margin-top: 150px;padding:0">
                     <div style="background: #0f0f1f;">
                         <div class="contact" style="max-width:1250px;">
                             <div class="contact_title">
@@ -286,24 +286,27 @@
                             <div class="mail-container">
 
                                 <div class="getmail-container">
-                                    <span>Get Newsletter</span>
+                                    <span>{{$store.state.messages.newsLetter.letter}}</span>
                                 </div>
 
                                 <div class="ipt-container">
-                                    <div class="errcontainer">
+                                    <div class="errcontainer" :class="showerr ? '' : 'showerrcontainer'">
+                                        <div class="sancontainer"></div>
                                         <div class="wrong-container">
                                             <img src="../../public/wrong.png" alt="">
                                         </div>
                                         <div>
-                                            <span>Invalid Email address</span>
+                                            <span>{{$store.state.messages.errEmail.err}}</span>
                                         </div>
                                         <div></div>
                                     </div>
-                                    <input v-model="mailaddress" type="text" placeholder="Enter your Email address">
+                                    <input v-model="mailaddress" type="text" :placeholder="$store.state.messages.placehooder.placehooder">
                                 </div>
-                                <div class="sub-container" @click="commitMaile">
-                                    <span>Subscribe</span>
-                                </div>
+                                <a href="javascript:">
+                                    <div class="sub-container" @click="commitMaile">
+                                        <span>{{subscription}}</span>
+                                    </div>
+                                </a>
                             </div>
                             <div class="contact_warp">
                                 <a :href="item.href" target="_blank" @click="blank(item.txt)"
@@ -361,7 +364,9 @@
                 comm: 'community.png',
                 down: 'arrow.png',
                 wechatIs: false,
-                mailaddress: ""
+                mailaddress: "",
+                showerr: false,
+                subscription: this.$store.state.messages.submit.Subscribe
             }
         },
         computed: {
@@ -379,8 +384,11 @@
                 if (document.getElementById(this.$route.hash)) {
                     //window.scrollTo(0, document.getElementById(this.$route.hash).offsetTop-80)
                     this.scroll(document.getElementById(this.$route.hash).offsetTop + 100)
-                    console.log(document.getElementById(this.$route.hash).offsetTop, 999999999);
                 }
+            },
+            jump(){
+                //解决锚点点击一次以后滚动效果不生效的问题
+                this.scroll(824)
             },
             scroll(top) {
                 $('body,html').animate({
@@ -437,7 +445,14 @@
             commitMaile(){
                 let address =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                 if(address.exec(this.mailaddress)){
-                    alert(5555)
+                    this.showerr = false;
+                }else {
+                    this.showerr = true;
+                    let _this = this;
+                    setTimeout(function () {
+                        _this.showerr = false;
+                    },2000)
+                    return
                 }
                 axios({
                     method: 'post',
@@ -446,16 +461,20 @@
                         email:this.mailaddress,
                     }
                 }).then((data)=>{
-                    console.log(data)
+                    this.subscription = this.$store.state.messages.submit.success;
+                    let _this = this;
+                    setTimeout(function () {
+                        _this.subscription = _this.$store.state.messages.submit.Subscribe;
+                        _this.mailaddress = "";
+
+                    },2000)
                 })
                 .catch((e)=>{
-                    console.log(e)
                 })
             }
         },
         mounted: function () {
             this.roll();
-            this.is = true;
         },
         watch: {
             '$route': 'roll'

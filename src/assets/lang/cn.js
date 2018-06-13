@@ -801,10 +801,73 @@ export const message = {
         "coming":"敬请期待"
 
     },
-    "contactList":{
-        "infotitle":"IRISnet is named after Greek goddess Iris, said to be the ",
-        "infotitle":"personification of the rainbow and the faithful messenger",
-        "infotitle":"between heaven and humanity"
-    }
+    "contactList":[
+        {"infotitle":"IRISnet以希腊彩虹女神Iris命名，"},
+        {"infotitle":"她是在人间和天堂之间传递信息的 "},
+        {"infotitle":"忠诚使者"}
+    ],
+    "appcontact": {
+        "appimg": [
+            {
+                "src": "telegran.png",
+                "src_selected": "telegran_selected.png",
+                "txt": "Telegram",
+                "href": "https://t.me/irisnetworkcn"
+            },
+            {
+                "src": "twitter.png",
+                "src_selected": "twitter_selected.png",
+                "txt": "Twitter",
+                "href": "https://twitter.com/irisnetwork"
+            },
 
+            {
+                "src": "github.png",
+                "src_selected": "github_selected.png",
+                "txt": "Github",
+                "href": "https://github.com/irisnet"
+            },
+            {
+                "src": "mail.png",
+                "src_selected": "mail_selected.png",
+                "txt": "Email",
+                "href": "mailto:contact@irisnet.org"
+            }],
+        "appimg1":[{
+                "src": "bluemedium.png",
+                "src_selected": "redmedium-selected.png",
+                "txt": "Medium",
+                "href": "https://medium.com/irisnet-blog"
+            },
+            {
+                "src": "riot.png",
+                "src_selected": "riot_selected.png",
+                "txt": "Riot",
+                "href": "https://riot.im/app/#/room/#iris:matrix.org"
+            },
+            {
+                "src": "wechat.png",
+                "src_selected": "wechat_selected.png",
+                "txt": "Wechat"
+            },
+            {
+                "src": "weibo.png",
+                "src_selected": "weibo_selected.png",
+                "txt": "Weibo",
+                "href": "https://weibo.com/u/6455513027"
+            }],
+    },
+    "submit":{
+        'Subscribe':'提交',
+        "success": "订阅成功"
+    },
+    "errEmail":{
+        "err":"请输入一个有效的邮箱地址"
+    },
+    "newsLetter":{
+        "letter":"获取最新资讯"
+    },
+    "placehooder":{
+        "placehooder": "请输入你的邮箱地址"
+    }
 }
