@@ -252,7 +252,6 @@
                             <div class="nav-line"></div>
                         </div>
                         <div class="app-mail-container">
-
                             <div class="app-getmail-container">
                                 <span>{{$store.state.messages.newsLetter.letter}}</span>
                             </div>
@@ -263,12 +262,12 @@
                                     <div class="app-wrong-container">
                                         <img src="../../public/wrong.png" alt="">
                                     </div>
-                                    <div>
-                                        <span>{{$store.state.messages.errEmail.err}}</span>
+                                    <div style="margin: 0">
+                                        <span style="margin-left: 10px;font-size: 12px;">{{$store.state.messages.errEmail.err}}</span>
                                     </div>
                                     <div></div>
                                 </div>
-                                <input v-model="mailaddress" type="text" placeholder="Enter your Email address">
+                                <input v-model="mailaddress" type="text" :placeholder=$store.state.messages.placehooder.placehooder>
                             </div>
                             <div class="app-sub-container" @click="commitMaile">
                                 <span>{{subscription}}</span>
@@ -412,9 +411,9 @@
                 }else {
                     this.showerr = true;
                     let _this = this;
-                    setTimeout(function () {
-                        _this.showerr = false;
-                    },2000)
+                    // setTimeout(function () {
+                    //     _this.showerr = false;
+                    // },2000)
                     return
                 }
                 axios({
