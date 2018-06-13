@@ -36,11 +36,9 @@ app.route('/')
             }
         }, function(err, response, body) {
             if (err) {
-                console.log(err);
-				res.send(error);
+                res.send(err)
             } else {
-                console.log(body);
-				res.send(body);
+               res.send(body)
             }
         });
     });

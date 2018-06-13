@@ -24,10 +24,10 @@
                     </a>
                 </section>
             </div>
-            <div style="width: 100%;background: #0b0b18">
+            <div style="width: 100%;background: #16152d">
                 <div style="width: 100%;height: auto">
                     <div id="#" class="home"
-                         style="background: #0b0b18 url('../../public/app/irispattern-background.png') no-repeat  center;background-size: 375px;">
+                         style="background: #16152d url('../../public/app/irispattern-background.png') no-repeat  center;background-size: 375px;">
                         <div class="home-left">
                             <div class="home_title">
                                 {{$store.state.messages.home.title}}
@@ -36,7 +36,7 @@
                         </div>
                         <div class="home_img">
                             <a href="#/0/1">
-                                <div class="irisnet-btn" style="margin-bottom: 10px;">
+                                <div class="irisnet-btn" style="margin-bottom: 10px;"@click="jump">
                                     <span class="button">What is IRISnet</span>
                                 </div>
                             </a>
@@ -243,24 +243,59 @@
                                     <comp-collaboration-item :info="collaboration_counsel"></comp-collaboration-item>
                                 </article>
                             </div>
-
-
                         </div>
                     </div>
 
-                    <div id="#/0/5" class="contact">
+                    <div id="#/0/5" class="contact" style="background: #0f0f1f;margin-top: 50px;">
                         <div class="contact_title">
                             {{$store.state.messages.contact.title}}
                             <div class="nav-line"></div>
                         </div>
-                        <div class="contact_div">
-                            <a :href="item.href" target="_blank" style="overflow: hidden"
-                               @click="blank(item.txt)"
-                               v-for="item in $store.state.messages.contact.img">
-                                <div class="contact_radius">
-                                    <img :src="UrlSrc+item.src"/>
+                        <div class="app-mail-container">
+
+                            <div class="app-getmail-container">
+                                <span>{{$store.state.messages.newsLetter.letter}}</span>
+                            </div>
+
+                            <div class="app-ipt-container">
+                                <div class="app-errcontainer" :class="showerr ? '' : 'app-showerrcontainer'">
+                                    <div class="app-sancontainer"></div>
+                                    <div class="app-wrong-container">
+                                        <img src="../../public/wrong.png" alt="">
+                                    </div>
+                                    <div>
+                                        <span>Invalid Email address</span>
+                                    </div>
+                                    <div></div>
                                 </div>
-                            </a>
+                                <input v-model="mailaddress" type="text" placeholder="Enter your Email address">
+                            </div>
+                            <div class="app-sub-container" @click="commitMaile">
+                                <span>{{subscription}}</span>
+                            </div>
+                        </div>
+                        <div class="contact_div">
+                            <div class="img-container">
+                                <a :href="item.href" target="_blank" style="overflow: hidden"
+                                   @click="blank(item.txt)"
+                                   v-for="item in $store.state.messages.appcontact.appimg">
+                                    <div class="contact_radius">
+                                        <img :src="UrlSrc+item.src"/>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="img-container">
+                                <a :href="item.href" target="_blank" style="overflow: hidden"
+                                   @click="blank(item.txt)"
+                                   v-for="item in $store.state.messages.appcontact.appimg1">
+                                    <div class="contact_radius">
+                                        <img :src="UrlSrc+item.src"/>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-list">
+                            <p>{{$store.state.messages.contactList[0].infotitle}}{{$store.state.messages.contactList[1].infotitle}}{{$store.state.messages.contactList[2].infotitle}}</p>
                         </div>
                         <div class="bottom-container">
                             <div class="protocol-container">
@@ -276,7 +311,7 @@
                                     <div class="bottom-line"></div>
                                 </div>
                             </div>
-                            <span>Copyright © 2018 IRIS Foundation Ltd. All rights reserved.</span>
+                            <span class="footer">Copyright © 2018 IRIS Foundation Ltd. All rights reserved.</span>
                         </div>
                     </div>
                 </div>
@@ -300,6 +335,7 @@
     import $ from 'jquery'
     import {mapState} from 'vuex'
     import CompCollaborationItem from '@/components/modules/collaborationItem.vue'
+    import axios from "axios"
 
     let Reveal
     if (process.env.VUE_ENV === 'client') {
@@ -319,7 +355,10 @@
                 menuIs: false,
                 wechatIs: false,
                 showScale: "",
-                path: this.$route.path
+                path: this.$route.path,
+                mailaddress:"",
+                showerr: false,
+                subscription: this.$store.state.messages.submit.Subscribe
             }
         },
         methods: {
@@ -356,12 +395,48 @@
                     this.scroll(document.getElementById(this.$route.hash).offsetTop - 100)
                 }
             },
+            jump(){
+                //解决锚点点击一次以后滚动效果不生效的问题
+                this.scroll(346)
+            },
             scroll(top) {
                 $('body,html').animate({
                             scrollTop: top
                         }, 500
                 );
             },
+            commitMaile(){
+                let address =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if(address.exec(this.mailaddress)){
+                    this.showerr = false;
+                }else {
+                    this.showerr = true;
+                    let _this = this;
+                    setTimeout(function () {
+                        _this.showerr = false;
+                    },2000)
+                    return
+                }
+                axios({
+                    method: 'post',
+                    url:"/",
+                    data: {
+                        email:this.mailaddress,
+                    }
+                }).then((data)=>{
+                    if(data.data.title == "Member Exists"){
+                        this.subscription = this.$store.state.messages.submit.success;
+                        let _this = this;
+                        setTimeout(function () {
+                            _this.subscription = _this.$store.state.messages.submit.Subscribe;
+                            _this.mailaddress = "";
+                            this.showerr = false;
+                        },2000)
+                    }
+                })
+                .catch((e)=>{
+                })
+            }
         },
 
         computed: {

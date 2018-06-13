@@ -818,5 +818,76 @@ export const message = {
         "title":"Community",
         "coming":"Coming soon"
 
+    },
+    "contactList":[
+        {"infotitle":"IRISnet is named after Greek goddess Iris, said to be the "},
+        {"infotitle":"personification of the rainbow and the faithful messenger"},
+        {"infotitle":"between heaven and humanity"}
+    ],
+    "appcontact": {
+        "appimg": [
+            {
+                "src": "telegran.png",
+                "src_selected": "telegran_selected.png",
+                "txt": "Telegram",
+                "href": "https://t.me/irisnetworkcn"
+            },
+            {
+                "src": "twitter.png",
+                "src_selected": "twitter_selected.png",
+                "txt": "Twitter",
+                "href": "https://twitter.com/irisnetwork"
+            },
+
+            {
+                "src": "github.png",
+                "src_selected": "github_selected.png",
+                "txt": "Github",
+                "href": "https://github.com/irisnet"
+            },
+            {
+                "src": "mail.png",
+                "src_selected": "mail_selected.png",
+                "txt": "Email",
+                "href": "mailto:contact@irisnet.org"
+            }],
+        "appimg1":[{
+            "src": "bluemedium.png",
+            "src_selected": "redmedium-selected.png",
+            "txt": "Medium",
+            "href": "https://medium.com/irisnet-blog"
+        },
+            {
+                "src": "riot.png",
+                "src_selected": "riot_selected.png",
+                "txt": "Riot",
+                "href": "https://riot.im/app/#/room/#iris:matrix.org"
+            },
+            {
+                "src": "wechat.png",
+                "src_selected": "wechat_selected.png",
+                "txt": "Wechat"
+            },
+            {
+                "src": "weibo.png",
+                "src_selected": "weibo_selected.png",
+                "txt": "Weibo",
+                "href": "https://weibo.com/u/6455513027"
+            }],
+
+    },
+    "submit":{
+        'Subscribe': 'Subscribe',
+        "success": "Success"
+    },
+    "errEmail":{
+        "err":"Please enter a valid email address"
+    },
+    "newsLetter":{
+        "letter":"Newsletter"
+    },
+    "placehooder":{
+        "placehooder": "Please enter your email address"
     }
+
 }
