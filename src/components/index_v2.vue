@@ -2,7 +2,7 @@
     <div>
         <div id="index" class="index" style="background: #0b0b18">
             <!--头部-->
-            <div class="head" style="position: fixed;background: #0b0b18">
+            <div class="head" style="position: fixed">
                 <div class="center1 head-content">
 
                     <!--左侧logo-->
@@ -58,7 +58,7 @@
                                     </div>
                                 </div>
                                 <a href="#/0/1">
-                                    <div class="home_what">
+                                    <div class="home_what" @click="jump">
                                         <span class="home_what_txt">What is IRISnet</span>
                                     </div>
                                 </a>
@@ -77,9 +77,9 @@
                         <div class="innovation-container">
 
                             <div class="what_txt">
-                                <div class="what_txt_title">
+                                <div class="what_txt_title" style="color: #fff">
                                     {{$store.state.messages.about.title}}
-                                    <div class="line" style="margin-top: 10px"></div>
+                                    <div class="line" style="margin-top: 20px"></div>
                                 </div>
                                 <div class="what_txt_list_two">
                                     {{$store.state.messages.about.txt[0]}}
@@ -150,9 +150,9 @@
                     <div id="#/0/2" class="what">
                         <div class="network-container">
                             <div class="what_txt">
-                                <div class="what_txt_title" style="font-size: 30px;">
+                                <div class="what_txt_title" style="font-size: 30px;color: #fff">
                                     {{$store.state.messages.network.title}}
-                                    <div class="line" style="margin-top: 10px"></div>
+                                    <div class="line" style="margin-top: 20px"></div>
                                 </div>
                                 <div class="what_txt_list_two">
                                     {{$store.state.messages.network.txt[0]}}
@@ -229,91 +229,9 @@
                                         <img @mouseover="mapToggle(3)" src="../../public/Ellipse.png">
                                         <hr v-show="roadmapIsShowIdx === 3" class="hr_ver">
                                         <p v-show="roadmapIsShowIdx === 3">
-                                            {{$store.state.messages.roadmap.list[2].txt}}</p>
+                                            {{$store.state.messages.roadmap.list[3].txt}}</p>
                                     </div>
-
                                 </div>
-
-
-                                <!--<div class="roadmap_warp"  @mouseover="textShow(0)" @mouseout="textHide(0)">-->
-                                <!--<div class="roadmap_list_gif">-->
-                                <!--<div class="div1">-->
-                                <!--<img src="../../public/Ellipse.png">-->
-                                <!--</div>-->
-                                <!--</div>-->
-                                <!--<transition name="animation">-->
-                                <!--<div class="roadmap_text animation" v-show="list[0].is">-->
-                                <!--{{$store.state.messages.roadmap.list[0].txt}}-->
-                                <!--</div>-->
-                                <!--</transition>-->
-
-                                <!--<div class="top-line" v-show="list[0].is"></div>-->
-
-                                <!--<div class="roadmap-text">-->
-                                <!--<p>PANGU</p>-->
-                                <!--<p>JAN 2018-JUL 2018</p>-->
-                                <!--</div>-->
-                                <!--</div>-->
-
-                                <!--<div class="roadmap_warp"  @mouseover="textShow(1)" @mouseout="textHide(1)">-->
-                                <!--<div class="roadmap-text" style="padding-bottom: 14px">-->
-                                <!--<p>NUWA</p>-->
-                                <!--<p>AUG 2018-NOV 2018</p>-->
-                                <!--</div>-->
-                                <!--<div class="roadmap_list_gif">-->
-                                <!--<div class="div1">-->
-                                <!--<img src="../../public/Ellipse.png">-->
-                                <!--</div>-->
-                                <!--<div class="img imgdiv" v-show="!list[1].is"></div>-->
-                                <!--</div>-->
-                                <!--<transition name="animation">-->
-                                <!--<div class="roadmap_text" v-show="list[1].is" style="top:190px; width: 290px">-->
-                                <!--{{$store.state.messages.roadmap.list[1].txt}}-->
-                                <!--</div>-->
-                                <!--</transition>-->
-                                <!--<div class="bottom-line" v-show="list[1].is"></div>-->
-                                <!--</div>-->
-
-                                <!--<div class="roadmap_warp"  @mouseover="textShow(2)" @mouseout="textHide(2)">-->
-                                <!--<div class="roadmap_list_gif">-->
-                                <!--<div class="div1">-->
-                                <!--<img src="../../public/Ellipse.png">-->
-                                <!--</div>-->
-                                <!--<div class="img imgdiv" v-show="!list[2].is"></div>-->
-                                <!--</div>-->
-                                <!--<transition name="animation">-->
-                                <!--<div class="roadmap_text" v-show="list[2].is">-->
-                                <!--{{$store.state.messages.roadmap.list[2].txt}}-->
-                                <!--</div>-->
-                                <!--</transition>-->
-                                <!--<div class="top-line" v-show="list[2].is"></div>-->
-                                <!--<div class="roadmap-text">-->
-                                <!--<p>KUAFU</p>-->
-                                <!--<p>DEC 2018-MAY 2018</p>-->
-                                <!--</div>-->
-                                <!--</div>-->
-
-                                <!--<div class="roadmap_warp"  @mouseover="textShow(3)" @mouseout="textHide(3)">-->
-                                <!--<div class="roadmap-text" style="padding-bottom: 14px">-->
-                                <!--<p>HOUYI</p>-->
-                                <!--<p>NEYOND JUN 2019</p>-->
-                                <!--</div>-->
-                                <!--<div class="roadmap_list_gif">-->
-                                <!--<div class="div1">-->
-                                <!--<img src="../../public/Ellipse.png">-->
-                                <!--</div>-->
-                                <!--<div class="img imgdiv" v-show="!list[3].is"></div>-->
-                                <!--</div>-->
-                                <!--<transition name="animation">-->
-                                <!--<div class="roadmap_text" v-show="list[3].is"-->
-                                <!--style="top: 210px;left: -40px; width: 290px">-->
-                                <!--{{$store.state.messages.roadmap.list[3].txt}}-->
-                                <!--</div>-->
-                                <!--</transition>-->
-                                <!--<div class="bottom-line" v-show="list[3].is"></div>-->
-                                <!--</div>-->
-
-
                             </div>
                             <div class="roadmap-container-placeholder"></div>
                         </div>
@@ -355,11 +273,40 @@
                         </div>
 
                     </div>
-                    <div id="#/0/5" class="what">
-                        <div class="contact">
+
+                </div>
+                <div id="#/0/5" class="what" style="margin-top: 150px;padding:0">
+                    <div style="background: #0f0f1f;">
+                        <div class="contact" style="max-width:1250px;">
                             <div class="contact_title">
                                 {{$store.state.messages.contact.title}}
                                 <div class="line"></div>
+                            </div>
+
+                            <div class="mail-container">
+
+                                <div class="getmail-container">
+                                    <span>{{$store.state.messages.newsLetter.letter}}</span>
+                                </div>
+
+                                <div class="ipt-container">
+                                    <div class="errcontainer" :class="showerr ? '' : 'showerrcontainer'">
+                                        <div class="sancontainer"></div>
+                                        <div class="wrong-container">
+                                            <img src="../../public/wrong.png" alt="">
+                                        </div>
+                                        <div>
+                                            <span>{{$store.state.messages.errEmail.err}}</span>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                    <input v-model="mailaddress" type="text" :placeholder="$store.state.messages.placehooder.placehooder">
+                                </div>
+                                <a href="javascript:">
+                                    <div class="sub-container" @click="commitMaile">
+                                        <span>{{subscription}}</span>
+                                    </div>
+                                </a>
                             </div>
                             <div class="contact_warp">
                                 <a :href="item.href" target="_blank" @click="blank(item.txt)"
@@ -367,9 +314,13 @@
                                     <div class="contact_list">
                                         <img class="src" :src="UrlSrc+item.src"/>
                                         <img class="src_selected" :src="UrlSrc+item.src_selected"/>
-                                        <div>{{item.txt}} {{item.is}}</div>
                                     </div>
                                 </a>
+                            </div>
+                            <div class="info-contianer">
+                                <p>{{$store.state.messages.contactList[0].infotitle}}</p>
+                                <p>{{$store.state.messages.contactList[1].infotitle}}</p>
+                                <p>{{$store.state.messages.contactList[2].infotitle}}</p>
                             </div>
                         </div>
                     </div>
@@ -399,6 +350,7 @@
     import foot from './foot'
     import {mapState} from 'vuex'
     import CompCollaborationItem from '@/components/modules/collaborationItem.vue'
+    import axios from "axios"
     let Reveal
     if (process.env.VUE_ENV === 'client') {
         Reveal = require('reveal.js')
@@ -409,16 +361,12 @@
         data() {
             return {
                 roadmapIsShowIdx: -1,
-                // list可废弃
-                list: [
-                    {is: false},
-                    {is: false},
-                    {is: false},
-                    {is: false},
-                ],
                 comm: 'community.png',
                 down: 'arrow.png',
-                wechatIs: false
+                wechatIs: false,
+                mailaddress: "",
+                showerr: false,
+                subscription: this.$store.state.messages.submit.Subscribe
             }
         },
         computed: {
@@ -436,8 +384,11 @@
                 if (document.getElementById(this.$route.hash)) {
                     //window.scrollTo(0, document.getElementById(this.$route.hash).offsetTop-80)
                     this.scroll(document.getElementById(this.$route.hash).offsetTop + 100)
-                    console.log(document.getElementById(this.$route.hash).offsetTop, 999999999);
                 }
+            },
+            jump(){
+                //解决锚点点击一次以后滚动效果不生效的问题
+                this.scroll(742)
             },
             scroll(top) {
                 $('body,html').animate({
@@ -490,44 +441,40 @@
                 model[index].is = true;
                 history.pushState({}, '', model[index].href);
                 this.$store.state.messages.head.txt = model;
+            },
+            commitMaile(){
+                let address =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if(address.exec(this.mailaddress)){
+                    this.showerr = false;
+                }else {
+                    this.showerr = true;
+                    let _this = this;
+                    setTimeout(function () {
+                        _this.showerr = false;
+                    },2000)
+                    return
+                }
+                axios({
+                    method: 'post',
+                    url:"/",
+                    data: {
+                        email:this.mailaddress,
+                    }
+                }).then((data)=>{
+                    this.subscription = this.$store.state.messages.submit.success;
+                    let _this = this;
+                    setTimeout(function () {
+                        _this.subscription = _this.$store.state.messages.submit.Subscribe;
+                        _this.mailaddress = "";
+
+                    },2000)
+                })
+                .catch((e)=>{
+                })
             }
-        },
-        created(){
-            // this.$store.commit('changeItemIs',this.getPath())
         },
         mounted: function () {
-            this.$store.commit('changeItemIs', this.getPath())
-            this.list.forEach((v) => {
-                v.is = false;
-            })
-            this.list[0].is = true;
-            // this.$store.commit('changeItemIs',this.$route.fullPath)
-            if (process.env.VUE_ENV === 'client') {
-                Reveal.initialize({
-                    progress: false,
-                    mouseWheel: true,
-                    controls: false
-                });
-                // let _this = this;
-                this.list[0].is = true;
-                // Reveal.addEventListener('slidechanged', function (event) {
-                //     let index = event.indexv;
-                //     let model = [];
-                //     _this.$store.state.messages.head.txt.forEach((v) => {
-                //         v.is = false;
-                //         model.push(v);
-                //     });
-                //     //去掉白皮书数组长度发生改变，跳转出现问题故注释掉。
-                //     // if(index>=2){
-                //     //     index++;
-                //     // }
-                //     model[index].is = true;
-                //     history.pushState({}, '', model[index].href);
-                //     _this.$store.state.messages.head.txt = model;
-                // });
-            }
             this.roll();
-            this.is = true;
         },
         watch: {
             '$route': 'roll'
