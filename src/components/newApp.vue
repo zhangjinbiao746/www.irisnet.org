@@ -397,7 +397,7 @@
             },
             jump(){
                 //解决锚点点击一次以后滚动效果不生效的问题
-                this.scroll(324)
+                this.scroll(346)
             },
             scroll(top) {
                 $('body,html').animate({

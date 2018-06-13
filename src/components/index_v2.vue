@@ -2,7 +2,7 @@
     <div>
         <div id="index" class="index" style="background: #0b0b18">
             <!--头部-->
-            <div class="head" >
+            <div class="head" style="position: fixed">
                 <div class="center1 head-content">
 
                     <!--左侧logo-->
@@ -388,7 +388,7 @@
             },
             jump(){
                 //解决锚点点击一次以后滚动效果不生效的问题
-                this.scroll(824)
+                this.scroll(742)
             },
             scroll(top) {
                 $('body,html').animate({
