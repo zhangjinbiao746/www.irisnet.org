@@ -237,12 +237,12 @@
                                 </article>
                             </div>
 
-                            <div class="collaboration_one_col">
-                                <article class="investment">
-                                    <h4>{{collaboration_counsel.title}}</h4>
-                                    <comp-collaboration-item :info="collaboration_counsel"></comp-collaboration-item>
-                                </article>
-                            </div>
+                            <!--<div class="collaboration_one_col">-->
+                                <!--<article class="investment">-->
+                                    <!--<h4>{{collaboration_counsel.title}}</h4>-->
+                                    <!--<comp-collaboration-item :info="collaboration_counsel"></comp-collaboration-item>-->
+                                <!--</article>-->
+                            <!--</div>-->
                         </div>
                     </div>
 

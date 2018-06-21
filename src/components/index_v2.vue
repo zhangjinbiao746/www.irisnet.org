@@ -263,12 +263,12 @@
                                 </article>
                             </div>
 
-                            <div class="collaboration_one_col">
-                                <article class="investment">
-                                    <h4>{{collaboration_counsel.title}}</h4>
-                                    <comp-collaboration-item :info="collaboration_counsel"></comp-collaboration-item>
-                                </article>
-                            </div>
+                            <!--<div class="collaboration_one_col">-->
+                                <!--<article class="investment">-->
+                                    <!--<h4>{{collaboration_counsel.title}}</h4>-->
+                                    <!--<comp-collaboration-item :info="collaboration_counsel"></comp-collaboration-item>-->
+                                <!--</article>-->
+                            <!--</div>-->
 
                         </div>
 
@@ -282,13 +282,10 @@
                                 {{$store.state.messages.contact.title}}
                                 <div class="line"></div>
                             </div>
-
                             <div class="mail-container">
-
                                 <div class="getmail-container">
                                     <span>{{$store.state.messages.newsLetter.letter}}</span>
                                 </div>
-
                                 <div class="ipt-container">
                                     <div class="errcontainer" :class="showerr ? '' : 'showerrcontainer'">
                                         <div class="sancontainer"></div>
