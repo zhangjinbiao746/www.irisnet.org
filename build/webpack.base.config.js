@@ -35,11 +35,6 @@ module.exports = {
             '@': resolve('src')
         }
     },
-    node: {
-        fs: "empty",
-        net: "empty",
-        tls: "empty"
-    },
     module: {
         noParse: /es6-promise\.js$/, // avoid webpack shimming process
         rules: [
