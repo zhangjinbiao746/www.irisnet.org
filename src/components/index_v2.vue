@@ -320,8 +320,8 @@
                                 </a>
                             </div>
                             <div class="info-contianer">
-                                <p>{{$store.state.messages.contactList[0].infotitle}}{{$store.state.messages.contactList[1].infotitle}}</p>
-                                <p>{{$store.state.messages.contactList[2].infotitle}}</p>
+                                <p class="info-center-container">{{$store.state.messages.contactList[0].infotitle}}{{$store.state.messages.contactList[1].infotitle}}{{$store.state.messages.contactList[2].infotitle}}</p>
+                                <p></p>
                             </div>
                         </div>
                     </div>
