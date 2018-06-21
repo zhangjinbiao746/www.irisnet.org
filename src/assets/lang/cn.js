@@ -38,50 +38,50 @@ export const message = {
     "contact": {
         "img": [
             {
-                "src": "telegran.png",
-                "src_selected": "telegran_selected.png",
+                "src": "telegram-default.png",
+                "src_selected": "telegram.png",
                 "txt": "Telegram",
                 "href": "https://t.me/irisnetworkcn"
             },
             {
-                "src": "twitter.png",
-                "src_selected": "twitter_selected.png",
+                "src": "twitter-default.png",
+                "src_selected": "newtwitter.png",
                 "txt": "Twitter",
                 "href": "https://twitter.com/irisnetwork"
             },
 
             {
-                "src": "github.png",
-                "src_selected": "github_selected.png",
+                "src": "github-default.png",
+                "src_selected": "newgithub.png",
                 "txt": "Github",
                 "href": "https://github.com/irisnet"
             },
             {
-                "src": "mail.png",
-                "src_selected": "mail_selected.png",
+                "src": "email-default.png",
+                "src_selected": "email.png",
                 "txt": "Email",
                 "href": "mailto:contact@irisnet.org"
             },
             {
-                "src": "bluemedium.png",
-                "src_selected": "redmedium-selected.png",
+                "src": "medium-default.png",
+                "src_selected": "newmedium.png",
                 "txt": "Medium",
                 "href": "https://medium.com/irisnet-blog"
             },
             {
-                "src": "riot.png",
-                "src_selected": "riot_selected.png",
+                "src": "riot-default.png",
+                "src_selected": "newriot.png",
                 "txt": "Riot",
                 "href": "https://riot.im/app/#/room/#iris:matrix.org"
             },
             {
-                "src": "wechat.png",
-                "src_selected": "wechat_selected.png",
+                "src": "wechat-default.png",
+                "src_selected": "newwechat.png",
                 "txt": "Wechat"
             },
             {
-                "src": "weibo.png",
-                "src_selected": "weibo_selected.png",
+                "src": "weibo-default.png",
+                "src_selected": "newweibo.png",
                 "txt": "Weibo",
                 "href": "https://weibo.com/u/6455513027"
             },
@@ -407,7 +407,7 @@ export const message = {
             },
             {
                 "img": "roadmap/NUWA.png",
-                "txt": "在这一阶段，我们将建立 IRISnet 基本服务层： 升级网络以实现服务定义，绑定，调用和查询; 为开发者准备了beta版的IRIS SDK，并升级移动客户端以支持IRIS服务; 与分布式应用链项目形成战略联盟，支持应用链（分区）连接IRIS枢纽。"
+                "txt": "在这一阶段，我们将建立 IRISnet 基本服务层： 升级网络以实现服务定义、绑定、调用和查询; 为开发者准备了beta版的IRIS SDK，并升级移动客户端以支持IRIS服务; 与分布式应用链项目形成战略联盟，支持应用链（分区）连接IRIS枢纽。"
             },
             {
                 "img": "roadmap/kuafu.png",
