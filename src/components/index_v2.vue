@@ -59,7 +59,8 @@
                                 </div>
                                 <a href="#/0/1">
                                     <div class="home_what" @click="jump">
-                                        <span class="home_what_txt">What is IRISnet</span>
+                                        <span v-if="$store.state.lang!='CN'" class="home_what_txt">What is IRISnet</span>
+                                        <span v-if="$store.state.lang=='CN'" class="home_what_txt">什么是IRISnet</span>
                                     </div>
                                 </a>
                             </div>
@@ -199,13 +200,16 @@
                                             {{$store.state.messages.roadmap.list[0].txt}}</p>
                                         <hr v-show="roadmapIsShowIdx === 0" :class="['hr_ver']">
                                         <img @mouseover="mapToggle(0)" src="../../public/Ellipse.png">
-                                        <h5 @mouseover="mapToggle(0)"><strong>PANGU</strong><span>JAN 2018 - SEP 2018</span>
-                                        </h5>
+                                        <h5 v-if="$store.state.lang!='CN'" @mouseover="mapToggle(0)"><strong>PANGU</strong><span>JAN 2018 - SEP 2018</span></h5>
+                                        <h5 v-if="$store.state.lang =='CN'" @mouseover="mapToggle(0)"><strong>盘古</strong><span>2018年1月- 2018年9月</span></h5>
                                     </div>
 
                                     <div class="roadmap-item roadmap-item-top">
-                                        <h5 @mouseover="mapToggle(1)"><strong>NUWA</strong><span> OCT 2018 - DEC 2018</span>
+                                        <h5 v-if="$store.state.lang!='CN'" @mouseover="mapToggle(1)">
+                                            <strong>NÜWA</strong>
+                                            <span>OCT 2018 - DEC 2018</span>
                                         </h5>
+                                        <h5 v-if="$store.state.lang =='CN'" @mouseover="mapToggle(1)"><strong>女娲</strong><span>2018年10月 - 2018年12月</span></h5>
                                         <img @mouseover="mapToggle(1)" src="../../public/Ellipse.png">
                                         <hr v-show="roadmapIsShowIdx === 1" class="hr_ver">
                                         <p v-show="roadmapIsShowIdx === 1">
@@ -217,15 +221,16 @@
                                             {{$store.state.messages.roadmap.list[2].txt}}</p>
                                         <hr v-show="roadmapIsShowIdx === 2" class="hr_ver">
                                         <img @mouseover="mapToggle(2)" src="../../public/Ellipse.png">
-                                        <h5 @mouseover="mapToggle(2)"><strong>KUAFU</strong><span>JAN 2019 - JUN 2019</span>
-                                        </h5>
+                                        <h5 v-if="$store.state.lang!='CN'" @mouseover="mapToggle(2)"><strong>KUAFU</strong><span>JAN 2019 - JUN 2019</span></h5>
+                                        <h5 v-if="$store.state.lang =='CN'" @mouseover="mapToggle(2)"><strong>夸父</strong><span>2019年1月 - 2019年6月</span></h5>
                                     </div>
 
                                     <div class="roadmap-item roadmap-item-top">
-                                        <h5 @mouseover="mapToggle(3)">
+                                        <h5 v-if="$store.state.lang!='CN'" @mouseover="mapToggle(3)">
                                             <strong>HOUYI</strong>
                                             <span>BEYOND   JUL 2019</span>
                                         </h5>
+                                        <h5 v-if="$store.state.lang =='CN'" @mouseover="mapToggle(3)"><strong>后羿</strong><span>2019年7月之后</span></h5>
                                         <img @mouseover="mapToggle(3)" src="../../public/Ellipse.png">
                                         <hr v-show="roadmapIsShowIdx === 3" class="hr_ver">
                                         <p v-show="roadmapIsShowIdx === 3">
@@ -315,9 +320,8 @@
                                 </a>
                             </div>
                             <div class="info-contianer">
-                                <p>{{$store.state.messages.contactList[0].infotitle}}</p>
-                                <p>{{$store.state.messages.contactList[1].infotitle}}</p>
-                                <p>{{$store.state.messages.contactList[2].infotitle}}</p>
+                                <p class="info-center-container">{{$store.state.messages.contactList[0].infotitle}}{{$store.state.messages.contactList[1].infotitle}}{{$store.state.messages.contactList[2].infotitle}}</p>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -438,6 +442,20 @@
                 model[index].is = true;
                 history.pushState({}, '', model[index].href);
                 this.$store.state.messages.head.txt = model;
+                //解决点击导航后无法再次重复导航问题
+                if(index == 0){
+                    this.scroll(100)
+                }else if(index == 1){
+                    this.scroll(742)
+                }else if(index == 2){
+                    this.scroll(1566)
+                }else if(index == 3){
+                    this.scroll(2535)
+                }else if(index == 4){
+                    this.scroll(3340)
+                }else if(index == 5){
+                    this.scroll(5287)
+                }
             },
             commitMaile(){
                 let address =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

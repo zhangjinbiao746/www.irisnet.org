@@ -15,11 +15,11 @@
                 </div>
             </div>
             <div class="menu" v-show="menuIs">
-                <section v-for="item in $store.state.messages.head.txt">
-                    <a v-if="item.href.indexOf('ttp')==-1" :href="'newApp#'+item.href" @click="menuIs=false">
+                <section v-for="(item,index) in $store.state.messages.head.txt">
+                    <a v-if="item.href.indexOf('ttp')==-1" :href="'newApp#'+item.href" @click="gotojump(index)">
                         {{item.txt}}
                     </a>
-                    <a v-if="item.href.indexOf('ttp')!=-1" :href="'h'+item.href" @click="menuIs=false">
+                    <a v-if="item.href.indexOf('ttp')!=-1" :href="'h'+item.href" @click="gotojump(index)">
                         {{item.txt}}
                     </a>
                 </section>
@@ -37,7 +37,8 @@
                         <div class="home_img">
                             <a href="#/0/1">
                                 <div class="irisnet-btn" style="margin-bottom: 10px;"@click="jump">
-                                    <span class="button">What is IRISnet</span>
+                                    <span v-if="$store.state.lang!='CN'" class="button">What is IRISnet</span>
+                                    <span v-if="$store.state.lang=='CN'" class="button">什么是IRISnet</span>
                                 </div>
                             </a>
                         </div>
@@ -139,7 +140,13 @@
                                     <img src="../../public/app/Ellipse2.png">
                                     <div class="show-radius" :class="list[0].is ? 'show-scale' : ''"></div>
                                 </div>
-                                <div class="roadmap_img" @click="txtShow(0)">
+                                <div v-if="$store.state.lang=='CN'" class="roadmap_img" @click="txtShow(0)">
+                                    <span>盘古</span>
+                                    <p>2018年1月 </p>
+                                    <p> | </p>
+                                    <p>2018年9月</p>
+                                </div>
+                                <div v-if="$store.state.lang!='CN'" class="roadmap_img" @click="txtShow(0)">
                                     <span>PANGU</span>
                                     <p>JAN 2018 </p>
                                     <p> | </p>
@@ -155,8 +162,14 @@
                                     <img src="../../public/app/Ellipse2.png">
                                     <div class="show-radius" :class="list[1].is ? 'show-scale' : ''"></div>
                                 </div>
-                                <div class="roadmap_img" @click="txtShow(1)">
-                                    <span>NUWA</span>
+                                <div v-if="$store.state.lang=='CN'" class="roadmap_img" @click="txtShow(1)">
+                                    <span>女娲</span>
+                                    <p>2018年10月 </p>
+                                    <p> | </p>
+                                    <p>2018年12月</p>
+                                </div>
+                                <div v-if="$store.state.lang!='CN'" class="roadmap_img" @click="txtShow(1)">
+                                    <span>NÜWA</span>
                                     <p>OCT 2018 </p>
                                     <p> | </p>
                                     <p>DEC 2018</p>
@@ -171,7 +184,13 @@
                                     <img src="../../public/app/Ellipse2.png">
                                     <div class="show-radius" :class="list[2].is ? 'show-scale' : ''"></div>
                                 </div>
-                                <div class="roadmap_img" @click="txtShow(2)">
+                                <div v-if="$store.state.lang=='CN'" class="roadmap_img" @click="txtShow(2)">
+                                    <span>夸父</span>
+                                    <p>2019年1月</p>
+                                    <p> | </p>
+                                    <p>2019年6月</p>
+                                </div>
+                                <div v-if="$store.state.lang!='CN'" class="roadmap_img" @click="txtShow(2)">
                                     <span>KUAFU</span>
                                     <p>JAN 2019 </p>
                                     <p> | </p>
@@ -192,7 +211,12 @@
                                     <img src="../../public/app/Ellipse2.png">
                                     <div class="show-radius" :class="list[3].is ? 'show-scale' : ''"></div>
                                 </div>
-                                <div class="roadmap_img" @click="txtShow(3)">
+                                <div v-if="$store.state.lang=='CN'" class="roadmap_img" @click="txtShow(3)">
+                                    <span>后羿</span>
+                                    <p>2019年7月 </p>
+                                    <p>之后</p>
+                                </div>
+                                <div v-if="$store.state.lang!='CN'" class="roadmap_img" @click="txtShow(3)">
                                     <span>HOUYI</span>
                                     <p>BEYOND </p>
                                     <p>JUL 2019</p>
@@ -398,7 +422,25 @@
                 //解决锚点点击一次以后滚动效果不生效的问题
                 this.scroll(346)
             },
+            gotojump(index){
+                this.menuIs = false;
+                //解决点击导航后无法再次重复导航问题
+                if(index == 0){
+                    this.scroll(0)
+                }else if(index == 1){
+                    this.scroll(364)
+                }else if(index == 2){
+                    this.scroll(1036)
+                }else if(index == 3){
+                    this.scroll(1678)
+                }else if(index == 4){
+                    this.scroll(2278)
+                }else if(index == 5){
+                    this.scroll(3542)
+                }
+            },
             scroll(top) {
+                console.log(top,9966)
                 $('body,html').animate({
                             scrollTop: top
                         }, 500
