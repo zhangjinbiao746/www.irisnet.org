@@ -199,12 +199,12 @@
                                             {{$store.state.messages.roadmap.list[0].txt}}</p>
                                         <hr v-show="roadmapIsShowIdx === 0" :class="['hr_ver']">
                                         <img @mouseover="mapToggle(0)" src="../../public/Ellipse.png">
-                                        <h5 @mouseover="mapToggle(0)"><strong>PANGU</strong><span>JAN 2018 - JUL 2018</span>
+                                        <h5 @mouseover="mapToggle(0)"><strong>PANGU</strong><span>JAN 2018 - SEP 2018</span>
                                         </h5>
                                     </div>
 
                                     <div class="roadmap-item roadmap-item-top">
-                                        <h5 @mouseover="mapToggle(1)"><strong>NUWA</strong><span> AUG 2018 - NOV 2018</span>
+                                        <h5 @mouseover="mapToggle(1)"><strong>NUWA</strong><span> OCT 2018 - DEC 2018</span>
                                         </h5>
                                         <img @mouseover="mapToggle(1)" src="../../public/Ellipse.png">
                                         <hr v-show="roadmapIsShowIdx === 1" class="hr_ver">
@@ -217,14 +217,14 @@
                                             {{$store.state.messages.roadmap.list[2].txt}}</p>
                                         <hr v-show="roadmapIsShowIdx === 2" class="hr_ver">
                                         <img @mouseover="mapToggle(2)" src="../../public/Ellipse.png">
-                                        <h5 @mouseover="mapToggle(2)"><strong>KUAFU</strong><span>DEC 2018 - MAY 2019</span>
+                                        <h5 @mouseover="mapToggle(2)"><strong>KUAFU</strong><span>JAN 2019 - JUN 2019</span>
                                         </h5>
                                     </div>
 
                                     <div class="roadmap-item roadmap-item-top">
                                         <h5 @mouseover="mapToggle(3)">
                                             <strong>HOUYI</strong>
-                                            <span>BEYOND   JUN 2019</span>
+                                            <span>BEYOND   JUL 2019</span>
                                         </h5>
                                         <img @mouseover="mapToggle(3)" src="../../public/Ellipse.png">
                                         <hr v-show="roadmapIsShowIdx === 3" class="hr_ver">
