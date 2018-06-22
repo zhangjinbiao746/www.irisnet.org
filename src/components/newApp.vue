@@ -279,19 +279,9 @@
                             <div class="app-getmail-container">
                                 <span>{{$store.state.messages.newsLetter.letter}}</span>
                             </div>
-
                             <div class="app-ipt-container">
-                                <div class="app-errcontainer" :class="showerr ? '' : 'app-showerrcontainer'">
-                                    <div class="app-sancontainer"></div>
-                                    <div class="app-wrong-container">
-                                        <img src="../../public/wrong.png" alt="">
-                                    </div>
-                                    <div style="margin: 0">
-                                        <span style="margin-left: 10px;font-size: 12px;">{{$store.state.messages.errEmail.err}}</span>
-                                    </div>
-                                    <div></div>
-                                </div>
-                                <input v-model="mailaddress" type="text" :placeholder=$store.state.messages.placehooder.placehooder>
+                                <input :class="showerr ? 'erript' : ''" v-model="mailaddress" type="text" :placeholder=$store.state.messages.placehooder.placehooder>
+                                <p :class="showerr ? '' : 'app-showerrcontainer'" class="errcontainer">{{$store.state.messages.errEmail.err}}</p>
                             </div>
                             <div class="app-sub-container" @click="commitMaile">
                                 <span>{{subscription}}</span>
