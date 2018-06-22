@@ -525,7 +525,7 @@
             animation-fill-mode: forwards;
             display: flex;
             justify-content: center;
-            margin-top: 40px;
+            margin-top: 60px;
             .contact_list {
                 width: 40px;
                 height: 40px;
@@ -1090,12 +1090,11 @@
 .ipt-container{
     width: 30%;
     position: relative;
-    top: -40px;
    input{
        width: 100%;
        height: 40px;
        background: #16152d;
-       border: #7585ff;
+       border:1px solid #16152d;
        text-indent: 10px;
        color: #fff;
        border-radius: 4px;
@@ -1103,8 +1102,9 @@
     input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
         color: #3b3b5f;
     }
-    input:focus{
-        border-color: #7585ff;
+    .erript{
+        outline:none;
+        border: 1px solid #ff4a4a;
         //box-shadow: 0 0 15px #7585ff;
     }
 }
@@ -1118,13 +1118,11 @@
     }
 }
 .errcontainer{
-    background: #cf1a1b;
-    height: 30px;
-    line-height: 30px;
-    color: #fff;
-    display: flex;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 13px;
+    padding-top: 10px;
+    color: #ff4a4a;
+    font-size: 12px;
 }
 .wrong-container{
     width: 15px;
@@ -1145,6 +1143,10 @@
 }
 .showerrcontainer{
     visibility: hidden;
+}
+.info-center-container{
+    width: 60%;
+    margin: 0 auto;
 }
 
 
