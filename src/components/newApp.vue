@@ -99,7 +99,7 @@
                                     </div>
                                 </div>
                                 <div class="whiteBook-button">
-                                    <a class="whiteHref-btn" :href="$store.state.messages.whiteHref">WHITE PAPER</a>
+                                    <a class="whiteHref-btn" :href="$store.state.messages.whiteHref">{{$store.state.messages.about.btnTxt}}</a>
                                     <i class="guide_right">
                                         <img src="../../public/arrowhead.png">
                                     </i>
