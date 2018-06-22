@@ -292,17 +292,18 @@
                                     <span>{{$store.state.messages.newsLetter.letter}}</span>
                                 </div>
                                 <div class="ipt-container">
-                                    <div class="errcontainer" :class="showerr ? '' : 'showerrcontainer'">
-                                        <div class="sancontainer"></div>
-                                        <div class="wrong-container">
-                                            <img src="../../public/wrong.png" alt="">
-                                        </div>
-                                        <div>
-                                            <span>{{$store.state.messages.errEmail.err}}</span>
-                                        </div>
-                                        <div></div>
-                                    </div>
-                                    <input v-model="mailaddress" type="text" :placeholder="$store.state.messages.placehooder.placehooder">
+                                    <!--<div class="errcontainer" :class="showerr ? '' : 'showerrcontainer'">-->
+                                        <!--<div class="sancontainer"></div>-->
+                                        <!--<div class="wrong-container">-->
+                                            <!--<img src="../../public/wrong.png" alt="">-->
+                                        <!--</div>-->
+                                        <!--<div>-->
+                                            <!--<span>{{$store.state.messages.errEmail.err}}</span>-->
+                                        <!--</div>-->
+                                        <!--<div></div>-->
+                                    <!--</div>-->
+                                    <input :class="showerr ? 'erript' : ''" v-model="mailaddress" type="text" :placeholder="$store.state.messages.placehooder.placehooder">
+                                    <p :class="showerr ? '' : 'showerrcontainer'" class="errcontainer">{{$store.state.messages.errEmail.err}}</p>
                                 </div>
                                 <a href="javascript:">
                                     <div class="sub-container" @click="commitMaile">
@@ -448,11 +449,11 @@
                 }else if(index == 1){
                     this.scroll(742)
                 }else if(index == 2){
-                    this.scroll(1566)
+                    this.scroll(1618)
                 }else if(index == 3){
-                    this.scroll(2535)
+                    this.scroll(2587)
                 }else if(index == 4){
-                    this.scroll(3340)
+                    this.scroll(3392)
                 }else if(index == 5){
                     this.scroll(5287)
                 }
