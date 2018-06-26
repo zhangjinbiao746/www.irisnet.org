@@ -10,7 +10,7 @@ export const message = {
                 "href": "/#",
             },
             {
-                'txt': "About",
+                'txt': "Whitepaper",
                 "href": "#/0/1",
             },
             // {
