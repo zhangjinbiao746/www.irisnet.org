@@ -10,7 +10,7 @@ export const message = {
                 "href": "#",
             },
             {
-                'txt': "关于我们",
+                'txt': "白皮书",
                 "href": "#/0/1",
             },
             // {
