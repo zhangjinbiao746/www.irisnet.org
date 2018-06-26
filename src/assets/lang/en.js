@@ -815,7 +815,7 @@ export const message = {
     },
     "contactList":[
         {"infotitle":"IRISnet is named after Greek goddess Iris, said to be the "},
-        {"infotitle":"personification of the rainbow and the faithful messenger"},
+        {"infotitle":"personification of the rainbow and the faithful messenger "},
         {"infotitle":"between heaven and humanity"}
     ],
     "appcontact": {
