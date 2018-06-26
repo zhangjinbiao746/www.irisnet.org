@@ -60,7 +60,12 @@
                                 <div class="about_div">
                                     {{$store.state.messages.about.txt[2]}}
                                 </div>
-
+                                <div class="whiteBook-button">
+                                    <a class="whiteHref-btn" :href="$store.state.messages.whiteHref">{{$store.state.messages.about.btnTxt}}</a>
+                                    <i class="guide_right">
+                                        <img src="../../public/arrowhead.png">
+                                    </i>
+                                </div>
                                 <div class="img_right_container">
                                     <div class="img_containter_top">
                                         <div class="img_default_containter">
@@ -98,12 +103,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="whiteBook-button">
-                                    <a class="whiteHref-btn" :href="$store.state.messages.whiteHref">{{$store.state.messages.about.btnTxt}}</a>
-                                    <i class="guide_right">
-                                        <img src="../../public/arrowhead.png">
-                                    </i>
-                                </div>
+
                             </div>
                         </div>
                     </div>
