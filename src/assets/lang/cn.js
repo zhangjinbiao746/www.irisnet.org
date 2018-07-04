@@ -156,7 +156,7 @@ export const message = {
                     "href":"https://bihu.com/"
                 },
                 {
-                    "img":"collaboration/bt.png",
+                    "img":"collaboration/btts.png",
                     "pos":-56*3,
                     "title":"BA Capital",
                     "href":""
