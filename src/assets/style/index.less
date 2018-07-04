@@ -68,7 +68,7 @@
         top: 0;
         z-index: 10;
         width: 100%;
-        height: 70px;
+        height: 60px;
         .comm {
             position: relative;
             img {
@@ -115,7 +115,7 @@
         }
         .item {
             float: left;
-            margin: 20px 0;
+            margin: 20px 0 0 0;
             color: #fff;
             padding-top: 8px;
             cursor: pointer;
@@ -127,13 +127,13 @@
                 height: 2px;
                 background: #fff;
                 margin-top: 20px;
-                display: none;
+                visibility: hidden;
                 margin-left: 2px;
             }
             &:hover {
                 color: #724be3;
                 div {
-                    display: block;
+                    visibility: visible;
                     animation: nav-line 0.2s;
                 }
             }
@@ -507,7 +507,7 @@
         top: 112px;
     }
     .contact {
-        height: 540px;
+        height: 460px;
         margin: 0 auto;
         overflow: hidden;
         .contact_title {
