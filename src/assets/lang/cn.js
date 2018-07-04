@@ -797,7 +797,7 @@ export const message = {
     },
     "contactList":[
         {"infotitle":"IRISnet以希腊彩虹女神Iris命名，"},
-        {"infotitle":"她是在人间和天堂之间传递信息的 "},
+        {"infotitle":"她是在人间和天堂之间传递信息的"},
         {"infotitle":"忠诚使者"}
     ],
     "appcontact": {
