@@ -118,24 +118,24 @@ export const message = {
                     "title":"BIANJIE.AI",
                     "href":"https://www.bianjie.ai/"
                 },
-            ]
-        },
-
-        "strategy":{
-            "title":"Strategic partners",
-            "img":"collaboration/strategy.png",
-            "list":[
-                {
-                    "img":"collaboration/newcosmos.png",
-                    "pos":-56*0,
-                    "title":"Cosmos",
-                    "href":"https://cosmos.network"
-                },
                 {
                     "img":"collaboration/newtendermint.png",
                     "pos":-56*1,
                     "title":"Tendermint",
                     "href":"https://tendermint.com"
+                },
+            ]
+        },
+
+        "strategy":{
+            "title":"Strategic Partners",
+            "img":"collaboration/strategy.png",
+            "list":[
+                {
+                    "img":"collaboration/interchain.png",
+                    "pos":-56*0,
+                    "title":"Interchain Foundation",
+                    "href":"https://cosmos.network/about"
                 },
                 {
                     "img":"collaboration/wanyun.png",
@@ -143,6 +143,11 @@ export const message = {
                     "title":"NewChainBase",
                     "href":"http://www.newchainbase.com"
                 },
+            ]
+        },
+        "ecosystem":{
+            "title":" Ecosystem Partners",
+            "list":[
                 {
                     "img":"collaboration/hashgard.png",
                     "pos":-56*3,
@@ -151,7 +156,6 @@ export const message = {
                 }
             ]
         },
-
         "investment":{
             "title":"Investment Institutions",
             "list":[
