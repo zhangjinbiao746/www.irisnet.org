@@ -122,8 +122,8 @@ export const message = {
                 {
                     "img":"collaboration/wanyun.png",
                     "pos":-56*2,
-                    "title":"NewChainBase",
-                    "href":"http://www.newchainbase.com"
+                    "title":"Wancloud",
+                    "href":"https://www.wancloud.io/"
                 },
             ]
         },
