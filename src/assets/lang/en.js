@@ -140,13 +140,13 @@ export const message = {
                 {
                     "img":"collaboration/wanyun.png",
                     "pos":-56*2,
-                    "title":"NewChainBase",
-                    "href":"http://www.newchainbase.com"
+                    "title":"Wancloud",
+                    "href":"https://www.wancloud.io/"
                 },
             ]
         },
         "ecosystem":{
-            "title":" Ecosystem Partners",
+            "title":"Ecosystem Partners",
             "list":[
                 {
                     "img":"collaboration/hashgard.png",
