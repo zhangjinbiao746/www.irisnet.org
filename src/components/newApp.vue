@@ -253,7 +253,12 @@
                                     <comp-collaboration-item :info="collaboration_strategy"></comp-collaboration-item>
                                 </article>
                             </div>
-
+                            <div class="collaboration_two_col">
+                                <article class="strategy">
+                                    <h4>{{collaboration_ecosystem.title}}</h4>
+                                    <comp-collaboration-item :info="collaboration_ecosystem"></comp-collaboration-item>
+                                </article>
+                            </div>
                             <div class="collaboration_one_col">
                                 <article class="investment">
                                     <h4>{{collaboration_investment.title}}</h4>
@@ -475,6 +480,7 @@
                 collaboration_title: state=>state.messages.collaboration.title,
                 collaboration_core: state=>state.messages.collaboration.core,
                 collaboration_strategy: state=>state.messages.collaboration.strategy,
+                collaboration_ecosystem: state=>state.messages.collaboration.ecosystem,
                 collaboration_investment: state=>state.messages.collaboration.investment,
                 collaboration_counsel: state=>state.messages.collaboration.counsel,
             })
