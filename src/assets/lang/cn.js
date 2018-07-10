@@ -98,7 +98,13 @@ export const message = {
                     "pos":-56*0,
                     "title":"BIANJIE.AI",
                     "href":"https://www.bianjie.ai/"
-                }
+                },
+                {
+                    "img":"collaboration/newtendermint.png",
+                    "pos":-56*1,
+                    "title":"Tendermint",
+                    "href":"https://tendermint.com"
+                },
             ]
         },
 
@@ -107,23 +113,24 @@ export const message = {
             "img":"collaboration/strategy.png",
             "list":[
                 {
-                    "img":"collaboration/newcosmos.png",
+                    "img":"collaboration/interchain.png",
                     "pos":-56*0,
-                    "title":"Cosmos",
-                    "href":"https://cosmos.network"
+                    "title":"Interchain Foundation",
+                    "href":"https://cosmos.network/about"
                 },
-                {
-                    "img":"collaboration/newtendermint.png",
-                    "pos":-56*1,
-                    "title":"Tendermint",
-                    "href":"https://tendermint.com"
-                },
+
                 {
                     "img":"collaboration/wanyun.png",
                     "pos":-56*2,
-                    "title":"NewChainBase",
-                    "href":"http://www.newchainbase.com"
+                    "title":"Wancloud",
+                    "href":"https://www.wancloud.io/"
                 },
+            ]
+        },
+        "ecosystem":{
+            "title":"生态合作伙伴",
+            "img":"collaboration/hashgard.png",
+            "list":[
                 {
                     "img":"collaboration/hashgard.png",
                     "pos":-56*3,
@@ -132,7 +139,6 @@ export const message = {
                 }
             ]
         },
-
         "investment":{
             "title":"投资方",
             "img":"collaboration/investment.png",
