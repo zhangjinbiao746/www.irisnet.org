@@ -91,7 +91,7 @@ export const message = {
     "collaboration": {
         "title": "合作方",
         "core":{
-            "title":"核心技术团队",
+            "title":"核心开发团队",
             "list":[
                 {
                     "img":"collaboration/bianjieai.png",
@@ -140,7 +140,7 @@ export const message = {
             ]
         },
         "investment":{
-            "title":"投资方",
+            "title":"支持机构",
             "img":"collaboration/investment.png",
             "list":[
                 {
