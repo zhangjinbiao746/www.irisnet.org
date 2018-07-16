@@ -110,7 +110,7 @@ export const message = {
         ],
 
         "core":{
-            "title":"Core Technology Team",
+            "title":"Core Development Teams",
             "list":[
                 {
                     "img":"collaboration/bianjieai.png",
@@ -157,7 +157,7 @@ export const message = {
             ]
         },
         "investment":{
-            "title":"Investment Institutions",
+            "title":"Institutional Supporters",
             "list":[
                 {
                     "img":"collaboration/AminoCapital.png",
