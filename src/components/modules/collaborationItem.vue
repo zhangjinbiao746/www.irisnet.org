@@ -10,6 +10,9 @@
                 <img :src="UrlSrc+item.img" alt="">
             </div>
         </a>
+        <a v-if="info.list.length > 10" class="collaboration_item">
+            <div class="collaboration_zanwei_logo"></div>
+        </a>
         <!--占位-->
         <div v-if="info.list.length < 3" class="collaboration_zanwei_logo">
         </div>
@@ -97,7 +100,7 @@
         .collaboration_list{
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
         }
         .collaboration_zanwei_logo{
             width: 236px;
@@ -108,7 +111,7 @@
         .collaboration_item{
             overflow: hidden;
             cursor: pointer;
-            margin: 10px 5px 5px 5px;
+            margin: 10px 5px 15px 5px;
             display: inline-block;
             .collaboration_logo{
                 display: block;
@@ -373,6 +376,10 @@
             /*border-color: #1f97f8;*/
         /*}*/
     /*}*/
+    .collaboration_zanwei_logo{
+        width: 236px;
+        height: 86px;
+    }
     .a-none-line{
         text-decoration: none !important;
     }
