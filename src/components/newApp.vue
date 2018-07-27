@@ -262,6 +262,7 @@
                             <div class="collaboration_one_col">
                                 <article class="investment">
                                     <h4>{{collaboration_investment.title}}</h4>
+                                    <span class="subtitle-text">{{collaboration_investment.subtitle}}</span>
                                     <comp-collaboration-item :info="collaboration_investment"></comp-collaboration-item>
                                 </article>
                             </div>

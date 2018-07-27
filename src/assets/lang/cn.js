@@ -141,6 +141,7 @@ export const message = {
         },
         "investment":{
             "title":"支持机构",
+            "subtitle":"( 排名不分先后 )",
             "img":"collaboration/investment.png",
             "list":[
                 {
@@ -244,6 +245,12 @@ export const message = {
                     "pos":-56*16,
                     "title":"MILESTONE",
                     "href":"http://www.milestonevc.com/index.html"
+                },
+                {
+                    "img":"collaboration/nirvanacapital.png",
+                    "pos":-56*16,
+                    "title":"Nirvana Capital",
+                    "href":"http://nirvana.capital/"
                 },
                 {
                     "img":"collaboration/ngc.png",

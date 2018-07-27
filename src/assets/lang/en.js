@@ -158,6 +158,7 @@ export const message = {
         },
         "investment":{
             "title":"Institutional Supporters",
+            "subtitle":"( Listed in no particular order )",
             "list":[
                 {
                     "img":"collaboration/AminoCapital.png",
@@ -260,6 +261,12 @@ export const message = {
                     "pos":-56*16,
                     "title":"MILESTONE",
                     "href":"http://www.milestonevc.com/index.html"
+                },
+                {
+                    "img":"collaboration/nirvanacapital.png",
+                    "pos":-56*16,
+                    "title":"Nirvana Capital",
+                    "href":"http://nirvana.capital/"
                 },
                 {
                     "img":"collaboration/ngc.png",
