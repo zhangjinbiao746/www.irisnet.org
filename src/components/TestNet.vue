@@ -8,9 +8,9 @@
                     <div class="center_content">
                         <h2 class="join_test_net">{{join}}</h2>
                         <p class="join_iris">{{title}}</p>
-                        <span class="join_btn">{{btn1}}</span>
-                        <span class="join_btn">{{btn2}}</span>
-                        <span class="join_btn">{{btn3}}</span>
+                        <span class="join_btn" @click="skipLink(1)">{{btn1}}</span>
+                        <span class="join_btn" @click="skipLink(2)">{{btn2}}</span>
+                        <span class="join_btn" @click="skipLink(3)">{{btn3}}</span>
                     </div>
                 </div>
                 <div class="h110"></div>
@@ -49,6 +49,24 @@
                 this.btn1 = this.format('btn1');
                 this.btn2 = this.format('btn2');
                 this.btn3 = this.format('btn3');
+            },
+            skipLink(num){
+                if(num === 1){
+                    window.open('https://github.com/irisnet/testnets')
+                }else if(window.location.href.includes('lang=CN')){
+                    if(num === 2){
+                        window.open('https://medium.com/irisnet-blog/irisnet%E6%B5%8B%E8%AF%95%E7%BD%91%E5%85%AC%E6%B5%8B%E5%BC%80%E5%90%AF-%E5%BD%93%E4%B8%AA%E9%AA%8C%E8%AF%81%E4%BA%BA%E8%8A%82%E7%82%B9%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B-1c3db32d3c75')
+                    }else if(num === 3){
+                        window.open('https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-71b7635d302c')
+                    }
+                }else{
+                    if(num === 2){
+                        window.open('https://medium.com/irisnet-blog/iris-latest-testnet-fuxi-now-lives-join-us-to-be-a-validator-eeca83d50154')
+                    }else if(num === 3){
+                        window.open('https://medium.com/irisnet-blog/irisnet-q-a-a2fc4a10d07c')
+                    }
+                }
+
             }
         }
     }
