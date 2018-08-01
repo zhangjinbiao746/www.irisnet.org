@@ -394,14 +394,14 @@
             .join_test_net{
                 font-family: 'PingFang-SC-Semibold';
                 color:#FFFFFF;
-                font-size:0.26rem;
+                font-size:0.24rem;
                 font-weight:400;
                 margin-top:0.7rem;
             }
             .join_iris{
                 font-family: 'PingFang-SC-Regular';
                 color:#D4D5DE;
-                font-size:0.16rem;
+                font-size:0.13rem;
                 margin-top:0.4rem;
                 margin-bottom:0.4rem;
             }
@@ -415,7 +415,7 @@
                 text-align: center;
                 line-height:0.4rem;
                 cursor:pointer;
-                font-size:0.16rem;
+                font-size:0.12rem;
                 &:hover{
                     background: rgb(114,75,227);
                     color:#ffffff;

@@ -92,7 +92,7 @@
             display:flex;
             justify-content:center;
             align-items:center;
-            min-height:7rem;
+            min-height:6rem;
             .center_content{
                 display:flex;
                 flex-direction:column;
@@ -108,8 +108,8 @@
                     font-family: 'PingFang-SC-Regular';
                     color:#D4D5DE;
                     font-size:0.18rem;
-                    margin-top:0.9rem;
-                    margin-bottom:0.9rem;
+                    margin-top:0.6rem;
+                    margin-bottom:0.6rem;
                 }
                 .join_btn{
                     color:#724BE3;
