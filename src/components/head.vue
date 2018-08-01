@@ -19,6 +19,11 @@
                 </a>
             </div>
             <div class="comm">
+                <span @click="skipToTest"
+                      :class="testActive?'active':''"
+                      class="item">{{$store.state.lang=='CN'?'测试网':'Testnet'}}
+                    <div></div>
+                </span>
                 <div class="div_h">
                 </div>
                 <a class="item" style="    margin-right: 10px;" @mouseenter="commHide" @mouseleave="commShow">
@@ -44,7 +49,11 @@
             return {
                 comm: 'community.png',
                 down: 'arrow.png',
+                testActive:false,
             }
+        },
+        mounted(){
+            this.testActive = window.location.href.includes('test');
         },
         methods: {
             downShow() {
@@ -58,7 +67,10 @@
             },
             commHide() {
                 this.comm = '../public/community_selected.png';
-            }
+            },
+            skipToTest(){
+                this.$router.push('/test')
+            },
         },
     }
 </script>
@@ -75,6 +87,9 @@
             float: right;
             position: relative;
             margin-left: 20px;
+            .active{
+                color:#724BE3;
+            }
             .div_h {
                 height: 10px;
                 width: 1px;
