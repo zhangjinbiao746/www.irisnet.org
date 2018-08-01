@@ -1,14 +1,15 @@
 <template>
     <div style="height: 100%">
         <div id="index" class="index">
-            <headr></headr>
+            <headr :color="'#16152d'"></headr>
             <div class="center">
                 <div class="h110"></div>
                 <div class="warp">
                     <div class="center_content">
                         <h2 class="join_test_net">{{join}}</h2>
                         <p class="join_iris">{{title}}</p>
-                        <span class="join_btn" @click="skipLink(1)">{{btn1}}</span>
+                        <span class="join_btn" @click="skipLink(1)"
+                              style="background: rgb(114,75,227);color:#ffffff;border:0.01rem solid #724BE3;">{{btn1}}</span>
                         <span class="join_btn" @click="skipLink(2)">{{btn2}}</span>
                         <span class="join_btn" @click="skipLink(3)">{{btn3}}</span>
                     </div>
@@ -55,7 +56,7 @@
                     window.open('https://github.com/irisnet/testnets')
                 }else if(window.location.href.includes('lang=CN')){
                     if(num === 2){
-                        window.open('https://medium.com/irisnet-blog/irisnet%E6%B5%8B%E8%AF%95%E7%BD%91%E5%85%AC%E6%B5%8B%E5%BC%80%E5%90%AF-%E5%BD%93%E4%B8%AA%E9%AA%8C%E8%AF%81%E4%BA%BA%E8%8A%82%E7%82%B9%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B-1c3db32d3c75')
+                        window.open('https://mp.weixin.qq.com/s/M7NJ7Bb0rxw7spXaR1t8YA')
                     }else if(num === 3){
                         window.open('https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-71b7635d302c')
                     }
@@ -78,14 +79,13 @@
     .index {
         min-height: 100%;
         position: relative;
-        background: #0b0b18;
+        background: #16152d;
 
         .h110 {
             height: 110px;
             width: 100%
         }
         .warp {
-            background: url('../../public/privacy.png');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: 36% 180px;
@@ -122,11 +122,7 @@
                     line-height:0.4rem;
                     cursor:pointer;
                     font-size:0.16rem;
-                    &:hover{
-                        background: rgb(114,75,227);
-                        color:#ffffff;
-                        border:0.01rem solid #724BE3;
-                    }
+
                 }
             }
         }

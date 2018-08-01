@@ -3,15 +3,16 @@
         <div class="app" style="width: 100%;height:100%;">
             <div class="head">
                 <img src="../assets/app/irislogo.png" class="imglogo"  @click="goToHome">
-                <div class="div_en" >
+                <div class="div_en">
+                    <img src="../assets/app/list.png" @click="menuIs=!menuIs"/>
                     <a href="?lang=CN" v-if="$store.state.lang!='CN'">
                         CN
                     </a>
                     <a href="?lang=EN" v-if="$store.state.lang=='CN'">
                         EN
                     </a>
-                    <img style="width: 20px;height:20px;" src="../../public/app/close.png" @click="goToHome">
                 </div>
+
             </div>
             <div class="newCenter">
                 <div class="h110"></div>
@@ -19,18 +20,35 @@
                     <div class="center_content">
                         <h2 class="join_test_net">{{join}}</h2>
                         <p class="join_iris">{{title}}</p>
-                        <span class="join_btn" @click="skipLink(1)">{{btn1}}</span>
+                        <span class="join_btn" @click="skipLink(1)"
+                              style="background: rgb(114,75,227);color:#ffffff;border:0.01rem solid #724BE3;"
+                        >{{btn1}}</span>
                         <span class="join_btn" @click="skipLink(2)">{{btn2}}</span>
                         <span class="join_btn" @click="skipLink(3)">{{btn3}}</span>
                     </div>
                 </div>
                 <div class="h110"></div>
             </div>
+            <div class="menu" v-show="menuIs">
+                <section v-for="(item,index) in $store.state.messages.head.txt">
+                    <a v-if="item.href.indexOf('ttp')==-1" @click="gotojump(index,item)">
+                        {{item.txt}}
+                    </a>
+                    <a v-if="item.href.indexOf('ttp')!=-1" :href="'h'+item.href" @click="gotojump(index)">
+                        {{item.txt}}
+                    </a>
+                </section>
+                <section>
+                    <a @click="skipTestNet">{{$store.state.lang=='CN'?'测试网':'Testnet'}}</a>
+                </section>
+
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+    import $ from 'jquery'
     import message from '../assets/lang/message';
     let Reveal
     if (process.env.VUE_ENV === 'client') {
@@ -39,6 +57,9 @@
     export default {
         name: "TestNetApp",
         methods: {
+            skipTestNet(){
+                this.$router.push('/testApp');
+            },
             img(src) {
                 return 'app/'+src;
             },
@@ -71,19 +92,54 @@
                     window.open('https://github.com/irisnet/testnets')
                 }else if(this.$store.state.lang=='CN'){
                     if(num === 2){
-                        window.open('https://medium.com/irisnet-blog/irisnet%E6%B5%8B%E8%AF%95%E7%BD%91%E5%85%AC%E6%B5%8B%E5%BC%80%E5%90%AF-%E5%BD%93%E4%B8%AA%E9%AA%8C%E8%AF%81%E4%BA%BA%E8%8A%82%E7%82%B9%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B-1c3db32d3c75')
+                        window.open('https://mp.weixin.qq.com/s/M7NJ7Bb0rxw7spXaR1t8YA')
                     }else if(num === 3){
-                        window.open('https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-71b7635d302c')
+                        window.location.assign('https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-71b7635d302c')
                     }
                 }else{
                     if(num === 2){
                         window.open('https://medium.com/irisnet-blog/iris-latest-testnet-fuxi-now-lives-join-us-to-be-a-validator-eeca83d50154')
                     }else if(num === 3){
-                        window.open('https://medium.com/irisnet-blog/irisnet-q-a-a2fc4a10d07c')
+                        window.location.assign('https://medium.com/irisnet-blog/irisnet-q-a-a2fc4a10d07c')
                     }
                 }
 
-            }
+            },
+            gotojump(index,item){
+                this.menuIs = false;
+                //解决点击导航后无法再次重复导航问题
+                new Promise((resolve)=>{
+                    this.$router.push(`/newApp#/${item.href}`);
+                    resolve();
+                }).then(()=>{
+                    if(index == 0){
+                        this.scroll(0)
+                    }else if(index == 1){
+                        this.scroll(364)
+                    }else if(index == 2){
+                        this.scroll(1036)
+                    }else if(index == 3){
+                        this.scroll(1678)
+                    }else if(index == 4){
+                        this.scroll(2278)
+                    }else if(index == 5){
+                        this.scroll(3542)
+                    }
+                })
+
+                /*setTimeout(()=>{
+                    console.log(13)
+
+                },1000)*/
+
+            },
+            scroll(top) {
+                console.log(top,9966)
+                $('body,html').animate({
+                        scrollTop: top
+                    }, 500
+                );
+            },
         },
         data() {
             return {
@@ -349,7 +405,7 @@
         }
 
         .head {
-            background: #141426;
+            background: #16152d;
             height: 60px;
             width: 100%;
             .imglogo {
@@ -416,11 +472,6 @@
                 line-height:0.4rem;
                 cursor:pointer;
                 font-size:0.12rem;
-                &:hover{
-                    background: rgb(114,75,227);
-                    color:#ffffff;
-                    border:0.01rem solid #724BE3;
-                }
             }
         }
     }
@@ -428,7 +479,7 @@
         width: 100%;
         height: 100%;
         overflow-y: scroll;
-        background: #0b0b18 url('../../public/privacy.png') no-repeat fixed center;
+        background: #16152d;
         background-size: 375px;
 
     }

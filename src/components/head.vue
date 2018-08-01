@@ -1,5 +1,5 @@
 <template>
-    <div class="head">
+    <div class="head" :style="color?'background:#16152d;':''">
         <div class="center">
             <a href="/"><img :src="UrlSrc+$store.state.messages.logo" style="width: 130px;"/></a>
             <div class="item_en" v-if="$store.state.lang=='EN'">
@@ -26,7 +26,7 @@
                 </span>
                 <div class="div_h">
                 </div>
-                <a class="item" style="    margin-right: 10px;" @mouseenter="commHide" @mouseleave="commShow">
+                <a class="item" style="    margin-right: 10px;" @mouseenter="commHide" @mouseleave="commShow" v-show="!testActive">
                     <img :src="UrlSrc+comm">
                     Community
                     <div></div>
@@ -45,6 +45,7 @@
 <script>
     export default {
         name: "head",
+        props:['color'],
         data() {
             return {
                 comm: 'community.png',
