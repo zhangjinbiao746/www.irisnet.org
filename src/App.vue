@@ -56,7 +56,7 @@
         -webkit-text-size-adjust: none;
     }
     body{
-        font-size:16px;
+        font-size:16px !important;
     }
 </style>
 
