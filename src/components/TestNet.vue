@@ -24,7 +24,7 @@
 <script>
     import foot from './foot';
     import headr from './head';
-    import message from '../assets/lang/message';
+    import message from '../common/message';
     export default {
         name: "terms",
         components: {foot, headr},
@@ -54,17 +54,19 @@
             skipLink(num){
                 if(num === 1){
                     window.open('https://github.com/irisnet/testnets')
-                }else if(window.location.href.includes('lang=CN')){
-                    if(num === 2){
-                        window.open('https://mp.weixin.qq.com/s/M7NJ7Bb0rxw7spXaR1t8YA')
-                    }else if(num === 3){
-                        window.open('https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-71b7635d302c')
-                    }
-                }else{
-                    if(num === 2){
-                        window.open('https://medium.com/irisnet-blog/iris-latest-testnet-fuxi-now-lives-join-us-to-be-a-validator-eeca83d50154')
-                    }else if(num === 3){
-                        window.open('https://medium.com/irisnet-blog/irisnet-q-a-a2fc4a10d07c')
+                }else {
+                    if(window.location.href.includes('lang=CN')){
+                        if(num === 2){
+                            window.open('https://mp.weixin.qq.com/s/M7NJ7Bb0rxw7spXaR1t8YA')
+                        }else if(num === 3){
+                            window.open('https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-71b7635d302c')
+                        }
+                    }else{
+                        if(num === 2){
+                            window.open('https://medium.com/irisnet-blog/iris-latest-testnet-fuxi-now-lives-join-us-to-be-a-validator-eeca83d50154')
+                        }else if(num === 3){
+                            window.open('https://medium.com/irisnet-blog/irisnet-q-a-a2fc4a10d07c')
+                        }
                     }
                 }
 

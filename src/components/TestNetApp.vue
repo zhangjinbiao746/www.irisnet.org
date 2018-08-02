@@ -49,7 +49,7 @@
 
 <script>
     import $ from 'jquery'
-    import message from '../assets/lang/message';
+    import message from '../common/message';
     let Reveal
     if (process.env.VUE_ENV === 'client') {
         Reveal = require('reveal.js')
