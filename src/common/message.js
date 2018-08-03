@@ -882,7 +882,6 @@ export default {
             join:'加入测试网',
             title:'诚邀加入IRISnet最新测试网伏羲',
             btn1:'如何加入',
-            btn2:'测试网开展公测',
             btn3:'IRISnet 常见问题',
         }
     },
@@ -1785,8 +1784,7 @@ export default {
         "test":{
             join:'Joining the Testnet',
             title:'IRISnet is here and we need your presence',
-            btn1:'Get Started',
-            btn2:'Testnet Now Live',
+            btn1:'How to Join',
             btn3:'IRISnet FAQ',
         }
     }
