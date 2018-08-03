@@ -20,6 +20,11 @@
                         <!--分割线-->
                         <div class="hr_vertical"></div>
 
+                        <span @click="skipToTest"  @mouseenter="commHide" @mouseleave="commShow"
+                              class="item">{{$store.state.lang=='CN'?'测试网':'Testnet'}}
+                            <div></div>
+                        </span>
+
                         <!--Community-->
 
                         <!--语言切换-->
@@ -43,6 +48,7 @@
                     </div>
                 </div>
             </div>
+            <router-view/>
             <!--内容区-->
             <div class="container">
                 <div class="container-center">
@@ -351,6 +357,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
         <foot></foot>
     </div>
@@ -392,6 +399,9 @@
             })
         },
         methods: {
+            skipToTest(){
+                this.$router.push('/test')
+            },
             roll() {
                 if (document.getElementById(this.$route.hash)) {
                     //window.scrollTo(0, document.getElementById(this.$route.hash).offsetTop-80)

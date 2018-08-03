@@ -50,4 +50,13 @@
         }
     }
 </script>
+<style>
+    html {
+        font-size: 625% !important;
+        -webkit-text-size-adjust: none;
+    }
+    body{
+        font-size:16px !important;
+    }
+</style>
 

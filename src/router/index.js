@@ -14,6 +14,8 @@ import newApp from "@/components/newApp"
 import appPrivacy from '@/components/appPrivacy'
 import appTerms from '@/components/appTerms'
 import community from '@/components/community'
+import TestNet from '../components/TestNet.vue';
+import TestNetApp from '../components/TestNetApp.vue';
 Vue.use(Router)
 
 export function createRouter() {
@@ -35,6 +37,17 @@ export function createRouter() {
             //     name: 'index',
             //     component: index
             // },
+            {
+                path: '/test',
+                name:'test',
+                component: TestNet,
+            },
+            {
+                path: '/testApp',
+                name:'testApp',
+                component: TestNetApp,
+            },
+
             {
                 path: '/login',
                 name: 'login',
