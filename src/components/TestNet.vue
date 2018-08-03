@@ -10,7 +10,6 @@
                         <p class="join_iris">{{title}}</p>
                         <span class="join_btn" @click="skipLink(1)"
                               style="background: rgb(114,75,227);color:#ffffff;border:0.01rem solid #724BE3;">{{btn1}}</span>
-                        <span class="join_btn" @click="skipLink(2)">{{btn2}}</span>
                         <span class="join_btn" @click="skipLink(3)">{{btn3}}</span>
                     </div>
                 </div>
@@ -33,7 +32,6 @@
                 join:'',
                 title:'',
                 btn1:'',
-                btn2:'',
                 btn3:'',
             }
         },
@@ -48,25 +46,20 @@
                 this.join = this.format('join');
                 this.title = this.format('title');
                 this.btn1 = this.format('btn1');
-                this.btn2 = this.format('btn2');
                 this.btn3 = this.format('btn3');
             },
             skipLink(num){
-                if(num === 1){
-                    window.open('https://github.com/irisnet/testnets')
-                }else {
-                    if(window.location.href.includes('lang=CN')){
-                        if(num === 2){
-                            window.open('https://mp.weixin.qq.com/s/M7NJ7Bb0rxw7spXaR1t8YA')
-                        }else if(num === 3){
-                            window.open('https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-71b7635d302c')
-                        }
-                    }else{
-                        if(num === 2){
-                            window.open('https://medium.com/irisnet-blog/iris-latest-testnet-fuxi-now-lives-join-us-to-be-a-validator-eeca83d50154')
-                        }else if(num === 3){
-                            window.open('https://medium.com/irisnet-blog/irisnet-q-a-a2fc4a10d07c')
-                        }
+                if(window.location.href.includes('lang=CN')){
+                    if(num === 1){
+                        window.open('https://github.com/irisnet/testnets/blob/master/README_CN.md')
+                    }else if(num === 3){
+                        window.open('https://github.com/irisnet/irisnet/blob/master/IRISnetFAQ_CN.md')
+                    }
+                }else{
+                    if(num === 1){
+                        window.open('https://github.com/irisnet/testnets/blob/master/README.md')
+                    }else if(num === 3){
+                        window.open('https://github.com/irisnet/irisnet/blob/master/IRISnetFAQ.md')
                     }
                 }
 
