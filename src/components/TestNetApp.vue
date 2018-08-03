@@ -5,10 +5,10 @@
                 <img src="../assets/app/irislogo.png" class="imglogo"  @click="goToHome">
                 <div class="div_en">
                     <img src="../assets/app/list.png" @click="menuIs=!menuIs"/>
-                    <a href="?lang=CN" v-if="$store.state.lang!='CN'">
+                    <a @click="changeLang('CN')" v-if="$store.state.lang!='CN'">
                         CN
                     </a>
-                    <a href="?lang=EN" v-if="$store.state.lang=='CN'">
+                    <a  @click="changeLang('EN')" v-if="$store.state.lang=='CN'">
                         EN
                     </a>
                 </div>
@@ -29,7 +29,7 @@
                 <div class="h110"></div>
             </div>
             <div class="menu" v-show="menuIs">
-                <section v-for="(item,index) in $store.state.messages.head.txt">
+                <section v-for="(item,index) in links">
                     <a v-if="item.href.indexOf('ttp')==-1" @click="gotojump(index,item)">
                         {{item.txt}}
                     </a>
@@ -55,6 +55,12 @@
     }
     export default {
         name: "TestNetApp",
+        watch:{
+            $route(){
+                console.log(this.$store.lang)
+            }
+
+        },
         methods: {
             skipTestNet(){
                 this.$router.push('/testApp');
@@ -85,6 +91,11 @@
                 this.btn1 = this.format('btn1');
                 this.btn3 = this.format('btn3');
             },
+            changeLang(lang){
+                this.$store.state.lang = lang;
+                this.getInfo();
+                this.links = message[lang.toLowerCase()].head.txt;
+            },
             skipLink(num){
                 if(this.$store.state.lang=='CN'){
                     if(num === 1){
@@ -105,8 +116,10 @@
                 this.menuIs = false;
                 //解决点击导航后无法再次重复导航问题
                 new Promise((resolve)=>{
-                    this.$router.push(`/newApp#/${item.href}`);
+                    this.$router.push(`/newApp?lang=${this.$store.state.lang}`);
                     resolve();
+                }).then(()=>{
+                    this.$router.push(`/newApp#/${item.href}`);
                 }).then(()=>{
                     if(index == 0){
                         this.scroll(0)
@@ -152,6 +165,7 @@
                 btn1:'',
                 btn2:'',
                 btn3:'',
+                links:this.$store.state.messages.head.txt,
             }
         },
         mounted(){
