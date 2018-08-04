@@ -5,12 +5,12 @@
                 <img src="../assets/app/irislogo.png" class="imglogo"  @click="goToHome">
                 <div class="div_en">
                     <img src="../assets/app/list.png" @click="menuIs=!menuIs"/>
-                    <a @click="changeLang('CN')" v-if="$store.state.lang!='CN'">
+                    <span @click="changeLang('CN')" v-if="$store.state.lang!='CN'">
                         CN
-                    </a>
-                    <a  @click="changeLang('EN')" v-if="$store.state.lang=='CN'">
+                    </span>
+                    <span  @click="changeLang('EN')" v-if="$store.state.lang=='CN'">
                         EN
-                    </a>
+                    </span>
                 </div>
 
             </div>
