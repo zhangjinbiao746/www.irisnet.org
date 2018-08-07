@@ -400,7 +400,7 @@
         },
         methods: {
             skipToTest(){
-                this.$router.push('/test')
+                this.$router.push('/testnets')
             },
             roll() {
                 if (document.getElementById(this.$route.hash)) {

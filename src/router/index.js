@@ -38,13 +38,13 @@ export function createRouter() {
             //     component: index
             // },
             {
-                path: '/test',
-                name:'test',
+                path: '/testnets',
+                name:'testnets',
                 component: TestNet,
             },
             {
-                path: '/testApp',
-                name:'testApp',
+                path: '/testnetsApp',
+                name:'testnetsApp',
                 component: TestNetApp,
             },
 
