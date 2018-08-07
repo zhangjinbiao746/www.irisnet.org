@@ -70,7 +70,7 @@
                 this.comm = '../public/community_selected.png';
             },
             skipToTest(){
-                this.$router.push('/testnets')
+                this.$router.push('/testnets/pc')
             },
         },
     }

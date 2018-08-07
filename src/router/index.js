@@ -38,13 +38,11 @@ export function createRouter() {
             //     component: index
             // },
             {
-                path: '/testnets',
-                name:'testnets',
+                path: '/testnets/pc',
                 component: TestNet,
             },
             {
-                path: '/testnetsApp',
-                name:'testnetsApp',
+                path: '/testnets/app',
                 component: TestNetApp,
             },
 

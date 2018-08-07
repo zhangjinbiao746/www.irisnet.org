@@ -386,7 +386,7 @@
         },
         methods: {
             skipTestNet(){
-                this.$router.push('/testnetsApp');
+                this.$router.push('/testnets/app');
             },
             img(src) {
                 return 'app/' + src;
