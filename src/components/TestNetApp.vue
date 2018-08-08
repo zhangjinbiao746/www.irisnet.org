@@ -470,6 +470,9 @@
                 font-size:0.13rem;
                 margin-top:0.4rem;
                 margin-bottom:0.4rem;
+                width:80%;
+                text-align:center;
+                line-height:0.2rem;
             }
             .join_btn{
                 color:#724BE3;
