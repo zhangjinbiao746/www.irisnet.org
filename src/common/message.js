@@ -1783,7 +1783,7 @@ export default {
         },
         "test":{
             join:'Joining the Testnet',
-            title:'Fuxi testnet is here and we need your presence',
+            title:'Join to build a secure and decentralized blockchain together!',
             btn1:'How to Join',
             btn3:'IRISnet FAQ',
         }
