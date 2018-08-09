@@ -5,12 +5,12 @@
                 <img src="../assets/app/irislogo.png" class="imglogo"  @click="goToHome">
                 <div class="div_en">
                     <img src="../assets/app/list.png" @click="menuIs=!menuIs"/>
-                    <a @click="changeLang('CN')" v-if="$store.state.lang!='CN'">
+                    <span @click="changeLang('CN')" v-if="$store.state.lang!='CN'">
                         CN
-                    </a>
-                    <a  @click="changeLang('EN')" v-if="$store.state.lang=='CN'">
+                    </span>
+                    <span  @click="changeLang('EN')" v-if="$store.state.lang=='CN'">
                         EN
-                    </a>
+                    </span>
                 </div>
 
             </div>
@@ -63,7 +63,7 @@
         },
         methods: {
             skipTestNet(){
-                this.$router.push('/testApp');
+                this.$router.push('/testnets/app');
             },
             img(src) {
                 return 'app/'+src;
@@ -470,6 +470,9 @@
                 font-size:0.13rem;
                 margin-top:0.4rem;
                 margin-bottom:0.4rem;
+                width:80%;
+                text-align:center;
+                line-height:0.2rem;
             }
             .join_btn{
                 color:#724BE3;
