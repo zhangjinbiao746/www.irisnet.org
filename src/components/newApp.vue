@@ -341,7 +341,7 @@
             </div>
             <div class="wechat" v-show="wechatIs" @click="wechatIs=false">
                 <div class="wechat_warp">
-                    <img src="../assets/wechat.png" class="wechat_img"/>
+                    <img src="../assets/wechat.jpg" class="wechat_img"/>
                     <div class="wechat_title">
                         Get more
                     </div>
