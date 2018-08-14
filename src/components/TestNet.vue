@@ -40,7 +40,7 @@
         },
         methods:{
             format(param){
-                return message[window.location.href.includes('lang=CN')?'cn':'en'].test[param];
+                return message[this.$store.state.lang=='CN'?'cn':'en'].test[param];
             },
             getInfo(){
                 this.join = this.format('join');
@@ -49,7 +49,7 @@
                 this.btn3 = this.format('btn3');
             },
             skipLink(num){
-                if(window.location.href.includes('lang=CN')){
+                if(this.$store.state.lang=='CN'){
                     if(num === 1){
                         window.open('https://github.com/irisnet/testnets/blob/master/README_CN.md')
                     }else if(num === 3){
