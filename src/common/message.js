@@ -1783,7 +1783,7 @@ export default {
         },
         "test":{
             join:'Joining the Testnet',
-            title:"Let's build a secure and decentralized blockchain together!",
+            title:"Let's build a secure and decentralized blockchain together",
             btn1:'How to Join',
             btn3:'IRISnet FAQ',
         }
