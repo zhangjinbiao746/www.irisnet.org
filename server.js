@@ -157,6 +157,10 @@ function render (req, res) {
 
 
 app.get('*', isProd ? render : (req, res) => {
+    console.log(req.url)
+    if(req.url === '/hackathon/app'){
+        req.url = '/newApp';
+    }
   readyPromise.then(() => render(req, res))
 })
 

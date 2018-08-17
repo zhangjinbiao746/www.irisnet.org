@@ -15,7 +15,9 @@ import appPrivacy from '@/components/appPrivacy'
 import appTerms from '@/components/appTerms'
 import community from '@/components/community'
 import TestNet from '../components/TestNet.vue';
+import Hackathon from '../components/Hackathon';
 import TestNetApp from '../components/TestNetApp.vue';
+import HackathonApp from '../components/HackathonApp.vue';
 Vue.use(Router)
 
 export function createRouter() {
@@ -42,9 +44,18 @@ export function createRouter() {
                 component: TestNet,
             },
             {
+                path: '/hackathon/pc',
+                component: Hackathon,
+            },
+            {
                 path: '/testnets/app',
                 component: TestNetApp,
             },
+            {
+                path: '/hackathon/app',
+                component: HackathonApp,
+            },
+
 
             {
                 path: '/login',
