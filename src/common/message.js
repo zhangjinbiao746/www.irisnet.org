@@ -883,6 +883,21 @@ export default {
             title:'诚邀加入IRISnet最新测试网伏羲',
             btn1:'如何加入',
             btn3:'IRISnet 常见问题',
+        },
+        hackathon:{
+            button:'黑客松',
+            src:'cn',
+            title:'加入IRISnet PoS攻防黑客松',
+            subTitle:'Game of Genesis',
+            introduce:'活动介绍: 为了鼓励更多的技术人员加入IRISnet社区并且参与到测试网中,IRISnet和Dorahacks正在寻找最优秀的黑客来参加到这场攻防游戏中,让我们一起来寻找使区块链网络更加安全可靠的新解决方案吧!',
+            contestTime:'比赛时间: 2018.9.3~2018.9.23',
+            target:'招募对象: 全球各地对IRISnet感兴趣的技术人员,3-6人一组',
+            secreat:'取胜秘诀: 熟悉Tendermint共识 熟悉Cosmos-SDK代码 熟悉IRISHub代码 熟悉区块链网络安全',
+            award:'奖励机制: 参赛的各组选手瓜分的攻防大赛价值 $17K的IRIS奖金池。 比赛中按规则排名划分项目一二三等奖,一等奖3组,奖金1000/组;二等奖5组,奖金1000/组;三等奖10组,奖金500/组,阳光普照奖金10/组 (奖金以IRIS token的形式发放,汇率按IRISnet募价基准价 1 IRIS = $0.08核算)',
+            partake:'参与方式: 加入官方QQ群 862553695',
+            join:'',
+            btn1:'点击报名',
+            btn2:'阅读详情',
         }
     },
     en:{
@@ -1786,6 +1801,21 @@ export default {
             title:"Let's build a secure and decentralized blockchain together",
             btn1:'How to Join',
             btn3:'IRISnet FAQ',
+        },
+        hackathon:{
+            button:'Hackathon',
+            src:'en',
+            title:'Joining the Game of Genesis',
+            subTitle:'IRISnet PoS Security Hackathon',
+            introduce:'Introduction: The IRIS network will keep generating value when its validators could keep the whole network secure. Hackathons are built for rapid innovation. IRIS&Dorahacks believes hackathons will generate the most impressive solutions for protecting a Proof-of-Stake blockchain.',
+            contestTime:'Schedule: 2018.9.3~2018.9.23',
+            target:'Who should join: Hackers around the world who are interested in IRISnet. Everyone is welcomed to form a team of 3 to 6 people.',
+            secreat:'Who would like to win: Familiar with the Tendermint consensus, Familiar with Cosmos-SDK codebase, Familiar with IRIShub codebase',
+            award:'Prizes: IRIS tokens in bounty pool are totally worth $17K. It is designed to be distributed in the following way: First Prize: $2000/person, 3teams Second Prize: $1000/person, 5teams Third Prize: $500/person, 10 teams Participation Prize: $10/person, 100teams The final winners will be rewarded iris tokens equivalent of dollars they deserves, with the exchange rate 1 IRIS = $0.08.',
+            partake:'How to Join:Riot Room',
+            join:'https://riot.im/app/#/room/#gameofgenesis:matrix.org',
+            btn1:'Sign up',
+            btn2:'Read more',
         }
     }
 }

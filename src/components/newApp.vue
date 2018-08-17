@@ -26,6 +26,10 @@
                 <section>
                     <a @click="skipTestNet">{{$store.state.lang=='CN'?'测试网':'Testnet'}}</a>
                 </section>
+                <section>
+                    <a @click="skipHackathon">{{$store.state.lang=='CN'?'黑客松':'Hackathon'}}</a>
+                </section>
+
 
             </div>
             <div style="width: 100%;background: #16152d">
@@ -388,6 +392,10 @@
             skipTestNet(){
                 this.$router.push('/testnets/app');
             },
+            skipHackathon(){
+                this.$router.push('/hackathon/app');
+            },
+
             img(src) {
                 return 'app/' + src;
             },
