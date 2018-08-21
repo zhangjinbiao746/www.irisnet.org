@@ -19,6 +19,7 @@
                 </a>
             </div>
             <div class="comm">
+
                 <span @click="skipToTest"
                       :class="testActive?'active':''"
                       class="item">{{$store.state.lang=='CN'?'测试网':'Testnet'}}
@@ -26,7 +27,14 @@
                 </span>
                 <div class="div_h">
                 </div>
-                <a class="item" style="    margin-right: 10px;" @mouseenter="commHide" @mouseleave="commShow" v-show="!testActive">
+                <span @click="skipToHackathon"
+                      :class="hackathonActive?'active':''"
+                      class="item">{{$store.state.lang=='CN'?'黑客松':'Hackathon'}}
+                    <div></div>
+                </span>
+                <div class="div_h">
+                </div>
+                <a class="item" style="    margin-right: 10px;" @mouseenter="commHide" @mouseleave="commShow" v-show="!testActive && !hackathonActive">
                     <img :src="UrlSrc+comm">
                     Community
                     <div></div>
@@ -51,10 +59,12 @@
                 comm: 'community.png',
                 down: 'arrow.png',
                 testActive:false,
+                hackathonActive:false,
             }
         },
         mounted(){
             this.testActive = window.location.href.includes('testnets');
+            this.hackathonActive = window.location.href.includes('hackathon');
         },
         methods: {
             downShow() {
@@ -72,6 +82,10 @@
             skipToTest(){
                 this.$router.push('/testnets/pc')
             },
+            skipToHackathon(){
+                this.$router.push('/hackathon/pc')
+            },
+
         },
     }
 </script>

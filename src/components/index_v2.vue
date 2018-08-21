@@ -24,6 +24,12 @@
                               class="item">{{$store.state.lang=='CN'?'测试网':'Testnet'}}
                             <div></div>
                         </span>
+                        <div class="hr_vertical"></div>
+
+                        <span @click="skipToHackathon"  @mouseenter="commHide" @mouseleave="commShow"
+                              class="item">{{$store.state.lang=='CN'?'黑客松':'Hackathon'}}
+                            <div></div>
+                        </span>
 
                         <!--Community-->
 
@@ -401,6 +407,9 @@
         methods: {
             skipToTest(){
                 this.$router.push('/testnets/pc')
+            },
+            skipToHackathon(){
+                this.$router.push('/hackathon/pc')
             },
             roll() {
                 if (document.getElementById(this.$route.hash)) {
