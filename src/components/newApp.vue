@@ -26,6 +26,10 @@
                 <section>
                     <a @click="skipTestNet">{{$store.state.lang=='CN'?'测试网':'Testnet'}}</a>
                 </section>
+                <section>
+                    <a @click="skipHackathon">{{$store.state.lang=='CN'?'黑客松':'Hackathon'}}</a>
+                </section>
+
 
             </div>
             <div style="width: 100%;background: #16152d">
@@ -341,7 +345,7 @@
             </div>
             <div class="wechat" v-show="wechatIs" @click="wechatIs=false">
                 <div class="wechat_warp">
-                    <img src="../assets/wechat.png" class="wechat_img"/>
+                    <img src="../assets/wechat.jpg" class="wechat_img"/>
                     <div class="wechat_title">
                         Get more
                     </div>
@@ -388,6 +392,10 @@
             skipTestNet(){
                 this.$router.push('/testnets/app');
             },
+            skipHackathon(){
+                this.$router.push('/hackathon/app');
+            },
+
             img(src) {
                 return 'app/' + src;
             },
