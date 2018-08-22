@@ -32,31 +32,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <!--<div class="hackathon_content">-->
-                            <!--<span class="title">{{title}}</span>-->
-                            <!--<span class="subTitle">{{subTitle}}</span>-->
-                            <!--<div class="main_content">-->
-                                <!--<div>-->
-                                    <!--<span>{{introduce}}</span>-->
-                                <!--</div>-->
-                                <!--<div>-->
-                                    <!--<span>{{contestTime}}</span>-->
-                                    <!--<span>{{target}}</span>-->
-                                    <!--<span>{{secreat}}</span>-->
-                                <!--</div>-->
-                                <!--<div>-->
-                                    <!--<span>{{award}}</span>-->
-                                <!--</div>-->
-                                <!--<div>-->
-                                    <!--<span>{{partake}}</span>-->
-                                    <!--<a :href="join" v-show="$store.state.lang === 'EN'" target="_blank"> {{join}}</a>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="btn">-->
-                                <!--<a :href="$store.state.lang === 'EN'?'http://cn.mikecrm.com/loO06Op':'http://cn.mikecrm.com/Wdawxt7'" target="_blank">{{btn1}}</a>-->
-                                <!--<a :href="$store.state.lang === 'EN'?'https://medium.com/@kidinamoto/irisnet-pos-security-hackathon-707065865926':'https://medium.com/@kidinamoto/irisnet-pos攻防hackathon计划-2657e7a22d95'" target="_blank">{{btn2}}</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
                     </div>
                 </div>
                 <div class="h110"></div>
@@ -230,66 +205,6 @@
         .warp {
             width: 100%;
             text-align: center;
-            /*.center_content{*/
-                /*display:flex;*/
-                /*align-items: center;*/
-                /*color:#fff;*/
-                /*img{*/
-                    /*height:5.84rem;*/
-                    /*width:3.28rem;*/
-                /*}*/
-                /*.hackathon_content{*/
-                    /*width:6.59rem;*/
-                    /*margin-left:0.8rem;*/
-                    /*display:flex;*/
-                    /*flex-direction:column;*/
-                    /*.title{*/
-                        /*font-size:0.24rem;*/
-                        /*color:#ffffff;*/
-                        /*margin-bottom:0.09rem;*/
-                    /*}*/
-                    /*.subTitle{*/
-                        /*font-size:0.24rem;*/
-                        /*color:#ffffff;*/
-                        /*margin-bottom:0.37rem;*/
-                    /*}*/
-                    /*.main_content{*/
-
-                        /*div{*/
-                            /*margin-bottom:0.37rem;*/
-                            /*span{*/
-                                /*color:#D4D5DE;*/
-                                /*font-size:0.14rem;*/
-                                /*line-height:2;*/
-                            /*}*/
-                        /*}*/
-                    /*}*/
-                    /*.btn{*/
-
-                        /*display:flex;*/
-
-                        /*a{*/
-                            /*width:1.4rem;*/
-                            /*height:0.4rem;*/
-                            /*border-radius:0.2rem;*/
-                            /*line-height:0.4rem;*/
-                            /*text-align: center;*/
-                            /*font-size:0.16rem;*/
-                            /*cursor:pointer;*/
-                            /*&:first-child{*/
-                                /*background:rgba(114,75,227,1);*/
-                                /*color:#ffffff;*/
-                                /*margin-right:0.17rem;*/
-                            /*}*/
-                            /*&:last-child{*/
-                                /*color:#724BE3;*/
-                                /*border:0.01rem solid #ffffff;*/
-                            /*}*/
-
-                        /*}*/
-                    /*}*/
-                /*}*/
-            /*}*/
         }
     }
 
