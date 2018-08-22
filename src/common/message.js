@@ -893,7 +893,7 @@ export default {
             contestTime:'比赛时间：2018.9.3~2018.9.23',
             target:'招募对象：全球各地对IRISnet感兴趣的技术人员,1-3 人一组。',
             secreat:'取胜秘诀：熟悉Tendermint共识 熟悉Cosmos-SDK代码 熟悉IRISHub代码 熟悉区块链网络安全。',
-            award:'奖励机制：参赛的各组选手瓜分的攻防大赛瓜分212,500 IRIS枚通证的奖金池。',
+            award:'奖励机制：参赛的各组选手瓜分212,500枚IRIS的奖池。',
             partake:'参与方式：加入官方QQ群 862553695',
             join:'',
             btn1:'点击报名',

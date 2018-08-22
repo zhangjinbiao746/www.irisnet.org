@@ -104,7 +104,8 @@
                 menuIs: false,
                 wechatIs: false,
                 links:this.$store.state.messages.head.txt,
-                bodyHeight:window.innerHeight/100 - 0.6,
+                // bodyHeight:window.innerHeight/100 - 0.6,
+                bodyHeight:667/100 - 0.6,
             }
         },
         methods: {
