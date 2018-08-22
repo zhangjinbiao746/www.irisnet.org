@@ -141,6 +141,7 @@ function render (req, res) {
     url: req.url
   }
   renderer.renderToString(context, (err, html) => {
+
     if (err) {
       return handleError(err)
     }
@@ -158,8 +159,8 @@ function render (req, res) {
 
 
 app.get('*', isProd ? render : (req, res) => {
-    console.log(req.url)
-    res.redirect('/newApp');
+    // console.log(req.url)
+    // res.redirect('/newApp');
     // if(req.url === '/hackathon/app'){
     //     req.url = '/newApp';
     // }
