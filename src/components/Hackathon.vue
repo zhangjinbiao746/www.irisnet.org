@@ -134,7 +134,7 @@
     }
     .left-subTitle{
         font-size: 23px;
-        padding-top: 7px;
+        padding-top: 10px;
         color: #fff;
         font-weight: 900;
     }
@@ -143,6 +143,7 @@
         display: flex;
         justify-content: center;
         .left-container{
+            width: 50%;
             text-align: left;
             .left-title{
                 font-size: 24px;
@@ -151,13 +152,13 @@
                 font-weight: 900;
             }
             .left-introduce{
-                padding-top: 51px;
+                padding-top: 54px;
                 font-size: 14px;
                 line-height: 26px;
                 color: #D4D5DE;
             }
             .en-left-introduce{
-                padding-top: 26px;
+                padding-top: 22px;
                 font-size: 14px;
                 line-height: 26px;
                 color: #D4D5DE;
@@ -170,9 +171,10 @@
             }
         }
         .right-container{
+            width: 50%;
             text-align: left;
             color: #D4D5DE;
-            padding-top: 23px;
+            padding-top: 75px;
             margin-left: 75px;
             .right-target{
                 font-size: 14px;
