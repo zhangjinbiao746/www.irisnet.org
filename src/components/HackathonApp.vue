@@ -520,7 +520,9 @@
                     }
                     .link_wrap{
                         width:100%;
-                        overflow-x: auto;
+                        a{
+                            word-break: break-all;
+                        }
                     }
                 }
                 .btn{
@@ -537,6 +539,7 @@
                         font-size:0.16rem;
                         cursor:pointer;
                         margin-bottom:0.75rem;
+                        word-break: break-all;
                         &:first-child{
                             background:rgba(114,75,227,1);
                             color:#ffffff;
