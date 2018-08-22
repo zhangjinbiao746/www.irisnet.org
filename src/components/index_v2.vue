@@ -354,7 +354,7 @@
                     <div class="cancel">
                         <img src="../assets/cancel.png"/>
                     </div>
-                    <img src="../assets/wechat.png" class="wechat_img"/>
+                    <img src="../assets/wechat.jpg" class="wechat_img"/>
                     <div class="wechat_title">
                         {{$store.state.messages.qr.title}}
                     </div>
@@ -472,7 +472,7 @@
                 model[index].is = true;
                 history.pushState({}, '', model[index].href);
                 this.$store.state.messages.head.txt = model;
-                //解决点击导航后无法再次重复导航问题
+                //解决点击导航后无法再次重复导航问题contact_radius
                 if(index == 0){
                     this.scroll(100)
                 }else if(index == 1){

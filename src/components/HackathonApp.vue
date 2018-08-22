@@ -19,8 +19,7 @@
                 <div class="warp">
 
                     <div class="center_content">
-                        <img src="../assets/GOG-CN.jpg" alt="" v-show="src === 'cn'">
-                        <img src="../assets/GOG-EN.jpg" alt="" v-show="src === 'en'">
+                        <img src="../assets/GOG-landscape-transparent.png" alt="">
                         <div class="hackathon_content">
                             <span class="title">{{title}}</span>
                             <span class="subTitle">{{subTitle}}</span>
@@ -29,9 +28,9 @@
                                     <span>{{introduce}}</span>
                                 </div>
                                 <div>
-                                    <span>{{contestTime}}</span>
-                                    <span>{{target}}</span>
-                                    <span>{{secreat}}</span>
+                                    <p>{{contestTime}}</p>
+                                    <p>{{target}}</p>
+                                    <p>{{secreat}}</p>
                                 </div>
                                 <div>
                                     <span>{{award}}</span>
@@ -85,14 +84,14 @@
         data(){
             return {
                 src:message[this.$store.state.lang=='CN'?'cn':'en'].hackathon.src,
-                title:'加入IRISnet PoS攻防黑客松',
-                subTitle:'Game of Genesis',
-                introduce:'活动介绍: 为了鼓励更多的技术人员加入IRISnet社区并且参与到测试网中,IRISnet和Dorahacks正在寻找最优秀的黑客来参加到这场攻防游戏中,让我们一起来寻找使区块链网络更加安全可靠的新解决方案吧!',
-                contestTime:'比赛时间: 2018.9.3~2018.9.23',
-                target:'招募对象: 全球各地对IRISnet感兴趣的技术人员,3-6人一组',
-                secreat:'取胜秘诀: 熟悉Tendermint共识 熟悉Cosmos-SDK代码 熟悉IRISHub代码 熟悉区块链网络安全',
-                award:'奖励机制: 参赛的各组选手瓜分的攻防大赛价值 $17K的IRIS奖金池。 比赛中按规则排名划分项目一二三等奖,一等奖3组,奖金1000/组;二等奖5组,奖金1000/组;三等奖10组,奖金500/组,阳光普照奖金10/组 (奖金以IRIS token的形式发放,汇率按IRISnet募价基准价 1 IRIS = $0.08核算)',
-                partake:'参与方式: 加入官方QQ群: 862553695',
+                title:'加入IRISnet线上PoS攻防黑客松',
+                subTitle:'',
+                introduce:'活动介绍: 为了鼓励更多的技术人员加入IRISnet社区并且参与到测试网中，IRISnet和Dorahacks正在寻找最优秀的黑客来参加到这场攻防游戏中。让我们一起来寻找使区块链网络更加安全可靠的新解决方案吧！',
+                contestTime:'比赛时间： 2018.9.3~2018.9.23',
+                target:'招募对象: 全球各地对IRISnet感兴趣的技术人员,1-3 人一组',
+                secreat:'取胜秘诀： 熟悉Tendermint共识 熟悉Cosmos-SDK代码 熟悉IRISHub代码 熟悉区块链网络安全',
+                award:'奖励机制： 参赛的各组选手瓜分的攻防大赛瓜分212,500IRIS枚通证的奖金池。 比赛中按规则排名划分项目一二三等奖，一等奖3组，奖励25,000枚IRIS通证/组；二等奖5组，奖金12,500枚IRIS通证/组；三等奖10组，奖金枚6,250IRIS通证/组,阳光普照奖100组奖金125枚IRIS通证/组',
+                partake:'参与方式： 加入官方QQ群： 862553695',
                 join:'',
                 btn1:'点击报名',
                 btn2:'阅读详情',
@@ -482,24 +481,26 @@
             width:100%;
 
             img{
-                height:5.2rem;
+                height: 1.8rem;
                 width:90%;
                 margin-bottom:0.37rem;
             }
             .hackathon_content{
-                width:90%;
+                width:85%;
                 display:flex;
                 flex-direction:column;
                 .title{
-                    font-size:0.24rem;
+                    font-size:0.2rem;
                     color:#ffffff;
                     margin-bottom:0.09rem;
+                    font-weight: 900;
                 }
                 .subTitle{
-                    font-size:0.24rem;
+                    font-size:0.2rem;
                     color:#ffffff;
                     margin-bottom:0.37rem;
                     line-height:1.45;
+                    font-weight: 900;
                 }
                 .main_content{
                     width:100%;
@@ -507,6 +508,11 @@
                         width:100%;
                         margin-bottom:0.37rem;
                         span{
+                            color:#D4D5DE;
+                            font-size:0.14rem;
+                            line-height:2;
+                        }
+                        p{
                             color:#D4D5DE;
                             font-size:0.14rem;
                             line-height:2;
@@ -530,7 +536,7 @@
                         text-align: center;
                         font-size:0.16rem;
                         cursor:pointer;
-                        margin-bottom:0.5rem;
+                        margin-bottom:0.75rem;
                         &:first-child{
                             background:rgba(114,75,227,1);
                             color:#ffffff;
