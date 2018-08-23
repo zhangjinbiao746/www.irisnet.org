@@ -114,11 +114,12 @@ function render (req, res) {
   res.setHeader('Server', serverInfo)
 
   const handleError = err => {
+      console.log("err",err)
     if (err && err.code === 404) {
       res.status(404).end('404 | Page Not Found')
     } else {
       // Render Error Page or Redirect
-      res.status(500).end('500 | Internal Server Error')
+      res.status(500).end(err)
       console.error(`error during render : ${req.url}`)
       console.error(err.stack)
     }
@@ -140,6 +141,7 @@ function render (req, res) {
     url: req.url
   }
   renderer.renderToString(context, (err, html) => {
+
     if (err) {
       return handleError(err)
     }
@@ -157,10 +159,11 @@ function render (req, res) {
 
 
 app.get('*', isProd ? render : (req, res) => {
-    console.log(req.url)
-    if(req.url === '/hackathon/app'){
-        req.url = '/newApp';
-    }
+    // console.log(req.url)
+    // res.redirect('/newApp');
+    // if(req.url === '/hackathon/app'){
+    //     req.url = '/newApp';
+    // }
   readyPromise.then(() => render(req, res))
 })
 
