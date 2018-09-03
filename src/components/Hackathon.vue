@@ -11,7 +11,7 @@
 
                         </div>
                         <div class="btn-container">
-                            <a :href="$store.state.lang === 'EN'?'http://cn.mikecrm.com/loO06Op':'http://cn.mikecrm.com/Wdawxt7'" target="_blank">{{btn1}}</a>
+                            <a :href="$store.state.lang === 'EN'?'https://gog.irisplorer.io/#/home':'https://gog.irisplorer.io/#/home'" target="_blank">{{btn1}}</a>
                             <a :href="$store.state.lang === 'EN'?'https://medium.com/@kidinamoto/irisnet-pos-security-hackathon-707065865926':'https://github.com/irisnet/testnets/issues/49'" target="_blank">{{btn2}}</a>
                         </div>
                         <div class="detail-content">
@@ -175,7 +175,7 @@
             text-align: left;
             color: #D4D5DE;
             padding-top: 75px;
-            margin-left: 75px;
+            margin-left: 125px;
             .right-target{
                 font-size: 14px;
                 line-height: 26px;

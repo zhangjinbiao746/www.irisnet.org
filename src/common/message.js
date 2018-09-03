@@ -164,7 +164,7 @@ export default {
                         "href":"https://bihu.com/"
                     },
                     {
-                        "img":"collaboration/btts.png",
+                        "img":"collaboration/newbtts.png",
                         "pos":-56*3,
                         "title":"BA Capital",
                         "href":""
@@ -896,7 +896,7 @@ export default {
             award:'奖励机制：参赛的各组选手瓜分212,500枚IRIS的奖励。',
             partake:'参与方式：加入官方QQ群 862553695',
             join:'',
-            btn1:'点击报名',
+            btn1:'浏览器',
             btn2:'阅读详情',
         }
     },
@@ -1081,7 +1081,7 @@ export default {
                         "href":"https://bihu.com/"
                     },
                     {
-                        "img":"collaboration/btts.png",
+                        "img":"collaboration/newbtts.png",
                         "pos":-56*3,
                         "title":"BA Capital",
                         "href":""
@@ -1814,7 +1814,7 @@ export default {
             award:'Prizes: The bounty pool is of 212,500 IRIS tokens.',
             partake:'How to Join: Riot Room',
             join:'https://riot.im/app/#/room/#gameofgenesis:matrix.org',
-            btn1:'Sign up',
+            btn1:'Explorer',
             btn2:'Read more',
         }
     }
