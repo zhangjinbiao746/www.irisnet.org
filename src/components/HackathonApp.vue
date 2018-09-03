@@ -41,7 +41,7 @@
                                 </div>
                             </div>
                             <div class="btn">
-                                <a :href="$store.state.lang === 'EN'?'http://cn.mikecrm.com/loO06Op':'http://cn.mikecrm.com/Wdawxt7'" target="_blank">{{btn1}}</a>
+                                <a :href="$store.state.lang === 'EN'?'https://gog.irisplorer.io/#/home':'https://gog.irisplorer.io/#/home'" target="_blank">{{btn1}}</a>
                                 <a :href="$store.state.lang === 'EN'?'https://medium.com/@kidinamoto/irisnet-pos-security-hackathon-707065865926':'https://medium.com/@kidinamoto/irisnet-pos攻防hackathon计划-2657e7a22d95'" target="_blank">{{btn2}}</a>
                             </div>
                         </div>
