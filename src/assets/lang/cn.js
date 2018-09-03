@@ -877,4 +877,4 @@ export const message = {
     "placehooder":{
         "placehooder": "请输入你的邮箱地址"
     }
-}
+};

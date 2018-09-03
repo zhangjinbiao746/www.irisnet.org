@@ -175,7 +175,7 @@
             text-align: left;
             color: #D4D5DE;
             padding-top: 75px;
-            margin-left: 75px;
+            margin-left: 125px;
             .right-target{
                 font-size: 14px;
                 line-height: 26px;
