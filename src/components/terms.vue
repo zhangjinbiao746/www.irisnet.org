@@ -40,6 +40,23 @@
     export default {
         name: "terms",
         components:{foot,headr},
+        data(){
+            return{
+
+            }
+        },
+       mounted(){
+            let privacyClass = document.getElementsByClassName("privacy")[0];
+            let privacyHostName = window.location.hostname;
+            let privacySearch =  privacyHostName;
+            if(this.$store.state.lang=='EN'){
+                privacySearch = privacyHostName + "/privacy/?lang=EN"
+            }else {
+                privacySearch = privacyHostName + "/privacy/?lang=CN"
+            }
+
+           privacyClass.setAttribute("href",privacySearch );
+       }
     }
 </script>
 
