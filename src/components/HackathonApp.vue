@@ -139,7 +139,7 @@
                 }
             },
             goToHome(){
-                this.$router.go('/newApp')
+                this.$router.push(`/newApp?lang=${this.$store.state.lang}`)
             },
             format(param){
                 return message[this.$store.state.lang=='CN'?'cn':'en'].newHackathon[param];
