@@ -49,12 +49,7 @@
             let privacyClass = document.getElementsByClassName("privacy")[0];
             let privacyHostName= window.location.hostname;
             let curraylocationSearch = window.location.search;
-           let privacySearch;
-           if(curraylocationSearch === "?lang=CN"){
-               privacySearch =  privacyHostName + "/privacy/?lang=CN"
-            }else {
-               privacySearch = privacyHostName + "/privacy/?lang=EN"
-            }
+            let privacySearch =  privacyHostName + "/privacy/" + curraylocationSearch;
 
            privacyClass.setAttribute("href",privacySearch );
        }
