@@ -782,7 +782,7 @@ export const message = {
             {
                 'title': "Privacy",
                 "txtList": [
-                    'We will manage any personal information that we collect through our website in accordance with our <a href=""> Privacy Policy</a>, which you can access here. '
+                    'We will manage any personal information that we collect through our website in accordance with our <a class="privacy"> Privacy Policy</a>, which you can access here. '
                 ]
             },
             {
