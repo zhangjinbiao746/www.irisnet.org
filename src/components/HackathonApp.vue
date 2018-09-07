@@ -30,10 +30,15 @@
                                     <p>{{signupDate}}</p>
                                     <p>{{join}}</p>
                                 </div>
-                                <div>
+                                <div style="margin-bottom: 0.10rem">
                                     <span v-show="$store.state.lang !== 'EN'">{{riotRoom}}</span>
                                     <span v-show="$store.state.lang == 'EN'">Riot Room: </span>
                                     <a class="link-riotRoom" :href="riotRoom" v-show="$store.state.lang === 'EN'" target="_blank">{{riotRoom}}</a>
+                                </div>
+                                <div>
+                                    <span v-show="$store.state.lang == 'EN'">{{qq}}</span>
+                                    <span v-show="$store.state.lang !== 'EN'">Riot：</span>
+                                    <a style="word-break: break-all;" :href="qq" v-show="$store.state.lang !== 'EN'" target="_blank">{{qq}}</a>
                                 </div>
                                 <div>
                                     <span>{{bountyPool}}</span>
@@ -108,6 +113,7 @@
                 wechatIs: false,
                 links:this.$store.state.messages.head.txt,
                 bodyHeight:"",
+                qq:"https://riot.im/app/#/room/#gameofgenesis:matrix.org"
             }
         },
         methods: {
@@ -148,6 +154,7 @@
                 this.bountyPool = this.format("bountyPool");
                 this.btn1 = this.format('btn1');
                 this.btn2 = this.format('btn2');
+                this.qq = this.format("qq")
             },
             changeLang(lang){
                 this.$store.state.lang = lang;
