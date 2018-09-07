@@ -467,7 +467,6 @@
     html, body {
         min-width: auto !important;
     }
-
     .warp {
         height:100%;
         display:flex;
