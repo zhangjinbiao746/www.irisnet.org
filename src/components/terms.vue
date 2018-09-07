@@ -47,9 +47,13 @@
         },
        mounted(){
             let privacyClass = document.getElementsByClassName("privacy")[0];
-            let privacyHostName= window.location.hostname;
-            let curraylocationSearch = window.location.search;
-            let privacySearch =  privacyHostName + "/privacy/" + curraylocationSearch;
+            let privacyHostName = window.location.hostname;
+            let privacySearch =  privacyHostName;
+            if(this.$store.state.lang=='EN'){
+                privacySearch = privacyHostName + "/privacy/?lang=EN"
+            }else {
+                privacySearch = privacyHostName + "/privacy/?lang=CN"
+            }
 
            privacyClass.setAttribute("href",privacySearch );
        }
