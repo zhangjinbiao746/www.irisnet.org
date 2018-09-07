@@ -47,7 +47,7 @@
         },
        mounted(){
             let privacyClass = document.getElementsByClassName("privacy")[0];
-            let privacyProtoco = window.location.protoco;
+            let privacyProtoco = window.location.protocol;
             let privacyHostName = window.location.hostname;
             let privacySearch =  privacyHostName;
             if(this.$store.state.lang=='EN'){
