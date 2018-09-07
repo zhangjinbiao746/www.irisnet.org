@@ -782,7 +782,7 @@ export const message = {
             {
                 'title': "Privacy",
                 "txtList": [
-                    'We will manage any personal information that we collect through our website in accordance with our Privacy Policy, which you can access here. '
+                    'We will manage any personal information that we collect through our website in accordance with our <a class="privacy"> Privacy Policy</a>, which you can access here. '
                 ]
             },
             {
@@ -794,7 +794,7 @@ export const message = {
             {
                 'title': "Questions?",
                 "txtList": [
-                    'Please contact us [insert email address or other contact details] <a href="mailto:contact@irisnet.org" >contact@irisnet.org </a> if you have any questions about our website.'
+                    'Please contact us <a href="mailto:contact@irisnet.org" >contact@irisnet.org </a> if you have any questions about our website.'
                 ]
             },
         ]
