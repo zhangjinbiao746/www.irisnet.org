@@ -28,6 +28,11 @@
                                     <span v-show="$store.state.lang !== 'EN'">{{riotRoom}}</span>
                                     <span v-show="$store.state.lang == 'EN'">Riot Room: </span>
                                     <a :href="riotRoom" v-show="$store.state.lang === 'EN'" target="_blank">{{riotRoom}}</a></li>
+                                <li class="participation-way">
+                                    <span v-show="$store.state.lang == 'EN'">{{qq}}</span>
+                                    <span v-show="$store.state.lang !== 'EN'">Riot: </span>
+                                    <a :href="qq" v-show="$store.state.lang !== 'EN'" target="_blank">{{qq}}</a>
+                                </li>
                                 <li>{{bountyPool}}</li>
                             </ul>
                         </div>
@@ -72,7 +77,8 @@
                 signupDate: '报名时间：2018.10.8前',
                 join: '招募对象：全球各地对IRISnet感兴趣的技术人员,1-3 人一组。',
                 riotRoom: '参与方式：点击报名并加入官方QQ群 862553695',
-                bountyPool: '奖励机制：参赛的各组选手瓜分212,500枚IRIS的奖励。'
+                bountyPool: '奖励机制：参赛的各组选手瓜分212,500枚IRIS的奖励。',
+                qq:"https://riot.im/app/#/room/#gameofgenesis:matrix.org"
             }
         },
         mounted(){
@@ -93,6 +99,7 @@
                 this.join = this.format("join");
                 this.riotRoom = this.format("riotRoom");
                 this.bountyPool = this.format("bountyPool");
+                this.qq = this.format('qq');
             },
 
         }
@@ -172,7 +179,6 @@
                 padding: 0.13rem 0;
             }
             .riot-info{
-                padding-bottom: 0.13rem;
             }
         }
     }
@@ -207,5 +213,9 @@
             }
         }
     }
+    .participation-way{
+        padding-bottom: 0.13rem;
+    }
+
 
 </style>

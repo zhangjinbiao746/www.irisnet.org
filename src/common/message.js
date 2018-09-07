@@ -908,6 +908,7 @@ export default {
             bountyPool:'奖励机制：参赛的各组选手瓜分212,500枚IRIS的奖励。',
             btn1:'点击报名',
             btn2:'阅读详情',
+            qq:"https://riot.im/app/#/room/#gameofgenesis:matrix.org"
         }
     },
     en:{
@@ -1836,6 +1837,7 @@ export default {
             bountyPool:'Bounty Pool: 212,500 IRIS',
             btn1:'Sign up',
             btn2:'Read more',
+            qq: "QQ: 862553695"
         }
     }
 }

@@ -34,11 +34,6 @@
                 </span>
                 <div class="div_h">
                 </div>
-                <a class="item" style="    margin-right: 10px;" @mouseenter="commHide" @mouseleave="commShow" v-show="!testActive && !hackathonActive">
-                    <img :src="UrlSrc+comm">
-                    Community
-                    <div></div>
-                </a>
             </div>
             <div style="float: right">
                 <a :href="'/?lang='+$store.state.lang+item.href" v-for="item in $store.state.messages.head.txt" class="item">
