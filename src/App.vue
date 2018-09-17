@@ -50,13 +50,14 @@
         }
     }
 </script>
-<style>
+<style lang="less">
     html {
         font-size: 625% !important;
         -webkit-text-size-adjust: none;
     }
     body{
         font-size:16px !important;
+        &::-webkit-scrollbar {display:none}
     }
 </style>
 

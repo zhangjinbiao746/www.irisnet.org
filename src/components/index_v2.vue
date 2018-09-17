@@ -6,7 +6,7 @@
                 <div class="center1 head-content">
 
                     <!--左侧logo-->
-                    <a class="head-layout-left" href="#"><img :src="UrlSrc+$store.state.messages.logo" style="width: 130px;"/></a>
+                    <a class="head-layout-left" href="#"><img src="../../public/irisnet.png" style="width: 130px;"/></a>
 
                     <!--右侧内容-->
                     <div class="head-layout-right">
