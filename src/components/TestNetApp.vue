@@ -171,7 +171,7 @@
                 btn1:'',
                 btn2:'',
                 btn3:'',
-                links:this.$store.state.messages.head.txt,
+                links:message[this.$store.state.lang=='CN'?'cn':'en'].head.txt,
             }
         },
         mounted(){
