@@ -8,9 +8,9 @@
                     <div class="center_content">
                         <h2 class="join_test_net">{{join}}</h2>
                         <p class="join_iris">{{title}}</p>
-                        <span class="join_btn" @click="skipLink(1)"
+                        <span class="join_btn" @click="linkTo('join')"
                               style="background: rgb(114,75,227);color:#ffffff;border:0.01rem solid #724BE3;">{{btn1}}</span>
-                        <span class="join_btn" @click="skipLink(3)">{{btn3}}</span>
+                        <span class="join_btn" @click="linkTo('faq')">{{btn3}}</span>
                     </div>
                 </div>
                 <div class="h110"></div>
@@ -48,17 +48,17 @@
                 this.btn1 = this.format('btn1');
                 this.btn3 = this.format('btn3');
             },
-            skipLink(num){
+            linkTo(entranceName){
                 if(this.$store.state.lang=='CN'){
-                    if(num === 1){
-                        window.open('https://github.com/irisnet/testnets/blob/master/README_CN.md')
-                    }else if(num === 3){
+                    if(entranceName === 'join'){
+                        window.open('https://github.com/irisnet/irishub/blob/master/docs/zh/get-started/README.md')
+                    }else if(entranceName === 'faq'){
                         window.open('https://github.com/irisnet/irisnet/blob/master/IRISnetFAQ_CN.md')
                     }
                 }else{
-                    if(num === 1){
-                        window.open('https://github.com/irisnet/testnets/blob/master/README.md')
-                    }else if(num === 3){
+                    if(entranceName === 'join'){
+                        window.open('https://github.com/irisnet/irishub/blob/master/docs/get-started/README.md')
+                    }else if(entranceName === 'faq'){
                         window.open('https://github.com/irisnet/irisnet/blob/master/IRISnetFAQ.md')
                     }
                 }
