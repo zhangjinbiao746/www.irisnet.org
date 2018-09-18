@@ -111,7 +111,7 @@
                 ],
                 menuIs: false,
                 wechatIs: false,
-                links:this.$store.state.messages.head.txt,
+                links:message[this.$store.state.lang=='CN'?'cn':'en'].head.txt,
                 bodyHeight:"",
                 qq:"https://riot.im/app/#/room/#gameofgenesis:matrix.org"
             }
