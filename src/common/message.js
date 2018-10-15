@@ -902,7 +902,7 @@ export default {
         newHackathon:{
             title:"加入IRISnet线上PoS攻防黑客松",
             introduction:"活动介绍：为了鼓励更多的技术人员加入IRISnet社区并且参与到测试网中，IRISnet和Dorahacks正在寻找最优秀的黑客来参加到这场攻防游戏中。让我们一起来寻找使区块链网络更加安全可靠的新解决方案吧！",
-            signupDate:"报名时间：2018.10.8前",
+            signupDate:"报名时间：开启中",
             join:'招募对象：全球各地对IRISnet感兴趣的技术人员,1-3 人一组。',
             riotRoom:"参与方式：点击报名并加入官方QQ群 862553695",
             bountyPool:'奖励机制：参赛的各组选手瓜分212,500枚IRIS的奖励。',
@@ -1831,7 +1831,7 @@ export default {
         newHackathon:{
             title:"Joining the Game of Genesis",
             introduction:"Introduction: The IRIS network will keep generating value when its validators could keep the whole network secure. Hackathons are built for rapid innovation. IRIS&Dorahacks believes hackathons will generate the most impressive solutions for protecting a validator of one Proof-of-Stake blockchain.",
-            signupDate:"Signup Date: Before 2018.10.8",
+            signupDate:"Signup : Still Open ",
             join:'Who should join: Hackers who are interested in IRISnet around the world. Everyone is welcomed to form a team of 1 to 3 people.',
             riotRoom:"https://riot.im/app/#/room/#gameofgenesis:matrix.org",
             bountyPool:'Bounty Pool: 212,500 IRIS',

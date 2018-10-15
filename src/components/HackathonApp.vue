@@ -97,7 +97,7 @@
                 award:'奖励机制： 参赛的各组选手瓜分的攻防大赛瓜分212,500IRIS枚通证的奖金池。 比赛中按规则排名划分项目一二三等奖，一等奖3组，奖励25,000枚IRIS通证/组；二等奖5组，奖金12,500枚IRIS通证/组；三等奖10组，奖金6,250枚IRIS通证/组,阳光普照奖100组奖金125枚IRIS通证/组',
                 partake:'参与方式： 加入官方QQ群： 862553695',
                 introduction:"活动介绍：为了鼓励更多的技术人员加入IRISnet社区并且参与到测试网中，IRISnet和Dorahacks正在寻找最优秀的黑客来参加到这场攻防游戏中。让我们一起来寻找使区块链网络更加安全可靠的新解决方案吧！",
-                signupDate: '报名时间：2018.10.8前',
+                signupDate: '报名时间：开启中',
                 join: '招募对象：全球各地对IRISnet感兴趣的技术人员,1-3 人一组。',
                 riotRoom: '参与方式：点击报名并加入官方QQ群 862553695',
                 bountyPool: '奖励机制：参赛的各组选手瓜分212,500枚IRIS的奖励。',
@@ -111,7 +111,7 @@
                 ],
                 menuIs: false,
                 wechatIs: false,
-                links:this.$store.state.messages.head.txt,
+                links:message[this.$store.state.lang=='CN'?'cn':'en'].head.txt,
                 bodyHeight:"",
                 qq:"https://riot.im/app/#/room/#gameofgenesis:matrix.org"
             }
