@@ -283,8 +283,42 @@
                             <!--</div>-->
                         </div>
                     </div>
+                    <div class="what model_upcoming_content_wrap">
+                        <div class="model_upcoming_content">
+                            <div class="model_upcoming_event_container">
+                                <h5 v-show="$store.state.lang!=='CN'">Upcoming Event</h5>
+                                <h5 v-show="$store.state.lang=='CN'">近期活动</h5>
+                                <div class="model_link_img_container">
+                                    <div class="model_img_content">
+                                        <a href="https://buidl.kr/#link" target="_blank">
+                                            <img src="../assets/app/buidlseoul.png" alt="">
+                                        </a>
+                                        <p v-show="$store.state.lang!=='CN'">November 29-30th, 2018 | Seoul, Korea</p>
+                                        <p v-show="$store.state.lang=='CN'">11月29-30日, 2018 | 首尔, 韩国</p>
+                                    </div>
+                                    <div class="model_img_content_waiting">
+                                        <div>
+                                            <span v-show="$store.state.lang!=='CN'">Coming Soon</span>
+                                            <span v-show="$store.state.lang=='CN'">即将到来</span>
+                                        </div>
+                                        <p v-show="$store.state.lang!=='CN'">...</p>
+                                        <p v-show="$store.state.lang=='CN'">...</p>
+                                    </div>
+                                    <div class="model_img_content_waiting">
+                                        <div>
+                                            <span v-show="$store.state.lang!=='CN'">Coming Soon</span>
+                                            <span v-show="$store.state.lang=='CN'">即将到来</span>
+                                        </div>
+                                        <p v-show="$store.state.lang!=='CN'">...</p>
+                                        <p v-show="$store.state.lang=='CN'">...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div id="#/0/5" class="contact" style="background: #0f0f1f;margin-top: 50px;">
+
+                    <div id="#/0/5" class="contact" style="background: #0f0f1f;">
                         <div class="contact_title">
                             {{$store.state.messages.contact.title}}
                             <div class="nav-line"></div>
