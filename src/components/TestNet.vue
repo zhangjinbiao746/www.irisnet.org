@@ -1,7 +1,7 @@
 <template>
     <div class="testnet_page">
         <div class="index" style="height:100%; z-index: 1" @click="closeMenu">
-            <headr></headr>
+            <topHeader></topHeader>
                 <div class="testnet_content">
                     <div class="testnet_title">
                         <p>{{title}}</p>
@@ -179,11 +179,11 @@
 
 <script>
     import foot from './foot';
-    import headr from './head';
+    import topHeader from './head';
     import message from '../common/message';
     export default {
         name: "terms",
-        components: {foot,headr},
+        components: {foot,topHeader},
         data(){
             return {
                 title:'',
