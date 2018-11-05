@@ -1,7 +1,8 @@
 <template>
     <div class="testnet_page">
-        <div class="index" style="height:100%; z-index: 1" @click="closeMenu">
-            <headr></headr>
+        <div class="index" style="height:100%;" @click="closeMenu">
+            <div class="container">
+                <headr></headr>
                 <div class="testnet_content">
                     <div class="testnet_title">
                         <p>{{title}}</p>
@@ -32,8 +33,8 @@
                                 <div class="tesnet_hover_incentivize">
                                     <span>{{incentivizedInfo}}</span>
                                     <span class="select_arrow_img">
-                                        <img :src="flShowMenu ? activeArrow : defaultArrow">
-                                    </span>
+                                    <img :src="flShowMenu ? activeArrow : defaultArrow">
+                                </span>
                                 </div>
                                 <a :href="incentivizedMenuHref" target="_blank">
                                     <div class="tesnet_hover_introduce">
@@ -60,8 +61,8 @@
                                 <div class="testnet_hover_booststrap">
                                     <span>{{baasMenu}}</span>
                                     <span class="select_arrow_img">
-                                        <img :src="flShowBassMenu ? activeArrow : defaultArrow">
-                                    </span>
+                                    <img :src="flShowBassMenu ? activeArrow : defaultArrow">
+                                </span>
                                 </div>
                                 <a :href="baasMenuAboutEffectHref" target="_blank">
                                     <div class="testnet_hover_available">
@@ -89,8 +90,8 @@
                         <div class="testnet_genesis">
                             <span>{{gameOfGenesis}}</span>
                             <span class="select_arrow_img">
-                            <img :src="flshowhackathonGameMenu ? activeArrow : defaultArrow">
-                        </span>
+                        <img :src="flshowhackathonGameMenu ? activeArrow : defaultArrow">
+                    </span>
                         </div>
                         <a :href="whatGenesisHref" target="_blank">
                             <div class="testnet_hover_introduce_what">{{whatGenesis}}</div>
@@ -124,49 +125,50 @@
                         </div>
                     </div>
                 </div>
-            <div class="zgblock_container">
-                <div class="zgblock_wrap">
-                    <div class="zgblock_info_container">
-                        <div class="zgblock_info_img_container">
-                            <div class="zgblock_info_img">
-                                <img src="../../public/zgkjlogo.svg">
-                                <!--<svg style="width: 100px;height: 50px;" src="../../public/zgkjlogo.svg" ></svg>-->
-                            </div>
-                        </div>
-                        <div class="zgblock_introduce_container">
-                            <div class="zgblock_introduce_title_container">
-                                <span>{{zigTitle}}</span>
-                                <div class="zgblock_introduce_img">
-                                    <a href="https://baas.zhigui.com/IRISnet" target="_blank">
-                                        <img src="../../public/link.png">
-                                    </a>
+                <div class="zgblock_container">
+                    <div class="zgblock_wrap">
+                        <div class="zgblock_info_container">
+                            <div class="zgblock_info_img_container">
+                                <div class="zgblock_info_img">
+                                    <img src="../../public/zgkjlogo.svg">
+                                    <!--<svg style="width: 100px;height: 50px;" src="../../public/zgkjlogo.svg" ></svg>-->
                                 </div>
                             </div>
-                            <div class="zgblock_introduce_info">
-                               {{zigIntroduce}}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wanCloud_info_container">
-                        <div class="wanCloud_info_introduce">
-                            <div class="wanCloud_info_title_container">
-                                <div class="wanCloud_info_title_content">
-                                    <span>{{wanCloudTitle}}</span>
+                            <div class="zgblock_introduce_container">
+                                <div class="zgblock_introduce_title_container">
+                                    <span>{{zigTitle}}</span>
+                                    <div class="zgblock_introduce_img">
+                                        <a href="https://baas.zhigui.com/IRISnet" target="_blank">
+                                            <img src="../../public/link.png">
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="wanCloud_info_img">
-                                    <a href=" https://irisnet.wancloud.cloud/#/" target="_blank">
-                                        <img src="../../public/link.png">
-                                    </a>
+                                <div class="zgblock_introduce_info">
+                                    {{zigIntroduce}}
                                 </div>
                             </div>
-                            <div class="wanCloud_info_content">
-                                <p>{{wanCloudInfo}}</p>
-                                <p>{{wanCloudIntroduce}}</p>
-                            </div>
                         </div>
-                        <div class="wanCloud_logo_container">
-                            <div class="wanCloud_logo">
-                                <img src="../../public/wancloud.png">
+                        <div class="wanCloud_info_container">
+                            <div class="wanCloud_info_introduce">
+                                <div class="wanCloud_info_title_container">
+                                    <div class="wanCloud_info_title_content">
+                                        <span>{{wanCloudTitle}}</span>
+                                    </div>
+                                    <div class="wanCloud_info_img">
+                                        <a href=" https://irisnet.wancloud.cloud/#/" target="_blank">
+                                            <img src="../../public/link.png">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="wanCloud_info_content">
+                                    <p>{{wanCloudInfo}}</p>
+                                    <p>{{wanCloudIntroduce}}</p>
+                                </div>
+                            </div>
+                            <div class="wanCloud_logo_container">
+                                <div class="wanCloud_logo">
+                                    <img src="../../public/wancloud.png">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -235,6 +237,10 @@
             }
         },
         mounted(){
+            $('body,html').animate({
+                    scrollTop: 0
+                }, 10
+            );
             this.getInfo();
         },
         methods:{
