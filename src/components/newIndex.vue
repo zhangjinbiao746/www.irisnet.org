@@ -569,7 +569,7 @@
                     top: 54px;
                     left: 20px;
                     color: #4b4e6d;
-                    background: #141426;
+                    background: #2D2948;
                     &:hover {
                         color: #fff;
                     }

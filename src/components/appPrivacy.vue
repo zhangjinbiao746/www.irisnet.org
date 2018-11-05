@@ -365,7 +365,7 @@
         }
 
         .head {
-            background: #141426;
+            background: #2D2948;
             height: 60px;
             width: 100%;
             .imglogo {
@@ -468,7 +468,7 @@
         width: 100%;
         height: 100%;
         overflow-y: scroll;
-        background: #0b0b18 url('../../public/privacy.png') no-repeat fixed center;
+        background: #2D2948 url('../../public/privacy.png') no-repeat fixed center;
         background-size: 375px;
 
     }

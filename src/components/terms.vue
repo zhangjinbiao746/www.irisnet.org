@@ -67,7 +67,7 @@
     .index {
         min-height: 100%;
         position: relative;
-        background: #0b0b18;
+        background: #2D2948 ;
 
 
         .h110 {

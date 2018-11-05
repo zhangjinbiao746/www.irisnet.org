@@ -211,7 +211,7 @@
         .menu {
             position: fixed;
             top: 60px;
-            background: rgba(20, 20, 38, .85);
+            background: rgba(47, 41, 72, .85);
             width: 100%;
             z-index: 2;
             a {
@@ -442,7 +442,7 @@
         }
 
         .head {
-            background: #16152d;
+            background: #2D2948;
             height: 0.6rem;
             width: 100%;
             .imglogo {
