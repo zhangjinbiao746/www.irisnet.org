@@ -1,8 +1,58 @@
 <template>
     <div class="testnet_page">
-        <div class="index" style="height:100%;" @click="closeMenu">
+        <div class="index" style="height:100%;">
             <div class="container">
-                <headr></headr>
+                <div class="head" style="">
+                    <div class="center1 head-content">
+                        <!--左侧logo-->
+                        <a class="head-layout-left" href="#"><img src="../../public/irisnet.png" style="width: 130px;"/></a>
+
+                        <!--右侧内容-->
+                        <div class="head-layout-right">
+
+                            <!--导航-->
+                            <a :href="'/?lang='+$store.state.lang+item.href" v-for="item in $store.state.messages.head.txt"  class="item">
+                                {{item.txt}}
+                                <div></div>
+                            </a>
+
+                            <!--分割线-->
+                            <div class="hr_vertical"></div>
+
+                            <span @click="skipToTest"  @mouseenter="commHide" @mouseleave="commShow"
+                                  class="item">{{$store.state.lang=='CN'?'测试网':'Testnet'}}
+                            <div></div>
+                        </span>
+
+                            <div class="hr_vertical"></div>
+
+                            <span @click="skipToHackathon"  @mouseenter="commHide" @mouseleave="commShow"
+                                  class="item">{{$store.state.lang=='CN'?'黑客松':'Hackathon'}}
+                            <div></div>
+                        </span>
+
+                            <!--Community-->
+
+                            <!--语言切换-->
+                            <div class="item_en" v-if="$store.state.lang=='EN'">
+                                <div @mouseenter="downShow" @mouseleave="downHide" class="item">
+                                    <img :src="UrlSrc+down"/> English
+                                </div>
+                                <a class="item_cn" href="?lang=CN">
+                                    中文
+                                </a>
+                            </div>
+                            <div class="item_en" v-if="$store.state.lang=='CN'">
+                                <div @mouseenter="downShow" @mouseleave="downHide" class="item">
+                                    <img :src="UrlSrc+down"/>中文
+                                </div>
+                                <a class="item_cn" href="?lang=EN">
+                                    English
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="testnet_content">
                     <div class="testnet_title">
                         <p>{{title}}</p>
@@ -184,7 +234,7 @@
     import headr from './head';
     import message from '../common/message';
     export default {
-        name: "terms",
+        name: "testNet",
         components: {foot,headr},
         data(){
             return {
@@ -233,7 +283,8 @@
                 flshowhackathonGameMenu: false,
                 defaultArrow:require("../assets/app/arrow.png"),
                 activeArrow:require("../assets/app/arrowblue.png"),
-
+                comm: 'community.png',
+                down: 'arrow.png',
             }
         },
         mounted(){
@@ -309,6 +360,24 @@
                 this.flShowMenu = false;
                 this.flShowBassMenu = false;
                 this.flshowhackathonGameMenu =! this.flshowhackathonGameMenu;
+            },
+            downShow() {
+                this.down = '../public/down.png';
+            },
+            downHide() {
+                this.down = '../public/arrow.png';
+            },
+            commShow() {
+                this.comm = '../public/community.png';
+            },
+            commHide() {
+                this.comm = '../public/community_selected.png';
+            },
+            skipToTest() {
+                this.$router.push('/testnets/pc')
+            },
+            skipToHackathon() {
+                this.$router.push('/hackathon/pc')
             },
         }
     }
