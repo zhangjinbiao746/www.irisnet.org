@@ -24,14 +24,15 @@
                         <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{testnetplorerHref}}</a>
                         {{testnetplorerStatus}}
                     </p>
-                    <div class="join_container">
-                        <span>{{howToJoin}}</span>
-                        <a :href="howToJoinHref">
-                            <div class="help_img">
-                                <img src="../assets/app/defaulthelp.png">
-                            </div>
-                        </a>
-                    </div>
+                    <a :href="howToJoinHref">
+                        <div class="join_container">
+                            <span>{{howToJoin}}</span>
+                                <div class="help_img">
+                                    <img src="../assets/app/defaulthelp.png">
+                                </div>
+                        </div>
+                    </a>
+
                     <div class="incentivized_title">
                        <span>{{incentivizedInfo}}</span>
                     </div>
@@ -72,14 +73,15 @@
                             </div>
                         </a>
                     </div>
-                    <div class="faq_container">
-                        <span>{{faq}}</span>
-                        <a :href="faqHref">
-                            <div class="faq_img">
-                                <img src="../assets/app/defaulthelp.png">
-                            </div>
-                        </a>
-                    </div>
+                    <a :href="faqHref">
+                        <div class="faq_container">
+                            <span>{{faq}}</span>
+                                <div class="faq_img">
+                                    <img src="../assets/app/defaulthelp.png">
+                                </div>
+                        </div>
+                    </a>
+
                     <div class="genesis_container">
                         <span>{{gameOfGenesis}}</span>
                     </div>
