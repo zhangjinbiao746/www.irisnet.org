@@ -32,10 +32,9 @@
 
 
             </div>
-            <div style="width: 100%;background: #16152d">
+            <div class="container">
                 <div style="width: 100%;height: auto">
-                    <div id="#" class="home"
-                         style="background: #16152d url('../../public/app/irispattern-background.png') no-repeat  center;background-size: 375px;">
+                    <div id="#" class="home">
                         <div class="home-left">
                             <div class="home_title">
                                 {{$store.state.messages.home.title}}
@@ -283,7 +282,7 @@
                             <!--</div>-->
                         </div>
                     </div>
-                    <div class="what model_upcoming_content_wrap">
+                    <div id="#/0/5" class="what model_upcoming_content_wrap">
                         <div class="model_upcoming_content">
                             <div class="model_upcoming_event_container">
                                 <h5 v-show="$store.state.lang!=='CN'">Upcoming Event</h5>
@@ -291,7 +290,7 @@
                                 <div class="model_link_img_container">
                                     <div class="model_img_content">
                                         <a href="https://buidl.kr/#link" target="_blank">
-                                            <img src="../assets/app/buidlseoul.png" alt="">
+                                            <img src="../assets/app/layer.png" alt="">
                                         </a>
                                         <p v-show="$store.state.lang!=='CN'">November 29-30th, 2018 | Seoul, Korea</p>
                                         <p v-show="$store.state.lang=='CN'">11月29-30日, 2018 | 首尔, 韩国</p>
@@ -318,7 +317,7 @@
                     </div>
 
 
-                    <div id="#/0/5" class="contact" style="background: #0f0f1f;">
+                    <div id="#/0/6" class="contact" style="background: #0f0f1f;">
                         <div class="contact_title">
                             {{$store.state.messages.contact.title}}
                             <div class="nav-line"></div>
@@ -481,7 +480,9 @@
                 }else if(index == 4){
                     this.scroll(2278)
                 }else if(index == 5){
-                    this.scroll(3542)
+                    this.scroll(5267)
+                }else if(index == 6){
+                    this.scroll(4693)
                 }
             },
             scroll(top) {

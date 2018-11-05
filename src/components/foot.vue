@@ -23,7 +23,7 @@
         bottom: 0;
         height: 40px;
         width: 100%;
-        background: #0f0f1f;
+        background: #2D2948;
         line-height: 40px;
         color: #3b3b5f;
         font-size: 14px;
