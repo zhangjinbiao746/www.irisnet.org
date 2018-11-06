@@ -31,8 +31,12 @@ export default {
                     "href": "#/0/3",
                 },
                 {
-                    'txt': "联系方式",
+                    'txt': "近期活动",
                     "href": "#/0/5",
+                },
+                {
+                    'txt': "联系方式",
+                    "href": "#/0/6",
                 }
             ]
         },
@@ -902,13 +906,55 @@ export default {
         newHackathon:{
             title:"加入IRISnet线上PoS攻防黑客松",
             introduction:"活动介绍：为了鼓励更多的技术人员加入IRISnet社区并且参与到测试网中，IRISnet和Dorahacks正在寻找最优秀的黑客来参加到这场攻防游戏中。让我们一起来寻找使区块链网络更加安全可靠的新解决方案吧！",
-            signupDate:"报名时间：开启中",
+            signupDate:"报名进行中",
             join:'招募对象：全球各地对IRISnet感兴趣的技术人员,1-3 人一组。',
             riotRoom:"参与方式：点击报名并加入官方QQ群 862553695",
             bountyPool:'奖励机制：参赛的各组选手瓜分212,500枚IRIS的奖励。',
             btn1:'点击报名',
             btn2:'阅读详情',
             qq:"https://riot.im/app/#/room/#gameofgenesis:matrix.org"
+        },
+        testnet:{
+            title:"Fuxi 测试网",
+            infomation:"IRIShub的Fuxi测试网在主网上线前会进行多次迭代。你可以通过浏览器",
+            explorerHref:"IRISplorer",
+            infomationFragment:"查询信息并在",
+            testnetplorerHref:"这里",
+            testnetplorerStatus:"跟踪测试网进展",
+            howToJoin:"如何加入Fuxi测试网",
+            howToJoinHref:"https://github.com/irisnet/irishub/blob/master/docs/zh/get-started/README.md",
+            incentivizedInfo:"Fuxi测试网激励计划",
+            incentivizedMenu:"Fuxi测试网是什么?",
+            incentivizedMenuHref:"https://mp.weixin.qq.com/s/hJcDIlaSzBrHeN8C698iVg",
+            incentivizedFaq:"Fuxi测试网激励计划常见问题",
+            incentivizedFaqHref:"https://github.com/irisnet/testnets/blob/master/fuxi/docs_CN/Fuxi_FAQ.md",
+            incentivizedresult:"激励任务历史完成情况",
+            incentivizedresultHref:"https://github.com/irisnet/testnets/blob/master/fuxi/README_CN.md",
+            incentivizedtask:"当前激励任务列表",
+            incentivizedtaskHref:"https://github.com/irisnet/testnets/blob/master/fuxi/README_CN.md",
+            baasMenu:"借助BaaS快速部署Fuxi测试网节点",
+            baasMenuAboutEffect:"BaaS有哪些作用?",
+            baasMenuAboutEffectHref:"https://github.com/irisnet/testnets/blob/master/fuxi/baas/README_CN.md",
+            baasMenuHowApply:"如何申请试用BaaS?",
+            baasMenuHowApplyHref:"https://github.com/irisnet/testnets/blob/master/fuxi/baas/BaaS-Application_CN.md",
+            faq:"IRIShub常见问题",
+            faqHref:"https://github.com/irisnet/testnets/blob/master/fuxi/FAQ_CN.md",
+            gameOfGenesis:"IRISnet线上PoS网络安全黑客松—Game of Genesis ",
+            whatGenesis:"Game of Genesis是什么?",
+            whatGenesisHref:"http://www.irisnet.org/hackathon/pc",
+            howWin:"如何赢得比赛?",
+            howWinHref:"https://github.com/irisnet/testnets/blob/master/Game%20Of%20Genesis/活动介绍.md",
+            join:"加入社区",
+            qq:"QQ 群",
+            qqNum:"#834063323",
+            riot:"Riot聊天室",
+            riotAddress:"#irisvalidators:matrix.org",
+            riotAddressHref:"https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org",
+            zigTitle:"纸贵科技 Zig-BaaS",
+            zigIntroduce:"纸贵科技为全行业提供定制化的企业级区块链解决方案，包括拥有自主研发的Zig-Ledger联盟链、环境搭建与运维、智能合约和应用开发、跨链交互、云服务平台Zig-BaaS和面向行业的SDK等，支持文娱、溯源、供应链金融、物联网、数据安全等多个行业场景应用。",
+            wanCloudTitle:"WanCloud",
+            wanCloudInfo:"Wancloud是一个中立、创新的区块链生态运营商。",
+            wanCloudIntroduce:"我们的目标是通过技术与生态建设的整合，有效地满足企业对区块链的需求。 Wancloud深入各公链的建设和社区运营，是他们重要的战略合作伙伴。 Wancloud以其便捷，灵活和专业的服务为特色，致力于降低区块链应用的成本和门槛，减少开发工作量，促进区块链技术的真正落地。"
         }
     },
     en:{
@@ -1010,11 +1056,6 @@ export default {
             ],
             "title": "Contact"
         },
-
-
-
-
-
         "collaboration": {
             "title": "Collaboration",
             "txt": [
@@ -1336,8 +1377,6 @@ export default {
             ],
             "btnTxt":"Collaboration"
         },
-
-
         "roadmap": {
             "title": 'Roadmap',
             "list": [
@@ -1818,7 +1857,7 @@ export default {
             src:'en',
             title:'Joining the Game of Genesis',
             subTitle:'IRISnet Virtual PoS Security Hachathon',
-            introduce:'Introduction: The IRIS network will keep generating value when its validators could keep the whole network secure. Hackathons are built for rapid innovation. IRIS&Dorahacks believes hackathons will generate the most impressive solutions for protecting a validator of one Proof-of-Stake blockchain.',
+            introduce:'Introduction: The IRIS network will keep generating value when its validators could keep the whole network secure. Dorahacks believe hackathons will generate the most impressive solutions for protecting a Proof-of-Stake blockchain.',
             contestTime:'Schedule Date: 2018.9.3~2018.9.23',
             target:'Who should join: Hackers who are interested in IRISnet around the world. Everyone is welcomed to form a team of 1 to 3 people.',
             secreat: 'Who would like to win: Familiar with the Tendermint consensus Familiar with Cosmos-SDK codebase Familiar with IRIShub codebase.',
@@ -1830,7 +1869,7 @@ export default {
         },
         newHackathon:{
             title:"Joining the Game of Genesis",
-            introduction:"Introduction: The IRIS network will keep generating value when its validators could keep the whole network secure. Hackathons are built for rapid innovation. IRIS&Dorahacks believes hackathons will generate the most impressive solutions for protecting a validator of one Proof-of-Stake blockchain.",
+            introduction:"Introduction: The IRIS network will keep generating value when its validators could keep the whole network secure. Hackathons are built for rapid innovation. IRISnet & Dorahacks believe hackathons will generate the most impressive solutions for protecting a Proof-of-Stake blockchain.",
             signupDate:"Signup : Still Open ",
             join:'Who should join: Hackers who are interested in IRISnet around the world. Everyone is welcomed to form a team of 1 to 3 people.',
             riotRoom:"https://riot.im/app/#/room/#gameofgenesis:matrix.org",
@@ -1838,6 +1877,48 @@ export default {
             btn1:'Sign up',
             btn2:'Read more',
             qq: "QQ: 862553695"
+        },
+        testnet:{
+            title:"Fuxi Testnet",
+            infomation:"The testnet of IRISHub is called Fuxi, we expect to see several iterations of Fuxi testnet before the mainnet's launch. You could use ",
+            explorerHref:"IRISplorer",
+            infomationFragment:"for browsing and track the status of Fuxi testnet",
+            testnetplorerHref:"here",
+            testnetplorerStatus:"",
+            howToJoin:"How to Join with your server",
+            howToJoinHref:"https://github.com/irisnet/irishub/blob/master/docs/get-started/README.md",
+            incentivizedInfo:"Fuxi Incentivized Testnet Program",
+            incentivizedMenu:"What is it?",
+            incentivizedMenuHref:"https://medium.com/irisnet-blog/irisnet-incentivized-testnet-game-62074aab8e6b",
+            incentivizedFaq:"Fuxi Incentivized Testnet FAQ",
+            incentivizedFaqHref:"https://github.com/irisnet/testnets/blob/master/fuxi/docs/Fuxi_FAQ.md",
+            incentivizedresult:"Results of last Fuxi testnet",
+            incentivizedresultHref:"https://github.com/irisnet/testnets/blob/master/fuxi/README.md",
+            incentivizedtask:"Tasks for current Fuxi testnet",
+            incentivizedtaskHref:"https://github.com/irisnet/testnets/blob/master/fuxi/README.md",
+            baasMenu:"Bootstrap with BaaS",
+            baasMenuAboutEffect:"What is available?",
+            baasMenuAboutEffectHref:"https://github.com/irisnet/testnets/blob/master/fuxi/baas/README.md",
+            baasMenuHowApply:"Who should use BaaS?",
+            baasMenuHowApplyHref:"https://github.com/irisnet/testnets/blob/master/fuxi/baas/BaaS-Applications.md",
+            faq:"IRIShub FAQ",
+            faqHref:"https://github.com/irisnet/testnets/blob/master/fuxi/FAQ.md",
+            gameOfGenesis:"IRISnet Virtual Hackathon: Game of Genesis",
+            whatGenesis:"What is it?",
+            whatGenesisHref:"http://www.irisnet.org/hackathon/pc",
+            howWin:"How to win?",
+            howWinHref:"https://medium.com/irisnet-blog/irisnet-pos-security-hackathon-707065865926",
+            join:"Join Community",
+            qq:"QQ group",
+            qqNum:"#834063323",
+            riot:"Riot room",
+            riotAddress:"#irisvalidators:matrix.org",
+            riotAddressHref:"https://matrix.org/blog/home/",
+            zigTitle:"Zig-BaaS",
+            zigIntroduce:"Ziggurat provides enterprise-grade blockchain solutions, including Zig-Ledger, an independently developed consortium blockchain, environment setup, operations and maintenance, smart contract and application development, cross-chain protocol, Zig-BaaS cloud service platform, and industry specific SDKs. Our solutions support multiple industry application scenarios, including culture and entertainment, traceability and provenance, supply chain finance, IoT and data security.",
+            wanCloudTitle:"WanCloud",
+            wanCloudInfo:"Wancloud is a neutral and innovative ecosystem builder of blockchain.",
+            wanCloudIntroduce:"We aim to leverage the integration of blockchain technology and ecosystem construction to effectively serve the requirements of enterprises for blockchain. Wancloud delves into different public blockchain’s construction and community operations, becoming their key strategic partner. Featured by its convenient, flexible and professional service, Wancloud is committed to lowering the cost and threshold of blockchain applications, to the reduction of repetitive workload and to the promotion of blockchain technology adoption."
         }
     }
 }

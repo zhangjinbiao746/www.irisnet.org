@@ -15,18 +15,150 @@
 
             </div>
             <div class="newCenter">
-                <div class="h110"></div>
                 <div class="warp">
-                    <div class="center_content">
-                        <h2 class="join_test_net">{{join}}</h2>
-                        <p class="join_iris">{{title}}</p>
-                        <span class="join_btn" @click="linkTo('join')"
-                              style="background: rgb(114,75,227);color:#ffffff;border:0.01rem solid #724BE3;"
-                        >{{btn1}}</span>
-                        <span class="join_btn" @click="linkTo('faq')">{{btn3}}</span>
+                    <div class="testnet_title">{{title}}</div>
+                    <p class="testnet_info">
+                        {{infomation}}
+                        <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{explorerHref}}</a>
+                        {{infomationFragment}}
+                        <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{testnetplorerHref}}</a>
+                        {{testnetplorerStatus}}
+                    </p>
+                    <a :href="howToJoinHref">
+                        <div class="join_container">
+                            <span>{{howToJoin}}</span>
+                                <div class="help_img">
+                                    <img src="../assets/app/defaulthelp.png">
+                                </div>
+                        </div>
+                    </a>
+
+                    <div class="incentivized_title">
+                       <span>{{incentivizedInfo}}</span>
+                    </div>
+                    <div class="incentivized_menu">
+                        <a :href="incentivizedMenuHref">
+                            <div class="menu_item_global">
+                                <span>{{incentivizedMenu}}</span>
+                            </div>
+                        </a>
+                        <a :href="incentivizedFaqHref">
+                            <div class="menu_item_global">
+                                <span>{{incentivizedFaq}}</span>
+                            </div>
+                        </a>
+                        <a :href="incentivizedresultHref">
+                            <div class="menu_item_global">
+                                <span>{{incentivizedresult}}</span>
+                            </div>
+                        </a>
+                        <a :href="incentivizedtaskHref">
+                            <div class="menu_item_global">
+                                <span>{{incentivizedtask}}</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="baas_title">
+                        <span>{{baasMenu}}</span>
+                    </div>
+                    <div class="baas_menu">
+                        <a :href="baasMenuHowApplyHref">
+                            <div class="menu_item_global">
+                                <span>{{baasMenuAboutEffect}}</span>
+                            </div>
+                        </a>
+                        <a :href="baasMenuHowApplyHref">
+                            <div class="menu_item_global">
+                                <span>{{baasMenuHowApply}}</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a :href="faqHref">
+                        <div class="faq_container">
+                            <span>{{faq}}</span>
+                                <div class="faq_img">
+                                    <img src="../assets/app/defaulthelp.png">
+                                </div>
+                        </div>
+                    </a>
+
+                    <div class="genesis_container">
+                        <span>{{gameOfGenesis}}</span>
+                    </div>
+                    <div class="genesis_menu">
+                        <a :href="whatGenesisHref" >
+                            <div class="menu_item_global">
+                                <span>{{whatGenesis}}</span>
+                            </div>
+                        </a>
+                        <a :href="howWinHref">
+                            <div class="menu_item_global">
+                                <span>{{howWin}}</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="community_container">
+                        <span>{{join}}</span>
+                    </div>
+                    <div class="join_ways_container">
+                        <div class="join_ways_content">
+                            <div class="join_ways_img">
+                                <img src="../assets/app/qq.png">
+                            </div>
+                            <div class="join_ways_info">
+                                <div>
+                                    <p>{{qq}}</p>
+                                    <p class="info_address">{{qqNum}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a :href="riotAddressHref">
+                        <div class="join_ways_rito">
+                            <div class="join_ways_rito_content">
+                                <div class="join_ways_rito_content_img">
+                                    <img src="../assets/app/riot.png">
+                                </div>
+                                <div class="join_ways_rito_info">
+                                    <div>
+                                        <p>{{riot}}</p>
+
+                                            <p class="riot_address">{{riotAddress}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="zig_content">
+                    <div class="zig_img_container">
+                        <img src="../../public/zgkjlogo.svg">
+                    </div>
+                    <div class="zig_title_link">
+                        <span>{{zigTitle}}</span>
+                        <div class="zig_link_img">
+                            <img src="../../public/link.png">
+                        </div>
+                    </div>
+                    <div class="zig_info_introduce">
+                        <span>{{zigIntroduce}}</span>
+                    </div>
+                    <div class="wancloud_img">
+                        <img src="../assets/app/mobilewancloud.png">
+                    </div>
+                    <div class="wancloud_title">
+                        <span>{{wanCloudTitle}}</span>
+                        <div class="wancloud_link_img">
+                            <img src="../../public/link.png">
+                        </div>
+                    </div>
+                    <div class="wancloud_info_introduce">
+                        <p>{{wanCloudInfo}}</p>
+                        <p>{{wanCloudIntroduce}}</p>
                     </div>
                 </div>
-                <div class="h110"></div>
+
             </div>
             <div class="menu" v-show="menuIs">
                 <section v-for="(item,index) in links">
@@ -89,34 +221,54 @@
                 this.$router.push(`/newApp?lang=${this.$store.state.lang}`)
             },
             format(param){
-                return message[this.$store.state.lang=='CN'?'cn':'en'].test[param];
+                return message[this.$store.state.lang=='CN'?'cn':'en'].testnet[param];
             },
             getInfo(){
-                this.join = this.format('join');
                 this.title = this.format('title');
-                this.btn1 = this.format('btn1');
-                this.btn3 = this.format('btn3');
+                this.infomation = this.format('infomation');
+                this.explorerHref = this.format('explorerHref');
+                this.infomationFragment = this.format('infomationFragment');
+                this.testnetplorerHref = this.format('testnetplorerHref');
+                this.testnetplorerStatus = this.format('testnetplorerStatus');
+                this.howToJoin = this.format('howToJoin');
+                this.howToJoinHref = this.format('howToJoinHref');
+                this.incentivizedInfo = this.format('incentivizedInfo');
+                this.incentivizedMenu = this.format('incentivizedMenu');
+                this.incentivizedMenuHref = this.format('incentivizedMenuHref');
+                this.incentivizedFaq = this.format('incentivizedFaq');
+                this.incentivizedFaqHref = this.format('incentivizedFaqHref');
+                this.incentivizedresult = this.format('incentivizedresult');
+                this.incentivizedresultHref = this.format('incentivizedresultHref');
+                this.incentivizedtask = this.format('incentivizedtask');
+                this.incentivizedtaskHref = this.format('incentivizedtaskHref');
+                this.baasMenu = this.format('baasMenu');
+                this.baasMenuAboutEffect = this.format('baasMenuAboutEffect');
+                this.baasMenuAboutEffectHref = this.format('baasMenuAboutEffectHref');
+                this.baasMenuHowApply = this.format('baasMenuHowApply');
+                this.baasMenuHowApplyHref = this.format('baasMenuHowApplyHref');
+                this.faq = this.format('faq');
+                this.faqHref = this.format('faqHref');
+                this.gameOfGenesis = this.format('gameOfGenesis');
+                this.whatGenesis = this.format('whatGenesis');
+                this.whatGenesisHref = this.format('whatGenesisHref');
+                this.howWin = this.format('howWin');
+                this.howWinHref = this.format('howWinHref');
+                this.join = this.format('join');
+                this.qq = this.format('qq');
+                this.qqNum = this.format('qqNum');
+                this.riot = this.format('riot');
+                this.riotAddress = this.format('riotAddress');
+                this.riotAddressHref = this.format('riotAddressHref');
+                this.zigTitle = this.format('zigTitle');
+                this.zigIntroduce = this.format('zigIntroduce');
+                this.wanCloudTitle = this.format("wanCloudTitle");
+                this.wanCloudInfo = this.format('wanCloudInfo');
+                this.wanCloudIntroduce = this.format('wanCloudIntroduce');
             },
             changeLang(lang){
                 this.$store.state.lang = lang;
                 this.getInfo();
                 this.links = message[lang.toLowerCase()].head.txt;
-            },
-            linkTo(entranceName){
-                if(this.$store.state.lang=='CN'){
-                    if(entranceName === 'join'){
-                        window.open('https://github.com/irisnet/irishub/blob/master/docs/zh/get-started/README.md')
-                    }else if(entranceName === 'faq'){
-                        window.open('https://github.com/irisnet/irisnet/blob/master/IRISnetFAQ_CN.md')
-                    }
-                }else{
-                    if(entranceName === 'join'){
-                        window.open('https://github.com/irisnet/irishub/blob/master/docs/get-started/README.md')
-                    }else if(entranceName === 'faq'){
-                        window.open('https://github.com/irisnet/irisnet/blob/master/IRISnetFAQ.md')
-                    }
-                }
-
             },
             gotojump(index,item){
                 this.menuIs = false;
@@ -139,17 +291,12 @@
                         this.scroll(2278)
                     }else if(index == 5){
                         this.scroll(3542)
+                    }else if(index == 6){
+                        this.scroll(4549)
                     }
                 })
-
-                /*setTimeout(()=>{
-                    console.log(13)
-
-                },1000)*/
-
             },
             scroll(top) {
-                console.log(top,9966)
                 $('body,html').animate({
                         scrollTop: top
                     }, 500
@@ -166,348 +313,58 @@
                 ],
                 menuIs: false,
                 wechatIs: false,
-                join:'',
-                title:'',
-                btn1:'',
-                btn2:'',
-                btn3:'',
                 links:message[this.$store.state.lang=='CN'?'cn':'en'].head.txt,
+                title:'',
+                infomation:"",
+                explorerHref:"",
+                infomationFragment:"",
+                testnetplorerHref:"",
+                testnetplorerStatus:"",
+                howToJoin:"",
+                howToJoinHref:"",
+                incentivizedInfo:"",
+                incentivizedMenu:"",
+                incentivizedMenuHref:"",
+                incentivizedFaq:"",
+                incentivizedFaqHref:"",
+                incentivizedresult:"",
+                incentivizedresultHref:"",
+                incentivizedtask:"",
+                incentivizedtaskHref:"",
+                baasMenu:"",
+                baasMenuAboutEffect:"",
+                baasMenuAboutEffectHref:"",
+                baasMenuHowApply:"",
+                baasMenuHowApplyHref:"",
+                faq:"",
+                faqHref:"",
+                gameOfGenesis:"",
+                whatGenesis:"",
+                whatGenesisHref:"",
+                howWin:"",
+                howWinHref:"",
+                join:"",
+                qq:"",
+                qqNum:"",
+                riot:"",
+                riotAddress:"",
+                riotAddressHref:"",
+                zigTitle:"",
+                zigIntroduce:"",
+                wanCloudTitle:"",
+                wanCloudInfo:"",
+                wanCloudIntroduce:"",
+                testlink:false,
             }
         },
         mounted(){
             this.getInfo();
+
         }
 
     }
 </script>
 
 <style scoped lang='less'>
-    .app {
-        position: fixed;
-        min-height: 100%;
-        top: 0;
-        width: 100%;
-        .menu {
-            position: fixed;
-            top: 60px;
-            background: rgba(20, 20, 38, .85);
-            width: 100%;
-            z-index: 2;
-            a {
-                text-align: center;
-                color: #7681e3;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                font-size: 14px;
-                display: block;
-            }
-        }
-        .contact {
-            width: 84%;
-            background: #141426;
-            margin: 0 auto;
-            border-radius: 10px;
-            box-shadow: 0 0 20px #080B0F;
-            margin-top: 6vh;
-            position: relative;
-            .contact_title {
-                text-align: center;
-                padding-top: 24px;
-                font-weight: bold;
-            }
-            .contact_div {
-                padding-top: 14px;
-                padding-bottom: 24px;
-                margin-left: 8%;
-                overflow: hidden;
-                .contact_radius {
-                    margin-top: 4%;
-                    float: left;
-                    width: 44%;
-                    height: 46px;
-                    background: #1d1f37;
-                    margin-right: 4%;
-                    border-radius: 6px;
-                    img {
-                        margin-top: 9px;
-                        width: 28px;
-                        margin-left: 20%;
-                        float: left;
-                    }
-                    div {
-                        font-size: 12px;
-                        color: #fff;
-                        float: left;
-                        margin-top: 17px;
-                        margin-left: 10%;
-                    }
-                }
-            }
-        }
-        .wechat {
-            position: relative;
-            position: fixed;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            background-color: rgba(0, 0, 0, 0.6);
-            z-index: 12;
-            .wechat_warp {
-                position: relative;
-                position: absolute;
-                color: #5c5c7c;
-                text-align: center;
-                height: 200px;
-                width: 200px;
-                background: #141426;
-                border-radius: 8px;
-                top: 50%;
-                left: 50%;
-                margin-top: -100px;
-                margin-left: -100px;
-                .cancel {
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 50%;
-                    background: #ed3d3d;
-                    position: absolute;
-                    margin-top: 14px;
-                    right: 14px;
-                    cursor: pointer;
-                    img {
-                        margin-top: 2px;
-                        margin-left: 2px;
-                        float: left;
-                        display: none;
-                    }
-                    &:hover {
-                        img {
-                            display: block;
-                        }
-                    }
-                }
-                .wechat_img {
-                    margin-top: 40px;
-                    margin-bottom: 10px;
-                    width: 100px;
-                }
-                .wechat_title {
-                    font-size: 14px;
-                }
-                .wechat_txt {
-                    font-size: 14px;
-                    margin-top: 6px;
-                }
-            }
-        }
-        .collaboration {
-            .collaboration_title {
-                margin-top: 20px;
-                text-align: center;
-                font-weight: bold;
-            }
-            .collaboration_href {
-                overflow: hidden;
-                display: block;
-                margin-bottom: 14px;
-                .collaboration_warp {
-                    width: 320px;
-                    margin: 0 auto;
-                    margin-top: 30px;
-                    .collaboration_div {
-                        float: right;
-                        width: 160px;
-                        background: #fff;
-                        border-radius: 6px;
-                        height: 60px;
-                        position: relative;
-                        img {
-                            width: 64px;
-                            float: left;
-                            margin-left: -30px;
-                            margin-top: -2px;
-                        }
-                        .collaboration_div_title {
-                            color: #181e46;
-                            font-weight: bold;
-                            font-size: 16px;
-                            margin-top: 16px;
-                            text-indent: 6px;
-                        }
-                        .collaboration_div_text {
-                            font-size: 12px;
-                            color: #0a7dbe;
-                            margin-top: 2px;
-                            text-indent: 6px;
-                        }
-                        .collaboration_div_txt {
-                            position: relative;
-                            position: absolute;
-                            text-align: left;
-                            width: 130px;
-                            left: -162px;
-                            top: 0;
-                            font-size: 12px;
-                            color: #fff;
-                        }
-                        .collaboration_div1 {
-                            position: absolute;
-                            height: 1px;
-                            background: #fff;
-                        }
-                    }
-                }
-            }
-
-        }
-
-        .network {
-            width: 84%;
-            background: #141426;
-            margin: 0 auto;
-            border-radius: 10px;
-            box-shadow: 0 0 20px #080B0F;
-            margin-top: 6vh;
-            position: relative;
-            .irispattern {
-                width: 100%;
-                height: 100%;
-            }
-            .network_title {
-                position: absolute;
-                top: 0;
-                padding-top: 30px;
-                text-align: center;
-                font-weight: bold;
-                img {
-                    width: 90%;
-                    margin-top: 40px;
-                }
-            }
-        }
-
-        .network_txt {
-            height: 70%;
-            width: 84%;
-            background: #141426;
-            margin: 0 auto;
-            border-radius: 10px;
-            box-shadow: 0 0 20px #080B0F;
-            margin-top: 6vh;
-            position: relative;
-            img {
-                width: 100%;
-                height: 100%;
-            }
-            .network_text {
-                position: absolute;
-                top: 0;
-                padding-top: 30px;
-                text-align: center;
-                .network_title {
-                    font-weight: bold;
-                }
-                .network_list {
-                    margin-left: 10%;
-                    font-size: 12px;
-                    line-height: 22px;
-                    text-align: left;
-                    width: 84%;
-                    div {
-                        margin-top: 30px;
-                    }
-                }
-            }
-        }
-
-        .head {
-            background: #16152d;
-            height: 60px;
-            width: 100%;
-            .imglogo {
-                width: 112px;
-                margin-top: 12px;
-                margin-left: 20px;
-            }
-            .div_en {
-                float: right;
-                color: #4b4e6d;
-                line-height: 60px;
-                img {
-                    margin-left: 20px;
-                    float: right;
-                    width: 20px;
-                    margin-top: 20px;
-                    margin-right: 20px;
-                }
-            }
-        }
-
-        .reveal {
-            width: 100% !important;
-            position: fixed !important;
-        }
-
-    }
-
-    html, body {
-        min-width: auto !important;
-    }
-
-    .warp {
-        min-height:4rem;
-        display:flex;
-        justify-content:center;
-        .center_content{
-            display:flex;
-            flex-direction:column;
-            align-items: center;
-            color:#fff;
-            .join_test_net{
-                font-family: 'PingFang-SC-Semibold';
-                color:#FFFFFF;
-                font-size:0.24rem;
-                font-weight:400;
-                margin-top:0.7rem;
-            }
-            .join_iris{
-                font-family: 'PingFang-SC-Regular';
-                color:#D4D5DE;
-                font-size:0.13rem;
-                margin-top:0.4rem;
-                margin-bottom:0.4rem;
-                width:80%;
-                text-align:center;
-                line-height:0.2rem;
-            }
-            .join_btn{
-                color:#724BE3;
-                width:2.82rem;
-                height:0.4rem;
-                border-radius:0.2rem;
-                border:0.01rem solid #ffffff;
-                margin-bottom:0.16rem;
-                text-align: center;
-                line-height:0.4rem;
-                cursor:pointer;
-                font-size:0.12rem;
-            }
-        }
-    }
-    .newCenter{
-        width: 100%;
-        height: 100%;
-        overflow-y: scroll;
-        background: #16152d;
-        background-size: 375px;
-
-    }
-    .scroll-container{
-        width: 90%;
-        margin-left: 5%;
-        margin-bottom: 60px;
-    }
-    .right-text{
-        margin-bottom: 20px;
-    }
+    @import "../assets/style/testnetapp";
 </style>

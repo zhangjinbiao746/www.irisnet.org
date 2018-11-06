@@ -29,10 +29,14 @@ export const message = {
                 'txt': "Collaboration",
                 "href": "#/0/3",
             },
+            {
+                'txt': "Upcoming",
+                "href": "#/0/5",
+            },
 
             {
                 'txt': "Contact",
-                "href": "#/0/5",
+                "href": "#/0/6",
             },
             //     {
             //         'txt': "privacy",

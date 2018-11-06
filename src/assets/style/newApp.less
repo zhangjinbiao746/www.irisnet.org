@@ -1,13 +1,17 @@
 #app{
     background-color: rgb(11, 11, 24);
 }
+.container{
+    width: 100%;
+    background: #2D2948;
+}
 .app {
     top: 0;
     width: 100%;
     .menu {
         position: fixed;
         top: 60px;
-        background: rgba(20, 20, 38, .85);
+        background: rgba(45,41,72,0.85);
         width: 100%;
         z-index: 2;
         a {
@@ -22,10 +26,6 @@
     .contact {
         width: 100%;
         marigin-top:200px;
-        //height: 600px;
-        border-radius: 10px;
-        //padding-bottom:100px;
-        //position: relative;
         .contact_title {
             text-align: left;
             padding-top: 24px;
@@ -271,6 +271,8 @@
 
     .home {
         padding:10% 5% 0;
+        background: #2D2948 url('../../../public/app/irispattern-background.png') no-repeat  center;
+        background-size: 375px;
         //height: 667px;
         .home-left {
             text-align: left;
@@ -411,7 +413,7 @@
     }
 
     .head {
-        background: #16152d;
+        background: #2D2948 ;
         height: 60px;
         width: 100%;
         position: fixed;
@@ -1022,7 +1024,75 @@ html, body {
     opacity: 0.6;
 }
 
+.model_upcoming_content_wrap{
+    padding-top: 0!important;
+    margin-top: 25px!important;
+    background: #201F47!important;
+    .model_upcoming_content{
+        width: 100%;
+        margin: auto;
+        max-width: 1250px;
+        overflow: hidden !important;
+    }
+}
+.model_upcoming_event_container{
+    h5{
+        padding-top: 25px;
+        padding-left: 34px;
+        font-size: 24px;
+        font-weight:bold;
+        color:rgba(255,255,255,1);
+    }
+    .model_link_img_container{
+        padding-bottom: 25px;
+        .model_img_content{
+            padding-top: 22px;
+            margin: 0 67px;
+            a{
+                width: 100%;
+                height:117px;
+                display: block!important;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            p{
+                height: 20px;
+                background: #1B76F1;
+                font-size: 12px;
+                line-height: 20px;
+                color: #fff;
+                padding-left: 10px;
+            }
+        }
+        .model_img_content_waiting{
+            padding-top: 15px;
+            margin: 0 67px;
+            div{
+                width:100%;
+                height: 117px;
+                background: #000;
+                text-align: center;
+                line-height: 117px;
+                span{
+                    font-size: 12px;
+                    color: #1B76F1;
+                }
+            }
+            p{
+                height: 20px;
+                background: #1B76F1;
+                font-size: 12px;
+                line-height: 20px;
+                color: #fff;
+                padding-left: 10px;
+            }
+        }
 
+    }
+
+}
 
 
 

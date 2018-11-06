@@ -63,13 +63,7 @@
             return {
                 comm: 'community.png',
                 down: 'arrow.png',
-                testActive:false,
-                hackathonActive:false,
             }
-        },
-        mounted(){
-            this.testActive = window.location.href.includes('testnets');
-            this.hackathonActive = window.location.href.includes('hackathon');
         },
         methods: {
             downShow() {

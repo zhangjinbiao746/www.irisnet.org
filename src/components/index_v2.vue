@@ -176,13 +176,6 @@
                                 <div class="what_txt_list_four">
                                     {{$store.state.messages.network.txt[2]}}
                                 </div>
-                                <!--<a href="#/0/3" style="margin-top: 45px;display: inline-block">-->
-                                <!--<div class="collaboration_btn">-->
-                                <!--<span>-->
-                                <!--{{$store.state.messages.collaboration.btnTxt}}-->
-                                <!--</span>-->
-                                <!--</div>-->
-                                <!--</a>-->
                             </div>
                             <div class="network-img">
                                 <img :src="UrlSrc+$store.state.messages.network.src"/>
@@ -288,20 +281,45 @@
                                     <comp-collaboration-item :info="collaboration_investment"></comp-collaboration-item>
                                 </article>
                             </div>
-
-                            <!--<div class="collaboration_one_col">-->
-                                <!--<article class="investment">-->
-                                    <!--<h4>{{collaboration_counsel.title}}</h4>-->
-                                    <!--<comp-collaboration-item :info="collaboration_counsel"></comp-collaboration-item>-->
-                                <!--</article>-->
-                            <!--</div>-->
-
                         </div>
-
                     </div>
-
                 </div>
-                <div id="#/0/5" class="what" style="margin-top: 150px;padding:0">
+
+                <div class="what upcoming_content_wrap" id="#/0/5">
+                    <div class="upcoming_block"></div>
+                    <div class="upcoming_content">
+                        <div class="upcoming_event_container">
+                            <h5 v-show="$store.state.lang!=='CN'">Upcoming Event</h5>
+                            <h5 v-show="$store.state.lang=='CN'">近期活动</h5>
+                            <div class="link_img_container">
+                                <div class="img_content">
+                                    <a href="https://buidl.kr/#link" target="_blank">
+                                        <img src="../assets/app/layer.png">
+                                    </a>
+                                    <p v-show="$store.state.lang!=='CN'">November 29-30th, 2018 | Seoul, Korea</p>
+                                    <p v-show="$store.state.lang=='CN'">11月29-30日, 2018 | 首尔, 韩国</p>
+                                </div>
+                                <div class="img_content_waiting">
+                                    <div>
+                                        <span v-show="$store.state.lang!=='CN'">Coming Soon</span>
+                                        <span v-show="$store.state.lang=='CN'">即将到来</span>
+                                    </div>
+                                    <p v-show="$store.state.lang!=='CN'">...</p>
+                                    <p v-show="$store.state.lang=='CN'">...</p>
+                                </div>
+                                <div class="img_content_waiting">
+                                    <div>
+                                        <span v-show="$store.state.lang!=='CN'">Coming Soon</span>
+                                        <span v-show="$store.state.lang=='CN'">即将到来</span>
+                                    </div>
+                                    <p v-show="$store.state.lang!=='CN'">...</p>
+                                    <p v-show="$store.state.lang=='CN'">...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="#/0/6" class="what" style="padding:0">
                     <div style="background: #0f0f1f;">
                         <div class="contact" style="max-width:1250px;">
                             <div class="contact_title">
@@ -313,16 +331,6 @@
                                     <span>{{$store.state.messages.newsLetter.letter}}</span>
                                 </div>
                                 <div class="ipt-container">
-                                    <!--<div class="errcontainer" :class="showerr ? '' : 'showerrcontainer'">-->
-                                        <!--<div class="sancontainer"></div>-->
-                                        <!--<div class="wrong-container">-->
-                                            <!--<img src="../../public/wrong.png" alt="">-->
-                                        <!--</div>-->
-                                        <!--<div>-->
-                                            <!--<span>{{$store.state.messages.errEmail.err}}</span>-->
-                                        <!--</div>-->
-                                        <!--<div></div>-->
-                                    <!--</div>-->
                                     <input :class="showerr ? 'erript' : ''" v-model="mailaddress" type="text" :placeholder="$store.state.messages.placehooder.placehooder">
                                     <p :class="showerr ? '' : 'showerrcontainer'" class="errcontainer">{{$store.state.messages.errEmail.err}}</p>
                                 </div>
@@ -414,6 +422,7 @@
             roll() {
                 if (document.getElementById(this.$route.hash)) {
                     //window.scrollTo(0, document.getElementById(this.$route.hash).offsetTop-80)
+                    console.log(document.getElementById(this.$route.hash).offsetTop,999)
                     this.scroll(document.getElementById(this.$route.hash).offsetTop + 100)
                 }
             },
@@ -484,7 +493,9 @@
                 }else if(index == 4){
                     this.scroll(3392)
                 }else if(index == 5){
-                    this.scroll(5287)
+                    this.scroll(4963)
+                }else if(index == 6){
+                    this.scroll(5633)
                 }
             },
             commitMaile(){
