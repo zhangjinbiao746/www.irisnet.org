@@ -1,6 +1,6 @@
 <template>
     <div class="testnet_page">
-        <div class="index" style="height:100%;">
+        <div class="index" style="height:100%;" @click="closeMenu">
             <div class="container">
                 <div class="head" style="">
                     <div class="center1 head-content">

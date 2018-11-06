@@ -284,9 +284,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="upcoming_block"></div>
 
                 <div class="what upcoming_content_wrap" id="#/0/5">
+                    <div class="upcoming_block"></div>
                     <div class="upcoming_content">
                         <div class="upcoming_event_container">
                             <h5 v-show="$store.state.lang!=='CN'">Upcoming Event</h5>
@@ -493,7 +493,7 @@
                 }else if(index == 4){
                     this.scroll(3392)
                 }else if(index == 5){
-                    this.scroll(4943)
+                    this.scroll(4963)
                 }else if(index == 6){
                     this.scroll(5633)
                 }
