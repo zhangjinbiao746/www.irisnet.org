@@ -947,7 +947,7 @@ export default {
             join:"加入社区",
             qq:"QQ 群",
             qqNum:"#834063323",
-            riot:"Riot聊天室：",
+            riot:"Riot聊天室",
             riotAddress:"#irisvalidators:matrix.org",
             riotAddressHref:"https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org",
             zigTitle:"纸贵科技 Zig-BaaS",
