@@ -13,10 +13,6 @@ export const message = {
                 'txt': "白皮书",
                 "href": "#/0/1",
             },
-            // {
-            //     'txt': "白皮书",
-            //     "href": "https://github.com/irisnet/irisnet/blob/master/白皮书.md"
-            // },
             {
                 'txt': "网络",
                 "href": "#/0/2",
@@ -30,13 +26,9 @@ export const message = {
                 "href": "#/0/3",
             },
             {
-                'txt': "近期活动",
+                'txt': "联系方式",
                 "href": "#/0/5",
             },
-            {
-                'txt': "联系方式",
-                "href": "#/0/6",
-            }
         ]
     },
     "contact": {
