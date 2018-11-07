@@ -14,10 +14,6 @@ export default {
                     'txt': "白皮书",
                     "href": "#/0/1",
                 },
-                // {
-                //     'txt': "白皮书",
-                //     "href": "https://github.com/irisnet/irisnet/blob/master/白皮书.md"
-                // },
                 {
                     'txt': "网络",
                     "href": "#/0/2",
@@ -31,13 +27,10 @@ export default {
                     "href": "#/0/3",
                 },
                 {
-                    'txt': "近期活动",
+                    'txt': "联系方式",
                     "href": "#/0/5",
                 },
-                {
-                    'txt': "联系方式",
-                    "href": "#/0/6",
-                }
+
             ]
         },
         "contact": {
@@ -973,10 +966,6 @@ export default {
                     'txt': "Whitepaper",
                     "href": "#/0/1",
                 },
-                // {
-                //     'txt': "Whitepaper",
-                //     "href": "https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md"
-                // },
                 {
                     'txt': "Network",
                     "href": "#/0/2",
@@ -994,14 +983,6 @@ export default {
                     'txt': "Contact",
                     "href": "#/0/5",
                 },
-                //     {
-                //         'txt': "privacy",
-                //         "href": "/appPrivacy",
-                //     },
-                //     {
-                //         'txt': "terms",
-                //         "href": "/appTerms",
-                //     }
             ]
         },
         "contact": {

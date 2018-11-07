@@ -13,10 +13,6 @@ export const message = {
                 'txt': "Whitepaper",
                 "href": "#/0/1",
             },
-            // {
-            //     'txt': "Whitepaper",
-            //     "href": "https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md"
-            // },
             {
                 'txt': "Network",
                 "href": "#/0/2",
@@ -30,22 +26,10 @@ export const message = {
                 "href": "#/0/3",
             },
             {
-                'txt': "Upcoming",
+                'txt': "Contact",
                 "href": "#/0/5",
             },
 
-            {
-                'txt': "Contact",
-                "href": "#/0/6",
-            },
-            //     {
-            //         'txt': "privacy",
-            //         "href": "/appPrivacy",
-            //     },
-            //     {
-            //         'txt': "terms",
-            //         "href": "/appTerms",
-            //     }
         ]
     },
     "contact": {
