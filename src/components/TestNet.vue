@@ -180,8 +180,9 @@
                         <div class="zgblock_info_container">
                             <div class="zgblock_info_img_container">
                                 <div class="zgblock_info_img">
-                                    <img src="../../public/zgkjlogo.svg">
-                                    <!--<svg style="width: 100px;height: 50px;" src="../../public/zgkjlogo.svg" ></svg>-->
+                                    <a href="https://baas.zhigui.com/IRISnet" target="_blank">
+                                        <img src="../../public/zgkjlogo.svg">
+                                    </a>
                                 </div>
                             </div>
                             <div class="zgblock_introduce_container">
@@ -205,7 +206,7 @@
                                         <span>{{wanCloudTitle}}</span>
                                     </div>
                                     <div class="wanCloud_info_img">
-                                        <a href=" https://irisnet.wancloud.cloud/#/" target="_blank">
+                                        <a href="https://irisnet.wancloud.cloud/#/" target="_blank">
                                             <img src="../../public/link.png">
                                         </a>
                                     </div>
@@ -217,7 +218,9 @@
                             </div>
                             <div class="wanCloud_logo_container">
                                 <div class="wanCloud_logo">
-                                    <img src="../../public/wancloud.png">
+                                    <a href="https://irisnet.wancloud.cloud/#/" target="_blank">
+                                        <img src="../../public/wancloud.png">
+                                    </a>
                                 </div>
                             </div>
                         </div>
