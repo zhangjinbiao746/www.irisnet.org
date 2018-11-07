@@ -241,8 +241,6 @@
                     </div>
 
                     <div id="#/0/3" class="collaboration">
-
-
                         <div class="collaboration_wrap">
                             <h2>{{collaboration_title}}</h2>
                             <div class="nav-line"></div>
@@ -273,20 +271,16 @@
                                     <comp-collaboration-item :info="collaboration_investment"></comp-collaboration-item>
                                 </article>
                             </div>
-
-                            <!--<div class="collaboration_one_col">-->
-                                <!--<article class="investment">-->
-                                    <!--<h4>{{collaboration_counsel.title}}</h4>-->
-                                    <!--<comp-collaboration-item :info="collaboration_counsel"></comp-collaboration-item>-->
-                                <!--</article>-->
-                            <!--</div>-->
                         </div>
                     </div>
                     <div id="#/0/5" class="what model_upcoming_content_wrap">
                         <div class="model_upcoming_content">
                             <div class="model_upcoming_event_container">
-                                <h5 v-show="$store.state.lang!=='CN'">Upcoming Event</h5>
-                                <h5 v-show="$store.state.lang=='CN'">近期活动</h5>
+                                <div class="model_upcoming_event_title_container">
+                                    <h5 v-show="$store.state.lang!=='CN'">Upcoming Event</h5>
+                                    <h5 v-show="$store.state.lang=='CN'">近期活动</h5>
+                                    <div class="nav-line"></div>
+                                </div>
                                 <div class="model_link_img_container">
                                     <div class="model_img_content">
                                         <a href="https://buidl.kr/#link" target="_blank">
@@ -480,7 +474,7 @@
                 }else if(index == 4){
                     this.scroll(2278)
                 }else if(index == 5){
-                    this.scroll(5267)
+                    this.scroll(4112)
                 }else if(index == 6){
                     this.scroll(4693)
                 }
