@@ -423,7 +423,6 @@
             roll() {
                 if (document.getElementById(this.$route.hash)) {
                     //window.scrollTo(0, document.getElementById(this.$route.hash).offsetTop-80)
-                    console.log(document.getElementById(this.$route.hash).offsetTop,999)
                     this.scroll(document.getElementById(this.$route.hash).offsetTop + 100)
                 }
             },
