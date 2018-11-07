@@ -2,7 +2,7 @@
     <div class="testnet_page">
         <div class="index" style="height:100%;" @click="closeMenu">
             <div class="container">
-                <div class="head" style="">
+                <div class="head" style="position: fixed">
                     <div class="center1 head-content">
                         <!--左侧logo-->
                         <a class="head-layout-left" href="#"><img src="../../public/irisnet.png" style="width: 130px;"/></a>
