@@ -2,7 +2,7 @@
     <div class="testnet_page">
         <div class="index" style="height:100%;" @click="closeMenu">
             <div class="container">
-                <div class="head" style="">
+                <div class="head" style="position: fixed">
                     <div class="center1 head-content">
                         <!--左侧logo-->
                         <a class="head-layout-left" href="#"><img src="../../public/irisnet.png" style="width: 130px;"/></a>
@@ -62,7 +62,7 @@
                             {{infomation}}
                             <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{explorerHref}}</a>
                             {{infomationFragment}}
-                            <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{testnetplorerHref}}</a>
+                            <a :href="testnetHereHref" target="_blank">{{testnetplorerHref}}</a>
                             {{testnetplorerStatus}}
                         </p>
                     </div>
@@ -79,11 +79,11 @@
                             </div>
                         </a>
                         <div class="testnet_hover_content">
-                            <div class="testnet_hover_left" @click.stop="showIncentivitedMenu()" :class="flShowMenu ? 'testnet_hover_left_active' : '' ">
+                            <div class="testnet_hover_left" @mouseover="onMouseOver('incentivizedTestnet')" @mouseout="onmouseout()" @click.stop="showIncentivitedMenu()" :class="flShowMenu ? 'testnet_hover_left_active' : '' ">
                                 <div class="tesnet_hover_incentivize">
                                     <span>{{incentivizedInfo}}</span>
                                     <span class="select_arrow_img">
-                                    <img :src="flShowMenu ? activeArrow : defaultArrow">
+                                    <img :src="flShowArrowImg ? activeArrow : defaultArrow">
                                 </span>
                                 </div>
                                 <a :href="incentivizedMenuHref" target="_blank">
@@ -107,11 +107,11 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="testnet_hover_right" @click.stop="showBaasMenu()" :class="flShowBassMenu ? 'testnet_hover_right_active' : '' ">
+                            <div class="testnet_hover_right" @mouseover="onMouseOver('baas')" @mouseout="onmouseout()" @click.stop="showBaasMenu()" :class="flShowBassMenu ? 'testnet_hover_right_active' : '' ">
                                 <div class="testnet_hover_booststrap">
                                     <span>{{baasMenu}}</span>
                                     <span class="select_arrow_img">
-                                    <img :src="flShowBassMenu ? activeArrow : defaultArrow">
+                                    <img :src="flShowBassArrowImg ? activeArrow : defaultArrow">
                                 </span>
                                 </div>
                                 <a :href="baasMenuAboutEffectHref" target="_blank">
@@ -136,11 +136,11 @@
                             </div>
                         </a>
                     </div>
-                    <div class="testnet_genesis_hover_container" @click.stop="showHackathonGameMenu" :class="flshowhackathonGameMenu ? 'testnet_genesis_hover_container_active' : ''">
+                    <div class="testnet_genesis_hover_container" @mouseover="onMouseOver('genesis')" @mouseout="onmouseout()" @click.stop="showHackathonGameMenu" :class="flshowhackathonGameMenu ? 'testnet_genesis_hover_container_active' : ''">
                         <div class="testnet_genesis">
                             <span>{{gameOfGenesis}}</span>
                             <span class="select_arrow_img">
-                        <img :src="flshowhackathonGameMenu ? activeArrow : defaultArrow">
+                        <img :src="flshowGenesisArrowImg ? activeArrow : defaultArrow">
                     </span>
                         </div>
                         <a :href="whatGenesisHref" target="_blank">
@@ -180,8 +180,9 @@
                         <div class="zgblock_info_container">
                             <div class="zgblock_info_img_container">
                                 <div class="zgblock_info_img">
-                                    <img src="../../public/zgkjlogo.svg">
-                                    <!--<svg style="width: 100px;height: 50px;" src="../../public/zgkjlogo.svg" ></svg>-->
+                                    <a href="https://baas.zhigui.com/IRISnet" target="_blank">
+                                        <img src="../../public/zgkjlogo.svg">
+                                    </a>
                                 </div>
                             </div>
                             <div class="zgblock_introduce_container">
@@ -205,7 +206,7 @@
                                         <span>{{wanCloudTitle}}</span>
                                     </div>
                                     <div class="wanCloud_info_img">
-                                        <a href=" https://irisnet.wancloud.cloud/#/" target="_blank">
+                                        <a href="https://irisnet.wancloud.cloud/#/" target="_blank">
                                             <img src="../../public/link.png">
                                         </a>
                                     </div>
@@ -217,7 +218,9 @@
                             </div>
                             <div class="wanCloud_logo_container">
                                 <div class="wanCloud_logo">
-                                    <img src="../../public/wancloud.png">
+                                    <a href="https://irisnet.wancloud.cloud/#/" target="_blank">
+                                        <img src="../../public/wancloud.png">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -241,6 +244,7 @@
                 title:'',
                 infomation:"",
                 explorerHref:"",
+                testnetHereHref:"",
                 infomationFragment:"",
                 testnetplorerHref:"",
                 testnetplorerStatus:"",
@@ -285,6 +289,14 @@
                 activeArrow:require("../assets/app/arrowblue.png"),
                 comm: 'community.png',
                 down: 'arrow.png',
+
+                flClickArrowStatus: false,
+                flClickBaasArrowStatus: false,
+                flClickGenesisStatus: false,
+
+                flShowArrowImg: false,
+                flShowBassArrowImg: false,
+                flshowGenesisArrowImg : false,
             }
         },
         mounted(){
@@ -295,7 +307,36 @@
             this.getInfo();
         },
         methods:{
+            onMouseOver(mouseOverTitle){
+                if(mouseOverTitle === "incentivizedTestnet"){
+                    this.flShowArrowImg = true;
+                }else if(mouseOverTitle === 'baas'){
+                    this.flShowBassArrowImg = true;
+                }else if(mouseOverTitle === 'genesis'){
+                    this.flshowGenesisArrowImg = true;
+                }
+            },
+            onmouseout(){
+                if(!this.flClickArrowStatus){
+                    this.flShowArrowImg = false;
+                }
+                if(!this.flClickBaasArrowStatus){
+                    this.flShowBassArrowImg = false;
+                }
+                if(!this.flClickGenesisStatus){
+                    this.flshowGenesisArrowImg = false;
+
+                }
+            },
             closeMenu(){
+                this.flClickArrowStatus = false;
+                this.flClickBaasArrowStatus = false;
+                this.flClickGenesisStatus = false;
+
+                this.flShowArrowImg = false;
+                this.flShowBassArrowImg = false;
+                this.flshowGenesisArrowImg = false;
+
                 this.flShowMenu = false;
                 this.flshowhackathonGameMenu = false;
                 this.flShowBassMenu = false;
@@ -307,6 +348,7 @@
                 this.title = this.format('title');
                 this.infomation = this.format('infomation');
                 this.explorerHref = this.format('explorerHref');
+                this.testnetHereHref = this.format('testnetHereHref');
                 this.infomationFragment = this.format('infomationFragment');
                 this.testnetplorerHref = this.format('testnetplorerHref');
                 this.testnetplorerStatus = this.format('testnetplorerStatus');
@@ -347,16 +389,40 @@
 
             },
             showIncentivitedMenu(){
+                this.flClickGenesisStatus = false;
+                this.flClickArrowStatus = true;
+                this.flClickBaasArrowStatus = false;
+
+                this.flShowArrowImg = true;
+                this.flShowBassArrowImg = false;
+                this.flshowGenesisArrowImg = false;
+
                 this.flShowMenu =! this.flShowMenu;
                 this.flshowhackathonGameMenu = false;
                 this.flShowBassMenu = false;
             },
             showBaasMenu(){
+                this.flClickGenesisStatus = false;
+                this.flClickBaasArrowStatus = true;
+                this.flClickArrowStatus = false;
+
+                this.flShowBassArrowImg = true;
+                this.flShowArrowImg = false;
+                this.flshowGenesisArrowImg = false;
+
                 this.flshowhackathonGameMenu = false;
                 this.flShowMenu = false;
                 this.flShowBassMenu =! this.flShowBassMenu
             },
             showHackathonGameMenu(){
+                this.flClickBaasArrowStatus = false;
+                this.flClickGenesisStatus = true;
+                this.flClickArrowStatus = false;
+
+                this.flshowGenesisArrowImg = true;
+                this.flShowArrowImg = false;
+                this.flShowBassArrowImg = false;
+
                 this.flShowMenu = false;
                 this.flShowBassMenu = false;
                 this.flshowhackathonGameMenu =! this.flshowhackathonGameMenu;

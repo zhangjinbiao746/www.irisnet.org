@@ -248,7 +248,7 @@
                     </div>
 
                     <!--合作伙伴-->
-                    <div id="#/0/3" class="what">
+                    <div id="#/0/3" class="what collaboration_container">
 
                         <div class="collaboration_wrap">
                             <h2>{{collaboration_title}}</h2>
@@ -291,6 +291,7 @@
                         <div class="upcoming_event_container">
                             <h5 v-show="$store.state.lang!=='CN'">Upcoming Event</h5>
                             <h5 v-show="$store.state.lang=='CN'">近期活动</h5>
+                            <div class="line"></div>
                             <div class="link_img_container">
                                 <div class="img_content">
                                     <a href="https://buidl.kr/#link" target="_blank">
@@ -422,7 +423,6 @@
             roll() {
                 if (document.getElementById(this.$route.hash)) {
                     //window.scrollTo(0, document.getElementById(this.$route.hash).offsetTop-80)
-                    console.log(document.getElementById(this.$route.hash).offsetTop,999)
                     this.scroll(document.getElementById(this.$route.hash).offsetTop + 100)
                 }
             },
@@ -489,13 +489,13 @@
                 }else if(index == 2){
                     this.scroll(1618)
                 }else if(index == 3){
-                    this.scroll(2587)
+                    this.scroll(2479)
                 }else if(index == 4){
-                    this.scroll(3392)
+                    this.scroll(3281)
                 }else if(index == 5){
-                    this.scroll(4963)
+                    this.scroll(4822)
                 }else if(index == 6){
-                    this.scroll(5633)
+                    this.scroll(5419)
                 }
             },
             commitMaile(){

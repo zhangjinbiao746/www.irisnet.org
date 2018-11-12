@@ -14,10 +14,6 @@ export default {
                     'txt': "白皮书",
                     "href": "#/0/1",
                 },
-                // {
-                //     'txt': "白皮书",
-                //     "href": "https://github.com/irisnet/irisnet/blob/master/白皮书.md"
-                // },
                 {
                     'txt': "网络",
                     "href": "#/0/2",
@@ -31,13 +27,10 @@ export default {
                     "href": "#/0/3",
                 },
                 {
-                    'txt': "近期活动",
+                    'txt': "联系方式",
                     "href": "#/0/5",
                 },
-                {
-                    'txt': "联系方式",
-                    "href": "#/0/6",
-                }
+
             ]
         },
         "contact": {
@@ -920,6 +913,7 @@ export default {
             explorerHref:"IRISplorer",
             infomationFragment:"查询信息并在",
             testnetplorerHref:"这里",
+            testnetHereHref:"https://github.com/irisnet/testnets/blob/master/README_CN.md",
             testnetplorerStatus:"跟踪测试网进展",
             howToJoin:"如何加入Fuxi测试网",
             howToJoinHref:"https://github.com/irisnet/irishub/blob/master/docs/zh/get-started/README.md",
@@ -946,7 +940,7 @@ export default {
             howWinHref:"https://github.com/irisnet/testnets/blob/master/Game%20Of%20Genesis/活动介绍.md",
             join:"加入社区",
             qq:"QQ 群",
-            qqNum:"#834063323",
+            qqNum:"834063323",
             riot:"Riot聊天室",
             riotAddress:"#irisvalidators:matrix.org",
             riotAddressHref:"https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org",
@@ -972,10 +966,6 @@ export default {
                     'txt': "Whitepaper",
                     "href": "#/0/1",
                 },
-                // {
-                //     'txt': "Whitepaper",
-                //     "href": "https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md"
-                // },
                 {
                     'txt': "Network",
                     "href": "#/0/2",
@@ -993,14 +983,6 @@ export default {
                     'txt': "Contact",
                     "href": "#/0/5",
                 },
-                //     {
-                //         'txt': "privacy",
-                //         "href": "/appPrivacy",
-                //     },
-                //     {
-                //         'txt': "terms",
-                //         "href": "/appTerms",
-                //     }
             ]
         },
         "contact": {
@@ -1880,10 +1862,11 @@ export default {
         },
         testnet:{
             title:"Fuxi Testnet",
-            infomation:"The testnet of IRISHub is called Fuxi, we expect to see several iterations of Fuxi testnet before the mainnet's launch. You could use ",
+            infomation:"The testnet of IRIShub is called Fuxi, We expect to see several iterations of Fuxi testnet before the mainnet's launch. You could use ",
             explorerHref:"IRISplorer",
             infomationFragment:"for browsing and track the status of Fuxi testnet",
             testnetplorerHref:"here",
+            testnetHereHref: "https://github.com/irisnet/testnets/blob/master/README.md",
             testnetplorerStatus:"",
             howToJoin:"How to Join with your server",
             howToJoinHref:"https://github.com/irisnet/irishub/blob/master/docs/get-started/README.md",
@@ -1910,7 +1893,7 @@ export default {
             howWinHref:"https://medium.com/irisnet-blog/irisnet-pos-security-hackathon-707065865926",
             join:"Join Community",
             qq:"QQ group",
-            qqNum:"#834063323",
+            qqNum:"834063323",
             riot:"Riot room",
             riotAddress:"#irisvalidators:matrix.org",
             riotAddressHref:"https://matrix.org/blog/home/",
@@ -1918,7 +1901,7 @@ export default {
             zigIntroduce:"Ziggurat provides enterprise-grade blockchain solutions, including Zig-Ledger, an independently developed consortium blockchain, environment setup, operations and maintenance, smart contract and application development, cross-chain protocol, Zig-BaaS cloud service platform, and industry specific SDKs. Our solutions support multiple industry application scenarios, including culture and entertainment, traceability and provenance, supply chain finance, IoT and data security.",
             wanCloudTitle:"WanCloud",
             wanCloudInfo:"Wancloud is a neutral and innovative ecosystem builder of blockchain.",
-            wanCloudIntroduce:"We aim to leverage the integration of blockchain technology and ecosystem construction to effectively serve the requirements of enterprises for blockchain. Wancloud delves into different public blockchain’s construction and community operations, becoming their key strategic partner. Featured by its convenient, flexible and professional service, Wancloud is committed to lowering the cost and threshold of blockchain applications, to the reduction of repetitive workload and to the promotion of blockchain technology adoption."
+            wanCloudIntroduce:"We aim to leverage the integration of blockchain technology and ecosystem construction to effectively serve the requirements of enterprises for blockchain. Wancloud delves into different public blockchains' construction and community operations, becoming their key strategic partner. Featured by its convenient, flexible and professional service, Wancloud is committed to lowering the cost and threshold of blockchain applications, to the reduction of repetitive workload and to the promotion of blockchain technology adoption."
         }
     }
 }

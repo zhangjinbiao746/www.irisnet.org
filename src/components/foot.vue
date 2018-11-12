@@ -16,7 +16,7 @@
 <style scoped lang='less'>
     .foot {
         a {
-            color: #3563c1;
+            color: #3DA0FF ;
         }
         z-index: 10;
         position: fixed;
@@ -25,7 +25,7 @@
         width: 100%;
         background: #2D2948;
         line-height: 40px;
-        color: #3b3b5f;
+        color: #8c8fa6 ;
         font-size: 14px;
         text-align: center;
     }

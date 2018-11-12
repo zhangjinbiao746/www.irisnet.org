@@ -133,24 +133,32 @@
                 </div>
                 <div class="zig_content">
                     <div class="zig_img_container">
-                        <img src="../../public/zgkjlogo.svg">
+                        <a href="https://baas.zhigui.com/IRISnet" target="_blank">
+                            <img src="../../public/zgkjlogo.svg">
+                        </a>
                     </div>
                     <div class="zig_title_link">
                         <span>{{zigTitle}}</span>
                         <div class="zig_link_img">
-                            <img src="../../public/link.png">
+                            <a href="https://baas.zhigui.com/IRISnet" target="_blank">
+                                <img src="../../public/link.png">
+                            </a>
                         </div>
                     </div>
                     <div class="zig_info_introduce">
                         <span>{{zigIntroduce}}</span>
                     </div>
                     <div class="wancloud_img">
-                        <img src="../assets/app/mobilewancloud.png">
+                        <a href="https://irisnet.wancloud.cloud/#/" target="_blank">
+                            <img src="../assets/app/mobilewancloud.png">
+                        </a>
                     </div>
                     <div class="wancloud_title">
                         <span>{{wanCloudTitle}}</span>
                         <div class="wancloud_link_img">
-                            <img src="../../public/link.png">
+                            <a href="https://irisnet.wancloud.cloud/#/" target="_blank">
+                                <img src="../../public/link.png">
+                            </a>
                         </div>
                     </div>
                     <div class="wancloud_info_introduce">

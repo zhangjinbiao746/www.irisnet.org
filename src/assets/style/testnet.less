@@ -4,7 +4,7 @@
   .index{
     height: 100%;
     a{
-      color: #fff !important;
+      color: #fff;
     }
     .container{
       background: #2D2948;
@@ -15,15 +15,15 @@
       margin: auto;
       overflow: hidden !important;
       height:100%;
-      background:url("../app/fuxitestnet.png") no-repeat center top ;
-      background-position-x: 90%;
+      background:url("../app/fuxitestnet.png") no-repeat top fixed;
+      background-position-x: 65%;
       background-position-y: 28%;
       background-size: 637px;
       z-index: 10;
       .testnet_title{
         p{
           color: #fff;
-          font-size: 48px;
+          font-size: 30px;
           padding-top: 140px;
           font-weight: 900;
         };
@@ -97,7 +97,7 @@
             margin-left: 2px;
           }
           &:hover {
-            color: #724be3;
+            color: #724be3 !important;
             div {
               visibility: visible;
               animation: nav-line 0.2s;
@@ -152,7 +152,8 @@
         padding-top: 36px;
         max-width: 758px;
         line-height: 32px;
-        font-size: 24px;
+        font-size: 16px;
+        color: #d4d5de;
       }
       a{
         color: #3DA0FF!important;
@@ -161,7 +162,7 @@
     .testnet_info_join_content{
       color: #fff;
       .testnet_how_join{
-        font-size: 24px;
+        font-size: 16px;
         margin-top: 30px;
         margin-bottom: 6px;
         display: flex;
@@ -170,12 +171,12 @@
         line-height: 60px;
         background: #3A345D;
         border: 1px solid #4E4976;
+        color: #d4d5de;
         &:hover{
           //background: #3DA0FF;
           border: 1px solid #00aeef;
           .highlight_help_img {
             display: block !important;
-            padding: 10px 24px 16px 0;
             width: 100%;
             height: 100%;
           }
@@ -186,7 +187,9 @@
           }
         }
         .testnet_how_join_img{
-          padding: 6px 24px 16px 0;
+          line-height: 0;
+          margin: auto 0;
+          padding-right: 24px;
           width: 28px;
           height: 28px;
           .highlight_help_img{
@@ -212,6 +215,7 @@
           justify-content: space-between;
           padding-left: 30px;
           z-index: 100;
+          color: #d4d5de;
         }
         .tesnet_hover_introduce{
           padding-left: 30px;
@@ -220,6 +224,7 @@
           border-right: 1px solid #00aeef;
           border-left: 1px solid #00aeef;
           background: #3A345D;
+          color: #d4d5de;
         }
         .testnet_hover_faq{
           position: relative;
@@ -227,6 +232,8 @@
           border-right: 1px solid #00aeef;
           border-left: 1px solid #00aeef;
           background: #3A345D;
+          color: #d4d5de;
+
         }
         .testnet_hover_result{
           position: relative;
@@ -234,11 +241,14 @@
           border-right: 1px solid #00aeef;
           border-left: 1px solid #00aeef;
           background: #3A345D;
+          color: #d4d5de;
+
         }
         .testnet_hover_Tasks{
           position: relative;
           display: block !important;
           background: #3A345D;
+          color: #d4d5de;
           border-right: 1px solid #00aeef;
           border-left: 1px solid #00aeef;
           border-bottom: 1px solid #00aeef;
@@ -269,7 +279,7 @@
         display: flex;
         .testnet_hover_left{
           height: 60px;
-          font-size: 24px;
+          font-size: 16px;
           line-height: 60px;
           flex: 1;
           flex-direction: column;
@@ -281,6 +291,10 @@
             display: flex;
             justify-content: space-between;
             padding-left: 30px;
+            color: #d4d5de;
+            &:hover{
+              border: 1px solid #00aeef;
+            }
           }
           .select_arrow_img{
             padding-right: 30px;
@@ -332,18 +346,22 @@
           width: 100%;
           height: 60px;
           line-height: 60px;
-          margin-left: 10px;
+          margin-left: 6px;
           flex-direction: column;
           cursor: pointer;
 
           .testnet_hover_booststrap{
             display: flex;
             flex: 1;
-            font-size: 24px;
+            font-size: 16px;
             padding-left: 30px;
             justify-content: space-between;
             border: 1px solid #4E4976;
             background: #3A345D;
+            color: #d4d5de;
+            &:hover{
+              border: 1px solid #00aeef;
+            }
             .select_arrow_img{
               padding-right: 30px;
               img{
@@ -356,9 +374,10 @@
             height: 60px;
             line-height: 60px;
             display: none;
-            font-size: 24px;
+            font-size: 16px;
             padding-left: 30px;
             background: #3A345D;
+            color: #d4d5de;
             border-left: 1px solid #3A345D;
             border-right: 1px solid #3A345D;
             &:hover{
@@ -368,7 +387,8 @@
           .testnet_hover_BaaS{
             height: 60px;
             display: none;
-            font-size: 24px;
+            font-size: 16px;
+            color: #d4d5de;
             padding-left: 30px;
             background: #3A345D;
             border-left: 1px solid #3A345D;
@@ -385,16 +405,16 @@
         height: 60px;
         line-height: 60px;
         border: 1px solid #4E4976;
-        margin-top: 6px;
-        font-size: 24px;
+        margin-top: 8px;
+        font-size: 16px;
         padding-left: 30px;
         display: flex;
         justify-content: space-between;
+        color: #d4d5de;
         &:hover{
           border: 1px solid #00aeef;
           .highlight_help_img {
             display: block !important;
-            padding: 10px 24px 16px 0;
             width: 100%;
             height: 100%;
           }
@@ -407,7 +427,9 @@
         .testnet_faq_img{
           width: 28px;
           height: 28px;
-          padding: 6px 24px 16px 0;
+          line-height: 0;
+          margin: auto 0;
+          padding-right: 24px;
           .highlight_help_img{
             display: none;
           }
@@ -442,7 +464,7 @@
       height: 60px;
       margin: 36px 0;
       line-height: 60px;
-      font-size: 24px;
+      font-size: 16px;
       width: 100%;
       cursor: pointer;
 
@@ -452,6 +474,10 @@
         padding-left: 30px;
         border: 1px solid #4E4976;
         background: #3A345D;
+        color: #d4d5de;
+        &:hover{
+          border: 1px solid #00aeef;
+        }
         .select_arrow_img{
           padding-right: 30px;
           img{
@@ -466,9 +492,9 @@
         height: 60px;
         line-height: 60px;
         background: #3A345D;
-        font-size: 24px;
+        font-size: 16px;
         padding-left: 30px;
-        color: #fff;
+        color: #d4d5de;
         &:hover{
           background: #3DA0FF;
         }
@@ -479,9 +505,9 @@
         height: 60px;
         line-height: 60px;
         background: #3A345D;
-        font-size: 24px;
+        font-size: 16px;
         padding-left: 30px;
-        color: #fff;
+        color: #d4d5de;
         &:hover{
           background: #3DA0FF;
         }
@@ -490,12 +516,12 @@
 
     .testnet_community{
       background: #3A345D;
-      color: #fff;
       height: 60px;
       line-height: 60px;
-      font-size: 24px;
+      font-size: 16px;
       padding-left: 30px;
       border: 1px solid #3A345D;
+      color: #d4d5de;
     }
     .testnet_join_way{
       color: #fff;
@@ -507,6 +533,7 @@
         flex: 1;
         display: flex;
         height: 110px;
+        color: #d4d5de;
         &:hover{
           background: #3A345D;
         }
@@ -521,7 +548,7 @@
         .testnet_group_number{
           padding-top: 24px;
           line-height: 29px;
-          font-size: 24px;
+          font-size: 16px;
           p:nth-child(2){
             opacity: 0.6;
           }
@@ -531,6 +558,7 @@
         flex: 1;
         display: flex;
         height: 110px;
+        color: #d4d5de;
         &:hover{
           background: #3A345D;
         }
@@ -545,7 +573,7 @@
         .testnet_riot_number{
           padding-top: 24px;
           line-height: 29px;
-          font-size: 24px;
+          font-size: 16px;
           p:nth-child(2){
             opacity: 0.6;
           }
@@ -557,7 +585,7 @@
       background: #16152d;
       .zgblock_wrap{
         width: 100%;
-        max-width: 1450px;
+        max-width: 1250px;
         margin: auto;
         .zgblock_info_container{
           display: flex;
@@ -583,7 +611,7 @@
               margin-top: 92px;
               display: flex;
               span{
-                font-size: 48px;
+                font-size: 30px;
                 padding-bottom: 16px;
                 border-bottom: 1px solid #3DA0FF;
                 font-weight: 900;
@@ -600,22 +628,23 @@
             }
             .zgblock_introduce_info{
               margin-top: 35px;
-              font-size: 24px;
+              font-size: 16px;
               line-height: 32px;
+              color: #d4d5de;
             }
           }
         }
         .wanCloud_info_container{
           display: flex;
           .wanCloud_info_introduce{
-            flex: 9;
+            flex: 1;
             height:587px;
             background: #16152d;
             color: #fff;
             .wanCloud_info_title_container{
               display: flex;
               .wanCloud_info_title_content{
-                font-size: 48px;
+                font-size: 30px;
                 padding-bottom: 16px;
                 border-bottom: 1px solid #3DA0FF;
                 span{
@@ -635,18 +664,20 @@
             .wanCloud_info_content{
               margin-top: 35px;
               p:nth-child(1){
-                font-size: 24px;
+                font-size: 16px;
                 line-height: 32px;
+                color: #d4d5de;
               }
               p:nth-child(2){
                 margin-top:32px;
-                font-size: 24px;
+                font-size: 16px;
                 line-height: 32px;
+                color: #d4d5de;
               }
             }
           }
           .wanCloud_logo_container{
-            flex: 8;
+            flex: 1;
             height:587px;
             background: #16152d;
             .wanCloud_logo{
