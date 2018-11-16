@@ -205,16 +205,13 @@
                                             {{$store.state.messages.roadmap.list[0].txt}}</p>
                                         <hr v-show="roadmapIsShowIdx === 0" :class="['hr_ver']">
                                         <img @mouseover="mapToggle(0)" src="../../public/Ellipse.png">
-                                        <h5 v-if="$store.state.lang!='CN'" @mouseover="mapToggle(0)"><strong>PANGU</strong><span>JAN 2018 - SEP 2018</span></h5>
-                                        <h5 v-if="$store.state.lang =='CN'" @mouseover="mapToggle(0)"><strong>盘古</strong><span>2018年1月- 2018年9月</span></h5>
+                                        <h5 v-if="$store.state.lang!='CN'" @mouseover="mapToggle(0)"><strong>PANGU</strong><span>JAN 2018 - MAR 2019</span></h5>
+                                        <h5 v-if="$store.state.lang =='CN'" @mouseover="mapToggle(0)"><strong>盘古</strong><span>2018年1月- 2019年3月</span></h5>
                                     </div>
 
                                     <div class="roadmap-item roadmap-item-top">
-                                        <h5 v-if="$store.state.lang!='CN'" @mouseover="mapToggle(1)">
-                                            <strong>NÜWA</strong>
-                                            <span>OCT 2018 - DEC 2018</span>
-                                        </h5>
-                                        <h5 v-if="$store.state.lang =='CN'" @mouseover="mapToggle(1)"><strong>女娲</strong><span>2018年10月 - 2018年12月</span></h5>
+                                        <h5 v-if="$store.state.lang!='CN'" @mouseover="mapToggle(1)"><strong>NÜWA</strong><span>APR 2019 - SEPT 2019</span></h5>
+                                        <h5 v-if="$store.state.lang =='CN'" @mouseover="mapToggle(1)"><strong>女娲</strong><span>2019年4月 - 2019年9月</span></h5>
                                         <img @mouseover="mapToggle(1)" src="../../public/Ellipse.png">
                                         <hr v-show="roadmapIsShowIdx === 1" class="hr_ver">
                                         <p v-show="roadmapIsShowIdx === 1">
@@ -226,16 +223,13 @@
                                             {{$store.state.messages.roadmap.list[2].txt}}</p>
                                         <hr v-show="roadmapIsShowIdx === 2" class="hr_ver">
                                         <img @mouseover="mapToggle(2)" src="../../public/Ellipse.png">
-                                        <h5 v-if="$store.state.lang!='CN'" @mouseover="mapToggle(2)"><strong>KUAFU</strong><span>JAN 2019 - JUN 2019</span></h5>
-                                        <h5 v-if="$store.state.lang =='CN'" @mouseover="mapToggle(2)"><strong>夸父</strong><span>2019年1月 - 2019年6月</span></h5>
+                                        <h5 v-if="$store.state.lang!='CN'" @mouseover="mapToggle(2)"><strong>KUAFU</strong><span>OCT 2019 - DEC 2019</span></h5>
+                                        <h5 v-if="$store.state.lang =='CN'" @mouseover="mapToggle(2)"><strong>夸父</strong><span>2019年10月 - 2019年12月</span></h5>
                                     </div>
 
                                     <div class="roadmap-item roadmap-item-top">
-                                        <h5 v-if="$store.state.lang!='CN'" @mouseover="mapToggle(3)">
-                                            <strong>HOUYI</strong>
-                                            <span>BEYOND   JUL 2019</span>
-                                        </h5>
-                                        <h5 v-if="$store.state.lang =='CN'" @mouseover="mapToggle(3)"><strong>后羿</strong><span>2019年7月之后</span></h5>
+                                        <h5 v-if="$store.state.lang!='CN'" @mouseover="mapToggle(3)"><strong>HOUYI</strong><span>BEYOND   JAN 2020</span></h5>
+                                        <h5 v-if="$store.state.lang =='CN'" @mouseover="mapToggle(3)"><strong>后羿</strong><span>2020年1月之后</span></h5>
                                         <img @mouseover="mapToggle(3)" src="../../public/Ellipse.png">
                                         <hr v-show="roadmapIsShowIdx === 3" class="hr_ver">
                                         <p v-show="roadmapIsShowIdx === 3">
