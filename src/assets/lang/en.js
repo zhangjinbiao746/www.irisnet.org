@@ -418,15 +418,15 @@ export const message = {
         "list": [
             {
                 "img": "roadmap/Pangu.png",
-                "txt": "The first stage of the IRIS project will focus on having the IRIS Hub up and running and connected to the Cosmos Hub. We also intend to release an initial version of the mobile client for the IRIS network."
+                "txt": "The first stage of the IRIS project will focus on having the IRIS Hub up and running. We also intend to release an initial version of the mobile client for the IRIS network. In this stage we also focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query. We plan to collabrate with 1-2 ecosystem parteners to release i-Services to IRIShub."
             },
             {
                 "img": "roadmap/NUWA.png",
-                "txt": "The second stage will focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query. In this stage we are also aiming to have a beta version of the IRIS SDK ready for developers."
+                "txt": "In this stage we are aiming to have a beta version of the IRIS SDK ready for developers. We plan to upgrade IRISnet mobile client to support i-Services. We plan to establish collabrations with application specific blockchains and enable them as zones connecting to IRIS Hub. We also plan to accomplish the connection with Cosmos Hub at this stage."
             },
             {
                 "img": "roadmap/kuafu.png",
-                "txt": "The third stage will focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service governance features."
+                "txt": "The third stage will focus on incremental upgrades to the IRIS Network in order to support our planned advanced IRIS Service governance features."
             },
             {
                 "img": "roadmap/houyi.png",

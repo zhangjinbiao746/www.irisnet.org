@@ -151,13 +151,13 @@
                                     <span>盘古</span>
                                     <p>2018年1月 </p>
                                     <p> | </p>
-                                    <p>2018年9月</p>
+                                    <p>2019年3月</p>
                                 </div>
                                 <div v-if="$store.state.lang!='CN'" class="roadmap_img" @click="txtShow(0)">
                                     <span>PANGU</span>
                                     <p>JAN 2018 </p>
                                     <p> | </p>
-                                    <p>SEP 2018</p>
+                                    <p>MAR 2013</p>
                                 </div>
                                 <div class="roadmap_txt" :class=" list[0].is ? 'showOpacity' : '' ">
                                     {{$store.state.messages.roadmap.list[0].txt}}
@@ -171,15 +171,15 @@
                                 </div>
                                 <div v-if="$store.state.lang=='CN'" class="roadmap_img" @click="txtShow(1)">
                                     <span>女娲</span>
-                                    <p>2018年10月 </p>
+                                    <p>2019年4月 </p>
                                     <p> | </p>
-                                    <p>2018年12月</p>
+                                    <p>2019年9月</p>
                                 </div>
                                 <div v-if="$store.state.lang!='CN'" class="roadmap_img" @click="txtShow(1)">
                                     <span>NÜWA</span>
-                                    <p>OCT 2018 </p>
+                                    <p>APR 2019 </p>
                                     <p> | </p>
-                                    <p>DEC 2018</p>
+                                    <p>SEPT 2019</p>
                                 </div>
                                 <div class="roadmap_txt" :class=" list[1].is ? 'showOpacity' : '' ">
                                     {{$store.state.messages.roadmap.list[1].txt}}
@@ -193,15 +193,15 @@
                                 </div>
                                 <div v-if="$store.state.lang=='CN'" class="roadmap_img" @click="txtShow(2)">
                                     <span>夸父</span>
-                                    <p>2019年1月</p>
+                                    <p>2019年10月</p>
                                     <p> | </p>
-                                    <p>2019年6月</p>
+                                    <p>2019年12月</p>
                                 </div>
                                 <div v-if="$store.state.lang!='CN'" class="roadmap_img" @click="txtShow(2)">
                                     <span>KUAFU</span>
-                                    <p>JAN 2019 </p>
+                                    <p>OCT 2019 </p>
                                     <p> | </p>
-                                    <p>JUN 2019</p>
+                                    <p>DEC 2019</p>
                                 </div>
                                 <div v-if="$store.state.lang!='CN'" class="roadmap_txt"
                                      :class=" list[2].is ? 'showOpacity' : '' " style="top: -54px;">
@@ -220,13 +220,13 @@
                                 </div>
                                 <div v-if="$store.state.lang=='CN'" class="roadmap_img" @click="txtShow(3)">
                                     <span>后羿</span>
-                                    <p>2019年7月 </p>
+                                    <p>2020年1月 </p>
                                     <p>之后</p>
                                 </div>
                                 <div v-if="$store.state.lang!='CN'" class="roadmap_img" @click="txtShow(3)">
                                     <span>HOUYI</span>
                                     <p>BEYOND </p>
-                                    <p>JUL 2019</p>
+                                    <p>JAN 2020</p>
                                 </div>
                                 <div v-if="$store.state.lang!='CN'" class="roadmap_txt"
                                      :class=" list[3].is ? 'showOpacity' : '' " style="top: -70px;">
@@ -309,8 +309,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div id="#/0/6" class="contact" style="background: #0f0f1f;">
                         <div class="contact_title">
                             {{$store.state.messages.contact.title}}
