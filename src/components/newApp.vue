@@ -157,7 +157,7 @@
                                     <span>PANGU</span>
                                     <p>JAN 2018 </p>
                                     <p> | </p>
-                                    <p>MAR 2013</p>
+                                    <p>MAR 2019</p>
                                 </div>
                                 <div class="roadmap_txt" :class=" list[0].is ? 'showOpacity' : '' ">
                                     {{$store.state.messages.roadmap.list[0].txt}}
