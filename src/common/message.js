@@ -15,10 +15,6 @@ export default {
                     "href": "#/0/1",
                 },
                 {
-                    'txt': "网络",
-                    "href": "#/0/2",
-                },
-                {
                     'txt': "路线图",
                     "href": "#/0/4",
                 },
@@ -30,6 +26,7 @@ export default {
                     'txt': "联系方式",
                     "href": "#/0/5",
                 },
+               
 
             ]
         },
@@ -967,10 +964,6 @@ export default {
                     "href": "#/0/1",
                 },
                 {
-                    'txt': "Network",
-                    "href": "#/0/2",
-                },
-                {
                     'txt': "Roadmap",
                     "href": "#/0/4",
                 },
@@ -983,6 +976,7 @@ export default {
                     'txt': "Contact",
                     "href": "#/0/5",
                 },
+               
             ]
         },
         "contact": {

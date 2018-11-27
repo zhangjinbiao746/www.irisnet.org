@@ -13,7 +13,9 @@
                     {{item.txt}}
                     <div></div>
                     </a>
-
+                    <a class="item" :href="$store.state.lang=='CN' ? 'https://www.irisnet.org/docs/zh/' : 'https://www.irisnet.org/docs/' " target="_blank">
+                        {{$store.state.lang=='CN'?'文档':'Docs'}}
+                    </a>
                     <!--分割线-->
                     <div class="hr_vertical"></div>
 

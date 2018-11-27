@@ -14,10 +14,6 @@ export const message = {
                 "href": "#/0/1",
             },
             {
-                'txt': "网络",
-                "href": "#/0/2",
-            },
-            {
                 'txt': "路线图",
                 "href": "#/0/4",
             },
