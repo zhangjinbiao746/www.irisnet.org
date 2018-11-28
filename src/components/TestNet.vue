@@ -5,7 +5,7 @@
                 <div class="head" style="position: fixed">
                     <div class="center1 head-content">
                         <!--左侧logo-->
-                        <a class="head-layout-left" href="#"><img src="../../public/irisnet.png" style="width: 130px;"/></a>
+                        <a class="head-layout-left" href="#"><img src="../../public/irisnet.png" style="width: 130px;" @click="goHome"/></a>
 
                         <!--右侧内容-->
                         <div class="head-layout-right">
@@ -15,7 +15,9 @@
                                 {{item.txt}}
                                 <div></div>
                             </a>
-
+                            <a class="item" :href="$store.state.lang=='CN' ? 'https://www.irisnet.org/docs/zh/' : 'https://www.irisnet.org/docs/' " target="_blank">
+                                {{$store.state.lang=='CN'?'文档':'Docs'}}
+                            </a>
                             <!--分割线-->
                             <div class="hr_vertical"></div>
 
@@ -307,6 +309,9 @@
             this.getInfo();
         },
         methods:{
+            goHome(){
+                this.$router.push(`/#`)
+            },
             onMouseOver(mouseOverTitle){
                 if(mouseOverTitle === "incentivizedTestnet"){
                     this.flShowArrowImg = true;

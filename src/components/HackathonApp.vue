@@ -64,13 +64,14 @@
                     </a>
                 </section>
                 <section>
+                    <a :href="$store.state.lang=='CN' ? 'https://www.irisnet.org/docs/zh/' : 'https://www.irisnet.org/docs/'" target="_blank">{{$store.state.lang=='CN'?'文档':'Docs'}}</a>
+                </section>
+                <section>
                     <a @click="skipTestNet">{{$store.state.lang=='CN'?'测试网':'Testnet'}}</a>
                 </section>
                 <section>
                     <a @click="skipHackathon">{{$store.state.lang=='CN'?'黑客松':'Hackathon'}}</a>
                 </section>
-
-
             </div>
         </div>
     </div>
@@ -187,7 +188,6 @@
                 })
             },
             scroll(top) {
-                console.log(top,9966)
                 $('body,html').animate({
                         scrollTop: top
                     }, 500

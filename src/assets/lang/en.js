@@ -14,10 +14,6 @@ export const message = {
                 "href": "#/0/1",
             },
             {
-                'txt': "Network",
-                "href": "#/0/2",
-            },
-            {
                 'txt': "Roadmap",
                 "href": "#/0/4",
             },

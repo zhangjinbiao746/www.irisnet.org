@@ -16,7 +16,9 @@
                             {{item.txt}}
                             <div></div>
                         </router-link>
-
+                        <a class="item" :href="$store.state.lang=='CN' ? 'https://www.irisnet.org/docs/zh/' : 'https://www.irisnet.org/docs/' " target="_blank">
+                            {{$store.state.lang=='CN'?'文档':'Docs'}}
+                        </a>
                         <!--分割线-->
                         <div class="hr_vertical"></div>
 
@@ -69,12 +71,6 @@
                                     <div class="home_txt1" v-html="$store.state.messages.home.txt">
                                     </div>
                                 </div>
-                                <a href="#/0/1">
-                                    <div class="home_what" @click="jump">
-                                        <span v-if="$store.state.lang!='CN'" class="home_what_txt">What is IRISnet</span>
-                                        <span v-if="$store.state.lang=='CN'" class="home_what_txt">什么是IRISnet</span>
-                                    </div>
-                                </a>
                             </div>
                             <div class="home-container">
                                 <div class="layer_img">
@@ -481,14 +477,12 @@
                 }else if(index == 1){
                     this.scroll(742)
                 }else if(index == 2){
-                    this.scroll(1618)
-                }else if(index == 3){
                     this.scroll(2479)
-                }else if(index == 4){
+                }else if(index == 3){
                     this.scroll(3281)
-                }else if(index == 5){
+                }else if(index == 4){
                     this.scroll(4822)
-                }else if(index == 6){
+                }else if(index == 5){
                     this.scroll(5419)
                 }
             },

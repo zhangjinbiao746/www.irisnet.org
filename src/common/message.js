@@ -15,10 +15,6 @@ export default {
                     "href": "#/0/1",
                 },
                 {
-                    'txt': "网络",
-                    "href": "#/0/2",
-                },
-                {
                     'txt': "路线图",
                     "href": "#/0/4",
                 },
@@ -30,6 +26,7 @@ export default {
                     'txt': "联系方式",
                     "href": "#/0/5",
                 },
+               
 
             ]
         },
@@ -916,7 +913,7 @@ export default {
             testnetHereHref:"https://github.com/irisnet/testnets/blob/master/README_CN.md",
             testnetplorerStatus:"跟踪测试网进展",
             howToJoin:"如何加入Fuxi测试网",
-            howToJoinHref:"https://github.com/irisnet/irishub/blob/master/docs/zh/get-started/README.md",
+            howToJoinHref:"https://www.irisnet.org/docs/zh/get-started/",
             incentivizedInfo:"Fuxi测试网激励计划",
             incentivizedMenu:"Fuxi测试网是什么?",
             incentivizedMenuHref:"https://mp.weixin.qq.com/s/hJcDIlaSzBrHeN8C698iVg",
@@ -932,7 +929,7 @@ export default {
             baasMenuHowApply:"如何申请试用BaaS?",
             baasMenuHowApplyHref:"https://github.com/irisnet/testnets/blob/master/fuxi/baas/BaaS-Application_CN.md",
             faq:"IRIShub常见问题",
-            faqHref:"https://github.com/irisnet/testnets/blob/master/fuxi/FAQ_CN.md",
+            faqHref:"https://www.irisnet.org/docs/zh/introduction/",
             gameOfGenesis:"IRISnet线上PoS网络安全黑客松—Game of Genesis ",
             whatGenesis:"Game of Genesis是什么?",
             whatGenesisHref:"http://www.irisnet.org/hackathon/pc",
@@ -967,10 +964,6 @@ export default {
                     "href": "#/0/1",
                 },
                 {
-                    'txt': "Network",
-                    "href": "#/0/2",
-                },
-                {
                     'txt': "Roadmap",
                     "href": "#/0/4",
                 },
@@ -983,6 +976,7 @@ export default {
                     'txt': "Contact",
                     "href": "#/0/5",
                 },
+               
             ]
         },
         "contact": {
@@ -1869,7 +1863,7 @@ export default {
             testnetHereHref: "https://github.com/irisnet/testnets/blob/master/README.md",
             testnetplorerStatus:"",
             howToJoin:"How to Join with your server",
-            howToJoinHref:"https://github.com/irisnet/irishub/blob/master/docs/get-started/README.md",
+            howToJoinHref:"https://www.irisnet.org/docs/get-started/",
             incentivizedInfo:"Fuxi Incentivized Testnet Program",
             incentivizedMenu:"What is it?",
             incentivizedMenuHref:"https://medium.com/irisnet-blog/irisnet-incentivized-testnet-game-62074aab8e6b",
@@ -1885,7 +1879,7 @@ export default {
             baasMenuHowApply:"Who should use BaaS?",
             baasMenuHowApplyHref:"https://github.com/irisnet/testnets/blob/master/fuxi/baas/BaaS-Applications.md",
             faq:"IRIShub FAQ",
-            faqHref:"https://github.com/irisnet/testnets/blob/master/fuxi/FAQ.md",
+            faqHref:"https://www.irisnet.org/docs/introduction/",
             gameOfGenesis:"IRISnet Virtual Hackathon: Game of Genesis",
             whatGenesis:"What is it?",
             whatGenesisHref:"http://www.irisnet.org/hackathon/pc",
