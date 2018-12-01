@@ -16,11 +16,13 @@
             resize(_this) {
                 _this.is = $(window).width() > 768
                 if (_this.is) {
-                   if(_this.$route.path.indexOf('newApp')!=-1){
+                   if(_this.$route.path.indexOf('newApp')!==-1){
                        _this.$router.replace('/');
                    }
                 } else {
-                    _this.$router.replace('/newApp');
+                    if(_this.$route.path.indexOf('app') == -1){
+                        _this.$router.replace('/newApp');
+                    }
                     window.onload = function () {
                         document.addEventListener('touchstart', function (event) {
                             if (event.touches.length > 1) {
