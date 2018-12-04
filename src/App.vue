@@ -13,7 +13,7 @@
             }
         },
         methods: {
-            switchStyleByWindowWidth(_this) {
+            switchView(_this) {
                 let windowWidth = $(window).width() > 768;
                 if (windowWidth) {
                    if(_this.$route.path.indexOf('app') !== -1){
@@ -44,9 +44,9 @@
         created() {
             if (process.env.VUE_ENV === 'client') {
                 let _this = this;
-                _this.switchStyleByWindowWidth(_this);
+                _this.switchView(_this);
                 window.onresize = function () {
-                    _this.switchStyleByWindowWidth(_this)
+                    _this.switchView(_this)
                 }
             }
         }
