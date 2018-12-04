@@ -78,8 +78,8 @@ export function createRouter() {
             //     component: app
             // },
             {
-                path: '/newApp',
-                name: 'newApp',
+                path: '/app',
+                name: 'app',
                 component: newApp,
             },
 
