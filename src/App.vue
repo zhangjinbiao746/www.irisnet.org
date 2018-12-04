@@ -44,7 +44,6 @@
         created() {
             if (process.env.VUE_ENV === 'client') {
                 let _this = this;
-                _this.switchView(_this);
                 window.onresize = function () {
                     _this.switchView(_this)
                 }
