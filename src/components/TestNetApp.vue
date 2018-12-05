@@ -229,7 +229,7 @@
                 }
             },
             goToHome(){
-                this.$router.push(`/newApp?lang=${this.$store.state.lang}`)
+                this.$router.push(`/app?lang=${this.$store.state.lang}`)
             },
             format(param){
                 return message[this.$store.state.lang=='CN'?'cn':'en'].testnet[param];
@@ -285,10 +285,10 @@
                 this.menuIs = false;
                 //解决点击导航后无法再次重复导航问题
                 new Promise((resolve)=>{
-                    this.$router.push(`/newApp?lang=${this.$store.state.lang}`);
+                    this.$router.push(`/app?lang=${this.$store.state.lang}`);
                     resolve();
                 }).then(()=>{
-                    this.$router.push(`/newApp#/${item.href}`);
+                    this.$router.push(`/app#/${item.href}`);
                 }).then(()=>{
                     if(index == 0){
                         this.scroll(0)

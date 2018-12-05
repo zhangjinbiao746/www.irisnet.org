@@ -16,7 +16,7 @@
             </div>
             <div class="menu" v-show="menuIs">
                 <section v-for="(item,index) in $store.state.messages.head.txt">
-                    <a v-if="item.href.indexOf('ttp')==-1" :href="'newApp#'+item.href" @click="gotojump(index)">
+                    <a v-if="item.href.indexOf('ttp')==-1" :href="'app#'+item.href" @click="gotojump(index)">
                         {{item.txt}}
                     </a>
                     <a v-if="item.href.indexOf('ttp')!=-1" :href="'h'+item.href" @click="gotojump(index)">
@@ -445,7 +445,7 @@
                 this.$router.push({path: '/appTerms'})
             },
             goToHome(){
-                this.$router.push(`/newApp?lang=${this.$store.state.lang}`)
+                this.$router.push(`/app?lang=${this.$store.state.lang}`);
             },
             gotoCommunity(){
                 this.$router.push({path: '/community'})
