@@ -72,14 +72,9 @@ export function createRouter() {
                 name: 'terms',
                 component: terms
             },
-            // {
-            //     path: '/app',
-            //     name: 'app',
-            //     component: app
-            // },
             {
-                path: '/newApp',
-                name: 'newApp',
+                path: '/app',
+                name: 'app',
                 component: newApp,
             },
 

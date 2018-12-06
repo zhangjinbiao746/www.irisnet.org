@@ -143,6 +143,21 @@ export const message = {
                     "href":"http://www.aminocapital.com"
                 },
                 {
+                    "img":"collaboration/bibox.png",
+                    "title":"Bibox",
+                    "href":"https://www.bibox.com/"
+                },
+                {
+                    "img":"collaboration/huobiCapital.png",
+                    "title":"火币资本",
+                    "href":"https://www.hbg.com/en-us/capital/"
+                },
+                {
+                    "img":"collaboration/gbic.png",
+                    "title":"GBIC",
+                    "href":"https://gbic.io/"
+                },
+                {
                     "img":"collaboration/bawei.png",
                     "pos":-56*1,
                     "title":"8维资本",

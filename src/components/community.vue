@@ -73,7 +73,7 @@
                 }
             },
             goToHome(){
-                this.$router.push(`/newApp?lang=${this.$store.state.lang}`)
+                this.$router.push(`/app?lang=${this.$store.state.lang}`)
             }
         },
     }

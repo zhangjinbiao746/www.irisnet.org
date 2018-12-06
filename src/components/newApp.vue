@@ -3,7 +3,7 @@
         <!--<img  src="../../public/app/irispattern-background.png" style="position:absolute;left:0; top:0;right:0;bottom:0;margin:auto;width:100%;background: #141426"/>-->
         <div class="app">
             <div class="head">
-                <img src="../assets/app/irislogo.png" class="imglogo" @click="goToHome">
+                <img src="../assets/app/irislogo.png" class="imglogo" @click="toHome">
                 <div class="div_en">
                     <a href="?lang=CN" v-if="$store.state.lang!='CN'">
                         CN
@@ -16,7 +16,7 @@
             </div>
             <div class="menu" v-show="menuIs">
                 <section v-for="(item,index) in $store.state.messages.head.txt">
-                    <a v-if="item.href.indexOf('ttp')==-1" :href="'newApp#'+item.href" @click="gotojump(index)">
+                    <a v-if="item.href.indexOf('ttp')==-1" :href="'app#'+item.href" @click="gotojump(index)">
                         {{item.txt}}
                     </a>
                     <a v-if="item.href.indexOf('ttp')!=-1" :href="'h'+item.href" @click="gotojump(index)">
@@ -444,8 +444,9 @@
             goToAppTerms(){
                 this.$router.push({path: '/appTerms'})
             },
-            goToHome(){
-                this.$router.push(`/newApp?lang=${this.$store.state.lang}`)
+            toHome(){
+                let appHomeDomOffsetTop = 0;
+                this.gotojump(appHomeDomOffsetTop)
             },
             gotoCommunity(){
                 this.$router.push({path: '/community'})
@@ -480,8 +481,7 @@
                 }
             },
             scroll(top) {
-                console.log(top,9966)
-                $('body,html').animate({
+                $('#app').animate({
                             scrollTop: top
                         }, 500
                 );
@@ -534,7 +534,7 @@
             this.path = this.$route.path
             this.$store.state.messages.head.txt.forEach(v => {
                 v.href = v.href.substr(1, v.href.length)
-            })
+            });
             this.roll();
         },
         watch: {

@@ -34,10 +34,10 @@
         methods: {
             // 业务需求，有链接的时候有hover效果。
             showHover(){
-                $('.collaboration_itemnone').removeClass('collaboration_itemnone').addClass('collaboration_item')
+                $('.collaboration_item_none').removeClass('collaboration_item_none').addClass('collaboration_item')
             },
             removeHover(){
-                $('.collaboration_item').removeClass('collaboration_item').addClass('collaboration_itemnone')
+                $('.collaboration_item').removeClass('collaboration_item').addClass('collaboration_item_none')
 
             },
             enterShow(data){
@@ -62,7 +62,7 @@
             justify-content: space-between;
         }
         .collaboration_zanwei_logo{
-            width: 236px;
+            width: 226px;
             height: 85px;
             margin:20px 5px 20px ;
             display: none;
@@ -82,7 +82,7 @@
                 }
             }
         }
-        .collaboration_itemnone{
+        .collaboration_item_none{
             overflow: hidden;
             cursor: pointer;
             margin: 10px 5px 5px 0;
@@ -94,6 +94,9 @@
                 cursor: default;
                 img{width: 100%;}
             }
+        }
+        .collaboration_item:last-child{
+            display: none;
         }
     }
     @media only screen and(min-width: 330px) and (max-width: 450px){
@@ -123,7 +126,7 @@
                 }
             }
         }
-        .collaboration_itemnone{
+        .collaboration_item_none{
             overflow: hidden;
             cursor: pointer;
             margin: 10px 5px 5px 5px;
@@ -136,23 +139,24 @@
                 img{width: 100%;}
             }
         }
+        .collaboration_item:last-child{
+            display: none;
+        }
     }
     @media only screen and(min-width: 450px)and (max-width: 800px){
         .collaboration_list{
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
         }
         .collaboration_zanwei_logo{
-            width: 236px;
+            width: 226px;
             height: 85px;
             margin:20px 5px 20px ;
-            display: none;
         }
         .collaboration_item{
             overflow: hidden;
             cursor: pointer;
-            border-radius: 13px;
             margin:20px 5px auto ;
             display: inline-block;
             .collaboration_logo{
@@ -162,7 +166,10 @@
                 cursor: hand;
             }
         }
-        .collaboration_itemnone{
+        .collaboration_item:last-child{
+            cursor: auto;
+        }
+        .collaboration_item_none{
             overflow: hidden;
             cursor: pointer;
             margin: 20px 5px auto ;
@@ -173,6 +180,9 @@
                 height: 85px;
                 cursor: default;
             }
+        }
+        .collaboration_item_none:last-child{
+            cursor: auto;
         }
     }
     @media only screen and (min-width:800px) and ( max-width: 925px){
@@ -200,7 +210,7 @@
                 cursor: hand;
             }
         }
-        .collaboration_itemnone{
+        .collaboration_item_none{
             overflow: hidden;
             cursor: pointer;
             margin: 20px 5px 20px;
@@ -211,6 +221,12 @@
                 height: 86px;
                 cursor: default;
             }
+        }
+        .collaboration_item:last-child{
+            display: none;
+        }
+        .collaboration_item_none:last-child{
+            display: none;
         }
     }
     @media only screen and (min-width:925px) and ( max-width: 1024px){
@@ -245,7 +261,7 @@
                 cursor: hand;
             }
         }
-        .collaboration_itemnone{
+        .collaboration_item_none{
             overflow: hidden;
             cursor: pointer;
             margin: 20px 5px 20px;
@@ -256,6 +272,12 @@
                 height: 86px;
                 cursor: default;
             }
+        }
+        .collaboration_item:last-child{
+            cursor: auto;
+        }
+        .collaboration_item_none:last-child{
+            cursor: auto;
         }
     }
     @media only screen and( min-width: 1024px) and ( max-width: 1200px){
@@ -285,7 +307,7 @@
                 cursor: hand;
             }
         }
-        .collaboration_itemnone{
+        .collaboration_item_none{
             overflow: hidden;
             cursor: pointer;
             margin: 20px 5px 20px ;
@@ -297,44 +319,14 @@
                 cursor: default;
             }
         }
+        .collaboration_item:last-child{
+            cursor:auto;
+        }
+        .collaboration_item_none:last-child{
+            cursor:auto;
+        }
     }
     @media only screen and( min-width: 1200px) and ( max-width: 1380px){
-        .collaboration_list{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .collaboration_zanwei_logo{
-            width: 236px;
-            height: 85px;
-            margin:20px 5px 20px ;
-        }
-        .collaboration_item{
-            overflow: hidden;
-            cursor: pointer;
-            margin:20px 5px ;
-            display: inline-block;
-            .collaboration_logo{
-                display: block;
-                width: 236px;
-                height: 86px;
-                cursor: hand;
-            }
-        }
-        .collaboration_itemnone{
-            overflow: hidden;
-            cursor: pointer;
-            margin: 20px 5px ;
-            display: inline-block;
-            .collaboration_logo{
-                display: block;
-                width: 236px;
-                height: 86px;
-                cursor: default;
-            }
-        }
-    }
-    @media only screen and ( min-width: 1380px){
         .collaboration_list{
             display: flex;
             flex-wrap: wrap;
@@ -355,12 +347,52 @@
                 width: 236px;
                 height: 86px;
                 cursor: hand;
+            }
+        }
+
+        .collaboration_item_none{
+            overflow: hidden;
+            margin:20px 5px auto ;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 86px;
+                cursor: default;
+            }
+        }
+        .collaboration_item:last-child{
+            display: none;
+        }
+        .collaboration_item_none:last-child{
+            display: none;
+        }
+    }
+    @media only screen and ( min-width: 1380px){
+        .collaboration_list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .collaboration_zanwei_logo{
+            width: 236px;
+            height: 85px;
+            margin:20px 5px auto ;
+        }
+        .collaboration_item{
+            overflow: hidden;
+            margin:20px 5px auto ;
+            display: inline-block;
+            .collaboration_logo{
+                display: block;
+                width: 236px;
+                height: 86px;
+                cursor: hand;
 
             }
         }
-        .collaboration_itemnone{
+        .collaboration_item_none{
             overflow: hidden;
-            cursor: pointer;
             margin: 20px 5px auto ;
             display: inline-block;
             .collaboration_logo{
