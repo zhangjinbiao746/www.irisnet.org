@@ -156,6 +156,11 @@ export const message = {
                     "href":"https://www.bibox.com/"
                 },
                 {
+                    "img":"collaboration/huobiCapital.png",
+                    "title":"Huobi Capital",
+                    "href":"https://www.hbg.com/en-us/capital/"
+                },
+                {
                     "img":"collaboration/gbic.png",
                     "title":"GBIC",
                     "href":"https://gbic.io/"

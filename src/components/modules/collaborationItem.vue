@@ -62,7 +62,7 @@
             justify-content: space-between;
         }
         .collaboration_zanwei_logo{
-            width: 236px;
+            width: 226px;
             height: 85px;
             margin:20px 5px 20px ;
             display: none;
@@ -94,6 +94,9 @@
                 cursor: default;
                 img{width: 100%;}
             }
+        }
+        .collaboration_item:last-child{
+            display: none;
         }
     }
     @media only screen and(min-width: 330px) and (max-width: 450px){
@@ -136,18 +139,20 @@
                 img{width: 100%;}
             }
         }
+        .collaboration_item:last-child{
+            display: none;
+        }
     }
     @media only screen and(min-width: 450px)and (max-width: 800px){
         .collaboration_list{
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
         }
         .collaboration_zanwei_logo{
-            width: 236px;
+            width: 226px;
             height: 85px;
             margin:20px 5px 20px ;
-            display: none;
         }
         .collaboration_item{
             overflow: hidden;
@@ -211,6 +216,12 @@
                 height: 86px;
                 cursor: default;
             }
+        }
+        .collaboration_item:last-child{
+            display: none;
+        }
+        .collaboration_itemnone:last-child{
+            display: none;
         }
     }
     @media only screen and (min-width:925px) and ( max-width: 1024px){
@@ -302,7 +313,7 @@
         .collaboration_list{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: start;
         }
         .collaboration_zanwei_logo{
             width: 236px;
