@@ -445,7 +445,6 @@
                 this.$router.push({path: '/appTerms'})
             },
             toHome(){
-                this.$router.push(`/app?lang=${this.$store.state.lang}`);
                 let appHomeDomOffsetTop = 0;
                 this.gotojump(appHomeDomOffsetTop)
             },
@@ -535,7 +534,7 @@
             this.path = this.$route.path
             this.$store.state.messages.head.txt.forEach(v => {
                 v.href = v.href.substr(1, v.href.length)
-            })
+            });
             this.roll();
         },
         watch: {

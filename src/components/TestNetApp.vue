@@ -308,7 +308,7 @@
                 })
             },
             scroll(top) {
-                $('body,html').animate({
+                $('#app').animate({
                         scrollTop: top
                     }, 500
                 );
