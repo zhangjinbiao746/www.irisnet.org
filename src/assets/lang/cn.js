@@ -148,6 +148,11 @@ export const message = {
                     "href":"https://www.bibox.com/"
                 },
                 {
+                    "img":"collaboration/huobiCapital.png",
+                    "title":"火币资本",
+                    "href":"https://www.hbg.com/en-us/capital/"
+                },
+                {
                     "img":"collaboration/gbic.png",
                     "title":"GBIC",
                     "href":"https://gbic.io/"
