@@ -59,6 +59,12 @@
     }
     body{
         font-size:16px !important;
+    }
+    html, body {
+        overflow: hidden !important;
+    }
+    #app{
+        overflow-y: auto;
         &::-webkit-scrollbar {display:none}
     }
 </style>

@@ -6,7 +6,7 @@
                 <div class="center1 head-content">
 
                     <!--左侧logo-->
-                    <a class="head-layout-left" href="#"><img src="../../public/irisnet.png" style="width: 130px;"/></a>
+                    <a class="head-layout-left" href="#"><img src="../../public/irisnet.png" style="width: 130px;" @click="toHome"/></a>
 
                     <!--右侧内容-->
                     <div class="head-layout-right">
@@ -416,12 +416,16 @@
                     this.scroll(document.getElementById(this.$route.hash).offsetTop + 100)
                 }
             },
+            toHome(){
+                let homeDomOffsetTop = 100;
+                this.scroll(homeDomOffsetTop)
+            },
             jump(){
                 //解决锚点点击一次以后滚动效果不生效的问题
                 this.scroll(742)
             },
             scroll(top) {
-                $('body,html').animate({
+                $('#app').animate({
                             scrollTop: top
                         }, 500
                 );
