@@ -18,6 +18,7 @@
                         </router-link>
                         <a class="item" :href="$store.state.lang=='CN' ? 'https://www.irisnet.org/docs/zh/' : 'https://www.irisnet.org/docs/' " target="_blank">
                             {{$store.state.lang=='CN'?'文档':'Docs'}}
+                            <div></div>
                         </a>
                         <!--分割线-->
                         <div class="hr_vertical"></div>
@@ -28,10 +29,9 @@
                         </span>
                         <div class="hr_vertical"></div>
 
-                        <span @click="skipToHackathon"  @mouseenter="commHide" @mouseleave="commShow"
-                              class="item">{{$store.state.lang=='CN'?'黑客松':'Hackathon'}}
+                        <a class="item" @mouseenter="commHide" @mouseleave="commShow" :href="$store.state.lang=='CN' ? 'https://medium.com/irisnet-blog' : 'https://medium.com/irisnet-blog' " target="_blank">Medium
                             <div></div>
-                        </span>
+                        </a>
 
                         <!--Community-->
 
@@ -276,39 +276,6 @@
                 </div>
 
                 <div class="what upcoming_content_wrap" id="#/0/5">
-                    <div class="upcoming_block"></div>
-                    <div class="upcoming_content">
-                        <div class="upcoming_event_container">
-                            <h5 v-show="$store.state.lang!=='CN'">Upcoming Event</h5>
-                            <h5 v-show="$store.state.lang=='CN'">近期活动</h5>
-                            <div class="line"></div>
-                            <div class="link_img_container">
-                                <div class="img_content">
-                                    <a href="https://buidl.kr/#link" target="_blank">
-                                        <img src="../assets/app/layer.png">
-                                    </a>
-                                    <p v-show="$store.state.lang!=='CN'">November 29-30th, 2018 | Seoul, Korea</p>
-                                    <p v-show="$store.state.lang=='CN'">11月29-30日, 2018 | 首尔, 韩国</p>
-                                </div>
-                                <div class="img_content_waiting">
-                                    <div>
-                                        <span v-show="$store.state.lang!=='CN'">Coming Soon</span>
-                                        <span v-show="$store.state.lang=='CN'">即将到来</span>
-                                    </div>
-                                    <p v-show="$store.state.lang!=='CN'">...</p>
-                                    <p v-show="$store.state.lang=='CN'">...</p>
-                                </div>
-                                <div class="img_content_waiting">
-                                    <div>
-                                        <span v-show="$store.state.lang!=='CN'">Coming Soon</span>
-                                        <span v-show="$store.state.lang=='CN'">即将到来</span>
-                                    </div>
-                                    <p v-show="$store.state.lang!=='CN'">...</p>
-                                    <p v-show="$store.state.lang=='CN'">...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div id="#/0/6" class="what" style="padding:0">
                     <div style="background: #0f0f1f;">
