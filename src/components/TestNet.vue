@@ -139,21 +139,6 @@
                             </div>
                         </a>
                     </div>
-                    <div class="testnet_genesis_hover_container" @mouseover="onMouseOver('genesis')" @mouseout="onmouseout()" @click.stop="showHackathonGameMenu" :class="flshowhackathonGameMenu ? 'testnet_genesis_hover_container_active' : ''">
-                        <div class="testnet_genesis">
-                            <span>{{gameOfGenesis}}</span>
-                            <span class="select_arrow_img">
-                        <img :src="flshowGenesisArrowImg ? activeArrow : defaultArrow">
-                    </span>
-                        </div>
-                        <a :href="whatGenesisHref" target="_blank">
-                            <div class="testnet_hover_introduce_what">{{whatGenesis}}</div>
-                        </a>
-                        <a :href="howWinHref" target="_blank">
-                            <div class="testnet_hover_win">{{howWin}}</div>
-                        </a>
-                    </div>
-
                     <div class="testnet_community">
                         <span>{{join}}</span>
                     </div>
