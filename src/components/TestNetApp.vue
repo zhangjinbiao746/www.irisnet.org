@@ -81,22 +81,6 @@
                                 </div>
                         </div>
                     </a>
-
-                    <div class="genesis_container">
-                        <span>{{gameOfGenesis}}</span>
-                    </div>
-                    <div class="genesis_menu">
-                        <a :href="whatGenesisHref" >
-                            <div class="menu_item_global">
-                                <span>{{whatGenesis}}</span>
-                            </div>
-                        </a>
-                        <a :href="howWinHref">
-                            <div class="menu_item_global">
-                                <span>{{howWin}}</span>
-                            </div>
-                        </a>
-                    </div>
                     <div class="community_container">
                         <span>{{join}}</span>
                     </div>
