@@ -81,22 +81,6 @@
                                 </div>
                         </div>
                     </a>
-
-                    <div class="genesis_container">
-                        <span>{{gameOfGenesis}}</span>
-                    </div>
-                    <div class="genesis_menu">
-                        <a :href="whatGenesisHref" >
-                            <div class="menu_item_global">
-                                <span>{{whatGenesis}}</span>
-                            </div>
-                        </a>
-                        <a :href="howWinHref">
-                            <div class="menu_item_global">
-                                <span>{{howWin}}</span>
-                            </div>
-                        </a>
-                    </div>
                     <div class="community_container">
                         <span>{{join}}</span>
                     </div>
@@ -185,7 +169,10 @@
                 </section>
 
                 <section>
-                    <a @click="skipHackathon">{{$store.state.lang=='CN'?'黑客松':'Hackathon'}}</a>
+                    <a class="item medium_img_content" :href="$store.state.lang=='CN' ? 'https://medium.com/irisnet-blog' : 'https://medium.com/irisnet-blog' " target="_blank">
+                        <span>{{$store.state.lang=='CN'?'博客':'Blog'}}</span>
+                        <img class="medium_img" src="../assets/mobile_medium.png">
+                    </a>
                 </section>
             </div>
         </div>

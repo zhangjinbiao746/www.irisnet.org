@@ -28,10 +28,11 @@
 
                             <div class="hr_vertical"></div>
 
-                            <span @click="skipToHackathon"  @mouseenter="commHide" @mouseleave="commShow"
-                                  class="item">{{$store.state.lang=='CN'?'黑客松':'Hackathon'}}
-                            <div></div>
-                        </span>
+                            <a class="item medium_content" @mouseenter="commHide('medium')" @mouseleave="commShow('medium')" :href="$store.state.lang=='CN' ? 'https://medium.com/irisnet-blog' : 'https://medium.com/irisnet-blog' " target="_blank">
+                                <span class="medium_text">{{$store.state.lang=='CN'?'博客':'Blog'}}</span>
+                                <img class="medium_img"  :src="toggleMediumImg ? mediumWhiteImg : mediumImg" alt="">
+                                <div></div>
+                            </a>
 
                             <!--Community-->
 
@@ -138,21 +139,6 @@
                             </div>
                         </a>
                     </div>
-                    <div class="testnet_genesis_hover_container" @mouseover="onMouseOver('genesis')" @mouseout="onmouseout()" @click.stop="showHackathonGameMenu" :class="flshowhackathonGameMenu ? 'testnet_genesis_hover_container_active' : ''">
-                        <div class="testnet_genesis">
-                            <span>{{gameOfGenesis}}</span>
-                            <span class="select_arrow_img">
-                        <img :src="flshowGenesisArrowImg ? activeArrow : defaultArrow">
-                    </span>
-                        </div>
-                        <a :href="whatGenesisHref" target="_blank">
-                            <div class="testnet_hover_introduce_what">{{whatGenesis}}</div>
-                        </a>
-                        <a :href="howWinHref" target="_blank">
-                            <div class="testnet_hover_win">{{howWin}}</div>
-                        </a>
-                    </div>
-
                     <div class="testnet_community">
                         <span>{{join}}</span>
                     </div>
@@ -299,6 +285,10 @@
                 flShowArrowImg: false,
                 flShowBassArrowImg: false,
                 flshowGenesisArrowImg : false,
+
+                toggleMediumImg: true,
+                mediumImg: require('../assets/medium.png'),
+                mediumWhiteImg: require('../assets/medium_white.png'),
             }
         },
         mounted(){
@@ -432,16 +422,26 @@
                 this.flShowBassMenu = false;
                 this.flshowhackathonGameMenu =! this.flshowhackathonGameMenu;
             },
+            setToggleMediumImg(){
+                this.toggleMediumImg = !this.toggleMediumImg;
+            },
             downShow() {
                 this.down = '../public/down.png';
             },
             downHide() {
                 this.down = '../public/arrow.png';
             },
-            commShow() {
+            setToggleMediumImg(medium){
+                if(medium === 'medium'){
+                    this.toggleMediumImg = !this.toggleMediumImg;
+                }
+            },
+            commShow(medium) {
+                this.setToggleMediumImg(medium);
                 this.comm = '../public/community.png';
             },
-            commHide() {
+            commHide(medium) {
+                this.setToggleMediumImg(medium);
                 this.comm = '../public/community_selected.png';
             },
             skipToTest() {

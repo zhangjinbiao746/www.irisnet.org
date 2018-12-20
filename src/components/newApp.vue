@@ -30,7 +30,10 @@
                     <a @click="skipTestNet">{{$store.state.lang=='CN'?'测试网':'Testnet'}}</a>
                 </section>
                 <section>
-                    <a @click="skipHackathon">{{$store.state.lang=='CN'?'黑客松':'Hackathon'}}</a>
+                    <a class="item medium_img_content" :href="$store.state.lang=='CN' ? 'https://medium.com/irisnet-blog' : 'https://medium.com/irisnet-blog' " target="_blank">
+                        <span>{{$store.state.lang=='CN'?'博客':'Blog'}}</span>
+                        <img class="medium_img" src="../assets/mobile_medium.png">
+                    </a>
                 </section>
 
 
@@ -276,40 +279,6 @@
                         </div>
                     </div>
                     <div id="#/0/5" class="what model_upcoming_content_wrap">
-                        <div class="model_upcoming_content">
-                            <div class="model_upcoming_event_container">
-                                <div class="model_upcoming_event_title_container">
-                                    <h5 v-show="$store.state.lang!=='CN'">Upcoming Event</h5>
-                                    <h5 v-show="$store.state.lang=='CN'">近期活动</h5>
-                                    <div class="nav-line"></div>
-                                </div>
-                                <div class="model_link_img_container">
-                                    <div class="model_img_content">
-                                        <a href="https://buidl.kr/#link" target="_blank">
-                                            <img src="../assets/app/layer.png" alt="">
-                                        </a>
-                                        <p v-show="$store.state.lang!=='CN'">November 29-30th, 2018 | Seoul, Korea</p>
-                                        <p v-show="$store.state.lang=='CN'">11月29-30日, 2018 | 首尔, 韩国</p>
-                                    </div>
-                                    <div class="model_img_content_waiting">
-                                        <div>
-                                            <span v-show="$store.state.lang!=='CN'">Coming Soon</span>
-                                            <span v-show="$store.state.lang=='CN'">即将到来</span>
-                                        </div>
-                                        <p v-show="$store.state.lang!=='CN'">...</p>
-                                        <p v-show="$store.state.lang=='CN'">...</p>
-                                    </div>
-                                    <div class="model_img_content_waiting">
-                                        <div>
-                                            <span v-show="$store.state.lang!=='CN'">Coming Soon</span>
-                                            <span v-show="$store.state.lang=='CN'">即将到来</span>
-                                        </div>
-                                        <p v-show="$store.state.lang!=='CN'">...</p>
-                                        <p v-show="$store.state.lang=='CN'">...</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div id="#/0/6" class="contact" style="background: #0f0f1f;">
                         <div class="contact_title">
@@ -408,7 +377,6 @@
                 ],
                 menuIs: false,
                 wechatIs: false,
-                showScale: "",
                 path: this.$route.path,
                 mailaddress:"",
                 showerr: false,
@@ -469,15 +437,13 @@
                 }else if(index == 1){
                     this.scroll(364)
                 }else if(index == 2){
-                    this.scroll(1036)
+                    this.scroll(1678)
                 }else if(index == 3){
                     this.scroll(1678)
                 }else if(index == 4){
                     this.scroll(2278)
                 }else if(index == 5){
-                    this.scroll(4112)
-                }else if(index == 6){
-                    this.scroll(4693)
+                    this.scroll(4257)
                 }
             },
             scroll(top) {
