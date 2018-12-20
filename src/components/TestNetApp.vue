@@ -185,7 +185,10 @@
                 </section>
 
                 <section>
-                    <a @click="skipHackathon">{{$store.state.lang=='CN'?'黑客松':'Hackathon'}}</a>
+                    <a class="item medium_img_content" :href="$store.state.lang=='CN' ? 'https://medium.com/irisnet-blog' : 'https://medium.com/irisnet-blog' " target="_blank">
+                        <span>{{$store.state.lang=='CN'?'博客':'Blog'}}</span>
+                        <img class="medium_img" src="../assets/mobile_medium.png">
+                    </a>
                 </section>
             </div>
         </div>

@@ -29,7 +29,9 @@
                         </span>
                         <div class="hr_vertical"></div>
 
-                        <a class="item" @mouseenter="commHide" @mouseleave="commShow" :href="$store.state.lang=='CN' ? 'https://medium.com/irisnet-blog' : 'https://medium.com/irisnet-blog' " target="_blank">Medium
+                        <a class="item medium_content" @mouseenter="commHide('medium')" @mouseleave="commShow('medium')" :href="$store.state.lang=='CN' ? 'https://medium.com/irisnet-blog' : 'https://medium.com/irisnet-blog' " target="_blank">
+                            <span class="medium_text">{{$store.state.lang=='CN'?'博客':'Blog'}}</span>
+                            <img class="medium_img"  :src="toggleMediumImg ? mediumWhiteImg : mediumImg" alt="">
                             <div></div>
                         </a>
 
@@ -356,7 +358,10 @@
                 wechatIs: false,
                 mailaddress: "",
                 showerr: false,
-                subscription: this.$store.state.messages.submit.Subscribe
+                subscription: this.$store.state.messages.submit.Subscribe,
+                toggleMediumImg: true,
+                mediumImg: require('../assets/medium.png'),
+                mediumWhiteImg: require('../assets/medium_white.png'),
             }
         },
         computed: {
@@ -403,10 +408,17 @@
             downHide() {
                 this.down = '../public/arrow.png';
             },
-            commShow() {
+            setToggleMediumImg(medium){
+                if(medium === 'medium'){
+                    this.toggleMediumImg = !this.toggleMediumImg;
+                }
+            },
+            commShow(medium) {
+                this.setToggleMediumImg(medium);
                 this.comm = '../public/community.png';
             },
-            commHide() {
+            commHide(medium) {
+                this.setToggleMediumImg(medium);
                 this.comm = '../public/community_selected.png';
             },
 

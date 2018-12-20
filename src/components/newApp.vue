@@ -30,8 +30,9 @@
                     <a @click="skipTestNet">{{$store.state.lang=='CN'?'测试网':'Testnet'}}</a>
                 </section>
                 <section>
-                    <a class="item" :href="$store.state.lang=='CN' ? 'https://medium.com/irisnet-blog' : 'https://medium.com/irisnet-blog' " target="_blank">
-                        Medium
+                    <a class="item medium_img_content" :href="$store.state.lang=='CN' ? 'https://medium.com/irisnet-blog' : 'https://medium.com/irisnet-blog' " target="_blank">
+                        <span>{{$store.state.lang=='CN'?'博客':'Blog'}}</span>
+                        <img class="medium_img" src="../assets/mobile_medium.png">
                     </a>
                 </section>
 
@@ -376,7 +377,6 @@
                 ],
                 menuIs: false,
                 wechatIs: false,
-                showScale: "",
                 path: this.$route.path,
                 mailaddress:"",
                 showerr: false,
