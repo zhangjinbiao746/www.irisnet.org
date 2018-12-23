@@ -282,15 +282,11 @@
                     }else if(index == 1){
                         this.scroll(364)
                     }else if(index == 2){
-                        this.scroll(1036)
-                    }else if(index == 3){
                         this.scroll(1678)
+                    }else if(index == 3){
+                        this.scroll(2268)
                     }else if(index == 4){
-                        this.scroll(2278)
-                    }else if(index == 5){
-                        this.scroll(3542)
-                    }else if(index == 6){
-                        this.scroll(4549)
+                        this.scroll(4257)
                     }
                 })
             },
