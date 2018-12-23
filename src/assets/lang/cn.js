@@ -6,16 +6,8 @@ export const message = {
     "head": {
         'txt': [
             {
-                'txt': "主页",
-                "href": "#",
-            },
-            {
                 'txt': "白皮书",
                 "href": "#/0/1",
-            },
-            {
-                'txt': "路线图",
-                "href": "#/0/4",
             },
             {
                 'txt': "合作方",

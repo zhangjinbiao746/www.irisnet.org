@@ -115,7 +115,7 @@
         }
         .item {
             float: left;
-            margin: 20px 0 0 0;
+            margin: 20px 10px 0 10px;
             color: #fff;
             padding-top: 8px;
             cursor: pointer;
@@ -152,7 +152,6 @@
             max-width:1366px;
             margin:auto;
             display: flex;
-            justify-content: space-between;
             background: #2D2948;
             .head-layout-left{
                 flex-basis: 130px;
@@ -161,12 +160,9 @@
                 margin-left:20px;
             }
             .head-layout-right{
-                max-width:736px;
-                flex-shrink:1;
-                flex-grow:1;
-
+                width: 100%;
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 margin-left:40px;
 
                 .hr_vertical {
@@ -174,6 +170,10 @@
                     width: 1px;
                     background: #4b4d6c;
                     margin-top:30px;
+                }
+                .nav_right{
+                    display: flex;
+                    margin-right: 20px;
                 }
             }
             .medium_content{
@@ -503,7 +503,11 @@
         left: 73px;
         top: 112px;
     }
+    .contact_content{
+        padding-top: 32vh!important;
+    }
     .contact {
+
         height: 460px;
         margin: 0 auto;
         overflow: hidden;

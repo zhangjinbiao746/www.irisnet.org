@@ -6,16 +6,8 @@ export const message = {
     "head": {
         'txt': [
             {
-                'txt': "Home",
-                "href": "/#",
-            },
-            {
                 'txt': "Whitepaper",
                 "href": "#/0/1",
-            },
-            {
-                'txt': "Roadmap",
-                "href": "#/0/4",
             },
             {
                 'txt': "Collaboration",
