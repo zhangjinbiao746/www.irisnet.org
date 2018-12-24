@@ -17,17 +17,17 @@
                                 <div></div>
                             </router-link>
                         </div>
-                       <div class="nav_right">
-                           <a class="item" :href="$store.state.lang=='CN' ? 'https://www.irisnet.org/docs/zh/' : 'https://www.irisnet.org/docs/' " target="_blank">
-                               {{$store.state.lang=='CN'?'文档':'Docs'}}
-                               <div></div>
-                           </a>
+                        <div class="nav_right">
+                            <span @click="skipToTest"  @mouseenter="commHide" @mouseleave="commShow"
+                                  class="item">{{$store.state.lang=='CN'?'测试网':'Testnet'}}
+                                <div></div>
+                            </span>
                            <!--分割线-->
                            <div class="hr_vertical"></div>
-                           <span @click="skipToTest"  @mouseenter="commHide" @mouseleave="commShow"
-                                 class="item">{{$store.state.lang=='CN'?'测试网':'Testnet'}}
-                            <div></div>
-                        </span>
+                            <a class="item" :href="$store.state.lang=='CN' ? 'https://www.irisnet.org/docs/zh/' : 'https://www.irisnet.org/docs/' " target="_blank">
+                                {{$store.state.lang=='CN'?'文档':'Docs'}}
+                                <div></div>
+                            </a>
                            <div class="hr_vertical"></div>
                            <a class="item medium_content" @mouseenter="commHide('medium')" @mouseleave="commShow('medium')" :href="$store.state.lang=='CN' ? 'https://medium.com/irisnet-blog' : 'https://medium.com/irisnet-blog' " target="_blank">
                                <span class="medium_text">{{$store.state.lang=='CN'?'博客':'Blog'}}</span>
