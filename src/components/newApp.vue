@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="menu" v-show="menuIs">
-                <section v-for="(item,index) in $store.state.messages.head.txt">
+                <section v-for="(item,index) in links">
                     <a v-if="item.href.indexOf('ttp')==-1" :href="'app#'+item.href" @click="gotojump(index)">
                         {{item.txt}}
                     </a>
@@ -359,7 +359,7 @@
     import {mapState} from 'vuex'
     import CompCollaborationItem from '@/components/modules/collaborationItem.vue'
     import axios from "axios"
-
+    import message from '../common/message';
     let Reveal
     if (process.env.VUE_ENV === 'client') {
         Reveal = require('reveal.js')
@@ -380,6 +380,7 @@
                 path: this.$route.path,
                 mailaddress:"",
                 showerr: false,
+                links:message[this.$store.state.lang=='CN'?'cn':'en'].head.txt,
                 subscription: this.$store.state.messages.submit.Subscribe
             }
         },
@@ -439,10 +440,8 @@
                 }else if(index == 2){
                     this.scroll(1678)
                 }else if(index == 3){
-                    this.scroll(1678)
+                    this.scroll(2268)
                 }else if(index == 4){
-                    this.scroll(2278)
-                }else if(index == 5){
                     this.scroll(4257)
                 }
             },

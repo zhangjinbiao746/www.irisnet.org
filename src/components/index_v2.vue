@@ -10,50 +10,49 @@
 
                     <!--右侧内容-->
                     <div class="head-layout-right">
-
                         <!--导航-->
-                        <router-link v-for="(item,index) in $store.state.messages.head.txt" class="item" :class="{'item_selected':item.is}" :to="item.href" :key="index" @click.native="showIndex(index)">
-                            {{item.txt}}
-                            <div></div>
-                        </router-link>
-                        <a class="item" :href="$store.state.lang=='CN' ? 'https://www.irisnet.org/docs/zh/' : 'https://www.irisnet.org/docs/' " target="_blank">
-                            {{$store.state.lang=='CN'?'文档':'Docs'}}
-                            <div></div>
-                        </a>
-                        <!--分割线-->
-                        <div class="hr_vertical"></div>
-
-                        <span @click="skipToTest"  @mouseenter="commHide" @mouseleave="commShow"
-                              class="item">{{$store.state.lang=='CN'?'测试网':'Testnet'}}
-                            <div></div>
-                        </span>
-                        <div class="hr_vertical"></div>
-
-                        <a class="item medium_content" @mouseenter="commHide('medium')" @mouseleave="commShow('medium')" :href="$store.state.lang=='CN' ? 'https://medium.com/irisnet-blog' : 'https://medium.com/irisnet-blog' " target="_blank">
-                            <span class="medium_text">{{$store.state.lang=='CN'?'博客':'Blog'}}</span>
-                            <img class="medium_img"  :src="toggleMediumImg ? mediumWhiteImg : mediumImg" alt="">
-                            <div></div>
-                        </a>
-
-                        <!--Community-->
-
-                        <!--语言切换-->
-                        <div class="item_en" v-if="$store.state.lang=='EN'">
-                            <div @mouseenter="downShow" @mouseleave="downHide" class="item">
-                                <img :src="UrlSrc+down"/> English
-                            </div>
-                            <a class="item_cn" href="?lang=CN">
-                                中文
-                            </a>
+                        <div class="nav_left">
+                            <router-link v-for="(item,index) in $store.state.messages.head.txt" class="item" :class="{'item_selected':item.is}" :to="item.href" :key="index" @click.native="showIndex(index)">
+                                {{item.txt}}
+                                <div></div>
+                            </router-link>
                         </div>
-                        <div class="item_en" v-if="$store.state.lang=='CN'">
-                            <div @mouseenter="downShow" @mouseleave="downHide" class="item">
-                                <img :src="UrlSrc+down"/>中文
-                            </div>
-                            <a class="item_cn" href="?lang=EN">
-                                English
+                        <div class="nav_right">
+                            <span @click="skipToTest"  @mouseenter="commHide" @mouseleave="commShow"
+                                  class="item">{{$store.state.lang=='CN'?'测试网':'Testnet'}}
+                                <div></div>
+                            </span>
+                           <!--分割线-->
+                           <div class="hr_vertical"></div>
+                            <a class="item" :href="$store.state.lang=='CN' ? 'https://www.irisnet.org/docs/zh/' : 'https://www.irisnet.org/docs/' " target="_blank">
+                                {{$store.state.lang=='CN'?'文档':'Docs'}}
+                                <div></div>
                             </a>
-                        </div>
+                           <div class="hr_vertical"></div>
+                           <a class="item medium_content" @mouseenter="commHide('medium')" @mouseleave="commShow('medium')" :href="$store.state.lang=='CN' ? 'https://medium.com/irisnet-blog' : 'https://medium.com/irisnet-blog' " target="_blank">
+                               <span class="medium_text">{{$store.state.lang=='CN'?'博客':'Blog'}}</span>
+                               <img class="medium_img"  :src="toggleMediumImg ? mediumWhiteImg : mediumImg" alt="">
+                               <div></div>
+                           </a>
+                           <!--语言切换-->
+                           <div class="item_en" v-if="$store.state.lang=='EN'">
+                               <div @mouseenter="downShow" @mouseleave="downHide" class="item">
+                                   <img :src="UrlSrc+down"/> English
+                               </div>
+                               <a class="item_cn" href="?lang=CN">
+                                   中文
+                               </a>
+                           </div>
+                           <div class="item_en" v-if="$store.state.lang=='CN'">
+                               <div @mouseenter="downShow" @mouseleave="downHide" class="item">
+                                   <img :src="UrlSrc+down"/>中文
+                               </div>
+                               <a class="item_cn" href="?lang=EN">
+                                   English
+                               </a>
+                           </div>
+                       </div>
+
 
                     </div>
                 </div>
@@ -379,9 +378,6 @@
             skipToTest(){
                 this.$router.push('/testnets/pc')
             },
-            skipToHackathon(){
-                this.$router.push('/hackathon/pc')
-            },
             roll() {
                 if (document.getElementById(this.$route.hash)) {
                     //window.scrollTo(0, document.getElementById(this.$route.hash).offsetTop-80)
@@ -390,7 +386,10 @@
             },
             toHome(){
                 let homeDomOffsetTop = 100;
-                this.scroll(homeDomOffsetTop)
+                this.scroll(homeDomOffsetTop);
+                this.$store.state.messages.head.txt.map((v) => {
+                   return v.is = false;
+                });
             },
             jump(){
                 //解决锚点点击一次以后滚动效果不生效的问题
@@ -493,7 +492,6 @@
                     setTimeout(function () {
                         _this.subscription = _this.$store.state.messages.submit.Subscribe;
                         _this.mailaddress = "";
-
                     },2000)
                 })
                 .catch((e)=>{
