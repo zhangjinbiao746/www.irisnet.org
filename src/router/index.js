@@ -1,19 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import index from '@/components/index'
 
 import index_v2 from '@/components/index_v2.vue'
 
-import app from '@/components/app'
 import privacy from '@/components/privacy'
 import terms from '@/components/terms'
-import login from '@/components/login'
 import newIndex from "@/components/newIndex"
 import newApp from "@/components/newApp"
 import appPrivacy from '@/components/appPrivacy'
 import appTerms from '@/components/appTerms'
-import community from '@/components/community'
 import TestNet from '../components/TestNet.vue';
 import Hackathon from '../components/Hackathon';
 import TestNetApp from '../components/TestNetApp.vue';
@@ -55,13 +51,6 @@ export function createRouter() {
                 path: '/hackathon/app',
                 component: HackathonApp,
             },
-
-
-            {
-                path: '/login',
-                name: 'login',
-                component: login
-            },
             {
                 path: '/privacy',
                 name: 'privacy',
@@ -76,12 +65,6 @@ export function createRouter() {
                 path: '/app',
                 name: 'app',
                 component: newApp,
-            },
-
-            {
-                path: '/community',
-                name: 'community',
-                component: community
             },
             {
                 path: '/appPrivacy',
