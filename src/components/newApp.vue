@@ -39,6 +39,14 @@
 
             </div>
             <div class="container">
+                <div class="bug_bounty_content">
+                    <div class="bug_bounty_img">
+                        <img :src="$store.state.lang=='CN' ? bugBountyLogo : bugBountyLogoEn ">
+                        <a :href="$store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e'" target="_blank">
+                            <div class="bug_bounty_detail_btn">{{$store.state.lang=='CN'? '立即加入' : 'How to Join' }}</div>
+                        </a>
+                    </div>
+                </div>
                 <div style="width: 100%;height: auto">
                     <div id="#" class="home">
                         <div class="home-left">
@@ -381,7 +389,9 @@
                 mailaddress:"",
                 showerr: false,
                 links:message[this.$store.state.lang=='CN'?'cn':'en'].head.txt,
-                subscription: this.$store.state.messages.submit.Subscribe
+                subscription: this.$store.state.messages.submit.Subscribe,
+                bugBountyLogo: require('../../public/mobile_medium_logo_cn.png'),
+                bugBountyLogoEn: require('../../public/mobile_medium_logo_en.png')
             }
         },
         methods: {
@@ -433,16 +443,17 @@
             gotojump(index){
                 this.menuIs = false;
                 //解决点击导航后无法再次重复导航问题
+                console.log(index,"点击的顺序 newAPP")
                 if(index == 0){
                     this.scroll(0)
                 }else if(index == 1){
-                    this.scroll(364)
+                    this.scroll(364 +570)
                 }else if(index == 2){
-                    this.scroll(1678)
+                    this.scroll(1678+570)
                 }else if(index == 3){
-                    this.scroll(2268)
+                    this.scroll(2268+570)
                 }else if(index == 4){
-                    this.scroll(4257)
+                    this.scroll(4257+570)
                 }
             },
             scroll(top) {

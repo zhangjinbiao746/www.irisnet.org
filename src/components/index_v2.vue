@@ -61,6 +61,14 @@
             <!--内容区-->
             <div class="container">
                 <div class="container-center">
+                    <div class="bug_bounty_content">
+                        <div class="bug_bounty_img">
+                            <img :src="$store.state.lang=='CN' ? bugBountyLogo : bugBountyLogoEn ">
+                            <a :href="$store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' " target="_blank">
+                                <div class="bug_bounty_detail_btn">{{$store.state.lang=='CN'? '立即加入' : 'How to Join' }}</div>
+                            </a>
+                        </div>
+                    </div>
                     <div id="#" class="what">
                         <div class="home" style="display: flex;">
                             <div class="hone-text-container">
@@ -361,6 +369,8 @@
                 toggleMediumImg: true,
                 mediumImg: require('../assets/medium.png'),
                 mediumWhiteImg: require('../assets/medium_white.png'),
+                bugBountyLogo: require('../../public/bug_bounty.png'),
+                bugBountyLogoEn: require('../../public/bug_bounty_en.png')
             }
         },
         computed: {
@@ -381,11 +391,12 @@
             roll() {
                 if (document.getElementById(this.$route.hash)) {
                     //window.scrollTo(0, document.getElementById(this.$route.hash).offsetTop-80)
+                    console.log(document.getElementById(this.$route.hash).offsetTop,"滚动的距离")
                     this.scroll(document.getElementById(this.$route.hash).offsetTop + 100)
                 }
             },
             toHome(){
-                let homeDomOffsetTop = 100;
+                let homeDomOffsetTop = 0;
                 this.scroll(homeDomOffsetTop);
                 this.$store.state.messages.head.txt.map((v) => {
                    return v.is = false;
@@ -455,18 +466,13 @@
                 this.$store.state.messages.head.txt = model;
                 //解决点击导航后无法再次重复导航问题contact_radius
                 if(index == 0){
-                    this.scroll(100)
+                    this.scroll(1693)
                 }else if(index == 1){
-                    this.scroll(742)
+                    this.scroll(4193)
                 }else if(index == 2){
-                    this.scroll(2479)
-                }else if(index == 3){
-                    this.scroll(3281)
-                }else if(index == 4){
-                    this.scroll(4822)
-                }else if(index == 5){
-                    this.scroll(5419)
+                    this.scroll(6312)
                 }
+
             },
             commitMaile(){
                 let address =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

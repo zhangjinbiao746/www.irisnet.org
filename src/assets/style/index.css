@@ -116,7 +116,6 @@
   cursor: pointer;
   position: relative;
   font-size: 14px;
-  overflow: hidden;
 }
 .index .head .item div {
   width: 24px;

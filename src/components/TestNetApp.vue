@@ -280,13 +280,13 @@
                     if(index == 0){
                         this.scroll(0)
                     }else if(index == 1){
-                        this.scroll(364)
+                        this.scroll(934)
                     }else if(index == 2){
-                        this.scroll(1678)
+                        this.scroll(2248)
                     }else if(index == 3){
-                        this.scroll(2268)
+                        this.scroll(2838)
                     }else if(index == 4){
-                        this.scroll(4257)
+                        this.scroll(4827)
                     }
                 })
             },
