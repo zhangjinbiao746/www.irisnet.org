@@ -393,8 +393,8 @@
                 showerr: false,
                 links:message[this.$store.state.lang=='CN'?'cn':'en'].head.txt,
                 subscription: this.$store.state.messages.submit.Subscribe,
-                bugBountyLogo: require('../../public/mobile_medium_logo_cn.png'),
-                bugBountyLogoEn: require('../../public/mobile_medium_logo_en.png')
+                bugBountyLogo: require('../../public/mobile_bug_bounty_cn.gif'),
+                bugBountyLogoEn: require('../../public/mobile_bug_bounty_en.gif')
             }
         },
         methods: {
