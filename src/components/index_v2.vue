@@ -63,7 +63,7 @@
                 <div class="container-center">
                     <div class="bug_bounty_content">
                         <div class="bug_bounty_img">
-                            <a href="$store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' " target="_blank">
+                            <a :href="$store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' " target="_blank">
                                 <img :src="$store.state.lang=='CN' ? bugBountyLogo : bugBountyLogoEn ">
                             </a>
                         </div>
