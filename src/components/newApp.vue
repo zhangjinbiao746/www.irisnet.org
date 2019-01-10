@@ -43,7 +43,10 @@
                     <div class="bug_bounty_img">
                         <img :src="$store.state.lang=='CN' ? bugBountyLogo : bugBountyLogoEn ">
                         <a :href="$store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e'" target="_blank">
-                            <div class="bug_bounty_detail_btn">{{$store.state.lang=='CN'? '立即加入' : 'How to Join' }}</div>
+                           <p class="bug_bounty_btn-container">
+                               <i class="bug_bounty_detail_btn" v-show="$store.state.lang !=='CN'">RULES & REWORDS</i>
+                               <span class="bug_bounty_detail_btn" v-show="$store.state.lang ==='CN'">活动详情</span>
+                           </p>
                         </a>
                     </div>
                 </div>
