@@ -40,6 +40,26 @@
 
                 </div>
             </div>
+            <div class="swipe_content">
+                <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="15000">
+                    <swipe-item v-for="(item,index) in $store.state.messages.logo" :key="index">
+                        <a :href="index== 0 ? $store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' : 'javascript:;' "
+                           target="_blank"
+                           :class="index==0 ? 'active_cursor': 'default_cursor'"
+                           @click="toNetworkDesign(index)">
+                            <img class="index1_logo" :src="item.src"/>
+                        </a>
+                    </swipe-item>
+                </swipe>
+                <div class="tool">
+                    <img src="../assets/left.png" style="float: left;" @click="next"/>
+                    <img src="../assets/right.png" style="float: right;" @click="prev"/>
+                </div>
+                <div class="mint-swipe-indicators" style="display: block">
+                    <div v-for="(item,index) in $store.state.messages.logo" :class="{'active':item.active}"
+                         class="mint-swipe-indicator" @click=""></div>
+                </div>
+            </div>
             <!--内容区-->
             <div class="container-center">
                 <div id="#" class="what" >
@@ -388,6 +408,23 @@
                     this.scroll(document.getElementById(this.$route.hash).offsetTop + 100)
                     console.log(document.getElementById(this.$route.hash).offsetTop,999999999);
                 }
+            },
+            toNetworkDesign(index){
+                if(index === 1 ){
+                    this.$router.push('/#/0/2')
+                }
+            },
+            imgChange(index, oldIndex) {
+                this.$store.state.messages.logo.forEach(v => {
+                    v.active = false;
+                });
+                this.$store.state.messages.logo[index].active = true
+            },
+            prev() {
+                this.$refs.swipe.prev()
+            },
+            next() {
+                this.$refs.swipe.next()
             },
             scroll(top) {
                 $('body,html').animate({

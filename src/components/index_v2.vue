@@ -58,38 +58,29 @@
                 </div>
             </div>
             <router-view/>
+            <div class="swipe_content">
+                <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="15000">
+                    <swipe-item v-for="(item,index) in $store.state.messages.logo" :key="index">
+                        <a :href="index== 0 ? $store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' : 'javascript:;' "
+                           target="_blank"
+                           :class="index==0 ? 'active_cursor': 'default_cursor'"
+                           @click="toNetworkDesign(index)">
+                            <img class="index1_logo" :src="item.src"/>
+                        </a>
+                    </swipe-item>
+                </swipe>
+                <div class="tool">
+                    <img src="../assets/left.png" style="float: left;" @click="next"/>
+                    <img src="../assets/right.png" style="float: right;" @click="prev"/>
+                </div>
+                <div class="mint-swipe-indicators" style="display: block">
+                    <div v-for="(item,index) in $store.state.messages.logo" :class="{'active':item.active}"
+                         class="mint-swipe-indicator" @click=""></div>
+                </div>
+            </div>
             <!--内容区-->
             <div class="container">
                 <div class="container-center">
-                    <div class="bug_bounty_content">
-                        <div class="bug_bounty_img">
-                            <a :href="$store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' " target="_blank">
-                                <img :src="$store.state.lang=='CN' ? bugBountyLogo : bugBountyLogoEn ">
-                            </a>
-                        </div>
-                    </div>
-                    <div id="#" class="what">
-                        <div class="home" style="display: flex;">
-                            <div class="hone-text-container">
-                                <div class="home_warp">
-                                    <div class="home_txt" v-show="true">
-                                        {{$store.state.messages.home.title}}
-                                    </div>
-
-                                    <div class="home_txt1" v-html="$store.state.messages.home.txt">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="home-container">
-                                <div class="layer_img">
-                                    <img src="../../public/layer1.png">
-                                </div>
-                                <div class="irispattern_img">
-                                    <img src="../../public/irisnetpattern.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div id="#/0/1" class="what">
                         <div class="innovation-container">
 
@@ -368,8 +359,10 @@
                 toggleMediumImg: true,
                 mediumImg: require('../assets/medium.png'),
                 mediumWhiteImg: require('../assets/medium_white.png'),
-                bugBountyLogo: require('../../public/bug_bounty.gif'),
-                bugBountyLogoEn: require('../../public/bug_bounty_en.gif')
+                bugBountyLogo: require('../../public/bug_bounty.png'),
+                bugBountyLogoEn: require('../../public/bug_bounty_en.png'),
+                active: false,
+
             }
         },
         computed: {
@@ -389,10 +382,25 @@
             },
             roll() {
                 if (document.getElementById(this.$route.hash)) {
-                    //window.scrollTo(0, document.getElementById(this.$route.hash).offsetTop-80)
-                    console.log(document.getElementById(this.$route.hash).offsetTop,"滚动的距离")
                     this.scroll(document.getElementById(this.$route.hash).offsetTop + 100)
                 }
+            },
+            toNetworkDesign(index){
+                if(index === 1 ){
+                    this.$router.push('/#/0/2')
+                }
+            },
+            imgChange(index, oldIndex) {
+                this.$store.state.messages.logo.forEach(v => {
+                    v.active = false;
+                });
+                this.$store.state.messages.logo[index].active = true
+            },
+            prev() {
+                this.$refs.swipe.prev()
+            },
+            next() {
+                this.$refs.swipe.next()
             },
             toHome(){
                 let homeDomOffsetTop = 0;

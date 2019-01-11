@@ -125,6 +125,12 @@ export const message = {
             "title":"Ecosystem Partners",
             "list":[
                 {
+                    "img":"collaboration/Platonlogo.png",
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":"https://www.platon.network/#/index"
+                },
+                {
                     "img":"collaboration/hashgard.png",
                     "pos":-56*3,
                     "title":"Hashgard",
@@ -884,6 +890,25 @@ export const message = {
     },
     "placehooder":{
         "placehooder": "Please enter your email address"
-    }
-
+    },
+    "logo": [
+        {
+            "src": '../../../public/bug_bounty_en.gif',
+            "active": true
+        },
+        {
+            "src": '../../../public/irisnet_en.png',
+            "active": false
+        }
+    ],
+    "mobileLogo": [
+        {
+            "src": '../../../public/mobile_bug_bounty_en.png',
+            "active": true
+        },
+        {
+            "src": '../../../public/mobile_irisnet_en.png',
+            "active": false
+        }
+    ],
 }
