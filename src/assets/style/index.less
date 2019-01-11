@@ -880,7 +880,7 @@
 }
 .bug_bounty_content{
     width: 100%;
-    height: 1000px;
+    height: 100%;
     .bug_bounty_img{
         width: 100%;
         margin: auto;
@@ -903,10 +903,10 @@
     }
 
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1366px) {
     .bug_bounty_content{
         width: 100%;
-        height: 1000px;
+        height: 100%;
         .bug_bounty_img{
             width: 1000px;
             margin: auto ;
@@ -926,12 +926,13 @@
     }
 }
 
-@media screen and (max-width: 950px) {
+
+@media screen and (max-width: 992px) {
     .bug_bounty_content{
         width: 100%;
-        height: 1000px;
+        height: 100%;
         .bug_bounty_img{
-            width: 900px;
+            width: 992px;
             margin: auto;
             img{
                 width: 100%;
@@ -959,6 +960,26 @@
         img{
             width:100%;
         }
+    }
+}
+@media (max-height: 930px) {
+    .index1_logo {
+        width: 1000px !important;
+
+    }
+}
+
+@media (max-height: 800px) {
+    .index1_logo {
+        width: 760px !important;
+
+    }
+}
+
+@media (max-height: 660px) {
+    .index1_logo {
+        width: 620px !important;
+
     }
 }
 
@@ -1300,17 +1321,48 @@
     padding-top: 17vh!important;
 }
 
+.swipe_content{
+    width: 100%;
+    height: 100%;
+    background: #2D2948;
+    .my-swipe{
 
+    }
+    .index1_logo{
+        z-index: 3;
+        position: relative;
+        top:50%;left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .tool{
+        width: 1200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -600px;
+        height: 60px;
+        margin-top: -30px;
+        z-index: 2;
+        img {
+            cursor: pointer;
+        }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    .mint-swipe-indicators {
+        bottom: 8%;
+        display: none;
+        .active {
+            background: #4d96df;
+            opacity: 1;
+        }
+    }
+    .mint-swipe-indicator {
+        cursor: pointer;
+        width: 100px;
+        height: 2px;
+        background: #4d96df;
+        opacity: 0.3;
+        border-radius: unset;
+    }
+}
 

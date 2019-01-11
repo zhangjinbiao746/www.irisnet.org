@@ -116,11 +116,18 @@ export const message = {
             "img":"collaboration/hashgard.png",
             "list":[
                 {
+                    "img":"collaboration/Platonlogo.png",
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":" https://www.platon.network/#/index?lang=zh"
+                },
+                {
                     "img":"collaboration/hashgard.png",
                     "pos":-56*3,
                     "title":"Hashgard",
                     "href":"https://www.hashgard.io/#/"
                 }
+
             ]
         },
         "investment":{
@@ -875,5 +882,25 @@ export const message = {
     },
     "placehooder":{
         "placehooder": "请输入你的邮箱地址"
-    }
+    },
+    "logo": [
+        {
+            "src": '../../../public/bug_bounty.gif',
+            "active": true
+        },
+        {
+            "src": '../../../public/irisnet_zh.png',
+            "active": false
+        }
+    ],
+    "mobileLogo": [
+        {
+            "src": '../../../public/mobile_bug_bounty_zh.gif',
+            "active": true
+        },
+        {
+            "src": '../../../public/mobile_irisnet_zh.gif',
+            "active": false
+        }
+    ],
 };
