@@ -8,7 +8,7 @@ export default {
             'txt': [
                 {
                     'txt': "主页",
-                    "href": "#",
+                    "href": "#/0",
                 },
                 {
                     'txt': "白皮书",
@@ -957,7 +957,7 @@ export default {
             'txt': [
                 {
                     'txt': "Home",
-                    "href": "/#",
+                    "href": "#/0",
                 },
                 {
                     'txt': "Whitepaper",
