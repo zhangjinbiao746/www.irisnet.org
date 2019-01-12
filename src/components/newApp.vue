@@ -37,7 +37,7 @@
             </div>
 
             <div class="swipe_content" style="height: 100%;">
-                <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="3000">
+                <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="10000">
                     <swipe-item v-for="(item,index) in $store.state.messages.mobileLogo" :key="index">
                         <a :href="index== 0 ? $store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' : 'javascript:;' "
                            target="_blank"
