@@ -15,10 +15,10 @@
             </div>
             <div class="menu" v-show="menuIs">
                 <section v-for="(item,index) in links">
-                    <a v-if="item.href.indexOf('ttp')==-1" :href="'app#'+item.href" @click="gotojump(index)">
+                    <a v-if="item.href.indexOf('ttp')==-1" :href="item.href" @click="closeMenu()">
                         {{item.txt}}
                     </a>
-                    <a v-if="item.href.indexOf('ttp')!=-1" :href="'h'+item.href" @click="gotojump(index)">
+                    <a v-if="item.href.indexOf('ttp')!=-1" :href="'h'+item.href" @click="closeMenu()">
                         {{item.txt}}
                     </a>
                 </section>
@@ -36,7 +36,7 @@
                 </section>
             </div>
 
-            <div class="swipe_content" style="height: 100%;">
+            <div id="#/0" class="swipe_content" style="height: 100%;">
                 <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="10000" v-if="active">
                     <swipe-item v-for="(item,index) in $store.state.messages.mobileLogo" :key="index">
                         <a :href="index== 0 ? $store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' : 'javascript:;' "
@@ -411,7 +411,7 @@
             },
             toHome(){
                 let appHomeDomOffsetTop = 0;
-                this.gotojump(appHomeDomOffsetTop)
+                this.scroll(appHomeDomOffsetTop)
             },
             gotoCommunity(){
                 this.$router.push({path: '/community'})
@@ -426,20 +426,8 @@
                 //解决锚点点击一次以后滚动效果不生效的问题
                 this.scroll(346)
             },
-            gotojump(index){
+            closeMenu(){
                 this.menuIs = false;
-                //解决点击导航后无法再次重复导航问题
-                if(index == 0){
-                    this.scroll(0)
-                }else if(index == 1){
-                    this.scroll(697)
-                }else if(index == 2){
-                    this.scroll(2011)
-                }else if(index == 3){
-                    this.scroll(2601)
-                }else if(index == 4){
-                    this.scroll(4590)
-                }
             },
             scroll(top) {
                 $('#app').animate({
