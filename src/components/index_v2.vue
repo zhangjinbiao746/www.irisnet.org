@@ -59,7 +59,7 @@
             </div>
             <router-view/>
             <div class="swipe_content">
-                <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="15000">
+                <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="15000" v-if="active">
                     <swipe-item v-for="(item,index) in $store.state.messages.logo" :key="index">
                         <a :href="index== 0 ? $store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' : 'javascript:;' "
                            target="_blank"
@@ -75,7 +75,7 @@
                 </div>
                 <div class="mint-swipe-indicators" style="display: block">
                     <div v-for="(item,index) in $store.state.messages.logo" :class="{'active':item.active}"
-                         class="mint-swipe-indicator" @click=""></div>
+                         class="mint-swipe-indicator" @click="goto(index)"></div>
                 </div>
             </div>
             <!--内容区-->
@@ -396,6 +396,9 @@
                 });
                 this.$store.state.messages.logo[index].active = true
             },
+            goto(index) {
+                this.$refs.swipe.goto(index)
+            },
             prev() {
                 this.$refs.swipe.prev()
             },
@@ -504,6 +507,7 @@
         },
         mounted: function () {
             this.roll();
+            this.active = true;
         },
         watch: {
             '$route': 'roll'
