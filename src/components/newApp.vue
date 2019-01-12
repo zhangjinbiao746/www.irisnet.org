@@ -37,12 +37,10 @@
             </div>
 
             <div class="swipe_content" style="height: 100%;">
-                <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="10000">
+                <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="10000" v-if="active">
                     <swipe-item v-for="(item,index) in $store.state.messages.mobileLogo" :key="index">
                         <a :href="index== 0 ? $store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' : 'javascript:;' "
-                           target="_blank"
-                           :class="index==0 ? 'active_cursor': 'default_cursor'"
-                           @click="toNetworkDesign(index)">
+                           target="_blank">
                             <img class="index1_logo" :src="item.src"/>
                         </a>
                     </swipe-item>
@@ -375,8 +373,7 @@
                 showerr: false,
                 links:message[this.$store.state.lang=='CN'?'cn':'en'].head.txt,
                 subscription: this.$store.state.messages.submit.Subscribe,
-                bugBountyLogo: require('../../public/mobile_bug_bounty_cn.gif'),
-                bugBountyLogoEn: require('../../public/mobile_bug_bounty_en.gif'),
+                active:false
             }
         },
         methods: {
@@ -400,7 +397,6 @@
                     v.is = false;
                 })
                 this.list[index].is = true;
-
             },
             blank(item) {
                 if (item == 'Wechat') {
@@ -501,6 +497,7 @@
                 v.href = v.href.substr(1, v.href.length)
             });
             this.roll();
+            this.active = true;
         },
         watch: {
             '$route': 'roll'
