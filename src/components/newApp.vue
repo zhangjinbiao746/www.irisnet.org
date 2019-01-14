@@ -1,6 +1,5 @@
 <template>
-    <div>
-        <!--<img  src="../../public/app/irispattern-background.png" style="position:absolute;left:0; top:0;right:0;bottom:0;margin:auto;width:100%;background: #141426"/>-->
+    <div class="mobile_container">
         <div class="app">
             <div class="head">
                 <img src="../assets/app/irislogo.png" class="imglogo" @click="toHome">
@@ -16,10 +15,10 @@
             </div>
             <div class="menu" v-show="menuIs">
                 <section v-for="(item,index) in links">
-                    <a v-if="item.href.indexOf('ttp')==-1" :href="'app#'+item.href" @click="gotojump(index)">
+                    <a v-if="item.href.indexOf('ttp')==-1" :href="item.href" @click="closeMenu()">
                         {{item.txt}}
                     </a>
-                    <a v-if="item.href.indexOf('ttp')!=-1" :href="'h'+item.href" @click="gotojump(index)">
+                    <a v-if="item.href.indexOf('ttp')!=-1" :href="'h'+item.href" @click="closeMenu()">
                         {{item.txt}}
                     </a>
                 </section>
@@ -35,35 +34,20 @@
                         <img class="medium_img" src="../assets/mobile_medium.png">
                     </a>
                 </section>
+            </div>
 
-
+            <div id="#/0" class="swipe_content" style="height: 100%;">
+                <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="10000" v-if="active">
+                    <swipe-item v-for="(item,index) in $store.state.messages.mobileLogo" :key="index">
+                        <a :href="index== 0 ? $store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' : 'javascript:;' "
+                           target="_blank">
+                            <img class="index1_logo" :src="item.src"/>
+                        </a>
+                    </swipe-item>
+                </swipe>
             </div>
             <div class="container">
-                <div class="bug_bounty_content">
-                    <div class="bug_bounty_img">
-                        <img :src="$store.state.lang=='CN' ? bugBountyLogo : bugBountyLogoEn ">
-                        <a :href="$store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e'" target="_blank">
-                            <div class="bug_bounty_detail_btn">{{$store.state.lang=='CN'? '立即加入' : 'How to Join' }}</div>
-                        </a>
-                    </div>
-                </div>
                 <div style="width: 100%;height: auto">
-                    <div id="#" class="home">
-                        <div class="home-left">
-                            <div class="home_title">
-                                {{$store.state.messages.home.title}}
-                            </div>
-                            <div class="home_txt" v-html="$store.state.messages.home.txt"></div>
-                        </div>
-                        <div class="home_img">
-                            <a href="#/0/1">
-                                <div class="irisnet-btn" style="margin-bottom: 10px;"@click="jump">
-                                    <span class="button"></span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
                     <div id="#/0/1" class="about">
                         <div class="about_warp">
                             <div class="about_txt">
@@ -127,7 +111,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div id="#/0/2" class="network">
                         <div class="network_title">
                             <div class="what_txt_title" style="font-size: 30px;margin-bottom: 10px;color:#fff">
@@ -390,8 +373,7 @@
                 showerr: false,
                 links:message[this.$store.state.lang=='CN'?'cn':'en'].head.txt,
                 subscription: this.$store.state.messages.submit.Subscribe,
-                bugBountyLogo: require('../../public/mobile_medium_logo_cn.png'),
-                bugBountyLogoEn: require('../../public/mobile_medium_logo_en.png')
+                active:false
             }
         },
         methods: {
@@ -401,7 +383,12 @@
             skipHackathon(){
                 this.$router.push('/hackathon/app');
             },
-
+            imgChange(index, oldIndex) {
+                this.$store.state.messages.logo.forEach(v => {
+                    v.active = false;
+                });
+                this.$store.state.messages.logo[index].active = true
+            },
             img(src) {
                 return 'app/' + src;
             },
@@ -410,7 +397,6 @@
                     v.is = false;
                 })
                 this.list[index].is = true;
-
             },
             blank(item) {
                 if (item == 'Wechat') {
@@ -425,7 +411,7 @@
             },
             toHome(){
                 let appHomeDomOffsetTop = 0;
-                this.gotojump(appHomeDomOffsetTop)
+                this.scroll(appHomeDomOffsetTop)
             },
             gotoCommunity(){
                 this.$router.push({path: '/community'})
@@ -440,21 +426,8 @@
                 //解决锚点点击一次以后滚动效果不生效的问题
                 this.scroll(346)
             },
-            gotojump(index){
+            closeMenu(){
                 this.menuIs = false;
-                //解决点击导航后无法再次重复导航问题
-                console.log(index,"点击的顺序 newAPP")
-                if(index == 0){
-                    this.scroll(0)
-                }else if(index == 1){
-                    this.scroll(364 +570)
-                }else if(index == 2){
-                    this.scroll(1678+570)
-                }else if(index == 3){
-                    this.scroll(2268+570)
-                }else if(index == 4){
-                    this.scroll(4257+570)
-                }
             },
             scroll(top) {
                 $('#app').animate({
@@ -512,6 +485,7 @@
                 v.href = v.href.substr(1, v.href.length)
             });
             this.roll();
+            this.active = true;
         },
         watch: {
             '$route': 'roll'

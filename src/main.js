@@ -6,7 +6,14 @@ import {createRouter} from './router/index.js'
 import {createStore} from './store'
 import VueI18n from 'vue-i18n'
 import 'babel-polyfill'
-require('reveal.js/css/reveal.css')
+require('reveal.js/css/reveal.css');
+import 'swiper/dist/css/swiper.css'
+require('vue-swipe/dist/vue-swipe.css');
+if (process.env.VUE_ENV === 'client') {
+    const { Swipe, SwipeItem } = require('vue-swipe');
+    Vue.component('swipe', Swipe);
+    Vue.component('swipe-item', SwipeItem);
+}
 Vue.mixin({
     beforeMount() {
         const {asyncData} = this.$options
