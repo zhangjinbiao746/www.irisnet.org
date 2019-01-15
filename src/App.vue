@@ -25,21 +25,7 @@
 						if(_this.$route.path.indexOf('app') == -1){
 							_this.$router.replace('/app');
 						}
-						window.onload = function () {
-							document.addEventListener('touchstart', function (event) {
-								if (event.touches.length > 1) {
-									event.preventDefault();
-								}
-							});
-							let lastTouchEnd = 0;
-							document.addEventListener('touchend', function (event) {
-								let now = (new Date()).getTime();
-								if (now - lastTouchEnd <= 300) {
-									event.preventDefault();
-								}
-								lastTouchEnd = now;
-							}, false)
-						}
+
 					}
                 }else {
 					this.switchAppView()
@@ -56,6 +42,21 @@
                 }else {
                     this.$router.replace(`${this.$route.path}`);
                 }
+				window.onload = function () {
+					document.addEventListener('touchstart', function (event) {
+						if (event.touches.length > 1) {
+							event.preventDefault();
+						}
+					});
+					let lastTouchEnd = 0;
+					document.addEventListener('touchend', function (event) {
+						let now = (new Date()).getTime();
+						if (now - lastTouchEnd <= 300) {
+							event.preventDefault();
+						}
+						lastTouchEnd = now;
+					}, false)
+				}
 			}
         },
         created() {
