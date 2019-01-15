@@ -27,7 +27,7 @@
                         }
                     }
                 }else {
-					this.switchAppView()
+                    this.switchAppView()
                 }
 
             },
@@ -56,7 +56,7 @@
                         lastTouchEnd = now;
                     }, false)
                 }
-			}
+            }
         },
         created() {
             if (process.env.VUE_ENV === 'client') {
