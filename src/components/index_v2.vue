@@ -378,7 +378,7 @@
         },
         methods: {
             skipToTest(){
-                this.$router.push('/testnets/pc')
+                this.$router.push('/testnets')
             },
             roll() {
                 if (document.getElementById(this.$route.hash)) {

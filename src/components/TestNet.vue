@@ -443,10 +443,10 @@
                 this.comm = '../public/community_selected.png';
             },
             skipToTest() {
-                this.$router.push('/testnets/pc')
+                this.$router.push('/testnets')
             },
             skipToHackathon() {
-                this.$router.push('/hackathon/pc')
+                this.$router.push('/hackathon')
             },
         }
     }
