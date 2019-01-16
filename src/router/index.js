@@ -13,6 +13,8 @@ import appTerms from '@/components/appTerms'
 import TestNet from '../components/TestNet.vue';
 import TestNetApp from '../components/TestNetApp.vue';
 import HackathonApp from '../components/HackathonApp.vue';
+import MainNet from "../components/MainNet";
+import MainNetApp from "../components/MainNetApp"
 Vue.use(Router)
 
 export function createRouter() {
@@ -61,6 +63,14 @@ export function createRouter() {
                 path: '/appTerms',
                 name: 'appTerms',
                 component: appTerms
+            },
+            {
+                path: '/mainnet',
+                component: MainNet
+            },
+            {
+                path: '/mainnet/app',
+                component: MainNetApp
             },
         ]
     })

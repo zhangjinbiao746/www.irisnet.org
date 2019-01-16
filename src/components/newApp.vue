@@ -23,6 +23,9 @@
                     </a>
                 </section>
                 <section>
+                    <a @click="skipMainnet">{{$store.state.lang=='CN'? '主网' :'Mainnet'}}</a>
+                </section>
+                <section>
                     <a @click="skipTestNet">{{$store.state.lang=='CN'?'测试网':'Testnet'}}</a>
                 </section>
                 <section>
@@ -40,7 +43,7 @@
                 <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="10000" v-if="active">
                     <swipe-item v-for="(item,index) in $store.state.messages.mobileLogo" :key="index">
                         <a :href="index== 0 ? $store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' : 'javascript:;' "
-                           target="_blank">
+                           target="_blank" @click="handleSwipeLink(index)">
                             <img class="index1_logo" :src="item.src"/>
                         </a>
                     </swipe-item>
@@ -377,11 +380,17 @@
             }
         },
         methods: {
+            handleSwipeLink(index){
+                let mainnetModuleIndex = 2;
+                if(index === mainnetModuleIndex){
+                    this.$router.push('/mainnet/app');
+                }
+            },
+            skipMainnet(){
+                this.$router.push('/mainnet/app');
+            },
             skipTestNet(){
                 this.$router.push('/testnets/app');
-            },
-            skipHackathon(){
-                this.$router.push('/hackathon/app');
             },
             imgChange(index, oldIndex) {
                 this.$store.state.messages.logo.forEach(v => {
