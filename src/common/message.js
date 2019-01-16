@@ -946,6 +946,24 @@ export default {
             wanCloudTitle:"WanCloud",
             wanCloudInfo:"Wancloud是一个中立、创新的区块链生态运营商。",
             wanCloudIntroduce:"我们的目标是通过技术与生态建设的整合，有效地满足企业对区块链的需求。 Wancloud深入各公链的建设和社区运营，是他们重要的战略合作伙伴。 Wancloud以其便捷，灵活和专业的服务为特色，致力于降低区块链应用的成本和门槛，减少开发工作量，促进区块链技术的真正落地。"
+        },
+		announcements:[
+			{
+				src:'../../public/mobile_announcements_mainnet.png',
+				timestamp:"2019年1月16日",
+				imgtext:'IRISnet基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
+				href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md'
+			},
+			{
+				src:'../../public/mobile_announcements_irisnet.png',
+				timestamp:"2019年1月16日",
+				imgtext:'对IRIS Betanet的期望',
+				href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md'
+			}
+
+		],
+        mainnetImg:{
+            src:"../../public/mobile_main_zh.png"
         }
     },
     en:{
@@ -1896,6 +1914,24 @@ export default {
             wanCloudTitle:"WanCloud",
             wanCloudInfo:"Wancloud is a neutral and innovative ecosystem builder of blockchain.",
             wanCloudIntroduce:"We aim to leverage the integration of blockchain technology and ecosystem construction to effectively serve the requirements of enterprises for blockchain. Wancloud delves into different public blockchains' construction and community operations, becoming their key strategic partner. Featured by its convenient, flexible and professional service, Wancloud is committed to lowering the cost and threshold of blockchain applications, to the reduction of repetitive workload and to the promotion of blockchain technology adoption."
+        },
+        announcements:[
+            {
+                src:'../../public/mobile_announcements_mainnet.png',
+                timestamp:"Jan 16, 2019",
+                imgtext:'IRIS Foundation Announces Plan for Betanet',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md'
+
+            },
+            {
+                src:'../../public/mobile_announcements_irisnet.png',
+                timestamp:"Jan 16, 2019",
+                imgtext:'Expectations for IRIS Betanet',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md'
+            }
+        ],
+        mainnetImg:{
+        src:"../../public/mobile_main_en.png"
         }
     }
 }

@@ -18,6 +18,12 @@
                             <!--导航-->
 
                             <div class="nav_right">
+                                 <span @click="skipToMainnet"  @mouseenter="commHide" @mouseleave="commShow"
+                                       class="item">{{$store.state.lang=='CN'?'主网':'Mainnet'}}
+                                    <div></div>
+                                </span>
+                                <div class="hr_vertical"></div>
+
                                 <span @click="skipToTest"  @mouseenter="commHide" @mouseleave="commShow"
                                      class="item">{{$store.state.lang=='CN'?'测试网':'Testnet'}}
                                     <div></div>
@@ -441,6 +447,9 @@
             commHide(medium) {
                 this.setToggleMediumImg(medium);
                 this.comm = '../public/community_selected.png';
+            },
+            skipToMainnet(){
+                this.$router.push('/mainnet')
             },
             skipToTest() {
                 this.$router.push('/testnets')
