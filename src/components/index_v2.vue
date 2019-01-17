@@ -18,6 +18,12 @@
                             </router-link>
                         </div>
                         <div class="nav_right">
+                            <span @click="skipToMainnet"  @mouseenter="commHide" @mouseleave="commShow"
+                                  class="item">{{$store.state.lang=='CN'?'主网':'Mainnet'}}
+                                <div></div>
+                            </span>
+                            <div class="hr_vertical"></div>
+
                             <span @click="skipToTest"  @mouseenter="commHide" @mouseleave="commShow"
                                   class="item">{{$store.state.lang=='CN'?'测试网':'Testnet'}}
                                 <div></div>
@@ -67,11 +73,12 @@
                            @click="toNetworkDesign(index)">
                             <img class="index1_logo" :src="item.src"/>
                         </a>
+
                     </swipe-item>
                 </swipe>
                 <div class="tool">
-                    <img src="../assets/left.png" style="float: left;" @click="next"/>
-                    <img src="../assets/right.png" style="float: right;" @click="prev"/>
+                    <img src="../assets/left.png" style="float: left;" @click="prev"/>
+                    <img src="../assets/right.png" style="float: right;" @click="next"/>
                 </div>
                 <div class="mint-swipe-indicators" style="display: block">
                     <div v-for="(item,index) in $store.state.messages.logo" :class="{'active':item.active}"
@@ -377,6 +384,9 @@
             })
         },
         methods: {
+            skipToMainnet(){
+                this.$router.push('/mainnet')
+            },
             skipToTest(){
                 this.$router.push('/testnets')
             },
@@ -388,6 +398,8 @@
             toNetworkDesign(index){
                 if(index === 1 ){
                     this.$router.push('/#/0/2')
+                }else if(index === 2){
+                    this.$router.push('/mainnet')
                 }
             },
             imgChange(index, oldIndex) {

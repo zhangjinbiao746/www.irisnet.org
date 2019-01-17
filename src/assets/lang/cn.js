@@ -891,6 +891,10 @@ export const message = {
         {
             "src": '../../../public/irisnet_zh.png',
             "active": false
+        },
+        {
+            "src": '../../../public/mainnet_zh.png',
+            "active": false
         }
     ],
     "mobileLogo": [
@@ -901,6 +905,30 @@ export const message = {
         {
             "src": '../../../public/mobile_irisnet_zh.gif',
             "active": false
+        },
+        {
+            "src": '../../../public/mobile_main_zh.png',
+            "active": false
         }
     ],
+        "announcements":[
+        {
+            src:'../../public/announcements_mainnet.png',
+            timestamp:"2019年1月16日",
+            imgtext:'IRISnet基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
+            href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md'
+        },
+        {
+            src:'../../public/announcements_irisnet.png',
+            timestamp:"2019年1月16日",
+            imgtext:'对IRIS Betanet的期望',
+            href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md'
+        },
+        {
+            src:'../../public/mainner_default.png',
+            timestamp:" ",
+            imgtext:'敬请期待'
+        }
+
+    ]
 };

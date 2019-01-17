@@ -899,6 +899,10 @@ export const message = {
         {
             "src": '../../../public/irisnet_en.png',
             "active": false
+        },
+        {
+            "src": '../../../public/mainnet_en.png',
+            "active": false
         }
     ],
     "mobileLogo": [
@@ -909,6 +913,30 @@ export const message = {
         {
             "src": '../../../public/mobile_irisnet_en.png',
             "active": false
+        },
+        {
+            "src": '../../../public/mobile_main_en.png',
+            "active": false
         }
     ],
+    "announcements":[
+        {
+            src:'../../public/announcements_mainnet.png',
+            timestamp:"Jan 16, 2019",
+            imgtext:'IRIS Foundation Announces Plan for Betanet',
+            href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md'
+        },
+        {
+            src:'../../public/announcements_irisnet.png',
+            timestamp:"Jan 16, 2019",
+            imgtext:'Expectations for IRIS Betanet',
+            href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md'
+        },
+        {
+            src:'../../public/mainner_default.png',
+            timestamp:"",
+            imgtext:'Comming Soon',
+        }
+
+    ]
 }

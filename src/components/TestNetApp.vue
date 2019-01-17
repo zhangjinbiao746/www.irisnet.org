@@ -162,12 +162,14 @@
                     </a>
                 </section>
                 <section>
+                    <a @click="skipMainnet">{{$store.state.lang=='CN'? '主网' :'Mainnet'}}</a>
+                </section>
+                <section>
                     <a @click="skipTestNet">{{$store.state.lang=='CN'?'测试网':'Testnet'}}</a>
                 </section>
                 <section>
                     <a :href="$store.state.lang=='CN' ? 'https://www.irisnet.org/docs/zh/' : 'https://www.irisnet.org/docs/'" target="_blank">{{$store.state.lang=='CN'?'文档':'Docs'}}</a>
                 </section>
-
                 <section>
                     <a class="item medium_img_content" :href="$store.state.lang=='CN' ? 'https://medium.com/irisnet-blog' : 'https://medium.com/irisnet-blog' " target="_blank">
                         <span>{{$store.state.lang=='CN'?'博客':'Blog'}}</span>
@@ -195,6 +197,9 @@
 
         },
         methods: {
+            skipMainnet(){
+                this.$router.push('/mainnet/app');
+            },
             skipTestNet(){
                 this.$router.push('/testnets/app');
             },
