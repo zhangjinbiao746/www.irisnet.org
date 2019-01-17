@@ -41,9 +41,6 @@
                 </section>
             </div>
             <div class="container">
-                <div class="img_wrap">
-                    <img :src="mainnetImg.src">
-                </div>
                 <div class="announcement_content">
                     <div class="announcement_title">
                         <p>{{$store.state.lang=='CN'?'公告':'Announcements'}}</p>
