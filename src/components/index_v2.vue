@@ -77,8 +77,8 @@
                     </swipe-item>
                 </swipe>
                 <div class="tool">
-                    <img src="../assets/left.png" style="float: left;" @click="next"/>
-                    <img src="../assets/right.png" style="float: right;" @click="prev"/>
+                    <img src="../assets/left.png" style="float: left;" @click="prev"/>
+                    <img src="../assets/right.png" style="float: right;" @click="next"/>
                 </div>
                 <div class="mint-swipe-indicators" style="display: block">
                     <div v-for="(item,index) in $store.state.messages.logo" :class="{'active':item.active}"

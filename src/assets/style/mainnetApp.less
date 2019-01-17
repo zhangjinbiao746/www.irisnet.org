@@ -236,7 +236,7 @@ a::selection{
   padding: 20px 25px 100px 25px;
   background: #2E2156;
   .join_content{
-    font-size: 15px;
+    font-size: 24px;
     color: #FFF;
 
   }
@@ -325,7 +325,7 @@ a::selection{
     padding: 0 25px;
     background: #2E2156;
     .announcement_title{
-      font-size: 15px;
+      font-size: 24px;
       color: #fff;
       padding: 20px 0 0 0;
     }
@@ -344,15 +344,25 @@ a::selection{
         padding: 10px 10px 0 10px;
         display: flex;
         background: #724be3;
+        justify-content: space-between;
         span:nth-child(1){
-          flex: 1;
           line-height: 18px;
-          font-size: 15px;
+          height: 36px;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          display:-webkit-box;
+          -webkit-box-orient:vertical;
+          -webkit-line-clamp:2;
+          color: #cbc8d4;
         }
         .timestamp_content{
+          white-space: nowrap;
+          width: 84px;
           padding-left: 20px;
-          font-size: 11px;
+          font-size: 12px;
           line-height: 18px;
+          text-align: right;
+          color: #cbc8d4;
         }
       }
     }
