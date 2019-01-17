@@ -46,7 +46,7 @@
                 </div>
                 <div class="announcement_content">
                     <div class="announcement_title">
-                        <p>Announcements</p>
+                        <p>{{$store.state.lang=='CN'?'公告':'Announcements'}}</p>
                         <p class="hr_vertical"></p>
                     </div>
                     <ul class="announcement_list_content">

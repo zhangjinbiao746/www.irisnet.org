@@ -67,7 +67,7 @@
                 </div>
                 <div class="news_container">
                     <div class="news_content_wrap">
-                        <h3 class="news_title">Announcements</h3>
+                        <h3 class="news_title"><p>{{$store.state.lang=='CN'?'公告':'Announcements'}}</p></h3>
                         <div class="hr_vertical"></div>
                         <ul class="news_content">
                             <li v-for="(item , index) in $store.state.messages.announcements">
