@@ -67,9 +67,9 @@
             <div class="swipe_content">
                 <swipe ref="swipe" class="my-swipe" @change="imgChange" :auto="15000" v-if="active">
                     <swipe-item v-for="(item,index) in $store.state.messages.logo" :key="index">
-                        <a :href="index== 0 ? $store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' : 'javascript:;' "
+                        <a :href="index== 1 ? $store.state.lang=='CN' ? 'https://mp.weixin.qq.com/s/nN6I8raVV9uq-lsmfi8mvg' : 'https://medium.com/irisnet-blog/opened-irisnet-bug-bounty-program-for-mainnet-launch-30627e00e2e' : 'javascript:;' "
                            target="_blank"
-                           :class="index==0 ? 'active_cursor': 'default_cursor'"
+                           :class="index== 1 ? 'active_cursor': 'default_cursor'"
                            @click="toNetworkDesign(index)">
                             <img class="index1_logo" :src="item.src"/>
                         </a>
@@ -396,10 +396,10 @@
                 }
             },
             toNetworkDesign(index){
-                if(index === 1 ){
-                    this.$router.push('/#/0/2')
-                }else if(index === 2){
+                if(index === 0 ){
                     this.$router.push('/mainnet')
+                }else if(index === 2){
+                    this.$router.push('/#/0/2')
                 }
             },
             imgChange(index, oldIndex) {

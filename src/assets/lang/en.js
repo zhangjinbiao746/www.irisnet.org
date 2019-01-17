@@ -893,29 +893,30 @@ export const message = {
     },
     "logo": [
         {
-            "src": '../../../public/bug_bounty_en.gif',
+            "src": '../../../public/mainnet_en.png',
             "active": true
+        },
+        {
+            "src": '../../../public/bug_bounty_en.gif',
+            "active": false
         },
         {
             "src": '../../../public/irisnet_en.png',
             "active": false
-        },
-        {
-            "src": '../../../public/mainnet_en.png',
-            "active": false
         }
+
     ],
     "mobileLogo": [
         {
-            "src": '../../../public/mobile_bug_bounty_en.png',
+            "src": '../../../public/mobile_main_en.png',
             "active": true
         },
         {
-            "src": '../../../public/mobile_irisnet_en.png',
+            "src": '../../../public/mobile_bug_bounty_en.png',
             "active": false
         },
         {
-            "src": '../../../public/mobile_main_en.png',
+            "src": '../../../public/mobile_irisnet_en.png',
             "active": false
         }
     ],

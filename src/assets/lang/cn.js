@@ -885,29 +885,29 @@ export const message = {
     },
     "logo": [
         {
-            "src": '../../../public/bug_bounty.gif',
+            "src": '../../../public/mainnet_zh.png',
             "active": true
         },
         {
-            "src": '../../../public/irisnet_zh.png',
+            "src": '../../../public/bug_bounty.gif',
             "active": false
         },
         {
-            "src": '../../../public/mainnet_zh.png',
+            "src": '../../../public/irisnet_zh.png',
             "active": false
         }
     ],
     "mobileLogo": [
         {
-            "src": '../../../public/mobile_bug_bounty_zh.gif',
+            "src": '../../../public/mobile_main_zh.png',
             "active": true
         },
         {
-            "src": '../../../public/mobile_irisnet_zh.gif',
+            "src": '../../../public/mobile_bug_bounty_zh.gif',
             "active": false
         },
         {
-            "src": '../../../public/mobile_main_zh.png',
+            "src": '../../../public/mobile_irisnet_zh.gif',
             "active": false
         }
     ],
