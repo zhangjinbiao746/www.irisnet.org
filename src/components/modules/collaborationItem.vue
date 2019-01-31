@@ -18,6 +18,9 @@
         </div>
         <div v-if="info.list.length < 3" class="collaboration_zanwei_logo two_logo">
         </div>
+        <div v-if="info.list.length < 4" class="collaboration_zanwei_logo three_logo">
+        </div>
+
     </div>
 </template>
 
@@ -244,6 +247,10 @@
         .two_logo{
             display: none;
         }
+        .three_logo{
+            display: none;
+        }
+
         /*#collaboration_three_list{*/
             /*display: flex;*/
             /*margin: 0 5%;*/
