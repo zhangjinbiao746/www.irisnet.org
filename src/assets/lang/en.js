@@ -131,6 +131,12 @@ export const message = {
                     "href":"https://www.platon.network/#/index"
                 },
                 {
+                    "img":"collaboration/hashquark.png",
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":"https://www.hashquark.io/#/"
+                },
+                {
                     "img":"collaboration/hashgard.png",
                     "pos":-56*3,
                     "title":"Hashgard",
