@@ -928,6 +928,12 @@ export const message = {
     ],
     "announcements":[
         {
+            src:'../../public/announcements_betanet.png',
+            timestamp:"Feb 1, 2019",
+            imgtext:'Betanet Work Plan',
+            href: 'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
+        },
+        {
             src:'../../public/announcements_mainnet.png',
             timestamp:"Jan 16, 2019",
             imgtext:'IRIS Foundation Announces Plan for Betanet',
@@ -938,12 +944,6 @@ export const message = {
             timestamp:"Jan 16, 2019",
             imgtext:'Expectations for IRIS Betanet',
             href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md'
-        },
-        {
-            src:'../../public/mainner_default.png',
-            timestamp:"",
-            imgtext:'Comming Soon',
         }
-
     ]
 }
