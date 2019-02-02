@@ -949,7 +949,7 @@ export default {
         },
 		announcements:[
             {
-                src:'../../public/mainner_default.png',
+                src:'../../public/announcements_betanet.png',
                 timestamp:"2019年2月1日",
                 imgtext:'Betanet上线工作计划',
                 href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
