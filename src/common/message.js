@@ -948,6 +948,12 @@ export default {
             wanCloudIntroduce:"我们的目标是通过技术与生态建设的整合，有效地满足企业对区块链的需求。 Wancloud深入各公链的建设和社区运营，是他们重要的战略合作伙伴。 Wancloud以其便捷，灵活和专业的服务为特色，致力于降低区块链应用的成本和门槛，减少开发工作量，促进区块链技术的真正落地。"
         },
 		announcements:[
+            {
+                src:'../../public/mainner_default.png',
+                timestamp:"2019年2月1日",
+                imgtext:'Betanet上线工作计划',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
+            },
 			{
 				src:'../../public/mobile_announcements_mainnet.png',
 				timestamp:"2019年1月16日",
@@ -1916,6 +1922,12 @@ export default {
             wanCloudIntroduce:"We aim to leverage the integration of blockchain technology and ecosystem construction to effectively serve the requirements of enterprises for blockchain. Wancloud delves into different public blockchains' construction and community operations, becoming their key strategic partner. Featured by its convenient, flexible and professional service, Wancloud is committed to lowering the cost and threshold of blockchain applications, to the reduction of repetitive workload and to the promotion of blockchain technology adoption."
         },
         announcements:[
+            {
+                src:'../../public/announcements_betanet.png',
+                timestamp:"Feb 1, 2019",
+                imgtext:'Betanet Work Plan',
+                href: 'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
+            },
             {
                 src:'../../public/mobile_announcements_mainnet.png',
                 timestamp:"Jan 16, 2019",
