@@ -927,7 +927,7 @@ export const message = {
         {
             src:'../../public/announcements_mainnet.png',
             timestamp:"2019年1月16日",
-            imgtext:'IRISnet基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
+            imgtext:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
             href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md'
         },
         {
