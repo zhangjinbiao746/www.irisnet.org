@@ -56,7 +56,7 @@ export const message = {
                 "src": "riot-default.png",
                 "src_selected": "newriot.png",
                 "txt": "Riot",
-                "href": "https://riot.im/app/#/room/#iris:matrix.org"
+                "href": "https://riot.im/app/#/room/!bmimZgJrUWSmxqQEmG:matrix.org"
             },
             {
                 "src": "wechat-default.png",

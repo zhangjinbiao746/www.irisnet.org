@@ -1914,7 +1914,7 @@ export default {
             qqNum:"834063323",
             riot:"Riot room",
             riotAddress:"#irisvalidators:matrix.org",
-            riotAddressHref:"https://matrix.org/blog/home/",
+            riotAddressHref:"https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org",
             zigTitle:"Zig-BaaS",
             zigIntroduce:"Ziggurat provides enterprise-grade blockchain solutions, including Zig-Ledger, an independently developed consortium blockchain, environment setup, operations and maintenance, smart contract and application development, cross-chain protocol, Zig-BaaS cloud service platform, and industry specific SDKs. Our solutions support multiple industry application scenarios, including culture and entertainment, traceability and provenance, supply chain finance, IoT and data security.",
             wanCloudTitle:"WanCloud",

@@ -97,7 +97,7 @@
                             </div>
                         </div>
                     </div>
-                    <a :href="riotAddressHref">
+                    <a :href="riotAddressHref" target="_blank">
                         <div class="join_ways_rito">
                             <div class="join_ways_rito_content">
                                 <div class="join_ways_rito_content_img">
