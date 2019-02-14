@@ -906,7 +906,7 @@ export default {
         },
         testnet:{
             title:"Fuxi 测试网",
-            infomation:"IRIShub的Fuxi测试网在主网上线前会进行多次迭代。可以通过浏览器",
+            information:"IRIShub的Fuxi测试网在主网上线前会进行多次迭代。可以通过浏览器",
             explorerHref:"IRISplorer",
             informationFragment:"查询信息，",
             download:'或下载',
@@ -1884,7 +1884,7 @@ export default {
         },
         testnet:{
             title:"Fuxi Testnet",
-            infomation:"The testnet of IRIShub is called Fuxi, there were several iterations of Fuxi testnet before the mainnet's launch.You could use ",
+            information:"The testnet of IRIShub is called Fuxi, there were several iterations of Fuxi testnet before the mainnet's launch.You could use ",
             explorerHref:"IRISplorer",
             informationFragment:"for browsing ",
             testnetplorerHref:"here",

@@ -18,7 +18,7 @@
                 <div class="warp">
                     <div class="testnet_title">{{title}}</div>
                     <p class="testnet_info">
-                        {{infomation}}
+                        {{information}}
                         <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{explorerHref}}</a>
                         {{informationFragment}}{{download}}
                         <a :href="downloadHref" target="_blank">{{downloadword}}</a>
@@ -230,7 +230,7 @@
             },
             getInfo(){
                 this.title = this.format('title');
-                this.infomation = this.format('infomation');
+                this.information = this.format('information');
                 this.explorerHref = this.format('explorerHref');
                 this.informationFragment = this.format('informationFragment');
                 this.testnetplorerHref = this.format('testnetplorerHref');
@@ -310,7 +310,7 @@
                 wechatIs: false,
                 links:message[this.$store.state.lang=='CN'?'cn':'en'].head.txt,
                 title:'',
-                infomation:"",
+                information:"",
                 explorerHref:"",
                 informationFragment:"",
                 testnetplorerHref:"",

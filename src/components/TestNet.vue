@@ -66,7 +66,7 @@
                     </div>
                     <div class="testnet_info_content">
                         <p>
-                            {{infomation}}
+                            {{information}}
                             <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{explorerHref}}</a>
                             {{informationFragment}}{{download}}
                             <a :href="downloadHref" target="_blank">{{downloadword}}</a>
@@ -236,7 +236,7 @@
         data(){
             return {
                 title:'',
-                infomation:"",
+                information:"",
                 explorerHref:"",
                 testnetHereHref:"",
                 informationFragment:"",
@@ -355,7 +355,7 @@
                 this.downloadword = this.format('downloadword');
                 this.downloadHref = this.format('downloadHref');
                 this.downloadEndWord = this.format('downloadEndWord');
-                this.infomation = this.format('infomation');
+                this.information = this.format('information');
                 this.explorerHref = this.format('explorerHref');
                 this.testnetHereHref = this.format('testnetHereHref');
                 this.informationFragment = this.format('informationFragment');
