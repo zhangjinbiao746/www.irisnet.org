@@ -62,7 +62,11 @@
                 </div>
                 <div class="main_container">
                     <div class="main_img_content">
-                        <img :src="$store.state.lang=='CN' ? mainnetImgzh : mainnetImgEN ">
+                        <img :src="$store.state.lang=='CN' ? mainnetImgZH : mainnetImgEN ">
+                        <div class="link_btn_content">
+                            <div class="link_btn"><a href="https://www.irisplorer.io/" target="_blank">{{$store.state.lang=='CN'?'IRIS 浏览器':'IRIS Explorer'}}</a></div>
+                            <div class="wallet_link_btn link_btn"><a href="http://www.rainbow.one/" target="_blank">{{$store.state.lang=='CN'?'Rainbow 钱包':'Rainbow Wallet'}}</a></div>
+                        </div>
                     </div>
                 </div>
                 <div class="news_container">
@@ -141,7 +145,7 @@
                 riot:"",
                 riotAddress:"",
                 riotAddressHref:"",
-                mainnetImgzh: require("../../public/mainnet_child_zh.png"),
+                mainnetImgZH: require("../../public/mainnet_child_zh.png"),
                 mainnetImgEN: require("../../public/mainnet_child_en.png"),
             }
         },

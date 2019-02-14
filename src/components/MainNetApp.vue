@@ -15,6 +15,12 @@
 
             </div>
             <div class="menu" v-show="menuIs">
+                <section>
+                    <a @click="skipMainnet">{{$store.state.lang=='CN'? '主网' :'Mainnet'}}</a>
+                </section>
+                <section>
+                    <a @click="skipTestNet">{{$store.state.lang=='CN'?'测试网':'Testnet'}}</a>
+                </section>
                 <section v-for="(item,index) in links">
                     <a v-if="item.href.indexOf('ttp')==-1" @click="gotojump(index,item)">
                         {{item.txt}}
@@ -22,12 +28,6 @@
                     <a v-if="item.href.indexOf('ttp')!=-1" :href="'h'+item.href" @click="gotojump(index)">
                         {{item.txt}}
                     </a>
-                </section>
-                <section>
-                    <a @click="skipMainnet">{{$store.state.lang=='CN'? '主网' :'Mainnet'}}</a>
-                </section>
-                <section>
-                    <a @click="skipTestNet">{{$store.state.lang=='CN'?'测试网':'Testnet'}}</a>
                 </section>
                 <section>
                     <a :href="$store.state.lang=='CN' ? 'https://www.irisnet.org/docs/zh/' : 'https://www.irisnet.org/docs/'" target="_blank">{{$store.state.lang=='CN'?'文档':'Docs'}}</a>
@@ -40,7 +40,15 @@
                     </a>
                 </section>
             </div>
+
             <div class="container">
+                <div class="mainnet_img_content">
+                    <img :src="$store.state.lang=='CN' ? mainnetImgZH : mainnetImgEN ">
+                    <div class="link_btn_container">
+                        <div class="link_btn"><a style="color: #3BC1AA" href="https://www.irisplorer.io/" target="_blank">{{$store.state.lang=='CN'?'IRIS 浏览器':'IRIS Explorer'}}</a></div>
+                        <div class="wallet_link_btn link_btn"><a href="http://www.rainbow.one/" target="_blank">{{$store.state.lang=='CN'?'Rainbow 钱包':'Rainbow Wallet'}}</a></div>
+                    </div>
+                </div>
                 <div class="announcement_content">
                     <div class="announcement_title">
                         <p>{{$store.state.lang=='CN'?'公告':'Announcements'}}</p>
@@ -209,6 +217,9 @@
                 wanCloudInfo:"",
                 wanCloudIntroduce:"",
                 testlink:false,
+                mainnetImgZH: require('../../public/mainnet_title_zh.png'),
+                mainnetImgEN: require('../../public/mainnet_title_en.png')
+
             }
         },
         mounted(){

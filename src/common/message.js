@@ -6,10 +6,7 @@ export default {
         "next": 'what_next.png',
         "head": {
             'txt': [
-                {
-                    'txt': "主页",
-                    "href": "#/0",
-                },
+              
                 {
                     'txt': "白皮书",
                     "href": "#/0/1",
@@ -906,12 +903,16 @@ export default {
         },
         testnet:{
             title:"Fuxi 测试网",
-            infomation:"IRIShub的Fuxi测试网在主网上线前会进行多次迭代。你可以通过浏览器",
+            information:"IRIShub的Fuxi测试网在主网上线前会进行多次迭代。可以通过浏览器",
             explorerHref:"IRISplorer",
-            infomationFragment:"查询信息并在",
+            informationFragment:"查询信息，",
+            download:'或下载',
+            downloadWord:'Rainbow App PTR',
+            downloadHref:'https://testnet.rainbow.one/',
+            downloadEndWord:'参与公测，也可以在',
             testnetplorerHref:"这里",
             testnetHereHref:"https://github.com/irisnet/testnets/blob/master/README_CN.md",
-            testnetplorerStatus:"跟踪测试网进展",
+            testnetplorerStatus:"跟踪测试网进展。",
             howToJoin:"如何加入Fuxi测试网",
             howToJoinHref:"https://www.irisnet.org/docs/zh/get-started/",
             incentivizedInfo:"Fuxi测试网激励计划",
@@ -979,10 +980,6 @@ export default {
         "next": 'what_next.png',
         "head": {
             'txt': [
-                {
-                    'txt': "Home",
-                    "href": "#/0",
-                },
                 {
                     'txt': "Whitepaper",
                     "href": "#/0/1",
@@ -1880,12 +1877,16 @@ export default {
         },
         testnet:{
             title:"Fuxi Testnet",
-            infomation:"The testnet of IRIShub is called Fuxi, We expect to see several iterations of Fuxi testnet before the mainnet's launch. You could use ",
+            information:"The testnet of IRIShub is called Fuxi, there were several iterations of Fuxi testnet before the mainnet's launch.You could use ",
             explorerHref:"IRISplorer",
-            infomationFragment:"for browsing and track the status of Fuxi testnet",
+            informationFragment:"for browsing ",
             testnetplorerHref:"here",
             testnetHereHref: "https://github.com/irisnet/testnets/blob/master/README.md",
             testnetplorerStatus:"",
+            download:'or download',
+            downloadWord:'Rainbow App PTR',
+            downloadHref:'https://testnet.rainbow.one/',
+            downloadEndWord:'for public testing, or you could track the status of Fuxi testnet ',
             howToJoin:"How to Join with your server",
             howToJoinHref:"https://www.irisnet.org/docs/get-started/",
             incentivizedInfo:"Fuxi Incentivized Testnet Program",
