@@ -20,7 +20,7 @@
                     <p class="testnet_info">
                         {{infomation}}
                         <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{explorerHref}}</a>
-                        {{infomationFragment}}{{download}}
+                        {{informationFragment}}{{download}}
                         <a :href="downloadHref" target="_blank">{{downloadword}}</a>
                         {{downloadEndWord}}
                         <a :href="testnetHereHref" target="_blank">{{testnetplorerHref}}</a>
@@ -232,7 +232,7 @@
                 this.title = this.format('title');
                 this.infomation = this.format('infomation');
                 this.explorerHref = this.format('explorerHref');
-                this.infomationFragment = this.format('infomationFragment');
+                this.informationFragment = this.format('informationFragment');
                 this.testnetplorerHref = this.format('testnetplorerHref');
                 this.testnetplorerStatus = this.format('testnetplorerStatus');
                 this.howToJoin = this.format('howToJoin');
@@ -312,7 +312,7 @@
                 title:'',
                 infomation:"",
                 explorerHref:"",
-                infomationFragment:"",
+                informationFragment:"",
                 testnetplorerHref:"",
                 testnetplorerStatus:"",
                 howToJoin:"",
