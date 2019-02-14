@@ -66,9 +66,11 @@
                     </div>
                     <div class="testnet_info_content">
                         <p>
-                            {{infomation}}
+                            {{information}}
                             <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{explorerHref}}</a>
-                            {{infomationFragment}}
+                            {{informationFragment}}{{download}}
+                            <a :href="downloadHref" target="_blank">{{downloadWord}}</a>
+                            {{downloadEndWord}}
                             <a :href="testnetHereHref" target="_blank">{{testnetplorerHref}}</a>
                             {{testnetplorerStatus}}
                         </p>
@@ -234,10 +236,10 @@
         data(){
             return {
                 title:'',
-                infomation:"",
+                information:"",
                 explorerHref:"",
                 testnetHereHref:"",
-                infomationFragment:"",
+                informationFragment:"",
                 testnetplorerHref:"",
                 testnetplorerStatus:"",
                 howToJoin:"",
@@ -293,6 +295,10 @@
                 toggleMediumImg: true,
                 mediumImg: require('../assets/medium.png'),
                 mediumWhiteImg: require('../assets/medium_white.png'),
+                download:"",
+                downloadWord:"",
+                downloadHref:"",
+                downloadEndWord:""
             }
         },
         mounted(){
@@ -345,10 +351,14 @@
             },
             getInfo(){
                 this.title = this.format('title');
-                this.infomation = this.format('infomation');
+                this.download = this.format('download');
+                this.downloadWord = this.format('downloadWord');
+                this.downloadHref = this.format('downloadHref');
+                this.downloadEndWord = this.format('downloadEndWord');
+                this.information = this.format('information');
                 this.explorerHref = this.format('explorerHref');
                 this.testnetHereHref = this.format('testnetHereHref');
-                this.infomationFragment = this.format('infomationFragment');
+                this.informationFragment = this.format('informationFragment');
                 this.testnetplorerHref = this.format('testnetplorerHref');
                 this.testnetplorerStatus = this.format('testnetplorerStatus');
                 this.howToJoin = this.format('howToJoin');

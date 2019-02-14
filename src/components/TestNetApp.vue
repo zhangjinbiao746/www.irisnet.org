@@ -18,10 +18,12 @@
                 <div class="warp">
                     <div class="testnet_title">{{title}}</div>
                     <p class="testnet_info">
-                        {{infomation}}
+                        {{information}}
                         <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{explorerHref}}</a>
-                        {{infomationFragment}}
-                        <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{testnetplorerHref}}</a>
+                        {{informationFragment}}{{download}}
+                        <a :href="downloadHref" target="_blank">{{downloadWord}}</a>
+                        {{downloadEndWord}}
+                        <a :href="testnetHereHref" target="_blank">{{testnetplorerHref}}</a>
                         {{testnetplorerStatus}}
                     </p>
                     <a :href="howToJoinHref">
@@ -228,9 +230,9 @@
             },
             getInfo(){
                 this.title = this.format('title');
-                this.infomation = this.format('infomation');
+                this.information = this.format('information');
                 this.explorerHref = this.format('explorerHref');
-                this.infomationFragment = this.format('infomationFragment');
+                this.informationFragment = this.format('informationFragment');
                 this.testnetplorerHref = this.format('testnetplorerHref');
                 this.testnetplorerStatus = this.format('testnetplorerStatus');
                 this.howToJoin = this.format('howToJoin');
@@ -249,6 +251,7 @@
                 this.baasMenuAboutEffectHref = this.format('baasMenuAboutEffectHref');
                 this.baasMenuHowApply = this.format('baasMenuHowApply');
                 this.baasMenuHowApplyHref = this.format('baasMenuHowApplyHref');
+                this.testnetHereHref = this.format('testnetHereHref');
                 this.faq = this.format('faq');
                 this.faqHref = this.format('faqHref');
                 this.gameOfGenesis = this.format('gameOfGenesis');
@@ -267,6 +270,11 @@
                 this.wanCloudTitle = this.format("wanCloudTitle");
                 this.wanCloudInfo = this.format('wanCloudInfo');
                 this.wanCloudIntroduce = this.format('wanCloudIntroduce');
+                this.download = this.format('download');
+                this.downloadWord = this.format('downloadWord');
+                this.downloadHref = this.format('downloadHref');
+                this.downloadEndWord = this.format('downloadEndWord')
+
             },
             changeLang(lang){
                 this.$store.state.lang = lang;
@@ -302,9 +310,9 @@
                 wechatIs: false,
                 links:message[this.$store.state.lang=='CN'?'cn':'en'].head.txt,
                 title:'',
-                infomation:"",
+                information:"",
                 explorerHref:"",
-                infomationFragment:"",
+                informationFragment:"",
                 testnetplorerHref:"",
                 testnetplorerStatus:"",
                 howToJoin:"",
@@ -342,6 +350,11 @@
                 wanCloudInfo:"",
                 wanCloudIntroduce:"",
                 testlink:false,
+                download:"",
+                downloadWord:"",
+                downloadHref:"",
+                downloadEndWord:"",
+                testnetHereHref:''
             }
         },
         mounted(){
