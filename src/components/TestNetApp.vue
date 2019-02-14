@@ -20,8 +20,10 @@
                     <p class="testnet_info">
                         {{infomation}}
                         <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{explorerHref}}</a>
-                        {{infomationFragment}}
-                        <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{testnetplorerHref}}</a>
+                        {{infomationFragment}}{{download}}
+                        <a :href="downloadHref" target="_blank">{{downloadword}}</a>
+                        {{downloadEndWord}}
+                        <a :href="testnetHereHref" target="_blank">{{testnetplorerHref}}</a>
                         {{testnetplorerStatus}}
                     </p>
                     <a :href="howToJoinHref">
@@ -249,6 +251,7 @@
                 this.baasMenuAboutEffectHref = this.format('baasMenuAboutEffectHref');
                 this.baasMenuHowApply = this.format('baasMenuHowApply');
                 this.baasMenuHowApplyHref = this.format('baasMenuHowApplyHref');
+                this.testnetHereHref = this.format('testnetHereHref');
                 this.faq = this.format('faq');
                 this.faqHref = this.format('faqHref');
                 this.gameOfGenesis = this.format('gameOfGenesis');
@@ -267,6 +270,11 @@
                 this.wanCloudTitle = this.format("wanCloudTitle");
                 this.wanCloudInfo = this.format('wanCloudInfo');
                 this.wanCloudIntroduce = this.format('wanCloudIntroduce');
+                this.download = this.format('download');
+                this.downloadword = this.format('downloadword');
+                this.downloadHref = this.format('downloadHref');
+                this.downloadEndWord = this.format('downloadEndWord')
+
             },
             changeLang(lang){
                 this.$store.state.lang = lang;
@@ -342,6 +350,11 @@
                 wanCloudInfo:"",
                 wanCloudIntroduce:"",
                 testlink:false,
+                download:"",
+                downloadword:"",
+                downloadHref:"",
+                downloadEndWord:"",
+                testnetHereHref:''
             }
         },
         mounted(){

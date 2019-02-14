@@ -40,7 +40,15 @@
                     </a>
                 </section>
             </div>
+
             <div class="container">
+                <div class="mainnet_img_content">
+                    <img :src="$store.state.lang=='CN' ? mainnetImgzh : mainnetImgEN ">
+                    <div class="link_btn_container">
+                        <div class="explorer_link_btn"><a style="color: #3BC1AA" href="https://www.irisplorer.io/" target="_blank">{{$store.state.lang=='CN'?'IRIS 浏览器':'IRIS Explorer'}}</a></div>
+                        <div class="wallet_link_btn"><a href="http://www.rainbow.one/" target="_blank">{{$store.state.lang=='CN'?'Rainbow 钱包':'Rainbow Wallet'}}</a></div>
+                    </div>
+                </div>
                 <div class="announcement_content">
                     <div class="announcement_title">
                         <p>{{$store.state.lang=='CN'?'公告':'Announcements'}}</p>
@@ -209,6 +217,9 @@
                 wanCloudInfo:"",
                 wanCloudIntroduce:"",
                 testlink:false,
+                mainnetImgzh: require('../../public/mainnet_title_zh.png'),
+                mainnetImgEN: require('../../public/mainnet_title_en.png')
+
             }
         },
         mounted(){

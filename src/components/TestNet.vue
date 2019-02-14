@@ -68,7 +68,9 @@
                         <p>
                             {{infomation}}
                             <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{explorerHref}}</a>
-                            {{infomationFragment}}
+                            {{infomationFragment}}{{download}}
+                            <a :href="downloadHref" target="_blank">{{downloadword}}</a>
+                            {{downloadEndWord}}
                             <a :href="testnetHereHref" target="_blank">{{testnetplorerHref}}</a>
                             {{testnetplorerStatus}}
                         </p>
@@ -293,6 +295,10 @@
                 toggleMediumImg: true,
                 mediumImg: require('../assets/medium.png'),
                 mediumWhiteImg: require('../assets/medium_white.png'),
+                download:"",
+                downloadword:"",
+                downloadHref:"",
+                downloadEndWord:""
             }
         },
         mounted(){
@@ -345,6 +351,10 @@
             },
             getInfo(){
                 this.title = this.format('title');
+                this.download = this.format('download');
+                this.downloadword = this.format('downloadword');
+                this.downloadHref = this.format('downloadHref');
+                this.downloadEndWord = this.format('downloadEndWord');
                 this.infomation = this.format('infomation');
                 this.explorerHref = this.format('explorerHref');
                 this.testnetHereHref = this.format('testnetHereHref');
