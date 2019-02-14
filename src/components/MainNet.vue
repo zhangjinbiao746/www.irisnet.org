@@ -64,8 +64,8 @@
                     <div class="main_img_content">
                         <img :src="$store.state.lang=='CN' ? mainnetImgzh : mainnetImgEN ">
                         <div class="link_btn_content">
-                            <div class="explorer_link_btn"><a href="https://www.irisplorer.io/" target="_blank">{{$store.state.lang=='CN'?'IRIS 浏览器':'IRIS Explorer'}}</a></div>
-                            <div class="wallet_link_btn"><a href="http://www.rainbow.one/" target="_blank">{{$store.state.lang=='CN'?'Rainbow 钱包':'Rainbow Wallet'}}</a></div>
+                            <div class="link_btn"><a href="https://www.irisplorer.io/" target="_blank">{{$store.state.lang=='CN'?'IRIS 浏览器':'IRIS Explorer'}}</a></div>
+                            <div class="wallet_link_btn link_btn"><a href="http://www.rainbow.one/" target="_blank">{{$store.state.lang=='CN'?'Rainbow 钱包':'Rainbow Wallet'}}</a></div>
                         </div>
                     </div>
                 </div>
