@@ -21,7 +21,7 @@
                         {{information}}
                         <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{explorerHref}}</a>
                         {{informationFragment}}{{download}}
-                        <a :href="downloadHref" target="_blank">{{downloadword}}</a>
+                        <a :href="downloadHref" target="_blank">{{downloadWord}}</a>
                         {{downloadEndWord}}
                         <a :href="testnetHereHref" target="_blank">{{testnetplorerHref}}</a>
                         {{testnetplorerStatus}}
@@ -271,7 +271,7 @@
                 this.wanCloudInfo = this.format('wanCloudInfo');
                 this.wanCloudIntroduce = this.format('wanCloudIntroduce');
                 this.download = this.format('download');
-                this.downloadword = this.format('downloadword');
+                this.downloadWord = this.format('downloadWord');
                 this.downloadHref = this.format('downloadHref');
                 this.downloadEndWord = this.format('downloadEndWord')
 
@@ -351,7 +351,7 @@
                 wanCloudIntroduce:"",
                 testlink:false,
                 download:"",
-                downloadword:"",
+                downloadWord:"",
                 downloadHref:"",
                 downloadEndWord:"",
                 testnetHereHref:''
