@@ -6,10 +6,7 @@ export default {
         "next": 'what_next.png',
         "head": {
             'txt': [
-                {
-                    'txt': "主页",
-                    "href": "#/0",
-                },
+              
                 {
                     'txt': "白皮书",
                     "href": "#/0/1",
@@ -983,10 +980,6 @@ export default {
         "next": 'what_next.png',
         "head": {
             'txt': [
-                {
-                    'txt': "Home",
-                    "href": "#/0",
-                },
                 {
                     'txt': "Whitepaper",
                     "href": "#/0/1",

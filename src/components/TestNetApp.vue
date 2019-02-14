@@ -155,6 +155,12 @@
 
             </div>
             <div class="menu" v-show="menuIs">
+                <section>
+                    <a @click="skipMainnet">{{$store.state.lang=='CN'? '主网' :'Mainnet'}}</a>
+                </section>
+                <section>
+                    <a @click="skipTestNet">{{$store.state.lang=='CN'?'测试网':'Testnet'}}</a>
+                </section>
                 <section v-for="(item,index) in links">
                     <a v-if="item.href.indexOf('ttp')==-1" @click="gotojump(index,item)">
                         {{item.txt}}
@@ -162,12 +168,6 @@
                     <a v-if="item.href.indexOf('ttp')!=-1" :href="'h'+item.href" @click="gotojump(index)">
                         {{item.txt}}
                     </a>
-                </section>
-                <section>
-                    <a @click="skipMainnet">{{$store.state.lang=='CN'? '主网' :'Mainnet'}}</a>
-                </section>
-                <section>
-                    <a @click="skipTestNet">{{$store.state.lang=='CN'?'测试网':'Testnet'}}</a>
                 </section>
                 <section>
                     <a :href="$store.state.lang=='CN' ? 'https://www.irisnet.org/docs/zh/' : 'https://www.irisnet.org/docs/'" target="_blank">{{$store.state.lang=='CN'?'文档':'Docs'}}</a>
