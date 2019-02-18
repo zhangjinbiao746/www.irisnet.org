@@ -920,7 +920,7 @@ export default {
             irisplorerBtn:'测试网浏览器 IRISplorer',
             irisplorerHref:'https://testnet.irisplorer.io/',
             rainbowAppBtn:'测试网钱包 Rainbow',
-            rainbowHref:'https://testnet.rainbow.one/'
+            downloadRainbowAppHref:'https://testnet.rainbow.one/'
         },
 		announcements:[
             {
@@ -1869,7 +1869,7 @@ export default {
             irisplorerBtn:'IRISplorer (FUXI)',
             irisplorerHref:'https://testnet.irisplorer.io/',
             rainbowAppBtn:'Rainbow App (PTR)',
-            rainbowHref:'https://testnet.rainbow.one/'
+            downloadRainbowAppHref:'https://testnet.rainbow.one/'
         },
         announcements:[
             {

@@ -101,7 +101,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a :href="rainbowHref" target="_blank" class="link_common_style">
+                                <a :href="downloadRainbowAppHref" target="_blank" class="link_common_style">
                                     <div class="testnet_link_btn_content">
                                         <span>{{rainbowAppBtn}}</span>
                                         <div class="testnet_link_btn_content_img">
@@ -187,7 +187,7 @@
                 irisplorerBtn:'',
                 irisplorerHref:'',
                 rainbowAppBtn: '',
-                rainbowHref:''
+                downloadRainbowAppHref:''
             }
         },
         mounted(){
@@ -224,7 +224,7 @@
                 this.irisplorerBtn = this.format('irisplorerBtn');
                 this.irisplorerHref = this.format('irisplorerHref');
                 this.rainbowAppBtn = this.format('rainbowAppBtn');
-                this.rainbowHref = this.format('rainbowHref');
+                this.downloadRainbowAppHref = this.format('downloadRainbowAppHref');
             },
             setToggleMediumImg(){
                 this.toggleMediumImg = !this.toggleMediumImg;

@@ -18,8 +18,8 @@
                 <div class="warp">
                     <div class="testnet_title">{{title}}</div>
                     <div class="testnet_info">
-                    <p>{{information}}</p>
-                    <p>{{informationFragment}}</p>
+                    <p>{{testnetFirstParagraph}}</p>
+                    <p>{{testnetSecendParagraph}}</p>
                     <p>{{testnetText}}</p>
                     </div>
                     <a :href="howToJoinHref" target="_blank">
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                     </a>
-                    <a :href="rainbowHref" target="_blank">
+                    <a :href="downloadRainbowAppHref" target="_blank">
                         <div class="faq_container">
                             <span>{{rainbowAppBtn}}</span>
                             <div class="faq_img">
@@ -165,9 +165,9 @@
             },
             getInfo(){
                 this.title = this.format('title');
-                this.information = this.format('information');
+                this.testnetFirstParagraph = this.format('testnetFirstParagraph');
                 this.explorerHref = this.format('explorerHref');
-                this.informationFragment = this.format('informationFragment');
+                this.testnetSecendParagraph = this.format('testnetSecendParagraph');
                 this.testnetText = this.format('testnetText');
                 this.linkText = this.format('linkText');
                 this.testnetHereHref = this.format('testnetHereHref');
@@ -184,7 +184,7 @@
                 this.irisplorerBtn = this.format('irisplorerBtn');
                 this.irisplorerHref = this.format('irisplorerHref');
                 this.rainbowAppBtn = this.format('rainbowAppBtn');
-                this.rainbowHref = this.format('rainbowHref');
+                this.downloadRainbowAppHref = this.format('downloadRainbowAppHref');
             },
             changeLang(lang){
                 this.$store.state.lang = lang;
@@ -220,9 +220,9 @@
                 wechatIs: false,
                 links:message[this.$store.state.lang=='CN'?'cn':'en'].head.txt,
                 title:'',
-                information:"",
+                testnetFirstParagraph:"",
                 explorerHref:"",
-                informationFragment:"",
+                testnetSecendParagraph:"",
                 testnetText:"",
                 linkText:"",
                 faq:"",
@@ -239,7 +239,7 @@
                 irisplorerBtn:'',
                 irisplorerHref:'',
                 rainbowAppBtn: '',
-                rainbowHref:''
+                downloadRainbowAppHref:''
             }
         },
         mounted(){
