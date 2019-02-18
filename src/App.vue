@@ -15,9 +15,9 @@
         },
         methods: {
             switchView(_this) {
-                let windowWidth = $(window).width() > 768;
+                let pcWindowMinWidth = 850;
                 if(Tools.currentDeviceIsPersonComputer()){
-                    if (windowWidth) {
+                    if ($(window).width() > pcWindowMinWidth) {
                         if(_this.$route.path.indexOf('app') !== -1){
                             _this.$router.replace('/');
                         }
@@ -76,13 +76,6 @@
     }
     body{
         font-size:16px !important;
-    }
-    html, body {
-        overflow: hidden !important;
-    }
-    #app{
-        overflow-y: auto;
-        &::-webkit-scrollbar {display:none}
     }
 </style>
 

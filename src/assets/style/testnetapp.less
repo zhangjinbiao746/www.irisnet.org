@@ -288,11 +288,13 @@ a::selection{
   color: #f66!important;
 }
 .warp {
+  height: 100%;
   background: url("../app/fuxitestnet.png") no-repeat center top;
   background-size: 300px;
   background-position-x: 75%;
   background-position-y: 0%;
-  margin: 0 35px;
+  margin:0 35px;
+  padding-bottom: 100px;
   .testnet_title{
     font-size: 24px;
     color: #fff;
@@ -301,11 +303,12 @@ a::selection{
   .testnet_info{
     color: #d4d5de;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 16px;
     padding-top: 13px;
-    a{
-      color: #3DA0FF!important;
+    p{
+      margin-top: 10px;
     }
+
   }
   .join_container{
     margin-top: 25px;
@@ -313,7 +316,7 @@ a::selection{
     display: flex;
     background: #4E4976;
     justify-content: space-between;
-    padding: 0 12px 0 15px;
+    padding: 0 15px;
     line-height: 30px;
     span{
       height: 30px;
@@ -413,6 +416,7 @@ a::selection{
     height: 55px;
     background: #4E4976;
     margin-top: 3px;
+    margin-bottom: 50px;
     .join_ways_rito_content{
       display: flex;
       .join_ways_rito_content_img{
@@ -553,7 +557,7 @@ a::selection{
   height: 100%;
   overflow-y: scroll;
   background: #2D2948;
-
+  -webkit-overflow-scrolling: touch;
 }
 .menu_item_global{
   height:30px;

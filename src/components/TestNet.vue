@@ -1,6 +1,6 @@
 <template>
     <div class="testnet_page">
-        <div class="index" style="height:100%;" @click="closeMenu">
+        <div class="index">
             <div class="container">
                 <div class="head" style="position: fixed">
                     <div class="center1 head-content">
@@ -65,85 +65,53 @@
                         <p>{{title}}</p>
                     </div>
                     <div class="testnet_info_content">
-                        <p>
-                            {{information}}
-                            <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{explorerHref}}</a>
-                            {{informationFragment}}{{download}}
-                            <a :href="downloadHref" target="_blank">{{downloadWord}}</a>
-                            {{downloadEndWord}}
-                            <a :href="testnetHereHref" target="_blank">{{testnetplorerHref}}</a>
-                            {{testnetplorerStatus}}
-                        </p>
-                    </div>
-                    <div class="testnet_info_join_content">
-                        <a :href="howToJoinHref" target="_blank">
-                            <div class="testnet_how_join">
-                                <span>{{howToJoin}}</span>
-                                <div class="testnet_how_join_img">
-                                    <a :href="howToJoinHref" target="_blank">
-                                        <img class="default_help_img" src="../assets/app/defaulthelp.png">
-                                        <img class="highlight_help_img" src="../assets/app/highlight.png">
-                                    </a>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="testnet_hover_content">
-                            <div class="testnet_hover_left" @mouseover="onMouseOver('incentivizedTestnet')" @mouseout="onmouseout()" @click.stop="showIncentivitedMenu()" :class="flShowMenu ? 'testnet_hover_left_active' : '' ">
-                                <div class="tesnet_hover_incentivize">
-                                    <span>{{incentivizedInfo}}</span>
-                                    <span class="select_arrow_img">
-                                    <img :src="flShowArrowImg ? activeArrow : defaultArrow">
-                                </span>
-                                </div>
-                                <a :href="incentivizedMenuHref" target="_blank">
-                                    <div class="tesnet_hover_introduce">
-                                        <span>{{incentivizedMenu}}</span>
+                        <div>
+                            <p>{{testnetFirstParagraph}}</p>
+                            <p>{{testnetSecendParagraph}}</p>
+                            <p>{{testnetText}}</p>
+                        </div>
+                        <div class="testnet_info_join_content">
+                            <div class="link_btn_content">
+                                <a :href="howToJoinHref" target="_blank" class="link_common_style">
+                                    <div class="testnet_link_btn_content">
+                                        <span>{{howToJoin}}</span>
+                                        <div class="testnet_link_btn_content_img">
+                                            <img class="default_help_img" src="../assets/app/defaulthelp.png">
+                                            <img class="highlight_help_img" src="../assets/app/highlight.png">
+                                        </div>
                                     </div>
                                 </a>
-                                <a :href="incentivizedFaqHref" target="_blank">
-                                    <div class="testnet_hover_faq">
-                                        <span>{{incentivizedFaq}}</span>
-                                    </div>
-                                </a>
-                                <a :href="incentivizedresultHref" target="_blank">
-                                    <div class="testnet_hover_result">
-                                        <span>{{incentivizedresult}}</span>
-                                    </div>
-                                </a>
-                                <a :href="incentivizedtaskHref" target="_blank">
-                                    <div class="testnet_hover_Tasks">
-                                        <span>{{incentivizedtask}}</span>
+                                <a :href="faqHref" target="_blank" class="link_common_style">
+                                    <div class="testnet_link_btn_content">
+                                        <span>{{faq}}</span>
+                                        <div class="testnet_link_btn_content_img">
+                                            <img class="default_help_img" src="../assets/app/defaulthelp.png">
+                                            <img class="highlight_help_img" src="../assets/app/highlight.png">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="testnet_hover_right" @mouseover="onMouseOver('baas')" @mouseout="onmouseout()" @click.stop="showBaasMenu()" :class="flShowBassMenu ? 'testnet_hover_right_active' : '' ">
-                                <div class="testnet_hover_booststrap">
-                                    <span>{{baasMenu}}</span>
-                                    <span class="select_arrow_img">
-                                    <img :src="flShowBassArrowImg ? activeArrow : defaultArrow">
-                                </span>
-                                </div>
-                                <a :href="baasMenuAboutEffectHref" target="_blank">
-                                    <div class="testnet_hover_available">
-                                        <span>{{baasMenuAboutEffect}}</span>
+                            <div class="link_btn_content">
+                                <a :href="irisplorerHref" target="_blank" class="link_common_style">
+                                    <div class="testnet_link_btn_content">
+                                        <span>{{irisplorerBtn}}</span>
+                                        <div class="testnet_link_btn_content_img">
+                                            <img class="default_help_img" src="../assets/app/explorerDefault.png">
+                                            <img class="highlight_help_img" src="../assets/app/explorerHighLight.png">
+                                        </div>
                                     </div>
                                 </a>
-                                <a :href="baasMenuHowApplyHref" target="_blank">
-                                    <div class="testnet_hover_BaaS">
-                                        {{baasMenuHowApply}}
+                                <a :href="downloadRainbowAppHref" target="_blank" class="link_common_style">
+                                    <div class="testnet_link_btn_content">
+                                        <span>{{rainbowAppBtn}}</span>
+                                        <div class="testnet_link_btn_content_img">
+                                            <img class="default_help_img" src="../assets/app/walletDefault.png">
+                                            <img class="highlight_help_img" src="../assets/app/walletHighLight.png">
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <a :href="faqHref" target="_blank">
-                            <div class="testnet_faq">
-                                <span>{{faq}}</span>
-                                <div class="testnet_faq_img">
-                                    <img class="default_help_img" src="../assets/app/defaulthelp.png">
-                                    <img class="highlight_help_img" src="../assets/app/highlight.png">
-                                </div>
-                            </div>
-                        </a>
                     </div>
                     <div class="testnet_community">
                         <span>{{join}}</span>
@@ -169,57 +137,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="zgblock_container">
-                    <div class="zgblock_wrap">
-                        <div class="zgblock_info_container">
-                            <div class="zgblock_info_img_container">
-                                <div class="zgblock_info_img">
-                                    <a href="https://baas.zhigui.com/IRISnet" target="_blank">
-                                        <img src="../../public/zgkjlogo.svg">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="zgblock_introduce_container">
-                                <div class="zgblock_introduce_title_container">
-                                    <span>{{zigTitle}}</span>
-                                    <div class="zgblock_introduce_img">
-                                        <a href="https://baas.zhigui.com/IRISnet" target="_blank">
-                                            <img src="../../public/link.png">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="zgblock_introduce_info">
-                                    {{zigIntroduce}}
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wanCloud_info_container">
-                            <div class="wanCloud_info_introduce">
-                                <div class="wanCloud_info_title_container">
-                                    <div class="wanCloud_info_title_content">
-                                        <span>{{wanCloudTitle}}</span>
-                                    </div>
-                                    <div class="wanCloud_info_img">
-                                        <a href="https://irisnet.wancloud.cloud/#/" target="_blank">
-                                            <img src="../../public/link.png">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="wanCloud_info_content">
-                                    <p>{{wanCloudInfo}}</p>
-                                    <p>{{wanCloudIntroduce}}</p>
-                                </div>
-                            </div>
-                            <div class="wanCloud_logo_container">
-                                <div class="wanCloud_logo">
-                                    <a href="https://irisnet.wancloud.cloud/#/" target="_blank">
-                                        <img src="../../public/wancloud.png">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <foot></foot>
         </div>
@@ -236,46 +153,21 @@
         data(){
             return {
                 title:'',
-                information:"",
-                explorerHref:"",
+                testnetFirstParagraph:"",
                 testnetHereHref:"",
-                informationFragment:"",
-                testnetplorerHref:"",
-                testnetplorerStatus:"",
-                howToJoin:"",
-                howToJoinHref:"",
-                incentivizedInfo:"",
-                incentivizedMenu:"",
-                incentivizedMenuHref:"",
-                incentivizedFaq:"",
-                incentivizedFaqHref:"",
-                incentivizedresult:"",
-                incentivizedresultHref:"",
-                incentivizedtask:"",
-                incentivizedtaskHref:"",
-                baasMenu:"",
-                baasMenuAboutEffect:"",
-                baasMenuAboutEffectHref:"",
-                baasMenuHowApply:"",
-                baasMenuHowApplyHref:"",
+                testnetSecendParagraph:"",
+                testnetText:"",
+                linkText:"",
                 faq:"",
                 faqHref:"",
-                gameOfGenesis:"",
-                whatGenesis:"",
-                whatGenesisHref:"",
-                howWin:"",
-                howWinHref:"",
                 join:"",
                 qq:"",
                 qqNum:"",
                 riot:"",
+                howToJoin:"",
+                howToJoinHref:"",
                 riotAddress:"",
                 riotAddressHref:"",
-                zigTitle:"",
-                zigIntroduce:"",
-                wanCloudTitle:"",
-                wanCloudInfo:"",
-                wanCloudIntroduce:"",
                 flShowMenu: false,
                 flShowBassMenu: false,
                 flshowhackathonGameMenu: false,
@@ -283,26 +175,23 @@
                 activeArrow:require("../assets/app/arrowblue.png"),
                 comm: 'community.png',
                 down: 'arrow.png',
-
                 flClickArrowStatus: false,
                 flClickBaasArrowStatus: false,
                 flClickGenesisStatus: false,
-
                 flShowArrowImg: false,
                 flShowBassArrowImg: false,
-                flshowGenesisArrowImg : false,
-
+                flShowGenesisArrowImg : false,
                 toggleMediumImg: true,
                 mediumImg: require('../assets/medium.png'),
                 mediumWhiteImg: require('../assets/medium_white.png'),
-                download:"",
-                downloadWord:"",
-                downloadHref:"",
-                downloadEndWord:""
+                irisplorerBtn:'',
+                irisplorerHref:'',
+                rainbowAppBtn: '',
+                downloadRainbowAppHref:''
             }
         },
         mounted(){
-            $('#app').animate({
+            $('html,body').animate({
                     scrollTop: 0
                 }, 10
             );
@@ -312,129 +201,30 @@
             goHome(){
                 this.$router.push(`/#`)
             },
-            onMouseOver(mouseOverTitle){
-                if(mouseOverTitle === "incentivizedTestnet"){
-                    this.flShowArrowImg = true;
-                }else if(mouseOverTitle === 'baas'){
-                    this.flShowBassArrowImg = true;
-                }else if(mouseOverTitle === 'genesis'){
-                    this.flshowGenesisArrowImg = true;
-                }
-            },
-            onmouseout(){
-                if(!this.flClickArrowStatus){
-                    this.flShowArrowImg = false;
-                }
-                if(!this.flClickBaasArrowStatus){
-                    this.flShowBassArrowImg = false;
-                }
-                if(!this.flClickGenesisStatus){
-                    this.flshowGenesisArrowImg = false;
-
-                }
-            },
-            closeMenu(){
-                this.flClickArrowStatus = false;
-                this.flClickBaasArrowStatus = false;
-                this.flClickGenesisStatus = false;
-
-                this.flShowArrowImg = false;
-                this.flShowBassArrowImg = false;
-                this.flshowGenesisArrowImg = false;
-
-                this.flShowMenu = false;
-                this.flshowhackathonGameMenu = false;
-                this.flShowBassMenu = false;
-            },
             format(param){
                 return message[this.$store.state.lang=='CN'?'cn':'en'].testnet[param];
             },
             getInfo(){
                 this.title = this.format('title');
-                this.download = this.format('download');
-                this.downloadWord = this.format('downloadWord');
-                this.downloadHref = this.format('downloadHref');
-                this.downloadEndWord = this.format('downloadEndWord');
-                this.information = this.format('information');
-                this.explorerHref = this.format('explorerHref');
+                this.testnetFirstParagraph = this.format('testnetFirstParagraph');
                 this.testnetHereHref = this.format('testnetHereHref');
-                this.informationFragment = this.format('informationFragment');
-                this.testnetplorerHref = this.format('testnetplorerHref');
-                this.testnetplorerStatus = this.format('testnetplorerStatus');
-                this.howToJoin = this.format('howToJoin');
-                this.howToJoinHref = this.format('howToJoinHref');
-                this.incentivizedInfo = this.format('incentivizedInfo');
-                this.incentivizedMenu = this.format('incentivizedMenu');
-                this.incentivizedMenuHref = this.format('incentivizedMenuHref');
-                this.incentivizedFaq = this.format('incentivizedFaq');
-                this.incentivizedFaqHref = this.format('incentivizedFaqHref');
-                this.incentivizedresult = this.format('incentivizedresult');
-                this.incentivizedresultHref = this.format('incentivizedresultHref');
-                this.incentivizedtask = this.format('incentivizedtask');
-                this.incentivizedtaskHref = this.format('incentivizedtaskHref');
-                this.baasMenu = this.format('baasMenu');
-                this.baasMenuAboutEffect = this.format('baasMenuAboutEffect');
-                this.baasMenuAboutEffectHref = this.format('baasMenuAboutEffectHref');
-                this.baasMenuHowApply = this.format('baasMenuHowApply');
-                this.baasMenuHowApplyHref = this.format('baasMenuHowApplyHref');
+                this.testnetSecendParagraph = this.format('testnetSecendParagraph');
+                this.testnetText = this.format('testnetText');
+                this.linkText = this.format('linkText');
                 this.faq = this.format('faq');
                 this.faqHref = this.format('faqHref');
-                this.gameOfGenesis = this.format('gameOfGenesis');
-                this.whatGenesis = this.format('whatGenesis');
-                this.whatGenesisHref = this.format('whatGenesisHref');
-                this.howWin = this.format('howWin');
-                this.howWinHref = this.format('howWinHref');
                 this.join = this.format('join');
                 this.qq = this.format('qq');
                 this.qqNum = this.format('qqNum');
                 this.riot = this.format('riot');
                 this.riotAddress = this.format('riotAddress');
                 this.riotAddressHref = this.format('riotAddressHref');
-                this.zigTitle = this.format('zigTitle');
-                this.zigIntroduce = this.format('zigIntroduce');
-                this.wanCloudTitle = this.format("wanCloudTitle");
-                this.wanCloudInfo = this.format('wanCloudInfo');
-                this.wanCloudIntroduce = this.format('wanCloudIntroduce');
-
-            },
-            showIncentivitedMenu(){
-                this.flClickGenesisStatus = false;
-                this.flClickArrowStatus = true;
-                this.flClickBaasArrowStatus = false;
-
-                this.flShowArrowImg = true;
-                this.flShowBassArrowImg = false;
-                this.flshowGenesisArrowImg = false;
-
-                this.flShowMenu =! this.flShowMenu;
-                this.flshowhackathonGameMenu = false;
-                this.flShowBassMenu = false;
-            },
-            showBaasMenu(){
-                this.flClickGenesisStatus = false;
-                this.flClickBaasArrowStatus = true;
-                this.flClickArrowStatus = false;
-
-                this.flShowBassArrowImg = true;
-                this.flShowArrowImg = false;
-                this.flshowGenesisArrowImg = false;
-
-                this.flshowhackathonGameMenu = false;
-                this.flShowMenu = false;
-                this.flShowBassMenu =! this.flShowBassMenu
-            },
-            showHackathonGameMenu(){
-                this.flClickBaasArrowStatus = false;
-                this.flClickGenesisStatus = true;
-                this.flClickArrowStatus = false;
-
-                this.flshowGenesisArrowImg = true;
-                this.flShowArrowImg = false;
-                this.flShowBassArrowImg = false;
-
-                this.flShowMenu = false;
-                this.flShowBassMenu = false;
-                this.flshowhackathonGameMenu =! this.flshowhackathonGameMenu;
+                this.howToJoin = this.format('howToJoin');
+                this.howToJoinHref = this.format('howToJoinHref');
+                this.irisplorerBtn = this.format('irisplorerBtn');
+                this.irisplorerHref = this.format('irisplorerHref');
+                this.rainbowAppBtn = this.format('rainbowAppBtn');
+                this.downloadRainbowAppHref = this.format('downloadRainbowAppHref');
             },
             setToggleMediumImg(){
                 this.toggleMediumImg = !this.toggleMediumImg;
