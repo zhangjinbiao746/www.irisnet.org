@@ -1,6 +1,6 @@
 <template>
     <div class="testnet_page">
-        <div class="index" style="height:100%;">
+        <div class="index">
             <div class="container">
                 <div class="head" style="position: fixed">
                     <div class="center1 head-content">
@@ -65,7 +65,7 @@
                         <p>{{title}}</p>
                     </div>
                     <div class="testnet_info_content">
-                        <div style="margin-top: 36px;width: 100%">
+                        <div>
                             <p>{{information}}</p>
                             <p>{{informationFragment}}</p>
                             <p>{{testnetText}}</p>
