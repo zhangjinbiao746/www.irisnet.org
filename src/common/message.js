@@ -903,8 +903,8 @@ export default {
         },
         testnet:{
             title:"伏羲测试网",
-            information:"伏羲测试网络经过数次迭代已经完成了使命。",
-            informationFragment:"2019年2月，IRISnet开发团队发布了irishub v0.12.0，并成功启动了新的测试网络 (chain-id : fuxi)。",
+            testnetFirstParagraph:"伏羲测试网络经过数次迭代已经完成了使命。",
+            testnetSecendParagraph:"2019年2月，IRISnet开发团队发布了irishub v0.12.0，并成功启动了新的测试网络 (chain-id : fuxi)。",
             testnetText:"伏羲测试网跟IRIS主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。",
             testnetHereHref:"https://github.com/irisnet/testnets/blob/master/README_CN.md",
             howToJoin:"如何加入伏羲测试网",
@@ -1851,9 +1851,9 @@ export default {
         },
         testnet:{
             title:"Fuxi Testnet",
-            information:"The previous iterations of the testnets have accomplished their mission. ",
+            testnetFirstParagraph:"The previous iterations of the testnets have accomplished their mission. ",
             explorerHref:"IRISplorer",
-            informationFragment:"In February 2019, the IRISnet development team released irishub v0.12.0 and successfully started the new testnet (chain-id : fuxi) with this version.",
+            testnetSecendParagraph:"In February 2019, the IRISnet development team released irishub v0.12.0 and successfully started the new testnet (chain-id : fuxi) with this version.",
             testnetText:"The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers). ",
             testnetHereHref: "https://github.com/irisnet/testnets/blob/master/README.md",
             howToJoin:"Join FUXI Testnet",

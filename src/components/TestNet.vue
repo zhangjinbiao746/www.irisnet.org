@@ -66,8 +66,8 @@
                     </div>
                     <div class="testnet_info_content">
                         <div>
-                            <p>{{information}}</p>
-                            <p>{{informationFragment}}</p>
+                            <p>{{testnetFirstParagraph}}</p>
+                            <p>{{testnetSecendParagraph}}</p>
                             <p>{{testnetText}}</p>
                         </div>
                         <div class="testnet_info_join_content">
@@ -153,9 +153,9 @@
         data(){
             return {
                 title:'',
-                information:"",
+                testnetFirstParagraph:"",
                 testnetHereHref:"",
-                informationFragment:"",
+                testnetSecendParagraph:"",
                 testnetText:"",
                 linkText:"",
                 faq:"",
@@ -206,9 +206,9 @@
             },
             getInfo(){
                 this.title = this.format('title');
-                this.information = this.format('information');
+                this.testnetFirstParagraph = this.format('testnetFirstParagraph');
                 this.testnetHereHref = this.format('testnetHereHref');
-                this.informationFragment = this.format('informationFragment');
+                this.testnetSecendParagraph = this.format('testnetSecendParagraph');
                 this.testnetText = this.format('testnetText');
                 this.linkText = this.format('linkText');
                 this.faq = this.format('faq');

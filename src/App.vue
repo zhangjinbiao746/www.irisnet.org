@@ -15,9 +15,9 @@
         },
         methods: {
             switchView(_this) {
-                let windowWidth = $(window).width() > 850;
+                let pcWindowMinWidth = 850;
                 if(Tools.currentDeviceIsPersonComputer()){
-                    if (windowWidth) {
+                    if ($(window).width() > pcWindowMinWidth) {
                         if(_this.$route.path.indexOf('app') !== -1){
                             _this.$router.replace('/');
                         }
