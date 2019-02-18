@@ -7,6 +7,7 @@
       color: #fff;
     }
     .container{
+      height: 100%;
       background: #2D2948;
     }
     .testnet_content{
@@ -146,12 +147,11 @@
       }
     }
     .testnet_info_content{
-      color: #fff;
+      color: #d4d5de;
       p{
-        padding-top: 36px;
-        line-height: 32px;
-        font-size: 16px;
-        color: #d4d5de;
+        margin-top: 10px;
+        line-height: 20px;
+        font-size: 15px;
       }
       a{
         color: #3DA0FF!important;
@@ -159,359 +159,75 @@
     }
     .testnet_info_join_content{
       color: #fff;
-      .testnet_how_join{
-        font-size: 16px;
-        margin-top: 30px;
-        margin-bottom: 6px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin-top: 46px;
+      .link_btn_content{
         display: flex;
-        justify-content: space-between;
-        height: 60px;
-        line-height: 60px;
-        background: #3A345D;
-        border: 1px solid #4E4976;
-        color: #d4d5de;
-        &:hover{
-          //background: #3DA0FF;
-          border: 1px solid #00aeef;
-          .highlight_help_img {
-            display: block !important;
-            width: 100%;
-            height: 100%;
-          }
-          .default_help_img {
-            display: none;
-            width: 100%;
-            height: 100%;
-          }
+        a:nth-child(1){
+          margin-right: 6px;
         }
-        .testnet_how_join_img{
-          line-height: 0;
-          margin: auto 0;
-          padding-right: 24px;
-          width: 28px;
-          height: 28px;
-          .highlight_help_img{
-            display: none;
-          }
-          .default_help_img{
-            width: 100%;
-            height: 100%;
-          }
-        }
-        span{
-          padding-left: 30px;
-        }
-      }
-      .testnet_hover_left_active{
-        .tesnet_hover_incentivize{
-          background: #3A345D;
-          border-top: 1px solid #00aeef!important;
-          border-right: 1px solid #00aeef!important;
-          border-left: 1px solid #00aeef!important;
-          border-bottom: none!important;
-          display: flex;
-          justify-content: space-between;
-          padding-left: 30px;
-          z-index: 100;
-          color: #d4d5de;
-        }
-        .tesnet_hover_introduce{
-          padding-left: 30px;
-          position: relative;
-          display: block !important;
-          border-right: 1px solid #00aeef;
-          border-left: 1px solid #00aeef;
-          background: #3A345D;
-          color: #d4d5de;
-        }
-        .testnet_hover_faq{
-          position: relative;
-          display: block !important;
-          border-right: 1px solid #00aeef;
-          border-left: 1px solid #00aeef;
-          background: #3A345D;
-          color: #d4d5de;
-
-        }
-        .testnet_hover_result{
-          position: relative;
-          display: block !important;
-          border-right: 1px solid #00aeef;
-          border-left: 1px solid #00aeef;
-          background: #3A345D;
-          color: #d4d5de;
-
-        }
-        .testnet_hover_Tasks{
-          position: relative;
-          display: block !important;
-          background: #3A345D;
-          color: #d4d5de;
-          border-right: 1px solid #00aeef;
-          border-left: 1px solid #00aeef;
-          border-bottom: 1px solid #00aeef;
-        }
-      }
-      .testnet_hover_right_active{
-          .testnet_hover_booststrap{
-            border-top: 1px solid #00aeef !important;
-            border-left: 1px solid #00aeef !important;
-            border-right: 1px solid #00aeef !important;
-            border-bottom: none !important;
-          }
-          .testnet_hover_available{
-            position: relative;
-            display: block !important;
-            border-left: 1px solid #00aeef !important;
-            border-right: 1px solid #00aeef !important;
-          }
-          .testnet_hover_BaaS{
-            position: relative;
-            display: block !important;
-            border-left: 1px solid #00aeef !important;
-            border-right: 1px solid #00aeef !important;
-            border-bottom: 1px solid #00aeef !important;
-          }
-      }
-      .testnet_hover_content{
-        display: flex;
-        .testnet_hover_left{
-          height: 60px;
-          font-size: 16px;
-          line-height: 60px;
+        .link_common_style{
           flex: 1;
-          flex-direction: column;
-          cursor: pointer;
-
-          .tesnet_hover_incentivize{
+          .testnet_hover_left_active{
+            .tesnet_hover_incentivize{
+              background: #3A345D;
+              border-top: 1px solid #00aeef!important;
+              border-right: 1px solid #00aeef!important;
+              border-left: 1px solid #00aeef!important;
+              border-bottom: none!important;
+              display: flex;
+              justify-content: space-between;
+              padding-left: 30px;
+              z-index: 100;
+              color: #d4d5de;
+            }
+          }
+          .testnet_link_btn_content{
+            margin-bottom: 6px;
             background: #3A345D;
+            height: 60px;
+            line-height: 60px;
             border: 1px solid #4E4976;
-            display: flex;
-            justify-content: space-between;
-            padding-left: 30px;
-            color: #d4d5de;
-            &:hover{
-              border: 1px solid #00aeef;
-            }
-          }
-          .select_arrow_img{
-            padding-right: 30px;
-            img{
-              width: 16px;
-              height: 10px;
-            }
-          }
-          .tesnet_hover_introduce{
-            position: relative;
-            display: none;
-            border-right: 1px solid #00aeef;
-            border-left: 1px solid #00aeef;
-            background: #3A345D;
-            &:hover{
-              background: #3DA0FF;
-            }
-          }
-          .testnet_hover_faq{
-            position: relative;
-            display: none;
-            background: #3A345D;
-            padding-left: 30px;
-            &:hover{
-              background: #3DA0FF;
-            }
-          }
-          .testnet_hover_result{
-            position: relative;
-            display: none;
-            padding-left: 30px;
-            background: #3A345D;
-            &:hover{
-              background: #3DA0FF;
-            }
-          }
-          .testnet_hover_Tasks{
-            position: relative;
-            display: none;
-            padding-left: 30px;
-            background: #3A345D;
-            &:hover{
-              background: #3DA0FF;
-            }
-          }
-        }
-        .testnet_hover_right{
-          flex: 1;
-          width: 100%;
-          height: 60px;
-          line-height: 60px;
-          margin-left: 6px;
-          flex-direction: column;
-          cursor: pointer;
-
-          .testnet_hover_booststrap{
-            display: flex;
-            flex: 1;
             font-size: 16px;
             padding-left: 30px;
+            display: flex;
             justify-content: space-between;
-            border: 1px solid #4E4976;
-            background: #3A345D;
             color: #d4d5de;
             &:hover{
               border: 1px solid #00aeef;
+              .highlight_help_img {
+                display: block !important;
+                width: 100%;
+                height: 100%;
+              }
+              .default_help_img {
+                display: none;
+                width: 100%;
+                height: 100%;
+              }
             }
-            .select_arrow_img{
-              padding-right: 30px;
-              img{
-                width: 16px;
-                height: 10px;
+            .testnet_link_btn_content_img{
+              width: 28px;
+              height: 28px;
+              line-height: 0;
+              margin: auto 0;
+              padding-right: 24px;
+              .highlight_help_img{
+                display: none;
+              }
+              .default_help_img{
+                width: 100%;
+                height: 100%;
               }
             }
           }
-          .testnet_hover_available{
-            height: 60px;
-            line-height: 60px;
-            display: none;
-            font-size: 16px;
-            padding-left: 30px;
-            background: #3A345D;
-            color: #d4d5de;
-            border-left: 1px solid #3A345D;
-            border-right: 1px solid #3A345D;
-            &:hover{
-              background: #3DA0FF;
-            }
-          }
-          .testnet_hover_BaaS{
-            height: 60px;
-            display: none;
-            font-size: 16px;
-            color: #d4d5de;
-            padding-left: 30px;
-            background: #3A345D;
-            border-left: 1px solid #3A345D;
-            border-right: 1px solid #3A345D;
-            border-bottom: 1px solid #3A345D;
-            &:hover{
-              background: #3DA0FF;
-            }
-          }
         }
       }
-      .testnet_faq{
-        background: #3A345D;
-        height: 60px;
-        line-height: 60px;
-        border: 1px solid #4E4976;
-        margin-top: 8px;
-        font-size: 16px;
-        padding-left: 30px;
-        display: flex;
-        justify-content: space-between;
-        color: #d4d5de;
-        &:hover{
-          border: 1px solid #00aeef;
-          .highlight_help_img {
-            display: block !important;
-            width: 100%;
-            height: 100%;
-          }
-          .default_help_img {
-            display: none;
-            width: 100%;
-            height: 100%;
-          }
-        }
-        .testnet_faq_img{
-          width: 28px;
-          height: 28px;
-          line-height: 0;
-          margin: auto 0;
-          padding-right: 24px;
-          .highlight_help_img{
-            display: none;
-          }
-          .default_help_img{
-            width: 100%;
-            height: 100%;
-          }
-        }
-      }
-    }
-    .testnet_genesis_hover_container_active{
-      .testnet_genesis{
-        border-bottom: none !important;
-        border-top: 1px solid #00aeef !important;
-        border-right: 1px solid #00aeef !important;
-        border-left: 1px solid #00aeef !important;
-      }
-      .testnet_hover_introduce_what{
-        display: block !important;
-        border-right: 1px solid #00aeef !important;
-        border-left: 1px solid #00aeef !important;
-      }
-      .testnet_hover_win{
-        display: block !important;
-        border-right: 1px solid #00aeef !important;
-        border-left: 1px solid #00aeef !important;
-        border-bottom: 1px solid #00aeef !important;
-      }
-    }
-    .testnet_genesis_hover_container{
-      color: #fff;
-      height: 60px;
-      margin: 36px 0;
-      line-height: 60px;
-      font-size: 16px;
-      width: 100%;
-      cursor: pointer;
 
-      .testnet_genesis{
-        display: flex;
-        justify-content: space-between;
-        padding-left: 30px;
-        border: 1px solid #4E4976;
-        background: #3A345D;
-        color: #d4d5de;
-        &:hover{
-          border: 1px solid #00aeef;
-        }
-        .select_arrow_img{
-          padding-right: 30px;
-          img{
-            width: 16px;
-            height: 10px;
-          }
-        }
-      }
-      .testnet_hover_introduce_what{
-        display: none;
-        position: relative;
-        height: 60px;
-        line-height: 60px;
-        background: #3A345D;
-        font-size: 16px;
-        padding-left: 30px;
-        color: #d4d5de;
-        &:hover{
-          background: #3DA0FF;
-        }
-      }
-      .testnet_hover_win{
-        display: none;
-        position: relative;
-        height: 60px;
-        line-height: 60px;
-        background: #3A345D;
-        font-size: 16px;
-        padding-left: 30px;
-        color: #d4d5de;
-        &:hover{
-          background: #3DA0FF;
-        }
-      }
-    }
 
+    }
     .testnet_community{
       margin-top: 0.36rem;
       background: #3A345D;
@@ -575,119 +291,6 @@
           font-size: 16px;
           p:nth-child(2){
             opacity: 0.6;
-          }
-        }
-      }
-    }
-    .zgblock_container{
-      width: 100%;
-      background: #16152d;
-      .zgblock_wrap{
-        width: 100%;
-        max-width: 1250px;
-        margin: auto;
-        .zgblock_info_container{
-          display: flex;
-          .zgblock_info_img_container{
-            flex: 1;
-            background: #16152d;
-            .zgblock_info_img{
-              color:#fff;
-              height:587px;
-              line-height: 587px;
-              text-align: center;
-              img{
-                width: 333px;
-                height: 64px;
-              }
-            }
-          }
-          .zgblock_introduce_container{
-            flex: 1;
-            background: #16152d;
-            color: #fff;
-            .zgblock_introduce_title_container{
-              margin-top: 92px;
-              display: flex;
-              span{
-                font-size: 30px;
-                padding-bottom: 16px;
-                border-bottom: 1px solid #3DA0FF;
-                font-weight: 900;
-              }
-              .zgblock_introduce_img{
-                width:30px;
-                height:30px;
-                margin-left: 20px;
-                margin-top: 9px;
-                img{
-                  width: 100%
-                }
-              }
-            }
-            .zgblock_introduce_info{
-              margin-top: 35px;
-              font-size: 16px;
-              line-height: 32px;
-              color: #d4d5de;
-            }
-          }
-        }
-        .wanCloud_info_container{
-          display: flex;
-          .wanCloud_info_introduce{
-            flex: 1;
-            height:587px;
-            background: #16152d;
-            color: #fff;
-            .wanCloud_info_title_container{
-              display: flex;
-              .wanCloud_info_title_content{
-                font-size: 30px;
-                padding-bottom: 16px;
-                border-bottom: 1px solid #3DA0FF;
-                span{
-                  font-weight: 900;
-                }
-              }
-              .wanCloud_info_img{
-                width:30px;
-                height:30px;
-                margin-top: 9px;
-                margin-left: 20px;
-                img{
-                  width: 100%;
-                }
-              }
-            }
-            .wanCloud_info_content{
-              margin-top: 35px;
-              p:nth-child(1){
-                font-size: 16px;
-                line-height: 32px;
-                color: #d4d5de;
-              }
-              p:nth-child(2){
-                margin-top:32px;
-                font-size: 16px;
-                line-height: 32px;
-                color: #d4d5de;
-              }
-            }
-          }
-          .wanCloud_logo_container{
-            flex: 1;
-            height:587px;
-            background: #16152d;
-            .wanCloud_logo{
-              width: 192px;
-              height:165px;
-              margin: 0 auto;
-              line-height: 587px;
-              img{
-                width: 100%;
-              }
-            }
           }
         }
       }

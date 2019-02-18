@@ -429,7 +429,7 @@
                 this.scroll(742)
             },
             scroll(top) {
-                $('#app').animate({
+                $('html,body').animate({
                             scrollTop: top
                         }, 500
                 );

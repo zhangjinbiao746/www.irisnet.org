@@ -92,13 +92,17 @@
           background: #774be3;
         }
         .news_content{
+          max-width: 1250px;
           list-style: none;
-          display: -webkit-box;
+          display: flex;
+          justify-content: space-between;
+          li:nth-child(2){
+            margin: 0 60px 0 60px;
+          }
           li{
             flex: 1;
             .img_content{
               margin-top: 36px;
-              padding-right: 60px;
               .pointer{
                 cursor: pointer;
               }
@@ -119,7 +123,7 @@
                 background: #724be3;
                 span:nth-child(1){
                   flex: 1;
-                  width: 240px;
+                  max-width: 240px;
                   height: 36px;
                   letter-spacing: 1px;
                   line-height: 18px;

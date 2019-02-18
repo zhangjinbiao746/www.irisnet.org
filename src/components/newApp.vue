@@ -439,9 +439,9 @@
                 this.menuIs = false;
             },
             scroll(top) {
-                $('#app').animate({
-                            scrollTop: top
-                        }, 500
+                $('html,body').animate({
+                        scrollTop: top
+                    }, 500
                 );
             },
             commitMaile(){
