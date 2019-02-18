@@ -1333,7 +1333,8 @@
         transform: translate(-50%,-50%);
     }
     .tool{
-        width: 1200px;
+        max-width: 1200px;
+        width: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -1345,7 +1346,6 @@
             cursor: pointer;
         }
     }
-
     .mint-swipe-indicators {
         bottom: 8%;
         display: none;
@@ -1363,4 +1363,8 @@
         border-radius: unset;
     }
 }
-
+@media screen and (max-width: 1200px){
+    .tool{
+        display: none;
+    }
+}

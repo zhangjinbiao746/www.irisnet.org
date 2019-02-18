@@ -17,70 +17,41 @@
             <div class="newCenter">
                 <div class="warp">
                     <div class="testnet_title">{{title}}</div>
-                    <p class="testnet_info">
-                        {{information}}
-                        <a href="https://testnet.irisplorer.cn/#/home" target="_blank">{{explorerHref}}</a>
-                        {{informationFragment}}{{download}}
-                        <a :href="downloadHref" target="_blank">{{downloadWord}}</a>
-                        {{downloadEndWord}}
-                        <a :href="testnetHereHref" target="_blank">{{testnetplorerHref}}</a>
-                        {{testnetplorerStatus}}
-                    </p>
-                    <a :href="howToJoinHref">
+                    <div class="testnet_info">
+                    <p>{{testnetFirstParagraph}}</p>
+                    <p>{{testnetSecendParagraph}}</p>
+                    <p>{{testnetText}}</p>
+                    </div>
+                    <a :href="howToJoinHref" target="_blank">
                         <div class="join_container">
                             <span>{{howToJoin}}</span>
-                                <div class="help_img">
-                                    <img src="../assets/app/defaulthelp.png">
-                                </div>
+                            <div class="help_img">
+                                <img src="../assets/app/defaulthelp.png">
+                            </div>
                         </div>
                     </a>
-
-                    <div class="incentivized_title">
-                       <span>{{incentivizedInfo}}</span>
-                    </div>
-                    <div class="incentivized_menu">
-                        <a :href="incentivizedMenuHref">
-                            <div class="menu_item_global">
-                                <span>{{incentivizedMenu}}</span>
-                            </div>
-                        </a>
-                        <a :href="incentivizedFaqHref">
-                            <div class="menu_item_global">
-                                <span>{{incentivizedFaq}}</span>
-                            </div>
-                        </a>
-                        <a :href="incentivizedresultHref">
-                            <div class="menu_item_global">
-                                <span>{{incentivizedresult}}</span>
-                            </div>
-                        </a>
-                        <a :href="incentivizedtaskHref">
-                            <div class="menu_item_global">
-                                <span>{{incentivizedtask}}</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="baas_title">
-                        <span>{{baasMenu}}</span>
-                    </div>
-                    <div class="baas_menu">
-                        <a :href="baasMenuHowApplyHref">
-                            <div class="menu_item_global">
-                                <span>{{baasMenuAboutEffect}}</span>
-                            </div>
-                        </a>
-                        <a :href="baasMenuHowApplyHref">
-                            <div class="menu_item_global">
-                                <span>{{baasMenuHowApply}}</span>
-                            </div>
-                        </a>
-                    </div>
-                    <a :href="faqHref">
+                    <a :href="faqHref" target="_blank">
                         <div class="faq_container">
                             <span>{{faq}}</span>
                                 <div class="faq_img">
                                     <img src="../assets/app/defaulthelp.png">
                                 </div>
+                        </div>
+                    </a>
+                    <a :href="irisplorerHref" target="_blank">
+                        <div class="faq_container">
+                            <span>{{irisplorerBtn}}</span>
+                            <div class="faq_img">
+                                <img src="../assets/app/explorerDefault.png">
+                            </div>
+                        </div>
+                    </a>
+                    <a :href="downloadRainbowAppHref" target="_blank">
+                        <div class="faq_container">
+                            <span>{{rainbowAppBtn}}</span>
+                            <div class="faq_img">
+                                <img src="../assets/app/walletDefault.png">
+                            </div>
                         </div>
                     </a>
                     <div class="community_container">
@@ -117,42 +88,6 @@
                     </a>
 
                 </div>
-                <div class="zig_content">
-                    <div class="zig_img_container">
-                        <a href="https://baas.zhigui.com/IRISnet" target="_blank">
-                            <img src="../../public/zgkjlogo.svg">
-                        </a>
-                    </div>
-                    <div class="zig_title_link">
-                        <span>{{zigTitle}}</span>
-                        <div class="zig_link_img">
-                            <a href="https://baas.zhigui.com/IRISnet" target="_blank">
-                                <img src="../../public/link.png">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="zig_info_introduce">
-                        <span>{{zigIntroduce}}</span>
-                    </div>
-                    <div class="wancloud_img">
-                        <a href="https://irisnet.wancloud.cloud/#/" target="_blank">
-                            <img src="../assets/app/mobilewancloud.png">
-                        </a>
-                    </div>
-                    <div class="wancloud_title">
-                        <span>{{wanCloudTitle}}</span>
-                        <div class="wancloud_link_img">
-                            <a href="https://irisnet.wancloud.cloud/#/" target="_blank">
-                                <img src="../../public/link.png">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="wancloud_info_introduce">
-                        <p>{{wanCloudInfo}}</p>
-                        <p>{{wanCloudIntroduce}}</p>
-                    </div>
-                </div>
-
             </div>
             <div class="menu" v-show="menuIs">
                 <section>
@@ -230,51 +165,26 @@
             },
             getInfo(){
                 this.title = this.format('title');
-                this.information = this.format('information');
+                this.testnetFirstParagraph = this.format('testnetFirstParagraph');
                 this.explorerHref = this.format('explorerHref');
-                this.informationFragment = this.format('informationFragment');
-                this.testnetplorerHref = this.format('testnetplorerHref');
-                this.testnetplorerStatus = this.format('testnetplorerStatus');
-                this.howToJoin = this.format('howToJoin');
-                this.howToJoinHref = this.format('howToJoinHref');
-                this.incentivizedInfo = this.format('incentivizedInfo');
-                this.incentivizedMenu = this.format('incentivizedMenu');
-                this.incentivizedMenuHref = this.format('incentivizedMenuHref');
-                this.incentivizedFaq = this.format('incentivizedFaq');
-                this.incentivizedFaqHref = this.format('incentivizedFaqHref');
-                this.incentivizedresult = this.format('incentivizedresult');
-                this.incentivizedresultHref = this.format('incentivizedresultHref');
-                this.incentivizedtask = this.format('incentivizedtask');
-                this.incentivizedtaskHref = this.format('incentivizedtaskHref');
-                this.baasMenu = this.format('baasMenu');
-                this.baasMenuAboutEffect = this.format('baasMenuAboutEffect');
-                this.baasMenuAboutEffectHref = this.format('baasMenuAboutEffectHref');
-                this.baasMenuHowApply = this.format('baasMenuHowApply');
-                this.baasMenuHowApplyHref = this.format('baasMenuHowApplyHref');
+                this.testnetSecendParagraph = this.format('testnetSecendParagraph');
+                this.testnetText = this.format('testnetText');
+                this.linkText = this.format('linkText');
                 this.testnetHereHref = this.format('testnetHereHref');
                 this.faq = this.format('faq');
                 this.faqHref = this.format('faqHref');
-                this.gameOfGenesis = this.format('gameOfGenesis');
-                this.whatGenesis = this.format('whatGenesis');
-                this.whatGenesisHref = this.format('whatGenesisHref');
-                this.howWin = this.format('howWin');
-                this.howWinHref = this.format('howWinHref');
                 this.join = this.format('join');
                 this.qq = this.format('qq');
                 this.qqNum = this.format('qqNum');
                 this.riot = this.format('riot');
                 this.riotAddress = this.format('riotAddress');
                 this.riotAddressHref = this.format('riotAddressHref');
-                this.zigTitle = this.format('zigTitle');
-                this.zigIntroduce = this.format('zigIntroduce');
-                this.wanCloudTitle = this.format("wanCloudTitle");
-                this.wanCloudInfo = this.format('wanCloudInfo');
-                this.wanCloudIntroduce = this.format('wanCloudIntroduce');
-                this.download = this.format('download');
-                this.downloadWord = this.format('downloadWord');
-                this.downloadHref = this.format('downloadHref');
-                this.downloadEndWord = this.format('downloadEndWord')
-
+                this.howToJoin = this.format('howToJoin');
+                this.howToJoinHref = this.format('howToJoinHref');
+                this.irisplorerBtn = this.format('irisplorerBtn');
+                this.irisplorerHref = this.format('irisplorerHref');
+                this.rainbowAppBtn = this.format('rainbowAppBtn');
+                this.downloadRainbowAppHref = this.format('downloadRainbowAppHref');
             },
             changeLang(lang){
                 this.$store.state.lang = lang;
@@ -292,7 +202,7 @@
                 })
             },
             scroll(top) {
-                $('#app').animate({
+                $('html,body').animate({
                         scrollTop: top
                     }, 500
                 );
@@ -310,56 +220,30 @@
                 wechatIs: false,
                 links:message[this.$store.state.lang=='CN'?'cn':'en'].head.txt,
                 title:'',
-                information:"",
+                testnetFirstParagraph:"",
                 explorerHref:"",
-                informationFragment:"",
-                testnetplorerHref:"",
-                testnetplorerStatus:"",
-                howToJoin:"",
-                howToJoinHref:"",
-                incentivizedInfo:"",
-                incentivizedMenu:"",
-                incentivizedMenuHref:"",
-                incentivizedFaq:"",
-                incentivizedFaqHref:"",
-                incentivizedresult:"",
-                incentivizedresultHref:"",
-                incentivizedtask:"",
-                incentivizedtaskHref:"",
-                baasMenu:"",
-                baasMenuAboutEffect:"",
-                baasMenuAboutEffectHref:"",
-                baasMenuHowApply:"",
-                baasMenuHowApplyHref:"",
+                testnetSecendParagraph:"",
+                testnetText:"",
+                linkText:"",
                 faq:"",
                 faqHref:"",
-                gameOfGenesis:"",
-                whatGenesis:"",
-                whatGenesisHref:"",
-                howWin:"",
-                howWinHref:"",
                 join:"",
                 qq:"",
                 qqNum:"",
                 riot:"",
                 riotAddress:"",
                 riotAddressHref:"",
-                zigTitle:"",
-                zigIntroduce:"",
-                wanCloudTitle:"",
-                wanCloudInfo:"",
-                wanCloudIntroduce:"",
-                testlink:false,
-                download:"",
-                downloadWord:"",
-                downloadHref:"",
-                downloadEndWord:"",
-                testnetHereHref:''
+                testnetHereHref:'',
+                howToJoin:'',
+                howToJoinHref:'',
+                irisplorerBtn:'',
+                irisplorerHref:'',
+                rainbowAppBtn: '',
+                downloadRainbowAppHref:''
             }
         },
         mounted(){
             this.getInfo();
-
         }
 
     }
