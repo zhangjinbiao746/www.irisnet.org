@@ -1853,7 +1853,7 @@ export default {
             title:"Fuxi Testnet",
             information:"The previous iterations of the testnets have accomplished their mission. ",
             explorerHref:"IRISplorer",
-            informationFragment:"In February 2019, the IRISnet development team released irishub v0.12.0 and successfully started the new testnet (chain-id \'fuxi\') with this version.",
+            informationFragment:"In February 2019, the IRISnet development team released irishub v0.12.0 and successfully started the new testnet (chain-id : fuxi) with this version.",
             testnetText:"The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers). ",
             testnetHereHref: "https://github.com/irisnet/testnets/blob/master/README.md",
             howToJoin:"Join FUXI Testnet",
