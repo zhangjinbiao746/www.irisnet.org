@@ -114,10 +114,9 @@ export const message = {
                     "href":"https://cosmos.network/about"
                 },
                 {
-                    "img":"collaboration/wanyun.png",
+                    "img":"collaboration/hashkeygroup.png",
                     "pos":-56*2,
-                    "title":"Wancloud",
-                    "href":"https://www.wancloud.io/"
+                    "href":"https://www.hashkey.com/#/"
                 },
             ]
         },
@@ -382,10 +381,8 @@ export const message = {
                 "href": "https://tendermint.com"
             },
             {
-                "img": "collaboration/wancloud.png",
-                "title": "WanCloud",
-                "text": "wancloud.io",
-                "href": "https://www.wancloud.io"
+                "img": "collaboration/hashkeygroup.png",
+                "href": "https://www.hashkey.com/#/"
             },
             {
                 "img": "collaboration/base.png",
