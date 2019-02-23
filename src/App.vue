@@ -1,13 +1,18 @@
 <template>
-    <div id="app" style="height: 100%">
+    <div id="app">
+        <Header></Header>
         <router-view/>
+        <Footer></Footer>
     </div>
 </template>
 
 <script>
     import Tools from "../src/util/Tools"
+    import Header from "./components/Header";
+    import Footer from "./components/Footer";
     export default {
         name: 'app',
+        components: {Footer, Header},
         data(){
             return{
 
@@ -17,15 +22,15 @@
             switchView(_this) {
                 let pcWindowMinWidth = 850;
                 if(Tools.currentDeviceIsPersonComputer()){
-                    if ($(window).width() > pcWindowMinWidth) {
-                        if(_this.$route.path.indexOf('app') !== -1){
-                            _this.$router.replace('/');
-                        }
-                    } else {
-                        if(_this.$route.path.indexOf('app') == -1){
-                            _this.$router.replace('/app');
-                        }
-                    }
+                    // if ($(window).width() > pcWindowMinWidth) {
+                    //     if(_this.$route.path.indexOf('app') !== -1){
+                    //         _this.$router.replace('/');
+                    //     }
+                    // } else {
+                    //     if(_this.$route.path.indexOf('app') == -1){
+                    //         _this.$router.replace('/app');
+                    //     }
+                    // }
                 }else {
                     this.switchAppView()
                 }
@@ -33,11 +38,11 @@
             },
             switchAppView(){
                 if(this.$route.path.indexOf('app') == -1){
-                    if(this.$route.path === '/'){
-                        this.$router.replace(`${this.$route.matched[0].path}app`);
-                    }else {
-                        this.$router.replace(`${this.$route.matched[0].path}/app`);
-                    }
+                    // if(this.$route.path === '/'){
+                    //     this.$router.replace(`${this.$route.matched[0].path}app`);
+                    // }else {
+                    //     this.$router.replace(`${this.$route.matched[0].path}/app`);
+                    // }
                 }else {
                     this.$router.replace(`${this.$route.path}`);
                 }
@@ -76,6 +81,10 @@
     }
     body{
         font-size:16px !important;
+    }
+    *{
+        margin: 0;
+        padding: 0;
     }
 </style>
 

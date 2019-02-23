@@ -37,7 +37,7 @@ export function createApp() {
             'EN': require('./assets/lang/en')    // 英文语言包
         }
     })
-    store.state.messages = i18n.messages[store.state.lang]['message']
+    // store.state.messages = i18n.messages[store.state.lang]['message']
 
     router.beforeEach((to, from, next) => {
         if ((to.query.lang) && (to.query.lang == 'EN' || to.query.lang == 'CN')) {
@@ -46,7 +46,7 @@ export function createApp() {
         }
         next()
     })
-    Vue.prototype.UrlSrc='../public/';
+    Vue.prototype.UrlSrc='../public/irisnet/';
     // Vue.prototype.UrlSrc = process.env.NODE_ENV == 'development' ? '../public/' : 'https://www.bianjie.ai/irisnet/public/';
     const app = new Vue({
         router,
