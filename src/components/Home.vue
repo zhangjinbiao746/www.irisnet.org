@@ -40,9 +40,6 @@
                 </div>
             </div>
             <div class="secend first">
-                <div class="right">
-                    <img src="../assets/banner-Network design.png" alt="">
-                </div>
                 <div class="left">
                     <div class="keyInnovationMsg">
                         <div class="title">Network Design</div>
@@ -62,6 +59,9 @@
                             </div>
                         </ul>
                     </div>
+                </div>
+                <div class="right">
+                    <img src="../assets/banner-Network design.png" alt="">
                 </div>
             </div>
         </section>
@@ -145,10 +145,6 @@
                         <!-- 第六行 -->
                         <img src="../assets/logos/shuidi.png" alt=""><img src="../assets/logos/yidao.png" alt="">
                     </div>
-                    <!-- <div class="logoIcon supporters">
-                        <img src="../assets/logos/ba.png" alt=""><img src="../assets/logos/BKfund@2x.png" alt=""><img src="../assets/logos/byz.png" alt="">
-                        <img src="../assets/logos/ChainPE@2x.png" alt=""><img src="../assets/logos/CP@2x.png" alt=""><img src="../assets/logos/COEFFICIENT@2x.png" alt="">
-                    </div> -->
                 </div>
             </div>
         </section>
