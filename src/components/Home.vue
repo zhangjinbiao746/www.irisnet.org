@@ -2,15 +2,15 @@
     <div class="content_wrap">
         <section class="sectionOne">
             <div class="left">
-                <div>IRIS Betanet</div>
-                <div>2019.02.28 launched</div>
+                <div>{{$store.state.messages.home.sectionOne.title}}</div>
+                <div>{{$store.state.messages.home.sectionOne.time}}</div>
                 <div>
                     <img src="../assets/telegramIcon.png" alt="">
                     <img src="../assets/githubIcon.png" alt="">
                     <img src="../assets/weChatIcon.png" alt="">
                 </div>
                 <div>
-                    <button>Rainbow Wallet</button><button>IRIS Explorer</button>
+                    <button>{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button><button>{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
                 </div>
             </div>
             <div class="right">
@@ -21,17 +21,12 @@
             <div class="first">
                 <div class="left">
                     <div class="keyInnovationMsg">
-                        <div class="title">Key Innovations</div>
+                        <div class="title">{{$store.state.messages.home.sectionTwo.KeyInnovations.title}}</div>
                         <ul class="msgList">
-                            <li><label></label> Incorporation of a service-oriented infrastructure into Cosmos </li>
-                            <div>
-                                <li><label></label>Integration of business services offered by heterogeneous systems,</li>
-                                <li>including public & consortium chains as well as legacy systems</li>
-                            </div>
-                            <li><label></label>Interoperability of those services across an internet of blockchains</li>
+                            <li v-for="n of $store.state.messages.home.sectionTwo.KeyInnovations.list" :key="n.id"><label></label> {{n.msg}} </li>
                         </ul>
                         <div class="whitePaper">
-                            <button><span>WHITE PAPER</span> <img src="../assets/rightArrow.png" alt=""></button>
+                            <button><span>{{$store.state.messages.home.sectionTwo.KeyInnovations.buttonMsg}}</span> <img src="../assets/rightArrow.png" alt=""></button>
                         </div>
                     </div>
                 </div>
@@ -44,19 +39,7 @@
                     <div class="keyInnovationMsg">
                         <div class="title">Network Design</div>
                         <ul class="msgList">
-                            <div>
-                                <li><label></label>Definition of standard ABCI transaction types supporting registration,</li>
-                                <li>binding, invocation, query, profiling and governance of IRIS Services</li>
-                                <li>(a.k.a. iServices)</li>
-                            </div>
-                            <div>
-                                <li><label></label> iService providers act as adaptors of business logic residing in public and</li>
-                                <li>consortium blockchains as well as enterprise legacy systems</li>
-                            </div>
-                            <div>
-                                <li><label></label>iServices can be invoked across an</li>
-                                <li>extended IBC protocol</li>
-                            </div>
+                            <li v-for="n of $store.state.messages.home.sectionTwo.NetworkDesign.list" :key="n.id"><label></label> {{n.msg}} </li>
                         </ul>
                     </div>
                 </div>
@@ -70,34 +53,10 @@
             <div class="road">
                 <div class="roadMap"></div>
                 <img src="../assets/rocket.png" alt="">
-                <div class="HOUYI">
-                    <div>HOUYI</div>
-                    <div>BEYOND JAN 2020</div>
-                    <div>The fourth stage will focus on further technology innovations to the IRIS network, IRIS SDK and mobile client, as well as developer engagement.</div>
-                    <div class="markIcon">
-                        <div></div>
-                    </div>
-                </div>
-                <div class="HOUYI KUAFU">
-                    <div>KUAFU</div>
-                    <div>OCT 2019 - DEC 2019</div>
-                    <div>The third stage will focus on incremental upgrades to the IRIS Network in order to support our planned advanced IRIS Service governance features.</div>
-                    <div class="markIcon">
-                        <div></div>
-                    </div>
-                </div>
-                <div class="HOUYI NuWA">
-                    <div>NÜWA</div>
-                    <div>APR 2019 - SEPT 2019</div>
-                    <div>In this stage we are aiming to have a beta version of the IRIS SDK ready for developers. We plan to upgrade IRISnet mobile client to support i-Services. We plan to establish collabrations with application specific blockchains and enable them as zones connecting to IRIS Hub. We also plan to accomplish the connection with Cosmos Hub at this stage.</div>
-                    <div class="markIcon">
-                        <div></div>
-                    </div>
-                </div>
-                <div class="HOUYI KUAFU PANGU">
-                    <div>PANGU</div>
-                    <div>JAN 2018 - MAR 2019</div>
-                    <div>The first stage of the IRIS project will focus on having the IRIS Hub up and running. We also intend to release an initial version of the mobile client for the IRIS network. In this stage we also focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query. We plan to collabrate with 1-2 ecosystem parteners to release i-Services to IRIShub.</div>
+                <div class="HOUYI" v-for="n of $store.state.messages.home.sectionThree.road" :key="n.id">
+                    <div>{{n.caption}}</div>
+                    <div>{{n.time}}</div>
+                    <div>{{n.msg}}</div>
                     <div class="markIcon">
                         <div></div>
                     </div>
@@ -105,45 +64,38 @@
             </div>
         </section>
         <section class="sectionFour">
-            <div class="title">Collaboration</div>
+            <div class="title">{{$store.state.messages.home.sectionFour.Collaboration}}</div>
             <div class="logos">
                 <div class="logo">
-                    <div class="title">Core Development Teams</div>
+                    <div class="title">{{$store.state.messages.home.sectionFour.CoreDevelopmentTeams.title}}</div>
                     <div class="logoIcon">
-                        <img src="../assets/logos/bianjiehover.png" alt=""><img src="../assets/logos/tenderminthover.png" alt="">
+                        <a :href="n.url" target="_blank" v-for="n of $store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos" :key="n.id">
+                            <img :src='UrlSrc + n.path'>
+                        </a>
                     </div>
                 </div>
                 <div class="logo">
-                    <div class="title">Strategic Partners</div>
+                    <div class="title">{{$store.state.messages.home.sectionFour.StrategicPartners.title}}</div>
                     <div class="logoIcon">
-                        <img src="../assets/logos/InTERCHAIN.png" alt=""><img src="../assets/logos/HASHKEY.png" alt="">
+                        <a :href="n.url" target="_blank" v-for="n of $store.state.messages.home.sectionFour.StrategicPartners.logos" :key="n.id">
+                            <img :src='UrlSrc + n.path'>
+                        </a>
                     </div>
                 </div>
                 <div class="logo">
-                    <div class="title">Ecosystem Partners</div>
+                    <div class="title">{{$store.state.messages.home.sectionFour.EcosystemPartners.title}}</div>
                     <div class="logoIcon">
-                        <img src="../assets/logos/Platonlogo.png" alt=""><img src="../assets/logos/hashquark.png" alt=""><img src="../assets/logos/hashgardhover.png" alt="">
+                        <a :href="n.url" target="_blank" v-for="n of $store.state.messages.home.sectionFour.EcosystemPartners.logos" :key="n.id">
+                            <img :src='UrlSrc + n.path'>
+                        </a>
                     </div>
                 </div>
                 <div class="logo">
-                    <div class="title">Institutional Supporters<span>( Listed in no particular order )</span></div>
+                    <div class="title">{{$store.state.messages.home.sectionFour.Institutional.title.msg1}}<span>{{$store.state.messages.home.sectionFour.Institutional.title.msg2}}</span></div>
                     <div class="logoIcon supporters">
-                        <img src="../assets/logos/AminoCapital@2x.png" alt=""><img src="../assets/logos/Bibox@2x.png" alt=""><img src="../assets/logos/huobi.png" alt="">
-                        <img src="../assets/logos/GBIC@2x.png" alt=""><img src="../assets/logos/8decim.png" alt=""><img src="../assets/logos/bihu.png" alt="">
-                        <!-- 第二行 -->
-                        <img src="../assets/logos/ba.png" alt=""><img src="../assets/logos/BKfund@2x.png" alt=""><img src="../assets/logos/byz.png" alt="">
-                        <img src="../assets/logos/ChainPE@2x.png" alt=""><img src="../assets/logos/CP@2x.png" alt=""><img src="../assets/logos/COEFFICIENT@2x.png" alt="">
-                        <!-- 第三行 -->
-                        <img src="../assets/logos/gongshi.png" alt=""><img src="../assets/logos/dushu.png" alt=""><img src="../assets/logos/genblock@2x.png" alt="">
-                        <img src="../assets/logos/HAYEK@2x.png" alt=""><img src="../assets/logos/INK@2x.png" alt=""><img src="../assets/logos/LINKVCcopy@2x.png" alt="">
-                        <!-- 第四行 -->
-                        <img src="../assets/logos/MediSHares@2x.png" alt=""><img src="../assets/logos/jieshi.png" alt=""><img src="../assets/logos/nirvana-logo-white@2x.png" alt="">
-                        <img src="../assets/logos/NGC@2x.png" alt=""><img src="../assets/logos/origin.png" alt=""><img src="../assets/logos/SatoshiFUnd@2x.png" alt="">
-                        <!-- 第五行 -->
-                        <img src="../assets/logos/guigu.png" alt=""><img src="../assets/logos/shicuo.png" alt=""><img src="../assets/logos/huixiang.png" alt="">
-                        <img src="../assets/logos/Unetwork@2x.png" alt=""><img src="../assets/logos/jiuhe.png" alt=""><img src="../assets/logos/UA@2x.png" alt="">
-                        <!-- 第六行 -->
-                        <img src="../assets/logos/shuidi.png" alt=""><img src="../assets/logos/yidao.png" alt="">
+                        <a :href="n.url" target="_blank" v-for="n of $store.state.messages.home.sectionFour.Institutional.logos" :key="n.id">
+                            <img :src='UrlSrc + n.path'>
+                        </a>
                     </div>
                 </div>
             </div>

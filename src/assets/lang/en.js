@@ -146,6 +146,116 @@ export const message = {
         },
         irisnetInproduction:'IRISnet is named after Greek goddess Iris, said to be the personification of the rainbow and the faithful messenger between heaven and humanity'
     },
+    home: {
+        sectionOne: {
+            title: 'IRIS Betanet',
+            time: '2019.02.28 launched',
+            shareUrl: {
+                telegramUrl: '',
+                githubUrl: '',
+                weChatUrl: ''
+            },
+            button: {
+                buttonName: {
+                    rainbowName: 'Rainbow Wallet',
+                    explorerName: 'IRIS Explorer'
+                },
+                buttonUrl: {
+                    rainbowUrl: '',
+                    explorerUrl: ''
+                }
+            }
+        },
+        sectionTwo: {
+            KeyInnovations: {
+                title: 'Key Innovations',
+                list: [
+                    {id: 0, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'},
+                    {id: 1, msg: 'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems'},
+                    {id: 2, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'}
+                ],
+                buttonMsg: 'WHITE PAPER'
+            },
+            NetworkDesign: {
+                title: 'Network Design',
+                list: [
+                    {id: 0, msg: 'Definition of standard ABCI transaction types supporting registration,binding, invocation, query, profiling and governance of IRIS Services(a.k.a. iServices)'},
+                    {id: 1, msg: 'iService providers act as adaptors of business logic residing in public andconsortium blockchains as well as enterprise legacy systems'},
+                    {id: 2, msg: 'iServices can be invoked across anextended IBC protocol'}]
+            }
+        },
+        sectionThree: {
+            title: 'Roadmap',
+            road: [
+                {id: 0, caption: 'HOUYI', time: 'BEYOND JAN 2020', msg: 'The fourth stage will focus on further technology innovations to the IRIS network, IRIS SDK and mobile client, as well as developer engagement.'},
+                {id: 1, caption: 'KUAFU', time: 'OCT 2019 - DEC 2019', msg: 'The third stage will focus on incremental upgrades to the IRIS Network in order to support our planned advanced IRIS Service governance features.'},
+                {id: 2, caption: 'NÜWA', time: 'APR 2019 - SEPT 2019', msg: 'In this stage we are aiming to have a beta version of the IRIS SDK ready for developers. We plan to upgrade IRISnet mobile client to support i-Services. We plan to establish collabrations with application specific blockchains and enable them as zones connecting to IRIS Hub. We also plan to accomplish the connection with Cosmos Hub at this stage.'},
+                {id: 3, caption: 'PANGU', time: 'JAN 2018 - MAR 2019', msg: 'The first stage of the IRIS project will focus on having the IRIS Hub up and running. We also intend to release an initial version of the mobile client for the IRIS network. In this stage we also focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query. We plan to collabrate with 1-2 ecosystem parteners to release i-Services to IRIShub.'}
+            ]
+        },
+        sectionFour: {
+            Collaboration: 'Collaboration',
+            CoreDevelopmentTeams: {
+                title: 'Core Development Teams',
+                logos: [
+                    {id:0, path: 'logos/irisnet_bianjiehover.png', url: ''},
+                    {id:1, path: 'logos/irisnet_tenderminthover.png', url: ''}
+                ]
+            },
+            StrategicPartners: {
+                title: 'Strategic Partners',
+                logos: [
+                    {id:0, path: 'logos/irisnet_InTERCHAIN.png', url: ''},
+                    {id:1, path: 'logos/irisnet_HASHKEY.png', url: ''}
+                ]
+            },
+            EcosystemPartners: {
+                title: 'Ecosystem Partners',
+                logos: [
+                    {id:0, path: 'logos/irisnet_Platonlogo.png', url: ''},
+                    {id:1, path: 'logos/irisnet_hashquark.png', url: ''},
+                    {id:2, path: 'logos/irisnet_hashgardhover.png', url: ''}
+                ]
+            },
+            Institutional: {
+                title: {msg1: 'Institutional Supporters', msg2: '( Listed in no particular order )'},
+                logos: [
+                    {id:0, path: 'logos/irisnet_AminoCapital.png', url: ''},
+                    {id:1, path: 'logos/irisnet_Bibox.png', url: ''},
+                    {id:2, path: 'logos/irisnet_huobi.png', url: ''},
+                    {id:3, path: 'logos/irisnet_GBIC.png', url: ''},
+                    {id:4, path: 'logos/irisnet_8decim.png', url: ''},
+                    {id:5, path: 'logos/irisnet_bihu.png', url: ''},// 1
+                    {id:6, path: 'logos/irisnet_ba.png', url: ''},
+                    {id:7, path: 'logos/irisnet_BKfund.png', url: ''},
+                    {id:8, path: 'logos/irisnet_byz.png', url: ''},
+                    {id:9, path: 'logos/irisnet_ChainPE.png', url: ''},
+                    {id:10, path: 'logos/irisnet_CP.png', url: ''},
+                    {id:11, path: 'logos/irisnet_COEFFICIENT.png', url: ''},// 2
+                    {id:12, path: 'logos/irisnet_gongshi.png', url: ''},
+                    {id:13, path: 'logos/irisnet_dushu.png', url: ''},
+                    {id:14, path: 'logos/irisnet_genblock.png', url: ''},
+                    {id:15, path: 'logos/irisnet_HAYEK.png', url: ''},
+                    {id:16, path: 'logos/irisnet_INK.png', url: ''},
+                    {id:17, path: 'logos/irisnet_LINKVCcopy.png', url: ''},// 3
+                    {id:18, path: 'logos/irisnet_MediSHares.png', url: ''},
+                    {id:19, path: 'logos/irisnet_jieshi.png', url: ''},
+                    {id:20, path: 'logos/irisnet_nirvana-logo-white.png', url: ''},
+                    {id:21, path: 'logos/irisnet_NGC.png', url: ''},
+                    {id:22, path: 'logos/irisnet_origin.png', url: ''},
+                    {id:23, path: 'logos/irisnet_SatoshiFUnd.png', url: ''},// 4
+                    {id:24, path: 'logos/irisnet_guigu.png', url: ''},
+                    {id:25, path: 'logos/irisnet_shicuo.png', url: ''},
+                    {id:26, path: 'logos/irisnet_huixiang.png', url: ''},
+                    {id:27, path: 'logos/irisnet_Unetwork.png', url: ''},
+                    {id:28, path: 'logos/irisnet_jiuhe.png', url: ''},
+                    {id:29, path: 'logos/irisnet_UA.png', url: ''},//5
+                    {id:30, path: 'logos/irisnet_shuidi.png', url: ''},
+                    {id:31, path: 'logos/irisnet_yidao.png', url: ''},
+                ]
+            }
+        }
+    },
     // "logo": 'irisnet.png',
     "white":'public/whiteDw.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md",
@@ -569,34 +679,6 @@ export const message = {
             },
         ],
         "btnTxt":"Collaboration"
-    },
-
-
-    "roadmap": {
-        "title": 'Roadmap',
-        "list": [
-            {
-                "img": "roadmap/Pangu.png",
-                "txt": "The first stage of the IRIS project will focus on having the IRIS Hub up and running. We also intend to release an initial version of the mobile client for the IRIS network. In this stage we also focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query. We plan to collabrate with 1-2 ecosystem parteners to release i-Services to IRIShub."
-            },
-            {
-                "img": "roadmap/NUWA.png",
-                "txt": "In this stage we are aiming to have a beta version of the IRIS SDK ready for developers. We plan to upgrade IRISnet mobile client to support i-Services. We plan to establish collabrations with application specific blockchains and enable them as zones connecting to IRIS Hub. We also plan to accomplish the connection with Cosmos Hub at this stage."
-            },
-            {
-                "img": "roadmap/kuafu.png",
-                "txt": "The third stage will focus on incremental upgrades to the IRIS Network in order to support our planned advanced IRIS Service governance features."
-            },
-            {
-                "img": "roadmap/houyi.png",
-                "txt": "The fourth stage will focus on further technology innovations to the IRIS network, IRIS SDK and mobile client, as well as developer engagement."
-            }
-        ]
-    },
-    "home": {
-        "title": 'IRIS Network',
-        "txt": 'Inter-chain Service Infrastructure and Protocol <br> Technology Foundation for a Distributed Business Ecosystem',
-        "src": 'iristext-small.png'
     },
     "about": {
         "title": 'Key Innovations',
