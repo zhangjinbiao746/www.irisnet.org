@@ -161,8 +161,8 @@ export const message = {
                     explorerName: 'IRIS Explorer'
                 },
                 buttonUrl: {
-                    rainbowUrl: '',
-                    explorerUrl: ''
+                    rainbowUrl: 'https://www.rainbow.one/',
+                    explorerUrl: 'https://www.irisplorer.io'
                 }
             }
         },

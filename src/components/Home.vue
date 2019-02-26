@@ -5,9 +5,9 @@
                 <div>{{$store.state.messages.home.sectionOne.title}}</div>
                 <div>{{$store.state.messages.home.sectionOne.time}}</div>
                 <div>
-                    <img src="../assets/telegramIcon.png" alt="">
-                    <img src="../assets/githubIcon.png" alt="">
-                    <img src="../assets/weChatIcon.png" alt="">
+                    <a><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
+                    <a><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
+                    <a><img src="../assets/hoverIcon/weChatIconHover.png" alt=""></a>
                 </div>
                 <div>
                     <button>{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button><button>{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
