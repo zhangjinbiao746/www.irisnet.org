@@ -146,6 +146,61 @@ export const message = {
         },
         irisnetInproduction:'IRISnet以希腊彩虹女神Iris命名，她是在人间和天堂之间传递信息的忠诚使者'
     },
+    home: {
+        sectionOne: {
+            title: 'IRIS 网络',
+            time: '2019.02.28 推出',
+            shareUrl: {
+                telegramUrl: '',
+                githubUrl: '',
+                weChatUrl: ''
+            },
+            button: {
+                buttonName: {
+                    rainbowName: 'Rainbow Wallet',
+                    explorerName: 'IRIS Explorer'
+                },
+                buttonUrl: {
+                    rainbowUrl: '',
+                    explorerUrl: ''
+                }
+            }
+        },
+        sectionTwo: {
+            KeyInnovations: {
+                title: 'Key Innovations',
+                list: [
+                    {id: 0, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'},
+                    {id: 1, msg: 'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems'},
+                    {id: 2, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'}
+                ],
+                buttonMsg: 'WHITE PAPER'
+            },
+            NetworkDesign: {
+                title: 'Network Design',
+                list: [
+                    {id: 0, msg: 'Definition of standard ABCI transaction types supporting registration,binding, invocation, query, profiling and governance of IRIS Services(a.k.a. iServices)'},
+                    {id: 1, msg: 'iService providers act as adaptors of business logic residing in public andconsortium blockchains as well as enterprise legacy systems'},
+                    {id: 2, msg: 'iServices can be invoked across anextended IBC protocol'}]
+            }
+        },
+        sectionThree: {
+            title: 'Roadmap',
+            road: [
+                {id: 0, caption: 'HOUYI', time: 'BEYOND JAN 2020', msg: 'The fourth stage will focus on further technology innovations to the IRIS network, IRIS SDK and mobile client, as well as developer engagement.'},
+                {id: 1, caption: 'KUAFU', time: 'OCT 2019 - DEC 2019', msg: 'The third stage will focus on incremental upgrades to the IRIS Network in order to support our planned advanced IRIS Service governance features.'},
+                {id: 2, caption: 'NÜWA', time: 'APR 2019 - SEPT 2019', msg: 'In this stage we are aiming to have a beta version of the IRIS SDK ready for developers. We plan to upgrade IRISnet mobile client to support i-Services. We plan to establish collabrations with application specific blockchains and enable them as zones connecting to IRIS Hub. We also plan to accomplish the connection with Cosmos Hub at this stage.'},
+                {id: 3, caption: 'PANGU', time: 'JAN 2018 - MAR 2019', msg: 'The first stage of the IRIS project will focus on having the IRIS Hub up and running. We also intend to release an initial version of the mobile client for the IRIS network. In this stage we also focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query. We plan to collabrate with 1-2 ecosystem parteners to release i-Services to IRIShub.'}
+            ]
+        },
+        sectionFour: {
+            Collaboration: 'Collaboration',
+            CoreDevelopmentTeams: 'Core Development Teams',
+            StrategicPartners: 'Strategic Partners',
+            EcosystemPartners: 'Ecosystem Partners',
+            Institutional: {msg1: 'Institutional Supporters', msg2: '( Listed in no particular order )'}
+        }
+    },
     "white":'public/whiteDwCn.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/白皮书.md",
     "next": 'what_next.png',
@@ -564,34 +619,6 @@ export const message = {
             },
         ],
         "btnTxt":"合作方"
-    },
-    "roadmap": {
-
-        "title": '路线图',
-        "list": [
-            {
-                "img": "roadmap/Pangu.png",
-                "txt": "IRISnet项目的第一阶段，我们专注于构建并启动IRIS Hub；发布一个初始版本的IRIS网络移动客户端，并建立IRISnet基本服务层：升级网络以实现服务定义、绑定、调用和查询；会与1-2两个生态伙伴展开合作，在跨链枢纽IRIS Hub上发布iServices。"
-            },
-            {
-                "img": "roadmap/NUWA.png",
-                "txt": "第二阶段，我们为开发者准备了beta版的IRIS SDK，并会升级移动客户端以支持iServices；与应用专有链项目形成战略联盟，支持它们作为分区连接到IRIS Hub；IRISnet也将在第二阶段完成和Cosmos Hub的链接，打通和以太坊生态的链接。"
-            },
-            {
-                "img": "roadmap/kuafu.png",
-                "txt": "第三阶段，主要专注于完成IRIS网络的增强功能，升级网络以支持复杂的IRIS服务管理功能，如分析和争议解决功能; 不断完善SDK和手机客户端; 加速拓展网络，连接更多分区，整合更多服务提供商。"
-            },
-            {
-                "img": "roadmap/houyi.png",
-                "txt": "第四阶段，通过不懈的技术创新，完善的社区建设和开发者的积极参与，实现分布式的商业生态系统。"
-            }
-        ]
-    },
-    "home": {
-
-        "title": 'IRIS网络',
-        "txt": '跨链服务基础协议 <br> 新一代分布式商业生态的技术基础',
-        "src": 'iristext-small.png'
     },
     "about": {
 
