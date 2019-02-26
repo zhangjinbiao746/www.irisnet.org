@@ -1,5 +1,152 @@
 export const message = {
-    "logo": 'irisnet.png',
+    logo:'irisnet.png',
+    
+    header:{
+        left:[
+            {
+                id:1,
+                title:'Whitepaper',
+                href:'#/0/1'
+            },
+            {
+                id:2,
+                title:'Collaboration',
+                href:'#/0/3'
+            },
+            {
+                id:3,
+                title:'Contact',
+                href:'#/0/5'
+            }
+        ],
+        right:[
+            {
+                id:1,
+                title:'Mainnet',
+                href:''
+            },
+            {
+                id:2,
+                title:'Docs',
+                href:'https://www.irisnet.org/docs/'
+            },
+            {
+                id:3,
+                title:'Blog',
+                href:'https://medium.com/irisnet-blog',
+            },
+        ],
+        mobileNavigation:[
+            {
+                id:1,
+                title:'Mainnet',
+                href: "#/0/3",
+            },
+            {
+                id:2,
+                title:'Testnet',
+                href: "#/0/3",
+            },
+            {
+                id:3,
+                title:'WhitePaper',
+                href: "#/0/1",
+            },
+            {
+                id:4,
+                title:'Roadmap',
+                href: "#/0/3",
+            },
+            {
+                id:5,
+                title:'Collaboration',
+                href: "#/0/3",
+            },
+            {
+                id:6,
+                title:'Contact',
+                href: "#/0/3",
+            },
+            {
+                id:7,
+                title:'Docs',
+                href: "https://www.irisnet.org/docs/",
+            },
+            {
+                id:8,
+                title:'Blog',
+                href: "https://medium.com/irisnet-blog",
+            },
+        ]
+    },
+    footer:{
+        socialCommunity:[
+            {
+                id:1,
+                src: "irisnet_telegram.png",
+                href: "https://t.me/irisnetworkcn"
+            },
+            {
+                id:2,
+                src: "irisnet_twitter.png",
+                href: "https://twitter.com/irisnetwork"
+            },
+            {
+                id:3,
+                src: "irisnet_mail.png",
+                href: "mailto:contact@irisnet.org"
+            },
+            {
+                id:4,
+                src: "irisnet_medium.png",
+                href: "https://medium.com/irisnet-blog"
+            },
+            {
+                id:1,
+                src: "irisnet_wechat.png",
+                "txt": "Wechat"
+            },
+            {
+                id:5,
+                src: "irisnet_weibo.png",
+                href: "https://weibo.com/u/6455513027"
+            },
+            {
+                id:6,
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/!bmimZgJrUWSmxqQEmG:matrix.org"
+            },
+        ],
+        techCommunity:[
+            {
+                id:1,
+                src: "irisnet_github.png",
+                href: "https://github.com/irisnet"
+            },
+            {
+                id:2,
+                src: "irisnet_riot.png",
+                "txt": "riot",
+                href: ""
+            },
+            {
+                id:3,
+                src: "irisnet_qq.png",
+                "txt": "qq",
+                href: ""
+            },
+        ],
+        submitBtn:{
+            title: 'Newsletter',
+            subscribe: 'Subscribe',
+            success: "Success"
+        },
+        errEmailAddress:{
+            error:'Please enter a valid email address'
+        },
+        irisnetInproduction:'IRISnet is named after Greek goddess Iris, said to be the personification of the rainbow and the faithful messenger between heaven and humanity'
+    },
+    // "logo": 'irisnet.png',
     "white":'public/whiteDw.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md",
     "next": 'what_next.png',

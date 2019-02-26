@@ -17,6 +17,9 @@ export function createStore () {
                 let obj = Object.assign({}, this.state.messages)
                 this.state.messages = obj
                 // this.$set(this.state.messages.head.txt,payload,true)
+            },
+            lang(state,data){
+                state.lang = data;
             }
 
         }

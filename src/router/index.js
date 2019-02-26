@@ -14,7 +14,8 @@ import TestNet from '../components/TestNet.vue';
 import TestNetApp from '../components/TestNetApp.vue';
 import HackathonApp from '../components/HackathonApp.vue';
 import MainNet from "../components/MainNet";
-import MainNetApp from "../components/MainNetApp"
+import MainNetApp from "../components/MainNetApp";
+import Home from "../components/Home"
 Vue.use(Router)
 
 export function createRouter() {
@@ -23,8 +24,8 @@ export function createRouter() {
         routes: [
             {
                 path: '/',
-                name: 'newIndex',
-                component: index_v2
+                name: 'home',
+                component: Home
             },
             {
                 path: '/testnets',
