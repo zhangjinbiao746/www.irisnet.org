@@ -1,18 +1,17 @@
-@basicWidth: 100vw;
 .content_wrap {
   overflow-x: hidden;
+  background: #2C2948;
 }
 // @media screen and (min-width: 0) and (max-width:375px) {
 // }
-@media screen and (min-width:0) and  (max-width:767px) {
+@media screen and (min-width:0) and  (max-width:639px) {
   .sectionOne {
     background-color: #2C2948;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.6rem 0 0.38rem;
-    z-index: 999;
+    // padding: 0.6rem 0 0.38rem;
     .left {
       width: 3.35rem;
       text-align: center;
@@ -302,7 +301,7 @@
     }
   }
 }
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:640px) and (max-width:1023px) {
   .sectionOne {
     background-color: #2C2948;
     display: flex;
@@ -601,19 +600,19 @@
     }
   }
 }
-@media screen and (min-width:1200px) {
-  .content_wrap{
-    background-color: red
-  }
+@media screen and (min-width:1024px) {
+  @basicWidth: 62.5vw;
   .sectionOne {
     background-color: #2C2948;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.6rem 0 0.38rem;
+    max-width: 12rem;
+    margin: auto;
     .left {
       width: 4.3rem;
-      margin-right: 0.6rem;
+      margin-right: @basicWidth*0.03125;
       div:nth-of-type(1) {
         font-size: 0.52rem;
         color: #fff;
@@ -651,20 +650,20 @@
       }
     }
     .banner {
-      width: 5.66rem
+      width: @basicWidth*.4716
     }
   }
   .sectionTwo {
     background: #fff;
     padding-top: 0.67rem;
-    padding-bottom: 1.62rem;
+    padding-bottom: 100vw*.0843;
     .first {
       display: flex;
       align-items: center;
       justify-content: center;
       .left {
-        width: 7.46rem;
-        height: 5.77rem;
+        width: 100vw*.3885;
+        height: 100vw*.3005;
         background-image: url('../KeyInnovation.png');
         background-size: 100%;
         background-repeat: no-repeat;
@@ -672,8 +671,7 @@
         align-items: center;
         justify-content: center;
         .keyInnovationMsg{
-          width: 5.86rem;
-          height: 3.62rem;
+          width: 100vw*.3052;
           border-radius: 0.12rem;
           background: #fff;
           display: flex;
@@ -681,8 +679,9 @@
           justify-content: center;
           box-shadow:0px 0.12rem 0.5rem 0.06rem rgba(26,24,44,0.09);
           transform: translateX(-3%);
+          padding:20px;
           .title{
-            margin-left: 0.49rem;
+            margin-left: @basicWidth*.04083;
             color: #323C5A;
             font-size: 0.24rem;
             font-family: Arial Bold;
@@ -691,9 +690,8 @@
           .msgList {
             font-size: 0.14rem;
             color: #9BA5BE;
-            width: 4.54rem;
             list-style-type: none;
-            margin: 0.45rem 0 0.45rem 0.79rem;
+            margin: @basicWidth*.0375 0 @basicWidth*.0375 @basicWidth*.06583;
             li{
               position: relative;
               label{
@@ -712,7 +710,7 @@
             }
           }
           .whitePaper{
-            margin-left: .52rem;
+            margin-left: @basicWidth*.043;
             button{
               border: 0;
               font-size: 0.16rem;
@@ -736,29 +734,26 @@
       }
       .right {
         img {
-          width: 4.54rem;
-          margin-left: 0.5rem;
+          width: 100vw*.364;
+          margin-left: 100vw*.026;
         }
       }
     }
     .secend {
-      margin-top: 1.53rem;
+      margin-top: 100vw*.079;
       .right {
-        margin-left: 1rem;
         img {
-          width: 5.07rem;
-          height: 4.03rem;
-          margin: 0;
+          width: 100vw*.264;
         }
       }
       .left {
         background-image: none;
         width: auto;
         height: auto;
-        margin-left: 1rem;
+        margin-left: 100vw*.052;
         .keyInnovationMsg {
           box-shadow: none;
-          width: auto;
+          // width: auto;
         }
       }
     }
@@ -811,7 +806,7 @@
         transform: translate(-50%, -103%);
       }
       .HOUYI {
-        width:4.3rem;
+        width:1200px*.3616;
         background:rgba(31,29,53,0.3386);
         border-radius:0.08rem;
         border:1px solid rgba(131,213,253,1);
@@ -867,7 +862,7 @@
   }
   .sectionFour {
     background: rgba(252, 252, 255, 1);
-    padding-top: 1rem;
+    padding: 0.6rem 0.38rem;
     >.title {
       text-align: center;
       font-size: 0.32rem;
@@ -876,7 +871,6 @@
       margin-bottom: 1rem;
     }
     .logos {
-      width: 11.83rem;
       margin: auto;
       .logo {
         padding-bottom: 1rem;

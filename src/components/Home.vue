@@ -35,6 +35,9 @@
                 </div>
             </div>
             <div class="secend first">
+                <div class="right">
+                    <img src="../assets/banner-Network design.png" alt="">
+                </div>
                 <div class="left">
                     <div class="keyInnovationMsg">
                         <div class="title">Network Design</div>
@@ -42,9 +45,6 @@
                             <li v-for="n of $store.state.messages.home.sectionTwo.NetworkDesign.list" :key="n.id"><label></label> {{n.msg}} </li>
                         </ul>
                     </div>
-                </div>
-                <div class="right">
-                    <img src="../assets/banner-Network design.png" alt="">
                 </div>
             </div>
         </section>
