@@ -5,12 +5,13 @@
                 <div>{{$store.state.messages.home.sectionOne.title}}</div>
                 <div>{{$store.state.messages.home.sectionOne.time}}</div>
                 <div>
-                    <a><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
-                    <a><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
+                    <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
+                    <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
                     <a><img src="../assets/hoverIcon/weChatIconHover.png" alt=""></a>
                 </div>
                 <div>
-                    <button>{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button><button>{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
+                    <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button>
+                    <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
                 </div>
             </div>
             <div class="right">
@@ -26,7 +27,7 @@
                             <li v-for="n of $store.state.messages.home.sectionTwo.KeyInnovations.list" :key="n.id"><label></label> {{n.msg}} </li>
                         </ul>
                         <div class="whitePaper">
-                            <button><span>{{$store.state.messages.home.sectionTwo.KeyInnovations.buttonMsg}}</span> <img src="../assets/rightArrow.png" alt=""></button>
+                            <button @click="jumpUrl($store.state.messages.home.sectionTwo.KeyInnovations.WHITEPAPERUrl)"><span>{{$store.state.messages.home.sectionTwo.KeyInnovations.buttonMsg}}</span> <img src="../assets/rightArrow.png" alt=""></button>
                         </div>
                     </div>
                 </div>
@@ -40,7 +41,7 @@
                 </div>
                 <div class="left">
                     <div class="keyInnovationMsg">
-                        <div class="title">Network Design</div>
+                        <div class="title">{{$store.state.messages.home.sectionTwo.NetworkDesign.title}}</div>
                         <ul class="msgList">
                             <li v-for="n of $store.state.messages.home.sectionTwo.NetworkDesign.list" :key="n.id"><label></label> {{n.msg}} </li>
                         </ul>
@@ -49,7 +50,7 @@
             </div>
         </section>
         <section class="sectionThree">
-            <div class="title">Roadmap</div>
+            <div class="title">{{$store.state.messages.home.sectionThree.title}}</div>
             <div class="road">
                 <div class="roadMap"></div>
                 <img src="../assets/rocket.png" alt="">
@@ -105,7 +106,12 @@
 
 <script>
     export default {
-        name: "Home"
+        name: "Home",
+        methods: {
+            jumpUrl (url) {
+                window.location.href = url
+            }
+        }
     }
 </script>
 
