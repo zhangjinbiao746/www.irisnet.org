@@ -149,7 +149,7 @@ export const message = {
     home: {
         sectionOne: {
             title: 'IRIS 网络',
-            time: '2019.02.28 推出',
+            time: '2019.02.28 launched',
             shareUrl: {
                 telegramUrl: '',
                 githubUrl: '',
@@ -157,48 +157,103 @@ export const message = {
             },
             button: {
                 buttonName: {
-                    rainbowName: 'Rainbow Wallet',
-                    explorerName: 'IRIS Explorer'
+                    rainbowName: 'Rainbow 钱包',
+                    explorerName: 'IRIS 浏览器'
                 },
                 buttonUrl: {
-                    rainbowUrl: '',
-                    explorerUrl: ''
+                    rainbowUrl: 'https://www.rainbow.one/',
+                    explorerUrl: 'https://www.irisplorer.io'
                 }
             }
         },
         sectionTwo: {
             KeyInnovations: {
-                title: 'Key Innovations',
+                title: '核心创新',
                 list: [
-                    {id: 0, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'},
-                    {id: 1, msg: 'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems'},
-                    {id: 2, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'}
+                    {id: 0, msg: '将面向服务的基础设施融入到Cosmos网络中'},
+                    {id: 1, msg: '整合由异构系统提供的商业服务，包括公共链、联盟链以及现有系统'},
+                    {id: 2, msg: '通过区块链互联网实现服务的互联互通'}
                 ],
-                buttonMsg: 'WHITE PAPER'
+                buttonMsg: '白皮书'
             },
             NetworkDesign: {
-                title: 'Network Design',
+                title: '网络设计',
                 list: [
-                    {id: 0, msg: 'Definition of standard ABCI transaction types supporting registration,binding, invocation, query, profiling and governance of IRIS Services(a.k.a. iServices)'},
-                    {id: 1, msg: 'iService providers act as adaptors of business logic residing in public andconsortium blockchains as well as enterprise legacy systems'},
-                    {id: 2, msg: 'iServices can be invoked across anextended IBC protocol'}]
+                    {id: 0, msg: '通过标准的ABCI交易实现IRIS服务（也称为iServices）的注册，绑定，调用，查询，分析和管理'},
+                    {id: 1, msg: 'iService提供商充当公共链、联盟区块链以及现有企业系统中业务逻辑的适配器'},
+                    {id: 2, msg: '可以通过扩展的IBC协议在区块链互联网中调用iServices'}]
             }
         },
         sectionThree: {
-            title: 'Roadmap',
+            title: '路线图',
             road: [
-                {id: 0, caption: 'HOUYI', time: 'BEYOND JAN 2020', msg: 'The fourth stage will focus on further technology innovations to the IRIS network, IRIS SDK and mobile client, as well as developer engagement.'},
-                {id: 1, caption: 'KUAFU', time: 'OCT 2019 - DEC 2019', msg: 'The third stage will focus on incremental upgrades to the IRIS Network in order to support our planned advanced IRIS Service governance features.'},
-                {id: 2, caption: 'NÜWA', time: 'APR 2019 - SEPT 2019', msg: 'In this stage we are aiming to have a beta version of the IRIS SDK ready for developers. We plan to upgrade IRISnet mobile client to support i-Services. We plan to establish collabrations with application specific blockchains and enable them as zones connecting to IRIS Hub. We also plan to accomplish the connection with Cosmos Hub at this stage.'},
-                {id: 3, caption: 'PANGU', time: 'JAN 2018 - MAR 2019', msg: 'The first stage of the IRIS project will focus on having the IRIS Hub up and running. We also intend to release an initial version of the mobile client for the IRIS network. In this stage we also focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query. We plan to collabrate with 1-2 ecosystem parteners to release i-Services to IRIShub.'}
+                {id: 0, caption: '后羿', time: '2020年1月之后', msg: '第四阶段，通过不懈的技术创新，完善的社区建设和开发者的积极参与，实现分布式的商业生态系统。'},
+                {id: 1, caption: '夸父', time: '2019年10月 - 2019年12月', msg: '第三阶段，主要专注于完成IRIS网络的增强功能，升级网络以支持复杂的IRIS服务管理功能，如分析和争议解决功能; 不断完善SDK和手机客户端; 加速拓展网络，连接更多分区，整合更多服务提供商。'},
+                {id: 2, caption: '女娲', time: '2019年4月 - 2019年9月', msg: '第二阶段，我们为开发者准备了beta版的IRIS SDK，并会升级移动客户端以支持iServices；与应用专有链项目形成战略联盟，支持它们作为分区连接到IRIS Hub；IRISnet也将在第二阶段完成和Cosmos Hub的链接，打通和以太坊生态的链接。'},
+                {id: 3, caption: '盘古', time: '2018年1月- 2019年3月', msg: 'IRISnet项目的第一阶段，我们专注于构建并启动IRIS Hub；发布一个初始版本的IRIS网络移动客户端，并建立IRISnet基本服务层：升级网络以实现服务定义、绑定、调用和查询；会与1-2两个生态伙伴展开合作，在跨链枢纽IRIS Hub上发布iServices。'}
             ]
         },
         sectionFour: {
-            Collaboration: 'Collaboration',
-            CoreDevelopmentTeams: 'Core Development Teams',
-            StrategicPartners: 'Strategic Partners',
-            EcosystemPartners: 'Ecosystem Partners',
-            Institutional: {msg1: 'Institutional Supporters', msg2: '( Listed in no particular order )'}
+            Collaboration: '合作方',
+            CoreDevelopmentTeams: {
+                title: '核心开发团队',
+                logos: [
+                    {id:0, path: 'logos/irisnet_bianjiehover.png', url: ''},
+                    {id:1, path: 'logos/irisnet_tenderminthover.png', url: ''}
+                ]
+            },
+            StrategicPartners: {
+                title: '战略合作伙伴',
+                logos: [
+                    {id:0, path: 'logos/irisnet_InTERCHAIN.png', url: ''},
+                    {id:1, path: 'logos/irisnet_HASHKEY.png', url: ''}
+                ]
+            },
+            EcosystemPartners: {
+                title: '生态合作伙伴',
+                logos: [
+                    {id:0, path: 'logos/irisnet_Platonlogo.png', url: ''},
+                    {id:1, path: 'logos/irisnet_hashquark.png', url: ''},
+                    {id:2, path: 'logos/irisnet_hashgardhover.png', url: ''}
+                ]
+            },
+            Institutional: {
+                title: {msg1: '支持机构', msg2: '(排名不分先后)'},
+                logos: [
+                    {id:0, path: 'logos/irisnet_AminoCapital.png', url: ''},
+                    {id:1, path: 'logos/irisnet_Bibox.png', url: ''},
+                    {id:2, path: 'logos/irisnet_huobi.png', url: ''},
+                    {id:3, path: 'logos/irisnet_GBIC.png', url: ''},
+                    {id:4, path: 'logos/irisnet_8decim.png', url: ''},
+                    {id:5, path: 'logos/irisnet_bihu.png', url: ''},// 1
+                    {id:6, path: 'logos/irisnet_ba.png', url: ''},
+                    {id:7, path: 'logos/irisnet_BKfund.png', url: ''},
+                    {id:8, path: 'logos/irisnet_byz.png', url: ''},
+                    {id:9, path: 'logos/irisnet_ChainPE.png', url: ''},
+                    {id:10, path: 'logos/irisnet_CP.png', url: ''},
+                    {id:11, path: 'logos/irisnet_COEFFICIENT.png', url: ''},// 2
+                    {id:12, path: 'logos/irisnet_gongshi.png', url: ''},
+                    {id:13, path: 'logos/irisnet_dushu.png', url: ''},
+                    {id:14, path: 'logos/irisnet_genblock.png', url: ''},
+                    {id:15, path: 'logos/irisnet_HAYEK.png', url: ''},
+                    {id:16, path: 'logos/irisnet_INK.png', url: ''},
+                    {id:17, path: 'logos/irisnet_LINKVCcopy.png', url: ''},// 3
+                    {id:18, path: 'logos/irisnet_MediSHares.png', url: ''},
+                    {id:19, path: 'logos/irisnet_jieshi.png', url: ''},
+                    {id:20, path: 'logos/irisnet_nirvana-logo-white.png', url: ''},
+                    {id:21, path: 'logos/irisnet_NGC.png', url: ''},
+                    {id:22, path: 'logos/irisnet_origin.png', url: ''},
+                    {id:23, path: 'logos/irisnet_SatoshiFUnd.png', url: ''},// 4
+                    {id:24, path: 'logos/irisnet_guigu.png', url: ''},
+                    {id:25, path: 'logos/irisnet_shicuo.png', url: ''},
+                    {id:26, path: 'logos/irisnet_huixiang.png', url: ''},
+                    {id:27, path: 'logos/irisnet_Unetwork.png', url: ''},
+                    {id:28, path: 'logos/irisnet_jiuhe.png', url: ''},
+                    {id:29, path: 'logos/irisnet_UA.png', url: ''},//5
+                    {id:30, path: 'logos/irisnet_shuidi.png', url: ''},
+                    {id:31, path: 'logos/irisnet_yidao.png', url: ''},
+                ]
+            }
         }
     },
     "white":'public/whiteDwCn.png',
