@@ -1,5 +1,5 @@
 <template>
-    <div class="content_wrap">
+    <div class="content_wrap" @click="showWeChat=false">
         <section class="sectionOne">
             <div class="left">
                 <div>{{$store.state.messages.home.sectionOne.title}}</div>
@@ -7,7 +7,17 @@
                 <div>
                     <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
                     <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
-                    <a><img src="../assets/hoverIcon/weChatIconHover.png" alt=""></a>
+                    <a @click="showWeChatPic">
+                        <img src="../assets/hoverIcon/weChatIconHover.png" alt="">
+                        <div v-show="showWeChat"  class="mobileBox" @touchmove.prevent>
+                            <div class="qrcode" @touchmove.prevent>
+                                <img src="../assets/wechat.jpg" alt="" @touchmove.prevent>
+                                <div class="arrow"></div>
+                                <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
+                            </div>
+                        </div>
+                        
+                    </a>
                 </div>
                 <div>
                     <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button>
@@ -107,9 +117,18 @@
 <script>
     export default {
         name: "Home",
+        data () {
+            return {
+                showWeChat: false
+            }
+        },
         methods: {
             jumpUrl (url) {
                 window.location.href = url
+            },
+            showWeChatPic (e) {
+                e.stopPropagation()
+                this.showWeChat = !this.showWeChat
             }
         }
     }
