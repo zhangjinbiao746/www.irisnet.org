@@ -151,8 +151,8 @@ export const message = {
             title: 'IRIS Betanet',
             time: '2019.02.28 launched',
             shareUrl: {
-                telegramUrl: '',
-                githubUrl: '',
+                telegramUrl: 'https://t.me/irisnetwork',
+                githubUrl: 'https://github.com/irisnet/irishub',
                 weChatUrl: ''
             },
             button: {
@@ -174,7 +174,8 @@ export const message = {
                     {id: 1, msg: 'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems'},
                     {id: 2, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'}
                 ],
-                buttonMsg: 'WHITE PAPER'
+                buttonMsg: 'WHITE PAPER',
+                WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md'
             },
             NetworkDesign: {
                 title: 'Network Design',

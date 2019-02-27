@@ -151,8 +151,8 @@ export const message = {
             title: 'IRIS 网络',
             time: '2019.02.28 launched',
             shareUrl: {
-                telegramUrl: '',
-                githubUrl: '',
+                telegramUrl: 'https://t.me/irisnetworkcn',
+                githubUrl: 'https://github.com/irisnet/irishub',
                 weChatUrl: ''
             },
             button: {
@@ -174,7 +174,8 @@ export const message = {
                     {id: 1, msg: '整合由异构系统提供的商业服务，包括公共链、联盟链以及现有系统'},
                     {id: 2, msg: '通过区块链互联网实现服务的互联互通'}
                 ],
-                buttonMsg: '白皮书'
+                buttonMsg: '白皮书',
+                WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md'
             },
             NetworkDesign: {
                 title: '网络设计',
