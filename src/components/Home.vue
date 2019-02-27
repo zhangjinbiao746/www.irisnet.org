@@ -28,7 +28,7 @@
                 <img src="../assets/banner.png" alt="" class="banner">
             </div>
         </section>
-        <section class="sectionTwo">
+        <section class="sectionTwo" ref="whitePaper">
             <div class="first">
                 <div class="left">
                     <div class="keyInnovationMsg">
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </section>
-        <section class="sectionThree">
+        <section class="sectionThree" ref="roadmap">
             <div class="title">{{$store.state.messages.home.sectionThree.title}}</div>
             <div class="road">
                 <div class="roadMap"></div>
@@ -74,7 +74,7 @@
                 </div>
             </div>
         </section>
-        <section class="sectionFour">
+        <section class="sectionFour" ref="collaboration">
             <div class="title">{{$store.state.messages.home.sectionFour.Collaboration}}</div>
             <div class="logos">
                 <div class="logo">
@@ -119,7 +119,9 @@
         name: "Home",
         data () {
             return {
-                showWeChat: false
+                showWeChat: false,
+                timer: null,
+
             }
         },
         methods: {
@@ -129,8 +131,21 @@
             showWeChatPic (e) {
                 e.stopPropagation()
                 this.showWeChat = !this.showWeChat
+            },
+            onresize(){
+                clearTimeout(this.timer);
+                let that = this;
+                this.timer =  setTimeout(function () {
+                    that.$store.commit('whitePaper',that.$refs.whitePaper.offsetTop);
+                    that.$store.commit('roadmap',that.$refs.roadmap.offsetTop);
+                    that.$store.commit('collaboration',that.$refs.collaboration.offsetTop);
+                },10);
             }
-        }
+        },
+        mounted () {
+            this.onresize();
+            window.addEventListener('resize',this.onresize);
+        },
     }
 </script>
 

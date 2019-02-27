@@ -1,23 +1,27 @@
 <template>
     <div id="app">
-        <Header></Header>
+        <IrisnetHeader></IrisnetHeader>
         <router-view/>
-        <Footer></Footer>
+        <IrisnetFooter></IrisnetFooter>
     </div>
 </template>
 
 <script>
-    import Tools from "../src/util/Tools"
-    import Header from "./components/Header";
-    import Footer from "./components/Footer";
+    import IrisnetHeader from "./components/IrisnetHeader";
+    import IrisnetFooter from "./components/IrisnetFooter";
     export default {
         name: 'app',
-        components: {Footer, Header},
+        components: {IrisnetFooter, IrisnetHeader},
         data(){
             return{
 
             }
         },
+        watch:{
+            $route(){
+                document.body.scrollTop = 0;
+            }
+        }
     }
 </script>
 <style lang="less">

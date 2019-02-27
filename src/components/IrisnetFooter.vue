@@ -1,5 +1,5 @@
 <template>
-    <div class="footer_container">
+    <div class="footer_container" ref="contact">
         <div class="footer_wrap">
             <div class="content">
                 <div class="community_link_content">
@@ -28,7 +28,7 @@
                     <h4 class="newsletter_title">{{$store.state.messages.footer.submitBtn.title}}</h4>
                     <input v-model="mailAddress" class="email_input" :class="flShowError ? 'error_style' : ' '" type="text" :placeholder="$store.state.messages.placehooder.placehooder">
                     <p :class="flShowError ? 'show_error' : 'hide_error'">{{$store.state.messages.errEmail.err}}</p>
-                    <button class="submit_btn" @click="commitMaile">{{subscription}}</button>
+                    <button class="submit_btn" @click="commitMail">{{subscription}}</button>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
 <script>
     import axios from 'axios'
     export default {
-        name: "Footer",
+        name: "v-footer",
         data () {
             return {
                 mailAddress: '',
@@ -54,8 +54,13 @@
                 subscription: this.$store.state.messages.footer.submitBtn.subscribe
             }
         },
+        watch:{
+            $route(){
+                this.onresize();
+            }
+        },
         methods:{
-            commitMaile(){
+            commitMail(){
                 clearTimeout(this.submitTimer);
                 clearTimeout(this.errorTimer);
                 let address =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -85,7 +90,18 @@
                 })
                 .catch((e)=>{
                 })
+            },
+            onresize(){
+                let that = this;
+                //解决因为页面没有渲染完成取offsetTop出错
+                setTimeout(function () {
+                    that.$store.commit('contact',that.$refs.contact.offsetTop)
+                },100);
             }
+        },
+        mounted () {
+            this.onresize();
+            window.addEventListener('resize',this.onresize())
         }
     }
 </script>

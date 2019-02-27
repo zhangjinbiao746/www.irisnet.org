@@ -15,6 +15,8 @@ import TestNetApp from '../components/TestNetApp.vue';
 import HackathonApp from '../components/HackathonApp.vue';
 import MainNet from "../components/MainNet";
 import MainNetApp from "../components/MainNetApp";
+import NewManinet from '../components/NewMainnet';
+import NewTestnet from '../components/NewTestnet';
 import Home from "../components/Home"
 Vue.use(Router)
 
@@ -29,7 +31,7 @@ export function createRouter() {
             },
             {
                 path: '/testnets',
-                component: TestNet,
+                component: NewTestnet,
             },
             {
                 path: '/testnets/app',
@@ -67,7 +69,7 @@ export function createRouter() {
             },
             {
                 path: '/mainnet',
-                component: MainNet
+                component: NewManinet
             },
             {
                 path: '/mainnet/app',

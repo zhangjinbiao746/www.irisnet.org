@@ -10,6 +10,11 @@ export function createStore () {
         state: {
             musicList: [],
             lang: 'EN',
+            whitePaper: '',
+            roadmap: '',
+            collaboration: '',
+            contact: '',
+            activeIconIndex: '',
         },
         mutations: {
             changeItemIs(state, payload) {
@@ -20,8 +25,22 @@ export function createStore () {
             },
             lang(state,data){
                 state.lang = data;
+            },
+            whitePaper(state,data){
+                state.whitePaper = data;
+            },
+            collaboration(state,data){
+                state.collaboration = data;
+            },
+            contact(state,data){
+                state.contact = data;
+            },
+            activeIconIndex(state,data){
+                state.activeIconIndex = data;
+            },
+            roadmap(state,data){
+                state.roadmap = data;
             }
-
         }
     })
 }

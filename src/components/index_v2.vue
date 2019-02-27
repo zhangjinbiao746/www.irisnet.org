@@ -347,7 +347,7 @@
     import {mapState} from 'vuex'
     import CompCollaborationItem from '@/components/modules/collaborationItem.vue'
     import axios from "axios"
-    import Header from "./Header";
+    import Header from "./IrisnetHeader";
     let Reveal
     if (process.env.VUE_ENV === 'client') {
         Reveal = require('reveal.js')

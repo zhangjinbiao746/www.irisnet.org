@@ -6,74 +6,86 @@ export const message = {
             {
                 id:1,
                 title:'白皮书',
-                href:'#/0/1'
+                active:false,
             },
             {
                 id:2,
                 title:'合作方',
-                href:'#/0/3'
+                active:false,
             },
             {
                 id:3,
                 title:'联系方式',
-                href:'#/0/5'
+                active:false,
             }
         ],
         right:[
             {
                 id:1,
                 title:'主网',
-                href:''
+                href:'',
+                active: false,
             },
             {
                 id:2,
                 title:'文档',
-                href:'https://www.irisnet.org/docs/'
+                href:'https://www.irisnet.org/docs/',
+                active: false,
             },
             {
                 id:3,
                 title:'博客',
                 href:'https://medium.com/irisnet-blog',
+                active: false,
             },
         ],
         mobileNavigation:[
             {
                 id:1,
                 title:'主网',
-                href: "#/0/3",
+                activeIndex: '',
+                active:false,
             },
             {
                 id:2,
                 title:'测试网',
-                href: "#/0/3",
+                activeIndex: '',
+                active:false,
             },
             {
                 id:3,
                 title:'白皮书',
-                href: "#/0/1",
+                activeIndex: 0,
+                active:false,
             },
             {
                 id:4,
                 title:'路线图',
-                href: "#/0/3",
+                activeIndex: 3,
+                active:false,
             },
             {
                 id:5,
                 title:'合作方',
-                href: "#/0/3",
+                activeIndex: 1,
+                active:false,
             },
             {
                 id:6,
                 title:'联系方式',
-                href: "#/0/3",
+                activeIndex: 2,
+                active:false,
             },
+           
+        ],
+        mobileLinkHrefNavigation:[
             {
-                id:7,
+                id: 0,
                 title:'文档',
                 href: "https://www.irisnet.org/docs/",
             },
             {
-                id:8,
+                id: 1,
                 title:'博客',
                 href: "https://medium.com/irisnet-blog",
             },
@@ -148,7 +160,7 @@ export const message = {
     },
     home: {
         sectionOne: {
-            title: 'IRIS 网络',
+            title: 'IRIS Betanet',
             time: '2019.02.28 launched',
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetworkcn',
@@ -256,6 +268,85 @@ export const message = {
                 ]
             }
         }
+    },
+    mainnet:{
+        title: 'IRIS Network',
+        production: '用于构建可信分布式商业应用的跨链服务基础设施及协议',
+        wallet: 'Rainbow 钱包',
+        walletHref:'http://www.rainbow.one/',
+        explorer: 'IRIS 浏览器',
+        explorerHref:'https://www.irisplorer.io/'
+    },
+    announcements:{
+        title: '基金会公告',
+        viewMore: 'View More',
+        moreHref:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
+        betaTitle:'Betanet Work Plan',
+        betaContent:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.',
+        readMore:'Read more',
+        betaDate:'2019年2月1日',
+        announcementList:[
+            {
+                id:'1',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md',
+                date:'2019年1月16日',
+                title:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
+                content:'新年伊始，IRIS基金会高兴地宣布，IRIS Betanet即将于2019年春节后（2月中旬）上线！'
+            },
+            {
+                id:'2',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md',
+                date:'2019年1月16日',
+                title:'对IRIS Betanet的期望',
+                content:'为了帮助社区更好的参与IRIS Betanet，特此向社区沟通明确Betanet的一些期望：'
+            }
+        ]
+    },
+    testnet:{
+        title:'伏羲测试网',
+        production: '伏羲测试网跟IRIS主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。',
+        testnetLink:'加入测试网'
+    },
+    community:{
+        title: '社区',
+        joinWay:[
+            {
+                id:'1',
+                src:'irisnet_community_qq.png',
+                name: 'QQ 群',
+                linkName:'834063323',
+                href: ''
+            },
+            {
+                id:'2',
+                src:'irisnet_community_riot.png',
+                name: 'Riot聊天室',
+                linkName:'#irisvalidators:matrix.org',
+                href: 'https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org'
+            }
+        ]
+    },
+    testnetPage:{
+        title: '伏羲测试网',
+        section:[
+            {
+                content:'伏羲测试网络经过数次迭代已经完成了使命。'
+            },
+            {
+                content:'2019年2月，IRISnet开发团队发布了irishub v0.12.0，并成功启动了新的测试网络 (chain-id : fuxi)。'
+            },
+            {
+                content:'伏羲测试网跟IRIS主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。'
+            }
+        ],
+        joinTitle:'如何加入伏羲测试网',
+        joinHref:'https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html',
+        faqTitle:'IRIShub常见问题',
+        faqHref:'https://www.irisnet.org/docs/zh/introduction/',
+        explorerTitle:'测试网浏览器 IRISplorer',
+        explorerHref:'https://testnet.irisplorer.io',
+        walletTitle:'测试网钱包 Rainbow',
+        walletHref:'https://testnet.rainbow.one/'
     },
     "white":'public/whiteDwCn.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/白皮书.md",
@@ -1041,11 +1132,11 @@ export const message = {
         "title":" 请扫描二维码",
         "txt":" 关注公众号"
     },
-    "community":{
-        "title":"社区",
-        "coming":"敬请期待"
-
-    },
+    // "community":{
+    //     "title":"社区",
+    //     "coming":"敬请期待"
+    //
+    // },
     "contactList":[
         {"infotitle":"IRISnet以希腊彩虹女神Iris命名，"},
         {"infotitle":"她是在人间和天堂之间传递信息的"},
@@ -1143,26 +1234,26 @@ export const message = {
             "active": false
         }
     ],
-        "announcements":[
-        {
-            src:'../../public/announcements_betanet.png',
-            timestamp:"2019年2月1日",
-            imgtext:'Betanet上线工作计划',
-            href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
-        },
-        {
-            src:'../../public/announcements_mainnet.png',
-            timestamp:"2019年1月16日",
-            imgtext:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
-            href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md'
-        },
-        {
-            src:'../../public/announcements_irisnet.png',
-            timestamp:"2019年1月16日",
-            imgtext:'对IRIS Betanet的期望',
-            href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md'
-        },
+        // "announcements":[
+        // {
+        //     src:'../../public/announcements_betanet.png',
+        //     timestamp:"2019年2月1日",
+        //     imgtext:'Betanet上线工作计划',
+        //     href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
+        // },
+        // {
+        //     src:'../../public/announcements_mainnet.png',
+        //     timestamp:"2019年1月16日",
+        //     imgtext:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
+        //     href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md'
+        // },
+        // {
+        //     src:'../../public/announcements_irisnet.png',
+        //     timestamp:"2019年1月16日",
+        //     imgtext:'对IRIS Betanet的期望',
+        //     href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md'
+        // },
 
 
-    ]
+    // ]
 };
