@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="tpl_content">
         <div class="testnet_container">
             <div class="testnet_text_content">
                 <h1 class="fuxi_title">{{$store.state.messages.testnetPage.title}}</h1>
