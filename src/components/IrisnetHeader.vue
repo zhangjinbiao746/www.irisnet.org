@@ -30,7 +30,7 @@
                                 <span @click="changLang('EN')" v-if="$store.state.lang=='CN'" class="lang_english"><a href="?lang=EN">English</a></span>
                                 <span @click="changLang('CN')" v-if="$store.state.lang=='EN'" class="lang_english"><a href="?lang=CN">中文</a></span>
                                 <span class="arrow_img">
-                                    <img src="../../public/down.png">
+                                    <img src="../../public/irisnet/IRISnet_chang_lang.png">
                                 </span>
                             </div>
                             <!--<div v-if="$store.state.lang=='EN'" class="chinese_content" @click="changLang">-->
@@ -86,7 +86,6 @@
                 setTimeout(function () {
                     that.getDomOffsetTop(that.$store.state.activeIconIndex)
                 },200);
-                console.log(this.$route.path,66666)
                 if(this.$route.path === '/mainnet' || this.$route.path === '/testnets' || this.$route.path === '/testnets/'){
                     this.$store.state.messages.header.right[0].active = true;
                     this.resetActiveIcon();
@@ -111,9 +110,13 @@
             },
             activeIcon(index){
                 if(index === 0 || index ===1){
-                    this.$router.push({
-                        path: '/'
-                    });
+                    if(this.$route.query.lang && this.$route.query.lang === 'CN'){
+                        this.$router.push({path: '/?lang=CN'});
+                    }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
+                        this.$router.push({path:'/?lang=EN'})
+                    }else {
+                        this.$router.push({path:'/'})
+                    }
                 }
                 this.resetActiveIcon();
                 this.$store.state.messages.header.left[index].active = true;
@@ -128,7 +131,7 @@
                 }else if (index === 1) {
                     activeDomOffsetTop = this.$store.state.collaboration;
                 }else if (index === 2) {
-                    activeDomOffsetTop = this.$store.state.contact;
+                    activeDomOffsetTop = this.$store.state.contact - 60;
                 }else if (index === 3) {
                     activeDomOffsetTop = this.$store.state.roadmap;
                 }
@@ -142,7 +145,13 @@
             },
             toMainnet(href){
                 if(href === ""){
-                    this.$router.push({path:'/mainnet'})
+                    if(this.$route.query.lang && this.$route.query.lang === 'CN'){
+                        this.$router.push({path:'/mainnet/?lang=CN'})
+                    }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
+                        this.$router.push({path:'/mainnet/?lang=EN'})
+                    }else {
+                        this.$router.push({path:'/mainnet'})
+                    }
                 }
             },
             mobileLink(title,index){
@@ -180,6 +189,9 @@
             }
         },
         mounted(){
+            let headerHeight = document.getElementsByClassName('header_wrap')[0].clientHeight;
+            this.resetActiveIcon();
+            this.$store.commit('headerHeight',headerHeight);
             if(this.$route.path === '/mainnet' || this.$route.path === '/testnets'){
                 this.$store.state.messages.header.right[0].active = true;
             }else {
