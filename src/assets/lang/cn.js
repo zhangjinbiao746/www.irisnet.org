@@ -92,6 +92,8 @@ export const message = {
         ]
     },
     footer:{
+        socialCommunityTitle: '社区',
+        TechCommunityTitle: '技术社区',
         socialCommunity:[
             {
                 id:1,
@@ -126,26 +128,24 @@ export const message = {
             {
                 id:6,
                 src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/!bmimZgJrUWSmxqQEmG:matrix.org"
+                href: "https://riot.im/app/#/room/#iris:matrix.org"
             },
         ],
         techCommunity:[
             {
-                id:1,
+                id:0,
                 src: "irisnet_github.png",
                 href: "https://github.com/irisnet"
             },
             {
-                id:2,
+                id:1,
                 src: "irisnet_riot.png",
-                "txt": "riot",
-                href: ""
+                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
             },
             {
-                id:3,
+                id:2,
                 src: "irisnet_qq.png",
-                "txt": "qq",
-                href: ""
+                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
             },
         ],
         submitBtn:{
@@ -213,6 +213,7 @@ export const message = {
                 logos: [
                     {id:0, path: 'logos/irisnet_bianjiehover.png', url: 'https://www.bianjie.ai/'},
                     {id:1, path: 'logos/irisnet_tenderminthover.png', url: 'https://tendermint.com/'}
+
                 ]
             },
             StrategicPartners: {
@@ -228,6 +229,7 @@ export const message = {
                     {id:0, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
                     {id:1, path: 'logos/irisnet_hashquark.png', url: 'https://www.hashquark.io/#/'},
                     {id:2, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
+
                 ]
             },
             Institutional: {
@@ -265,6 +267,7 @@ export const message = {
                     {id:29, path: 'logos/irisnet_UA.png', url: 'javascript:void(0)'},//5
                     {id:30, path: 'logos/irisnet_shuidi.png', url: 'http://waterdrip.io/'},
                     {id:31, path: 'logos/irisnet_yidao.png', url: 'javascript:void(0)'},
+
                 ]
             }
         }
@@ -273,7 +276,7 @@ export const message = {
         title: 'IRIS Network',
         production: '用于构建可信分布式商业应用的跨链服务基础设施及协议',
         wallet: 'Rainbow 钱包',
-        walletHref:'http://www.rainbow.one/',
+        walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS 浏览器',
         explorerHref:'https://www.irisplorer.io/'
     },
@@ -315,7 +318,7 @@ export const message = {
                 src:'irisnet_community_qq.png',
                 name: 'QQ 群',
                 linkName:'834063323',
-                href: ''
+                href: 'http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32'
             },
             {
                 id:'2',
@@ -347,6 +350,17 @@ export const message = {
         explorerHref:'https://testnet.irisplorer.io',
         walletTitle:'测试网钱包 Rainbow',
         walletHref:'https://testnet.rainbow.one/'
+    },
+
+    newsLetter:{
+        successTitle: '欢迎订阅IRISnet通讯',
+        failedTitle: '订阅失败。',
+        successText: '感谢您并对我们的项目感兴趣并加入订阅。\n' +
+        '请检查您的收件箱，点击确认，开始接收我们的通讯和其他最新的更新。',
+        failedText: '也许您已经订阅过了?\n' +
+        '\n' +
+        '如果没有，请再试一次或通过电子邮件contact@irisnet.org联系我们。',
+        confirm: '确认'
     },
     "white":'public/whiteDwCn.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/白皮书.md",
@@ -1199,9 +1213,6 @@ export const message = {
     },
     "errEmail":{
         "err":"请输入一个有效的邮箱地址"
-    },
-    "newsLetter":{
-        "letter":"获取最新资讯"
     },
     "placehooder":{
         "placehooder": "请输入你的邮箱地址"

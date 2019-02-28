@@ -125,6 +125,7 @@
         methods: {
             jumpUrl (url) {
                 window.open(url)
+                window.location.href = url
             },
             showWeChatPic (e) {
                 e.stopPropagation()
@@ -133,14 +134,15 @@
             closeWeChat () {
                 this.showWeChat = false
             },
+
             onresize(){
                 clearTimeout(this.timer);
                 let that = this;
                 this.timer =  setTimeout(function () {
-                    that.$store.commit('whitePaper',that.$refs.whitePaper.offsetTop);
-                    that.$store.commit('roadmap',that.$refs.roadmap.offsetTop);
-                    that.$store.commit('collaboration',that.$refs.collaboration.offsetTop);
-                },10);
+                    that.$store.commit('whitePaper',that.$refs.whitePaper.offsetTop - that.$store.state.headerHeight);
+                    that.$store.commit('roadmap',that.$refs.roadmap.offsetTop - that.$store.state.headerHeight);
+                    that.$store.commit('collaboration',that.$refs.collaboration.offsetTop - that.$store.state.headerHeight);
+                },100);
             }
         },
         mounted () {
