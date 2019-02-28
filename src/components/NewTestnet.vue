@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="padding-top: 0.6rem;">
         <div class="testnet_container">
             <div class="testnet_text_content">
                 <h1 class="fuxi_title">{{$store.state.messages.testnetPage.title}}</h1>
@@ -65,4 +65,5 @@
 
 <style scoped lang="less">
     @import "../assets/style/new_test_net";
+
 </style>

@@ -129,7 +129,7 @@ export const message = {
             {
                 id:6,
                 src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/!bmimZgJrUWSmxqQEmG:matrix.org"
+                href: "https://riot.im/app/#/room/#iris:matrix.org"
             },
         ],
         techCommunity:[
@@ -142,13 +142,13 @@ export const message = {
                 id:1,
                 src: "irisnet_riot.png",
                 "txt": "riot",
-                href: ""
+                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
             },
             {
                 id:2,
                 src: "irisnet_qq.png",
                 "txt": "qq",
-                href: ""
+                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
             },
         ],
         submitBtn:{
@@ -223,6 +223,7 @@ export const message = {
                 logos: [
                     {id:0, path: 'logos/irisnet_InTERCHAIN.png', url: 'https://cosmos.network/about'},
                     {id:1, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'}
+
                 ]
             },
             EcosystemPartners: {
@@ -277,7 +278,7 @@ export const message = {
         title: 'IRIS Network',
         production: 'Inter-chain service infrastructure and protocol for building trustworthy and distributed business applications',
         wallet: 'Rainbow Wallet',
-        walletHref:'http://www.rainbow.one/',
+        walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS Explorer',
         explorerHref:'https://www.irisplorer.io/'
     },
@@ -321,7 +322,7 @@ export const message = {
                 src:'irisnet_community_qq.png',
                 name: 'QQ group',
                 linkName:'834063323',
-                href: ''
+                href: 'http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32'
             },
             {
                 id:'2',
@@ -353,6 +354,13 @@ export const message = {
         explorerHref:'https://testnet.irisplorer.io',
         walletTitle:'Rainbow App (PTR)',
         walletHref:'https://testnet.rainbow.one/'
+    },
+    newsLetter:{
+        successTitle: 'Welcome to the IRISnet newsletter',
+        failedTitle: 'Subscription failed.',
+        successText: 'Thank you for your interest in and subscription to our project infomation. Please check your email box and click the button to confirm the subscription and to start receiving our newsletters and other latest updates.',
+        failedText: 'Maybe you are already subscribed? If not then please try again or contact us via email contact@irisnet.org.',
+        confirm: 'confirm'
     },
     "logo": 'irisnet.png',
     "white":'public/whiteDw.png',
@@ -1215,9 +1223,9 @@ export const message = {
     "errEmail":{
         "err":"Please enter a valid email address"
     },
-    "newsLetter":{
-        "letter":"Newsletter"
-    },
+    // "newsLetter":{
+    //     "letter":"Newsletter"
+    // },
     "placehooder":{
         "placehooder": "Please enter your email address"
     },

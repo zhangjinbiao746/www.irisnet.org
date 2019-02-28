@@ -1,5 +1,6 @@
 <template>
-    <div>
+
+    <div style="padding-top: 0.6rem;">
         <div class="mainnet_header_container">
             <div class="mainnet_header_wrap">
                 <h1 class="mainnet_title">{{$store.state.messages.mainnet.title}}</h1>
@@ -49,7 +50,7 @@
         <div class="testnet_container">
             <div class="testnet_wrap">
                 <h3 class="testnet_title">{{$store.state.messages.testnet.title}}</h3>
-                <p class="testnet_status_content">{{$store.state.messages.testnet.production}}</p>
+                <p class="testnet_status_content" v-html="$store.state.messages.testnet.production"></p>
                 <div class="testnet_btn_content">
                     <span class="testnet_btn" @click="toTestnet">{{$store.state.messages.testnet.testnetLink}}</span>
                 </div>
@@ -60,13 +61,15 @@
                 <h3 class="community_title">{{$store.state.messages.community.title}}</h3>
                 <ul class="community_way_content">
                     <li class="community_way" v-for="item in $store.state.messages.community.joinWay" :key="item.id">
-                        <div class="community_logo_img">
-                            <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=5fe681492ecd48efecf87dd44e1a7f24ebd19dbca3bb06f55dd071a58f2ac8d0"><img :src="`${UrlSrc}${item.src}`"></a>
-                        </div>
-                        <div class="way_content">
-                            <p class="way_name">{{item.name}}</p>
-                            <p class="way_link_name">{{item.linkName}}</p>
-                        </div>
+                        <a :href="item.href" target="_blank">
+                            <div class="community_logo_img">
+                                <img :src="`${UrlSrc}${item.src}`">
+                            </div>
+                            <div class="way_content">
+                                <p class="way_name">{{item.name}}</p>
+                                <p class="way_link_name">{{item.linkName}}</p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -102,4 +105,5 @@
 
 <style scoped lang="less">
 @import "../assets/style/new_mainnet";
+
 </style>
