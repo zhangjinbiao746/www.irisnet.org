@@ -26,6 +26,6 @@
     body{
         font-size:16px !important;
     }
-    @import "assets/style/reset";
+    @import "./assets/style/reset";
 </style>
 
