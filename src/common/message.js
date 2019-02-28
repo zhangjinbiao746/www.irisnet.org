@@ -919,27 +919,27 @@ export default {
             rainbowAppBtn:'测试网钱包 Rainbow',
             downloadRainbowAppHref:'https://testnet.rainbow.one/'
         },
-		announcements:[
-            {
-                src:'../../public/announcements_betanet.png',
-                timestamp:"2019年2月1日",
-                imgtext:'Betanet上线工作计划',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
-            },
-			{
-				src:'../../public/mobile_announcements_mainnet.png',
-				timestamp:"2019年1月16日",
-				imgtext:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
-				href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md'
-			},
-			{
-				src:'../../public/mobile_announcements_irisnet.png',
-				timestamp:"2019年1月16日",
-				imgtext:'对IRIS Betanet的期望',
-				href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md'
-			}
-
-		],
+		// announcements:[
+         //    {
+         //        src:'../../public/announcements_betanet.png',
+         //        timestamp:"2019年2月1日",
+         //        imgtext:'Betanet上线工作计划',
+         //        href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
+         //    },
+		// 	{
+		// 		src:'../../public/mobile_announcements_mainnet.png',
+		// 		timestamp:"2019年1月16日",
+		// 		imgtext:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
+		// 		href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md'
+		// 	},
+		// 	{
+		// 		src:'../../public/mobile_announcements_irisnet.png',
+		// 		timestamp:"2019年1月16日",
+		// 		imgtext:'对IRIS Betanet的期望',
+		// 		href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md'
+		// 	}
+        //
+		// ],
         mainnetImg:{
             src:"../../public/mobile_main_zh.png"
         }
@@ -1867,27 +1867,27 @@ export default {
             rainbowAppBtn:'Rainbow App (PTR)',
             downloadRainbowAppHref:'https://testnet.rainbow.one/'
         },
-        announcements:[
-            {
-                src:'../../public/announcements_betanet.png',
-                timestamp:"Feb 1, 2019",
-                imgtext:'Betanet Work Plan',
-                href: 'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
-            },
-            {
-                src:'../../public/mobile_announcements_mainnet.png',
-                timestamp:"Jan 16, 2019",
-                imgtext:'IRIS Foundation Announces Plan for Betanet',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md'
-
-            },
-            {
-                src:'../../public/mobile_announcements_irisnet.png',
-                timestamp:"Jan 16, 2019",
-                imgtext:'Expectations for IRIS Betanet',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md'
-            }
-        ],
+        // announcements:[
+        //     {
+        //         src:'../../public/announcements_betanet.png',
+        //         timestamp:"Feb 1, 2019",
+        //         imgtext:'Betanet Work Plan',
+        //         href: 'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
+        //     },
+        //     {
+        //         src:'../../public/mobile_announcements_mainnet.png',
+        //         timestamp:"Jan 16, 2019",
+        //         imgtext:'IRIS Foundation Announces Plan for Betanet',
+        //         href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md'
+        //
+        //     },
+        //     {
+        //         src:'../../public/mobile_announcements_irisnet.png',
+        //         timestamp:"Jan 16, 2019",
+        //         imgtext:'Expectations for IRIS Betanet',
+        //         href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md'
+        //     }
+        // ],
         mainnetImg:{
         src:"../../public/mobile_main_en.png"
         }
