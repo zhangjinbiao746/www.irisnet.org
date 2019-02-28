@@ -1,21 +1,32 @@
 <template>
-    <div id="app">
-        <Header></Header>
+    <div id="app" @click="closeWeChatIcon">
+        <IrisnetHeader></IrisnetHeader>
         <router-view/>
-        <Footer></Footer>
+        <IrisnetFooter></IrisnetFooter>
     </div>
 </template>
 
 <script>
-    import Tools from "../src/util/Tools"
+    import IrisnetHeader from "./components/IrisnetHeader";
+    import IrisnetFooter from "./components/IrisnetFooter";
     export default {
         name: 'app',
-        components: {},
+        components: {IrisnetFooter, IrisnetHeader},
         data(){
             return{
 
             }
         },
+        watch:{
+            $route(){
+                document.body.scrollTop = 0;
+            }
+        },
+        methods: {
+            closeWeChatIcon () {
+                this.$store.commit('controlWeChat', false)
+            }
+        }
     }
 </script>
 <style lang="less">
