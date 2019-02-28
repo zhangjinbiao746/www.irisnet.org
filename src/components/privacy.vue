@@ -38,8 +38,6 @@
 </script>
 
 <style scoped lang='less'>
-
-
     .index {
         min-height: 100%;
         position: relative;
@@ -51,47 +49,47 @@
             margin: auto;
         }
         .h110 {
-            height: 110px;
+            height: 1.1rem;
             width: 100%
         }
         .warp {
             background: url('../../public/privacy.png');
             background-repeat: no-repeat;
             background-attachment:fixed;
-            background-position:  36% 180px;
+            background-position:  36% 1.8rem;
             .warp_cont {
                 overflow: hidden;
                 .warp_cont_left {
-                    width: 330px;
-                    border-top: 1px solid #2e3148;
+                    width: 3.3rem;
+                    border-top: 0.01rem solid #2e3148;
                     position: relative;
                     .border {
-                        height: 2px;
-                        width: 84px;
+                        height: 0.02rem;
+                        width: 0.84rem;
                         background: #c83e66;
                         position: absolute;
                         top: 0;
                     }
                     .title {
-                        margin-top: 18px;
-                        font-size: 24px;
+                        margin-top: 0.18rem;
+                        font-size: 0.24rem;
                         color: #fff;
-                        line-height: 30px;
+                        line-height: 0.3rem;
                         .div1{
-                            font-size: 14px;
-                            line-height: 22px;
+                            font-size: 0.14rem;
+                            line-height: 0.22rem;
                             color: #d4d5de;  font-style: oblique;
                         }
                     }
                 }
                 .warp_cont_right {
-                    border-top: 1px solid #2e3148;
-                    padding: 30px 8px;
+                    border-top: 0.01rem solid #2e3148;
+                    padding: 0.3rem 0.08rem;
                     div {
-                        font-size: 16px;
+                        font-size: 0.16rem;
                         color: #d4d5de;
-                        line-height: 26px;
-                        margin-top: 28px;
+                        line-height: 0.26rem;
+                        margin-top: 0.28rem;
                         span {
                             font-style: oblique;
                         }
@@ -100,7 +98,7 @@
                         }
                         ul {
                             list-style-type: disc;
-                            margin-left: 60px;
+                            margin-left: 0.6rem;
                         }
                     }
                     div:first-child {
@@ -109,20 +107,18 @@
                 }
             }
             .warp_title {
-                font-size: 30px;
+                font-size: 0.3rem;
                 color: #ffffff;
-                padding-top: 20px;
+                padding-top: 0.2rem;
                 font-weight: bold;
                 text-align: center;
             }
             .warp_title2 {
                 color: #8c8fa6;
-                font-size: 24px;
-                margin-top: 14px;
-                margin-bottom: 36px;
+                font-size: 0.24rem;
+                margin-top: 0.14rem;
+                margin-bottom: 0.36rem;
             }
         }
     }
-
-
 </style>
