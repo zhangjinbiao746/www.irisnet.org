@@ -8,11 +8,9 @@
 
 <script>
     import Tools from "../src/util/Tools"
-    import Header from "./components/Header";
-    import Footer from "./components/Footer";
     export default {
         name: 'app',
-        components: {Footer, Header},
+        components: {},
         data(){
             return{
 
