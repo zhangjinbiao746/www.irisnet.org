@@ -1,5 +1,353 @@
 export const message = {
-    "logo": 'irisnet.png',
+    logo: 'irisnet.png',
+    
+    header:{
+        left:[
+            {
+                id:1,
+                title:'白皮书',
+                active:false,
+            },
+            {
+                id:2,
+                title:'合作方',
+                active:false,
+            },
+            {
+                id:3,
+                title:'联系方式',
+                active:false,
+            }
+        ],
+        right:[
+            {
+                id:1,
+                title:'主网',
+                href:'',
+                active: false,
+            },
+            {
+                id:2,
+                title:'文档',
+                href:'https://www.irisnet.org/docs/',
+                active: false,
+            },
+            {
+                id:3,
+                title:'博客',
+                href:'https://medium.com/irisnet-blog',
+                active: false,
+            },
+        ],
+        mobileNavigation:[
+            {
+                id:1,
+                title:'主网',
+                activeIndex: '',
+                active:false,
+            },
+            {
+                id:2,
+                title:'测试网',
+                activeIndex: '',
+                active:false,
+            },
+            {
+                id:3,
+                title:'白皮书',
+                activeIndex: 0,
+                active:false,
+            },
+            {
+                id:4,
+                title:'路线图',
+                activeIndex: 3,
+                active:false,
+            },
+            {
+                id:5,
+                title:'合作方',
+                activeIndex: 1,
+                active:false,
+            },
+            {
+                id:6,
+                title:'联系方式',
+                activeIndex: 2,
+                active:false,
+            },
+           
+        ],
+        mobileLinkHrefNavigation:[
+            {
+                id: 0,
+                title:'文档',
+                href: "https://www.irisnet.org/docs/",
+            },
+            {
+                id: 1,
+                title:'博客',
+                href: "https://medium.com/irisnet-blog",
+            },
+        ]
+    },
+    footer:{
+        socialCommunity:[
+            {
+                id:1,
+                src: "irisnet_telegram.png",
+                href: "https://t.me/irisnetworkcn"
+            },
+            {
+                id:2,
+                src: "irisnet_twitter.png",
+                href: "https://twitter.com/irisnetwork"
+            },
+            {
+                id:3,
+                src: "irisnet_mail.png",
+                href: "mailto:contact@irisnet.org"
+            },
+            {
+                id:4,
+                src: "irisnet_medium.png",
+                href: "https://medium.com/irisnet-blog"
+            },
+            {
+                id:1,
+                src: "irisnet_wechat.png",
+                "txt": "Wechat"
+            },
+            {
+                id:5,
+                src: "irisnet_weibo.png",
+                href: "https://weibo.com/u/6455513027"
+            },
+            {
+                id:6,
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/!bmimZgJrUWSmxqQEmG:matrix.org"
+            },
+        ],
+        techCommunity:[
+            {
+                id:1,
+                src: "irisnet_github.png",
+                href: "https://github.com/irisnet"
+            },
+            {
+                id:2,
+                src: "irisnet_riot.png",
+                "txt": "riot",
+                href: ""
+            },
+            {
+                id:3,
+                src: "irisnet_qq.png",
+                "txt": "qq",
+                href: ""
+            },
+        ],
+        submitBtn:{
+            title: '获取最新资讯',
+            subscribe: '提交',
+            success: "Success"
+        },
+        errEmailAddress:{
+            error:'Please enter a valid email address'
+        },
+        irisnetInproduction:'IRISnet以希腊彩虹女神Iris命名，她是在人间和天堂之间传递信息的忠诚使者'
+    },
+    home: {
+        sectionOne: {
+            title: 'IRIS Betanet',
+            time: '2019.03.01 上线',
+            shareUrl: {
+                telegramUrl: 'https://t.me/irisnetworkcn',
+                githubUrl: 'https://github.com/irisnet/irishub',
+                weChatUrl: ''
+            },
+            button: {
+                buttonName: {
+                    rainbowName: 'Rainbow 钱包',
+                    explorerName: 'IRIS 浏览器'
+                },
+                buttonUrl: {
+                    rainbowUrl: 'https://www.rainbow.one/',
+                    explorerUrl: 'https://www.irisplorer.io'
+                }
+            }
+        },
+        sectionTwo: {
+            KeyInnovations: {
+                title: '核心创新',
+                list: [
+                    {id: 0, msg: '将面向服务的基础设施融入到Cosmos网络中'},
+                    {id: 1, msg: '整合由异构系统提供的商业服务，包括公共链、联盟链以及现有系统'},
+                    {id: 2, msg: '通过区块链互联网实现服务的互联互通'}
+                ],
+                buttonMsg: '白皮书',
+                WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md'
+            },
+            NetworkDesign: {
+                title: '网络设计',
+                list: [
+                    {id: 0, msg: '通过标准的ABCI交易实现IRIS服务（也称为iServices）的注册，绑定，调用，查询，分析和管理'},
+                    {id: 1, msg: 'iService提供商充当公共链、联盟区块链以及现有企业系统中业务逻辑的适配器'},
+                    {id: 2, msg: '可以通过扩展的IBC协议在区块链互联网中调用iServices'}]
+            }
+        },
+        sectionThree: {
+            title: '路线图',
+            road: [
+                {id: 0, caption: '后羿', time: '2020年1月之后', msg: '第四阶段，通过不懈的技术创新，完善的社区建设和开发者的积极参与，实现分布式的商业生态系统。'},
+                {id: 1, caption: '夸父', time: '2019年10月 - 2019年12月', msg: '第三阶段，主要专注于完成IRIS网络的增强功能，升级网络以支持复杂的IRIS服务管理功能，如分析和争议解决功能; 不断完善SDK和手机客户端; 加速拓展网络，连接更多分区，整合更多服务提供商。'},
+                {id: 2, caption: '女娲', time: '2019年4月 - 2019年9月', msg: '第二阶段，我们为开发者准备了beta版的IRIS SDK，并会升级移动客户端以支持iServices；与应用专有链项目形成战略联盟，支持它们作为分区连接到IRIS Hub；IRISnet也将在第二阶段完成和Cosmos Hub的链接，打通和以太坊生态的链接。'},
+                {id: 3, caption: '盘古', time: '2018年1月- 2019年3月', msg: 'IRISnet项目的第一阶段，我们专注于构建并启动IRIS Hub；发布一个初始版本的IRIS网络移动客户端，并建立IRISnet基本服务层：升级网络以实现服务定义、绑定、调用和查询；会与1-2两个生态伙伴展开合作，在跨链枢纽IRIS Hub上发布iServices。'}
+            ]
+        },
+        sectionFour: {
+            Collaboration: '合作方',
+            CoreDevelopmentTeams: {
+                title: '核心开发团队',
+                logos: [
+                    {id:0, path: 'logos/irisnet_bianjiehover.png', url: 'https://www.bianjie.ai/'},
+                    {id:1, path: 'logos/irisnet_tenderminthover.png', url: 'https://tendermint.com/'}
+                ]
+            },
+            StrategicPartners: {
+                title: '战略合作伙伴',
+                logos: [
+                    {id:0, path: 'logos/irisnet_InTERCHAIN.png', url: 'https://cosmos.network/about'},
+                    {id:1, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'}
+                ]
+            },
+            EcosystemPartners: {
+                title: '生态合作伙伴',
+                logos: [
+                    {id:0, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
+                    {id:1, path: 'logos/irisnet_hashquark.png', url: 'https://www.hashquark.io/#/'},
+                    {id:2, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
+                ]
+            },
+            Institutional: {
+                title: {msg1: '支持机构', msg2: '(排名不分先后)'},
+                logos: [
+                    {id:0, path: 'logos/irisnet_AminoCapital.png', url: 'http://www.aminocapital.com/'},
+                    {id:1, path: 'logos/irisnet_Bibox.png', url: 'https://www.bibox.com/'},
+                    {id:2, path: 'logos/irisnet_huobi.png', url: 'https://www.hbg.com/en-us/capital/'},
+                    {id:3, path: 'logos/irisnet_GBIC.png', url: 'https://gbic.io/'},
+                    {id:4, path: 'logos/irisnet_8decim.png', url: 'javascript:void(0)'},
+                    {id:5, path: 'logos/irisnet_bihu.png', url: 'https://bihu.com/'},// 1
+                    {id:6, path: 'logos/irisnet_ba.png', url: 'javascript:void(0)'},
+                    {id:7, path: 'logos/irisnet_BKfund.png', url: 'javascript:void(0)'},
+                    {id:8, path: 'logos/irisnet_byz.png', url: 'javascript:void(0)'},
+                    {id:9, path: 'logos/irisnet_ChainPE.png', url: 'http://www.chainpe.com/'},
+                    {id:10, path: 'logos/irisnet_CP.png', url: 'https://chainpool.io/'},
+                    {id:11, path: 'logos/irisnet_COEFFICIENT.png', url: 'http://coefficient.network/'},// 2
+                    {id:12, path: 'logos/irisnet_gongshi.png', url: 'http://consensuscapital.ca/'},
+                    {id:13, path: 'logos/irisnet_dushu.png', url: 'javascript:void(0)'},
+                    {id:14, path: 'logos/irisnet_genblock.png', url: 'https://genblock.capital/'},
+                    {id:15, path: 'logos/irisnet_HAYEK.png', url: 'javascript:void(0)'},
+                    {id:16, path: 'logos/irisnet_INK.png', url: 'http://ink.one/'},
+                    {id:17, path: 'logos/irisnet_LINKVCcopy.png', url: 'http://www.linkvc.com/'},// 3
+                    {id:18, path: 'logos/irisnet_MediSHares.png', url: 'http://medishares.org/'},
+                    {id:19, path: 'logos/irisnet_jieshi.png', url: 'http://www.milestonevc.com/index.html'},
+                    {id:20, path: 'logos/irisnet_nirvana-logo-white.png', url: 'http://nirvana.capital/'},
+                    {id:21, path: 'logos/irisnet_NGC.png', url: 'http://ngc.fund/'},
+                    {id:22, path: 'logos/irisnet_origin.png', url: 'http://www.theorigincapital.com/'},
+                    {id:23, path: 'logos/irisnet_SatoshiFUnd.png', url: 'https://satoshi.fund/'},// 4
+                    {id:24, path: 'logos/irisnet_guigu.png', url: 'http://www.svinsight.com/'},
+                    {id:25, path: 'logos/irisnet_shicuo.png', url: 'javascript:void(0)'},
+                    {id:26, path: 'logos/irisnet_huixiang.png', url: 'javascript:void(0)'},
+                    {id:27, path: 'logos/irisnet_Unetwork.png', url: 'https://u.network/'},
+                    {id:28, path: 'logos/irisnet_jiuhe.png', url: 'http://www.unityvc.com/'},
+                    {id:29, path: 'logos/irisnet_UA.png', url: 'javascript:void(0)'},//5
+                    {id:30, path: 'logos/irisnet_shuidi.png', url: 'http://waterdrip.io/'},
+                    {id:31, path: 'logos/irisnet_yidao.png', url: 'javascript:void(0)'},
+                ]
+            }
+        }
+    },
+    mainnet:{
+        title: 'IRIS Network',
+        production: '用于构建可信分布式商业应用的跨链服务基础设施及协议',
+        wallet: 'Rainbow 钱包',
+        walletHref:'http://www.rainbow.one/',
+        explorer: 'IRIS 浏览器',
+        explorerHref:'https://www.irisplorer.io/'
+    },
+    announcements:{
+        title: '基金会公告',
+        viewMore: 'View More',
+        moreHref:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
+        betaTitle:'Betanet Work Plan',
+        betaContent:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.',
+        readMore:'Read more',
+        betaDate:'2019年2月1日',
+        announcementList:[
+            {
+                id:'1',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md',
+                date:'2019年1月16日',
+                title:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
+                content:'新年伊始，IRIS基金会高兴地宣布，IRIS Betanet即将于2019年春节后（2月中旬）上线！'
+            },
+            {
+                id:'2',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md',
+                date:'2019年1月16日',
+                title:'对IRIS Betanet的期望',
+                content:'为了帮助社区更好的参与IRIS Betanet，特此向社区沟通明确Betanet的一些期望：'
+            }
+        ]
+    },
+    testnet:{
+        title:'伏羲测试网',
+        production: '伏羲测试网跟IRIS主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。',
+        testnetLink:'加入测试网'
+    },
+    community:{
+        title: '社区',
+        joinWay:[
+            {
+                id:'1',
+                src:'irisnet_community_qq.png',
+                name: 'QQ 群',
+                linkName:'834063323',
+                href: ''
+            },
+            {
+                id:'2',
+                src:'irisnet_community_riot.png',
+                name: 'Riot聊天室',
+                linkName:'#irisvalidators:matrix.org',
+                href: 'https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org'
+            }
+        ]
+    },
+    testnetPage:{
+        title: '伏羲测试网',
+        section:[
+            {
+                content:'伏羲测试网络经过数次迭代已经完成了使命。'
+            },
+            {
+                content:'2019年2月，IRISnet开发团队发布了irishub v0.12.0，并成功启动了新的测试网络 (chain-id : fuxi)。'
+            },
+            {
+                content:'伏羲测试网跟IRIS主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。'
+            }
+        ],
+        joinTitle:'如何加入伏羲测试网',
+        joinHref:'https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html',
+        faqTitle:'IRIShub常见问题',
+        faqHref:'https://www.irisnet.org/docs/zh/introduction/',
+        explorerTitle:'测试网浏览器 IRISplorer',
+        explorerHref:'https://testnet.irisplorer.io',
+        walletTitle:'测试网钱包 Rainbow',
+        walletHref:'https://testnet.rainbow.one/'
+    },
     "white":'public/whiteDwCn.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/白皮书.md",
     "next": 'what_next.png',
@@ -419,34 +767,6 @@ export const message = {
         ],
         "btnTxt":"合作方"
     },
-    "roadmap": {
-
-        "title": '路线图',
-        "list": [
-            {
-                "img": "roadmap/Pangu.png",
-                "txt": "IRISnet项目的第一阶段，我们专注于构建并启动IRIS Hub；发布一个初始版本的IRIS网络移动客户端，并建立IRISnet基本服务层：升级网络以实现服务定义、绑定、调用和查询；会与1-2两个生态伙伴展开合作，在跨链枢纽IRIS Hub上发布iServices。"
-            },
-            {
-                "img": "roadmap/NUWA.png",
-                "txt": "第二阶段，我们为开发者准备了beta版的IRIS SDK，并会升级移动客户端以支持iServices；与应用专有链项目形成战略联盟，支持它们作为分区连接到IRIS Hub；IRISnet也将在第二阶段完成和Cosmos Hub的链接，打通和以太坊生态的链接。"
-            },
-            {
-                "img": "roadmap/kuafu.png",
-                "txt": "第三阶段，主要专注于完成IRIS网络的增强功能，升级网络以支持复杂的IRIS服务管理功能，如分析和争议解决功能; 不断完善SDK和手机客户端; 加速拓展网络，连接更多分区，整合更多服务提供商。"
-            },
-            {
-                "img": "roadmap/houyi.png",
-                "txt": "第四阶段，通过不懈的技术创新，完善的社区建设和开发者的积极参与，实现分布式的商业生态系统。"
-            }
-        ]
-    },
-    "home": {
-
-        "title": 'IRIS网络',
-        "txt": '跨链服务基础协议 <br> 新一代分布式商业生态的技术基础',
-        "src": 'iristext-small.png'
-    },
     "about": {
 
         "title": '核心创新',
@@ -812,11 +1132,11 @@ export const message = {
         "title":" 请扫描二维码",
         "txt":" 关注公众号"
     },
-    "community":{
-        "title":"社区",
-        "coming":"敬请期待"
-
-    },
+    // "community":{
+    //     "title":"社区",
+    //     "coming":"敬请期待"
+    //
+    // },
     "contactList":[
         {"infotitle":"IRISnet以希腊彩虹女神Iris命名，"},
         {"infotitle":"她是在人间和天堂之间传递信息的"},
@@ -914,26 +1234,26 @@ export const message = {
             "active": false
         }
     ],
-        "announcements":[
-        {
-            src:'../../public/announcements_betanet.png',
-            timestamp:"2019年2月1日",
-            imgtext:'Betanet上线工作计划',
-            href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
-        },
-        {
-            src:'../../public/announcements_mainnet.png',
-            timestamp:"2019年1月16日",
-            imgtext:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
-            href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md'
-        },
-        {
-            src:'../../public/announcements_irisnet.png',
-            timestamp:"2019年1月16日",
-            imgtext:'对IRIS Betanet的期望',
-            href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md'
-        },
+        // "announcements":[
+        // {
+        //     src:'../../public/announcements_betanet.png',
+        //     timestamp:"2019年2月1日",
+        //     imgtext:'Betanet上线工作计划',
+        //     href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
+        // },
+        // {
+        //     src:'../../public/announcements_mainnet.png',
+        //     timestamp:"2019年1月16日",
+        //     imgtext:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
+        //     href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md'
+        // },
+        // {
+        //     src:'../../public/announcements_irisnet.png',
+        //     timestamp:"2019年1月16日",
+        //     imgtext:'对IRIS Betanet的期望',
+        //     href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md'
+        // },
 
 
-    ]
+    // ]
 };
