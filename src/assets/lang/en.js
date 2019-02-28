@@ -163,7 +163,7 @@ export const message = {
     },
     home: {
         sectionOne: {
-            title: 'IRIS Betanet',
+            title: 'IRIS Network',
             time: '2019.03.01 Launched',
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetwork',

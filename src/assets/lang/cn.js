@@ -160,8 +160,8 @@ export const message = {
     },
     home: {
         sectionOne: {
-            title: 'IRIS Betanet',
-            time: '2019.03.01 上线',
+            title: 'IRIS Network',
+            time: '2019.03.01 主网启动',
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetworkcn',
                 githubUrl: 'https://github.com/irisnet/irishub',
