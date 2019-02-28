@@ -1,8 +1,7 @@
 <template>
     <div style="height: 100%">
         <div id="index" class="index">
-           <headr></headr>
-            <div class="center">
+            <div class="content">
                 <div class="h110"></div>
                 <div class="warp">
                     <div>
@@ -30,16 +29,12 @@
                 <div class="h110"></div>
             </div>
         </div>
-        <foot></foot>
     </div>
 </template>
 
 <script>
-    import foot from './foot'
-    import headr from './head'
     export default {
         name: "terms",
-        components:{foot,headr},
         data(){
             return{
 
@@ -69,7 +64,11 @@
         position: relative;
         background: #2D2948 ;
 
-
+        .content {
+            max-width: 12rem;
+            padding: 0 0.2rem;
+            margin: auto;
+        }
         .h110 {
             height: 110px;
             width: 100%
@@ -83,7 +82,6 @@
                 overflow: hidden;
                 .warp_cont_left {
                     width: 330px;
-                    float: left;
                     border-top: 1px solid #2e3148;
                     position: relative;
                     .border {
@@ -106,11 +104,8 @@
                     }
                 }
                 .warp_cont_right {
-                    width: 820px;
-                    float: right;
                     border-top: 1px solid #2e3148;
                     padding: 30px 8px;
-                    color: #d4d5de;
                     div {
                         font-size: 16px;
                         color: #d4d5de;
@@ -137,6 +132,7 @@
                 color: #ffffff;
                 padding-top: 20px;
                 font-weight: bold;
+                text-align: center;
             }
             .warp_title2 {
                 color: #8c8fa6;
