@@ -15,6 +15,13 @@ export function createStore () {
             collaboration: '',
             contact: '',
             activeIconIndex: '',
+            footerWeChatIcon: false,
+            newsLetterTitle: '',
+            textContent: '',
+            showMask: false,
+            confirm: '',
+            flShowFooter: true,
+            headerHeight:'',
         },
         mutations: {
             changeItemIs(state, payload) {
@@ -40,7 +47,28 @@ export function createStore () {
             },
             roadmap(state,data){
                 state.roadmap = data;
-            }
+            },
+            controlWeChat(state,data){
+                state.footerWeChatIcon = data;
+            },
+            newsLetterTitle(state,data){
+                state.newsLetterTitle = data;
+            },
+            textContent(state,data){
+                state.textContent = data;
+            },
+            showMask(state,data){
+                state.showMask = data;
+            },
+            confirm(state,data){
+                state.confirm = data;
+            },
+            flShowFooter(state,data){
+                state.flShowFooter = data;
+            },
+            headerHeight(state,data){
+                state.headerHeight = data;
+            },
         }
     })
 }

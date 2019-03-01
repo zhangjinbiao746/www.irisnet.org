@@ -1,12 +1,12 @@
 <template>
-    <div class="content_wrap" @click="showWeChat=false">
+    <div class="content_wrap" @click="closeWeChat">
         <section class="sectionOne">
             <div class="left">
                 <div>{{$store.state.messages.home.sectionOne.title}}</div>
                 <div>{{$store.state.messages.home.sectionOne.time}}</div>
                 <div>
-                    <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
-                    <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
+                    <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_bank"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
+                    <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_bank"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
                     <a @click="showWeChatPic">
                         <img src="../assets/hoverIcon/weChatIconHover.png" alt="">
                         <div v-show="showWeChat"  class="mobileBox" @touchmove.prevent>
@@ -16,7 +16,6 @@
                                 <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
                             </div>
                         </div>
-                        
                     </a>
                 </div>
                 <div>
@@ -121,25 +120,28 @@
             return {
                 showWeChat: false,
                 timer: null,
-
             }
         },
         methods: {
             jumpUrl (url) {
-                window.location.href = url
+                window.open(url)
             },
             showWeChatPic (e) {
                 e.stopPropagation()
                 this.showWeChat = !this.showWeChat
             },
+
+            closeWeChat () {
+                this.showWeChat = false
+            },
             onresize(){
                 clearTimeout(this.timer);
                 let that = this;
                 this.timer =  setTimeout(function () {
-                    that.$store.commit('whitePaper',that.$refs.whitePaper.offsetTop);
-                    that.$store.commit('roadmap',that.$refs.roadmap.offsetTop);
-                    that.$store.commit('collaboration',that.$refs.collaboration.offsetTop);
-                },10);
+                    that.$store.commit('whitePaper',that.$refs.whitePaper.offsetTop - that.$store.state.headerHeight);
+                    that.$store.commit('roadmap',that.$refs.roadmap.offsetTop - that.$store.state.headerHeight);
+                    that.$store.commit('collaboration',that.$refs.collaboration.offsetTop - that.$store.state.headerHeight);
+                },100);
             }
         },
         mounted () {

@@ -4,17 +4,24 @@
             <div class="content">
                 <div class="community_link_content">
                     <div class="social_community_content">
-                        <p class="community">Social Community</p>
+                        <h4 class="community">{{$store.state.messages.footer.socialCommunityTitle}}</h4>
                         <ul class="community_link_list">
+                            <div v-show="$store.state.footerWeChatIcon"  class="mobileBox" @touchmove.prevent>
+                                <div class="qrcode" @touchmove.prevent>
+                                    <img src="../assets/wechat.jpg" alt="" @touchmove.prevent>
+                                    <div class="arrow"></div>
+                                    <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
+                                </div>
+                            </div>
                             <li class="community_link_item" v-for="item in $store.state.messages.footer.socialCommunity" :key="item.id">
-                                <a :href="item.href" target="_blank">
+                                <a @click="jumpUrl($event, item.href)">
                                     <img :src='UrlSrc + item.src'>
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div class="tech_community_content">
-                        <p class="community">Tech Community</p>
+                        <h4 class="community">{{$store.state.messages.footer.TechCommunityTitle}}</h4>
                         <ul class="community_link_list">
                             <li class="community_link_item" v-for="item in $store.state.messages.footer.techCommunity" :key="item.id">
                                 <a :href="item.href" target="_blank">
@@ -35,7 +42,7 @@
         <div class="copyright_wrap">
             <div class="copyright_content">
                 <p class="irisnet">{{$store.state.messages.footer.irisnetInproduction}}</p>
-                <p><span class="copyright">Copyright &#169 2018 IRIS Foundation Ltd. All rights reserved.</span><a :href="'/privacy/?lang='+$store.state.lang"> Privacy</a> <span class="connector"> & </span> <a :href="'/terms?lang='+$store.state.lang">Terms</a></p>
+                <p><span class="copyright">Copyright &#169 2019 IRIS Foundation Ltd. All rights reserved.</span><span class="link_common_style" @click="toPrivacy"> Privacy</span> <span class="connector"> & </span> <span class="link_common_style" @click="toTerms">Terms</span></p>
             </div>
         </div>
     </div>
@@ -81,12 +88,17 @@
                         email:this.mailAddress,
                     }
                 }).then((data)=>{
-                    this.subscription = this.$store.state.messages.submit.success;
                     let that = this;
-                    this.submitTimer = setTimeout(function () {
-                        that.subscription = that.$store.state.messages.submit.Subscribe;
-                        that.mailAddress = "";
-                    },2000)
+                    that.$store.commit('showMask',true);
+                    if(data.data.id){
+                        that.$store.commit('confirm',that.$store.state.messages.newsLetter.confirm);
+                        that.$store.commit('textContent',that.$store.state.messages.newsLetter.successText);
+                        that.$store.commit('newsLetterTitle',that.$store.state.messages.newsLetter.successTitle)
+                    }else {
+                        that.$store.commit('confirm',that.$store.state.messages.newsLetter.confirm);
+                        that.$store.commit('textContent',that.$store.state.messages.newsLetter.failedText);
+                        that.$store.commit('newsLetterTitle',that.$store.state.messages.newsLetter.failedTitle)
+                    }
                 })
                 .catch((e)=>{
                 })
@@ -97,9 +109,35 @@
                 setTimeout(function () {
                     that.$store.commit('contact',that.$refs.contact.offsetTop)
                 },100);
+            },
+            jumpUrl (e, url) {
+                e.stopPropagation()
+                if (url) {
+                    window.open(url)
+                } else {
+                    this.$store.commit('controlWeChat', true)
+                }
+            },
+            showWeChat (e) { 
+                e.stopPropagation()
+                this.$store.commit('controlWeChat', true)
+            },
+            toPrivacy(){
+                this.$router.push('/privacy');
+                this.hideFooter()
+            },
+            toTerms(){
+                this.$router.push('/terms');
+                this.hideFooter()
+            },
+            hideFooter(){
+                this.$store.commit('flShowFooter',false)
             }
         },
         mounted () {
+            if(this.$route.path === '/privacy' || this.$route.path === '/terms'){
+                this.$store.commit('flShowFooter',false)
+            }
             this.onresize();
             window.addEventListener('resize',this.onresize())
         }

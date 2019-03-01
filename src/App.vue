@@ -1,5 +1,6 @@
 <template>
-    <div id="app">
+    <div id="app" @click="closeWeChatIcon">
+        <IrisnetMask></IrisnetMask>
         <IrisnetHeader></IrisnetHeader>
         <router-view/>
         <IrisnetFooter></IrisnetFooter>
@@ -9,17 +10,22 @@
 <script>
     import IrisnetHeader from "./components/IrisnetHeader";
     import IrisnetFooter from "./components/IrisnetFooter";
+    import IrisnetMask from "./components/IirsnetMask";
     export default {
         name: 'app',
-        components: {IrisnetFooter, IrisnetHeader},
+        components: {IrisnetMask, IrisnetFooter, IrisnetHeader},
         data(){
             return{
-
             }
         },
         watch:{
             $route(){
                 document.body.scrollTop = 0;
+            }
+        },
+        methods: {
+            closeWeChatIcon () {
+                this.$store.commit('controlWeChat', false)
             }
         }
     }
@@ -31,6 +37,10 @@
     }
     body{
         font-size:16px !important;
+    }
+
+    #app{
+        width: 100%;
     }
     @import "assets/style/reset";
 </style>
