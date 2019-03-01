@@ -1214,9 +1214,6 @@ export const message = {
     "errEmail":{
         "err":"请输入一个有效的邮箱地址"
     },
-    // "newsLetter":{
-    //     "letter":"获取最新资讯"
-    // },
     "placehooder":{
         "placehooder": "请输入你的邮箱地址"
     },

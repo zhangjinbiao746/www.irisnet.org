@@ -1223,9 +1223,6 @@ export const message = {
     "errEmail":{
         "err":"Please enter a valid email address"
     },
-    // "newsLetter":{
-    //     "letter":"Newsletter"
-    // },
     "placehooder":{
         "placehooder": "Please enter your email address"
     },

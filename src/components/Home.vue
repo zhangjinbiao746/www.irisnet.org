@@ -142,7 +142,6 @@
                     that.$store.commit('whitePaper',that.$refs.whitePaper.offsetTop - that.$store.state.headerHeight);
                     that.$store.commit('roadmap',that.$refs.roadmap.offsetTop - that.$store.state.headerHeight);
                     that.$store.commit('collaboration',that.$refs.collaboration.offsetTop - that.$store.state.headerHeight);
-                    console.log(that.$refs.whitePaper.offsetTop,that.$refs.roadmap.offsetTop,that.$refs.collaboration.offsetTop,"展示的数据是什么")
                 },100);
             }
         },

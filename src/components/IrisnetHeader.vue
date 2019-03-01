@@ -117,7 +117,6 @@
                     }else {
                         this.$router.push({path:'/'})
                     }
-                    // this.$router.push({path: '/'});
                 }
                 this.resetActiveIcon();
                 this.$store.state.messages.header.left[index].active = true;
@@ -132,7 +131,7 @@
                 }else if (index === 1) {
                     activeDomOffsetTop = this.$store.state.collaboration;
                 }else if (index === 2) {
-                    activeDomOffsetTop = this.$store.state.contact;
+                    activeDomOffsetTop = this.$store.state.contact - 60;
                 }else if (index === 3) {
                     activeDomOffsetTop = this.$store.state.roadmap;
                 }

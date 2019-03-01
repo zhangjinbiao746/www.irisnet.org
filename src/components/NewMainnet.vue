@@ -60,16 +60,14 @@
             <div class="community_wrap">
                 <h3 class="community_title">{{$store.state.messages.community.title}}</h3>
                 <ul class="community_way_content">
-                    <li class="community_way" v-for="item in $store.state.messages.community.joinWay" :key="item.id">
-                        <a :href="item.href" target="_blank">
-                            <div class="community_logo_img">
-                                <img :src="`${UrlSrc}${item.src}`">
-                            </div>
-                            <div class="way_content">
-                                <p class="way_name">{{item.name}}</p>
-                                <p class="way_link_name">{{item.linkName}}</p>
-                            </div>
-                        </a>
+                    <li class="community_way" v-for="item in $store.state.messages.community.joinWay" :key="item.id" @click="jumpUrl(item.href)">
+                        <div class="community_logo_img">
+                            <img :src="`${UrlSrc}${item.src}`">
+                        </div>
+                        <div class="way_content">
+                            <p class="way_name">{{item.name}}</p>
+                            <p class="way_link_name">{{item.linkName}}</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -98,6 +96,9 @@
                 }
 
 
+            },
+            jumpUrl (url) {
+                window.open(url)
             }
         }
     }

@@ -1,6 +1,6 @@
 <template>
     <div id="app" @click="closeWeChatIcon">
-        <mask1></mask1>
+        <IrisnetMask></IrisnetMask>
         <IrisnetHeader></IrisnetHeader>
         <router-view/>
         <IrisnetFooter></IrisnetFooter>
@@ -8,14 +8,12 @@
 </template>
 
 <script>
-
-
     import IrisnetHeader from "./components/IrisnetHeader";
     import IrisnetFooter from "./components/IrisnetFooter";
-    import Mask1 from "./components/Mask1";
+    import IrisnetMask from "./components/IirsnetMask";
     export default {
         name: 'app',
-        components: {Mask1, IrisnetFooter, IrisnetHeader},
+        components: {IrisnetMask, IrisnetFooter, IrisnetHeader},
         data(){
             return{
 
