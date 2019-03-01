@@ -325,7 +325,7 @@ export const message = {
                 src:'irisnet_community_riot.png',
                 name: 'Riot聊天室',
                 linkName:'#irisvalidators:matrix.org',
-                href: 'https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org'
+                href: 'https://riot.im/app/#/room/#iris:matrix.org'
             }
         ]
     },
