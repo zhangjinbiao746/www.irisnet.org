@@ -134,6 +134,8 @@
                     activeDomOffsetTop = this.$store.state.contact - 60;
                 }else if (index === 3) {
                     activeDomOffsetTop = this.$store.state.roadmap;
+                }else {
+                    activeDomOffsetTop = 0;
                 }
                 this.scroll(activeDomOffsetTop)
             },
@@ -184,7 +186,14 @@
                 });
             },
             toHome(){
-                this.$router.push({path:'/'});
+                if(this.$route.query.lang && this.$route.query.lang === 'CN'){
+                    this.$router.push({path:'/?lang=CN'});
+                }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
+                    this.$router.push({path:'/?lang=EN'});
+                }else {
+                    this.$router.push({path:'/'});
+                }
+                this.$store.commit('activeIconIndex','');
                 this.resetActiveIcon()
             }
         },
