@@ -778,10 +778,6 @@
     background: #fff;
     padding-top: 0.67rem;
     padding-bottom: 100vw*.0843;
-    >div{
-      // max-width: 12rem;
-      // margin: auto;
-    }
     .first {
       display: flex;
       align-items: center;
@@ -837,7 +833,7 @@
             }
           }
           .whitePaper{
-            margin-left: @basicWidth*.043;
+            margin-left: 0.3rem;
             button{
               border: 0;
               font-size: 0.16rem;
@@ -855,6 +851,9 @@
                 margin-left: 0.22rem;
                 transform: translateY(-8%)
               }
+            }
+            button:hover {
+              background: linear-gradient(to right, rgba(130, 92, 245, 1), rgba(123, 80, 255, 1)); 
             }
           }
         }
