@@ -223,7 +223,6 @@ export const message = {
                 logos: [
                     {id:0, path: 'logos/irisnet_InTERCHAIN.png', url: 'https://cosmos.network/about'},
                     {id:1, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'}
-
                 ]
             },
             EcosystemPartners: {

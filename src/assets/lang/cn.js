@@ -213,7 +213,6 @@ export const message = {
                 logos: [
                     {id:0, path: 'logos/irisnet_bianjiehover.png', url: 'https://www.bianjie.ai/'},
                     {id:1, path: 'logos/irisnet_tenderminthover.png', url: 'https://tendermint.com/'}
-
                 ]
             },
             StrategicPartners: {
@@ -229,7 +228,6 @@ export const message = {
                     {id:0, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
                     {id:1, path: 'logos/irisnet_hashquark.png', url: 'https://www.hashquark.io/#/'},
                     {id:2, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
-
                 ]
             },
             Institutional: {
@@ -267,7 +265,6 @@ export const message = {
                     {id:29, path: 'logos/irisnet_UA.png', url: 'javascript:void(0)'},//5
                     {id:30, path: 'logos/irisnet_shuidi.png', url: 'http://waterdrip.io/'},
                     {id:31, path: 'logos/irisnet_yidao.png', url: 'javascript:void(0)'},
-
                 ]
             }
         }
@@ -351,7 +348,6 @@ export const message = {
         walletTitle:'测试网钱包 Rainbow',
         walletHref:'https://testnet.rainbow.one/'
     },
-
     newsLetter:{
         successTitle: '欢迎订阅IRISnet通讯',
         failedTitle: '订阅失败。',

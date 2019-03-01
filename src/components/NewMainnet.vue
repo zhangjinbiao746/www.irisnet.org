@@ -1,5 +1,4 @@
 <template>
-
     <div style="padding-top: 0.6rem;">
         <div class="mainnet_header_container">
             <div class="mainnet_header_wrap">
@@ -94,8 +93,6 @@
                         path:`/testnets/?lang=${this.$route.query.lang}`
                     })
                 }
-
-
             },
             jumpUrl (url) {
                 window.open(url)
@@ -106,5 +103,4 @@
 
 <style scoped lang="less">
 @import "../assets/style/new_mainnet";
-
 </style>

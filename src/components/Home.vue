@@ -125,16 +125,15 @@
         methods: {
             jumpUrl (url) {
                 window.open(url)
-                window.location.href = url
             },
             showWeChatPic (e) {
                 e.stopPropagation()
                 this.showWeChat = !this.showWeChat
             },
+
             closeWeChat () {
                 this.showWeChat = false
             },
-
             onresize(){
                 clearTimeout(this.timer);
                 let that = this;
