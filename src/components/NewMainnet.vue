@@ -20,7 +20,7 @@
                         <!--</p>-->
                     </div>
                     <div class="foundation_background_img">
-                        <img src="../../public/irisnet/irisnet_announcements_betanet.png">
+                        <img src="../../public/irisnet/IRISnet_announcements_betanet.png">
                     </div>
                     <div class="betanet_container">
                         <div class="betanet_content">
