@@ -125,7 +125,6 @@
         methods: {
             jumpUrl (url) {
                 window.open(url)
-                window.location.href = url
             },
             showWeChatPic (e) {
                 e.stopPropagation()
