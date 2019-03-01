@@ -1,4 +1,367 @@
 export const message = {
+    logo:'irisnet.png',
+    
+    header:{
+        left:[
+            {
+                id:0,
+                title:'Whitepaper',
+                active:false,
+            },
+            {
+                id:1,
+                title:'Collaboration',
+                active:false,
+            },
+            {
+                id:2,
+                title:'Contact',
+                active:false,
+            }
+        ],
+        right:[
+            {
+                id:0,
+                title:'Mainnet',
+                href:'',
+                active: false,
+            },
+            {
+                id:1,
+                title:'Docs',
+                href:'https://www.irisnet.org/docs/',
+                active: false,
+            },
+            {
+                id:2,
+                title:'Blog',
+                href:'https://medium.com/irisnet-blog',
+                active: false,
+            },
+        ],
+        mobileNavigation:[
+            {
+                id:0,
+                title:'Mainnet',
+                activeIndex: '',
+                active:false,
+            },
+            {
+                id:1,
+                title:'Testnet',
+                activeIndex: '',
+                active:false,
+            },
+            {
+                id:2,
+                title:'WhitePaper',
+                activeIndex: 0,
+                active:false,
+            },
+            {
+                id:3,
+                title:'Roadmap',
+                activeIndex: 3,
+                active:false,
+            },
+            {
+                id:4,
+                title:'Collaboration',
+                activeIndex: 1,
+                active:false,
+            },
+            {
+                id:5,
+                title:'Contact',
+                activeIndex: 2,
+                active:false,
+            },
+        ],
+        mobileLinkHrefNavigation:[
+            {
+                id:0,
+                title:'Docs',
+                href: "https://www.irisnet.org/docs/",
+                activeIndex: '',
+            },
+            {
+                id:1,
+                title:'Blog',
+                href: "https://medium.com/irisnet-blog",
+                activeIndex: '',
+            }
+        ]
+    },
+    footer:{
+        socialCommunityTitle: 'Social Community',
+        TechCommunityTitle: 'Tech Community',
+        socialCommunity:[
+            {
+                id:0,
+                src: "irisnet_telegram.png",
+                href: "https://t.me/irisnetworkcn"
+            },
+            {
+                id:1,
+                src: "irisnet_twitter.png",
+                href: "https://twitter.com/irisnetwork"
+            },
+            {
+                id:2,
+                src: "irisnet_mail.png",
+                href: "mailto:contact@irisnet.org"
+            },
+            {
+                id:3,
+                src: "irisnet_medium.png",
+                href: "https://medium.com/irisnet-blog"
+            },
+            {
+                id:4,
+                src: "irisnet_wechat.png",
+                "txt": "Wechat"
+            },
+            {
+                id:5,
+                src: "irisnet_weibo.png",
+                href: "https://weibo.com/u/6455513027"
+            },
+            {
+                id:6,
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/#iris:matrix.org"
+            },
+        ],
+        techCommunity:[
+            {
+                id:0,
+                src: "irisnet_github.png",
+                href: "https://github.com/irisnet"
+            },
+            {
+                id:1,
+                src: "irisnet_riot.png",
+                "txt": "riot",
+                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+            },
+            {
+                id:2,
+                src: "irisnet_qq.png",
+                "txt": "qq",
+                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
+            },
+        ],
+        submitBtn:{
+            title: 'Newsletter',
+            subscribe: 'Subscribe',
+            success: "Success"
+        },
+        errEmailAddress:{
+            error:'Please enter a valid email address'
+        },
+        irisnetInproduction:'IRISnet is named after Greek goddess Iris, said to be the personification of the rainbow and the faithful messenger between heaven and humanity'
+    },
+    home: {
+        sectionOne: {
+            title: 'IRIS Network',
+            time: '2019.03.01 Launched',
+            shareUrl: {
+                telegramUrl: 'https://t.me/irisnetwork',
+                githubUrl: 'https://github.com/irisnet/irishub',
+                weChatUrl: ''
+            },
+            button: {
+                buttonName: {
+                    rainbowName: 'Rainbow Wallet',
+                    explorerName: 'IRIS Explorer'
+                },
+                buttonUrl: {
+                    rainbowUrl: 'https://www.rainbow.one/',
+                    explorerUrl: 'https://www.irisplorer.io'
+                }
+            }
+        },
+        sectionTwo: {
+            KeyInnovations: {
+                title: 'Key Innovations',
+                list: [
+                    {id: 0, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'},
+                    {id: 1, msg: 'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems'},
+                    {id: 2, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'}
+                ],
+                buttonMsg: 'WHITE PAPER',
+                WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md'
+            },
+            NetworkDesign: {
+                title: 'Network Design',
+                list: [
+                    {id: 0, msg: 'Definition of standard ABCI transaction types supporting registration,binding, invocation, query, profiling and governance of IRIS Services(a.k.a. iServices)'},
+                    {id: 1, msg: 'iService providers act as adaptors of business logic residing in public andconsortium blockchains as well as enterprise legacy systems'},
+                    {id: 2, msg: 'iServices can be invoked across anextended IBC protocol'}]
+            }
+        },
+        sectionThree: {
+            title: 'Roadmap',
+            road: [
+                {id: 0, caption: 'HOUYI', time: 'BEYOND JAN 2020', msg: 'The fourth stage will focus on further technology innovations to the IRIS network, IRIS SDK and mobile client, as well as developer engagement.'},
+                {id: 1, caption: 'KUAFU', time: 'OCT 2019 - DEC 2019', msg: 'The third stage will focus on incremental upgrades to the IRIS Network in order to support our planned advanced IRIS Service governance features.'},
+                {id: 2, caption: 'NÜWA', time: 'APR 2019 - SEPT 2019', msg: 'In this stage we are aiming to have a beta version of the IRIS SDK ready for developers. We plan to upgrade IRISnet mobile client to support i-Services. We plan to establish collabrations with application specific blockchains and enable them as zones connecting to IRIS Hub. We also plan to accomplish the connection with Cosmos Hub at this stage.'},
+                {id: 3, caption: 'PANGU', time: 'JAN 2018 - MAR 2019', msg: 'The first stage of the IRIS project will focus on having the IRIS Hub up and running. We also intend to release an initial version of the mobile client for the IRIS network. In this stage we also focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query. We plan to collabrate with 1-2 ecosystem parteners to release i-Services to IRIShub.'}
+            ]
+        },
+        sectionFour: {
+            Collaboration: 'Collaboration',
+            CoreDevelopmentTeams: {
+                title: 'Core Development Teams',
+                logos: [
+                    {id:0, path: 'logos/irisnet_bianjiehover.png', url: 'https://www.bianjie.ai/'},
+                    {id:1, path: 'logos/irisnet_tenderminthover.png', url: 'https://tendermint.com/'}
+                ]
+            },
+            StrategicPartners: {
+                title: 'Strategic Partners',
+                logos: [
+                    {id:0, path: 'logos/irisnet_InTERCHAIN.png', url: 'https://cosmos.network/about'},
+                    {id:1, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'}
+
+                ]
+            },
+            EcosystemPartners: {
+                title: 'Ecosystem Partners',
+                logos: [
+                    {id:0, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
+                    {id:1, path: 'logos/irisnet_hashquark.png', url: 'https://www.hashquark.io/#/'},
+                    {id:2, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
+                ]
+            },
+            Institutional: {
+                title: {msg1: 'Institutional Supporters', msg2: '( Listed in no particular order )'},
+                logos: [
+                    {id:0, path: 'logos/irisnet_AminoCapital.png', url: 'http://www.aminocapital.com/'},
+                    {id:1, path: 'logos/irisnet_Bibox.png', url: 'https://www.bibox.com/'},
+                    {id:2, path: 'logos/irisnet_huobi.png', url: 'https://www.hbg.com/en-us/capital/'},
+                    {id:3, path: 'logos/irisnet_GBIC.png', url: 'https://gbic.io/'},
+                    {id:4, path: 'logos/irisnet_8decim.png', url: 'javascript:void(0)'},
+                    {id:5, path: 'logos/irisnet_bihu.png', url: 'https://bihu.com/'},// 1
+                    {id:6, path: 'logos/irisnet_ba.png', url: 'javascript:void(0)'},
+                    {id:7, path: 'logos/irisnet_BKfund.png', url: 'javascript:void(0)'},
+                    {id:8, path: 'logos/irisnet_byz.png', url: 'javascript:void(0)'},
+                    {id:9, path: 'logos/irisnet_ChainPE.png', url: 'http://www.chainpe.com/'},
+                    {id:10, path: 'logos/irisnet_CP.png', url: 'https://chainpool.io/'},
+                    {id:11, path: 'logos/irisnet_COEFFICIENT.png', url: 'http://coefficient.network/'},// 2
+                    {id:12, path: 'logos/irisnet_gongshi.png', url: 'http://consensuscapital.ca/'},
+                    {id:13, path: 'logos/irisnet_dushu.png', url: 'javascript:void(0)'},
+                    {id:14, path: 'logos/irisnet_genblock.png', url: 'https://genblock.capital/'},
+                    {id:15, path: 'logos/irisnet_HAYEK.png', url: 'javascript:void(0)'},
+                    {id:16, path: 'logos/irisnet_INK.png', url: 'http://ink.one/'},
+                    {id:17, path: 'logos/irisnet_LINKVCcopy.png', url: 'http://www.linkvc.com/'},// 3
+                    {id:18, path: 'logos/irisnet_MediSHares.png', url: 'http://medishares.org/'},
+                    {id:19, path: 'logos/irisnet_jieshi.png', url: 'http://www.milestonevc.com/index.html'},
+                    {id:20, path: 'logos/irisnet_nirvana-logo-white.png', url: 'http://nirvana.capital/'},
+                    {id:21, path: 'logos/irisnet_NGC.png', url: 'http://ngc.fund/'},
+                    {id:22, path: 'logos/irisnet_origin.png', url: 'http://www.theorigincapital.com/'},
+                    {id:23, path: 'logos/irisnet_SatoshiFUnd.png', url: 'https://satoshi.fund/'},// 4
+                    {id:24, path: 'logos/irisnet_guigu.png', url: 'http://www.svinsight.com/'},
+                    {id:25, path: 'logos/irisnet_shicuo.png', url: 'javascript:void(0)'},
+                    {id:26, path: 'logos/irisnet_huixiang.png', url: 'javascript:void(0)'},
+                    {id:27, path: 'logos/irisnet_Unetwork.png', url: 'https://u.network/'},
+                    {id:28, path: 'logos/irisnet_jiuhe.png', url: 'http://www.unityvc.com/'},
+                    {id:29, path: 'logos/irisnet_UA.png', url: 'javascript:void(0)'},//5
+                    {id:30, path: 'logos/irisnet_shuidi.png', url: 'http://waterdrip.io/'},
+                    {id:31, path: 'logos/irisnet_yidao.png', url: 'javascript:void(0)'},
+                ]
+            }
+        }
+    },
+    // "logo": 'irisnet.png',
+    mainnet:{
+        title: 'IRIS Network',
+        production: 'Inter-chain service infrastructure and protocol for building trustworthy and distributed business applications',
+        wallet: 'Rainbow Wallet',
+        walletHref:'https://www.rainbow.one/',
+        explorer: 'IRIS Explorer',
+        explorerHref:'https://www.irisplorer.io/'
+    },
+    announcements:{
+        title: 'Foundation Announcements',
+        viewMore: 'View More',
+        moreHref:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
+        betaTitle:'Betanet Work Plan',
+        betaContent:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.',
+        readMore:'Read more',
+        betaDate:'Feb 1, 2019',
+        announcementList:[
+            {
+                id:'1',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md',
+                date:'Jan 16, 2019',
+                title:'IRIS Foundation Announces Plan for Betanet',
+                content:'The IRIS Foundation is excited to be announcing the launch of IRIS Betanet, which will happen in the middle of Feb 2019, right after Chinese New Year. 2019 is the Year of the Pig which represents carefree fun, good fortune and wealth.'
+            },
+            {
+                id:'2',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md',
+                date:'Jan 16, 2019',
+                title:'Expectations for IRIS Betanet',
+                content:'Expectations for IRIS Betanet\n' +
+                'To better prepare the community for participating in IRIS Betanet, we would like to communicate the expectations for this network:'
+            }
+           
+        ]
+    },
+    testnet:{
+        title:'Fuxi Testnet',
+        production: 'The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers).',
+        testnetLink:'Ues The Testnet'
+    },
+    community:{
+        title: 'Join Tech Community',
+        joinWay:[
+            {
+                id:'1',
+                src:'irisnet_community_qq.png',
+                name: 'QQ group',
+                linkName:'834063323',
+                href: 'http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32'
+            },
+            {
+                id:'2',
+                src:'irisnet_community_riot.png',
+                name: 'Riot room',
+                linkName:'#irisvalidators:matrix.org',
+                href: 'https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org'
+            }
+        ]
+    },
+    testnetPage:{
+        title: 'Fuxi Testnet',
+        section:[
+            {
+                content:'The previous iterations of the testnets have accomplished their mission. '
+            },
+            {
+                content:'In February 2019, the IRISnet development team released irishub v0.12.0 and successfully started the new testnet (chain-id : fuxi) with this version. '
+            },
+            {
+                content:'The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers).'
+            }
+        ],
+        joinTitle:'How to Use FUXI Testnet',
+        joinHref:'https://www.irisnet.org/docs/get-started/Join-the-Testnet.html',
+        faqTitle:'IRIShub FAQ',
+        faqHref:'https://www.irisnet.org/docs/introduction/',
+        explorerTitle:'IRISplorer (FUXI)',
+        explorerHref:'https://testnet.irisplorer.io',
+        walletTitle:'Rainbow App (PTR)',
+        walletHref:'https://testnet.rainbow.one/'
+    },
+    newsLetter:{
+        successTitle: 'Welcome to The IRISnet Newsletter',
+        successText: 'Thank you for your interest in and subscription to our project infomation. Please check your email box and click the button to confirm the subscription and to start receiving our newsletters and other latest updates.',
+        failedTitle: 'Subscription Failed',
+        failedText: 'Maybe you are already subscribed? If not then please try again or contact us via email contact@irisnet.org.',
+        confirm: 'Confirm'
+    },
     "logo": 'irisnet.png',
     "white":'public/whiteDw.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md",
@@ -423,34 +786,6 @@ export const message = {
         ],
         "btnTxt":"Collaboration"
     },
-
-
-    "roadmap": {
-        "title": 'Roadmap',
-        "list": [
-            {
-                "img": "roadmap/Pangu.png",
-                "txt": "The first stage of the IRIS project will focus on having the IRIS Hub up and running. We also intend to release an initial version of the mobile client for the IRIS network. In this stage we also focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query. We plan to collabrate with 1-2 ecosystem parteners to release i-Services to IRIShub."
-            },
-            {
-                "img": "roadmap/NUWA.png",
-                "txt": "In this stage we are aiming to have a beta version of the IRIS SDK ready for developers. We plan to upgrade IRISnet mobile client to support i-Services. We plan to establish collabrations with application specific blockchains and enable them as zones connecting to IRIS Hub. We also plan to accomplish the connection with Cosmos Hub at this stage."
-            },
-            {
-                "img": "roadmap/kuafu.png",
-                "txt": "The third stage will focus on incremental upgrades to the IRIS Network in order to support our planned advanced IRIS Service governance features."
-            },
-            {
-                "img": "roadmap/houyi.png",
-                "txt": "The fourth stage will focus on further technology innovations to the IRIS network, IRIS SDK and mobile client, as well as developer engagement."
-            }
-        ]
-    },
-    "home": {
-        "title": 'IRIS Network',
-        "txt": 'Inter-chain Service Infrastructure and Protocol <br> Technology Foundation for a Distributed Business Ecosystem',
-        "src": 'iristext-small.png'
-    },
     "about": {
         "title": 'Key Innovations',
         "imgtxt": " Facilitate construction of <br> distributed business applications",
@@ -819,11 +1154,11 @@ export const message = {
         "title":" Scan QR code",
         "txt":" to follow our Subscriptions"
     },
-    "community":{
-        "title":"Community",
-        "coming":"Coming soon"
-
-    },
+    // "community":{
+    //     "title":"Community",
+    //     "coming":"Coming soon"
+    //
+    // },
     "contactList":[
         {"infotitle":"IRISnet is named after Greek goddess Iris, said to be the "},
         {"infotitle":"personification of the rainbow and the faithful messenger "},
@@ -888,9 +1223,6 @@ export const message = {
     "errEmail":{
         "err":"Please enter a valid email address"
     },
-    "newsLetter":{
-        "letter":"Newsletter"
-    },
     "placehooder":{
         "placehooder": "Please enter your email address"
     },
@@ -923,24 +1255,24 @@ export const message = {
             "active": false
         }
     ],
-    "announcements":[
-        {
-            src:'../../public/announcements_betanet.png',
-            timestamp:"Feb 1, 2019",
-            imgtext:'Betanet Work Plan',
-            href: 'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
-        },
-        {
-            src:'../../public/announcements_mainnet.png',
-            timestamp:"Jan 16, 2019",
-            imgtext:'IRIS Foundation Announces Plan for Betanet',
-            href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md'
-        },
-        {
-            src:'../../public/announcements_irisnet.png',
-            timestamp:"Jan 16, 2019",
-            imgtext:'Expectations for IRIS Betanet',
-            href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md'
-        }
-    ]
+    // "announcements":[
+    //     {
+    //         src:'../../public/announcements_betanet.png',
+    //         timestamp:"Feb 1, 2019",
+    //         imgtext:'Betanet Work Plan',
+    //         href: 'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
+    //     },
+    //     {
+    //         src:'../../public/announcements_mainnet.png',
+    //         timestamp:"Jan 16, 2019",
+    //         imgtext:'IRIS Foundation Announces Plan for Betanet',
+    //         href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md'
+    //     },
+    //     {
+    //         src:'../../public/announcements_irisnet.png',
+    //         timestamp:"Jan 16, 2019",
+    //         imgtext:'Expectations for IRIS Betanet',
+    //         href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md'
+    //     }
+    // ]
 }
