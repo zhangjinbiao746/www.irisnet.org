@@ -135,7 +135,7 @@
                 }else if (index === 3) {
                     activeDomOffsetTop = this.$store.state.roadmap;
                 }else {
-                    activeDomOffsetTop = 0;
+                    activeDomOffsetTop;
                 }
                 this.scroll(activeDomOffsetTop)
             },
@@ -186,6 +186,7 @@
                 });
             },
             toHome(){
+                let defaultScrollTop = 0;
                 if(this.$route.query.lang && this.$route.query.lang === 'CN'){
                     this.$router.push({path:'/?lang=CN'});
                 }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
@@ -193,7 +194,8 @@
                 }else {
                     this.$router.push({path:'/'});
                 }
-                this.$store.commit('activeIconIndex','');
+                this.$store.commit('activeIconIndex',' ');
+                this.scroll(defaultScrollTop);
                 this.resetActiveIcon()
             }
         },
