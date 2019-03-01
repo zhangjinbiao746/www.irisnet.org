@@ -14,7 +14,7 @@
                                 </div>
                             </div>
                             <li class="community_link_item" v-for="item in $store.state.messages.footer.socialCommunity" :key="item.id">
-                                <a :href="item.href" target="_blank" @click="jumpUrl($event, item.href)">
+                                <a @click="jumpUrl($event, item.href)">
                                     <img :src='UrlSrc + item.src'>
                                 </a>
                             </li>
@@ -113,7 +113,7 @@
             jumpUrl (e, url) {
                 e.stopPropagation()
                 if (url) {
-                    window.location.href = url
+                    window.open(url)
                 } else {
                     this.$store.commit('controlWeChat', true)
                 }

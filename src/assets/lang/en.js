@@ -356,11 +356,11 @@ export const message = {
         walletHref:'https://testnet.rainbow.one/'
     },
     newsLetter:{
-        successTitle: 'Welcome to the IRISnet newsletter',
-        failedTitle: 'Subscription failed.',
+        successTitle: 'Welcome to The IRISnet Newsletter',
         successText: 'Thank you for your interest in and subscription to our project infomation. Please check your email box and click the button to confirm the subscription and to start receiving our newsletters and other latest updates.',
+        failedTitle: 'Subscription Failed',
         failedText: 'Maybe you are already subscribed? If not then please try again or contact us via email contact@irisnet.org.',
-        confirm: 'confirm'
+        confirm: 'Confirm'
     },
     "logo": 'irisnet.png',
     "white":'public/whiteDw.png',
