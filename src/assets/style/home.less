@@ -258,7 +258,7 @@
         width:2.79rem;
         background:rgba(31,29,53,0.3386);
         border-radius:0.08rem;
-        border:1px solid rgba(131,213,253,1);
+        border:1px solid rgba(131,213,253,0.33);
         font-size: 0.14rem;
         padding: 0.2rem 0;
         position: relative;
@@ -589,7 +589,7 @@
         width:4.3rem;
         background:rgba(31,29,53,0.3386);
         border-radius:0.08rem;
-        border:1px solid rgba(131,213,253,1);
+        border:1px solid rgba(131,213,253,0.33);
         font-size: 0.14rem;
         padding: 0.2rem 0;
         position: absolute;
@@ -762,23 +762,33 @@
           color: #fff;
           outline: none;
         }
+        button:hover {
+          background: linear-gradient(to right, rgba(130, 92, 245, 1), rgba(123, 80, 255, 1)); 
+        }
       }
     }
-    .banner {
-      width: @basicWidth*.4716
+    .right {
+      width: 47.4%;
+      .banner {
+        width: 100%;
+      }
     }
   }
   .sectionTwo {
     background: #fff;
     padding-top: 0.67rem;
     padding-bottom: 100vw*.0843;
+    >div{
+      // max-width: 12rem;
+      // margin: auto;
+    }
     .first {
       display: flex;
       align-items: center;
       justify-content: center;
       .left {
-        width: 100vw*.3885;
-        height: 100vw*.3005;
+        width: 7.46rem;
+        height: 5.77rem;
         background-image: url('../KeyInnovation.png');
         background-size: 100%;
         background-repeat: no-repeat;
@@ -786,7 +796,7 @@
         align-items: center;
         justify-content: center;
         .keyInnovationMsg{
-          width: 100vw*.3052;
+          max-width: 5.68rem;
           border-radius: 0.12rem;
           background: #fff;
           display: flex;
@@ -794,9 +804,9 @@
           justify-content: center;
           box-shadow:0px 0.12rem 0.5rem 0.06rem rgba(26,24,44,0.09);
           transform: translateX(-3%);
-          padding:20px;
+          padding:.41rem .2rem .51rem .2rem;
           .title{
-            margin-left: @basicWidth*.04083;
+            margin-left: .3rem;
             color: #323C5A;
             font-size: 0.24rem;
             font-family: Arial Bold;
@@ -806,9 +816,11 @@
             font-size: 0.14rem;
             color: #9BA5BE;
             list-style-type: none;
-            margin: @basicWidth*.0375 0 @basicWidth*.0375 @basicWidth*.06583;
+            margin: .45rem 0 .45rem .5rem;
+            width: 85%;
             li{
               position: relative;
+              line-height: .21rem;
               label{
                 display: inline-block;
                 width: 0.06rem;
@@ -816,7 +828,7 @@
                 background: #714BE3;
                 border-radius: 0.06rem;
                 position: absolute;
-                transform: translateY(70%);
+                transform: translateY(100%);
                 left: -0.22rem
               }
             }
@@ -848,17 +860,19 @@
         }
       }
       .right {
+        width: 4.54rem;
+        margin-left: 100vw*.026;
         img {
-          width: 100vw*.364;
-          margin-left: 100vw*.026;
+          width: 100%;
         }
       }
     }
     .secend {
       margin-top: 100vw*.079;
       .right {
+        width: 5.07rem;
         img {
-          width: 100vw*.264;
+          width: 100%;
         }
       }
       .left {
@@ -925,7 +939,7 @@
         width:1200px*.3616;
         background:rgba(31,29,53,0.3386);
         border-radius:0.08rem;
-        border:1px solid rgba(131,213,253,1);
+        border:1px solid rgba(131,213,253,0.33);
         font-size: 0.14rem;
         padding: 0.2rem 0;
         position: absolute;
@@ -944,7 +958,7 @@
           color: rgba(255, 255, 255, 0.5);
           padding: 0 0.35rem;
           text-align: left;
-          line-height: 0.18rem;
+          line-height: 0.21rem;
         }
         div:nth-of-type(3):hover {
           color: rgba(255, 255, 255, 1);
