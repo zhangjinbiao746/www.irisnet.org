@@ -16,7 +16,6 @@
         components: {IrisnetMask, IrisnetFooter, IrisnetHeader},
         data(){
             return{
-
             }
         },
         watch:{

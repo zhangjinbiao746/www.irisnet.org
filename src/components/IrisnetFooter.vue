@@ -42,7 +42,7 @@
         <div class="copyright_wrap">
             <div class="copyright_content">
                 <p class="irisnet">{{$store.state.messages.footer.irisnetInproduction}}</p>
-                <p><span class="copyright">Copyright &#169 2018 IRIS Foundation Ltd. All rights reserved.</span><span class="link_common_style" @click="toPrivacy"> Privacy</span> <span class="connector"> & </span> <span class="link_common_style" @click="toTerms">Terms</span></p>
+                <p><span class="copyright">Copyright &#169 2019 IRIS Foundation Ltd. All rights reserved.</span><span class="link_common_style" @click="toPrivacy"> Privacy</span> <span class="connector"> & </span> <span class="link_common_style" @click="toTerms">Terms</span></p>
             </div>
         </div>
     </div>
@@ -90,7 +90,7 @@
                 }).then((data)=>{
                     let that = this;
                     that.$store.commit('showMask',true);
-                    if(!data.data.status){
+                    if(data.data.id){
                         that.$store.commit('confirm',that.$store.state.messages.newsLetter.confirm);
                         that.$store.commit('textContent',that.$store.state.messages.newsLetter.successText);
                         that.$store.commit('newsLetterTitle',that.$store.state.messages.newsLetter.successTitle)

@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="logo">
-                    <div class="title">{{$store.state.messages.home.sectionFour.Institutional.title.msg1}}<span>{{$store.state.messages.home.sectionFour.Institutional.title.msg2}}</span></div>
+                    <div class="title">{{$store.state.messages.home.sectionFour.Institutional.title.msg1}}<p>{{$store.state.messages.home.sectionFour.Institutional.title.msg2}}</p></div>
                     <div class="logoIcon supporters">
                         <a :href="n.url" target="_blank" v-for="n of $store.state.messages.home.sectionFour.Institutional.logos" :key="n.id">
                             <img :src='UrlSrc + n.path'>
@@ -130,10 +130,10 @@
                 e.stopPropagation()
                 this.showWeChat = !this.showWeChat
             },
+
             closeWeChat () {
                 this.showWeChat = false
             },
-
             onresize(){
                 clearTimeout(this.timer);
                 let that = this;

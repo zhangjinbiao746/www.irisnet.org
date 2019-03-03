@@ -223,7 +223,6 @@ export const message = {
                 logos: [
                     {id:0, path: 'logos/irisnet_InTERCHAIN.png', url: 'https://cosmos.network/about'},
                     {id:1, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'}
-
                 ]
             },
             EcosystemPartners: {
@@ -310,9 +309,9 @@ export const message = {
         ]
     },
     testnet:{
-        title:'Fuxi Testnet',
+        title:'FUXI Testnet',
         production: 'The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers).',
-        testnetLink:'Ues The Testnet'
+        testnetLink:'Ues FUXI Testnet'
     },
     community:{
         title: 'Join Tech Community',
@@ -329,12 +328,12 @@ export const message = {
                 src:'irisnet_community_riot.png',
                 name: 'Riot room',
                 linkName:'#irisvalidators:matrix.org',
-                href: 'https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org'
+                href: 'https://riot.im/app/#/room/#iris:matrix.org'
             }
         ]
     },
     testnetPage:{
-        title: 'Fuxi Testnet',
+        title: 'FUXI Testnet',
         section:[
             {
                 content:'The previous iterations of the testnets have accomplished their mission. '
@@ -357,8 +356,8 @@ export const message = {
     },
     newsLetter:{
         successTitle: 'Welcome to The IRISnet Newsletter',
-        successText: 'Thank you for your interest in and subscription to our project infomation. Please check your email box and click the button to confirm the subscription and to start receiving our newsletters and other latest updates.',
         failedTitle: 'Subscription Failed',
+        successText: 'Thank you for your interest in and subscription to our project infomation. Please check your email box and click the button to confirm the subscription and to start receiving our newsletters and other latest updates.',
         failedText: 'Maybe you are already subscribed? If not then please try again or contact us via email contact@irisnet.org.',
         confirm: 'Confirm'
     },
@@ -829,7 +828,7 @@ export const message = {
             {
                 'title': "How we collect personal data",
                 "txtList": [
-                    'We collect personal data about you in the following ways: ' +
+                    'We collect personal data about you in the following ways: ',
                     '<ul>' +
                     '<li>where you register for an account or to receive emails from us</li>' +
                     '<li>when you order products or services from us</li>' +
@@ -851,7 +850,7 @@ export const message = {
             {
                 'title': "Kinds of personal data we collect",
                 "txtList": [
-                    'The kinds of personal data that we collect and hold about you may include: ' +
+                    'The kinds of personal data that we collect and hold about you may include: ',
                     '<ul>' +
                     '<li>identifying information, such as your real name, nationality, ID type, ID number and other information required by the laws and regulations</li>' +
                     '<li>contact information, such as your postal address, email address and telephone number personal information</li>' +
@@ -869,7 +868,7 @@ export const message = {
             {
                 'title': "Purposes for which we use personal data",
                 "txtList": [
-                    'We use personal data that we collect about you for the following purposes: ' +
+                    'We use personal data that we collect about you for the following purposes: ',
                     '<ul>' +
                     '<li>to verify your identity when you are dealing with us</li>' +
                     '<li>to determine your eligibility for any of our products or services</li>' +

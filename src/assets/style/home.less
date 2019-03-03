@@ -136,6 +136,7 @@
             margin: 0.2rem 0 0.37rem 0.21rem;
             li{
               position: relative;
+              line-height: .21rem;
               label{
                 display: inline-block;
                 width: 0.06rem;
@@ -318,7 +319,8 @@
           color: rgba(50, 60, 90, 1);
           font-family: Arial Bold;
           margin-bottom: 0.5rem;
-          span {
+          line-height: 0.28rem;
+          p {
             display: block;
             color: rgba(155, 165, 190, 1)
           }
@@ -468,6 +470,7 @@
             margin: 0.45rem 0 0.45rem 0.79rem;
             li{
               position: relative;
+              line-height: .21rem;
               label{
                 display: inline-block;
                 width: 0.06rem;
@@ -657,7 +660,8 @@
           color: rgba(50, 60, 90, 1);
           font-family: Arial Bold;
           margin-bottom: 0.5rem;
-          span {
+          line-height: 0.28rem;
+          p {
             color: rgba(155, 165, 190, 1)
           }
         }
@@ -845,13 +849,19 @@
               width: 2.3rem;
               height: 0.5rem;
               border-radius: 0.33rem;
-              display: flex;
-              align-items: center;
-              justify-content: center;
+              position: relative;
+              // display: flex;
+              // align-items: center;
+              // justify-content: center;
+              span {
+                margin-right: 0.22rem;
+              }
               img {
+                position: absolute;
                 height: 0.16rem;
-                margin-left: 0.22rem;
-                transform: translateY(-8%)
+                top: 50%;
+                right: 0.5rem;
+                transform: translateY(-45%);
               }
             }
             button:hover {
@@ -1017,7 +1027,9 @@
           color: rgba(50, 60, 90, 1);
           font-family: Arial Bold;
           margin-bottom: 0.5rem;
-          span {
+          display: flex;
+          p {
+            margin-left: 0.1rem;
             color: rgba(155, 165, 190, 1)
           }
         }

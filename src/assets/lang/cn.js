@@ -213,7 +213,6 @@ export const message = {
                 logos: [
                     {id:0, path: 'logos/irisnet_bianjiehover.png', url: 'https://www.bianjie.ai/'},
                     {id:1, path: 'logos/irisnet_tenderminthover.png', url: 'https://tendermint.com/'}
-
                 ]
             },
             StrategicPartners: {
@@ -229,7 +228,6 @@ export const message = {
                     {id:0, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
                     {id:1, path: 'logos/irisnet_hashquark.png', url: 'https://www.hashquark.io/#/'},
                     {id:2, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
-
                 ]
             },
             Institutional: {
@@ -267,7 +265,6 @@ export const message = {
                     {id:29, path: 'logos/irisnet_UA.png', url: 'javascript:void(0)'},//5
                     {id:30, path: 'logos/irisnet_shuidi.png', url: 'http://waterdrip.io/'},
                     {id:31, path: 'logos/irisnet_yidao.png', url: 'javascript:void(0)'},
-
                 ]
             }
         }
@@ -325,7 +322,7 @@ export const message = {
                 src:'irisnet_community_riot.png',
                 name: 'Riot聊天室',
                 linkName:'#irisvalidators:matrix.org',
-                href: 'https://matrix.to/#/!bmimZgJrUWSmxqQEmG:matrix.org'
+                href: 'https://riot.im/app/#/room/#iris:matrix.org'
             }
         ]
     },
@@ -351,7 +348,6 @@ export const message = {
         walletTitle:'测试网钱包 Rainbow',
         walletHref:'https://testnet.rainbow.one/'
     },
-
     newsLetter:{
         successTitle: '欢迎订阅IRISnet通讯',
         failedTitle: '订阅失败。',
@@ -821,7 +817,7 @@ export const message = {
             {
                 'title': "How we collect personal data",
                 "txtList": [
-                    'We collect personal data about you in the following ways: ' +
+                    'We collect personal data about you in the following ways: ',
                     '<ul>' +
                     '<li>where you register for an account or to receive emails from us</li>' +
                     '<li>when you order products or services from us</li>' +
@@ -843,7 +839,7 @@ export const message = {
             {
                 'title': "Kinds of personal data we collect",
                 "txtList": [
-                    'The kinds of personal data that we collect and hold about you may include: ' +
+                    'The kinds of personal data that we collect and hold about you may include: ',
                     '<ul>' +
                     '<li>identifying information, such as your real name, nationality, ID type, ID number and other information required by the laws and regulations</li>' +
                     '<li>contact information, such as your postal address, email address and telephone number personal information</li>' +
@@ -861,7 +857,7 @@ export const message = {
             {
                 'title': "Purposes for which we use personal data",
                 "txtList": [
-                    'We use personal data that we collect about you for the following purposes: ' +
+                    'We use personal data that we collect about you for the following purposes: ',
                     '<ul>' +
                     '<li>to verify your identity when you are dealing with us</li>' +
                     '<li>to determine your eligibility for any of our products or services</li>' +

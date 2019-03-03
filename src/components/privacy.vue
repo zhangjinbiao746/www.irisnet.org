@@ -37,7 +37,7 @@
     }
 </script>
 
-<style scoped lang='less'>
+<style lang='less'>
     .index {
         min-height: 100%;
         position: relative;
@@ -60,7 +60,6 @@
             .warp_cont {
                 overflow: hidden;
                 .warp_cont_left {
-                    width: 3.3rem;
                     border-top: 0.01rem solid #2e3148;
                     position: relative;
                     .border {
@@ -96,9 +95,11 @@
                         a {
                             color: #7681e3;
                         }
-                        ul {
+                         /deep/ ul {
                             list-style-type: disc;
-                            margin-left: 0.6rem;
+                            li {
+                                list-style: inside;
+                            }
                         }
                     }
                     div:first-child {

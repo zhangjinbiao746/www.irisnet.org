@@ -79,7 +79,6 @@
             .warp_cont {
                 overflow: hidden;
                 .warp_cont_left {
-                    width: 3.3rem;
                     border-top: 0.01rem solid #2e3148;
                     position: relative;
                     .border {
