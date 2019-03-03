@@ -1846,7 +1846,7 @@ export default {
             qq: "QQ: 862553695"
         },
         testnet:{
-            title:"Fuxi Testnet",
+            title:"FUXI Testnet",
             testnetFirstParagraph:"The previous iterations of the testnets have accomplished their mission. ",
             explorerHref:"IRISplorer",
             testnetSecendParagraph:"In February 2019, the IRISnet development team released irishub v0.12.0 and successfully started the new testnet (chain-id : fuxi) with this version.",

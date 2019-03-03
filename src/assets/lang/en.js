@@ -309,9 +309,9 @@ export const message = {
         ]
     },
     testnet:{
-        title:'Fuxi Testnet',
+        title:'FUXI Testnet',
         production: 'The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers).',
-        testnetLink:'Ues The Testnet'
+        testnetLink:'Ues FUXI Testnet'
     },
     community:{
         title: 'Join Tech Community',
@@ -333,7 +333,7 @@ export const message = {
         ]
     },
     testnetPage:{
-        title: 'Fuxi Testnet',
+        title: 'FUXI Testnet',
         section:[
             {
                 content:'The previous iterations of the testnets have accomplished their mission. '
