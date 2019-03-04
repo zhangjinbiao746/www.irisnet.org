@@ -99,7 +99,7 @@ export const message = {
             {
                 id:0,
                 src: "irisnet_telegram.png",
-                href: "https://t.me/irisnetworkcn"
+                href: "https://t.me/irisnetwork"
             },
             {
                 id:1,
