@@ -99,7 +99,7 @@ export const message = {
             {
                 id:0,
                 src: "irisnet_telegram.png",
-                href: "https://t.me/irisnetworkcn"
+                href: "https://t.me/irisnetwork"
             },
             {
                 id:1,
@@ -151,6 +151,52 @@ export const message = {
                 href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
             },
         ],
+        productList: [
+            {
+                id: 0,
+                name:'Rainbow Wallet',
+                href:'https://www.rainbow.one/'
+            },
+            {
+                id: 1,
+                name:'IRISplorer',
+                href:'https://www.irisplorer.io'
+            },
+            {
+                id: 2,
+                name:'Light Client',
+                href:'https://www.irisnet.org/docs/light-client/'
+            },
+            {
+                id: 3,
+                name:'CLI Client',
+                href:'https://www.irisnet.org/docs/cli-client/'
+            }
+        ],
+        resourceList: [
+            {
+                id: 0,
+                name:'FAQ',
+                href:'https://www.irisnet.org/docs/resources/'
+            },
+            {
+                id: 1,
+                name:'Blog',
+                href:'https://medium.com/irisnet-blog'
+            },
+            {
+                id: 2,
+                name:'Docs',
+                href:'https://www.irisnet.org/docs/'
+            },
+            {
+                id: 3,
+                name:'Brand Assets',
+                href:'../../public/irisnet/resources/brandAssets.zip'
+            }
+        ],
+        productsTitle:'Products',
+        resourcesTitle:'Resources',
         submitBtn:{
             title: 'Newsletter',
             subscribe: 'Subscribe',
@@ -318,17 +364,17 @@ export const message = {
         joinWay:[
             {
                 id:'1',
-                src:'irisnet_community_qq.png',
-                name: 'QQ group',
-                linkName:'834063323',
-                href: 'http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32'
-            },
-            {
-                id:'2',
                 src:'irisnet_community_riot.png',
                 name: 'Riot room',
                 linkName:'#irisvalidators:matrix.org',
                 href: 'https://riot.im/app/#/room/#iris:matrix.org'
+            },
+            {
+                id:'2',
+                src:'irisnet_community_qq.png',
+                name: 'QQ group',
+                linkName:'834063323',
+                href: 'http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32'
             }
         ]
     },

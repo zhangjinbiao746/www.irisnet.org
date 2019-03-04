@@ -343,6 +343,27 @@
         background: rgba(0,0,0,1);
         z-index: 10;
         width: 100%;
+        .nav_link_content{
+          span{
+            color: #fff;
+            opacity: 0.3;
+            &:hover{
+              opacity: 1;
+            }
+          }
+          a{
+            color: #fff;
+            opacity: 0.3;
+            &:hover{
+              opacity: 1;
+            }
+          }
+        }
+        .active_icon{
+          span{
+            opacity: 1 !important;
+          }
+        }
       }
       .show_menu{
         display: block;
