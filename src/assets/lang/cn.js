@@ -1259,20 +1259,6 @@ export const message = {
     "placehooder":{
         "placehooder": "请输入你的邮箱地址"
     },
-    // "logo": [
-    //     {
-    //         "src": '../../../public/mainnet_zh.png',
-    //         "active": true
-    //     },
-    //     {
-    //         "src": '../../../public/bug_bounty.gif',
-    //         "active": false
-    //     },
-    //     {
-    //         "src": '../../../public/irisnet_zh.png',
-    //         "active": false
-    //     }
-    // ],
     "mobileLogo": [
         {
             "src": '../../../public/mobile_main_zh.png',
