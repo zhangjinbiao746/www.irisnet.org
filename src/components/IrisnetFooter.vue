@@ -2,40 +2,64 @@
     <div class="footer_container" ref="contact">
         <div class="footer_wrap">
             <div class="content">
-                <div class="community_link_content">
-                    <div class="social_community_content">
-                        <h4 class="community">{{$store.state.messages.footer.socialCommunityTitle}}</h4>
-                        <ul class="community_link_list">
-                            <div v-show="$store.state.footerWeChatIcon"  class="mobileBox" @touchmove.prevent>
-                                <div class="qrcode" @touchmove.prevent>
-                                    <img src="../assets/wechat.jpg" alt="" @touchmove.prevent>
-                                    <div class="arrow"></div>
-                                    <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
+                <div class="left_content">
+                    <div class="community_link_content">
+                        <div class="social_community_content">
+                            <h4 class="community">{{$store.state.messages.footer.socialCommunityTitle}}</h4>
+                            <ul class="community_link_list">
+                                <div v-show="$store.state.footerWeChatIcon"  class="mobileBox" @touchmove.prevent>
+                                    <div class="qrcode" @touchmove.prevent>
+                                        <img src="../assets/wechat.jpg" alt="" @touchmove.prevent>
+                                        <div class="arrow"></div>
+                                        <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
+                                    </div>
                                 </div>
-                            </div>
-                            <li class="community_link_item" v-for="item in $store.state.messages.footer.socialCommunity" :key="item.id">
-                                <a @click="jumpUrl($event, item.href)">
-                                    <img :src='UrlSrc + item.src'>
-                                </a>
-                            </li>
-                        </ul>
+                                <li class="community_link_item" v-for="item in $store.state.messages.footer.socialCommunity" :key="item.id">
+                                    <a @click="jumpUrl($event, item.href)">
+                                        <img :src='UrlSrc + item.src'>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tech_community_content">
+                            <h4 class="community">{{$store.state.messages.footer.TechCommunityTitle}}</h4>
+                            <ul class="community_link_list">
+                                <li class="community_link_item" v-for="item in $store.state.messages.footer.techCommunity" :key="item.id">
+                                    <a :href="item.href" target="_blank">
+                                        <img :src="UrlSrc + item.src">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="tech_community_content">
-                        <h4 class="community">{{$store.state.messages.footer.TechCommunityTitle}}</h4>
-                        <ul class="community_link_list">
-                            <li class="community_link_item" v-for="item in $store.state.messages.footer.techCommunity" :key="item.id">
-                                <a :href="item.href" target="_blank">
-                                    <img :src="UrlSrc + item.src">
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="newsletter_content">
+                        <h4 class="newsletter_title">{{$store.state.messages.footer.submitBtn.title}}</h4>
+                        <input v-model="mailAddress" class="email_input" :class="flShowError ? 'error_style' : ' '" type="text" :placeholder="$store.state.messages.placehooder.placehooder">
+                        <p :class="flShowError ? 'show_error' : 'hide_error'">{{$store.state.messages.errEmail.err}}</p>
+                        <button class="submit_btn" @click="commitMail">{{subscription}}</button>
                     </div>
                 </div>
-                <div class="newsletter_content">
-                    <h4 class="newsletter_title">{{$store.state.messages.footer.submitBtn.title}}</h4>
-                    <input v-model="mailAddress" class="email_input" :class="flShowError ? 'error_style' : ' '" type="text" :placeholder="$store.state.messages.placehooder.placehooder">
-                    <p :class="flShowError ? 'show_error' : 'hide_error'">{{$store.state.messages.errEmail.err}}</p>
-                    <button class="submit_btn" @click="commitMail">{{subscription}}</button>
+                <div class="footer_link_content">
+                    <div class="products_link_content">
+                        <h4 class="products_title">{{$store.state.messages.footer.productsTitle}}</h4>
+                        <div class="link_container">
+                            <ul class="link_content">
+                                <li class="link_item_content" v-for="item in $store.state.messages.footer.productList" :key="item.id">
+                                    <a :href="item.href" target="_blank">{{item.name}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resources_content">
+                        <h4 class="resources_title">{{$store.state.messages.footer.resourcesTitle}}</h4>
+                        <div class="resources_link_container">
+                            <ul class="resources_link_content">
+                                <li class="resource_list_item" v-for="(item,index) in $store.state.messages.footer.resourceList" :key="item.id">
+                                    <a :href="item.href" :download="index === 3 ? 'BrandAssets' : ''">{{item.name}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
