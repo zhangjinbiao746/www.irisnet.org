@@ -4,36 +4,36 @@ export const message = {
     header:{
         left:[
             {
-                id:1,
+                id:0,
                 title:'白皮书',
                 active:false,
             },
             {
-                id:2,
+                id:1,
                 title:'合作方',
                 active:false,
             },
             {
-                id:3,
+                id:2,
                 title:'联系方式',
                 active:false,
             }
         ],
         right:[
             {
-                id:1,
+                id:0,
                 title:'主网',
                 href:'',
                 active: false,
             },
             {
-                id:2,
+                id:1,
                 title:'文档',
                 href:'https://www.irisnet.org/docs/',
                 active: false,
             },
             {
-                id:3,
+                id:2,
                 title:'博客',
                 href:'https://medium.com/irisnet-blog',
                 active: false,
@@ -41,37 +41,37 @@ export const message = {
         ],
         mobileNavigation:[
             {
-                id:1,
+                id:0,
                 title:'主网',
                 activeIndex: '',
                 active:false,
             },
             {
-                id:2,
+                id:1,
                 title:'测试网',
                 activeIndex: '',
                 active:false,
             },
             {
-                id:3,
+                id:2,
                 title:'白皮书',
                 activeIndex: 0,
                 active:false,
             },
             {
-                id:4,
+                id:3,
                 title:'路线图',
                 activeIndex: 3,
                 active:false,
             },
             {
-                id:5,
+                id:4,
                 title:'合作方',
                 activeIndex: 1,
                 active:false,
             },
             {
-                id:6,
+                id:5,
                 title:'联系方式',
                 activeIndex: 2,
                 active:false,
@@ -96,27 +96,27 @@ export const message = {
         TechCommunityTitle: '技术社区',
         socialCommunity:[
             {
-                id:1,
+                id:0,
                 src: "irisnet_telegram.png",
                 href: "https://t.me/irisnetworkcn"
             },
             {
-                id:2,
+                id:1,
                 src: "irisnet_twitter.png",
                 href: "https://twitter.com/irisnetwork"
             },
             {
-                id:3,
+                id:2,
                 src: "irisnet_mail.png",
                 href: "mailto:contact@irisnet.org"
             },
             {
-                id:4,
+                id:3,
                 src: "irisnet_medium.png",
                 href: "https://medium.com/irisnet-blog"
             },
             {
-                id:1,
+                id:4,
                 src: "irisnet_wechat.png",
                 "txt": "Wechat"
             },
@@ -148,6 +148,52 @@ export const message = {
                 href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
             },
         ],
+        productList: [
+            {
+                id:0,
+                name:'Rainbow Wallet',
+                href:'https://www.rainbow.one/'
+            },
+            {
+                id:1,
+                name:'IRISplorer',
+                href:'https://www.irisplorer.io'
+            },
+            {
+                id:2,
+                name:'Light Client',
+                href:'https://www.irisnet.org/docs/zh/light-client/'
+            },
+            {
+                id:3,
+                name:'CLI Client',
+                href:'https://www.irisnet.org/docs/zh/cli-client/'
+            }
+        ],
+        resourceList: [
+            {
+                id:0,
+                name:'FAQ',
+                href:'https://www.irisnet.org/docs/resources/'
+            },
+            {
+                id:1,
+                name:'Blog',
+                href:'https://medium.com/irisnet-blog'
+            },
+            {
+                id:2,
+                name:'Docs',
+                href:'https://www.irisnet.org/docs/zh/'
+            },
+            {
+                id:3,
+                name:'Brand Assets',
+                href:'../../public/irisnet/resources/brandAssets.zip'
+            }
+        ],
+        productsTitle:'产品',
+        resourcesTitle:'资源',
         submitBtn:{
             title: '获取最新资讯',
             subscribe: '提交',
@@ -312,17 +358,17 @@ export const message = {
         joinWay:[
             {
                 id:'1',
-                src:'irisnet_community_qq.png',
-                name: 'QQ 群',
-                linkName:'834063323',
-                href: 'http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32'
-            },
-            {
-                id:'2',
                 src:'irisnet_community_riot.png',
                 name: 'Riot聊天室',
                 linkName:'#irisvalidators:matrix.org',
                 href: 'https://riot.im/app/#/room/#iris:matrix.org'
+            },
+            {
+                id:'2',
+                src:'irisnet_community_qq.png',
+                name: 'QQ 群',
+                linkName:'834063323',
+                href: 'http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32'
             }
         ]
     },
@@ -1213,20 +1259,20 @@ export const message = {
     "placehooder":{
         "placehooder": "请输入你的邮箱地址"
     },
-    "logo": [
-        {
-            "src": '../../../public/mainnet_zh.png',
-            "active": true
-        },
-        {
-            "src": '../../../public/bug_bounty.gif',
-            "active": false
-        },
-        {
-            "src": '../../../public/irisnet_zh.png',
-            "active": false
-        }
-    ],
+    // "logo": [
+    //     {
+    //         "src": '../../../public/mainnet_zh.png',
+    //         "active": true
+    //     },
+    //     {
+    //         "src": '../../../public/bug_bounty.gif',
+    //         "active": false
+    //     },
+    //     {
+    //         "src": '../../../public/irisnet_zh.png',
+    //         "active": false
+    //     }
+    // ],
     "mobileLogo": [
         {
             "src": '../../../public/mobile_main_zh.png',
