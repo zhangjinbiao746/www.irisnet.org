@@ -7,7 +7,7 @@
                 </div>
                 <div class="nav_content">
                     <ul class="nav_link_content">
-                        <li class="link_content" :class="item.active ? 'active_icon' : ' '" v-for="(item,index) in $store.state.messages.header.left" :key="item.id" @click="activeIcon(index)" >{{item.title}}</li>
+                        <li class="link_content" :class="item.active ? 'active_icon' : ' '" v-for="(item,index) in $store.state.messages.header.left" @click="activeIcon(index)" >{{item.title}}</li>
                     </ul>
                     <div class="link_right_container">
                         <ul class="nav_link_content right_content">
@@ -27,8 +27,8 @@
                         </ul>
                         <div class="lang_content">
                             <div class="english_content">
-                                <span @click="changLang('EN')" v-if="$store.state.lang=='CN'" class="lang_english"><a href="?lang=EN">English</a></span>
-                                <span @click="changLang('CN')" v-if="$store.state.lang=='EN'" class="lang_english"><a href="?lang=CN">中文</a></span>
+                                <span v-if="$store.state.lang=='CN'" class="lang_english"><a href="?lang=EN">English</a></span>
+                                <span v-if="$store.state.lang=='EN'" class="lang_english"><a href="?lang=CN">中文</a></span>
                                 <span class="arrow_img">
                                     <img src="../../public/irisnet/IRISnet_chang_lang.png">
                                 </span>
@@ -60,10 +60,10 @@
                 </div>
             </div>
             <ul class="nav_link_container" :class="flShowMenu ? 'show_menu': ''">
-                <li class="nav_link_content" :class="item.active ? 'active_icon' : '' " v-for="item in $store.state.messages.header.mobileNavigation" :key="item.id">
+                <li class="nav_link_content" :class="item.active ? 'active_icon' : '' " v-for="item in $store.state.messages.header.mobileNavigation">
                     <span @click="mobileLink(item.title,item.activeIndex)" >{{item.title}}</span>
                 </li>
-                <li class="nav_link_content" v-for="item in $store.state.messages.header.mobileLinkHrefNavigation" :key="item.id">
+                <li class="nav_link_content" v-for="item in $store.state.messages.header.mobileLinkHrefNavigation">
                     <a :href="item.href" :target="item.href.indexOf('ttp')!== -1 ? '_blank' : ''" >{{item.title}}</a>
                 </li>
 
@@ -97,13 +97,6 @@
         methods:{
             toggleMenus(){
                 this.flShowMenu = !this.flShowMenu
-            },
-            changLang(lang){
-                if(lang === 'CN'){
-                    this.$store.commit("lang","CN")
-                }else {
-                    this.$store.commit("lang","EN")
-                }
             },
             saveActiveIconIndex(index){
                 this.$store.commit('activeIconIndex',index)
