@@ -1,5 +1,5 @@
 <template>
-    <div class="footer_container" ref="contact">
+    <div class="footer_container" ref="contact" v-if="$store.state.flShowFooter">
         <div class="footer_wrap">
             <div class="content">
                 <div class="left_content">
@@ -32,6 +32,30 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+                <div class="footer_link_content">
+                    <div class="products_resources_container">
+                        <div class="products_link_content">
+                            <h4 class="products_title">{{$store.state.messages.footer.productsTitle}}</h4>
+                            <div class="link_container">
+                                <ul class="link_content">
+                                    <li class="link_item_content" v-for="item in $store.state.messages.footer.productList" :key="item.id">
+                                        <a :href="item.href" target="_blank">{{item.name}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="resources_content">
+                            <h4 class="resources_title">{{$store.state.messages.footer.resourcesTitle}}</h4>
+                            <div class="resources_link_container">
+                                <ul class="resources_link_content">
+                                    <li class="resource_list_item" v-for="(item,index) in $store.state.messages.footer.resourceList" :key="item.id">
+                                        <a :href="item.href" target="_blank" :download="index === 3 ? 'BrandAssets' : ''">{{item.name}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     <div class="newsletter_content">
                         <h4 class="newsletter_title">{{$store.state.messages.footer.submitBtn.title}}</h4>
                         <input v-model="mailAddress" class="email_input" :class="flShowError ? 'error_style' : ' '" type="text" :placeholder="$store.state.messages.placehooder.placehooder">
@@ -39,34 +63,14 @@
                         <button class="submit_btn" @click="commitMail">{{subscription}}</button>
                     </div>
                 </div>
-                <div class="footer_link_content">
-                    <div class="products_link_content">
-                        <h4 class="products_title">{{$store.state.messages.footer.productsTitle}}</h4>
-                        <div class="link_container">
-                            <ul class="link_content">
-                                <li class="link_item_content" v-for="item in $store.state.messages.footer.productList" :key="item.id">
-                                    <a :href="item.href" target="_blank">{{item.name}}</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="resources_content">
-                        <h4 class="resources_title">{{$store.state.messages.footer.resourcesTitle}}</h4>
-                        <div class="resources_link_container">
-                            <ul class="resources_link_content">
-                                <li class="resource_list_item" v-for="(item,index) in $store.state.messages.footer.resourceList" :key="item.id">
-                                    <a :href="item.href" :download="index === 3 ? 'BrandAssets' : ''">{{item.name}}</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="copyright_wrap">
-            <div class="copyright_content">
-                <p class="irisnet">{{$store.state.messages.footer.irisnetInproduction}}</p>
-                <p><span class="copyright">Copyright &#169 2019 IRIS Foundation Ltd. All rights reserved.</span><span class="link_common_style" @click="toPrivacy"> Privacy</span> <span class="connector"> & </span> <span class="link_common_style" @click="toTerms">Terms</span></p>
+            <div class="copyright_container">
+                <div class="copyright_content">
+                    <p class="irisnet">{{$store.state.messages.footer.irisnetInproduction}}</p>
+                    <p class="copyright_text"><span class="copyright">Copyright &#169 2019 IRIS Foundation Ltd. All rights reserved.</span><span class="link_common_style" @click="toPrivacy"> Privacy</span> <span class="connector"> & </span> <span class="link_common_style" @click="toTerms">Terms</span></p>
+                </div>
             </div>
         </div>
     </div>
@@ -88,6 +92,11 @@
         watch:{
             $route(){
                 this.onresize();
+                if(this.$route.path === '/privacy' || this.$route.path === '/terms'){
+                    this.$store.commit('flShowFooter',false)
+                }else {
+                    this.$store.commit('flShowFooter',true)
+                }
             }
         },
         methods:{
