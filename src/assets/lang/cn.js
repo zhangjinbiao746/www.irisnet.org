@@ -317,7 +317,7 @@ export const message = {
     },
     mainnet:{
         title: 'IRIS Network',
-        production: '用于构建可信分布式商业应用的跨链服务基础设施及协议',
+        production: '下一代分布式应用的跨链服务网络——自进化的BPoS区块链',
         wallet: 'Rainbow 钱包',
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS 浏览器',
@@ -325,27 +325,36 @@ export const message = {
     },
     announcements:{
         title: '基金会公告',
-        viewMore: 'View More',
-        moreHref:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
+        viewMore: '查看更多',
+        viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
         betaTitle:'Betanet Work Plan',
         betaContent:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.',
         readMore:'Read more',
+        readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
         betaDate:'2019年2月1日',
         announcementList:[
             {
+                id:'0',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
+                date:'2019年3月2日',
+                title:'IRISnet的公开地址',
+                content:'IRIS基金会和开发团队的地址'
+            },
+            {
                 id:'1',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md',
+                date:'2019年1月16日',
+                title:'对IRIS Betanet的期望',
+                content:'为了帮助社区更好的参与IRIS Betanet，特此向社区沟通明确Betanet的一些期望：'
+            },
+            {
+                id:'2',
                 href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md',
                 date:'2019年1月16日',
                 title:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
                 content:'新年伊始，IRIS基金会高兴地宣布，IRIS Betanet即将于2019年春节后（2月中旬）上线！'
             },
-            {
-                id:'2',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md',
-                date:'2019年1月16日',
-                title:'对IRIS Betanet的期望',
-                content:'为了帮助社区更好的参与IRIS Betanet，特此向社区沟通明确Betanet的一些期望：'
-            }
+           
         ]
     },
     testnet:{
