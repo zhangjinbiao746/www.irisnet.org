@@ -151,6 +151,52 @@ export const message = {
                 href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
             },
         ],
+        productList: [
+            {
+                id: 0,
+                name:'Rainbow Wallet',
+                href:'https://www.rainbow.one/'
+            },
+            {
+                id: 1,
+                name:'IRISplorer',
+                href:'https://www.irisplorer.io'
+            },
+            {
+                id: 2,
+                name:'Light Client',
+                href:'https://www.irisnet.org/docs/light-client/'
+            },
+            {
+                id: 3,
+                name:'CLI Client',
+                href:'https://www.irisnet.org/docs/cli-client/'
+            }
+        ],
+        resourceList: [
+            {
+                id: 0,
+                name:'FAQ',
+                href:'https://www.irisnet.org/docs/resources/'
+            },
+            {
+                id: 1,
+                name:'Blog',
+                href:'https://medium.com/irisnet-blog'
+            },
+            {
+                id: 2,
+                name:'Docs',
+                href:'https://www.irisnet.org/docs/'
+            },
+            {
+                id: 3,
+                name:'Brand Assets',
+                href:'../../public/irisnet/resources/brandAssets.zip'
+            }
+        ],
+        productsTitle:'Products',
+        resourcesTitle:'Resources',
         submitBtn:{
             title: 'Newsletter',
             subscribe: 'Subscribe',
@@ -275,7 +321,7 @@ export const message = {
     // "logo": 'irisnet.png',
     mainnet:{
         title: 'IRIS Network',
-        production: 'Inter-chain service infrastructure and protocol for building trustworthy and distributed business applications',
+        production: 'Interchain Service Hub for NextGen Distributed Applications – A BPoS Blockchain That Is Self Evolutionary',
         wallet: 'Rainbow Wallet',
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS Explorer',
@@ -284,28 +330,35 @@ export const message = {
     announcements:{
         title: 'Foundation Announcements',
         viewMore: 'View More',
-        moreHref:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
+        viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
         betaTitle:'Betanet Work Plan',
         betaContent:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.',
         readMore:'Read more',
+        readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
         betaDate:'Feb 1, 2019',
         announcementList:[
             {
-                id:'1',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md',
-                date:'Jan 16, 2019',
-                title:'IRIS Foundation Announces Plan for Betanet',
-                content:'The IRIS Foundation is excited to be announcing the launch of IRIS Betanet, which will happen in the middle of Feb 2019, right after Chinese New Year. 2019 is the Year of the Pig which represents carefree fun, good fortune and wealth.'
+                id:'0',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
+                date:'Mar 02,2019',
+                title:'IRISnet Public Token Addresses',
+                content:'Foundation and Dev Team Token Addresses.'
             },
             {
-                id:'2',
+                id:'1',
                 href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md',
                 date:'Jan 16, 2019',
                 title:'Expectations for IRIS Betanet',
                 content:'Expectations for IRIS Betanet\n' +
                 'To better prepare the community for participating in IRIS Betanet, we would like to communicate the expectations for this network:'
-            }
-           
+            },
+            {
+                id:'2',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md',
+                date:'Jan 16, 2019',
+                title:'IRIS Foundation Announces Plan for Betanet',
+                content:'The IRIS Foundation is excited to be announcing the launch of IRIS Betanet, which will happen in the middle of Feb 2019, right after Chinese New Year. 2019 is the Year of the Pig which represents carefree fun, good fortune and wealth.'
+            },
         ]
     },
     testnet:{
@@ -318,17 +371,17 @@ export const message = {
         joinWay:[
             {
                 id:'1',
-                src:'irisnet_community_qq.png',
-                name: 'QQ group',
-                linkName:'834063323',
-                href: 'http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32'
-            },
-            {
-                id:'2',
                 src:'irisnet_community_riot.png',
                 name: 'Riot room',
                 linkName:'#irisvalidators:matrix.org',
                 href: 'https://riot.im/app/#/room/#iris:matrix.org'
+            },
+            {
+                id:'2',
+                src:'irisnet_community_qq.png',
+                name: 'QQ group',
+                linkName:'834063323',
+                href: 'http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32'
             }
         ]
     },
