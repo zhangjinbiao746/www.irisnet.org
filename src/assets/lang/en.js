@@ -233,7 +233,7 @@ export const message = {
                 list: [
                     {id: 0, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'},
                     {id: 1, msg: 'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems'},
-                    {id: 2, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'}
+                    {id: 2, msg: 'Interoperability of those services across an internet of blockchains.'}
                 ],
                 buttonMsg: 'WHITE PAPER',
                 WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md'
