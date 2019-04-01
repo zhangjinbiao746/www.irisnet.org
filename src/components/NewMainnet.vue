@@ -104,5 +104,5 @@
 </script>
 
 <style scoped lang="less">
-@import "../assets/style/new_mainnet";
+ @import "../assets/style/new_mainnet.less";
 </style>
