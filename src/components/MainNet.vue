@@ -207,5 +207,5 @@
 </script>
 
 <style scoped lang="less">
-    @import "../assets/style/mainnet";
+    @import "../assets/style/mainnet.less";
 </style>

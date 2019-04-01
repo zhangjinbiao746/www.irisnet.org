@@ -50,7 +50,7 @@
                             <div class="resources_link_container">
                                 <ul class="resources_link_content">
                                     <li class="resource_list_item" v-for="(item,index) in $store.state.messages.footer.resourceList" :key="item.id">
-                                        <a :href="item.href" target="_blank" :download="index === 3 ? 'BrandAssets' : ''">{{item.name}}</a>
+                                        <a :href="item.href" target="_blank">{{item.name}}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -178,5 +178,5 @@
 </script>
 
 <style scoped lang="less">
-    @import "../assets/style/footer";
+    @import "../assets/style/footer.less";
 </style>
