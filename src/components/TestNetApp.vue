@@ -250,5 +250,5 @@
 </script>
 
 <style scoped lang='less'>
-    @import "../assets/style/testnetapp";
+    @import "../assets/style/testnetapp.less";
 </style>

@@ -27,5 +27,5 @@
 </script>
 
 <style scoped lang="less">
- @import "../assets/style/mask";
+ @import "../assets/style/mask.less";
 </style>
