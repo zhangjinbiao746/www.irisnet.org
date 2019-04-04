@@ -64,5 +64,5 @@
 </script>
 
 <style scoped lang="less">
-    @import "../assets/style/new_test_net";
+    @import "../assets/style/new_test_net.less";
 </style>

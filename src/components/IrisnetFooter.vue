@@ -178,5 +178,5 @@
 </script>
 
 <style scoped lang="less">
-    @import "../assets/style/footer";
+    @import "../assets/style/footer.less";
 </style>

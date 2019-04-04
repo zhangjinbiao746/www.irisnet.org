@@ -262,7 +262,7 @@
 </script>
 
 <style scoped lang='less'>
-@import "../assets/style/testnet";
+@import "../assets/style/testnet.less";
 
 
 
