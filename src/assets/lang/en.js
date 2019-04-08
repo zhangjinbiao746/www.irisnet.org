@@ -210,7 +210,8 @@ export const message = {
     home: {
         sectionOne: {
             title: 'IRIS Network',
-            time: '2019.03.01 Launched',
+            time: '2019.03.01 Betanet Launched',
+            huoBiTime: '2019.04.08 Listed on Huobi Global',
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetwork',
                 githubUrl: 'https://github.com/irisnet/irishub',
@@ -330,18 +331,18 @@ export const message = {
         title: 'Foundation Announcements',
         viewMore: 'View More',
         viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
-        betaTitle:'Betanet Work Plan',
-        betaContent:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.',
+        betaTitle:'IRISnet Public Token Addresses',
+        betaContent:'Foundation and Dev Team Token Addresses.',
         readMore:'Read more',
-        readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
-        betaDate:'Feb 1, 2019',
+        readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
+        betaDate:'Mar 02,2019',
         announcementList:[
             {
                 id:'0',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
-                date:'Mar 02,2019',
-                title:'IRISnet Public Token Addresses',
-                content:'Foundation and Dev Team Token Addresses.'
+                href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
+                date:'Feb 1, 2019',
+                title:'Betanet Work Plan ',
+                content:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.'
             },
             {
                 id:'1',
@@ -413,7 +414,6 @@ export const message = {
         failedText: 'Maybe you are already subscribed? If not then please try again or contact us via email contact@irisnet.org.',
         confirm: 'Confirm'
     },
-    "logo": 'irisnet.png',
     "white":'public/whiteDw.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md",
     "next": 'what_next.png',
@@ -1277,21 +1277,6 @@ export const message = {
     "placehooder":{
         "placehooder": "Please enter your email address"
     },
-    "logo": [
-        {
-            "src": '../../../public/mainnet_en.png',
-            "active": true
-        },
-        {
-            "src": '../../../public/bug_bounty_en.gif',
-            "active": false
-        },
-        {
-            "src": '../../../public/irisnet_en.png',
-            "active": false
-        }
-
-    ],
     "mobileLogo": [
         {
             "src": '../../../public/mobile_main_en.png',
