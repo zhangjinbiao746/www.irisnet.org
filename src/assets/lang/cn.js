@@ -208,6 +208,7 @@ export const message = {
         sectionOne: {
             title: 'IRIS Network',
             time: '2019.03.01 主网启动',
+            huoBiTime: '2019.04.08 火币全球站首发',
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetworkcn',
                 githubUrl: 'https://github.com/irisnet/irishub',
@@ -326,18 +327,18 @@ export const message = {
         title: '基金会公告',
         viewMore: '查看更多',
         viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
-        betaTitle:'Betanet Work Plan',
-        betaContent:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.',
+        betaTitle:'IRISnet的公开地址',
+        betaContent:'IRIS基金会和开发团队的地址',
         readMore:'Read more',
-        readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
-        betaDate:'2019年2月1日',
+        readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
+        betaDate:'2019年3月2日',
         announcementList:[
             {
                 id:'0',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
-                date:'2019年3月2日',
-                title:'IRISnet的公开地址',
-                content:'IRIS基金会和开发团队的地址'
+                href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
+                date:'2019年2月1日',
+                title:'Betanet Work Plan',
+                content:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.'
             },
             {
                 id:'1',
