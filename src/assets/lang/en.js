@@ -210,8 +210,7 @@ export const message = {
     home: {
         sectionOne: {
             title: 'IRIS Network',
-            time: '2019.03.01 Betanet Launched',
-            huoBiTime: '2019.04.08 Listed on Huobi Global',
+            time: '2019.03.01 Launched',
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetwork',
                 githubUrl: 'https://github.com/irisnet/irishub',
@@ -314,6 +313,7 @@ export const message = {
                     {id:29, path: 'logos/irisnet_UA.png', url: 'javascript:void(0)'},//5
                     {id:30, path: 'logos/irisnet_shuidi.png', url: 'http://waterdrip.io/'},
                     {id:31, path: 'logos/irisnet_yidao.png', url: 'javascript:void(0)'},
+                    {id:32, path: 'logos/irisnet_snz.png', url: 'http://snzholding.com/'},
                 ]
             }
         }

@@ -3,8 +3,7 @@
         <section class="sectionOne">
             <div class="left">
                 <div>{{$store.state.messages.home.sectionOne.title}}</div>
-                <div v-if="flSwitchTitle">{{$store.state.messages.home.sectionOne.time}}</div>
-                <div v-if="!flSwitchTitle">{{$store.state.messages.home.sectionOne.huoBiTime}}</div>
+                <div>{{$store.state.messages.home.sectionOne.time}}</div>
                 <div>
                     <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_bank"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
                     <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_bank"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
@@ -121,7 +120,6 @@
             return {
                 showWeChat: false,
                 timer: null,
-                flSwitchTitle:false,
             }
         },
         methods: {
@@ -145,23 +143,11 @@
                     that.$store.commit('collaboration',that.$refs.collaboration.offsetTop - that.$store.state.headerHeight);
                 },100);
             },
-            toggleSwitchTitle(){
-                this.flSwitchTitle = !this.flSwitchTitle;
-            }
         },
         mounted () {
             this.onresize();
-            this.toggleSwitchTitle();
             window.addEventListener('resize',this.onresize);
         },
-        watch: {
-            flSwitchTitle(flSwitchTitle){
-                let that = this;
-                setTimeout(function () {
-                    that.flSwitchTitle = !that.flSwitchTitle;
-                },3000)
-            }
-        }
     }
 </script>
 

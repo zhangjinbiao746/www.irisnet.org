@@ -208,7 +208,6 @@ export const message = {
         sectionOne: {
             title: 'IRIS Network',
             time: '2019.03.01 主网启动',
-            huoBiTime: '2019.04.08 火币全球站首发',
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetworkcn',
                 githubUrl: 'https://github.com/irisnet/irishub',
@@ -311,6 +310,7 @@ export const message = {
                     {id:29, path: 'logos/irisnet_UA.png', url: 'javascript:void(0)'},//5
                     {id:30, path: 'logos/irisnet_shuidi.png', url: 'http://waterdrip.io/'},
                     {id:31, path: 'logos/irisnet_yidao.png', url: 'javascript:void(0)'},
+                    {id:32, path: 'logos/irisnet_snz.png', url: 'http://snzholding.com/'},
                 ]
             }
         }
