@@ -15,7 +15,7 @@ export const message = {
             },
             {
                 id:2,
-                title:'联系方式',
+                title:'社区',
                 active:false,
             }
         ],
