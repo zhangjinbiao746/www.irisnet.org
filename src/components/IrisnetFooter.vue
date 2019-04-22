@@ -15,7 +15,7 @@
                                     </div>
                                 </div>
                                 <li class="community_link_item" v-for="item in $store.state.messages.footer.socialCommunity" :key="item.id">
-                                    <a @click="jumpUrl($event, item.href)">
+                                    <a @click="jumpUrl($event, item.href)" :href="item.href" target="_blank">
                                         <img :src='UrlSrc + item.src'>
                                     </a>
                                 </li>
@@ -25,6 +25,16 @@
                             <h4 class="community">{{$store.state.messages.footer.TechCommunityTitle}}</h4>
                             <ul class="community_link_list">
                                 <li class="community_link_item" v-for="item in $store.state.messages.footer.techCommunity" :key="item.id">
+                                    <a :href="item.href" target="_blank">
+                                        <img :src="UrlSrc + item.src">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tech_community_content">
+                            <h4 class="community">{{$store.state.messages.footer.validatorCommunityTitle}}</h4>
+                            <ul class="community_link_list">
+                                <li class="community_link_item" v-for="item in $store.state.messages.footer.validatorCommunity" :key="item.id">
                                     <a :href="item.href" target="_blank">
                                         <img :src="UrlSrc + item.src">
                                     </a>
@@ -146,7 +156,7 @@
             jumpUrl (e, url) {
                 e.stopPropagation()
                 if (url) {
-                    window.open(url)
+                    // window.open(url)
                 } else {
                     this.$store.commit('controlWeChat', true)
                 }
