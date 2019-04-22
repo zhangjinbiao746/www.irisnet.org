@@ -72,7 +72,7 @@ export const message = {
             },
             {
                 id:5,
-                title:'Contact',
+                title:'Community',
                 activeIndex: 2,
                 active:false,
             },

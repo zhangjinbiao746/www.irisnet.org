@@ -72,7 +72,7 @@ export const message = {
             },
             {
                 id:5,
-                title:'联系方式',
+                title:'社区',
                 activeIndex: 2,
                 active:false,
             },
