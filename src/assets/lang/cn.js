@@ -15,7 +15,7 @@ export const message = {
             },
             {
                 id:2,
-                title:'联系方式',
+                title:'社区',
                 active:false,
             }
         ],
@@ -72,7 +72,7 @@ export const message = {
             },
             {
                 id:5,
-                title:'联系方式',
+                title:'社区',
                 activeIndex: 2,
                 active:false,
             },
@@ -93,8 +93,8 @@ export const message = {
     },
     footer:{
         socialCommunityTitle: '社区',
-        validatorCommunityTitle:'验证人社区',
-        TechCommunityTitle: '开发者社区',
+        validatorCommunityTitle:'验证人',
+        TechCommunityTitle: '开发者',
         socialCommunity:[
             {
                 id:0,
