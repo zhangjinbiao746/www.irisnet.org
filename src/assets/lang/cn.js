@@ -402,7 +402,7 @@ export const message = {
                 content:'伏羲测试网跟IRIS主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。'
             }
         ],
-        joinTitle:'如何加入伏羲测试网',
+        joinTitle:'如何使用伏羲测试网',
         joinHref:'https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html',
         faqTitle:'IRIShub常见问题',
         faqHref:'https://www.irisnet.org/docs/zh/introduction/',
