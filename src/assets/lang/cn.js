@@ -93,8 +93,8 @@ export const message = {
     },
     footer:{
         socialCommunityTitle: '社区',
-        validatorCommunityTitle:'验证人社区',
-        TechCommunityTitle: '开发者社区',
+        validatorCommunityTitle:'验证人',
+        TechCommunityTitle: '开发者',
         socialCommunity:[
             {
                 id:0,

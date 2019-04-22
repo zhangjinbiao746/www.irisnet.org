@@ -15,7 +15,7 @@ export const message = {
             },
             {
                 id:2,
-                title:'Contact',
+                title:'Community',
                 active:false,
             }
         ],
@@ -93,9 +93,9 @@ export const message = {
         ]
     },
     footer:{
-        socialCommunityTitle: 'Social Community',
-        validatorCommunityTitle:'Validators Community',
-        TechCommunityTitle: 'Developer Community',
+        socialCommunityTitle: 'Community',
+        validatorCommunityTitle:'Validators',
+        TechCommunityTitle: 'Developers',
         socialCommunity:[
             {
                 id:0,
@@ -150,13 +150,13 @@ export const message = {
                 id:1,
                 src: "irisnet_qq.png",
                 "txt": "qq",
-                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
+                href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
             },
             {
                 id:2,
                 src: "irisnet_riot.png",
                 "txt": "riot",
-                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+                href: "https://riot.im/app/#/room/#iris:matrix.org"
             },
         ],
         productList: [
