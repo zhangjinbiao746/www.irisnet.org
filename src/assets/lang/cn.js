@@ -93,7 +93,8 @@ export const message = {
     },
     footer:{
         socialCommunityTitle: '社区',
-        TechCommunityTitle: '技术社区',
+        validatorCommunityTitle:'验证人社区',
+        TechCommunityTitle: '开发者社区',
         socialCommunity:[
             {
                 id:0,
@@ -125,10 +126,17 @@ export const message = {
                 src: "irisnet_weibo.png",
                 href: "https://weibo.com/u/6455513027"
             },
+        ],
+        validatorCommunity:[
             {
-                id:6,
+                id:0,
+                src: "irisnet_qq.png",
+                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
+            },
+            {
+                id:1,
                 src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/#iris:matrix.org"
+                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
             },
         ],
         techCommunity:[
@@ -139,13 +147,13 @@ export const message = {
             },
             {
                 id:1,
-                src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+                src: "irisnet_qq.png",
+                href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
             },
             {
                 id:2,
-                src: "irisnet_qq.png",
-                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/#iris:matrix.org"
             },
         ],
         productList: [
