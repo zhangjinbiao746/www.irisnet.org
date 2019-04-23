@@ -38,86 +38,40 @@
   .testnet_link_content{
     max-width: 12rem;
     margin: 0 auto;
-    padding: 0.77rem 0;
+    padding: 0.77rem 0.2rem;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     .faq_content{
+      width: 100%;
       display: flex;
-      .fqa_block{
-        display: flex;
-        min-width: 3rem;
-        background: #fff;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.3rem 0.22rem;
-        margin-right: 0.15rem;
-        box-shadow:0 0.04rem 0.2rem 0 rgba(0,0,0,0.08);
-        .faq_title{
-          font-size: 0.14rem;
-          color: #323C5A;
-          font-family: 'Arial Bold';
-        }
-        .faq_img{
-          display: inline-block;
-          width: 0.3rem;
-          height: 0.3rem;
-          img{
-            width: 100%;
-          }
-        }
-      }
-      a:last-child{
+      a{
+        flex: 1;
         .fqa_block{
-          margin-right: 0;
-        }
-      }
-    }
-    .explorer_rainbow_link_content{
-      display: flex;
-      margin-top: 0.15rem;
-      .explorer_content{
-        display: flex;
-        min-width: 3rem;
-        background: #fff;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.3rem 0.22rem;
-        margin-right: 0.15rem;
-        box-shadow:0 0.04rem 0.2rem 0 rgba(0,0,0,0.08);
-        .explorer_title{
-          font-size: 0.14rem;
-          color: #323C5A;
-          font-family: 'Arial Bold';
-        }
-        .explorer_img{
-          display: inline-block;
-          width: 0.3rem;
-          height: 0.3rem;
-          img{
-            width: 100%;
+          flex: 1;
+          display: flex;
+          background: #fff;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.3rem 0.22rem;
+          margin-right: 0.15rem;
+          .faq_title{
+            font-size: 0.14rem;
+            color: #323C5A;
+            font-family: 'Arial Bold';
+          }
+          .faq_img{
+            display: inline-block;
+            width: 0.3rem;
+            height: 0.3rem;
+            img{
+              width: 100%;
+            }
           }
         }
-      }
-      .rainbow_content{
-        display: flex;
-        min-width: 3rem;
-        background: #F9FAFC;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.3rem 0.22rem;
-        box-shadow:0 0.04rem 0.2rem 0 rgba(0,0,0,0.08);
-        .rainbow_title{
-          font-size: 0.14rem;
-          color: #323C5A;
-          font-family: 'Arial Bold';
-        }
-        .rainbow_img{
-          display: inline-block;
-          width: 0.3rem;
-          height: 0.3rem;
-          img{
-            width: 100%;
+        a:last-child{
+          .fqa_block{
+            margin-right: 0;
           }
         }
       }
@@ -154,6 +108,7 @@
         a{
           width: 45%;
           .rainbow_content{
+            box-shadow:none !important;
             min-width: auto;
             padding: 0.2rem;
           }
