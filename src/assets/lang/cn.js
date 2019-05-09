@@ -292,7 +292,6 @@ export const message = {
                     {id:3, path: 'logos/irisnet_GBIC.png', url: 'https://gbic.io/'},
                     {id:4, path: 'logos/irisnet_8decim.png', url: 'javascript:void(0)'},
                     {id:5, path: 'logos/irisnet_bihu.png', url: 'https://bihu.com/'},// 1
-                    {id:6, path: 'logos/irisnet_ba.png', url: 'javascript:void(0)'},
                     {id:7, path: 'logos/irisnet_BKfund.png', url: 'javascript:void(0)'},
                     {id:8, path: 'logos/irisnet_byz.png', url: 'javascript:void(0)'},
                     {id:9, path: 'logos/irisnet_ChainPE.png', url: 'http://www.chainpe.com/'},
