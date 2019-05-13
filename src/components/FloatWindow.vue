@@ -27,9 +27,10 @@
             height: 0.9rem;
             border-radius: 0.45rem;
             background:linear-gradient(145deg,rgba(122,65,255,1) 0%,rgba(101,39,222,1) 100%);
-            box-shadow:0px 2px 12px 0px rgba(11,8,36,0.12);
+            box-shadow:0 0.02rem 0.2rem 0 rgba(3,0,35,0.25);
             &:hover{
                 background:linear-gradient(145deg,rgba(144,97,255,1) 0%,rgba(119,52,250,1) 100%);
+                box-shadow:0 0.02rem 0.2rem 0 rgba(3,0,35,0.25);
             }
             a{
                 width: 100%;
