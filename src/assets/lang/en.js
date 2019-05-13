@@ -1,6 +1,8 @@
 export const message = {
     logo:'irisnet.png',
-    
+    floatWindow:{
+        title:'FORUM',
+    },
     header:{
         left:[
             {
@@ -34,6 +36,12 @@ export const message = {
             },
             {
                 id:2,
+                title:'Forum',
+                href:'https://forum.irisnet.org/',
+                active: false,
+            },
+            {
+                id:3,
                 title:'Blog',
                 href:'https://medium.com/irisnet-blog',
                 active: false,
@@ -86,6 +94,12 @@ export const message = {
             },
             {
                 id:1,
+                title:'Forum',
+                href: "https://forum.irisnet.org/",
+                activeIndex: '',
+            },
+            {
+                id:2,
                 title:'Blog',
                 href: "https://medium.com/irisnet-blog",
                 activeIndex: '',
