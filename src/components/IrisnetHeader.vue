@@ -16,10 +16,10 @@
                                     <a :href="item.href" target="_blank" :target="item.href.indexOf('ttp')!== -1 ? '_blank' : ''" @click="toMainnet(item.href)">
                                         {{item.title}}
                                     </a>
-                                    <span v-show="index === 2" class="blog_img_content">
+                                    <span v-show="index === 3" class="blog_img_content">
                                     <img src="../assets/medium_white.png">
                                 </span>
-                                    <span v-if="index === 3" class="lang_img_content">
+                                    <span v-if="index === 4" class="lang_img_content">
                                     <img src="../../public/down.png">
                                 </span>
                                 </div>
@@ -66,7 +66,6 @@
                 <li class="nav_link_content" v-for="item in $store.state.messages.header.mobileLinkHrefNavigation">
                     <a :href="item.href" :target="item.href.indexOf('ttp')!== -1 ? '_blank' : ''" >{{item.title}}</a>
                 </li>
-
             </ul>
         </div>
     </div>
