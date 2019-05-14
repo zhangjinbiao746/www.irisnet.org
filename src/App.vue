@@ -4,6 +4,7 @@
         <IrisnetHeader></IrisnetHeader>
         <router-view/>
         <IrisnetFooter></IrisnetFooter>
+        <float-window></float-window>
     </div>
 </template>
 
@@ -11,9 +12,10 @@
     import IrisnetHeader from "./components/IrisnetHeader";
     import IrisnetFooter from "./components/IrisnetFooter";
     import IrisnetMask from "./components/IirsnetMask";
+    import FloatWindow from "./components/FloatWindow";
     export default {
         name: 'app',
-        components: {IrisnetMask, IrisnetFooter, IrisnetHeader},
+        components: {FloatWindow, IrisnetMask, IrisnetFooter, IrisnetHeader},
         data(){
             return{
             }
