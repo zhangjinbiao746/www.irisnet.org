@@ -213,7 +213,7 @@ export const message = {
             },
             {
                 id: 3,
-                name:'Brand Assets',
+                name:'Press Kit',
                 href:'/community/press-kit'
             }
         ],
@@ -360,25 +360,31 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
-                date:'Feb 1, 2019',
-                title:'Betanet Work Plan ',
-                content:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.'
+                href:'https://forum.irisnet.org/t/parameter-changes-raising-the-difficulty-level-a-little-bit-for-validators/127',
+                date:'May 30, 2019',
+                title:'Parameter Changes - Raising the difficulty level a little bit for Validators',
+                content:'Now that the mainnet has been running for three months, it’s time to raise the bar a little bit!'
             },
             {
                 id:'1',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md',
-                date:'Jan 16, 2019',
-                title:'Expectations for IRIS Betanet',
-                content:'Expectations for IRIS Betanet\n' +
-                'To better prepare the community for participating in IRIS Betanet, we would like to communicate the expectations for this network:'
+                href:'https://forum.irisnet.org/t/iris-foundation-calling-for-validator-self-introduction/50/2',
+                date:'May 14, 2019',
+                title:'Topic IRIS Foundation Calling for Validator Self-Introduction',
+                content:'the IRIS Foundation is now collecting self-introduction materials from validators, lasting for one month.'
             },
             {
                 id:'2',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md',
-                date:'Jan 16, 2019',
-                title:'IRIS Foundation Announces Plan for Betanet',
-                content:'The IRIS Foundation is excited to be announcing the launch of IRIS Betanet, which will happen in the middle of Feb 2019, right after Chinese New Year. 2019 is the Year of the Pig which represents carefree fun, good fortune and wealth.'
+                href:'https://medium.com/tendermint/irisnet-tendermint-inc-join-forces-to-accelerate-open-source-blockchain-development-71d5cf1dd4f7',
+                date:'May 13, 2019',
+                title:'IRISnet & Tendermint Inc Join Forces to Accelerate Open-Source Blockchain Development',
+                content:'IRISnet & Tendermint Inc Join Forces to Accelerate Open-Source Blockchain Development'
+            },
+            {
+                id:'3',
+                href:'https://forum.irisnet.org/t/how-does-iris-foundation-select-validators-to-delegate/39',
+                date:'May 12, 2019',
+                title:'How does IRIS Foundation select validators to delegate',
+                content:'we make the following public statement on the criteria for the foundation to select validators:'
             },
         ]
     },

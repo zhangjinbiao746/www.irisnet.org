@@ -209,7 +209,7 @@ export const message = {
             },
             {
                 id:3,
-                name:'Brand Assets',
+                name:'Press Kit',
                 href:'/community/press-kit'
             }
         ],
@@ -355,24 +355,31 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
-                date:'2019年2月1日',
-                title:'Betanet Work Plan',
-                content:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.'
+                href:'https://forum.irisnet.org/t/topic/126',
+                date:'2019年5月30日',
+                title:'参数修改提议– 稍微增加验证人难度',
+                content:'IRISnet主网已经运行了3个月，现在是时候提高点儿难度了！'
             },
             {
                 id:'1',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md',
-                date:'2019年1月16日',
-                title:'对IRIS Betanet的期望',
-                content:'为了帮助社区更好的参与IRIS Betanet，特此向社区沟通明确Betanet的一些期望：'
+                href:'https://forum.irisnet.org/t/iris-foundation/49',
+                date:'2019年5月14日',
+                title:'IRIS Foundation 征集验证人自我介绍材料',
+                content:'IRIS基金会从现在开始征集验证人自我介绍材料，时间持续一个月'
             },
             {
                 id:'2',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md',
-                date:'2019年1月16日',
-                title:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
-                content:'新年伊始，IRIS基金会高兴地宣布，IRIS Betanet即将于2019年春节后（2月中旬）上线！'
+                href:'https://forum.irisnet.org/t/irisnet-tendermint/44',
+                date:'2019年5月13日',
+                title:'IRISnet & Tendermint携手加速开源区块链技术发展',
+                content:'Cosmos 核心开发团队Tendermint 宣布IRISnet 为首要生态合作伙伴。'
+            },
+            {
+                id:'3',
+                href:'https://forum.irisnet.org/t/iris-foundation/37',
+                date:'2019年5月12日',
+                title:'IRIS Foundation 节点委托标准的说明',
+                content:'基金会选择验证人节点的标准做出如下公开说明：'
             },
            
         ]
