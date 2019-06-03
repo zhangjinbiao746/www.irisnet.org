@@ -214,7 +214,7 @@ export const message = {
             {
                 id: 3,
                 name:'Brand Assets',
-                href:'../../public/irisnet/resources/brandAssets.zip'
+                href:'/community/press-kit'
             }
         ],
         productsTitle:'Products',
@@ -434,6 +434,146 @@ export const message = {
         successText: 'Thank you for your interest in and subscription to our project infomation. Please check your email box and click the button to confirm the subscription and to start receiving our newsletters and other latest updates.',
         failedText: 'Maybe you are already subscribed? If not then please try again or contact us via email contact@irisnet.org.',
         confirm: 'Confirm'
+    },
+    communityPage:{
+        pressKitContent:{
+            title: 'Press Kit',
+            downloadTitle: 'Download our press kit with all logo assets you might need',
+            downloadBtn: 'Download',
+            downloadHref:'presskit/IRISnetBrandAssets.zip'
+        },
+        ColorsContent:{
+            title: 'Colors',
+            colors:[
+                {
+                    color: '#009DDE'
+                },
+                {
+                    color: '#694D9F'
+                },
+                {
+                    color: '#ED3554'
+                },
+                {
+                    color: '#2E3148'
+                }
+            ]
+        },
+        logoSizeContent:{
+            title: 'Logo',
+            sizes:[
+                {
+                    id : 0,
+                    size: '1000*1000px'
+                },
+                {
+                    id : 1,
+                    size: '400*400px'
+                },
+                {
+                    id : 2,
+                    size: '250*250px'
+                },
+                {
+                    id : 3,
+                    size: '200*200px'
+                },
+                {
+                    id : 4,
+                    size: '100*100px'
+                },
+                {
+                    id : 5,
+                    size: ''
+                },
+            ]
+        },
+        Standard:{
+            title: 'Standard',
+            StandardList:[
+                {
+                    id: 0,
+                    imgUrl: 'presskit/irisnet_logo_black.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal-black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 1,
+                    imgUrl: 'presskit/irisnet_logo_white.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 2,
+                    imgUrl: 'presskit/irisnet_logo_black_pure.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal Capital black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal Capital black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 3,
+                    imgUrl: 'presskit/irisnet_logo_white_pure.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal Capital-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal Capital-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 4,
+                    imgUrl: 'presskit/irisnet_logo_column_black.png',
+                    pngUrl: 'presskit/IRISnetlogo Vertical-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetlogo Vertical-black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 5,
+                    imgUrl: 'presskit/irisnet_logo_column_white.png',
+                    pngUrl: 'presskit/IRISnetlogo Vertical-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetlogo Vertical-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 6,
+                    imgUrl: 'presskit/iris_logo_black.png',
+                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 7,
+                    imgUrl: 'presskit/iris_logo_white.png',
+                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-white.svg',
+                    svgTitle: 'svg'
+                },
+            ]
+        },
+        aboutIrisnet:{
+            title: 'About IRISnet',
+            content: [
+                {
+                    id: 0,
+                    item:'IRISnet: Interchain Service Hub for NextGen Distributed Applications -- A BPoS Blockchain that is Self-evolutionary.'
+                },
+                {
+                    id: 1,
+                    item:'IRIS Network (a.k.a. IRISnet) is designed to be the foundation for next generation distributed business applications.  It is a BPoS blockchain, built with  Cosmos-SDK, that enables cross-chain interoperability through a unified service model.  IRISnet is also a regional Cosmos hub that is supported by Interchain Foundation (https://cosmos.network/about).'
+                },
+                {
+                    id: 2,
+                    item:'IRISnet\'s lead developers are Bianjie (www.bianjie.ai) , a national award-winning blockchain technology team based in Shanghai, and Tendermint, the world famous team that created the Tendermint consensus engine and the Cosmos project.'
+                }
+            ]
+        }
     },
     "white":'public/whiteDw.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md",
