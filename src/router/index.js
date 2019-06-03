@@ -17,7 +17,8 @@ import MainNet from "../components/MainNet";
 import MainNetApp from "../components/MainNetApp";
 import NewManinet from '../components/NewMainnet';
 import NewTestnet from '../components/NewTestnet';
-import Home from "../components/Home"
+import Home from "../components/Home";
+import Community from "../components/Community.vue"
 Vue.use(Router)
 
 export function createRouter() {
@@ -70,6 +71,10 @@ export function createRouter() {
             {
                 path: '/mainnet',
                 component: NewManinet
+            },
+            {
+                path: '/community/press-kit',
+                component: Community
             },
             {
                 path: '/mainnet/app',

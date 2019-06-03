@@ -210,7 +210,7 @@ export const message = {
             {
                 id:3,
                 name:'Brand Assets',
-                href:'../../public/irisnet/resources/brandAssets.zip'
+                href:'/community/press-kit'
             }
         ],
         productsTitle:'产品',
@@ -432,6 +432,146 @@ export const message = {
         '\n' +
         '如果没有，请再试一次或通过电子邮件contact@irisnet.org联系我们。',
         confirm: '确认'
+    },
+    communityPage:{
+        pressKitContent:{
+            title: '品牌资料',
+            downloadTitle: '获取IRISnet的标志等您可能需要的品',
+            downloadBtn: '立即下载',
+            downloadHref:'presskit/IRISnetBrandAssets.zip'
+        },
+        ColorsContent:{
+            title: '标志用色',
+            colors:[
+                {
+                    color: '#009DDE'
+                },
+                {
+                    color: '#694D9F'
+                },
+                {
+                    color: '#ED3554'
+                },
+                {
+                    color: '#2E3148'
+                }
+            ]
+        },
+        logoSizeContent:{
+            title: '标志',
+            sizes:[
+                {
+                    id : 0,
+                    size: '1000*1000px'
+                },
+                {
+                    id : 1,
+                    size: '400*400px'
+                },
+                {
+                    id : 2,
+                    size: '250*250px'
+                },
+                {
+                    id : 3,
+                    size: '200*200px'
+                },
+                {
+                    id : 4,
+                    size: '100*100px'
+                },
+                {
+                    id : 5,
+                    size: ''
+                },
+            ]
+        },
+        Standard:{
+            title: '使用标准',
+            StandardList:[
+                {
+                    id: 0,
+                    imgUrl: 'presskit/irisnet_logo_black.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal-black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 1,
+                    imgUrl: 'presskit/irisnet_logo_white.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 2,
+                    imgUrl: 'presskit/irisnet_logo_black_pure.png',
+                    pngUrl: 'presskit/IRISnet_rebrand_white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnet_rebrand_white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 3,
+                    imgUrl: 'presskit/irisnet_logo_white_pure.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal Capital-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal Capital-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 4,
+                    imgUrl: 'presskit/irisnet_logo_column_black.png',
+                    pngUrl: 'presskit/IRISnetlogo Vertical-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetlogo Vertical-black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 5,
+                    imgUrl: 'presskit/irisnet_logo_column_white.png',
+                    pngUrl: 'presskit/IRISnetlogo Vertical-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetlogo Vertical-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 6,
+                    imgUrl: 'presskit/iris_logo_black.png',
+                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 7,
+                    imgUrl: 'presskit/iris_logo_white.png',
+                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-white.svg',
+                    svgTitle: 'svg'
+                },
+            ]
+        },
+        aboutIrisnet:{
+            title: '关于IRIsnet',
+            content: [
+                {
+                    id: 0,
+                    item:'IRISnet:可以自进化的BPoS跨链服务枢纽——下一代分布式商业应用的基础设施'
+                },
+                {
+                    id: 1,
+                    item:'就像在人间和天堂之间忠实传递信息的希腊彩虹女神Iris，IRISnet的目标是成为链接数字经济和实体经济的可信“桥梁”，为构建复杂的分布式商业应用提供新一代公链基础设施。边界智能和Tendermint团队合作开发的IRISnet将支持公链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。'
+                },
+                {
+                    id: 2,
+                    item:'IRISnet 是Cosmos 生态中除Cosmos Hub 外的另外一个Hub, 由边界智能（ Bianjie）和Tendermint团队合作开发，目标是成为链接数字经济和实体经济的可信“桥梁”，为构建复杂的分布式商业应用提供新一代公链基础设施提供面向服务的基础设施。IRISnet支持公链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。IRISnet 第一次实现了对BPoS 网络的自进化（通过在线治理实现网络升级）支持。'
+                }
+            ]
+        }
     },
     "white":'public/whiteDwCn.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/白皮书.md",
