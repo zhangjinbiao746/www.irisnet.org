@@ -350,7 +350,7 @@ export const message = {
         betaTitle:'IRISnet的公开地址',
         betaContent:'IRIS基金会和开发团队的地址',
         readMore:'Read more',
-        readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
+        readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address_cn.md',
         betaDate:'2019年3月2日',
         announcementList:[
             {
