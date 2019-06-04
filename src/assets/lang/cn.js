@@ -445,7 +445,7 @@ export const message = {
             title: '品牌资料',
             downloadTitle: '获取IRISnet的标志等您可能需要的品',
             downloadBtn: '资源目录',
-            downloadHref:'presskit/IRISnetBrandAssets.zip'
+            downloadHref:'https://www.irisnet.org/resources/'
         },
         ColorsContent:{
             title: '标志用色',

@@ -5,7 +5,7 @@
                 <h5 class="community_press_kit_title">{{$store.state.messages.communityPage.pressKitContent.title}}</h5>
                 <p class="community_press_kit_download_title">{{$store.state.messages.communityPage.pressKitContent.downloadTitle}}</p>
                 <p class="community_press_kit_download_btn">
-                    <a :href="UrlSrc+$store.state.messages.communityPage.pressKitContent.downloadHref" class="community_download_content" :download="UrlSrc+$store.state.messages.communityPage.pressKitContent.downloadHref">
+                    <a :href="$store.state.messages.communityPage.pressKitContent.downloadHref" target="_blank" class="community_download_content">
                         {{$store.state.messages.communityPage.pressKitContent.downloadBtn}}
                     </a>
                 </p>
