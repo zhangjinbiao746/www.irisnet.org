@@ -365,7 +365,7 @@ export const message = {
                 href:'https://forum.irisnet.org/t/iris-foundation/49',
                 date:'2019年5月14日',
                 title:'IRIS Foundation 征集验证人自我介绍材料',
-                content:'IRIS基金会从现在开始征集验证人自我介绍材料，时间持续一个月'
+                content:'IRIS基金会从现在开始征集验证人自我介绍材料，时间持续一个月。'
             },
             {
                 id:'2',
@@ -379,7 +379,7 @@ export const message = {
                 href:'https://forum.irisnet.org/t/iris-foundation/37',
                 date:'2019年5月12日',
                 title:'IRIS Foundation 节点委托标准的说明',
-                content:'基金会选择验证人节点的标准做出如下公开说明：'
+                content:'基金会选择验证人节点的标准做出了公开说明。'
             },
            
         ]
@@ -443,7 +443,7 @@ export const message = {
     communityPage:{
         pressKitContent:{
             title: '品牌资料',
-            downloadTitle: '获取IRISnet的标志等您可能需要的品',
+            downloadTitle: '获取您可能需要的所有品牌资源和标志',
             downloadBtn: '资源目录',
             downloadHref:'https://www.irisnet.org/resources/'
         },
