@@ -445,7 +445,7 @@ export const message = {
         pressKitContent:{
             title: 'Press Kit',
             downloadTitle: 'Download our press kit with all logo assets you might need',
-            downloadBtn: 'Download',
+            downloadBtn: 'Resources',
             downloadHref:'presskit/IRISnetBrandAssets.zip'
         },
         ColorsContent:{

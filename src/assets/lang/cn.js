@@ -444,7 +444,7 @@ export const message = {
         pressKitContent:{
             title: '品牌资料',
             downloadTitle: '获取IRISnet的标志等您可能需要的品',
-            downloadBtn: '立即下载',
+            downloadBtn: '资源目录',
             downloadHref:'presskit/IRISnetBrandAssets.zip'
         },
         ColorsContent:{
@@ -563,7 +563,7 @@ export const message = {
             ]
         },
         aboutIrisnet:{
-            title: '关于IRIsnet',
+            title: '关于IRISnet',
             content: [
                 {
                     id: 0,
