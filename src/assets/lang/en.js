@@ -342,7 +342,7 @@ export const message = {
     // "logo": 'irisnet.png',
     mainnet:{
         title: 'IRIS Network',
-        production: 'Interchain Service Hub for NextGen Distributed Applications – A BPoS Blockchain That Is Self Evolutionary',
+        production: 'Interchain Service Hub for NextGen Distributed Applications – A BPoS Blockchain That Is Self-evolutionary',
         wallet: 'Rainbow Wallet',
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS Explorer',
@@ -369,7 +369,7 @@ export const message = {
                 id:'1',
                 href:'https://forum.irisnet.org/t/iris-foundation-calling-for-validator-self-introduction/50',
                 date:'May 14, 2019',
-                title:'IRIS Foundation Calling For Validator Self-Introduction',
+                title:'IRIS Foundation Calling for Validator Self-introduction',
                 content:'The IRIS Foundation is now collecting self-introduction materials from validators, lasting for one month.'
             },
             {
@@ -391,7 +391,7 @@ export const message = {
     testnet:{
         title:'FUXI Testnet',
         production: 'The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers).',
-        testnetLink:'Ues FUXI Testnet'
+        testnetLink:'Use FUXI Testnet'
     },
     community:{
         title: 'Join Tech Community',
@@ -465,37 +465,8 @@ export const message = {
                 }
             ]
         },
-        logoSizeContent:{
-            title: 'Logo',
-            sizes:[
-                {
-                    id : 0,
-                    size: '1000*1000px'
-                },
-                {
-                    id : 1,
-                    size: '400*400px'
-                },
-                {
-                    id : 2,
-                    size: '250*250px'
-                },
-                {
-                    id : 3,
-                    size: '200*200px'
-                },
-                {
-                    id : 4,
-                    size: '100*100px'
-                },
-                {
-                    id : 5,
-                    size: ''
-                },
-            ]
-        },
         Standard:{
-            title: 'Standard',
+            title: 'Logo',
             StandardList:[
                 {
                     id: 0,

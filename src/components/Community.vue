@@ -26,20 +26,6 @@
                 </div>
             </div>
         </div>
-        <div class="community_logo_content_wrap">
-            <div class="community_logo_content">
-                <div class="community_logo_title_content">
-                    <span class="community_logo_title">{{$store.state.messages.communityPage.logoSizeContent.title}}</span>
-                </div>
-                <div class="community_logo_list_content_wrap">
-                    <ul class="community_logo_list_content">
-                        <li class="community_logo_list_item" v-for="item in $store.state.messages.communityPage.logoSizeContent.sizes">
-                            {{item.size}}
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
         <div class="community_standard_content_wrap">
             <div class="community_standard_content">
                 <div class="community_standard_title_content">
