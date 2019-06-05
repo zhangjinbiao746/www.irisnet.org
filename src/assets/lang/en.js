@@ -213,8 +213,8 @@ export const message = {
             },
             {
                 id: 3,
-                name:'Brand Assets',
-                href:'../../public/irisnet/resources/brandAssets.zip'
+                name:'Press Kit',
+                href:'/community/press-kit'
             }
         ],
         productsTitle:'Products',
@@ -342,7 +342,7 @@ export const message = {
     // "logo": 'irisnet.png',
     mainnet:{
         title: 'IRIS Network',
-        production: 'Interchain Service Hub for NextGen Distributed Applications – A BPoS Blockchain That Is Self Evolutionary',
+        production: 'Interchain Service Hub for NextGen Distributed Applications – A BPoS Blockchain That Is Self-evolutionary',
         wallet: 'Rainbow Wallet',
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS Explorer',
@@ -360,32 +360,38 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
-                date:'Feb 1, 2019',
-                title:'Betanet Work Plan ',
-                content:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.'
+                href:'https://forum.irisnet.org/t/parameter-changes-raising-the-difficulty-level-a-little-bit-for-validators/127',
+                date:'May 30, 2019',
+                title:'Parameter Changes - Raising The Difficulty Level A Little Bit For Validators',
+                content:'Now that the mainnet has been running for three months, it’s time to raise the bar a little bit!'
             },
             {
                 id:'1',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md',
-                date:'Jan 16, 2019',
-                title:'Expectations for IRIS Betanet',
-                content:'Expectations for IRIS Betanet\n' +
-                'To better prepare the community for participating in IRIS Betanet, we would like to communicate the expectations for this network:'
+                href:'https://forum.irisnet.org/t/iris-foundation-calling-for-validator-self-introduction/50',
+                date:'May 14, 2019',
+                title:'IRIS Foundation Calling for Validator Self-introduction',
+                content:'The IRIS Foundation is now collecting self-introduction materials from validators, lasting for one month.'
             },
             {
                 id:'2',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md',
-                date:'Jan 16, 2019',
-                title:'IRIS Foundation Announces Plan for Betanet',
-                content:'The IRIS Foundation is excited to be announcing the launch of IRIS Betanet, which will happen in the middle of Feb 2019, right after Chinese New Year. 2019 is the Year of the Pig which represents carefree fun, good fortune and wealth.'
+                href:'https://medium.com/tendermint/irisnet-tendermint-inc-join-forces-to-accelerate-open-source-blockchain-development-71d5cf1dd4f7',
+                date:'May 13, 2019',
+                title:'IRISnet & Tendermint Inc Join Forces To Accelerate Open-Source Blockchain Development',
+                content:'IRISnet & Tendermint Inc Join Forces to Accelerate Open-Source Blockchain Development.'
+            },
+            {
+                id:'3',
+                href:'https://forum.irisnet.org/t/how-does-iris-foundation-select-validators-to-delegate/39',
+                date:'May 12, 2019',
+                title:'How Does IRIS Foundation Select Validators To Delegate',
+                content:'We have made the public statement on the criteria for the foundation to select validators.'
             },
         ]
     },
     testnet:{
         title:'FUXI Testnet',
         production: 'The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers).',
-        testnetLink:'Ues FUXI Testnet'
+        testnetLink:'Use FUXI Testnet'
     },
     community:{
         title: 'Join Tech Community',
@@ -434,6 +440,117 @@ export const message = {
         successText: 'Thank you for your interest in and subscription to our project infomation. Please check your email box and click the button to confirm the subscription and to start receiving our newsletters and other latest updates.',
         failedText: 'Maybe you are already subscribed? If not then please try again or contact us via email contact@irisnet.org.',
         confirm: 'Confirm'
+    },
+    communityPage:{
+        pressKitContent:{
+            title: 'Press Kit',
+            downloadTitle: 'Get our press kit with all logo assets you might need',
+            downloadBtn: 'Resources',
+            downloadHref:'https://www.irisnet.org/resources/'
+        },
+        ColorsContent:{
+            title: 'Colors',
+            colors:[
+                {
+                    color: '#009DDE'
+                },
+                {
+                    color: '#694D9F'
+                },
+                {
+                    color: '#ED3554'
+                },
+                {
+                    color: '#2E3148'
+                }
+            ]
+        },
+        Standard:{
+            title: 'Logo',
+            StandardList:[
+                {
+                    id: 0,
+                    imgUrl: 'presskit/irisnet_logo_black.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal-black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 1,
+                    imgUrl: 'presskit/irisnet_logo_white.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 2,
+                    imgUrl: 'presskit/irisnet_logo_black_pure.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal Capital black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal Capital black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 3,
+                    imgUrl: 'presskit/irisnet_logo_white_pure.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal Capital-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal Capital-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 4,
+                    imgUrl: 'presskit/irisnet_logo_column_black.png',
+                    pngUrl: 'presskit/IRISnetlogo Vertical-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetlogo Vertical-black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 5,
+                    imgUrl: 'presskit/irisnet_logo_column_white.png',
+                    pngUrl: 'presskit/IRISnetlogo Vertical-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetlogo Vertical-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 6,
+                    imgUrl: 'presskit/iris_logo_black.png',
+                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 7,
+                    imgUrl: 'presskit/iris_logo_white.png',
+                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-white.svg',
+                    svgTitle: 'svg'
+                },
+            ]
+        },
+        aboutIrisnet:{
+            title: 'About IRISnet',
+            content: [
+                {
+                    id: 0,
+                    item:'IRISnet: Interchain Service Hub for NextGen Distributed Applications -- A BPoS Blockchain that is Self-evolutionary.'
+                },
+                {
+                    id: 1,
+                    item:'IRIS Network (a.k.a. IRISnet) is designed to be the foundation for next generation distributed business applications.  It is a BPoS blockchain, built with  Cosmos-SDK, that enables cross-chain interoperability through a unified service model.  IRISnet is also a regional Cosmos hub that is supported by Interchain Foundation (https://cosmos.network/about).'
+                },
+                {
+                    id: 2,
+                    item:'IRISnet\'s lead developers are Bianjie (www.bianjie.ai) , a national award-winning blockchain technology team based in Shanghai, and Tendermint, the world famous team that created the Tendermint consensus engine and the Cosmos project.'
+                }
+            ]
+        }
     },
     "white":'public/whiteDw.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md",

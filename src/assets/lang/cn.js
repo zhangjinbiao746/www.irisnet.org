@@ -209,8 +209,8 @@ export const message = {
             },
             {
                 id:3,
-                name:'Brand Assets',
-                href:'../../public/irisnet/resources/brandAssets.zip'
+                name:'Press Kit',
+                href:'/community/press-kit'
             }
         ],
         productsTitle:'产品',
@@ -350,29 +350,36 @@ export const message = {
         betaTitle:'IRISnet的公开地址',
         betaContent:'IRIS基金会和开发团队的地址',
         readMore:'Read more',
-        readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
+        readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address_cn.md',
         betaDate:'2019年3月2日',
         announcementList:[
             {
                 id:'0',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
-                date:'2019年2月1日',
-                title:'Betanet Work Plan',
-                content:'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.'
+                href:'https://forum.irisnet.org/t/topic/126',
+                date:'2019年5月30日',
+                title:'参数修改提议– 稍微增加验证人难度',
+                content:'IRISnet主网已经运行了3个月，现在是时候提高点儿难度了！'
             },
             {
                 id:'1',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md',
-                date:'2019年1月16日',
-                title:'对IRIS Betanet的期望',
-                content:'为了帮助社区更好的参与IRIS Betanet，特此向社区沟通明确Betanet的一些期望：'
+                href:'https://forum.irisnet.org/t/iris-foundation/49',
+                date:'2019年5月14日',
+                title:'IRIS Foundation 征集验证人自我介绍材料',
+                content:'IRIS基金会从现在开始征集验证人自我介绍材料，时间持续一个月。'
             },
             {
                 id:'2',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md',
-                date:'2019年1月16日',
-                title:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
-                content:'新年伊始，IRIS基金会高兴地宣布，IRIS Betanet即将于2019年春节后（2月中旬）上线！'
+                href:'https://forum.irisnet.org/t/irisnet-tendermint/44',
+                date:'2019年5月13日',
+                title:'IRISnet & Tendermint携手加速开源区块链技术发展',
+                content:'Cosmos 核心开发团队Tendermint 宣布IRISnet 为首要生态合作伙伴。'
+            },
+            {
+                id:'3',
+                href:'https://forum.irisnet.org/t/iris-foundation/37',
+                date:'2019年5月12日',
+                title:'IRIS Foundation 节点委托标准的说明',
+                content:'基金会选择验证人节点的标准做出了公开说明。'
             },
            
         ]
@@ -432,6 +439,117 @@ export const message = {
         '\n' +
         '如果没有，请再试一次或通过电子邮件contact@irisnet.org联系我们。',
         confirm: '确认'
+    },
+    communityPage:{
+        pressKitContent:{
+            title: '品牌资料',
+            downloadTitle: '获取您可能需要的所有品牌资源和标志',
+            downloadBtn: '资源目录',
+            downloadHref:'https://www.irisnet.org/resources/'
+        },
+        ColorsContent:{
+            title: '标志用色',
+            colors:[
+                {
+                    color: '#009DDE'
+                },
+                {
+                    color: '#694D9F'
+                },
+                {
+                    color: '#ED3554'
+                },
+                {
+                    color: '#2E3148'
+                }
+            ]
+        },
+        Standard:{
+            title: '标志',
+            StandardList:[
+                {
+                    id: 0,
+                    imgUrl: 'presskit/irisnet_logo_black.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal-black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 1,
+                    imgUrl: 'presskit/irisnet_logo_white.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 2,
+                    imgUrl: 'presskit/irisnet_logo_black_pure.png',
+                    pngUrl: 'presskit/IRISnet_rebrand_white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnet_rebrand_white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 3,
+                    imgUrl: 'presskit/irisnet_logo_white_pure.png',
+                    pngUrl: 'presskit/IRISNet rebrand Horizontal Capital-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISNet rebrand Horizontal Capital-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 4,
+                    imgUrl: 'presskit/irisnet_logo_column_black.png',
+                    pngUrl: 'presskit/IRISnetlogo Vertical-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetlogo Vertical-black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 5,
+                    imgUrl: 'presskit/irisnet_logo_column_white.png',
+                    pngUrl: 'presskit/IRISnetlogo Vertical-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetlogo Vertical-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 6,
+                    imgUrl: 'presskit/iris_logo_black.png',
+                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-black.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 7,
+                    imgUrl: 'presskit/iris_logo_white.png',
+                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-white.svg',
+                    svgTitle: 'svg'
+                },
+            ]
+        },
+        aboutIrisnet:{
+            title: '关于IRISnet',
+            content: [
+                {
+                    id: 0,
+                    item:'IRISnet:可以自进化的BPoS跨链服务枢纽——下一代分布式商业应用的基础设施'
+                },
+                {
+                    id: 1,
+                    item:'就像在人间和天堂之间忠实传递信息的希腊彩虹女神Iris，IRISnet的目标是成为链接数字经济和实体经济的可信“桥梁”，为构建复杂的分布式商业应用提供新一代公链基础设施。边界智能和Tendermint团队合作开发的IRISnet将支持公链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。'
+                },
+                {
+                    id: 2,
+                    item:'IRISnet 是Cosmos 生态中除Cosmos Hub 外的另外一个Hub, 由边界智能（ Bianjie）和Tendermint团队合作开发，目标是成为链接数字经济和实体经济的可信“桥梁”，为构建复杂的分布式商业应用提供新一代公链基础设施提供面向服务的基础设施。IRISnet支持公链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。IRISnet 第一次实现了对BPoS 网络的自进化（通过在线治理实现网络升级）支持。'
+                }
+            ]
+        }
     },
     "white":'public/whiteDwCn.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/白皮书.md",
