@@ -369,7 +369,7 @@ export const message = {
                 id:'1',
                 href:'https://forum.irisnet.org/t/iris-foundation-calling-for-validator-self-introduction/50',
                 date:'May 14, 2019',
-                title:'IRIS Foundation Calling for Validator Self-Introduction',
+                title:'IRIS Foundation Calling for Validator Self-introduction',
                 content:'The IRIS Foundation is now collecting self-introduction materials from validators, lasting for one month.'
             },
             {
