@@ -465,37 +465,8 @@ export const message = {
                 }
             ]
         },
-        logoSizeContent:{
-            title: 'Logo',
-            sizes:[
-                {
-                    id : 0,
-                    size: '1000*1000px'
-                },
-                {
-                    id : 1,
-                    size: '400*400px'
-                },
-                {
-                    id : 2,
-                    size: '250*250px'
-                },
-                {
-                    id : 3,
-                    size: '200*200px'
-                },
-                {
-                    id : 4,
-                    size: '100*100px'
-                },
-                {
-                    id : 5,
-                    size: ''
-                },
-            ]
-        },
         Standard:{
-            title: 'Standard',
+            title: 'Logo',
             StandardList:[
                 {
                     id: 0,
