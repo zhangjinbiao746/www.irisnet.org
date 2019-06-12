@@ -297,7 +297,9 @@ export const message = {
                 title: 'Ecosystem Partners',
                 logos: [
                     {id:0, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
-                    {id:1, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
+                    {id:1, path: 'logos/irisnet_axonomy.png', url: 'https://www.axonomy.pro'},
+                    {id:2, path: 'logos/irisnet_Gdex.png', url: 'https://www.gdex.io/'},
+                    {id:3, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
                 ]
             },
             Institutional: {

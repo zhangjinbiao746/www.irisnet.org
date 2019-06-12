@@ -290,12 +290,20 @@
           transform: translateY(-50%);
         }
       }
-      .HOUYI:nth-of-type(5) {
+      .HOUYI:nth-of-type(4) {
         div:nth-of-type(3) {
           color: rgba(255, 255, 255, 1);
         }
         .markIcon {
           background: #fff;
+        }
+      }
+      .HOUYI:nth-of-type(5) {
+        div:nth-of-type(3) {
+          color: rgba(255, 255, 255, 0.5);
+          &:hover{
+            color: rgba(255, 255, 255, 1);
+          }
         }
       }
     }
@@ -629,16 +637,23 @@
       }
       .HOUYI:nth-of-type(4) {
         top: 3.88rem;
-      }
-      .HOUYI:nth-of-type(5) {
-        top: auto;
-        bottom: 0;
         div:nth-of-type(3) {
           color: rgba(255, 255, 255, 1);
         }
         .markIcon {
           background: #fff;
         }
+      }
+      .HOUYI:nth-of-type(5) {
+        top: auto;
+        bottom: 0;
+        div:nth-of-type(3) {
+          color: rgba(255, 255, 255, 0.5);
+            &:hover {
+              color: rgba(255, 255, 255, 1);
+            }
+          }
+
       }
     }
   }
@@ -994,18 +1009,26 @@
       }
       .HOUYI:nth-of-type(4) {
         top: 3.95rem;
+        .markIcon {
+          background: #fff;
+        }
+        div:nth-of-type(3) {
+          color: rgba(255, 255, 255, 1);
+        }
       }
       .HOUYI:nth-of-type(5) {
         left: 0.73rem;
         top: 5.94rem;
         div:nth-of-type(3) {
-          color: rgba(255, 255, 255, 1);
+          color: rgba(255, 255, 255, 0.5);
+         &:hover{
+           color: rgba(255, 255, 255, 1);
+         }
         }
         .markIcon {
           left: -0.81rem;
           top: 50%;
           transform: translateY(-50%);
-          background: #fff;
         }
       }
     }

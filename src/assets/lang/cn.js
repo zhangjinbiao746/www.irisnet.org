@@ -286,14 +286,17 @@ export const message = {
                 title: '战略合作伙伴',
                 logos: [
                     {id:0, path: 'logos/irisnet_InTERCHAIN.png', url: 'https://cosmos.network/about'},
-                    {id:1, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'}
+                   
+                    {id:3, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'}
                 ]
             },
             EcosystemPartners: {
                 title: '生态合作伙伴',
                 logos: [
                     {id:0, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
-                    {id:1, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
+                    {id:1, path: 'logos/irisnet_axonomy.png', url: 'https://www.axonomy.pro'},
+                    {id:2, path: 'logos/irisnet_Gdex.png', url: 'https://www.gdex.io/'},
+                    {id:3, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
                 ]
             },
             Institutional: {
