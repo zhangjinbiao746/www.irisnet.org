@@ -554,6 +554,121 @@ export const message = {
             ]
         }
     },
+    cosmos:{
+        cn:{
+            header:{
+                title:'Bianjie',
+                commission:'佣金率',
+                product:'由IRISnet核心开发团队维护的验证人节点',
+                validatorAddress:'验证人地址',
+                address:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
+                toastHint:'复制成功',
+                bondedAtoms:'ATOM总数',
+                votingPower:'权重',
+                commissionRate:'佣金率',
+                uptime:'活跃度',
+                guide:'Cosmos Hub 钱包',
+                guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
+            },
+            about:{
+                title:'关于边界',
+                secondTitle:'IRISnet的核心开发者，Cosmos的开源社区贡献者',
+                irisnet:{
+                    title:'IRISnet 核心开发者',
+                    list:[
+                        {
+                            item:'在<a href="https://cosmos.network/about" target="_blank" style="color:rgba(77, 150, 223, 1)">Interchain Foundation (ICF)</a>的支持下构建IRISnet，这是一个用于构建分布式商业应用的Cosmos Hub'
+                        },
+                        {
+                            item:'<a href="https://www.irisnet.org/" target="_blank" style="color:rgba(77, 150, 223, 1)">IRISnet</a> - 自进化的BPoS区块链'
+                        },
+                    ]
+                },
+                cosmos:{
+                    title:'Cosmos的开源社区贡献者',
+                    list:[
+                        {
+                            item:'2019年3月14日成为Cosmos Hub主网创世验证人'
+                        },
+                        {
+                            item:'从Gaia-1000直至主网上线成功参与Cosmos全部测试网'
+                        },
+                        {
+                            item:'自2017年8月起为Cosmos中国社区提供专业的技术支持'
+                        }
+                    ]
+                }
+                
+            },
+            bianjie:{
+                title:'安全的边界，放心的委托',
+                product:[
+                    {
+                        src:require('../../assets/cosmos/service_room.png'),
+                        text:'安全可靠的企业级机房',
+                    },
+                    {
+                        src:require('../../assets/cosmos/net.png'),
+                        text:'高可用性网络',
+                    },
+                    {
+                        src:require('../../assets/cosmos/node.png'),
+                        text:'可扩展的哨兵节点',
+                    },
+                    {
+                        src:require('../../assets/cosmos/lock.png'),
+                        text:'硬件加密保证安全',
+                    },
+                    {
+                        src:require('../../assets/cosmos/hour.png'),
+                        text:'7*24小时专业监控',
+                    },
+                    {
+                        src:require('../../assets/cosmos/shield.png'),
+                        text:'商业DDos攻击防护',
+                    }
+                ]
+            },
+            cosmosExplorerTitle:'Cosmos Hub 浏览器',
+            cosmosExplorer:[
+                {
+                    active:false,
+                    whiteImg:require('../../assets/cosmos/big_dipper_white.png'),
+                    blueImg:require('../../assets/cosmos/big-dipper_blue.png'),
+                    title:'Big Dipper',
+                    href:'https://cosmos.bigdipper.live/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../../assets/cosmos/cosmos_white.png'),
+                    blueImg:require('../../assets/cosmos/cosmos_blue.png'),
+                    title:'Cosmos Overview',
+                    href:'https://cosmos-overview.genesislab.net/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../../assets/cosmos/hubble_white.png'),
+                    blueImg:require('../../assets/cosmos/hubble_blue.png'),
+                    title:'Hubble',
+                    href:'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../../assets/cosmos/Mintscan_white.png'),
+                    blueImg:require('../../assets/cosmos/Mintscan_blue.png'),
+                    title:'Mintscan',
+                    href:'https://www.mintscan.io/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../../assets/cosmos/Stargazer_white.png'),
+                    blueImg:require('../../assets/cosmos/Stargazer_blue.png'),
+                    title:'Stargazer',
+                    href:'https://stargazer.certus.one/accounts/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+                },
+            ]
+        }
+    },
     "white":'public/whiteDwCn.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/白皮书.md",
     "next": 'what_next.png',
