@@ -689,64 +689,6 @@ export const message = {
 
         ]
     },
-    "contact": {
-        "img": [
-            {
-                "src": "telegram-default.png",
-                "src_selected": "telegram.png",
-                "txt": "Telegram",
-                "href": "https://t.me/irisnetwork"
-            },
-            {
-                "src": "twitter-default.png",
-                "src_selected": "newtwitter.png",
-                "txt": "Twitter",
-                "href": "https://twitter.com/irisnetwork"
-            },
-
-            {
-                "src": "github-default.png",
-                "src_selected": "newgithub.png",
-                "txt": "GitHub",
-                "href": "https://github.com/irisnet"
-            },
-            {
-                "src": "email-default.png",
-                "src_selected": "email.png",
-                "txt": "Email",
-                "href": "mailto:contact@irisnet.org"
-            },
-            {
-                "src": "medium-default.png",
-                "src_selected": "newmedium.png",
-                "txt": "Medium",
-                "href": "https://medium.com/irisnet-blog"
-            },
-            {
-                "src": "riot-default.png",
-                "src_selected": "newriot.png",
-                "txt": "Riot",
-                "href": "https://riot.im/app/#/room/#iris:matrix.org"
-            },
-            {
-                "src": "wechat-default.png",
-                "src_selected": "newwechat.png",
-                "txt": "Wechat"
-            },
-            {
-                "src": "weibo-default.png",
-                "src_selected": "newweibo.png",
-                "txt": "Weibo",
-                "href": "https://weibo.com/u/6455513027"
-            },
-        ],
-        "title": "Contact"
-    },
-
-
-
-
-
     "collaboration": {
         "title": "Collaboration",
         "txt": [
