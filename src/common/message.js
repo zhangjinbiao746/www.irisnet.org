@@ -1912,7 +1912,7 @@ export default {
                 title:'About IRISnet-Bianjie',
                 secondTitle:'Core Developer of IRISnet, Open Source Contributor to Cosmos',
                 irisnet:{
-                    title:'IRISnet Core Developer',
+                    title:'Core Development Team of IRISnet',
                     list:[
                         {
                             item:'Supported by <a href="https://cosmos.network/about" target="_blank" style="color:rgba(77, 150, 223, 1)">Interchain Foundation (ICF)</a> to build IRISnet, a Cosmos Hub that facilitates construction of distributed business applications.'

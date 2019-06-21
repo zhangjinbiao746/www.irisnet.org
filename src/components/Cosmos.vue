@@ -163,7 +163,7 @@
                 headerProduct:'Maintained by the core development team of IRISnet',
                 headerValidatorAddress:'Validator Address',
                 headerCosmosAddress:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
-                aboutIrisnetTitle: 'IRISnet Core Developer',
+                aboutIrisnetTitle: 'Core Development Team of IRISnet',
                 aboutTitle:'About IRISnet-Bianjie',
                 aboutSecondTitle:'Open Source Contributor to Cosmos',
                 commission:'commission',
