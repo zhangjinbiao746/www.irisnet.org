@@ -1909,7 +1909,7 @@ export default {
                 guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
             },
             about:{
-                title:'About Bianjie',
+                title:'About IRISnet-Bianjie',
                 secondTitle:'Core Developer of IRISnet, Open Source Contributor to Cosmos',
                 irisnet:{
                     title:'IRISnet Core Developer',
@@ -2021,7 +2021,7 @@ export default {
                 guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
             },
             about:{
-                title:'关于边界',
+                title:'关于IRISnet-Bianjie',
                 secondTitle:'IRISnet的核心开发者，Cosmos的开源社区贡献者',
                 irisnet:{
                     title:'IRISnet 核心开发者',

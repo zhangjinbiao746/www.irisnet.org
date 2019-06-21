@@ -572,7 +572,7 @@ export const message = {
                 guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
             },
             about:{
-                title:'About Bianjie',
+                title:'About IRISnet-Bianjie',
                 secondTitle:'Core Developer of IRISnet, Open Source Contributor to Cosmos',
                 irisnet:{
                     title:'IRISnet Core Developer',

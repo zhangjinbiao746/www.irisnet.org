@@ -571,7 +571,7 @@ export const message = {
                 guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
             },
             about:{
-                title:'关于边界',
+                title:'关于IRISnet-Bianjie',
                 secondTitle:'IRISnet的核心开发者，Cosmos的开源社区贡献者',
                 irisnet:{
                     title:'IRISnet 核心开发者',
