@@ -43,6 +43,87 @@ app.route('/')
         });
     });
 
+
+
+
+//query validator by address
+let cache = null;
+app.route('/validators')
+.get((req, res, next) => {
+    request({
+        url: `http://cosmos-lcd.rainbow.one/staking/validators/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em`,
+        method: 'get',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    }, function(err, response, body) {
+        if (err) {
+            res.send(err)
+        } else {
+            cache = body;
+            res.send(cache)
+        }
+    })
+})
+
+//query all bond tokens
+let tokencache = null;
+app.route('/bondedTokens')
+.get((req, res, next) => {
+    request({
+        url: `http://cosmos-lcd.rainbow.one/staking/pool`,
+        method: 'get',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    }, function(err, response, body) {
+        if (err) {
+            res.send(err)
+        } else {
+            tokencache = body;
+            res.send(tokencache)
+        }
+    });
+});
+//query slash info
+let blockcache = null;
+app.route('/missedBlockCounter')
+.get((req, res, next) => {
+    request({
+        url: `https://cosmos-lcd.rainbow.one/slashing/validators/cosmosvalconspub1zcjduepqrgyyjxpe0ujefxwnkpmqz9m0hj03y09tdz9lwc0s7mvy469hulfq69f8sd/signing_info`,
+        method: 'get',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    }, function(err, response, body) {
+        if (err) {
+            res.send(err)
+        } else {
+            blockcache = body;
+            res.send(blockcache)
+        }
+    });
+});
+//query slash parameters
+let signedBlockscache = null;
+app.route('/signedBlocksWindow')
+.get((req, res, next) => {
+    request({
+        url: `https://cosmos-lcd.rainbow.one/slashing/parameters`,
+        method: 'get',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    }, function(err, response, body) {
+        if (err) {
+            res.send(err)
+        } else {
+            signedBlockscache = body
+            res.send(signedBlockscache)
+        }
+    });
+});
+
 const template = fs.readFileSync(resolve('index.html'), 'utf-8')
 
 function createRenderer (bundle, options) {
