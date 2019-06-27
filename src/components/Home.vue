@@ -1,32 +1,54 @@
 <template>
     <div class="content_wrap" @click="closeWeChat">
-        <section class="sectionOne">
-            <div class="left">
-                <div>{{$store.state.messages.home.sectionOne.title}}</div>
-                <div>{{$store.state.messages.home.sectionOne.time}}</div>
-                <div>
-                    <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_bank"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
-                    <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_bank"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
-                    <a @click="showWeChatPic">
-                        <img src="../assets/hoverIcon/weChatIconHover.png" alt="">
-                        <div v-show="showWeChat"  class="mobileBox" @touchmove.prevent>
-                            <div class="qrcode" @touchmove.prevent>
-                                <img src="../assets/wechat.jpg" alt="" @touchmove.prevent>
-                                <div class="arrow"></div>
-                                <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
-                            </div>
+        <swiper ref="swipe" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper">
+            <swiper-slide>
+                <section class="sectionOne">
+                    <div class="left">
+                        <div>{{$store.state.messages.home.sectionOne.title}}</div>
+                        <div>{{$store.state.messages.home.sectionOne.time}}</div>
+                        <div>
+                            <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_bank"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
+                            <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_bank"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
+                            <a @click="showWeChatPic">
+                                <img src="../assets/hoverIcon/weChatIconHover.png" alt="">
+                                <div v-show="showWeChat"  class="mobileBox" @touchmove.prevent>
+                                    <div class="qrcode" @touchmove.prevent>
+                                        <img src="../assets/wechat.jpg" alt="" @touchmove.prevent>
+                                        <div class="arrow"></div>
+                                        <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div>
-                    <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button>
-                    <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
-                </div>
-            </div>
-            <div class="right">
-                <img src="../assets/banner.png" alt="" class="banner">
-            </div>
-        </section>
+                        <div>
+                            <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button>
+                            <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="../assets/banner.png" alt="" class="banner">
+                    </div>
+                </section>
+            </swiper-slide>
+            <swiper-slide>
+                <section class="sectionOne">
+                    <div class="left">
+                        <div class="irisnet_bianjie_moniker">{{bianJieMoniker}}</div>
+                        <div>{{rate}} {{$store.state.messages.home.irisnetBianJie.commission}}</div>
+                        <div class="development_content">
+                            <p>{{$store.state.messages.home.irisnetBianJie.development}}</p>
+                        </div>
+                        <div>
+                            <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}</button>
+                            <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.explorerName}}</button>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="../assets/IRISnet_bianjie_node_logo.png" alt="" class="banner">
+                    </div>
+                </section>
+            </swiper-slide>
+        </swiper>
         <section class="sectionTwo" ref="whitePaper">
             <div class="first">
                 <div class="left">
@@ -114,12 +136,26 @@
 </template>
 
 <script>
+	import axios from 'axios';
     export default {
         name: "Home",
         data () {
             return {
                 showWeChat: false,
                 timer: null,
+	            flShowSwiper: false,
+	            swiperOption:{
+                	loop:true,
+                    autoplay: 3000,
+                    speed: 300,
+		            grabCursor: true,
+		            virtualTranslate: false,
+		            roundLengths: true,
+                    autoHeight: true,
+		            // effect : 'coverflow',
+                },
+	            bianJieMoniker:'',
+	            rate:''
             }
         },
         methods: {
@@ -134,18 +170,46 @@
             closeWeChat () {
                 this.showWeChat = false
             },
+	        getCosmosBianJieValidator(){
+		        let url = `/validators`;
+		        axios(url).then(data => {
+			        if(data.status === 200){
+				        return data.data
+			        }
+		        }).then(res => {
+			        if(res && typeof res === "object" && Object.keys(res).length !== 0){
+				        localStorage.setItem('rate',res.commission.rate);
+				        this.bianJieMoniker = res.description.moniker;
+				        this.rate = this.formatRate(localStorage.getItem('rate'));
+			        }else {
+				        this.rate= '';
+				        this.bondedTokens = '';
+
+			        }
+		        }).catch(err => {
+
+		        })
+	        },
             onresize(){
                 clearTimeout(this.timer);
                 let that = this;
+
                 this.timer =  setTimeout(function () {
                     that.$store.commit('whitePaper',that.$refs.whitePaper.offsetTop - that.$store.state.headerHeight);
                     that.$store.commit('roadmap',that.$refs.roadmap.offsetTop - that.$store.state.headerHeight);
                     that.$store.commit('collaboration',that.$refs.collaboration.offsetTop - that.$store.state.headerHeight);
-                },100);
+                },200);
             },
+	        formatRate(rate){
+		        return `${(rate*100).toFixed(2)} %`
+	        },
         },
         mounted () {
             this.onresize();
+            this.getCosmosBianJieValidator();
+	        this.flShowSwiper= true;
+	        this.bianJieMoniker= 'IRISnet-Bianjie';
+	        this.rate = localStorage.getItem('rate') ? this.formatRate(localStorage.getItem('rate')) : '';
             window.addEventListener('resize',this.onresize);
         },
     }
