@@ -7,7 +7,9 @@
                 </div>
                 <div class="nav_content">
                     <ul class="nav_link_content">
-                        <li class="link_content" :class="item.active ? 'active_icon' : ' '" v-for="(item,index) in $store.state.messages.header.left" @click="activeIcon(index)" >{{item.title}}</li>
+                        <li class="link_content" :class="item.active ? 'active_icon' : ' '" v-for="(item,index) in $store.state.messages.header.left" @click="activeIcon(index)" >
+                          {{item.title}}
+                        </li>
                     </ul>
                     <div class="link_right_container">
                         <ul class="nav_link_content right_content">
@@ -109,6 +111,8 @@
                     }else {
                         this.$router.push({path:'/'})
                     }
+                }else if(index === 2) {
+	                this.$router.push({path:'/community'})
                 }
                 this.resetActiveIcon();
                 this.$store.state.messages.header.left[index].active = true;
@@ -122,8 +126,6 @@
                     activeDomOffsetTop = this.$store.state.whitePaper;
                 }else if (index === 1) {
                     activeDomOffsetTop = this.$store.state.collaboration;
-                }else if (index === 2) {
-                    activeDomOffsetTop = this.$store.state.contact - 60;
                 }else if (index === 3) {
                     activeDomOffsetTop = this.$store.state.roadmap;
                 }else {
@@ -153,6 +155,8 @@
                     this.$router.push({path:'/mainnet'})
                 }else if(title === 'Testnet'){
                     this.$router.push({path:'/testnets'})
+                } else if(title === 'Community'){
+	                this.$router.push({path:'/community'})
                 }else if(title === 'WhitePaper' || title === 'Roadmap' || title === 'Collaboration'){
                     this.$router.push({path:'/'})
                 }

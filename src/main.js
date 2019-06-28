@@ -7,10 +7,11 @@ import {createStore} from './store'
 import VueI18n from 'vue-i18n'
 import 'babel-polyfill'
 require('reveal.js/css/reveal.css');
-import 'swiper/dist/css/swiper.css'
-require('vue-swipe/dist/vue-swipe.css');
+require('swiper/dist/css/swiper.css');
 if (process.env.VUE_ENV === 'client') {
-    const { Swipe, SwipeItem } = require('vue-swipe');
+    const VueAwesomeSwiper = require('vue-awesome-swiper');
+    Vue.use(VueAwesomeSwiper);
+    const { Swipe, SwipeItem } = require('vue-awesome-swiper');
     Vue.component('swipe', Swipe);
     Vue.component('swipe-item', SwipeItem);
 }
