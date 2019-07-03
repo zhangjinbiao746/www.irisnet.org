@@ -77,7 +77,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="community_list_content">
+                        <div class="community_list_content" v-if="$store.state.messages.communityPage.faq.ama.rightList && $store.state.messages.communityPage.faq.ama.rightList.length > 0">
                             <div class="community_list_wrap" v-for="item in $store.state.messages.communityPage.faq.ama.rightList">
                                 <a :href="item.href" target="_blank" style="display: inline-block">
                                     <div class="community_item_content">

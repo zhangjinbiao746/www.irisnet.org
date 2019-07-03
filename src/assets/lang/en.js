@@ -376,17 +376,17 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://medium.com/irisnet-blog/iris-foundation-announced-a-one-year-token-burning-plan-e0637ea6f977',
-                date:'Jun 5, 2019',
-                title:'IRIS Foundation Announced a One-year Token Burning Plan',
-                content:'As the plan entails,the Foundation will burn IRIS tokens (amount adjusted for inflation) within the first year after Mainnet launch. '
+                href:'https://medium.com/irisnet-blog/announcement-1st-iris-token-burn-complete-3fe17816ea38',
+                date:'Jun 28, 2019',
+                title:'Announcement: 1st IRIS Token Burn Complete',
+                content:'On June 28, 2019, the IRIS Foundation completed the 1st IRIS token burn under a one-year token burning plan with 19,189,722 IRIS burned. The current total supply is 2 billion IRIS.'
             },
             {
                 id:'1',
-                href:'https://forum.irisnet.org/t/parameter-changes-raising-the-difficulty-level-a-little-bit-for-validators/127',
-                date:'May 30, 2019',
-                title:'Parameter Changes - Raising The Difficulty Level A Little Bit For Validators',
-                content:'Now that the mainnet has been running for three months, it’s time to raise the bar a little bit!'
+                href:'https://medium.com/irisnet-blog/rainbow-v2-0-is-released-we-support-atom-now-1882dcb2bc3c',
+                date:'Jun 21, 2019',
+                title:'Rainbow V2.0 is Released. We Support ATOM Now!',
+                content:'Rainbow v2.0 is released on June 21, 2019 and it now supports Cosmos (ATOM)!'
             },
             {
                 id:'2',
@@ -584,7 +584,7 @@ export const message = {
             left: [
                 {
                     img:'IRISnet_events_online.jpg',
-                    href:'javascript:void(0);',
+                    href:'https://qufen.top/project/article?id=113261',
                     address:'',
                     timestamp:'July 4th, 2019',
                     title:'Amazing Chinese public chain',
@@ -612,8 +612,8 @@ export const message = {
                     address:'SHANGHAI',
                     timestamp:'July 6th-7th, 2019',
                     title:'2019 2nd Global Graphene Blockchain Developer Conference',
-                    signUp:'',
-                    signUpUrl:'',
+                    signUp:'Sign Up',
+                    signUpUrl:'https://www.huodongxing.com/event/6490592893800?layout=EN',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
@@ -623,8 +623,8 @@ export const message = {
                     address:'KOREA',
                     timestamp:'July 22th-23th, 2019',
                     title:'Korea BUIDL Keynote speech: DeFi application support on BPoS Blockchain',
-                    signUp:'',
-                    signUpUrl:'',
+                    signUp:'Sign Up',
+                    signUpUrl:'https://www.buidl.asia/events/buidl-2019',
                     viewMore:'',
                     viewMoreUrl:'',
                 }

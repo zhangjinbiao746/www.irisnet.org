@@ -372,17 +372,17 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://mp.weixin.qq.com/s/G3XVq8Pkfxd_gCpE2tf4pw',
-                date:'2019年6月5日',
-                title:'IRIS基金会将销毁部分通证以支持生态持续发展',
-                content:'基金会将在IRISnet上线后的第一年内，于每季度末最后一个工作日销毁与同期通胀数量相当的IRIS通证。'
+                href:'https://forum.irisnet.org/t/iris/184',
+                date:'2019年6月28日',
+                title:'公告 | IRIS基金会第一次执行通证销毁计划',
+                content:'2019年6月28日，IRIS基金会通过两笔交易按计划执行了第一次销毁，共销毁了19,189,722 个 IRIS 通证，目前 IRIS 通证的总量为20亿个。'
             },
             {
                 id:'1',
-                href:'https://forum.irisnet.org/t/topic/126',
-                date:'2019年5月30日',
-                title:'参数修改提议– 稍微增加验证人难度',
-                content:'IRISnet主网已经运行了3个月，现在是时候提高点儿难度了！'
+                href:'https://forum.irisnet.org/t/rainbow-v2-0-atom/166',
+                date:'2019年6月21日',
+                title:'Rainbow发布v2.0，新增支持ATOM钱包',
+                content:'Rainbow v2.0于2019年6月21日发布，接入第二条公链Cosmos Hub，新增ATOM钱包功能。'
             },
             {
                 id:'2',
@@ -410,7 +410,7 @@ export const message = {
         },
         nyancat:{
             title:'彩虹猫测试网',
-            production:'彩虹猫测试网的测试重点是即将发布到IRISnet主网的新版本，通常将新版本发布到生产环境之前，需要验证人参与对测试为验证人参与网络共识、治理升级提供测试环境。',
+            production:'彩虹猫测试网通常运行比IRISnet主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
             testnetLink:'使用彩虹猫测试网',
             href:'https://github.com/irisnet/testnets/tree/master/nyancat'
         }
@@ -582,7 +582,7 @@ export const message = {
             left: [
                 {
                     img:'IRISnet_events_online.jpg',
-                    href:'javascript:void(0);',
+                    href:'https://qufen.top/project/article?id=113261',
                     address:'',
                     timestamp:'2019年7月4日',
                     title:'了不起的中国公链',
@@ -610,8 +610,8 @@ export const message = {
                     address:'上海',
                     timestamp:'2019年7月6日-7日',
                     title:'2019年第二届全球石墨烯区块链开发者大会',
-                    signUp:'',
-                    signUpUrl:'',
+                    signUp:'加入活动',
+                    signUpUrl:'https://www.huodongxing.com/event/6490592893800?layout=CN',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
@@ -621,8 +621,8 @@ export const message = {
                     address:'韩国',
                     timestamp:'2019年7月22日-23日',
                     title:'Korea BUIDL 主题演讲:基于BPoS区块链的DeFi应用支持',
-                    signUp:'',
-                    signUpUrl:'',
+                    signUp:'加入活动',
+                    signUpUrl:'https://www.buidl.asia/events/buidl-2019',
                     viewMore:'',
                     viewMoreUrl:'',
                 }
