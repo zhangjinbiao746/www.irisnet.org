@@ -648,38 +648,39 @@ export const message = {
                     },
                 ],
                 viewMore: '查看更多',
-                viewMorelink:'https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-cc7a59293823'
+                viewMoreLink:'https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-cc7a59293823'
             },
             ama:{
-                title: 'AMA',
+                title: '活动回顾',
                 leftList: [
+                    {
+                        img:'IRISnet_ama_zh_node.jpg',
+                        href:'https://mp.weixin.qq.com/s/e62Q_P0-yGJmSA84_ClEhA',
+                        title:'巴比特链节点',
+                        content:'链节点线下活动 | 跨链技术与新机遇',
+                    },
+                    {
+                        img:'IRISnet_ama_zh_node.jpg',
+                        href:'https://mp.weixin.qq.com/s/CeUf2StlE6ux1xMBu-UFnQ',
+                        title:'巴比特链节点',
+                        content:'圆桌论坛 | 跨链能否打开应用新赛道？项目方透露了这些新进展',
+                    },
+                    
+                ],
+                rightList:[
+                 
                     {
                         img:'IRISnet_ama_qurea.png',
                         href:'https://mp.weixin.qq.com/s/gV8Zqqoz5-oRX9gZreBFNw',
-                        title:'IRISnet 英文AMA回顾',
+                        title:'IRISnet 中文回顾',
                         content:'IRISnet：可以自进化的BPoS跨链服务枢纽',
                     },
                     {
                         img:'IRISnet_ama_hashbang.png',
                         href:'https://mp.weixin.qq.com/s/9tTIpT0oUdbY4bNPOmieIA',
-                        title:'IRISnet 英文AMA回顾',
+                        title:'IRISnet 中文回顾',
                         content:'IRISnet BPoS：大道至简，共建跨链生态',
                     },
-                    
-                ],
-                rightList:[
-                    /*{
-                        img:'IRISnet_ama_qurea.png',
-                        href:'https://mp.weixin.qq.com/s/gV8Zqqoz5-oRX9gZreBFNw',
-                        title:'2019-6-11 IRISnet 英文AMA回顾',
-                        content:'《IRISnet：可以自进化的BPoS跨链服务枢纽》',
-                    },*/
-                 /*   {
-                        img:'IRISnet_ama_hashbang.png',
-                        href:'https://mp.weixin.qq.com/s/9tTIpT0oUdbY4bNPOmieIA',
-                        title:'2019-5-16 IRISnet 英文AMA回顾',
-                        content:'《IRISnet BPoS：大道至简，共建跨链生态》',
-                    },*/
                 ],
             }
         },

@@ -148,6 +148,9 @@
                 	loop:true,
                     autoplay: 3000,
                     speed: 300,
+		            autoplayDisableOnInteraction:false,
+		            disableOnInteraction:false,
+                    //鼠标变成手掌型
 		            grabCursor: true,
 		            virtualTranslate: false,
 		            roundLengths: true,

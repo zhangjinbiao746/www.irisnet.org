@@ -50,7 +50,7 @@
                             <img :src="UrlSrc + $store.state.messages.communityPage.faq.faqImg">
                         </div>
                         <div class="community_faq_list_content">
-                            <div class="community_faq_title">{{$store.state.messages.communityPage.faq.faqList.title}}</div>
+                            <!--<div class="community_faq_title">{{$store.state.messages.communityPage.faq.faqList.title}}</div>-->
                             <p class="community_faq_list_item_content" v-for="item in $store.state.messages.communityPage.faq.faqList.list">
                                 {{item.item}}
                             </p>

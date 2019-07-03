@@ -415,7 +415,7 @@ export const message = {
         nyancat:{
             explorerHref:'http://nyancat.irisplorer.io/#/home',
             title:'Nyancat Testnet',
-            production:'Nyancat aims to gather feedback from community on upcoming IRISnet major release on “Multi-Assets Management” function as well as get our validators ready for the on-chain upgrade being targeted in July 2019.',
+            production:'Nyancat Testnet is running on the IRISnet updated version, which aims to provide a testing environment for the validators to participate in the consensus and on-chain upgrade before the new version release on the production environment.',
             testnetLink:'Use Nyancat Tensent',
             href:'https://github.com/irisnet/testnets/tree/master/nyancat'
         }
@@ -579,7 +579,7 @@ export const message = {
             ]
         },
         title: 'Community',
-        eventsTitle:'Events',
+        eventsTitle:'Events Upcoming',
         events: {
             left: [
                 {
@@ -631,7 +631,7 @@ export const message = {
             ]
         },
         faq:{
-            faqTitle:'FAQ & AMA',
+            faqTitle:'FAQ',
             faqImg:'/IRISnet_community_faq.png',
             faqList:{
                 title: 'FAQ',
@@ -653,7 +653,7 @@ export const message = {
                 viewMoreLink:'https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-cc7a59293823'
             },
             ama:{
-                title: 'AMA',
+                title: 'Events Review',
                 leftList: [
                     {
                         img:'IRISnet_ama_coinsuper.png',
