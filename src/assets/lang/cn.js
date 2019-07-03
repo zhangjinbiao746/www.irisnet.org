@@ -581,31 +581,31 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'IRISnet_events_online_zh.png',
+                    img:'IRISnet_events_online.jpg',
                     href:'javascript:void(0);',
                     address:'',
-                    timestamp:'2019年7月2日',
-                    title:'鲸交所视频直播：IRISnet的自进化：链上治理和不分叉的网络升级',
+                    timestamp:'2019年7月4日',
+                    title:'了不起的中国公链',
                     signUp:'',
                     signUpUrl:'',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
                 {
-                    img:'IRISnet_events_staking_zh.png',
+                    img:'IRISnet_events_staking.jpg',
                     href:'javascript:void(0);',
                     address:'北京',
                     timestamp:'2019年7月10日',
                     title:'StakingCon Staking生态大会',
                     signUp:'加入活动',
-                    signUpUrl:'http://www.huodongxing.com/event/2496757517700',
+                    signUpUrl:'https://www.huodongxing.com/event/2496757517700?layout=CN',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
             ],
             right:[
                 {
-                    img:'IRISnet_events_global_zh.png',
+                    img:'IRISnet_events_global.jpg',
                     href:'http://gbacenter.org/event/index.html',
                     address:'上海',
                     timestamp:'2019年7月6日-7日',
@@ -616,7 +616,7 @@ export const message = {
                     viewMoreUrl:'',
                 },
                 {
-                    img:'IRISnet_events_buidl_zh.png',
+                    img:'IRISnet_events_buidl.jpg',
                     href:'https://www.buidl.asia/',
                     address:'韩国',
                     timestamp:'2019年7月22日-23日',
@@ -740,14 +740,36 @@ export const message = {
                 {
                     img:'IRISnet_press_kit.png',
                     name:'品牌资料',
-                    content:'下载您所需要的品牌资料。',
+                    content:'获取您可能需要的所有品牌资源和标志',
                     href:'/community/press-kit',
                 },
                 {
                     img:'IRISnet_doc.png',
                     name:'文档',
-                    content:'这里没有中文文档，需要运营提供',
-                    href:'https://www.irisnet.org/docs/zh/',
+                    content:'下一代分布式应用的跨链服务网络——自进化的BPoS区块链',
+                    href:'javascript:void(0);',
+	                resourceList:[
+		                {
+			                itemName: '伏羲测试网',
+			                href: 'https://www.irisnet.org/docs/get-started/Join-the-Testnet.html'
+		                },
+		                {
+			                itemName: '彩虹猫测试网',
+			                href: 'https://github.com/irisnet/testnets/tree/master/nyancat'
+		                },
+		                {
+			                itemName: '加入主网',
+			                href: 'https://www.irisnet.org/docs/get-started/Join-the-Mainnet.html'
+		                },
+		                {
+			                itemName: '命令行',
+			                href: 'https://www.irisnet.org/docs/cli-client/'
+		                },
+		                {
+			                itemName: '轻客户端',
+			                href: 'https://www.irisnet.org/docs/light-client/'
+		                },
+	                ]
                 }
             ]
         }

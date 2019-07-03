@@ -583,31 +583,31 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'IRISnet_events_online.png',
+                    img:'IRISnet_events_online.jpg',
                     href:'javascript:void(0);',
                     address:'',
-                    timestamp:'July 2th, 2019',
-                    title:'WhaleEx live video: The Self-evolution of IRISnet: On-chain Governance And On-chain Upgrade Without Hard Fork',
+                    timestamp:'July 4th, 2019',
+                    title:'Amazing Chinese public chain',
                     signUp:'',
                     signUpUrl:'',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
                 {
-                    img:'IRISnet_events_staking.png',
+                    img:'IRISnet_events_staking.jpg',
                     href:'javascript:void(0);',
                     address:'BEIJING',
                     timestamp:'July 10th, 2019',
                     title:'Staking Con Staking Ecological Conference',
                     signUp:'Sign Up',
-                    signUpUrl:'http://www.huodongxing.com/event/2496757517700',
+                    signUpUrl:'https://www.huodongxing.com/event/2496757517700?layout=EN',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
             ],
             right:[
                 {
-                    img:'IRISnet_events_global.png',
+                    img:'IRISnet_events_global.jpg',
                     href:'http://gbacenter.org/event/index_en.html',
                     address:'SHANGHAI',
                     timestamp:'July 6th-7th, 2019',
@@ -618,7 +618,7 @@ export const message = {
                     viewMoreUrl:'',
                 },
                 {
-                    img:'IRISnet_events_buidl.png',
+                    img:'IRISnet_events_buidl.jpg',
                     href:'https://www.buidl.asia/',
                     address:'KOREA',
                     timestamp:'July 22th-23th, 2019',
@@ -709,7 +709,7 @@ export const message = {
                             href: 'https://www.wetez.io/pc/homepage'
                         }
                     ],
-                    content:'这个英文文档不正确，需提供正确文档',
+                    content:'These web and mobile wallets allow you to store & transfer IRIS, delegate IRIS to validators, and some of them also support ATOM. Note that we do not endorse any of the wallets, they are listed for your convenience.',
                 },
                 {
                     img:'IRISnet_community_explorer.png',
@@ -737,19 +737,41 @@ export const message = {
                             href: 'https://hubble.figment.network/iris/chains/irishub'
                         }
                     ],
-                    content:'This block explorer allow you to search, view and analyze IRIS Hub data—like blocks, transactions, validators, etc.',
+                    content:'These block explorers allow you to search, view and analyze IRIS Hub data—like blocks, transactions, validators, governance including params or proposals, etc.',
                 },
                 {
                     img:'IRISnet_press_kit.png',
                     name:'Press Kit',
-                    content:'Download our press kit with all logo assets you might need',
+                    content:'Get our press kit with all logo assets you might need',
                     href:'/community/press-kit',
                 },
                 {
                     img:'IRISnet_doc.png',
                     name:'Docs',
-                    content:'The IRIS network is an internet of blockchains intended to provide a technology foundation that facilitates construction of distributed business applications.',
-                    href:'https://www.irisnet.org/docs/',
+                    content:'Interchain Service Hub for NextGen Distributed Applications – A BPoS Blockchain That Is Self-evolutionary.',
+                    href:'javascript:void(0);',
+                    resourceList:[
+                        {
+                            itemName: 'FUXI',
+                            href: 'https://www.irisnet.org/docs/get-started/Join-the-Testnet.html'
+                        },
+                        {
+                            itemName: 'Nyancat',
+                            href: 'https://github.com/irisnet/testnets/tree/master/nyancat'
+                        },
+                        {
+                            itemName: 'Mainnet',
+                            href: 'https://www.irisnet.org/docs/get-started/Join-the-Mainnet.html'
+                        },
+                        {
+                            itemName: 'Cli Client',
+                            href: 'https://www.irisnet.org/docs/cli-client/'
+                        },
+                        {
+                            itemName: 'Light Client',
+                            href: 'https://www.irisnet.org/docs/light-client/'
+                        },
+                    ]
                 }
             ]
         }
