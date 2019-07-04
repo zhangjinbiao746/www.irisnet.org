@@ -50,10 +50,15 @@
         </div>
         <div class="testnet_container">
             <div class="testnet_wrap">
-                <h3 class="testnet_title">{{$store.state.messages.testnet.title}}</h3>
-                <p class="testnet_status_content" v-html="$store.state.messages.testnet.production"></p>
-                <div class="testnet_btn_content">
-                    <span class="testnet_btn" @click="toTestnet">{{$store.state.messages.testnet.testnetLink}}</span>
+                <div class="testnet_content">
+                    <h3 class="testnet_title"><a :href="$store.state.messages.testnet.fuxi.explorerHref" target="_blank">{{$store.state.messages.testnet.fuxi.title}}</a></h3>
+                    <div class="testnet_content">{{$store.state.messages.testnet.fuxi.production}}</div>
+                    <a :href="$store.state.messages.testnet.fuxi.href" class="testnet_link" target="_blank">{{$store.state.messages.testnet.fuxi.testnetLink}}<i class="triangle"></i></a>
+                </div>
+                <div class="testnet_content">
+                    <h3 class="testnet_title"><a :href="$store.state.messages.testnet.fuxi.explorerHref" target="_blank">{{$store.state.messages.testnet.nyancat.title}}</a></h3>
+                    <div class="testnet_content">{{$store.state.messages.testnet.nyancat.production}}</div>
+                    <a :href="$store.state.messages.testnet.nyancat.href" class="testnet_link" target="_blank">{{$store.state.messages.testnet.nyancat.testnetLink}}<i class="triangle"></i></a>
                 </div>
             </div>
         </div>

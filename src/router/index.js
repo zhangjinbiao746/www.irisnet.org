@@ -19,7 +19,8 @@ import NewManinet from '../components/NewMainnet';
 import NewTestnet from '../components/NewTestnet';
 import Home from "../components/Home";
 import Community from "../components/Community.vue";
-import Cosmos from "../components/Cosmos"
+import Cosmos from "../components/Cosmos";
+import CommunityPage from "../components/CommunityPage"
 Vue.use(Router)
 
 export function createRouter() {
@@ -84,6 +85,10 @@ export function createRouter() {
             {
                 path: '/irisnet-bianjie',
                 component: Cosmos
+            },
+            {
+                path: '/community',
+                component: CommunityPage
             },
         ]
     })

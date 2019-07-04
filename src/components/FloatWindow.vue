@@ -22,6 +22,7 @@
         position: fixed;
         right: 0.2rem;
         bottom: 0.2rem;
+        z-index: 10;
         .float_window_forum_container{
             width: 0.9rem;
             height: 0.9rem;
