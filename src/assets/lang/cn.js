@@ -245,6 +245,20 @@ export const message = {
                 }
             }
         },
+        irisnetBianJie:{
+            commission:'佣金率',
+            development:'由IRISnet核心开发团队维护的 Cosmos Hub 创世节点',
+            button:{
+                buttonName: {
+                    rainbowName: 'Rainbow 钱包',
+                    explorerName: '了解更多'
+                },
+                buttonUrl: {
+                    rainbowUrl: 'https://www.rainbow.one/',
+                    explorerUrl: '/irisnet-bianjie'
+                }
+            }
+        },
         sectionTwo: {
             KeyInnovations: {
                 title: '核心创新',
@@ -358,17 +372,17 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://forum.irisnet.org/t/topic/126',
-                date:'2019年5月30日',
-                title:'参数修改提议– 稍微增加验证人难度',
-                content:'IRISnet主网已经运行了3个月，现在是时候提高点儿难度了！'
+                href:'https://forum.irisnet.org/t/iris/184',
+                date:'2019年6月28日',
+                title:'公告 | IRIS基金会第一次执行通证销毁计划',
+                content:'2019年6月28日，IRIS基金会通过两笔交易按计划执行了第一次销毁，共销毁了19,189,722 个 IRIS 通证，目前 IRIS 通证的总量为20亿个。'
             },
             {
                 id:'1',
-                href:'https://forum.irisnet.org/t/iris-foundation/49',
-                date:'2019年5月14日',
-                title:'IRIS Foundation 征集验证人自我介绍材料',
-                content:'IRIS基金会从现在开始征集验证人自我介绍材料，时间持续一个月。'
+                href:'https://forum.irisnet.org/t/rainbow-v2-0-atom/166',
+                date:'2019年6月21日',
+                title:'Rainbow发布v2.0，新增支持ATOM钱包',
+                content:'Rainbow v2.0于2019年6月21日发布，接入第二条公链Cosmos Hub，新增ATOM钱包功能。'
             },
             {
                 id:'2',
@@ -388,9 +402,18 @@ export const message = {
         ]
     },
     testnet:{
-        title:'伏羲测试网',
-        production: '伏羲测试网跟IRIS主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。',
-        testnetLink:'加入测试网'
+        fuxi:{
+            title:'伏羲测试网',
+            production: '伏羲测试网跟IRISnet主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。',
+            testnetLink:'使用伏羲测试网',
+            href:'https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html'
+        },
+        nyancat:{
+            title:'彩虹猫测试网',
+            production:'彩虹猫测试网通常运行比IRISnet主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
+            testnetLink:'使用彩虹猫测试网',
+            href:'https://github.com/irisnet/testnets/tree/master/nyancat'
+        }
     },
     community:{
         title: '社区',
@@ -550,6 +573,204 @@ export const message = {
                 {
                     id: 2,
                     item:'IRISnet 是Cosmos 生态中除Cosmos Hub 外的另外一个Hub, 由边界智能（ Bianjie）和Tendermint团队合作开发，目标是成为链接数字经济和实体经济的可信“桥梁”，为构建复杂的分布式商业应用提供新一代面向服务的公链基础设施。IRISnet支持公链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。IRISnet 第一次实现了对BPoS 网络的自进化（通过在线治理实现网络升级）支持。'
+                }
+            ]
+        },
+        title: '社区',
+        eventsTitle:'近期活动',
+        events: {
+            left: [
+                {
+                    img:'IRISnet_events_online.jpg',
+                    href:'https://qufen.top/project/article?id=113261',
+                    address:'',
+                    timestamp:'2019年7月4日',
+                    title:'了不起的中国公链',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+                {
+                    img:'IRISnet_events_staking.jpg',
+                    href:'javascript:void(0);',
+                    address:'北京',
+                    timestamp:'2019年7月10日',
+                    title:'StakingCon Staking生态大会',
+                    signUp:'加入活动',
+                    signUpUrl:'https://www.huodongxing.com/event/2496757517700?layout=CN',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+            ],
+            right:[
+                {
+                    img:'IRISnet_events_global.jpg',
+                    href:'http://gbacenter.org/event/index.html',
+                    address:'上海',
+                    timestamp:'2019年7月6日-7日',
+                    title:'2019年第二届全球石墨烯区块链开发者大会',
+                    signUp:'加入活动',
+                    signUpUrl:'https://www.huodongxing.com/event/6490592893800?layout=CN',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+                {
+                    img:'IRISnet_events_buidl.jpg',
+                    href:'https://www.buidl.asia/',
+                    address:'韩国',
+                    timestamp:'2019年7月22日-23日',
+                    title:'Korea BUIDL 主题演讲:基于BPoS区块链的DeFi应用支持',
+                    signUp:'加入活动',
+                    signUpUrl:'https://www.buidl.asia/events/buidl-2019',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                }
+            ]
+        },
+        faq:{
+            faqTitle:'常见问题',
+            faqImg:'/IRISnet_community_faq.png',
+            faqList:{
+                title: 'FAQ',
+                list:[
+                    {
+                        item:'1. 什么是IRISnet？',
+                    },
+                    {
+                        item:'2. IRIS的初始分配是怎样的？',
+                    },
+                    {
+                        item:'3. IRISnet经济模型的架构是怎样的？',
+                    },
+                    {
+                        item:'4. IRISnet和Cosmos是什么关系？',
+                    },
+                ],
+                viewMore: '查看更多',
+                viewMoreLink:'https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-cc7a59293823'
+            },
+            ama:{
+                title: '活动回顾',
+                leftList: [
+                    {
+                        img:'IRISnet_ama_zh_node.jpg',
+                        href:'https://mp.weixin.qq.com/s/e62Q_P0-yGJmSA84_ClEhA',
+                        title:'巴比特链节点',
+                        content:'链节点线下活动 | 跨链技术与新机遇',
+                    },
+                    {
+                        img:'IRISnet_ama_zh_node.jpg',
+                        href:'https://mp.weixin.qq.com/s/CeUf2StlE6ux1xMBu-UFnQ',
+                        title:'巴比特链节点',
+                        content:'圆桌论坛 | 跨链能否打开应用新赛道？项目方透露了这些新进展',
+                    },
+                    
+                ],
+                rightList:[
+                 
+                    {
+                        img:'IRISnet_ama_qurea.png',
+                        href:'https://mp.weixin.qq.com/s/gV8Zqqoz5-oRX9gZreBFNw',
+                        title:'无涯社区',
+                        content:'IRISnet：可以自进化的BPoS跨链服务枢纽',
+                    },
+                    {
+                        img:'IRISnet_ama_hashbang.png',
+                        href:'https://mp.weixin.qq.com/s/9tTIpT0oUdbY4bNPOmieIA',
+                        title:'HashBang ',
+                        content:'IRISnet BPoS：大道至简，共建跨链生态',
+                    },
+                ],
+            }
+        },
+        resources:{
+            title:'资源',
+            ResourceList:[
+                {
+                    img:'IRISnet_wallet.png',
+                    name:'钱包',
+                    href:'javascript:void(0);',
+                    resourceList: [
+                        {
+                            itemName: 'Rainbow',
+                            os:'(Android, iOS)',
+                            href: 'https://www.rainbow.one/'
+                        },
+                        {
+                            itemName: 'Math wallet',
+                            os:'(Android, iOS)',
+                            href: 'http://www.mathwallet.org/cn/'
+                        },
+                        {
+                            itemName: 'Wetez',
+                            os:'(Android, iOS)',
+                            href: 'https://www.wetez.io/pc/homepage'
+                        }
+                    ],
+                    content:'以上为支持IRIS资产存储、管理及质押的钱包及下载链接。注意，我们列出这些钱包仅为了方便操作，并不对使用钱包时资产的安全性负责。',
+                },
+                {
+                    img:'IRISnet_community_explorer.png',
+                    name:'浏览器',
+                    href:'javascript:void(0);',
+                    resourceList: [
+                        {
+                            itemName: 'IRISplorer',
+                            href: 'https://www.irisplorer.io/#/validators'
+                        },
+                        {
+                            itemName: 'IRISnet-Overview',
+                            href: 'https://irisnet-overview.genesislab.net/'
+                        },
+                        {
+                            itemName: 'Big-Dipper',
+                            href: 'https://iris.bigdipper.live/'
+                        },
+                        {
+                            itemName: 'IRISnet-P2P',
+                            href: 'https://irisnet.p2p.org'
+                        },
+                        {
+                            itemName: 'Hubble',
+                            href: 'https://hubble.figment.network/iris/chains/irishub'
+                        }
+                    ],
+                    content:'您可通过以上区块链浏览器查询和分析 IRIS Hub 的区块、交易、验证人等信息',
+                },
+                {
+                    img:'IRISnet_press_kit.png',
+                    name:'品牌资料',
+                    content:'获取您可能需要的所有品牌资源和标志',
+                    href:'/community/press-kit',
+                },
+                {
+                    img:'IRISnet_doc.png',
+                    name:'文档',
+                    content:'下一代分布式应用的跨链服务网络——自进化的BPoS区块链',
+                    href:'javascript:void(0);',
+	                resourceList:[
+		                {
+			                itemName: '伏羲测试网',
+			                href: 'https://www.irisnet.org/docs/get-started/Join-the-Testnet.html'
+		                },
+		                {
+			                itemName: '彩虹猫测试网',
+			                href: 'https://github.com/irisnet/testnets/tree/master/nyancat'
+		                },
+		                {
+			                itemName: '加入主网',
+			                href: 'https://www.irisnet.org/docs/get-started/Join-the-Mainnet.html'
+		                },
+		                {
+			                itemName: '命令行',
+			                href: 'https://www.irisnet.org/docs/cli-client/'
+		                },
+		                {
+			                itemName: '轻客户端',
+			                href: 'https://www.irisnet.org/docs/light-client/'
+		                },
+	                ]
                 }
             ]
         }
