@@ -415,7 +415,7 @@ export const message = {
         nyancat:{
             explorerHref:'http://nyancat.irisplorer.io/#/home',
             title:'Nyancat Testnet',
-            production:'Nyancat Testnet is running on the IRISnet updated version, which aims to provide a testing environment for the validators to participate in the consensus and on-chain upgrade before the new version release on the production environment.',
+            production:'The Nyancat testnet runs a newer version of irishub, providing a test environment for validators to preview and test the new version before it is ready for deployment to mainnet.',
             testnetLink:'Use Nyancat Tensent',
             href:'https://github.com/irisnet/testnets/tree/master/nyancat'
         }
