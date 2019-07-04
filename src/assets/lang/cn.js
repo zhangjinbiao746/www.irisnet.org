@@ -672,13 +672,13 @@ export const message = {
                     {
                         img:'IRISnet_ama_qurea.png',
                         href:'https://mp.weixin.qq.com/s/gV8Zqqoz5-oRX9gZreBFNw',
-                        title:'IRISnet 中文回顾',
+                        title:'无涯社区',
                         content:'IRISnet：可以自进化的BPoS跨链服务枢纽',
                     },
                     {
                         img:'IRISnet_ama_hashbang.png',
                         href:'https://mp.weixin.qq.com/s/9tTIpT0oUdbY4bNPOmieIA',
-                        title:'IRISnet 中文回顾',
+                        title:'HashBang ',
                         content:'IRISnet BPoS：大道至简，共建跨链生态',
                     },
                 ],
