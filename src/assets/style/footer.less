@@ -8,7 +8,6 @@
     flex-direction: column;
     justify-content: space-between;
     .content{
-      margin: 0  0.4rem;
       background: #2C2948;
       display: flex;
       justify-content: space-between;
@@ -200,7 +199,6 @@
       font-size: 0.12rem;
       line-height: 0.16rem;
       .copyright_content{
-        margin: 0 0.4rem;
         .irisnet{
           opacity: 0.5;
           padding-bottom: 0.12rem;
@@ -258,6 +256,22 @@
       }
       .closeIcon {
         display: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .footer_container{
+    .footer_wrap{
+      .content{
+        margin: 0 0.2rem;
+      }
+    }
+  }
+  .copyright_wrap{
+    .copyright_container{
+      .copyright_content{
+        margin:  0 0.2rem;
       }
     }
   }

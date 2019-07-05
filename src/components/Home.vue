@@ -1,54 +1,56 @@
 <template>
     <div class="content_wrap" @click="closeWeChat">
-        <swiper ref="swipe" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper">
-            <swiper-slide>
-                <section class="sectionOne">
-                    <div class="left">
-                        <div>{{$store.state.messages.home.sectionOne.title}}</div>
-                        <div>{{$store.state.messages.home.sectionOne.time}}</div>
-                        <div>
-                            <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_bank"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
-                            <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_bank"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
-                            <a @click="showWeChatPic">
-                                <img src="../assets/hoverIcon/weChatIconHover.png" alt="">
-                                <div v-show="showWeChat"  class="mobileBox" @touchmove.prevent>
-                                    <div class="qrcode" @touchmove.prevent>
-                                        <img src="../assets/wechat.jpg" alt="" @touchmove.prevent>
-                                        <div class="arrow"></div>
-                                        <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
+        <div @mouseenter="swiperStop" @mouseleave="swiperStart">
+            <swiper ref="mySwiper" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper" >
+                <swiper-slide>
+                    <section class="sectionOne">
+                        <div class="left">
+                            <div>{{$store.state.messages.home.sectionOne.title}}</div>
+                            <div>{{$store.state.messages.home.sectionOne.time}}</div>
+                            <div>
+                                <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_bank"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
+                                <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_bank"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
+                                <a @click="showWeChatPic">
+                                    <img src="../assets/hoverIcon/weChatIconHover.png" alt="">
+                                    <div v-show="showWeChat"  class="mobileBox" @touchmove.prevent>
+                                        <div class="qrcode" @touchmove.prevent>
+                                            <img src="../assets/wechat.jpg" alt="" @touchmove.prevent>
+                                            <div class="arrow"></div>
+                                            <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
+                            <div>
+                                <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button>
+                                <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
+                            </div>
                         </div>
-                        <div>
-                            <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button>
-                            <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
+                        <div class="right">
+                            <img src="../assets/banner.png" alt="" class="banner">
                         </div>
-                    </div>
-                    <div class="right">
-                        <img src="../assets/banner.png" alt="" class="banner">
-                    </div>
-                </section>
-            </swiper-slide>
-            <swiper-slide>
-                <section class="sectionOne">
-                    <div class="left">
-                        <div class="irisnet_bianjie_moniker">{{bianJieMoniker}}</div>
-                        <div>{{rate}} {{$store.state.messages.home.irisnetBianJie.commission}}</div>
-                        <div class="development_content">
-                            <p>{{$store.state.messages.home.irisnetBianJie.development}}</p>
+                    </section>
+                </swiper-slide>
+                <swiper-slide>
+                    <section class="sectionOne1">
+                        <div class="left">
+                            <div class="irisnet_bianjie_moniker">{{bianJieMoniker}}</div>
+                            <div>{{rate}} {{$store.state.messages.home.irisnetBianJie.commission}}</div>
+                            <div class="development_content">
+                                <p>{{$store.state.messages.home.irisnetBianJie.development}}</p>
+                            </div>
+                            <div>
+                                <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}</button>
+                                <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.explorerName}}</button>
+                            </div>
                         </div>
-                        <div>
-                            <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}</button>
-                            <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.explorerName}}</button>
+                        <div class="right">
+                            <img src="../assets/IRISnet_bianjie_node_logo.png" alt="" class="banner">
                         </div>
-                    </div>
-                    <div class="right">
-                        <img src="../assets/IRISnet_bianjie_node_logo.png" alt="" class="banner">
-                    </div>
-                </section>
-            </swiper-slide>
-        </swiper>
+                    </section>
+                </swiper-slide>
+            </swiper>
+        </div>
         <section class="sectionTwo" ref="whitePaper">
             <div class="first">
                 <div class="left">
@@ -161,7 +163,21 @@
 	            rate:''
             }
         },
-        methods: {
+	    computed: {
+		    mySwiper() {
+			    // mySwiper 是要绑定到标签中的ref属性
+			    return this.$refs.mySwiper.swiper
+		    },
+
+	    },
+         methods: {
+	         swiperStop() {
+		        this.mySwiper.stopAutoplay()
+	        },
+	         swiperStart() {
+		        this.mySwiper.startAutoplay()
+	        },
+
             jumpUrl (url) {
                 window.open(url)
             },
