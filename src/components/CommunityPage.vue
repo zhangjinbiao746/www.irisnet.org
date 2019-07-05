@@ -25,7 +25,7 @@
                     </div>
                     <div class="community_events_right_content">
                         <div class="community_events_item" v-for="item in $store.state.messages.communityPage.events.right">
-                            <a :href="item.href" target="_blank">
+                            <a :href="item.href" target="_blank" :style="{cursor: item.href === 'javascript:void(0);' ? 'auto' : 'pointer'}">
                                 <div class="community_events_item_content">
                                     <img :src="UrlSrc + item.img">
                                     <p class="community_events_timestamp"><span v-show="item.address">{{item.address}}</span> <span>{{item.timestamp}}</span></p>
