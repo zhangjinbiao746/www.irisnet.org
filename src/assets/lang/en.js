@@ -742,7 +742,7 @@ export const message = {
                 {
                     img:'IRISnet_press_kit.png',
                     name:'Press Kit',
-                    content:'Get our press kit with all logo assets you might need',
+                    content:'Get our press kit with all logo assets you might need.',
                     href:'/community/press-kit',
                 },
                 {

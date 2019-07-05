@@ -737,18 +737,18 @@ export const message = {
                             href: 'https://hubble.figment.network/iris/chains/irishub'
                         }
                     ],
-                    content:'您可通过以上区块链浏览器查询和分析 IRIS Hub 的区块、交易、验证人等信息',
+                    content:'您可通过以上区块链浏览器查询和分析 IRIS Hub 的区块、交易、验证人等信息。',
                 },
                 {
                     img:'IRISnet_press_kit.png',
                     name:'品牌资料',
-                    content:'获取您可能需要的所有品牌资源和标志',
+                    content:'获取您可能需要的所有品牌资源和标志。',
                     href:'/community/press-kit',
                 },
                 {
                     img:'IRISnet_doc.png',
                     name:'文档',
-                    content:'下一代分布式应用的跨链服务网络——自进化的BPoS区块链',
+                    content:'下一代分布式应用的跨链服务网络——自进化的BPoS区块链。',
                     href:'javascript:void(0);',
 	                resourceList:[
 		                {
