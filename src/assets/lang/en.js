@@ -579,17 +579,17 @@ export const message = {
             ]
         },
         title: 'Community',
-        eventsTitle:'Events Upcoming',
+        eventsTitle:'Upcoming Events',
         events: {
             left: [
                 {
-                    img:'IRISnet_events_online.jpg',
-                    href:'https://qufen.top/project/article?id=113261',
-                    address:'',
-                    timestamp:'July 4th, 2019',
-                    title:'Amazing Chinese public chain',
-                    signUp:'',
-                    signUpUrl:'',
+                    img:'IRISnet_events_global.jpg',
+                    href:'http://gbacenter.org/event/index_en.html',
+                    address:'SHANGHAI',
+                    timestamp:'July 6th-7th, 2019',
+                    title:'2019 2nd Global Graphene Blockchain Developer Conference',
+                    signUp:'Sign Up',
+                    signUpUrl:'https://www.huodongxing.com/event/6490592893800?layout=EN',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
@@ -607,13 +607,13 @@ export const message = {
             ],
             right:[
                 {
-                    img:'IRISnet_events_global.jpg',
-                    href:'http://gbacenter.org/event/index_en.html',
-                    address:'SHANGHAI',
-                    timestamp:'July 6th-7th, 2019',
-                    title:'2019 2nd Global Graphene Blockchain Developer Conference',
-                    signUp:'Sign Up',
-                    signUpUrl:'https://www.huodongxing.com/event/6490592893800?layout=EN',
+                    img:'IRISnet_events_plat_on.jpg',
+                    href:'javascript:void(0);',
+                    address:'CHENGDU',
+                    timestamp:'July 19th, 2019',
+                    title:'PlatON @ TaiKoo Li',
+                    signUp:'',
+                    signUpUrl:'',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
@@ -650,7 +650,7 @@ export const message = {
                     },
                 ],
                 viewMore: 'View More',
-                viewMoreLink:'https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-cc7a59293823'
+                viewMoreLink:'https://medium.com/irisnet-blog/irisnet-faq-8793cf116c37'
             },
             ama:{
                 title: 'Events Review',
@@ -742,7 +742,7 @@ export const message = {
                 {
                     img:'IRISnet_press_kit.png',
                     name:'Press Kit',
-                    content:'Get our press kit with all logo assets you might need',
+                    content:'Get our press kit with all logo assets you might need.',
                     href:'/community/press-kit',
                 },
                 {

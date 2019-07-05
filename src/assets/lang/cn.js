@@ -581,16 +581,17 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'IRISnet_events_online.jpg',
-                    href:'https://qufen.top/project/article?id=113261',
-                    address:'',
-                    timestamp:'2019年7月4日',
-                    title:'了不起的中国公链',
-                    signUp:'',
-                    signUpUrl:'',
+                    img:'IRISnet_events_global.jpg',
+                    href:'http://gbacenter.org/event/index.html',
+                    address:'上海',
+                    timestamp:'2019年7月6日-7日',
+                    title:'2019年第二届全球石墨烯区块链开发者大会',
+                    signUp:'加入活动',
+                    signUpUrl:'https://www.huodongxing.com/event/6490592893800?layout=CN',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
+                
                 {
                     img:'IRISnet_events_staking.jpg',
                     href:'javascript:void(0);',
@@ -605,13 +606,13 @@ export const message = {
             ],
             right:[
                 {
-                    img:'IRISnet_events_global.jpg',
-                    href:'http://gbacenter.org/event/index.html',
-                    address:'上海',
-                    timestamp:'2019年7月6日-7日',
-                    title:'2019年第二届全球石墨烯区块链开发者大会',
-                    signUp:'加入活动',
-                    signUpUrl:'https://www.huodongxing.com/event/6490592893800?layout=CN',
+                    img:'IRISnet_events_plat_on.jpg',
+                    href:'javascript:void(0);',
+                    address:'成都',
+                    timestamp:'2019年7月19日',
+                    title:'太古里的云图',
+                    signUp:'',
+                    signUpUrl:'',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
@@ -708,7 +709,7 @@ export const message = {
                             href: 'https://www.wetez.io/pc/homepage'
                         }
                     ],
-                    content:'以上为支持IRIS资产存储、管理及质押的钱包及下载链接。注意，我们列出这些钱包仅为了方便操作，并不对使用钱包时资产的安全性负责。',
+                    content:'这些钱包支持IRIS及ATOM的转账和质押，请充分研究其安全性再使用。列示这些信息仅为方便下载，并不代表对钱包使用的安全性负责。',
                 },
                 {
                     img:'IRISnet_community_explorer.png',
@@ -736,18 +737,18 @@ export const message = {
                             href: 'https://hubble.figment.network/iris/chains/irishub'
                         }
                     ],
-                    content:'您可通过以上区块链浏览器查询和分析 IRIS Hub 的区块、交易、验证人等信息',
+                    content:'您可通过以上区块链浏览器查询和分析 IRIS Hub 的区块、交易、验证人等信息。',
                 },
                 {
                     img:'IRISnet_press_kit.png',
                     name:'品牌资料',
-                    content:'获取您可能需要的所有品牌资源和标志',
+                    content:'获取您可能需要的所有品牌资源和标志。',
                     href:'/community/press-kit',
                 },
                 {
                     img:'IRISnet_doc.png',
                     name:'文档',
-                    content:'下一代分布式应用的跨链服务网络——自进化的BPoS区块链',
+                    content:'下一代分布式应用的跨链服务网络——自进化的BPoS区块链。',
                     href:'javascript:void(0);',
 	                resourceList:[
 		                {
