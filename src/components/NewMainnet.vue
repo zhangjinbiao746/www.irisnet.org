@@ -20,7 +20,7 @@
                             <p class="mainnet_header_list_wallet_title">{{$store.state.messages.mainnet.leftContent.wallet.title}}</p>
                             <ul class="mainnet_header_wallet_list">
                                 <li class="mainnet_header_wallet_list_item" v-for="(item,index) in $store.state.messages.mainnet.leftContent.wallet.list" :key="index">
-                                    <a :href="item.href">{{item.name}}</a>
+                                    <a :href="item.href" target="_blank">{{item.name}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -34,7 +34,7 @@
                             <p class="mainnet_header_explorer_title">{{$store.state.messages.mainnet.leftContent.explorer.title}}</p>
                             <ul class="mainnet_header_list_explorer">
                                 <li class="mainnet_header_explorer_list_item" v-for="(v,index) in $store.state.messages.mainnet.leftContent.explorer.list" :key="index">
-                                    <a :href="v.href">{{v.name}}</a>
+                                    <a :href="v.href" target="_blank">{{v.name}}</a>
                                 </li>
                             </ul>
                         </div>
