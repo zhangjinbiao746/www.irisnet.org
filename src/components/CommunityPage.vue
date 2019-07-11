@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="community_ama_content">
-                    <h3 class="community_title">{{$store.state.messages.communityPage.faq.ama.title}}</h3>
+                    <h3 class="community_title">{{$store.state.messages.communityPage.faq.ama.title}}<router-link :to="$store.state.messages.communityPage.faq.ama.viewMoreLink">{{$store.state.messages.communityPage.faq.ama.viewMore}}<i class="triangle"></i></router-link></h3>
                     <div class="community_list_container">
                         <div class="community_list_content">
                             <div class="community_list_wrap" v-for="item in $store.state.messages.communityPage.faq.ama.leftList">

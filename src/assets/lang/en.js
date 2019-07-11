@@ -362,10 +362,48 @@ export const message = {
         wallet: 'Rainbow Wallet',
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS Explorer',
-        explorerHref:'https://www.irisplorer.io/'
+        explorerHref:'https://www.irisplorer.io/',
+        leftContent:{
+            wallet:{
+                title:'Wallets',
+                logo:'IRISnet_mainnnet_wallet.png',
+                list:[
+                    {
+                        name:'Math Wallet',
+                        href:'http://www.mathwallet.org/en/',
+                    },
+                    {
+                        name:'Wetez',
+                        href:'https://www.wetez.io/pc/homepage',
+                    }
+                ]
+            },
+            explorer:{
+                title:'Explorers',
+                logo:'IRISnet_mainnet_explorer.png',
+                list:[
+                    {
+                        name:'IRISnet-Overview',
+                        href:'https://irisnet-overview.genesislab.net/'
+                    },
+                    {
+                        name:'Big-Dipper',
+                        href:'https://iris.bigdipper.live/'
+                    },
+                    {
+                        name:'IRISnet-P2P',
+                        href:'https://irisnet.p2p.org'
+                    },
+                    {
+                        name:'Hubble',
+                        href:'https://hubble.figment.network/iris/chains/irishub'
+                    }
+                ]
+            }
+        }
     },
     announcements:{
-        title: 'Foundation Announcements',
+        title: 'Announcements',
         viewMore: 'View More',
         viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
         betaTitle:'IRISnet Public Token Addresses',
@@ -410,6 +448,8 @@ export const message = {
             title:'FUXI Testnet',
             production: 'The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers).',
             testnetLink:'Use FUXI Testnet',
+            testnetExplorerTitle:'FUXI Explorer',
+            testnetExplorerHref:'https://testnet.irisplorer.io/',
             href:'https://www.irisnet.org/docs/get-started/Join-the-Testnet.html'
         },
         nyancat:{
@@ -417,6 +457,8 @@ export const message = {
             title:'Nyancat Testnet',
             production:'The Nyancat testnet runs a newer version of irishub, providing a test environment for validators to preview and test the new version before it is ready for deployment to mainnet.',
             testnetLink:'Use Nyancat Tensent',
+            testnetExplorerTitle:'Nyancat Explorer',
+            testnetExplorerHref:'http://nyancat.irisplorer.io/',
             href:'https://github.com/irisnet/testnets/tree/master/nyancat'
         }
     },
@@ -582,30 +624,17 @@ export const message = {
         eventsTitle:'Upcoming Events',
         events: {
             left: [
-                {
-                    img:'IRISnet_events_global.jpg',
-                    href:'http://gbacenter.org/event/index_en.html',
-                    address:'SHANGHAI',
-                    timestamp:'July 6th-7th, 2019',
-                    title:'2019 2nd Global Graphene Blockchain Developer Conference',
-                    signUp:'Sign Up',
-                    signUpUrl:'https://www.huodongxing.com/event/6490592893800?layout=EN',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
-                    img:'IRISnet_events_staking.jpg',
-                    href:'javascript:void(0);',
-                    address:'BEIJING',
-                    timestamp:'July 10th, 2019',
-                    title:'Staking Con Staking Ecological Conference',
-                    signUp:'Sign Up',
-                    signUpUrl:'https://www.huodongxing.com/event/2496757517700?layout=EN',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-            ],
-            right:[
+	            {
+		            img:'IRISnet_ico.png',
+		            href:'javascript:void(0);',
+		            address:'CHENGDU',
+		            timestamp:'July 15th, 2019',
+		            title:'ICO Pentera & IRISnet',
+		            signUp:'',
+		            signUpUrl:'',
+		            viewMore:'',
+		            viewMoreUrl:'',
+	            },
                 {
                     img:'IRISnet_events_plat_on.jpg',
                     href:'javascript:void(0);',
@@ -627,7 +656,10 @@ export const message = {
                     signUpUrl:'https://www.buidl.asia/events/buidl-2019',
                     viewMore:'',
                     viewMoreUrl:'',
-                }
+                },
+            ],
+            right:[
+            
             ]
         },
         faq:{
@@ -654,20 +686,21 @@ export const message = {
             },
             ama:{
                 title: 'Events Review',
+                viewMore:'View More',
+                viewMoreLink:'/events',
                 leftList: [
+                    {
+                        img:'IRISnet_events_global.jpg',
+                        href:'javascript:void(0)',
+                        title:'GBAC',
+                        content:'2019 2nd Global Graphene Blockchain Developer Conference',
+                    },
                     {
                         img:'IRISnet_ama_coinsuper.png',
                         href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
                         title:'IRISnet&Coinsuper',
                         content:'2019-6-19 AMA',
                     },
-                  /*  {
-                        img:'IRISnet_ama_coinsuper.png',
-                        href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
-                        title:'2019-6-19 AMA',
-                        content:'IRISnet & Coinsuper',
-                    },*/
-                    
                 ],
              /*   rightList:[
                     {
@@ -774,6 +807,37 @@ export const message = {
                     ]
                 }
             ]
+        },
+        pastEvents:{
+            title: 'Events Review',
+            subheading:'There are  the reviews of  past events',
+	        currentDate:'Recent Events Review',
+            imgList:[
+                {
+                    img: 'IRISnet_events_global.jpg',
+                    href:'javascript:void(0)',
+                    timestamp: 'July 6th-7th, 2019',
+                    address:'SHANGHAI',
+                    title: '2019 2nd Global Graphene Blockchain Developer Conference'
+                },
+                {
+                    img: 'IRISnet_ama_coinsuper.png',
+                    href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
+                    timestamp: '2019-6-19 AMA',
+                    address:'',
+                    title: 'IRISnet&Coinsuper'
+                },
+            ],
+	       /* pastListTitle:'',
+            list:[
+                {
+                	href:'',
+                    timestamp:'',
+                    title:'',
+                    type:'',
+                    address:''
+                },
+            ]*/
         }
     },
     

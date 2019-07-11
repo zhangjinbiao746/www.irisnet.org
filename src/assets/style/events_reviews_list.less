@@ -1,0 +1,362 @@
+.events_review_list{
+  padding-top: 0.6rem;
+  width: 100%;
+  .events_review_container{
+    width: 100%;
+    background: #2C2948;
+    .events_review_title_wrap{
+      max-width: 12rem;
+      margin: 0 auto;
+      .events_review_title{
+        margin: 0;
+        font-size: 0.52rem;
+        color: #fff;
+        line-height: 0.6rem;
+        padding: 0.66rem 0;
+        .event_review_subheading{
+          font-size: 0.16rem;
+          line-height: 0.3rem;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  .events_review_list_container{
+    width: 100%;
+    background: #fff;
+    .events_review_last_list_wrap{
+      max-width: 12rem;
+      margin: 0 auto;
+      .events_reviews_last_title_wrap{
+        .events_reviews_last_title{
+          font-size: 0.32rem;
+          line-height: 0.37rem;
+          font-weight: bolder;
+          margin: 0;
+          padding-top: 0.7rem;
+        }
+      }
+      .events_reviews_last_list_container{
+        padding-top: 0.4rem;
+        .events_review_list_content{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          .events_review_list_item{
+            max-width: 2.85rem;
+            margin-right: 0.2rem;
+            margin-bottom: 0.6rem;
+            .events_review_list_item_content{
+              width: 100%;
+              -webkit-tap-highlight-color:rgba(0,0,0,0);
+              .event_img{
+                width: 100%;
+              }
+              .event_title{
+                text-align: left;
+                padding-top: 0.19rem;
+                font-size: 0.14rem;
+                line-height: 0.16rem;
+                color: #9BA5BE;
+                .event_address{
+                  font-size: 0.14rem;
+                  color: #323C5A;
+                  line-height: 0.16rem;
+                  font-weight: bolder;
+                  margin-right: 0.1rem;
+                }
+              }
+              .event_content{
+                font-size: 0.15rem;
+                color: #323C5A;
+                line-height: 0.17rem;
+                padding-top: 0.09rem;
+              }
+            }
+          }
+          .events_review_list_item:nth-of-type(4){
+            margin-right: 0;
+          }
+          .events_review_list_item:nth-of-type(8){
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+  }
+  .events_review_past_list_container{
+    width: 100%;
+    background: #FCFCFF;
+    .events_review_past_list_wrap{
+      max-width: 12rem;
+      margin: 0 auto;
+      .events_reviews_past_list_title_wrap{
+        padding-top: 0.77rem;
+        .events_reviews_past_list_title{
+          margin: 0;
+        }
+      }
+      .events_reviews_past_list_container{
+        padding-top: 0.39rem;
+        .events_reviews_past_list_content{
+          .events_reviews_past_list_item{
+            font-size: 0.16rem;
+            border-top: 0.01rem solid #B5B9C0;
+            .past_list_item_link_content{
+              color: #323C5A;
+              width: 100%;
+              min-height: 0.9rem;
+              align-items: center;
+              display: flex;
+              outline: transparent;
+              -webkit-tap-highlight-color:rgba(0,0,0,0);
+              .past_list_item{
+                display: flex;
+                width: 100%;
+                .past_list_left_content{
+                  display: flex;
+                  flex: 1;
+                  .past_list_timestamp{
+                    flex: 1;
+                    align-items: center;
+                    display: flex;
+                  }
+                  .line{
+                    border-right: 0.01rem solid #979797;
+                  }
+                  .past_list_address{
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  }
+                }
+                .past_list_right_content{
+                  display: flex;
+                  flex: 2;
+                  .past_list_title{
+                    flex: 3;
+                    font-weight: bolder;
+                    align-items: center;
+                    display: flex;
+                  }
+                  .past_list_type{
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 0.1rem;
+                    span{
+                      display: inline-block;
+                      left: 0;
+                      background: rgba(155, 165, 190, 0.3);
+                      padding: 0.08rem 0.14rem;
+                      font-size: 0.12rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .events_review_past_list_container:last-child{
+    padding-bottom: 1.32rem ;
+  }
+}
+@media screen and (max-width: 1220px){
+  .events_review_list{
+    .events_review_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+    }
+    .events_review_list_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+      .events_review_last_list_wrap {
+        .events_reviews_last_list_container {
+         .events_review_list_content {
+           justify-content:space-between;
+           margin: 0 4%;
+           .events_review_list_item{
+             max-width: 4.5rem;
+           }
+           .events_review_list_item:nth-of-type(2){
+             margin-right: 0;
+           }
+         }
+        }
+      }
+    }
+    .events_review_past_list_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+    }
+  }
+}
+@media screen and (min-width: 1050px) and (max-width: 1220px){
+  .events_review_list{
+    .events_review_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+    }
+    .events_review_list_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+      .events_review_last_list_wrap {
+        .events_reviews_last_list_container {
+          .events_review_list_content {
+            justify-content: space-between;
+            .events_review_list_item{
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    .events_review_past_list_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+    }
+  }
+}
+@media screen and (min-width: 960px)and (max-width: 1050px){
+  .events_review_list{
+    .events_review_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+    }
+    .events_review_list_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+      .events_review_last_list_wrap {
+        .events_reviews_last_list_container {
+          .events_review_list_content {
+            justify-content: space-between;
+            margin: 0;
+            .events_review_list_item{
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    .events_review_past_list_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media screen and (min-width: 450px)and (max-width: 960px){
+  .events_review_list{
+    .events_review_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+    }
+    .events_review_list_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+      .events_review_last_list_wrap {
+        .events_reviews_last_list_container {
+          .events_review_list_content {
+            justify-content: center;
+            margin: 0 0.2rem;
+            .events_review_list_item{
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    .events_review_past_list_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+      .events_review_past_list_wrap{
+        .events_reviews_past_list_container{
+          .events_reviews_past_list_content{
+            .events_reviews_past_list_item{
+              .past_list_item_link_content{
+                .past_list_item{
+                  display: flex;
+                  flex-direction: column;
+                  .past_list_left_content{
+                    max-width: 3.2rem;
+                    margin-top: 0.32rem;
+                  }
+                  .past_list_right_content{
+                    margin-top: 0.14rem;
+                    display: flex;
+                    flex-direction: column;
+                    .past_list_type{
+                      margin: 0.2rem 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .events_review_list{
+    .events_review_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+    }
+    .events_review_list_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+      .events_review_last_list_wrap {
+        .events_reviews_last_list_container {
+          .events_review_list_content {
+            justify-content: center;
+            margin: 0;
+            .events_review_list_item:nth-of-type(2){
+              margin-right: 0;
+            }
+            .events_review_list_item{
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    .events_review_past_list_container{
+      padding: 0 0.2rem;
+      box-sizing: border-box;
+      .events_review_past_list_wrap{
+        .events_reviews_past_list_container{
+          .events_reviews_past_list_content{
+            .events_reviews_past_list_item{
+              .past_list_item_link_content{
+                .past_list_item{
+                  display: flex;
+                  flex-direction: column;
+                  .past_list_left_content{
+                    max-width: 3.2rem;
+                    margin-top: 0.32rem;
+                  }
+                  .past_list_right_content{
+                    margin-top: 0.14rem;
+                    display: flex;
+                    flex-direction: column;
+                    .past_list_type{
+                      margin: 0.2rem 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

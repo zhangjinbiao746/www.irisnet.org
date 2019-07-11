@@ -358,10 +358,48 @@ export const message = {
         wallet: 'Rainbow 钱包',
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS 浏览器',
-        explorerHref:'https://www.irisplorer.io/'
+        explorerHref:'https://www.irisplorer.io/',
+        leftContent:{
+            wallet:{
+                title:'钱包',
+                logo:'IRISnet_mainnnet_wallet.png',
+                list:[
+                    {
+                        name:'Math Wallet',
+                        href:'http://www.mathwallet.org/cn/',
+                    },
+                    {
+                        name:'Wetez',
+                        href:'https://www.wetez.io/pc/homepage',
+                    }
+                ]
+            },
+            explorer:{
+                title:'浏览器',
+                logo:'IRISnet_mainnet_explorer.png',
+                list:[
+                    {
+                        name:'IRISnet-Overview',
+                        href:'https://www.irisplorer.io/#/validators'
+                    },
+                    {
+                        name:'Big-Dipper',
+                        href:'https://iris.bigdipper.live/'
+                    },
+                    {
+                        name:'IRISnet-P2P',
+                        href:'https://irisnet.p2p.org'
+                    },
+                    {
+                        name:'Hubble',
+                        href:'https://hubble.figment.network/iris/chains/irishub'
+                    }
+                ]
+            }
+        }
     },
     announcements:{
-        title: '基金会公告',
+        title: '公告',
         viewMore: '查看更多',
         viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
         betaTitle:'IRISnet的公开地址',
@@ -406,12 +444,16 @@ export const message = {
             title:'伏羲测试网',
             production: '伏羲测试网跟IRISnet主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。',
             testnetLink:'使用伏羲测试网',
+            testnetExplorerTitle:'测试网浏览器',
+            testnetExplorerHref:'https://testnet.irisplorer.io/',
             href:'https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html'
         },
         nyancat:{
             title:'彩虹猫测试网',
             production:'彩虹猫测试网通常运行比IRISnet主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
             testnetLink:'使用彩虹猫测试网',
+            testnetExplorerTitle:'彩虹猫浏览器',
+            testnetExplorerHref:'http://nyancat.irisplorer.io/',
             href:'https://github.com/irisnet/testnets/tree/master/nyancat'
         }
     },
@@ -577,34 +619,20 @@ export const message = {
             ]
         },
         title: '社区',
-        eventsTitle:'近期活动',
+        eventsTitle:'活动预告',
         events: {
             left: [
-                {
-                    img:'IRISnet_events_global.jpg',
-                    href:'http://gbacenter.org/event/index.html',
-                    address:'上海',
-                    timestamp:'2019年7月6日-7日',
-                    title:'2019年第二届全球石墨烯区块链开发者大会',
-                    signUp:'加入活动',
-                    signUpUrl:'https://www.huodongxing.com/event/6490592893800?layout=CN',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                
-                {
-                    img:'IRISnet_events_staking.jpg',
-                    href:'javascript:void(0);',
-                    address:'北京',
-                    timestamp:'2019年7月10日',
-                    title:'StakingCon Staking生态大会',
-                    signUp:'加入活动',
-                    signUpUrl:'https://www.huodongxing.com/event/2496757517700?layout=CN',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-            ],
-            right:[
+	            {
+		            img:'IRISnet_ico.png',
+		            href:'javascript:void(0);',
+		            address:'',
+		            timestamp:'2019年7月15日',
+		            title:'ICO Pentera & IRISnet',
+		            signUp:'',
+		            signUpUrl:'',
+		            viewMore:'',
+		            viewMoreUrl:'',
+	            },
                 {
                     img:'IRISnet_events_plat_on.jpg',
                     href:'javascript:void(0);',
@@ -627,6 +655,9 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 }
+            ],
+            right:[
+            
             ]
         },
         faq:{
@@ -653,23 +684,43 @@ export const message = {
             },
             ama:{
                 title: '活动回顾',
+                viewMore:'查看更多',
+                viewMoreLink:'/events',
                 leftList: [
+	                {
+		                img:'IRISnet_events_staking.jpg',
+		                href:'javascript:void(0);',
+		                title:'Staking Con',
+		                content:'StakingCon Staking生态大会',
+	                },
+                    {
+                        img:'IRISnet_events_global.jpg',
+                        href:'javascript:void(0)',
+                        title:'GBAC',
+                        content:'2019年第二届全球石墨烯区块链开发者大会',
+                    },
+                   
+                ],
+                rightList:[
+	                {
+		                img:'IRISnet_events_online.jpg',
+		                href:'https://mp.weixin.qq.com/s/HYigu8lG-Z9gI-X7Nya81Q',
+		                title:'区分FIND',
+		                content:'了不起的中国公链',
+	                },
                     {
                         img:'IRISnet_ama_zh_node.jpg',
                         href:'https://mp.weixin.qq.com/s/e62Q_P0-yGJmSA84_ClEhA',
                         title:'巴比特链节点',
                         content:'链节点线下活动 | 跨链技术与新机遇',
                     },
-                    {
-                        img:'IRISnet_ama_zh_node.jpg',
-                        href:'https://mp.weixin.qq.com/s/CeUf2StlE6ux1xMBu-UFnQ',
-                        title:'巴比特链节点',
-                        content:'圆桌论坛 | 跨链能否打开应用新赛道？项目方透露了这些新进展',
+                  
+                   /* {
+                        img:'IRISnet_ama_jjs.jpg',
+                        href:'',
+                        title:'鲸交所',
+                        content:'IRISnet的自进化：链上治理和不分叉的网络升级',
                     },
-                    
-                ],
-                rightList:[
-                 
                     {
                         img:'IRISnet_ama_qurea.png',
                         href:'https://mp.weixin.qq.com/s/gV8Zqqoz5-oRX9gZreBFNw',
@@ -681,7 +732,7 @@ export const message = {
                         href:'https://mp.weixin.qq.com/s/9tTIpT0oUdbY4bNPOmieIA',
                         title:'HashBang ',
                         content:'IRISnet BPoS：大道至简，共建跨链生态',
-                    },
+                    },*/
                 ],
             }
         },
@@ -773,6 +824,222 @@ export const message = {
 		                },
 	                ]
                 }
+            ]
+        },
+        pastEvents:{
+            title: '活动回顾',
+            subheading:'以下是往期活动的回顾',
+            currentDate:'近期活动回顾',
+            imgList:[
+                {
+                    img:'IRISnet_events_staking.jpg',
+                    href:'javascript:void(0);',
+                    timestamp:'2019/07/10',
+                    address:'北京',
+                    title:'StakingCon Staking生态大会',
+                },
+                {
+                    img: 'IRISnet_events_global.jpg',
+                    href:'javascript:void(0)',
+                    timestamp: '2019/07/06-07/07',
+                    address:'上海',
+                    title: '2019年第二届全球石墨烯区块链开发者大会'
+                },
+                {
+                    img: 'IRISnet_events_online.jpg',
+                    href:'https://mp.weixin.qq.com/s/HYigu8lG-Z9gI-X7Nya81Q',
+                    timestamp: '2019/07/04',
+                    address:'',
+                    title: '了不起的中国公链'
+                },
+                {
+                    img: 'IRISnet_ama_jjs.jpg',
+                    href:'https://mp.weixin.qq.com/s/QYEGFaGNKDrwI7gUjsVeQA',
+                    timestamp: '2019/07/02',
+                    address:'',
+                    title: '鲸交所视频直播：IRISnet的自进化：链上治理和不分叉的网络升级'
+                },
+                {
+                    img: 'IRISnet_ama_zh_node.jpg',
+                    href:'https://mp.weixin.qq.com/s/e62Q_P0-yGJmSA84_ClEhA',
+                    timestamp: '2019/06/30',
+                    address:'',
+                    title: '链节点线下活动 | 跨链技术与新机遇'
+                },
+                {
+                    img: 'IRISnet_ama_zh_node.jpg',
+                    href:'https://mp.weixin.qq.com/s/CeUf2StlE6ux1xMBu-UFnQ',
+                    timestamp: '2019/06/30',
+                    address:'',
+                    title: '圆桌论坛 | 跨链能否打开应用新赛道？项目方透露了这些新进展'
+                },
+                {
+                    img: 'IRISnet_iservice.png',
+                    href:'https://mp.weixin.qq.com/s/hVVp75iHxTbHKhImReuBQQ',
+                    timestamp: '2019/06/30',
+                    address:'',
+                    title: 'IRISnet受邀深度剖析Cosmos跨链技术'
+                },
+                {
+                    img: 'IRISnet_ama_qurea.png',
+                    href:'https://mp.weixin.qq.com/s/gV8Zqqoz5-oRX9gZreBFNw',
+                    timestamp: '2019/06/11',
+                    address:'',
+                    title: 'IRISnet：可以自进化的BPoS跨链服务枢纽'
+                },
+              /*  {
+                    img: 'IRISnet_ama_hashbang.png',
+                    href:'https://mp.weixin.qq.com/s/9tTIpT0oUdbY4bNPOmieIA',
+                    timestamp: '2019/05/16',
+                    address:'',
+                    title: 'IRISnet BPoS：大道至简，共建跨链生态'
+                },*/
+               /* {
+                    img: 'IRISnet_past_event_pannews.jpg',
+                    href:'https://mp.weixin.qq.com/s/6BVMy233L6xVWtLATCTWCw',
+                    timestamp: '2019/04/23',
+                    address:'',
+                    title: '第三代区块链技术落地 我们该期待些什么 | 跨链新时代'
+                },*/
+                // {
+                //     img: 'IRISnet_ama_hashbang.png',
+                //     href:'https://mp.weixin.qq.com/s/Ivw4pN_-l8G1yqfMCxTmPQ',
+                //     timestamp: '2019/02/28',
+                //     address:'',
+                //     title: 'TokenGazer一问到底 | 第29期：研究员 vs IRISnet'
+                // },
+            ],
+            pastListTitle:'2019',
+            list:[
+                {
+                    href:'https://mp.weixin.qq.com/s/9tTIpT0oUdbY4bNPOmieIA',
+                    timestamp:'2019/05/16',
+                    title:'IRISnet BPoS：大道至简，共建跨链生态',
+                    type:'线上活动',
+                    address:''
+                },
+                {
+                    href:'https://mp.weixin.qq.com/s/6BVMy233L6xVWtLATCTWCw',
+                    timestamp:'2019/04/23',
+                    title:'第三代区块链技术落地 我们该期待些什么 | 跨链新时代',
+                    type:'线上活动',
+                    address:''
+                },
+                {
+                    href:'https://mp.weixin.qq.com/s/eTwV-zBccO4jKAQJZq0D8w',
+                    timestamp:'2019/03/31',
+                    title:'Cosmos & IRISnet 主网上线庆祝活动精彩回顾',
+                    type:'线下活动',
+                    address:'上海'
+                },
+                {
+                    href:'https://mp.weixin.qq.com/s/Ivw4pN_-l8G1yqfMCxTmPQ',
+                    timestamp:'2019/02/28',
+                    title:'TokenGazer一问到底 | 第29期：研究员 vs IRISnet',
+                    type:'线上活动',
+                    address:''
+                },
+                {
+                    href:'https://mp.weixin.qq.com/s/FXpfyshFD6A2ATGI_PZgiA',
+                    timestamp:'2019/02/15',
+                    title:'【算力智库专访】曹恒：代码开源是优秀区块链项目的基本条件',
+                    type:'线上活动',
+                    address:''
+                },
+                {
+                    href:'https://mp.weixin.qq.com/s/laQM61DKvoYeR-Mvvlae1Q',
+                    timestamp:'2019/01/14',
+                    title:'巴比特报道 | 奚海峰：打造跨链服务网络，一位钻而不厌技术老兵的区块链进阶之旅',
+                    type:'线上活动',
+                    address:''
+                },
+               /* {
+                    href:'',
+                    timestamp:'',
+                    title:'',
+                    type:'',
+                    address:''
+                },
+                {
+                    href:'',
+                    timestamp:'July 2th, 2017',
+                    title:'WhaleEx live video',
+                    type:'ONLINE',
+                    address:'BEIJING'
+                },
+                {
+                    href:'',
+                    timestamp:'July 2th, 2017',
+                    title:'WhaleEx live video',
+                    type:'ONLINE',
+                    address:'BEIJING'
+                },
+                {
+                    href:'',
+                    timestamp:'July 2th, 2017',
+                    title:'WhaleEx live video',
+                    type:'ONLINE',
+                    address:'BEIJING'
+                }*/
+            ],
+            pastListTwoTitle:'2018',
+            pastListTwoList:[
+                {
+                    href:'https://mp.weixin.qq.com/s/m405arPrhZ6SoOwVRHMb_A',
+                    timestamp:'2018/09/11',
+                    title:'区块链3.0：共识算法、隐私保护丨IRISnet创始人奚海峰主持峰会讨论',
+                    type:'线下活动',
+                    address:'上海'
+                },
+                {
+                    href:'https://mp.weixin.qq.com/s/eHUg6AaKadBt50v1H-GHXQ',
+                    timestamp:'2018/9/11',
+                    title:'【峰会演讲】COSMOS创始人 Jae Kwon：区块链生态新架构',
+                    type:'线下活动',
+                    address:'上海'
+                },
+                {
+                    href:'https://mp.weixin.qq.com/s/Fxw3v8kr4CajKgr7WlMazw',
+                    timestamp:'2018/08/30',
+                    title:'跨链分享讨论——Cosmos中国&IRISnet研究员Suyu参与巴比特Chainge沙龙',
+                    type:'线下活动',
+                    address:'杭州'
+                },
+                {
+                    href:'https://mp.weixin.qq.com/s/natjKrlGuJIvnVxnPe-s5A',
+                    timestamp:'2018/07/22',
+                    title:'与区块链行业先锋 Zaki Manian 的对话',
+                    type:'线上活动',
+                    address:''
+                },
+                {
+                    href:'https://mp.weixin.qq.com/s/Xdf_fGIa_5v0b3NvIDz8-w',
+                    timestamp:'2018/06/26',
+                    title:'快速实现分布式商业应用？这个下一代公链提供了可能',
+                    type:'线下活动',
+                    address:'美国'
+                },
+                {
+                    href:'https://mp.weixin.qq.com/s/gRG0PPR8r-6c717XDZasmw',
+                    timestamp:'2018/05/23',
+                    title:'Cosmos公开课：区块链互联网，internet of blockchain',
+                    type:'线上活动',
+                    address:''
+                },
+                {
+                    href:'https://mp.weixin.qq.com/s/FrcOrKN1ZEzAO07aeFPnvA',
+                    timestamp:'2018/05/10',
+                    title:'Cosmos Reddit AMA回顾:Part 2',
+                    type:'线上活动',
+                    address:''
+                },
+                {
+                    href:'https://mp.weixin.qq.com/s/Cs4jFFVI9ZNwaECReL5bCw',
+                    timestamp:'2018/05/10',
+                    title:'Cosmos Reddit AMA回顾:Part 1',
+                    type:'线上活动',
+                    address:''
+                },
             ]
         }
     },
