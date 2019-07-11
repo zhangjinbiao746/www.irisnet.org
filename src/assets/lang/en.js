@@ -646,20 +646,20 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
-                {
-                    img:'IRISnet_events_buidl.jpg',
-                    href:'https://www.buidl.asia/',
-                    address:'KOREA',
-                    timestamp:'July 22th-23th, 2019',
-                    title:'Korea BUIDL Keynote speech: DeFi application support on BPoS Blockchain',
-                    signUp:'Sign Up',
-                    signUpUrl:'https://www.buidl.asia/events/buidl-2019',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
+               
             ],
             right:[
-            
+	            {
+		            img:'IRISnet_events_buidl.jpg',
+		            href:'https://www.buidl.asia/',
+		            address:'KOREA',
+		            timestamp:'July 22th-23th, 2019',
+		            title:'Korea BUIDL Keynote speech: DeFi application support on BPoS Blockchain',
+		            signUp:'Sign Up',
+		            signUpUrl:'https://www.buidl.asia/events/buidl-2019',
+		            viewMore:'',
+		            viewMoreUrl:'',
+	            },
             ]
         },
         faq:{
