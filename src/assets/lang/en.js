@@ -625,7 +625,7 @@ export const message = {
         events: {
             left: [
 	            {
-		            img:'IRISnet_ico.png',
+		            img:'IRISnet_ico.jpg',
 		            href:'javascript:void(0);',
 		            address:'CHENGDU',
 		            timestamp:'July 15th, 2019',
