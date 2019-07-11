@@ -623,7 +623,7 @@ export const message = {
         events: {
             left: [
 	            {
-		            img:'IRISnet_ico.png',
+		            img:'IRISnet_ico.jpg',
 		            href:'javascript:void(0);',
 		            address:'',
 		            timestamp:'2019年7月15日',
