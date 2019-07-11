@@ -644,6 +644,9 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
+               
+            ],
+            right:[
                 {
                     img:'IRISnet_events_buidl.jpg',
                     href:'https://www.buidl.asia/',
@@ -655,9 +658,6 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 }
-            ],
-            right:[
-            
             ]
         },
         faq:{
