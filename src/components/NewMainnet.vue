@@ -2,13 +2,53 @@
     <div style="padding-top: 0.6rem;">
         <div class="mainnet_header_container">
             <div class="mainnet_header_wrap">
-                <h1 class="mainnet_title">{{$store.state.messages.mainnet.title}}</h1>
-                <p class="chain_content">{{$store.state.messages.mainnet.production}}</p>
-                <div class="link_content">
-                    <a :href="$store.state.messages.mainnet.walletHref" target="_blank">{{$store.state.messages.mainnet.wallet}}</a>
-                    <a :href="$store.state.messages.mainnet.explorerHref" target="_blank">{{$store.state.messages.mainnet.explorer}}</a>
+                <div class="mainnet_header_left_content">
+                    <h1 class="mainnet_title">{{$store.state.messages.mainnet.title}}</h1>
+                    <p class="chain_content">{{$store.state.messages.mainnet.production}}</p>
+                    <div class="link_content">
+                        <a :href="$store.state.messages.mainnet.walletHref" target="_blank">{{$store.state.messages.mainnet.wallet}}</a>
+                        <a :href="$store.state.messages.mainnet.explorerHref" target="_blank">{{$store.state.messages.mainnet.explorer}}</a>
+                    </div>
+                </div>
+                <div class="mainnet_header_right_content">
+                    <div class="mainnet_header_wallet_content">
+                        <div class="mainnet_header_wallet_line"></div>
+                        <div class="mainnet_header_wallet_img">
+                            <img :src="UrlSrc + $store.state.messages.mainnet.leftContent.wallet.logo" alt="IRISnet_wallet_logo">
+                        </div>
+                        <div class="mainnet_header_list_content">
+                            <p class="mainnet_header_list_wallet_title">{{$store.state.messages.mainnet.leftContent.wallet.title}}</p>
+                            <ul class="mainnet_header_wallet_list">
+                                <li class="mainnet_header_wallet_list_item" v-for="(item,index) in $store.state.messages.mainnet.leftContent.wallet.list" :key="index">
+                                    <a :href="item.href">{{item.name}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mainnet_header_explorer_content">
+                        <div class="mainnet_header_explorer_line"></div>
+                        <div class="mainnet_header_explorer_img">
+                            <img :src="UrlSrc + $store.state.messages.mainnet.leftContent.explorer.logo" alt="">
+                        </div>
+                        <div class="mainnet_header_explorer_list_content">
+                            <p class="mainnet_header_explorer_title">{{$store.state.messages.mainnet.leftContent.explorer.title}}</p>
+                            <ul class="mainnet_header_list_explorer">
+                                <li class="mainnet_header_explorer_list_item" v-for="(v,index) in $store.state.messages.mainnet.leftContent.explorer.list" :key="index">
+                                    <a :href="v.href">{{v.name}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!--<div class="header_wallet_explorer_wrap">
+                <div class="header_wallet_content">
+                    钱包
+                </div>
+                <div class="header_explorer_content">
+                    浏览器
+                </div>
+            </div>-->
         </div>
         <div class="foundation_container">
             <div class="foundation_wrap_left">
@@ -50,15 +90,21 @@
         </div>
         <div class="testnet_container">
             <div class="testnet_wrap">
-                <div class="testnet_content">
+                <div class="testnet_content_wrap">
                     <h3 class="testnet_title"><a :href="$store.state.messages.testnet.fuxi.explorerHref" target="_blank">{{$store.state.messages.testnet.fuxi.title}}</a></h3>
                     <div class="testnet_content">{{$store.state.messages.testnet.fuxi.production}}</div>
-                    <a :href="$store.state.messages.testnet.fuxi.href" class="testnet_link" target="_blank">{{$store.state.messages.testnet.fuxi.testnetLink}}<i class="triangle"></i></a>
+                    <div class="testnet_explorer_content">
+                        <a :href="$store.state.messages.testnet.fuxi.href" class="testnet_link" target="_blank">{{$store.state.messages.testnet.fuxi.testnetLink}}</a>
+                        <a :href="$store.state.messages.testnet.fuxi.testnetExplorerHref" class="testnet_link" target="_blank">{{$store.state.messages.testnet.fuxi.testnetExplorerTitle}}</a>
+                    </div>
                 </div>
-                <div class="testnet_content">
+                <div class="testnet_content_wrap">
                     <h3 class="testnet_title"><a :href="$store.state.messages.testnet.fuxi.explorerHref" target="_blank">{{$store.state.messages.testnet.nyancat.title}}</a></h3>
                     <div class="testnet_content">{{$store.state.messages.testnet.nyancat.production}}</div>
-                    <a :href="$store.state.messages.testnet.nyancat.href" class="testnet_link" target="_blank">{{$store.state.messages.testnet.nyancat.testnetLink}}<i class="triangle"></i></a>
+                    <div class="testnet_explorer_content">
+                        <a :href="$store.state.messages.testnet.nyancat.href" class="testnet_link" target="_blank">{{$store.state.messages.testnet.nyancat.testnetLink}}</a>
+                        <a :href="$store.state.messages.testnet.nyancat.testnetExplorerHref" class="testnet_link" target="_blank">{{$store.state.messages.testnet.nyancat.testnetExplorerTitle}}</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,7 +130,7 @@
 <script>
     export default {
         name: "NewMainnet",
-        data () {
+	    data () {
             return {
 
             }
