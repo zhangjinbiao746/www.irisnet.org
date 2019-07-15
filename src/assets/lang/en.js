@@ -583,29 +583,27 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'IRISnet_events_global.jpg',
-                    href:'http://gbacenter.org/event/index_en.html',
-                    address:'SHANGHAI',
-                    timestamp:'July 6th-7th, 2019',
-                    title:'2019 2nd Global Graphene Blockchain Developer Conference',
-                    signUp:'Sign Up',
-                    signUpUrl:'https://www.huodongxing.com/event/6490592893800?layout=EN',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
-                    img:'IRISnet_events_staking.jpg',
+                    img:'IRISnet_ico.png',
                     href:'javascript:void(0);',
-                    address:'BEIJING',
-                    timestamp:'July 10th, 2019',
-                    title:'Staking Con Staking Ecological Conference',
+                    address:'',
+                    timestamp:'July 15th, 2019',
+                    title:'ICO Pentera & IRISnet',
                     signUp:'Sign Up',
-                    signUpUrl:'https://www.huodongxing.com/event/2496757517700?layout=EN',
+                    signUpUrl:'https://t.me/irisnetwork ',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
-            ],
-            right:[
+                // {
+                //     img:'IRISnet_axonomy _defi.png',
+                //     href:'javascript:void(0);',
+                //     address:'',
+                //     timestamp:'July 18th, 2019',
+                //     title:'AXONOMY DeFi 联盟战略发布会',
+                //     signUp:'Sign Up',
+                //     signUpUrl:'http://www.huodongxing.com/event/3501047431800?layout=EN',
+                //     viewMore:'',
+                //     viewMoreUrl:'',
+                // },
                 {
                     img:'IRISnet_events_plat_on.jpg',
                     href:'javascript:void(0);',
@@ -617,6 +615,9 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
+                
+            ],
+            right:[
                 {
                     img:'IRISnet_events_buidl.jpg',
                     href:'https://www.buidl.asia/',
@@ -655,6 +656,12 @@ export const message = {
             ama:{
                 title: 'Events Review',
                 leftList: [
+                    {
+                        img:'IRISnet_events_global.jpg',
+                        href:'javascript:void(0)',
+                        title:'2019 2nd Global Graphene Blockchain Developer Conference',
+                        content:'GBAC',
+                    },
                     {
                         img:'IRISnet_ama_coinsuper.png',
                         href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
