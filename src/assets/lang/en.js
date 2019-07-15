@@ -604,20 +604,17 @@ export const message = {
                 //     viewMore:'',
                 //     viewMoreUrl:'',
                 // },
-                {
-                    img:'IRISnet_events_plat_on.jpg',
-                    href:'javascript:void(0);',
-                    address:'CHENGDU',
-                    timestamp:'July 19th, 2019',
-                    title:'PlatON @ TaiKoo Li',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                
-            ],
-            right:[
+                // {
+                //     img:'IRISnet_events_plat_on.jpg',
+                //     href:'javascript:void(0);',
+                //     address:'CHENGDU',
+                //     timestamp:'July 19th, 2019',
+                //     title:'PlatON @ TaiKoo Li',
+                //     signUp:'',
+                //     signUpUrl:'',
+                //     viewMore:'',
+                //     viewMoreUrl:'',
+                // },
                 {
                     img:'IRISnet_events_buidl.jpg',
                     href:'https://www.buidl.asia/',
@@ -629,7 +626,11 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 }
-            ]
+                
+            ],
+            // right:[
+            //
+            // ]
         },
         faq:{
             faqTitle:'FAQ',

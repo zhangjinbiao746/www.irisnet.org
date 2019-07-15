@@ -604,17 +604,17 @@ export const message = {
                 },
             ],
             right:[
-                {
-                    img:'IRISnet_events_plat_on.jpg',
-                    href:'javascript:void(0);',
-                    address:'成都',
-                    timestamp:'2019年7月19日',
-                    title:'太古里的云图',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
+                // {
+                //     img:'IRISnet_events_plat_on.jpg',
+                //     href:'javascript:void(0);',
+                //     address:'成都',
+                //     timestamp:'2019年7月19日',
+                //     title:'太古里的云图',
+                //     signUp:'',
+                //     signUpUrl:'',
+                //     viewMore:'',
+                //     viewMoreUrl:'',
+                // },
                 {
                     img:'IRISnet_events_buidl.jpg',
                     href:'https://www.buidl.asia/',
