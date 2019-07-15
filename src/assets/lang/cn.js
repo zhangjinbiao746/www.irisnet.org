@@ -598,7 +598,7 @@ export const message = {
                     timestamp:'2019年7月18日',
                     title:'AXONOMY DeFi 联盟战略发布会',
                     signUp:'加入活动',
-                    signUpUrl:'http://www.huodongxing.com/event/3501047431800?layout=EN',
+                    signUpUrl:'http://www.huodongxing.com/event/3501047431800?layout=CN',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
@@ -665,14 +665,6 @@ export const message = {
                         title:'GBAC',
                         content:'2019年第二届全球石墨烯区块链开发者大会',
                     },
-                   
-                    // {
-                    //     img:'IRISnet_ama_zh_node.jpg',
-                    //     href:'https://mp.weixin.qq.com/s/CeUf2StlE6ux1xMBu-UFnQ',
-                    //     title:'巴比特链节点',
-                    //     content:'圆桌论坛 | 跨链能否打开应用新赛道？项目方透露了这些新进展',
-                    // },
-                    
                 ],
                 rightList:[
                     {
