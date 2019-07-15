@@ -581,25 +581,24 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'IRISnet_events_global.jpg',
-                    href:'http://gbacenter.org/event/index.html',
-                    address:'上海',
-                    timestamp:'2019年7月6日-7日',
-                    title:'2019年第二届全球石墨烯区块链开发者大会',
+                    img:'IRISnet_ico.png',
+                    href:'javascript:void(0);',
+                    address:'',
+                    timestamp:'2019年7月15日',
+                    title:'ICO Pentera & IRISnet',
                     signUp:'加入活动',
-                    signUpUrl:'https://www.huodongxing.com/event/6490592893800?layout=CN',
+                    signUpUrl:'https://t.me/irisnetwork ',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
-                
                 {
-                    img:'IRISnet_events_staking.jpg',
+                    img:'IRISnet_axonomy _defi.png',
                     href:'javascript:void(0);',
-                    address:'北京',
-                    timestamp:'2019年7月10日',
-                    title:'StakingCon Staking生态大会',
+                    address:'',
+                    timestamp:'2019年7月18日',
+                    title:'AXONOMY DeFi 联盟战略发布会',
                     signUp:'加入活动',
-                    signUpUrl:'https://www.huodongxing.com/event/2496757517700?layout=CN',
+                    signUpUrl:'http://www.huodongxing.com/event/3501047431800?layout=EN',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
@@ -655,33 +654,40 @@ export const message = {
                 title: '活动回顾',
                 leftList: [
                     {
-                        img:'IRISnet_ama_zh_node.jpg',
-                        href:'https://mp.weixin.qq.com/s/e62Q_P0-yGJmSA84_ClEhA',
-                        title:'巴比特链节点',
-                        content:'链节点线下活动 | 跨链技术与新机遇',
+                        img:'IRISnet_events_staking.jpg',
+                        href:'javascript:void(0)',
+                        title:'Staking Con',
+                        content:'StakingCon Staking生态大会',
                     },
                     {
-                        img:'IRISnet_ama_zh_node.jpg',
-                        href:'https://mp.weixin.qq.com/s/CeUf2StlE6ux1xMBu-UFnQ',
-                        title:'巴比特链节点',
-                        content:'圆桌论坛 | 跨链能否打开应用新赛道？项目方透露了这些新进展',
+                        img:'IRISnet_events_global.jpg',
+                        href:'https://mp.weixin.qq.com/s/c6IR5bRregeavgEKt9BnNA',
+                        title:'GBAC',
+                        content:'2019年第二届全球石墨烯区块链开发者大会',
                     },
+                   
+                    // {
+                    //     img:'IRISnet_ama_zh_node.jpg',
+                    //     href:'https://mp.weixin.qq.com/s/CeUf2StlE6ux1xMBu-UFnQ',
+                    //     title:'巴比特链节点',
+                    //     content:'圆桌论坛 | 跨链能否打开应用新赛道？项目方透露了这些新进展',
+                    // },
                     
                 ],
                 rightList:[
-                 
                     {
-                        img:'IRISnet_ama_qurea.png',
-                        href:'https://mp.weixin.qq.com/s/gV8Zqqoz5-oRX9gZreBFNw',
-                        title:'无涯社区',
-                        content:'IRISnet：可以自进化的BPoS跨链服务枢纽',
+                        img:'IRISnet_events_online.jpg',
+                        href:'https://mp.weixin.qq.com/s/HYigu8lG-Z9gI-X7Nya81Q',
+                        title:'区分FIND',
+                        content:'了不起的中国公链',
                     },
                     {
-                        img:'IRISnet_ama_hashbang.png',
-                        href:'https://mp.weixin.qq.com/s/9tTIpT0oUdbY4bNPOmieIA',
-                        title:'HashBang ',
-                        content:'IRISnet BPoS：大道至简，共建跨链生态',
+                        img:'IRISnet_ama_jjs.jpg',
+                        href:'https://mp.weixin.qq.com/s/QYEGFaGNKDrwI7gUjsVeQA',
+                        title:'鲸交所',
+                        content:'鲸交所视频直播：IRISnet的自进化：链上治理和不分叉的网络升级',
                     },
+                   
                 ],
             }
         },
