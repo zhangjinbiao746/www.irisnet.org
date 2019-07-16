@@ -582,41 +582,29 @@ export const message = {
         eventsTitle:'Upcoming Events',
         events: {
             left: [
+              
                 {
-                    img:'IRISnet_events_global.jpg',
-                    href:'http://gbacenter.org/event/index_en.html',
-                    address:'SHANGHAI',
-                    timestamp:'July 6th-7th, 2019',
-                    title:'2019 2nd Global Graphene Blockchain Developer Conference',
-                    signUp:'Sign Up',
-                    signUpUrl:'https://www.huodongxing.com/event/6490592893800?layout=EN',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
-                    img:'IRISnet_events_staking.jpg',
+                    img:'IRISnet_axonomy_defi_en.jpg',
                     href:'javascript:void(0);',
                     address:'BEIJING',
-                    timestamp:'July 10th, 2019',
-                    title:'Staking Con Staking Ecological Conference',
+                    timestamp:'July 18th, 2019',
+                    title:'AXONOMY DEFI Alliance Strategic Conference',
                     signUp:'Sign Up',
-                    signUpUrl:'https://www.huodongxing.com/event/2496757517700?layout=EN',
+                    signUpUrl:'http://www.huodongxing.com/event/3501047431800?layout=EN',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
-            ],
-            right:[
-                {
-                    img:'IRISnet_events_plat_on.jpg',
-                    href:'javascript:void(0);',
-                    address:'CHENGDU',
-                    timestamp:'July 19th, 2019',
-                    title:'PlatON @ TaiKoo Li',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
+                // {
+                //     img:'IRISnet_events_plat_on.jpg',
+                //     href:'javascript:void(0);',
+                //     address:'CHENGDU',
+                //     timestamp:'July 19th, 2019',
+                //     title:'PlatON @ TaiKoo Li',
+                //     signUp:'',
+                //     signUpUrl:'',
+                //     viewMore:'',
+                //     viewMoreUrl:'',
+                // },
                 {
                     img:'IRISnet_events_buidl.jpg',
                     href:'https://www.buidl.asia/',
@@ -628,7 +616,11 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 }
-            ]
+                
+            ],
+            // right:[
+            //
+            // ]
         },
         faq:{
             faqTitle:'FAQ',
@@ -656,10 +648,16 @@ export const message = {
                 title: 'Events Review',
                 leftList: [
                     {
-                        img:'IRISnet_ama_coinsuper.png',
-                        href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
-                        title:'IRISnet&Coinsuper',
-                        content:'2019-6-19 AMA',
+                        img:'IRISnet_ico.png',
+                        href:'javascript:void(0)',
+                        title:'ICO Pentera $ IRISnet',
+                        content:'ICO Pentera $ IRISnet AMA',
+                    },
+                    {
+                        img:'IRISnet_events_global.jpg',
+                        href:'javascript:void(0)',
+                        title:'2019 2nd Global Graphene Blockchain Developer Conference',
+                        content:'GBAC',
                     },
                   /*  {
                         img:'IRISnet_ama_coinsuper.png',
@@ -669,20 +667,14 @@ export const message = {
                     },*/
                     
                 ],
-             /*   rightList:[
+                rightList:[
                     {
-                        img:'IRISnet_ama_qurea.png',
-                        href:'https://mp.weixin.qq.com/s/gV8Zqqoz5-oRX9gZreBFNw',
-                        title:'2019-6-11 AMA',
-                        content:'《Follow the tutorial below to install iris as follows》',
+                        img:'IRISnet_ama_coinsuper.png',
+                        href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
+                        title:'IRISnet&Coinsuper',
+                        content:'2019-6-19 AMA',
                     },
-                    {
-                        img:'IRISnet_ama_hashbang.png',
-                        href:'https://mp.weixin.qq.com/s/9tTIpT0oUdbY4bNPOmieIA',
-                        title:'2019-5-16 AMA',
-                        content:'《Follow the tutorial below to install iris as follows》',
-                    }
-                ],*/
+                ],
             }
         },
         resources:{
