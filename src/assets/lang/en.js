@@ -582,17 +582,7 @@ export const message = {
         eventsTitle:'Upcoming Events',
         events: {
             left: [
-                {
-                    img:'IRISnet_ico.png',
-                    href:'javascript:void(0);',
-                    address:'',
-                    timestamp:'July 15th, 2019',
-                    title:'ICO Pentera & IRISnet',
-                    signUp:'Sign Up',
-                    signUpUrl:'https://t.me/irisnetwork ',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
+              
                 // {
                 //     img:'IRISnet_axonomy _defi.png',
                 //     href:'javascript:void(0);',
@@ -658,16 +648,16 @@ export const message = {
                 title: 'Events Review',
                 leftList: [
                     {
+                        img:'IRISnet_ico.png',
+                        href:'javascript:void(0)',
+                        title:'ICO Pentera $ IRISnet',
+                        content:'ICO Pentera $ IRISnet AMA',
+                    },
+                    {
                         img:'IRISnet_events_global.jpg',
                         href:'javascript:void(0)',
                         title:'2019 2nd Global Graphene Blockchain Developer Conference',
                         content:'GBAC',
-                    },
-                    {
-                        img:'IRISnet_ama_coinsuper.png',
-                        href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
-                        title:'IRISnet&Coinsuper',
-                        content:'2019-6-19 AMA',
                     },
                   /*  {
                         img:'IRISnet_ama_coinsuper.png',
@@ -677,20 +667,14 @@ export const message = {
                     },*/
                     
                 ],
-             /*   rightList:[
+                rightList:[
                     {
-                        img:'IRISnet_ama_qurea.png',
-                        href:'https://mp.weixin.qq.com/s/gV8Zqqoz5-oRX9gZreBFNw',
-                        title:'2019-6-11 AMA',
-                        content:'《Follow the tutorial below to install iris as follows》',
+                        img:'IRISnet_ama_coinsuper.png',
+                        href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
+                        title:'IRISnet&Coinsuper',
+                        content:'2019-6-19 AMA',
                     },
-                    {
-                        img:'IRISnet_ama_hashbang.png',
-                        href:'https://mp.weixin.qq.com/s/9tTIpT0oUdbY4bNPOmieIA',
-                        title:'2019-5-16 AMA',
-                        content:'《Follow the tutorial below to install iris as follows》',
-                    }
-                ],*/
+                ],
             }
         },
         resources:{

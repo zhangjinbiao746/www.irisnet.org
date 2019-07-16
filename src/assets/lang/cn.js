@@ -581,17 +581,6 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'IRISnet_ico.png',
-                    href:'javascript:void(0);',
-                    address:'',
-                    timestamp:'2019年7月15日',
-                    title:'ICO Pentera & IRISnet',
-                    signUp:'加入活动',
-                    signUpUrl:'https://t.me/irisnetwork ',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
                     img:'IRISnet_axonomy _defi.png',
                     href:'javascript:void(0);',
                     address:'',
@@ -602,19 +591,6 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
-            ],
-            right:[
-                // {
-                //     img:'IRISnet_events_plat_on.jpg',
-                //     href:'javascript:void(0);',
-                //     address:'成都',
-                //     timestamp:'2019年7月19日',
-                //     title:'太古里的云图',
-                //     signUp:'',
-                //     signUpUrl:'',
-                //     viewMore:'',
-                //     viewMoreUrl:'',
-                // },
                 {
                     img:'IRISnet_events_buidl.jpg',
                     href:'https://www.buidl.asia/',
@@ -626,7 +602,20 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 }
-            ]
+            ],
+         /*   right:[
+                 {
+                     img:'IRISnet_events_plat_on.jpg',
+                     href:'javascript:void(0);',
+                     address:'成都',
+                     timestamp:'2019年7月19日',
+                     title:'太古里的云图',
+                     signUp:'',
+                     signUpUrl:'',
+                     viewMore:'',
+                     viewMoreUrl:'',
+                 },
+            ]*/
         },
         faq:{
             faqTitle:'常见问题',
@@ -654,32 +643,32 @@ export const message = {
                 title: '活动回顾',
                 leftList: [
                     {
-                        img:'IRISnet_events_staking.jpg',
+                        img:'IRISnet_ico.png',
                         href:'javascript:void(0)',
+                        title:'ICO Pentera $ IRISnet',
+                        content:'ICO Pentera $ IRISnet AMA',
+                    },
+                    {
+                        img:'IRISnet_events_staking.jpg',
+                        href:'https://mp.weixin.qq.com/s/bMvji4cmX2oupowO2EN_9A',
                         title:'Staking Con',
                         content:'StakingCon Staking生态大会',
                     },
+                   
+                ],
+                rightList:[
                     {
                         img:'IRISnet_events_global.jpg',
                         href:'https://mp.weixin.qq.com/s/c6IR5bRregeavgEKt9BnNA',
                         title:'GBAC',
                         content:'2019年第二届全球石墨烯区块链开发者大会',
                     },
-                ],
-                rightList:[
                     {
                         img:'IRISnet_events_online.jpg',
                         href:'https://mp.weixin.qq.com/s/HYigu8lG-Z9gI-X7Nya81Q',
                         title:'区分FIND',
                         content:'了不起的中国公链',
                     },
-                    {
-                        img:'IRISnet_ama_jjs.jpg',
-                        href:'https://mp.weixin.qq.com/s/QYEGFaGNKDrwI7gUjsVeQA',
-                        title:'鲸交所',
-                        content:'鲸交所视频直播：IRISnet的自进化：链上治理和不分叉的网络升级',
-                    },
-                   
                 ],
             }
         },
