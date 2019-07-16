@@ -583,7 +583,7 @@ export const message = {
                 {
                     img:'IRISnet_axonomy _defi.png',
                     href:'javascript:void(0);',
-                    address:'',
+                    address:'北京',
                     timestamp:'2019年7月18日',
                     title:'AXONOMY DeFi 联盟战略发布会',
                     signUp:'加入活动',

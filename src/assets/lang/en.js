@@ -583,17 +583,17 @@ export const message = {
         events: {
             left: [
               
-                // {
-                //     img:'IRISnet_axonomy _defi.png',
-                //     href:'javascript:void(0);',
-                //     address:'',
-                //     timestamp:'July 18th, 2019',
-                //     title:'AXONOMY DeFi 联盟战略发布会',
-                //     signUp:'Sign Up',
-                //     signUpUrl:'http://www.huodongxing.com/event/3501047431800?layout=EN',
-                //     viewMore:'',
-                //     viewMoreUrl:'',
-                // },
+                {
+                    img:'IRISnet_axonomy_defi_en.jpg',
+                    href:'javascript:void(0);',
+                    address:'BEIJING',
+                    timestamp:'July 18th, 2019',
+                    title:'AXONOMY DEFI Alliance Strategic Conference',
+                    signUp:'Sign Up',
+                    signUpUrl:'http://www.huodongxing.com/event/3501047431800?layout=EN',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
                 // {
                 //     img:'IRISnet_events_plat_on.jpg',
                 //     href:'javascript:void(0);',
