@@ -36,7 +36,7 @@
                             <a :href="item.href" class="past_list_item_link_content" target="_blank">
                                 <div class="past_list_item">
                                     <div class="past_list_left_content">
-                                        <span class="past_list_timestamp">{{item.timestamp}}</span>
+                                        <span class="past_list_timestamp" :class="item.address ? 'line' : ''">{{item.timestamp}}</span>
                                         <span class="past_list_address">{{item.address}}</span>
                                     </div>
                                     <div class="past_list_right_content">

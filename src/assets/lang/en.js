@@ -269,7 +269,7 @@ export const message = {
                 list: [
                     {id: 0, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'},
                     {id: 1, msg: 'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems'},
-                    {id: 2, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'}
+                    {id: 2, msg: 'Interoperability of those services across an internet of blockchains'}
                 ],
                 buttonMsg: 'WHITE PAPER',
                 WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md'
@@ -624,43 +624,56 @@ export const message = {
         eventsTitle:'Upcoming Events',
         events: {
             left: [
-	            {
-		            img:'IRISnet_ico.jpg',
-		            href:'javascript:void(0);',
-		            address:'CHENGDU',
-		            timestamp:'July 15th, 2019',
-		            title:'ICO Pentera & IRISnet',
-		            signUp:'',
-		            signUpUrl:'',
-		            viewMore:'',
-		            viewMoreUrl:'',
-	            },
+              
                 {
-                    img:'IRISnet_events_plat_on.jpg',
+                    img:'IRISnet_axonomy_defi_en.jpg',
                     href:'javascript:void(0);',
-                    address:'CHENGDU',
-                    timestamp:'July 19th, 2019',
-                    title:'PlatON @ TaiKoo Li',
-                    signUp:'',
-                    signUpUrl:'',
+                    address:'BEIJING',
+                    timestamp:'July 18th, 2019',
+                    title:'AXONOMY DEFI Alliance Strategic Conference',
+                    signUp:'Sign Up',
+                    signUpUrl:'http://www.huodongxing.com/event/3501047431800?layout=EN',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
-               
+                // {
+                //     img:'IRISnet_events_plat_on.jpg',
+                //     href:'javascript:void(0);',
+                //     address:'CHENGDU',
+                //     timestamp:'July 19th, 2019',
+                //     title:'PlatON @ TaiKoo Li',
+                //     signUp:'',
+                //     signUpUrl:'',
+                //     viewMore:'',
+                //     viewMoreUrl:'',
+                // },
+                {
+                    img:'IRISnet_events_buidl.jpg',
+                    href:'https://www.buidl.asia/',
+                    address:'KOREA',
+                    timestamp:'July 22th-23th, 2019',
+                    title:'Korea BUIDL Keynote speech: DeFi application support on BPoS Blockchain',
+                    signUp:'Sign Up',
+                    signUpUrl:'https://www.buidl.asia/events/buidl-2019',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+                
             ],
-            right:[
-	            {
-		            img:'IRISnet_events_buidl.jpg',
-		            href:'https://www.buidl.asia/',
-		            address:'KOREA',
-		            timestamp:'July 22th-23th, 2019',
-		            title:'Korea BUIDL Keynote speech: DeFi application support on BPoS Blockchain',
-		            signUp:'Sign Up',
-		            signUpUrl:'https://www.buidl.asia/events/buidl-2019',
-		            viewMore:'',
-		            viewMoreUrl:'',
-	            },
-            ]
+           /* right:[
+            
+            ]*/
+	        //     {
+		    //         img:'IRISnet_ico.jpg',
+		    //         href:'javascript:void(0);',
+		    //         address:'CHENGDU',
+		    //         timestamp:'July 15th, 2019',
+		    //         title:'ICO Pentera & IRISnet',
+		    //         signUp:'',
+		    //         signUpUrl:'',
+		    //         viewMore:'',
+		    //         viewMoreUrl:'',
+	        //     },
         },
         faq:{
             faqTitle:'FAQ',
@@ -690,11 +703,19 @@ export const message = {
                 viewMoreLink:'/events',
                 leftList: [
                     {
+                        img:'IRISnet_ico.png',
+                        href:'https://medium.com/irisnet-blog/2019-7-15-ama-42f4a5fbe5f0',
+                        title:'ICO Pentera $ IRISnet',
+                        content:'ICO Pentera $ IRISnet AMA',
+                    },
+                    {
                         img:'IRISnet_events_global.jpg',
                         href:'javascript:void(0)',
                         title:'GBAC',
                         content:'2019 2nd Global Graphene Blockchain Developer Conference',
                     },
+                ],
+                rightList:[
                     {
                         img:'IRISnet_ama_coinsuper.png',
                         href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
@@ -702,20 +723,6 @@ export const message = {
                         content:'2019-6-19 AMA',
                     },
                 ],
-             /*   rightList:[
-                    {
-                        img:'IRISnet_ama_qurea.png',
-                        href:'https://mp.weixin.qq.com/s/gV8Zqqoz5-oRX9gZreBFNw',
-                        title:'2019-6-11 AMA',
-                        content:'《Follow the tutorial below to install iris as follows》',
-                    },
-                    {
-                        img:'IRISnet_ama_hashbang.png',
-                        href:'https://mp.weixin.qq.com/s/9tTIpT0oUdbY4bNPOmieIA',
-                        title:'2019-5-16 AMA',
-                        content:'《Follow the tutorial below to install iris as follows》',
-                    }
-                ],*/
             }
         },
         resources:{
@@ -813,6 +820,14 @@ export const message = {
             subheading:'There are  the reviews of  past events',
 	        currentDate:'Recent Events Review',
             imgList:[
+                {
+                    img:'IRISnet_ico.png',
+                    href:'https://medium.com/irisnet-blog/2019-7-15-ama-42f4a5fbe5f0',
+                    address:'',
+                    timestamp: 'July 15th, 2019',
+                    title:'ICO Pentera $ IRISnet',
+                    content:'ICO Pentera $ IRISnet AMA',
+                },
                 {
                     img: 'IRISnet_events_global.jpg',
                     href:'javascript:void(0)',
