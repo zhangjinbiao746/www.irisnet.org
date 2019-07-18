@@ -643,12 +643,6 @@ export const message = {
                 title: '活动回顾',
                 leftList: [
                     {
-                        img:'IRISnet_ico.png',
-                        href:'javascript:void(0)',
-                        title:'ICO Pentera $ IRISnet',
-                        content:'ICO Pentera $ IRISnet AMA',
-                    },
-                    {
                         img:'IRISnet_events_staking.jpg',
                         href:'https://mp.weixin.qq.com/s/bMvji4cmX2oupowO2EN_9A',
                         title:'Staking Con',

@@ -649,15 +649,15 @@ export const message = {
                 leftList: [
                     {
                         img:'IRISnet_ico.png',
-                        href:'javascript:void(0)',
+                        href:'https://medium.com/irisnet-blog/2019-7-15-ama-42f4a5fbe5f0',
                         title:'ICO Pentera $ IRISnet',
                         content:'ICO Pentera $ IRISnet AMA',
                     },
                     {
-                        img:'IRISnet_events_global.jpg',
-                        href:'javascript:void(0)',
-                        title:'2019 2nd Global Graphene Blockchain Developer Conference',
-                        content:'GBAC',
+                        img:'IRISnet_ama_coinsuper.png',
+                        href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
+                        title:'IRISnet&Coinsuper',
+                        content:'2019-6-19 AMA',
                     },
                   /*  {
                         img:'IRISnet_ama_coinsuper.png',
@@ -667,14 +667,9 @@ export const message = {
                     },*/
                     
                 ],
-                rightList:[
-                    {
-                        img:'IRISnet_ama_coinsuper.png',
-                        href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
-                        title:'IRISnet&Coinsuper',
-                        content:'2019-6-19 AMA',
-                    },
-                ],
+             /*   rightList:[
+                
+                ],*/
             }
         },
         resources:{
