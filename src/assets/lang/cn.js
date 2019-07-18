@@ -622,31 +622,17 @@ export const message = {
         eventsTitle:'活动预告',
         events: {
             left: [
-	            {
-		            img:'IRISnet_ico.jpg',
-		            href:'javascript:void(0);',
-		            address:'',
-		            timestamp:'2019年7月15日',
-		            title:'ICO Pentera & IRISnet',
-		            signUp:'',
-		            signUpUrl:'',
-		            viewMore:'',
-		            viewMoreUrl:'',
-	            },
                 {
-                    img:'IRISnet_events_plat_on.jpg',
+                    img:'IRISnet_axonomy _defi.png',
                     href:'javascript:void(0);',
-                    address:'成都',
-                    timestamp:'2019年7月19日',
-                    title:'太古里的云图',
-                    signUp:'',
-                    signUpUrl:'',
+                    address:'北京',
+                    timestamp:'2019年7月18日',
+                    title:'AXONOMY DeFi 联盟战略发布会',
+                    signUp:'加入活动',
+                    signUpUrl:'http://www.huodongxing.com/event/3501047431800?layout=CN',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
-               
-            ],
-            right:[
                 {
                     img:'IRISnet_events_buidl.jpg',
                     href:'https://www.buidl.asia/',
@@ -658,7 +644,20 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 }
-            ]
+            ],
+         /*   right:[
+                 {
+                     img:'IRISnet_events_plat_on.jpg',
+                     href:'javascript:void(0);',
+                     address:'成都',
+                     timestamp:'2019年7月19日',
+                     title:'太古里的云图',
+                     signUp:'',
+                     signUpUrl:'',
+                     viewMore:'',
+                     viewMoreUrl:'',
+                 },
+            ]*/
         },
         faq:{
             faqTitle:'常见问题',
@@ -694,6 +693,10 @@ export const message = {
 		                content:'StakingCon Staking生态大会',
 	                },
                     {
+                        img:'IRISnet_ico.png',
+                        href:'javascript:void(0)',
+                        title:'ICO Pentera $ IRISnet',
+                        content:'ICO Pentera $ IRISnet AMA',
                         img:'IRISnet_events_global.jpg',
                         href:'javascript:void(0)',
                         title:'GBAC',
@@ -714,6 +717,15 @@ export const message = {
                         title:'巴比特链节点',
                         content:'链节点线下活动 | 跨链技术与新机遇',
                     },
+                    {
+                        img:'IRISnet_events_staking.jpg',
+                        href:'https://mp.weixin.qq.com/s/bMvji4cmX2oupowO2EN_9A',
+                        title:'Staking Con',
+                        content:'StakingCon Staking生态大会',
+                    },
+                   
+                ],
+                rightList:[
                   
                    /* {
                         img:'IRISnet_ama_jjs.jpg',
@@ -722,17 +734,17 @@ export const message = {
                         content:'IRISnet的自进化：链上治理和不分叉的网络升级',
                     },
                     {
-                        img:'IRISnet_ama_qurea.png',
-                        href:'https://mp.weixin.qq.com/s/gV8Zqqoz5-oRX9gZreBFNw',
-                        title:'无涯社区',
-                        content:'IRISnet：可以自进化的BPoS跨链服务枢纽',
+                        img:'IRISnet_events_global.jpg',
+                        href:'https://mp.weixin.qq.com/s/c6IR5bRregeavgEKt9BnNA',
+                        title:'GBAC',
+                        content:'2019年第二届全球石墨烯区块链开发者大会',
                     },
                     {
-                        img:'IRISnet_ama_hashbang.png',
-                        href:'https://mp.weixin.qq.com/s/9tTIpT0oUdbY4bNPOmieIA',
-                        title:'HashBang ',
-                        content:'IRISnet BPoS：大道至简，共建跨链生态',
-                    },*/
+                        img:'IRISnet_events_online.jpg',
+                        href:'https://mp.weixin.qq.com/s/HYigu8lG-Z9gI-X7Nya81Q',
+                        title:'区分FIND',
+                        content:'了不起的中国公链',
+                    },
                 ],
             }
         },
