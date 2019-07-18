@@ -648,15 +648,15 @@ export const message = {
                         title:'Staking Con',
                         content:'StakingCon Staking生态大会',
                     },
-                   
-                ],
-                rightList:[
                     {
                         img:'IRISnet_events_global.jpg',
                         href:'https://mp.weixin.qq.com/s/c6IR5bRregeavgEKt9BnNA',
                         title:'GBAC',
                         content:'2019年第二届全球石墨烯区块链开发者大会',
                     },
+                   
+                ],
+                rightList:[
                     {
                         img:'IRISnet_events_online.jpg',
                         href:'https://mp.weixin.qq.com/s/HYigu8lG-Z9gI-X7Nya81Q',
