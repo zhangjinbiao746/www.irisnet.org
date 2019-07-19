@@ -709,20 +709,21 @@ export const message = {
                         content:'ICO Pentera $ IRISnet AMA',
                     },
                     {
-                        img:'IRISnet_events_global.jpg',
-                        href:'javascript:void(0)',
-                        title:'GBAC',
-                        content:'2019 2nd Global Graphene Blockchain Developer Conference',
-                    },
-                ],
-                rightList:[
-                    {
                         img:'IRISnet_ama_coinsuper.png',
                         href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
                         title:'IRISnet&Coinsuper',
                         content:'2019-6-19 AMA',
                     },
+	                {
+		                img:'IRISnet_events_global.jpg',
+		                href:'javascript:void(0)',
+		                title:'GBAC',
+		                content:'2019 2nd Global Graphene Blockchain Developer Conference',
+	                }
                 ],
+             /*   rightList:[
+                
+                ],*/
             }
         },
         resources:{
