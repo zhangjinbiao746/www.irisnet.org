@@ -5,13 +5,13 @@
                 <span class="community_page_title">{{$store.state.messages.communityPage.title}}</span>
             </div>
         </div>
-        <div class="community_events_container">
+        <div class="community_events_container" v-if="$store.state.messages.communityPage.events.left.length > 0">
             <div class="community_events_wrap">
                 <h1 class="community_events_title">{{$store.state.messages.communityPage.eventsTitle}}</h1>
                 <div class="community_events_list_container">
                     <div class="community_events_left_content">
-                        <div class="community_events_item" v-for="item in $store.state.messages.communityPage.events.left">
-                            <a :href="item.href" target="_blank" :style="{cursor: item.href === 'javascript:void(0);' ? 'auto' : 'pointer'}">
+                        <div class="community_events_item" v-if="$store.state.messages.communityPage.events.left.length > 0" v-for="item in $store.state.messages.communityPage.events.left">
+                            <a :href="item.href ? item.href : ''" target="_blank" :style="{cursor: item.href === 'javascript:void(0);' ? 'auto' : 'pointer'}">
                                 <div class="community_events_item_content">
                                     <img :src="UrlSrc + item.img">
                                     <p class="community_events_timestamp"><span v-show="item.address">{{item.address}}</span> <span>{{item.timestamp}}</span></p>
@@ -63,7 +63,7 @@
                 <div class="community_ama_content">
                     <h3 class="community_title">{{$store.state.messages.communityPage.faq.ama.title}}</h3>
                     <div class="community_list_container">
-                        <div class="community_list_content">
+                        <div class="community_list_content" v-if="$store.state.messages.communityPage.faq.ama.leftList.length > 0">
                             <div class="community_list_wrap" v-for="item in $store.state.messages.communityPage.faq.ama.leftList">
                                 <a :href="item.href" target="_blank" style="display: inline-block" :style="{cursor: item.href === 'javascript:void(0)' ? 'inherit' : 'pointer'}">
                                     <div class="community_item_content">

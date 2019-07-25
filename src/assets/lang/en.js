@@ -582,18 +582,6 @@ export const message = {
         eventsTitle:'Upcoming Events',
         events: {
             left: [
-              
-                {
-                    img:'IRISnet_axonomy_defi_en.jpg',
-                    href:'javascript:void(0);',
-                    address:'BEIJING',
-                    timestamp:'July 18th, 2019',
-                    title:'AXONOMY DEFI Alliance Strategic Conference',
-                    signUp:'Sign Up',
-                    signUpUrl:'http://www.huodongxing.com/event/3501047431800?layout=EN',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
                 // {
                 //     img:'IRISnet_events_plat_on.jpg',
                 //     href:'javascript:void(0);',
@@ -605,18 +593,6 @@ export const message = {
                 //     viewMore:'',
                 //     viewMoreUrl:'',
                 // },
-                {
-                    img:'IRISnet_events_buidl.jpg',
-                    href:'https://www.buidl.asia/',
-                    address:'KOREA',
-                    timestamp:'July 22th-23th, 2019',
-                    title:'Korea BUIDL Keynote speech: DeFi application support on BPoS Blockchain',
-                    signUp:'Sign Up',
-                    signUpUrl:'https://www.buidl.asia/events/buidl-2019',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                }
-                
             ],
             // right:[
             //
@@ -648,6 +624,28 @@ export const message = {
                 title: 'Events Review',
                 leftList: [
                     {
+                        img:'IRISnet_axonomy_defi_en.jpg',
+                        href:'javascript:void(0)',
+                        title:'Axonomy',
+                        content:'AXONOMY DEFI Alliance Strategic Conference'
+                    },
+                    {
+                        img:'IRISnet_events_buidl.jpg',
+                        href:'javascript:void(0)',
+                        title:'BUIDL ASIA 2019',
+                        content:'Korea BUIDL Keynote speech: DeFi application support on BPoS Blockchain'
+                    }
+                 
+                  /*  {
+                        img:'IRISnet_ama_coinsuper.png',
+                        href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
+                        title:'2019-6-19 AMA',
+                        content:'IRISnet & Coinsuper',
+                    },*/
+                    
+                ],
+                rightList:[
+                    {
                         img:'IRISnet_ico.png',
                         href:'https://medium.com/irisnet-blog/2019-7-15-ama-42f4a5fbe5f0',
                         title:'ICO Pentera $ IRISnet',
@@ -659,17 +657,7 @@ export const message = {
                         title:'IRISnet&Coinsuper',
                         content:'2019-6-19 AMA',
                     },
-                  /*  {
-                        img:'IRISnet_ama_coinsuper.png',
-                        href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
-                        title:'2019-6-19 AMA',
-                        content:'IRISnet & Coinsuper',
-                    },*/
-                    
                 ],
-             /*   rightList:[
-                
-                ],*/
             }
         },
         resources:{
