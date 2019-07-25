@@ -623,7 +623,7 @@ export const message = {
                 leftList: [
                     {
                         img:'IRISnet_axonomy _defi.png',
-                        href:'javascript:void(0)',
+                        href:'https://mp.weixin.qq.com/s/qoSdVDycalbCmT3Wa5BrLQ',
                         title:'Axonomy',
                         content:'AXONOMY DeFi 联盟战略发布会'
                     },
