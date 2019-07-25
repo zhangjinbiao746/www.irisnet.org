@@ -580,28 +580,7 @@ export const message = {
         eventsTitle:'近期活动',
         events: {
             left: [
-                {
-                    img:'IRISnet_axonomy _defi.png',
-                    href:'javascript:void(0);',
-                    address:'北京',
-                    timestamp:'2019年7月18日',
-                    title:'AXONOMY DeFi 联盟战略发布会',
-                    signUp:'加入活动',
-                    signUpUrl:'http://www.huodongxing.com/event/3501047431800?layout=CN',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
-                    img:'IRISnet_events_buidl.jpg',
-                    href:'https://www.buidl.asia/',
-                    address:'韩国',
-                    timestamp:'2019年7月22日-23日',
-                    title:'Korea BUIDL 主题演讲:基于BPoS区块链的DeFi应用支持',
-                    signUp:'加入活动',
-                    signUpUrl:'https://www.buidl.asia/events/buidl-2019',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                }
+            
             ],
          /*   right:[
                  {
@@ -643,6 +622,20 @@ export const message = {
                 title: '活动回顾',
                 leftList: [
                     {
+                        img:'IRISnet_axonomy _defi.png',
+                        href:'javascript:void(0)',
+                        title:'Axonomy',
+                        content:'AXONOMY DeFi 联盟战略发布会'
+                    },
+                    {
+                        img:'IRISnet_events_buidl.jpg',
+                        href:'javascript:void(0)',
+                        title:'BUIDL  ASIA 2019',
+                        content:'Korea BUIDL 主题演讲:基于BPoS区块链的DeFi应用支持'
+                    }
+                ],
+                rightList:[
+                    {
                         img:'IRISnet_events_staking.jpg',
                         href:'https://mp.weixin.qq.com/s/bMvji4cmX2oupowO2EN_9A',
                         title:'Staking Con',
@@ -654,15 +647,13 @@ export const message = {
                         title:'GBAC',
                         content:'2019年第二届全球石墨烯区块链开发者大会',
                     },
-                   
-                ],
-                rightList:[
+                   /*
                     {
                         img:'IRISnet_events_online.jpg',
                         href:'https://mp.weixin.qq.com/s/HYigu8lG-Z9gI-X7Nya81Q',
                         title:'区分FIND',
                         content:'了不起的中国公链',
-                    },
+                    }*/
                 ],
             }
         },
