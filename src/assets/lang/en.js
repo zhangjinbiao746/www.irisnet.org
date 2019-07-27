@@ -710,6 +710,10 @@ export const message = {
                         {
                             itemName: 'Hubble',
                             href: 'https://hubble.figment.network/iris/chains/irishub'
+                        },
+                        {
+                            itemName: 'Mintscan',
+                            href: 'https://irishub.mintscan.io/'
                         }
                     ],
                     content:'These block explorers allow you to search, view and analyze IRIS Hub data—like blocks, transactions, validators, governance including params or proposals, etc.',
