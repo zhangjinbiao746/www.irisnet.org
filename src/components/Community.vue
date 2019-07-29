@@ -41,7 +41,7 @@
                                 <a :href="UrlSrc+item.pngUrl" :download="UrlSrc+item.pngUrl" class="community_png_img_download_content">
                                     <span class="community_png_img_format_title">{{item.pngTitle}}</span>
                                 </a>
-                                <a :href="UrlSrc+item.pngUrl" :download="UrlSrc+item.pngUrl" class="community_png_img_download_content">
+                                <a :href="UrlSrc+item.svgUrl" :download="UrlSrc+item.svgUrl" class="community_png_img_download_content">
                                     <span class="community_svg_img_format_title">{{item.svgTitle}}</span>
                                 </a>
                             </p>

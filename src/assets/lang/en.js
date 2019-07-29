@@ -513,22 +513,6 @@ export const message = {
                 },
                 {
                     id: 2,
-                    imgUrl: 'presskit/irisnet_logo_black_pure.png',
-                    pngUrl: 'presskit/IRISNet rebrand Horizontal Capital black.png',
-                    pngTitle: 'png',
-                    svgUrl: 'presskit/IRISNet rebrand Horizontal Capital black.svg',
-                    svgTitle: 'svg'
-                },
-                {
-                    id: 3,
-                    imgUrl: 'presskit/irisnet_logo_white_pure.png',
-                    pngUrl: 'presskit/IRISNet rebrand Horizontal Capital-white.png',
-                    pngTitle: 'png',
-                    svgUrl: 'presskit/IRISNet rebrand Horizontal Capital-white.svg',
-                    svgTitle: 'svg'
-                },
-                {
-                    id: 4,
                     imgUrl: 'presskit/irisnet_logo_column_black.png',
                     pngUrl: 'presskit/IRISnetlogo Vertical-black.png',
                     pngTitle: 'png',
@@ -536,7 +520,7 @@ export const message = {
                     svgTitle: 'svg'
                 },
                 {
-                    id: 5,
+                    id: 3,
                     imgUrl: 'presskit/irisnet_logo_column_white.png',
                     pngUrl: 'presskit/IRISnetlogo Vertical-white.png',
                     pngTitle: 'png',
@@ -544,7 +528,7 @@ export const message = {
                     svgTitle: 'svg'
                 },
                 {
-                    id: 6,
+                    id: 4,
                     imgUrl: 'presskit/iris_logo_black.png',
                     pngUrl: 'presskit/IRISnetRoundLogoWithoutText-black.png',
                     pngTitle: 'png',
@@ -552,11 +536,19 @@ export const message = {
                     svgTitle: 'svg'
                 },
                 {
-                    id: 7,
+                    id: 5,
                     imgUrl: 'presskit/iris_logo_white.png',
                     pngUrl: 'presskit/IRISnetRoundLogoWithoutText-white.png',
                     pngTitle: 'png',
                     svgUrl: 'presskit/IRISnetRoundLogoWithoutText-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 6,
+                    imgUrl: 'presskit/irisnet-rebrand-capital-bg.png',
+                    pngUrl: 'presskit/IRISnet-Rebrand-Capital-Black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnet-Rebrand-Capital-Black.svg',
                     svgTitle: 'svg'
                 },
             ]
