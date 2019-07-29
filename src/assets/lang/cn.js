@@ -557,6 +557,14 @@ export const message = {
                     svgUrl: 'presskit/IRISnetRoundLogoWithoutText-white.svg',
                     svgTitle: 'svg'
                 },
+                {
+                    id: 8,
+                    imgUrl: 'presskit/irisnet-rebrand-capital-bg.png',
+                    pngUrl: 'presskit/IRISnet-Rebrand-Capital-Black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnet-Rebrand-Capital-Black.svg',
+                    svgTitle: 'svg'
+                },
             ]
         },
         aboutIrisnet:{
