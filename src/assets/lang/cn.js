@@ -353,15 +353,15 @@ export const message = {
         }
     },
     mainnet:{
-        title: 'IRIS Network',
-        production: '下一代分布式应用的跨链服务网络——自进化的BPoS区块链',
+        title: 'IRIS Hub',
+        production: '下一代分布式应用的跨链服务枢纽——自进化的BPoS区块链',
         wallet: 'Rainbow 钱包',
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS 浏览器',
         explorerHref:'https://www.irisplorer.io/'
     },
     announcements:{
-        title: '基金会公告',
+        title: '公告',
         viewMore: '查看更多',
         viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
         betaTitle:'IRISnet的公开地址',
@@ -671,6 +671,11 @@ export const message = {
                             itemName: 'Wetez',
                             os:'(Android, iOS)',
                             href: 'https://www.wetez.io/pc/homepage'
+                        },
+                        {
+                            itemName: 'Cosmostation',
+                            os:'(Android)',
+                            href: 'https://www.cosmostation.io/'
                         }
                     ],
                     content:'这些钱包支持IRIS及ATOM的转账和质押，请充分研究其安全性再使用。列示这些信息仅为方便下载，并不代表对钱包使用的安全性负责。',
