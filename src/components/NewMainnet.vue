@@ -48,6 +48,27 @@
                 </ul>
             </div>
         </div>
+        <div class="community_resources_container">
+            <div class="community_resources_wrap">
+                <h2 class="community_resources_title">{{$store.state.messages.communityPage.resources.title}}</h2>
+                <div class="community_resources_list_content">
+                    <div class="community_list_item_content" v-for="item in $store.state.messages.communityPage.resources.ResourceList">
+                        <div class="community_list_logo_content">
+                            <img :src="UrlSrc + item.img" alt="">
+                            <span class="logo_name">{{item.name}}</span>
+                        </div>
+                        <div class="community_resource_item_content">
+                            <div class="community_item_top_container" v-if="item.resourceList">
+                                <div class="community_item_top_content" v-for="value in item.resourceList">
+                                    <a :href="value.href" target="_blank"><span>{{value.itemName}}</span></a> <span class="os_content">{{value.os}}</span>
+                                </div>
+                            </div>
+                            <div class="community_item_bottom_content" :class="item.href !=='javascript:void(0);' ? 'hover_style' : ''"><a :href="item.href" target="_blank">{{item.content}}</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="testnet_container">
             <div class="testnet_wrap">
                 <div class="testnet_content">
