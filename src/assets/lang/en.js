@@ -357,7 +357,7 @@ export const message = {
     },
     // "logo": 'irisnet.png',
     mainnet:{
-        title: 'IRIS Network',
+        title: 'IRIS Hub',
         production: 'Interchain Service Hub for NextGen Distributed Applications – A BPoS Blockchain That Is Self-evolutionary',
         wallet: 'Rainbow Wallet',
         walletHref:'https://www.rainbow.one/',
@@ -365,7 +365,7 @@ export const message = {
         explorerHref:'https://www.irisplorer.io/'
     },
     announcements:{
-        title: 'Foundation Announcements',
+        title: 'Announcements',
         viewMore: 'View More',
         viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
         betaTitle:'IRISnet Public Token Addresses',
@@ -674,6 +674,11 @@ export const message = {
                             itemName: 'Wetez',
                             os:'(Android, iOS)',
                             href: 'https://www.wetez.io/pc/homepage'
+                        },
+                        {
+                            itemName: 'Cosmostation',
+                            os:'(Android)',
+                            href: 'https://www.cosmostation.io/'
                         }
                     ],
                     content:'These web and mobile wallets allow you to store & transfer IRIS, delegate IRIS to validators, and some of them also support ATOM. Note that we do not endorse any of the wallets, they are listed for your convenience.',

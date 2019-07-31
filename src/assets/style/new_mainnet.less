@@ -43,6 +43,93 @@
   }
 
 }
+.community_resources_container{
+  background: #fff;
+  .community_resources_wrap{
+    max-width: 12rem;
+    width: 100%;
+    margin: 0 auto;
+    .community_resources_title{
+      font-size: 0.32rem;
+      color: #323C5A;
+      line-height: 0.37rem;
+      margin: 0.85rem 0 0.84rem 0;
+    }
+    .community_resources_list_content{
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      .community_list_item_content{
+        display: flex;
+        margin-bottom: 0.85rem;
+        .community_list_logo_content{
+          display: flex;
+          min-width: 2.12rem;
+          img{
+            width: 0.4rem;
+            height: 0.4rem;
+          }
+          .logo_name{
+            font-size: 0.24rem;
+            color: #323C5A;
+            line-height: 0.4rem;
+            font-weight: bolder;
+            padding-left: 0.2rem;
+          }
+        }
+        .community_resource_item_content{
+          flex: 1;
+          .community_item_top_container{
+            display: flex;
+            width: 100%;
+            border-bottom: 0.01rem solid #9BA5BE;
+            flex-wrap: wrap;
+            .community_item_top_content{
+              margin-right: 5%;
+              padding-bottom: 0.17rem;
+              display: flex;
+              a{
+                display: inline-block;
+                font-size: 0.16rem;
+                line-height: 0.18rem;
+                color: #323C5A;
+                font-weight: bolder;
+                :hover{
+                  color: #714BE3;
+                }
+                span{
+                  display: inline-block;
+                  white-space: nowrap;
+                }
+              }
+              .os_content{
+                white-space: nowrap;
+                display: inline-block;
+                padding-left: 0.1rem;
+              }
+            }
+          }
+          .community_item_bottom_content{
+            margin-top: 0.17rem;
+            a{
+              cursor: text;
+              color: #323C5A;
+            }
+          }
+          .hover_style{
+            a{
+              cursor: pointer;
+              color: #323C5A;
+              &:hover{
+                color: #714BE3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .foundation_container{
   width: 100%;
   display: flex;
@@ -142,7 +229,7 @@
   }
   .foundation_wrap_right{
     width: 43%;
-    background: #fff;
+    background: #F9FAFC;
     .foundation_list_content{
       margin-top: 1.03rem;
       padding:0 0.2rem 0.9rem 0.5rem;
@@ -272,6 +359,16 @@
     }
   }
 }
+@media screen and  (max-width: 1280px){
+  .community_resources_container{
+    margin: 0 0.2rem;
+  }
+}
+@media  screen and (max-width: 768px) and (min-width: 1010px){
+  .community_resources_container{
+    margin: 0 0.2rem;
+  }
+}
 @media screen and (min-width: 375px) and (max-width: 768px){
   .mainnet_header_container{
     width: 100%;
@@ -317,6 +414,23 @@
       }
     }
 
+  }
+  .community_resources_container{
+    margin: 0 0.2rem;
+    .community_resources_wrap{
+      .community_resources_title{
+        text-align: center;
+      }
+      .community_resources_list_content{
+        padding-left: 0;
+        .community_list_item_content{
+          flex-direction: column;
+          .community_item_top_container{
+            margin-top: 0.29rem;
+          }
+        }
+      }
+    }
   }
   .foundation_container{
     width: 100%;
@@ -409,7 +523,7 @@
     }
     .foundation_wrap_right{
       width: 100%;
-      background: #fff;
+      background: #F9FAFC;
       display: flex;
       justify-content: center;
       .foundation_list_content{
@@ -682,7 +796,7 @@
     }
     .foundation_wrap_right{
       width: 100%;
-      background: #fff;
+      background: #F9FAFC;
       display: flex;
       justify-content: center;
       .foundation_list_content{
@@ -806,6 +920,23 @@
     .community_way:last-child{
       margin-top: 0.2rem !important;
       margin-left: 0 !important;
+    }
+  }
+  .community_resources_container{
+    margin: 0 0.2rem;
+    .community_resources_wrap{
+      .community_resources_title{
+        text-align: center;
+      }
+      .community_resources_list_content{
+        padding-left: 0;
+        .community_list_item_content{
+          flex-direction: column;
+          .community_item_top_container{
+            margin-top: 0.29rem;
+          }
+        }
+      }
     }
   }
 }
