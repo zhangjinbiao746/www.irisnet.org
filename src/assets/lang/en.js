@@ -376,32 +376,33 @@ export const message = {
         announcementList:[
             {
                 id:'0',
+                href:'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
+                date:'Jul 29, 2019',
+                title:'Opened! IRIS Hub Bug Bounty II Program for new version release',
+                content:'IRIS Hub new version v0.15.0 is coming. To make sure the new release come with no major bugs or security vulnerabilities, we are launching the IRISnet Bug Bounty II Program as a part of v0.15.0 upgrade preparation.'
+            },
+            {
+                id:'1',
                 href:'https://medium.com/irisnet-blog/announcement-1st-iris-token-burn-complete-3fe17816ea38',
                 date:'Jun 28, 2019',
                 title:'Announcement: 1st IRIS Token Burn Complete',
                 content:'On June 28, 2019, the IRIS Foundation completed the 1st IRIS token burn under a one-year token burning plan with 19,189,722 IRIS burned. The current total supply is 2 billion IRIS.'
             },
             {
-                id:'1',
+                id:'2',
                 href:'https://medium.com/irisnet-blog/rainbow-v2-0-is-released-we-support-atom-now-1882dcb2bc3c',
                 date:'Jun 21, 2019',
                 title:'Rainbow V2.0 is Released. We Support ATOM Now!',
                 content:'Rainbow v2.0 is released on June 21, 2019 and it now supports Cosmos (ATOM)!'
             },
             {
-                id:'2',
+                id:'3',
                 href:'https://medium.com/tendermint/irisnet-tendermint-inc-join-forces-to-accelerate-open-source-blockchain-development-71d5cf1dd4f7',
                 date:'May 13, 2019',
                 title:'IRISnet & Tendermint Inc Join Forces To Accelerate Open-Source Blockchain Development',
                 content:'IRISnet & Tendermint Inc Join Forces to Accelerate Open-Source Blockchain Development.'
             },
-            {
-                id:'3',
-                href:'https://forum.irisnet.org/t/how-does-iris-foundation-select-validators-to-delegate/39',
-                date:'May 12, 2019',
-                title:'How Does IRIS Foundation Select Validators To Delegate',
-                content:'We have made the public statement on the criteria for the foundation to select validators.'
-            },
+          
         ]
     },
     testnet:{
@@ -574,17 +575,17 @@ export const message = {
         eventsTitle:'Upcoming Events',
         events: {
             left: [
-                // {
-                //     img:'IRISnet_events_plat_on.jpg',
-                //     href:'javascript:void(0);',
-                //     address:'CHENGDU',
-                //     timestamp:'July 19th, 2019',
-                //     title:'PlatON @ TaiKoo Li',
-                //     signUp:'',
-                //     signUpUrl:'',
-                //     viewMore:'',
-                //     viewMoreUrl:'',
-                // },
+                {
+                    img:'irisnet_bug_bounty.png',
+                    href:'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
+                    address:'',
+                    timestamp:'2019/7/29~8/16',
+                    title:'Opened! IRIS Hub Bug Bounty II Program for new version release',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
             ],
             // right:[
             //

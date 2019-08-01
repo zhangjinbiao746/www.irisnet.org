@@ -372,31 +372,31 @@ export const message = {
         announcementList:[
             {
                 id:'0',
+                href:'https://forum.irisnet.org/t/irisnet/219',
+                date:'2019年7月29日',
+                title:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖',
+                content:'IRISnet主网IRIS Hub即将升级至v0.15.0，为了确保新版本没有重大Bug或安全漏洞，我们将推出IRISnet漏洞赏金计划II，为v0.15.0主网升级做好准备。'
+            },
+            {
+                id:'1',
                 href:'https://forum.irisnet.org/t/iris/184',
                 date:'2019年6月28日',
                 title:'公告 | IRIS基金会第一次执行通证销毁计划',
                 content:'2019年6月28日，IRIS基金会通过两笔交易按计划执行了第一次销毁，共销毁了19,189,722 个 IRIS 通证，目前 IRIS 通证的总量为20亿个。'
             },
             {
-                id:'1',
+                id:'2',
                 href:'https://forum.irisnet.org/t/rainbow-v2-0-atom/166',
                 date:'2019年6月21日',
                 title:'Rainbow发布v2.0，新增支持ATOM钱包',
                 content:'Rainbow v2.0于2019年6月21日发布，接入第二条公链Cosmos Hub，新增ATOM钱包功能。'
             },
             {
-                id:'2',
+                id:'3',
                 href:'https://forum.irisnet.org/t/irisnet-tendermint/44',
                 date:'2019年5月13日',
                 title:'IRISnet & Tendermint携手加速开源区块链技术发展',
                 content:'Cosmos 核心开发团队Tendermint 宣布IRISnet 为首要生态合作伙伴。'
-            },
-            {
-                id:'3',
-                href:'https://forum.irisnet.org/t/iris-foundation/37',
-                date:'2019年5月12日',
-                title:'IRIS Foundation 节点委托标准的说明',
-                content:'基金会选择验证人节点的标准做出了公开说明。'
             },
            
         ]
@@ -572,21 +572,43 @@ export const message = {
         eventsTitle:'近期活动',
         events: {
             left: [
-            
+                {
+                    img:'irisnet_bug_bounty.png',
+                    href:'https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg',
+                    address:'',
+                    timestamp:'2019/7/29~8/16',
+                    title:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖！',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+                {
+                    img:'irisnet_cosmos_sdk.png',
+                    href:'https://mp.weixin.qq.com/s/nW7KXURYAKy7tFt1rE1ZsQ',
+                    address:'',
+                    timestamp:'2019/8/10',
+                    title:'Cosmos SDK开发者见面会 - 深圳站',
+                    signUp:'加入活动',
+                    signUpUrl:'https://www.huodongxing.com/event/8503656710300',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+               
             ],
-         /*   right:[
-                 {
-                     img:'IRISnet_events_plat_on.jpg',
-                     href:'javascript:void(0);',
-                     address:'成都',
-                     timestamp:'2019年7月19日',
-                     title:'太古里的云图',
-                     signUp:'',
-                     signUpUrl:'',
-                     viewMore:'',
-                     viewMoreUrl:'',
-                 },
-            ]*/
+            right:[
+                  {
+                    img:'irisnet_sacc.png',
+                    href:'http://sacc.it168.com/',
+                    address:'',
+                    timestamp:'2019/10/31~11/2',
+                    title:'2019中国系统架构师大会：数字转型 架构演进',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+            ]
         },
         faq:{
             faqTitle:'常见问题',
