@@ -584,6 +584,20 @@ export const message = {
                     viewMoreUrl:'',
                 },
                 {
+                    img:'irisnet_cosmos_sdk.png',
+                    href:'https://mp.weixin.qq.com/s/nW7KXURYAKy7tFt1rE1ZsQ',
+                    address:'',
+                    timestamp:'2019/8/10',
+                    title:'Cosmos SDK开发者见面会 - 深圳站',
+                    signUp:'加入活动',
+                    signUpUrl:'https://www.huodongxing.com/event/8503656710300',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+               
+            ],
+            right:[
+                  {
                     img:'irisnet_sacc.png',
                     href:'http://sacc.it168.com/',
                     address:'',
@@ -594,20 +608,7 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
-            ],
-         /*   right:[
-                 {
-                     img:'IRISnet_events_plat_on.jpg',
-                     href:'javascript:void(0);',
-                     address:'成都',
-                     timestamp:'2019年7月19日',
-                     title:'太古里的云图',
-                     signUp:'',
-                     signUpUrl:'',
-                     viewMore:'',
-                     viewMoreUrl:'',
-                 },
-            ]*/
+            ]
         },
         faq:{
             faqTitle:'常见问题',
