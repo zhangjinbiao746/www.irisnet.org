@@ -230,6 +230,7 @@ export const message = {
         irisnetInproduction:'IRISnet is named after Greek goddess Iris, said to be the personification of the rainbow and the faithful messenger between heaven and humanity'
     },
     home: {
+        bannerHref:"https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe",
         sectionOne: {
             title: 'IRIS Network',
             time: '2019.03.01 Launched',

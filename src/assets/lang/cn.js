@@ -226,6 +226,7 @@ export const message = {
         irisnetInproduction:'IRISnet以希腊彩虹女神Iris命名，她是在人间和天堂之间传递信息的忠诚使者'
     },
     home: {
+        bannerHref:"https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg",
         sectionOne: {
             title: 'IRIS Network',
             time: '2019.03.01 主网启动',
