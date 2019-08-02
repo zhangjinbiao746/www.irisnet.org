@@ -51,7 +51,7 @@
                 </swiper-slide>
                 <swiper-slide>
                     <a class="banner_link" :href="$store.state.messages.home.bannerHref" target="_blank">
-                        <section class="banner_img_container">
+                        <section :class="bannerImgClass">
                         </section>
                     </a>
                 </swiper-slide>
@@ -149,6 +149,7 @@
         name: "Home",
         data () {
             return {
+            	bannerImgClass:'banner_img_container',
                 showWeChat: false,
                 timer: null,
 	            flShowSwiper: false,
@@ -228,9 +229,17 @@
 	        formatRate(rate){
 		        return `${(rate*100).toFixed(2)} %`
 	        },
+	         changLange(){
+		         if(this.$route.query.lang === 'EN'){
+			         this.bannerImgClass = 'banner_img_container'
+		         }else if(this.$route.query.lang === 'CN'){
+			         this.bannerImgClass = 'banner_img_container_cn'
+		         }
+	         }
         },
         mounted () {
-            this.onresize();
+            this.changLange();
+	        this.onresize();
             this.getCosmosBianJieValidator();
 	        this.flShowSwiper= true;
 	        this.bianJieMoniker= 'IRISnet-Bianjie';
