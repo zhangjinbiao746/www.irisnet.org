@@ -3,12 +3,6 @@
         <div @mouseenter="swiperStop" @mouseleave="swiperStart">
             <swiper ref="mySwiper" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper" >
                 <swiper-slide>
-                    <a class="banner_link" :href="$store.state.messages.home.bannerHref" target="_blank">
-                        <section class="banner_img_container">
-                        </section>
-                    </a>
-                </swiper-slide>
-                <swiper-slide>
                     <section class="sectionOne">
                         <div class="left">
                             <div>{{$store.state.messages.home.sectionOne.title}}</div>
@@ -54,6 +48,12 @@
                             <img src="../assets/IRISnet_bianjie_node_logo.png" alt="" class="banner">
                         </div>
                     </section>
+                </swiper-slide>
+                <swiper-slide>
+                    <a class="banner_link" :href="$store.state.messages.home.bannerHref" target="_blank">
+                        <section class="banner_img_container">
+                        </section>
+                    </a>
                 </swiper-slide>
             </swiper>
         </div>
