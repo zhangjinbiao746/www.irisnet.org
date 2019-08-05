@@ -1,61 +1,63 @@
 <template>
     <div class="content_wrap" @click="closeWeChat">
-        <div @mouseenter="swiperStop" @mouseleave="swiperStart">
+        <div @mouseenter="swiperStop" @mouseleave="swiperStart" style="position: relative;">
             <swiper ref="mySwiper" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper" >
-                <swiper-slide>
-                    <section class="sectionOne">
-                        <div class="left">
-                            <div>{{$store.state.messages.home.sectionOne.title}}</div>
-                            <div>{{$store.state.messages.home.sectionOne.time}}</div>
-                            <div>
-                                <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_bank"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
-                                <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_bank"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
-                                <a @click="showWeChatPic">
-                                    <img src="../assets/hoverIcon/weChatIconHover.png" alt="">
-                                    <div v-show="showWeChat"  class="mobileBox" @touchmove.prevent>
-                                        <div class="qrcode" @touchmove.prevent>
-                                            <img src="../assets/wechat.jpg" alt="" @touchmove.prevent>
-                                            <div class="arrow"></div>
-                                            <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div>
-                                <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button>
-                                <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <img src="../assets/banner.png" alt="" class="banner">
-                        </div>
-                    </section>
-                </swiper-slide>
-                <swiper-slide>
-                    <section class="sectionOne1">
-                        <div class="left">
-                            <div class="irisnet_bianjie_moniker">{{bianJieMoniker}}</div>
-                            <div>{{rate}} {{$store.state.messages.home.irisnetBianJie.commission}}</div>
-                            <div class="development_content">
-                                <p>{{$store.state.messages.home.irisnetBianJie.development}}</p>
-                            </div>
-                            <div>
-                                <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}</button>
-                                <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.explorerName}}</button>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <img src="../assets/IRISnet_bianjie_node_logo.png" alt="" class="banner">
-                        </div>
-                    </section>
-                </swiper-slide>
-                <swiper-slide>
-                    <a class="banner_link" :href="$store.state.messages.home.bannerHref" target="_blank">
-                        <section :class="bannerImgClass">
-                        </section>
-                    </a>
-                </swiper-slide>
+                   <swiper-slide>
+                       <section class="sectionOne">
+                           <div class="left">
+                               <div>{{$store.state.messages.home.sectionOne.title}}</div>
+                               <div>{{$store.state.messages.home.sectionOne.time}}</div>
+                               <div>
+                                   <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_bank"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
+                                   <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_bank"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
+                                   <a @click="showWeChatPic">
+                                       <img src="../assets/hoverIcon/weChatIconHover.png" alt="">
+                                       <div v-show="showWeChat"  class="mobileBox" @touchmove.prevent>
+                                           <div class="qrcode" @touchmove.prevent>
+                                               <img src="../assets/wechat.jpg" alt="" @touchmove.prevent>
+                                               <div class="arrow"></div>
+                                               <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
+                                           </div>
+                                       </div>
+                                   </a>
+                               </div>
+                               <div>
+                                   <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button>
+                                   <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
+                               </div>
+                           </div>
+                           <div class="right">
+                               <img src="../assets/banner.png" alt="" class="banner">
+                           </div>
+                       </section>
+                   </swiper-slide>
+                   <swiper-slide>
+                       <section class="sectionOne1">
+                           <div class="left">
+                               <div class="irisnet_bianjie_moniker">{{bianJieMoniker}}</div>
+                               <div>{{rate}} {{$store.state.messages.home.irisnetBianJie.commission}}</div>
+                               <div class="development_content">
+                                   <p>{{$store.state.messages.home.irisnetBianJie.development}}</p>
+                               </div>
+                               <div>
+                                   <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}</button>
+                                   <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.explorerName}}</button>
+                               </div>
+                           </div>
+                           <div class="right">
+                               <img src="../assets/IRISnet_bianjie_node_logo.png" alt="" class="banner">
+                           </div>
+                       </section>
+                   </swiper-slide>
+                   <swiper-slide>
+                       <a class="banner_link" :href="$store.state.messages.home.bannerHref" target="_blank">
+                           <section :class="bannerImgClass">
+                           </section>
+                       </a>
+                   </swiper-slide>
             </swiper>
+            <div class="swiper-button-prev"  @click="prev()"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+            <div class="swiper-button-next"  @click="next()"></div>
         </div>
         <section class="sectionTwo" ref="whitePaper">
             <div class="first">
@@ -165,6 +167,10 @@
 		            roundLengths: true,
                     autoHeight: true,
 		            // effect : 'coverflow',
+		            navigation:{
+			            nextEl: '.swiper-button-next',
+			            prevEl: '.swiper-button-prev',
+                    }
                 },
 	            bianJieMoniker:'',
 	            rate:''
@@ -184,7 +190,13 @@
 	         swiperStart() {
 		        this.mySwiper.startAutoplay()
 	        },
-
+	         next(){
+	         	this.mySwiper.slideNext();
+	         	console.log(this.mySwiper,"wwww")
+             },
+	         prev(){
+		         this.mySwiper.slidePrev();
+             },
             jumpUrl (url) {
                 window.open(url)
             },
