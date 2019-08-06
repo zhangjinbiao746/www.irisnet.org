@@ -598,7 +598,18 @@ export const message = {
                
             ],
             right:[
-                  {
+                {
+                    img:'irisnet_event_hangzhou.png',
+                    href:'javascript:void(0)',
+                    address:'',
+                    timestamp:'2019/08/11',
+                    title:'白话区块链技术沙龙杭州站- 跨链：让价值自由流通',
+                    signUp:'加入活动',
+                    signUpUrl:'http://www.huodongxing.com/event/6504246435700',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+                 {
                     img:'irisnet_sacc.png',
                     href:'http://sacc.it168.com/',
                     address:'',
