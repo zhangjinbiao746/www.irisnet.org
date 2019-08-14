@@ -679,7 +679,7 @@ export const message = {
                         },
                         {
                             itemName: 'Cosmostation',
-                            os:'(Android)',
+                            os:'(Android, iOS)',
                             href: 'https://www.cosmostation.io/'
                         }
                     ],
