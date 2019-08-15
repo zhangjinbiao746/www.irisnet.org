@@ -151,13 +151,13 @@
                 }
             },
             mobileLink(title,index){
-                if(title === 'Mainnet'){
+                if(title === 'Mainnet' || title === '主网'){
                     this.$router.push({path:'/mainnet'})
-                }else if(title === 'Testnet'){
+                }else if(title === 'Testnet' || title === '测试网'){
                     this.$router.push({path:'/testnets'})
-                } else if(title === 'Community'){
+                } else if(title === 'Community' || title === '社区'){
 	                this.$router.push({path:'/community'})
-                }else if(title === 'WhitePaper' || title === 'Roadmap' || title === 'Collaboration'){
+                }else if(title === 'WhitePaper' || title === '白皮书' || title === 'Roadmap'  || title === '路线图' || title === 'Collaboration'|| title === '合作方'){
                     this.$router.push({path:'/'})
                 }
                 this.resetActiveIcon();
