@@ -17,21 +17,6 @@ if (process.env.VUE_ENV === 'client') {
 }
 Vue.mixin({
     beforeMount() {
-        //根据用户浏览器语言偏好设置页面的中英文语言展示
-        if(window.navigator.language === 'zh' || window.navigator.language === 'zh-CN'){
-            this.$store.commit('messages',require('./assets/lang/cn').message)
-            this.$store.commit('lang','CN')
-        }else {
-            this.$store.commit('messages',require('./assets/lang/en').message)
-            this.$store.commit('lang','EN')
-        }
-        if(this.$route.query && this.$route.query.lang === 'CN'){
-            this.$store.commit('lang','CN');
-            this.$store.commit('messages',require('./assets/lang/cn').message)
-        }else if(this.$route.query && this.$route.query.lang === 'EN'){
-            this.$store.commit('lang','EN');
-            this.$store.commit('messages',require('./assets/lang/en').message)
-        }
         const {asyncData} = this.$options
         if (asyncData) {
             this.dataPromise = asyncData({
@@ -39,6 +24,25 @@ Vue.mixin({
             })
         }
     },
+    mounted () {
+        //根据用户浏览器语言偏好设置页面的中英文语言展示
+        let langCNMessage = require('./assets/lang/cn').message,
+            langENMessage = require('./assets/lang/en').message;
+        if(window.navigator.language === 'zh' || window.navigator.language === 'zh-CN'){
+            this.$store.commit('messages',langCNMessage)
+            this.$store.commit('lang','CN')
+        }else {
+            this.$store.commit('messages',langENMessage)
+            this.$store.commit('lang','EN')
+        }
+        if(this.$route.query && this.$route.query.lang === 'CN'){
+            this.$store.commit('lang','CN');
+            this.$store.commit('messages',langCNMessage)
+        }else if(this.$route.query && this.$route.query.lang === 'EN'){
+            this.$store.commit('lang','EN');
+            this.$store.commit('messages',langENMessage)
+        }
+    }
 })
 
 export function createApp() {
