@@ -22,6 +22,7 @@ export function createStore () {
             confirm: '',
             flShowFooter: true,
             headerHeight:'',
+            messages:null,
         },
         mutations: {
             changeItemIs(state, payload) {
@@ -68,6 +69,9 @@ export function createStore () {
             },
             headerHeight(state,data){
                 state.headerHeight = data;
+            },
+            messages(state,data){
+                state.messages = data;
             },
         }
     })

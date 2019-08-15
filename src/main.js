@@ -17,20 +17,34 @@ if (process.env.VUE_ENV === 'client') {
 }
 Vue.mixin({
     beforeMount() {
+        //根据用户浏览器语言偏好设置页面的中英文语言展示
+        if(window.navigator.language === 'zh' || window.navigator.language === 'zh-CN'){
+            this.$store.commit('messages',require('./assets/lang/cn').message)
+            this.$store.commit('lang','CN')
+        }else {
+            this.$store.commit('messages',require('./assets/lang/en').message)
+            this.$store.commit('lang','EN')
+        }
+        if(this.$route.query && this.$route.query.lang === 'CN'){
+            this.$store.commit('lang','CN');
+            this.$store.commit('messages',require('./assets/lang/cn').message)
+        }else if(this.$route.query && this.$route.query.lang === 'EN'){
+            this.$store.commit('lang','EN');
+            this.$store.commit('messages',require('./assets/lang/en').message)
+        }
         const {asyncData} = this.$options
         if (asyncData) {
             this.dataPromise = asyncData({
                 store: this.$store
             })
         }
-    }
+    },
 })
 
 export function createApp() {
     const router = createRouter()
     const store = createStore()
     Vue.use(VueI18n)
-
     let i18n = new VueI18n({
         locale: store.state.lang,    // 语言标识
         messages: {
