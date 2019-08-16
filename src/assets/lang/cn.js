@@ -585,31 +585,6 @@ export const message = {
                     viewMoreUrl:'',
                 },
                 {
-                    img:'irisnet_cosmos_sdk.png',
-                    href:'https://mp.weixin.qq.com/s/nW7KXURYAKy7tFt1rE1ZsQ',
-                    address:'',
-                    timestamp:'2019/8/10',
-                    title:'Cosmos SDK开发者见面会 - 深圳站',
-                    signUp:'加入活动',
-                    signUpUrl:'https://www.huodongxing.com/event/8503656710300',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-               
-            ],
-            right:[
-                {
-                    img:'irisnet_event_hangzhou.png',
-                    href:'javascript:void(0)',
-                    address:'',
-                    timestamp:'2019/08/11',
-                    title:'白话区块链技术沙龙杭州站- 跨链：让价值自由流通',
-                    signUp:'加入活动',
-                    signUpUrl:'http://www.huodongxing.com/event/6504246435700',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                 {
                     img:'irisnet_sacc.png',
                     href:'http://sacc.it168.com/',
                     address:'',
@@ -620,6 +595,32 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
+                
+            ],
+            right:[
+       /*         {
+                    img:'',
+                    href:'javascript:void(0)',
+                    address:'',
+                    timestamp:'2019/08/11',
+                    title:'白话区块链技术沙龙杭州站- 跨链：让价值自由流通',
+                    signUp:'加入活动',
+                    signUpUrl:'http://www.huodongxing.com/event/6504246435700',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+                {
+                    img:'irisnet_cosmos_sdk.png',
+                    href:'https://mp.weixin.qq.com/s/nW7KXURYAKy7tFt1rE1ZsQ',
+                    address:'',
+                    timestamp:'2019/8/10',
+                    title:'Cosmos SDK开发者见面会 - 深圳站',
+                    signUp:'加入活动',
+                    signUpUrl:'https://www.huodongxing.com/event/8503656710300',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },*/
+
             ]
         },
         faq:{
@@ -648,6 +649,20 @@ export const message = {
                 title: '活动回顾',
                 leftList: [
                     {
+                        img:'irisnet_event_hangzhou.png',
+                        href:'javascript:void(0)',
+                        title:'跨链：让价值自由流通',
+                        content:'白话区块链技术沙龙杭州站'
+                    },
+                    {
+                        img:'irisnet_cosmos_sdk.png',
+                        href:'javascript:void(0)',
+                        title:'Cosmos SDK',
+                        content:'Cosmos SDK开发者见面会 - 深圳站'
+                    }
+                ],
+                rightList:[
+                    {
                         img:'IRISnet_axonomy _defi.png',
                         href:'https://mp.weixin.qq.com/s/qoSdVDycalbCmT3Wa5BrLQ',
                         title:'Axonomy',
@@ -659,27 +674,7 @@ export const message = {
                         title:'BUIDL  ASIA 2019',
                         content:'Korea BUIDL 主题演讲:基于BPoS区块链的DeFi应用支持'
                     }
-                ],
-                rightList:[
-                    {
-                        img:'IRISnet_events_staking.jpg',
-                        href:'https://mp.weixin.qq.com/s/bMvji4cmX2oupowO2EN_9A',
-                        title:'Staking Con',
-                        content:'StakingCon Staking生态大会',
-                    },
-                    {
-                        img:'IRISnet_events_global.jpg',
-                        href:'https://mp.weixin.qq.com/s/c6IR5bRregeavgEKt9BnNA',
-                        title:'GBAC',
-                        content:'2019年第二届全球石墨烯区块链开发者大会',
-                    },
-                   /*
-                    {
-                        img:'IRISnet_events_online.jpg',
-                        href:'https://mp.weixin.qq.com/s/HYigu8lG-Z9gI-X7Nya81Q',
-                        title:'区分FIND',
-                        content:'了不起的中国公链',
-                    }*/
+            
                 ],
             }
         },
@@ -1790,3 +1785,4 @@ export const message = {
 
     // ]
 };
+export default message

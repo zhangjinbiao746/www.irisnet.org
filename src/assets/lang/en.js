@@ -1709,3 +1709,4 @@ export const message = {
     //     }
     // ]
 }
+export default message
