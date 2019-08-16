@@ -652,7 +652,7 @@ export const message = {
                         img:'irisnet_event_hangzhou.png',
                         href:'javascript:void(0)',
                         title:'跨链：让价值自由流通',
-                        content:'白话区块链技术沙龙杭州站 - 跨链：让价值自由流通'
+                        content:'白话区块链技术沙龙杭州站'
                     },
                     {
                         img:'irisnet_cosmos_sdk.png',
