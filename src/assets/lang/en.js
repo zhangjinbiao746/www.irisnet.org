@@ -576,7 +576,7 @@ export const message = {
         eventsTitle:'Upcoming Events',
         events: {
             left: [
-                {
+              /*  {
                     img:'irisnet_bug_bounty.png',
                     href:'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
                     address:'',
@@ -586,7 +586,7 @@ export const message = {
                     signUpUrl:'',
                     viewMore:'',
                     viewMoreUrl:'',
-                },
+                },*/
             ],
             // right:[
             //
@@ -618,38 +618,31 @@ export const message = {
                 title: 'Events Review',
                 leftList: [
                     {
+                        img:'irisnet_bug_bounty.png',
+                        href:'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
+                        title:'Opened! IRIS Hub Bug Bounty II Program for new version release',
+                        content:'IRISnet'
+                    },
+                    {
                         img:'IRISnet_axonomy_defi_en.jpg',
                         href:'javascript:void(0)',
                         title:'Axonomy',
                         content:'AXONOMY DEFI Alliance Strategic Conference'
                     },
+                    
+                ],
+                rightList:[
                     {
                         img:'IRISnet_events_buidl.jpg',
                         href:'javascript:void(0)',
                         title:'BUIDL ASIA 2019',
                         content:'Korea BUIDL Keynote speech: DeFi application support on BPoS Blockchain'
-                    }
-                 
-                  /*  {
-                        img:'IRISnet_ama_coinsuper.png',
-                        href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
-                        title:'2019-6-19 AMA',
-                        content:'IRISnet & Coinsuper',
-                    },*/
-                    
-                ],
-                rightList:[
+                    },
                     {
                         img:'IRISnet_ico.png',
                         href:'https://medium.com/irisnet-blog/2019-7-15-ama-42f4a5fbe5f0',
                         title:'ICO Pentera $ IRISnet',
                         content:'ICO Pentera $ IRISnet AMA',
-                    },
-                    {
-                        img:'IRISnet_ama_coinsuper.png',
-                        href:'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
-                        title:'IRISnet&Coinsuper',
-                        content:'2019-6-19 AMA',
                     },
                 ],
             }

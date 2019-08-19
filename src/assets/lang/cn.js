@@ -574,17 +574,6 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'irisnet_bug_bounty.png',
-                    href:'https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg',
-                    address:'',
-                    timestamp:'2019/7/29~8/16',
-                    title:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖！',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
                     img:'irisnet_sacc.png',
                     href:'http://sacc.it168.com/',
                     address:'',
@@ -649,32 +638,32 @@ export const message = {
                 title: '活动回顾',
                 leftList: [
                     {
+                        img:'irisnet_bug_bounty.png',
+                        href:'https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg',
+                        title:'IRISnet',
+                        content:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖！'
+                    },
+                    {
                         img:'irisnet_event_hangzhou.png',
                         href:'javascript:void(0)',
                         title:'跨链：让价值自由流通',
                         content:'白话区块链技术沙龙杭州站'
                     },
-                    {
-                        img:'irisnet_cosmos_sdk.png',
-                        href:'javascript:void(0)',
-                        title:'Cosmos SDK',
-                        content:'Cosmos SDK开发者见面会 - 深圳站'
-                    }
+                  
                 ],
                 rightList:[
+                    {
+                        img:'irisnet_cosmos_sdk.png',
+                        href:'https://mp.weixin.qq.com/s/E8uhI72LpAyOjX2khkppeA',
+                        title:'Cosmos SDK',
+                        content:'Cosmos SDK开发者见面会 - 深圳站'
+                    },
                     {
                         img:'IRISnet_axonomy _defi.png',
                         href:'https://mp.weixin.qq.com/s/qoSdVDycalbCmT3Wa5BrLQ',
                         title:'Axonomy',
                         content:'AXONOMY DeFi 联盟战略发布会'
                     },
-                    {
-                        img:'IRISnet_events_buidl.jpg',
-                        href:'javascript:void(0)',
-                        title:'BUIDL  ASIA 2019',
-                        content:'Korea BUIDL 主题演讲:基于BPoS区块链的DeFi应用支持'
-                    }
-            
                 ],
             }
         },
