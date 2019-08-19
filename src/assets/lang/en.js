@@ -620,8 +620,8 @@ export const message = {
                     {
                         img:'irisnet_bug_bounty.png',
                         href:'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
-                        title:'Opened! IRIS Hub Bug Bounty II Program for new version release',
-                        content:'IRISnet'
+                        title:'IRISnet',
+                        content:'Opened! IRIS Hub Bug Bounty II Program for new version release'
                     },
                     {
                         img:'IRISnet_axonomy_defi_en.jpg',
