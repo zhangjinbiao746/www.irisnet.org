@@ -65,7 +65,7 @@
                     <div class="community_list_container">
                         <div class="community_list_content" v-if="$store.state.messages.communityPage.faq.ama.leftList.length > 0">
                             <div class="community_list_wrap" v-for="item in $store.state.messages.communityPage.faq.ama.leftList">
-                                <a :href="item.href" onclick="return false" target="_blank" style="display: inline-block" :style="{cursor: item.href === 'javascript:void(0)' ? 'inherit' : 'pointer'}">
+                                <a :href="item.href" :target="item.href === 'javascript:void(0)' ? '' : '_blank'" style="display: inline-block" :style="{cursor: item.href === 'javascript:void(0)' ? 'inherit' : 'pointer'}">
                                     <div class="community_item_content">
                                         <img class="community_img" :src="UrlSrc + item.img">
                                         <p class="community_ama_list_item_title">{{item.title}}</p>
@@ -79,7 +79,7 @@
                         </div>
                         <div class="community_list_content" v-if="$store.state.messages.communityPage.faq.ama.rightList && $store.state.messages.communityPage.faq.ama.rightList.length > 0">
                             <div class="community_list_wrap" v-for="item in $store.state.messages.communityPage.faq.ama.rightList">
-                                <a :href="item.href" target="_blank" style="display: inline-block">
+                                <a :href="item.href" :target="item.href === 'javascript:void(0)' ? '' : '_blank'" style="display: inline-block" :style="{cursor: item.href === 'javascript:void(0)' ? 'inherit' : 'pointer'}">
                                     <div class="community_item_content">
                                         <img class="community_img" :src="UrlSrc + item.img">
                                         <p class="community_ama_list_item_title">{{item.title}}</p>
