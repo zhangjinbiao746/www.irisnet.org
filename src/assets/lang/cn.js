@@ -574,6 +574,17 @@ export const message = {
         events: {
             left: [
                 {
+                    img:'irisnet_event_08-26.png',
+                    href:'javascript:void(0)',
+                    address:'',
+                    timestamp:'2019/8/27',
+                    title:'对话真本聪：多资产模块即将上线，IRIS是否会迎来爆发期？',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+                {
                     img:'irisnet_sacc.png',
                     href:'http://sacc.it168.com/',
                     address:'',
