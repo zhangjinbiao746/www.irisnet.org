@@ -574,16 +574,17 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'irisnet_event_08-26.png',
+                    img:'IRISnet_event_20190828.jpg',
                     href:'javascript:void(0)',
                     address:'',
-                    timestamp:'2019/8/27',
-                    title:'对话真本聪：多资产模块即将上线，IRIS是否会迎来爆发期？',
-                    signUp:'',
-                    signUpUrl:'',
+                    timestamp:'2019/8/30',
+                    title:'2019MiiX全球区块链应用生态开发者峰会',
+                    signUp:'加入活动',
+                    signUpUrl:'https://www.huodongxing.com/event/2502772483100',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
+                
                 {
                     img:'irisnet_sacc.png',
                     href:'http://sacc.it168.com/',
@@ -649,16 +650,16 @@ export const message = {
                 title: '活动回顾',
                 leftList: [
                     {
+                        img:'irisnet_event_08-26.png',
+                        href:'https://mp.weixin.qq.com/s/rfvlA34U9nN8gC1yaL5sWw',
+                        title:'对话真本聪',
+                        content:'对话真本聪：多资产模块即将上线，IRIS是否会迎来爆发期？'
+                    },
+                    {
                         img:'irisnet_bug_bounty.png',
                         href:'https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg',
                         title:'IRISnet',
                         content:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖！'
-                    },
-                    {
-                        img:'irisnet_event_hangzhou.png',
-                        href:'javascript:void(0)',
-                        title:'跨链：让价值自由流通',
-                        content:'白话区块链技术沙龙杭州站'
                     },
                   
                 ],
