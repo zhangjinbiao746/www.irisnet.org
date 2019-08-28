@@ -169,6 +169,7 @@ const serve = (path, cache) => express.static(resolve(path), {
 })
 
 app.use(compression({ threshold: 0 }))
+//设置pageiocn
 app.use(favicon('./src/assets/favicon.ico'))
 app.use('/dist', serve('./dist', true))
 app.use('/public', serve('./public', true))
