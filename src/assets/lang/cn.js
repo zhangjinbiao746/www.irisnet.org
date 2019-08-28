@@ -652,7 +652,7 @@ export const message = {
                     {
                         img:'irisnet_event_08-26.png',
                         href:'https://mp.weixin.qq.com/s/rfvlA34U9nN8gC1yaL5sWw',
-                        title:'IRISnet',
+                        title:'对话真本聪',
                         content:'对话真本聪：多资产模块即将上线，IRIS是否会迎来爆发期？'
                     },
                     {
