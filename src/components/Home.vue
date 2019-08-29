@@ -111,7 +111,7 @@
                 <div class="logo">
                     <div class="title">{{$store.state.messages.home.sectionFour.CoreDevelopmentTeams.title}}</div>
                     <div class="logoIcon">
-                        <a :href="n.url" target="_blank" v-for="n of $store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos" :key="n.id">
+                        <a :href="n.url" :target="n.url === 'javascript:void(0)' ? '' : '_blank'" v-for="n of $store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos" :key="n.id">
                             <img :src='UrlSrc + n.path'>
                         </a>
                     </div>
@@ -119,7 +119,7 @@
                 <div class="logo">
                     <div class="title">{{$store.state.messages.home.sectionFour.StrategicPartners.title}}</div>
                     <div class="logoIcon">
-                        <a :href="n.url" target="_blank" v-for="n of $store.state.messages.home.sectionFour.StrategicPartners.logos" :key="n.id">
+                        <a :href="n.url" :target="n.url === 'javascript:void(0)' ? '' : '_blank'" v-for="n of $store.state.messages.home.sectionFour.StrategicPartners.logos" :key="n.id">
                             <img :src='UrlSrc + n.path'>
                         </a>
                     </div>
@@ -127,7 +127,7 @@
                 <div class="logo">
                     <div class="title">{{$store.state.messages.home.sectionFour.EcosystemPartners.title}}</div>
                     <div class="logoIcon">
-                        <a :href="n.url" target="_blank" v-for="n of $store.state.messages.home.sectionFour.EcosystemPartners.logos" :key="n.id">
+                        <a :href="n.url" :target="n.url === 'javascript:void(0)' ? '' : '_blank'" v-for="n of $store.state.messages.home.sectionFour.EcosystemPartners.logos" :key="n.id">
                             <img :src='UrlSrc + n.path'>
                         </a>
                     </div>
@@ -135,7 +135,7 @@
                 <div class="logo">
                     <div class="title">{{$store.state.messages.home.sectionFour.Institutional.title.msg1}}<p>{{$store.state.messages.home.sectionFour.Institutional.title.msg2}}</p></div>
                     <div class="logoIcon supporters">
-                        <a :href="n.url" target="_blank" v-for="n of $store.state.messages.home.sectionFour.Institutional.logos" :key="n.id">
+                        <a :href="n.url" :target="n.url === 'javascript:void(0)' ? '' : '_blank'" v-for="n of $store.state.messages.home.sectionFour.Institutional.logos" :key="n.id">
                             <img :src='UrlSrc + n.path'>
                         </a>
                     </div>

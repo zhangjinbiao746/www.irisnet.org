@@ -60,10 +60,10 @@
                         <div class="community_resource_item_content">
                             <div class="community_item_top_container" v-if="item.resourceList">
                                 <div class="community_item_top_content" v-for="value in item.resourceList">
-                                    <a :href="value.href" target="_blank"><span>{{value.itemName}}</span></a> <span class="os_content">{{value.os}}</span>
+                                    <a :href="value.href" :target="value.href === 'javascript:void(0);' ? '' : '_blank'"><span>{{value.itemName}}</span></a> <span class="os_content">{{value.os}}</span>
                                 </div>
                             </div>
-                            <div class="community_item_bottom_content" :class="item.href !=='javascript:void(0);' ? 'hover_style' : ''"><a :href="item.href" target="_blank">{{item.content}}</a></div>
+                            <div class="community_item_bottom_content" :class="item.href !=='javascript:void(0);' ? 'hover_style' : ''"><a :href="item.href" :target="item.href === 'javascript:void(0);' ? '' : '_blank'">{{item.content}}</a></div>
                         </div>
                     </div>
                 </div>
