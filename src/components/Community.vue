@@ -56,7 +56,7 @@
                     <span class="community_about_irisnet_title">{{$store.state.messages.communityPage.aboutIrisnet.title}}</span>
                 </div>
                 <div class="community_about_irisnet_list_content">
-                    <p class="community_about_irisnet_list_item" v-for="content in $store.state.messages.communityPage.aboutIrisnet.content">{{content.item}}</p>
+                    <div class="community_about_irisnet_list_item" v-for="content in $store.state.messages.communityPage.aboutIrisnet.content" v-html="content.item"></div>
                 </div>
             </div>
         </div>

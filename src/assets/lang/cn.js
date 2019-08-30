@@ -228,8 +228,9 @@ export const message = {
     home: {
         bannerHref:"https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg",
         sectionOne: {
-            title: 'IRIS Network',
-            time: '2019.03.01 主网启动',
+            title: '多资产功能赋能DeFi',
+            time: '2019.8.29',
+            content:'率先实现BPoS主网平滑升级',
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetworkcn',
                 githubUrl: 'https://github.com/irisnet/irishub',
@@ -557,15 +558,15 @@ export const message = {
             content: [
                 {
                     id: 0,
-                    item:'IRISnet:可以自进化的BPoS跨链服务枢纽——下一代分布式商业应用的基础设施'
+                    item:'IRISnet：可以自进化的BPoS跨链服务枢纽'
                 },
                 {
                     id: 1,
-                    item:'就像在人间和天堂之间忠实传递信息的希腊彩虹女神Iris，IRISnet的目标是成为链接数字经济和实体经济的可信“桥梁”，为构建复杂的分布式商业应用提供新一代公链基础设施。边界智能和Tendermint团队合作开发的IRISnet将支持公链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。'
+                    item:'IRISnet（主网 IRIS Hub）是支持DeFi等各种复杂分布式应用的跨链服务枢纽。IRIS Hub采用Cosmos SDK开发，是第一个可自进化的BPoS网络，其开发团队包括获得多个技术创新大奖的边界智能（<a href="https://www.bianjie.ai/" target="_blank">Bianjie</a>）以及Cosmos核心开发团队<a href="https://tendermint.com" target="_blank">Tendermint</a>。'
                 },
                 {
                     id: 2,
-                    item:'IRISnet 是Cosmos 生态中除Cosmos Hub 外的另外一个Hub, 由边界智能（ Bianjie）和Tendermint团队合作开发，目标是成为链接数字经济和实体经济的可信“桥梁”，为构建复杂的分布式商业应用提供新一代面向服务的公链基础设施。IRISnet支持公链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。IRISnet 第一次实现了对BPoS 网络的自进化（通过在线治理实现网络升级）支持。'
+                    item:'IRISnet提供支持DeFi应用开发的多种基础模块，并能支持公有链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。'
                 }
             ]
         },
