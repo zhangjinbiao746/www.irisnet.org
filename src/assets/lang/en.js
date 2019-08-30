@@ -232,8 +232,9 @@ export const message = {
     home: {
         bannerHref:"https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe",
         sectionOne: {
-            title: 'IRIS Network',
-            time: '2019.03.01 Launched',
+            title: 'DeFi App Dev Support is coming',
+            time: '2019.8.29',
+            content:"Multi-asset module available on IRIS Hub V0.15",
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetwork',
                 githubUrl: 'https://github.com/irisnet/irishub',
