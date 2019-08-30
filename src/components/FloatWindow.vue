@@ -8,8 +8,6 @@
                 <div v-show="flShowWeChat"  class="mobileBox" @touchmove.prevent>
                     <div class="qrcode" @touchmove.prevent>
                         <img src="../assets/wechat.jpg" alt="" @touchmove.prevent>
-                        <div class="arrow"></div>
-                        <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
                     </div>
                 </div>
             </a>
