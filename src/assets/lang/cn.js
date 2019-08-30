@@ -228,8 +228,9 @@ export const message = {
     home: {
         bannerHref:"https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg",
         sectionOne: {
-            title: 'IRIS Network',
-            time: '2019.03.01 主网启动',
+            title: '多资产功能赋能DeFi',
+            time: '2019.8.29',
+            content:'率先实现BPoS主网平滑升级',
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetworkcn',
                 githubUrl: 'https://github.com/irisnet/irishub',
