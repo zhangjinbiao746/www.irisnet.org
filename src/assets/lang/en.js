@@ -564,11 +564,11 @@ export const message = {
                 },
                 {
                     id: 1,
-                    item:'IRIS Network (a.k.a. IRISnet) is designed to be the foundation for next generation distributed business applications.  It is a BPoS blockchain, built with  Cosmos-SDK, that enables cross-chain interoperability through a unified service model.  IRISnet is also a regional Cosmos hub that is supported by Interchain Foundation (https://cosmos.network/about).'
+                    item:'IRISnet (a.k.a IRIS Hub) is designed to be the foundation for the next generation distributed applications. Built with Cosmos-SDK, IRIS Hub enables cross-chain interoperability through a unified service model, while providing a variety of modules to support DeFi applications.'
                 },
                 {
                     id: 2,
-                    item:'IRISnet\'s lead developers are Bianjie (www.bianjie.ai) , a national award-winning blockchain technology team based in Shanghai, and Tendermint, the world famous team that created the Tendermint consensus engine and the Cosmos project.'
+                    item:'IRISnet dev teams include Bianjie (<a href="https://www.bianjie.ai" target="_blank">www.bianjie.ai</a>), a national award-winning blockchain technology team based in Shanghai, and Tendermint (<span><a href="https://tendermint.com" target="_blank">https://tendermint.com</a></span>), the world-famous team that created the Tendermint consensus engine and the Cosmos project.'
                 }
             ]
         },
