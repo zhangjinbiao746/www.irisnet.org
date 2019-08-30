@@ -1,8 +1,8 @@
 <template>
     <div class="float_window_container">
         <div class="float_content">
-            <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_bank"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
-            <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_bank"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
+            <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_blank"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
+            <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_blank"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
             <a @mouseenter="showWeChat()"@mouseleave="hideWeChat()">
                 <img src="../assets/hoverIcon/weChatIconHover.png" alt="">
                 <div v-show="flShowWeChat"  class="mobileBox" @touchmove.prevent>
