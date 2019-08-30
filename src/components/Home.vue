@@ -36,12 +36,6 @@
                            </div>
                        </section>
                    </swiper-slide>
-                   <swiper-slide>
-                       <a class="banner_link" :href="$store.state.messages.home.bannerHref" target="_blank">
-                           <section :class="bannerImgClass">
-                           </section>
-                       </a>
-                   </swiper-slide>
             </swiper>
             <div class="swiper-button-prev"  @click="prev()"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
             <div class="swiper-button-next"  @click="next()"></div>
