@@ -83,7 +83,8 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        box-shadow: 0 0.02rem 0.1rem 0 rgba(19,18,35,0.2);;
+                        box-shadow: 0 0.02rem 0.1rem 0 rgba(19,18,35,0.2);
+                        overflow: hidden;
                         img {
                             width: 97%;
                             margin: 0;
