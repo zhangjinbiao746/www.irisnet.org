@@ -577,7 +577,6 @@ export const message = {
                 {
                     img:'IRISnet_event_09_02.jpg',
                     href:'http://www.blockchainlabs.org/week2019',
-                    address:'上海',
                     timestamp:'2019/9/14~9/18',
                     title:'2019上海区块链国际周',
                     signUp:'加入活动',
@@ -589,7 +588,6 @@ export const message = {
                 {
                     img:'irisnet_sacc.png',
                     href:'http://sacc.it168.com/',
-                    address:'',
                     timestamp:'2019/10/31~11/2',
                     title:'2019中国系统架构师大会：数字转型 架构演进',
                     signUp:'',
