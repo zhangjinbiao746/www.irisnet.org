@@ -578,7 +578,7 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'IRISnet_event_09_02.png',
+                    img:'IRISnet_event_09_02.jpg',
                     href:'http://www.blockchainlabs.org/week2019',
                     address:'Shanghai',
                     timestamp:'2019/9/14~9/18',
