@@ -580,7 +580,7 @@ export const message = {
                 {
                     img:'IRISnet_event_09_02.jpg',
                     href:'http://www.blockchainlabs.org/week2019',
-                    address:'Shanghai',
+                    address:'',
                     timestamp:'2019/9/14~9/18',
                     title:'2019 Shanghai International Blockchain Week',
                     signUp:'Sign Up',
