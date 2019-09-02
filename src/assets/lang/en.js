@@ -577,17 +577,17 @@ export const message = {
         eventsTitle:'Upcoming Events',
         events: {
             left: [
-              /*  {
-                    img:'irisnet_bug_bounty.png',
-                    href:'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
-                    address:'',
-                    timestamp:'2019/7/29~8/16',
-                    title:'Opened! IRIS Hub Bug Bounty II Program for new version release',
-                    signUp:'',
-                    signUpUrl:'',
+                {
+                    img:'IRISnet_event_09_02.jpg',
+                    href:'http://www.blockchainlabs.org/week2019',
+                    address:'Shanghai',
+                    timestamp:'2019/9/14~9/18',
+                    title:'2019 Shanghai International Blockchain Week',
+                    signUp:'Sign Up',
+                    signUpUrl:'https://www.eventbrite.com/e/shanghai-international-blockchain-week-2019-tickets-63187962898',
                     viewMore:'',
                     viewMoreUrl:'',
-                },*/
+                },
             ],
             // right:[
             //

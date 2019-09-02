@@ -575,13 +575,13 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'IRISnet_event_20190828.jpg',
-                    href:'javascript:void(0)',
-                    address:'',
-                    timestamp:'2019/8/30',
-                    title:'2019MiiX全球区块链应用生态开发者峰会',
+                    img:'IRISnet_event_09_02.jpg',
+                    href:'http://www.blockchainlabs.org/week2019',
+                    address:'上海',
+                    timestamp:'2019/9/14~9/18',
+                    title:'2019上海区块链国际周',
                     signUp:'加入活动',
-                    signUpUrl:'https://www.huodongxing.com/event/2502772483100',
+                    signUpUrl:'http://summit2019.eventdove.com/',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
