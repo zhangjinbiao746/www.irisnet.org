@@ -57,22 +57,7 @@
                 </div>
                 <div class="community_about_irisnet_list_content">
                     <div class="community_about_irisnet_list_item" v-for="content in $store.state.messages.communityPage.aboutIrisnet.content" v-html="content.item"></div>
-                </div>
-            </div>
-            <div class="community_iris_service_content">
-                <div class="community_about_content">
-                    <h1>{{$store.state.messages.communityPage.aboutIrisnet.irisService.leftTitle}}</h1>
-                </div>
-                <div class="community_link_content">
-                    <a :href="$store.state.messages.communityPage.aboutIrisnet.irisService.href" target="_blank">{{$store.state.messages.communityPage.aboutIrisnet.irisService.title}}</a>
-                </div>
-            </div>
-            <div class="community_bean_content">
-                <div class="community_bean_about_content">
-                    <h1>{{$store.state.messages.communityPage.aboutIrisnet.beanContent.leftTitle}}</h1>
-                </div>
-                <div class="community_bean_link_content">
-                    <a :href="$store.state.messages.communityPage.aboutIrisnet.beanContent.href" target="_blank">{{$store.state.messages.communityPage.aboutIrisnet.beanContent.title}}</a>
+                    <a class="read_more_link" :href="$store.state.messages.communityPage.aboutIrisnet.readMoreHref" target="_blank">{{$store.state.messages.communityPage.aboutIrisnet.readMoreText}}</a>
                 </div>
             </div>
         </div>

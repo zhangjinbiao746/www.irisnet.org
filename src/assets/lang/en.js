@@ -572,16 +572,8 @@ export const message = {
                     item:'IRISnet dev teams include Bianjie (<a href="https://www.bianjie.ai" target="_blank">www.bianjie.ai</a>), a national award-winning blockchain technology team based in Shanghai, and Tendermint (<span><a href="https://tendermint.com" target="_blank">https://tendermint.com</a></span>), the world-famous team that created the Tendermint consensus engine and the Cosmos project.'
                 }
             ],
-            irisService:{
-                leftTitle:"About ISCH",
-                title:'IRIS Service Consortium Hub (ISCH)',
-                href:'https://github.com/irisnet/irisnet/blob/master/pressKit.md#iris-service-consortium-hub-isch',
-            },
-            beanContent:{
-                leftTitle:"About BEAN",
-                title: 'BEAN: Blockchain Edge Analytics Network',
-                href:'https://github.com/irisnet/irisnet/blob/master/pressKit.md#bean-blockchain-edge-analytics-network',
-            }
+            readMoreText:'Other Related Information...',
+            readMoreHref:'https://github.com/irisnet/irisnet/blob/master/pressKit.md',
         },
         title: 'Community',
         eventsTitle:'Upcoming Events',
