@@ -162,7 +162,7 @@
         .community_about_irisnet_title{
           color: @titleFontColor;
           font-weight: bolder;
-          font-size: @titleH1;
+          font-size: @contentFont;
           line-height: 0.37rem;
         }
       }
@@ -180,70 +180,64 @@
         .community_about_irisnet_list_item:first-child{
           padding-top: 0;
           font-weight: bolder;
+          font-size: @contentFont!important;
+        }
+      }
+    }
+    .community_iris_service_content{
+      display: flex;
+      max-width: 12rem;
+      margin: 0 auto;
+      height: 1rem;
+      align-items: center;
+      .community_about_content{
+        flex: 1;
+        h1{
+          margin: 0;
+          color: #323C5A;
           font-size: @contentFont;
         }
-        .community_iris_service_content{
-          margin-top: 0.62rem;
-          .community_iris_service_title{
-            color: @titleFontColor;
-            line-height: 0.33rem;
-            font-size: @contentFont;
-          }
-          .community_iris_service_text{
-            font-size: @titleH5;
-            line-height: 0.28rem;
-            margin-bottom: 0.15rem;
-            padding-top: 0.2rem;
-          }
-          .read_more_btn{
-            line-height: 1;
-            border-bottom: 0.01rem solid #714BE3;
-            cursor: pointer;
-            a{
-              font-size: @titleH5;
-              color: #714BE3;
-            }
-            .triangle{
-              margin-left: 0.05rem;
-              display: inline-block;
-              width: 0;
-              height: 0;
-              border-width: 0.05rem;
-              border-style: solid;
-              border-color: transparent transparent transparent #714BE3;
-            }
+      }
+      .community_link_content{
+        flex: 3;
+        a{
+          font-weight: bold;
+          color: #323C5A;
+          border-bottom: 0.01rem solid #323C5A;
+          line-height: 0.33rem;
+          font-size: @contentFont;
+          &:hover{
+            color: rgba(113,75,227,1);
+            border-bottom: 0.01rem solid rgba(113,75,227,1);
           }
         }
-        .community_bean_content{
-          margin-top: 0.62rem;
-          .community_bean_title{
-            color: @titleFontColor;
-            line-height: 0.33rem;
-            font-size: @contentFont;
-          }
-          .community_iris_service_text{
-            font-size: @titleH5;
-            line-height: 0.28rem;
-            margin-bottom: 0.15rem;
-            padding-top: 0.2rem;
-          }
-          .read_more_btn{
-            line-height: 1;
-            border-bottom: 0.01rem solid #714BE3;
-            cursor: pointer;
-            a{
-              font-size: @titleH5;
-              color: #714BE3;
-            }
-            .triangle{
-              margin-left: 0.05rem;
-              display: inline-block;
-              width: 0;
-              height: 0;
-              border-width: 0.05rem;
-              border-style: solid;
-              border-color: transparent transparent transparent #714BE3;
-            }
+      }
+    }
+    .community_bean_content{
+      display: flex;
+      max-width: 12rem;
+      margin: 0 auto;
+      height: 1rem;
+      align-items: center;
+      .community_bean_about_content{
+        flex: 1;
+        h1{
+          margin: 0;
+          font-size: @contentFont;
+          color: #323C5A;
+        }
+      }
+      .community_bean_link_content{
+        flex: 3;
+        a{
+          color: #323C5A;
+          font-weight: bold;
+          border-bottom: 0.01rem solid #323C5A;
+          line-height: 0.33rem;
+          font-size: @contentFont;
+          &:hover{
+            color: rgba(113,75,227,1);
+            border-bottom: 0.01rem solid rgba(113,75,227,1);
           }
         }
       }
@@ -393,6 +387,37 @@
           padding-bottom: 0.63rem;
         }
       }
+      .community_iris_service_content{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0.63rem;
+        .community_about_content{
+          flex: 1;
+          h1{
+            font-size: @contentFont;
+          }
+        }
+        .community_link_content{
+          flex: 3;
+          margin: 0.2rem 0 0 0;
+        }
+      }
+      .community_bean_content{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0.63rem;
+        .community_bean_about_content{
+          flex: 1;
+          h1{
+            margin: 0;
+            font-size: @contentFont;
+          }
+        }
+        .community_bean_link_content{
+          flex: 3;
+          margin: 0.2rem 0 0 0;
+        }
+      }
     }
   }
 }
@@ -467,6 +492,37 @@
           .community_about_irisnet_list_item{
             font-size: 0.14rem;
           }
+        }
+      }
+      .community_iris_service_content{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0.63rem;
+        .community_about_content{
+          flex: 1;
+          h1{
+            font-size: @contentFont;
+          }
+        }
+        .community_link_content{
+          flex: 3;
+          margin: 0.2rem 0 0 0;
+        }
+      }
+      .community_bean_content{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0.63rem;
+        .community_bean_about_content{
+          flex: 1;
+          h1{
+            margin: 0;
+            font-size: @contentFont;
+          }
+        }
+        .community_bean_link_content{
+          flex: 3;
+          margin: 0.2rem 0 0 0;
         }
       }
     }
