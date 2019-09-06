@@ -170,13 +170,81 @@
         flex: 3;
         color: @titleFontColor;
         .community_about_irisnet_list_item{
-          font-size: @contentFont;
-          padding-top: 0.3rem;
-          line-height: 0.33rem;
+          font-size: @titleH5;
+          padding-top: 0.24rem;
+          line-height: 0.28rem;
+        }
+        .community_about_irisnet_list_item:nth-of-type(3){
+          padding-top: 0;
         }
         .community_about_irisnet_list_item:first-child{
           padding-top: 0;
           font-weight: bolder;
+          font-size: @contentFont;
+        }
+        .community_iris_service_content{
+          margin-top: 0.62rem;
+          .community_iris_service_title{
+            color: @titleFontColor;
+            line-height: 0.33rem;
+            font-size: @contentFont;
+          }
+          .community_iris_service_text{
+            font-size: @titleH5;
+            line-height: 0.28rem;
+            margin-bottom: 0.15rem;
+            padding-top: 0.2rem;
+          }
+          .read_more_btn{
+            line-height: 1;
+            border-bottom: 0.01rem solid #714BE3;
+            cursor: pointer;
+            a{
+              font-size: @titleH5;
+              color: #714BE3;
+            }
+            .triangle{
+              margin-left: 0.05rem;
+              display: inline-block;
+              width: 0;
+              height: 0;
+              border-width: 0.05rem;
+              border-style: solid;
+              border-color: transparent transparent transparent #714BE3;
+            }
+          }
+        }
+        .community_bean_content{
+          margin-top: 0.62rem;
+          .community_bean_title{
+            color: @titleFontColor;
+            line-height: 0.33rem;
+            font-size: @contentFont;
+          }
+          .community_iris_service_text{
+            font-size: @titleH5;
+            line-height: 0.28rem;
+            margin-bottom: 0.15rem;
+            padding-top: 0.2rem;
+          }
+          .read_more_btn{
+            line-height: 1;
+            border-bottom: 0.01rem solid #714BE3;
+            cursor: pointer;
+            a{
+              font-size: @titleH5;
+              color: #714BE3;
+            }
+            .triangle{
+              margin-left: 0.05rem;
+              display: inline-block;
+              width: 0;
+              height: 0;
+              border-width: 0.05rem;
+              border-style: solid;
+              border-color: transparent transparent transparent #714BE3;
+            }
+          }
         }
       }
     }
@@ -397,7 +465,7 @@
         }
         .community_about_irisnet_list_content{
           .community_about_irisnet_list_item{
-            font-size: 0.18rem;
+            font-size: 0.14rem;
           }
         }
       }
