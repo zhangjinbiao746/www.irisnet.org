@@ -162,7 +162,7 @@
         .community_about_irisnet_title{
           color: @titleFontColor;
           font-weight: bolder;
-          font-size: @titleH1;
+          font-size: @contentFont;
           line-height: 0.37rem;
         }
       }
@@ -170,13 +170,84 @@
         flex: 3;
         color: @titleFontColor;
         .community_about_irisnet_list_item{
-          font-size: @contentFont;
-          padding-top: 0.3rem;
-          line-height: 0.33rem;
+          font-size: @titleH5;
+          padding-top: 0.24rem;
+          line-height: 0.24rem;
+        }
+        .read_more_link{
+          color: #714BE3;
+          border-bottom: 0.01rem solid #714BE3;
+          font-weight: bold;
+        }
+        .community_about_irisnet_list_item:nth-of-type(2){
+          padding-bottom: 0.1rem;
+        }
+        .community_about_irisnet_list_item:nth-of-type(3){
+          padding-top: 0;
+          padding-bottom: 0.1rem;
         }
         .community_about_irisnet_list_item:first-child{
           padding-top: 0;
           font-weight: bolder;
+          font-size: @contentFont!important;
+        }
+      }
+    }
+    .community_iris_service_content{
+      display: flex;
+      max-width: 12rem;
+      margin: 0 auto;
+      height: 1rem;
+      align-items: center;
+      .community_about_content{
+        flex: 1;
+        h1{
+          margin: 0;
+          color: #323C5A;
+          font-size: @contentFont;
+        }
+      }
+      .community_link_content{
+        flex: 3;
+        a{
+          font-weight: bold;
+          color: #323C5A;
+          border-bottom: 0.01rem solid #323C5A;
+          line-height: 0.33rem;
+          font-size: @contentFont;
+          &:hover{
+            color: rgba(113,75,227,1);
+            border-bottom: 0.01rem solid rgba(113,75,227,1);
+          }
+        }
+      }
+    }
+    .community_bean_content{
+      display: flex;
+      max-width: 12rem;
+      margin: 0 auto;
+      height: 1rem;
+      align-items: center;
+      .community_bean_about_content{
+        flex: 1;
+        h1{
+          margin: 0;
+          font-size: @contentFont;
+          color: #323C5A;
+        }
+      }
+      .community_bean_link_content{
+        flex: 3;
+        a{
+          color: #323C5A;
+          font-weight: bold;
+          border-bottom: 0.01rem solid #323C5A;
+          line-height: 0.33rem;
+          font-size: @contentFont;
+          &:hover{
+            color: rgba(113,75,227,1);
+            border-bottom: 0.01rem solid rgba(113,75,227,1);
+          }
         }
       }
     }
@@ -325,6 +396,37 @@
           padding-bottom: 0.63rem;
         }
       }
+      .community_iris_service_content{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0.63rem;
+        .community_about_content{
+          flex: 1;
+          h1{
+            font-size: @contentFont;
+          }
+        }
+        .community_link_content{
+          flex: 3;
+          margin: 0.2rem 0 0 0;
+        }
+      }
+      .community_bean_content{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0.63rem;
+        .community_bean_about_content{
+          flex: 1;
+          h1{
+            margin: 0;
+            font-size: @contentFont;
+          }
+        }
+        .community_bean_link_content{
+          flex: 3;
+          margin: 0.2rem 0 0 0;
+        }
+      }
     }
   }
 }
@@ -397,8 +499,40 @@
         }
         .community_about_irisnet_list_content{
           .community_about_irisnet_list_item{
-            font-size: 0.18rem;
+            font-size: 0.14rem;
+
           }
+        }
+      }
+      .community_iris_service_content{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0.63rem;
+        .community_about_content{
+          flex: 1;
+          h1{
+            font-size: @contentFont;
+          }
+        }
+        .community_link_content{
+          flex: 3;
+          margin: 0.2rem 0 0 0;
+        }
+      }
+      .community_bean_content{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0.63rem;
+        .community_bean_about_content{
+          flex: 1;
+          h1{
+            margin: 0;
+            font-size: @contentFont;
+          }
+        }
+        .community_bean_link_content{
+          flex: 3;
+          margin: 0.2rem 0 0 0;
         }
       }
     }

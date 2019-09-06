@@ -57,6 +57,7 @@
                 </div>
                 <div class="community_about_irisnet_list_content">
                     <div class="community_about_irisnet_list_item" v-for="content in $store.state.messages.communityPage.aboutIrisnet.content" v-html="content.item"></div>
+                    <a class="read_more_link" :href="$store.state.messages.communityPage.aboutIrisnet.readMoreHref" target="_blank">{{$store.state.messages.communityPage.aboutIrisnet.readMoreText}}</a>
                 </div>
             </div>
         </div>

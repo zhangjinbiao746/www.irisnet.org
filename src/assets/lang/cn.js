@@ -568,7 +568,9 @@ export const message = {
                     id: 2,
                     item:'IRISnet提供支持DeFi应用开发的多种基础模块，并能支持公有链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。'
                 }
-            ]
+            ],
+            readMoreText:'更多说明内容...',
+            readMoreHref:'https://github.com/irisnet/irisnet/blob/master/pressKit_CN.md',
         },
         title: '社区',
         eventsTitle:'近期活动',
