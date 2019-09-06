@@ -569,16 +569,8 @@ export const message = {
                     item:'IRISnet提供支持DeFi应用开发的多种基础模块，并能支持公有链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。'
                 }
             ],
-            irisService:{
-                leftTitle:"关于ISCH",
-                title:'跨链服务联盟枢纽 ISCH (IRIS Service Consortium Hub)',
-                href:'https://github.com/irisnet/irisnet/blob/master/pressKit_CN.md#%E8%B7%A8%E9%93%BE%E6%9C%8D%E5%8A%A1%E8%81%94%E7%9B%9F%E6%9E%A2%E7%BA%BD-isch-iris-service-consortium-hub',
-            },
-            beanContent:{
-                leftTitle:"关于BEAN",
-                title: '区块链边缘分析网络 BEAN （Blockchain Edge Analytics Network)',
-                href:'https://github.com/irisnet/irisnet/blob/master/pressKit_CN.md#%E5%8C%BA%E5%9D%97%E9%93%BE%E8%BE%B9%E7%BC%98%E5%88%86%E6%9E%90%E7%BD%91%E7%BB%9C-bean-blockchain-edge-analytics-network-',
-            }
+            readMoreText:'更多说明内容...',
+            readMoreHref:'https://github.com/irisnet/irisnet/blob/master/pressKit_CN.md',
         },
         title: '社区',
         eventsTitle:'近期活动',
