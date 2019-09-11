@@ -586,7 +586,19 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
+                {
+                    img:'irisnet_events_09_11.png',
+                    href:'https://devcon.org',
+                    timestamp:'2019/10/8~10/11',
+                    title:'日本以太坊大会',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
                 
+            ],
+            right:[
                 {
                     img:'irisnet_sacc.png',
                     href:'http://sacc.it168.com/',
@@ -597,9 +609,6 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
-                
-            ],
-            right:[
        /*         {
                     img:'',
                     href:'javascript:void(0)',
