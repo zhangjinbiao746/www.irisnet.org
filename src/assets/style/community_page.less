@@ -320,7 +320,7 @@
   }
 }
 
-@media screen and (max-width: 1010px) and (max-width: 1280px){
+@media screen and (max-width: 1010px) and (min-width: 1280px){
   .community_page_container{
     .community_page_title_container{
       .community_page_title_wrap{
@@ -350,7 +350,7 @@
     }
   }
 }
-@media  screen and (max-width: 768px) and (min-width: 1010px){
+@media  screen and (min-width: 768px) and (max-width: 1010px){
   .community_page_container{
     .community_page_title_container{
       .community_page_title_wrap{
@@ -367,8 +367,10 @@
         .community_events_list_container{
           flex-direction: column;
           width: 100%;
+          align-items: center;
           .community_events_left_content{
             margin: 0 8%;
+            flex-direction: column;
             justify-content: space-between;
             .community_events_item{
               .community_events_item_content{

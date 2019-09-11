@@ -590,6 +590,16 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
+                {
+                    img:'irisnet_events_09_11.png',
+                    href:'https://devcon.org',
+                    timestamp:'2019/10/8~10/11',
+                    title:'Devcon',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
             ],
             // right:[
             //
