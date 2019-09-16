@@ -256,12 +256,12 @@ export const message = {
             development:'Maintained by the core development team of IRISnet',
             button:{
                 buttonName: {
-                    rainbowName: 'View Validator Profile',
-                    explorerName: 'Delegate ATOM'
+                    rainbowName: 'Delegate ATOM',
+                    explorerName: 'View Validator Profile'
                 },
                 buttonUrl: {
-                    rainbowUrl: '/irisnet-bianjie',
-                    explorerUrl: 'https://www.rainbow.one/'
+                    rainbowUrl: 'https://www.rainbow.one/',
+                    explorerUrl: '/irisnet-bianjie'
                 }
             }
         },

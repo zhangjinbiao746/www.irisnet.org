@@ -252,12 +252,12 @@ export const message = {
             development:'由IRISnet核心开发团队维护的 Cosmos Hub 创世节点',
             button:{
                 buttonName: {
-                    rainbowName: '查看节点详情',
-                    explorerName: '委托ATOM'
+                    rainbowName: '委托ATOM',
+                    explorerName: '查看节点详情'
                 },
                 buttonUrl: {
-                    rainbowUrl: '/irisnet-bianjie',
-                    explorerUrl: 'https://www.rainbow.one/'
+                    rainbowUrl: 'https://www.rainbow.one/',
+                    explorerUrl: '/irisnet-bianjie'
                 }
             }
         },
