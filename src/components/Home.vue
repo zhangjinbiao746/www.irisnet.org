@@ -2,7 +2,25 @@
     <div class="content_wrap" @click="closeWeChat">
         <div @mouseenter="swiperStop" @mouseleave="swiperStart" style="position: relative;">
             <swiper ref="mySwiper" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper" >
-                   <swiper-slide>
+                <swiper-slide>
+                    <section class="sectionOne1">
+                        <div class="left">
+                            <div class="irisnet_bianjie_moniker">{{$store.state.messages.home.irisnetBianJie.commission}}</div>
+                            <div>{{bianJieMoniker}}</div>
+                            <div class="development_content">
+                                <p>{{$store.state.messages.home.irisnetBianJie.development}}</p>
+                            </div>
+                            <div>
+                                <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.explorerName}}</button>
+                                <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}</button>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <img src="../assets/IRISnet_bianjie_node_logo.png" alt="" class="banner">
+                        </div>
+                    </section>
+                </swiper-slide>
+                <swiper-slide>
                        <section class="sectionOne">
                            <div class="left">
                                <div>{{$store.state.messages.home.sectionOne.title}}</div>
@@ -15,24 +33,6 @@
                            </div>
                            <div class="right">
                                <img src="../assets/banner.png" alt="" class="banner">
-                           </div>
-                       </section>
-                   </swiper-slide>
-                   <swiper-slide>
-                       <section class="sectionOne1">
-                           <div class="left">
-                               <div class="irisnet_bianjie_moniker">{{bianJieMoniker}}</div>
-                               <div>{{rate}} {{$store.state.messages.home.irisnetBianJie.commission}}</div>
-                               <div class="development_content">
-                                   <p>{{$store.state.messages.home.irisnetBianJie.development}}</p>
-                               </div>
-                               <div>
-                                   <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}</button>
-                                   <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.explorerName}}</button>
-                               </div>
-                           </div>
-                           <div class="right">
-                               <img src="../assets/IRISnet_bianjie_node_logo.png" alt="" class="banner">
                            </div>
                        </section>
                    </swiper-slide>

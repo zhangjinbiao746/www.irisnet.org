@@ -70,7 +70,7 @@
                         <h4 class="newsletter_title">{{$store.state.messages.footer.submitBtn.title}}</h4>
                         <input v-model="mailAddress" class="email_input" :class="flShowError ? 'error_style' : ' '" type="text" :placeholder="$store.state.messages.placehooder.placehooder">
                         <p :class="flShowError ? 'show_error' : 'hide_error'">{{$store.state.messages.errEmail.err}}</p>
-                        <button class="submit_btn" @click="commitMail">{{subscription}}</button>
+                        <button class="submit_btn" @click="commitMail">{{$store.state.messages.footer.submitBtn.subscribe}}</button>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,6 @@
                 flShowError: false,
                 submitTimer: '',
                 errorTimer: '',
-                subscription: this.$store.state.messages.footer.submitBtn.subscribe
             }
         },
         watch:{
@@ -161,7 +160,7 @@
                     this.$store.commit('controlWeChat', true)
                 }
             },
-            showWeChat (e) { 
+            showWeChat (e) {
                 e.stopPropagation()
                 this.$store.commit('controlWeChat', true)
             },
