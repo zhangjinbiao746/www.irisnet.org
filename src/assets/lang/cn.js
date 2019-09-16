@@ -248,16 +248,16 @@ export const message = {
             }
         },
         irisnetBianJie:{
-            commission:'佣金率',
+            commission:'Cosmos Hub Validator',
             development:'由IRISnet核心开发团队维护的 Cosmos Hub 创世节点',
             button:{
                 buttonName: {
-                    rainbowName: 'Rainbow 钱包',
-                    explorerName: '了解更多'
+                    rainbowName: '查看节点详情',
+                    explorerName: '委托ATOM'
                 },
                 buttonUrl: {
-                    rainbowUrl: 'https://www.rainbow.one/',
-                    explorerUrl: '/irisnet-bianjie'
+                    rainbowUrl: '/irisnet-bianjie',
+                    explorerUrl: 'https://www.rainbow.one/'
                 }
             }
         },
@@ -283,10 +283,10 @@ export const message = {
         sectionThree: {
             title: '路线图',
             road: [
-                {id: 0, caption: '后羿', time: '2020年1月之后', msg: '第四阶段，通过不懈的技术创新，完善的社区建设和开发者的积极参与，实现分布式的商业生态系统。'},
-                {id: 1, caption: '夸父', time: '2019年10月 - 2019年12月', msg: '第三阶段，主要专注于完成IRIS网络的增强功能，升级网络以支持复杂的IRIS服务管理功能，如分析和争议解决功能; 不断完善SDK和手机客户端; 加速拓展网络，连接更多分区，整合更多服务提供商。'},
-                {id: 2, caption: '女娲', time: '2019年4月 - 2019年9月', msg: '第二阶段，我们为开发者准备了beta版的IRIS SDK，并会升级移动客户端以支持iServices；与应用专有链项目形成战略联盟，支持它们作为分区连接到IRIS Hub；IRISnet也将在第二阶段完成和Cosmos Hub的链接，打通和以太坊生态的链接。'},
-                {id: 3, caption: '盘古', time: '2018年1月- 2019年3月', msg: 'IRISnet项目的第一阶段，我们专注于构建并启动IRIS Hub；发布一个初始版本的IRIS网络移动客户端，并建立IRISnet基本服务层：升级网络以实现服务定义、绑定、调用和查询；会与1-2两个生态伙伴展开合作，在跨链枢纽IRIS Hub上发布iServices。'}
+                {id: 0, caption: '后羿', time: '2020年4月之后', msg: '第四阶段将专注通过技术创新，不断完善IRIS网络、SDK和手机客户端，吸引更多开发者参与。'},
+                {id: 1, caption: '夸父', time: '2019年11月 - 2020年3月', msg: '第三阶段主要专注于通过 IBC， 完成 IRIS Hub 与应用专有链网络的连接。我们还计划升级IRISnet移动客户端以支持这些应用。第三阶段还将重点实现IRIS网络的迭代升级，以支持复杂的IRIS服务管理功能。'},
+                {id: 2, caption: '女娲', time: '2019年4月 - 2019年10月', msg: '第二阶段我们将增加更多的基本模块以支持应用开发，特别是DeFi应用。这些新模块计划在本阶段发布，包括多资产管理、uni-swap、多签账户等。我们计划与1-2个生态伙伴合作，使用这些模块开发应用。我们还计划在此阶段完成与Cosmos Hub的测试连接。'},
+                {id: 3, caption: '盘古', time: '2018年1月- 2019年3月', msg: 'IRISnet项目的第一阶段，我们专注于构建并启动 IRISnet 主网（Hub）。 初始版本的IRIS网络移动客户端已在本阶段发布。同时，我们也专注于 IRISnet 基本服务层的建立，已将其发布在 IRIS Hub 上，实现：服务定义、绑定、调用和查询。'}
             ]
         },
         sectionFour: {
