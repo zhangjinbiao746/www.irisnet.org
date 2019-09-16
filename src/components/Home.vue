@@ -11,8 +11,8 @@
                                 <p>{{$store.state.messages.home.irisnetBianJie.development}}</p>
                             </div>
                             <div>
-                                <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}</button>
                                 <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.explorerName}}</button>
+                                <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}</button>
                             </div>
                         </div>
                         <div class="right">
