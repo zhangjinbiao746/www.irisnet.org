@@ -252,16 +252,16 @@ export const message = {
             }
         },
         irisnetBianJie:{
-            commission:'commission',
+            commission:'Cosmos Hub Validator',
             development:'Maintained by the core development team of IRISnet',
             button:{
                 buttonName: {
-                    rainbowName: 'Rainbow Wallet',
-                    explorerName: 'View More'
+                    rainbowName: 'View Validator Profile',
+                    explorerName: 'Delegate ATOM'
                 },
                 buttonUrl: {
-                    rainbowUrl: 'https://www.rainbow.one/',
-                    explorerUrl: '/irisnet-bianjie'
+                    rainbowUrl: '/irisnet-bianjie',
+                    explorerUrl: 'https://www.rainbow.one/'
                 }
             }
         },
@@ -287,10 +287,10 @@ export const message = {
         sectionThree: {
             title: 'Roadmap',
             road: [
-                {id: 0, caption: 'HOUYI', time: 'BEYOND JAN 2020', msg: 'The fourth stage will focus on further technology innovations to the IRIS network, IRIS SDK and mobile client, as well as developer engagement.'},
-                {id: 1, caption: 'KUAFU', time: 'OCT 2019 - DEC 2019', msg: 'The third stage will focus on incremental upgrades to the IRIS Network in order to support our planned advanced IRIS Service governance features.'},
-                {id: 2, caption: 'NÜWA', time: 'APR 2019 - SEPT 2019', msg: 'In this stage we are aiming to have a beta version of the IRIS SDK ready for developers. We plan to upgrade IRISnet mobile client to support i-Services. We plan to establish collabrations with application specific blockchains and enable them as zones connecting to IRIS Hub. We also plan to accomplish the connection with Cosmos Hub at this stage.'},
-                {id: 3, caption: 'PANGU', time: 'JAN 2018 - MAR 2019', msg: 'The first stage of the IRIS project will focus on having the IRIS Hub up and running. We also intend to release an initial version of the mobile client for the IRIS network. In this stage we also focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query. We plan to collabrate with 1-2 ecosystem parteners to release i-Services to IRIShub.'}
+                {id: 0, caption: 'HOUYI', time: 'BEYOND APRI 2020', msg: 'The fourth stage will focus on further technology innovations to the IRIS network, SDK and mobile client, as well as developer engagement.'},
+                {id: 1, caption: 'KUAFU', time: 'NOV 2019 - MAR 2020', msg: 'In this stage we are aiming to accomplish the connection of IRIS Hub with applications blockchains through IBC. We plan to upgrade IRISnet mobile client to support those applications. The third stage will also focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service features.'},
+                {id: 2, caption: 'NÜWA', time: 'APR 2019 - OTC 2019', msg: 'In this stage we are adding more fundamental modules to support application development especially DeFi applications. The new modules planned to release in this stage including multi-asset management, uniswap, multi-sig account etc. We plan to collaborate with 1-2 ecosystem partners to develop applications using those modules.We also plan to accomplish the test connection with Cosmos Hub through IBC at this stage.'},
+                {id: 3, caption: 'PANGU', time: 'JAN 2018 - MAR 2019', msg: 'The first stage of the IRIS project focused on having the IRIS Hub up and running. Initial version of the mobile client for the IRIS network was released. In this stage we also focused on building the fundamental IRIS Service Layer which was released to IRIS Hub. Which enables service definition, binding, invocation and query.'}
             ]
         },
         sectionFour: {
