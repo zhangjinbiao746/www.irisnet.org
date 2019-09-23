@@ -374,31 +374,31 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://forum.irisnet.org/t/irisnet/219',
-                date:'2019年7月29日',
-                title:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖',
-                content:'IRISnet主网IRIS Hub即将升级至v0.15.0，为了确保新版本没有重大Bug或安全漏洞，我们将推出IRISnet漏洞赏金计划II，为v0.15.0主网升级做好准备。'
+                href:'',
+                date:'2019年9月17日',
+                title:'IRIS Hub上线200天，Betanet正式升级为Mainnet',
+                content:'2019年3月1日，IRISHub的Betanet产出创世区块，网络正式启动。在上线200天之际正式宣布IRIS Hub开始以主网（Mainnet）身份运行。'
             },
             {
                 id:'1',
+                href:'https://forum.irisnet.org/t/irisnet/219',
+                date:'2019年7月29日',
+                title:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖！',
+                content:'IRISnet主网IRIS Hub即将升级至v0.15.0，为了确保新版本没有重大Bug或安全漏洞，我们将推出IRISnet 漏洞赏金计划 II，为v0.15.0主网升级做好准备。'
+            },
+            {
+                id:'2',
                 href:'https://forum.irisnet.org/t/iris/184',
                 date:'2019年6月28日',
                 title:'公告 | IRIS基金会第一次执行通证销毁计划',
                 content:'2019年6月28日，IRIS基金会通过两笔交易按计划执行了第一次销毁，共销毁了19,189,722 个 IRIS 通证，目前 IRIS 通证的总量为20亿个。'
             },
             {
-                id:'2',
+                id:'3',
                 href:'https://forum.irisnet.org/t/rainbow-v2-0-atom/166',
                 date:'2019年6月21日',
                 title:'Rainbow发布v2.0，新增支持ATOM钱包',
                 content:'Rainbow v2.0于2019年6月21日发布，接入第二条公链Cosmos Hub，新增ATOM钱包功能。'
-            },
-            {
-                id:'3',
-                href:'https://forum.irisnet.org/t/irisnet-tendermint/44',
-                date:'2019年5月13日',
-                title:'IRISnet & Tendermint携手加速开源区块链技术发展',
-                content:'Cosmos 核心开发团队Tendermint 宣布IRISnet 为首要生态合作伙伴。'
             },
            
         ]
@@ -719,6 +719,26 @@ export const message = {
                         }
                     ],
                     content:'这些钱包支持IRIS及ATOM的转账和质押，请充分研究其安全性再使用。列示这些信息仅为方便下载，并不代表对钱包使用的安全性负责。',
+                },
+                {
+                    img:'IRISnet_staking_tools.png',
+                    name:'委托工具箱',
+                    href:"javascript:void(0);",
+                    resourceList: [
+                        {
+                            itemName: 'Math Wallet (Browser Extension, Web Wallet)',
+                            href: ''
+                        },
+                        {
+                            itemName: '01node.com (Ledger)',
+                            href: ''
+                        },
+                        {
+                            itemName: 'Cosmostation (Ledger)',
+                            href: 'https://www.irisplorer.io/#/validators'
+                        },
+                    ],
+                    content:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
                 },
                 {
                     img:'IRISnet_community_explorer.png',

@@ -378,27 +378,34 @@ export const message = {
         announcementList:[
             {
                 id:'0',
+                href:'https://medium.com/irisnet-blog/irisnet-mainnet-is-live-2f8db2c6fca8',
+                date:'Sep 17, 2019',
+                title:'IRISnet Mainnet is Live!',
+                content:'On March 1st, 2019, IRIS Hub\'s Betanet proposed the genesis block marking the official launch of the network.\n On the 200th day since the launch, we are very glad to announce that IRIS Hub will be officially running as the Mainnet.'
+            },
+            {
+                id:'1',
                 href:'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
                 date:'Jul 29, 2019',
                 title:'Opened! IRIS Hub Bug Bounty II Program for new version release',
                 content:'IRIS Hub new version v0.15.0 is coming. To make sure the new release come with no major bugs or security vulnerabilities, we are launching the IRISnet Bug Bounty II Program as a part of v0.15.0 upgrade preparation.'
             },
             {
-                id:'1',
+                id:'2',
                 href:'https://medium.com/irisnet-blog/announcement-1st-iris-token-burn-complete-3fe17816ea38',
                 date:'Jun 28, 2019',
                 title:'Announcement: 1st IRIS Token Burn Complete',
                 content:'On June 28, 2019, the IRIS Foundation completed the 1st IRIS token burn under a one-year token burning plan with 19,189,722 IRIS burned. The current total supply is 2 billion IRIS.'
             },
             {
-                id:'2',
+                id:'3',
                 href:'https://medium.com/irisnet-blog/rainbow-v2-0-is-released-we-support-atom-now-1882dcb2bc3c',
                 date:'Jun 21, 2019',
                 title:'Rainbow V2.0 is Released. We Support ATOM Now!',
                 content:'Rainbow v2.0 is released on June 21, 2019 and it now supports Cosmos (ATOM)!'
             },
             {
-                id:'3',
+                id:'4',
                 href:'https://medium.com/tendermint/irisnet-tendermint-inc-join-forces-to-accelerate-open-source-blockchain-development-71d5cf1dd4f7',
                 date:'May 13, 2019',
                 title:'IRISnet & Tendermint Inc Join Forces To Accelerate Open-Source Blockchain Development',
@@ -690,6 +697,26 @@ export const message = {
                         }
                     ],
                     content:'These web and mobile wallets allow you to store & transfer IRIS, delegate IRIS to validators, and some of them also support ATOM. Note that we do not endorse any of the wallets, they are listed for your convenience.',
+                },
+                {
+                    img:'IRISnet_staking_tools.png',
+                    name:'Staking Tools',
+                    href:"javascript:void(0);",
+                    resourceList: [
+                        {
+                            itemName: 'Math Wallet (Browser Extension, Web Wallet)',
+                            href: ''
+                        },
+                        {
+                            itemName: '01node.com (Ledger)',
+                            href: ''
+                        },
+                        {
+                            itemName: 'Cosmostation (Ledger)',
+                            href: 'https://www.irisplorer.io/#/validators'
+                        },
+                    ],
+                    content:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
                 },
                 {
                     img:'IRISnet_community_explorer.png',
