@@ -374,7 +374,7 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'',
+                href:'https://forum.irisnet.org/t/irisnet-betanet-mainnet/263',
                 date:'2019年9月17日',
                 title:'IRIS Hub上线200天，Betanet正式升级为Mainnet',
                 content:'2019年3月1日，IRISHub的Betanet产出创世区块，网络正式启动。在上线200天之际正式宣布IRIS Hub开始以主网（Mainnet）身份运行。'
