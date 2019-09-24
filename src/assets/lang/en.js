@@ -578,7 +578,7 @@ export const message = {
         eventsTitle:'Upcoming Events',
         events: {
             left: [
-                {
+            /*    {
                     img:'IRISnet_event_09_02.jpg',
                     href:'http://www.blockchainlabs.org/week2019',
                     address:'',
@@ -588,7 +588,7 @@ export const message = {
                     signUpUrl:'https://www.eventbrite.com/e/shanghai-international-blockchain-week-2019-tickets-63187962898',
                     viewMore:'',
                     viewMoreUrl:'',
-                },
+                },*/
                 {
                     img:'irisnet_events_09_11.png',
                     href:'https://devcon.org',
