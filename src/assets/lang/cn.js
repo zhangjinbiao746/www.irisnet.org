@@ -576,7 +576,7 @@ export const message = {
         eventsTitle:'近期活动',
         events: {
             left: [
-                {
+              /*  {
                     img:'IRISnet_event_09_02.jpg',
                     href:'http://www.blockchainlabs.org/week2019',
                     timestamp:'2019/9/14~9/18',
@@ -585,7 +585,7 @@ export const message = {
                     signUpUrl:'http://summit2019.eventdove.com/',
                     viewMore:'',
                     viewMoreUrl:'',
-                },
+                },*/
                 {
                     img:'irisnet_events_09_11.png',
                     href:'https://devcon.org',
@@ -596,9 +596,6 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
-                
-            ],
-            right:[
                 {
                     img:'irisnet_sacc.png',
                     href:'http://sacc.it168.com/',
@@ -609,6 +606,9 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
+            ],
+            right:[
+            
        /*         {
                     img:'',
                     href:'javascript:void(0)',
