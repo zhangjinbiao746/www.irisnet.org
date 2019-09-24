@@ -404,14 +404,6 @@ export const message = {
                 title:'Rainbow V2.0 is Released. We Support ATOM Now!',
                 content:'Rainbow v2.0 is released on June 21, 2019 and it now supports Cosmos (ATOM)!'
             },
-            {
-                id:'4',
-                href:'https://medium.com/tendermint/irisnet-tendermint-inc-join-forces-to-accelerate-open-source-blockchain-development-71d5cf1dd4f7',
-                date:'May 13, 2019',
-                title:'IRISnet & Tendermint Inc Join Forces To Accelerate Open-Source Blockchain Development',
-                content:'IRISnet & Tendermint Inc Join Forces to Accelerate Open-Source Blockchain Development.'
-            },
-          
         ]
     },
     testnet:{
