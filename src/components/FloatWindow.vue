@@ -17,7 +17,6 @@
                 <div class="forum_img_content">
                     <img src="../../public/irisnet/irisnet_forum.png">
                 </div>
-                <span>{{$store.state.messages.floatWindow.title}}</span>
             </a>
         </div>
     </div>
@@ -122,8 +121,8 @@
                 justify-content: center;
                 flex-direction: column;
                 .forum_img_content{
-                    width: 0.15rem;
-                    height: 0.15rem;
+                    width: 0.25rem;
+                    height: 0.25rem;
                     img{
                         width: 100%;
                     }
