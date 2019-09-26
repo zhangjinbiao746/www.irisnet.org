@@ -265,6 +265,18 @@ export const message = {
                 }
             }
         },
+        irisnetVote:{
+            commission:'Participate in On-Chain Governance Vote for Proposals',
+            development:'',
+            button:{
+                buttonName: {
+                    voteName: 'How to Vote',
+                },
+                buttonUrl: {
+                    voteUrl: 'https://medium.com/irisnet-blog/rainbow-v2-5-released-with-on-chain-governance-support-237f076b0211',
+                }
+            }
+        },
         sectionTwo: {
             KeyInnovations: {
                 title: 'Key Innovations',
