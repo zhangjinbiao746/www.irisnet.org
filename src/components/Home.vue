@@ -3,6 +3,22 @@
         <div @mouseenter="swiperStop" @mouseleave="swiperStart" style="position: relative;">
             <swiper ref="mySwiper" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper" >
                 <swiper-slide>
+                    <section class="sectionOne2">
+                        <div class="left">
+                            <div class="irisnet_bianjie_moniker">{{$store.state.messages.home.irisnetVote.commission}}</div>
+                            <div class="development_content">
+                                <p>{{$store.state.messages.home.irisnetVote.development}}</p>
+                            </div>
+                            <div>
+                                <button @click="jumpUrl($store.state.messages.home.irisnetVote.button.buttonUrl.voteUrl)">{{$store.state.messages.home.irisnetVote.button.buttonName.voteName}}</button>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <img src="../assets/IRISnet_vote.png" alt="" class="banner">
+                        </div>
+                    </section>
+                </swiper-slide>
+                <swiper-slide>
                     <section class="sectionOne1">
                         <div class="left">
                             <div class="irisnet_bianjie_moniker">{{$store.state.messages.home.irisnetBianJie.commission}}</div>

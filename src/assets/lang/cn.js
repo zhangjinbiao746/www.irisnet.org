@@ -261,6 +261,18 @@ export const message = {
                 }
             }
         },
+        irisnetVote:{
+            commission:'参与链上治理 为提案投票',
+            development:'',
+            button:{
+                buttonName: {
+                    voteName: '如何投票',
+                },
+                buttonUrl: {
+                    voteUrl: 'https://mp.weixin.qq.com/s/3TqZr8GgySmzb8tWxo7GgQ',
+                }
+            }
+        },
         sectionTwo: {
             KeyInnovations: {
                 title: '核心创新',
