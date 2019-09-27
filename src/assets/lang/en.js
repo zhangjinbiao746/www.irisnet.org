@@ -720,7 +720,7 @@ export const message = {
                             href: 'https://wallet.cosmostation.io/?network=iris'
                         },
                     ],
-                    content:'Those tools, contributed by IRISnet validators and developers, facilitates IRIS token holders to delegate via web wallets and Ledger hardware wallets, etc . Before using those tools, you need to make sure their security.'
+                    content:'Those tools, contributed by IRISnet validators and developers, facilitates IRIS token holders to delegate via web wallets and Ledger hardware wallets, etc . Before using these tools, you need to assure their security.'
                 },
                 {
                     img:'IRISnet_community_explorer.png',
