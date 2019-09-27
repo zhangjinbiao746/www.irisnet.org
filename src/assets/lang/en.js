@@ -266,8 +266,8 @@ export const message = {
             }
         },
         irisnetVote:{
-            commission:'Participate in On-Chain Governance Vote for Proposals',
-            development:'',
+            commission:'Participate in On-Chain Governance',
+            development:'Vote for Proposals',
             button:{
                 buttonName: {
                     voteName: 'How to Vote',
