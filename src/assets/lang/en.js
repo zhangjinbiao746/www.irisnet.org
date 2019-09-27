@@ -720,7 +720,7 @@ export const message = {
                             href: 'https://wallet.cosmostation.io/?network=iris'
                         },
                     ],
-                    content:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
+                    content:'Those tools, contributed by IRISnet validators and developers, facilitates IRIS token holders to delegate via web wallets and Ledger hardware wallets, etc . Before using those tools, you need to make sure their security.'
                 },
                 {
                     img:'IRISnet_community_explorer.png',
