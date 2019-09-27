@@ -262,8 +262,8 @@ export const message = {
             }
         },
         irisnetVote:{
-            commission:'参与链上治理 为提案投票',
-            development:'',
+            commission:'委托IRIS参与链上治理 ',
+            development:'为提案投票',
             button:{
                 buttonName: {
                     voteName: '如何投票',
@@ -282,7 +282,7 @@ export const message = {
                     {id: 2, msg: '通过区块链互联网实现服务的互联互通'}
                 ],
                 buttonMsg: '白皮书',
-                WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md'
+                WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/白皮书.md'
             },
             NetworkDesign: {
                 title: '网络设计',
