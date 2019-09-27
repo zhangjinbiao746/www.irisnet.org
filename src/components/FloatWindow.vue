@@ -65,6 +65,10 @@
                 border-radius: 0.25rem;
                 margin-top: 0.2rem;
                 cursor: pointer;
+                &:hover{
+                    background:linear-gradient(145deg,rgba(144,97,255,1) 0%,rgba(119,52,250,1) 100%);
+                    box-shadow:0 0.02rem 0.2rem 0 rgba(3,0,35,0.25);
+                }
                 img{
                     padding: 0.11rem;
                     width: 0.28rem;
