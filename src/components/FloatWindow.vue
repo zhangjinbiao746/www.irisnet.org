@@ -17,7 +17,6 @@
                 <div class="forum_img_content">
                     <img src="../../public/irisnet/irisnet_forum.png">
                 </div>
-                <span>{{$store.state.messages.floatWindow.title}}</span>
             </a>
         </div>
     </div>
@@ -104,8 +103,8 @@
             }
         }
         .float_window_forum_container{
-            width: 0.9rem;
-            height: 0.9rem;
+            width: 0.5rem;
+            height: 0.5rem;
             border-radius: 0.45rem;
             margin-top: 0.2rem;
             background:linear-gradient(145deg,rgba(122,65,255,1) 0%,rgba(101,39,222,1) 100%);
@@ -122,8 +121,8 @@
                 justify-content: center;
                 flex-direction: column;
                 .forum_img_content{
-                    width: 0.3rem;
-                    height: 0.3rem;
+                    width: 0.25rem;
+                    height: 0.25rem;
                     img{
                         width: 100%;
                     }
@@ -147,7 +146,7 @@
     }
     @media screen and (max-width: 420px){
         .float_window_container{
-            transform: scale(0.7);
+            transform: scale(1);
         }
     }
 </style>
