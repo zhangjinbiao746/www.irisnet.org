@@ -599,10 +599,10 @@ export const message = {
                     viewMoreUrl:'',
                 },*/
                 {
-                    img:'irisnet_events_09_11.png',
-                    href:'https://devcon.org',
-                    timestamp:'2019/10/8~10/11',
-                    title:'日本以太坊大会',
+                    img:'irisnet_event_10_15.png',
+                    href:'javascript:void(0)',
+                    timestamp:'2019/10/16',
+                    title:'IRISnet及Cosmos生态中的项目进展与应用',
                     signUp:'',
                     signUpUrl:'',
                     viewMore:'',
