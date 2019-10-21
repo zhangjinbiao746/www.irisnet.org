@@ -598,16 +598,7 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },*/
-                {
-                    img:'irisnet_event_10_15.png',
-                    href:'javascript:void(0)',
-                    timestamp:'2019/10/16',
-                    title:'IRISnet及Cosmos生态中的项目进展与应用',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
+                
                 {
                     img:'irisnet_sacc.png',
                     href:'http://sacc.it168.com/',
@@ -672,32 +663,34 @@ export const message = {
                 title: '活动回顾',
                 leftList: [
                     {
+                        img:'irisnet_event_10_15.png',
+                        href:'https://mp.weixin.qq.com/s/rLCi2By-yGFyu1-ysSqYtg',
+                        title:'币乎直播回顾',
+                        content:'IRISnet及Cosmos生态中的项目进展与应用 | 币乎直播回顾'
+                    },
+                    {
                         img:'irisnet_event_08-26.png',
                         href:'https://mp.weixin.qq.com/s/rfvlA34U9nN8gC1yaL5sWw',
                         title:'对话真本聪',
                         content:'对话真本聪：多资产模块即将上线，IRIS是否会迎来爆发期？'
                     },
+                   
+                  
+                ],
+                rightList:[
                     {
                         img:'irisnet_bug_bounty.png',
                         href:'https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg',
                         title:'IRISnet',
                         content:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖！'
                     },
-                  
-                ],
-                rightList:[
                     {
                         img:'irisnet_cosmos_sdk.png',
                         href:'https://mp.weixin.qq.com/s/E8uhI72LpAyOjX2khkppeA',
                         title:'Cosmos SDK',
                         content:'Cosmos SDK开发者见面会 - 深圳站'
                     },
-                    {
-                        img:'IRISnet_axonomy _defi.png',
-                        href:'https://mp.weixin.qq.com/s/qoSdVDycalbCmT3Wa5BrLQ',
-                        title:'Axonomy',
-                        content:'AXONOMY DeFi 联盟战略发布会'
-                    },
+                    
                 ],
             }
         },
