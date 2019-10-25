@@ -642,26 +642,33 @@ export const message = {
                 title: 'Events Review',
                 leftList: [
                     {
+                        img:'irisnet_event_10_25.png',
+                        href:'https://medium.com/irisnet-blog/follow-retweet-to-help-iris-binance-dex-listing-7c27cc36dfd1',
+                        title:'Follow & Retweet to Help IRIS Binance DEX Listing',
+                        content:'Follow & Retweet to Help IRIS Binance DEX Listing'
+                    },
+                    {
+                        img:'irisnet_event_10_15.png',
+                        href:'https://medium.com/irisnet-blog/project-progress-applications-in-irisnet-cosmos-ecosystem-bihu-ama-review-725b78d8f59d',
+                        title:'Bihu AMA Review',
+                        content:'Project Progress & Applications in IRISnet & Cosmos Ecosystem |Bihu AMA Review'
+                    },
+                    
+                    
+                ],
+                rightList:[
+                    {
                         img:'irisnet_bug_bounty.png',
                         href:'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
                         title:'IRISnet',
                         content:'Opened! IRIS Hub Bug Bounty II Program for new version release'
                     },
-                    {
+                  /*  {
                         img:'IRISnet_axonomy_defi_en.jpg',
                         href:'javascript:void(0)',
                         title:'Axonomy',
                         content:'AXONOMY DEFI Alliance Strategic Conference'
-                    },
-                    
-                ],
-                rightList:[
-                    {
-                        img:'IRISnet_events_buidl.jpg',
-                        href:'javascript:void(0)',
-                        title:'BUIDL ASIA 2019',
-                        content:'Korea BUIDL Keynote speech: DeFi application support on BPoS Blockchain'
-                    },
+                    },*/
                     {
                         img:'IRISnet_ico.png',
                         href:'https://medium.com/irisnet-blog/2019-7-15-ama-42f4a5fbe5f0',

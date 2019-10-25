@@ -663,34 +663,34 @@ export const message = {
                 title: '活动回顾',
                 leftList: [
                     {
+                        img:'irisnet_event_10_25.png',
+                        href:'https://mp.weixin.qq.com/s/NV34GBOfapbXAJUs9GzXog',
+                        title:'助力赢50,000 IRIS大奖！',
+                        content:'IRISnet发起币安DEX上币提案，助力赢50,000 IRIS大奖！'
+                    },
+                    {
                         img:'irisnet_event_10_15.png',
                         href:'https://mp.weixin.qq.com/s/rLCi2By-yGFyu1-ysSqYtg',
                         title:'币乎直播回顾',
                         content:'IRISnet及Cosmos生态中的项目进展与应用 | 币乎直播回顾'
                     },
+                 
+                   
+                  
+                ],
+                rightList:[
                     {
                         img:'irisnet_event_08-26.png',
                         href:'https://mp.weixin.qq.com/s/rfvlA34U9nN8gC1yaL5sWw',
                         title:'对话真本聪',
                         content:'对话真本聪：多资产模块即将上线，IRIS是否会迎来爆发期？'
                     },
-                   
-                  
-                ],
-                rightList:[
                     {
                         img:'irisnet_bug_bounty.png',
                         href:'https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg',
                         title:'IRISnet',
                         content:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖！'
                     },
-                    {
-                        img:'irisnet_cosmos_sdk.png',
-                        href:'https://mp.weixin.qq.com/s/E8uhI72LpAyOjX2khkppeA',
-                        title:'Cosmos SDK',
-                        content:'Cosmos SDK开发者见面会 - 深圳站'
-                    },
-                    
                 ],
             }
         },
