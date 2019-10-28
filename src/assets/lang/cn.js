@@ -273,6 +273,20 @@ export const message = {
                 }
             }
         },
+        bianDex:{
+            commission:'充值Binance DEX 领空投活动',
+            development:'500,000 IRIS 等你来拿',
+            button:{
+                buttonName: {
+                    eventDetail: '活动详情',
+                    howIsDex: '为何链接DEX',
+                },
+                buttonUrl: {
+                    eventDetail: 'https://mp.weixin.qq.com/s/LncVvKe3X8I7GAugYtwTZA',
+                    howIsDexUrl: 'https://mp.weixin.qq.com/s/RgyB7qBlwmc-VZyIqGv0sQ',
+                }
+            }
+        },
         sectionTwo: {
             KeyInnovations: {
                 title: '核心创新',
