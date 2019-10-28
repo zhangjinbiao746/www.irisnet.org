@@ -282,7 +282,7 @@ export const message = {
             development:'Win 500,000 IRIS Airdrop',
             button:{
                 buttonName: {
-                    eventDetail: 'More Detail',
+                    eventDetail: 'More Details',
                     howIsDex: ' Why We Connect',
                 },
                 buttonUrl: {
