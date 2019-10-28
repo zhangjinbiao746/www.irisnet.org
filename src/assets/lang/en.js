@@ -277,6 +277,20 @@ export const message = {
                 }
             }
         },
+        bianDex:{
+            commission:'Deposit to Binance DEX',
+            development:'Win 500,000 IRIS Airdrop',
+            button:{
+                buttonName: {
+                    eventDetail: 'More Details',
+                    howIsDex: ' Why We Connect',
+                },
+                buttonUrl: {
+                    eventDetail: 'https://medium.com/irisnet-blog/irisnet-iris-airdrop-on-binance-dex-win-500-000-iris-4e24be10a886',
+                    howIsDexUrl: 'https://medium.com/irisnet-blog/why-are-we-connecting-iris-hub-with-binance-dex-5b02bff5753c',
+                }
+            }
+        },
         sectionTwo: {
             KeyInnovations: {
                 title: 'Key Innovations',
