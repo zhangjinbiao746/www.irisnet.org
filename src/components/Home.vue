@@ -3,6 +3,22 @@
         <div @mouseenter="swiperStop" @mouseleave="swiperStart" style="position: relative;">
             <swiper ref="mySwiper" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper" >
                 <swiper-slide>
+                    <section class="sectionOne">
+                        <div class="left">
+                            <div>{{$store.state.messages.home.bianDex.commission}}</div>
+                            <div>{{$store.state.messages.home.bianDex.development}}</div>
+                            <div></div>
+                            <div style="padding-top: 0.2rem">
+                                <button @click="jumpUrl($store.state.messages.home.bianDex.button.buttonUrl.eventDetail)">{{$store.state.messages.home.bianDex.button.buttonName.eventDetail}}</button>
+                                <button @click="jumpUrl($store.state.messages.home.bianDex.button.buttonUrl.howIsDexUrl)">{{$store.state.messages.home.bianDex.button.buttonName.howIsDex}}</button>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <img src="../assets/irisnet_home_banner_bian.png" class="banner">
+                        </div>
+                    </section>
+                </swiper-slide>
+                <!--<swiper-slide>
                     <section class="sectionOne2">
                         <div class="left">
                             <div class="irisnet_bianjie_moniker">{{$store.state.messages.home.irisnetVote.commission}}</div>
@@ -17,7 +33,7 @@
                             <img src="../assets/IRISnet_vote.png" alt="" class="banner">
                         </div>
                     </section>
-                </swiper-slide>
+                </swiper-slide>-->
                 <swiper-slide>
                     <section class="sectionOne1">
                         <div class="left">
