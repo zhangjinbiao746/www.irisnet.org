@@ -604,31 +604,40 @@ export const message = {
         eventsTitle:'Upcoming Events',
         events: {
             left: [
-            /*    {
-                    img:'IRISnet_event_09_02.jpg',
-                    href:'http://www.blockchainlabs.org/week2019',
+                {
+                    img:'irisnet_event_10_29.jpeg',
+                    href:'https://medium.com/irisnet-blog/irisnet-iris-airdrop-on-binance-dex-win-500-000-iris-4e24be10a886',
                     address:'',
-                    timestamp:'2019/9/14~9/18',
-                    title:'2019 Shanghai International Blockchain Week',
-                    signUp:'Sign Up',
-                    signUpUrl:'https://www.eventbrite.com/e/shanghai-international-blockchain-week-2019-tickets-63187962898',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },*/
-                /*{
-                    img:'irisnet_events_09_11.png',
-                    href:'https://devcon.org',
-                    timestamp:'2019/10/8~10/11',
-                    title:'Devcon',
+                    timestamp:'From now to 2019/10/31 2:00 AM (UTC)',
+                    title:'IRISnet (IRIS) Airdrop on Binance DEX — Win 500,000 IRIS!',
                     signUp:'',
                     signUpUrl:'',
                     viewMore:'',
                     viewMoreUrl:'',
-                },*/
+                },
+                {
+                    img:'irisnet_event_10_29_tuoluo.png',
+                    href:'javascript:void(0)',
+                    timestamp:'2019/10/28-/11/1',
+                    title:'IRISnet became a KOL in tuoluocaijing.cn',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
             ],
-            // right:[
-            //
-            // ]
+            right:[
+                {
+                    img:'irisnet_sacc.png',
+                    href:'javascript:void(0)',
+                    timestamp:'2019/10/31~11/2',
+                    title:'System Architect Conference China 2019',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+            ]
         },
         faq:{
             faqTitle:'FAQ',
