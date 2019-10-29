@@ -602,17 +602,29 @@ export const message = {
         eventsTitle:'近期活动',
         events: {
             left: [
-              /*  {
-                    img:'IRISnet_event_09_02.jpg',
-                    href:'http://www.blockchainlabs.org/week2019',
-                    timestamp:'2019/9/14~9/18',
-                    title:'2019上海区块链国际周',
-                    signUp:'加入活动',
-                    signUpUrl:'http://summit2019.eventdove.com/',
+                {
+                    img:'irisnet_event_10_29.jpeg',
+                    href:'https://mp.weixin.qq.com/s/LncVvKe3X8I7GAugYtwTZA',
+                    timestamp:'即日至2019/10/31 10:00am',
+                    title:'IRISnet币安DEX空投活动来袭，500,000 大礼包等你来拿',
+                    signUp:'',
+                    signUpUrl:'',
                     viewMore:'',
                     viewMoreUrl:'',
-                },*/
+                },
                 
+                {
+                    img:'irisnet_event_10_29_tuoluo.png',
+                    href:'javascript:void(0)',
+                    timestamp:'2019/10/28-/11/1',
+                    title:'IRISnet入驻陀螺财经',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+            ],
+            right:[
                 {
                     img:'irisnet_sacc.png',
                     href:'http://sacc.it168.com/',
@@ -623,8 +635,6 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
-            ],
-            right:[
             
        /*         {
                     img:'',
