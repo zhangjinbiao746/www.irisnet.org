@@ -629,7 +629,7 @@ export const message = {
             right:[
                 {
                     img:'irisnet_sacc.png',
-                    href:'http://sacc.it168.com/',
+                    href:'javascript:void(0)',
                     timestamp:'2019/10/31~11/2',
                     title:'System Architect Conference China 2019',
                     signUp:'',
