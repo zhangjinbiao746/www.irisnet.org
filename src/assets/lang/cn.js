@@ -779,16 +779,8 @@ export const message = {
                             href: 'https://www.irisplorer.io/#/validators'
                         },
                         {
-                            itemName: 'IRISnet-Overview',
-                            href: 'https://irisnet-overview.genesislab.net/'
-                        },
-                        {
                             itemName: 'Big-Dipper',
                             href: 'https://iris.bigdipper.live/'
-                        },
-                        {
-                            itemName: 'IRISnet-P2P',
-                            href: 'https://irisnet.p2p.org'
                         },
                         {
                             itemName: 'Hubble',
