@@ -604,61 +604,18 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'irisnet_event_10_29.jpeg',
-                    href:'https://mp.weixin.qq.com/s/LncVvKe3X8I7GAugYtwTZA',
-                    timestamp:'即日至2019/10/31 10:00am',
-                    title:'IRISnet币安DEX空投活动来袭，500,000 大礼包等你来拿',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                
-                {
-                    img:'irisnet_event_10_29_tuoluo.png',
-                    href:'javascript:void(0)',
-                    timestamp:'2019/10/28-/11/1',
-                    title:'IRISnet入驻陀螺财经',
-                    signUp:'',
-                    signUpUrl:'',
+                    img:'irisnet_event_11_06.png',
+                    href:'https://www.8btc.com/wbc-2019',
+                    address:'中国，浙江乌镇',
+                    timestamp:'2019/11/08-/11/09',
+                    title:'世界区块链大会（乌镇）',
+                    signUp:'加入活动',
+                    signUpUrl:'http://www.huodongxing.com/event/6506540634800',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
             ],
             right:[
-                {
-                    img:'irisnet_sacc.png',
-                    href:'http://sacc.it168.com/',
-                    timestamp:'2019/10/31~11/2',
-                    title:'2019中国系统架构师大会：数字转型 架构演进',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-            
-       /*         {
-                    img:'',
-                    href:'javascript:void(0)',
-                    address:'',
-                    timestamp:'2019/08/11',
-                    title:'白话区块链技术沙龙杭州站- 跨链：让价值自由流通',
-                    signUp:'加入活动',
-                    signUpUrl:'http://www.huodongxing.com/event/6504246435700',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
-                    img:'irisnet_cosmos_sdk.png',
-                    href:'https://mp.weixin.qq.com/s/nW7KXURYAKy7tFt1rE1ZsQ',
-                    address:'',
-                    timestamp:'2019/8/10',
-                    title:'Cosmos SDK开发者见面会 - 深圳站',
-                    signUp:'加入活动',
-                    signUpUrl:'https://www.huodongxing.com/event/8503656710300',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },*/
 
             ]
         },
@@ -688,33 +645,34 @@ export const message = {
                 title: '活动回顾',
                 leftList: [
                     {
+                        img:'irisnet_sacc.png',
+                        href:'https://mp.weixin.qq.com/s/PSFWeqWXS3dcfhO5A22Gsg',
+                        title:'中国系统架构师大会',
+                        content:'2019中国系统架构师大会：数字转型架构演进'
+                    },
+                    {
                         img:'irisnet_event_10_25.png',
                         href:'https://mp.weixin.qq.com/s/NV34GBOfapbXAJUs9GzXog',
                         title:'助力赢50,000 IRIS大奖！',
                         content:'IRISnet发起币安DEX上币提案，助力赢50,000 IRIS大奖！'
                     },
-                    {
-                        img:'irisnet_event_10_15.png',
-                        href:'https://mp.weixin.qq.com/s/rLCi2By-yGFyu1-ysSqYtg',
-                        title:'币乎直播回顾',
-                        content:'IRISnet及Cosmos生态中的项目进展与应用 | 币乎直播回顾'
-                    },
+                   
                  
                    
                   
                 ],
                 rightList:[
                     {
+                        img:'irisnet_event_10_15.png',
+                        href:'https://mp.weixin.qq.com/s/rLCi2By-yGFyu1-ysSqYtg',
+                        title:'币乎直播回顾',
+                        content:'IRISnet及Cosmos生态中的项目进展与应用 | 币乎直播回顾'
+                    },
+                    {
                         img:'irisnet_event_08-26.png',
                         href:'https://mp.weixin.qq.com/s/rfvlA34U9nN8gC1yaL5sWw',
                         title:'对话真本聪',
                         content:'对话真本聪：多资产模块即将上线，IRIS是否会迎来爆发期？'
-                    },
-                    {
-                        img:'irisnet_bug_bounty.png',
-                        href:'https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg',
-                        title:'IRISnet',
-                        content:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖！'
                     },
                 ],
             }
