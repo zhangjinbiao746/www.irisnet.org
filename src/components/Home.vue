@@ -12,7 +12,7 @@
                                 <a :href="$store.state.messages.home.bianDex.button.buttonUrl.eventDetail" target="_blank">
                                     <button>{{$store.state.messages.home.bianDex.button.buttonName.eventDetail}}</button>
                                 </a>
-                                <a :href="$store.state.messages.home.bianDex.button.buttonUrl.howIsDexUrl">
+                                <a :href="$store.state.messages.home.bianDex.button.buttonUrl.howIsDexUrl"target="_blank">
                                     <button>{{$store.state.messages.home.bianDex.button.buttonName.howIsDex}}</button>
                                 </a>
                             </div>
