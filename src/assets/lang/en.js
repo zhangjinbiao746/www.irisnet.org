@@ -607,7 +607,7 @@ export const message = {
             left: [
                 {
                     img:'irisnet_event_11_06.png',
-                    href:'https://www.8btc.com/wbc-2019',
+                    href:'https://www.8btc.com/wbc-2019/?lang=en',
                     address:'Wuzhen, China',
                     timestamp:'2019/11/08-/11/09',
                     title:'World Blockchain Conference (Wuzhen)',
