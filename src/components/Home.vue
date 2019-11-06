@@ -9,8 +9,12 @@
                             <div>{{$store.state.messages.home.bianDex.development}}</div>
                             <div></div>
                             <div style="padding-top: 0.2rem">
-                                <button @click="jumpUrl($store.state.messages.home.bianDex.button.buttonUrl.eventDetail)">{{$store.state.messages.home.bianDex.button.buttonName.eventDetail}}</button>
-                                <button @click="jumpUrl($store.state.messages.home.bianDex.button.buttonUrl.howIsDexUrl)">{{$store.state.messages.home.bianDex.button.buttonName.howIsDex}}</button>
+                                <a :href="$store.state.messages.home.bianDex.button.buttonUrl.eventDetail" target="_blank">
+                                    <button>{{$store.state.messages.home.bianDex.button.buttonName.eventDetail}}</button>
+                                </a>
+                                <a :href="$store.state.messages.home.bianDex.button.buttonUrl.howIsDexUrl">
+                                    <button>{{$store.state.messages.home.bianDex.button.buttonName.howIsDex}}</button>
+                                </a>
                             </div>
                         </div>
                         <div class="right">
@@ -43,8 +47,12 @@
                                 <p>{{$store.state.messages.home.irisnetBianJie.development}}</p>
                             </div>
                             <div>
-                                <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.explorerName}}</button>
-                                <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}</button>
+                                <a :href="$store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl" target="_blank">
+                                    <button>{{$store.state.messages.home.irisnetBianJie.button.buttonName.explorerName}}</button>
+                                </a>
+                                <a :href="$store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl" target="_blank">
+                                    <button>{{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}</button>
+                                </a>
                             </div>
                         </div>
                         <div class="right">
@@ -59,8 +67,12 @@
                                <div>{{$store.state.messages.home.sectionOne.content}}</div>
                                <div>{{$store.state.messages.home.sectionOne.time}}</div>
                                <div>
-                                   <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button>
-                                   <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
+                                   <a :href="$store.state.messages.home.sectionOne.button.buttonUrl.rainbowUrl" target="_blank">
+                                       <button>{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button>
+                                   </a>
+                                   <a :href="$store.state.messages.home.sectionOne.button.buttonUrl.explorerUrl" target="_blank">
+                                       <button>{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
+                                   </a>
                                </div>
                            </div>
                            <div class="right">
