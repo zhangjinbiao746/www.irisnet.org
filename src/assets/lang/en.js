@@ -606,38 +606,19 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'irisnet_event_10_29.jpeg',
-                    href:'https://medium.com/irisnet-blog/irisnet-iris-airdrop-on-binance-dex-win-500-000-iris-4e24be10a886',
-                    address:'',
-                    timestamp:'From now to 2019/10/31 2:00 AM (UTC)',
-                    title:'IRISnet (IRIS) Airdrop on Binance DEX — Win 500,000 IRIS!',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
-                    img:'irisnet_event_10_29_tuoluo.png',
-                    href:'javascript:void(0)',
-                    timestamp:'2019/10/28-/11/1',
-                    title:'IRISnet became a KOL in tuoluocaijing.cn',
-                    signUp:'',
-                    signUpUrl:'',
+                    img:'irisnet_event_11_06.png',
+                    href:'https://www.8btc.com/wbc-2019',
+                    address:'Wuzhen, China',
+                    timestamp:'2019/11/08-/11/09',
+                    title:'World Blockchain Conference (Wuzhen)',
+                    signUp:'Sign Up',
+                    signUpUrl:'https://www.huodongxing.com/event/8509682642600?layout=EN',
                     viewMore:'',
                     viewMoreUrl:'',
                 },
             ],
             right:[
-                {
-                    img:'irisnet_sacc.png',
-                    href:'javascript:void(0)',
-                    timestamp:'2019/10/31~11/2',
-                    title:'System Architect Conference China 2019',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
+
             ]
         },
         faq:{
@@ -666,38 +647,33 @@ export const message = {
                 title: 'Events Review',
                 leftList: [
                     {
-                        img:'irisnet_event_10_25.png',
+                        img:'irisnet_event_review_biance_11_06_en.png',
+                        href:'https://medium.com/irisnet-blog/irisnet-iris-airdrop-on-binance-dex-win-500-000-iris-4e24be10a886',
+                        title:'Airdrop on Binance DEX',
+                        content:'IRISnet (IRIS) Airdrop on Binance DEX — Win 500,000 IRIS!'
+                    },
+                    {
+                        img:'irisnet_event_review_11_06_en.png',
                         href:'https://medium.com/irisnet-blog/follow-retweet-to-help-iris-binance-dex-listing-7c27cc36dfd1',
                         title:'Follow & Retweet to Help IRIS Binance DEX Listing',
                         content:'Follow & Retweet to Help IRIS Binance DEX Listing'
                     },
+                    
+                    
+                    
+                ],
+                rightList:[
                     {
                         img:'irisnet_event_10_15.png',
                         href:'https://medium.com/irisnet-blog/project-progress-applications-in-irisnet-cosmos-ecosystem-bihu-ama-review-725b78d8f59d',
                         title:'Bihu AMA Review',
                         content:'Project Progress & Applications in IRISnet & Cosmos Ecosystem |Bihu AMA Review'
                     },
-                    
-                    
-                ],
-                rightList:[
                     {
                         img:'irisnet_bug_bounty.png',
                         href:'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
                         title:'IRISnet',
                         content:'Opened! IRIS Hub Bug Bounty II Program for new version release'
-                    },
-                  /*  {
-                        img:'IRISnet_axonomy_defi_en.jpg',
-                        href:'javascript:void(0)',
-                        title:'Axonomy',
-                        content:'AXONOMY DEFI Alliance Strategic Conference'
-                    },*/
-                    {
-                        img:'IRISnet_ico.png',
-                        href:'https://medium.com/irisnet-blog/2019-7-15-ama-42f4a5fbe5f0',
-                        title:'ICO Pentera $ IRISnet',
-                        content:'ICO Pentera $ IRISnet AMA',
                     },
                 ],
             }
