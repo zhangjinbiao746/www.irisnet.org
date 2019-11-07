@@ -627,6 +627,17 @@ export const message = {
                 },
             ],
             right:[
+                {
+                    img:'irisnet_event_2019_11_07_proof.png',
+                    href:'https://www.chainnews.com/pov',
+                    address:'中国，上海',
+                    timestamp:'2019/12/06-/12/07',
+                    title:'价值共识大会 2019',
+                    signUp:'加入活动',
+                    signUpUrl:'http://www.huodongxing.com/event/9511834747000?td=9802436480216',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
 
             ]
         },
