@@ -614,6 +614,17 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
+                {
+                    img:'irisnet_events_2019_11_07.png',
+                    href:'https://www.ccf.org.cn/c/2019-11-04/671197.shtml',
+                    address:'中国，上海',
+                    timestamp:'2019/11/15-/11/16',
+                    title:'CCF会员日-智能无限',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
             ],
             right:[
 
