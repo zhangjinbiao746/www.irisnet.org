@@ -615,6 +615,19 @@ export const message = {
                     viewMoreUrl:'',
                 },
                 {
+                    img:'irisnet_event_2019_11_08_max.jpg',
+                    href:'javascript:void(0)',
+                    address:'中国，上海',
+                    timestamp:'2019/11/11',
+                    title:'开发跨链的IRISnet如何打通数字经济和实体经济',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+            ],
+            right:[
+                {
                     img:'irisnet_events_2019_11_07.png',
                     href:'https://www.ccf.org.cn/c/2019-11-04/671197.shtml',
                     address:'中国，上海',
@@ -625,8 +638,6 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
-            ],
-            right:[
                 {
                     img:'irisnet_event_2019_11_07_proof.png',
                     href:'https://www.chainnews.com/pov',
