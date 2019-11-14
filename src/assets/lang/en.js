@@ -605,7 +605,7 @@ export const message = {
         eventsTitle:'Upcoming Events',
         events: {
             left: [
-                {
+              /*  {
                     img:'irisnet_event_11_06.png',
                     href:'https://www.8btc.com/wbc-2019/?lang=en',
                     address:'Wuzhen, China',
@@ -615,7 +615,7 @@ export const message = {
                     signUpUrl:'https://www.huodongxing.com/event/8509682642600?layout=EN',
                     viewMore:'',
                     viewMoreUrl:'',
-                },
+                },*/
             ],
             right:[
 

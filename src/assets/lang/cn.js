@@ -604,30 +604,6 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'irisnet_event_11_06.png',
-                    href:'https://www.8btc.com/wbc-2019',
-                    address:'中国，浙江乌镇',
-                    timestamp:'2019/11/08-/11/09',
-                    title:'世界区块链大会（乌镇）',
-                    signUp:'加入活动',
-                    signUpUrl:'http://www.huodongxing.com/event/6506540634800',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
-                    img:'irisnet_event_2019_11_08_max.jpg',
-                    href:'javascript:void(0)',
-                    address:'中国，上海',
-                    timestamp:'2019/11/11',
-                    title:'开发跨链的IRISnet如何打通数字经济和实体经济',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-            ],
-            right:[
-                {
                     img:'irisnet_events_2019_11_07.png',
                     href:'https://www.ccf.org.cn/c/2019-11-04/671197.shtml',
                     address:'中国，上海',
@@ -649,7 +625,8 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
-
+            ],
+            right:[
             ]
         },
         faq:{
@@ -678,6 +655,20 @@ export const message = {
                 title: '活动回顾',
                 leftList: [
                     {
+                        img:'irisnet_event_2019_11_08_max.jpg',
+                        href:'https://mp.weixin.qq.com/s/bdNvbZMA7NOKWyfx4FRfEw',
+                        title:'抹茶AMA',
+                        content:'开发跨链的IRISnet--如何打通数字经济和实体经济'
+                    },
+                    {
+                        img:'irisnet_event_11_06.png',
+                        href:'https://mp.weixin.qq.com/s/bQCfqkB5TJLzkAKmV-HwuA',
+                        title:'2019世界区块链大会·乌镇',
+                        content:'乌镇·一文读懂Web3.0的概念、推进与盈利模式'
+                    },
+                ],
+                rightList:[
+                    {
                         img:'irisnet_sacc.png',
                         href:'https://mp.weixin.qq.com/s/PSFWeqWXS3dcfhO5A22Gsg',
                         title:'中国系统架构师大会',
@@ -688,24 +679,6 @@ export const message = {
                         href:'https://mp.weixin.qq.com/s/NV34GBOfapbXAJUs9GzXog',
                         title:'助力赢50,000 IRIS大奖！',
                         content:'IRISnet发起币安DEX上币提案，助力赢50,000 IRIS大奖！'
-                    },
-                   
-                 
-                   
-                  
-                ],
-                rightList:[
-                    {
-                        img:'irisnet_event_10_15.png',
-                        href:'https://mp.weixin.qq.com/s/rLCi2By-yGFyu1-ysSqYtg',
-                        title:'币乎直播回顾',
-                        content:'IRISnet及Cosmos生态中的项目进展与应用 | 币乎直播回顾'
-                    },
-                    {
-                        img:'irisnet_event_08-26.png',
-                        href:'https://mp.weixin.qq.com/s/rfvlA34U9nN8gC1yaL5sWw',
-                        title:'对话真本聪',
-                        content:'对话真本聪：多资产模块即将上线，IRIS是否会迎来爆发期？'
                     },
                 ],
             }

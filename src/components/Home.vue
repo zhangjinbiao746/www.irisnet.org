@@ -2,26 +2,6 @@
     <div class="content_wrap" @click="closeWeChat">
         <div @mouseenter="swiperStop" @mouseleave="swiperStart" style="position: relative;">
             <swiper ref="mySwiper" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper" >
-                <swiper-slide>
-                    <section class="sectionOne">
-                        <div class="left">
-                            <div>{{$store.state.messages.home.bianDex.commission}}</div>
-                            <div>{{$store.state.messages.home.bianDex.development}}</div>
-                            <div></div>
-                            <div style="padding-top: 0.2rem">
-                                <a :href="$store.state.messages.home.bianDex.button.buttonUrl.eventDetail" target="_blank">
-                                    <button>{{$store.state.messages.home.bianDex.button.buttonName.eventDetail}}</button>
-                                </a>
-                                <a :href="$store.state.messages.home.bianDex.button.buttonUrl.howIsDexUrl"target="_blank">
-                                    <button>{{$store.state.messages.home.bianDex.button.buttonName.howIsDex}}</button>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <img src="../assets/irisnet_home_banner_bian.png" class="banner">
-                        </div>
-                    </section>
-                </swiper-slide>
                 <!--<swiper-slide>
                     <section class="sectionOne2">
                         <div class="left">
