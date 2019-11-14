@@ -661,7 +661,7 @@ export const message = {
                         content:'开发跨链的IRISnet--如何打通数字经济和实体经济'
                     },
                     {
-                        img:'irisnet_event_11_06.png',
+                        img:'irisnet_event_2019_11_14.png',
                         href:'https://mp.weixin.qq.com/s/bQCfqkB5TJLzkAKmV-HwuA',
                         title:'2019世界区块链大会·乌镇',
                         content:'乌镇·一文读懂Web3.0的概念、推进与盈利模式'
