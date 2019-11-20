@@ -90,7 +90,7 @@ export const message = {
             {
                 id: 0,
                 title:'文档',
-                href: "https://www.irisnet.org/docs/",
+                href: "https://www.irisnet.org/docs/zh/",
             },
             {
                 id:1,
