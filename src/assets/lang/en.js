@@ -749,7 +749,11 @@ export const message = {
                         {
                             itemName: 'Mintscan',
                             href: 'https://irishub.mintscan.io/'
-                        }
+                        },
+	                    {
+		                    itemName: 'LOOK',
+		                    href: 'https://look.ping.pub/validator?chain=irishub'
+	                    }
                     ],
                     content:'These block explorers allow you to search, view and analyze IRIS Hub data—like blocks, transactions, validators, governance including params or proposals, etc.',
                 },
