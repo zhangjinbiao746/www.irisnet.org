@@ -1,7 +1,7 @@
 .tpl_content{
   padding-top: 0.6rem;
 }
-.testnet_container{
+/*.testnet_container{
   width: 100%;
   background: url("../../../public/irisnet/irisnet_testnet_background.png") no-repeat center center;
   background-size: cover;
@@ -29,6 +29,56 @@
       .content_item:nth-child(2){
         padding: 0.16rem 0;
       }
+    }
+  }
+}*/
+.testnet_container{
+  width: 100%;
+  background: url("../../../public/irisnet/irisnet_testnet_background.png") no-repeat center center;
+  background-size: cover;
+  .testnet_wrap{
+    max-width: 12rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    padding: 1.2rem 5% 1.28rem 5%;
+    .testnet_content{
+      flex: 1;
+      box-sizing: border-box;
+      padding: 0 5%;
+      margin-bottom: 0.3rem;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      .testnet_title{
+        font-size: 0.32rem;
+        font-weight: bolder;
+        line-height: 0.37rem;
+        a{
+          color: #fff;
+        }
+      }
+      .testnet_content{
+        margin-top: 0.25rem;
+        color: rgba(255,255,255,0.5);
+        font-size: 0.22rem;
+        line-height: 0.26rem;
+      }
+      .testnet_link{
+        display: inline-block;
+        padding: 0.17rem 0.35rem;
+        border-radius: 0.33rem;
+        background: linear-gradient(right,#714BE3,#653FD8);
+        color: #fff;
+        &:hover{
+          background: linear-gradient(to right, rgba(130, 92, 245, 1), rgba(123, 80, 255, 1));
+        }
+      }
+    }
+    .testnet_content:last-child{
+      padding-right: 0;
     }
   }
 }
@@ -79,6 +129,29 @@
   }
 }
 @media screen and (min-width: 620px) and (max-width: 768px){
+  .testnet_container{
+    width: 100%;
+    background: #2C2948;
+    .testnet_wrap{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6rem 0.4rem;
+      .testnet_content{
+        padding: 0;
+        margin-bottom: 0.3rem;
+        .testnet_title{
+          text-align: center;
+          a{
+            color: #fff;
+          }
+        }
+      }
+      .testnet_content:last-child{
+        padding-top: 0.6rem;
+      }
+    }
+  }
   .testnet_link_container{
     .testnet_link_content{
       .faq_content{
@@ -118,6 +191,11 @@
   }
 }
 @media screen and (min-width: 375px) and (max-width: 619px){
+  .testnet_container{
+    .testnet_wrap{
+      padding: 0.6rem 0.2rem 0.6rem 0.2rem;;
+    }
+  }
   .testnet_link_container{
     .testnet_link_content{
       .faq_content{
@@ -162,6 +240,29 @@
   }
 }
 @media screen and (max-width: 375px){
+  .testnet_container{
+    width: 100%;
+    background: #2C2948;
+    .testnet_wrap{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6rem 0.2rem 0.6rem 0.2rem;
+      .testnet_content{
+        padding-right: 0;
+        margin-bottom: 0.3rem;
+        .testnet_title{
+          text-align: center;
+          a{
+            color: #fff;
+          }
+        }
+      }
+      .testnet_content:last-child{
+        padding-top: 0.6rem;
+      }
+    }
+  }
   .testnet_link_container{
     .testnet_link_content{
       .faq_content{
