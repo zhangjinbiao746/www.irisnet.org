@@ -435,13 +435,13 @@ export const message = {
             title:'伏羲测试网',
             production: '伏羲测试网跟IRISnet主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。',
             testnetLink:'使用伏羲测试网',
-            href:'https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html'
+            href:'https://www.irisnet.org/docs/zh/get-started/testnet.html#fuxi-%E6%B5%8B%E8%AF%95%E7%BD%91'
         },
         nyancat:{
             title:'彩虹猫测试网',
             production:'彩虹猫测试网通常运行比IRISnet主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
             testnetLink:'使用彩虹猫测试网',
-            href:'https://github.com/irisnet/testnets/tree/master/nyancat'
+            href:'https://www.irisnet.org/docs/zh/get-started/testnet.html#nyancat-%E6%B5%8B%E8%AF%95%E7%BD%91'
         }
     },
     community:{
@@ -476,14 +476,12 @@ export const message = {
                 content:'伏羲测试网跟IRIS主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。'
             }
         ],
-        joinTitle:'如何使用伏羲测试网',
-        joinHref:'https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html',
-        faqTitle:'IRIShub常见问题',
-        faqHref:'https://www.irisnet.org/docs/zh/introduction/',
-        explorerTitle:'测试网浏览器 IRISplorer',
-        explorerHref:'https://testnet.irisplorer.io',
-        walletTitle:'测试网钱包 Rainbow',
-        walletHref:'https://testnet.rainbow.one/'
+        joinTitle:'测试网浏览器（FUXI）',
+        joinHref:'https://testnet.irisplorer.io/#/home',
+        // faqTitle:'IRIShub常见问题',
+        // faqHref:'https://www.irisnet.org/docs/zh/introduction/',
+        explorerTitle:'测试网浏览器（Nyancat）',
+        explorerHref:'https://nyancat.irisplorer.io/#/home',
     },
     newsLetter:{
         successTitle: '欢迎订阅IRISnet通讯',
