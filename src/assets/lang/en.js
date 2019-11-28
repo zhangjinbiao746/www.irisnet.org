@@ -439,14 +439,14 @@ export const message = {
             title:'FUXI Testnet',
             production: 'The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers).',
             testnetLink:'Use FUXI Testnet',
-            href:'https://www.irisnet.org/docs/get-started/Join-the-Testnet.html'
+            href:'https://www.irisnet.org/docs/get-started/testnet.html#fuxi-testnet'
         },
         nyancat:{
             explorerHref:'http://nyancat.irisplorer.io/#/home',
             title:'Nyancat Testnet',
             production:'The Nyancat testnet runs a newer version of irishub, providing a test environment for validators to preview and test the new version before it is ready for deployment to mainnet.',
             testnetLink:'Use Nyancat Tensent',
-            href:'https://github.com/irisnet/testnets/tree/master/nyancat'
+            href:'https://www.irisnet.org/docs/get-started/testnet.html#nyancat-testnet'
         }
     },
     community:{
@@ -481,14 +481,12 @@ export const message = {
                 content:'The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers).'
             }
         ],
-        joinTitle:'How to Use FUXI Testnet',
-        joinHref:'https://www.irisnet.org/docs/get-started/Join-the-Testnet.html',
-        faqTitle:'IRIShub FAQ',
-        faqHref:'https://www.irisnet.org/docs/introduction/',
-        explorerTitle:'IRISplorer (FUXI)',
-        explorerHref:'https://testnet.irisplorer.io',
-        walletTitle:'Rainbow App (PTR)',
-        walletHref:'https://testnet.rainbow.one/'
+        joinTitle:'IRISplorer (FUXI)',
+        joinHref:'https://testnet.irisplorer.io/#/home',
+        // faqTitle:'IRIShub FAQ',
+        // faqHref:'https://www.irisnet.org/docs/introduction/',
+        explorerTitle:'IRISplorer (Nyancat)',
+        explorerHref:'https://nyancat.irisplorer.io/#/home',
     },
     newsLetter:{
         successTitle: 'Welcome to The IRISnet Newsletter',
