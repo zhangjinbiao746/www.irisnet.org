@@ -601,7 +601,7 @@ export const message = {
         eventsTitle:'近期活动',
         events: {
             left: [
-                {
+              /*  {
                     img:'irisnet_event_2019_11_07_proof.png',
                     href:'https://www.chainnews.com/pov',
                     address:'中国，上海',
@@ -611,7 +611,7 @@ export const message = {
                     signUpUrl:'http://www.huodongxing.com/event/9511834747000?td=9802436480216',
                     viewMore:'',
                     viewMoreUrl:'',
-                },
+                },*/
             ],
             right:[
             ]
