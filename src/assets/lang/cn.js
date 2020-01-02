@@ -401,33 +401,32 @@ export const message = {
         announcementList:[
             {
                 id:'0',
+                href:'https://forum.irisnet.org/t/iris/314',
+                date:'2019年12月31日',
+                title:'公告 | IRIS基金会第三次执行通证销毁计划，并宣布2020年延续该通证销毁计划',
+                content:'2019年12月31日，IRIS基金会根据为期一年的通证销毁计划，执行了第三次销毁，通过两笔交易共销毁了 15,029,472 个 IRIS 通证，目前 IRIS 通证的总量为20亿个。'
+            },
+            {
+                id:'1',
                 href:'https://forum.irisnet.org/t/iris/271',
                 date:'2019年9月27日',
                 title:'公告 | IRIS基金会第二次执行通证销毁计划',
                 content:'2019年9月27日，IRIS基金会根据为期一年的通证销毁计划，执行了第二次销毁，通过两笔交易共销毁了14,304,888 个 IRIS 通证，目前 IRIS  通证的总量为20亿个。'
             },
             {
-                id:'1',
+                id:'2',
                 href:'https://forum.irisnet.org/t/irisnet-betanet-mainnet/263',
                 date:'2019年9月17日',
                 title:'IRIS Hub上线200天，Betanet正式升级为Mainnet',
                 content:'2019年3月1日，IRISHub的Betanet产出创世区块，网络正式启动。在上线200天之际正式宣布IRIS Hub开始以主网（Mainnet）身份运行。'
             },
             {
-                id:'2',
+                id:'3',
                 href:'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
                 date:'2019年8月30日',
                 title:'BPoS区块链历史首次！IRIS Hub v0.15平滑升级成功，三大核心功能赋能DeFi',
                 content:'IRISnet主网IRIS Hub于北京时间2019年8月29日升级完成，这次升级是BPoS网络中首次对一个非兼容版本，在不硬分叉、不清空数据情况下的平滑升级。'
             },
-            {
-                id:'3',
-                href:'https://forum.irisnet.org/t/rainbow-v2-0-atom/166',
-                date:'2019年6月21日',
-                title:'Rainbow发布v2.0，新增支持ATOM钱包',
-                content:'Rainbow v2.0于2019年6月21日发布，接入第二条公链Cosmos Hub，新增ATOM钱包功能。'
-            },
-           
         ]
     },
     testnet:{
