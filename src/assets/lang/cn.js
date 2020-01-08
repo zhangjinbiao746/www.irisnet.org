@@ -706,17 +706,25 @@ export const message = {
                     href:"javascript:void(0);",
                     resourceList: [
                         {
-                            itemName: 'Math Wallet (Browser Extension, Web Wallet)',
+                            itemName: 'HashKey Hub',
+                            href: 'https://hub.hashkey.com/#/'
+                        },
+                        {
+                            itemName: 'Math Wallet',
+                            production:'(Browser Extension, Web Wallet)',
                             href: 'https://mathwallet.net/web/irisnet'
                         },
                         {
-                            itemName: '01node.com (Ledger)',
+                            itemName: '01node.com',
+                            production:'(Ledger)',
                             href: 'https://iris-delegator.01node.com'
                         },
                         {
-                            itemName: 'Cosmostation (Ledger)',
+                            itemName: 'Cosmostation',
+                            production:'(Ledger)',
                             href: 'https://wallet.cosmostation.io/?network=iris'
                         },
+                       
                     ],
                     content:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
                 },
