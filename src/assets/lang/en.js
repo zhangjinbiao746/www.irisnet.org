@@ -713,17 +713,25 @@ export const message = {
                     href:"javascript:void(0);",
                     resourceList: [
                         {
-                            itemName: 'Math Wallet (Browser Extension, Web Wallet)',
+                            itemName: 'HashKey Hub',
+                            href: 'https://hub.hashkey.com/#/'
+                        },
+                        {
+                            itemName: 'Math Wallet',
+                            production:'(Browser Extension, Web Wallet)',
                             href: 'https://mathwallet.net/web/irisnet'
                         },
                         {
-                            itemName: '01node.com (Ledger)',
+                            itemName: '01node.com',
+                            production:'(Ledger)',
                             href: 'https://iris-delegator.01node.com'
                         },
                         {
-                            itemName: 'Cosmostation (Ledger)',
+                            itemName: 'Cosmostation',
+                            production:'(Ledger)',
                             href: 'https://wallet.cosmostation.io/?network=iris'
                         },
+                        
                     ],
                     content:'Those tools, contributed by IRISnet validators and developers, facilitates IRIS token holders to delegate via web wallets and Ledger hardware wallets, etc . Before using these tools, you need to assure their security.'
                 },
