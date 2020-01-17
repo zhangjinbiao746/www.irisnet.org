@@ -302,13 +302,13 @@
                     }
                 }).then(res => {
                 	if(res && typeof res === "object" && Object.keys(res).length !== 0){
-		                localStorage.setItem('bondedTokens',res.tokens);
-		                localStorage.setItem('rate',res.commission.rate);
+		                localStorage.setItem('bondedTokens',res.result.tokens);
+		                localStorage.setItem('rate',res.result.commission.commission_rates.rate);
 		                this.bondedTokens = new bigNumber(new bigNumber(localStorage.getItem('bondedTokens')).div(1000000).toNumber()).toFormat();
 		                this.rate = this.formatRate(localStorage.getItem('rate'));
-		                this.lcdBianJieBondedTokens = res.tokens;
-		                this.headerTitle = res.description.moniker;
-		                this.headerCosmosAddress = res.operator_address;
+		                this.lcdBianJieBondedTokens = res.result.tokens;
+		                this.headerTitle = res.result.description.moniker;
+		                this.headerCosmosAddress = res.result.operator_address;
 		                this.cosmosExplorerHref = `https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030`;
 		                this.getbondedTokens();
 	                }else {
@@ -332,7 +332,7 @@
                 		if(!this.lcdBianJieBondedTokens || this.lcdBianJieBondedTokens === 0 && localStorage.getItem('bondedTokens')){
 			                this.lcdBianJieBondedTokens = localStorage.getItem('bondedTokens')
                         }
-		                let votingPower = this.lcdBianJieBondedTokens/res.bonded_tokens;
+		                let votingPower = this.lcdBianJieBondedTokens/res.result.bonded_tokens;
 		                localStorage.setItem('votingPower',votingPower);
 		                this.votingPowerNumber = this.formatVotingPower(localStorage.getItem('votingPower'))
                     }
@@ -348,8 +348,8 @@
                     }
                 }).then(res => {
                 	if(res && typeof res === "object" && Object.keys(res).length !== 0){
-		                localStorage.setItem('missedBlocksCnt',res.missed_blocks_counter)
-		                this.missedBlocksCnt = res.missed_blocks_counter;
+		                localStorage.setItem('missedBlocksCnt',res.result.missed_blocks_counter)
+		                this.missedBlocksCnt = res.result.missed_blocks_counter;
                     }
 
 	            }).catch(err => {
@@ -367,10 +367,10 @@
 		        		if(!this.missedBlocksCnt || localStorage.getItem('missedBlocksCnt')){
 					        this.missedBlocksCnt = localStorage.getItem('missedBlocksCnt')
                         }
-                        let bianJieUpTime = this.formatUptime(this.missedBlocksCnt,res.signed_blocks_window);
+                        let bianJieUpTime = this.formatUptime(this.missedBlocksCnt,res.result.signed_blocks_window);
 				        localStorage.setItem('bianJieUpTime',bianJieUpTime)
 				        if(!localStorage.getItem('bianJieUpTime')){
-					        this.bianJieUpTime = this.formatUptime(this.missedBlocksCnt,res.signed_blocks_window)
+					        this.bianJieUpTime = this.formatUptime(this.missedBlocksCnt,res.result.signed_blocks_window)
                         }else {
 					        this.bianJieUpTime = localStorage.getItem('bianJieUpTime')
                         }
