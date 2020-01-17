@@ -301,7 +301,6 @@
             			return data.data
                     }
                 }).then(res => {
-                    console.log(res,"????")
                 	if(res && typeof res === "object" && Object.keys(res).length !== 0){
 		                localStorage.setItem('bondedTokens',res.result.tokens);
 		                localStorage.setItem('rate',res.result.commission.commission_rates.rate);
