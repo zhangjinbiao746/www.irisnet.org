@@ -309,13 +309,13 @@
 		                this.lcdBianJieBondedTokens = res.result.tokens;
 		                this.headerTitle = res.result.description.moniker;
 		                this.headerCosmosAddress = res.result.operator_address;
-		                this.cosmosExplorerHref = `https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030`;
+		                this.cosmosExplorerHref = `https://hubble.figment.network/cosmos/chains/cosmoshub-3/validators/696ABC95186FD65A07050C28AB00C9358A315030`;
 		                this.getbondedTokens();
 	                }else {
 		                this.rate= '';
                         this.bondedTokens = '';
 		                this.votingPowerNumber= '';
-		                this.cosmosExplorerHref= 'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030'
+		                this.cosmosExplorerHref= 'https://hubble.figment.network/cosmos/chains/cosmoshub-3/validators/696ABC95186FD65A07050C28AB00C9358A315030'
 	                }
 	            }).catch(err => {
 
