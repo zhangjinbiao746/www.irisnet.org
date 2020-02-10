@@ -696,7 +696,13 @@ export const message = {
                             itemName: 'Cosmostation',
                             os:'(Android, iOS)',
                             href: 'https://www.cosmostation.io/'
+                        },
+                        {
+                            itemName: ' SyncNode',
+                            os:'(iOS)',
+                            href: 'https://wallet.syncnode.ro/'
                         }
+
                     ],
                     content:'这些钱包支持IRIS及ATOM的转账和质押，请充分研究其安全性再使用。列示这些信息仅为方便下载，并不代表对钱包使用的安全性负责。',
                 },
