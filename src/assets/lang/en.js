@@ -703,6 +703,11 @@ export const message = {
                             itemName: 'Cosmostation',
                             os:'(Android, iOS)',
                             href: 'https://www.cosmostation.io/'
+                        },
+                        {
+                            itemName: ' SyncNode',
+                            os:'(iOS)',
+                            href: 'https://wallet.syncnode.ro/'
                         }
                     ],
                     content:'These web and mobile wallets allow you to store & transfer IRIS, delegate IRIS to validators, and some of them also support ATOM. Note that we do not endorse any of the wallets, they are listed for your convenience.',
