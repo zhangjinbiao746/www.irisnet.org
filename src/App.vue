@@ -4,6 +4,7 @@
         <IrisnetHeader></IrisnetHeader>
         <router-view/>
         <IrisnetFooter></IrisnetFooter>
+        <footer-three></footer-three>
         <float-window></float-window>
     </div>
 </template>
@@ -13,9 +14,10 @@
     import IrisnetFooter from "./components/IrisnetFooter";
     import IrisnetMask from "./components/IirsnetMask";
     import FloatWindow from "./components/FloatWindow";
+    import FooterThree from "./components/FooterThree";
     export default {
         name: 'app',
-        components: {FloatWindow, IrisnetMask, IrisnetFooter, IrisnetHeader},
+        components: {FooterThree, FloatWindow, IrisnetMask, IrisnetFooter, IrisnetHeader},
         data(){
             return{
             }
@@ -36,6 +38,7 @@
     html {
         font-size: 625% !important;
         -webkit-text-size-adjust: none;
+        font-family:SFUIDisplay-Regular,SFUIDisplay;
     }
     body{
         font-size:16px !important;

@@ -1,8 +1,9 @@
 <template>
     <div class="content_wrap" @click="closeWeChat">
-        <div @mouseenter="swiperStop" @mouseleave="swiperStart" style="position: relative;">
+<!--        <swiper></swiper>-->
+        <!--<div @mouseenter="swiperStop" @mouseleave="swiperStart" style="position: relative;">
             <swiper ref="mySwiper" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper" >
-                <!--<swiper-slide>
+                &lt;!&ndash;<swiper-slide>
                     <section class="sectionOne2">
                         <div class="left">
                             <div class="irisnet_bianjie_moniker">{{$store.state.messages.home.irisnetVote.commission}}</div>
@@ -17,7 +18,7 @@
                             <img src="../assets/IRISnet_vote.png" alt="" class="banner">
                         </div>
                     </section>
-                </swiper-slide>-->
+                </swiper-slide>&ndash;&gt;
                 <swiper-slide>
                     <section class="sectionOne1">
                         <div class="left">
@@ -61,9 +62,9 @@
                        </section>
                    </swiper-slide>
             </swiper>
-            <div class="swiper-button-prev"  @click="prev()"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+            <div class="swiper-button-prev"  @click="prev()"></div>&lt;!&ndash;左箭头。如果放置在swiper-container外面，需要自定义样式。&ndash;&gt;
             <div class="swiper-button-next"  @click="next()"></div>
-        </div>
+        </div>-->
         <section class="sectionTwo" ref="whitePaper">
             <div class="first">
                 <div class="left">
@@ -168,8 +169,10 @@
 
 <script>
 	import axios from 'axios';
+    import Swiper from "./swiper/Swiper";
     export default {
         name: "Home",
+        components: {Swiper},
         data () {
             return {
             	bannerImgClass:'banner_img_container',
