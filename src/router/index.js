@@ -15,12 +15,12 @@ import TestNetApp from '../components/TestNetApp.vue';
 import HackathonApp from '../components/HackathonApp.vue';
 import MainNet from "../components/MainNet";
 import MainNetApp from "../components/MainNetApp";
-import NewManinet from '../components/NewMainnet';
+import NewManinet from '../components/MinnetThree';
 import NewTestnet from '../components/NewTestnet';
 import Home from "../components/Home";
 import Community from "../components/Community.vue";
 import Cosmos from "../components/Cosmos";
-import CommunityPage from "../components/CommunityPage"
+import CommunityPage from "../components/CommunityThree"
 Vue.use(Router)
 
 export function createRouter() {
