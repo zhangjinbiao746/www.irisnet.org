@@ -802,6 +802,77 @@ export const message = {
         ],
         "btnTxt":"合作方"
     },
+    devPortal:{
+        first:{
+            title:'在 IRIS Hub 上构建应用',
+            damon:{
+                title:'守护进程',
+                href:'https://www.irisnet.org/docs/zh/daemon/intro.html'
+            },
+            client:{
+                title:'命令行客户端',
+                href:' https://www.irisnet.org/docs/zh/cli-client/intro.html'
+            },
+            server:{
+                title:'API 服务器',
+                href:'https://www.irisnet.org/docs/zh/light-client/intro.html'
+            }
+        },
+        second:{
+            title:'如何使用 iService？',
+            content:'IRIS Services（又名“iService”）旨在对链下服务从定义、绑定（服务提供方注册）、调用到治理（分析和争端解决）的全生命周期传递，来跨越区块链世界和传统业务应用世界之间的鸿沟。',
+            define:'1.服务定义',
+            bind:'2.服务绑定',
+            call:'3.服务调用',
+            more:'了解更多',
+            moreLink:'https://www.irisnet.org/docs/zh/features/service.html',
+        },
+        third:{
+            title:'有帮助的工具',
+            monitor:{
+                title:'IRIS Hub 监控工具',
+                href:'https://www.irisnet.org/docs/zh/tools/monitor.html',
+            },
+            management:{
+                title:'KMS 密钥管理系统',
+                href:'https://www.irisnet.org/docs/zh/tools/kms.html',
+            },
+            support:{
+                title:'Ledger Nano 支持',
+                href:'https://www.irisnet.org/docs/zh/tools/ledger.html',
+            },
+        },
+        fourth:{
+            title:'如何参与贡献',
+            advice:'对开源项目 irishub 的贡献意味着很多事情，比如参与讨论或提出代码更改建议。',
+            reference:'为了确保所有的参与者都能顺利地协作，这里有一份贡献的一般流程供您参考。',
+            detail:'了解详情',
+            detailLink:'https://github.com/irisnet/irishub/blob/master/CONTRIBUTING.md',
+        },
+        join : {
+            title : '加入我们',
+            github : {
+                title : 'Github',
+                href:'https://github.com/irisnet',
+                src:require('../github_icon.png')
+            },
+            nyancat : {
+                title : 'Nyancat',
+                href:'https://github.com/irisnet/testnets/tree/master/nyancat',
+                src:require('../nyancat_icon.png')
+            },
+            qq : {
+                title : 'QQ',
+                href:'http://qm.qq.com/cgi-bin/qm/qr?group_code=795301695',
+                src:require('../qq_icon.png')
+            },
+            riot : {
+                title : 'Riot',
+                href:'https://riot.im/app/#/room/#iris:matrix.org',
+                src:require('../riot_icon.png')
+            }
+        }
+    },
     announcements:{
         title: '公告',
         viewMore: '查看更多',
