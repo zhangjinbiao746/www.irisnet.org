@@ -389,6 +389,419 @@ export const message = {
         explorer: 'IRIS 浏览器',
         explorerHref:'https://www.irisplorer.io/'
     },
+    //TODO(lsc)
+    announce:{
+        title: '公告',
+        betaTitle:'IRISnet的公开地址',
+        betaDate:'2019年3月2日',
+        betaContent:'IRIS基金会和开发团队的地址',
+        historyTitle:'全部历史',
+        announcementList:[
+            {
+                id:'0',
+                href:'https://forum.irisnet.org/t/iris/314',
+                date:'2019年12月31日',
+                title:'公告 | IRIS基金会第三次执行通证销毁计划，并宣布2020年延续该通证销毁计划',
+                content:'2019年12月31日，IRIS基金会根据为期一年的通证销毁计划，执行了第三次销毁，通过两笔交易共销毁了 15,029,472 个 IRIS 通证，目前 IRIS 通证的总量为20亿个。'
+            },
+            {
+                id:'1',
+                href:'https://forum.irisnet.org/t/iris/271',
+                date:'2019年9月27日',
+                title:'公告 | IRIS基金会第二次执行通证销毁计划',
+                content:'2019年9月27日，IRIS基金会根据为期一年的通证销毁计划，执行了第二次销毁，通过两笔交易共销毁了14,304,888 个 IRIS 通证，目前 IRIS  通证的总量为20亿个。'
+            },
+            {
+                id:'2',
+                href:'https://forum.irisnet.org/t/irisnet-betanet-mainnet/263',
+                date:'2019年9月17日',
+                year:'2019',
+                month:'9',
+                day:'17',
+                title:'IRIS Hub上线200天，Betanet正式升级为Mainnet',
+                content:'2019年3月1日，IRISHub的Betanet产出创世区块，网络正式启动。在上线200天之际正式宣布IRIS Hub开始以主网（Mainnet）身份运行。'
+            },
+            {
+                id:'3',
+                href:'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
+                date:'2019年8月30日',
+                year:'2019',
+                month:'8',
+                day:'30',
+                title:'BPoS区块链历史首次！IRIS Hub v0.15平滑升级成功，三大核心功能赋能DeFi',
+                content:'IRISnet主网IRIS Hub于北京时间2019年8月29日升级完成，这次升级是BPoS网络中首次对一个非兼容版本，在不硬分叉、不清空数据情况下的平滑升级。'
+            },
+            {
+                id:'4',
+                href:'https://forum.irisnet.org/t/irisnet-betanet-mainnet/263',
+                date:'2019/7/29',
+                year:'2019',
+                month:'7',
+                day:'29',
+                title:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖！',
+                content:'IRISnet主网IRIS Hub即将升级至v0.15.0，为了确保新版本没有重大Bug或安全漏洞，我们将推出IRISnet 漏洞赏金计划 II，为v0.15.0主网升级做好准备。'
+            },
+            {
+                id:'5',
+                href:'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
+                date:'2019/6/28',
+                year:'2019',
+                month:'6',
+                day:'28',
+                title:'公告 | IRIS基金会第一次执行通证销毁计划',
+                content:'IRISnet主网IRIS Hub于北京时间2019年8月29日升级完成，这次升级是BPoS网络中首次对一个非兼容版本，在不硬分叉、不清空数据情况下的平滑升级。'
+            },
+
+        ]
+    },
+    //todo(lsc)
+    collaborationThree:{
+        "title": "合作方",
+        "core":{
+            "title":"核心开发团队",
+            "list":[
+                {
+                    "img":require("../collaboration/bianjieai.png"),
+                    "pos":-56*0,
+                    "title":"BIANJIE.AI",
+                    "href":"https://www.bianjie.ai/"
+                },
+                {
+                    "img":require("../collaboration/newtendermint.png"),
+                    "pos":-56*1,
+                    "title":"Tendermint",
+                    "href":"https://tendermint.com"
+                },
+            ]
+        },
+
+        "strategy":{
+            "title":"战略合作伙伴",
+            "img":require("../collaboration/strategy.png"),
+            "list":[
+                {
+                    "img":require("../collaboration/interchain.png"),
+                    "pos":-56*0,
+                    "title":"Interchain Foundation",
+                    "href":"https://cosmos.network/about"
+                },
+
+                {
+                    "img":require("../collaboration/hashkeygroup.png"),
+                    "pos":-56*2,
+                    "href":"https://www.hashkey.com/#/"
+                },
+            ]
+        },
+        "ecosystem":{
+            "title":"生态合作伙伴",
+            "img":require("../collaboration/hashgard.png"),
+            "list":[
+                {
+                    "img":require("../collaboration/Platonlogo.png"),
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":" https://www.platon.network/#/index?lang=zh"
+                },
+                {
+                    "img":require("../collaboration/hashquark.png"),
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":"https://www.hashquark.io/#/"
+                },
+                {
+                    "img":require("../collaboration/hashgard.png"),
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":"https://www.hashgard.io/#/"
+                }
+
+            ]
+        },
+        "investment":{
+            "title":"支持机构",
+            "subtitle":"( 排名不分先后 )",
+            "img":require("../collaboration/investment.png"),
+            "list":[
+                {
+                    "img":require("../collaboration/AminoCapital.png"),
+                    "pos":-56*0,
+                    "title":"Amino Capital",
+                    "href":"http://www.aminocapital.com"
+                },
+                {
+                    "img":require("../collaboration/bibox.png"),
+                    "title":"Bibox",
+                    "href":"https://www.bibox.com/"
+                },
+                {
+                    "img":require("../collaboration/huobiCapital.png"),
+                    "title":"火币资本",
+                    "href":"https://www.hbg.com/en-us/capital/"
+                },
+                {
+                    "img":require("../collaboration/gbic.png"),
+                    "title":"GBIC",
+                    "href":"https://gbic.io/"
+                },
+                {
+                    "img":require("../collaboration/bawei.png"),
+                    "pos":-56*1,
+                    "title":"8维资本",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/bihu.png"),
+                    "pos":-56*2,
+                    "title":"BIHU",
+                    "href":"https://bihu.com/"
+                },
+                {
+                    "img":require("../collaboration/newbtts.png"),
+                    "pos":-56*3,
+                    "title":"BA Capital",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/newBKfund.png"),
+                    "pos":-56*4,
+                    "title":"BKFund",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/bzt.png"),
+                    "pos":-56*5,
+                    "title":"Byzantium",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/chainPEter.png"),
+                    "pos":-56*6,
+                    "title":"Chain PE",
+                    "href":"http://www.chainpe.com"
+                },
+                {
+                    "img":require("../collaboration/cp.png"),
+                    "pos":-56*7,
+                    "title":"Chain Pool",
+                    "href":"https://chainpool.io"
+                },
+                {
+                    "img":require("../collaboration/coefficient.png"),
+                    "pos":-56*8,
+                    "title":"Coefficient",
+                    "href":"http://coefficient.network"
+                },
+                {
+                    "img":require("../collaboration/gszb.png"),
+                    "pos":-56*9,
+                    "title":"共识资本",
+                    "href":"http://consensuscapital.ca"
+                },
+                {
+                    "img":require("../collaboration/dsjj.png"),
+                    "pos":-56*10,
+                    "title":"读数资本",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/genblock.png"),
+                    "pos":-56*11,
+                    "title":"Genblock",
+                    "href":"https://genblock.capital"
+                },
+                {
+                    "img":require("../collaboration/hayek.png"),
+                    "pos":-56*12,
+                    "title":"Hayak",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/ink.png"),
+                    "pos":-56*13,
+                    "title":"Ink Labs",
+                    "href":"http://ink.one"
+                },
+                {
+                    "img":require("../collaboration/linkvc.png"),
+                    "pos":-56*14,
+                    "title":"LinkVC",
+                    "href":"http://www.linkvc.com"
+                },
+                {
+                    "img":require("../collaboration/newmedishares.png"),
+                    "pos":-56*15,
+                    "title":"Medi Shares",
+                    "href":"http://medishares.org/"
+                },
+                {
+                    "img":require("../collaboration/js.png"),
+                    "pos":-56*16,
+                    "title":"MILESTONE",
+                    "href":"http://www.milestonevc.com/index.html"
+                },
+                {
+                    "img":require("../collaboration/nirvanacapital.png"),
+                    "pos":-56*16,
+                    "title":"Nirvana Capital",
+                    "href":"http://nirvana.capital/"
+                },
+                {
+                    "img":require("../collaboration/ngc.png"),
+                    "pos":-56*17,
+                    "title":"NEO GLOBAL",
+                    "href":"http://ngc.fund"
+                },
+                {
+                    "img":require("../collaboration/y.png"),
+                    "pos":-56*18,
+                    "title":"Origin Capital",
+                    "href":"http://www.theorigincapital.com"
+                },
+                {
+                    "img":require("../collaboration/satoshifund.png"),
+                    "pos":-56*19,
+                    "title":"Satoshi Fund",
+                    "href":"https://satoshi.fund"
+                },
+                {
+                    "img":require("../collaboration/ggtm.png"),
+                    "pos":-56*20,
+                    "title":"SV Insight",
+                    "href":"http://www.svinsight.com"
+                },
+                {
+                    "img":require("../collaboration/sczb.png"),
+                    "pos":-56*21,
+                    "title":"时戳资本",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/hxjj.png"),
+                    "pos":-56*22,
+                    "title":"Transference Fund",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/unetwork.png"),
+                    "pos":-56*23,
+                    "title":"U Network",
+                    "href":"https://u.network"
+                },
+                {
+                    "img":require("../collaboration/jhct.png"),
+                    "pos":-56*24,
+                    "title":"WATERDRIP CAPITAL",
+                    "href":"http://www.unityvc.com"                },
+                {
+                    "img":require("../collaboration/ua.png"),
+                    "pos":-56*25,
+                    "title":"",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/sdzb.png"),
+                    "pos":-56*25,
+                    "title":"WATERDRIP CAPITAL",
+                    "href":"http://waterdrip.io"
+                },
+                {
+                    "img":require("../collaboration/ydzb.png"),
+                    "pos":-56*25,
+                    "title":"WATERDRIP CAPITAL",
+                    "href":""
+                }
+            ]
+        },
+
+        "counsel":{
+            "title":"Counsel",
+            "img":require("../collaboration/counsel.png"),
+
+            "list":[
+                {
+                    "img":require("../collaboration/ey.png"),
+                    "pos":-56*0,
+                    "title":"E&Y",
+                    "href":"http://www.ey.com"
+                },
+                {
+                    "img":require("../collaboration/king.png"),
+                    "pos":-56*1,
+                    "title":"KWM",
+                    "href":"http://www.kwm.com/"
+                }
+            ]
+        },
+
+
+        "txt": [
+            '核心技术团队',
+            '战略合作伙伴'
+        ],
+
+        "list": [
+            {
+                "img":require("../collaboration/bianjie.png"),
+                "title": "边界智能",
+                "text": "bianjie.ai",
+                "href": "https://bianjie.ai"
+            },
+            {
+                "img":require("../collaboration/cosmos.png"),
+                "title": "COSMOS",
+                "text": "cosmos.network",
+                "href": "https://cosmos.network"
+            },
+            {
+                "img":require("../collaboration/tendermint.png"),
+                "title": "Tendermint",
+                "text": "tendermint.com",
+                "href": "https://tendermint.com"
+            },
+            {
+                "img":require("../collaboration/hashkeygroup.png"),
+                "href": "https://www.hashkey.com/#/"
+            },
+            {
+                "img":require("../collaboration/base.png"),
+                "title": "万向新链加速器",
+                "text": "newchainbase.com",
+                "href": "http://www.newchainbase.com"
+            },
+            {
+                "img":require("../collaboration/waterdrip.png"),
+                "title": "水滴资本",
+                "text": "waterdrip.io",
+                "href": "http://waterdrip.io/"
+            },
+            {
+                "img":require("../collaboration/medishares.png"),
+                "title": "Medishares",
+                "text": "medishares.org",
+                "href": "https://medishares.org"
+            },
+            {
+                "img":require("../collaboration/transference.png"),
+                "title": "Transference",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img":require("../collaboration/bkfund.png"),
+                "title": "BKFund",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img":require("../collaboration/timestamp.png"),
+                "title": "时戳资本",
+                "text": "",
+                "href": ""
+            },
+        ],
+        "btnTxt":"合作方"
+    },
     announcements:{
         title: '公告',
         viewMore: '查看更多',
@@ -730,7 +1143,7 @@ export const message = {
                             production:'(Ledger)',
                             href: 'https://wallet.cosmostation.io/?network=iris'
                         },
-                       
+
                     ],
                     content:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
                 },
@@ -843,7 +1256,7 @@ export const message = {
                         }
                     ]
                 }
-                
+
             },
             bianjie:{
                 title:'安全的边界，放心的委托',

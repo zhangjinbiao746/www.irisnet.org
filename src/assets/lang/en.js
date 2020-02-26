@@ -393,6 +393,416 @@ export const message = {
         explorer: 'IRIS Explorer',
         explorerHref:'https://www.irisplorer.io/'
     },
+    //TODO(lsc)
+    announce:{
+        title: 'Announcements',
+        betaTitle:'IRISnet Public Token Addresses',
+        betaDate:'Mar 02,2019',
+        historyTitle:'All of History',
+        betaContent:'Foundation and Dev Team Token Addresses.',
+        announcementList:[
+            {
+                id:'0',
+                href:'https://medium.com/irisnet-blog/the-3rd-iris-token-burn-is-completed-token-burning-plan-continues-in-2020-46350337a5af',
+                date:'Dec 31, 2019',
+                title:'The 3rd IRIS Token Burn is Completed & Token Burning Plan Continues in 2020',
+                content:'On December 31st, 2019, the IRIS Foundation completed the 3rd IRIS token burn under a one-year token burning plan with 15,029,472 IRIS burned. The current total supply is 2 billion IRIS.'
+            },
+            {
+                id:'1',
+                href:'https://medium.com/irisnet-blog/announcement-the-2rd-iris-token-burn-complete-5cff42eb44a0?source=---------5------------------',
+                date:'Sep 27, 2019',
+                title:'Announcement: the 2nd IRIS Token Burn Complete',
+                content:'On September 27th, 2019, the IRIS Foundation completed the 1st IRIS token burn under a one-year token burning plan with 14,304,888 IRIS burned. The current total supply is 2 billion IRIS.'
+            },
+            {
+                id:'2',
+                href:'https://medium.com/irisnet-blog/irisnet-mainnet-is-live-2f8db2c6fca8',
+                date:'Sep 17, 2019',
+                year:'2019',
+                month:'Sep',
+                day:'17',
+                title:'IRISnet Mainnet is Live!',
+                content:'On March 1st, 2019, IRIS Hub\'s Betanet proposed the genesis block marking the official launch of the network.On the 200th day since the launch, we are very glad to announce that IRIS Hub will be officially running as the Mainnet.'
+            },
+            {
+                id:'3',
+                href:'https://medium.com/irisnet-blog/multi-asset-module-available-on-iris-hub-v0-15-with-defi-application-dev-support-coming-805ed0c8a304?source=---------15------------------',
+                date:'Aug 30, 2019',
+                year:'2019',
+                month:'Aug',
+                day:'30',
+                title:'Multi-asset Module Available on IRIS Hub V0.15 with DeFi Application Dev Support Coming',
+                content:'IRISnet mainnet IRIS Hub has completed its upgrade on August 29, 2019. It is the first time for an incompatible version in BPoS network to complete a smooth upgrade without hard fork and data purge.'
+            },
+            {
+                id:'4',
+                href:'https://forum.irisnet.org/t/irisnet-betanet-mainnet/263',
+                date:'2019/7/29',
+                year:'2019',
+                month:'Jul',
+                day:'29',
+                title:'Opened! IRIS Hub Bug Bounty II Program for new version release',
+                content:'IRIS Hub new version v0.15.0 is coming. To make sure the new release come with no major bugs or security vulnerabilities, we are launching the IRISnet Bug Bounty II Program as a part of v0.15.0 upgrade preparation.'
+            },
+            {
+                id:'5',
+                href:'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
+                date:'2019/6/28',
+                year:'2019',
+                month:'Jun',
+                day:'28',
+                title:'Announcement: 1st IRIS Token Burn Complete',
+                content:'On June 28, 2019, the IRIS Foundation completed the 1st IRIS token burn under a one-year token burning plan with 19,189,722 IRIS burned. The current total supply is 2 billion IRIS.'
+            },
+        ]
+    },
+    //todo(lsc)
+    collaborationThree:{
+        "title": "Collaboration",
+        "txt": [
+            'Core Development Team',
+            'Strategic Partners'
+        ],
+
+        "core":{
+            "title":"Core Development Teams",
+            "list":[
+                {
+                    "img":require("../collaboration/bianjieai.png"),
+                    "pos":-56*0,
+                    "title":"BIANJIE.AI",
+                    "href":"https://www.bianjie.ai/"
+                },
+                {
+                    "img":require("../collaboration/newtendermint.png"),
+                    "pos":-56*1,
+                    "title":"Tendermint",
+                    "href":"https://tendermint.com"
+                },
+            ]
+        },
+
+        "strategy":{
+            "title":"Strategic Partners",
+            "img":require("../collaboration/strategy.png"),
+            "list":[
+                {
+                    "img":require("../collaboration/interchain.png"),
+                    "pos":-56*0,
+                    "title":"Interchain Foundation",
+                    "href":"https://cosmos.network/about"
+                },
+                {
+                    "img":require("../collaboration/hashkeygroup.png"),
+                    "pos":-56*2,
+                    "href":"https://www.hashkey.com/#/"
+                },
+            ]
+        },
+        "ecosystem":{
+            "title":"Ecosystem Partners",
+            "list":[
+                {
+                    "img":require("../collaboration/Platonlogo.png"),
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":"https://www.platon.network/#/index"
+                },
+                {
+                    "img":require("../collaboration/hashquark.png"),
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":"https://www.hashquark.io/#/"
+                },
+                {
+                    "img":require("../collaboration/hashgard.png"),
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":"https://www.hashgard.io/#/"
+                }
+            ]
+        },
+        "investment":{
+            "title":"Institutional Supporters",
+            "subtitle":"( Listed in no particular order )",
+            "list":[
+                {
+                    "img":require("../collaboration/AminoCapital.png"),
+                    "pos":-56*0,
+                    "title":"Amino Capital",
+                    "href":"http://www.aminocapital.com"
+                },
+                {
+                    "img":require("../collaboration/bibox.png"),
+                    "title":"Bibox",
+                    "href":"https://www.bibox.com/"
+                },
+                {
+                    "img":require("../collaboration/huobiCapital.png"),
+                    "title":"Huobi Capital",
+                    "href":"https://www.hbg.com/en-us/capital/"
+                },
+                {
+                    "img":require("../collaboration/gbic.png"),
+                    "title":"GBIC",
+                    "href":"https://gbic.io/"
+                },
+                {
+                    "img":require("../collaboration/bawei.png"),
+                    "pos":-56*1,
+                    "title":"8 Decimal",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/bihu.png"),
+                    "pos":-56*2,
+                    "title":"BIHU",
+                    "href":"https://bihu.com/"
+                },
+                {
+                    "img":require("../collaboration/newbtts.png"),
+                    "pos":-56*3,
+                    "title":"BA Capital",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/newBKfund.png"),
+                    "pos":-56*4,
+                    "title":"BKFund",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/bzt.png"),
+                    "pos":-56*5,
+                    "title":"Byzantium",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/chainPEter.png"),
+                    "pos":-56*6,
+                    "title":"Chain PE",
+                    "href":"http://www.chainpe.com"
+                },
+                {
+                    "img":require("../collaboration/cp.png"),
+                    "pos":-56*7,
+                    "title":"Chain Pool",
+                    "href":"https://chainpool.io/"
+                },
+                {
+                    "img":require("../collaboration/coefficient.png"),
+                    "pos":-56*8,
+                    "title":"Coefficient",
+                    "href":"http://coefficient.network"
+                },
+                {
+                    "img":require("../collaboration/gszb.png"),
+                    "pos":-56*9,
+                    "title":"Consensus",
+                    "href":"http://consensuscapital.ca"
+                },
+                {
+                    "img":require("../collaboration/dsjj.png"),
+                    "pos":-56*10,
+                    "title":"Dushu",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/genblock.png"),
+                    "pos":-56*11,
+                    "title":"Genblock",
+                    "href":"https://genblock.capital"
+                },
+                {
+                    "img":require("../collaboration/hayek.png"),
+                    "pos":-56*12,
+                    "title":"Hayak",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/ink.png"),
+                    "pos":-56*13,
+                    "title":"Ink Labs",
+                    "href":"http://ink.one"
+                },
+                {
+                    "img":require("../collaboration/linkvc.png"),
+                    "pos":-56*14,
+                    "title":"LinkVC",
+                    "href":"http://www.linkvc.com"
+                },
+                {
+                    "img":require("../collaboration/newmedishares.png"),
+                    "pos":-56*15,
+                    "title":"Medi Shares",
+                    "href":"http://medishares.org/"
+                },
+                {
+                    "img":require("../collaboration/js.png"),
+                    "pos":-56*16,
+                    "title":"MILESTONE",
+                    "href":"http://www.milestonevc.com/index.html"
+                },
+                {
+                    "img":require("../collaboration/nirvanacapital.png"),
+                    "pos":-56*16,
+                    "title":"Nirvana Capital",
+                    "href":"http://nirvana.capital/"
+                },
+                {
+                    "img":require("../collaboration/ngc.png"),
+                    "pos":-56*17,
+                    "title":"NEO GLOBAL",
+                    "href":"http://ngc.fund"
+                },
+                {
+                    "img":require("../collaboration/y.png"),
+                    "pos":-56*18,
+                    "title":"Origin Capital",
+                    "href":"http://www.theorigincapital.com"
+                },
+                {
+                    "img":require("../collaboration/satoshifund.png"),
+                    "pos":-56*19,
+                    "title":"Satoshi Fund",
+                    "href":"https://satoshi.fund"
+                },
+                {
+                    "img":require("../collaboration/ggtm.png"),
+                    "pos":-56*20,
+                    "title":"SV Insight",
+                    "href":"http://www.svinsight.com"
+                },
+                {
+                    "img":require("../collaboration/sczb.png"),
+                    "pos":-56*21,
+                    "title":"Timestamp",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/hxjj.png"),
+                    "pos":-56*22,
+                    "title":"Transference Fund",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/unetwork.png"),
+                    "pos":-56*23,
+                    "title":"U Network",
+                    "href":"https://u.network"
+                },
+                {
+                    "img":require("../collaboration/jhct.png"),
+                    "pos":-56*24,
+                    "title":"UNITY VENTURES",
+                    "href":"http://www.unityvc.com"
+                },
+                {
+                    "img":require("../collaboration/ua.png"),
+                    "pos":-56*25,
+                    "title":"Univalues Associates",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/sdzb.png"),
+                    "pos":-56*25,
+                    "title":"WATERDRIP CAPITAL",
+                    "href":"http://waterdrip.io"
+                },
+                {
+                    "img":require("../collaboration/ydzb.png"),
+                    "pos":-56*25,
+                    "title":"",
+                    "href":""
+                }
+
+            ]
+        },
+
+        "counsel":{
+            "title":"Counsel",
+            "img":require("../collaboration/counsel.png"),
+
+            "list":[
+                {
+                    "img":require("../collaboration/ey.png"),
+                    "pos":-56*0,
+                    "title":"E&Y",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/king.png"),
+                    "pos":-56*1,
+                    "title":"KWM",
+                    "href":""
+                }
+            ]
+        },
+
+
+        "list": [
+            {
+                "img":require("../collaboration/bianjie.png"),
+                "title": "BIANJIE.AI",
+                "text": "bianjie.ai",
+                "href": "https://bianjie.ai"
+            },
+            {
+                "img":require("../collaboration/cosmos.png"),
+                "title": "COSMOS",
+                "text": "cosmos.network",
+                "href": "https://cosmos.network"
+            },
+            {
+                "img":require("../collaboration/tendermint.png"),
+                "title": "Tendermint",
+                "text": "tendermint.com",
+                "href": "https://tendermint.com"
+            },
+            {
+                "img":require("../collaboration/hashkeygroup.png"),
+                "href": "https://www.hashkey.com/#/"
+            },
+            {
+                "img":require("../collaboration/base.png"),
+                "title": "Newchainbase",
+                "text": "newchainbase.com",
+                "href": "http://www.newchainbase.com"
+            },
+            {
+                "img":require("../collaboration/waterdrip.png"),
+                "title": "WaterDrip",
+                "text": "waterdrip.io",
+                "href": "http://waterdrip.io/"
+            },
+            {
+                "img":require("../collaboration/medishares.png"),
+                "title": "Medishares",
+                "text": "medishares.org",
+                "href": "https://medishares.org"
+            },
+            {
+                "img":require("../collaboration/transference.png"),
+                "title": "Transference",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img":require("../collaboration/bkfund.png"),
+                "title": "BKFund",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img":require("../collaboration/timestamp.png"),
+                "title": "Timestamp",
+                "text": "",
+                "href": ""
+            },
+        ],
+        "btnTxt":"Collaboration"
+    },
     announcements:{
         title: 'Announcements',
         viewMore: 'View More',
@@ -656,9 +1066,9 @@ export const message = {
                         title:'Follow & Retweet to Help IRIS Binance DEX Listing',
                         content:'Follow & Retweet to Help IRIS Binance DEX Listing'
                     },
-                    
-                    
-                    
+
+
+
                 ],
                 rightList:[
                     {
@@ -736,7 +1146,7 @@ export const message = {
                             production:'(Ledger)',
                             href: 'https://wallet.cosmostation.io/?network=iris'
                         },
-                        
+
                     ],
                     content:'Those tools, contributed by IRISnet validators and developers, facilitates IRIS token holders to delegate via web wallets and Ledger hardware wallets, etc . Before using these tools, you need to assure their security.'
                 },
@@ -805,7 +1215,7 @@ export const message = {
             ]
         }
     },
-    
+
     cosmos:{
         en:{
             header:{
