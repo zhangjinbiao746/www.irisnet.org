@@ -454,6 +454,354 @@ export const message = {
 
         ]
     },
+    //todo(lsc)
+    collaborationThree:{
+        "title": "合作方",
+        "core":{
+            "title":"核心开发团队",
+            "list":[
+                {
+                    "img":require("../collaboration/bianjieai.png"),
+                    "pos":-56*0,
+                    "title":"BIANJIE.AI",
+                    "href":"https://www.bianjie.ai/"
+                },
+                {
+                    "img":require("../collaboration/newtendermint.png"),
+                    "pos":-56*1,
+                    "title":"Tendermint",
+                    "href":"https://tendermint.com"
+                },
+            ]
+        },
+
+        "strategy":{
+            "title":"战略合作伙伴",
+            "img":require("../collaboration/strategy.png"),
+            "list":[
+                {
+                    "img":require("../collaboration/interchain.png"),
+                    "pos":-56*0,
+                    "title":"Interchain Foundation",
+                    "href":"https://cosmos.network/about"
+                },
+
+                {
+                    "img":require("../collaboration/hashkeygroup.png"),
+                    "pos":-56*2,
+                    "href":"https://www.hashkey.com/#/"
+                },
+            ]
+        },
+        "ecosystem":{
+            "title":"生态合作伙伴",
+            "img":require("../collaboration/hashgard.png"),
+            "list":[
+                {
+                    "img":require("../collaboration/Platonlogo.png"),
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":" https://www.platon.network/#/index?lang=zh"
+                },
+                {
+                    "img":require("../collaboration/hashquark.png"),
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":"https://www.hashquark.io/#/"
+                },
+                {
+                    "img":require("../collaboration/hashgard.png"),
+                    "pos":-56*3,
+                    "title":"Hashgard",
+                    "href":"https://www.hashgard.io/#/"
+                }
+
+            ]
+        },
+        "investment":{
+            "title":"支持机构",
+            "subtitle":"( 排名不分先后 )",
+            "img":require("../collaboration/investment.png"),
+            "list":[
+                {
+                    "img":require("../collaboration/AminoCapital.png"),
+                    "pos":-56*0,
+                    "title":"Amino Capital",
+                    "href":"http://www.aminocapital.com"
+                },
+                {
+                    "img":require("../collaboration/bibox.png"),
+                    "title":"Bibox",
+                    "href":"https://www.bibox.com/"
+                },
+                {
+                    "img":require("../collaboration/huobiCapital.png"),
+                    "title":"火币资本",
+                    "href":"https://www.hbg.com/en-us/capital/"
+                },
+                {
+                    "img":require("../collaboration/gbic.png"),
+                    "title":"GBIC",
+                    "href":"https://gbic.io/"
+                },
+                {
+                    "img":require("../collaboration/bawei.png"),
+                    "pos":-56*1,
+                    "title":"8维资本",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/bihu.png"),
+                    "pos":-56*2,
+                    "title":"BIHU",
+                    "href":"https://bihu.com/"
+                },
+                {
+                    "img":require("../collaboration/newbtts.png"),
+                    "pos":-56*3,
+                    "title":"BA Capital",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/newBKfund.png"),
+                    "pos":-56*4,
+                    "title":"BKFund",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/bzt.png"),
+                    "pos":-56*5,
+                    "title":"Byzantium",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/chainPEter.png"),
+                    "pos":-56*6,
+                    "title":"Chain PE",
+                    "href":"http://www.chainpe.com"
+                },
+                {
+                    "img":require("../collaboration/cp.png"),
+                    "pos":-56*7,
+                    "title":"Chain Pool",
+                    "href":"https://chainpool.io"
+                },
+                {
+                    "img":require("../collaboration/coefficient.png"),
+                    "pos":-56*8,
+                    "title":"Coefficient",
+                    "href":"http://coefficient.network"
+                },
+                {
+                    "img":require("../collaboration/gszb.png"),
+                    "pos":-56*9,
+                    "title":"共识资本",
+                    "href":"http://consensuscapital.ca"
+                },
+                {
+                    "img":require("../collaboration/dsjj.png"),
+                    "pos":-56*10,
+                    "title":"读数资本",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/genblock.png"),
+                    "pos":-56*11,
+                    "title":"Genblock",
+                    "href":"https://genblock.capital"
+                },
+                {
+                    "img":require("../collaboration/hayek.png"),
+                    "pos":-56*12,
+                    "title":"Hayak",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/ink.png"),
+                    "pos":-56*13,
+                    "title":"Ink Labs",
+                    "href":"http://ink.one"
+                },
+                {
+                    "img":require("../collaboration/linkvc.png"),
+                    "pos":-56*14,
+                    "title":"LinkVC",
+                    "href":"http://www.linkvc.com"
+                },
+                {
+                    "img":require("../collaboration/newmedishares.png"),
+                    "pos":-56*15,
+                    "title":"Medi Shares",
+                    "href":"http://medishares.org/"
+                },
+                {
+                    "img":require("../collaboration/js.png"),
+                    "pos":-56*16,
+                    "title":"MILESTONE",
+                    "href":"http://www.milestonevc.com/index.html"
+                },
+                {
+                    "img":require("../collaboration/nirvanacapital.png"),
+                    "pos":-56*16,
+                    "title":"Nirvana Capital",
+                    "href":"http://nirvana.capital/"
+                },
+                {
+                    "img":require("../collaboration/ngc.png"),
+                    "pos":-56*17,
+                    "title":"NEO GLOBAL",
+                    "href":"http://ngc.fund"
+                },
+                {
+                    "img":require("../collaboration/y.png"),
+                    "pos":-56*18,
+                    "title":"Origin Capital",
+                    "href":"http://www.theorigincapital.com"
+                },
+                {
+                    "img":require("../collaboration/satoshifund.png"),
+                    "pos":-56*19,
+                    "title":"Satoshi Fund",
+                    "href":"https://satoshi.fund"
+                },
+                {
+                    "img":require("../collaboration/ggtm.png"),
+                    "pos":-56*20,
+                    "title":"SV Insight",
+                    "href":"http://www.svinsight.com"
+                },
+                {
+                    "img":require("../collaboration/sczb.png"),
+                    "pos":-56*21,
+                    "title":"时戳资本",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/hxjj.png"),
+                    "pos":-56*22,
+                    "title":"Transference Fund",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/unetwork.png"),
+                    "pos":-56*23,
+                    "title":"U Network",
+                    "href":"https://u.network"
+                },
+                {
+                    "img":require("../collaboration/jhct.png"),
+                    "pos":-56*24,
+                    "title":"WATERDRIP CAPITAL",
+                    "href":"http://www.unityvc.com"                },
+                {
+                    "img":require("../collaboration/ua.png"),
+                    "pos":-56*25,
+                    "title":"",
+                    "href":""
+                },
+                {
+                    "img":require("../collaboration/sdzb.png"),
+                    "pos":-56*25,
+                    "title":"WATERDRIP CAPITAL",
+                    "href":"http://waterdrip.io"
+                },
+                {
+                    "img":require("../collaboration/ydzb.png"),
+                    "pos":-56*25,
+                    "title":"WATERDRIP CAPITAL",
+                    "href":""
+                }
+            ]
+        },
+
+        "counsel":{
+            "title":"Counsel",
+            "img":require("../collaboration/counsel.png"),
+
+            "list":[
+                {
+                    "img":require("../collaboration/ey.png"),
+                    "pos":-56*0,
+                    "title":"E&Y",
+                    "href":"http://www.ey.com"
+                },
+                {
+                    "img":require("../collaboration/king.png"),
+                    "pos":-56*1,
+                    "title":"KWM",
+                    "href":"http://www.kwm.com/"
+                }
+            ]
+        },
+
+
+        "txt": [
+            '核心技术团队',
+            '战略合作伙伴'
+        ],
+
+        "list": [
+            {
+                "img":require("../collaboration/bianjie.png"),
+                "title": "边界智能",
+                "text": "bianjie.ai",
+                "href": "https://bianjie.ai"
+            },
+            {
+                "img":require("../collaboration/cosmos.png"),
+                "title": "COSMOS",
+                "text": "cosmos.network",
+                "href": "https://cosmos.network"
+            },
+            {
+                "img":require("../collaboration/tendermint.png"),
+                "title": "Tendermint",
+                "text": "tendermint.com",
+                "href": "https://tendermint.com"
+            },
+            {
+                "img":require("../collaboration/hashkeygroup.png"),
+                "href": "https://www.hashkey.com/#/"
+            },
+            {
+                "img":require("../collaboration/base.png"),
+                "title": "万向新链加速器",
+                "text": "newchainbase.com",
+                "href": "http://www.newchainbase.com"
+            },
+            {
+                "img":require("../collaboration/waterdrip.png"),
+                "title": "水滴资本",
+                "text": "waterdrip.io",
+                "href": "http://waterdrip.io/"
+            },
+            {
+                "img":require("../collaboration/medishares.png"),
+                "title": "Medishares",
+                "text": "medishares.org",
+                "href": "https://medishares.org"
+            },
+            {
+                "img":require("../collaboration/transference.png"),
+                "title": "Transference",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img":require("../collaboration/bkfund.png"),
+                "title": "BKFund",
+                "text": "",
+                "href": ""
+            },
+            {
+                "img":require("../collaboration/timestamp.png"),
+                "title": "时戳资本",
+                "text": "",
+                "href": ""
+            },
+        ],
+        "btnTxt":"合作方"
+    },
     announcements:{
         title: '公告',
         viewMore: '查看更多',
@@ -795,7 +1143,7 @@ export const message = {
                             production:'(Ledger)',
                             href: 'https://wallet.cosmostation.io/?network=iris'
                         },
-                       
+
                     ],
                     content:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
                 },
@@ -908,7 +1256,7 @@ export const message = {
                         }
                     ]
                 }
-                
+
             },
             bianjie:{
                 title:'安全的边界，放心的委托',

@@ -22,6 +22,7 @@ import Community from "../components/Community.vue";
 import Cosmos from "../components/Cosmos";
 import CommunityPage from "../components/CommunityThree"
 import AnnouncementsThree from "../components/AnnouncementsThree";
+import CollaborationThree from "../components/CollaborationThree";
 Vue.use(Router)
 
 export function createRouter() {
@@ -95,6 +96,11 @@ export function createRouter() {
                 path: '/announcements',
                 component: AnnouncementsThree
             },
+            {
+                path: '/collaboration',
+                component: CollaborationThree
+            },
+
 
         ]
     })
