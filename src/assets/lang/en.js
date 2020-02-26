@@ -393,6 +393,70 @@ export const message = {
         explorer: 'IRIS Explorer',
         explorerHref:'https://www.irisplorer.io/'
     },
+    //TODO(lsc)
+    announce:{
+        title: 'Announcements',
+        betaTitle:'IRISnet Public Token Addresses',
+        betaDate:'Mar 02,2019',
+        historyTitle:'All of History',
+        betaContent:'Foundation and Dev Team Token Addresses.',
+        announcementList:[
+            {
+                id:'0',
+                href:'https://medium.com/irisnet-blog/the-3rd-iris-token-burn-is-completed-token-burning-plan-continues-in-2020-46350337a5af',
+                date:'Dec 31, 2019',
+                title:'The 3rd IRIS Token Burn is Completed & Token Burning Plan Continues in 2020',
+                content:'On December 31st, 2019, the IRIS Foundation completed the 3rd IRIS token burn under a one-year token burning plan with 15,029,472 IRIS burned. The current total supply is 2 billion IRIS.'
+            },
+            {
+                id:'1',
+                href:'https://medium.com/irisnet-blog/announcement-the-2rd-iris-token-burn-complete-5cff42eb44a0?source=---------5------------------',
+                date:'Sep 27, 2019',
+                title:'Announcement: the 2nd IRIS Token Burn Complete',
+                content:'On September 27th, 2019, the IRIS Foundation completed the 1st IRIS token burn under a one-year token burning plan with 14,304,888 IRIS burned. The current total supply is 2 billion IRIS.'
+            },
+            {
+                id:'2',
+                href:'https://medium.com/irisnet-blog/irisnet-mainnet-is-live-2f8db2c6fca8',
+                date:'Sep 17, 2019',
+                year:'2019',
+                month:'Sep',
+                day:'17',
+                title:'IRISnet Mainnet is Live!',
+                content:'On March 1st, 2019, IRIS Hub\'s Betanet proposed the genesis block marking the official launch of the network.On the 200th day since the launch, we are very glad to announce that IRIS Hub will be officially running as the Mainnet.'
+            },
+            {
+                id:'3',
+                href:'https://medium.com/irisnet-blog/multi-asset-module-available-on-iris-hub-v0-15-with-defi-application-dev-support-coming-805ed0c8a304?source=---------15------------------',
+                date:'Aug 30, 2019',
+                year:'2019',
+                month:'Aug',
+                day:'30',
+                title:'Multi-asset Module Available on IRIS Hub V0.15 with DeFi Application Dev Support Coming',
+                content:'IRISnet mainnet IRIS Hub has completed its upgrade on August 29, 2019. It is the first time for an incompatible version in BPoS network to complete a smooth upgrade without hard fork and data purge.'
+            },
+            {
+                id:'4',
+                href:'https://forum.irisnet.org/t/irisnet-betanet-mainnet/263',
+                date:'2019/7/29',
+                year:'2019',
+                month:'Jul',
+                day:'29',
+                title:'Opened! IRIS Hub Bug Bounty II Program for new version release',
+                content:'IRIS Hub new version v0.15.0 is coming. To make sure the new release come with no major bugs or security vulnerabilities, we are launching the IRISnet Bug Bounty II Program as a part of v0.15.0 upgrade preparation.'
+            },
+            {
+                id:'5',
+                href:'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
+                date:'2019/6/28',
+                year:'2019',
+                month:'Jun',
+                day:'28',
+                title:'Announcement: 1st IRIS Token Burn Complete',
+                content:'On June 28, 2019, the IRIS Foundation completed the 1st IRIS token burn under a one-year token burning plan with 19,189,722 IRIS burned. The current total supply is 2 billion IRIS.'
+            },
+        ]
+    },
     announcements:{
         title: 'Announcements',
         viewMore: 'View More',

@@ -389,6 +389,71 @@ export const message = {
         explorer: 'IRIS 浏览器',
         explorerHref:'https://www.irisplorer.io/'
     },
+    //TODO(lsc)
+    announce:{
+        title: '公告',
+        betaTitle:'IRISnet的公开地址',
+        betaDate:'2019年3月2日',
+        betaContent:'IRIS基金会和开发团队的地址',
+        historyTitle:'全部历史',
+        announcementList:[
+            {
+                id:'0',
+                href:'https://forum.irisnet.org/t/iris/314',
+                date:'2019年12月31日',
+                title:'公告 | IRIS基金会第三次执行通证销毁计划，并宣布2020年延续该通证销毁计划',
+                content:'2019年12月31日，IRIS基金会根据为期一年的通证销毁计划，执行了第三次销毁，通过两笔交易共销毁了 15,029,472 个 IRIS 通证，目前 IRIS 通证的总量为20亿个。'
+            },
+            {
+                id:'1',
+                href:'https://forum.irisnet.org/t/iris/271',
+                date:'2019年9月27日',
+                title:'公告 | IRIS基金会第二次执行通证销毁计划',
+                content:'2019年9月27日，IRIS基金会根据为期一年的通证销毁计划，执行了第二次销毁，通过两笔交易共销毁了14,304,888 个 IRIS 通证，目前 IRIS  通证的总量为20亿个。'
+            },
+            {
+                id:'2',
+                href:'https://forum.irisnet.org/t/irisnet-betanet-mainnet/263',
+                date:'2019年9月17日',
+                year:'2019',
+                month:'9',
+                day:'17',
+                title:'IRIS Hub上线200天，Betanet正式升级为Mainnet',
+                content:'2019年3月1日，IRISHub的Betanet产出创世区块，网络正式启动。在上线200天之际正式宣布IRIS Hub开始以主网（Mainnet）身份运行。'
+            },
+            {
+                id:'3',
+                href:'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
+                date:'2019年8月30日',
+                year:'2019',
+                month:'8',
+                day:'30',
+                title:'BPoS区块链历史首次！IRIS Hub v0.15平滑升级成功，三大核心功能赋能DeFi',
+                content:'IRISnet主网IRIS Hub于北京时间2019年8月29日升级完成，这次升级是BPoS网络中首次对一个非兼容版本，在不硬分叉、不清空数据情况下的平滑升级。'
+            },
+            {
+                id:'4',
+                href:'https://forum.irisnet.org/t/irisnet-betanet-mainnet/263',
+                date:'2019/7/29',
+                year:'2019',
+                month:'7',
+                day:'29',
+                title:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖！',
+                content:'IRISnet主网IRIS Hub即将升级至v0.15.0，为了确保新版本没有重大Bug或安全漏洞，我们将推出IRISnet 漏洞赏金计划 II，为v0.15.0主网升级做好准备。'
+            },
+            {
+                id:'5',
+                href:'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
+                date:'2019/6/28',
+                year:'2019',
+                month:'6',
+                day:'28',
+                title:'公告 | IRIS基金会第一次执行通证销毁计划',
+                content:'IRISnet主网IRIS Hub于北京时间2019年8月29日升级完成，这次升级是BPoS网络中首次对一个非兼容版本，在不硬分叉、不清空数据情况下的平滑升级。'
+            },
+
+        ]
+    },
     announcements:{
         title: '公告',
         viewMore: '查看更多',
