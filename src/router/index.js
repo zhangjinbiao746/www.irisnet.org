@@ -24,6 +24,7 @@ import CommunityPage from "../components/CommunityThree"
 import AnnouncementsThree from "../components/AnnouncementsThree";
 import CollaborationThree from "../components/CollaborationThree";
 import DevPortalThree from "../components/DevPortalThree";
+import EcosystemThree from "../components/EcosystemThree";
 Vue.use(Router)
 
 export function createRouter() {
@@ -101,6 +102,16 @@ export function createRouter() {
                 path: '/devportal',
                 component: DevPortalThree
             },
+            {
+                path: '/ecosystem',
+                component: EcosystemThree
+            },
+            {
+                path: '/collaboration',
+                component: CollaborationThree
+            },
+
+
 
 
         ]
