@@ -105,13 +105,9 @@
     export default {
         name : "DevPortalThree",
         data(){
-            return{
-
-            }
+            return {}
         },
-        computed : {
-
-        },
+        computed : {},
         mounted(){
 
         },
@@ -129,96 +125,114 @@
     .dev_portal_container {
         width: 100%;
         padding-top: 0.6rem;
-        .dev_portal_common_wrap{
-            width:100%;
-            padding-bottom:0.9rem;
+        .dev_portal_common_wrap {
+            width: 100%;
+            padding-bottom: 0.9rem;
             .dev_portal_common_container {
                 max-width: 12rem;
                 margin: 0 auto;
                 .flexColumn;
                 align-items: center;
                 padding-top: 1rem;
-                .dev_portal_common_item_wrap{
-                    .flexRow;
-                    margin-bottom:0.3rem;
-                    .dev_portal_common_item_container{
-                        height:5.8rem;
-                        width:5.85rem;
-                        border-radius:4px;
-                        border:1px solid rgba(221,221,221,1);
-                        padding:0.4rem;
-                        box-sizing:border-box;
+                @media screen and (min-width: 769px) {
+                    .dev_portal_common_item_wrap{
+                        .flexRow;
+                        .dev_portal_common_item_container{
+                            //height: 5.8rem;
+                            width: 5.85rem;
+                        }
+                        .dev_portal_common_item_container_left {
+                            margin-right: 0.3rem;
+                        }
+                    }
+                }
+                @media screen and (max-width: 768px) {
+                    .dev_portal_common_item_wrap{
                         .flexColumn;
-                        .dev_portal_common_item_title{
-                            color:#263035;
-                            font-size:0.36rem;
-                            margin-bottom:0.5rem;
+                        .dev_portal_common_item_container{
+                            //height: 3.25rem;
+                            width: 5.2rem;
+                            &:first-child{
+                                margin-bottom:0.3rem;
+                            }
                         }
-                        .dev_portal_common_item_content{
-                            font-size:0.22rem;
-                            margin-bottom:0.25rem;
+                    }
+                }
+
+                .dev_portal_common_item_wrap {
+
+                    margin-bottom: 0.3rem;
+                    .dev_portal_common_item_container {
+
+                        border-radius: 4px;
+                        border: 1px solid rgba(221, 221, 221, 1);
+                        padding: 0.4rem;
+                        box-sizing: border-box;
+                        .flexColumn;
+                        .dev_portal_common_item_title {
+                            color: #263035;
+                            font-size: 0.36rem;
+                            margin-bottom: 0.5rem;
                         }
-                        .dev_portal_common_item_sub_content{
-                            color:#7C7D8D;
-                            font-size:0.22rem;
-                            margin-bottom:0.4rem;
-                            line-height:0.4rem;
+                        .dev_portal_common_item_content {
+                            font-size: 0.22rem;
+                            margin-bottom: 0.25rem;
+                        }
+                        .dev_portal_common_item_sub_content {
+                            color: #7C7D8D;
+                            font-size: 0.22rem;
+                            margin-bottom: 0.4rem;
+                            line-height: 0.4rem;
 
                         }
-                        .dev_portal_common_item_second_item{
-                            color:#263035;
-                            font-size:0.22rem;
-                            margin-bottom:0.2rem;
+                        .dev_portal_common_item_second_item {
+                            color: #263035;
+                            font-size: 0.22rem;
+                            margin-bottom: 0.2rem;
                         }
-                        .dev_portal_common_item_second_more{
-                            margin-top:0.4rem;
+                        .dev_portal_common_item_second_more {
+                            margin-top: 0.4rem;
                         }
 
+                    }
+                    .bottom_container {
+                        height: 4.8rem;
+                    }
 
-                    }
-                    .bottom_container{
-                        height:4.8rem;
-                    }
-                    .dev_portal_common_item_container_left{
-                        margin-right:0.3rem;
-                    }
-                    .link_url{
-                        color:#5E82F1;
-                        cursor:pointer;
+                    .link_url {
+                        color: #5E82F1;
+                        cursor: pointer;
                     }
 
                 }
-
-
 
             }
-            .dev_portal_join_us{
+            .dev_portal_join_us {
                 .flexColumn;
                 align-items: center;
-                padding-top:1rem;
-                .dev_portal_join_us_title{
-                    color:#313236;
-                    font-size:0.36rem;
-                    margin-bottom:0.4rem;
+                padding-top: 1rem;
+                .dev_portal_join_us_title {
+                    color: #313236;
+                    font-size: 0.36rem;
+                    margin-bottom: 0.4rem;
                 }
-                .dev_portal_join_us_item_container{
+                .dev_portal_join_us_item_container {
                     .flexRow;
-                    .dev_portal_join_us_item_img{
-                        width:0.36rem;
-                        height:0.36rem;
-                        margin-right:0.1rem;
+                    .dev_portal_join_us_item_img {
+                        width: 0.36rem;
+                        height: 0.36rem;
+                        margin-right: 0.1rem;
                         cursor: pointer;
                     }
                 }
             }
         }
-        .wrap_top{
+        .wrap_top {
             background: #ffffff;
         }
-        .wrap_bottom{
+        .wrap_bottom {
             background: #F8F9FC;
         }
-
 
     }
 

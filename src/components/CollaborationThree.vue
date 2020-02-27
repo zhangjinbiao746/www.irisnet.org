@@ -3,17 +3,17 @@
         <div class="collaboration_common_wrap">
             <div class="collaboration_content_container collaboration_common_container">
                 <p class="collaboration_common_title">
-                    {{$store.state.messages.collaborationThree.core.title}}
+                    {{$store.state.messages.home.sectionFour.CoreDevelopmentTeams.title}}
                 </p>
                 <div class="collaboration_common_content">
                     <div class="collaboration_common_img_container right_border">
-                        <img :src="$store.state.messages.collaborationThree.core.list[0].img"
-                             @click="toLinkUrl($store.state.messages.collaborationThree.core.list[0].href)"
+                        <img :src="$store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos[0].path"
+                             @click="toLinkUrl($store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos[0].url)"
                              alt="" class="collaboration_img">
                     </div>
                     <div class="collaboration_common_img_container">
-                        <img :src="$store.state.messages.collaborationThree.core.list[1].img"
-                             @click="toLinkUrl($store.state.messages.collaborationThree.core.list[1].href)"
+                        <img :src="$store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos[1].path"
+                             @click="toLinkUrl($store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos[1].url)"
                              alt="" class="collaboration_img">
                     </div>
                 </div>
@@ -22,23 +22,23 @@
         <div class="collaboration_common_wrap">
             <div class="collaboration_common_container">
                 <p class="collaboration_common_title">
-                    {{$store.state.messages.collaborationThree.strategy.title}}
+                    {{$store.state.messages.home.sectionFour.StrategicPartners.title}}
                 </p>
                 <div class="collaboration_common_content">
                     <div class="collaboration_common_img_container right_border">
-                        <img :src="$store.state.messages.collaborationThree.strategy.list[0].img"
-                             @click="toLinkUrl($store.state.messages.collaborationThree.strategy.list[0].href)"
+                        <img :src="$store.state.messages.home.sectionFour.StrategicPartners.logos[0].path"
+                             @click="toLinkUrl($store.state.messages.home.sectionFour.StrategicPartners.logos[0].url)"
                              alt="" class="collaboration_img">
                     </div>
                     <div class="collaboration_common_img_container">
-                        <img :src="$store.state.messages.collaborationThree.strategy.list[1].img"
-                             @click="toLinkUrl($store.state.messages.collaborationThree.strategy.list[1].href)"
+                        <img :src="$store.state.messages.home.sectionFour.StrategicPartners.logos[1].path"
+                             @click="toLinkUrl($store.state.messages.home.sectionFour.StrategicPartners.logos[1].url)"
                              alt="" class="collaboration_img">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="collaboration_common_wrap">
+        <!--<div class="collaboration_common_wrap">
             <div class="collaboration_common_container">
                 <p class="collaboration_common_title">
                     {{$store.state.messages.collaborationThree.ecosystem.title}}
@@ -62,20 +62,35 @@
 
                 </div>
             </div>
+        </div>-->
+        <div class="collaboration_common_wrap">
+            <div class="collaboration_common_container">
+                <p class="collaboration_common_title">
+                    {{$store.state.messages.home.sectionFour.EcosystemPartners.title}}
+                </p>
+                <div class="collaboration_common_content_wrap">
+                    <div class="collaboration_common_img_container"
+                         v-for="item in $store.state.messages.home.sectionFour.EcosystemPartners.logos">
+                        <img :src="item.path"
+                             @click="toLinkUrl(item.url)"
+                             class="collaboration_img">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="collaboration_common_wrap">
             <div class="collaboration_common_container">
                 <p class="collaboration_common_title">
-                    {{$store.state.messages.collaborationThree.investment.title}}
+                    {{$store.state.messages.home.sectionFour.Institutional.title.msg1}}
                     <span class="collaboration_common_sub_title">
-                    {{$store.state.messages.collaborationThree.investment.subtitle}}
+                   {{$store.state.messages.home.sectionFour.Institutional.title.msg2}}
                 </span>
                 </p>
                 <div class="collaboration_common_content_wrap">
-                    <div class="collaboration_common_img_container right_border"
-                         v-for="item in $store.state.messages.collaborationThree.investment.list">
-                        <img :src="item.img"
-                             @click="toLinkUrl(item.href)"
+                    <div class="collaboration_common_img_container"
+                         v-for="item in $store.state.messages.home.sectionFour.Institutional.logos">
+                        <img :src="item.path"
+                             @click="toLinkUrl(item.url)"
                              class="collaboration_img">
                     </div>
                 </div>
