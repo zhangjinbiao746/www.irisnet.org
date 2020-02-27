@@ -802,6 +802,159 @@ export const message = {
         ],
         "btnTxt":"合作方"
     },
+    devPortal:{
+        first:{
+            title:'在 IRIS Hub 上构建应用',
+            damon:{
+                title:'守护进程',
+                href:'https://www.irisnet.org/docs/zh/daemon/intro.html'
+            },
+            client:{
+                title:'命令行客户端',
+                href:' https://www.irisnet.org/docs/zh/cli-client/intro.html'
+            },
+            server:{
+                title:'API 服务器',
+                href:'https://www.irisnet.org/docs/zh/light-client/intro.html'
+            }
+        },
+        second:{
+            title:'如何使用 iService？',
+            content:'IRIS Services（又名“iService”）旨在对链下服务从定义、绑定（服务提供方注册）、调用到治理（分析和争端解决）的全生命周期传递，来跨越区块链世界和传统业务应用世界之间的鸿沟。',
+            define:'1.服务定义',
+            bind:'2.服务绑定',
+            call:'3.服务调用',
+            more:'了解更多',
+            moreLink:'https://www.irisnet.org/docs/zh/features/service.html',
+        },
+        third:{
+            title:'有帮助的工具',
+            monitor:{
+                title:'IRIS Hub 监控工具',
+                href:'https://www.irisnet.org/docs/zh/tools/monitor.html',
+            },
+            management:{
+                title:'KMS 密钥管理系统',
+                href:'https://www.irisnet.org/docs/zh/tools/kms.html',
+            },
+            support:{
+                title:'Ledger Nano 支持',
+                href:'https://www.irisnet.org/docs/zh/tools/ledger.html',
+            },
+        },
+        fourth:{
+            title:'如何参与贡献',
+            advice:'对开源项目 irishub 的贡献意味着很多事情，比如参与讨论或提出代码更改建议。',
+            reference:'为了确保所有的参与者都能顺利地协作，这里有一份贡献的一般流程供您参考。',
+            detail:'了解详情',
+            detailLink:'https://github.com/irisnet/irishub/blob/master/CONTRIBUTING.md',
+        },
+        join : {
+            title : '加入我们',
+            github : {
+                title : 'Github',
+                href:'https://github.com/irisnet',
+                src:require('../github_icon.png')
+            },
+            nyancat : {
+                title : 'Nyancat',
+                href:'https://github.com/irisnet/testnets/tree/master/nyancat',
+                src:require('../nyancat_icon.png')
+            },
+            qq : {
+                title : 'QQ',
+                href:'http://qm.qq.com/cgi-bin/qm/qr?group_code=795301695',
+                src:require('../qq_icon.png')
+            },
+            riot : {
+                title : 'Riot',
+                href:'https://riot.im/app/#/room/#iris:matrix.org',
+                src:require('../riot_icon.png')
+            }
+        }
+    },
+    ecosystemThree:{
+        first:{
+            title:'IRIS 生态',
+            content:'RIS 生态系统通过 IRIS 网络由不同的参与者组成，包括 IRIS Hub 的用户、开发者及验证人、连接 IRIS Hub 的区块链、构建在 IRIS SDK 或 Cosmos SDK 上的区块链应用、区块链开发工具、IRIS 跨链服务以及外部现实世界。',
+            partner:'合作伙伴',
+            img:require('../ecosystem_first.png')
+        },
+        second:{
+            title:'IRIS 生态',
+            content1:'Cosmos Hub是最终组成Cosmos网络的数千个互相连接的区块链中的第一个Hub。',
+            content2:'IRIS Hub 是支持 DeFi 等各种复杂分布式应用的跨链服务枢纽。IRIS Hub 采用 Cosmos SDK 开发，是第一个可自进化的 BPoS 网络。',
+            content3:'IRISnet 的核心开发团队维护了一个 Cosmos Hub 上的创世验证节点。',
+            link1:'可使用',
+            link2:'Rainbow 钱包',
+            link3:'将 ATOM 委托给',
+            link4:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
+            img:require('../ecosystem_second.png'),
+            more:'了解更多',
+            moreLink:'',
+            rainbowLink:'https://www.rainbow.one/',
+            cosmosLink:'https://hubble.figment.network/cosmos/chains/cosmoshub-3/validators/696ABC95186FD65A07050C28AB00C9358A315030'
+        },
+        third:{
+            title:'IBC 和 跨链大生态',
+            content:'IBC 跨链协议是连接全球经济和区块链技术的互操作性协议。',
+            details:'查看详情',
+            img:require('../ecosystem_third.png'),
+            detailLink:'https://cosmos.network/ibc',
+        },
+        fourth:{
+            title:'验证人节点',
+            content:'来自世界各地的验证人节点担负着代表委托人共同维护Bonded PoS区块链网络共识、安全运行和治理进化的光荣使命！',
+            details:'查看详情',
+            img:require('../ecosystem_fourth.png'),
+            detailLink:'https://mp.weixin.qq.com/s/CfCma5Lv7FnBYdimg_EZ1Q',
+        },
+        fifth:{
+            title:'IRITA',
+            content1:'跨域行业互信联盟产品（Inter-Realm Industry Trust Alliance，简称 IRITA)，是 Cosmos 生态中第一个企业级联盟链产品，是基于现代区块链技术框架',
+            content2:'Tendermint ',
+            content3:'和',
+            content4:'IRIS SDK ',
+            content5:'，并结合边界智能团队多年行业经验打造的联盟链产品',
+            details:'查看详情',
+            img:require('../ecosystem_fifth.png'),
+            detailLink:'https://www.bianjie.ai/products/irita',
+            tendermintLink:'https://tendermint.com/',
+            sdkLink:'https://stage.bianjie.ai/products/irisnet'
+        },
+        brand:{
+            title:'品牌资料',
+            content:'这里有一些您可能需要的品牌资源和标志。',
+            details:'查看详情',
+            detailLink:'https://www.irisnet.org/community/press-kit?lang=CN',
+        }
+
+    },
+    "ecosystem":{
+        "title":"生态合作伙伴",
+        "img":"collaboration/hashgard.png",
+        "list":[
+            {
+                "img":"collaboration/Platonlogo.png",
+                "pos":-56*3,
+                "title":"Hashgard",
+                "href":" https://www.platon.network/#/index?lang=zh"
+            },
+            {
+                "img":"collaboration/hashquark.png",
+                "pos":-56*3,
+                "title":"Hashgard",
+                "href":"https://www.hashquark.io/#/"
+            },
+            {
+                "img":"collaboration/hashgard.png",
+                "pos":-56*3,
+                "title":"Hashgard",
+                "href":"https://www.hashgard.io/#/"
+            }
+
+        ]
+    },
     announcements:{
         title: '公告',
         viewMore: '查看更多',
