@@ -16,9 +16,9 @@ import HackathonApp from '../components/HackathonApp.vue';
 import MainNet from "../components/MainNet";
 import MainNetApp from "../components/MainNetApp";
 import NewManinet from '../components/MinnetThree';
-import NewTestnet from '../components/NewTestnet';
-import Home from "../components/Home";
-import Community from "../components/Community.vue";
+import NewTestnet from '../components/TestnetThree';
+import Home from "../components/HomeThree";
+import Community from "../components/PressKitThree.vue";
 import Cosmos from "../components/Cosmos";
 import CommunityPage from "../components/CommunityThree"
 import AnnouncementsThree from "../components/AnnouncementsThree";
@@ -88,7 +88,7 @@ export function createRouter() {
                 component: MainNetApp
             },
             {
-                path: '/irisnet-bianjie',
+                    path: '/irisnet-bianjie',
                 component: Cosmos
             },
             {

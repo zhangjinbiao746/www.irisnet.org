@@ -169,10 +169,8 @@
 
 <script>
 	import axios from 'axios';
-    import Swiper from "./swiper/Swiper";
     export default {
         name: "Home",
-        components: {Swiper},
         data () {
             return {
             	bannerImgClass:'banner_img_container',
@@ -216,7 +214,6 @@
 	        },
 	         next(){
 	         	this.mySwiper.slideNext();
-	         	console.log(this.mySwiper,"wwww")
              },
 	         prev(){
 		         this.mySwiper.slidePrev();
