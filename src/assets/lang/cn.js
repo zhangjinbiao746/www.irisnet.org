@@ -892,6 +892,8 @@ export const message = {
             img:require('../ecosystem_second.png'),
             more:'了解更多',
             moreLink:'',
+            rainbowLink:'https://www.rainbow.one/',
+            cosmosLink:'https://hubble.figment.network/cosmos/chains/cosmoshub-3/validators/696ABC95186FD65A07050C28AB00C9358A315030'
         },
         third:{
             title:'IBC 和 跨链大生态',
@@ -917,6 +919,8 @@ export const message = {
             details:'查看详情',
             img:require('../ecosystem_fifth.png'),
             detailLink:'https://www.bianjie.ai/products/irita',
+            tendermintLink:'https://tendermint.com/',
+            sdkLink:'https://stage.bianjie.ai/products/irisnet'
         },
         brand:{
             title:'品牌资料',
