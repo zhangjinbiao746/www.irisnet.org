@@ -353,62 +353,62 @@ export const message = {
             CoreDevelopmentTeams : {
                 title : 'Core Development Teams',
                 logos : [
-                    {id : 0, path : 'logos/irisnet_bianjiehover.png', url : 'https://www.bianjie.ai/'},
-                    {id : 1, path : 'logos/irisnet_tenderminthover.png', url : 'https://tendermint.com/'}
+                    {id : 0, path : require('../logos/irisnet_bianjiehover.png'), url : 'https://www.bianjie.ai/'},
+                    {id : 1, path : require('../logos/irisnet_tenderminthover.png'), url : 'https://tendermint.com/'}
                 ]
             },
             StrategicPartners : {
                 title : 'Strategic Partners',
                 logos : [
-                    {id : 0, path : 'logos/irisnet_InTERCHAIN.png', url : 'https://cosmos.network/about'},
-                    {id : 1, path : 'logos/irisnet_HASHKEY.png', url : 'https://www.hashkey.com/#/'}
+                    {id : 0, path : require('../logos/irisnet_InTERCHAIN.png'), url : 'https://cosmos.network/about'},
+                    {id : 1, path : require('../logos/irisnet_HASHKEY.png'), url : 'https://www.hashkey.com/#/'}
                 ]
             },
             EcosystemPartners : {
                 title : 'Ecosystem Partners',
                 logos : [
-                    {id : 0, path : 'logos/irisnet_Platonlogo.png', url : 'https://www.platon.network/#/index'},
-                    {id : 1, path : 'logos/irisnet_coirfan.png', url : 'http://iris.fan/#/'},
-                    {id : 2, path : 'logos/irisnet_axonomy.png', url : 'https://www.axonomy.pro'},
-                    {id : 3, path : 'logos/irisnet_Gdex.png', url : 'https://www.gdex.io/'},
-                    {id : 4, path : 'logos/irisnet_hashgardhover.png', url : 'https://www.hashgard.io/#/'}
+                    {id : 0, path : require('../logos/irisnet_Platonlogo.png'), url : 'https://www.platon.network/#/index'},
+                    {id : 1, path : require('../logos/irisnet_coirfan.png'), url : 'http://iris.fan/#/'},
+                    {id : 2, path : require('../logos/irisnet_axonomy.png'), url : 'https://www.axonomy.pro'},
+                    {id : 3, path : require('../logos/irisnet_Gdex.png'), url : 'https://www.gdex.io/'},
+                    {id : 4, path : require('../logos/irisnet_hashgardhover.png'), url : 'https://www.hashgard.io/#/'}
                 ]
             },
             Institutional : {
                 title : {msg1 : 'Institutional Supporters', msg2 : '( Listed in no particular order )'},
                 logos : [
-                    {id : 0, path : 'logos/irisnet_AminoCapital.png', url : 'http://www.aminocapital.com/'},
-                    {id : 1, path : 'logos/irisnet_Bibox.png', url : 'https://www.bibox.com/'},
-                    {id : 2, path : 'logos/irisnet_huobi.png', url : 'https://www.hbg.com/en-us/capital/'},
-                    {id : 3, path : 'logos/irisnet_GBIC.png', url : 'https://gbic.io/'},
-                    {id : 4, path : 'logos/irisnet_8decim.png', url : 'javascript:void(0)'},
-                    {id : 5, path : 'logos/irisnet_bihu.png', url : 'https://bihu.com/'},// 1
-                    {id : 7, path : 'logos/irisnet_BKfund.png', url : 'javascript:void(0)'},
-                    {id : 8, path : 'logos/irisnet_byz.png', url : 'javascript:void(0)'},
-                    {id : 9, path : 'logos/irisnet_ChainPE.png', url : 'http://www.chainpe.com/'},
-                    {id : 10, path : 'logos/irisnet_CP.png', url : 'https://chainpool.io/'},
-                    {id : 11, path : 'logos/irisnet_COEFFICIENT.png', url : 'http://coefficient.network/'},// 2
-                    {id : 12, path : 'logos/irisnet_gongshi.png', url : 'http://consensuscapital.ca/'},
-                    {id : 13, path : 'logos/irisnet_dushu.png', url : 'javascript:void(0)'},
-                    {id : 14, path : 'logos/irisnet_genblock.png', url : 'https://genblock.capital/'},
-                    {id : 15, path : 'logos/irisnet_HAYEK.png', url : 'javascript:void(0)'},
-                    {id : 16, path : 'logos/irisnet_INK.png', url : 'http://ink.one/'},
-                    {id : 17, path : 'logos/irisnet_LINKVCcopy.png', url : 'http://www.linkvc.com/'},// 3
-                    {id : 18, path : 'logos/irisnet_MediSHares.png', url : 'http://medishares.org/'},
-                    {id : 19, path : 'logos/irisnet_jieshi.png', url : 'http://www.milestonevc.com/index.html'},
-                    {id : 20, path : 'logos/irisnet_nirvana-logo-white.png', url : 'http://nirvana.capital/'},
-                    {id : 21, path : 'logos/irisnet_NGC.png', url : 'http://ngc.fund/'},
-                    {id : 22, path : 'logos/irisnet_origin.png', url : 'http://www.theorigincapital.com/'},
-                    {id : 23, path : 'logos/irisnet_SatoshiFUnd.png', url : 'https://satoshi.fund/'},// 4
-                    {id : 24, path : 'logos/irisnet_guigu.png', url : 'http://www.svinsight.com/'},
-                    {id : 25, path : 'logos/irisnet_shicuo.png', url : 'javascript:void(0)'},
-                    {id : 26, path : 'logos/irisnet_huixiang.png', url : 'javascript:void(0)'},
-                    {id : 27, path : 'logos/irisnet_Unetwork.png', url : 'https://u.network/'},
-                    {id : 28, path : 'logos/irisnet_jiuhe.png', url : 'http://www.unityvc.com/'},
-                    {id : 29, path : 'logos/irisnet_UA.png', url : 'javascript:void(0)'},//5
-                    {id : 30, path : 'logos/irisnet_shuidi.png', url : 'http://waterdrip.io/'},
-                    {id : 31, path : 'logos/irisnet_yidao.png', url : 'javascript:void(0)'},
-                    {id : 32, path : 'logos/irisnet_snz.png', url : 'http://snzholding.com/'},
+                    {id : 0, path : require('../logos/irisnet_AminoCapital.png'), url : 'http://www.aminocapital.com/'},
+                    {id : 1, path : require('../logos/irisnet_Bibox.png'), url : 'https://www.bibox.com/'},
+                    {id : 2, path : require('../logos/irisnet_huobi.png'), url : 'https://www.hbg.com/en-us/capital/'},
+                    {id : 3, path : require('../logos/irisnet_GBIC.png'), url : 'https://gbic.io/'},
+                    {id : 4, path : require('../logos/irisnet_8decim.png'), url : 'javascript:void(0)'},
+                    {id : 5, path : require('../logos/irisnet_bihu.png'), url : 'https://bihu.com/'},// 1
+                    {id : 7, path : require('../logos/irisnet_BKfund.png'), url : 'javascript:void(0)'},
+                    {id : 8, path : require('../logos/irisnet_byz.png'), url : 'javascript:void(0)'},
+                    {id : 9, path : require('../logos/irisnet_ChainPE.png'), url : 'http://www.chainpe.com/'},
+                    {id : 10, path : require('../logos/irisnet_CP.png'), url : 'https://chainpool.io/'},
+                    {id : 11, path : require('../logos/irisnet_COEFFICIENT.png'), url : 'http://coefficient.network/'},// 2
+                    {id : 12, path : require('../logos/irisnet_gongshi.png'), url : 'http://consensuscapital.ca/'},
+                    {id : 13, path : require('../logos/irisnet_dushu.png'), url : 'javascript:void(0)'},
+                    {id : 14, path : require('../logos/irisnet_genblock.png'), url : 'https://genblock.capital/'},
+                    {id : 15, path : require('../logos/irisnet_HAYEK.png'), url : 'javascript:void(0)'},
+                    {id : 16, path : require('../logos/irisnet_INK.png'), url : 'http://ink.one/'},
+                    {id : 17, path : require('../logos/irisnet_LINKVCcopy.png'), url : 'http://www.linkvc.com/'},// 3
+                    {id : 18, path : require('../logos/irisnet_MediSHares.png'), url : 'http://medishares.org/'},
+                    {id : 19, path : require('../logos/irisnet_jieshi.png'), url : 'http://www.milestonevc.com/index.html'},
+                    {id : 20, path : require('../logos/irisnet_nirvana-logo-white.png'), url : 'http://nirvana.capital/'},
+                    {id : 21, path : require('../logos/irisnet_NGC.png'), url : 'http://ngc.fund/'},
+                    {id : 22, path : require('../logos/irisnet_origin.png'), url : 'http://www.theorigincapital.com/'},
+                    {id : 23, path : require('../logos/irisnet_SatoshiFUnd.png'), url : 'https://satoshi.fund/'},// 4
+                    {id : 24, path : require('../logos/irisnet_guigu.png'), url : 'http://www.svinsight.com/'},
+                    {id : 25, path : require('../logos/irisnet_shicuo.png'), url : 'javascript:void(0)'},
+                    {id : 26, path : require('../logos/irisnet_huixiang.png'), url : 'javascript:void(0)'},
+                    {id : 27, path : require('../logos/irisnet_Unetwork.png'), url : 'https://u.network/'},
+                    {id : 28, path : require('../logos/irisnet_jiuhe.png'), url : 'http://www.unityvc.com/'},
+                    {id : 29, path : require('../logos/irisnet_UA.png'), url : 'javascript:void(0)'},//5
+                    {id : 30, path : require('../logos/irisnet_shuidi.png'), url : 'http://waterdrip.io/'},
+                    {id : 31, path : require('../logos/irisnet_yidao.png'), url : 'javascript:void(0)'},
+                    {id : 32, path : require('../logos/irisnet_snz.png'), url : 'http://snzholding.com/'},
                 ]
             }
         }
