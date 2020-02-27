@@ -62,7 +62,9 @@
                 <p class="about_title">{{aboutTitle}}</p>
                 <!--<p class="about_second_title">{{aboutSecondTitle}}</p>-->
                 <div class="about_content">
-                    <div class="developer_content">
+                    <div class="about_left_content_wrap"></div>
+                    <div class="about_right_content_wrap"></div>
+               <!--     <div class="developer_content">
                         <div class="irisnet_developer_content">
                             <div class="irisnet_title">
                                <span>{{aboutIrisnetTitle}}</span>
@@ -101,20 +103,11 @@
                                 <img src="../assets/cosmos/introduce_cosmos_logo.png" alt="">
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
-        <div class="logo_container">
-            <div class="logo_wrap">
-                <div class="img_content" @click="toIrisnet">
-                    <img src="../assets/cosmos_page_irisnet_logo.png" alt="">
-                </div>
-                <div class="img_content cosmos_img" @click="toCosmos">
-                    <img src="../assets/cosmos_logo.png" alt="">
-                </div>
-            </div>
-        </div>
+
         <div class="safe_container">
             <div class="safe_wrap">
                 <h2>{{bianJieTitle}}</h2>
@@ -518,4 +511,5 @@
 
 <style scoped lang="less">
     @import "../assets/style/cosmos.less";
+
 </style>

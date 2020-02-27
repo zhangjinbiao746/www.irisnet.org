@@ -13,7 +13,6 @@
                         </div>
                         <div class="warp_cont" v-for="item in  $store.state.messages.privacy.list">
                             <div class="warp_cont_left">
-                                <div class="border"></div>
                                 <div class="title" v-html="item.title">
                                 </div>
                             </div>
@@ -41,7 +40,7 @@
     .index {
         min-height: 100%;
         position: relative;
-        background: #2D2948 ;
+        background: #fff ;
 
         .content {
             max-width: 12rem;
@@ -53,14 +52,10 @@
             width: 100%
         }
         .warp {
-            background: url('../../public/privacy.png');
-            background-repeat: no-repeat;
-            background-attachment:fixed;
-            background-position:  36% 1.8rem;
+            background: #Fff;
             .warp_cont {
                 overflow: hidden;
                 .warp_cont_left {
-                    border-top: 0.01rem solid #2e3148;
                     position: relative;
                     .border {
                         height: 0.02rem;
@@ -72,21 +67,20 @@
                     .title {
                         margin-top: 0.18rem;
                         font-size: 0.24rem;
-                        color: #fff;
+                        color: #313236;
                         line-height: 0.3rem;
                         .div1{
                             font-size: 0.14rem;
                             line-height: 0.22rem;
-                            color: #d4d5de;  font-style: oblique;
+                            color: #7C7D8D;  font-style: oblique;
                         }
                     }
                 }
                 .warp_cont_right {
-                    border-top: 0.01rem solid #2e3148;
                     padding: 0.3rem 0.08rem;
                     div {
                         font-size: 0.16rem;
-                        color: #d4d5de;
+                        color: #7C7D8D;
                         line-height: 0.26rem;
                         margin-top: 0.28rem;
                         span {
@@ -115,8 +109,10 @@
                 text-align: center;
             }
             .warp_title2 {
-                color: #8c8fa6;
-                font-size: 0.24rem;
+                font-size: 0.36rem;
+                font-weight:400;
+                color: #313236;
+                line-height: 0.65rem;
                 margin-top: 0.14rem;
                 margin-bottom: 0.36rem;
             }
