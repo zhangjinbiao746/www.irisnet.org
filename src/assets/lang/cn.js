@@ -876,7 +876,7 @@ export const message = {
     ecosystemThree:{
         first:{
             title:'IRIS 生态',
-            content:'RIS 生态系统通过 IRIS 网络由不同的参与者组成，包括 IRIS Hub 的用户、开发者及验证人、连接 IRIS Hub 的区块链、构建在 IRIS SDK 或 Cosmos SDK 上的区块链应用、区块链开发工具、IRIS 跨链服务以及外部现实世界。',
+            content:'IRIS 生态系统通过 IRIS 网络由不同的参与者组成，包括 IRIS Hub 的用户、开发者及验证人、连接 IRIS Hub 的区块链、构建在 IRIS SDK 或 Cosmos SDK 上的区块链应用、区块链开发工具、IRIS 跨链服务以及外部现实世界。',
             partner:'合作伙伴',
             img:require('../ecosystem_first.png')
         },
@@ -952,6 +952,81 @@ export const message = {
                 "title":"Hashgard",
                 "href":"https://www.hashgard.io/#/"
             }
+
+        ]
+    },
+    events:{
+        title: '近期活动',
+        betaTitle:'IRISnet的公开地址',
+        betaDate:'2019年3月2日',
+        betaContent:'IRIS基金会和开发团队的地址',
+        historyTitle:'全部历史',
+        eventsList:[
+            {
+                id:'0',
+                href:'https://mp.weixin.qq.com/s/bdNvbZMA7NOKWyfx4FRfEw',
+                date:'2019年11月11日',
+                title:'开发跨链的IRISnet--如何打通数字经济和实体经济',
+                content:'抹茶AMA'
+            },
+            {
+                id:'1',
+                href:'https://mp.weixin.qq.com/s/bQCfqkB5TJLzkAKmV-HwuA',
+                date:'2019年11月08日~2019年11月09日',
+                title:'乌镇·一文读懂Web3.0的概念、推进与盈利模式',
+                content:'2019世界区块链大会·乌镇'
+            },
+            {
+                id:'2',
+                href:'https://mp.weixin.qq.com/s/PSFWeqWXS3dcfhO5A22Gsg',
+                date:'2019年10月31日~2019年11月2日',
+                year:'2019',
+                month:'9',
+                day:'17',
+                title:'2019中国系统架构师大会：数字转型 架构演进',
+                content:'中国系统架构师大会'
+            },
+            {
+                id:'3',
+                href:'https://mp.weixin.qq.com/s/LncVvKe3X8I7GAugYtwTZA',
+                date:'2019年10月31日',
+                year:'2019',
+                month:'10',
+                day:'31',
+                title:'IRISnet币安DEX空投活动来袭，500,000 大礼包等你来拿！',
+                content:'币安DEX空投活动'
+            },
+            {
+                id:'4',
+                href:'https://mp.weixin.qq.com/s/NV34GBOfapbXAJUs9GzXog',
+                date:'2019年10月15日~2019年10月21日',
+                year:'2019',
+                month:'10',
+                day:'15',
+                title:'IRISnet发起币安DEX上币提案，助力赢50,000 IRIS大奖！',
+                content:'助力赢50,000 IRIS大奖！'
+            },
+            {
+                id:'5',
+                href:'https://mp.weixin.qq.com/s/rLCi2By-yGFyu1-ysSqYtg',
+                date:'2019年9月16日',
+                year:'2019',
+                month:'9',
+                day:'16',
+                title:'IRISnet及Cosmos生态中的项目进展与应用 | 币乎直播回顾',
+                content:'币乎直播回顾'
+            },
+            {
+                id:'6',
+                href:'https://mp.weixin.qq.com/s/rLCi2By-yGFyu1-ysSqYtg',
+                date:'2019年8月30日',
+                year:'2019',
+                month:'8',
+                day:'30',
+                title:'2019MiiX全球区块链应用生态开发者峰会',
+                content:'MiiXCON'
+            },
+
 
         ]
     },

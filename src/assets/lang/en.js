@@ -956,6 +956,80 @@ export const message = {
         }
 
     },
+    events:{
+        title : 'Events',
+        betaTitle : 'IRISnet Public Token Addresses',
+        betaDate : 'Mar 02,2019',
+        historyTitle : 'All of History',
+        betaContent : 'Foundation and Dev Team Token Addresses.',
+        eventsList : [
+            {
+                id : '0',
+                href : 'https://medium.com/irisnet-blog/irisnet-iris-airdrop-on-binance-dex-win-500-000-iris-4e24be10a886',
+                date : 'Dec 31, 2019',
+                title : 'IRISnet (IRIS) Airdrop on Binance DEX — Win 500,000 IRIS!',
+                content : 'Airdrop on Binance DEX'
+            },
+            {
+                id : '1',
+                href : 'https://medium.com/irisnet-blog/follow-retweet-to-help-iris-binance-dex-listing-7c27cc36dfd1',
+                date : 'Oct 15, 2019 ~ Oct 21, 2019',
+                title : 'Follow & Retweet to Help IRIS Binance DEX Listing',
+                content : 'Follow & Retweet to Help IRIS Binance DEX Listing'
+            },
+            {
+                id : '2',
+                href : 'https://medium.com/irisnet-blog/project-progress-applications-in-irisnet-cosmos-ecosystem-bihu-ama-review-725b78d8f59d',
+                date : 'Oct 16, 2019',
+                year : '2019',
+                month : 'Oct',
+                day : '16',
+                title : 'Project Progress & Applications in IRISnet & Cosmos Ecosystem |Bihu AMA Review',
+                content : 'Bihu AMA Review'
+            },
+            {
+                id : '3',
+                href : 'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
+                date : 'Jul 29, 2019 ~ Aug 16, 2019',
+                year : '2019',
+                month : 'Jul',
+                day : '29',
+                title : 'Opened! IRIS Hub Bug Bounty II Program for new version release',
+                content : 'Bug Bounty II'
+            },
+            {
+                id : '4',
+                href : 'https://medium.com/irisnet-blog/2019-7-15-ama-42f4a5fbe5f0',
+                date : 'Jul 15, 2019 19:00-20:00',
+                year : '2019',
+                month : 'Jul',
+                day : '15',
+                title : 'AMA Hosted by ICO Pentera',
+                content : 'ICO Pentera & IRISnet'
+            },
+            {
+                id : '5',
+                href : 'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
+                date : 'Jul 6, 2019 ~ Jul 7, 2019',
+                year : '2019',
+                month : 'Jul',
+                day : '6',
+                title : '2019 2nd Global Graphene Blockchain Developer Conference',
+                content : 'GBAC'
+            },
+            {
+                id : '6',
+                href : 'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
+                date : 'Jun 19, 2019',
+                year : '2019',
+                month : 'Jun',
+                day : '19',
+                title : '2019-6-19 AMA',
+                content : 'IRISnet& Coinsuper'
+            },
+
+        ]
+    },
     announcements : {
         title : 'Announcements',
         viewMore : 'View More',
