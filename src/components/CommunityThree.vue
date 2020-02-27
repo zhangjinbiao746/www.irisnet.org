@@ -70,8 +70,8 @@
         <div class="community_footer_wrap">
             <div class="community_footer_faq_content">
                 <div class="community_footer_faq_header_content">
-                    <span class="community_footer_faq_header_title"></span>
-                    <span class="community_footer_faq_header_view_more"></span>
+                    <span class="community_footer_faq_header_title">FAQ</span>
+                    <span class="community_footer_faq_header_view_more">View More</span>
                 </div>
                 <div class="community_footer_faq_list_content">
                     <div class="community_footer_faq_list_left_content"></div>
@@ -257,6 +257,39 @@
         }
         .community_footer_wrap{
             background: #fff;
+            .community_footer_faq_content{
+                max-width: 12rem;
+                margin: 0 auto;
+                .community_footer_faq_header_content{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-bottom: 0.22rem;
+                    border-bottom: 0.01rem solid #DDD;
+                    .community_footer_faq_header_title{
+                        font-size: 0.48rem;
+                        font-weight:400;
+                        color:rgba(49,50,54,1);
+                        line-height:0.65rem;
+                    }
+                    .community_footer_faq_header_view_more{
+                        padding-top: 0.4rem;
+                        font-size:0.17rem;
+                        font-weight:400;
+                        color:rgba(94,130,241,1);
+                        line-height:0.2rem;
+                    }
+                }
+                .community_footer_faq_list_content{
+                    margin-top: 0.6rem;
+                    .community_footer_faq_list_left_content{
+
+                    }
+                    .community_footer_faq_list_right_content{
+
+                    }
+                }
+            }
         }
     }
 </style>

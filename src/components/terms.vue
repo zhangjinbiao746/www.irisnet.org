@@ -2,7 +2,6 @@
     <div style="height: 100%">
         <div id="index" class="index">
             <div class="content">
-                <div class="h110"></div>
                 <div class="warp">
                     <div>
                         <div class="warp_title">
@@ -13,7 +12,6 @@
                         </div>
                         <div class="warp_cont" v-for="item in  $store.state.messages.terms.list">
                             <div class="warp_cont_left">
-                                <div class="border"></div>
                                 <div class="title" v-html="item.title">
                                 </div>
                             </div>
@@ -60,8 +58,6 @@
     .index {
         min-height: 100%;
         position: relative;
-        background: #2D2948 ;
-
         .content {
             max-width: 12rem;
             padding: 0 0.2rem;
@@ -72,14 +68,10 @@
             width: 100%
         }
         .warp {
-            background: url('../../public/privacy.png');
-            background-repeat: no-repeat;
-            background-attachment:fixed;
-            background-position:  36% 1.8rem;
+            background: #fff;
             .warp_cont {
                 overflow: hidden;
                 .warp_cont_left {
-                    border-top: 0.01rem solid #2e3148;
                     position: relative;
                     .border {
                         height: 0.02rem;
@@ -89,24 +81,28 @@
                         top: 0;
                     }
                     .title {
+                        font-weight:400;
+                        color:rgba(38,48,53,1);
+                        line-height:32px;
                         margin-top: 0.18rem;
-                        font-size: 0.24rem;
-                        color: #fff;
-                        line-height: 0.3rem;
+                        font-size: 0.22rem;
+                        color: #263035;
                         .div1{
-                            font-size: 0.14rem;
-                            line-height: 0.22rem;
-                            color: #d4d5de;  font-style: oblique;
+                            font-size: 0.17rem;
+                            font-weight:400;
+                            color:rgba(124,125,141,1);
+                            line-height: 0.3rem;
+                            color: #d4d5de;
+                            font-style: oblique;
                         }
                     }
                 }
                 .warp_cont_right {
-                    border-top: 0.01rem solid #2e3148;
-                    padding: 0.3rem 0.08rem;
+                    padding: 0.3rem 0;
                     div {
-                        font-size: 0.16rem;
-                        color: #d4d5de;
-                        line-height: 0.26rem;
+                        font-size: 0.17rem;
+                        color: rgba(124,125,141,1);
+                        line-height: 0.3rem;
                         margin-top: 0.28rem;
                         span {
                             font-style: oblique;
@@ -132,8 +128,10 @@
                 text-align: center;
             }
             .warp_title2 {
-                color: #8c8fa6;
-                font-size: 0.24rem;
+                font-size: 0.36rem;
+                font-weight:400;
+                color: #313236;
+                line-height: 0.65rem;
                 margin-top: 0.14rem;
                 margin-bottom: 0.36rem;
             }
