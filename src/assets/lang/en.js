@@ -23,6 +23,76 @@ export const message = {
             irisnetBianjie:'IRISnet-Bianjie'
         }
     },
+    homeThree:{
+        banner:{
+
+        },
+        irisnet:{
+            title:"IRIS Network",
+            secondTitle:'Interchain Service Hub for NextGen Distributed Applications-- A BPoS Blockchain that is Self-evolutionary',
+            section: 'IRISnet (a.k.a IRIS Hub) is designed to be the foundation for the next generation distributed applications. Built with <a  href="https://tendermint.com/sdk/" target="_blank"> Cosmos SDK </a>, IRIS Hub enables cross-chain interoperability through a unified service model, while providing a variety of modules to support DeFi applications.',
+            secondSection:'IRISnet dev teams include Bianjie (<a href="https://www.bianjie.ai/" target="_blank">www.bianjie.ai</a>), a national award-winning blockchain technology team based in Shanghai, and Tendermint (<a href="https://tendermint.com" target="_blank">https://tendermint.com</a>), the world-famous team that created the Tendermint consensus engine and the Cosmos project.',
+            whitePaperBtn:'Whitepaper',
+            mainnetBtn:'Mainnet'
+        },
+        product:{
+            irisHub:{
+                title:'IRIS Hub',
+                section:'The center of the IRIS Network with cross-chain service protocol.'
+            },
+            irisSdk:{
+                title:'IRIS SDK',
+                section:'A framework for developing blockchains that are compatible with the IRIS network.'
+            },
+            iservice:{
+                title:'iService',
+                section:'Super Adapters for developing distributed business applications.'
+            },
+            OnChainGov:{
+                title:'On-chain Gov',
+                section:'Empowers the whole community by on-chain governance and software upgrade.'
+            },
+
+        },
+        roadMap:{
+            title:'The expected project roadmap',
+            youyi:{
+                title:'HOUYI',
+                date:'HOUYI (Beyond April 2020)',
+                section:'The fourth stage will focus on further technology innovations to the IRIS network, SDK and mobile client, as well as developer engagement.'
+            },
+            kuafu:{
+                title:'KUAFU',
+                date: 'KUAFU (Nov 2019 ~ March 2020)',
+                section:'In this stage we are aiming to accomplish the connection of IRIS Hub with applications blockchains through IBC. We plan to upgrade IRISnet mobile client to support those applications. The third stage will also focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service features.'
+            },
+            nuwa:{
+                title:'NÜWA',
+                date: 'NUWA (April 2019 ~ October 2019)',
+                section:'In this stage we are adding more fundational modules to support application development especially DeFi applications. The new modules planned to release in this stage including multi-asset management, Coinswap, multi-sig account etc. We plan to collabrate with 1-2 ecosystem parteners to develop applications using those modules. We also plan to accomplish the test connection with Cosmos Hub through IBC at this stage.'
+            },
+            pangu:{
+                title:'PANGU',
+                date:'PANGU (January 2018 ~ March 2019)',
+                section:'The first stage of the IRIS project focused on having the IRIS Hub up and running. Initial version of the mobile client for the IRIS network was released. In this stage we also focused on building the fundamental IRIS Service Layer which was released to IRIS Hub. The fundamental IRIS Service layer enables service definition, binding, invocation and query.'
+            }
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     logo : 'irisnet.png',
