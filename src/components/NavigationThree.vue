@@ -9,57 +9,59 @@
                 </div>
                 <ul class="navigation_left_list_content">
                     <li class="navigation_left_list_item">
-                        <span>about us</span>
+                        <span>{{$t("message.navigation.aboutUs")}}</span>
                         <ul class="navigation_second_menu">
                            <li class="navigation_second_list_item">
-                               <router-link :to="`/mainnet`">Mainnet</router-link>
+                               <router-link :to="`/mainnet`">{{$t("message.navigation.secondMenu.mainnet")}}</router-link>
                            </li>
                            <li class="navigation_second_list_item">
-                               <a href="https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md" target="_blank">Whitepaper</a>
+                               <a v-if="$i18n.locale === 'EN'" href="https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md" target="_blank">{{$t("message.navigation.secondMenu.whitepaper")}}</a>
+                               <a v-if="$i18n.locale === 'CN'" href="https://github.com/irisnet/irisnet/blob/master/白皮书.md" target="_blank">{{$t("message.navigation.secondMenu.whitepaper")}}</a>
                            </li>
                            <li class="navigation_second_list_item">
-                               <router-link :to="`/announcements`">Announcements</router-link>
+                               <router-link :to="`/announcements`">{{$t("message.navigation.secondMenu.announcement")}}</router-link>
                            </li>
                            <li class="navigation_second_list_item">
-                               <router-link :to="`/collaboration`">Collaboration</router-link>
+                               <router-link :to="`/collaboration`">{{$t("message.navigation.secondMenu.collaboration")}}</router-link>
                            </li>
                         </ul>
                     </li>
                     <li class="navigation_left_list_item">
-                        <span>developers</span>
+                        <span>{{$t("message.navigation.developer")}}</span>
                         <ul class="navigation_second_menu">
                             <li class="navigation_second_list_item">
-                                <router-link :to="`/devportal`">DevPortal</router-link>
+                                <router-link :to="`/devportal`">{{$t("message.navigation.secondMenu.devPortal")}}</router-link>
                             </li>
                             <li class="navigation_second_list_item">
-                                <router-link :to="`/testnets`">Testnets</router-link>
+                                <router-link :to="`/testnets`">{{$t("message.navigation.secondMenu.testnet")}}</router-link>
                             </li>
                             <li class="navigation_second_list_item">
-                                <a href="https://www.irisnet.org/docs/" target="_blank">Docs</a>
+                                <a v-if="$i18n.locale === 'EN'" href="https://www.irisnet.org/docs/" target="_blank">{{$t("message.navigation.secondMenu.doc")}}</a>
+                                <a v-if="$i18n.locale === 'CN'" href="https://www.irisnet.org/docs/zh/" target="_blank">{{$t("message.navigation.secondMenu.doc")}}</a>
                             </li>
                             <li class="navigation_second_list_item">
-                                <a href="https://cosmos.network/ibc" target="_blank">IBC</a>
+                                <a href="https://cosmos.network/ibc" target="_blank">{{$t("message.navigation.secondMenu.ibc")}}</a>
                             </li>
                         </ul>
                     </li>
                     <li class="navigation_left_list_item">
-                        <span>ecosystem</span>
+                        <span>{{$t("message.navigation.community")}}</span>
                         <ul class="navigation_second_menu">
                             <li class="navigation_second_list_item">
-                                <router-link :to="`/community/press-kit`">Press-kit</router-link>
+                                <router-link :to="`/community/press-kit`">{{$t("message.navigation.secondMenu.pressKit")}}</router-link>
                             </li>
                             <li class="navigation_second_list_item">
 
-                                <router-link :to="`/irisnet-bianjie`">IRISnet-Bianjie</router-link>
+                                <router-link :to="`/irisnet-bianjie`">{{$t("message.navigation.secondMenu.irisnetBianjie")}}</router-link>
                             </li>
                             <li class="navigation_second_list_item">
-                                <router-link :to="`/ecosystem`">IRIS Ecosystem</router-link>
+                                <router-link :to="`/ecosystem`">{{$t("message.navigation.secondMenu.IRISEcosystem")}}</router-link>
                             </li>
                             <li class="navigation_second_list_item">
-                                <router-link :to="`/events`">Events</router-link>
+                                <router-link :to="`/events`">{{$t("message.navigation.secondMenu.events")}}</router-link>
                             </li>
                             <li class="navigation_second_list_item">
-                                <router-link :to="`/community`">Community</router-link>
+                                <router-link :to="`/community`">{{$t("message.navigation.secondMenu.community")}}</router-link>
                             </li>
                         </ul>
                     </li>
@@ -67,13 +69,13 @@
             </div>
             <div class="navigation_right_content">
                 <div class="navigation_right_link_content">
-                    <a href="https://forum.irisnet.org/" target="_blank">forum</a>
+                    <a href="https://forum.irisnet.org/" target="_blank">{{$t("message.navigation.forum")}}</a>
                     <div class="line"></div>
-                    <a href="https://medium.com/irisnet-blog" target="_blank">blog</a>
+                    <a href="https://medium.com/irisnet-blog" target="_blank">{{$t("message.navigation.blog")}}</a>
                 </div>
                 <div class="navigation_right_lang_content">
-                    <div class="navigation_lang_content">
-                        <span>English</span>
+                    <div class="navigation_lang_content" @click="changeLang()">
+                        <span>{{$t("message.navigation.lang")}}</span>
                         <i>
                             <img src="../assets/irisnetThree/lang_change.png" alt="">
                         </i>
@@ -86,7 +88,21 @@
 
 <script>
     export default {
-        name: "NavigationThree"
+        name: "NavigationThree",
+        data(){
+            return {
+
+            }
+        },
+        methods:{
+            changeLang(){
+                if(this.$i18n.locale === 'CN'){
+                    this.$i18n.locale = 'EN'
+                }else {
+                    this.$i18n.locale = 'CN'
+                }
+            }
+        }
     }
 </script>
 

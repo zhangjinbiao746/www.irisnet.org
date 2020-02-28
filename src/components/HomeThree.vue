@@ -33,7 +33,7 @@
                     <img src="../assets/basicInternet.png" alt="">
                 </div>
                 <div class="home_irisnet_content_right_content">
-                    <div class="home_irisnet_content_title">IRIS Network</div>
+                    <div class="home_irisnet_content_title">{{$t('message.header.left[0].title')}}</div>
                     <div class="home_irisnet_content_section">IRIS Network (IRISnet) is a self-evolving BPoS cross-chain service hub. It is a blockchain cross-chain service network created by Border Intelligence and Cosmos/Tendermint. It focuses on providing infrastructure and protocols for distributed applications. Integration and interoperability, including public links, alliance chains, and existing traditional business systems, allowing data and complex computing to be invoked across heterogeneous networks is the next-generation public chain that links the digital economy to the real economy and builds complex distributed business applications.</div>
                     <div class="home_irisnet_content_btn">
                         <a href="">
@@ -568,7 +568,7 @@
                         overflow-y: hidden;
                         margin-top: 1.62rem;
                         .home_irisnet_road_map_left_content{
-                            transform: translateY(-3.28rem);
+                            transform: translateY(-3.1rem);
                             font-size: 0.36rem;
                             font-weight:bold;
                             line-height: 0.43rem;
@@ -604,13 +604,14 @@
                         .home_irisnet_road_map_right_content{
                             flex: 4;
                             display: flex;
-                            transform: translateY(-3.28rem);
+                            transform: translateY(-3.1rem);
                             .home_irisnet_road_map_left_step{
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: space-between;
                                 p{
                                     flex: 1;
+                                    min-height: 3.2rem;
                                     font-size: 0.26rem;
                                     font-weight:600;
                                     color:rgba(49,50,54,1);
@@ -652,6 +653,7 @@
                                         line-height: 0.34rem;
                                     }
                                     .home_road_map_right_step_section{
+                                        min-width: 4.8rem;
                                         margin-top: 0.1rem;
                                         font-size: 0.17rem;
                                         color:rgba(124,125,141,1);
@@ -698,7 +700,7 @@
     }
     @keyframes showNextPage {
         from{
-            transform:translateY(-3.28rem);
+            transform:translateY(-3.1rem);
         }
         to{
             transform:translateY(0);
@@ -709,7 +711,7 @@
             transform:translateY(0);
         }
         to{
-            transform:translateY(-3.28rem);
+            transform:translateY(-3.1rem);
         }
     }
 </style>
