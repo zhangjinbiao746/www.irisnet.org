@@ -1,6 +1,7 @@
 export const message = {
     //TODO
     navigation:{
+        home:'首页',
         aboutUs:'关于我们',
         developer:'开发者',
         community:'社区生态',
@@ -153,31 +154,37 @@ export const message = {
         socialCommunity:[
             {
                 id:0,
+                hoverSrc: "irisnet_telegram_hover.png",
                 src: "irisnet_telegram.png",
                 href: "https://t.me/irisnetworkcn"
             },
             {
                 id:1,
+                hoverSrc: "irisnet_twitter_hover.png",
                 src: "irisnet_twitter.png",
                 href: "https://twitter.com/irisnetwork"
             },
             {
                 id:2,
+                hoverSrc: "irisnet_mail_hover.png",
                 src: "irisnet_mail.png",
                 href: "mailto:contact@irisnet.org"
             },
             {
                 id:3,
+                hoverSrc: "irisnet_medium_hover.png",
                 src: "irisnet_medium.png",
                 href: "https://medium.com/irisnet-blog"
             },
             {
                 id:4,
+                hoverSrc: "irisnet_wechat_hover.png",
                 src: "irisnet_wechat.png",
                 "txt": "Wechat"
             },
             {
                 id:5,
+                hoverSrc: "irisnet_weibo_hover.png",
                 src: "irisnet_weibo.png",
                 href: "https://weibo.com/u/6455513027"
             },
@@ -185,38 +192,45 @@ export const message = {
         validatorCommunity:[
             {
                 id:0,
+                hoverSrc: "irisnet_qq_hover.png",
                 src: "irisnet_qq.png",
                 href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
             },
             {
                 id:1,
+                hoverSrc: "irisnet_riot_hover.png",
                 src: "irisnet_riot.png",
                 href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
             },
             {
                 id:2,
-                src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+                hoverSrc: "irisnet_monitor_hover.png",
+                src: "irisnet_monitor.png",
+                href: "https://www.irisnet.org/docs/tools/monitor.html"
             },
             {
                 id:3,
-                src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+                hoverSrc: "irisnet_daemon_hover.png",
+                src: "irisnet_daemon.png",
+                href: " https://www.irisnet.org/docs/daemon/intro.html"
             },
         ],
         techCommunity:[
             {
                 id:0,
+                hoverSrc: "irisnet_github_hover.png",
                 src: "irisnet_github.png",
                 href: "https://github.com/irisnet"
             },
             {
                 id:1,
+                hoverSrc: "irisnet_qq_hover.png",
                 src: "irisnet_qq.png",
                 href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
             },
             {
                 id:2,
+                hoverSrc: "irisnet_riot_hover.png",
                 src: "irisnet_riot.png",
                 href: "https://riot.im/app/#/room/#iris:matrix.org"
             },
@@ -394,61 +408,61 @@ export const message = {
         socialCommunity:[
             {
                 id:0,
-                src: "irisnet_telegram.png",
+                src: "irisnet_telegram_hover.png",
                 href: "https://t.me/irisnetworkcn"
             },
             {
                 id:1,
-                src: "irisnet_twitter.png",
+                src: "irisnet_twitter_hover.png",
                 href: "https://twitter.com/irisnetwork"
             },
             {
                 id:2,
-                src: "irisnet_mail.png",
+                src: "irisnet_mail_hover.png",
                 href: "mailto:contact@irisnet.org"
             },
             {
                 id:3,
-                src: "irisnet_medium.png",
+                src: "irisnet_medium_hover.png",
                 href: "https://medium.com/irisnet-blog"
             },
             {
                 id:4,
-                src: "irisnet_wechat.png",
+                src: "irisnet_wechat_hover.png",
                 "txt": "Wechat"
             },
             {
                 id:5,
-                src: "irisnet_weibo.png",
+                src: "irisnet_weibo_hover.png",
                 href: "https://weibo.com/u/6455513027"
             },
         ],
         validatorCommunity:[
             {
                 id:0,
-                src: "irisnet_qq.png",
+                src: "irisnet_qq_hover.png",
                 href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
             },
             {
                 id:1,
-                src: "irisnet_riot.png",
+                src: "irisnet_riot_hover.png",
                 href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
             },
         ],
         techCommunity:[
             {
                 id:0,
-                src: "irisnet_github.png",
+                src: "irisnet_github_hover.png",
                 href: "https://github.com/irisnet"
             },
             {
                 id:1,
-                src: "irisnet_qq.png",
+                src: "irisnet_qq_hover.png",
                 href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
             },
             {
                 id:2,
-                src: "irisnet_riot.png",
+                src: "irisnet_riot_hover.png",
                 href: "https://riot.im/app/#/room/#iris:matrix.org"
             },
         ],
