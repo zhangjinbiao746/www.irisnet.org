@@ -69,7 +69,7 @@
             </div>
             <div class="navigation_right_content">
                 <div class="mobile_right_content">
-                    <img src="" alt="">
+                    <img src="../assets/irisnetThree/mobile_menu_icon.png" alt="">
                 </div>
                 <div class="navigation_right_link_content">
                     <a href="https://forum.irisnet.org/" target="_blank">{{$t("message.navigation.forum")}}</a>
@@ -179,6 +179,14 @@
             }
             .navigation_right_content{
                 display: flex;
+                align-items: center;
+                .mobile_right_content{
+                    width: 0.3rem;
+                    display: none;
+                    img{
+                        width: 100%;
+                    }
+                }
                 .navigation_right_link_content{
                     display: flex;
                     align-items: center;
@@ -232,6 +240,15 @@
                 .navigation_right_content{
                     .navigation_right_link_content{
                         display: none;
+                    }
+                    .mobile_right_content{
+                        .mobile_right_content{
+                            width: 0.3rem;
+                            display: none;
+                            img{
+                                width: 100%;
+                            }
+                        }
                     }
                 }
             }

@@ -131,6 +131,140 @@ export const message = {
             nyancatExplorer:'Nyancat 浏览器 '
         }
     },
+    footerThree:{
+        newsLetter: '订阅',
+        placeholder:'请输入邮箱地址订阅',
+        socialCommunityTitle: '社区',
+        validatorCommunityTitle:'验证人',
+        TechCommunityTitle: '开发者',
+        errEmail:'请输入一个有效的邮箱地址',
+        socialCommunity:[
+            {
+                id:0,
+                src: "irisnet_telegram.png",
+                href: "https://t.me/irisnetworkcn"
+            },
+            {
+                id:1,
+                src: "irisnet_twitter.png",
+                href: "https://twitter.com/irisnetwork"
+            },
+            {
+                id:2,
+                src: "irisnet_mail.png",
+                href: "mailto:contact@irisnet.org"
+            },
+            {
+                id:3,
+                src: "irisnet_medium.png",
+                href: "https://medium.com/irisnet-blog"
+            },
+            {
+                id:4,
+                src: "irisnet_wechat.png",
+                "txt": "Wechat"
+            },
+            {
+                id:5,
+                src: "irisnet_weibo.png",
+                href: "https://weibo.com/u/6455513027"
+            },
+        ],
+        validatorCommunity:[
+            {
+                id:0,
+                src: "irisnet_qq.png",
+                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
+            },
+            {
+                id:1,
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+            },
+            {
+                id:2,
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+            },
+            {
+                id:3,
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+            },
+        ],
+        techCommunity:[
+            {
+                id:0,
+                src: "irisnet_github.png",
+                href: "https://github.com/irisnet"
+            },
+            {
+                id:1,
+                src: "irisnet_qq.png",
+                href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
+            },
+            {
+                id:2,
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/#iris:matrix.org"
+            },
+        ],
+        productList: [
+            {
+                id:0,
+                name:'Rainbow Wallet',
+                href:'https://www.rainbow.one/'
+            },
+            {
+                id:1,
+                name:'IRISplorer',
+                href:'https://www.irisplorer.io'
+            },
+            {
+                id:2,
+                name:'Light Client',
+                href:'https://www.irisnet.org/docs/light-client/intro.html'
+            },
+            {
+                id:3,
+                name:'CLI Client',
+                href:' https://www.irisnet.org/docs/cli-client/intro.html'
+            }
+        ],
+        resourceList: [
+            {
+                id:0,
+                name:'FAQ',
+                href:'https://www.irisnet.org/docs/resources/'
+            },
+            {
+                id:1,
+                name:'Blog',
+                href:'https://medium.com/irisnet-blog'
+            },
+            {
+                id:2,
+                name:'Docs',
+                href:'https://www.irisnet.org/docs/zh/'
+            },
+            {
+                id:3,
+                name:'Press Kit',
+                href:'/community/press-kit'
+            }
+        ],
+        productsTitle:'产品',
+        resourcesTitle:'资源',
+        submitBtn:{
+            title: '获取最新资讯',
+            subscribe: '提交',
+            success: "Success"
+        },
+        errEmailAddress:{
+            error:'Please enter a valid email address'
+        },
+        irisnetInproduction:'IRISnet以希腊彩虹女神Iris命名，她是在人间和天堂之间传递信息的忠诚使者'
+    },
 
 
 
