@@ -1,4 +1,136 @@
 export const message = {
+    //TODO
+    navigation:{
+        aboutUs:'About Us',
+        developer:'Developers',
+        community:'Ecosystem',
+        forum:'Forum',
+        blog:'Blog',
+        lang:'中文',
+        secondMenu:{
+            mainnet:'Mainnet',
+            whitepaper:'Whitepaper',
+            announcement:'Announcements',
+            collaboration:'Collaboration',
+            devPortal:'DevPortal',
+            testnet:'Testnets',
+            doc:'Docs',
+            ibc:'IBC',
+            IRISEcosystem:'IRIS Ecosystem',
+            community:'Community',
+            pressKit:'Press Kit',
+            events:'Events',
+            irisnetBianjie:'IRISnet-Bianjie'
+        }
+    },
+    homeThree:{
+        banner:{
+
+        },
+        irisnet:{
+            title:"IRIS Network",
+            secondTitle:'Interchain Service Hub for NextGen Distributed Applications-- A BPoS Blockchain that is Self-evolutionary',
+            section: 'IRISnet (a.k.a IRIS Hub) is designed to be the foundation for the next generation distributed applications. Built with <a  href="https://tendermint.com/sdk/" target="_blank"> Cosmos SDK </a>, IRIS Hub enables cross-chain interoperability through a unified service model, while providing a variety of modules to support DeFi applications.',
+            secondSection:'IRISnet dev teams include Bianjie (<a href="https://www.bianjie.ai/" target="_blank">www.bianjie.ai</a>), a national award-winning blockchain technology team based in Shanghai, and Tendermint (<a href="https://tendermint.com" target="_blank">https://tendermint.com</a>), the world-famous team that created the Tendermint consensus engine and the Cosmos project.',
+            whitePaperBtn:'Whitepaper',
+            mainnetBtn:'Mainnet'
+        },
+        product:{
+            irisHub:{
+                title:'IRIS Hub',
+                section:'The center of the IRIS Network with cross-chain service protocol.'
+            },
+            irisSdk:{
+                title:'IRIS SDK',
+                section:'A framework for developing blockchains that are compatible with the IRIS network.'
+            },
+            iservice:{
+                title:'iService',
+                section:'Super Adapters for developing distributed business applications.'
+            },
+            OnChainGov:{
+                title:'On-chain Gov',
+                section:'Empowers the whole community by on-chain governance and software upgrade.'
+            },
+
+        },
+        roadMap:{
+            title:'The expected project roadmap',
+            youyi:{
+                title:'HOUYI',
+                date:'HOUYI (Beyond April 2020)',
+                section:'The fourth stage will focus on further technology innovations to the IRIS network, SDK and mobile client, as well as developer engagement.'
+            },
+            kuafu:{
+                title:'KUAFU',
+                date: 'KUAFU (Nov 2019 ~ March 2020)',
+                section:'In this stage we are aiming to accomplish the connection of IRIS Hub with applications blockchains through IBC. We plan to upgrade IRISnet mobile client to support those applications. The third stage will also focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service features.'
+            },
+            nuwa:{
+                title:'NÜWA',
+                date: 'NUWA (April 2019 ~ October 2019)',
+                section:'In this stage we are adding more fundational modules to support application development especially DeFi applications. The new modules planned to release in this stage including multi-asset management, Coinswap, multi-sig account etc. We plan to collabrate with 1-2 ecosystem parteners to develop applications using those modules. We also plan to accomplish the test connection with Cosmos Hub through IBC at this stage.'
+            },
+            pangu:{
+                title:'PANGU',
+                date:'PANGU (January 2018 ~ March 2019)',
+                section:'The first stage of the IRIS project focused on having the IRIS Hub up and running. Initial version of the mobile client for the IRIS network was released. In this stage we also focused on building the fundamental IRIS Service Layer which was released to IRIS Hub. The fundamental IRIS Service layer enables service definition, binding, invocation and query.'
+            }
+        },
+
+    },
+    mainnetThree:{
+        title:"Introduction",
+        section:'At the "center" of the IRIS network is a blockchain known as the IRIS Hub, which is a Proof-of-Stake (PoS) blockchain built on <a href="https://tendermint.com/sdk/" target="_blank">Cosmos SDK</a> and <a href="https://tendermint.com/core/" target="_blank">Tendermint</a>. It will be the first regional hub that connects to the <a href="https://hub.cosmos.network/master/hub-overview/overview.html" target="_blank">Cosmos Hub</a> as one of its zones.',
+        secondSection:'The IRIS hub is equipped with a service protocol that coordinates on-chain transaction processing with off-chain data processing and business logic execution.',
+        threeSection:'We have also enhanced the IBC protocol to facilitate cross-chain invocation of those off-chain services, if so desired.',
+        fourSection:"",
+        token:{
+            title:'IRIS Tokens',
+            section:'The IRIS hub has its own native token known as IRIS. It is designed to serve three purposes in the network.',
+            staking:{
+                title:'Staking',
+                section:'Similar to the ATOM token in the Cosmos Hub, the IRIS token will be used as a staking token to secure the PoS blockchain.',
+            },
+            transactionFee:{
+                title:'Transaction Fee',
+                section:'The IRIS token will also be used to pay fees for all transactions in the IRIS network.',
+            },
+            serviceFee: {
+                title:'Service Fee',
+                section:'It is required that service providers in the IRIS network charge service fees denominated in the IRIS token.'
+            },
+            bottomSection:'It is intended that the IRIS network will eventually support all whitelisted fee tokens from the Cosmos network, which can be used to pay the transaction fees and service fees.'
+        },
+        wallet:{
+            title:'Wallets',
+            section:'These web and mobile wallets allow you to store & transfer IRIS, delegate IRIS to validators, and some of them also support ATOM. Note that we do not endorse any of the wallets, they are listed for your convenience.'
+        },
+        explorer:{
+            title:'Explorers',
+            section:'These block explorers allow you to search, view and analyze IRIS Hub data—like blocks, transactions, validators, governance including params or proposals, etc.'
+        },
+        stakingTools:{
+            title:'Staking Tools',
+            section:'Those tools, contributed by IRISnet validators and developers, facilitates IRIS token holders to delegate via web wallets and Ledger hardware wallets, etc . Before using these tools, you need to assure their security.'
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     logo : 'irisnet.png',
     floatWindow : {
         title : 'FORUM',
@@ -1490,27 +1622,27 @@ export const message = {
                 title : 'Safe Bianjie, Safe Delegation',
                 product : [
                     {
-                        src : require('../../assets/cosmos/service_room.png'),
+                        src : require('../../assets/cosmosThree/service_room.png'),
                         text : 'Safe and Reliable Enterprise-class Data Center',
                     },
                     {
-                        src : require('../../assets/cosmos/net.png'),
+                        src : require('../../assets/cosmosThree/net.png'),
                         text : 'Highly Available Network',
                     },
                     {
-                        src : require('../../assets/cosmos/node.png'),
+                        src : require('../../assets/cosmosThree/node.png'),
                         text : 'Auto Scale Sentry Nodes',
                     },
                     {
-                        src : require('../../assets/cosmos/lock.png'),
+                        src : require('../../assets/cosmosThree/lock.png'),
                         text : 'HSM for Private Key Protection',
                     },
                     {
-                        src : require('../../assets/cosmos/hour.png'),
+                        src : require('../../assets/cosmosThree/hour.png'),
                         text : '24/7 Professional Monitoring',
                     },
                     {
-                        src : require('../../assets/cosmos/shield.png'),
+                        src : require('../../assets/cosmosThree/shield.png'),
                         text : 'DDoS Attack Protection',
                     }
                 ]
@@ -1519,36 +1651,29 @@ export const message = {
             cosmosExplorer : [
                 {
                     active : false,
-                    whiteImg : require('../../assets/cosmos/big_dipper_white.png'),
-                    blueImg : require('../../assets/cosmos/big-dipper_blue.png'),
+                    whiteImg : require('../../assets/cosmosThree/big_dipper_plorer.png'),
+                    // blueImg : require('../../assets/cosmos/big-dipper_blue.png'),
                     title : 'Big Dipper',
                     href : 'https://cosmos.bigdipper.live/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                 },
                 {
                     active : false,
-                    whiteImg : require('../../assets/cosmos/cosmos_white.png'),
-                    blueImg : require('../../assets/cosmos/cosmos_blue.png'),
-                    title : 'Cosmos Overview',
-                    href : 'https://cosmos-overview.genesislab.net/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
-                },
-                {
-                    active : false,
-                    whiteImg : require('../../assets/cosmos/hubble_white.png'),
-                    blueImg : require('../../assets/cosmos/hubble_blue.png'),
+                    whiteImg : require('../../assets/cosmosThree/hubble_plorer.png'),
+                    // blueImg : require('../../assets/cosmos/hubble_blue.png'),
                     title : 'Hubble',
                     href : 'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030'
                 },
                 {
                     active : false,
-                    whiteImg : require('../../assets/cosmos/Mintscan_white.png'),
-                    blueImg : require('../../assets/cosmos/Mintscan_blue.png'),
+                    whiteImg : require('../../assets/cosmosThree/mintsacn_plorer.png'),
+                    // blueImg : require('../../assets/cosmos/Mintscan_blue.png'),
                     title : 'Mintscan',
                     href : 'https://www.mintscan.io/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                 },
                 {
                     active : false,
-                    whiteImg : require('../../assets/cosmos/Stargazer_white.png'),
-                    blueImg : require('../../assets/cosmos/Stargazer_blue.png'),
+                    whiteImg : require('../../assets/cosmosThree/Stargazer_plorer.png'),
+                    // blueImg : require('../../assets/cosmos/Stargazer_blue.png'),
                     title : 'Stargazer',
                     href : 'https://stargazer.certus.one/accounts/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                 },

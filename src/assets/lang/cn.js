@@ -1,4 +1,125 @@
 export const message = {
+    //TODO
+    navigation:{
+        aboutUs:'关于我们',
+        developer:'开发者',
+        community:'社区生态',
+        forum:'论坛',
+        blog:'博客',
+        lang:'English',
+        secondMenu:{
+            mainnet:'主网',
+            whitepaper:'白皮书',
+            announcement:'公告',
+            collaboration:'合作伙伴',
+            devPortal:'开发者入口',
+            testnet:'测试网',
+            doc:'文档',
+            ibc:'IBC',
+            IRISEcosystem:'IRIS 生态',
+            community:'社区',
+            pressKit:'宣传资料',
+            events:'活动',
+            irisnetBianjie:'IRISnet-Bianjie'
+        }
+    },
+    homeThree:{
+        banner:{
+
+        },
+        irisnet:{
+            title:"IRIS 网络",
+            secondTitle:'下一代分布式应用程序的跨链服务枢纽——自我进化的BPoS区块链',
+            section: 'IRISnet（主网 IRIS Hub）是支持DeFi等各种复杂分布式应用的跨链服务枢纽。IRIS Hub采用 <a href="https://tendermint.com/sdk/" target="_blank">Cosmos SDK </a>开发，是第一个可自进化的BPoS网络，其开发团队包括获得多个技术创新大奖的边界智能（<a href="https://www.bianjie.ai/" target="_blank">Bianjie</a>）以及Cosmos核心开发团队<a     href="https://tendermint.com/" target="_blank">Tendermint</a>。',
+            secondSection:'IRISnet提供支持DeFi应用开发的多种基础模块，并能支持公有链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。',
+            whitePaperBtn:'白皮书',
+            mainnetBtn:'主网'
+        },
+        product:{
+            irisHub:{
+                title:'IRIS Hub',
+                section:'IRIS 网络的跨链服务枢纽'
+            },
+            irisSdk:{
+                title:'IRIS SDK',
+                section:'一个用于开发与IRIS网络兼容的区块链的框架'
+            },
+            iservice:{
+                title:'iService',
+                section:'开发分布式商业应用的「超级适配器」'
+            },
+            OnChainGov:{
+                title:'On-chain Gov',
+                section:'通过链上治理和软件升级增强整个社区的能力'
+            },
+        },
+        roadMap:{
+            title:'预期的项目路线图',
+            youyi:{
+                title:'后羿',
+                date:'后羿（2020年4月之后）',
+                section:'第四阶段将专注通过技术创新，不断完善IRIS网络、SDK和手机客户端，吸引更多开发者参与。'
+            },
+            kuafu:{
+                title:'夸父',
+                date: '夸父（2019年11月~2020年3月）',
+                section:'第三阶段主要专注于通过 IBC， 完成 IRIS Hub 与应用专有链网络的连接。我们还计划升级IRISnet移动客户端以支持这些应用。第三阶段还将重点实现IRIS网络的迭代升级，以支持复杂的IRIS服务管理功能。'
+            },
+            nuwa:{
+                title:'女娲',
+                date: '女娲（2019年4月~2019年10月）',
+                section:'第二阶段我们将增加更多的基本模块以支持应用开发，特别是DeFi应用。这些新模块计划在本阶段发布，包括多资产管理、Coinswap、多签账户等。我们计划与1-2个生态伙伴合作，使用这些模块开发应用。我们还计划在此阶段完成与Cosmos Hub的测试连接。'
+            },
+            pangu:{
+                title:'盘古',
+                date:'盘古（2018年1月~2019年3月）',
+                section:'IRISnet项目的第一阶段，我们专注于构建并启动 IRISnet 主网（Hub）。 初始版本的IRIS网络移动客户端已在本阶段发布。同时，我们也专注于 IRISnet 基本服务层的建立，已将其发布在 IRIS Hub 上，实现：服务定义、绑定、调用和查询。'
+            }
+        }
+    },
+    mainnetThree:{
+        title:"介绍",
+        section:'IRIS Hub 是IRIS网络的“中心”枢纽，是一个基于<a href="https://tendermint.com/sdk/" target="_blank"> Cosmos SDK</a> 和 <a href="https://tendermint.com/core/" target="_blank">Tendermint</a>。构建的Proof-of-Stake（PoS）区块链，也将成为第一个连接<a href="https://hub.cosmos.network/master/hub-overview/overview.html" target="_blank">Cosmos Hub</a>枢纽的区域性枢纽。',
+        secondSection:'IRIS Hub 配备了 IRIS 服务协议，该协议将链上的交易处理与链下的数据处理和业务逻辑执行进行协调。我们还增强了IBC协议，以促进那些链下服务在有需要的情况下被跨链调用。',
+        threeSection:'IRIS 服务协议和增强的 IBC 协议最终可以回馈到 Cosmos SDK 中，允许 Cosmos SDK 用户开发与IRIS网络兼容的区块链。',
+        fourSection:"我们也会提供面向客户的、针对特定编程语言的IRIS SDK，方便在IRIS网络内轻松提供和使用链下服务。",
+        token:{
+            title:'IRIS 通证',
+            section:'IRIS Hub 有自己的原生通证，称为 IRIS，在网络中有三个作用。',
+            staking:{
+                title:'质押',
+                section:'与Cosmos Hub中的ATOM通证类似，IRIS通证将用作质押通证以保护 BPoS 区块链的安全运行。',
+            },
+            transactionFee:{
+                title:'交易费用',
+                section:'IRIS通证也将用于支付IRIS网络中所有交易的费用。',
+            },
+            serviceFee: {
+                title:'IRIS网络中的服务提供者需要以IRIS通证为单位收取服务费。',
+                section:'IRIS网络最终将支持来自Cosmos网络的所有列入白名单的费用通证，它们可用于支付交易费用和服务费用。'
+            },
+            bottomSection:'IRIS网络最终将支持来自Cosmos网络的所有列入白名单的费用通证，它们可用于支付交易费用和服务费用。'
+        },
+        wallet:{
+            title:'钱包',
+            section:'这些钱包支持IRIS及ATOM的转账和质押，请充分研究其安全性再使用。列示这些信息仅为方便下载，并不代表对钱包使用的安全性负责。'
+        },
+        explorer:{
+            title:'浏览器',
+            section:'您可通过以下区块链浏览器查询和分析 IRIS Hub 的区块、交易、验证人等信息。'
+        },
+        stakingTools:{
+            title:'委托工具箱',
+            section:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
+        }
+    },
+
+
+
+
+
+
+
     logo: 'irisnet.png',
     floatWindow:{
       title:'论坛',
@@ -1491,27 +1612,27 @@ export const message = {
                 title:'安全的边界，放心的委托',
                 product:[
                     {
-                        src:require('../../assets/cosmos/service_room.png'),
+                        src:require('../../assets/cosmosThree/service_room.png'),
                         text:'安全可靠的企业级机房',
                     },
                     {
-                        src:require('../../assets/cosmos/net.png'),
+                        src:require('../../assets/cosmosThree/net.png'),
                         text:'高可用性网络',
                     },
                     {
-                        src:require('../../assets/cosmos/node.png'),
+                        src:require('../../assets/cosmosThree/node.png'),
                         text:'可扩展的哨兵节点',
                     },
                     {
-                        src:require('../../assets/cosmos/lock.png'),
+                        src:require('../../assets/cosmosThree/lock.png'),
                         text:'硬件加密保证安全',
                     },
                     {
-                        src:require('../../assets/cosmos/hour.png'),
+                        src:require('../../assets/cosmosThree/hour.png'),
                         text:'7*24小时专业监控',
                     },
                     {
-                        src:require('../../assets/cosmos/shield.png'),
+                        src:require('../../assets/cosmosThree/shield.png'),
                         text:'商业DDos攻击防护',
                     }
                 ]
@@ -1520,36 +1641,29 @@ export const message = {
             cosmosExplorer:[
                 {
                     active:false,
-                    whiteImg:require('../../assets/cosmos/big_dipper_white.png'),
-                    blueImg:require('../../assets/cosmos/big-dipper_blue.png'),
+                    whiteImg:require('../../assets/cosmosThree/big_dipper_plorer.png'),
+                    // blueImg:require('../../assets/cosmos/big-dipper_blue.png'),
                     title:'Big Dipper',
                     href:'https://cosmos.bigdipper.live/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                 },
                 {
                     active:false,
-                    whiteImg:require('../../assets/cosmos/cosmos_white.png'),
-                    blueImg:require('../../assets/cosmos/cosmos_blue.png'),
-                    title:'Cosmos Overview',
-                    href:'https://cosmos-overview.genesislab.net/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
-                },
-                {
-                    active:false,
-                    whiteImg:require('../../assets/cosmos/hubble_white.png'),
-                    blueImg:require('../../assets/cosmos/hubble_blue.png'),
+                    whiteImg:require('../../assets/cosmosThree/hubble_plorer.png'),
+                    // blueImg:require('../../assets/cosmos/hubble_blue.png'),
                     title:'Hubble',
                     href:'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030'
                 },
                 {
                     active:false,
-                    whiteImg:require('../../assets/cosmos/Mintscan_white.png'),
-                    blueImg:require('../../assets/cosmos/Mintscan_blue.png'),
+                    whiteImg:require('../../assets/cosmosThree/mintsacn_plorer.png'),
+                    // blueImg:require('../../assets/cosmos/Mintscan_blue.png'),
                     title:'Mintscan',
                     href:'https://www.mintscan.io/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                 },
                 {
                     active:false,
-                    whiteImg:require('../../assets/cosmos/Stargazer_white.png'),
-                    blueImg:require('../../assets/cosmos/Stargazer_blue.png'),
+                    whiteImg:require('../../assets/cosmosThree/Stargazer_plorer.png'),
+                    // blueImg:require('../../assets/cosmos/Stargazer_blue.png'),
                     title:'Stargazer',
                     href:'https://stargazer.certus.one/accounts/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                 },

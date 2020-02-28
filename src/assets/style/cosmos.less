@@ -219,7 +219,7 @@
     width: 100%;
     background: rgba(252, 252, 255, 1);
     .about_content_wrap{
-      max-width: 8rem;
+      max-width: 12rem;
       margin: 0 auto;
       text-align: center;
       .about_title{
@@ -235,14 +235,87 @@
       //}
       .about_content{
         display: flex;
-        flex-direction: column;
         padding-bottom: 1.19rem;
+        .about_left_content_wrap{
+          flex: 1;
+          margin-right: 0.4rem;
+          .about_irisnet_content{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background: #F8F9FC;
+            border-radius: 0.05rem;
+            .about_irisnet_img{
+              width: 1.5rem;
+              padding: 0.5rem 2.15rem 0 2.15rem;
+              img{
+                width: 100%;
+              }
+            }
+            .about_irisnet_title{
+              padding: 0.38rem 0 0.3rem 0;
+              font-size: 0.22rem;
+              font-weight:600;
+              color:rgba(38,48,53,1);
+              line-height: 0.32rem;
+            }
+          }
+          .about_irisnet_section{
+            margin-top: 0.4rem;
+            p{
+              max-width: 4rem;
+              margin: 0 auto  ;
+              font-size: 0.17rem;
+              font-weight:400;
+              color:rgba(124,125,141,1);
+              line-height: 0.3rem;
+            }
+          }
+        }
+        .about_right_content_wrap{
+          flex: 1;
+          margin-right: 0.4rem;
+          .about_cosmos_content{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background: #F8F9FC;
+            border-radius: 0.05rem;
+            .about_cosmos_img{
+              width: 1.5rem;
+              padding: 0.5rem 2.15rem 0 2.15rem;
+              img{
+                width: 100%;
+              }
+            }
+            .about_cosmos_title{
+              padding: 0.38rem 0 0.3rem 0;
+              font-size: 0.22rem;
+              font-weight:600;
+              color:rgba(38,48,53,1);
+              line-height: 0.32rem;
+            }
+          }
+          .about_cosmos_section{
+            margin-top: 0.4rem;
+            p{
+              max-width: 4rem;
+              margin: 0 auto  ;
+              font-size: 0.17rem;
+              font-weight:400;
+              color:rgba(124,125,141,1);
+              line-height: 0.3rem;
+            }
+          }
+        }
       }
     }
   }
   .safe_container{
     width: 100%;
-    background: rgba(252, 252, 255, 1);
+    background: rgba(248,249,252,1);
     .safe_wrap{
       max-width: 12rem;
       margin: 0 auto;
@@ -293,7 +366,7 @@
     width: 100%;
     background: rgba(255, 255, 255, 1);
     .cosmos_explorer_wrap{
-      max-width: 12.8rem;
+      max-width: 12rem;
       margin: 0 auto;
       .cosmos_explorer_title{
         text-align: center;
@@ -313,17 +386,35 @@
           box-sizing: border-box;
           display: flex;
           flex-direction: column;
-          margin:0 0.6rem 0.4rem 0;
-          border: 0.01rem solid #999999;
+          margin:0 0.4rem 0.4rem 0;
           cursor: pointer;
+          border-radius: 0.05rem;
+          background: #F8F9FC;
           .cosmos_explorer_logo{
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 0.5rem 0 0.4rem 0;
+          }
+          .cosmos_explorer_logo:nth-child(1){
             img{
-              width: 1.22rem;
+              width: 0.77rem;
+            }
+          }
+          .cosmos_explorer_logo:nth-child(2){
+             img{
+               width: 1.36rem;
+             }
+          }
+          .cosmos_explorer_logo:nth-child(3){
+            img{
+              width: 0.71rem;
+            }
+          }
+          .cosmos_explorer_logo:nth-child(4){
+            img{
+              width: 0.71rem;
             }
           }
           .cosmos_explorer_name{
@@ -333,31 +424,28 @@
             font-size: 0.2rem;
           }
         }
+        .cosmos_item_content:last-child{
+          margin-right: 0;
+          background: #F8F9FC;
+        }
         .cosmos_item_content:nth-of-type(3){
           width: 2.32rem;
           box-sizing: border-box;
           display: flex;
           flex-direction: column;
-          margin:0 0.6rem 0.4rem 0;
+          margin:0 0.4rem 0.4rem 0;
+          background: #F8F9FC;
           .cosmos_explorer_logo{
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 0.5rem 0 0.4rem 0;
-            img{
-              width: 1.36rem;
-              height: 0.28rem;
-            }
           }
         }
         .bg_blue_style{
           background: rgba(47, 133, 220, 1);
           color: rgba(252, 252, 255, 1);
-        }
-        .bg_white_style{
-          background: rgba(255, 255, 255, 1);
-          color: rgba(153, 153, 153, 1);
         }
       }
     }
@@ -933,7 +1021,6 @@
             display: flex;
             flex-direction: column;
             margin:0 0 0.4rem 0;
-            border: 0.01rem solid #999999;
             cursor: pointer;
             .cosmos_explorer_logo{
               flex: 1;
@@ -992,7 +1079,6 @@
             display: flex;
             flex-direction: column;
             margin:0 0 0.4rem 0;
-            border: 0.01rem solid #999999;
             cursor: pointer;
             .cosmos_explorer_logo{
               flex: 1;
@@ -1053,7 +1139,6 @@
             display: flex;
             flex-direction: column;
             margin:0 0 0.4rem 0;
-            border: 0.01rem solid #999999;
             cursor: pointer;
             .cosmos_explorer_logo{
               flex: 1;
@@ -1114,7 +1199,6 @@
             display: flex;
             flex-direction: column;
             margin:0 0 0.4rem 0;
-            border: 0.01rem solid #999999;
             cursor: pointer;
             .cosmos_explorer_logo{
               flex: 1;
@@ -1175,7 +1259,6 @@
             display: flex;
             flex-direction: column;
             margin:0 0 0.4rem 0;
-            border: 0.01rem solid #999999;
             cursor: pointer;
             .cosmos_explorer_logo{
               flex: 1;

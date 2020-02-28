@@ -62,8 +62,29 @@
                 <p class="about_title">{{aboutTitle}}</p>
                 <!--<p class="about_second_title">{{aboutSecondTitle}}</p>-->
                 <div class="about_content">
-                    <div class="about_left_content_wrap"></div>
-                    <div class="about_right_content_wrap"></div>
+                    <div class="about_left_content_wrap">
+                        <div class="about_irisnet_content">
+                            <div class="about_irisnet_img">
+                                <img src="../assets/cosmosThree/node_irisnet_logo.png" alt="">
+                            </div>
+                            <p class="about_irisnet_title">Core Development Team of IRISnet</p>
+                        </div>
+                        <div class="about_irisnet_section">
+                            <p>Supported by Interchain Foundation (ICF) to build IRISnet, a Cosmos Hub that facilitates construction of distributed business applications.</p>
+                            <p>IRISnet - a BPoS blockchain that is Self-evolutionary.</p>
+                        </div>
+                    </div>
+                    <div class="about_right_content_wrap">
+                        <div class="about_cosmos_content">
+                            <div class="about_cosmos_img">
+                                <img src="../assets/cosmosThree/cosmos_logo.png" alt="">
+                            </div>
+                            <p class="about_cosmos_title">Open Source Contributor to Cosmos</p>
+                        </div>
+                        <div class="about_cosmos_section">
+                            <p>Genesis validator on Cosmos since March 14th, 2019 Participant of Cosmos testnets from Gaia-1000 to mainnet launch Technical support team to Cosmos China community since August 2017</p>
+                        </div>
+                    </div>
                <!--     <div class="developer_content">
                         <div class="irisnet_developer_content">
                             <div class="irisnet_title">
@@ -127,11 +148,9 @@
                 <ul class="cosmos_list_content">
                     <li class="cosmos_item_content" v-for="(item,index) in cosmosExplorerArray"
                         :class="item.active ? 'bg_blue_style' : 'bg_white_style'"
-                        @click="toBrowser(index,item.href)"
-                        @mouseenter="changeBgColor(index)"
-                        @mouseleave="resetBgColor()">
+                        @click="toBrowser(index,item.href)">
                         <div class="cosmos_explorer_logo">
-                            <img :src="item.active ? item.whiteImg : item.blueImg" alt="">
+                            <img :src="item.whiteImg">
                         </div>
                         <p class="cosmos_explorer_name">{{item.title}}</p>
                     </li>
@@ -190,27 +209,27 @@
                 bianJieTitle:'Safe Bianjie, Safe Delegation',
                 bianJieProductList:[
                     {
-                        src:require('../assets/cosmos/service_room.png'),
+                        src:require('../assets/cosmosThree/service_room.png'),
                         text:'Safe and reliable enterprise-class data center',
                     },
                     {
-                        src:require('../assets/cosmos/net.png'),
+                        src:require('../assets/cosmosThree/net.png'),
                         text:'Highly available network',
                     },
                     {
-                        src:require('../assets/cosmos/node.png'),
+                        src:require('../assets/cosmosThree/node.png'),
                         text:'Auto scale sentry nodes',
                     },
                     {
-                        src:require('../assets/cosmos/lock.png'),
+                        src:require('../assets/cosmosThree/lock.png'),
                         text:'HSM for Private Key Protection',
                     },
                     {
-                        src:require('../assets/cosmos/hour.png'),
+                        src:require('../assets/cosmosThree/hour.png'),
                         text:'24/7 professional  monitoring',
                     },
                     {
-                        src:require('../assets/cosmos/shield.png'),
+                        src:require('../assets/cosmosThree/shield.png'),
                         text:'DDoS attack protection',
                     }
                 ],

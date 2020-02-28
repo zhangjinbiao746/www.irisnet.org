@@ -33,15 +33,30 @@
                     <img src="../assets/basicInternet.png" alt="">
                 </div>
                 <div class="home_irisnet_content_right_content">
-                    <div class="home_irisnet_content_title">IRIS Network</div>
-                    <div class="home_irisnet_content_section">IRIS Network (IRISnet) is a self-evolving BPoS cross-chain service hub. It is a blockchain cross-chain service network created by Border Intelligence and Cosmos/Tendermint. It focuses on providing infrastructure and protocols for distributed applications. Integration and interoperability, including public links, alliance chains, and existing traditional business systems, allowing data and complex computing to be invoked across heterogeneous networks is the next-generation public chain that links the digital economy to the real economy and builds complex distributed business applications.</div>
+                    <div class="home_irisnet_content_title">{{$t('message.homeThree.irisnet.title')}}</div>
+                    <div class="home_irisnet_content_second_title">{{$t('message.homeThree.irisnet.secondTitle')}}</div>
+                    <div class="home_irisnet_content_section"
+                         v-html="enMessage.homeThree.irisnet.section"
+                         v-if="$i18n.locale ==='EN'"></div>
+                    <div class="home_irisnet_content_section"
+                         v-html="cnMessage.homeThree.irisnet.section"
+                         v-if="$i18n.locale ==='CN'"></div>
+                    <div class="home_irisnet_content_second_section"
+                         v-html="enMessage.homeThree.irisnet.secondSection"
+                         v-if="$i18n.locale ==='EN'"></div>
+                    <div class="home_irisnet_content_second_section"
+                         v-html="cnMessage.homeThree.irisnet.secondSection"
+                         v-if="$i18n.locale ==='CN'"></div>
                     <div class="home_irisnet_content_btn">
-                        <a href="">
-                            <div class="home_irisnet_white_paper_btn">Whitepaper</div>
+                        <a v-if="$i18n.locale ==='EN'" href="https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md" target="_blank">
+                            <div class="home_irisnet_white_paper_btn">{{$t('message.homeThree.irisnet.whitePaperBtn')}}</div>
                         </a>
-                        <a href="">
-                            <div class="home_irisnet_mainnet_btn">Mainnet</div>
+                        <a v-if="$i18n.locale ==='CN'" href="https://github.com/irisnet/irisnet/blob/master/%E7%99%BD%E7%9A%AE%E4%B9%A6.md" target="_blank">
+                            <div class="home_irisnet_white_paper_btn">{{$t('message.homeThree.irisnet.whitePaperBtn')}}</div>
                         </a>
+                        <router-link :to="`/mainnet`">
+                            <div class="home_irisnet_mainnet_btn">{{$t('message.homeThree.irisnet.mainnetBtn')}}</div>
+                        </router-link>
 
                     </div>
                 </div>
@@ -52,52 +67,52 @@
                 <div class="home_irisnet_product_left_content">
                     <div class="home_irisnet_irishub_content">
                         <div class="home_irisnet_irishub_header">
-                            <p class="home_irisnet_irishub_title">IRIS Hub</p>
+                            <p class="home_irisnet_irishub_title">{{$t('message.homeThree.product.irisHub.title')}}</p>
                             <div class="home_irisnet_irishub_img">
                                 <img src="../assets/irisnetThree/irishub.png" alt="">
                             </div>
                         </div>
                         <div class="home_irisnet_irishub_section">
-                            <p class="home_irisnet_irishub_section_item">The first regional hub will connect the Cosmos Hub as one of its zones</p>
-                            <p class="home_irisnet_irishub_section_item">The center of the IRIS Network with cross-chain service protocol</p>
+                            <p class="home_irisnet_irishub_section_item">{{$t('message.homeThree.product.irisHub.section')}}</p>
+<!--                            <p class="home_irisnet_irishub_section_item">The center of the IRIS Network with cross-chain service protocol</p>-->
                         </div>
                     </div>
                     <div class="home_irisnet_irisSdk_content">
                         <div class="home_irisnet_irisSdk_header">
-                            <p class="home_irisnet_irisSdk_title">IRIS SDK</p>
+                            <p class="home_irisnet_irisSdk_title">{{$t('message.homeThree.product.irisSdk.title')}}</p>
                             <div class="home_irisnet_irisSdk_img">
                                 <img src="../assets/irisnetThree/irissdk.png" alt="">
                             </div>
                         </div>
                         <div class="home_irisnet_irisSdk_section">
-                            <p class="home_irisnet_irisSdk_section_item">The first regional hub will connect the Cosmos Hub as one of its zones</p>
-                            <p class="home_irisnet_irisSdk_section_item">The center of the IRIS Network with cross-chain service protocol</p>
+                            <p class="home_irisnet_irisSdk_section_item">{{$t('message.homeThree.product.irisSdk.section')}}</p>
+<!--                            <p class="home_irisnet_irisSdk_section_item">The center of the IRIS Network with cross-chain service protocol</p>-->
                         </div>
                     </div>
                 </div>
                 <div class="home_irisnet_product_right_content">
                     <div class="home_irisnet_iservice_content">
                         <div class="home_irisnet_iservice_header">
-                            <p class="home_irisnet_iservice_title">iService</p>
+                            <p class="home_irisnet_iservice_title">{{$t('message.homeThree.product.iservice.title')}}</p>
                             <div class="home_irisnet_iservice_img">
                                 <img src="../assets/irisnetThree/iservice.png" alt="">
                             </div>
                         </div>
                         <div class="home_irisnet_iservice_section">
-                            <p class="home_irisnet_iservice_section_item">The first regional hub will connect the Cosmos Hub as one of its zones</p>
-                            <p class="home_irisnet_iservice_section_item">The center of the IRIS Network with cross-chain service protocol</p>
+                            <p class="home_irisnet_iservice_section_item">{{$t('message.homeThree.product.iservice.section')}}</p>
+<!--                            <p class="home_irisnet_iservice_section_item">The center of the IRIS Network with cross-chain service protocol</p>-->
                         </div>
                     </div>
                     <div class="home_irisnet_on_chain_gov_content">
                         <div class="home_irisnet_on_chain_gov_header">
-                            <p class="home_irisnet_on_chain_gov_title">On-chain Gov</p>
+                            <p class="home_irisnet_on_chain_gov_title">{{$t('message.homeThree.product.OnChainGov.title')}}</p>
                             <div class="home_irisnet_on_chain_gov_img">
                                 <img src="../assets/irisnetThree/chaingov.png" alt="">
                             </div>
                         </div>
                         <div class="home_irisnet_on_chain_gov_section">
-                            <p class="home_irisnet_on_chain_gov_section_item">The first regional hub will connect the Cosmos Hub as one of its zones</p>
-                            <p class="home_irisnet_on_chain_gov_section_item">The center of the IRIS Network with cross-chain service protocol</p>
+                            <p class="home_irisnet_on_chain_gov_section_item">{{$t('message.homeThree.product.OnChainGov.section')}}</p>
+<!--                            <p class="home_irisnet_on_chain_gov_section_item">The center of the IRIS Network with cross-chain service protocol</p>-->
                         </div>
                     </div>
                 </div>
@@ -106,7 +121,7 @@
         <div class="home_irisnet_road_map_container">
             <div class="home_irisnet_road_map_content">
                 <div class="home_irisnet_road_map_header">
-                    <p class="home_irisnet_road_map_title">The expected project roadmap</p>
+                    <p class="home_irisnet_road_map_title">{{$t('message.homeThree.roadMap.title')}}</p>
                 </div>
                 <div class="home_irisnet_road_map_center_container">
                     <div class="home_irisnet_road_map_center">
@@ -118,10 +133,10 @@
                         </div>
                         <div class="home_irisnet_road_map_right_content"  :class="flShowNextPage ? 'show_next_page': 'hide_next_page' ">
                             <div class="home_irisnet_road_map_left_step">
-                                <P>PANGU</P>
-                                <p>NÜWA</p>
-                                <p>KUAFU</p>
-                                <p>HOUYI</p>
+                                <P>{{$t('message.homeThree.roadMap.pangu.title')}}</P>
+                                <p>{{$t('message.homeThree.roadMap.nuwa.title')}}</p>
+                                <p>{{$t('message.homeThree.roadMap.kuafu.title')}}</p>
+                                <p>{{$t('message.homeThree.roadMap.youyi.title')}}</p>
                             </div>
                             <div class="home_irisnet_road_map_center_step">
                                 <div class="home_irisnet_road_map_line">
@@ -141,20 +156,20 @@
                             </div>
                             <div class="home_irisnet_road_map_right_step">
                                 <div class="home_irisnet_road_map_right_step_content">
-                                    <p class="home_road_map_right_step_title"> April 2019 ~ October 2019</p>
-                                    <p class="home_road_map_right_step_section">The first stage of the IRIS project focused on having the IRIS Hub up and running. Initial version of the mobile client for the IRIS network was released. In this stage we also focused on building the fundamental IRIS Service Layer which was released to IRIS Hub. Which enables service definition, binding, invocation and query.</p>
+                                    <p class="home_road_map_right_step_title">{{$t('message.homeThree.roadMap.pangu.date')}}</p>
+                                    <p class="home_road_map_right_step_section">{{$t('message.homeThree.roadMap.pangu.section')}}</p>
                                 </div>
                                 <div class="home_irisnet_road_map_right_step_content">
-                                    <p class="home_road_map_right_step_title"> April 2019 ~ October 2019</p>
-                                    <p class="home_road_map_right_step_section">In this stage we are adding more fundamental modules to support application development especially DeFi applications. The new modules planned to release in this stage including multi-asset management, uniswap, multi-sig account etc. We plan to collaborate with 1-2 ecosystem partners to develop applications using those modules.We also plan to accomplish the test connection with Cosmos Hub through IBC at this stage.</p>
+                                    <p class="home_road_map_right_step_title"> {{$t('message.homeThree.roadMap.nuwa.date')}}</p>
+                                    <p class="home_road_map_right_step_section">{{$t('message.homeThree.roadMap.nuwa.section')}}</p>
                                 </div>
                                 <div class="home_irisnet_road_map_right_step_content">
-                                    <p class="home_road_map_right_step_title"> April 2019 ~ October 2019</p>
-                                    <p class="home_road_map_right_step_section">In this stage we are aiming to accomplish the connection of IRIS Hub with applications blockchains through IBC. We plan to upgrade IRISnet mobile client to support those applications. The third stage will also focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service features.</p>
+                                    <p class="home_road_map_right_step_title">  {{$t('message.homeThree.roadMap.kuafu.date')}}</p>
+                                    <p class="home_road_map_right_step_section">{{$t('message.homeThree.roadMap.kuafu.section')}}</p>
                                 </div>
                                 <div class="home_irisnet_road_map_right_step_content">
-                                    <p class="home_road_map_right_step_title"> April 2019 ~ October 2019</p>
-                                    <p class="home_road_map_right_step_section">The fourth stage will focus on further technology innovations to the IRIS network, SDK and mobile client, as well as developer engagement.</p>
+                                    <p class="home_road_map_right_step_title"> {{$t('message.homeThree.roadMap.youyi.date')}}</p>
+                                    <p class="home_road_map_right_step_section">{{$t('message.homeThree.roadMap.youyi.section')}}</p>
                                 </div>
                             </div>
                         </div>
@@ -178,11 +193,15 @@
     </div>
 </template>
 <script>
+    import enMessage from "../assets/lang/en"
+    import cnMessage from "../assets/lang/cn"
     export default {
         name: "HomeThree",
         data(){
             return {
                 flShowNextPage: false,
+                enMessage:enMessage,
+                cnMessage:cnMessage,
                 swiperOption:{
                     loop: true,
                     speed: 300,
@@ -249,7 +268,6 @@
             }
         },
         mounted(){
-            console.log(this,"数据展示")
             this.flShowSwiper= true;
         },
         computed: {
@@ -326,13 +344,27 @@
                 .home_irisnet_content_right_content{
                     flex: 1;
                     .home_irisnet_content_title{
-                        margin: 0.35rem 0 0.4rem 0;
+                        margin: 0.35rem 0 0.1rem 0;
                         font-size: 0.36rem;
                         font-weight:600;
                         color:rgba(49,50,54,1);
                         line-height: 0.43rem;
                     }
+                    .home_irisnet_content_second_title{
+                        margin-bottom: 0.2rem;
+                        font-size: 0.17rem;
+                        font-weight:400;
+                        color:rgba(38,48,53,1);
+                        line-height: 0.3rem;
+                    }
                     .home_irisnet_content_section{
+                        font-size: 0.17rem;
+                        font-weight:400;
+                        color:rgba(124,125,141,1);
+                        line-height: 0.3rem;
+                    }
+                    .home_irisnet_content_second_section{
+                        margin-top: 0.2rem;
                         font-size: 0.17rem;
                         font-weight:400;
                         color:rgba(124,125,141,1);
@@ -376,12 +408,14 @@
                 padding: 1.2rem 0;
                 display: flex;
                 .home_irisnet_product_left_content{
+                    flex: 1;
                     display: flex;
                     margin-right: 0.2rem;
                     .home_irisnet_irishub_content{
                         display: flex;
                         flex-direction: column;
                         margin-right: 0.2rem;
+                        flex: 1;
                         .home_irisnet_irishub_header{
                             background: rgba(94,130,241,0.1);;
                             display: flex;
@@ -406,18 +440,17 @@
                             background: rgba(0,0,0,0.08);
                             padding: 0.4rem 0.32rem;
                             box-sizing: border-box;
+                            height: 2rem;
                             .home_irisnet_irishub_section_item{
                                 font-size: 0.17rem;
                                 font-weight:400;
                                 color:rgba(127,148,226,1);
                                 line-height: 0.3rem;
                             }
-                            .home_irisnet_irishub_section_item:last-child{
-                                margin-top: 0.3rem;
-                            }
                         }
                     }
                     .home_irisnet_irisSdk_content{
+                        flex: 1;
                         display: flex;
                         flex-direction: column;
                         margin-right: 0.2rem;
@@ -445,15 +478,14 @@
                             background: rgba(0,0,0,0.08);
                             padding: 0.4rem 0.32rem;
                             box-sizing: border-box;
+                            height: 2rem;
                             .home_irisnet_irisSdk_section_item{
                                 font-size: 0.17rem;
                                 font-weight:400;
                                 color:rgba(127,148,226,1);
                                 line-height: 0.3rem;
                             }
-                            .home_irisnet_irisSdk_section_item:last-child{
-                                margin-top: 0.3rem;
-                            }
+
                         }
                     }
                     .home_irisnet_irisSdk_content:last-child{
@@ -462,10 +494,12 @@
                 }
                 .home_irisnet_product_right_content{
                     display: flex;
+                    flex: 1;
                     .home_irisnet_iservice_content{
                         display: flex;
                         flex-direction: column;
                         margin-right: 0.2rem;
+                        flex: 1;
                         .home_irisnet_iservice_header{
                             background: rgba(94,130,241,0.1);;
                             display: flex;
@@ -490,18 +524,18 @@
                             background: rgba(0,0,0,0.08);
                             padding: 0.4rem 0.32rem;
                             box-sizing: border-box;
+                            height: 2rem;
                             .home_irisnet_iservice_section_item{
                                 font-size: 0.17rem;
                                 font-weight:400;
                                 color:rgba(127,148,226,1);
                                 line-height: 0.3rem;
                             }
-                            .home_irisnet_iservice_section_item:last-child{
-                                margin-top: 0.3rem;
-                            }
+
                         }
                     }
                     .home_irisnet_on_chain_gov_content{
+                        flex: 1;
                         display: flex;
                         flex-direction: column;
                         margin-right: 0.2rem;
@@ -530,14 +564,12 @@
                             background: rgba(0,0,0,0.08);
                             padding: 0.4rem 0.32rem;
                             box-sizing: border-box;
+                            height: 2rem;
                             .home_irisnet_on_chain_gov_section_item{
                                 font-size: 0.17rem;
                                 font-weight:400;
                                 color:rgba(127,148,226,1);
                                 line-height: 0.3rem;
-                            }
-                            .home_irisnet_on_chain_gov_section_item:last-child{
-                                margin-top: 0.3rem;
                             }
                         }
                     }
@@ -568,7 +600,7 @@
                         overflow-y: hidden;
                         margin-top: 1.62rem;
                         .home_irisnet_road_map_left_content{
-                            transform: translateY(-3.28rem);
+                            transform: translateY(-3.1rem);
                             font-size: 0.36rem;
                             font-weight:bold;
                             line-height: 0.43rem;
@@ -604,13 +636,15 @@
                         .home_irisnet_road_map_right_content{
                             flex: 4;
                             display: flex;
-                            transform: translateY(-3.28rem);
+                            transform: translateY(-3.1rem);
                             .home_irisnet_road_map_left_step{
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: space-between;
                                 p{
+                                    white-space: nowrap;
                                     flex: 1;
+                                    min-height: 3.2rem;
                                     font-size: 0.26rem;
                                     font-weight:600;
                                     color:rgba(49,50,54,1);
@@ -652,6 +686,7 @@
                                         line-height: 0.34rem;
                                     }
                                     .home_road_map_right_step_section{
+                                        min-width: 4.8rem;
                                         margin-top: 0.1rem;
                                         font-size: 0.17rem;
                                         color:rgba(124,125,141,1);
@@ -698,7 +733,7 @@
     }
     @keyframes showNextPage {
         from{
-            transform:translateY(-3.28rem);
+            transform:translateY(-3.1rem);
         }
         to{
             transform:translateY(0);
@@ -709,7 +744,7 @@
             transform:translateY(0);
         }
         to{
-            transform:translateY(-3.28rem);
+            transform:translateY(-3.1rem);
         }
     }
 </style>
