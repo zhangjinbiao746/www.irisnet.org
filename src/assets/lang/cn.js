@@ -131,7 +131,18 @@ export const message = {
             nyancatExplorer:'Nyancat 浏览器 '
         }
     },
-
+    presskitThree:{
+        title:'品牌资料',
+        secondTitle:'获取您可能需要的所有品牌资源和标志',
+        resources:'资源目录',
+        about:{
+            AboutIRISnet:'关于IRISnet',
+            title:'IRISnet：可以自进化的BPoS跨链服务枢纽',
+            section:'IRISnet（主网 IRIS Hub）是支持DeFi等各种复杂分布式应用的跨链服务枢纽。IRIS Hub采用Cosmos SDK开发，是第一个可自进化的BPoS网络，其开发团队包括获得多个技术创新大奖的边界智能（<a href="https://www.bianjie.ai/" target="_blank">Bianjie</a>）以及Cosmos核心开发团队<a href="https://tendermint.com/" target="_blank">Tendermint</a>。',
+            secondSection:'IRISnet提供支持DeFi应用开发的多种基础模块，并能支持公有链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。',
+            more:"更多说明内容...",
+        }
+    },
 
 
 
