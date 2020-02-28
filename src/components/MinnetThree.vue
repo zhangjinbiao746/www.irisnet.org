@@ -2,17 +2,19 @@
     <div class="mainnet_content_container">
         <div class="mainnet_content_wrap">
             <div class="mainnet_header_content">
-                <h3 class="mainnet_header_title">Introduction</h3>
-                <p class="mainnet_header_text_content">At the "center" of the IRIS network is a blockchain known as the IRIS Hub, which is a Proof-of-Stake (PoS) blockchain built on Cosmos SDK and Tendermint.It will be the first regional hub that connects to the Cosmos Hub as one of its zones. </p>
-                <p class="mainnet_header_text_content">The IRIS hub is equipped with a service protocol that coordinates on-chain transaction processing with off-chain data processing and business logic execution.</p>
-                <p class="mainnet_header_text_content"> We have also enhanced the IBC protocol to facilitate cross-chain invocation of those off-chain services, if so desired.</p>
+                <h3 class="mainnet_header_title">{{$t("message.mainnetThree.title")}}</h3>
+                <p  v-if="$i18n.locale ==='CN'" v-html="cnMessage.mainnetThree.section"  class="mainnet_header_text_content"></p>
+                <p  v-if="$i18n.locale ==='EN'" v-html="enMessage.mainnetThree.section"  class="mainnet_header_text_content"></p>
+                <p class="mainnet_header_text_content">{{$t("message.mainnetThree.secondSection")}}</p>
+                <p class="mainnet_header_text_content">{{$t("message.mainnetThree.threeSection")}}</p>
+                <p class="mainnet_header_text_content">{{$t("message.mainnetThree.fourSection")}}</p>
             </div>
         </div>
         <div class="mainnet_token_content">
             <div class="mainnet_token_header">
                 <div class="mainnet_token_header_content">
-                    <h4 class="mainnet_token_header_title">IRIS Tokens</h4>
-                    <p class="mainnet_token_header_section">The IRIS hub has its own native token known as IRIS. It is designed to serve three purposes in the network.</p>
+                    <h4 class="mainnet_token_header_title">{{$t("message.mainnetThree.token.title")}}</h4>
+                    <p class="mainnet_token_header_section">{{$t("message.mainnetThree.token.section")}}</p>
                 </div>
             </div>
             <div class="mainnet_token_center">
@@ -25,8 +27,8 @@
                             <img src="../assets/irisnetThree/staking.png" alt="">
                         </div>
                         <div class="mainnet_token_center_staking_text">
-                            <h5 class="mainnet_token_center_staking_title">Staking</h5>
-                            <p class="mainnet_token_center_staking_section">Similar to the ATOM token in the Cosmos Hub, the IRIS token will be used as a staking token to secure the PoS blockchain.</p>
+                            <h5 class="mainnet_token_center_staking_title">{{$t("message.mainnetThree.token.staking.title")}}</h5>
+                            <p class="mainnet_token_center_staking_section">{{$t("message.mainnetThree.token.staking.section")}}</p>
                         </div>
                     </div>
                     <div class="mainnet_token_center_transaction">
@@ -34,8 +36,8 @@
                             <img src="../assets/irisnetThree/transaction.png" alt="">
                         </div>
                         <div class="mainnet_token_center_transaction_text">
-                            <h5 class="mainnet_token_center_transaction_title">Transaction Fee</h5>
-                            <p class="mainnet_token_center_transaction_section">The IRIS token will also be used to pay fees for all transactions in the IRIS network.</p>
+                            <h5 class="mainnet_token_center_transaction_title">{{$t("message.mainnetThree.token.transactionFee.title")}}</h5>
+                            <p class="mainnet_token_center_transaction_section">{{$t("message.mainnetThree.token.transactionFee.section")}}</p>
                         </div>
                     </div>
                     <div class="mainnet_token_center_service">
@@ -43,23 +45,23 @@
                             <img src="../assets/irisnetThree/service.png" alt="">
                         </div>
                         <div class="mainnet_token_center_service_text">
-                            <h5 class="mainnet_token_center_service_title">Service Fee</h5>
-                            <p class="mainnet_token_center_service_section">It is required that service providers in the IRIS network charge service fees denominated in the IRIS token.</p>
+                            <h5 class="mainnet_token_center_service_title">{{$t("message.mainnetThree.token.serviceFee.title")}}</h5>
+                            <p class="mainnet_token_center_service_section">{{$t("message.mainnetThree.token.serviceFee.section")}}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="mainnet_token_footer">
                 <div class="mainnet_token_footer_content">
-                    <p class="mainnet_token_footer_section">It is intended that the IRIS network will eventually support all whitelisted fee tokens from the Cosmos network, which can be used to pay the transaction fees and service fees.</p>
+                    <p class="mainnet_token_footer_section">{{$t("message.mainnetThree.token.bottomSection")}}</p>
                 </div>
             </div>
         </div>
         <div class="mainnet_tools_content">
             <div class="mainnet_tools_content_wrap">
                 <div class="mainnet_tools_wallet_content">
-                    <h3 class="mainnet_tools_wallet_title">Wallets</h3>
-                    <p class="mainnet_tools_wallet_section">These web and mobile wallets allow you to store & transfer IRIS, delegate IRIS to validators, and some of them also support ATOM. Note that we do not endorse any of the wallets, they are listed for your convenience.</p>
+                    <h3 class="mainnet_tools_wallet_title">{{$t("message.mainnetThree.wallet.title")}}</h3>
+                    <p class="mainnet_tools_wallet_section">{{$t("message.mainnetThree.wallet.section")}}</p>
                     <ul class="miannet_tools_wallet_list">
                         <li class="mainnet_tools_wallet_list_item" v-for="(item,index) in wallets" :key="index">
                             <a :href="item.href" target="_blank" class="mainnet_tools_wallet_link_content">
@@ -78,8 +80,8 @@
                     </ul>
                 </div>
                 <div class="mainnet_tools_explorer_content">
-                    <h3 class="mainnet_tools_explorer_title">Explorers</h3>
-                    <p class="mainnet_tools_explorer_section">These block explorers allow you to search, view and analyze IRIS Hub data—like blocks, transactions, validators, governance including params or proposals, etc.</p>
+                    <h3 class="mainnet_tools_explorer_title">{{$t("message.mainnetThree.explorer.title")}}</h3>
+                    <p class="mainnet_tools_explorer_section">{{$t("message.mainnetThree.explorer.section")}}</p>
                     <div class="mainnet_tools_explorer_logo_content">
                         <div class="mainnet_tools_explorer_logo_list_content">
                             <a href="" class="mainnet_tools_explorer_logo_link">
@@ -120,8 +122,8 @@
                     </div>
                 </div>
                 <div class="mainnet_tools_staking_tools_content">
-                    <h3 class="mainnet_tools_staking_tools_title">Staking Tools</h3>
-                    <p class="mainnet_tools_staking_section">Those tools, contributed by IRISnet validators and developers, facilitates IRIS token holders to delegate via web wallets and Ledger hardware wallets, etc . Before using these tools, you need to assure their security.</p>
+                    <h3 class="mainnet_tools_staking_tools_title">{{$t("message.mainnetThree.stakingTools.title")}}</h3>
+                    <p class="mainnet_tools_staking_section">{{$t("message.mainnetThree.stakingTools.section")}}</p>
                     <div class="mainnet_tools_staking_tools_logo_content">
                         <div class="mainnet_tools_staking_tools_logo_list_content">
                             <a href="" class="mainnet_tooks_staking_tools_logo_link">
@@ -159,10 +161,14 @@
 </template>
 
 <script>
+    import enMessage from "../assets/lang/en"
+    import cnMessage from "../assets/lang/cn"
     export default {
         name: "MinnetThree",
         data(){
             return{
+                enMessage:enMessage,
+                cnMessage:cnMessage,
                 wallets:[
                     {
                         isAandroid: true,
@@ -413,6 +419,10 @@
                             justify-content: center;
                             padding: 0.3rem 0 0.15rem 0;
                             .mainnet_tools_wallet_link_content{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                text-align: center;
                                 .mainnet_tools_logo_content{
                                     width: 0.7rem;
                                     height: 0.7rem;
@@ -429,6 +439,9 @@
                                     img{
                                         width: 0.16rem;
                                         margin-right: 0.15rem;
+                                    }
+                                    img:last-child{
+                                        margin-right: 0;
                                     }
                                 }
                                 .mainnet_tools_wallet_name{
