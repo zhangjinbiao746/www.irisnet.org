@@ -133,8 +133,145 @@ export const message = {
             nyancatExplorer:'Nyancat Explorer'
         }
     },
+    footerThree:{
+        newsLetter: 'Newsletter',
+        placeholder:'Enter your email to subscribe',
+        socialCommunityTitle : 'Community',
+        validatorCommunityTitle : 'Validators',
+        TechCommunityTitle : 'Developers',
+        errEmail:'Please enter a valid email address',
+        socialCommunity : [
+            {
+                id : 0,
+                src : "irisnet_telegram.png",
+                href : "https://t.me/irisnetwork"
+            },
+            {
+                id : 1,
+                src : "irisnet_twitter.png",
+                href : "https://twitter.com/irisnetwork"
+            },
+            {
+                id : 2,
+                src : "irisnet_mail.png",
+                href : "mailto:contact@irisnet.org"
+            },
+            {
+                id : 3,
+                src : "irisnet_medium.png",
+                href : "https://medium.com/irisnet-blog"
+            },
+            {
+                id : 4,
+                src : "irisnet_wechat.png",
+                "txt" : "Wechat"
+            },
+            {
+                id : 5,
+                src : "irisnet_weibo.png",
+                href : "https://weibo.com/u/6455513027"
+            },
+        ],
+        validatorCommunity : [
+            {
+                id : 0,
+                src : "irisnet_qq.png",
+                href : "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
+            },
+            {
+                id : 1,
+                src : "irisnet_riot.png",
+                href : "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+            },
+        ],
+        techCommunity : [
+            {
+                id : 0,
+                src : "irisnet_github.png",
+                href : "https://github.com/irisnet"
+            },
+            {
+                id : 1,
+                src : "irisnet_qq.png",
+                "txt" : "qq",
+                href : "https://jq.qq.com/?_wv=1027&k=51eKP77"
+            },
+            {
+                id : 2,
+                src : "irisnet_riot.png",
+                "txt" : "riot",
+                href : "https://riot.im/app/#/room/#iris:matrix.org"
+            },
+        ],
+        productList : [
+            {
+                id : 0,
+                name : 'Rainbow Wallet',
+                href : 'https://www.rainbow.one/'
+            },
+            {
+                id : 1,
+                name : 'IRISplorer',
+                href : 'https://www.irisplorer.io'
+            },
+            {
+                id : 2,
+                name : 'Light Client',
+                href : 'https://www.irisnet.org/docs/light-client/intro.html'
+            },
+            {
+                id : 3,
+                name : 'CLI Client',
+                href : 'https://www.irisnet.org/docs/cli-client/intro.html'
+            }
+        ],
+        resourceList : [
+            {
+                id : 0,
+                name : 'IRIS Foundation',
+                href : 'https://github.com/irisnet/iris-foundation'
+            },
+            {
+                id : 1,
+                name : 'Whitepaper ',
+                href : ' https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md'
+            },
+            {
+                id : 2,
+                name : 'Blog ',
+                href : ' https://medium.com/irisnet-blog'
+            },
+            {
+                id : 3,
+                name : 'Docs ',
+                href : 'https://www.irisnet.org/docs/'
+            },
+            {
+                id : 4,
+                name : 'Press Kit',
+                href : '/community/press-kit'
+            }
+        ],
+        productsTitle : 'Products',
+        resourcesTitle : 'Resources',
+        submitBtn : {
+            title : 'Newsletter',
+            subscribe : 'Subscribe',
+            success : "Success"
+        },
 
-
+        errEmailAddress : {
+            error : 'Please enter a valid email address'
+        },
+        irisnetInproduction : 'IRISnet is named after Greek goddess Iris, said to be the personification of the rainbow and the faithful messenger between heaven and humanity'
+    },
+    newsLetter : {
+        successTitle : 'Welcome to The IRISnet Newsletter',
+        failedTitle : 'Subscription Failed',
+        successText : 'Thank you for your interest in and subscription to our project infomation. Please check your email box and click the button to confirm the subscription and to start receiving our newsletters and other latest updates.',
+        failedText : 'Maybe you are already subscribed? If not then please try again or contact us via email contact@irisnet.org.',
+        confirm : 'Confirm'
+    },
 
 
 
@@ -254,129 +391,6 @@ export const message = {
                 activeIndex : '',
             }
         ]
-    },
-    footer : {
-        socialCommunityTitle : 'Community',
-        validatorCommunityTitle : 'Validators',
-        TechCommunityTitle : 'Developers',
-        socialCommunity : [
-            {
-                id : 0,
-                src : "irisnet_telegram.png",
-                href : "https://t.me/irisnetwork"
-            },
-            {
-                id : 1,
-                src : "irisnet_twitter.png",
-                href : "https://twitter.com/irisnetwork"
-            },
-            {
-                id : 2,
-                src : "irisnet_mail.png",
-                href : "mailto:contact@irisnet.org"
-            },
-            {
-                id : 3,
-                src : "irisnet_medium.png",
-                href : "https://medium.com/irisnet-blog"
-            },
-            {
-                id : 4,
-                src : "irisnet_wechat.png",
-                "txt" : "Wechat"
-            },
-            {
-                id : 5,
-                src : "irisnet_weibo.png",
-                href : "https://weibo.com/u/6455513027"
-            },
-        ],
-        validatorCommunity : [
-            {
-                id : 0,
-                src : "irisnet_qq.png",
-                href : "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
-            },
-            {
-                id : 1,
-                src : "irisnet_riot.png",
-                href : "https://riot.im/app/#/room/#irisvalidators:matrix.org"
-            },
-        ],
-        techCommunity : [
-            {
-                id : 0,
-                src : "irisnet_github.png",
-                href : "https://github.com/irisnet"
-            },
-            {
-                id : 1,
-                src : "irisnet_qq.png",
-                "txt" : "qq",
-                href : "https://jq.qq.com/?_wv=1027&k=51eKP77"
-            },
-            {
-                id : 2,
-                src : "irisnet_riot.png",
-                "txt" : "riot",
-                href : "https://riot.im/app/#/room/#iris:matrix.org"
-            },
-        ],
-        productList : [
-            {
-                id : 0,
-                name : 'Rainbow Wallet',
-                href : 'https://www.rainbow.one/'
-            },
-            {
-                id : 1,
-                name : 'IRISplorer',
-                href : 'https://www.irisplorer.io'
-            },
-            {
-                id : 2,
-                name : 'Light Client',
-                href : 'https://www.irisnet.org/docs/light-client/'
-            },
-            {
-                id : 3,
-                name : 'CLI Client',
-                href : 'https://www.irisnet.org/docs/cli-client/'
-            }
-        ],
-        resourceList : [
-            {
-                id : 0,
-                name : 'FAQ',
-                href : 'https://www.irisnet.org/docs/resources/'
-            },
-            {
-                id : 1,
-                name : 'Blog',
-                href : 'https://medium.com/irisnet-blog'
-            },
-            {
-                id : 2,
-                name : 'Docs',
-                href : 'https://www.irisnet.org/docs/'
-            },
-            {
-                id : 3,
-                name : 'Press Kit',
-                href : '/community/press-kit'
-            }
-        ],
-        productsTitle : 'Products',
-        resourcesTitle : 'Resources',
-        submitBtn : {
-            title : 'Newsletter',
-            subscribe : 'Subscribe',
-            success : "Success"
-        },
-        errEmailAddress : {
-            error : 'Please enter a valid email address'
-        },
-        irisnetInproduction : 'IRISnet is named after Greek goddess Iris, said to be the personification of the rainbow and the faithful messenger between heaven and humanity'
     },
     home : {
         bannerHref : "https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe",
@@ -1278,13 +1292,6 @@ export const message = {
         // faqHref:'https://www.irisnet.org/docs/introduction/',
         explorerTitle : 'IRISplorer (Nyancat)',
         explorerHref : 'https://nyancat.irisplorer.io/#/home',
-    },
-    newsLetter : {
-        successTitle : 'Welcome to The IRISnet Newsletter',
-        failedTitle : 'Subscription Failed',
-        successText : 'Thank you for your interest in and subscription to our project infomation. Please check your email box and click the button to confirm the subscription and to start receiving our newsletters and other latest updates.',
-        failedText : 'Maybe you are already subscribed? If not then please try again or contact us via email contact@irisnet.org.',
-        confirm : 'Confirm'
     },
     communityPage : {
         pressKitContent : {
