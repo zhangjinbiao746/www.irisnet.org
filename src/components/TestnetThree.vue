@@ -97,6 +97,7 @@
                         display: flex;
                         justify-content: flex-end;
                         margin-right: 1.51rem;
+                        box-sizing: border-box;
                         img{
                             max-width: 3rem;
                             width: 100%;
@@ -191,6 +192,213 @@
                             line-height: 0.5rem;
                             color: #fff;
                             font-size: 0.18rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width:768px) and (max-width: 1200px){
+        .testnet_three_container{
+            .testent_three_header_content{
+                .testnet_three_header_wrap{
+                    margin: 0 10%;
+                    .testnet_three_header_title{
+
+                    }
+                }
+            }
+            .testnet_three_bottom_content{
+                .testnet_three_bottom_content_wrap{
+                    .testnet_fuxi_content{
+                        margin-left: 5%;
+                        margin-right: 5%;
+                        .testnet_fuxi_img_content{
+                            margin-right: 0.5rem;
+                            margin-left: 10%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img{
+                                width: 2rem;
+                                height: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .testnet_three_nayancat_container{
+                .testnet_three_nyancat_content_wrap{
+                    .testnet_nyancat_content{
+                        margin-left: 5%;
+                        margin-right: 5%;
+                        .testnet_nyancat_img_content{
+                            margin-left: 10%;
+                            margin-right: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img{
+                                width: 2rem !important;
+                                height: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width:375px) and (max-width: 768px){
+        .testnet_three_container{
+            .testent_three_header_content{
+                .testnet_three_header_wrap{
+                    margin: 0 0.2rem;
+                    .testnet_three_header_title{
+
+                    }
+                }
+            }
+            .testnet_three_bottom_content{
+                .testnet_three_bottom_content_wrap{
+                    .testnet_fuxi_content{
+                        margin-left: 5%;
+                        margin-right: 5%;
+                        margin-bottom: 0.66rem;
+                        flex-direction: column-reverse;
+                        .testnet_fuxi_img_content{
+                            margin-top: 0.5rem;
+                            margin-right: 0;
+                            margin-left: 10%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img{
+                                width: 2.8rem;
+                                height: 2.8rem;
+                            }
+                        }
+                        .testnet_fuxi_section_content{
+                            .testnet_fuxi_sertion_btns{
+                                min-width: 3.2rem;
+                                margin: 0.2rem auto 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .testnet_three_nayancat_container{
+                .testnet_three_nyancat_content_wrap{
+                    .testnet_nyancat_content{
+                        margin-left: 5%;
+                        margin-right: 5%;
+                        flex-direction: column;
+                        .testnet_nyancat_img_content{
+                            margin-top: 0.5rem;
+                            margin-right: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img{
+                                width: 2rem !important;
+                                height: 2rem;
+                            }
+                        }
+                        .testnet_nyancat_section_content{
+                            .testnet_nyancat_sertion_btns{
+                                min-width: 3.2rem;
+                                margin: 0.2rem auto 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 375px){
+        .testnet_three_container{
+            .testent_three_header_content{
+                .testnet_three_header_wrap{
+                    margin: 0 10%;
+                    .testnet_three_header_title{
+
+                    }
+                }
+            }
+            .testnet_three_bottom_content{
+                .testnet_three_bottom_content_wrap{
+                    .testnet_fuxi_content{
+                        margin-top: 0.5rem;
+                        margin-left: 5%;
+                        margin-right: 5%;
+                        flex-direction: column-reverse;
+                        .testnet_fuxi_img_content{
+                            margin-top: 0.5rem;
+                            margin-right: 0;
+                            margin-left: 10%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img{
+                                width: 2.8rem;
+                                height: 2.8rem;
+                            }
+                        }
+                        .testnet_fuxi_section_content{
+                            .testnet_fuxi_section_text{
+                                margin-top: 0.2rem;
+                                font-size: 0.14rem;
+                            }
+                            .testnet_fuxi_section_faq{
+                                font-size: 0.14rem;
+                            }
+                            .testnet_fuxi_section_title{
+                                font-size: 0.18rem;
+                                line-height: 0.36rem;
+                            }
+                            .testnet_fuxi_sertion_btns{
+                                max-width: 3.2rem;
+                                margin: 0.2rem auto 0 auto;
+                                font-size: 0.14rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .testnet_three_nayancat_container{
+                .testnet_three_nyancat_content_wrap{
+                    .testnet_nyancat_content{
+                        padding-top: 0;
+                        margin-left: 5%;
+                        margin-right: 5%;
+                        flex-direction: column;
+                        .testnet_nyancat_section_content{
+                            padding-top: 0.6rem;
+                            .testnet_nyancat_section_title{
+                                font-size: 0.18rem;
+                                line-height: 0.36rem;
+                            }
+                            .testnet_nyancat_section_text{
+                                font-size: 0.14rem;
+                            }
+                            .testnet_nyancat_section_faq{
+                                font-size: 0.14rem;
+                            }
+                            .testnet_nyancat_sertion_btns{
+                                max-width: 3.2rem;
+                                font-size: 0.14rem;
+                                margin: 0.2rem auto 0 auto;
+                            }
+                        }
+                        .testnet_nyancat_img_content{
+                            margin-top: 0.5rem;
+                            margin-right: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img{
+                                width: 2rem !important;
+                                height: 2rem;
+                            }
                         }
                     }
                 }
