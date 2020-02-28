@@ -307,7 +307,111 @@ export const message = {
         failedText : 'Maybe you are already subscribed? If not then please try again or contact us via email contact@irisnet.org.',
         confirm : 'Confirm'
     },
-
+    cosmosNode:{
+        header:{
+            title:'IRISnet-Bianjie ',
+            commission:'commission',
+            product:'Maintained by the core development team of IRISnet',
+            validatorAddress:'Validator Address',
+            address:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
+            toastHint:'Copied',
+            bondedAtoms:'Bonded ATOMs',
+            votingPower:'Voting Power',
+            commissionRate:'Commission Rate',
+            uptime:'Uptime',
+            guide:'Cosmos Hub Wallets',
+            guideHref:'https://hub.cosmos.network/master/hub-overview/overview.html#cosmos-hub-wallets'
+        },
+        about:{
+            title:'About IRISnet-Bianjie',
+            secondTitle:'Core Developer of IRISnet, Open Source Contributor to Cosmos',
+            irisnet:{
+                title:'Core Development Team of IRISnet',
+                list:[
+                    {
+                        item:'Supported by <a href="https://cosmos.network/about" target="_blank" style="color:rgba(77, 150, 223, 1)">Interchain Foundation (ICF)</a> to build IRISnet, a Cosmos Hub that facilitates construction of distributed business applications.'
+                    },
+                    {
+                        item:'<a href="https://www.irisnet.org/" target="_blank" style="color:rgba(77, 150, 223, 1)">IRISnet</a> - a BPoS blockchain that is Self-evolutionary.'
+                    },
+                ]
+            },
+            cosmos:{
+                title:'Open Source Contributor to Cosmos',
+                list:[
+                    {
+                        item:'Genesis validator on Cosmos since March 14th, 2019'
+                    },
+                    {
+                        item:'Participant of Cosmos testnets from Gaia-1000 to mainnet launch'
+                    },
+                    {
+                        item:'Technical support team to Cosmos China community since August 2017'
+                    }
+                ]
+            }
+        },
+        bianjie:{
+            title:'Safe Bianjie, Safe Delegation',
+            product:[
+                {
+                    src:require('../../assets/cosmosThree/service_room.png'),
+                    text:'Safe and Reliable Enterprise-class Data Center',
+                },
+                {
+                    src:require('../../assets/cosmosThree/net.png'),
+                    text:'Highly Available Network',
+                },
+                {
+                    src:require('../../assets/cosmosThree/node.png'),
+                    text:'Auto Scale Sentry Nodes',
+                },
+                {
+                    src:require('../../assets/cosmosThree/lock.png'),
+                    text:'HSM for Private Key Protection',
+                },
+                {
+                    src:require('../../assets/cosmosThree/hour.png'),
+                    text:'24/7 Professional Monitoring',
+                },
+                {
+                    src:require('../../assets/cosmosThree/shield.png'),
+                    text:'DDoS Attack Protection',
+                }
+            ]
+        },
+        cosmosExplorerTitle:'Cosmos Hub Explorers',
+        cosmosExplorer:[
+            {
+                active:false,
+                whiteImg:require('../../assets/cosmosThree/big_dipper_plorer.png'),
+                // blueImg:require('../assets/cosmos/big-dipper_blue.png'),
+                title:'Big Dipper',
+                href:'https://cosmos.bigdipper.live/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+            },
+            {
+                active:false,
+                whiteImg:require('../../assets/cosmosThree/hubble_plorer.png'),
+                // blueImg:require('../assets/cosmos/hubble_blue.png'),
+                title:'Hubble',
+                href:'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030'
+            },
+            {
+                active:false,
+                whiteImg:require('../../assets/cosmosThree/mintsacn_plorer.png'),
+                // blueImg:require('../assets/cosmos/Mintscan_blue.png'),
+                title:'Mintscan',
+                href:'https://www.mintscan.io/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+            },
+            {
+                active:false,
+                whiteImg:require('../../assets/cosmosThree/Stargazer_plorer.png'),
+                // blueImg:require('../assets/cosmos/Stargazer_blue.png'),
+                title:'Stargazer',
+                href:'https://stargazer.certus.one/accounts/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+            },
+        ]
+    },
 
 
 
