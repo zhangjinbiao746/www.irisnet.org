@@ -68,6 +68,9 @@
                 </ul>
             </div>
             <div class="navigation_right_content">
+                <div class="mobile_right_content">
+                    <img src="" alt="">
+                </div>
                 <div class="navigation_right_link_content">
                     <a href="https://forum.irisnet.org/" target="_blank">{{$t("message.navigation.forum")}}</a>
                     <div class="line"></div>
@@ -212,6 +215,23 @@
                                 width: 100%;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    @media screen  and (max-width: 930px){
+        .navigation_container{
+            .navigation_content_wrap{
+                padding: 0.2rem 0.4rem;
+                .navigation_left_content{
+                    .navigation_left_list_content{
+                        display: none;
+                    }
+                }
+                .navigation_right_content{
+                    .navigation_right_link_content{
+                        display: none;
                     }
                 }
             }

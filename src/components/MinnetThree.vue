@@ -84,13 +84,13 @@
                     <p class="mainnet_tools_explorer_section">{{$t("message.mainnetThree.explorer.section")}}</p>
                     <div class="mainnet_tools_explorer_logo_content">
                         <div class="mainnet_tools_explorer_logo_list_content">
-                            <a href="" class="mainnet_tools_explorer_logo_link">
+                            <a href="https://www.irisplorer.io/#/validators" target="_blank" class="mainnet_tools_explorer_logo_link">
                                 <div class="mainnet_tools_explorer_img">
                                     <img src="../assets/irisnetThree/irisplorer.png" alt="">
                                 </div>
                                 <div class="mainnet_tools_explorer_name">IRISplorer</div>
                             </a>
-                            <a href="" class="mainnet_tools_explorer_logo_link">
+                            <a href="https://iris.bigdipper.live/" target="_blank" class="mainnet_tools_explorer_logo_link">
                                 <div class="mainnet_tools_explorer_img">
                                     <img src="../assets/irisnetThree/big_dipper.png" alt="">
                                 </div>
@@ -98,13 +98,13 @@
                             </a>
                         </div>
                         <div class="mainnet_tools_explorer_logo_list_content">
-                            <a href="" class="mainnet_tools_explorer_logo_link">
+                            <a href="https://hubble.figment.network/iris/chains/irishub" target="_blank" class="mainnet_tools_explorer_logo_link">
                                 <div class="mainnet_tools_explorer_img">
                                     <img src="../assets/irisnetThree/hubble.png" alt="">
                                 </div>
                                 <div class="mainnet_tools_explorer_name">Hubble</div>
                             </a>
-                            <a href="" class="mainnet_tools_explorer_logo_link">
+                            <a href="https://irishub.mintscan.io/" target="_blank" class="mainnet_tools_explorer_logo_link">
                                 <div class="mainnet_tools_explorer_img">
                                     <img src="../assets/irisnetThree/mintscan.png" alt="">
                                 </div>
@@ -112,7 +112,7 @@
                             </a>
                         </div>
                         <div class="mainnet_tools_explorer_logo_list_content">
-                            <a href="" class="mainnet_tools_explorer_logo_link">
+                            <a href="https://look.ping.pub/validator?chain=irishub" target="_blank" class="mainnet_tools_explorer_logo_link">
                                 <div class="mainnet_tools_explorer_img">
                                     <img src="../assets/irisnetThree/look.png" alt="">
                                 </div>
@@ -126,13 +126,13 @@
                     <p class="mainnet_tools_staking_section">{{$t("message.mainnetThree.stakingTools.section")}}</p>
                     <div class="mainnet_tools_staking_tools_logo_content">
                         <div class="mainnet_tools_staking_tools_logo_list_content">
-                            <a href="" class="mainnet_tooks_staking_tools_logo_link">
+                            <a href="https://hub.hashkey.com/#/" target="_blank" class="mainnet_tooks_staking_tools_logo_link">
                                 <div class="mainnet_tools_staking_tools_img">
                                     <img src="../assets/irisnetThree/hashekey.png" alt="">
                                 </div>
                                 <div class="mainnet_tools_staking_tools_name">HashKey Hub</div>
                             </a>
-                            <a href="" class="mainnet_tooks_staking_tools_logo_link">
+                            <a href="https://mathwallet.net/web/irisnet" target="_blank" class="mainnet_tooks_staking_tools_logo_link">
                                 <div class="mainnet_tools_staking_tools_img">
                                     <img src="../assets/irisnetThree/mathwallet.png" alt="">
                                 </div>
@@ -140,13 +140,13 @@
                             </a>
                         </div>
                         <div class="mainnet_tools_staking_tools_logo_list_content">
-                            <a href="" class="mainnet_tooks_staking_tools_logo_link">
+                            <a href="https://iris-delegator.01node.com/" target="_blank" class="mainnet_tooks_staking_tools_logo_link">
                                 <div class="mainnet_tools_staking_tools_img">
                                     <img src="../assets/irisnetThree/node_one.png" alt="">
                                 </div>
                                 <div class="mainnet_tools_staking_tools_name">01node.com</div>
                             </a>
-                            <a href="" class="mainnet_tooks_staking_tools_logo_link">
+                            <a href="https://wallet.cosmostation.io/?network=iris" target="_blank" class="mainnet_tooks_staking_tools_logo_link">
                                 <div class="mainnet_tools_staking_tools_img">
                                     <img src="../assets/irisnetThree/mintscan.png" alt="">
                                 </div>
@@ -175,35 +175,35 @@
                         isiOS: true,
                         require: require("../assets/irisnetThree/rainbow.png"),
                         name: "Rainbow",
-                        href:""
+                        href:"https://www.rainbow.one/"
                     },
                     {
                         isAandroid: true,
                         isiOS: true,
                         require:require("../assets/irisnetThree/mathwallet.png"),
                         name: "Math wallet",
-                        href:""
+                        href:"http://www.mathwallet.org/"
                     },
                     {
                         isAandroid: true,
                         isiOS: true,
                         require:require("../assets/irisnetThree/wetez.png"),
                         name: "Wetez",
-                        href:""
+                        href:"https://www.wetez.io/pc/homepage"
                     },
                     {
                         isAandroid: true,
                         isiOS: true,
                         require:require("../assets/irisnetThree/cosmostation.png"),
                         name: "Cosmostation",
-                        href:""
+                        href:"https://www.cosmostation.io/"
                     },
                     {
                         isAandroid: true,
                         isiOS: true,
                         require:require("../assets/irisnetThree/syncnode.png"),
                         name: "SyncNode",
-                        href:""
+                        href:"https://wallet.syncnode.ro/"
                     },
                 ]
             }
