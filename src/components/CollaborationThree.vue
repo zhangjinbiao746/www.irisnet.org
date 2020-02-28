@@ -51,6 +51,7 @@
                          :style="`visibility:${item.path ? 'visible' : 'hidden'}`"
                          v-for="item in $store.state.messages.home.sectionFour.EcosystemPartners.logos">
                         <img :src="item.path"
+                             :class="item.url ? 'pointer' : ''"
                              @click="toLinkUrl(item.url)"
                              class="collaboration_img">
                     </div>
@@ -70,6 +71,7 @@
                          :class="deviceType === 'phone' ? 'bottom_border' : ''"
                          v-for="item in $store.state.messages.home.sectionFour.Institutional.logos">
                         <img :src="item.path"
+                             :class="item.url ? 'pointer' : ''"
                              @click="toLinkUrl(item.url)"
                              class="collaboration_img">
                     </div>
@@ -107,7 +109,10 @@
         },
         methods : {
             toLinkUrl(url){
-                window.open(url);
+                if(url){
+                    window.open(url);
+                }
+
             }
         }
     }
@@ -165,8 +170,12 @@
                         .collaboration_img {
                             width: 2rem;
                             height: 0.7rem;
+
+                        }
+                        .pointer{
                             cursor: pointer;
                         }
+
                         &:last-child{
                             border:none;
                         }

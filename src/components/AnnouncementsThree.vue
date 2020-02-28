@@ -22,7 +22,8 @@
                     </div>
                 </div>
                 <div class="announcements_content_right_container">
-                    <div class="announcements_content_right_top_container">
+                    <div class="announcements_content_right_top_container"
+                         @click="toLinkUrl($store.state.messages.announce.announcementList[0].href)">
                         <span class="announcements_content_right_time">
                             {{$store.state.messages.announce.announcementList[0].date}}
                         </span>
@@ -33,7 +34,8 @@
                             {{$store.state.messages.announce.announcementList[0].content}}
                         </span>
                     </div>
-                    <div class="announcements_content_right_top_container">
+                    <div class="announcements_content_right_top_container"
+                         @click="toLinkUrl($store.state.messages.announce.announcementList[1].href)">
                         <span class="announcements_content_right_time">
                             {{$store.state.messages.announce.announcementList[1].date}}
                         </span>
@@ -49,7 +51,10 @@
             <p class="announcements_history_title">
                 {{$store.state.messages.announce.historyTitle}}
             </p>
-            <div class="announcements_history_item_container" v-for="item in announcementList">
+            <div class="announcements_history_item_container"
+                 :class="item.href ? 'pointer' : ''"
+                 @click="toLinkUrl(item.href)"
+                 v-for="item in announcementList">
                 <div class="announcements_history_item_time_container">
                     <span class="announcements_history_item_time_month">
                         {{ item.month }}
@@ -90,6 +95,14 @@
         },
         mounted(){
 
+        },
+        methods : {
+            toLinkUrl(url){
+                if(url){
+                    window.open(url);
+                }
+
+            }
         }
     }
 </script>
@@ -113,7 +126,6 @@
                     .announcements_content_left_container{
                         flex:67;
                         margin-right:0.8rem;
-                        cursor:pointer;
                         .announcements_content_left_produce_container{
                             .announcements_content_left_produce_title{
                                 font-size:0.22rem;
@@ -133,6 +145,7 @@
                     .announcements_content_right_top_container{
                         .flexColumn;
                         padding-bottom:0.31rem;
+                        cursor:pointer;
                         &:first-child{
                             border-bottom:0.01rem solid #EEEEEE;
                         }
@@ -158,6 +171,8 @@
                 margin-bottom:0.1rem;
             }
             .announcements_history_item_container{
+
+
                 .announcements_history_content_container{
                     .announcements_history_item_title{
                         font-size:0.22rem;
@@ -168,6 +183,9 @@
                         font-size:0.17rem;
                     }
                 }
+            }
+            .pointer{
+                cursor:pointer;
             }
 
         }
@@ -395,7 +413,7 @@
                 width:100%;
                 padding:0.6rem 0;
                 border-bottom:0.01rem solid #EEEEEE;
-                cursor:pointer;
+
                 &:last-child{
                     border:none;
                 }
