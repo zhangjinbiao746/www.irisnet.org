@@ -115,7 +115,24 @@ export const message = {
             section:'Those tools, contributed by IRISnet validators and developers, facilitates IRIS token holders to delegate via web wallets and Ledger hardware wallets, etc . Before using these tools, you need to assure their security.'
         }
     },
-
+    testnetThree:{
+        title:'Introduction',
+        secondTitle:'There 2 testnets available to  developers or validators.',
+        section:'Since the launch of mainnet, Fuxi Testnet starts to operate as a stable application testnet which has the same version as the mainnet, so that the service providers of IRISnet can develop their apps on or interact with IRIShub without running a node or lcd instance.',
+        secondSection:'However there is also a need for validators to test the new version of IRIShub before it can be relased to production, and this is Nyancat Testnet\'s focus. And new validators can also use the Nyancat Testnet to practice the validator operations.',
+        fuxi:{
+            title:'FUXI Testnet',
+            section:'The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers).',
+            linkName:'How to Use FUXI Testnet',
+            fuxiExplorer:'FUXI Explorer'
+        },
+        nyancat:{
+            title:'Nyancat Testnet',
+            section:'The Nyancat testnet runs a newer version of irishub, providing a test environment for validators to preview and test the new version before it is ready for deployment to mainnet.',
+            linkName:'How to Join Nyancat Tensent',
+            nyancatExplorer:'Nyancat Explorer'
+        }
+    },
 
 
 

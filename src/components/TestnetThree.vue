@@ -2,10 +2,10 @@
     <div class="testnet_three_container">
         <div class="testent_three_header_content">
             <div class="testnet_three_header_wrap">
-                <h2 class="testnet_three_header_title">Introduction</h2>
-                <p class="testent_three_herder_section">There 2 testnets available to developers or validators. </p>
-                <p class="testent_three_herder_section">Since the launch of mainnet, Fuxi Testnet starts to operate as a stable application testnet which has the same version as the mainnet, so that the service providers of IRISnet can develop their apps on or interact with IRIShub without running a node or lcd instance.</p>
-                <p class="testent_three_herder_section"> However there is also a need for validators to test the new version of IRIShub before it can be relased to production, and this is Nyancat Testnet's focus. And new validators can also use the Nyancat Testnet to practice the validator operations.</p>
+                <h2 class="testnet_three_header_title">{{$t('message.testnetThree.title')}}</h2>
+                <p class="testent_three_herder_section">{{$t('message.testnetThree.secondTitle')}}</p>
+                <p class="testent_three_herder_section">{{$t('message.testnetThree.section')}}</p>
+                <p class="testent_three_herder_section">{{$t('message.testnetThree.secondSection')}}</p>
             </div>
         </div>
         <div class="testnet_three_bottom_content">
@@ -15,10 +15,13 @@
                         <img src="../assets/irisnetThree/testnets_fuxi.png" alt="">
                     </div>
                     <div class="testnet_fuxi_section_content">
-                        <h3 class="testnet_fuxi_section_title">FUXI Testnet</h3>
-                        <p class="testnet_fuxi_section_text">The FUXI testnet runs the same software as IRIS mainnet, providing a stable test environment for the developer community (wallets, browsers, iService providers/consumers).</p>
-                        <p class="testnet_fuxi_section_faq">How to Use FUXI Testnet</p>
-                        <div class="testnet_fuxi_sertion_btns">FUXI Explorer</div>
+                        <h3 class="testnet_fuxi_section_title">{{$t('message.testnetThree.fuxi.title')}}</h3>
+                        <p class="testnet_fuxi_section_text">{{$t('message.testnetThree.fuxi.section')}}</p>
+                        <p class="testnet_fuxi_section_faq">
+                            <a v-if="$i18n.locale === 'EN'" href="https://www.irisnet.org/docs/get-started/testnet.html#install" target="_blank">{{$t('message.testnetThree.fuxi.linkName')}}</a>
+                            <a v-if="$i18n.locale === 'CN'" href="https://www.irisnet.org/docs/zh/get-started/testnet.html#fuxi-%E6%B5%8B%E8%AF%95%E7%BD%91" target="_blank">{{$t('message.testnetThree.fuxi.linkName')}}</a>
+                        </p>
+                        <div class="testnet_fuxi_sertion_btns">{{$t('message.testnetThree.fuxi.fuxiExplorer')}}</div>
                     </div>
                 </div>
 
@@ -28,10 +31,13 @@
             <div class="testnet_three_nyancat_content_wrap">
                   <div class="testnet_nyancat_content">
                     <div class="testnet_nyancat_section_content">
-                        <h3 class="testnet_nyancat_section_title">Nyancat Testnet</h3>
-                        <p class="testnet_nyancat_section_text">The Nyancat testnet runs a newer version of irishub, providing a test environment for validators to preview and test the new version before it is ready for deployment to mainnet.</p>
-                        <p class="testnet_nyancat_section_faq">How to Join Nyancat Tensent</p>
-                        <div class="testnet_nyancat_sertion_btns">Nyancat Explorer</div>
+                        <h3 class="testnet_nyancat_section_title">{{$t('message.testnetThree.nyancat.title')}}</h3>
+                        <p class="testnet_nyancat_section_text">{{$t('message.testnetThree.nyancat.section')}}</p>
+                        <p class="testnet_nyancat_section_faq">
+                            <a v-if="$i18n.locale === 'EN'" href="https://github.com/irisnet/testnets/tree/master/nyancat#how-to-join-nyancat-testnet" target="_blank">{{$t('message.testnetThree.nyancat.linkName')}}</a>
+                            <a v-if="$i18n.locale === 'CN'" href="https://www.irisnet.org/docs/zh/get-started/testnet.html#nyancat-%E6%B5%8B%E8%AF%95%E7%BD%91" target="_blank">{{$t('message.testnetThree.nyancat.linkName')}}</a>
+                        </p>
+                        <div class="testnet_nyancat_sertion_btns">{{$t('message.testnetThree.nyancat.nyancatExplorer')}}</div>
                     </div>
                     <div class="testnet_nyancat_img_content">
                         <img src="../assets/irisnetThree/testnets_nyancat.png" alt="">
