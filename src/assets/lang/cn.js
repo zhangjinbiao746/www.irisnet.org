@@ -1,6 +1,7 @@
 export const message = {
     //TODO
     navigation:{
+        home:'首页',
         aboutUs:'关于我们',
         developer:'开发者',
         community:'社区生态',

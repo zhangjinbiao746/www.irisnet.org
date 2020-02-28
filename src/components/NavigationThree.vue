@@ -9,6 +9,11 @@
                 </div>
                 <ul class="navigation_left_list_content">
                     <li class="navigation_left_list_item">
+                        <router-link :to="`/`">
+                            {{$t("message.navigation.home")}}
+                        </router-link>
+                    </li>
+                    <li class="navigation_left_list_item">
                         <span>{{$t("message.navigation.aboutUs")}}</span>
                         <ul class="navigation_second_menu">
                            <li class="navigation_second_list_item">
@@ -88,6 +93,9 @@
         </div>
         <div class="navigation_mobile_content" v-show="$store.state.showMobileMenu">
             <ul class="navigation_mobile_list_content">
+                <li class="navigation_mobile_list" >
+                    <router-link :to="`/`">{{$t("message.navigation.home")}}</router-link>
+                </li>
                 <li class="navigation_mobile_list" @click="showAboutUs()">
                     <div class="navigation_mobile_item">{{$t("message.navigation.aboutUs")}}</div>
                     <ul class="navigation_mobile_second_menu" v-show="flShowAboutUs">
@@ -229,14 +237,20 @@
                     display: flex;
                     align-items: center;
                     color:#fff;
+                    .navigation_left_list_item:first-child{
+                        width: 0.8rem;
+                    }
                     .navigation_left_list_item{
                         position: relative;
                         flex: 1;
-                        width: 1.6rem;
+                        width: 1.2rem;
                         height: 0.8rem;
                         line-height: 0.8rem;
                         text-align: center;
                         cursor: pointer;
+                        a{
+                            color: #fff;
+                        }
                         .navigation_second_menu{
                             width: 1.6rem;
                             text-align: left;
