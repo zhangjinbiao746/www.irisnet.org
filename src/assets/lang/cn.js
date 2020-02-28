@@ -1,6 +1,7 @@
 export const message = {
     //TODO
     navigation:{
+        home:'首页',
         aboutUs:'关于我们',
         developer:'开发者',
         community:'社区生态',
@@ -131,7 +132,165 @@ export const message = {
             nyancatExplorer:'Nyancat 浏览器 '
         }
     },
-
+    presskitThree:{
+        title:'品牌资料',
+        secondTitle:'获取您可能需要的所有品牌资源和标志',
+        resources:'资源目录',
+        about:{
+            AboutIRISnet:'关于IRISnet',
+            title:'IRISnet：可以自进化的BPoS跨链服务枢纽',
+            section:'IRISnet（主网 IRIS Hub）是支持DeFi等各种复杂分布式应用的跨链服务枢纽。IRIS Hub采用Cosmos SDK开发，是第一个可自进化的BPoS网络，其开发团队包括获得多个技术创新大奖的边界智能（<a href="https://www.bianjie.ai/" target="_blank">Bianjie</a>）以及Cosmos核心开发团队<a href="https://tendermint.com/" target="_blank">Tendermint</a>。',
+            secondSection:'IRISnet提供支持DeFi应用开发的多种基础模块，并能支持公有链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。',
+            more:"更多说明内容...",
+        }
+    },
+    footerThree:{
+        newsLetter: '订阅',
+        placeholder:'请输入邮箱地址订阅',
+        socialCommunityTitle: '社区',
+        validatorCommunityTitle:'验证人',
+        TechCommunityTitle: '开发者',
+        errEmail:'请输入一个有效的邮箱地址',
+        socialCommunity:[
+            {
+                id:0,
+                hoverSrc: "irisnet_telegram_hover.png",
+                src: "irisnet_telegram.png",
+                href: "https://t.me/irisnetworkcn"
+            },
+            {
+                id:1,
+                hoverSrc: "irisnet_twitter_hover.png",
+                src: "irisnet_twitter.png",
+                href: "https://twitter.com/irisnetwork"
+            },
+            {
+                id:2,
+                hoverSrc: "irisnet_mail_hover.png",
+                src: "irisnet_mail.png",
+                href: "mailto:contact@irisnet.org"
+            },
+            {
+                id:3,
+                hoverSrc: "irisnet_medium_hover.png",
+                src: "irisnet_medium.png",
+                href: "https://medium.com/irisnet-blog"
+            },
+            {
+                id:4,
+                hoverSrc: "irisnet_wechat_hover.png",
+                src: "irisnet_wechat.png",
+                "txt": "Wechat"
+            },
+            {
+                id:5,
+                hoverSrc: "irisnet_weibo_hover.png",
+                src: "irisnet_weibo.png",
+                href: "https://weibo.com/u/6455513027"
+            },
+        ],
+        validatorCommunity:[
+            {
+                id:0,
+                hoverSrc: "irisnet_qq_hover.png",
+                src: "irisnet_qq.png",
+                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
+            },
+            {
+                id:1,
+                hoverSrc: "irisnet_riot_hover.png",
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+            },
+            {
+                id:2,
+                hoverSrc: "irisnet_monitor_hover.png",
+                src: "irisnet_monitor.png",
+                href: "https://www.irisnet.org/docs/tools/monitor.html"
+            },
+            {
+                id:3,
+                hoverSrc: "irisnet_daemon_hover.png",
+                src: "irisnet_daemon.png",
+                href: " https://www.irisnet.org/docs/daemon/intro.html"
+            },
+        ],
+        techCommunity:[
+            {
+                id:0,
+                hoverSrc: "irisnet_github_hover.png",
+                src: "irisnet_github.png",
+                href: "https://github.com/irisnet"
+            },
+            {
+                id:1,
+                hoverSrc: "irisnet_qq_hover.png",
+                src: "irisnet_qq.png",
+                href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
+            },
+            {
+                id:2,
+                hoverSrc: "irisnet_riot_hover.png",
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/#iris:matrix.org"
+            },
+        ],
+        productList: [
+            {
+                id:0,
+                name:'Rainbow Wallet',
+                href:'https://www.rainbow.one/'
+            },
+            {
+                id:1,
+                name:'IRISplorer',
+                href:'https://www.irisplorer.io'
+            },
+            {
+                id:2,
+                name:'Light Client',
+                href:'https://www.irisnet.org/docs/light-client/intro.html'
+            },
+            {
+                id:3,
+                name:'CLI Client',
+                href:' https://www.irisnet.org/docs/cli-client/intro.html'
+            }
+        ],
+        resourceList: [
+            {
+                id:0,
+                name:'FAQ',
+                href:'https://www.irisnet.org/docs/resources/'
+            },
+            {
+                id:1,
+                name:'Blog',
+                href:'https://medium.com/irisnet-blog'
+            },
+            {
+                id:2,
+                name:'Docs',
+                href:'https://www.irisnet.org/docs/zh/'
+            },
+            {
+                id:3,
+                name:'Press Kit',
+                href:'/community/press-kit'
+            }
+        ],
+        productsTitle:'产品',
+        resourcesTitle:'资源',
+        submitBtn:{
+            title: '获取最新资讯',
+            subscribe: '提交',
+            success: "Success"
+        },
+        errEmailAddress:{
+            error:'Please enter a valid email address'
+        },
+        irisnetInproduction:'IRISnet以希腊彩虹女神Iris命名，她是在人间和天堂之间传递信息的忠诚使者'
+    },
 
 
 
@@ -249,61 +408,61 @@ export const message = {
         socialCommunity:[
             {
                 id:0,
-                src: "irisnet_telegram.png",
+                src: "irisnet_telegram_hover.png",
                 href: "https://t.me/irisnetworkcn"
             },
             {
                 id:1,
-                src: "irisnet_twitter.png",
+                src: "irisnet_twitter_hover.png",
                 href: "https://twitter.com/irisnetwork"
             },
             {
                 id:2,
-                src: "irisnet_mail.png",
+                src: "irisnet_mail_hover.png",
                 href: "mailto:contact@irisnet.org"
             },
             {
                 id:3,
-                src: "irisnet_medium.png",
+                src: "irisnet_medium_hover.png",
                 href: "https://medium.com/irisnet-blog"
             },
             {
                 id:4,
-                src: "irisnet_wechat.png",
+                src: "irisnet_wechat_hover.png",
                 "txt": "Wechat"
             },
             {
                 id:5,
-                src: "irisnet_weibo.png",
+                src: "irisnet_weibo_hover.png",
                 href: "https://weibo.com/u/6455513027"
             },
         ],
         validatorCommunity:[
             {
                 id:0,
-                src: "irisnet_qq.png",
+                src: "irisnet_qq_hover.png",
                 href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
             },
             {
                 id:1,
-                src: "irisnet_riot.png",
+                src: "irisnet_riot_hover.png",
                 href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
             },
         ],
         techCommunity:[
             {
                 id:0,
-                src: "irisnet_github.png",
+                src: "irisnet_github_hover.png",
                 href: "https://github.com/irisnet"
             },
             {
                 id:1,
-                src: "irisnet_qq.png",
+                src: "irisnet_qq_hover.png",
                 href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
             },
             {
                 id:2,
-                src: "irisnet_riot.png",
+                src: "irisnet_riot_hover.png",
                 href: "https://riot.im/app/#/room/#iris:matrix.org"
             },
         ],

@@ -23,6 +23,7 @@ export function createStore () {
             flShowFooter: true,
             headerHeight:'',
             messages:null,
+            showMobileMenu :false
         },
         mutations: {
             changeItemIs(state, payload) {
@@ -73,6 +74,9 @@ export function createStore () {
             messages(state,data){
                 state.messages = data;
             },
+            showMobileMenu(state,data){
+                state.showMobileMenu = data;
+            }
         }
     })
 }
