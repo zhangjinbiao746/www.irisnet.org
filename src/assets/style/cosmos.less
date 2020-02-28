@@ -292,7 +292,7 @@
             }
             .about_cosmos_title{
               padding: 0.38rem 0 0.3rem 0;
-              font-size: 0.22rem;
+              font-size: 0.16rem;
               font-weight:600;
               color:rgba(38,48,53,1);
               line-height: 0.32rem;
@@ -347,6 +347,7 @@
             }
           }
           .safe_text{
+            margin-top: 0.2rem;
             color: rgba(153, 153, 153, 1);
             text-align: center;
             font-size: 0.16rem;
@@ -588,7 +589,14 @@
     .about_container{
       .about_content_wrap{
         .about_content{
-
+          flex-direction: column;
+          padding-bottom: 0.4rem;
+          .about_left_content_wrap{
+            margin-right: 0;
+            .about_irisnet_section{
+              margin-bottom: 0.4rem;
+            }
+          }
         }
       }
     }
@@ -655,6 +663,25 @@
     .about_container{
       .about_content_wrap{
         .about_content{
+          flex-direction: column;
+          padding-bottom: 0.4rem;
+          .about_left_content_wrap{
+            margin-right: 0;
+            .about_irisnet_section{
+              margin-bottom: 0.4rem;
+            }
+          }
+          .about_right_content_wrap{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  .container{
+    .about_container{
+      .about_content_wrap{
+        .about_content{
           padding-bottom: 0.6rem;
 
         }
@@ -698,6 +725,31 @@
   }
 }
 @media screen and (min-width: 375px) and (max-width: 520px){
+  .container{
+    .about_container{
+      .about_content_wrap{
+        .about_content{
+          flex-direction: column;
+          padding-bottom: 0.4rem;
+          .about_left_content_wrap{
+            margin-right: 0;
+            .about_irisnet_section{
+              margin-bottom: 0.4rem;
+              margin-right: 0.2rem;
+              margin-left: 0.2rem;
+            }
+          }
+          .about_right_content_wrap{
+            margin-right: 0;
+            .about_cosmos_section{
+              margin-right: 0.2rem;
+              margin-left: 0.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
   .container{
     .banner_container{
       .banner_content_wrap{
@@ -825,6 +877,44 @@
 
 }
 @media screen and (max-width: 375px){
+  .container{
+    .about_container{
+      .about_content_wrap{
+        .about_title{
+          font-size: 0.18rem;
+        }
+        .about_content{
+          flex-direction: column;
+          padding-bottom: 0.4rem;
+          .about_left_content_wrap{
+            margin-right: 0;
+            .about_irisnet_content{
+              .about_irisnet_title{
+                font-size: 0.16rem;
+              }
+            }
+            .about_irisnet_section{
+              margin-bottom: 0.4rem;
+              margin-right: 0.2rem;
+              margin-left: 0.2rem;
+              font-size: 0.14rem;
+            }
+          }
+          .about_right_content_wrap{
+            margin-right: 0;
+            .about_cosmos_title{
+              font-size: 0.16rem;
+            }
+            .about_cosmos_section{
+              margin-right: 0.2rem;
+              margin-left: 0.2rem;
+              font-size: 0.14rem;
+            }
+          }
+        }
+      }
+    }
+  }
   .container{
     .banner_container{
       .banner_content_wrap{
@@ -1112,7 +1202,6 @@
               padding: 0.2rem 0 0.12rem 0;
               img{
                 width: 0.75rem;
-                height: 0.16rem
               }
             }
           }
@@ -1172,7 +1261,6 @@
               padding: 0.2rem 0 0.12rem 0;
               img{
                 width: 0.75rem;
-                height: 0.16rem
               }
             }
           }
@@ -1232,7 +1320,6 @@
               padding: 0.58rem 0 0.48rem 0;
               img{
                 width: 0.75rem;
-                height: 0.16rem
               }
             }
           }
@@ -1292,7 +1379,6 @@
               padding: 0.58rem 0 0.48rem 0;
               img{
                 width: 0.75rem;
-                height: 0.16rem
               }
             }
           }
