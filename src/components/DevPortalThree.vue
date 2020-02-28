@@ -124,7 +124,7 @@
 
     .dev_portal_container {
         width: 100%;
-        padding-top: 0.6rem;
+        padding-top: 0.8rem;
         .dev_portal_common_wrap {
             width: 100%;
             padding-bottom: 0.9rem;

@@ -339,7 +339,8 @@ export const message = {
                     {id:1, path: require('../logos/irisnet_coirfan.png'), url: 'http://iris.fan/#/'},
                     {id:2, path: require('../logos/irisnet_axonomy.png'), url: 'https://www.axonomy.pro'},
                     {id:3, path: require('../logos/irisnet_Gdex.png'), url: 'https://www.gdex.io/'},
-                    {id:4, path: require('../logos/irisnet_hashgardhover.png'), url: 'https://www.hashgard.io/#/'}
+                    {id:4, path: require('../logos/irisnet_hashgardhover.png'), url: 'https://www.hashgard.io/#/'},
+                    {}
                 ]
             },
             Institutional: {
@@ -369,7 +370,7 @@ export const message = {
                     {id:22, path: require('../logos/irisnet_origin.png'), url: 'http://www.theorigincapital.com/'},
                     {id:23, path: require('../logos/irisnet_SatoshiFUnd.png'), url: 'https://satoshi.fund/'},// 4
                     {id:24, path: require('../logos/irisnet_guigu.png'), url: 'http://www.svinsight.com/'},
-                    {id:25, path: require('../logos/irisnet_shicuo.png'), url: 'javascript:void(0)'},
+                    {id:25, path: require('../logos/irisnet_shicuo.png'), url: 'http://www.8timescap.com/'},
                     {id:26, path: require('../logos/irisnet_huixiang.png'), url: 'javascript:void(0)'},
                     {id:27, path: require('../logos/irisnet_Unetwork.png'), url: 'https://u.network/'},
                     {id:28, path: require('../logos/irisnet_jiuhe.png'), url: 'http://www.unityvc.com/'},

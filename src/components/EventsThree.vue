@@ -1,6 +1,6 @@
 <template>
-    <div class="router_container events_container">
-        <div class="router_content_container events_content_container">
+    <div class="events_container">
+        <div class="events_content_container">
             <p class="events_content_title">
                 {{$store.state.messages.events.title}}
             </p>
@@ -83,45 +83,202 @@
 <style scoped lang="less">
     @import '../style/mixin.less';
 
+    @media screen and (min-width: 769px) {
+        .events_container{
+            .events_content_container{
+                min-width:1rem;
+                max-width:12rem;
+                padding-top:1rem;
+                .events_content_title {
+                    font-size:0.48rem;
+                    margin-bottom:0.5rem;
+                }
+                .events_content_img_container{
+                    .flexRow;
+                    justify-content: space-between;
+                    .events_content_left_container{
+                        margin-bottom:0.3rem;
+                        flex:67;
+                        margin-right:0.8rem;
+                        cursor:pointer;
+                        .events_content_left_produce_container{
+                            .events_content_left_produce_title{
+                                font-size:0.22rem;
+                            }
+                            .events_content_left_produce_content{
+                                font-size:0.17rem;
+                            }
+                            .events_content_left_produce_time{
+                                font-size:0.15rem;
+                            }
+
+                        }
+                    }
+                }
+
+            }
+            .events_history_title{
+                color:#313236;
+                font-size:0.48rem;
+                margin-top:0.7rem;
+                margin-bottom:0.1rem;
+            }
+            .events_history_item_container{
+                .events_history_content_container{
+                    .events_history_item_title{
+                        font-size:0.22rem;
+                        font-weight:600;
+                        line-height:0.32rem;
+                    }
+                }
+            }
+
+        }
+
+    }
+    @media screen and (max-width: 768px) and (min-width:768px){
+        .events_container{
+            padding:0 1.24rem;
+            .events_content_container{
+                width:100%;
+                padding-top:1rem;
+                .events_content_title {
+                    font-size:0.36rem;
+                    margin-bottom:0.5rem;
+                }
+                .events_content_img_container{
+                    .flexColumn;
+                    align-items: center;
+                    .events_content_left_container{
+                        width:100%;
+                        margin-bottom:0.6rem;
+                        .events_content_left_produce_container{
+                            .flexColumn;
+                            .events_content_left_produce_title{
+                                font-size:0.22rem;
+                            }
+                            .events_content_left_produce_content{
+                                font-size:0.17rem;
+                            }
+                            .events_content_left_produce_time{
+                                font-size:0.15rem;
+                            }
+
+                        }
+                    }
+                }
+
+            }
+            .events_history_title{
+                color:#313236;
+                font-size:0.36rem;
+                margin-top:0.7rem;
+                margin-bottom:0.1rem;
+            }
+            .events_history_item_container{
+                .events_history_content_container{
+                    .events_history_item_title{
+                        font-size:0.22rem;
+                        font-weight:600;
+                        line-height:0.32rem;
+                    }
+                }
+            }
+
+        }
+
+    }
+    @media screen and (max-width: 767px)  and (min-width:375px){
+        .events_container{
+            padding:0 0.15rem;
+            .events_content_container{
+                width:100%;
+                padding-top:0.5rem;
+                .events_content_title {
+                    font-size:0.18rem;
+                    margin-bottom:0.3rem;
+                }
+                .events_content_img_container{
+                    .flexColumn;
+                    align-items: center;
+                    .events_content_left_container{
+                        width:100%;
+                        margin-bottom:0.6rem;
+                        .events_content_left_produce_container{
+                            .flexColumn;
+                            .events_content_left_produce_title{
+                                font-size:0.16rem;
+                            }
+                            .events_content_left_produce_content{
+                                font-size:0.14rem;
+                            }
+                            .events_content_left_produce_time{
+                                font-size:0.14rem;
+                            }
+
+                        }
+                    }
+                }
+
+
+            }
+            .events_history_title{
+                color:#313236;
+                font-size:0.18rem;
+                margin-top:0.7rem;
+            }
+            .events_history_item_container{
+                .events_history_content_container{
+                    .events_history_item_title{
+                        font-size:0.16rem;
+                        font-weight:600;
+                        line-height:0.32rem;
+                    }
+                }
+            }
+
+        }
+
+    }
+
     .events_container {
+        padding-top:0.8rem;
+        width:100%;
+        box-sizing:border-box;
+        .flexRow;
+        justify-content: center;
         .events_content_container {
             padding-bottom:1rem;
             .events_content_title {
                 color:#313236;
-                font-size:0.48rem;
                 font-family:SFUIDisplay-Regular,SFUIDisplay;
-                margin-bottom:0.52rem;
             }
+
+
             //公共样式
             .events_content_img_container{
-                .flexRow;
-                justify-content: space-between;
+
                 .events_content_left_container{
-                    flex:67;
-                    margin-right:0.8rem;
-                    cursor:pointer;
+
                     .flexColumn;
                     .events_img{
-                        height:3.75rem;
                         width:100%;
                         margin-bottom:0.3rem;
                     }
                     .events_content_left_produce_container{
                         .flexColumn;
                         .events_content_left_produce_title{
-                            font-size:0.22rem;
                             color:#263035;
                             font-weight:600;
                             margin-bottom:0.14rem;
+                            line-height:0.32rem;
                         }
                         .events_content_left_produce_content{
-                            font-size:0.17rem;
                             color:#7C7D8D;
                             line-height:0.3rem;
                             margin-bottom:0.1rem;
                         }
                         .events_content_left_produce_time{
-                            font-size:0.15rem;
                             color:#7C7D8D;
                         }
 
@@ -161,24 +318,9 @@
                 }
 
             }
-            //平板和Pc均两列展示,自适应, 手机一列展示
-            //手机
-            @media only screen and ( max-width: 768px){
-                .events_content_img_container{
-
-                }
-            }
-            //pc 和 平板
-            @media only screen and ( min-width: 768px){
-                .events_content_img_container{
-
-                }
-            }
             .events_history_title{
                 color:#313236;
-                font-size:0.48rem;
                 margin-top:0.7rem;
-                margin-bottom:0.1rem;
             }
             .events_history_item_container{
                 .flexRow;
@@ -223,9 +365,7 @@
                     .flexColumn;
                     .events_history_item_title{
                         color:#263035;
-                        font-size:0.22rem;
-                        font-weight:600;
-                        line-height:0.32rem;
+
                     }
                     .events_history_item_content{
                         color:#7C7D8D;

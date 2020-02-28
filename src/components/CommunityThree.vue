@@ -90,7 +90,7 @@
 
 <style scoped lang="less">
     .community_container_content{
-        padding-top: 0.6rem;
+        padding-top: 0.8rem;
         .community_header_content_wrap{
             padding-top: 1rem;
             background: #fff;
