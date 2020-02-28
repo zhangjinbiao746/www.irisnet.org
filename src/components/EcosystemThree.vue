@@ -90,10 +90,6 @@
                     </div>
 
                 </div>
-                <div class="ecosystem_item_img_container second_img2_display">
-                    <img :src="$store.state.messages.ecosystemThree.second.img"
-                         class="ecosystem_item_img second_img">
-                </div>
             </div>
         </div>
         <div class="ecosystem_common_wrap">
@@ -142,10 +138,6 @@
                         <img src="../assets/arrow_right_icon.png"
                              class="ecosystem_item_content_link_arrow">
                     </div>
-                </div>
-                <div class="ecosystem_item_img_container fourth_img2_display">
-                    <img :src="$store.state.messages.ecosystemThree.fourth.img"
-                         class="ecosystem_item_img fourth_img">
                 </div>
             </div>
         </div>
@@ -267,18 +259,6 @@
                 .flexRow;
                 align-items: center;
                 padding: 1rem 0;
-                .second_img1_display{
-                    display: block !important;
-                }
-                .second_img2_display{
-                    display: none !important;
-                }
-                .fourth_img1_display{
-                    display: block !important;
-                }
-                .fourth_img2_display{
-                    display: none !important;
-                }
                 .ecosystem_item_content_container {
                     .flexColumn;
                     flex: 1;
@@ -397,18 +377,6 @@
         .ecosystem_common_wrap {
     
             .ecosystem_common_container {
-                .second_img1_display{
-                    display: none !important;
-                }
-                .second_img2_display{
-                    display: block !important;
-                }
-                .fourth_img1_display{
-                    display: none !important;
-                }
-                .fourth_img2_display{
-                    display: block !important;
-                }
                 .ecosystem_item_content_container {
                     .ecosystem_item_content_link_arrow_container {
                         margin-bottom:0.6rem;
@@ -421,9 +389,11 @@
             }
             .ecosystem_common_container_second{
                 .flexColumn;
+                flex-direction: column-reverse;
             }
             .ecosystem_common_container_fourth{
                 .flexColumn;
+                flex-direction: column-reverse;
             }
         }
     }
@@ -454,6 +424,14 @@
                     }
                 }
             }
+            .ecosystem_common_container_second{
+                .flexColumn;
+                flex-direction: column-reverse;
+            }
+            .ecosystem_common_container_fourth{
+                .flexColumn;
+                flex-direction: column-reverse;
+            }
         }
     }
 }
@@ -480,6 +458,14 @@
                     }
                 }
             }
+            .ecosystem_common_container_second{
+                .flexColumn;
+                flex-direction: column-reverse;
+            }
+            .ecosystem_common_container_fourth{
+                .flexColumn;
+                flex-direction: column-reverse;
+            }
         }
     }
 }
@@ -492,10 +478,31 @@
                 .flexColumn;
                 .ecosystem_item_content_container {
                     max-width:3.45rem;
+                    .ecosystem_item_content_title {
+                        font-size: 0.18rem;
+                    }
+                    .ecosystem_item_content_content {
+                        line-height: 0.28rem;
+                        font-size: 0.14rem;
+                        margin-bottom: 0.2rem;
+                    }
                     .ecosystem_item_content_link_arrow_container {
                         margin-bottom:0.4rem;
+                        .ecosystem_item_content_link {
+                            font-size: 0.14rem;
+                        }
                     }
+
                     .ecosystem_item_content_link_wrap {
+                        .ecosystem_item_content_sub_content {
+                            line-height: 0.28rem;
+                            font-size: 0.14rem;
+                        }
+                        .ecosystem_item_content_sub_link {
+                            font-size: 0.14rem;
+                            line-height: 1.1;
+                            word-break: break-all;
+                        }
                     }
                 }
                 .ecosystem_item_img_container {
@@ -508,6 +515,14 @@
                         height: 1.79rem;
                     }
                 }
+            }
+            .ecosystem_common_container_second{
+                .flexColumn;
+                flex-direction: column-reverse;
+            }
+            .ecosystem_common_container_fourth{
+                .flexColumn;
+                flex-direction: column-reverse;
             }
         }
     }
