@@ -535,6 +535,7 @@ export const message = {
         betaDate:'2019年3月2日',
         betaContent:'IRIS基金会和开发团队的地址',
         historyTitle:'全部历史',
+        src:require('../announcement_3.0.png'),
         announcementList:[
             {
                 id:'0',

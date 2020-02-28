@@ -579,6 +579,7 @@ export const message = {
         betaDate : 'Mar 02,2019',
         historyTitle : 'All of History',
         betaContent : 'Foundation and Dev Team Token Addresses.',
+        src:require('../announcement_3.0.png'),
         announcementList : [
             {
                 id : '0',

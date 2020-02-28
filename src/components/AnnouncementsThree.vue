@@ -6,7 +6,8 @@
             </p>
             <div class="announcements_content_img_container">
                 <div class="announcements_content_left_container">
-                    <img src="../../public/irisnet/IRISnet_announcements_betanet.png" class="announcements_img">
+                    <img :src="$store.state.messages.announce.src"
+                         class="announcements_img">
                     <div class="announcements_content_left_produce_container">
                         <span class="announcements_content_left_produce_title">
                             {{$store.state.messages.announce.betaTitle}}
