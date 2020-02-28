@@ -40,31 +40,6 @@
                 </div>
             </div>
         </div>
-        <!--<div class="collaboration_common_wrap">
-            <div class="collaboration_common_container">
-                <p class="collaboration_common_title">
-                    {{$store.state.messages.collaborationThree.ecosystem.title}}
-                </p>
-                <div class="collaboration_common_content">
-                    <div class="collaboration_common_img_container right_border">
-                        <img :src="$store.state.messages.collaborationThree.ecosystem.list[0].img"
-                             @click="toLinkUrl($store.state.messages.collaborationThree.ecosystem.list[0].href)"
-                             alt="" class="collaboration_img">
-                    </div>
-                    <div class="collaboration_common_img_container right_border">
-                        <img :src="$store.state.messages.collaborationThree.ecosystem.list[1].img"
-                             @click="toLinkUrl($store.state.messages.collaborationThree.ecosystem.list[1].href)"
-                             alt="" class="collaboration_img">
-                    </div>
-                    <div class="collaboration_common_img_container">
-                        <img :src="$store.state.messages.collaborationThree.ecosystem.list[2].img"
-                             @click="toLinkUrl($store.state.messages.collaborationThree.ecosystem.list[2].href)"
-                             alt="" class="collaboration_img">
-                    </div>
-
-                </div>
-            </div>
-        </div>-->
         <div class="collaboration_common_wrap">
             <div class="collaboration_common_container">
                 <p class="collaboration_common_title">
@@ -128,7 +103,6 @@
                 }else{
                     this.deviceType = 'pc'
                 }
-                console.error(this.deviceType)
             },300)
         },
         methods : {

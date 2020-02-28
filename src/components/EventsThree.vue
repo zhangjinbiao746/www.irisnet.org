@@ -8,7 +8,7 @@
                 <div class="events_content_left_container"
                      v-for="item in firstList"
                      @click="toLinkUrl(item.href)">
-                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582625727812&di=0c2c5eadfbafc3d406324491ac5dd88a&imgtype=0&src=http%3A%2F%2Fimg.qqzhi.com%2Fuploads%2F2018-11-29%2F171758842.jpg" alt="失去网络" class="events_img">
+                    <img :src="item.src" class="events_img">
                     <div class="events_content_left_produce_container">
                         <span class="events_content_left_produce_title">
                             {{item.title}}
@@ -98,7 +98,7 @@
                     justify-content: space-between;
                     .events_content_left_container{
                         margin-bottom:0.3rem;
-                        flex:67;
+                        flex:1;
                         margin-right:0.8rem;
                         cursor:pointer;
                         .events_content_left_produce_container{
@@ -112,6 +112,10 @@
                                 font-size:0.15rem;
                             }
 
+                        }
+                        .events_img{
+                            width:3.7rem;
+                            height:2.4rem;
                         }
                     }
                 }
@@ -165,6 +169,9 @@
                             }
 
                         }
+                        .events_img{
+                            width:100%;
+                        }
                     }
                 }
 
@@ -217,6 +224,9 @@
                             }
 
                         }
+                        .events_img{
+                            width:100%;
+                        }
                     }
                 }
 
@@ -262,7 +272,6 @@
 
                     .flexColumn;
                     .events_img{
-                        width:100%;
                         margin-bottom:0.3rem;
                     }
                     .events_content_left_produce_container{
@@ -352,6 +361,7 @@
                     .events_history_item_time_date{
                         color:#ffffff;
                         font-size:0.24rem;
+                        padding-top:0.1rem;
                     }
                     .events_history_item_time_year{
                         margin-top:0.1rem;

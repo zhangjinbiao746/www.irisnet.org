@@ -1089,14 +1089,16 @@ export const message = {
                 href:'https://mp.weixin.qq.com/s/bdNvbZMA7NOKWyfx4FRfEw',
                 date:'2019年11月11日',
                 title:'开发跨链的IRISnet--如何打通数字经济和实体经济',
-                content:'抹茶AMA'
+                content:'抹茶AMA',
+                src:require('../events_economy.jpg')
             },
             {
                 id:'1',
                 href:'https://mp.weixin.qq.com/s/bQCfqkB5TJLzkAKmV-HwuA',
                 date:'2019年11月08日~2019年11月09日',
                 title:'乌镇·一文读懂Web3.0的概念、推进与盈利模式',
-                content:'2019世界区块链大会·乌镇'
+                content:'2019世界区块链大会·乌镇',
+                src:require('../events_wuzhen.png')
             },
             {
                 id:'2',
@@ -1106,7 +1108,8 @@ export const message = {
                 month:'9',
                 day:'17',
                 title:'2019中国系统架构师大会：数字转型 架构演进',
-                content:'中国系统架构师大会'
+                content:'中国系统架构师大会',
+                src:require('../events_architecture.png')
             },
             {
                 id:'3',

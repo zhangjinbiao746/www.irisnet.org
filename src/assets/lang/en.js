@@ -1101,14 +1101,16 @@ export const message = {
                 href : 'https://medium.com/irisnet-blog/irisnet-iris-airdrop-on-binance-dex-win-500-000-iris-4e24be10a886',
                 date : 'Dec 31, 2019',
                 title : 'IRISnet (IRIS) Airdrop on Binance DEX — Win 500,000 IRIS!',
-                content : 'Airdrop on Binance DEX'
+                content : 'Airdrop on Binance DEX',
+                src:require('../events_airdrop.png')
             },
             {
                 id : '1',
                 href : 'https://medium.com/irisnet-blog/follow-retweet-to-help-iris-binance-dex-listing-7c27cc36dfd1',
                 date : 'Oct 15, 2019 ~ Oct 21, 2019',
                 title : 'Follow & Retweet to Help IRIS Binance DEX Listing',
-                content : 'Follow & Retweet to Help IRIS Binance DEX Listing'
+                content : 'Follow & Retweet to Help IRIS Binance DEX Listing',
+                src:require('../events_retweet_binance.png')
             },
             {
                 id : '2',
@@ -1118,7 +1120,8 @@ export const message = {
                 month : 'Oct',
                 day : '16',
                 title : 'Project Progress & Applications in IRISnet & Cosmos Ecosystem |Bihu AMA Review',
-                content : 'Bihu AMA Review'
+                content : 'Bihu AMA Review',
+                src:require('../events_bihu.png')
             },
             {
                 id : '3',

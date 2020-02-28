@@ -122,48 +122,171 @@
 <style scoped lang="less">
     @import '../style/mixin.less';
 
+    @media screen and (min-width: 769px) {
+        .dev_portal_container{
+            .dev_portal_common_wrap{
+                .dev_portal_content_container{
+                    min-width:10rem;
+                    max-width:12rem;
+                    .dev_portal_common_item_wrap{
+                        .flexRow;
+                        .dev_portal_common_item_container{
+                            flex:1;
+                        }
+                        .dev_portal_common_item_container_left {
+                            margin-right: 0.3rem;
+                        }
+                        .dev_portal_common_item_title {
+                            font-size: 0.36rem;
+                            margin-bottom: 0.5rem;
+                        }
+                        .dev_portal_common_item_content {
+                            font-size: 0.22rem;
+                        }
+                        .dev_portal_common_item_sub_content {
+                            font-size: 0.22rem;
+                            line-height: 0.4rem;
+                            margin-bottom: 0.4rem;
+                        }
+                        .dev_portal_common_item_second_item {
+                            font-size: 0.22rem;
+                        }
+                        .dev_portal_common_item_second_more {
+                            font-size: 0.18rem;
+                        }
+                    }
+                }
+                .dev_portal_join_us {
+                    .dev_portal_join_us_title {
+                        font-size: 0.36rem;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+    @media screen and (max-width: 768px) and (min-width:768px){
+        .dev_portal_container{
+            .dev_portal_common_wrap{
+                .dev_portal_content_container{
+                    width:100%;
+                    padding:0 1.24rem;
+                    box-sizing:border-box;
+                    .dev_portal_common_item_wrap{
+                        .flexColumn;
+                        width:100%;
+                        .dev_portal_common_item_container{
+                            width:100%;
+                            &:first-child{
+                                margin-bottom:0.3rem;
+                            }
+                            .dev_portal_common_item_title {
+                                font-size: 0.36rem;
+                                margin-bottom: 0.5rem;
+                            }
+                            .dev_portal_common_item_content {
+                                font-size: 0.22rem;
+                            }
+                            .dev_portal_common_item_sub_content {
+                                font-size: 0.22rem;
+                                line-height: 0.4rem;
+                                margin-bottom: 0.4rem;
+                            }
+                            .dev_portal_common_item_second_item {
+                                font-size: 0.22rem;
+                            }
+                            .dev_portal_common_item_second_more {
+                                font-size: 0.14rem;
+                            }
+                        }
+                    }
+                }
+                .dev_portal_join_us {
+                    .dev_portal_join_us_title {
+                        font-size: 0.36rem;
+                    }
+                }
+            }
+
+        }
+
+    }
+    @media screen and (max-width: 767px)  and (min-width:375px){
+        .dev_portal_container{
+            .dev_portal_common_wrap{
+                .dev_portal_content_container{
+                    width:100%;
+                    padding:0 0.15rem;
+                    box-sizing:border-box;
+                    .dev_portal_common_item_wrap{
+                        .flexColumn;
+                        width:100%;
+                        .dev_portal_common_item_container{
+                            width:100%;
+                            &:first-child{
+                                margin-bottom:0.3rem;
+                            }
+                            .dev_portal_common_item_title {
+                                font-size: 0.18rem;
+                                margin-bottom: 0.3rem;
+                            }
+                            .dev_portal_common_item_content {
+                                font-size: 0.14rem;
+                            }
+                            .dev_portal_common_item_sub_content {
+                                font-size: 0.14rem;
+                                line-height: 0.4rem;
+                                margin-bottom: 0.2rem;
+                            }
+                            .dev_portal_common_item_second_item {
+                                font-size: 0.14rem;
+                            }
+                            .dev_portal_common_item_second_more {
+                                font-size: 0.14rem;
+                            }
+                        }
+                    }
+                }
+                .dev_portal_join_us {
+                    .dev_portal_join_us_title {
+                        font-size: 0.18rem;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
     .dev_portal_container {
         width: 100%;
         padding-top: 0.8rem;
         .dev_portal_common_wrap {
             width: 100%;
             padding-bottom: 0.9rem;
+            .flexRow;
+            justify-content: center;
             .dev_portal_common_container {
-                max-width: 12rem;
-                margin: 0 auto;
                 .flexColumn;
                 align-items: center;
                 padding-top: 1rem;
-                @media screen and (min-width: 769px) {
-                    .dev_portal_common_item_wrap{
-                        .flexRow;
-                        .dev_portal_common_item_container{
-                            //height: 5.8rem;
-                            width: 5.85rem;
-                        }
-                        .dev_portal_common_item_container_left {
-                            margin-right: 0.3rem;
-                        }
-                    }
-                }
-                @media screen and (max-width: 768px) {
-                    .dev_portal_common_item_wrap{
-                        .flexColumn;
-                        .dev_portal_common_item_container{
-                            //height: 3.25rem;
-                            width: 5.2rem;
-                            &:first-child{
-                                margin-bottom:0.3rem;
-                            }
-                        }
-                    }
-                }
-
                 .dev_portal_common_item_wrap {
 
-                    margin-bottom: 0.3rem;
+                    &:first-child{
+                        margin-bottom: 0.3rem;
+                    }
                     .dev_portal_common_item_container {
-
                         border-radius: 4px;
                         border: 1px solid rgba(221, 221, 221, 1);
                         padding: 0.4rem;
@@ -171,32 +294,23 @@
                         .flexColumn;
                         .dev_portal_common_item_title {
                             color: #263035;
-                            font-size: 0.36rem;
-                            margin-bottom: 0.5rem;
                         }
                         .dev_portal_common_item_content {
-                            font-size: 0.22rem;
                             margin-bottom: 0.25rem;
                         }
                         .dev_portal_common_item_sub_content {
                             color: #7C7D8D;
-                            font-size: 0.22rem;
-                            margin-bottom: 0.4rem;
                             line-height: 0.4rem;
 
                         }
                         .dev_portal_common_item_second_item {
                             color: #263035;
-                            font-size: 0.22rem;
                             margin-bottom: 0.2rem;
                         }
                         .dev_portal_common_item_second_more {
                             margin-top: 0.4rem;
                         }
 
-                    }
-                    .bottom_container {
-                        height: 4.8rem;
                     }
 
                     .link_url {
@@ -213,7 +327,6 @@
                 padding-top: 1rem;
                 .dev_portal_join_us_title {
                     color: #313236;
-                    font-size: 0.36rem;
                     margin-bottom: 0.4rem;
                 }
                 .dev_portal_join_us_item_container {
