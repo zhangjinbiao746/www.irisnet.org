@@ -77,7 +77,42 @@ export const message = {
             }
         }
     },
-
+    mainnetThree:{
+        title:"介绍",
+        section:'IRIS Hub 是IRIS网络的“中心”枢纽，是一个基于<a href="https://tendermint.com/sdk/" target="_blank"> Cosmos SDK</a> 和 <a href="https://tendermint.com/core/" target="_blank">Tendermint</a>。构建的Proof-of-Stake（PoS）区块链，也将成为第一个连接<a href="https://hub.cosmos.network/master/hub-overview/overview.html" target="_blank">Cosmos Hub</a>枢纽的区域性枢纽。',
+        secondSection:'IRIS Hub 配备了 IRIS 服务协议，该协议将链上的交易处理与链下的数据处理和业务逻辑执行进行协调。我们还增强了IBC协议，以促进那些链下服务在有需要的情况下被跨链调用。',
+        threeSection:'IRIS 服务协议和增强的 IBC 协议最终可以回馈到 Cosmos SDK 中，允许 Cosmos SDK 用户开发与IRIS网络兼容的区块链。',
+        fourSection:"我们也会提供面向客户的、针对特定编程语言的IRIS SDK，方便在IRIS网络内轻松提供和使用链下服务。",
+        token:{
+            title:'IRIS 通证',
+            section:'IRIS Hub 有自己的原生通证，称为 IRIS，在网络中有三个作用。',
+            staking:{
+                title:'质押',
+                section:'与Cosmos Hub中的ATOM通证类似，IRIS通证将用作质押通证以保护 BPoS 区块链的安全运行。',
+            },
+            transactionFee:{
+                title:'交易费用',
+                section:'IRIS通证也将用于支付IRIS网络中所有交易的费用。',
+            },
+            serviceFee: {
+                title:'IRIS网络中的服务提供者需要以IRIS通证为单位收取服务费。',
+                section:'IRIS网络最终将支持来自Cosmos网络的所有列入白名单的费用通证，它们可用于支付交易费用和服务费用。'
+            },
+            bottomSection:'IRIS网络最终将支持来自Cosmos网络的所有列入白名单的费用通证，它们可用于支付交易费用和服务费用。'
+        },
+        wallet:{
+            title:'钱包',
+            section:'这些钱包支持IRIS及ATOM的转账和质押，请充分研究其安全性再使用。列示这些信息仅为方便下载，并不代表对钱包使用的安全性负责。'
+        },
+        explorer:{
+            title:'浏览器',
+            section:'您可通过以下区块链浏览器查询和分析 IRIS Hub 的区块、交易、验证人等信息。'
+        },
+        stakingTools:{
+            title:'委托工具箱',
+            section:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
+        }
+    },
 
 
 

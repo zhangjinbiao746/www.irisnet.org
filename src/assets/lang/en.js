@@ -76,9 +76,45 @@ export const message = {
                 date:'PANGU (January 2018 ~ March 2019)',
                 section:'The first stage of the IRIS project focused on having the IRIS Hub up and running. Initial version of the mobile client for the IRIS network was released. In this stage we also focused on building the fundamental IRIS Service Layer which was released to IRIS Hub. The fundamental IRIS Service layer enables service definition, binding, invocation and query.'
             }
+        },
+
+    },
+    mainnetThree:{
+        title:"Introduction",
+        section:'At the "center" of the IRIS network is a blockchain known as the IRIS Hub, which is a Proof-of-Stake (PoS) blockchain built on <a href="https://tendermint.com/sdk/" target="_blank">Cosmos SDK</a> and <a href="https://tendermint.com/core/" target="_blank">Tendermint</a>. It will be the first regional hub that connects to the <a href="https://hub.cosmos.network/master/hub-overview/overview.html" target="_blank">Cosmos Hub</a> as one of its zones.',
+        secondSection:'The IRIS hub is equipped with a service protocol that coordinates on-chain transaction processing with off-chain data processing and business logic execution.',
+        threeSection:'We have also enhanced the IBC protocol to facilitate cross-chain invocation of those off-chain services, if so desired.',
+        fourSection:"",
+        token:{
+            title:'IRIS Tokens',
+            section:'The IRIS hub has its own native token known as IRIS. It is designed to serve three purposes in the network.',
+            staking:{
+                title:'Staking',
+                section:'Similar to the ATOM token in the Cosmos Hub, the IRIS token will be used as a staking token to secure the PoS blockchain.',
+            },
+            transactionFee:{
+                title:'Transaction Fee',
+                section:'The IRIS token will also be used to pay fees for all transactions in the IRIS network.',
+            },
+            serviceFee: {
+                title:'Service Fee',
+                section:'It is required that service providers in the IRIS network charge service fees denominated in the IRIS token.'
+            },
+            bottomSection:'It is intended that the IRIS network will eventually support all whitelisted fee tokens from the Cosmos network, which can be used to pay the transaction fees and service fees.'
+        },
+        wallet:{
+            title:'Wallets',
+            section:'These web and mobile wallets allow you to store & transfer IRIS, delegate IRIS to validators, and some of them also support ATOM. Note that we do not endorse any of the wallets, they are listed for your convenience.'
+        },
+        explorer:{
+            title:'Explorers',
+            section:'These block explorers allow you to search, view and analyze IRIS Hub data—like blocks, transactions, validators, governance including params or proposals, etc.'
+        },
+        stakingTools:{
+            title:'Staking Tools',
+            section:'Those tools, contributed by IRISnet validators and developers, facilitates IRIS token holders to delegate via web wallets and Ledger hardware wallets, etc . Before using these tools, you need to assure their security.'
         }
     },
-
 
 
 
