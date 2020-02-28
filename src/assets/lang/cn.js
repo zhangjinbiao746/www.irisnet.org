@@ -113,7 +113,24 @@ export const message = {
             section:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
         }
     },
-
+    testnetThree:{
+        title:'介绍',
+        secondTitle:'有两个测试网可供开发者或者验证人使用。',
+        section:'自主网启动以来，Fuxi 测试网 开始作为稳定的应用程序测试网运行，该测试网具有与主网相同的版本，因此IRISnet的服务提供商可以在不运行节点和LCD实例的情况下在IRIShub上开发和测试其应用程序。',
+        secondSection:'但是，在IRIShub的新版本升级到主网之前，我们还需要和验证人一起进行升级和新功能相关的测试，这是Nyancat 测试网所关注的重点。新的验证人也可以使用 Nyancat 测试网来熟悉验证人相关操作。',
+        fuxi:{
+            title:'伏羲测试网',
+            section:'伏羲测试网跟IRISnet主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。',
+            linkName:'如何使用伏羲测试网 ',
+            fuxiExplorer:'FUXI 浏览器'
+        },
+        nyancat:{
+            title:'彩虹猫测试网',
+            section:'彩虹猫测试网通常运行比IRISnet主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
+            linkName:'如何加入彩虹猫测试网',
+            nyancatExplorer:'Nyancat 浏览器 '
+        }
+    },
 
 
 

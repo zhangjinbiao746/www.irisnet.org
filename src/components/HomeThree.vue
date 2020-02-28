@@ -3,8 +3,8 @@
         <div class="home_swiper_container">
             <swiper ref="mySwiper" class="my-swipe" :options="swiperOption">
                 <swiper-slide>
-                    <div style="width: 100%;">
-                        <img style="width: 100%;" src="../assets/irisnetThree/home_swiper_1.jpg" >
+                    <div style="width: 100%;min-height: 5rem">
+                        <img style="width: 100%;height:100%" src="../assets/irisnetThree/home_swiper_1.jpg" >
                     </div>
                 </swiper-slide>
                 <swiper-slide>
@@ -745,6 +745,299 @@
         }
         to{
             transform:translateY(-3.1rem);
+        }
+    }
+    @media screen and (min-width:768px) and (max-width: 1200px){
+        .home_container{
+            .home_irisnet_container{
+                margin: 0 10%;
+               .home_irisnet_content_wrap{
+                   flex-direction: column-reverse;
+                   .home_irisnet_content_img_content{
+                       display: flex;
+                       margin-right: 0;
+                       justify-content: center;
+                   }
+               }
+            }
+            .home_irisnet_product_container{
+                .home_irisnet_product_wrap{
+                    flex-direction: column;
+                    margin: 0 10%;
+                    .home_irisnet_product_left_content{
+                        margin-right: 0;
+                    }
+                    .home_irisnet_product_right_content{
+                        margin-top: 0.6rem;
+                        .home_irisnet_on_chain_gov_content{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .home_irisnet_road_map_container{
+                .home_irisnet_road_map_content{
+                    .home_irisnet_road_map_center_container{
+                        max-height: none;
+                        padding-bottom: 1.05rem;
+                        .home_irisnet_road_map_center{
+                            margin-right: 5%;
+                            margin-left: 5%;
+                            .home_irisnet_road_map_left_content{
+                                display: none;
+                                transform: translateY(-3.1rem);
+
+                            }
+                            .home_irisnet_road_map_right_content{
+                                transform: translateY(0);
+                                .home_irisnet_road_map_left_step{
+                                    p{
+                                        min-height: 3.3rem;
+                                    }
+                                }
+                                .home_irisnet_road_map_center_step{
+                                    margin: 0 0.4rem 0 0.2rem;
+                                }
+                                .home_irisnet_road_map_right_step{
+                                    .home_irisnet_road_map_right_step_content{
+                                        .home_road_map_right_step_section{
+                                            min-width: 4.8rem;
+                                        }
+                                    }
+                                }
+                            }
+                            .hide_next_page{
+                                animation: none;
+                            }
+                        }
+                    }
+                    .home_irisnet_road_map_footer{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width:375px) and (max-width: 768px){
+        .home_container{
+            .home_irisnet_container{
+                margin: 0 5%;
+                .home_irisnet_content_wrap{
+                    flex-direction: column-reverse;
+                    margin-top: 0.5rem;
+                    .home_irisnet_content_img_content{
+                        display: flex;
+                        margin-right: 0;
+                        justify-content: center;
+                    }
+                    .home_irisnet_content_right_content{
+                        .home_irisnet_content_btn{
+                            flex-direction: column;
+                            a:first-child{
+                                .home_irisnet_white_paper_btn{
+                                    margin-right: 0;
+                                    text-align: center;
+                                }
+                            }
+                            a:last-child{
+                                margin-top: 0.2rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+            .home_irisnet_product_container{
+                .home_irisnet_product_wrap{
+                    flex-direction: column;
+                    margin: 0 5%;
+                    .home_irisnet_product_left_content{
+                        margin-right: 0;
+                        flex-direction: column;
+                        .home_irisnet_irishub_content{
+                            margin-right: 0;
+                        }
+                        .home_irisnet_irisSdk_content{
+                            margin-top: 0.2rem;
+                        }
+                    }
+                    .home_irisnet_product_right_content{
+                        margin-top: 0.2rem;
+                        flex-direction: column;
+                        .home_irisnet_iservice_content{
+                            margin-right: 0;
+                        }
+                        .home_irisnet_on_chain_gov_content{
+                            margin-right: 0;
+                            margin-top: 0.2rem;
+                        }
+                    }
+                }
+            }
+            .home_irisnet_road_map_container{
+                .home_irisnet_road_map_content{
+                    padding-top: 0.5rem;
+                    .home_irisnet_road_map_header{
+                        .home_irisnet_road_map_title{
+                            font-size: 0.18rem;
+                        }
+                    }
+                    .home_irisnet_road_map_center_container{
+                        max-height: none;
+                        padding-bottom: 1.05rem;
+                        .home_irisnet_road_map_center{
+                            margin-top: 0.6rem;
+                            margin-right: 5%;
+                            margin-left: 5%;
+                            .home_irisnet_road_map_left_content{
+                                display: none;
+                                transform: translateY(-3.1rem);
+                            }
+                            .home_irisnet_road_map_right_content{
+                                transform: translateY(0);
+                                .home_irisnet_road_map_left_step{
+                                    p{
+                                        font-size: 0.14rem;
+                                        min-height: 5rem;
+                                    }
+                                }
+                                .home_irisnet_road_map_center_step{
+                                    margin: 0 0.2rem 0 0;
+                                }
+                                .home_irisnet_road_map_right_step{
+                                    .home_irisnet_road_map_right_step_content{
+                                        .home_road_map_right_step_title{
+                                            font-size: 0.14rem;
+                                        }
+                                        .home_road_map_right_step_section{
+                                            min-width: auto;
+                                            font-size: 0.14rem;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .hide_next_page{
+                                animation: none;
+                            }
+                        }
+                    }
+                    .home_irisnet_road_map_footer{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 375px){
+        .home_container{
+            .home_irisnet_container{
+                margin: 0 5%;
+                .home_irisnet_content_wrap{
+                    flex-direction: column-reverse;
+                    margin-top: 0.5rem;
+                    .home_irisnet_content_img_content{
+                        display: flex;
+                        margin-right: 0;
+                        justify-content: center;
+                    }
+                    .home_irisnet_content_right_content{
+                        .home_irisnet_content_btn{
+                            flex-direction: column;
+                            a:first-child{
+                                .home_irisnet_white_paper_btn{
+                                    margin-right: 0;
+                                    text-align: center;
+                                }
+                            }
+                            a:last-child{
+                                margin-top: 0.2rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+            .home_irisnet_product_container{
+                .home_irisnet_product_wrap{
+                    flex-direction: column;
+                    margin: 0 5%;
+                    .home_irisnet_product_left_content{
+                        margin-right: 0;
+                        flex-direction: column;
+                        .home_irisnet_irishub_content{
+                            margin-right: 0;
+                        }
+                        .home_irisnet_irisSdk_content{
+                            margin-top: 0.2rem;
+                        }
+                    }
+                    .home_irisnet_product_right_content{
+                        margin-top: 0.2rem;
+                        flex-direction: column;
+                        .home_irisnet_iservice_content{
+                            margin-right: 0;
+                        }
+                        .home_irisnet_on_chain_gov_content{
+                            margin-right: 0;
+                            margin-top: 0.2rem;
+                        }
+                    }
+                }
+            }
+            .home_irisnet_road_map_container{
+                .home_irisnet_road_map_content{
+                    padding-top: 0.5rem;
+                    .home_irisnet_road_map_header{
+                        .home_irisnet_road_map_title{
+                            font-size: 0.18rem;
+                        }
+                    }
+                    .home_irisnet_road_map_center_container{
+                        max-height: none;
+                        padding-bottom: 1.05rem;
+                        .home_irisnet_road_map_center{
+                            margin-top: 0.6rem;
+                            margin-right: 5%;
+                            margin-left: 5%;
+                            .home_irisnet_road_map_left_content{
+                                display: none;
+                                transform: translateY(-3.1rem);
+                            }
+                            .home_irisnet_road_map_right_content{
+                                transform: translateY(0);
+                                .home_irisnet_road_map_left_step{
+                                    p{
+                                        font-size: 0.14rem;
+                                        min-height: 5rem;
+                                    }
+                                }
+                                .home_irisnet_road_map_center_step{
+                                    margin: 0 0.2rem 0 0;
+                                }
+                                .home_irisnet_road_map_right_step{
+                                    .home_irisnet_road_map_right_step_content{
+                                        .home_road_map_right_step_title{
+                                            font-size: 0.14rem;
+                                        }
+                                        .home_road_map_right_step_section{
+                                            min-width: auto;
+                                            font-size: 0.14rem;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .hide_next_page{
+                                animation: none;
+                            }
+                        }
+                    }
+                    .home_irisnet_road_map_footer{
+                        display: none;
+                    }
+                }
+            }
         }
     }
 </style>

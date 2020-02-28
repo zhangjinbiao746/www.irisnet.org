@@ -2,7 +2,7 @@
     <div class="right_menu_container">
         <ul class="right_menu_content">
             <li v-for="item in menuList" class="right_menu_list_item" :class="item.isWeChat ? 'show_qr_img': ''">
-                <a :href="item.href">
+                <a :href="item.href" target="_blank">
                     <img :src="item.src" alt="">
                 </a>
                 <div v-show="item.isWeChat" class="wechat_qr_img_content" >
