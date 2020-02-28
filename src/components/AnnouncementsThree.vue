@@ -6,7 +6,7 @@
             </p>
             <div class="announcements_content_img_container">
                 <div class="announcements_content_left_container">
-                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582625727812&di=0c2c5eadfbafc3d406324491ac5dd88a&imgtype=0&src=http%3A%2F%2Fimg.qqzhi.com%2Fuploads%2F2018-11-29%2F171758842.jpg" alt="失去网络" class="announcements_img">
+                    <img src="../../public/irisnet/IRISnet_announcements_betanet.png" class="announcements_img">
                     <div class="announcements_content_left_produce_container">
                         <span class="announcements_content_left_produce_title">
                             {{$store.state.messages.announce.betaTitle}}

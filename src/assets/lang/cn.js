@@ -1,4 +1,30 @@
 export const message = {
+    //TODO
+    navigation:{
+        aboutUs:'关于我们',
+        developer:'开发者',
+        community:'社区生态',
+        forum:'论坛',
+        blog:'博客',
+        lang:'English',
+        secondMenu:{
+            mainnet:'主网',
+            whitepaper:'白皮书',
+            announcement:'公告',
+            collaboration:'合作伙伴',
+            devPortal:'开发者入口',
+            testnet:'测试网',
+            doc:'文档',
+            ibc:'IBC',
+            IRISEcosystem:'IRIS 生态',
+            community:'社区',
+            pressKit:'宣传资料',
+            events:'活动',
+            irisnetBianjie:'IRISnet-Bianjie'
+        }
+    },
+
+
     logo: 'irisnet.png',
     floatWindow:{
       title:'论坛',
@@ -1490,27 +1516,27 @@ export const message = {
                 title:'安全的边界，放心的委托',
                 product:[
                     {
-                        src:require('../../assets/cosmos/service_room.png'),
+                        src:require('../../assets/cosmosThree/service_room.png'),
                         text:'安全可靠的企业级机房',
                     },
                     {
-                        src:require('../../assets/cosmos/net.png'),
+                        src:require('../../assets/cosmosThree/net.png'),
                         text:'高可用性网络',
                     },
                     {
-                        src:require('../../assets/cosmos/node.png'),
+                        src:require('../../assets/cosmosThree/node.png'),
                         text:'可扩展的哨兵节点',
                     },
                     {
-                        src:require('../../assets/cosmos/lock.png'),
+                        src:require('../../assets/cosmosThree/lock.png'),
                         text:'硬件加密保证安全',
                     },
                     {
-                        src:require('../../assets/cosmos/hour.png'),
+                        src:require('../../assets/cosmosThree/hour.png'),
                         text:'7*24小时专业监控',
                     },
                     {
-                        src:require('../../assets/cosmos/shield.png'),
+                        src:require('../../assets/cosmosThree/shield.png'),
                         text:'商业DDos攻击防护',
                     }
                 ]
@@ -1519,36 +1545,29 @@ export const message = {
             cosmosExplorer:[
                 {
                     active:false,
-                    whiteImg:require('../../assets/cosmos/big_dipper_white.png'),
-                    blueImg:require('../../assets/cosmos/big-dipper_blue.png'),
+                    whiteImg:require('../../assets/cosmosThree/big_dipper_plorer.png'),
+                    // blueImg:require('../../assets/cosmos/big-dipper_blue.png'),
                     title:'Big Dipper',
                     href:'https://cosmos.bigdipper.live/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                 },
                 {
                     active:false,
-                    whiteImg:require('../../assets/cosmos/cosmos_white.png'),
-                    blueImg:require('../../assets/cosmos/cosmos_blue.png'),
-                    title:'Cosmos Overview',
-                    href:'https://cosmos-overview.genesislab.net/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
-                },
-                {
-                    active:false,
-                    whiteImg:require('../../assets/cosmos/hubble_white.png'),
-                    blueImg:require('../../assets/cosmos/hubble_blue.png'),
+                    whiteImg:require('../../assets/cosmosThree/hubble_plorer.png'),
+                    // blueImg:require('../../assets/cosmos/hubble_blue.png'),
                     title:'Hubble',
                     href:'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030'
                 },
                 {
                     active:false,
-                    whiteImg:require('../../assets/cosmos/Mintscan_white.png'),
-                    blueImg:require('../../assets/cosmos/Mintscan_blue.png'),
+                    whiteImg:require('../../assets/cosmosThree/mintsacn_plorer.png'),
+                    // blueImg:require('../../assets/cosmos/Mintscan_blue.png'),
                     title:'Mintscan',
                     href:'https://www.mintscan.io/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                 },
                 {
                     active:false,
-                    whiteImg:require('../../assets/cosmos/Stargazer_white.png'),
-                    blueImg:require('../../assets/cosmos/Stargazer_blue.png'),
+                    whiteImg:require('../../assets/cosmosThree/Stargazer_plorer.png'),
+                    // blueImg:require('../../assets/cosmos/Stargazer_blue.png'),
                     title:'Stargazer',
                     href:'https://stargazer.certus.one/accounts/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                 },

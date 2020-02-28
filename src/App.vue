@@ -57,9 +57,9 @@
     }
     .swiper-pagination-bullet{
         width: 0.3rem !important;
-        height: 0.02rem;
+        height: 0.02rem !important;
         background: #f66;
-        border-radius: 0%;
+        border-radius: 0% !important;
     }
     @import "assets/style/reset.less";
 </style>

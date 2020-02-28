@@ -1,4 +1,30 @@
 export const message = {
+    //TODO
+    navigation:{
+        aboutUs:'About Us',
+        developer:'Developers',
+        community:'Ecosystem',
+        forum:'Forum',
+        blog:'Blog',
+        lang:'中文',
+        secondMenu:{
+            mainnet:'Mainnet',
+            whitepaper:'Whitepaper',
+            announcement:'Announcements',
+            collaboration:'Collaboration',
+            devPortal:'DevPortal',
+            testnet:'Testnets',
+            doc:'Docs',
+            ibc:'IBC',
+            IRISEcosystem:'IRIS Ecosystem',
+            community:'Community',
+            pressKit:'Press Kit',
+            events:'Events',
+            irisnetBianjie:'IRISnet-Bianjie'
+        }
+    },
+
+
     logo : 'irisnet.png',
     floatWindow : {
         title : 'FORUM',
@@ -1489,27 +1515,27 @@ export const message = {
                 title : 'Safe Bianjie, Safe Delegation',
                 product : [
                     {
-                        src : require('../../assets/cosmos/service_room.png'),
+                        src : require('../../assets/cosmosThree/service_room.png'),
                         text : 'Safe and Reliable Enterprise-class Data Center',
                     },
                     {
-                        src : require('../../assets/cosmos/net.png'),
+                        src : require('../../assets/cosmosThree/net.png'),
                         text : 'Highly Available Network',
                     },
                     {
-                        src : require('../../assets/cosmos/node.png'),
+                        src : require('../../assets/cosmosThree/node.png'),
                         text : 'Auto Scale Sentry Nodes',
                     },
                     {
-                        src : require('../../assets/cosmos/lock.png'),
+                        src : require('../../assets/cosmosThree/lock.png'),
                         text : 'HSM for Private Key Protection',
                     },
                     {
-                        src : require('../../assets/cosmos/hour.png'),
+                        src : require('../../assets/cosmosThree/hour.png'),
                         text : '24/7 Professional Monitoring',
                     },
                     {
-                        src : require('../../assets/cosmos/shield.png'),
+                        src : require('../../assets/cosmosThree/shield.png'),
                         text : 'DDoS Attack Protection',
                     }
                 ]
@@ -1518,36 +1544,29 @@ export const message = {
             cosmosExplorer : [
                 {
                     active : false,
-                    whiteImg : require('../../assets/cosmos/big_dipper_white.png'),
-                    blueImg : require('../../assets/cosmos/big-dipper_blue.png'),
+                    whiteImg : require('../../assets/cosmosThree/big_dipper_plorer.png'),
+                    // blueImg : require('../../assets/cosmos/big-dipper_blue.png'),
                     title : 'Big Dipper',
                     href : 'https://cosmos.bigdipper.live/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                 },
                 {
                     active : false,
-                    whiteImg : require('../../assets/cosmos/cosmos_white.png'),
-                    blueImg : require('../../assets/cosmos/cosmos_blue.png'),
-                    title : 'Cosmos Overview',
-                    href : 'https://cosmos-overview.genesislab.net/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
-                },
-                {
-                    active : false,
-                    whiteImg : require('../../assets/cosmos/hubble_white.png'),
-                    blueImg : require('../../assets/cosmos/hubble_blue.png'),
+                    whiteImg : require('../../assets/cosmosThree/hubble_plorer.png'),
+                    // blueImg : require('../../assets/cosmos/hubble_blue.png'),
                     title : 'Hubble',
                     href : 'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030'
                 },
                 {
                     active : false,
-                    whiteImg : require('../../assets/cosmos/Mintscan_white.png'),
-                    blueImg : require('../../assets/cosmos/Mintscan_blue.png'),
+                    whiteImg : require('../../assets/cosmosThree/mintsacn_plorer.png'),
+                    // blueImg : require('../../assets/cosmos/Mintscan_blue.png'),
                     title : 'Mintscan',
                     href : 'https://www.mintscan.io/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                 },
                 {
                     active : false,
-                    whiteImg : require('../../assets/cosmos/Stargazer_white.png'),
-                    blueImg : require('../../assets/cosmos/Stargazer_blue.png'),
+                    whiteImg : require('../../assets/cosmosThree/Stargazer_plorer.png'),
+                    // blueImg : require('../../assets/cosmos/Stargazer_blue.png'),
                     title : 'Stargazer',
                     href : 'https://stargazer.certus.one/accounts/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                 },
