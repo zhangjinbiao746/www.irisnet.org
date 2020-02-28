@@ -6,22 +6,31 @@
                     <img src="../assets/irisnet/irisnet_logo.png" alt="">
                 </div>
                 <div class="footer_content_newsletter_content">
-                    <span class="footer_content_newsletter_title">Newsletter</span>
-                    <div class="footer_content_newsletter_input_content">
-                        <input v-model="mailAddress" class="footer_content_newsletter_ipt" type="text" :class="flShowError ? 'error_style' : ' '" :placeholder="$store.state.messages.placehooder.placehooder">
-                        <div class="footer_content_newsletter_join_btn">
-                            <span class="footer_content_newsletter_join_btn_text"  @click="commitMail">Join Now</span>
+                    <span class="footer_content_newsletter_title">{{$t('message.footerThree.newsLetter')}}</span>
+                    <div class="footer_content_newsletter_ipt_container">
+                        <div class="footer_content_newsletter_input_content">
+                            <input v-model="mailAddress" class="footer_content_newsletter_ipt" type="text" :class="flShowError ? 'error_style' : ' '" :placeholder="$i18n.locale === 'EN' ? enMessage.footerThree.placeholder : cnMessage.footerThree.placeholder">
+                            <div class="footer_content_newsletter_join_btn">
+                                <span class="footer_content_newsletter_join_btn_text"  @click="commitMail">Join Now</span>
+                            </div>
                         </div>
+                        <div class="mobile_content">
+                            <div class="mobile_newsletter_content">
+                                <input v-model="mailAddress" class="footer_content_newsletter_ipt" type="text" :class="flShowError ? 'error_style' : ' '" :placeholder="$i18n.locale === 'EN' ? enMessage.footerThree.placeholder : cnMessage.footerThree.placeholder">
+                            </div>
+                            <div class="footer_content_newsletter_join_btn">
+                                <span class="footer_content_newsletter_join_btn_text"  @click="commitMail">Join Now</span>
+                            </div>
+                        </div>
+                        <p class="show_error" :class="flShowError ? 'show_error' : 'hide_error'">{{$t('message.footerThree.errEmail')}}</p>
                     </div>
-<!--                    <p :class="flShowError ? 'show_error' : 'hide_error'">{{$store.state.messages.errEmail.err}}</p>-->
-
                 </div>
             </div>
 
             <div class="footer_tool_content">
                 <div class="community_link_content">
                     <div class="social_community_content">
-                        <h4 class="community">{{$store.state.messages.footer.socialCommunityTitle}}</h4>
+                        <h4 class="community"> {{$t('message.footerThree.socialCommunityTitle')}}</h4>
                         <ul class="community_link_list">
                             <div v-show="$store.state.footerWeChatIcon"  class="mobileBox" @touchmove.prevent>
                                 <div class="qrcode" @touchmove.prevent>
@@ -30,52 +39,54 @@
                                     <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
                                 </div>
                             </div>
-                            <li class="community_link_item" v-for="item in $store.state.messages.footer.socialCommunity" :key="item.id">
+                            <li class="community_link_item" v-for="item in $i18n.locake === 'EN' ? enMessage.footerThree.socialCommunity : cnMessage.footerThree.socialCommunity" :key="item.id">
                                 <a @click="jumpUrl($event, item.href)" :href="item.href" target="_blank">
                                     <img :src='UrlSrc + item.src'>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="tech_community_content">
-                        <h4 class="community">{{$store.state.messages.footer.TechCommunityTitle}}</h4>
-                        <ul class="community_link_list">
-                            <li class="community_link_item" v-for="item in $store.state.messages.footer.techCommunity" :key="item.id">
-                                <a :href="item.href" target="_blank">
-                                    <img :src="UrlSrc + item.src">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tech_community_content">
-                        <h4 class="community">{{$store.state.messages.footer.validatorCommunityTitle}}</h4>
-                        <ul class="community_link_list">
-                            <li class="community_link_item" v-for="item in $store.state.messages.footer.validatorCommunity" :key="item.id">
-                                <a :href="item.href" target="_blank">
-                                    <img :src="UrlSrc + item.src">
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="tech_community_containet">
+                        <div class="tech_community_content">
+                            <h4 class="community">{{$t('message.footerThree.TechCommunityTitle')}}</h4>
+                            <ul class="community_link_list">
+                                <li class="community_link_item" v-for="item in $i18n.locale === 'EN' ? enMessage.footerThree.techCommunity : cnMessage.footerThree.techCommunity" :key="item.id">
+                                    <a :href="item.href" target="_blank">
+                                        <img :src="UrlSrc + item.src">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tech_community_content">
+                            <h4 class="community">{{$t('message.footerThree.validatorCommunityTitle')}}</h4>
+                            <ul class="community_link_list">
+                                <li class="community_link_item" v-for="item in $i18n.locale ==='EN' ?  enMessage.footerThree.validatorCommunity : cnMessage.footerThree.validatorCommunity " :key="item.id">
+                                    <a :href="item.href" target="_blank">
+                                        <img :src="UrlSrc + item.src">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="footer_link_content">
                 <div class="products_resources_container">
                     <div class="products_link_content">
-                        <h4 class="products_title">{{$store.state.messages.footer.productsTitle}}</h4>
+                        <h4 class="products_title">{{$t('message.footerThree.productsTitle')}}</h4>
                         <div class="link_container">
                             <ul class="link_content">
-                                <li class="link_item_content" v-for="item in $store.state.messages.footer.productList" :key="item.id">
+                                <li class="link_item_content" v-for="item in $i18n.locale === 'EN' ? enMessage.footerThree.productList : cnMessage.footerThree.productList" :key="item.id">
                                     <a :href="item.href" target="_blank">{{item.name}}</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="resources_content">
-                        <h4 class="resources_title">{{$store.state.messages.footer.resourcesTitle}}</h4>
+                        <h4 class="resources_title">{{$t('message.footerThree.resourcesTitle')}}</h4>
                         <div class="resources_link_container">
                             <ul class="resources_link_content">
-                                <li class="resource_list_item" v-for="(item,index) in $store.state.messages.footer.resourceList" :key="item.id">
+                                <li class="resource_list_item" v-for="(item,index) in $i18n.locale === 'EN' ? enMessage.footerThree.resourceList : cnMessage.footerThree.resourceList " :key="item.id">
                                     <a :href="item.href" target="_blank">{{item.name}}</a>
                                 </li>
                             </ul>
@@ -96,7 +107,7 @@
         </div>
         <div class="footer_copy_right_content">
             <div class="footer_copy_right_content_wrap">
-                <p class="irisnet">{{$store.state.messages.footer.irisnetInproduction}}</p>
+                <p class="irisnet">{{$t('message.footerThree.irisnetInproduction')}}}</p>
                 <p class="copyright_text"><span class="copyright">Copyright &#169 2020 IRIS Foundation Ltd. All rights reserved.</span><span class="link_common_style" @click="toPrivacy"> Privacy</span> <span class="connector"> & </span> <span class="link_common_style" @click="toTerms">Terms</span></p>
             </div>
         </div>
@@ -104,11 +115,15 @@
 </template>
 
 <script>
+    import enMessage from "../assets/lang/en"
+    import cnMessage from "../assets/lang/cn"
     import axios from 'axios'
     export default {
         name: "FooterThree",
         data() {
             return {
+                enMessage : enMessage,
+                cnMessage: cnMessage,
                 mailAddress:'',
                 flShowError: false,
                 submitTimer: '',
@@ -177,13 +192,26 @@
                     let that = this;
                     that.$store.commit('showMask',true);
                     if(data.data.id){
-                        that.$store.commit('confirm',that.$store.state.messages.newsLetter.confirm);
-                        that.$store.commit('textContent',that.$store.state.messages.newsLetter.successText);
-                        that.$store.commit('newsLetterTitle',that.$store.state.messages.newsLetter.successTitle)
+                        if(this.$i18n.locale === 'EN'){
+                            that.$store.commit('confirm',enMessage.newsLetter.confirm);
+                            that.$store.commit('textContent',enMessage.newsLetter.successText);
+                            that.$store.commit('newsLetterTitle',enMessage.newsLetter.successTitle)
+                        }else {
+                            that.$store.commit('confirm',cnMessage.newsLetter.confirm);
+                            that.$store.commit('textContent',cnMessage.newsLetter.successText);
+                            that.$store.commit('newsLetterTitle',cnMessage.newsLetter.successTitle)
+                        }
+
                     }else {
-                        that.$store.commit('confirm',that.$store.state.messages.newsLetter.confirm);
-                        that.$store.commit('textContent',that.$store.state.messages.newsLetter.failedText);
-                        that.$store.commit('newsLetterTitle',that.$store.state.messages.newsLetter.failedTitle)
+                        if(this.$i18n.locale === 'EN'){
+                            that.$store.commit('confirm',enMessage.newsLetter.confirm);
+                            that.$store.commit('textContent',enMessage.newsLetter.failedText);
+                            that.$store.commit('newsLetterTitle',enMessage.newsLetter.failedTitle)
+                        }else {
+                            that.$store.commit('confirm',cnMessage.newsLetter.confirm);
+                            that.$store.commit('textContent',cnMessage.newsLetter.failedText);
+                            that.$store.commit('newsLetterTitle',cnMessage.newsLetter.successTitle)
+                        }
                     }
                 })
                     .catch((e)=>{
@@ -207,7 +235,6 @@
 <style scoped lang="less">
     .community_link_list{
         display: flex;
-
         .mobileBox {
             .qrcode {
                 width: 1.38rem;
@@ -272,36 +299,48 @@
                         color: #fff;
                         margin-right: 0.6rem;
                     }
-                    .footer_content_newsletter_input_content{
-                        display: flex;
-                        background: rgba(0,0,0,0.19);
-                        border-radius: 0.33rem;
-                        height:0.6rem;
-                        align-items: center;
-                        justify-content: space-between;
+                    .footer_content_newsletter_ipt_container{
                         flex: 1;
-                        .footer_content_newsletter_ipt{
-                            width: calc(100% - 160px);
-                            height: 0.25rem;
-                            background: transparent;
-                            border:none;
+                        height: 0.6rem;
+                        .show_error{
+                            margin-top: 0.1rem;
                             text-indent: 0.2rem;
-                            color: #fff;
-                       }
-                        .error_style{
-                            outline: none;
-                            border: 0.01rem  solid #F5A623;
+                            color: #F5A623;
+                            visibility:visible;
                         }
-                        .footer_content_newsletter_join_btn{
+                        .hide_error{
+                            visibility: hidden;
+                        }
+                        .footer_content_newsletter_input_content{
                             display: flex;
-                            /*flex-direction: column;*/
+                            background: rgba(0,0,0,0.19);
+                            border-radius: 0.33rem;
+                            height:0.6rem;
                             align-items: center;
-                            .footer_content_newsletter_join_btn_text{
-                                padding: 0.2rem 0.36rem;
-                                border-radius: 0.33rem;
+                            justify-content: space-between;
+                            .footer_content_newsletter_ipt{
+                                width: calc(100% - 160px);
+                                height: 0.25rem;
+                                background: transparent;
+                                border:none;
+                                text-indent: 0.2rem;
                                 color: #fff;
-                                background: linear-gradient(90deg,rgba(81,121,245,1) 0%,rgba(102,228,205,1) 100%);
                             }
+
+                            .footer_content_newsletter_join_btn{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                .footer_content_newsletter_join_btn_text{
+                                    padding: 0.2rem 0.36rem;
+                                    border-radius: 0.33rem;
+                                    color: #fff;
+                                    background: linear-gradient(90deg,rgba(81,121,245,1) 0%,rgba(102,228,205,1) 100%);
+                                }
+                            }
+                        }
+                        .mobile_content{
+                            display: none;
                         }
                     }
                 }
@@ -376,27 +415,31 @@
 
                         }
                     }
-                    .tech_community_content{
-                        flex: 1;
-                        .community{
-                            color:#BCC7EF;
-                            font-size: 0.16rem;
-                        }
-                        .community_link_list{
-                            display: flex;
-                            .community_link_item{
-                                opacity: 0.4;
-                                padding-right: 0.25rem;
-                                padding-top: 0.27rem;
-                                &:hover{
-                                    opacity: 1;
-                                }
-                                a{
-                                    display: inline-block;
-                                    width: 0.28rem;
-                                    height:0.24rem;
-                                    img{
-                                        height: 100%;
+                    .tech_community_containet{
+                        flex: 2;
+                        display: flex;
+                        .tech_community_content{
+                            flex: 1;
+                            .community{
+                                color:#BCC7EF;
+                                font-size: 0.16rem;
+                            }
+                            .community_link_list{
+                                display: flex;
+                                .community_link_item{
+                                    opacity: 0.4;
+                                    padding-right: 0.25rem;
+                                    padding-top: 0.27rem;
+                                    &:hover{
+                                        opacity: 1;
+                                    }
+                                    a{
+                                        display: inline-block;
+                                        width: 0.28rem;
+                                        height:0.24rem;
+                                        img{
+                                            height: 100%;
+                                        }
                                     }
                                 }
                             }
@@ -488,5 +531,159 @@
         }
 
     }
+    @media screen and (max-width: 768px){
+        .footer_container{
+            .footer_content_wrap{
+                margin: 0 5%;
+                .footer_content_header{
+                    flex-direction: column;
+                    .footer_content_newsletter_content{
+                        .footer_content_newsletter_title{
+                            display: none;
+                        }
+                        .footer_content_newsletter_input_content{
+                            margin-top: 0.3rem;
+                        }
+                        .mobile_content{
+                            display: none;
+                        }
+                    }
+                }
+                .footer_tool_content{
+                    .community_link_content{
+                        flex-direction: column;
+                        .tech_community_containet{
+                            margin-top: 0.6rem;
+                            .tech_community_content:last-child{
+                                flex: 2;
+                            }
+                        }
 
+                    }
+                }
+            }
+            .footer_copy_right_content{
+                .footer_copy_right_content_wrap{
+                    margin-right: 0.2rem;
+                    margin-left: 0.2rem;
+                }
+            }
+        }
+    }
+    @media screen and (min-width:375px)and (max-width: 550px){
+        .footer_container{
+            .footer_content_wrap{
+                margin: 0 5%;
+                .footer_content_header{
+                    flex-direction: column;
+                    .footer_content_newsletter_content{
+                        .footer_content_newsletter_title{
+                            display: none;
+                        }
+                        .footer_content_newsletter_input_content{
+                            margin-top: 0.3rem;
+                        }
+                        .mobile_content{
+                            display: none;
+                        }
+                    }
+                }
+                .footer_tool_content{
+                    margin-top: 0.4rem;
+                    padding-top: 0.4rem;
+                    .community_link_content{
+                        flex-direction: column;
+                        .tech_community_containet{
+                            margin-top: 0.4rem;
+                            flex-direction: column;
+                            .tech_community_content:last-child{
+                                flex: 2;
+                                margin-top: 0.4rem;
+                            }
+                        }
+
+                    }
+                }
+                .footer_link_content{
+                    margin-top: 0.4rem;
+                    .products_resources_container{
+                        .resources_content{
+                            flex: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 375px){
+        .footer_container{
+            .footer_content_wrap{
+                .footer_content_header{
+                    .footer_content_newsletter_content{
+                        .footer_content_newsletter_ipt_container{
+                            .footer_content_newsletter_input_content{
+                                display: none;
+                            }
+                            .mobile_content{
+                                display: block;
+                                margin-top: 0.3rem;
+                                .mobile_newsletter_content{
+                                    max-width: 3.2rem;
+                                    height: 0.5rem;
+                                    background: rgba(0,0,0,0.19);
+                                    line-height: 0.5rem;
+                                    border-radius: 0.25rem;
+                                    .footer_content_newsletter_ipt{
+                                        width: 100%;
+                                        height: 0.25rem;
+                                        border:none;
+                                        text-indent: 0.2rem;
+                                        color: #fff;
+                                        background: transparent;
+                                    }
+                                }
+                                .footer_content_newsletter_join_btn{
+                                    margin-top: 0.2rem;
+                                    display: flex;
+                                    height: 0.5rem;
+                                    line-height: 0.5rem;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    max-width: 3.2rem;
+                                    border-radius: 0.25rem;
+                                    background: linear-gradient(90deg,rgba(81,121,245,1) 0%,rgba(102,228,205,1) 100%);
+                                    .footer_content_newsletter_join_btn_text{
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer_tool_content{
+                    padding-top: 1.3rem;
+                    .community_link_content{
+                        flex-direction: column;
+                        .tech_community_containet{
+                            margin-top: 0.4rem;
+                            flex-direction: column;
+                            .tech_community_content:last-child{
+                                flex: 2;
+                                margin-top: 0.4rem;
+                            }
+                        }
+
+                    }
+                }
+                .footer_link_content{
+                    margin-top: 0.6rem;
+                    .products_resources_container{
+                        .resources_content{
+                            flex: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
 </style>

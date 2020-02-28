@@ -244,7 +244,7 @@
 
     .ecosystem_container {
         width: 100%;
-        padding-top: 0.6rem;
+        padding-top: 0.8rem;
         .ecosystem_common_wrap {
             width: 100%;
             &:nth-child(odd) {

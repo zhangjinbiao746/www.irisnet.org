@@ -26,17 +26,28 @@
       flex-direction:column;
 }
 
-.shadowBorder{
+.shadowBorderColumn{
       border-image: -webkit-linear-gradient(-180deg, rgba(255,255,255,0.00) 0%,rgba(0,0,0,.1) 20%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
       border-image: -moz-linear-gradient(-180deg, rgba(255,255,255,0.00) 0%,rgba(0,0,0,.1) 20%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
       border-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%,rgba(0,0,0,.1) 20%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
 }
 
+.shadowBorderRow{
+      border-image: -webkit-linear-gradient(90deg, rgba(255,255,255,0.00) 0%,rgba(0,0,0,.1) 20%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
+      border-image: -moz-linear-gradient(90deg, rgba(255,255,255,0.00) 0%,rgba(0,0,0,.1) 20%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
+      border-image: linear-gradient(90deg, rgba(255,255,255,0.00) 0%,rgba(0,0,0,.1) 20%, rgba(255,255,255,0.00) 99%) 2 2 2 2;
+}
+
 .right_border{
       border-right: 1px solid;
-      .shadowBorder
+      .shadowBorderColumn
 }
 .left_border{
       border-left: 1px solid;
-      .shadowBorder
+      .shadowBorderColumn
 }
+.bottom_border{
+      //border-bottom: 1px solid;
+      //.shadowBorderRow
+}
+

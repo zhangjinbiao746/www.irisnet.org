@@ -143,6 +143,140 @@ export const message = {
             more:"更多说明内容...",
         }
     },
+    footerThree:{
+        newsLetter: '订阅',
+        placeholder:'请输入邮箱地址订阅',
+        socialCommunityTitle: '社区',
+        validatorCommunityTitle:'验证人',
+        TechCommunityTitle: '开发者',
+        errEmail:'请输入一个有效的邮箱地址',
+        socialCommunity:[
+            {
+                id:0,
+                src: "irisnet_telegram.png",
+                href: "https://t.me/irisnetworkcn"
+            },
+            {
+                id:1,
+                src: "irisnet_twitter.png",
+                href: "https://twitter.com/irisnetwork"
+            },
+            {
+                id:2,
+                src: "irisnet_mail.png",
+                href: "mailto:contact@irisnet.org"
+            },
+            {
+                id:3,
+                src: "irisnet_medium.png",
+                href: "https://medium.com/irisnet-blog"
+            },
+            {
+                id:4,
+                src: "irisnet_wechat.png",
+                "txt": "Wechat"
+            },
+            {
+                id:5,
+                src: "irisnet_weibo.png",
+                href: "https://weibo.com/u/6455513027"
+            },
+        ],
+        validatorCommunity:[
+            {
+                id:0,
+                src: "irisnet_qq.png",
+                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
+            },
+            {
+                id:1,
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+            },
+            {
+                id:2,
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+            },
+            {
+                id:3,
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+            },
+        ],
+        techCommunity:[
+            {
+                id:0,
+                src: "irisnet_github.png",
+                href: "https://github.com/irisnet"
+            },
+            {
+                id:1,
+                src: "irisnet_qq.png",
+                href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
+            },
+            {
+                id:2,
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/#iris:matrix.org"
+            },
+        ],
+        productList: [
+            {
+                id:0,
+                name:'Rainbow Wallet',
+                href:'https://www.rainbow.one/'
+            },
+            {
+                id:1,
+                name:'IRISplorer',
+                href:'https://www.irisplorer.io'
+            },
+            {
+                id:2,
+                name:'Light Client',
+                href:'https://www.irisnet.org/docs/light-client/intro.html'
+            },
+            {
+                id:3,
+                name:'CLI Client',
+                href:' https://www.irisnet.org/docs/cli-client/intro.html'
+            }
+        ],
+        resourceList: [
+            {
+                id:0,
+                name:'FAQ',
+                href:'https://www.irisnet.org/docs/resources/'
+            },
+            {
+                id:1,
+                name:'Blog',
+                href:'https://medium.com/irisnet-blog'
+            },
+            {
+                id:2,
+                name:'Docs',
+                href:'https://www.irisnet.org/docs/zh/'
+            },
+            {
+                id:3,
+                name:'Press Kit',
+                href:'/community/press-kit'
+            }
+        ],
+        productsTitle:'产品',
+        resourcesTitle:'资源',
+        submitBtn:{
+            title: '获取最新资讯',
+            subscribe: '提交',
+            success: "Success"
+        },
+        errEmailAddress:{
+            error:'Please enter a valid email address'
+        },
+        irisnetInproduction:'IRISnet以希腊彩虹女神Iris命名，她是在人间和天堂之间传递信息的忠诚使者'
+    },
 
 
 
@@ -488,7 +622,8 @@ export const message = {
                     {id:1, path: require('../logos/irisnet_coirfan.png'), url: 'http://iris.fan/#/'},
                     {id:2, path: require('../logos/irisnet_axonomy.png'), url: 'https://www.axonomy.pro'},
                     {id:3, path: require('../logos/irisnet_Gdex.png'), url: 'https://www.gdex.io/'},
-                    {id:4, path: require('../logos/irisnet_hashgardhover.png'), url: 'https://www.hashgard.io/#/'}
+                    {id:4, path: require('../logos/irisnet_hashgardhover.png'), url: 'https://www.hashgard.io/#/'},
+                    {}
                 ]
             },
             Institutional: {
@@ -518,7 +653,7 @@ export const message = {
                     {id:22, path: require('../logos/irisnet_origin.png'), url: 'http://www.theorigincapital.com/'},
                     {id:23, path: require('../logos/irisnet_SatoshiFUnd.png'), url: 'https://satoshi.fund/'},// 4
                     {id:24, path: require('../logos/irisnet_guigu.png'), url: 'http://www.svinsight.com/'},
-                    {id:25, path: require('../logos/irisnet_shicuo.png'), url: 'javascript:void(0)'},
+                    {id:25, path: require('../logos/irisnet_shicuo.png'), url: 'http://www.8timescap.com/'},
                     {id:26, path: require('../logos/irisnet_huixiang.png'), url: 'javascript:void(0)'},
                     {id:27, path: require('../logos/irisnet_Unetwork.png'), url: 'https://u.network/'},
                     {id:28, path: require('../logos/irisnet_jiuhe.png'), url: 'http://www.unityvc.com/'},
@@ -545,6 +680,7 @@ export const message = {
         betaDate:'2019年3月2日',
         betaContent:'IRIS基金会和开发团队的地址',
         historyTitle:'全部历史',
+        src:require('../announcement_3.0.png'),
         announcementList:[
             {
                 id:'0',
@@ -1116,14 +1252,16 @@ export const message = {
                 href:'https://mp.weixin.qq.com/s/bdNvbZMA7NOKWyfx4FRfEw',
                 date:'2019年11月11日',
                 title:'开发跨链的IRISnet--如何打通数字经济和实体经济',
-                content:'抹茶AMA'
+                content:'抹茶AMA',
+                src:require('../events_economy.jpg')
             },
             {
                 id:'1',
                 href:'https://mp.weixin.qq.com/s/bQCfqkB5TJLzkAKmV-HwuA',
                 date:'2019年11月08日~2019年11月09日',
                 title:'乌镇·一文读懂Web3.0的概念、推进与盈利模式',
-                content:'2019世界区块链大会·乌镇'
+                content:'2019世界区块链大会·乌镇',
+                src:require('../events_wuzhen.png')
             },
             {
                 id:'2',
@@ -1133,7 +1271,8 @@ export const message = {
                 month:'9',
                 day:'17',
                 title:'2019中国系统架构师大会：数字转型 架构演进',
-                content:'中国系统架构师大会'
+                content:'中国系统架构师大会',
+                src:require('../events_architecture.png')
             },
             {
                 id:'3',

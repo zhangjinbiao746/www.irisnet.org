@@ -6,7 +6,8 @@
                     {{$store.state.messages.home.sectionFour.CoreDevelopmentTeams.title}}
                 </p>
                 <div class="collaboration_common_content">
-                    <div class="collaboration_common_img_container right_border">
+                    <div class="collaboration_common_img_container"
+                         :class="deviceType === 'phone' ? 'bottom_border' : 'right_border'">
                         <img :src="$store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos[0].path"
                              @click="toLinkUrl($store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos[0].url)"
                              alt="" class="collaboration_img">
@@ -25,7 +26,8 @@
                     {{$store.state.messages.home.sectionFour.StrategicPartners.title}}
                 </p>
                 <div class="collaboration_common_content">
-                    <div class="collaboration_common_img_container right_border">
+                    <div class="collaboration_common_img_container"
+                         :class="deviceType === 'phone' ? 'bottom_border' : 'right_border'">
                         <img :src="$store.state.messages.home.sectionFour.StrategicPartners.logos[0].path"
                              @click="toLinkUrl($store.state.messages.home.sectionFour.StrategicPartners.logos[0].url)"
                              alt="" class="collaboration_img">
@@ -38,31 +40,6 @@
                 </div>
             </div>
         </div>
-        <!--<div class="collaboration_common_wrap">
-            <div class="collaboration_common_container">
-                <p class="collaboration_common_title">
-                    {{$store.state.messages.collaborationThree.ecosystem.title}}
-                </p>
-                <div class="collaboration_common_content">
-                    <div class="collaboration_common_img_container right_border">
-                        <img :src="$store.state.messages.collaborationThree.ecosystem.list[0].img"
-                             @click="toLinkUrl($store.state.messages.collaborationThree.ecosystem.list[0].href)"
-                             alt="" class="collaboration_img">
-                    </div>
-                    <div class="collaboration_common_img_container right_border">
-                        <img :src="$store.state.messages.collaborationThree.ecosystem.list[1].img"
-                             @click="toLinkUrl($store.state.messages.collaborationThree.ecosystem.list[1].href)"
-                             alt="" class="collaboration_img">
-                    </div>
-                    <div class="collaboration_common_img_container">
-                        <img :src="$store.state.messages.collaborationThree.ecosystem.list[2].img"
-                             @click="toLinkUrl($store.state.messages.collaborationThree.ecosystem.list[2].href)"
-                             alt="" class="collaboration_img">
-                    </div>
-
-                </div>
-            </div>
-        </div>-->
         <div class="collaboration_common_wrap">
             <div class="collaboration_common_container">
                 <p class="collaboration_common_title">
@@ -70,6 +47,8 @@
                 </p>
                 <div class="collaboration_common_content_wrap">
                     <div class="collaboration_common_img_container"
+                         :class="deviceType === 'phone' ? 'bottom_border' : ''"
+                         :style="`visibility:${item.path ? 'visible' : 'hidden'}`"
                          v-for="item in $store.state.messages.home.sectionFour.EcosystemPartners.logos">
                         <img :src="item.path"
                              @click="toLinkUrl(item.url)"
@@ -88,6 +67,7 @@
                 </p>
                 <div class="collaboration_common_content_wrap">
                     <div class="collaboration_common_img_container"
+                         :class="deviceType === 'phone' ? 'bottom_border' : ''"
                          v-for="item in $store.state.messages.home.sectionFour.Institutional.logos">
                         <img :src="item.path"
                              @click="toLinkUrl(item.url)"
@@ -108,14 +88,22 @@
         name : "CollaborationThree",
         data(){
             return{
-
+                deviceType:'pc',
             }
         },
         computed : {
 
         },
         mounted(){
-
+            setTimeout(()=>{
+                if(innerWidth >= 375 && innerWidth < 768){
+                    this.deviceType = 'phone'
+                }else if(innerWidth === 768){
+                    this.deviceType = 'pad'
+                }else{
+                    this.deviceType = 'pc'
+                }
+            },300)
         },
         methods : {
             toLinkUrl(url){
@@ -130,7 +118,7 @@
 
     .collaboration_container {
         width: 100%;
-        padding-top: 0.6rem;
+        padding-top: 0.8rem;
         .collaboration_content_container {
 
         }
@@ -147,25 +135,24 @@
                 margin: 0 auto;
                 .flexColumn;
                 align-items: center;
-                padding-top: 1rem;
-
                 .collaboration_common_title {
-                    margin-bottom: 0.8rem;
                     font-size: 0.28rem;
                     color: #263035;
                     .collaboration_common_sub_title{
                         color:#7C7D8D;
                     }
                 }
+
                 .collaboration_common_content {
-                    height: 2rem;
-                    .flexRow;
+
                     .collaboration_common_img_container {
-                        padding: 0.65rem 0.46rem;
                         .collaboration_img {
                             width: 2rem;
                             height: 0.7rem;
                             cursor: pointer;
+                        }
+                        &:last-child{
+                            border:none;
                         }
                     }
 
@@ -175,11 +162,79 @@
                     .flexRow;
                     padding-bottom:1rem;
                     .collaboration_common_img_container {
-                        padding: 0.65rem 0.46rem;
                         .collaboration_img {
                             width: 2rem;
                             height: 0.7rem;
                             cursor: pointer;
+                        }
+                        &:last-child{
+                            border:none;
+                        }
+                    }
+                }
+
+            }
+            @media screen and (min-width: 769px) {
+                .collaboration_common_container{
+                    padding-top: 1rem;
+                    .collaboration_common_title {
+                        margin-bottom: 0.8rem;
+                    }
+                    .collaboration_common_content {
+                        height: 2rem;
+                        .flexRow;
+                        .collaboration_common_img_container {
+                            padding: 0.65rem 0.46rem;
+                        }
+                    }
+                    .collaboration_common_content_wrap{
+                        .collaboration_common_img_container {
+                            padding: 0.65rem 0.46rem;
+                        }
+                    }
+                }
+
+
+            }
+            @media screen and (max-width: 768px) and (min-width:768px){
+                .collaboration_common_container{
+                    padding-top: 1rem;
+                    .collaboration_common_title {
+                        margin-bottom: 0.8rem;
+                    }
+                    .collaboration_common_content {
+                        height: 2rem;
+                        .flexRow;
+                        .collaboration_common_img_container {
+                            padding: 0.65rem 0.46rem;
+                        }
+                    }
+                    .collaboration_common_content_wrap{
+                        justify-content: center;
+                        .collaboration_common_img_container {
+                            padding: 0.65rem 0.46rem;
+                        }
+                    }
+                }
+
+            }
+            @media screen and (max-width: 767px)  and (min-width:375px){
+                .collaboration_common_container{
+                    padding-top: 0.5rem;
+                    .collaboration_common_title {
+                        margin-bottom: 0.26rem;
+                    }
+                    .collaboration_common_content {
+                        .flexColumn;
+                        align-items: center;
+                        .collaboration_common_img_container {
+                            padding:0.26rem 0.72rem 0.24rem 0.75rem;
+                        }
+                    }
+                    .collaboration_common_content_wrap{
+                        justify-content: center;
+                        .collaboration_common_img_container{
+                            padding:0.26rem 0.72rem 0.24rem 0.75rem;
                         }
                     }
                 }
