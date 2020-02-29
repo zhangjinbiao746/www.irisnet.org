@@ -5,74 +5,71 @@
                 <div class="dev_portal_common_item_wrap">
                     <div class="dev_portal_common_item_container dev_portal_common_item_container_left ">
                         <p class="dev_portal_common_item_title">
-                            {{$store.state.messages.devPortal.first.title}}
+                            {{$t('message.devPortal.first.title')}}
                         </p>
                         <span class="dev_portal_common_item_content link_url"
-                              @click="toLinkUrl($store.state.messages.devPortal.first.damon.href)">
-                            {{$store.state.messages.devPortal.first.damon.title}}
+                              @click="toLinkUrl( $i18n.locale === 'EN' ? enMessage.devPortal.first.client.href : cnMessage.devPortal.first.client.href)">
+                            {{$t('message.devPortal.first.client.title')}}
                         </span>
                         <span class="dev_portal_common_item_content link_url"
-                              @click="toLinkUrl($store.state.messages.devPortal.first.client.href)">
-                            {{$store.state.messages.devPortal.first.client.title}}
-                        </span>
-                        <span class="dev_portal_common_item_content link_url"
-                              @click="toLinkUrl($store.state.messages.devPortal.first.server.href)">
-                            {{$store.state.messages.devPortal.first.server.title}}
+                              @click="toLinkUrl( $i18n.locale === 'EN' ? enMessage.devPortal.first.server.href : cnMessage.devPortal.first.server.href)">
+                            {{$t('message.devPortal.first.server.title')}}
                         </span>
                     </div>
                     <div class="dev_portal_common_item_container">
                         <p class="dev_portal_common_item_title">
-                            {{$store.state.messages.devPortal.second.title}}
+                            {{$t('message.devPortal.second.title')}}
                         </p>
                         <p class="dev_portal_common_item_sub_content">
-                            {{$store.state.messages.devPortal.second.content}}
+                            {{$t('message.devPortal.second.content')}}
                         </p>
                         <span class="dev_portal_common_item_second_item">
-                             {{$store.state.messages.devPortal.second.define}}
+                            {{$t('message.devPortal.second.define')}}
                         </span>
                         <span class="dev_portal_common_item_second_item">
-                             {{$store.state.messages.devPortal.second.bind}}
+                             {{$t('message.devPortal.second.bind')}}
                         </span>
                         <span class="dev_portal_common_item_second_item">
-                             {{$store.state.messages.devPortal.second.call}}
+                            {{$t('message.devPortal.second.call')}}
                         </span>
                         <span class="dev_portal_common_item_second_more link_url"
-                              @click="toLinkUrl($store.state.messages.devPortal.second.moreLink)">
-                            {{$store.state.messages.devPortal.second.more}}
+                              @click="toLinkUrl( $i18n.locale === 'EN' ? enMessage.devPortal.second.moreLink : cnMessage.devPortal.second.moreLink)">
+                            {{$t('message.devPortal.second.more')}}
                         </span>
                     </div>
                 </div>
                 <div class="dev_portal_common_item_wrap">
                     <div class="dev_portal_common_item_container dev_portal_common_item_container_left  bottom_container">
                         <p class="dev_portal_common_item_title">
-                            {{$store.state.messages.devPortal.third.title}}
+                            {{$t('message.devPortal.third.title')}}
                         </p>
                         <span class="dev_portal_common_item_content link_url"
-                              @click="toLinkUrl($store.state.messages.devPortal.third.monitor.href)">
-                            {{$store.state.messages.devPortal.third.monitor.title}}
+                              @click="toLinkUrl( $i18n.locale === 'EN' ?  enMessage.devPortal.third.monitor.href : cnMessage.devPortal.third.monitor.href)">
+                            {{$t('message.devPortal.third.monitor.title')}}
                         </span>
                         <span class="dev_portal_common_item_content link_url"
-                              @click="toLinkUrl($store.state.messages.devPortal.third.management.href)">
-                            {{$store.state.messages.devPortal.third.management.title}}
+                              @click="toLinkUrl( $i18n.locale === 'EN' ? enMessage.devPortal.third.management.href : cnMessage.devPortal.third.management.href)">
+                            {{$t('message.devPortal.third.management.title')}}
                         </span>
                         <span class="dev_portal_common_item_content link_url"
-                              @click="toLinkUrl($store.state.messages.devPortal.third.support.href)">
-                            {{$store.state.messages.devPortal.third.support.title}}
+                              @click="toLinkUrl( $i18n.locale === 'EN' ? enMessage.devPortal.third.support.href : cnMessage.devPortal.third.support.href)">
+                            {{$t('message.devPortal.third.support.title')}}
                         </span>
                     </div>
                     <div class="dev_portal_common_item_container bottom_container">
                         <p class="dev_portal_common_item_title">
-                            {{$store.state.messages.devPortal.fourth.title}}
+
+                            {{$t('message.devPortal.fourth.title')}}
                         </p>
                         <p class="dev_portal_common_item_sub_content">
-                            {{$store.state.messages.devPortal.fourth.advice}}
+                            {{$t('message.devPortal.fourth.advice')}}
                         </p>
                         <p class="dev_portal_common_item_sub_content">
-                            {{$store.state.messages.devPortal.fourth.reference}}
+                            {{$t('message.devPortal.fourth.reference')}}
                         </p>
                         <span class="dev_portal_common_item_second_more link_url"
-                              @click="toLinkUrl($store.state.messages.devPortal.fourth.detailLink)">
-                            {{$store.state.messages.devPortal.fourth.detail}}
+                              @click="toLinkUrl(  $i18n.locale === 'EN' ? enMessage.devPortal.fourth.detailLink : cnMessage.devPortal.fourth.detailLink)">
+                            {{$t('message.devPortal.fourth.detail')}}
                         </span>
                     </div>
                 </div>
@@ -82,17 +79,17 @@
         <div class="dev_portal_common_wrap wrap_bottom">
             <div class="dev_portal_join_us">
                 <span class="dev_portal_join_us_title">
-                    {{$store.state.messages.devPortal.join.title}}
+                    {{$t('message.devPortal.join.title')}}
                 </span>
                 <div class="dev_portal_join_us_item_container">
-                    <img :src="$store.state.messages.devPortal.join.github.src" class="dev_portal_join_us_item_img"
-                         @click="toLinkUrl($store.state.messages.devPortal.join.github.href)">
-                    <img :src="$store.state.messages.devPortal.join.nyancat.src" class="dev_portal_join_us_item_img"
-                         @click="toLinkUrl($store.state.messages.devPortal.join.nyancat.href)">
-                    <img :src="$store.state.messages.devPortal.join.qq.src" class="dev_portal_join_us_item_img"
-                         @click="toLinkUrl($store.state.messages.devPortal.join.qq.href)">
-                    <img :src="$store.state.messages.devPortal.join.riot.src" class="dev_portal_join_us_item_img"
-                         @click="toLinkUrl($store.state.messages.devPortal.join.riot.href)">
+                    <img :src=" $i18n.locale === 'EN' ? enMessage.devPortal.join.github.src : cnMessage.devPortal.join.github.src" class="dev_portal_join_us_item_img"
+                         @click="toLinkUrl( $i18n.locale === 'EN' ? enMessage.devPortal.join.github.href : cnMessage.devPortal.join.github.href)">
+                    <img :src="$i18n.locale === 'EN' ?  enMessage.devPortal.join.nyancat.src : cnMessage.devPortal.join.nyancat.src " class="dev_portal_join_us_item_img"
+                         @click="toLinkUrl( $i18n.locale === 'EN' ? enMessage.devPortal.join.nyancat.href : cnMessage.devPortal.join.nyancat.href)">
+                    <img :src="$i18n.locale === 'EN' ? enMessage.devPortal.join.qq.src : cnMessage.devPortal.join.qq.src " class="dev_portal_join_us_item_img"
+                         @click="toLinkUrl( $i18n.locale === 'EN' ? enMessage.devPortal.join.qq.href : cnMessage.devPortal.join.qq.href)">
+                    <img :src="$i18n.locale === 'EN' ? enMessage.devPortal.join.riot.src : cnMessage.devPortal.join.riot.src" class="dev_portal_join_us_item_img"
+                         @click="toLinkUrl( $i18n.locale === 'EN' ? enMessage.devPortal.join.riot.href : cnMessage.devPortal.join.riot.href )">
                 </div>
             </div>
         </div>
@@ -101,15 +98,19 @@
 
 <script>
 
-
+    import enMessage from "../assets/lang/en"
+    import cnMessage from "../assets/lang/cn"
     export default {
         name : "DevPortalThree",
         data(){
-            return {}
+            return {
+                enMessage:enMessage,
+                cnMessage:cnMessage,
+                damonEnUrl:''
+            }
         },
         computed : {},
         mounted(){
-
         },
         methods : {
             toLinkUrl(url){

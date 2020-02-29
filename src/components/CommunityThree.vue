@@ -3,36 +3,36 @@
         <div class="community_header_content_wrap">
             <div class="community_header_content">
                 <div class="community_header_announcement_header">
-                    <span class="community_header_announcement_title">Announcements </span>
-                    <span class="community_header_announcement_view_more">View More ></span>
+                    <span class="community_header_announcement_title">{{$t('message.announcement.title')}}</span>
+                    <span class="community_header_announcement_view_more">{{$t('message.announcement.viewMore')}}></span>
                 </div>
                 <div class="community_header_announcement_header_content">
                     <div class="community_header_announcement_left_content">
                         <div class="community_header_announcement_img_content">
                             <img src="../../public/irisnet/IRISnet_announcements_betanet.png" alt="">·
                         </div>
-                        <div class="community_header_announcement_important">
-                            <h2 class="community_header_announcement_important_title">IRISnet Public Token Addresses</h2>
-                            <p class="community_header_announcement_important_section">Foundation and Dev Team Token Addresses.</p>
-                            <p class="community_header_announcement_important_date">Mar 02,2019</p>
+                        <div class="community_header_announcement_important" @click="openUrl()">
+                            <h2 class="community_header_announcement_important_title">{{$t('message.announcement.publicToken.title')}}</h2>
+                            <p class="community_header_announcement_important_section">{{$t('message.announcement.publicToken.section')}}</p>
+                            <p class="community_header_announcement_important_date">{{$t('message.announcement.publicToken.date')}}</p>
                         </div>
                     </div>
                     <div class="community_header_announcement_right_content">
                         <div class="community_header_announcement_list_content">
-                            <p class="community_header_announcement_date">Dec 31, 2019</p>
-                            <h2 class="community_header_announcement_item_title">The 3rd IRIS Token Burn is Completed & Token Burning Plan Continues in 2020</h2>
-                            <p class="community_header_announcement_section">On December 31st, 2019, the IRIS Foundation completed the 3rd IRIS token burn under a one-year token burning plan with 15,029,472 IRIS burned. The current total supply is 2 billion IRIS.</p>
+                            <p class="community_header_announcement_date">{{$t('message.announcement.latestAnnouncement[0].date')}}</p>
+                            <h2 class="community_header_announcement_item_title">{{$t('message.announcement.latestAnnouncement[0].title')}}</h2>
+                            <p class="community_header_announcement_section">{{$t('message.announcement.latestAnnouncement[0].section')}}</p>
                         </div>
                         <div class="community_header_announcement_list_content">
-                            <p class="community_header_announcement_date">Dec 31, 2019</p>
-                            <h2 class="community_header_announcement_item_title">The 3rd IRIS Token Burn is Completed & Token Burning Plan Continues in 2020</h2>
-                            <p class="community_header_announcement_section">On December 31st, 2019, the IRIS Foundation completed the 3rd IRIS token burn under a one-year token burning plan with 15,029,472 IRIS burned. The current total supply is 2 billion IRIS.</p>
+                            <p class="community_header_announcement_date">{{$t('message.announcement.latestAnnouncement[1].date')}}</p>
+                            <h2 class="community_header_announcement_item_title">{{$t('message.announcement.latestAnnouncement[1].title')}}</h2>
+                            <p class="community_header_announcement_section">{{$t('message.announcement.latestAnnouncement[1].section')}}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="community_center_wrap">
+       <!-- <div class="community_center_wrap">
             <div class="community_center_event_content">
                 <div class="community_center_event_header_content">
                     <span class="community_center_event_header_title">Events</span>
@@ -47,7 +47,7 @@
                         <p class="community_center_event_list_item_section">Airdrop on Binance DEX</p>
                         <p class="community_center_event_list_item_date">Mar 02,2019</p>
                     </div>
-                    <!--循环删除-->
+                    &lt;!&ndash;循环删除&ndash;&gt;
                     <div class="community_center_event_list_item">
                         <div class="community_center_event_list_item_img">
                             <img src="../assets/app/irispattern-network.png" alt="">
@@ -66,16 +66,22 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div class="community_footer_wrap">
             <div class="community_footer_faq_content">
                 <div class="community_footer_faq_header_content">
-                    <span class="community_footer_faq_header_title">FAQ</span>
-                    <span class="community_footer_faq_header_view_more">View More</span>
+                    <span class="community_footer_faq_header_title">{{$t('message.announcement.faq.title')}}</span>
+                    <span class="community_footer_faq_header_view_more">{{$t('message.announcement.faq.viewMore')}}</span>
                 </div>
                 <div class="community_footer_faq_list_content">
-                    <div class="community_footer_faq_list_left_content"></div>
-                    <div class="community_footer_faq_list_right_content"></div>
+                    <div class="community_footer_faq_list_left_content">
+                        <div class="community_footer_faq_left_item">{{$t('message.announcement.faq.list[0].title')}}</div>
+                        <div class="community_footer_faq_left_item"> {{$t('message.announcement.faq.list[1].title')}}</div>
+                    </div>
+                    <div class="community_footer_faq_list_right_content">
+                        <div class="community_footer_faq_right_item">{{$t('message.announcement.faq.list[2].title')}}</div>
+                        <div class="community_footer_faq_right_item">{{$t('message.announcement.faq.list[3].title')}}</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -286,11 +292,35 @@
                 }
                 .community_footer_faq_list_content{
                     margin-top: 0.6rem;
+                    display: flex;
+                    margin-bottom: 0.6rem;
                     .community_footer_faq_list_left_content{
-
+                        flex: 1;
+                        margin-right: 0.3rem;
+                        .community_footer_faq_left_item{
+                            box-sizing: border-box;
+                            padding: 0.26rem ;
+                            border:1px solid rgba(237,237,237,1);
+                            border-radius: 0.03rem;
+                        }
+                        .community_footer_faq_left_item:last-child{
+                            margin-top: 0.1rem;
+                        }
                     }
                     .community_footer_faq_list_right_content{
-
+                        flex: 1;
+                        .community_footer_faq_right_item{
+                            box-sizing: border-box;
+                            padding: 0.26rem ;
+                            border:1px solid rgba(237,237,237,1);
+                            border-radius: 0.03rem;
+                            font-size: 0.17rem;
+                            color: #263035;
+                            line-height: 0.2rem;
+                        }
+                        .community_footer_faq_right_item:last-child{
+                            margin-top: 0.1rem;
+                        }
                     }
                 }
             }
@@ -465,11 +495,12 @@
                     }
                     .community_footer_faq_list_content{
                         margin-top: 0.6rem;
+                        flex-direction: column;
                         .community_footer_faq_list_left_content{
-
+                            margin-right: 0;
                         }
                         .community_footer_faq_list_right_content{
-
+                            margin-top: 0.1rem;
                         }
                     }
                 }
@@ -644,12 +675,13 @@
                         }
                     }
                     .community_footer_faq_list_content{
-                        margin-top: 0.6rem;
+                        margin-top: 0.3rem;
+                        flex-direction: column;
                         .community_footer_faq_list_left_content{
-
+                            margin-right: 0;
                         }
                         .community_footer_faq_list_right_content{
-
+                            margin-top: 0.1rem;
                         }
                     }
                 }

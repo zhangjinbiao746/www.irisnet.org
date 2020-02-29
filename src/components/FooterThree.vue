@@ -108,7 +108,7 @@
         </div>
         <div class="footer_copy_right_content">
             <div class="footer_copy_right_content_wrap">
-                <p class="irisnet">{{$t('message.footerThree.irisnetInproduction')}}}</p>
+                <p class="irisnet">{{$t('message.footerThree.irisnetInproduction')}}</p>
                 <p class="copyright_text"><span class="copyright">Copyright &#169 2020 IRIS Foundation Ltd. All rights reserved.</span><span class="link_common_style" @click="toPrivacy"> Privacy</span> <span class="connector"> & </span> <span class="link_common_style" @click="toTerms">Terms</span></p>
             </div>
         </div>
