@@ -4,7 +4,7 @@
             <div class="press_kit_header_wrap">
                 <h2 class="press_kit_header_title">{{$t('message.presskitThree.title')}}</h2>
                 <p class="press_kit_header_section">{{$t('message.presskitThree.secondTitle')}}</p>
-                <div class="press_kit_header_btn">{{$t('message.presskitThree.resources')}}</div>
+                <a class="press_kit_header_btn" target="_blank" href="https://www.irisnet.org/resources/">{{$t('message.presskitThree.resources')}}</a>
             </div>
         </div>
         <div class="press_kit_color_content">
@@ -49,7 +49,7 @@
                 <h2 class="press_kit_about_irisnet_section_title">{{$t('message.presskitThree.about.title')}}</h2>
                 <p class="press_kit_about_irisnet_sertion" v-html="$t('message.presskitThree.about.section')"></p>
                 <p class="press_kit_about_irisnet_sertion" v-html="$t('message.presskitThree.about.secondSection')"></p>
-                <p class="press_kit_about_irisnet_link">
+                <p class="press_kit_about_irisnet_link" @click="toLinkUrl($t('message.presskitThree.about.moreLink'))">
                     <span>{{$t('message.presskitThree.about.more')}}</span>
                 </p>
             </div>
@@ -84,48 +84,56 @@
                     {
                         pngSrc:require("../assets/irisnetThree/irisnet_logo_1.png"),
                         svgSrc: require("../assets/irisnetThree/irisnet_header_1.svg"),
-                        pngName: 'irisnet_logo_1.png',
-                        svgName: 'irisnet_header_1.svg'
+                        pngName: 'IRISnet-Rebrand-Horizontal-Black.png',
+                        svgName: 'IRISnet-Rebrand-Horizontal-Black.svg'
                     },
                     {
                         pngSrc:require("../assets/irisnetThree/irisnet_logo_2.png"),
                         svgSrc: require("../assets/irisnetThree/irisnet_header_2.svg"),
-                        pngName: 'irisnet_logo_2.png',
-                        svgName: 'irisnet_header_2.svg'
+                        pngName: 'IRISnet-Rebrand-Capital-Black.png',
+                        svgName: 'IRISnet-Rebrand-Capital-Black.svg'
                     },
                     {
                         pngSrc:require("../assets/irisnetThree/irisnet_logo_3.png"),
                         svgSrc: require("../assets/irisnetThree/irisnet_header_3.svg"),
-                        pngName: 'irisnet_logo_3.png',
-                        svgName: 'irisnet_header_3.svg'
+                        pngName: 'IRISnet-Rebrand-Horizontal-White.png',
+                        svgName: 'IRISnet-Rebrand-Horizontal-White.svg'
                     }
                 ],
                 logoFooterArray:[
                     {
                         pngSrc:require("../assets/irisnetThree/irisnet_footer_1.png"),
                         svgSrc: require("../assets/irisnetThree/irisnet_header_4.svg"),
-                        pngName: 'irisnet_footer_1.png',
-                        svgName: 'irisnet_header_4.svg'
+                        pngName: 'IRISnet-Logo-Vertical-Black.png',
+                        svgName: 'IRISnet-Logo-Vertical-Black.svg'
                     },
                     {
                         pngSrc:require("../assets/irisnetThree/irisnet_footer_2.png"),
                         svgSrc: require("../assets/irisnetThree/irisnet_header_5.svg"),
-                        pngName: 'irisnet_footer_2.png',
-                        svgName: 'irisnet_header_5.svg'
+                        pngName: 'IRISnet-Logo-Vertical-White.png',
+                        svgName: 'IRISnet-Logo-Vertical-White.svg'
                     },
                     {
                         pngSrc:require("../assets/irisnetThree/irisnet_footer_3.png"),
                         svgSrc: require("../assets/irisnetThree/irisnet_header_6.svg"),
-                        pngName: 'irisnet_footer_3.png',
-                        svgName: 'irisnet_header_6.svg'
+                        pngName: 'IRISnet-RoundLogo-WithoutText-Black.png',
+                        svgName: 'IRISnet-RoundLogo-WithoutText-Black.svg'
                     },
                     {
                         pngSrc:require("../assets/irisnetThree/irisnet_footer_4.png"),
                         svgSrc: require("../assets/irisnetThree/irisnet_header_7.svg"),
-                        pngName: 'irisnet_footer_4.png',
-                        svgName: 'irisnet_header_7.svg'
+                        pngName: 'IRISnet-RoundLogo-WithoutText-White.png',
+                        svgName: 'IRISnet-RoundLogo-WithoutText-White.svg'
                     },
                 ]
+            }
+        },
+        methods : {
+            toLinkUrl(url){
+                if(url){
+                    window.open(url);
+                }
+
             }
         }
     }
@@ -155,6 +163,7 @@
                     line-height: 0.34rem;
                 }
                 .press_kit_header_btn{
+                    display: block;
                     margin-top: 0.3rem;
                     width: 1.88rem;
                     height: 0.5rem;
@@ -302,6 +311,7 @@
                     line-height: 0.3rem;
                 }
                 .press_kit_about_irisnet_link{
+                    cursor: pointer;
                     margin-top: 0.15rem;
                     margin-bottom: 1rem;
                     font-size: 0.17rem;
@@ -589,7 +599,7 @@
                         line-height: 0.34rem;
                     }
                     .press_kit_header_btn{
-                        line-height: 0.34rem;
+                        line-height: 0.5rem;
                         border-radius: 0.25rem;
                         text-align: center;
                         border: 0.01rem solid #5E82F1
@@ -694,7 +704,7 @@
                         margin-bottom: 1rem;
                         font-size: 0.14rem;
                         font-weight:600;
-                        line-height: 0.15rem;
+                        line-height: 0.5rem;
                         span{
                             border-bottom: 0.01rem solid #5E82F1;
                         }

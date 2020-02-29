@@ -156,6 +156,7 @@ export const message = {
             section:'IRISnet (a.k.a IRIS Hub) is designed to be the foundation for the next generation distributed applications. Built with Cosmos-SDK, IRIS Hub enables cross-chain interoperability through a unified service model, while providing a variety of modules to support DeFi applications.',
             secondSection:'IRISnet dev teams include Bianjie (<a href="https://www.bianjie.ai/" target="_blank">www.bianjie.ai</a>), a national award-winning blockchain technology team based in Shanghai, and Tendermint (<a href="https://tendermint.com/" target="_blank">https:\/\/tendermint.com</a>), the world-famous team that created the Tendermint consensus engine and the Cosmos project.',
             more:"Other Related Information...",
+            moreLink:'https://github.com/irisnet/irisnet/blob/master/pressKit.md',
         }
     },
     footerThree:{

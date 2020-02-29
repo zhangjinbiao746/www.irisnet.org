@@ -154,6 +154,7 @@ export const message = {
             section:'IRISnet（主网 IRIS Hub）是支持DeFi等各种复杂分布式应用的跨链服务枢纽。IRIS Hub采用Cosmos SDK开发，是第一个可自进化的BPoS网络，其开发团队包括获得多个技术创新大奖的边界智能（<a href="https://www.bianjie.ai/" target="_blank">Bianjie</a>）以及Cosmos核心开发团队<a href="https://tendermint.com/" target="_blank">Tendermint</a>。',
             secondSection:'IRISnet提供支持DeFi应用开发的多种基础模块，并能支持公有链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。',
             more:"更多说明内容...",
+            moreLink:'https://github.com/irisnet/irisnet/blob/master/pressKit_CN.md',
         }
     },
     footerThree:{
@@ -532,7 +533,7 @@ export const message = {
                 href:'https://mp.weixin.qq.com/s/PSFWeqWXS3dcfhO5A22Gsg',
                 date:'2019年10月31日~2019年11月2日',
                 year:'2019',
-                month:'9',
+                month:'9月',
                 day:'17',
                 title:'2019中国系统架构师大会：数字转型 架构演进',
                 content:'中国系统架构师大会',
@@ -543,7 +544,7 @@ export const message = {
                 href:'https://mp.weixin.qq.com/s/LncVvKe3X8I7GAugYtwTZA',
                 date:'2019年10月31日',
                 year:'2019',
-                month:'10',
+                month:'10月',
                 day:'31',
                 title:'IRISnet币安DEX空投活动来袭，500,000 大礼包等你来拿！',
                 content:'币安DEX空投活动'
@@ -553,7 +554,7 @@ export const message = {
                 href:'https://mp.weixin.qq.com/s/NV34GBOfapbXAJUs9GzXog',
                 date:'2019年10月15日~2019年10月21日',
                 year:'2019',
-                month:'10',
+                month:'10月',
                 day:'15',
                 title:'IRISnet发起币安DEX上币提案，助力赢50,000 IRIS大奖！',
                 content:'助力赢50,000 IRIS大奖！'
@@ -563,7 +564,7 @@ export const message = {
                 href:'https://mp.weixin.qq.com/s/rLCi2By-yGFyu1-ysSqYtg',
                 date:'2019年9月16日',
                 year:'2019',
-                month:'9',
+                month:'9月',
                 day:'16',
                 title:'IRISnet及Cosmos生态中的项目进展与应用 | 币乎直播回顾',
                 content:'币乎直播回顾'
@@ -573,7 +574,7 @@ export const message = {
                 href:'https://mp.weixin.qq.com/s/rLCi2By-yGFyu1-ysSqYtg',
                 date:'2019年8月30日',
                 year:'2019',
-                month:'8',
+                month:'8月',
                 day:'30',
                 title:'2019MiiX全球区块链应用生态开发者峰会',
                 content:'MiiXCON'
@@ -608,7 +609,7 @@ export const message = {
                 href:'https://forum.irisnet.org/t/irisnet-betanet-mainnet/263',
                 date:'2019年9月17日',
                 year:'2019',
-                month:'9',
+                month:'9月',
                 day:'17',
                 title:'IRIS Hub上线200天，Betanet正式升级为Mainnet',
                 content:'2019年3月1日，IRISHub的Betanet产出创世区块，网络正式启动。在上线200天之际正式宣布IRIS Hub开始以主网（Mainnet）身份运行。'
@@ -618,7 +619,7 @@ export const message = {
                 href:'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
                 date:'2019年8月30日',
                 year:'2019',
-                month:'8',
+                month:'8月',
                 day:'30',
                 title:'BPoS区块链历史首次！IRIS Hub v0.15平滑升级成功，三大核心功能赋能DeFi',
                 content:'IRISnet主网IRIS Hub于北京时间2019年8月29日升级完成，这次升级是BPoS网络中首次对一个非兼容版本，在不硬分叉、不清空数据情况下的平滑升级。'
@@ -628,7 +629,7 @@ export const message = {
                 href:'https://forum.irisnet.org/t/irisnet/219',
                 date:'2019/7/29',
                 year:'2019',
-                month:'7',
+                month:'7月',
                 day:'29',
                 title:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖！',
                 content:'IRISnet主网IRIS Hub即将升级至v0.15.0，为了确保新版本没有重大Bug或安全漏洞，我们将推出IRISnet 漏洞赏金计划 II，为v0.15.0主网升级做好准备。'
@@ -638,7 +639,7 @@ export const message = {
                 href:'https://forum.irisnet.org/t/iris/184',
                 date:'2019/6/28',
                 year:'2019',
-                month:'6',
+                month:'6月',
                 day:'28',
                 title:'公告 | IRIS基金会第一次执行通证销毁计划',
                 content:'IRISnet主网IRIS Hub于北京时间2019年8月29日升级完成，这次升级是BPoS网络中首次对一个非兼容版本，在不硬分叉、不清空数据情况下的平滑升级。'
@@ -648,7 +649,7 @@ export const message = {
                 href:'https://forum.irisnet.org/t/rainbow-v2-0-atom/166',
                 date:'2019/6/21',
                 year:'2019',
-                month:'6',
+                month:'6月',
                 day:'21',
                 title:'Rainbow发布v2.0，新增支持ATOM钱包',
                 content:'Rainbow v2.0于2019年6月21日发布，接入第二条公链Cosmos Hub，新增ATOM钱包功能'
@@ -658,7 +659,7 @@ export const message = {
                 href:'https://forum.irisnet.org/t/irisnet-tendermint/44',
                 date:'2019/5/13',
                 year:'2019',
-                month:'5',
+                month:'5月',
                 day:'13',
                 title:'IRISnet & Tendermint携手加速开源区块链技术发展',
                 content:'ICosmos 核心开发团队Tendermint 宣布IRISnet 为首要生态合作伙伴。'
@@ -668,7 +669,7 @@ export const message = {
                 href:'https://forum.irisnet.org/t/iris-foundation/37',
                 date:'2019/5/12',
                 year:'2019',
-                month:'5',
+                month:'5月',
                 day:'12',
                 title:'IRIS Foundation 节点委托标准的说明',
                 content:'基金会选择验证人节点的标准做出如下公开说明：'
@@ -678,7 +679,7 @@ export const message = {
                 href:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
                 date:'2019/3/2',
                 year:'2019',
-                month:'3',
+                month:'3月',
                 day:'2',
                 title:'IRISnet的公开地址',
                 content:'IRIS基金会和开发团队的地址'
@@ -688,7 +689,7 @@ export const message = {
                 href:'',
                 date:'2019/2/1',
                 year:'2019',
-                month:'2',
+                month:'2月',
                 day:'1',
                 title:'Betanet 工作计划',
                 content:'IRIS基金会非常高兴地宣布：IRIS主网启动的第一步，IRIS Betanet即将于2019年春节后（2月中旬）上线！'
@@ -698,7 +699,7 @@ export const message = {
                 href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md',
                 date:'2019/1/16',
                 year:'2019',
-                month:'1',
+                month:'1月',
                 day:'16',
                 title:'对IRIS Betanet的期望',
                 content:'为了帮助社区更好的参与IRIS Betanet，特此向社区沟通明确Betanet的一些期望：'
@@ -708,7 +709,7 @@ export const message = {
                 href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md',
                 date:'2019/1/16',
                 year:'2019',
-                month:'1',
+                month:'1月',
                 day:'16',
                 title:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
                 content:'新年伊始，IRIS基金会高兴地宣布，IRIS Betanet即将于2019年春节后（2月中旬）上线！'

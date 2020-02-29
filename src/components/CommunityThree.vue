@@ -118,6 +118,7 @@
                         line-height:0.65rem;
                     }
                     .community_header_announcement_view_more{
+                        cursor: pointer;
                         padding-top: 0.4rem;
                         font-size:0.17rem;
                         font-weight:400;
@@ -283,6 +284,7 @@
                         line-height:0.65rem;
                     }
                     .community_footer_faq_header_view_more{
+                        cursor: pointer;
                         padding-top: 0.4rem;
                         font-size:0.17rem;
                         font-weight:400;
