@@ -3,18 +3,18 @@
         <div class="collaboration_common_wrap">
             <div class="collaboration_content_container collaboration_common_container">
                 <p class="collaboration_common_title">
-                    {{$store.state.messages.home.sectionFour.CoreDevelopmentTeams.title}}
+                    {{$t('message.home.sectionFour.CoreDevelopmentTeams.title')}}
                 </p>
                 <div class="collaboration_common_content">
                     <div class="collaboration_common_img_container"
                          :class="deviceType === 'phone' ? 'bottom_border' : 'right_border'">
-                        <img :src="$store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos[0].path"
-                             @click="toLinkUrl($store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos[0].url)"
+                        <img :src="$t('message.home.sectionFour.CoreDevelopmentTeams.logos[0].path')"
+                             @click="toLinkUrl($t('message.home.sectionFour.CoreDevelopmentTeams.logos[0].url'))"
                              alt="" class="collaboration_img">
                     </div>
                     <div class="collaboration_common_img_container">
-                        <img :src="$store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos[1].path"
-                             @click="toLinkUrl($store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos[1].url)"
+                        <img :src="$t('message.home.sectionFour.CoreDevelopmentTeams.logos[1].path')"
+                             @click="toLinkUrl($t('message.home.sectionFour.CoreDevelopmentTeams.logos[1].url'))"
                              alt="" class="collaboration_img">
                     </div>
                 </div>
@@ -23,18 +23,18 @@
         <div class="collaboration_common_wrap">
             <div class="collaboration_common_container">
                 <p class="collaboration_common_title">
-                    {{$store.state.messages.home.sectionFour.StrategicPartners.title}}
+                    {{$t('message.home.sectionFour.StrategicPartners.title')}}
                 </p>
                 <div class="collaboration_common_content">
                     <div class="collaboration_common_img_container"
                          :class="deviceType === 'phone' ? 'bottom_border' : 'right_border'">
-                        <img :src="$store.state.messages.home.sectionFour.StrategicPartners.logos[0].path"
-                             @click="toLinkUrl($store.state.messages.home.sectionFour.StrategicPartners.logos[0].url)"
+                        <img :src="$t('message.home.sectionFour.StrategicPartners.logos[0].path')"
+                             @click="toLinkUrl($t('message.home.sectionFour.StrategicPartners.logos[0].url'))"
                              alt="" class="collaboration_img">
                     </div>
                     <div class="collaboration_common_img_container">
-                        <img :src="$store.state.messages.home.sectionFour.StrategicPartners.logos[1].path"
-                             @click="toLinkUrl($store.state.messages.home.sectionFour.StrategicPartners.logos[1].url)"
+                        <img :src="$t('message.home.sectionFour.StrategicPartners.logos[1].path')"
+                             @click="toLinkUrl($t('message.home.sectionFour.StrategicPartners.logos[1].url'))"
                              alt="" class="collaboration_img">
                     </div>
                 </div>
@@ -43,13 +43,13 @@
         <div class="collaboration_common_wrap">
             <div class="collaboration_common_container">
                 <p class="collaboration_common_title">
-                    {{$store.state.messages.home.sectionFour.EcosystemPartners.title}}
+                    {{$t('message.home.sectionFour.EcosystemPartners.title')}}
                 </p>
                 <div class="collaboration_common_content_wrap">
                     <div class="collaboration_common_img_container"
                          :class="deviceType === 'phone' ? 'bottom_border' : ''"
                          :style="`visibility:${item.path ? 'visible' : 'hidden'}`"
-                         v-for="item in $store.state.messages.home.sectionFour.EcosystemPartners.logos">
+                         v-for="item in $t('message.home.sectionFour.EcosystemPartners.logos')">
                         <img :src="item.path"
                              :class="item.url ? 'pointer' : ''"
                              @click="toLinkUrl(item.url)"
@@ -61,15 +61,15 @@
         <div class="collaboration_common_wrap">
             <div class="collaboration_common_container">
                 <p class="collaboration_common_title">
-                    {{$store.state.messages.home.sectionFour.Institutional.title.msg1}}
+                    {{$t('message.home.sectionFour.Institutional.title.msg1')}}
                     <span class="collaboration_common_sub_title">
-                   {{$store.state.messages.home.sectionFour.Institutional.title.msg2}}
+                   {{$t('message.home.sectionFour.Institutional.title.msg2')}}
                 </span>
                 </p>
                 <div class="collaboration_common_content_wrap">
                     <div class="collaboration_common_img_container"
                          :class="deviceType === 'phone' ? 'bottom_border' : ''"
-                         v-for="item in $store.state.messages.home.sectionFour.Institutional.logos">
+                         v-for="item in $t('message.home.sectionFour.Institutional.logos')">
                         <img :src="item.path"
                              :class="item.url ? 'pointer' : ''"
                              @click="toLinkUrl(item.url)"

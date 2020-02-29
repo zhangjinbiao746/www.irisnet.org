@@ -504,6 +504,388 @@ export const message = {
             ]
         }
     },
+    events:{
+        title: '近期活动',
+        betaTitle:'IRISnet的公开地址',
+        betaDate:'2019年3月2日',
+        betaContent:'IRIS基金会和开发团队的地址',
+        historyTitle:'全部历史',
+        eventsList:[
+            {
+                id:'0',
+                href:'https://mp.weixin.qq.com/s/bdNvbZMA7NOKWyfx4FRfEw',
+                date:'2019年11月11日',
+                title:'开发跨链的IRISnet--如何打通数字经济和实体经济',
+                content:'抹茶AMA',
+                src:require('../events_economy.jpg')
+            },
+            {
+                id:'1',
+                href:'https://mp.weixin.qq.com/s/bQCfqkB5TJLzkAKmV-HwuA',
+                date:'2019年11月08日~2019年11月09日',
+                title:'乌镇·一文读懂Web3.0的概念、推进与盈利模式',
+                content:'2019世界区块链大会·乌镇',
+                src:require('../events_wuzhen.png')
+            },
+            {
+                id:'2',
+                href:'https://mp.weixin.qq.com/s/PSFWeqWXS3dcfhO5A22Gsg',
+                date:'2019年10月31日~2019年11月2日',
+                year:'2019',
+                month:'9',
+                day:'17',
+                title:'2019中国系统架构师大会：数字转型 架构演进',
+                content:'中国系统架构师大会',
+                src:require('../events_architecture.png')
+            },
+            {
+                id:'3',
+                href:'https://mp.weixin.qq.com/s/LncVvKe3X8I7GAugYtwTZA',
+                date:'2019年10月31日',
+                year:'2019',
+                month:'10',
+                day:'31',
+                title:'IRISnet币安DEX空投活动来袭，500,000 大礼包等你来拿！',
+                content:'币安DEX空投活动'
+            },
+            {
+                id:'4',
+                href:'https://mp.weixin.qq.com/s/NV34GBOfapbXAJUs9GzXog',
+                date:'2019年10月15日~2019年10月21日',
+                year:'2019',
+                month:'10',
+                day:'15',
+                title:'IRISnet发起币安DEX上币提案，助力赢50,000 IRIS大奖！',
+                content:'助力赢50,000 IRIS大奖！'
+            },
+            {
+                id:'5',
+                href:'https://mp.weixin.qq.com/s/rLCi2By-yGFyu1-ysSqYtg',
+                date:'2019年9月16日',
+                year:'2019',
+                month:'9',
+                day:'16',
+                title:'IRISnet及Cosmos生态中的项目进展与应用 | 币乎直播回顾',
+                content:'币乎直播回顾'
+            },
+            {
+                id:'6',
+                href:'https://mp.weixin.qq.com/s/rLCi2By-yGFyu1-ysSqYtg',
+                date:'2019年8月30日',
+                year:'2019',
+                month:'8',
+                day:'30',
+                title:'2019MiiX全球区块链应用生态开发者峰会',
+                content:'MiiXCON'
+            },
+        ]
+    },
+    //TODO(lsc)
+    announce:{
+        title: '公告',
+        betaTitle:'IRISnet的公开地址',
+        betaDate:'2019年3月2日',
+        betaContent:'IRIS基金会和开发团队的地址',
+        historyTitle:'全部历史',
+        src:require('../announcement_3.0.png'),
+        announcementList:[
+            {
+                id:'0',
+                href:'https://forum.irisnet.org/t/iris/314',
+                date:'2019年12月31日',
+                title:'公告 | IRIS基金会第三次执行通证销毁计划，并宣布2020年延续该通证销毁计划',
+                content:'2019年12月31日，IRIS基金会根据为期一年的通证销毁计划，执行了第三次销毁，通过两笔交易共销毁了 15,029,472 个 IRIS 通证，目前 IRIS 通证的总量为20亿个。'
+            },
+            {
+                id:'1',
+                href:'https://forum.irisnet.org/t/iris/271',
+                date:'2019年9月27日',
+                title:'公告 | IRIS基金会第二次执行通证销毁计划',
+                content:'2019年9月27日，IRIS基金会根据为期一年的通证销毁计划，执行了第二次销毁，通过两笔交易共销毁了14,304,888 个 IRIS 通证，目前 IRIS  通证的总量为20亿个。'
+            },
+            {
+                id:'2',
+                href:'https://forum.irisnet.org/t/irisnet-betanet-mainnet/263',
+                date:'2019年9月17日',
+                year:'2019',
+                month:'9',
+                day:'17',
+                title:'IRIS Hub上线200天，Betanet正式升级为Mainnet',
+                content:'2019年3月1日，IRISHub的Betanet产出创世区块，网络正式启动。在上线200天之际正式宣布IRIS Hub开始以主网（Mainnet）身份运行。'
+            },
+            {
+                id:'3',
+                href:'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
+                date:'2019年8月30日',
+                year:'2019',
+                month:'8',
+                day:'30',
+                title:'BPoS区块链历史首次！IRIS Hub v0.15平滑升级成功，三大核心功能赋能DeFi',
+                content:'IRISnet主网IRIS Hub于北京时间2019年8月29日升级完成，这次升级是BPoS网络中首次对一个非兼容版本，在不硬分叉、不清空数据情况下的平滑升级。'
+            },
+            {
+                id:'4',
+                href:'https://forum.irisnet.org/t/irisnet/219',
+                date:'2019/7/29',
+                year:'2019',
+                month:'7',
+                day:'29',
+                title:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖！',
+                content:'IRISnet主网IRIS Hub即将升级至v0.15.0，为了确保新版本没有重大Bug或安全漏洞，我们将推出IRISnet 漏洞赏金计划 II，为v0.15.0主网升级做好准备。'
+            },
+            {
+                id:'5',
+                href:'https://forum.irisnet.org/t/iris/184',
+                date:'2019/6/28',
+                year:'2019',
+                month:'6',
+                day:'28',
+                title:'公告 | IRIS基金会第一次执行通证销毁计划',
+                content:'IRISnet主网IRIS Hub于北京时间2019年8月29日升级完成，这次升级是BPoS网络中首次对一个非兼容版本，在不硬分叉、不清空数据情况下的平滑升级。'
+            },
+            {
+                id:'6',
+                href:'https://forum.irisnet.org/t/rainbow-v2-0-atom/166',
+                date:'2019/6/21',
+                year:'2019',
+                month:'6',
+                day:'21',
+                title:'Rainbow发布v2.0，新增支持ATOM钱包',
+                content:'Rainbow v2.0于2019年6月21日发布，接入第二条公链Cosmos Hub，新增ATOM钱包功能'
+            },
+            {
+                id:'7',
+                href:'https://forum.irisnet.org/t/irisnet-tendermint/44',
+                date:'2019/5/13',
+                year:'2019',
+                month:'5',
+                day:'13',
+                title:'IRISnet & Tendermint携手加速开源区块链技术发展',
+                content:'ICosmos 核心开发团队Tendermint 宣布IRISnet 为首要生态合作伙伴。'
+            },
+            {
+                id:'8',
+                href:'https://forum.irisnet.org/t/iris-foundation/37',
+                date:'2019/5/12',
+                year:'2019',
+                month:'5',
+                day:'12',
+                title:'IRIS Foundation 节点委托标准的说明',
+                content:'基金会选择验证人节点的标准做出如下公开说明：'
+            },
+            {
+                id:'9',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
+                date:'2019/3/2',
+                year:'2019',
+                month:'3',
+                day:'2',
+                title:'IRISnet的公开地址',
+                content:'IRIS基金会和开发团队的地址'
+            },
+            {
+                id:'10',
+                href:'',
+                date:'2019/2/1',
+                year:'2019',
+                month:'2',
+                day:'1',
+                title:'Betanet 工作计划',
+                content:'IRIS基金会非常高兴地宣布：IRIS主网启动的第一步，IRIS Betanet即将于2019年春节后（2月中旬）上线！'
+            },
+            {
+                id:'11',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md',
+                date:'2019/1/16',
+                year:'2019',
+                month:'1',
+                day:'16',
+                title:'对IRIS Betanet的期望',
+                content:'为了帮助社区更好的参与IRIS Betanet，特此向社区沟通明确Betanet的一些期望：'
+            },
+            {
+                id:'12',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md',
+                date:'2019/1/16',
+                year:'2019',
+                month:'1',
+                day:'16',
+                title:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
+                content:'新年伊始，IRIS基金会高兴地宣布，IRIS Betanet即将于2019年春节后（2月中旬）上线！'
+            },
+
+
+        ]
+    },
+    home: {
+        bannerHref:"https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg",
+        sectionOne: {
+            title: '多资产功能赋能DeFi',
+            time: '2019.8.29',
+            content:'率先实现BPoS主网平滑升级',
+            shareUrl: {
+                telegramUrl: 'https://t.me/irisnetworkcn',
+                githubUrl: 'https://github.com/irisnet/irishub',
+                weChatUrl: ''
+            },
+            button: {
+                buttonName: {
+                    rainbowName: 'Rainbow 钱包',
+                    explorerName: 'IRIS 浏览器'
+                },
+                buttonUrl: {
+                    rainbowUrl: 'https://www.rainbow.one/',
+                    explorerUrl: 'https://www.irisplorer.io'
+                }
+            }
+        },
+        irisnetBianJie:{
+            commission:'Cosmos Hub Validator',
+            development:'由IRISnet核心开发团队维护的 Cosmos Hub 创世节点',
+            button:{
+                buttonName: {
+                    rainbowName: '委托ATOM',
+                    explorerName: '查看节点详情'
+                },
+                buttonUrl: {
+                    rainbowUrl: 'https://www.rainbow.one/',
+                    explorerUrl: '/irisnet-bianjie'
+                }
+            }
+        },
+        irisnetVote:{
+            commission:'委托IRIS参与链上治理 ',
+            development:'为提案投票',
+            button:{
+                buttonName: {
+                    voteName: '如何投票',
+                },
+                buttonUrl: {
+                    voteUrl: 'https://mp.weixin.qq.com/s/3TqZr8GgySmzb8tWxo7GgQ',
+                }
+            }
+        },
+        bianDex:{
+            commission:'充值Binance DEX 领空投活动',
+            development:'500,000 IRIS 等你来拿',
+            button:{
+                buttonName: {
+                    eventDetail: '活动详情',
+                    howIsDex: '为何链接DEX',
+                },
+                buttonUrl: {
+                    eventDetail: 'https://mp.weixin.qq.com/s/LncVvKe3X8I7GAugYtwTZA',
+                    howIsDexUrl: 'https://mp.weixin.qq.com/s/RgyB7qBlwmc-VZyIqGv0sQ',
+                }
+            }
+        },
+        sectionTwo: {
+            KeyInnovations: {
+                title: '核心创新',
+                list: [
+                    {id: 0, msg: '将面向服务的基础设施融入到Cosmos网络中'},
+                    {id: 1, msg: '整合由异构系统提供的商业服务，包括公共链、联盟链以及现有系统'},
+                    {id: 2, msg: '通过区块链互联网实现服务的互联互通'}
+                ],
+                buttonMsg: '白皮书',
+                WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/白皮书.md'
+            },
+            NetworkDesign: {
+                title: '网络设计',
+                list: [
+                    {id: 0, msg: '通过标准的ABCI交易实现IRIS服务（也称为iServices）的注册，绑定，调用，查询，分析和管理'},
+                    {id: 1, msg: 'iService提供商充当公共链、联盟区块链以及现有企业系统中业务逻辑的适配器'},
+                    {id: 2, msg: '可以通过扩展的IBC协议在区块链互联网中调用iServices'}]
+            }
+        },
+        sectionThree: {
+            title: '路线图',
+            road: [
+                {id: 0, caption: '后羿', time: '2020年4月之后', msg: '第四阶段将专注通过技术创新，不断完善IRIS网络、SDK和手机客户端，吸引更多开发者参与。'},
+                {id: 1, caption: '夸父', time: '2019年11月 - 2020年3月', msg: '第三阶段主要专注于通过 IBC， 完成 IRIS Hub 与应用专有链网络的连接。我们还计划升级IRISnet移动客户端以支持这些应用。第三阶段还将重点实现IRIS网络的迭代升级，以支持复杂的IRIS服务管理功能。'},
+                {id: 2, caption: '女娲', time: '2019年4月 - 2019年10月', msg: '第二阶段我们将增加更多的基本模块以支持应用开发，特别是DeFi应用。这些新模块计划在本阶段发布，包括多资产管理、uni-swap、多签账户等。我们计划与1-2个生态伙伴合作，使用这些模块开发应用。我们还计划在此阶段完成与Cosmos Hub的测试连接。'},
+                {id: 3, caption: '盘古', time: '2018年1月- 2019年3月', msg: 'IRISnet项目的第一阶段，我们专注于构建并启动 IRISnet 主网（Hub）。 初始版本的IRIS网络移动客户端已在本阶段发布。同时，我们也专注于 IRISnet 基本服务层的建立，已将其发布在 IRIS Hub 上，实现：服务定义、绑定、调用和查询。'}
+            ]
+        },
+        sectionFour: {
+            Collaboration: '合作方',
+            CoreDevelopmentTeams: {
+                title: '核心开发团队',
+                logos: [
+                    {id:0, path: require('../logos/irisnet_bianjiehover.png'), url: 'https://www.bianjie.ai/'},
+                    {id:1, path: require('../logos/irisnet_tenderminthover.png'), url: 'https://tendermint.com/'}
+                ]
+            },
+            StrategicPartners: {
+                title: '战略合作伙伴',
+                logos: [
+                    {id:0, path: require('../logos/irisnet_InTERCHAIN.png'), url: 'https://cosmos.network/about'},
+                   
+                    {id:3, path: require('../logos/irisnet_HASHKEY.png'), url: 'https://www.hashkey.com/#/'}
+                ]
+            },
+            EcosystemPartners: {
+                title: '生态合作伙伴',
+                logos: [
+                    {id:0, path: require('../logos/irisnet_Platonlogo.png'), url: 'https://www.platon.network/#/index'},
+                    {id:1, path: require('../logos/irisnet_coirfan.png'), url: 'http://iris.fan/#/'},
+                    {id:2, path: require('../logos/irisnet_axonomy.png'), url: 'https://www.axonomy.pro'},
+                    {id:3, path: require('../logos/irisnet_Gdex.png'), url: 'https://www.gdex.io/'},
+                    {id:4, path: require('../logos/irisnet_hashgardhover.png'), url: 'https://www.hashgard.io/#/'},
+                    {}
+                ]
+            },
+            Institutional: {
+                title: {msg1: '支持机构', msg2: '(排名不分先后)'},
+                logos: [
+                    {id:0, path: require('../logos/irisnet_AminoCapital.png'), url: 'http://www.aminocapital.com/'},
+                    {id:1, path: require('../logos/irisnet_Bibox.png'), url: 'https://www.bibox.com/'},
+                    {id:2, path: require('../logos/irisnet_huobi.png'), url: 'https://www.hbg.com/en-us/capital/'},
+                    {id:3, path: require('../logos/irisnet_GBIC.png'), url: 'https://gbic.io/'},
+                    {id:4, path: require('../logos/irisnet_8decim.png'), url: ''},
+                    {id:5, path: require('../logos/irisnet_bihu.png'), url: 'https://bihu.com/'},// 1
+                    {id:7, path: require('../logos/irisnet_BKfund.png'), url: ''},
+                    {id:8, path: require('../logos/irisnet_byz.png'), url: ''},
+                    {id:9, path: require('../logos/irisnet_ChainPE.png'), url: 'http://www.chainpe.com/'},
+                    {id:10, path: require('../logos/irisnet_CP.png'), url: 'https://chainpool.io/'},
+                    {id:11, path: require('../logos/irisnet_COEFFICIENT.png'), url: 'http://coefficient.network/'},// 2
+                    {id:12, path: require('../logos/irisnet_gongshi.png'), url: 'http://consensuscapital.ca/'},
+                    {id:13, path: require('../logos/irisnet_dushu.png'), url: ''},
+                    {id:14, path: require('../logos/irisnet_genblock.png'), url: 'https://genblock.capital/'},
+                    {id:15, path: require('../logos/irisnet_HAYEK.png'), url: ''},
+                    {id:16, path: require('../logos/irisnet_INK.png'), url: 'http://ink.one/'},
+                    {id:17, path: require('../logos/irisnet_LINKVCcopy.png'), url: 'http://www.linkvc.com/'},// 3
+                    {id:18, path: require('../logos/irisnet_MediSHares.png'), url: 'http://medishares.org/'},
+                    {id:19, path: require('../logos/irisnet_jieshi.png'), url: 'http://www.milestonevc.com/index.html'},
+                    {id:20, path: require('../logos/irisnet_nirvana-logo-white.png'), url: 'http://nirvana.capital/'},
+                    {id:21, path: require('../logos/irisnet_NGC.png'), url: 'http://ngc.fund/'},
+                    {id:22, path: require('../logos/irisnet_origin.png'), url: 'http://www.theorigincapital.com/'},
+                    {id:23, path: require('../logos/irisnet_SatoshiFUnd.png'), url: 'https://satoshi.fund/'},// 4
+                    {id:24, path: require('../logos/irisnet_guigu.png'), url: 'http://www.svinsight.com/'},
+                    {id:25, path: require('../logos/irisnet_shicuo.png'), url: 'http://www.8timescap.com/'},
+                    {id:26, path: require('../logos/irisnet_huixiang.png'), url: ''},
+                    {id:27, path: require('../logos/irisnet_Unetwork.png'), url: 'https://u.network/'},
+                    {id:28, path: require('../logos/irisnet_jiuhe.png'), url: 'http://www.unityvc.com/'},
+                    {id:29, path: require('../logos/irisnet_UA.png'), url: ''},//5
+                    {id:30, path: require('../logos/irisnet_shuidi.png'), url: 'http://waterdrip.io/'},
+                    {id:31, path: require('../logos/irisnet_yidao.png'), url: ''},
+                    {id:32, path: require('../logos/irisnet_snz.png'), url: 'http://snzholding.com/'},
+                ]
+            }
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -733,163 +1115,6 @@ export const message = {
         },
         irisnetInproduction:'IRISnet以希腊彩虹女神Iris命名，她是在人间和天堂之间传递信息的忠诚使者'
     },
-    home: {
-        bannerHref:"https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg",
-        sectionOne: {
-            title: '多资产功能赋能DeFi',
-            time: '2019.8.29',
-            content:'率先实现BPoS主网平滑升级',
-            shareUrl: {
-                telegramUrl: 'https://t.me/irisnetworkcn',
-                githubUrl: 'https://github.com/irisnet/irishub',
-                weChatUrl: ''
-            },
-            button: {
-                buttonName: {
-                    rainbowName: 'Rainbow 钱包',
-                    explorerName: 'IRIS 浏览器'
-                },
-                buttonUrl: {
-                    rainbowUrl: 'https://www.rainbow.one/',
-                    explorerUrl: 'https://www.irisplorer.io'
-                }
-            }
-        },
-        irisnetBianJie:{
-            commission:'Cosmos Hub Validator',
-            development:'由IRISnet核心开发团队维护的 Cosmos Hub 创世节点',
-            button:{
-                buttonName: {
-                    rainbowName: '委托ATOM',
-                    explorerName: '查看节点详情'
-                },
-                buttonUrl: {
-                    rainbowUrl: 'https://www.rainbow.one/',
-                    explorerUrl: '/irisnet-bianjie'
-                }
-            }
-        },
-        irisnetVote:{
-            commission:'委托IRIS参与链上治理 ',
-            development:'为提案投票',
-            button:{
-                buttonName: {
-                    voteName: '如何投票',
-                },
-                buttonUrl: {
-                    voteUrl: 'https://mp.weixin.qq.com/s/3TqZr8GgySmzb8tWxo7GgQ',
-                }
-            }
-        },
-        bianDex:{
-            commission:'充值Binance DEX 领空投活动',
-            development:'500,000 IRIS 等你来拿',
-            button:{
-                buttonName: {
-                    eventDetail: '活动详情',
-                    howIsDex: '为何链接DEX',
-                },
-                buttonUrl: {
-                    eventDetail: 'https://mp.weixin.qq.com/s/LncVvKe3X8I7GAugYtwTZA',
-                    howIsDexUrl: 'https://mp.weixin.qq.com/s/RgyB7qBlwmc-VZyIqGv0sQ',
-                }
-            }
-        },
-        sectionTwo: {
-            KeyInnovations: {
-                title: '核心创新',
-                list: [
-                    {id: 0, msg: '将面向服务的基础设施融入到Cosmos网络中'},
-                    {id: 1, msg: '整合由异构系统提供的商业服务，包括公共链、联盟链以及现有系统'},
-                    {id: 2, msg: '通过区块链互联网实现服务的互联互通'}
-                ],
-                buttonMsg: '白皮书',
-                WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/白皮书.md'
-            },
-            NetworkDesign: {
-                title: '网络设计',
-                list: [
-                    {id: 0, msg: '通过标准的ABCI交易实现IRIS服务（也称为iServices）的注册，绑定，调用，查询，分析和管理'},
-                    {id: 1, msg: 'iService提供商充当公共链、联盟区块链以及现有企业系统中业务逻辑的适配器'},
-                    {id: 2, msg: '可以通过扩展的IBC协议在区块链互联网中调用iServices'}]
-            }
-        },
-        sectionThree: {
-            title: '路线图',
-            road: [
-                {id: 0, caption: '后羿', time: '2020年4月之后', msg: '第四阶段将专注通过技术创新，不断完善IRIS网络、SDK和手机客户端，吸引更多开发者参与。'},
-                {id: 1, caption: '夸父', time: '2019年11月 - 2020年3月', msg: '第三阶段主要专注于通过 IBC， 完成 IRIS Hub 与应用专有链网络的连接。我们还计划升级IRISnet移动客户端以支持这些应用。第三阶段还将重点实现IRIS网络的迭代升级，以支持复杂的IRIS服务管理功能。'},
-                {id: 2, caption: '女娲', time: '2019年4月 - 2019年10月', msg: '第二阶段我们将增加更多的基本模块以支持应用开发，特别是DeFi应用。这些新模块计划在本阶段发布，包括多资产管理、uni-swap、多签账户等。我们计划与1-2个生态伙伴合作，使用这些模块开发应用。我们还计划在此阶段完成与Cosmos Hub的测试连接。'},
-                {id: 3, caption: '盘古', time: '2018年1月- 2019年3月', msg: 'IRISnet项目的第一阶段，我们专注于构建并启动 IRISnet 主网（Hub）。 初始版本的IRIS网络移动客户端已在本阶段发布。同时，我们也专注于 IRISnet 基本服务层的建立，已将其发布在 IRIS Hub 上，实现：服务定义、绑定、调用和查询。'}
-            ]
-        },
-        sectionFour: {
-            Collaboration: '合作方',
-            CoreDevelopmentTeams: {
-                title: '核心开发团队',
-                logos: [
-                    {id:0, path: require('../logos/irisnet_bianjiehover.png'), url: 'https://www.bianjie.ai/'},
-                    {id:1, path: require('../logos/irisnet_tenderminthover.png'), url: 'https://tendermint.com/'}
-                ]
-            },
-            StrategicPartners: {
-                title: '战略合作伙伴',
-                logos: [
-                    {id:0, path: require('../logos/irisnet_InTERCHAIN.png'), url: 'https://cosmos.network/about'},
-                   
-                    {id:3, path: require('../logos/irisnet_HASHKEY.png'), url: 'https://www.hashkey.com/#/'}
-                ]
-            },
-            EcosystemPartners: {
-                title: '生态合作伙伴',
-                logos: [
-                    {id:0, path: require('../logos/irisnet_Platonlogo.png'), url: 'https://www.platon.network/#/index'},
-                    {id:1, path: require('../logos/irisnet_coirfan.png'), url: 'http://iris.fan/#/'},
-                    {id:2, path: require('../logos/irisnet_axonomy.png'), url: 'https://www.axonomy.pro'},
-                    {id:3, path: require('../logos/irisnet_Gdex.png'), url: 'https://www.gdex.io/'},
-                    {id:4, path: require('../logos/irisnet_hashgardhover.png'), url: 'https://www.hashgard.io/#/'},
-                    {}
-                ]
-            },
-            Institutional: {
-                title: {msg1: '支持机构', msg2: '(排名不分先后)'},
-                logos: [
-                    {id:0, path: require('../logos/irisnet_AminoCapital.png'), url: 'http://www.aminocapital.com/'},
-                    {id:1, path: require('../logos/irisnet_Bibox.png'), url: 'https://www.bibox.com/'},
-                    {id:2, path: require('../logos/irisnet_huobi.png'), url: 'https://www.hbg.com/en-us/capital/'},
-                    {id:3, path: require('../logos/irisnet_GBIC.png'), url: 'https://gbic.io/'},
-                    {id:4, path: require('../logos/irisnet_8decim.png'), url: ''},
-                    {id:5, path: require('../logos/irisnet_bihu.png'), url: 'https://bihu.com/'},// 1
-                    {id:7, path: require('../logos/irisnet_BKfund.png'), url: ''},
-                    {id:8, path: require('../logos/irisnet_byz.png'), url: ''},
-                    {id:9, path: require('../logos/irisnet_ChainPE.png'), url: 'http://www.chainpe.com/'},
-                    {id:10, path: require('../logos/irisnet_CP.png'), url: 'https://chainpool.io/'},
-                    {id:11, path: require('../logos/irisnet_COEFFICIENT.png'), url: 'http://coefficient.network/'},// 2
-                    {id:12, path: require('../logos/irisnet_gongshi.png'), url: 'http://consensuscapital.ca/'},
-                    {id:13, path: require('../logos/irisnet_dushu.png'), url: ''},
-                    {id:14, path: require('../logos/irisnet_genblock.png'), url: 'https://genblock.capital/'},
-                    {id:15, path: require('../logos/irisnet_HAYEK.png'), url: ''},
-                    {id:16, path: require('../logos/irisnet_INK.png'), url: 'http://ink.one/'},
-                    {id:17, path: require('../logos/irisnet_LINKVCcopy.png'), url: 'http://www.linkvc.com/'},// 3
-                    {id:18, path: require('../logos/irisnet_MediSHares.png'), url: 'http://medishares.org/'},
-                    {id:19, path: require('../logos/irisnet_jieshi.png'), url: 'http://www.milestonevc.com/index.html'},
-                    {id:20, path: require('../logos/irisnet_nirvana-logo-white.png'), url: 'http://nirvana.capital/'},
-                    {id:21, path: require('../logos/irisnet_NGC.png'), url: 'http://ngc.fund/'},
-                    {id:22, path: require('../logos/irisnet_origin.png'), url: 'http://www.theorigincapital.com/'},
-                    {id:23, path: require('../logos/irisnet_SatoshiFUnd.png'), url: 'https://satoshi.fund/'},// 4
-                    {id:24, path: require('../logos/irisnet_guigu.png'), url: 'http://www.svinsight.com/'},
-                    {id:25, path: require('../logos/irisnet_shicuo.png'), url: 'http://www.8timescap.com/'},
-                    {id:26, path: require('../logos/irisnet_huixiang.png'), url: ''},
-                    {id:27, path: require('../logos/irisnet_Unetwork.png'), url: 'https://u.network/'},
-                    {id:28, path: require('../logos/irisnet_jiuhe.png'), url: 'http://www.unityvc.com/'},
-                    {id:29, path: require('../logos/irisnet_UA.png'), url: ''},//5
-                    {id:30, path: require('../logos/irisnet_shuidi.png'), url: 'http://waterdrip.io/'},
-                    {id:31, path: require('../logos/irisnet_yidao.png'), url: ''},
-                    {id:32, path: require('../logos/irisnet_snz.png'), url: 'http://snzholding.com/'},
-                ]
-            }
-        }
-    },
     mainnet:{
         title: 'IRIS Hub',
         production: '下一代分布式应用的跨链服务枢纽——自进化的BPoS区块链',
@@ -897,143 +1122,6 @@ export const message = {
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS 浏览器',
         explorerHref:'https://www.irisplorer.io/'
-    },
-    //TODO(lsc)
-    announce:{
-        title: '公告',
-        betaTitle:'IRISnet的公开地址',
-        betaDate:'2019年3月2日',
-        betaContent:'IRIS基金会和开发团队的地址',
-        historyTitle:'全部历史',
-        src:require('../announcement_3.0.png'),
-        announcementList:[
-            {
-                id:'0',
-                href:'https://forum.irisnet.org/t/iris/314',
-                date:'2019年12月31日',
-                title:'公告 | IRIS基金会第三次执行通证销毁计划，并宣布2020年延续该通证销毁计划',
-                content:'2019年12月31日，IRIS基金会根据为期一年的通证销毁计划，执行了第三次销毁，通过两笔交易共销毁了 15,029,472 个 IRIS 通证，目前 IRIS 通证的总量为20亿个。'
-            },
-            {
-                id:'1',
-                href:'https://forum.irisnet.org/t/iris/271',
-                date:'2019年9月27日',
-                title:'公告 | IRIS基金会第二次执行通证销毁计划',
-                content:'2019年9月27日，IRIS基金会根据为期一年的通证销毁计划，执行了第二次销毁，通过两笔交易共销毁了14,304,888 个 IRIS 通证，目前 IRIS  通证的总量为20亿个。'
-            },
-            {
-                id:'2',
-                href:'https://forum.irisnet.org/t/irisnet-betanet-mainnet/263',
-                date:'2019年9月17日',
-                year:'2019',
-                month:'9',
-                day:'17',
-                title:'IRIS Hub上线200天，Betanet正式升级为Mainnet',
-                content:'2019年3月1日，IRISHub的Betanet产出创世区块，网络正式启动。在上线200天之际正式宣布IRIS Hub开始以主网（Mainnet）身份运行。'
-            },
-            {
-                id:'3',
-                href:'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
-                date:'2019年8月30日',
-                year:'2019',
-                month:'8',
-                day:'30',
-                title:'BPoS区块链历史首次！IRIS Hub v0.15平滑升级成功，三大核心功能赋能DeFi',
-                content:'IRISnet主网IRIS Hub于北京时间2019年8月29日升级完成，这次升级是BPoS网络中首次对一个非兼容版本，在不硬分叉、不清空数据情况下的平滑升级。'
-            },
-            {
-                id:'4',
-                href:'https://forum.irisnet.org/t/irisnet/219',
-                date:'2019/7/29',
-                year:'2019',
-                month:'7',
-                day:'29',
-                title:'IRISnet发起新一轮漏洞赏金计划，参与赢大奖！',
-                content:'IRISnet主网IRIS Hub即将升级至v0.15.0，为了确保新版本没有重大Bug或安全漏洞，我们将推出IRISnet 漏洞赏金计划 II，为v0.15.0主网升级做好准备。'
-            },
-            {
-                id:'5',
-                href:'https://forum.irisnet.org/t/iris/184',
-                date:'2019/6/28',
-                year:'2019',
-                month:'6',
-                day:'28',
-                title:'公告 | IRIS基金会第一次执行通证销毁计划',
-                content:'IRISnet主网IRIS Hub于北京时间2019年8月29日升级完成，这次升级是BPoS网络中首次对一个非兼容版本，在不硬分叉、不清空数据情况下的平滑升级。'
-            },
-            {
-                id:'6',
-                href:'https://forum.irisnet.org/t/rainbow-v2-0-atom/166',
-                date:'2019/6/21',
-                year:'2019',
-                month:'6',
-                day:'21',
-                title:'Rainbow发布v2.0，新增支持ATOM钱包',
-                content:'Rainbow v2.0于2019年6月21日发布，接入第二条公链Cosmos Hub，新增ATOM钱包功能'
-            },
-            {
-                id:'7',
-                href:'https://forum.irisnet.org/t/irisnet-tendermint/44',
-                date:'2019/5/13',
-                year:'2019',
-                month:'5',
-                day:'13',
-                title:'IRISnet & Tendermint携手加速开源区块链技术发展',
-                content:'ICosmos 核心开发团队Tendermint 宣布IRISnet 为首要生态合作伙伴。'
-            },
-            {
-                id:'8',
-                href:'https://forum.irisnet.org/t/iris-foundation/37',
-                date:'2019/5/12',
-                year:'2019',
-                month:'5',
-                day:'12',
-                title:'IRIS Foundation 节点委托标准的说明',
-                content:'基金会选择验证人节点的标准做出如下公开说明：'
-            },
-            {
-                id:'9',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
-                date:'2019/3/2',
-                year:'2019',
-                month:'3',
-                day:'2',
-                title:'IRISnet的公开地址',
-                content:'IRIS基金会和开发团队的地址'
-            },
-            {
-                id:'10',
-                href:'',
-                date:'2019/2/1',
-                year:'2019',
-                month:'2',
-                day:'1',
-                title:'Betanet 工作计划',
-                content:'IRIS基金会非常高兴地宣布：IRIS主网启动的第一步，IRIS Betanet即将于2019年春节后（2月中旬）上线！'
-            },
-            {
-                id:'11',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md',
-                date:'2019/1/16',
-                year:'2019',
-                month:'1',
-                day:'16',
-                title:'对IRIS Betanet的期望',
-                content:'为了帮助社区更好的参与IRIS Betanet，特此向社区沟通明确Betanet的一些期望：'
-            },
-            {
-                id:'12',
-                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md',
-                date:'2019/1/16',
-                year:'2019',
-                month:'1',
-                day:'16',
-                title:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
-                content:'新年伊始，IRIS基金会高兴地宣布，IRIS Betanet即将于2019年春节后（2月中旬）上线！'
-            },
-
-
-        ]
     },
     //todo(lsc)
     collaborationThree:{
@@ -1476,84 +1564,6 @@ export const message = {
                 "title":"Hashgard",
                 "href":"https://www.hashgard.io/#/"
             }
-
-        ]
-    },
-    events:{
-        title: '近期活动',
-        betaTitle:'IRISnet的公开地址',
-        betaDate:'2019年3月2日',
-        betaContent:'IRIS基金会和开发团队的地址',
-        historyTitle:'全部历史',
-        eventsList:[
-            {
-                id:'0',
-                href:'https://mp.weixin.qq.com/s/bdNvbZMA7NOKWyfx4FRfEw',
-                date:'2019年11月11日',
-                title:'开发跨链的IRISnet--如何打通数字经济和实体经济',
-                content:'抹茶AMA',
-                src:require('../events_economy.jpg')
-            },
-            {
-                id:'1',
-                href:'https://mp.weixin.qq.com/s/bQCfqkB5TJLzkAKmV-HwuA',
-                date:'2019年11月08日~2019年11月09日',
-                title:'乌镇·一文读懂Web3.0的概念、推进与盈利模式',
-                content:'2019世界区块链大会·乌镇',
-                src:require('../events_wuzhen.png')
-            },
-            {
-                id:'2',
-                href:'https://mp.weixin.qq.com/s/PSFWeqWXS3dcfhO5A22Gsg',
-                date:'2019年10月31日~2019年11月2日',
-                year:'2019',
-                month:'9',
-                day:'17',
-                title:'2019中国系统架构师大会：数字转型 架构演进',
-                content:'中国系统架构师大会',
-                src:require('../events_architecture.png')
-            },
-            {
-                id:'3',
-                href:'https://mp.weixin.qq.com/s/LncVvKe3X8I7GAugYtwTZA',
-                date:'2019年10月31日',
-                year:'2019',
-                month:'10',
-                day:'31',
-                title:'IRISnet币安DEX空投活动来袭，500,000 大礼包等你来拿！',
-                content:'币安DEX空投活动'
-            },
-            {
-                id:'4',
-                href:'https://mp.weixin.qq.com/s/NV34GBOfapbXAJUs9GzXog',
-                date:'2019年10月15日~2019年10月21日',
-                year:'2019',
-                month:'10',
-                day:'15',
-                title:'IRISnet发起币安DEX上币提案，助力赢50,000 IRIS大奖！',
-                content:'助力赢50,000 IRIS大奖！'
-            },
-            {
-                id:'5',
-                href:'https://mp.weixin.qq.com/s/rLCi2By-yGFyu1-ysSqYtg',
-                date:'2019年9月16日',
-                year:'2019',
-                month:'9',
-                day:'16',
-                title:'IRISnet及Cosmos生态中的项目进展与应用 | 币乎直播回顾',
-                content:'币乎直播回顾'
-            },
-            {
-                id:'6',
-                href:'https://mp.weixin.qq.com/s/rLCi2By-yGFyu1-ysSqYtg',
-                date:'2019年8月30日',
-                year:'2019',
-                month:'8',
-                day:'30',
-                title:'2019MiiX全球区块链应用生态开发者峰会',
-                content:'MiiXCON'
-            },
-
 
         ]
     },

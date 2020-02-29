@@ -503,8 +503,7 @@ export const message = {
                 href: 'https://medium.com/irisnet-blog/announcement-the-2rd-iris-token-burn-complete-5cff42eb44a0?source=---------5------------------'
             }
         ],
-    },
-    faq: {
+        faq: {
             title: 'FAQ',
             viewMore: 'View More',
             href: 'https://medium.com/irisnet-blog/irisnet-faq-8793cf116c37',
@@ -523,332 +522,91 @@ export const message = {
                 }
             ]
         },
-
-
-    logo: 'irisnet.png',
-    floatWindow: {
-        title: 'FORUM',
     },
-    header: {
-        left: [
+    events:{
+        title : 'Events',
+        betaTitle : 'IRISnet Public Token Addresses',
+        betaDate : 'Mar 02,2019',
+        historyTitle : 'All of History',
+        betaContent : 'Foundation and Dev Team Token Addresses.',
+        eventsList : [
             {
-                id: 0,
-                title: 'Whitepaper',
-                active: false,
+                id : '0',
+                href : 'https://medium.com/irisnet-blog/irisnet-iris-airdrop-on-binance-dex-win-500-000-iris-4e24be10a886',
+                date : 'Dec 31, 2019',
+                title : 'IRISnet (IRIS) Airdrop on Binance DEX — Win 500,000 IRIS!',
+                content : 'Airdrop on Binance DEX',
+                src:require('../events_airdrop.png')
             },
             {
-                id: 1,
-                title: 'Collaboration',
-                active: false,
+                id : '1',
+                href : 'https://medium.com/irisnet-blog/follow-retweet-to-help-iris-binance-dex-listing-7c27cc36dfd1',
+                date : 'Oct 15, 2019 ~ Oct 21, 2019',
+                title : 'Follow & Retweet to Help IRIS Binance DEX Listing',
+                content : 'Follow & Retweet to Help IRIS Binance DEX Listing',
+                src:require('../events_retweet_binance.png')
             },
             {
-                id: 2,
-                title: 'Community',
-                active: false,
-            }
-        ],
-        right: [
-            {
-                id: 0,
-                title: 'Mainnet',
-                href: '',
-                active: false,
+                id : '2',
+                href : 'https://medium.com/irisnet-blog/project-progress-applications-in-irisnet-cosmos-ecosystem-bihu-ama-review-725b78d8f59d',
+                date : 'Oct 16, 2019',
+                year : '2019',
+                month : 'Oct',
+                day : '16',
+                title : 'Project Progress & Applications in IRISnet & Cosmos Ecosystem |Bihu AMA Review',
+                content : 'Bihu AMA Review',
+                src:require('../events_bihu.png')
             },
             {
-                id: 1,
-                title: 'Docs',
-                href: 'https://www.irisnet.org/docs/',
-                active: false,
+                id : '3',
+                href : 'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
+                date : 'Jul 29, 2019 ~ Aug 16, 2019',
+                year : '2019',
+                month : 'Jul',
+                day : '29',
+                title : 'Opened! IRIS Hub Bug Bounty II Program for new version release',
+                content : 'Bug Bounty II'
             },
             {
-                id: 2,
-                title: 'Forum',
-                href: 'https://forum.irisnet.org/',
-                active: false,
+                id : '4',
+                href : 'https://medium.com/irisnet-blog/2019-7-15-ama-42f4a5fbe5f0',
+                date : 'Jul 15, 2019 19:00-20:00',
+                year : '2019',
+                month : 'Jul',
+                day : '15',
+                title : 'AMA Hosted by ICO Pentera',
+                content : 'ICO Pentera & IRISnet'
             },
             {
-                id: 3,
-                title: 'Blog',
-                href: 'https://medium.com/irisnet-blog',
-                active: false,
-            },
-        ],
-        mobileNavigation: [
-            {
-                id: 0,
-                title: 'Mainnet',
-                activeIndex: '',
-                active: false,
+                id : '5',
+                href : 'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
+                date : 'Jul 6, 2019 ~ Jul 7, 2019',
+                year : '2019',
+                month : 'Jul',
+                day : '6',
+                title : '2019 2nd Global Graphene Blockchain Developer Conference',
+                content : 'GBAC'
             },
             {
-                id: 1,
-                title: 'Testnet',
-                activeIndex: '',
-                active: false,
+                id : '6',
+                href : 'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
+                date : 'Jun 19, 2019',
+                year : '2019',
+                month : 'Jun',
+                day : '19',
+                title : '2019-6-19 AMA',
+                content : 'IRISnet& Coinsuper'
             },
-            {
-                id: 2,
-                title: 'WhitePaper',
-                activeIndex: 0,
-                active: false,
-            },
-            {
-                id: 3,
-                title: 'Roadmap',
-                activeIndex: 3,
-                active: false,
-            },
-            {
-                id: 4,
-                title: 'Collaboration',
-                activeIndex: 1,
-                active: false,
-            },
-            {
-                id: 5,
-                title: 'Community',
-                activeIndex: 2,
-                active: false,
-            },
-        ],
-        mobileLinkHrefNavigation: [
-            {
-                id: 0,
-                title: 'Docs',
-                href: "https://www.irisnet.org/docs/",
-                activeIndex: '',
-            },
-            {
-                id: 1,
-                title: 'Forum',
-                href: "https://forum.irisnet.org/",
-                activeIndex: '',
-            },
-            {
-                id: 2,
-                title: 'Blog',
-                href: "https://medium.com/irisnet-blog",
-                activeIndex: '',
-            }
+
         ]
     },
-    home: {
-        bannerHref: "https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe",
-        sectionOne: {
-            title: 'DeFi App Dev Support is coming',
-            time: '2019.8.29',
-            content: "Multi-asset module available on IRIS Hub V0.15",
-            shareUrl: {
-                telegramUrl: 'https://t.me/irisnetwork',
-                githubUrl: 'https://github.com/irisnet/irishub',
-                weChatUrl: ''
-            },
-            button: {
-                buttonName: {
-                    rainbowName: 'Rainbow Wallet',
-                    explorerName: 'IRIS Explorer'
-                },
-                buttonUrl: {
-                    rainbowUrl: 'https://www.rainbow.one/',
-                    explorerUrl: 'https://www.irisplorer.io'
-                }
-            }
-        },
-        irisnetBianJie: {
-            commission: 'Cosmos Hub Validator',
-            development: 'Maintained by the core development team of IRISnet',
-            button: {
-                buttonName: {
-                    rainbowName: 'Delegate ATOM',
-                    explorerName: 'View Validator Profile'
-                },
-                buttonUrl: {
-                    rainbowUrl: 'https://www.rainbow.one/',
-                    explorerUrl: '/irisnet-bianjie'
-                }
-            }
-        },
-        irisnetVote: {
-            commission: 'Participate in On-Chain Governance',
-            development: 'Vote for Proposals',
-            button: {
-                buttonName: {
-                    voteName: 'How to Vote',
-                },
-                buttonUrl: {
-                    voteUrl: 'https://medium.com/irisnet-blog/rainbow-v2-5-released-with-on-chain-governance-support-237f076b0211',
-                }
-            }
-        },
-        bianDex: {
-            commission: 'Deposit to Binance DEX',
-            development: 'Win 500,000 IRIS Airdrop',
-            button: {
-                buttonName: {
-                    eventDetail: 'More Details',
-                    howIsDex: ' Why We Connect',
-                },
-                buttonUrl: {
-                    eventDetail: 'https://medium.com/irisnet-blog/irisnet-iris-airdrop-on-binance-dex-win-500-000-iris-4e24be10a886',
-                    howIsDexUrl: 'https://medium.com/irisnet-blog/why-are-we-connecting-iris-hub-with-binance-dex-5b02bff5753c',
-                }
-            }
-        },
-        sectionTwo: {
-            KeyInnovations: {
-                title: 'Key Innovations',
-                list: [
-                    {id: 0, msg: 'Incorporation of a service-oriented infrastructure into Cosmos'},
-                    {
-                        id: 1,
-                        msg: 'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems'
-                    },
-                    {id: 2, msg: 'Interoperability of those services across an internet of blockchains'}
-                ],
-                buttonMsg: 'WHITE PAPER',
-                WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md'
-            },
-            NetworkDesign: {
-                title: 'Network Design',
-                list: [
-                    {
-                        id: 0,
-                        msg: 'Definition of standard ABCI transaction types supporting registration,binding, invocation, query, profiling and governance of IRIS Services(a.k.a. iServices)'
-                    },
-                    {
-                        id: 1,
-                        msg: 'iService providers act as adaptors of business logic residing in public andconsortium blockchains as well as enterprise legacy systems'
-                    },
-                    {id: 2, msg: 'iServices can be invoked across anextended IBC protocol'}]
-            }
-        },
-        sectionThree: {
-            title: 'Roadmap',
-            road: [
-                {
-                    id: 0,
-                    caption: 'HOUYI',
-                    time: 'BEYOND APR 2020',
-                    msg: 'The fourth stage will focus on further technology innovations to the IRIS network, SDK and mobile client, as well as developer engagement.'
-                },
-                {
-                    id: 1,
-                    caption: 'KUAFU',
-                    time: 'NOV 2019 - MAR 2020',
-                    msg: 'In this stage we are aiming to accomplish the connection of IRIS Hub with applications blockchains through IBC. We plan to upgrade IRISnet mobile client to support those applications. The third stage will also focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service features.'
-                },
-                {
-                    id: 2,
-                    caption: 'NÜWA',
-                    time: 'APR 2019 - OCT 2019',
-                    msg: 'In this stage we are adding more fundamental modules to support application development especially DeFi applications. The new modules planned to release in this stage including multi-asset management, uniswap, multi-sig account etc. We plan to collaborate with 1-2 ecosystem partners to develop applications using those modules.We also plan to accomplish the test connection with Cosmos Hub through IBC at this stage.'
-                },
-                {
-                    id: 3,
-                    caption: 'PANGU',
-                    time: 'JAN 2018 - MAR 2019',
-                    msg: 'The first stage of the IRIS project focused on having the IRIS Hub up and running. Initial version of the mobile client for the IRIS network was released. In this stage we also focused on building the fundamental IRIS Service Layer which was released to IRIS Hub. Which enables service definition, binding, invocation and query.'
-                }
-            ]
-        },
-        sectionFour: {
-            Collaboration: 'Collaboration',
-            CoreDevelopmentTeams: {
-                title: 'Core Development Teams',
-                logos: [
-                    {id: 0, path: require('../logos/irisnet_bianjiehover.png'), url: 'https://www.bianjie.ai/'},
-                    {id: 1, path: require('../logos/irisnet_tenderminthover.png'), url: 'https://tendermint.com/'}
-                ]
-            },
-            StrategicPartners: {
-                title: 'Strategic Partners',
-                logos: [
-                    {id: 0, path: require('../logos/irisnet_InTERCHAIN.png'), url: 'https://cosmos.network/about'},
-                    {id: 1, path: require('../logos/irisnet_HASHKEY.png'), url: 'https://www.hashkey.com/#/'}
-                ]
-            },
-            EcosystemPartners: {
-                title: 'Ecosystem Partners',
-                logos: [
-                    {
-                        id: 0,
-                        path: require('../logos/irisnet_Platonlogo.png'),
-                        url: 'https://www.platon.network/#/index'
-                    },
-                    {id: 1, path: require('../logos/irisnet_coirfan.png'), url: 'http://iris.fan/#/'},
-                    {id: 2, path: require('../logos/irisnet_axonomy.png'), url: 'https://www.axonomy.pro'},
-                    {id: 3, path: require('../logos/irisnet_Gdex.png'), url: 'https://www.gdex.io/'},
-                    {id: 4, path: require('../logos/irisnet_hashgardhover.png'), url: 'https://www.hashgard.io/#/'},
-                    {}
-                ]
-            },
-            Institutional: {
-                title: {msg1: 'Institutional Supporters', msg2: '( Listed in no particular order )'},
-                logos: [
-                    {
-                        id: 0,
-                        path: require('../logos/irisnet_AminoCapital.png'),
-                        url: 'http://www.aminocapital.com/'
-                    },
-                    {id: 1, path: require('../logos/irisnet_Bibox.png'), url: 'https://www.bibox.com/'},
-                    {id: 2, path: require('../logos/irisnet_huobi.png'), url: 'https://www.hbg.com/en-us/capital/'},
-                    {id: 3, path: require('../logos/irisnet_GBIC.png'), url: 'https://gbic.io/'},
-                    {id: 4, path: require('../logos/irisnet_8decim.png'), url: ''},
-                    {id: 5, path: require('../logos/irisnet_bihu.png'), url: 'https://bihu.com/'},// 1
-                    {id: 7, path: require('../logos/irisnet_BKfund.png'), url: ''},
-                    {id: 8, path: require('../logos/irisnet_byz.png'), url: ''},
-                    {id: 9, path: require('../logos/irisnet_ChainPE.png'), url: 'http://www.chainpe.com/'},
-                    {id: 10, path: require('../logos/irisnet_CP.png'), url: 'https://chainpool.io/'},
-                    {id: 11, path: require('../logos/irisnet_COEFFICIENT.png'), url: 'http://coefficient.network/'},// 2
-                    {id: 12, path: require('../logos/irisnet_gongshi.png'), url: 'http://consensuscapital.ca/'},
-                    {id: 13, path: require('../logos/irisnet_dushu.png'), url: ''},
-                    {id: 14, path: require('../logos/irisnet_genblock.png'), url: 'https://genblock.capital/'},
-                    {id: 15, path: require('../logos/irisnet_HAYEK.png'), url: ''},
-                    {id: 16, path: require('../logos/irisnet_INK.png'), url: 'http://ink.one/'},
-                    {id: 17, path: require('../logos/irisnet_LINKVCcopy.png'), url: 'http://www.linkvc.com/'},// 3
-                    {id: 18, path: require('../logos/irisnet_MediSHares.png'), url: 'http://medishares.org/'},
-                    {
-                        id: 19,
-                        path: require('../logos/irisnet_jieshi.png'),
-                        url: 'http://www.milestonevc.com/index.html'
-                    },
-                    {
-                        id: 20,
-                        path: require('../logos/irisnet_nirvana-logo-white.png'),
-                        url: 'http://nirvana.capital/'
-                    },
-                    {id: 21, path: require('../logos/irisnet_NGC.png'), url: 'http://ngc.fund/'},
-                    {id: 22, path: require('../logos/irisnet_origin.png'), url: 'http://www.theorigincapital.com/'},
-                    {id: 23, path: require('../logos/irisnet_SatoshiFUnd.png'), url: 'https://satoshi.fund/'},// 4
-                    {id: 24, path: require('../logos/irisnet_guigu.png'), url: 'http://www.svinsight.com/'},
-                    {id: 25, path: require('../logos/irisnet_shicuo.png'), url: 'http://www.8timescap.com/'},
-                    {id: 26, path: require('../logos/irisnet_huixiang.png'), url: ''},
-                    {id: 27, path: require('../logos/irisnet_Unetwork.png'), url: 'https://u.network/'},
-                    {id: 28, path: require('../logos/irisnet_jiuhe.png'), url: 'http://www.unityvc.com/'},
-                    {id: 29, path: require('../logos/irisnet_UA.png'), url: ''},//5
-                    {id: 30, path: require('../logos/irisnet_shuidi.png'), url: 'http://waterdrip.io/'},
-                    {id: 31, path: require('../logos/irisnet_yidao.png'), url: ''},
-                    {id: 32, path: require('../logos/irisnet_snz.png'), url: 'http://snzholding.com/'},
-                ]
-            }
-        }
-    },
-    // "logo": 'irisnet.png',
-    mainnet: {
-        title: 'IRIS Hub',
-        production: 'Interchain Service Hub for NextGen Distributed Applications – A BPoS Blockchain That Is Self-evolutionary',
-        wallet: 'Rainbow Wallet',
-        walletHref: 'https://www.rainbow.one/',
-        explorer: 'IRIS Explorer',
-        explorerHref: 'https://www.irisplorer.io/'
-    },
     //TODO(lsc)
-    announce:{
-        title: 'Announcements',
-        betaTitle:'IRISnet Public Token Addresses',
-        betaDate:'Mar 02,2019',
-        betaContent:'Foundation and Dev Team Token Addresses.',
-        historyTitle:'All of History',
+    announce : {
+        title : 'Announcements',
+        betaTitle : 'IRISnet Public Token Addresses',
+        betaDate : 'Mar 02,2019',
+        historyTitle : 'All of History',
+        betaContent : 'Foundation and Dev Team Token Addresses.',
         src:require('../announcement_3.0.png'),
         announcementList : [
             {
@@ -987,6 +745,321 @@ export const message = {
 
 
         ]
+    },
+    home : {
+        bannerHref : "https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe",
+        sectionOne : {
+            title : 'DeFi App Dev Support is coming',
+            time : '2019.8.29',
+            content : "Multi-asset module available on IRIS Hub V0.15",
+            shareUrl : {
+                telegramUrl : 'https://t.me/irisnetwork',
+                githubUrl : 'https://github.com/irisnet/irishub',
+                weChatUrl : ''
+            },
+            button : {
+                buttonName : {
+                    rainbowName : 'Rainbow Wallet',
+                    explorerName : 'IRIS Explorer'
+                },
+                buttonUrl : {
+                    rainbowUrl : 'https://www.rainbow.one/',
+                    explorerUrl : 'https://www.irisplorer.io'
+                }
+            }
+        },
+        irisnetBianJie : {
+            commission : 'Cosmos Hub Validator',
+            development : 'Maintained by the core development team of IRISnet',
+            button : {
+                buttonName : {
+                    rainbowName : 'Delegate ATOM',
+                    explorerName : 'View Validator Profile'
+                },
+                buttonUrl : {
+                    rainbowUrl : 'https://www.rainbow.one/',
+                    explorerUrl : '/irisnet-bianjie'
+                }
+            }
+        },
+        irisnetVote : {
+            commission : 'Participate in On-Chain Governance',
+            development : 'Vote for Proposals',
+            button : {
+                buttonName : {
+                    voteName : 'How to Vote',
+                },
+                buttonUrl : {
+                    voteUrl : 'https://medium.com/irisnet-blog/rainbow-v2-5-released-with-on-chain-governance-support-237f076b0211',
+                }
+            }
+        },
+        bianDex : {
+            commission : 'Deposit to Binance DEX',
+            development : 'Win 500,000 IRIS Airdrop',
+            button : {
+                buttonName : {
+                    eventDetail : 'More Details',
+                    howIsDex : ' Why We Connect',
+                },
+                buttonUrl : {
+                    eventDetail : 'https://medium.com/irisnet-blog/irisnet-iris-airdrop-on-binance-dex-win-500-000-iris-4e24be10a886',
+                    howIsDexUrl : 'https://medium.com/irisnet-blog/why-are-we-connecting-iris-hub-with-binance-dex-5b02bff5753c',
+                }
+            }
+        },
+        sectionTwo : {
+            KeyInnovations : {
+                title : 'Key Innovations',
+                list : [
+                    {id : 0, msg : 'Incorporation of a service-oriented infrastructure into Cosmos'},
+                    {
+                        id : 1,
+                        msg : 'Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems'
+                    },
+                    {id : 2, msg : 'Interoperability of those services across an internet of blockchains'}
+                ],
+                buttonMsg : 'WHITE PAPER',
+                WHITEPAPERUrl : 'https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md'
+            },
+            NetworkDesign : {
+                title : 'Network Design',
+                list : [
+                    {
+                        id : 0,
+                        msg : 'Definition of standard ABCI transaction types supporting registration,binding, invocation, query, profiling and governance of IRIS Services(a.k.a. iServices)'
+                    },
+                    {
+                        id : 1,
+                        msg : 'iService providers act as adaptors of business logic residing in public andconsortium blockchains as well as enterprise legacy systems'
+                    },
+                    {id : 2, msg : 'iServices can be invoked across anextended IBC protocol'}]
+            }
+        },
+        sectionThree : {
+            title : 'Roadmap',
+            road : [
+                {
+                    id : 0,
+                    caption : 'HOUYI',
+                    time : 'BEYOND APR 2020',
+                    msg : 'The fourth stage will focus on further technology innovations to the IRIS network, SDK and mobile client, as well as developer engagement.'
+                },
+                {
+                    id : 1,
+                    caption : 'KUAFU',
+                    time : 'NOV 2019 - MAR 2020',
+                    msg : 'In this stage we are aiming to accomplish the connection of IRIS Hub with applications blockchains through IBC. We plan to upgrade IRISnet mobile client to support those applications. The third stage will also focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service features.'
+                },
+                {
+                    id : 2,
+                    caption : 'NÜWA',
+                    time : 'APR 2019 - OCT 2019',
+                    msg : 'In this stage we are adding more fundamental modules to support application development especially DeFi applications. The new modules planned to release in this stage including multi-asset management, uniswap, multi-sig account etc. We plan to collaborate with 1-2 ecosystem partners to develop applications using those modules.We also plan to accomplish the test connection with Cosmos Hub through IBC at this stage.'
+                },
+                {
+                    id : 3,
+                    caption : 'PANGU',
+                    time : 'JAN 2018 - MAR 2019',
+                    msg : 'The first stage of the IRIS project focused on having the IRIS Hub up and running. Initial version of the mobile client for the IRIS network was released. In this stage we also focused on building the fundamental IRIS Service Layer which was released to IRIS Hub. Which enables service definition, binding, invocation and query.'
+                }
+            ]
+        },
+        sectionFour : {
+            Collaboration : 'Collaboration',
+            CoreDevelopmentTeams : {
+                title : 'Core Development Teams',
+                logos : [
+                    {id : 0, path : require('../logos/irisnet_bianjiehover.png'), url : 'https://www.bianjie.ai/'},
+                    {id : 1, path : require('../logos/irisnet_tenderminthover.png'), url : 'https://tendermint.com/'}
+                ]
+            },
+            StrategicPartners : {
+                title : 'Strategic Partners',
+                logos : [
+                    {id : 0, path : require('../logos/irisnet_InTERCHAIN.png'), url : 'https://cosmos.network/about'},
+                    {id : 1, path : require('../logos/irisnet_HASHKEY.png'), url : 'https://www.hashkey.com/#/'}
+                ]
+            },
+            EcosystemPartners : {
+                title : 'Ecosystem Partners',
+                logos : [
+                    {id : 0, path : require('../logos/irisnet_Platonlogo.png'), url : 'https://www.platon.network/#/index'},
+                    {id : 1, path : require('../logos/irisnet_coirfan.png'), url : 'http://iris.fan/#/'},
+                    {id : 2, path : require('../logos/irisnet_axonomy.png'), url : 'https://www.axonomy.pro'},
+                    {id : 3, path : require('../logos/irisnet_Gdex.png'), url : 'https://www.gdex.io/'},
+                    {id : 4, path : require('../logos/irisnet_hashgardhover.png'), url : 'https://www.hashgard.io/#/'},
+                    {}
+                ]
+            },
+            Institutional : {
+                title : {msg1 : 'Institutional Supporters', msg2 : '( Listed in no particular order )'},
+                logos : [
+                    {id : 0, path : require('../logos/irisnet_AminoCapital.png'), url : 'http://www.aminocapital.com/'},
+                    {id : 1, path : require('../logos/irisnet_Bibox.png'), url : 'https://www.bibox.com/'},
+                    {id : 2, path : require('../logos/irisnet_huobi.png'), url : 'https://www.hbg.com/en-us/capital/'},
+                    {id : 3, path : require('../logos/irisnet_GBIC.png'), url : 'https://gbic.io/'},
+                    {id : 4, path : require('../logos/irisnet_8decim.png'), url : ''},
+                    {id : 5, path : require('../logos/irisnet_bihu.png'), url : 'https://bihu.com/'},// 1
+                    {id : 7, path : require('../logos/irisnet_BKfund.png'), url : ''},
+                    {id : 8, path : require('../logos/irisnet_byz.png'), url : ''},
+                    {id : 9, path : require('../logos/irisnet_ChainPE.png'), url : 'http://www.chainpe.com/'},
+                    {id : 10, path : require('../logos/irisnet_CP.png'), url : 'https://chainpool.io/'},
+                    {id : 11, path : require('../logos/irisnet_COEFFICIENT.png'), url : 'http://coefficient.network/'},// 2
+                    {id : 12, path : require('../logos/irisnet_gongshi.png'), url : 'http://consensuscapital.ca/'},
+                    {id : 13, path : require('../logos/irisnet_dushu.png'), url : ''},
+                    {id : 14, path : require('../logos/irisnet_genblock.png'), url : 'https://genblock.capital/'},
+                    {id : 15, path : require('../logos/irisnet_HAYEK.png'), url : ''},
+                    {id : 16, path : require('../logos/irisnet_INK.png'), url : 'http://ink.one/'},
+                    {id : 17, path : require('../logos/irisnet_LINKVCcopy.png'), url : 'http://www.linkvc.com/'},// 3
+                    {id : 18, path : require('../logos/irisnet_MediSHares.png'), url : 'http://medishares.org/'},
+                    {id : 19, path : require('../logos/irisnet_jieshi.png'), url : 'http://www.milestonevc.com/index.html'},
+                    {id : 20, path : require('../logos/irisnet_nirvana-logo-white.png'), url : 'http://nirvana.capital/'},
+                    {id : 21, path : require('../logos/irisnet_NGC.png'), url : 'http://ngc.fund/'},
+                    {id : 22, path : require('../logos/irisnet_origin.png'), url : 'http://www.theorigincapital.com/'},
+                    {id : 23, path : require('../logos/irisnet_SatoshiFUnd.png'), url : 'https://satoshi.fund/'},// 4
+                    {id : 24, path : require('../logos/irisnet_guigu.png'), url : 'http://www.svinsight.com/'},
+                    {id : 25, path : require('../logos/irisnet_shicuo.png'), url : 'http://www.8timescap.com/'},
+                    {id : 26, path : require('../logos/irisnet_huixiang.png'), url : ''},
+                    {id : 27, path : require('../logos/irisnet_Unetwork.png'), url : 'https://u.network/'},
+                    {id : 28, path : require('../logos/irisnet_jiuhe.png'), url : 'http://www.unityvc.com/'},
+                    {id : 29, path : require('../logos/irisnet_UA.png'), url : ''},//5
+                    {id : 30, path : require('../logos/irisnet_shuidi.png'), url : 'http://waterdrip.io/'},
+                    {id : 31, path : require('../logos/irisnet_yidao.png'), url : ''},
+                    {id : 32, path : require('../logos/irisnet_snz.png'), url : 'http://snzholding.com/'},
+                ]
+            }
+        }
+    },
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    logo: 'irisnet.png',
+    floatWindow: {
+        title: 'FORUM',
+    },
+    header: {
+        left: [
+            {
+                id: 0,
+                title: 'Whitepaper',
+                active: false,
+            },
+            {
+                id: 1,
+                title: 'Collaboration',
+                active: false,
+            },
+            {
+                id: 2,
+                title: 'Community',
+                active: false,
+            }
+        ],
+        right: [
+            {
+                id: 0,
+                title: 'Mainnet',
+                href: '',
+                active: false,
+            },
+            {
+                id: 1,
+                title: 'Docs',
+                href: 'https://www.irisnet.org/docs/',
+                active: false,
+            },
+            {
+                id: 2,
+                title: 'Forum',
+                href: 'https://forum.irisnet.org/',
+                active: false,
+            },
+            {
+                id: 3,
+                title: 'Blog',
+                href: 'https://medium.com/irisnet-blog',
+                active: false,
+            },
+        ],
+        mobileNavigation: [
+            {
+                id: 0,
+                title: 'Mainnet',
+                activeIndex: '',
+                active: false,
+            },
+            {
+                id: 1,
+                title: 'Testnet',
+                activeIndex: '',
+                active: false,
+            },
+            {
+                id: 2,
+                title: 'WhitePaper',
+                activeIndex: 0,
+                active: false,
+            },
+            {
+                id: 3,
+                title: 'Roadmap',
+                activeIndex: 3,
+                active: false,
+            },
+            {
+                id: 4,
+                title: 'Collaboration',
+                activeIndex: 1,
+                active: false,
+            },
+            {
+                id: 5,
+                title: 'Community',
+                activeIndex: 2,
+                active: false,
+            },
+        ],
+        mobileLinkHrefNavigation: [
+            {
+                id: 0,
+                title: 'Docs',
+                href: "https://www.irisnet.org/docs/",
+                activeIndex: '',
+            },
+            {
+                id: 1,
+                title: 'Forum',
+                href: "https://forum.irisnet.org/",
+                activeIndex: '',
+            },
+            {
+                id: 2,
+                title: 'Blog',
+                href: "https://medium.com/irisnet-blog",
+                activeIndex: '',
+            }
+        ]
+    },
+    // "logo": 'irisnet.png',
+    mainnet: {
+        title: 'IRIS Hub',
+        production: 'Interchain Service Hub for NextGen Distributed Applications – A BPoS Blockchain That Is Self-evolutionary',
+        wallet: 'Rainbow Wallet',
+        walletHref: 'https://www.rainbow.one/',
+        explorer: 'IRIS Explorer',
+        explorerHref: 'https://www.irisplorer.io/'
     },
     //todo(lsc)
     collaborationThree : {
@@ -1405,83 +1478,6 @@ export const message = {
                 src:require('../riot_icon.png')
             }
         }
-    },
-    events:{
-        title : 'Events',
-        betaTitle : 'IRISnet Public Token Addresses',
-        betaDate : 'Mar 02,2019',
-        historyTitle : 'All of History',
-        betaContent : 'Foundation and Dev Team Token Addresses.',
-        eventsList : [
-            {
-                id : '0',
-                href : 'https://medium.com/irisnet-blog/irisnet-iris-airdrop-on-binance-dex-win-500-000-iris-4e24be10a886',
-                date : 'Dec 31, 2019',
-                title : 'IRISnet (IRIS) Airdrop on Binance DEX — Win 500,000 IRIS!',
-                content : 'Airdrop on Binance DEX',
-                src:require('../events_airdrop.png')
-            },
-            {
-                id : '1',
-                href : 'https://medium.com/irisnet-blog/follow-retweet-to-help-iris-binance-dex-listing-7c27cc36dfd1',
-                date : 'Oct 15, 2019 ~ Oct 21, 2019',
-                title : 'Follow & Retweet to Help IRIS Binance DEX Listing',
-                content : 'Follow & Retweet to Help IRIS Binance DEX Listing',
-                src:require('../events_retweet_binance.png')
-            },
-            {
-                id : '2',
-                href : 'https://medium.com/irisnet-blog/project-progress-applications-in-irisnet-cosmos-ecosystem-bihu-ama-review-725b78d8f59d',
-                date : 'Oct 16, 2019',
-                year : '2019',
-                month : 'Oct',
-                day : '16',
-                title : 'Project Progress & Applications in IRISnet & Cosmos Ecosystem |Bihu AMA Review',
-                content : 'Bihu AMA Review',
-                src:require('../events_bihu.png')
-            },
-            {
-                id : '3',
-                href : 'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
-                date : 'Jul 29, 2019 ~ Aug 16, 2019',
-                year : '2019',
-                month : 'Jul',
-                day : '29',
-                title : 'Opened! IRIS Hub Bug Bounty II Program for new version release',
-                content : 'Bug Bounty II'
-            },
-            {
-                id : '4',
-                href : 'https://medium.com/irisnet-blog/2019-7-15-ama-42f4a5fbe5f0',
-                date : 'Jul 15, 2019 19:00-20:00',
-                year : '2019',
-                month : 'Jul',
-                day : '15',
-                title : 'AMA Hosted by ICO Pentera',
-                content : 'ICO Pentera & IRISnet'
-            },
-            {
-                id : '5',
-                href : 'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
-                date : 'Jul 6, 2019 ~ Jul 7, 2019',
-                year : '2019',
-                month : 'Jul',
-                day : '6',
-                title : '2019 2nd Global Graphene Blockchain Developer Conference',
-                content : 'GBAC'
-            },
-            {
-                id : '6',
-                href : 'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
-                date : 'Jun 19, 2019',
-                year : '2019',
-                month : 'Jun',
-                day : '19',
-                title : '2019-6-19 AMA',
-                content : 'IRISnet& Coinsuper'
-            },
-
-        ]
     },
     announcements : {
         title : 'Announcements',
