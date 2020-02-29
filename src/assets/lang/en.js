@@ -412,7 +412,63 @@ export const message = {
             },
         ]
     },
+    ecosystemThree:{
+        first:{
+            title:'IRIS Ecosystem',
+            content:'The IRIS ecosystem is made up of different players through the IRIS network, including users, developers and validators of IRIS Hub, blockchains connected with IRIS Hub, blockchain applications built on IRIS SDK or Cosmos SDK, blockchain development tools, IRIS cross-chain services, and the external real world.',
+            partner:'Collaboration',
+            img:require('../ecosystem_first.png'),
+        },
+        second:{
+            title:'IRIS Hub and Cosmos Hub',
+            content1:'The Cosmos Hub is the first of thousands of interconnected blockchains that will eventually comprise the Cosmos Network. ',
+            content2:'IRIS Hub is designed to be the foundation for the next generation distributed applications.Built with Cosmos-SDK, IRIS Hub enables cross-chain interoperability through a unified service model, while providing a variety of modules to support DeFi applications.',
+            content3:'The node maintained by the core development team of IRISnet is one of the genesis validators on Cosmos Hub.',
+            link1:'You can delegate ATOM to',
+            link2:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em ',
+            link3:'using',
+            link4:'Rainbow Wallet ',
+            img:require('../ecosystem_second.png'),
+            more:'View more',
+            moreLink:'',
+            rainbowLink:'https://www.rainbow.one/',
+            cosmosLink:'https://hubble.figment.network/cosmos/chains/cosmoshub-3/validators/696ABC95186FD65A07050C28AB00C9358A315030'
+        },
+        third:{
+            title:'IBC and the Interchain Ecosystem',
+            content:'Inter-Blockchain Communication is the interoperability protocol connecting the global economy to blockchain technology.',
+            details:'View more',
+            img:require('../ecosystem_third.png'),
+            detailLink:'https://cosmos.network/ibc',
+        },
+        fourth:{
+            title:'Validators',
+            content:'Validators from all over the world are responsible for generating blocks for each transaction and acting on behalf of delegators to guard the BPoS blockchain network consensus, secure operation and governance.',
+            details:'View more',
+            img:require('../ecosystem_fourth.png'),
+            detailLink:'https://medium.com/irisnet-blog/summary-of-irisnet-validator-brief-series-263a5af0cda9',
+        },
+        fifth:{
+            title:'IRITA',
+            content1:'The Inter-Realm Industry Trust Alliance (IRITA) is the first enterprise-level permissioned blockchain product in the Cosmos ecosystem. It is built based on IRIS SDK and the Tendermint (',
+            content2:'https://tendermint.com',
+            content3:'), a modern blockchain technology framework, and combined with years of Industry experience of Bianjie (',
+            content4:'www.bianjie.ai',
+            content5:').',
+            details:'View more',
+            img:require('../ecosystem_fifth.png'),
+            detailLink:'https://www.bianjie.ai/products/irita',
+            tendermintLink:'https://tendermint.com/',
+            sdkLink:'https://stage.bianjie.ai/products/irisnet'
+        },
+        brand:{
+            title:'Press Kit',
+            content:'Here are some branding resources and logos you might need.',
+            details:'View more',
+            detailLink:'https://www.irisnet.org/community/press-kit?lang=EN',
+        }
 
+    },
 
 
 
@@ -1288,58 +1344,6 @@ export const message = {
                 src:require('../riot_icon.png')
             }
         }
-    },
-    ecosystemThree:{
-        first:{
-            title:'IRIS Ecosystem',
-            content:'The IRIS ecosystem is made up of different players through the IRIS network, including users, developers and validators of IRIS Hub, blockchains connected with IRIS Hub, blockchain applications built on IRIS SDK or Cosmos SDK, blockchain development tools, IRIS cross-chain services, and the external real world.',
-            partner:'Collaboration',
-            img:require('../ecosystem_first.png'),
-        },
-        second:{
-            title:'IRIS Hub and Cosmos Hub',
-            content1:'The Cosmos Hub is the first of thousands of interconnected blockchains that will eventually comprise the Cosmos Network. ',
-            content2:'IRIS Hub is designed to be the foundation for the next generation distributed applications.Built with Cosmos-SDK, IRIS Hub enables cross-chain interoperability through a unified service model, while providing a variety of modules to support DeFi applications.',
-            content3:'The node maintained by the core development team of IRISnet is one of the genesis validators on Cosmos Hub.',
-            link1:'You can delegate ATOM to',
-            link2:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em ',
-            link3:'using',
-            link4:'Rainbow Wallet ',
-            img:require('../ecosystem_second.png'),
-            more:'View more',
-        },
-        third:{
-            title:'IBC and the Interchain Ecosystem',
-            content:'Inter-Blockchain Communication is the interoperability protocol connecting the global economy to blockchain technology.',
-            details:'View more',
-            img:require('../ecosystem_third.png'),
-            detailLink:'https://cosmos.network/ibc',
-        },
-        fourth:{
-            title:'Validators',
-            content:'Validators from all over the world are responsible for generating blocks for each transaction and acting on behalf of delegators to guard the BPoS blockchain network consensus, secure operation and governance.',
-            details:'View more',
-            img:require('../ecosystem_fourth.png'),
-            detailLink:'https://medium.com/irisnet-blog/summary-of-irisnet-validator-brief-series-263a5af0cda9',
-        },
-        fifth:{
-            title:'IRITA',
-            content1:'The Inter-Realm Industry Trust Alliance (IRITA) is the first enterprise-level permissioned blockchain product in the Cosmos ecosystem. It is built based on IRIS SDK and the Tendermint (',
-            content2:'https://tendermint.com',
-            content3:'), a modern blockchain technology framework, and combined with years of Industry experience of Bianjie (',
-            content4:'www.bianjie.ai',
-            content5:').',
-            details:'View more',
-            img:require('../ecosystem_fifth.png'),
-            detailLink:'https://www.bianjie.ai/products/irita',
-        },
-        brand:{
-            title:'Press Kit',
-            content:'Here are some branding resources and logos you might need.',
-            details:'View more',
-            detailLink:'https://www.irisnet.org/community/press-kit?lang=EN',
-        }
-
     },
     events:{
         title : 'Events',
