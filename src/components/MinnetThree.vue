@@ -83,76 +83,36 @@
                     <h3 class="mainnet_tools_explorer_title">{{$t("message.mainnetThree.explorer.title")}}</h3>
                     <p class="mainnet_tools_explorer_section">{{$t("message.mainnetThree.explorer.section")}}</p>
                     <div class="mainnet_tools_explorer_logo_content">
-                        <div class="mainnet_tools_explorer_logo_list_content">
-                            <a href="https://www.irisplorer.io/#/validators" target="_blank" class="mainnet_tools_explorer_logo_link">
-                                <div class="mainnet_tools_explorer_img">
-                                    <img src="../assets/irisnetThree/irisplorer.png" alt="">
-                                </div>
-                                <div class="mainnet_tools_explorer_name">IRISplorer</div>
-                            </a>
-                            <a href="https://iris.bigdipper.live/" target="_blank" class="mainnet_tools_explorer_logo_link">
-                                <div class="mainnet_tools_explorer_img">
-                                    <img src="../assets/irisnetThree/big_dipper.png" alt="">
-                                </div>
-                                <div class="mainnet_tools_explorer_name">Big Dipper</div>
-                            </a>
-                        </div>
-                        <div class="mainnet_tools_explorer_logo_list_content">
-                            <a href="https://hubble.figment.network/iris/chains/irishub" target="_blank" class="mainnet_tools_explorer_logo_link">
-                                <div class="mainnet_tools_explorer_img">
-                                    <img src="../assets/irisnetThree/hubble.png" alt="">
-                                </div>
-                                <div class="mainnet_tools_explorer_name">Hubble</div>
-                            </a>
-                            <a href="https://irishub.mintscan.io/" target="_blank" class="mainnet_tools_explorer_logo_link">
-                                <div class="mainnet_tools_explorer_img">
-                                    <img src="../assets/irisnetThree/mintscan.png" alt="">
-                                </div>
-                                <div class="mainnet_tools_explorer_name">Mintscan</div>
-                            </a>
-                        </div>
-                        <div class="mainnet_tools_explorer_logo_list_content">
-                            <a href="https://look.ping.pub/validator?chain=irishub" target="_blank" class="mainnet_tools_explorer_logo_link">
-                                <div class="mainnet_tools_explorer_img">
-                                    <img src="../assets/irisnetThree/look.png" alt="">
-                                </div>
-                                <div class="mainnet_tools_explorer_name">LOOK</div>
-                            </a>
-                        </div>
+                        <ul class="miannet_tools_explorer_list">
+                            <li class="mainnet_tools_explorer_list_item" v-for="(item,index) in explorer" :key="index">
+                                <a :href="item.href" target="_blank" class="mainnet_tools_explorer_link_content">
+                                    <div class="mainnet_tools_logo_content">
+                                        <img :src="item.require">
+                                    </div>
+                                    <p class="mainnet_tools_explorer_name">
+                                        <span>{{item.name}}</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="mainnet_tools_staking_tools_content">
                     <h3 class="mainnet_tools_staking_tools_title">{{$t("message.mainnetThree.stakingTools.title")}}</h3>
                     <p class="mainnet_tools_staking_section">{{$t("message.mainnetThree.stakingTools.section")}}</p>
                     <div class="mainnet_tools_staking_tools_logo_content">
-                        <div class="mainnet_tools_staking_tools_logo_list_content">
-                            <a href="https://hub.hashkey.com/#/" target="_blank" class="mainnet_tooks_staking_tools_logo_link">
-                                <div class="mainnet_tools_staking_tools_img">
-                                    <img src="../assets/irisnetThree/hashekey.png" alt="">
-                                </div>
-                                <div class="mainnet_tools_staking_tools_name">HashKey Hub</div>
-                            </a>
-                            <a href="https://mathwallet.net/web/irisnet" target="_blank" class="mainnet_tooks_staking_tools_logo_link">
-                                <div class="mainnet_tools_staking_tools_img">
-                                    <img src="../assets/irisnetThree/mathwallet.png" alt="">
-                                </div>
-                                <div class="mainnet_tools_staking_tools_name">Math Wallet</div>
-                            </a>
-                        </div>
-                        <div class="mainnet_tools_staking_tools_logo_list_content">
-                            <a href="https://iris-delegator.01node.com/" target="_blank" class="mainnet_tooks_staking_tools_logo_link">
-                                <div class="mainnet_tools_staking_tools_img">
-                                    <img src="../assets/irisnetThree/node_one.png" alt="">
-                                </div>
-                                <div class="mainnet_tools_staking_tools_name">01node.com</div>
-                            </a>
-                            <a href="https://wallet.cosmostation.io/?network=iris" target="_blank" class="mainnet_tooks_staking_tools_logo_link">
-                                <div class="mainnet_tools_staking_tools_img">
-                                    <img src="../assets/irisnetThree/mintscan.png" alt="">
-                                </div>
-                                <div class="mainnet_tools_staking_tools_name">Cosmostation</div>
-                            </a>
-                        </div>
+                        <ul class="miannet_tools_staking_list">
+                            <li class="mainnet_tools_staking_list_item" v-for="(item,index) in staking" :key="index">
+                                <a :href="item.href" target="_blank" class="mainnet_tools_staking_link_content">
+                                    <div class="mainnet_tools_logo_content">
+                                        <img :src="item.require">
+                                    </div>
+                                    <p class="mainnet_tools_staking_name">
+                                        <span>{{item.name}}</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -201,9 +161,59 @@
                     {
                         isAandroid: true,
                         isiOS: true,
-                        require:require("../assets/irisnetThree/syncnode.png"),
+                        require:require("../assets/irisnetThree/look.png"),
                         name: "SyncNode",
                         href:"https://wallet.syncnode.ro/"
+                    },
+                ],
+                explorer:[
+                    {
+                        require:require('../assets/irisnetThree/irisplorer.png'),
+                        name:'IRISplorer',
+                        href:'https://www.irisplorer.io/#/validators'
+                    },
+                    {
+                        require:require('../assets/irisnetThree/big_dipper.png'),
+                        name:'Big-Dipper',
+                        href:'https://iris.bigdipper.live/'
+                    },
+                    {
+                        require:require('../assets/irisnetThree/hubble.png'),
+                        name:'Hubble',
+                        href:'https://hubble.figment.network/iris/chains/irishub'
+                    },
+                    {
+                        require:require('../assets/irisnetThree/mintscan.png'),
+                        name:'Mintscan',
+                        href:'https://irishub.mintscan.io/'
+                    },
+                    {
+                        require:require('../assets/irisnetThree/look.png'),
+                        name:'LOOK',
+                        href:'https://look.ping.pub/validator?chain=irishub'
+                    }
+
+                ],
+                staking:[
+                    {
+                        require:require('../assets/irisnetThree/hashekey.png'),
+                        name:'HashKey Hub',
+                        href:'https://hub.hashkey.com/#/'
+                    },
+                    {
+                        require:require('../assets/irisnetThree/mathwallet.png'),
+                        name:'Math Wallet',
+                        href:'https://mathwallet.net/web/irisnet'
+                    },
+                    {
+                        require:require('../assets/irisnetThree/node_one.png'),
+                        name:'01node.com',
+                        href:'https://iris-delegator.01node.com/'
+                    },
+                    {
+                        require:require('../assets/irisnetThree/mintscan.png'),
+                        name:'Cosmostation',
+                        href:'https://wallet.cosmostation.io/?network=iris'
                     },
                 ]
             }
@@ -475,6 +485,46 @@
                     .mainnet_tools_explorer_logo_content{
                         display: flex;
                         margin-top: 0.5rem;
+                        .miannet_tools_explorer_list{
+                            display: flex;
+                            margin-top: 0.5rem;
+                            .mainnet_tools_explorer_list_item{
+                                flex: 1;
+                                min-width: 2.08rem;
+                                margin-right: 0.4rem;
+                                background:rgba(248,249,252,1);
+                                border-radius:5px;
+                                display: flex;
+                                justify-content: center;
+                                padding: 0.3rem 0 0.15rem 0;
+                                .mainnet_tools_explorer_link_content{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    text-align: center;
+                                    .mainnet_tools_logo_content{
+                                        width: 0.7rem;
+                                        height: 0.7rem;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+                                    .mainnet_tools_explorer_name{
+                                        margin:  0.27rem 0 0.15rem 0;
+                                        font-size:17px;
+                                        font-weight:400;
+                                        color:rgba(124,125,141,1);
+                                        line-height:30px;
+                                    }
+                                }
+                            }
+                            .mainnet_tools_wallet_list_item:last-child{
+                                margin-right: 0;
+                            }
+                        }
                         .mainnet_tools_explorer_logo_list_content{
                             display: flex;
                             flex: 2;
@@ -518,6 +568,7 @@
                     }
                 }
                 .mainnet_tools_staking_tools_content{
+                    margin-bottom: 0.6rem;
                     .mainnet_tools_staking_tools_title{
                         margin-top: 1rem;
                         font-size:36px;
@@ -534,8 +585,47 @@
                     }
                     .mainnet_tools_staking_tools_logo_content{
                         display: flex;
-                        width: calc(100% - 208px);
-                        margin: 1rem 0 1.06rem 0;
+                        margin-top: 0.5rem;
+                        .miannet_tools_staking_list{
+                            display: flex;
+                            margin-top: 0.5rem;
+                            .mainnet_tools_staking_list_item{
+                                flex: 1;
+                                min-width: 2.08rem;
+                                margin-right: 0.4rem;
+                                background:rgba(248,249,252,1);
+                                border-radius:5px;
+                                display: flex;
+                                justify-content: center;
+                                padding: 0.3rem 0 0.15rem 0;
+                                .mainnet_tools_staking_link_content{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    text-align: center;
+                                    .mainnet_tools_logo_content{
+                                        width: 0.7rem;
+                                        height: 0.7rem;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+                                    .mainnet_tools_staking_name{
+                                        margin:  0.27rem 0 0.15rem 0;
+                                        font-size:17px;
+                                        font-weight:400;
+                                        color:rgba(124,125,141,1);
+                                        line-height:30px;
+                                    }
+                                }
+                            }
+                            .mainnet_tools_wallet_list_item:last-child{
+                                margin-right: 0;
+                            }
+                        }
                         .mainnet_tools_staking_tools_logo_list_content{
                             flex: 1;
                             display: flex;
@@ -569,6 +659,607 @@
                         .mainnet_tools_staking_tools_logo_list_content:last-child{
                             flex: 1;
 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen  and (max-width: 1200px){
+        .mainnet_content_container{
+            .mainnet_token_content{
+                .mainnet_token_header{
+                    margin: 0 0.2rem;
+                    justify-content: flex-start;
+                    .mainnet_token_header_content{
+                        width: auto;
+                    }
+                }
+                .mainnet_token_center{
+                    margin: 0 0.2rem;
+                    .mainnet_token_img_content{
+                        display: none;
+                    }
+                    .mainnet_token_center_content{
+                        .mainnet_token_center_staking_text{
+                            min-width: auto !important;
+                            .mainnet_token_center_staking_section{
+                                word-wrap: break-word;
+                            }
+                        }
+
+                    }
+                    .mainnet_token_center_transaction{
+                        margin-top: 0.6rem !important;
+                        .mainnet_token_center_transaction_text{
+                            min-width: auto !important;
+                            .mainnet_token_center_transaction_section{
+                                word-wrap: break-word;
+                            }
+                        }
+                    }
+                    .mainnet_token_center_service{
+                        margin-top: 0.6rem;
+                        .mainnet_token_center_service_text{
+                            min-width: auto !important;
+                            .mainnet_token_center_service_section{
+                                word-wrap: break-word;
+                            }
+                        }
+                    }
+
+                }
+                .mainnet_token_footer{
+                    margin: 0 0.2rem;
+                    justify-content: flex-start;
+                    .mainnet_token_footer_content{
+                        width: auto;
+                    }
+                }
+            }
+            .mainnet_tools_content{
+                .mainnet_tools_content_wrap{
+                    .mainnet_tools_wallet_content{
+                        margin: 0 0.2rem;
+                        .miannet_tools_wallet_list{
+                            flex-wrap: wrap;
+                            max-width: 8rem;
+                            margin: 0 auto;
+                            .mainnet_tools_wallet_list_item{
+                                margin-top: 0.2rem;
+                                max-width: 2.16rem;
+                            }
+                            .mainnet_tools_wallet_list_item:nth-child(3){
+                                margin-right: 0;
+                            }
+
+                        }
+                    }
+                    .mainnet_tools_explorer_content{
+                        margin-right: 0.2rem;
+                        margin-left: 0.2rem;
+                        .mainnet_tools_explorer_logo_content{
+                            flex-direction: column;
+                            .miannet_tools_explorer_list{
+                                flex-wrap: wrap;
+                                max-width: 8rem;
+                                margin: 0 auto;
+                                .mainnet_tools_explorer_list_item{
+                                    margin-top: 0.2rem;
+                                    max-width: 2.16rem;
+                                }
+                                .mainnet_tools_explorer_list_item:nth-child(3){
+                                    margin-right: 0;
+                                }
+
+                            }
+                        }
+                    }
+                    .mainnet_tools_staking_tools_content{
+                        margin-right: 0.2rem;
+                        margin-left: 0.2rem;
+                        .mainnet_tools_staking_tools_logo_content{
+                            flex-direction: column;
+                            .miannet_tools_staking_list{
+                                flex-wrap: wrap;
+                                max-width: 8rem;
+                                margin: 0 auto;
+                                .mainnet_tools_staking_list_item{
+                                    margin-top: 0.2rem;
+                                    max-width: 2.16rem;
+                                }
+                                .mainnet_tools_staking_list_item:nth-child(3){
+                                    margin-right: 0;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen  and (max-width: 768px){
+        .mainnet_content_container{
+            .mainnet_content_wrap{
+                .mainnet_header_content{
+                    margin: 0 0.2rem;
+                }
+            }
+            .mainnet_token_content{
+                .mainnet_token_header{
+                    margin: 0 0.2rem;
+                    justify-content: flex-start;
+                    .mainnet_token_header_content{
+                        width: auto;
+                    }
+                }
+                .mainnet_token_center{
+                    margin: 0 0.2rem;
+                    .mainnet_token_img_content{
+                        display: none;
+                    }
+                    .mainnet_token_center_content{
+                        .mainnet_token_center_staking_text{
+                            min-width: auto !important;
+                            .mainnet_token_center_staking_section{
+                                word-wrap: break-word;
+                            }
+                        }
+                    }
+                    .mainnet_token_center_transaction{
+                        margin-top: 0.6rem !important;
+                        .mainnet_token_center_transaction_text{
+                            min-width: auto !important;
+                            .mainnet_token_center_transaction_section{
+                                word-wrap: break-word;
+                            }
+                        }
+                    }
+                    .mainnet_token_center_service{
+                        margin-top: 0.6rem;
+                        .mainnet_token_center_service_text{
+                            min-width: auto !important;
+                            .mainnet_token_center_service_section{
+                                word-wrap: break-word;
+                            }
+                        }
+                    }
+
+                }
+                .mainnet_token_footer{
+                    margin: 0 0.2rem;
+                    justify-content: flex-start;
+                    .mainnet_token_footer_content{
+                        width: auto;
+                    }
+                }
+            }
+            .mainnet_tools_content{
+                .mainnet_tools_content_wrap{
+                    .mainnet_tools_wallet_content{
+                        margin: 0 0.2rem;
+                        .miannet_tools_wallet_list{
+                            flex-wrap: wrap;
+                            max-width: 6rem;
+                            margin: 0 auto;
+                            justify-content: space-between;
+                            .mainnet_tools_wallet_list_item{
+                                margin-top: 0.2rem;
+                                max-width: 2.66rem;
+                            }
+                            .mainnet_tools_wallet_list_item:nth-child(3){
+                                margin-right: 0.4rem;
+                            }
+                            .mainnet_tools_wallet_list_item:nth-child(2){
+                                margin-right: 0;
+                            }
+                            .mainnet_tools_wallet_list_item:nth-child(4){
+                                margin-right: 0;
+                            }
+
+                        }
+                    }
+                    .mainnet_tools_explorer_content{
+                        margin-right: 0.2rem;
+                        margin-left: 0.2rem;
+                        .mainnet_tools_explorer_logo_content{
+                            .miannet_tools_explorer_list{
+                                flex-wrap: wrap;
+                                max-width: 6rem;
+                                margin: 0 auto;
+                                justify-content: space-between;
+                                .mainnet_tools_explorer_list_item{
+                                    margin-top: 0.2rem;
+                                    max-width: 2.66rem;
+                                }
+                                .mainnet_tools_explorer_list_item:nth-child(3){
+                                    margin-right: 0.4rem;
+                                }
+                                .mainnet_tools_explorer_list_item:nth-child(2){
+                                    margin-right: 0;
+                                }
+                                .mainnet_tools_explorer_list_item:nth-child(4){
+                                    margin-right: 0;
+                                }
+
+                            }
+                        }
+                    }
+                    .mainnet_tools_staking_tools_content{
+                        margin-right: 0.2rem;
+                        margin-left: 0.2rem;
+                        .mainnet_tools_staking_tools_logo_content{
+                            .miannet_tools_staking_list{
+                                flex-wrap: wrap;
+                                max-width: 6rem;
+                                margin: 0 auto;
+                                justify-content: space-between;
+                                .mainnet_tools_staking_list_item{
+                                    margin-top: 0.2rem;
+                                    max-width: 2.66rem;
+                                }
+                                .mainnet_tools_staking_list_item:nth-child(3){
+                                    margin-right: 0.4rem;
+                                }
+                                .mainnet_tools_staking_list_item:nth-child(2){
+                                    margin-right: 0;
+                                }
+                                .mainnet_tools_staking_list_item:nth-child(4){
+                                    margin-right: 0;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen  and (max-width: 610px){
+        .mainnet_content_container{
+            .mainnet_token_content{
+                .mainnet_token_header{
+                    margin: 0 0.2rem;
+                    justify-content: flex-start;
+                    .mainnet_token_header_content{
+                        width: auto;
+                    }
+                }
+                .mainnet_token_center{
+                    margin: 0 0.2rem;
+                    .mainnet_token_img_content{
+                        display: none;
+                    }
+                    .mainnet_token_center_content{
+                        .mainnet_token_center_staking_text{
+                            min-width: auto !important;
+                            .mainnet_token_center_staking_section{
+                                word-wrap: break-word;
+                            }
+                        }
+                    }
+                    .mainnet_token_center_transaction{
+                        margin-top: 0.6rem !important;
+                        .mainnet_token_center_transaction_text{
+                            min-width: auto !important;
+                            .mainnet_token_center_transaction_section{
+                                word-wrap: break-word;
+                            }
+                        }
+                    }
+                    .mainnet_token_center_service{
+                        margin-top: 0.6rem;
+                        .mainnet_token_center_service_text{
+                            min-width: auto !important;
+                            .mainnet_token_center_service_section{
+                                word-wrap: break-word;
+                            }
+                        }
+                    }
+
+                }
+                .mainnet_token_footer{
+                    margin: 0 0.2rem;
+                    justify-content: flex-start;
+                    .mainnet_token_footer_content{
+                        width: auto;
+                    }
+                }
+            }
+            .mainnet_tools_content{
+                .mainnet_tools_content_wrap{
+                    .mainnet_tools_wallet_content{
+                        margin: 0 0.2rem;
+                        .miannet_tools_wallet_list{
+                            flex-wrap: wrap;
+                            max-width: 3.48rem;
+                            margin: 0 auto;
+                            justify-content: space-between;
+                            .mainnet_tools_wallet_list_item{
+                                margin-top: 0.2rem;
+                                min-width: 1.6rem !important;
+                                max-width: 1.6rem !important;
+                            }
+                            .mainnet_tools_wallet_list_item:nth-child(1){
+                                margin-right: 0.2rem;
+                            }
+                            .mainnet_tools_wallet_list_item:nth-child(3){
+                                margin-right: 0.2rem;
+                            }
+                            .mainnet_tools_wallet_list_item:nth-child(2){
+                                margin-right: 0;
+                            }
+                            .mainnet_tools_wallet_list_item:nth-child(4){
+                                margin-right: 0;
+                            }
+
+                        }
+                    }
+                    .mainnet_tools_explorer_content{
+                        margin-right: 0.2rem;
+                        margin-left: 0.2rem;
+                        .mainnet_tools_explorer_logo_content{
+                            .miannet_tools_explorer_list{
+                                flex-wrap: wrap;
+                                max-width: 3.48rem;
+                                margin: 0 auto;
+                                justify-content: space-between;
+                                .mainnet_tools_explorer_list_item{
+                                    margin-top: 0.2rem;
+                                    min-width: 1.6rem !important;
+                                    max-width: 1.6rem !important;
+                                }
+                                .mainnet_tools_explorer_list_item:nth-child(1){
+                                    margin-right: 0.2rem;
+                                }
+                                .mainnet_tools_explorer_list_item:nth-child(3){
+                                    margin-right: 0.2rem;
+                                }
+                                .mainnet_tools_explorer_list_item:nth-child(2){
+                                    margin-right: 0;
+                                }
+                                .mainnet_tools_explorer_list_item:nth-child(4){
+                                    margin-right: 0;
+                                }
+
+                            }
+                        }
+                    }
+                    .mainnet_tools_staking_tools_content{
+                        margin-right: 0.2rem;
+                        margin-left: 0.2rem;
+                        .mainnet_tools_staking_tools_logo_content{
+                            .miannet_tools_staking_list{
+                                flex-wrap: wrap;
+                                max-width: 3.48rem;
+                                margin: 0 auto;
+                                justify-content: space-between;
+                                .mainnet_tools_staking_list_item{
+                                    margin-top: 0.2rem;
+                                    min-width: 1.6rem !important;
+                                    max-width: 1.6rem !important;
+                                }
+                                .mainnet_tools_staking_list_item:nth-child(1){
+                                    margin-right: 0.2rem;
+                                }
+                                .mainnet_tools_staking_list_item:nth-child(3){
+                                    margin-right: 0.2rem;
+                                }
+                                .mainnet_tools_staking_list_item:nth-child(2){
+                                    margin-right: 0;
+                                }
+                                .mainnet_tools_staking_list_item:nth-child(4){
+                                    margin-right: 0;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen  and (max-width: 380px){
+        .mainnet_content_container{
+            .mainnet_content_wrap{
+                .mainnet_header_content{
+                    .mainnet_header_title{
+                        padding-top: 0.5rem;
+                        font-size: 0.18rem;
+                        line-height: 0.36rem;
+                    }
+                    .mainnet_header_text_content{
+                        font-size: 0.14rem;
+                        line-height: 0.28rem;
+                    }
+                    .mainnet_header_text_content:last-child{
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+            .mainnet_token_content{
+                .mainnet_token_header{
+                    margin: 0 0.2rem;
+                    justify-content: flex-start;
+                    .mainnet_token_header_content{
+                        width: auto;
+                        margin-top: 0.5rem;
+                        .mainnet_token_header_title{
+                            font-size: 0.18rem;
+                        }
+                        .mainnet_token_header_section{
+                            font-size: 0.16rem;
+                        }
+                    }
+                }
+                .mainnet_token_center{
+                    margin: 0 0.2rem;
+                    .mainnet_token_img_content{
+                        display: none;
+                    }
+                    .mainnet_token_center_content{
+                        .mainnet_token_center_staking{
+                            .mainnet_token_center_staking_text{
+                                min-width: auto !important;
+                                .mainnet_token_center_staking_title{
+                                    font-size: 0.16rem;
+                                }
+                                .mainnet_token_center_staking_section{
+                                    font-size: 0.14rem;
+                                    word-wrap: break-word;
+                                }
+                            }
+                        }
+                        .mainnet_token_center_transaction{
+                            margin-top: 0.6rem !important;
+                            .mainnet_token_center_transaction_text{
+                                min-width: auto !important;
+                                .mainnet_token_center_transaction_title{
+                                    font-size: 0.16rem;
+                                }
+                                .mainnet_token_center_transaction_section{
+                                    font-size: 0.14rem;
+                                    word-wrap: break-word;
+                                }
+                            }
+                        }
+                        .mainnet_token_center_service{
+                            margin-top: 0.6rem;
+                            .mainnet_token_center_service_text{
+                                min-width: auto !important;
+                                .mainnet_token_center_service_title{
+                                    font-size: 0.16rem;
+                                }
+                                .mainnet_token_center_transaction_section{
+                                    font-size: 0.14rem;
+                                    word-wrap: break-word;
+                                }
+                            }
+                        }
+                    }
+                }
+                .mainnet_token_footer{
+                    margin: 0 0.2rem;
+                    justify-content: flex-start;
+                    .mainnet_token_footer_content{
+                        width: auto;
+                        margin-bottom: 0.89rem;
+                        .mainnet_token_footer_section{
+                            font-size: 0.14rem;
+                        }
+                    }
+                }
+            }
+            .mainnet_tools_content{
+                .mainnet_tools_content_wrap{
+                    .mainnet_tools_wallet_content{
+                        margin: 0 0.2rem;
+                        padding-top: 0.5rem;
+                        .mainnet_tools_wallet_title{
+                            font-size: 0.18rem;
+                        }
+                        .mainnet_tools_wallet_section{
+                            font-size: 0.14rem;
+                        }
+                        .miannet_tools_wallet_list{
+                            flex-wrap: wrap;
+                            max-width: 3.40rem;
+                            margin: 0 auto;
+                            justify-content: space-between;
+                            .mainnet_tools_wallet_list_item{
+                                margin-top: 0.2rem;
+                                min-width: 1.4rem !important;
+                                max-width: 1.4rem !important;
+                            }
+                            .mainnet_tools_wallet_list_item:nth-child(1){
+                                margin-right: 0.15rem;
+                            }
+                            .mainnet_tools_wallet_list_item:nth-child(3){
+                                margin-right: 0.15rem;
+                            }
+                            .mainnet_tools_wallet_list_item:nth-child(2){
+                                margin-right: 0;
+                            }
+                            .mainnet_tools_wallet_list_item:nth-child(4){
+                                margin-right: 0;
+                            }
+
+                        }
+                    }
+                    .mainnet_tools_explorer_content{
+                        margin-right: 0.2rem;
+                        margin-left: 0.2rem;
+                        margin-top: 0.6rem;
+                        .mainnet_tools_explorer_title{
+                            font-size: 0.18rem;
+                        }
+                        .mainnet_tools_explorer_section{
+                            font-size: 0.14rem;
+                        }
+                        .mainnet_tools_explorer_logo_content{
+                            .miannet_tools_explorer_list{
+                                flex-wrap: wrap;
+                                max-width: 3.40rem;
+                                margin: 0 auto;
+                                justify-content: space-between;
+                                .mainnet_tools_explorer_list_item{
+                                    margin-top: 0.2rem;
+                                    min-width: 1.4rem !important;
+                                    max-width: 1.4rem !important;
+                                }
+                                .mainnet_tools_explorer_list_item:nth-child(1){
+                                    margin-right: 0.15rem;
+                                }
+                                .mainnet_tools_explorer_list_item:nth-child(3){
+                                    margin-right: 0.15rem;
+                                }
+                                .mainnet_tools_explorer_list_item:nth-child(2){
+                                    margin-right: 0;
+                                }
+                                .mainnet_tools_explorer_list_item:nth-child(4){
+                                    margin-right: 0;
+                                }
+
+                            }
+                        }
+                    }
+                    .mainnet_tools_staking_tools_content{
+                        margin-right: 0.2rem;
+                        margin-left: 0.2rem;
+                        .mainnet_tools_staking_tools_title{
+                            margin-top: 0.5rem;
+                            font-size: 0.18rem;
+                        }
+                        .mainnet_tools_staking_section{
+                            font-size: 0.14rem;
+                        }
+                        .mainnet_tools_staking_tools_logo_content{
+                            .miannet_tools_staking_list{
+                                flex-wrap: wrap;
+                                max-width: 3.40rem;
+                                margin: 0 auto;
+                                justify-content: space-between;
+                                .mainnet_tools_staking_list_item{
+                                    margin-top: 0.2rem;
+                                    min-width: 1.4rem !important;
+                                    max-width: 1.4rem !important;
+                                }
+                                .mainnet_tools_staking_list_item:nth-child(1){
+                                    margin-right: 0.15rem;
+                                }
+                                .mainnet_tools_staking_list_item:nth-child(3){
+                                    margin-right: 0.15rem;
+                                }
+                                .mainnet_tools_staking_list_item:nth-child(2){
+                                    margin-right: 0;
+                                }
+                                .mainnet_tools_staking_list_item:nth-child(4){
+                                    margin-right: 0;
+                                }
+
+                            }
                         }
                     }
                 }

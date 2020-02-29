@@ -1,10 +1,30 @@
 <template>
-    <div class="home_container">
+    <div class="home_container"  :class="$store.state.hideHeaderBgColor ? 'hide_bg_color' : ''">
         <div class="home_swiper_container">
-            <swiper ref="mySwiper" class="my-swipe" :options="swiperOption">
+            <swiper ref="mySwiper" class="my-swipe" :options="swiperOption" v-if="flShowSwiper">
                 <swiper-slide>
-                    <div style="width: 100%;">
-                        <img style="width: 100%;height:100%" src="../assets/irisnetThree/home_swiper_1.jpg" >
+                    <div class="home_banner_one_content_container">
+                        <div class="banner_one_content">
+                            <p class="banner_one_content_h5_title">{{$t('message.homeThree.banner[1].h5Title')}}</p>
+                            <p class="banner_one_content_h1_title">{{$t('message.homeThree.banner[1].h1Title')}}</p>
+                            <p class="banner_one_content_section">{{$t('message.homeThree.banner[1].section')}}</p>
+<!--                            <div class="banner_one_content_bottom">-->
+<!--                                <a href="" target="_blank">{{$t('message.homeThree.banner[0].sectionThree')}}</a>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="home_banner_content_container">
+                        <div class="banner_content">
+                            <p class="banner_content_h5_title">{{$t('message.homeThree.banner[0].h5Title')}}</p>
+                            <p class="banner_content_h1_title">{{$t('message.homeThree.banner[0].h1Title')}}</p>
+                            <p class="banner_content_section">{{$t('message.homeThree.banner[0].section')}}</p>
+                            <div class="banner_content_bottom">
+                                <router-link :to="`/irisnet-bianjie`">{{$t('message.homeThree.banner[0].sectionSecond')}}</router-link>
+                                <a href="https://www.rainbow.one/" target="_blank">{{$t('message.homeThree.banner[0].sectionThree')}}</a>
+                            </div>
+                        </div>
                     </div>
                 </swiper-slide>
 
@@ -255,6 +275,7 @@
         },
         mounted(){
             this.flShowSwiper= true;
+            this.$store.commit('hideHeaderBgColor',true)
         },
         computed: {
             // 如果你需要得到当前的swiper对象来做一些事情，你可以像下面这样定义一个方法属性来获取当前的swiper对象，同时notNextTick必须为true
@@ -286,11 +307,92 @@
 </script>
 
 <style  lang="less">
-
+   .hide_bg_color{
+        padding-top: 0 !important;
+    }
     .home_container{
         padding-top: 0.6rem;
         .home_swiper_container{
             position: relative;
+            .swiper-slide{
+                .home_banner_content_container{
+                    background: url("../assets/irisnetThree/banner_1.jpg") no-repeat center center;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                    height: 8.8rem;
+                    .banner_content{
+                        margin-top:3.05rem;
+                        text-align: center;
+                        .banner_content_h5_title{
+                            font-size: 0.45rem;
+                            font-weight:400;
+                            color:rgba(255,255,255,1);
+                            line-height: 0.36rem;
+                        }
+                        .banner_content_h1_title{
+                            margin-top: 0.35rem;
+                            font-size: 0.6rem;
+                            font-weight:bold;
+                            color:rgba(255,255,255,1);
+                            line-height:0.7rem;
+                        }
+                        .banner_content_section{
+                            margin-top: 0.1rem;
+                            font-size: 0.28rem;
+                            font-weight:400;
+                            color:rgba(255,255,255,1);
+                            line-height: 0.36rem;
+                        }
+                        .banner_content_bottom{
+                            width: 60%;
+                            margin: 0 auto;
+                            margin-top: 0.5rem;
+                            display: flex;
+                            flex-direction: column;
+                            border-top: 0.02rem solid #fff;
+                            a{
+                                padding-top: 0.5rem;
+                            }
+                            a:last-child{
+                                padding-top: 0;
+                                margin-top: 0.12rem;
+                            }
+                        }
+                    }
+                }
+                .home_banner_one_content_container{
+                    background: url("../assets/irisnetThree/banner_2.jpg") no-repeat center center;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                    height: 8.8rem;
+                    .banner_one_content{
+                        margin-top: 3.36rem;
+                        text-align: center;
+                        .banner_one_content_h5_title{
+                            font-size: 0.60rem;
+                            font-weight:bold;
+                            color:rgba(255,255,255,1);
+                            line-height: 0.7rem;
+                        }
+                        .banner_one_content_h1_title{
+                            margin-top: 0.28rem;
+                            font-size: 0.28rem;
+                            font-weight:400;
+                            color:rgba(255,255,255,1);
+                            line-height: 0.36rem;
+                        }
+                        .banner_one_content_section{
+                            margin-top: 0.1rem;
+                            font-size: 0.28rem;
+                            font-weight:400;
+                            color:rgba(255,255,255,1);
+                            line-height: 0.36rem;
+                        }
+                    }
+                }
+            }
             .swiper-pagination-bullet-active{
                 width: 0.3rem !important;
                 height: 0.02rem;
@@ -571,7 +673,7 @@
                 .home_irisnet_road_map_header{
                     text-align: center;
                     .home_irisnet_road_map_title{
-                        font-size: 0.48rem;
+                        font-size: 0.36rem;
                         font-weight:400;
                         color:rgba(38,48,53,1);
                         line-height: 0.65rem;
@@ -806,6 +908,58 @@
     }
     @media screen and (min-width:375px) and (max-width: 768px){
         .home_container{
+            .home_swiper_container{
+                .swiper-slide{
+                    .home_banner_one_content_container{
+                        height: 6rem;
+                        padding: 0 0.2rem;
+                        .banner_one_content{
+                            margin-top: 2rem;
+                            .banner_one_content_h5_title{
+                                font-size: 0.28rem;
+                                line-height: 0.42rem;
+                            }
+                            .banner_one_content_h1_title{
+                                font-size: 0.14rem;
+                                line-height: 0.21rem;
+                            }
+                            .banner_one_content_section{
+                                font-size: 0.14rem;
+                                line-height: 0.21rem;
+                            }
+                        }
+                    }
+                    .home_banner_content_container{
+                        height:6rem;
+                        .banner_content{
+                            margin-top: 2.23rem;
+                            padding: 0 0.2rem;
+                            .banner_content_h5_title{
+                                font-size: 0.24rem;
+                                line-height: 0.2rem;
+                            }
+                            .banner_content_h1_title{
+                                margin-top: 0.21rem;
+                                font-size: 0.28rem;
+                                line-height: 0.38rem;
+                            }
+                            .banner_content_section{
+                                font-size: 0.14rem;
+                                line-height: 0.2rem;
+                            }
+                            .banner_content_bottom{
+                                margin-top: 0.26rem;
+                                a{
+                                    margin-top: 0.26rem;
+                                }
+                                a:first-child{
+                                    padding-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             .home_irisnet_container{
                 margin: 0 5%;
                 .home_irisnet_content_wrap{
@@ -917,6 +1071,58 @@
     }
     @media screen and (max-width: 375px){
         .home_container{
+            .home_swiper_container{
+                .swiper-slide{
+                    .home_banner_one_content_container{
+                        height: 6rem;
+                        padding: 0 0.2rem;
+                        .banner_one_content{
+                            margin-top: 2rem;
+                            .banner_one_content_h5_title{
+                                font-size: 0.28rem;
+                                line-height: 0.42rem;
+                            }
+                            .banner_one_content_h1_title{
+                                font-size: 0.14rem;
+                                line-height: 0.21rem;
+                            }
+                            .banner_one_content_section{
+                                font-size: 0.14rem;
+                                line-height: 0.21rem;
+                            }
+                        }
+                    }
+                    .home_banner_content_container{
+                        height:6rem;
+                        .banner_content{
+                            padding: 0 0.2rem;
+                            margin-top: 2.23rem;
+                            .banner_content_h5_title{
+                                font-size: 0.24rem;
+                                line-height: 0.2rem;
+                            }
+                            .banner_content_h1_title{
+                                margin-top: 0.21rem;
+                                font-size: 0.28rem;
+                                line-height: 0.38rem;
+                            }
+                            .banner_content_section{
+                                font-size: 0.14rem;
+                                line-height: 0.2rem;
+                            }
+                            .banner_content_bottom{
+                                margin-top: 0.26rem;
+                                a{
+                                    margin-top: 0.26rem;
+                                }
+                                a:first-child{
+                                    padding-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             .home_irisnet_container{
                 margin: 0 5%;
                 .home_irisnet_content_wrap{

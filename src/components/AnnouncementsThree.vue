@@ -2,54 +2,54 @@
     <div class="announcements_container">
         <div class="announcements_content_container">
             <p class="announcements_content_title">
-                {{$store.state.messages.announce.title}}
+                {{$t('message.announce.title')}}
             </p>
             <div class="announcements_content_img_container">
                 <div class="announcements_content_left_container">
-                    <img :src="$store.state.messages.announce.src"
+                    <img :src="$i18n.locale === 'EN' ? enMessage.announce.src : cnMessage.announce.src"
                          class="announcements_img">
                     <div class="announcements_content_left_produce_container">
                         <span class="announcements_content_left_produce_title">
-                            {{$store.state.messages.announce.betaTitle}}
+                            {{$t('message.announce.betaTitle')}}
                         </span>
                         <span class="announcements_content_left_produce_content">
-                            {{$store.state.messages.announce.betaContent}}
+                            {{$t('message.announce.betaContent')}}
                         </span>
                         <span class="announcements_content_left_produce_time">
-                            {{$store.state.messages.announce.betaDate}}
+                            {{$t('message.announce.betaDate')}}
                         </span>
 
                     </div>
                 </div>
                 <div class="announcements_content_right_container">
                     <div class="announcements_content_right_top_container"
-                         @click="toLinkUrl($store.state.messages.announce.announcementList[0].href)">
+                         @click="toLinkUrl( $i18n.locale ==='EN' ? enMessage.announce.announcementList[0].href : cnMessage.announce.announcementList[0].href)">
                         <span class="announcements_content_right_time">
-                            {{$store.state.messages.announce.announcementList[0].date}}
+                             {{$t('message.announce.announcementList[0].date')}}
                         </span>
                         <span class="announcements_content_right_title">
-                            {{$store.state.messages.announce.announcementList[0].title}}
+                            {{$t('message.announce.announcementList[0].title')}}
                         </span>
                         <span class="announcements_content_right_content">
-                            {{$store.state.messages.announce.announcementList[0].content}}
+                            {{$t('message.announce.announcementList[0].content')}}
                         </span>
                     </div>
                     <div class="announcements_content_right_top_container"
-                         @click="toLinkUrl($store.state.messages.announce.announcementList[1].href)">
+                         @click="toLinkUrl($i18n.locale ==='EN' ? enMessage.announce.announcementList[1].href : cnMessage.announce.announcementList[1].href)">
                         <span class="announcements_content_right_time">
-                            {{$store.state.messages.announce.announcementList[1].date}}
+                            {{$t('message.announce.announcementList[1].date')}}
                         </span>
                         <span class="announcements_content_right_title">
-                            {{$store.state.messages.announce.announcementList[1].title}}
+                            {{$t('message.announce.announcementList[1].title')}}
                         </span>
                         <span class="announcements_content_right_content">
-                            {{$store.state.messages.announce.announcementList[1].content}}
+                            {{$t('message.announce.announcementList[1].content')}}
                         </span>
                     </div>
                 </div>
             </div>
             <p class="announcements_history_title">
-                {{$store.state.messages.announce.historyTitle}}
+                {{$t('message.announce.historyTitle')}}
             </p>
             <div class="announcements_history_item_container"
                  :class="item.href ? 'pointer' : ''"
@@ -80,14 +80,24 @@
 </template>
 
 <script>
+    import enMessage from "../assets/lang/en"
+    import cnMessage from "../assets/lang/cn"
     export default {
         name : "Announcements",
         data(){
-            return {}
+            return {
+                enMessage: enMessage,
+                cnMessage: cnMessage
+            }
         },
         computed:{
             announcementList(){
-                let announcementList = JSON.parse(JSON.stringify(this.$store.state.messages.announce.announcementList));
+                let announcementList ;
+                if(this.$i18n.locale === 'EN'){
+                    announcementList = JSON.parse(JSON.stringify(this.enMessage.announce.announcementList));
+                }else {
+                    announcementList = JSON.parse(JSON.stringify(this.cnMessage.announce.announcementList));
+                }
                 announcementList.shift();
                 announcementList.shift();
                 return announcementList;
@@ -117,7 +127,7 @@
                 max-width:12rem;
                 padding-top:1rem;
                 .announcements_content_title {
-                    font-size:0.48rem;
+                    font-size:0.36rem;
                     margin-bottom:0.5rem;
                 }
                 .announcements_content_img_container{
@@ -166,7 +176,7 @@
             }
             .announcements_history_title{
                 color:#313236;
-                font-size:0.48rem;
+                font-size:0.36rem;
                 margin-top:0.7rem;
                 margin-bottom:0.1rem;
             }
