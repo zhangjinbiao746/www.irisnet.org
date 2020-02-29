@@ -393,7 +393,63 @@ export const message = {
             },
         ]
     },
+    ecosystemThree:{
+        first:{
+            title:'IRIS 生态',
+            content:'IRIS 生态系统通过 IRIS 网络由不同的参与者组成，包括 IRIS Hub 的用户、开发者及验证人、连接 IRIS Hub 的区块链、构建在 IRIS SDK 或 Cosmos SDK 上的区块链应用、区块链开发工具、IRIS 跨链服务以及外部现实世界。',
+            partner:'合作伙伴',
+            img:require('../ecosystem_first.png')
+        },
+        second:{
+            title:'IRIS 生态',
+            content1:'Cosmos Hub是最终组成Cosmos网络的数千个互相连接的区块链中的第一个Hub。',
+            content2:'IRIS Hub 是支持 DeFi 等各种复杂分布式应用的跨链服务枢纽。IRIS Hub 采用 Cosmos SDK 开发，是第一个可自进化的 BPoS 网络。',
+            content3:'IRISnet 的核心开发团队维护了一个 Cosmos Hub 上的创世验证节点。',
+            link1:'可使用',
+            link2:'Rainbow 钱包',
+            link3:'将 ATOM 委托给',
+            link4:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
+            img:require('../ecosystem_second.png'),
+            more:'了解更多',
+            moreLink:'',
+            rainbowLink:'https://www.rainbow.one/',
+            cosmosLink:'https://hubble.figment.network/cosmos/chains/cosmoshub-3/validators/696ABC95186FD65A07050C28AB00C9358A315030'
+        },
+        third:{
+            title:'IBC 和 跨链大生态',
+            content:'IBC 跨链协议是连接全球经济和区块链技术的互操作性协议。',
+            details:'查看详情',
+            img:require('../ecosystem_third.png'),
+            detailLink:'https://cosmos.network/ibc',
+        },
+        fourth:{
+            title:'验证人节点',
+            content:'来自世界各地的验证人节点担负着代表委托人共同维护Bonded PoS区块链网络共识、安全运行和治理进化的光荣使命！',
+            details:'查看详情',
+            img:require('../ecosystem_fourth.png'),
+            detailLink:'https://mp.weixin.qq.com/s/CfCma5Lv7FnBYdimg_EZ1Q',
+        },
+        fifth:{
+            title:'IRITA',
+            content1:'跨域行业互信联盟产品（Inter-Realm Industry Trust Alliance，简称 IRITA)，是 Cosmos 生态中第一个企业级联盟链产品，是基于现代区块链技术框架',
+            content2:'Tendermint ',
+            content3:'和',
+            content4:'IRIS SDK ',
+            content5:'，并结合边界智能团队多年行业经验打造的联盟链产品',
+            details:'查看详情',
+            img:require('../ecosystem_fifth.png'),
+            detailLink:'https://www.bianjie.ai/products/irita',
+            tendermintLink:'https://tendermint.com/',
+            sdkLink:'https://stage.bianjie.ai/products/irisnet'
+        },
+        brand:{
+            title:'品牌资料',
+            content:'这里有一些您可能需要的品牌资源和标志。',
+            details:'查看详情',
+            detailLink:'https://www.irisnet.org/community/press-kit?lang=CN',
+        }
 
+    },
 
 
 
@@ -1343,63 +1399,6 @@ export const message = {
                 src:require('../riot_icon.png')
             }
         }
-    },
-    ecosystemThree:{
-        first:{
-            title:'IRIS 生态',
-            content:'IRIS 生态系统通过 IRIS 网络由不同的参与者组成，包括 IRIS Hub 的用户、开发者及验证人、连接 IRIS Hub 的区块链、构建在 IRIS SDK 或 Cosmos SDK 上的区块链应用、区块链开发工具、IRIS 跨链服务以及外部现实世界。',
-            partner:'合作伙伴',
-            img:require('../ecosystem_first.png')
-        },
-        second:{
-            title:'IRIS 生态',
-            content1:'Cosmos Hub是最终组成Cosmos网络的数千个互相连接的区块链中的第一个Hub。',
-            content2:'IRIS Hub 是支持 DeFi 等各种复杂分布式应用的跨链服务枢纽。IRIS Hub 采用 Cosmos SDK 开发，是第一个可自进化的 BPoS 网络。',
-            content3:'IRISnet 的核心开发团队维护了一个 Cosmos Hub 上的创世验证节点。',
-            link1:'可使用',
-            link2:'Rainbow 钱包',
-            link3:'将 ATOM 委托给',
-            link4:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
-            img:require('../ecosystem_second.png'),
-            more:'了解更多',
-            moreLink:'',
-            rainbowLink:'https://www.rainbow.one/',
-            cosmosLink:'https://hubble.figment.network/cosmos/chains/cosmoshub-3/validators/696ABC95186FD65A07050C28AB00C9358A315030'
-        },
-        third:{
-            title:'IBC 和 跨链大生态',
-            content:'IBC 跨链协议是连接全球经济和区块链技术的互操作性协议。',
-            details:'查看详情',
-            img:require('../ecosystem_third.png'),
-            detailLink:'https://cosmos.network/ibc',
-        },
-        fourth:{
-            title:'验证人节点',
-            content:'来自世界各地的验证人节点担负着代表委托人共同维护Bonded PoS区块链网络共识、安全运行和治理进化的光荣使命！',
-            details:'查看详情',
-            img:require('../ecosystem_fourth.png'),
-            detailLink:'https://mp.weixin.qq.com/s/CfCma5Lv7FnBYdimg_EZ1Q',
-        },
-        fifth:{
-            title:'IRITA',
-            content1:'跨域行业互信联盟产品（Inter-Realm Industry Trust Alliance，简称 IRITA)，是 Cosmos 生态中第一个企业级联盟链产品，是基于现代区块链技术框架',
-            content2:'Tendermint ',
-            content3:'和',
-            content4:'IRIS SDK ',
-            content5:'，并结合边界智能团队多年行业经验打造的联盟链产品',
-            details:'查看详情',
-            img:require('../ecosystem_fifth.png'),
-            detailLink:'https://www.bianjie.ai/products/irita',
-            tendermintLink:'https://tendermint.com/',
-            sdkLink:'https://stage.bianjie.ai/products/irisnet'
-        },
-        brand:{
-            title:'品牌资料',
-            content:'这里有一些您可能需要的品牌资源和标志。',
-            details:'查看详情',
-            detailLink:'https://www.irisnet.org/community/press-kit?lang=CN',
-        }
-
     },
     "ecosystem":{
         "title":"生态合作伙伴",

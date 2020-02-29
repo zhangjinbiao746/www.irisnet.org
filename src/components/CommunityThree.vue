@@ -89,11 +89,13 @@
 </script>
 
 <style scoped lang="less">
+@import '../style/mixin.less';
     .community_container_content{
         padding-top: 0.8rem;
         .community_header_content_wrap{
             padding-top: 1rem;
             background: #fff;
+            padding:0 0.15rem;
             .community_header_content{
                 max-width: 12rem;
                 margin: 0 auto;
@@ -188,7 +190,7 @@
         }
         .community_center_wrap{
             background: #F8F9FC;
-            padding-top: 1rem;
+            padding: 1rem 0.15rem 0 0.15rem;
             .community_center_event_content{
                 max-width: 12rem;
                 margin: 0 auto;
@@ -257,6 +259,8 @@
         }
         .community_footer_wrap{
             background: #fff;
+            padding:0 0.15rem;
+            margin-top:1rem;
             .community_footer_faq_content{
                 max-width: 12rem;
                 margin: 0 auto;
@@ -287,6 +291,366 @@
                     }
                     .community_footer_faq_list_right_content{
 
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:375px) and (max-width: 768px){
+        .community_container_content{
+            padding-top: 0.8rem;
+            .community_header_content_wrap{
+                padding-top: 1rem;
+                .community_header_content{
+                    max-width: 5.2rem;
+                    margin: 0 auto;
+                    .community_header_announcement_header{
+                        .community_header_announcement_title{
+                            font-size: 0.36rem;
+                            font-weight:400;
+                            line-height:0.65rem;
+                        }
+                        .community_header_announcement_view_more{
+                            padding-top: 0.4rem;
+                            font-size:0.17rem;
+                            font-weight:400;
+                            line-height:0.2rem;
+                        }
+                    }
+                    .community_header_announcement_header_content{
+                        .flexColumn;
+                        margin: 0.61rem  0 0.7rem 0;
+                        .community_header_announcement_left_content{
+                            flex: 1;
+                            margin-right: 0rem;
+                            .community_header_announcement_img_content{
+                                img{
+                                    display: inline-block;
+                                    width: 100%;
+                                }
+                            }
+                            .community_header_announcement_important{
+                                margin-top: 0.3rem;
+                                .community_header_announcement_important_title{
+                                    font-size: 0.22rem;
+                                    font-weight:600;
+                                    line-height:0.26rem;
+                                }
+                                .community_header_announcement_important_section{
+                                    font-size:0.17rem;
+                                    font-weight:400;
+                                    line-height:0.3rem;
+                                }
+                                .community_header_announcement_important_date{
+                                    font-size:0.15rem;
+                                    font-weight:400;
+                                    line-height:0.18rem;
+                                }
+                            }
+                        }
+                        .community_header_announcement_right_content{
+                            flex: 1;
+                            .community_header_announcement_list_content{
+                                padding-top: 0.3rem;
+                                border-top: 0.01rem solid #EEEEEE;
+                                border-bottom: none;
+                                margin-top: 0.3rem;
+                                .community_header_announcement_date{
+                                    font-size: 0.15rem;
+                                    font-weight:400;
+                                    line-height:0.18rem;
+                                }
+                                .community_header_announcement_item_title{
+                                    margin-top: 0.06rem;
+                                    font-size:0.22rem;
+                                    font-weight:600;
+                                    line-height:0.32rem;
+                                }
+                                .community_header_announcement_section{
+                                    margin-top: 0.1rem;
+                                    font-size: 0.17rem;
+                                    font-weight:400;
+                                    line-height: 0.3rem;
+                                }
+                            }
+                            .community_header_announcement_list_content:nth-child(2){
+                                margin-top: 0rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .community_center_wrap{
+                padding-top: 1rem;
+                .community_center_event_content{
+                    max-width: 5.2rem;
+                    margin: 0 auto;
+                    .community_center_event_header_content{
+                        .community_center_event_header_title{
+                            font-size: 0.36rem;
+                            font-weight:400;
+                            line-height:0.65rem;
+                        }
+                        .community_center_event_header_view_more{
+                            padding-top: 0.4rem;
+                            font-size:0.17rem;
+                            font-weight:400;
+                            line-height:0.2rem;
+                        }
+                    }
+                    .community_center_event_list_content{
+                        .flexColumn;
+                        margin-top: 0.6rem;
+                        padding-bottom: 0.93rem;
+                        .community_center_event_list_item{
+                            flex: 1;
+                            margin-right: 0rem;
+                            margin-bottom: 0.6rem;
+                            .community_center_event_list_item_img{
+                                height:2.4rem;
+                                /*删除*/
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .community_center_event_list_item_title{
+                                margin-top: 0.3rem;
+                                font-size: 0.22rem;
+                                font-weight:600;
+                                line-height:0.32rem;
+                            }
+                            .community_center_event_list_item_section{
+                                margin-top: 0.15rem;
+                                font-size: 0.17rem;
+                                font-weight:400;
+                                line-height: 0.3rem;
+                            }
+                            .community_center_event_list_item_date{
+                                margin-top: 0.1rem;
+                                font-size: 0.15rem;
+                                font-weight:400;
+                                line-height: 0.18rem;
+                            }
+                        }
+                        .community_center_event_list_item:last-child{
+                            margin-right: 0;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .community_footer_wrap{
+                .community_footer_faq_content{
+                    max-width: 5.2rem;
+                    margin: 0 auto;
+                    .community_footer_faq_header_content{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-bottom: 0.22rem;
+                        border-bottom: 0.01rem solid #DDD;
+                        .community_footer_faq_header_title{
+                            font-size: 0.36rem;
+                            font-weight:400;
+                            line-height:0.65rem;
+                        }
+                        .community_footer_faq_header_view_more{
+                            padding-top: 0.4rem;
+                            font-size:0.17rem;
+                            font-weight:400;
+                            line-height:0.2rem;
+                        }
+                    }
+                    .community_footer_faq_list_content{
+                        margin-top: 0.6rem;
+                        .community_footer_faq_list_left_content{
+
+                        }
+                        .community_footer_faq_list_right_content{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 375px){
+        .community_container_content{
+            padding-top: 0.8rem;
+            .community_header_content_wrap{
+                padding-top: 0.5rem;
+                .community_header_content{
+                    max-width: 5.2rem;
+                    margin: 0 auto;
+                    .community_header_announcement_header{
+                        .community_header_announcement_title{
+                            font-size: 0.18rem;
+                            font-weight:400;
+                            line-height:0.65rem;
+                        }
+                        .community_header_announcement_view_more{
+                            padding-top: 0.4rem;
+                            font-size:0.14rem;
+                            font-weight:400;
+                            line-height:0.2rem;
+                        }
+                    }
+                    .community_header_announcement_header_content{
+                        .flexColumn;
+                        margin: 0.61rem 0 0.3rem 0;
+                        .community_header_announcement_left_content{
+                            flex: 1;
+                            margin-right: 0rem;
+                            .community_header_announcement_img_content{
+                                img{
+                                    display: inline-block;
+                                    width: 100%;
+                                }
+                            }
+                            .community_header_announcement_important{
+                                margin-top: 0.3rem;
+                                .community_header_announcement_important_title{
+                                    font-size: 0.16rem;
+                                    font-weight:600;
+                                    line-height:0.26rem;
+                                }
+                                .community_header_announcement_important_section{
+                                    font-size:0.14rem;
+                                    font-weight:400;
+                                    line-height:0.3rem;
+                                }
+                                .community_header_announcement_important_date{
+                                    font-size:0.15rem;
+                                    font-weight:400;
+                                    line-height:0.18rem;
+                                }
+                            }
+                        }
+                        .community_header_announcement_right_content{
+                            flex: 1;
+                            .community_header_announcement_list_content{
+                                padding-top: 0.3rem;
+                                border-top: 0.01rem solid #EEEEEE;
+                                border-bottom: none;
+                                margin-top: 0.3rem;
+                                .community_header_announcement_date{
+                                    font-size: 0.15rem;
+                                    font-weight:400;
+                                    line-height:0.18rem;
+                                }
+                                .community_header_announcement_item_title{
+                                    margin-top: 0.06rem;
+                                    font-size:0.22rem;
+                                    font-weight:600;
+                                    line-height:0.32rem;
+                                }
+                                .community_header_announcement_section{
+                                    margin-top: 0.1rem;
+                                    font-size: 0.17rem;
+                                    font-weight:400;
+                                    line-height: 0.3rem;
+                                }
+                            }
+                            .community_header_announcement_list_content:nth-child(2){
+                                margin-top: 0rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .community_center_wrap{
+                padding-top: 0.5rem;
+                .community_center_event_content{
+                    max-width: 5.2rem;
+                    margin: 0 auto;
+                    .community_center_event_header_content{
+                        .community_center_event_header_title{
+                            font-size: 0.18rem;
+                            font-weight:400;
+                            line-height:0.65rem;
+                        }
+                        .community_center_event_header_view_more{
+                            padding-top: 0.4rem;
+                            font-size:0.14rem;
+                            font-weight:400;
+                            line-height:0.2rem;
+                        }
+                    }
+                    .community_center_event_list_content{
+                        .flexColumn;
+                        margin-top: 0.6rem;
+                        padding-bottom: 0.93rem;
+                        .community_center_event_list_item{
+                            flex: 1;
+                            margin-right: 0rem;
+                            margin-bottom: 0.6rem;
+                            .community_center_event_list_item_img{
+                                height:2.4rem;
+                                /*删除*/
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .community_center_event_list_item_title{
+                                margin-top: 0.3rem;
+                                font-size: 0.16rem;
+                                font-weight:600;
+                                line-height:0.32rem;
+                            }
+                            .community_center_event_list_item_section{
+                                margin-top: 0.15rem;
+                                font-size: 0.17rem;
+                                font-weight:400;
+                                line-height: 0.3rem;
+                            }
+                            .community_center_event_list_item_date{
+                                margin-top: 0.1rem;
+                                font-size: 0.14rem;
+                                font-weight:400;
+                                line-height: 0.18rem;
+                            }
+                        }
+                        .community_center_event_list_item:last-child{
+                            margin-right: 0;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .community_footer_wrap{
+                margin-top:0.5rem;
+                .community_footer_faq_content{
+                    max-width: 5.2rem;
+                    margin: 0 auto;
+                    .community_footer_faq_header_content{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-bottom: 0.22rem;
+                        border-bottom: 0.01rem solid #DDD;
+                        .community_footer_faq_header_title{
+                            font-size: 0.18rem;
+                            font-weight:400;
+                            line-height:0.65rem;
+                        }
+                        .community_footer_faq_header_view_more{
+                            padding-top: 0.4rem;
+                            font-size:0.14rem;
+                            font-weight:400;
+                            line-height:0.2rem;
+                        }
+                    }
+                    .community_footer_faq_list_content{
+                        margin-top: 0.6rem;
+                        .community_footer_faq_list_left_content{
+
+                        }
+                        .community_footer_faq_list_right_content{
+
+                        }
                     }
                 }
             }

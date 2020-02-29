@@ -4,21 +4,21 @@
             <div class="ecosystem_common_container">
                 <div class="ecosystem_item_content_container">
                     <p class="ecosystem_item_content_title">
-                        {{$store.state.messages.ecosystemThree.first.title}}
+                        {{$t("message.ecosystemThree.first.title")}}
                     </p>
                     <p class="ecosystem_item_content_content" style="margin-bottom:0">
-                        {{$store.state.messages.ecosystemThree.first.content}}
+                        {{$t("message.ecosystemThree.first.content")}}
                     </p>
 
                     <div class="ecosystem_item_content_link_arrow_container">
                         <span class="ecosystem_item_content_link"
                               @click="$router.push({path: '/collaboration'})">
-                            {{$store.state.messages.ecosystemThree.first.partner}}
+                            {{$t("message.ecosystemThree.first.partner")}}
                         </span>
                     </div>
                 </div>
                 <div class="ecosystem_item_img_container">
-                    <img :src="$store.state.messages.ecosystemThree.first.img"
+                    <img :src="$t('message.ecosystemThree.first.img')"
                          class="ecosystem_item_img first_img">
                 </div>
             </div>
@@ -26,64 +26,66 @@
         <div class="ecosystem_common_wrap">
             <div class="ecosystem_common_container ecosystem_common_container_second">
                 <div class="ecosystem_item_img_container second_img1_display">
-                    <img :src="$store.state.messages.ecosystemThree.second.img"
+                    <img :src="$t('message.ecosystemThree.second.img')"
                          class="ecosystem_item_img second_img">
                 </div>
                 <div class="ecosystem_item_content_container">
                     <p class="ecosystem_item_content_title">
-                        {{$store.state.messages.ecosystemThree.second.title}}
+                        {{$t("message.ecosystemThree.second.title")}}
                     </p>
                     <p class="ecosystem_item_content_content">
-                        {{$store.state.messages.ecosystemThree.second.content1}}
+                        {{$t("message.ecosystemThree.second.content1")}}
                     </p>
                     <p class="ecosystem_item_content_content">
-                        {{$store.state.messages.ecosystemThree.second.content2}}
+                        {{$t("message.ecosystemThree.second.content2")}}
                     </p>
                     <p class="ecosystem_item_content_content">
-                        {{$store.state.messages.ecosystemThree.second.content3}}
+                        {{$t("message.ecosystemThree.second.content3")}}
                     </p>
                     <div class="ecosystem_item_content_link_wrap"
                          v-if="$store.state.lang === 'CN'">
                         <div class="ecosystem_item_content_sub_container">
                             <span class="ecosystem_item_content_sub_content">
-                                {{$store.state.messages.ecosystemThree.second.link1}}
+                                {{$t("message.ecosystemThree.second.link1")}}
                             </span>
                             <span class="ecosystem_item_content_sub_link"
-                                  @click="toLinkUrl($store.state.messages.ecosystemThree.second.rainbowLink)">
-                                {{$store.state.messages.ecosystemThree.second.link2}}
+                                  @click="toLinkUrl($t('message.ecosystemThree.second.rainbowLink'))">
+                                {{$t("message.ecosystemThree.second.link2")}}
                             </span>
                         </div>
-                        <span class="ecosystem_item_content_sub_content">
-                            {{$store.state.messages.ecosystemThree.second.link3}}
-                        </span>
-                        <span class="ecosystem_item_content_sub_link"
-                              @click="toLinkUrl($store.state.messages.ecosystemThree.second.cosmosLink)">
-                            {{$store.state.messages.ecosystemThree.second.link4}}
-                        </span>
+                        <div>
+                            <span class="ecosystem_item_content_sub_content">
+                                {{$t("message.ecosystemThree.second.link3")}}
+                            </span>
+                            <span class="ecosystem_item_content_sub_link"
+                                  @click="toLinkUrl($t('message.ecosystemThree.second.cosmosLink'))">
+                                {{$t("message.ecosystemThree.second.link4")}}
+                            </span>
+                        </div>
                     </div>
                     <div class="ecosystem_item_content_link_wrap"
                          v-else>
                         <span class="ecosystem_item_content_sub_content">
-                            {{$store.state.messages.ecosystemThree.second.link1}}
+                            {{$t("message.ecosystemThree.second.link1")}}
                         </span>
                         <span class="ecosystem_item_content_sub_link"
-                              @click="toLinkUrl($store.state.messages.ecosystemThree.second.cosmosLink)">
-                            {{$store.state.messages.ecosystemThree.second.link2}}
+                              @click="toLinkUrl($t('message.ecosystemThree.second.cosmosLink'))">
+                            {{$t("message.ecosystemThree.second.link2")}}
                         </span>
                         <div class="ecosystem_item_content_sub_container">
                             <span class="ecosystem_item_content_sub_content">
-                                {{$store.state.messages.ecosystemThree.second.link3}}
+                                {{$t("message.ecosystemThree.second.link3")}}
                             </span>
                             <span class="ecosystem_item_content_sub_link"
-                                  @click="toLinkUrl($store.state.messages.ecosystemThree.second.rainbowLink)">
-                                {{$store.state.messages.ecosystemThree.second.link4}}
+                                  @click="toLinkUrl($t('message.ecosystemThree.second.rainbowLink'))">
+                                {{$t("message.ecosystemThree.second.link4")}}
                             </span>
                         </div>
                     </div>
                     <div class="ecosystem_item_content_link_arrow_container">
                         <span class="ecosystem_item_content_link"
                               @click="$router.push({path: '/irisnet-bianjie'})">
-                            {{$store.state.messages.ecosystemThree.second.more}}
+                            {{$t("message.ecosystemThree.second.more")}}
                         </span>
                         <img src="../assets/arrow_right_icon.png"
                              class="ecosystem_item_content_link_arrow">
@@ -96,23 +98,23 @@
             <div class="ecosystem_common_container">
                 <div class="ecosystem_item_content_container">
                     <p class="ecosystem_item_content_title">
-                        {{$store.state.messages.ecosystemThree.third.title}}
+                        {{$t("message.ecosystemThree.third.title")}}
                     </p>
                     <p class="ecosystem_item_content_content" style="margin-bottom:0">
-                        {{$store.state.messages.ecosystemThree.third.content}}
+                        {{$t("message.ecosystemThree.third.content")}}
                     </p>
 
                     <div class="ecosystem_item_content_link_arrow_container">
                         <span class="ecosystem_item_content_link"
-                              @click="toLinkUrl($store.state.messages.ecosystemThree.third.detailLink)">
-                            {{$store.state.messages.ecosystemThree.third.details}}
+                              @click="toLinkUrl($t('message.ecosystemThree.third.detailLink'))">
+                            {{$t("message.ecosystemThree.third.details")}}
                         </span>
                         <img src="../assets/arrow_right_icon.png"
                              class="ecosystem_item_content_link_arrow">
                     </div>
                 </div>
                 <div class="ecosystem_item_img_container">
-                    <img :src="$store.state.messages.ecosystemThree.third.img"
+                    <img :src="$t('message.ecosystemThree.third.img')"
                          class="ecosystem_item_img third_img">
                 </div>
             </div>
@@ -120,20 +122,20 @@
         <div class="ecosystem_common_wrap">
             <div class="ecosystem_common_container ecosystem_common_container_fourth">
                 <div class="ecosystem_item_img_container fourth_img1_display">
-                    <img :src="$store.state.messages.ecosystemThree.fourth.img"
+                    <img :src="$t('message.ecosystemThree.fourth.img')"
                          class="ecosystem_item_img fourth_img">
                 </div>
                 <div class="ecosystem_item_content_container">
                     <p class="ecosystem_item_content_title">
-                        {{$store.state.messages.ecosystemThree.fourth.title}}
+                        {{$t("message.ecosystemThree.fourth.title")}}
                     </p>
                     <p class="ecosystem_item_content_content" style="margin-bottom:0">
-                        {{$store.state.messages.ecosystemThree.fourth.content}}
+                        {{$t("message.ecosystemThree.fourth.content")}}
                     </p>
                     <div class="ecosystem_item_content_link_arrow_container">
                         <span class="ecosystem_item_content_link"
-                              @click="toLinkUrl($store.state.messages.ecosystemThree.fourth.detailLink)">
-                            {{$store.state.messages.ecosystemThree.fourth.details}}
+                              @click="toLinkUrl($t('message.ecosystemThree.fourth.detailLink'))">
+                            {{$t("message.ecosystemThree.fourth.details")}}
                         </span>
                         <img src="../assets/arrow_right_icon.png"
                              class="ecosystem_item_content_link_arrow">
@@ -145,41 +147,41 @@
             <div class="ecosystem_common_container">
                 <div class="ecosystem_item_content_container">
                     <p class="ecosystem_item_content_title">
-                        {{$store.state.messages.ecosystemThree.fifth.title}}
+                        {{$t("message.ecosystemThree.fifth.title")}}
                     </p>
                     <p class="ecosystem_item_content_content" style="margin-bottom:0"
                        v-if="$store.state.lang === 'CN'">
-                        {{$store.state.messages.ecosystemThree.fifth.content1}}
+                        {{$t("message.ecosystemThree.fifth.content1")}}
                         <span class="ecosystem_item_content_link"
-                              @click="toLinkUrl($store.state.messages.ecosystemThree.fifth.tendermintLink)">
-                            {{$store.state.messages.ecosystemThree.fifth.content2}}
+                              @click="toLinkUrl($t('message.ecosystemThree.fifth.tendermintLink'))">
+                            {{$t("message.ecosystemThree.fifth.content2")}}
                         </span>
-                        {{$store.state.messages.ecosystemThree.fifth.content3}}
+                        {{$t("message.ecosystemThree.fifth.content3")}}
                         <span class="ecosystem_item_content_link"
-                              @click="toLinkUrl($store.state.messages.ecosystemThree.fifth.sdkLink)">
-                            {{$store.state.messages.ecosystemThree.fifth.content4}}
+                              @click="toLinkUrl($t('message.ecosystemThree.fifth.sdkLink'))">
+                            {{$t("message.ecosystemThree.fifth.content4")}}
                         </span>
-                        {{$store.state.messages.ecosystemThree.fifth.content5}}
+                        {{$t("message.ecosystemThree.fifth.content5")}}
                     </p>
                     <p class="ecosystem_item_content_content" style="margin-bottom:0"
                        v-else>
-                        {{$store.state.messages.ecosystemThree.fifth.content1}}
+                        {{$t("message.ecosystemThree.fifth.content1")}}
                         <span class="ecosystem_item_content_link"
-                              @click="toLinkUrl($store.state.messages.ecosystemThree.fifth.tendermintLink)">
-                            {{$store.state.messages.ecosystemThree.fifth.content2}}
+                              @click="toLinkUrl($t('message.ecosystemThree.fifth.tendermintLink'))">
+                            {{$t("message.ecosystemThree.fifth.content2")}}
                         </span>
-                        {{$store.state.messages.ecosystemThree.fifth.content3}}
+                        {{$t("message.ecosystemThree.fifth.content3")}}
                         <span class="ecosystem_item_content_link"
-                              @click="toLinkUrl($store.state.messages.ecosystemThree.fifth.sdkLink)">
-                            {{$store.state.messages.ecosystemThree.fifth.content4}}
+                              @click="toLinkUrl($t('message.ecosystemThree.fifth.sdkLink'))">
+                            {{$t("message.ecosystemThree.fifth.content4")}}
                         </span>
-                        {{$store.state.messages.ecosystemThree.fifth.content5}}
+                        {{$t("message.ecosystemThree.fifth.content5")}}
                     </p>
 
                     <div class="ecosystem_item_content_link_arrow_container">
                         <span class="ecosystem_item_content_link"
-                              @click="toLinkUrl($store.state.messages.ecosystemThree.fifth.detailLink)">
-                            {{$store.state.messages.ecosystemThree.fifth.details}}
+                              @click="toLinkUrl($t('message.ecosystemThree.fifth.detailLink'))">
+                            {{$t("message.ecosystemThree.fifth.details")}}
                         </span>
                         <img src="../assets/arrow_right_icon.png"
                              class="ecosystem_item_content_link_arrow">
@@ -187,7 +189,7 @@
 
                 </div>
                 <div class="ecosystem_item_img_container">
-                    <img :src="$store.state.messages.ecosystemThree.fifth.img"
+                    <img :src="$t('message.ecosystemThree.fifth.img')"
                          class="ecosystem_item_img fifth_img">
                 </div>
             </div>
@@ -198,15 +200,15 @@
                 </div>
                 <div class="ecosystem_item_content_container">
                     <p class="ecosystem_item_content_title">
-                        {{$store.state.messages.ecosystemThree.brand.title}}
+                        {{$t("message.ecosystemThree.brand.title")}}
                     </p>
                     <p class="ecosystem_item_content_content" style="margin-bottom:0">
-                        {{$store.state.messages.ecosystemThree.brand.content}}
+                        {{$t("message.ecosystemThree.brand.content")}}
                     </p>
                     <div class="ecosystem_item_content_link_arrow_container">
                         <span class="ecosystem_item_content_link"
-                              @click="toLinkUrl($store.state.messages.ecosystemThree.brand.detailLink)">
-                            {{$store.state.messages.ecosystemThree.brand.details}}
+                              @click="toLinkUrl($t('message.ecosystemThree.brand.detailLink'))">
+                            {{$t("message.ecosystemThree.brand.details")}}
                         </span>
                         <img src="../assets/arrow_right_icon.png"
                              class="ecosystem_item_content_link_arrow">
@@ -279,13 +281,6 @@
                         .flexRow;
                         align-items: center;
                         margin-top: 0.2rem;
-                        .ecosystem_item_content_link {
-                            cursor: pointer;
-                            color: #5E82F1;
-                            font-size: 0.22rem;
-                            margin-right: 0.05rem;
-
-                        }
                         .ecosystem_item_content_link_arrow {
                             width: 0.06rem;
                             height: 0.12rem;
@@ -303,12 +298,12 @@
                             cursor: pointer;
                             color: #5E82F1;
                             font-size: 0.22rem;
-                            line-height: 1.8;
+                            line-height: 1.1;
                             word-break: break-all;
                         }
                         .ecosystem_item_content_sub_container {
-                            .flexRow;
-                            align-items: center;
+                            // .flexRow;
+                            // align-items: center;
                             .ecosystem_item_content_sub_content {
                                 margin-right: 0.03rem;
                             }
@@ -346,6 +341,12 @@
 
                 }
 
+            }
+            .ecosystem_item_content_link {
+                cursor: pointer;
+                color: #5E82F1;
+                font-size: 0.22rem;
+                margin-right: 0.05rem;
             }
         }
 
@@ -488,9 +489,6 @@
                     }
                     .ecosystem_item_content_link_arrow_container {
                         margin-bottom:0.4rem;
-                        .ecosystem_item_content_link {
-                            font-size: 0.14rem;
-                        }
                     }
 
                     .ecosystem_item_content_link_wrap {
@@ -523,6 +521,9 @@
             .ecosystem_common_container_fourth{
                 .flexColumn;
                 flex-direction: column-reverse;
+            }
+            .ecosystem_item_content_link {
+                font-size: 0.14rem;
             }
         }
     }
