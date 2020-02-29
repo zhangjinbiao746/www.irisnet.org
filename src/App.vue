@@ -30,6 +30,7 @@
         },
         watch:{
             $route(){
+                this.$store.commit('hideHeaderBgColor',false)
                 this.$store.commit('showMobileMenu',false)
                 document.body.scrollTop = 0;
             }

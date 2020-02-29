@@ -25,9 +25,21 @@ export const message = {
         }
     },
     homeThree:{
-        banner:{
-
-        },
+        banner:[
+            {
+                h5Title:'IRISnet - Bianjie',
+                h1Title:'Cosmos Hub Validator',
+                section:'由 IRISnet 核心开发团队维护的 Cosmos Hub 创世节点',
+                sectionSecond:'查看节点详情',
+                sectionThree:'委托ATOM',
+            },
+            {
+                h5Title:'主网 IRIS Hub 上线一周年',
+                h1Title:'下一代分布式应用的跨链服务枢纽',
+                section:'——支持Defi的自进化区块链',
+                medium:'微信周年文'
+            }
+        ],
         irisnet:{
             title:"IRIS 网络",
             secondTitle:'下一代分布式应用程序的跨链服务枢纽——自我进化的BPoS区块链',
@@ -393,62 +405,104 @@ export const message = {
             },
         ]
     },
-    ecosystemThree:{
-        first:{
-            title:'IRIS 生态',
-            content:'IRIS 生态系统通过 IRIS 网络由不同的参与者组成，包括 IRIS Hub 的用户、开发者及验证人、连接 IRIS Hub 的区块链、构建在 IRIS SDK 或 Cosmos SDK 上的区块链应用、区块链开发工具、IRIS 跨链服务以及外部现实世界。',
-            partner:'合作伙伴',
-            img:require('../ecosystem_first.png')
+    ecosystemThree: {
+        first: {
+            title: 'IRIS 生态',
+            content: 'IRIS 生态系统通过 IRIS 网络由不同的参与者组成，包括 IRIS Hub 的用户、开发者及验证人、连接 IRIS Hub 的区块链、构建在 IRIS SDK 或 Cosmos SDK 上的区块链应用、区块链开发工具、IRIS 跨链服务以及外部现实世界。',
+            partner: '合作伙伴',
+            img: require('../ecosystem_first.png')
         },
-        second:{
-            title:'IRIS 生态',
-            content1:'Cosmos Hub是最终组成Cosmos网络的数千个互相连接的区块链中的第一个Hub。',
-            content2:'IRIS Hub 是支持 DeFi 等各种复杂分布式应用的跨链服务枢纽。IRIS Hub 采用 Cosmos SDK 开发，是第一个可自进化的 BPoS 网络。',
-            content3:'IRISnet 的核心开发团队维护了一个 Cosmos Hub 上的创世验证节点。',
-            link1:'可使用',
-            link2:'Rainbow 钱包',
-            link3:'将 ATOM 委托给',
-            link4:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
-            img:require('../ecosystem_second.png'),
-            more:'了解更多',
-            moreLink:'',
-            rainbowLink:'https://www.rainbow.one/',
-            cosmosLink:'https://hubble.figment.network/cosmos/chains/cosmoshub-3/validators/696ABC95186FD65A07050C28AB00C9358A315030'
+        second: {
+            title: 'IRIS 生态',
+            content1: 'Cosmos Hub是最终组成Cosmos网络的数千个互相连接的区块链中的第一个Hub。',
+            content2: 'IRIS Hub 是支持 DeFi 等各种复杂分布式应用的跨链服务枢纽。IRIS Hub 采用 Cosmos SDK 开发，是第一个可自进化的 BPoS 网络。',
+            content3: 'IRISnet 的核心开发团队维护了一个 Cosmos Hub 上的创世验证节点。',
+            link1: '可使用',
+            link2: 'Rainbow 钱包',
+            link3: '将 ATOM 委托给',
+            link4: 'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
+            img: require('../ecosystem_second.png'),
+            more: '了解更多',
+            moreLink: '',
+            rainbowLink: 'https://www.rainbow.one/',
+            cosmosLink: 'https://hubble.figment.network/cosmos/chains/cosmoshub-3/validators/696ABC95186FD65A07050C28AB00C9358A315030'
         },
-        third:{
-            title:'IBC 和 跨链大生态',
-            content:'IBC 跨链协议是连接全球经济和区块链技术的互操作性协议。',
-            details:'查看详情',
-            img:require('../ecosystem_third.png'),
-            detailLink:'https://cosmos.network/ibc',
+        third: {
+            title: 'IBC 和 跨链大生态',
+            content: 'IBC 跨链协议是连接全球经济和区块链技术的互操作性协议。',
+            details: '查看详情',
+            img: require('../ecosystem_third.png'),
+            detailLink: 'https://cosmos.network/ibc',
         },
-        fourth:{
-            title:'验证人节点',
-            content:'来自世界各地的验证人节点担负着代表委托人共同维护Bonded PoS区块链网络共识、安全运行和治理进化的光荣使命！',
-            details:'查看详情',
-            img:require('../ecosystem_fourth.png'),
-            detailLink:'https://mp.weixin.qq.com/s/CfCma5Lv7FnBYdimg_EZ1Q',
+        fourth: {
+            title: '验证人节点',
+            content: '来自世界各地的验证人节点担负着代表委托人共同维护Bonded PoS区块链网络共识、安全运行和治理进化的光荣使命！',
+            details: '查看详情',
+            img: require('../ecosystem_fourth.png'),
+            detailLink: 'https://mp.weixin.qq.com/s/CfCma5Lv7FnBYdimg_EZ1Q',
         },
-        fifth:{
-            title:'IRITA',
-            content1:'跨域行业互信联盟产品（Inter-Realm Industry Trust Alliance，简称 IRITA)，是 Cosmos 生态中第一个企业级联盟链产品，是基于现代区块链技术框架',
-            content2:'Tendermint ',
-            content3:'和',
-            content4:'IRIS SDK ',
-            content5:'，并结合边界智能团队多年行业经验打造的联盟链产品',
-            details:'查看详情',
-            img:require('../ecosystem_fifth.png'),
-            detailLink:'https://www.bianjie.ai/products/irita',
-            tendermintLink:'https://tendermint.com/',
-            sdkLink:'https://stage.bianjie.ai/products/irisnet'
+        fifth: {
+            title: 'IRITA',
+            content1: '跨域行业互信联盟产品（Inter-Realm Industry Trust Alliance，简称 IRITA)，是 Cosmos 生态中第一个企业级联盟链产品，是基于现代区块链技术框架',
+            content2: 'Tendermint ',
+            content3: '和',
+            content4: 'IRIS SDK ',
+            content5: '，并结合边界智能团队多年行业经验打造的联盟链产品',
+            details: '查看详情',
+            img: require('../ecosystem_fifth.png'),
+            detailLink: 'https://www.bianjie.ai/products/irita',
+            tendermintLink: 'https://tendermint.com/',
+            sdkLink: 'https://stage.bianjie.ai/products/irisnet'
         },
-        brand:{
-            title:'品牌资料',
-            content:'这里有一些您可能需要的品牌资源和标志。',
-            details:'查看详情',
-            detailLink:'https://www.irisnet.org/community/press-kit?lang=CN',
+        brand: {
+            title: '品牌资料',
+            content: '这里有一些您可能需要的品牌资源和标志。',
+            details: '查看详情',
+            detailLink: 'https://www.irisnet.org/community/press-kit?lang=CN',
+        },
+    },
+    announcement:{
+        title:'基金会公告',
+        viewMore:'查看更多',
+        publicToken:{
+            title:'IRISnet的公开地址',
+            section:'IRIS基金会和开发团队的地址',
+            date:'2019年3月2日',
+            href:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md'
+        },
+        latestAnnouncement:[
+            {
+                title:'公告 | IRIS基金会第三次执行通证销毁计划，并宣布2020年延续该通证销毁计划',
+                section:'2019年12月31日，IRIS基金会根据为期一年的通证销毁计划，执行了第三次销毁，通过两笔交易共销毁了 15,029,472 个 IRIS 通证，目前 IRIS 通证的总量为20亿个。',
+                date:'2019年12月31日',
+                href:'https://forum.irisnet.org/t/iris/314'
+            },
+            {
+                title:'公告 | IRIS基金会第二次执行通证销毁计划',
+                section:'2019年9月27日，IRIS基金会根据为期一年的通证销毁计划，执行了第二次销毁，通过两笔交易共销毁了14,304,888 个 IRIS 通证，目前 IRIS  通证的总量为20亿个。',
+                date:'2019年9月27日',
+                href:'https://forum.irisnet.org/t/iris/271'
+            }
+        ],
+        faq:{
+            title:'常见问题',
+            viewMore:'查看更多',
+            href:'https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-cc7a59293823',
+            list:[
+                {
+                    title:'什么是IRISnet？'
+                },
+                {
+                    title:'IRIS的初始分配是怎样的？'
+                },
+                {
+                    title:'IRISnet经济模型的架构是怎样的？'
+                },
+                {
+                    title:'IRISnet和Cosmos是什么关系？'
+                }
+            ]
         }
-
     },
     events:{
         title: '近期活动',
@@ -524,8 +578,6 @@ export const message = {
                 title:'2019MiiX全球区块链应用生态开发者峰会',
                 content:'MiiXCON'
             },
-
-
         ]
     },
     //TODO(lsc)
@@ -827,7 +879,7 @@ export const message = {
 
 
 
-    
+
 
 
 

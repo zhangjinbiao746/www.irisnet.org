@@ -1,5 +1,5 @@
 <template>
-    <div class="navigation_container">
+    <div class="navigation_container" :class="$store.state.hideHeaderBgColor ? 'hide_bg_color' : ''">
         <div class="navigation_content_wrap">
             <div class="navigation_left_content">
                 <div class="navigation_logo_content">
@@ -211,6 +211,9 @@
 </script>
 
 <style scoped lang="less">
+    .hide_bg_color{
+        background: transparent !important;
+    }
     .navigation_container{
         width: 100%;
         background: #111370;

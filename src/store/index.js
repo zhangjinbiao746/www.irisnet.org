@@ -23,7 +23,8 @@ export function createStore () {
             flShowFooter: true,
             headerHeight:'',
             messages:null,
-            showMobileMenu :false
+            showMobileMenu :false,
+            hideHeaderBgColor: false,
         },
         mutations: {
             changeItemIs(state, payload) {
@@ -76,6 +77,9 @@ export function createStore () {
             },
             showMobileMenu(state,data){
                 state.showMobileMenu = data;
+            },
+            hideHeaderBgColor(state,data){
+                state.hideHeaderBgColor = data;
             }
         }
     })

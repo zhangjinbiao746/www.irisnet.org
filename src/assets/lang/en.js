@@ -25,9 +25,21 @@ export const message = {
         }
     },
     homeThree:{
-        banner:{
-
-        },
+        banner:[
+            {
+                h5Title:'IRISnet - Bianjie',
+                h1Title:'Cosmos Hub Validator',
+                section:'Maintained by the core development team of IRISnet',
+                sectionSecond:'View Validator Profile',
+                sectionThree:'Delegate ATOM',
+            },
+            {
+                h5Title:'IRIS Hub Launch 1st Anniversary',
+                h1Title:'Interchain Service Hub for NextGen Distributed Applications',
+                section:'– A Self-evolving Blockchain That Supports DeFi',
+                medium:'medium'
+            }
+        ],
         irisnet:{
             title:"IRIS Network",
             secondTitle:'Interchain Service Hub for NextGen Distributed Applications-- A BPoS Blockchain that is Self-evolutionary',
@@ -412,62 +424,104 @@ export const message = {
             },
         ]
     },
-    ecosystemThree:{
-        first:{
-            title:'IRIS Ecosystem',
-            content:'The IRIS ecosystem is made up of different players through the IRIS network, including users, developers and validators of IRIS Hub, blockchains connected with IRIS Hub, blockchain applications built on IRIS SDK or Cosmos SDK, blockchain development tools, IRIS cross-chain services, and the external real world.',
-            partner:'Collaboration',
-            img:require('../ecosystem_first.png'),
+    ecosystemThree: {
+        first: {
+            title: 'IRIS Ecosystem',
+            content: 'The IRIS ecosystem is made up of different players through the IRIS network, including users, developers and validators of IRIS Hub, blockchains connected with IRIS Hub, blockchain applications built on IRIS SDK or Cosmos SDK, blockchain development tools, IRIS cross-chain services, and the external real world.',
+            partner: 'Collaboration',
+            img: require('../ecosystem_first.png'),
         },
-        second:{
-            title:'IRIS Hub and Cosmos Hub',
-            content1:'The Cosmos Hub is the first of thousands of interconnected blockchains that will eventually comprise the Cosmos Network. ',
-            content2:'IRIS Hub is designed to be the foundation for the next generation distributed applications.Built with Cosmos-SDK, IRIS Hub enables cross-chain interoperability through a unified service model, while providing a variety of modules to support DeFi applications.',
-            content3:'The node maintained by the core development team of IRISnet is one of the genesis validators on Cosmos Hub.',
-            link1:'You can delegate ATOM to',
-            link2:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em ',
-            link3:'using',
-            link4:'Rainbow Wallet ',
-            img:require('../ecosystem_second.png'),
-            more:'View more',
-            moreLink:'',
-            rainbowLink:'https://www.rainbow.one/',
-            cosmosLink:'https://hubble.figment.network/cosmos/chains/cosmoshub-3/validators/696ABC95186FD65A07050C28AB00C9358A315030'
+        second: {
+            title: 'IRIS Hub and Cosmos Hub',
+            content1: 'The Cosmos Hub is the first of thousands of interconnected blockchains that will eventually comprise the Cosmos Network. ',
+            content2: 'IRIS Hub is designed to be the foundation for the next generation distributed applications.Built with Cosmos-SDK, IRIS Hub enables cross-chain interoperability through a unified service model, while providing a variety of modules to support DeFi applications.',
+            content3: 'The node maintained by the core development team of IRISnet is one of the genesis validators on Cosmos Hub.',
+            link1: 'You can delegate ATOM to',
+            link2: 'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em ',
+            link3: 'using',
+            link4: 'Rainbow Wallet ',
+            img: require('../ecosystem_second.png'),
+            more: 'View more',
+            moreLink: '',
+            rainbowLink: 'https://www.rainbow.one/',
+            cosmosLink: 'https://hubble.figment.network/cosmos/chains/cosmoshub-3/validators/696ABC95186FD65A07050C28AB00C9358A315030'
         },
-        third:{
-            title:'IBC and the Interchain Ecosystem',
-            content:'Inter-Blockchain Communication is the interoperability protocol connecting the global economy to blockchain technology.',
-            details:'View more',
-            img:require('../ecosystem_third.png'),
-            detailLink:'https://cosmos.network/ibc',
+        third: {
+            title: 'IBC and the Interchain Ecosystem',
+            content: 'Inter-Blockchain Communication is the interoperability protocol connecting the global economy to blockchain technology.',
+            details: 'View more',
+            img: require('../ecosystem_third.png'),
+            detailLink: 'https://cosmos.network/ibc',
         },
-        fourth:{
-            title:'Validators',
-            content:'Validators from all over the world are responsible for generating blocks for each transaction and acting on behalf of delegators to guard the BPoS blockchain network consensus, secure operation and governance.',
-            details:'View more',
-            img:require('../ecosystem_fourth.png'),
-            detailLink:'https://medium.com/irisnet-blog/summary-of-irisnet-validator-brief-series-263a5af0cda9',
+        fourth: {
+            title: 'Validators',
+            content: 'Validators from all over the world are responsible for generating blocks for each transaction and acting on behalf of delegators to guard the BPoS blockchain network consensus, secure operation and governance.',
+            details: 'View more',
+            img: require('../ecosystem_fourth.png'),
+            detailLink: 'https://medium.com/irisnet-blog/summary-of-irisnet-validator-brief-series-263a5af0cda9',
         },
-        fifth:{
-            title:'IRITA',
-            content1:'The Inter-Realm Industry Trust Alliance (IRITA) is the first enterprise-level permissioned blockchain product in the Cosmos ecosystem. It is built based on IRIS SDK and the Tendermint (',
-            content2:'https://tendermint.com',
-            content3:'), a modern blockchain technology framework, and combined with years of Industry experience of Bianjie (',
-            content4:'www.bianjie.ai',
-            content5:').',
-            details:'View more',
-            img:require('../ecosystem_fifth.png'),
-            detailLink:'https://www.bianjie.ai/products/irita',
-            tendermintLink:'https://tendermint.com/',
-            sdkLink:'https://stage.bianjie.ai/products/irisnet'
+        fifth: {
+            title: 'IRITA',
+            content1: 'The Inter-Realm Industry Trust Alliance (IRITA) is the first enterprise-level permissioned blockchain product in the Cosmos ecosystem. It is built based on IRIS SDK and the Tendermint (',
+            content2: 'https://tendermint.com',
+            content3: '), a modern blockchain technology framework, and combined with years of Industry experience of Bianjie (',
+            content4: 'www.bianjie.ai',
+            content5: ').',
+            details: 'View more',
+            img: require('../ecosystem_fifth.png'),
+            detailLink: 'https://www.bianjie.ai/products/irita',
+            tendermintLink: 'https://tendermint.com/',
+            sdkLink: 'https://stage.bianjie.ai/products/irisnet'
         },
-        brand:{
-            title:'Press Kit',
-            content:'Here are some branding resources and logos you might need.',
-            details:'View more',
-            detailLink:'https://www.irisnet.org/community/press-kit?lang=EN',
+        brand: {
+            title: 'Press Kit',
+            content: 'Here are some branding resources and logos you might need.',
+            details: 'View more',
+            detailLink: 'https://www.irisnet.org/community/press-kit?lang=EN',
         }
-
+    },
+    announcement: {
+        title: 'Announcement',
+        viewMore: 'View More',
+        publicToken: {
+            title: 'IRISnet Public Token Addresses',
+            section: 'Foundation and Dev Team Token Addresses.',
+            date: 'Mar 02,2019',
+            href: 'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md'
+        },
+        latestAnnouncement: [
+            {
+                title: 'The 3rd IRIS Token Burn is Completed & Token Burning Plan Continues in 2020',
+                section: 'On December 31st, 2019, the IRIS Foundation completed the 3rd IRIS token burn under a one-year token burning plan with 15,029,472 IRIS burned. The current total supply is 2 billion IRIS.',
+                date: 'Dec 31 2019',
+                href: 'https://medium.com/irisnet-blog/the-3rd-iris-token-burn-is-completed-token-burning-plan-continues-in-2020-46350337a5af'
+            },
+            {
+                title: 'Announcement: the 2nd IRIS Token Burn Complete',
+                section: 'On September 27th, 2019, the IRIS Foundation completed the 1st IRIS token burn under a one-year token burning plan with 14,304,888 IRIS burned. The current total supply is 2 billion IRIS.',
+                date: 'Sept 27 2019',
+                href: 'https://medium.com/irisnet-blog/announcement-the-2rd-iris-token-burn-complete-5cff42eb44a0?source=---------5------------------'
+            }
+        ],
+        faq: {
+            title: 'FAQ',
+            viewMore: 'View More',
+            href: 'https://medium.com/irisnet-blog/irisnet-faq-8793cf116c37',
+            list: [
+                {
+                    title: 'What is IRISnet?'
+                },
+                {
+                    title: 'What\'s the initial token distribution?'
+                },
+                {
+                    title: 'What are IRIS token\'s use cases,and its token economics?'
+                },
+                {
+                    title: 'What is the relationship between IRISnet and Cosmos?'
+                }
+            ]
+        },
     },
     events:{
         title : 'Events',
@@ -877,6 +931,7 @@ export const message = {
             }
         }
     },
+    
 
 
 
@@ -887,121 +942,124 @@ export const message = {
 
 
 
-    logo : 'irisnet.png',
-    floatWindow : {
-        title : 'FORUM',
+
+
+
+    logo: 'irisnet.png',
+    floatWindow: {
+        title: 'FORUM',
     },
-    header : {
-        left : [
+    header: {
+        left: [
             {
-                id : 0,
-                title : 'Whitepaper',
-                active : false,
+                id: 0,
+                title: 'Whitepaper',
+                active: false,
             },
             {
-                id : 1,
-                title : 'Collaboration',
-                active : false,
+                id: 1,
+                title: 'Collaboration',
+                active: false,
             },
             {
-                id : 2,
-                title : 'Community',
-                active : false,
+                id: 2,
+                title: 'Community',
+                active: false,
             }
         ],
-        right : [
+        right: [
             {
-                id : 0,
-                title : 'Mainnet',
-                href : '',
-                active : false,
+                id: 0,
+                title: 'Mainnet',
+                href: '',
+                active: false,
             },
             {
-                id : 1,
-                title : 'Docs',
-                href : 'https://www.irisnet.org/docs/',
-                active : false,
+                id: 1,
+                title: 'Docs',
+                href: 'https://www.irisnet.org/docs/',
+                active: false,
             },
             {
-                id : 2,
-                title : 'Forum',
-                href : 'https://forum.irisnet.org/',
-                active : false,
+                id: 2,
+                title: 'Forum',
+                href: 'https://forum.irisnet.org/',
+                active: false,
             },
             {
-                id : 3,
-                title : 'Blog',
-                href : 'https://medium.com/irisnet-blog',
-                active : false,
-            },
-        ],
-        mobileNavigation : [
-            {
-                id : 0,
-                title : 'Mainnet',
-                activeIndex : '',
-                active : false,
-            },
-            {
-                id : 1,
-                title : 'Testnet',
-                activeIndex : '',
-                active : false,
-            },
-            {
-                id : 2,
-                title : 'WhitePaper',
-                activeIndex : 0,
-                active : false,
-            },
-            {
-                id : 3,
-                title : 'Roadmap',
-                activeIndex : 3,
-                active : false,
-            },
-            {
-                id : 4,
-                title : 'Collaboration',
-                activeIndex : 1,
-                active : false,
-            },
-            {
-                id : 5,
-                title : 'Community',
-                activeIndex : 2,
-                active : false,
+                id: 3,
+                title: 'Blog',
+                href: 'https://medium.com/irisnet-blog',
+                active: false,
             },
         ],
-        mobileLinkHrefNavigation : [
+        mobileNavigation: [
             {
-                id : 0,
-                title : 'Docs',
-                href : "https://www.irisnet.org/docs/",
-                activeIndex : '',
+                id: 0,
+                title: 'Mainnet',
+                activeIndex: '',
+                active: false,
             },
             {
-                id : 1,
-                title : 'Forum',
-                href : "https://forum.irisnet.org/",
-                activeIndex : '',
+                id: 1,
+                title: 'Testnet',
+                activeIndex: '',
+                active: false,
             },
             {
-                id : 2,
-                title : 'Blog',
-                href : "https://medium.com/irisnet-blog",
-                activeIndex : '',
+                id: 2,
+                title: 'WhitePaper',
+                activeIndex: 0,
+                active: false,
+            },
+            {
+                id: 3,
+                title: 'Roadmap',
+                activeIndex: 3,
+                active: false,
+            },
+            {
+                id: 4,
+                title: 'Collaboration',
+                activeIndex: 1,
+                active: false,
+            },
+            {
+                id: 5,
+                title: 'Community',
+                activeIndex: 2,
+                active: false,
+            },
+        ],
+        mobileLinkHrefNavigation: [
+            {
+                id: 0,
+                title: 'Docs',
+                href: "https://www.irisnet.org/docs/",
+                activeIndex: '',
+            },
+            {
+                id: 1,
+                title: 'Forum',
+                href: "https://forum.irisnet.org/",
+                activeIndex: '',
+            },
+            {
+                id: 2,
+                title: 'Blog',
+                href: "https://medium.com/irisnet-blog",
+                activeIndex: '',
             }
         ]
     },
     // "logo": 'irisnet.png',
-    mainnet : {
-        title : 'IRIS Hub',
-        production : 'Interchain Service Hub for NextGen Distributed Applications – A BPoS Blockchain That Is Self-evolutionary',
-        wallet : 'Rainbow Wallet',
-        walletHref : 'https://www.rainbow.one/',
-        explorer : 'IRIS Explorer',
-        explorerHref : 'https://www.irisplorer.io/'
+    mainnet: {
+        title: 'IRIS Hub',
+        production: 'Interchain Service Hub for NextGen Distributed Applications – A BPoS Blockchain That Is Self-evolutionary',
+        wallet: 'Rainbow Wallet',
+        walletHref: 'https://www.rainbow.one/',
+        explorer: 'IRIS Explorer',
+        explorerHref: 'https://www.irisplorer.io/'
     },
     //todo(lsc)
     collaborationThree : {
@@ -1378,7 +1436,7 @@ export const message = {
             title : 'Helpful tools',
             monitor : {
                 title : 'IRIS Hub Monitor',
-                href : 'ttps://www.irisnet.org/docs/tools/monitor.html',
+                href : 'https://www.irisnet.org/docs/tools/monitor.html',
             },
             management : {
                 title : 'Key Management System',
@@ -1386,7 +1444,7 @@ export const message = {
             },
             support : {
                 title : 'Ledger Nano Support',
-                href : 'irisnet.org/docs/tools/ledger.html',
+                href : 'https://irisnet.org/docs/tools/ledger.html',
             },
 
         },
@@ -2750,25 +2808,5 @@ export const message = {
             "active" : false
         }
     ],
-    // "announcements":[
-    //     {
-    //         src:'../../public/announcements_betanet.png',
-    //         timestamp:"Feb 1, 2019",
-    //         imgtext:'Betanet Work Plan',
-    //         href: 'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md'
-    //     },
-    //     {
-    //         src:'../../public/announcements_mainnet.png',
-    //         timestamp:"Jan 16, 2019",
-    //         imgtext:'IRIS Foundation Announces Plan for Betanet',
-    //         href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md'
-    //     },
-    //     {
-    //         src:'../../public/announcements_irisnet.png',
-    //         timestamp:"Jan 16, 2019",
-    //         imgtext:'Expectations for IRIS Betanet',
-    //         href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md'
-    //     }
-    // ]
 }
 export default message
