@@ -469,122 +469,227 @@ export const message = {
         }
 
     },
+    events:{
+        title : 'Events',
+        betaTitle : 'IRISnet Public Token Addresses',
+        betaDate : 'Mar 02,2019',
+        historyTitle : 'All of History',
+        betaContent : 'Foundation and Dev Team Token Addresses.',
+        eventsList : [
+            {
+                id : '0',
+                href : 'https://medium.com/irisnet-blog/irisnet-iris-airdrop-on-binance-dex-win-500-000-iris-4e24be10a886',
+                date : 'Dec 31, 2019',
+                title : 'IRISnet (IRIS) Airdrop on Binance DEX — Win 500,000 IRIS!',
+                content : 'Airdrop on Binance DEX',
+                src:require('../events_airdrop.png')
+            },
+            {
+                id : '1',
+                href : 'https://medium.com/irisnet-blog/follow-retweet-to-help-iris-binance-dex-listing-7c27cc36dfd1',
+                date : 'Oct 15, 2019 ~ Oct 21, 2019',
+                title : 'Follow & Retweet to Help IRIS Binance DEX Listing',
+                content : 'Follow & Retweet to Help IRIS Binance DEX Listing',
+                src:require('../events_retweet_binance.png')
+            },
+            {
+                id : '2',
+                href : 'https://medium.com/irisnet-blog/project-progress-applications-in-irisnet-cosmos-ecosystem-bihu-ama-review-725b78d8f59d',
+                date : 'Oct 16, 2019',
+                year : '2019',
+                month : 'Oct',
+                day : '16',
+                title : 'Project Progress & Applications in IRISnet & Cosmos Ecosystem |Bihu AMA Review',
+                content : 'Bihu AMA Review',
+                src:require('../events_bihu.png')
+            },
+            {
+                id : '3',
+                href : 'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
+                date : 'Jul 29, 2019 ~ Aug 16, 2019',
+                year : '2019',
+                month : 'Jul',
+                day : '29',
+                title : 'Opened! IRIS Hub Bug Bounty II Program for new version release',
+                content : 'Bug Bounty II'
+            },
+            {
+                id : '4',
+                href : 'https://medium.com/irisnet-blog/2019-7-15-ama-42f4a5fbe5f0',
+                date : 'Jul 15, 2019 19:00-20:00',
+                year : '2019',
+                month : 'Jul',
+                day : '15',
+                title : 'AMA Hosted by ICO Pentera',
+                content : 'ICO Pentera & IRISnet'
+            },
+            {
+                id : '5',
+                href : 'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
+                date : 'Jul 6, 2019 ~ Jul 7, 2019',
+                year : '2019',
+                month : 'Jul',
+                day : '6',
+                title : '2019 2nd Global Graphene Blockchain Developer Conference',
+                content : 'GBAC'
+            },
+            {
+                id : '6',
+                href : 'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
+                date : 'Jun 19, 2019',
+                year : '2019',
+                month : 'Jun',
+                day : '19',
+                title : '2019-6-19 AMA',
+                content : 'IRISnet& Coinsuper'
+            },
 
-
-
-
-
-
-
-
-
-
-
-    logo : 'irisnet.png',
-    floatWindow : {
-        title : 'FORUM',
+        ]
     },
-    header : {
-        left : [
+    //TODO(lsc)
+    announce : {
+        title : 'Announcements',
+        betaTitle : 'IRISnet Public Token Addresses',
+        betaDate : 'Mar 02,2019',
+        historyTitle : 'All of History',
+        betaContent : 'Foundation and Dev Team Token Addresses.',
+        src:require('../announcement_3.0.png'),
+        announcementList : [
             {
-                id : 0,
-                title : 'Whitepaper',
-                active : false,
+                id : '0',
+                href : 'https://medium.com/irisnet-blog/the-3rd-iris-token-burn-is-completed-token-burning-plan-continues-in-2020-46350337a5af',
+                date : 'Dec 31, 2019',
+                title : 'The 3rd IRIS Token Burn is Completed & Token Burning Plan Continues in 2020',
+                content : 'On December 31st, 2019, the IRIS Foundation completed the 3rd IRIS token burn under a one-year token burning plan with 15,029,472 IRIS burned. The current total supply is 2 billion IRIS.'
             },
             {
-                id : 1,
-                title : 'Collaboration',
-                active : false,
+                id : '1',
+                href : 'https://medium.com/irisnet-blog/announcement-the-2rd-iris-token-burn-complete-5cff42eb44a0?source=---------5------------------',
+                date : 'Sep 27, 2019',
+                title : 'Announcement: the 2nd IRIS Token Burn Complete',
+                content : 'On September 27th, 2019, the IRIS Foundation completed the 1st IRIS token burn under a one-year token burning plan with 14,304,888 IRIS burned. The current total supply is 2 billion IRIS.'
             },
             {
-                id : 2,
-                title : 'Community',
-                active : false,
-            }
-        ],
-        right : [
-            {
-                id : 0,
-                title : 'Mainnet',
-                href : '',
-                active : false,
+                id : '2',
+                href : 'https://medium.com/irisnet-blog/irisnet-mainnet-is-live-2f8db2c6fca8',
+                date : 'Sep 17, 2019',
+                year : '2019',
+                month : 'Sep',
+                day : '17',
+                title : 'IRISnet Mainnet is Live!',
+                content : 'On March 1st, 2019, IRIS Hub\'s Betanet proposed the genesis block marking the official launch of the network.On the 200th day since the launch, we are very glad to announce that IRIS Hub will be officially running as the Mainnet.'
             },
             {
-                id : 1,
-                title : 'Docs',
-                href : 'https://www.irisnet.org/docs/',
-                active : false,
+                id : '3',
+                href : 'https://medium.com/irisnet-blog/multi-asset-module-available-on-iris-hub-v0-15-with-defi-application-dev-support-coming-805ed0c8a304?source=---------15------------------',
+                date : 'Aug 30, 2019',
+                year : '2019',
+                month : 'Aug',
+                day : '30',
+                title : 'Multi-asset Module Available on IRIS Hub V0.15 with DeFi Application Dev Support Coming',
+                content : 'IRISnet mainnet IRIS Hub has completed its upgrade on August 29, 2019. It is the first time for an incompatible version in BPoS network to complete a smooth upgrade without hard fork and data purge.'
             },
             {
-                id : 2,
-                title : 'Forum',
-                href : 'https://forum.irisnet.org/',
-                active : false,
+                id : '4',
+                href : 'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
+                date : '2019/7/29',
+                year : '2019',
+                month : 'Jul',
+                day : '29',
+                title : 'Opened! IRIS Hub Bug Bounty II Program for new version release',
+                content : 'IRIS Hub new version v0.15.0 is coming. To make sure the new release come with no major bugs or security vulnerabilities, we are launching the IRISnet Bug Bounty II Program as a part of v0.15.0 upgrade preparation.'
             },
             {
-                id : 3,
-                title : 'Blog',
-                href : 'https://medium.com/irisnet-blog',
-                active : false,
+                id : '5',
+                href : 'https://medium.com/irisnet-blog/announcement-1st-iris-token-burn-complete-3fe17816ea38',
+                date : '2019/6/28',
+                year : '2019',
+                month : 'Jun',
+                day : '28',
+                title : 'Announcement: 1st IRIS Token Burn Complete',
+                content : 'On June 28, 2019, the IRIS Foundation completed the 1st IRIS token burn under a one-year token burning plan with 19,189,722 IRIS burned. The current total supply is 2 billion IRIS.'
             },
-        ],
-        mobileNavigation : [
+
+
+
             {
-                id : 0,
-                title : 'Mainnet',
-                activeIndex : '',
-                active : false,
+                id : '5',
+                href : 'https://medium.com/irisnet-blog/rainbow-v2-0-is-released-we-support-atom-now-1882dcb2bc3c',
+                date : '2019/6/21',
+                year : '2019',
+                month : 'Jun',
+                day : '21',
+                title : 'Rainbow V2.0 is Released. We Support ATOM Now!',
+                content : 'Rainbow v2.0 is released on June 21, 2019 and it now supports Cosmos (ATOM)!'
             },
+
             {
-                id : 1,
-                title : 'Testnet',
-                activeIndex : '',
-                active : false,
+                id : '5',
+                href : 'https://medium.com/tendermint/irisnet-tendermint-inc-join-forces-to-accelerate-open-source-blockchain-development-71d5cf1dd4f7',
+                date : '2019/5/13',
+                year : '2019',
+                month : 'May',
+                day : '13',
+                title : 'IRISnet & Tendermint Inc Join Forces To Accelerate Open-Source Blockchain Development',
+                content : 'IRISnet & Tendermint Inc Join Forces to Accelerate Open-Source Blockchain Development'
             },
+
             {
-                id : 2,
-                title : 'WhitePaper',
-                activeIndex : 0,
-                active : false,
+                id : '5',
+                href : 'https://forum.irisnet.org/t/how-does-iris-foundation-select-validators-to-delegate/39',
+                date : '2019/5/12',
+                year : '2019',
+                month : 'May',
+                day : '12',
+                title : 'How Does IRIS Foundation Select Validators To Delegate',
+                content : 'we make the following public statement on the criteria for the foundation to select validators:'
             },
+
             {
-                id : 3,
-                title : 'Roadmap',
-                activeIndex : 3,
-                active : false,
+                id : '5',
+                href : 'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
+                date : '2019/3/2',
+                year : '2019',
+                month : 'Mar',
+                day : '2',
+                title : 'IRISnet Public Token Addresses',
+                content : 'Foundation and Dev Team Token Addresses.'
             },
+
             {
-                id : 4,
-                title : 'Collaboration',
-                activeIndex : 1,
-                active : false,
+                id : '5',
+                href : 'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
+                date : '2019/2/1',
+                year : '2019',
+                month : 'Feb',
+                day : '1',
+                title : 'Betanet Work Plan',
+                content : 'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.'
             },
+
             {
-                id : 5,
-                title : 'Community',
-                activeIndex : 2,
-                active : false,
+                id : '5',
+                href : 'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md',
+                date : '2019/1/16',
+                year : '2019',
+                month : 'Jan',
+                day : '16',
+                title : 'Expectations For IRIS Betanet',
+                content : 'Expectations for IRIS Betanet To better prepare the community for participating in IRIS Betanet, we would like to communicate the expectations for this network:'
             },
-        ],
-        mobileLinkHrefNavigation : [
+
             {
-                id : 0,
-                title : 'Docs',
-                href : "https://www.irisnet.org/docs/",
-                activeIndex : '',
+                id : '5',
+                href : 'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md',
+                date : '2019/1/16',
+                year : '2019',
+                month : 'Jan',
+                day : '16',
+                title : 'IRIS Foundation Announces Plan For Betanet',
+                content : 'The IRIS Foundation is excited to be announcing the launch of IRIS Betanet, which will happen in the middle of Feb 2019, right after Chinese New Year. 2019 is the Year of the Pig which represents carefree fun, good fortune and wealth.'
             },
-            {
-                id : 1,
-                title : 'Forum',
-                href : "https://forum.irisnet.org/",
-                activeIndex : '',
-            },
-            {
-                id : 2,
-                title : 'Blog',
-                href : "https://medium.com/irisnet-blog",
-                activeIndex : '',
-            }
+
+
         ]
     },
     home : {
@@ -772,6 +877,123 @@ export const message = {
             }
         }
     },
+
+
+
+
+
+
+
+
+
+
+    logo : 'irisnet.png',
+    floatWindow : {
+        title : 'FORUM',
+    },
+    header : {
+        left : [
+            {
+                id : 0,
+                title : 'Whitepaper',
+                active : false,
+            },
+            {
+                id : 1,
+                title : 'Collaboration',
+                active : false,
+            },
+            {
+                id : 2,
+                title : 'Community',
+                active : false,
+            }
+        ],
+        right : [
+            {
+                id : 0,
+                title : 'Mainnet',
+                href : '',
+                active : false,
+            },
+            {
+                id : 1,
+                title : 'Docs',
+                href : 'https://www.irisnet.org/docs/',
+                active : false,
+            },
+            {
+                id : 2,
+                title : 'Forum',
+                href : 'https://forum.irisnet.org/',
+                active : false,
+            },
+            {
+                id : 3,
+                title : 'Blog',
+                href : 'https://medium.com/irisnet-blog',
+                active : false,
+            },
+        ],
+        mobileNavigation : [
+            {
+                id : 0,
+                title : 'Mainnet',
+                activeIndex : '',
+                active : false,
+            },
+            {
+                id : 1,
+                title : 'Testnet',
+                activeIndex : '',
+                active : false,
+            },
+            {
+                id : 2,
+                title : 'WhitePaper',
+                activeIndex : 0,
+                active : false,
+            },
+            {
+                id : 3,
+                title : 'Roadmap',
+                activeIndex : 3,
+                active : false,
+            },
+            {
+                id : 4,
+                title : 'Collaboration',
+                activeIndex : 1,
+                active : false,
+            },
+            {
+                id : 5,
+                title : 'Community',
+                activeIndex : 2,
+                active : false,
+            },
+        ],
+        mobileLinkHrefNavigation : [
+            {
+                id : 0,
+                title : 'Docs',
+                href : "https://www.irisnet.org/docs/",
+                activeIndex : '',
+            },
+            {
+                id : 1,
+                title : 'Forum',
+                href : "https://forum.irisnet.org/",
+                activeIndex : '',
+            },
+            {
+                id : 2,
+                title : 'Blog',
+                href : "https://medium.com/irisnet-blog",
+                activeIndex : '',
+            }
+        ]
+    },
     // "logo": 'irisnet.png',
     mainnet : {
         title : 'IRIS Hub',
@@ -780,152 +1002,6 @@ export const message = {
         walletHref : 'https://www.rainbow.one/',
         explorer : 'IRIS Explorer',
         explorerHref : 'https://www.irisplorer.io/'
-    },
-    //TODO(lsc)
-    announce : {
-        title : 'Announcements',
-        betaTitle : 'IRISnet Public Token Addresses',
-        betaDate : 'Mar 02,2019',
-        historyTitle : 'All of History',
-        betaContent : 'Foundation and Dev Team Token Addresses.',
-        src:require('../announcement_3.0.png'),
-        announcementList : [
-            {
-                id : '0',
-                href : 'https://medium.com/irisnet-blog/the-3rd-iris-token-burn-is-completed-token-burning-plan-continues-in-2020-46350337a5af',
-                date : 'Dec 31, 2019',
-                title : 'The 3rd IRIS Token Burn is Completed & Token Burning Plan Continues in 2020',
-                content : 'On December 31st, 2019, the IRIS Foundation completed the 3rd IRIS token burn under a one-year token burning plan with 15,029,472 IRIS burned. The current total supply is 2 billion IRIS.'
-            },
-            {
-                id : '1',
-                href : 'https://medium.com/irisnet-blog/announcement-the-2rd-iris-token-burn-complete-5cff42eb44a0?source=---------5------------------',
-                date : 'Sep 27, 2019',
-                title : 'Announcement: the 2nd IRIS Token Burn Complete',
-                content : 'On September 27th, 2019, the IRIS Foundation completed the 1st IRIS token burn under a one-year token burning plan with 14,304,888 IRIS burned. The current total supply is 2 billion IRIS.'
-            },
-            {
-                id : '2',
-                href : 'https://medium.com/irisnet-blog/irisnet-mainnet-is-live-2f8db2c6fca8',
-                date : 'Sep 17, 2019',
-                year : '2019',
-                month : 'Sep',
-                day : '17',
-                title : 'IRISnet Mainnet is Live!',
-                content : 'On March 1st, 2019, IRIS Hub\'s Betanet proposed the genesis block marking the official launch of the network.On the 200th day since the launch, we are very glad to announce that IRIS Hub will be officially running as the Mainnet.'
-            },
-            {
-                id : '3',
-                href : 'https://medium.com/irisnet-blog/multi-asset-module-available-on-iris-hub-v0-15-with-defi-application-dev-support-coming-805ed0c8a304?source=---------15------------------',
-                date : 'Aug 30, 2019',
-                year : '2019',
-                month : 'Aug',
-                day : '30',
-                title : 'Multi-asset Module Available on IRIS Hub V0.15 with DeFi Application Dev Support Coming',
-                content : 'IRISnet mainnet IRIS Hub has completed its upgrade on August 29, 2019. It is the first time for an incompatible version in BPoS network to complete a smooth upgrade without hard fork and data purge.'
-            },
-            {
-                id : '4',
-                href : 'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
-                date : '2019/7/29',
-                year : '2019',
-                month : 'Jul',
-                day : '29',
-                title : 'Opened! IRIS Hub Bug Bounty II Program for new version release',
-                content : 'IRIS Hub new version v0.15.0 is coming. To make sure the new release come with no major bugs or security vulnerabilities, we are launching the IRISnet Bug Bounty II Program as a part of v0.15.0 upgrade preparation.'
-            },
-            {
-                id : '5',
-                href : 'https://medium.com/irisnet-blog/announcement-1st-iris-token-burn-complete-3fe17816ea38',
-                date : '2019/6/28',
-                year : '2019',
-                month : 'Jun',
-                day : '28',
-                title : 'Announcement: 1st IRIS Token Burn Complete',
-                content : 'On June 28, 2019, the IRIS Foundation completed the 1st IRIS token burn under a one-year token burning plan with 19,189,722 IRIS burned. The current total supply is 2 billion IRIS.'
-            },
-
-
-
-            {
-                id : '5',
-                href : 'https://medium.com/irisnet-blog/rainbow-v2-0-is-released-we-support-atom-now-1882dcb2bc3c',
-                date : '2019/6/21',
-                year : '2019',
-                month : 'Jun',
-                day : '21',
-                title : 'Rainbow V2.0 is Released. We Support ATOM Now!',
-                content : 'Rainbow v2.0 is released on June 21, 2019 and it now supports Cosmos (ATOM)!'
-            },
-
-            {
-                id : '5',
-                href : 'https://medium.com/tendermint/irisnet-tendermint-inc-join-forces-to-accelerate-open-source-blockchain-development-71d5cf1dd4f7',
-                date : '2019/5/13',
-                year : '2019',
-                month : 'May',
-                day : '13',
-                title : 'IRISnet & Tendermint Inc Join Forces To Accelerate Open-Source Blockchain Development',
-                content : 'IRISnet & Tendermint Inc Join Forces to Accelerate Open-Source Blockchain Development'
-            },
-
-            {
-                id : '5',
-                href : 'https://forum.irisnet.org/t/how-does-iris-foundation-select-validators-to-delegate/39',
-                date : '2019/5/12',
-                year : '2019',
-                month : 'May',
-                day : '12',
-                title : 'How Does IRIS Foundation Select Validators To Delegate',
-                content : 'we make the following public statement on the criteria for the foundation to select validators:'
-            },
-
-            {
-                id : '5',
-                href : 'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
-                date : '2019/3/2',
-                year : '2019',
-                month : 'Mar',
-                day : '2',
-                title : 'IRISnet Public Token Addresses',
-                content : 'Foundation and Dev Team Token Addresses.'
-            },
-
-            {
-                id : '5',
-                href : 'https://github.com/irisnet/iris-foundation/blob/master/betanet_work_plan.md',
-                date : '2019/2/1',
-                year : '2019',
-                month : 'Feb',
-                day : '1',
-                title : 'Betanet Work Plan',
-                content : 'The IRIS Foundation is excited to be announcing the launch plan of IRIS Betanet. And keep update the most recent status here.'
-            },
-
-            {
-                id : '5',
-                href : 'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations.md',
-                date : '2019/1/16',
-                year : '2019',
-                month : 'Jan',
-                day : '16',
-                title : 'Expectations For IRIS Betanet',
-                content : 'Expectations for IRIS Betanet To better prepare the community for participating in IRIS Betanet, we would like to communicate the expectations for this network:'
-            },
-
-            {
-                id : '5',
-                href : 'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan.md',
-                date : '2019/1/16',
-                year : '2019',
-                month : 'Jan',
-                day : '16',
-                title : 'IRIS Foundation Announces Plan For Betanet',
-                content : 'The IRIS Foundation is excited to be announcing the launch of IRIS Betanet, which will happen in the middle of Feb 2019, right after Chinese New Year. 2019 is the Year of the Pig which represents carefree fun, good fortune and wealth.'
-            },
-
-
-        ]
     },
     //todo(lsc)
     collaborationThree : {
@@ -1344,83 +1420,6 @@ export const message = {
                 src:require('../riot_icon.png')
             }
         }
-    },
-    events:{
-        title : 'Events',
-        betaTitle : 'IRISnet Public Token Addresses',
-        betaDate : 'Mar 02,2019',
-        historyTitle : 'All of History',
-        betaContent : 'Foundation and Dev Team Token Addresses.',
-        eventsList : [
-            {
-                id : '0',
-                href : 'https://medium.com/irisnet-blog/irisnet-iris-airdrop-on-binance-dex-win-500-000-iris-4e24be10a886',
-                date : 'Dec 31, 2019',
-                title : 'IRISnet (IRIS) Airdrop on Binance DEX — Win 500,000 IRIS!',
-                content : 'Airdrop on Binance DEX',
-                src:require('../events_airdrop.png')
-            },
-            {
-                id : '1',
-                href : 'https://medium.com/irisnet-blog/follow-retweet-to-help-iris-binance-dex-listing-7c27cc36dfd1',
-                date : 'Oct 15, 2019 ~ Oct 21, 2019',
-                title : 'Follow & Retweet to Help IRIS Binance DEX Listing',
-                content : 'Follow & Retweet to Help IRIS Binance DEX Listing',
-                src:require('../events_retweet_binance.png')
-            },
-            {
-                id : '2',
-                href : 'https://medium.com/irisnet-blog/project-progress-applications-in-irisnet-cosmos-ecosystem-bihu-ama-review-725b78d8f59d',
-                date : 'Oct 16, 2019',
-                year : '2019',
-                month : 'Oct',
-                day : '16',
-                title : 'Project Progress & Applications in IRISnet & Cosmos Ecosystem |Bihu AMA Review',
-                content : 'Bihu AMA Review',
-                src:require('../events_bihu.png')
-            },
-            {
-                id : '3',
-                href : 'https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe',
-                date : 'Jul 29, 2019 ~ Aug 16, 2019',
-                year : '2019',
-                month : 'Jul',
-                day : '29',
-                title : 'Opened! IRIS Hub Bug Bounty II Program for new version release',
-                content : 'Bug Bounty II'
-            },
-            {
-                id : '4',
-                href : 'https://medium.com/irisnet-blog/2019-7-15-ama-42f4a5fbe5f0',
-                date : 'Jul 15, 2019 19:00-20:00',
-                year : '2019',
-                month : 'Jul',
-                day : '15',
-                title : 'AMA Hosted by ICO Pentera',
-                content : 'ICO Pentera & IRISnet'
-            },
-            {
-                id : '5',
-                href : 'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
-                date : 'Jul 6, 2019 ~ Jul 7, 2019',
-                year : '2019',
-                month : 'Jul',
-                day : '6',
-                title : '2019 2nd Global Graphene Blockchain Developer Conference',
-                content : 'GBAC'
-            },
-            {
-                id : '6',
-                href : 'https://medium.com/irisnet-blog/2019-6-19-ama-76afd9b9c5dd',
-                date : 'Jun 19, 2019',
-                year : '2019',
-                month : 'Jun',
-                day : '19',
-                title : '2019-6-19 AMA',
-                content : 'IRISnet& Coinsuper'
-            },
-
-        ]
     },
     announcements : {
         title : 'Announcements',

@@ -2,7 +2,7 @@
     <div class="events_container">
         <div class="events_content_container">
             <p class="events_content_title">
-                {{$store.state.messages.events.title}}
+                {{$t('message.events.title')}}
             </p>
             <div class="events_content_img_container">
                 <div class="events_content_left_container"
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <p class="events_history_title">
-                {{$store.state.messages.announce.historyTitle}}
+                {{$t('message.announce.historyTitle')}}
             </p>
             <div class="events_history_item_container"
                  @click="toLinkUrl(item.href)"
@@ -60,10 +60,10 @@
         },
         computed:{
             firstList(){
-                return this.$store.state.messages.events.eventsList.slice(0,3);
+                return this.$t('message.events.eventsList').slice(0,3);
             },
             lastList(){
-                return this.$store.state.messages.events.eventsList.slice(3,7);
+                return this.$t('message.events.eventsList').slice(3,7);
             }
         },
         mounted(){
