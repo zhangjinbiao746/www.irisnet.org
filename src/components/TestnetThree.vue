@@ -21,7 +21,7 @@
                             <a v-if="$i18n.locale === 'EN'" href="https://www.irisnet.org/docs/get-started/testnet.html#install" target="_blank">{{$t('message.testnetThree.fuxi.linkName')}}</a>
                             <a v-if="$i18n.locale === 'CN'" href="https://www.irisnet.org/docs/zh/get-started/testnet.html#fuxi-%E6%B5%8B%E8%AF%95%E7%BD%91" target="_blank">{{$t('message.testnetThree.fuxi.linkName')}}</a>
                         </p>
-                        <div class="testnet_fuxi_sertion_btns">{{$t('message.testnetThree.fuxi.fuxiExplorer')}}</div>
+                        <div class="testnet_fuxi_sertion_btns"  @click="openUrl(nyancatUrl)">{{$t('message.testnetThree.fuxi.fuxiExplorer')}}</div>
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@
                             <a v-if="$i18n.locale === 'EN'" href="https://github.com/irisnet/testnets/tree/master/nyancat#how-to-join-nyancat-testnet" target="_blank">{{$t('message.testnetThree.nyancat.linkName')}}</a>
                             <a v-if="$i18n.locale === 'CN'" href="https://www.irisnet.org/docs/zh/get-started/testnet.html#nyancat-%E6%B5%8B%E8%AF%95%E7%BD%91" target="_blank">{{$t('message.testnetThree.nyancat.linkName')}}</a>
                         </p>
-                        <div class="testnet_nyancat_sertion_btns">{{$t('message.testnetThree.nyancat.nyancatExplorer')}}</div>
+                        <div class="testnet_nyancat_sertion_btns" @click="openUrl(nyancatUrl)">{{$t('message.testnetThree.nyancat.nyancatExplorer')}}</div>
                     </div>
                     <div class="testnet_nyancat_img_content">
                         <img src="../assets/irisnetThree/testnets_nyancat.png" alt="">
@@ -50,7 +50,18 @@
 
 <script>
     export default {
-        name: "TestnetThree"
+        name: "TestnetThree",
+        data() {
+            return {
+                nyancatUrl:'https://nyancat.irisplorer.io/#/home',
+                fuxiUrl:'https://testnet.irisplorer.io/#/home',
+            }
+        },
+        methods:{
+            openUrl(url){
+                window.open(url)
+            }
+        }
     }
 </script>
 
@@ -127,6 +138,7 @@
 
                         }
                         .testnet_fuxi_sertion_btns{
+                            cursor: pointer;
                             margin-top: 0.3rem;
                             width: 2rem;
                             height: 0.5rem;
@@ -183,6 +195,7 @@
 
                         }
                         .testnet_nyancat_sertion_btns{
+                            cursor: pointer;
                             margin-top: 0.3rem;
                             width: 2rem;
                             height: 0.5rem;

@@ -4,7 +4,7 @@
             <div class="community_header_content">
                 <div class="community_header_announcement_header">
                     <span class="community_header_announcement_title">{{$t('message.announcement.title')}}</span>
-                    <span class="community_header_announcement_view_more">{{$t('message.announcement.viewMore')}}></span>
+                    <span class="community_header_announcement_view_more" @click="openUrl()">{{$t('message.announcement.viewMore')}}></span>
                 </div>
                 <div class="community_header_announcement_header_content">
                     <div class="community_header_announcement_left_content">
@@ -71,7 +71,7 @@
             <div class="community_footer_faq_content">
                 <div class="community_footer_faq_header_content">
                     <span class="community_footer_faq_header_title">{{$t('message.announcement.faq.title')}}</span>
-                    <span class="community_footer_faq_header_view_more">{{$t('message.announcement.faq.viewMore')}}</span>
+                    <span class="community_footer_faq_header_view_more" @click="openFaqUrl">{{$t('message.announcement.faq.viewMore')}}></span>
                 </div>
                 <div class="community_footer_faq_list_content">
                     <div class="community_footer_faq_list_left_content">
@@ -89,15 +89,35 @@
 </template>
 
 <script>
+    import enMessage from "../assets/lang/en"
+    import cnMessage from "../assets/lang/cn"
     export default {
-        name: "CommunityThree"
+        name: "CommunityThree",
+        data() {
+            return {
+                enMessage:enMessage,
+                cnMessage:cnMessage,
+            }
+        },
+        methods:{
+            openUrl(){
+                window.open('https://github.com/irisnet/iris-foundation/blob/master/README.md')
+            },
+            openFaqUrl(){
+                if(this.$i18n.locale === 'CN'){
+                    window.open('https://medium.com/irisnet-blog/irisnet-常见问答-cc7a59293823')
+                }else {
+                    window.open('https://medium.com/irisnet-blog/irisnet-faq-8793cf116c37')
+                }
+            }
+        }
     }
 </script>
 
 <style scoped lang="less">
 @import '../style/mixin.less';
     .community_container_content{
-        padding-top: 0.8rem;
+        padding-top: 1.2rem;
         .community_header_content_wrap{
             padding-top: 1rem;
             background: #fff;

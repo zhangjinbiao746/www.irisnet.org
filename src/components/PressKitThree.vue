@@ -133,7 +133,6 @@
                 if(url){
                     window.open(url);
                 }
-
             }
         }
     }
@@ -164,6 +163,7 @@
                 }
                 .press_kit_header_btn{
                     display: block;
+                    cursor: pointer;
                     margin-top: 0.3rem;
                     width: 1.88rem;
                     height: 0.5rem;

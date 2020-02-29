@@ -1,11 +1,16 @@
 <template>
     <div class="right_menu_container">
         <ul class="right_menu_content">
-            <li v-for="item in menuList" class="right_menu_list_item" :class="item.isWeChat ? 'show_qr_img': ''">
-                <a :href="item.href" target="_blank">
+            <li v-for="item in menuList" class="right_menu_list_item"
+                :style="{display: item.isMedium && $i18n.locale === 'CN' ? 'none' : 'block'}"
+                :class="item.isWeChat && $i18n.locale === 'EN' ? 'show_we_chat' : 'show_qr_img'">
+                <a :href="item.href"
+
+
+                   :target="item.href === 'javascript:void(0);' ? '' : '_blank'">
                     <img :src="item.src" alt="">
                 </a>
-                <div v-show="item.isWeChat" class="wechat_qr_img_content" >
+                <div v-if="item.isWeChat && $i18n.locale === 'CN'" class="wechat_qr_img_content" >
                     <img src="../assets/irisnetThree/wechat.jpg" alt="">
                 </div>
             </li>
@@ -21,29 +26,39 @@
                 menuList:[
                     {
                         src: require("../assets/irisnetThree/rainbow.png"),
-                        href: "https://www.rainbow.one/"
+                        href: "https://www.rainbow.one/",
                     },
                     {
                         src: require("../assets/irisnetThree/irisplorer_right.png"),
-                        href: "https://www.irisplorer.io/"
+                        href: "https://www.irisplorer.io/",
                     },
                     {
                         src: require("../assets/irisnetThree/tegegram.png"),
-                        href: "https://t.me/irisnetwork"
+                        href: "https://t.me/irisnetwork",
+                    },
+                    {
+                        src: require("../assets/irisnetThree/twitter.png"),
+                        href: "https://twitter.com/irisnetwork",
                     },
                     {
                         src: require("../assets/irisnetThree/github.png"),
-                        href: "https://github.com/irisnet"
+                        href: "https://github.com/irisnet",
+                    },
+                    {
+                        src: require("../assets/irisnetThree/medium.png"),
+                        href: " https://medium.com/irisnet-blog",
+                        isMedium: true,
                     },
                     {
                         src: require("../assets/irisnetThree/wechat.png"),
-                        href: "",
+                        href: "javascript:void(0);",
                         isWeChat: true,
                     },
                     {
                         src: require("../assets/irisnetThree/forum.png"),
-                        href: "https://forum.irisnet.org/"
-                    }
+                        href: "https://forum.irisnet.org/",
+                    },
+
                 ]
             }
         }
@@ -68,6 +83,9 @@
             align-items: center;
             box-sizing: border-box;
             padding: 0.3rem 0;
+            .show_we_chat{
+                display: none !important;
+            }
             .right_menu_list_item{
                 position: relative;
                 a{

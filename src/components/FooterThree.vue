@@ -11,7 +11,7 @@
                         <div class="footer_content_newsletter_input_content">
                             <input v-model="mailAddress" class="footer_content_newsletter_ipt" type="text" :class="flShowError ? 'error_style' : ' '" :placeholder="$i18n.locale === 'EN' ? enMessage.footerThree.placeholder : cnMessage.footerThree.placeholder">
                             <div class="footer_content_newsletter_join_btn">
-                                <span class="footer_content_newsletter_join_btn_text"  @click="commitMail">Join Now</span>
+                                <span class="footer_content_newsletter_join_btn_text"  @click="commitMail">{{$t('message.footerThree.submitBtn')}}</span>
                             </div>
                         </div>
                         <div class="mobile_content">
@@ -19,7 +19,7 @@
                                 <input v-model="mailAddress" class="footer_content_newsletter_ipt" type="text" :class="flShowError ? 'error_style' : ' '" :placeholder="$i18n.locale === 'EN' ? enMessage.footerThree.placeholder : cnMessage.footerThree.placeholder">
                             </div>
                             <div class="footer_content_newsletter_join_btn">
-                                <span class="footer_content_newsletter_join_btn_text"  @click="commitMail">Join Now</span>
+                                <span class="footer_content_newsletter_join_btn_text"  @click="commitMail">{{$t('message.footerThree.submitBtn')}}</span>
                             </div>
                         </div>
                         <p class="show_error" :class="flShowError ? 'show_error' : 'hide_error'">{{$t('message.footerThree.errEmail')}}</p>
@@ -531,6 +531,13 @@
 
         }
 
+    }
+    @media screen and (max-width: 1200px){
+        .footer_container{
+            .footer_content_wrap{
+                margin: 0 0.2rem;
+            }
+        }
     }
     @media screen and (max-width: 768px){
         .footer_container{
