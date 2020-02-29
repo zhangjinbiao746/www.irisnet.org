@@ -122,7 +122,15 @@
 
 <style scoped lang="less">
     @import '../style/mixin.less';
-
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
+        .dev_portal_container{
+            .dev_portal_common_wrap{
+                .dev_portal_content_container{
+                    margin: 0 0.2rem;
+                }
+            }
+        }
+    }
     @media screen and (min-width: 769px) {
         .dev_portal_container{
             .dev_portal_common_wrap{

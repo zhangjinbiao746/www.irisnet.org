@@ -53,21 +53,24 @@
                         <span>{{$t("message.navigation.community")}}</span>
                         <ul class="navigation_second_menu">
                             <li class="navigation_second_list_item">
-                                <router-link :to="`/community/press-kit`">{{$t("message.navigation.secondMenu.pressKit")}}</router-link>
-                            </li>
-                            <li class="navigation_second_list_item">
-
-                                <router-link :to="`/irisnet-bianjie`">{{$t("message.navigation.secondMenu.irisnetBianjie")}}</router-link>
-                            </li>
-                            <li class="navigation_second_list_item">
                                 <router-link :to="`/ecosystem`">{{$t("message.navigation.secondMenu.IRISEcosystem")}}</router-link>
+                            </li>
+                            <li class="navigation_second_list_item">
+                                <router-link :to="`/community`">{{$t("message.navigation.secondMenu.community")}}</router-link>
+                            </li>
+                            <li class="navigation_second_list_item">
+                                <router-link :to="`/community/press-kit`">{{$t("message.navigation.secondMenu.pressKit")}}</router-link>
                             </li>
                             <li class="navigation_second_list_item">
                                 <router-link :to="`/events`">{{$t("message.navigation.secondMenu.events")}}</router-link>
                             </li>
                             <li class="navigation_second_list_item">
-                                <router-link :to="`/community`">{{$t("message.navigation.secondMenu.community")}}</router-link>
+
+                                <router-link :to="`/irisnet-bianjie`">{{$t("message.navigation.secondMenu.irisnetBianjie")}}</router-link>
                             </li>
+
+
+
                         </ul>
                     </li>
                 </ul>
@@ -136,20 +139,19 @@
                     <div class="navigation_mobile_item">{{$t("message.navigation.community")}}</div>
                     <ul class="navigation_mobile_second_menu" v-show="flShowEcosystem">
                         <li class="navigation_mobile_second_list_item">
-                            <router-link :to="`/community/press-kit`">{{$t("message.navigation.secondMenu.pressKit")}}</router-link>
-                        </li>
-                        <li class="navigation_mobile_second_list_item">
-
-                            <router-link :to="`/irisnet-bianjie`">{{$t("message.navigation.secondMenu.irisnetBianjie")}}</router-link>
-                        </li>
-                        <li class="navigation_mobile_second_list_item">
                             <router-link :to="`/ecosystem`">{{$t("message.navigation.secondMenu.IRISEcosystem")}}</router-link>
+                        </li>
+                        <li class="navigation_mobile_second_list_item">
+                            <router-link :to="`/community`">{{$t("message.navigation.secondMenu.community")}}</router-link>
+                        </li>
+                        <li class="navigation_mobile_second_list_item">
+                            <router-link :to="`/community/press-kit`">{{$t("message.navigation.secondMenu.pressKit")}}</router-link>
                         </li>
                         <li class="navigation_second_list_item">
                             <router-link :to="`/events`">{{$t("message.navigation.secondMenu.events")}}</router-link>
                         </li>
                         <li class="navigation_mobile_second_list_item">
-                            <router-link :to="`/community`">{{$t("message.navigation.secondMenu.community")}}</router-link>
+                            <router-link :to="`/irisnet-bianjie`">{{$t("message.navigation.secondMenu.irisnetBianjie")}}</router-link>
                         </li>
                     </ul>
                 </li>
@@ -173,14 +175,34 @@
                 flShowAboutUs: false,
                 flShowDeveloper : false,
                 flShowEcosystem: false,
+                flShowBoxShadow: false,
             }
         },
-        watch:{
-            $router(){
-                console.log("?????")
-            },
+        mounted(){
+            if(this.$store.state.hideHeaderBgColor){
+                if(window.scrollY > 5){
+                    let dom =  document.getElementsByClassName('navigation_container')[0];
+                    dom.classList.remove('hide_bg_color')
+                }else {
+                    let dom =  document.getElementsByClassName('navigation_container')[0];
+                    dom.classList.add('hide_bg_color')
+                }
+            }
+            window.addEventListener('scroll',this.handleScroll,true)
         },
         methods:{
+            handleScroll(e){
+                if(this.$store.state.hideHeaderBgColor){
+                    if(e.target.scrollingElement.scrollTop > 5){
+                        let dom =  document.getElementsByClassName('navigation_container')[0];
+                        dom.classList.remove('hide_bg_color')
+                    }else {
+                        let dom =  document.getElementsByClassName('navigation_container')[0];
+                        dom.classList.add('hide_bg_color')
+                    }
+                }
+
+            },
             changeLang(){
                 if(this.$i18n.locale === 'CN'){
                     this.$i18n.locale = 'EN'
@@ -343,6 +365,14 @@
                     }
                 }
             }
+        }
+    }
+    @media screen and (max-width: 1200px){
+        .navigation_container{
+           .navigation_content_wrap{
+               padding-left: 0.2rem;
+               padding-right: 0.2rem;
+           }
         }
     }
     @media screen  and (max-width: 955px){

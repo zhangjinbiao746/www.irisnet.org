@@ -162,6 +162,7 @@ export const message = {
         socialCommunityTitle: '社区',
         validatorCommunityTitle:'验证人',
         TechCommunityTitle: '开发者',
+        submitBtn:"提交",
         errEmail:'请输入一个有效的邮箱地址',
         socialCommunity:[
             {
@@ -293,11 +294,6 @@ export const message = {
         ],
         productsTitle:'产品',
         resourcesTitle:'资源',
-        submitBtn:{
-            title: '获取最新资讯',
-            subscribe: '提交',
-            success: "Success"
-        },
         errEmailAddress:{
             error:'Please enter a valid email address'
         },
@@ -2978,3 +2974,4 @@ export const message = {
     // ]
 };
 export default message
+
