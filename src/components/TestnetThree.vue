@@ -281,7 +281,7 @@
                         .testnet_fuxi_img_content{
                             margin-top: 0.5rem;
                             margin-right: 0;
-                            margin-left: 10%;
+                            margin-left: 0;
                             display: flex;
                             align-items: center;
                             justify-content: center;

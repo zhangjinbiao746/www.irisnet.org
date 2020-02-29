@@ -161,6 +161,18 @@
                 <li class="navigation_mobile_list">
                     <a href="https://medium.com/irisnet-blog" target="_blank">{{$t("message.navigation.blog")}}</a>
                 </li>
+                <li class="navigation_mobile_list" @click="showLangSystem()">
+                    <div class="navigation_mobile_item">{{$t("message.navigation.language")}}</div>
+                    <ul class="navigation_mobile_second_menu" v-show="flShowLang">
+                        <li class="navigation_mobile_second_list_item" @click="changeCN()">
+                            <span>中文</span>
+                        </li>
+                        <li class="navigation_mobile_second_list_item" @click="changeEN()">
+                            <span>English</span>
+                        </li>
+
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
@@ -176,6 +188,7 @@
                 flShowDeveloper : false,
                 flShowEcosystem: false,
                 flShowBoxShadow: false,
+                flShowLang: false
             }
         },
         mounted(){
@@ -203,6 +216,12 @@
                 }
 
             },
+            changeEN(){
+                this.$i18n.locale ='EN'
+            },
+            changeCN(){
+                this.$i18n.locale = 'CN'
+            },
             changeLang(){
                 if(this.$i18n.locale === 'CN'){
                     this.$i18n.locale = 'EN'
@@ -217,16 +236,25 @@
                 this.flShowAboutUs = !this.flShowAboutUs;
                 this.flShowDeveloper = false;
                 this.flShowEcosystem = false;
+                this.flShowLang = false;
             },
             showDeveloper(){
                 this.flShowDeveloper = !this.flShowDeveloper;
                 this.flShowAboutUs = false;
                 this.flShowEcosystem = false;
+                this.flShowLang = false;
             },
             showEcosystem(){
                 this.flShowEcosystem = !this.flShowEcosystem;
                 this.flShowAboutUs = false;
                 this.flShowDeveloper = false;
+                this.flShowLang = false;
+            },
+            showLangSystem(){
+                this.flShowLang = !this.flShowLang;
+                this.flShowAboutUs = false;
+                this.flShowDeveloper = false;
+                this.flShowEcosystem = false;
             }
         }
     }
@@ -388,6 +416,11 @@
                     .navigation_right_link_content{
                         display: none;
                     }
+                    .navigation_right_lang_content{
+                        .navigation_lang_content{
+                            display: none;
+                        }
+                    }
                     .mobile_right_content{
                         display: block;
                         width: 0.3rem;
@@ -418,6 +451,9 @@
                             margin-top: 0.2rem;
                             .navigation_mobile_second_list_item {
                                 padding: 0.15rem 0px;
+                                span{
+                                    color: #fff;
+                                }
                             }
                         }
                     }
@@ -451,6 +487,7 @@
                 }
             }
             .navigation_mobile_content{
+                background: #111370;
                 display: block;
                 padding-bottom: 0.02rem;
                 .navigation_mobile_list_content{
@@ -495,10 +532,11 @@
                     }
                 }
                 .navigation_right_content{
-
+                    justify-content: flex-end;
                     .navigation_right_lang_content{
                         margin-left: 0.2rem;
                         width: 1rem;
+                        display: none;
                         .navigation_lang_content{
                             span{
                                 padding-left: 0.15rem;
@@ -519,6 +557,7 @@
                 }
             }
             .navigation_mobile_content{
+                background: #111370;
                 display: block;
                 padding-bottom: 0.02rem;
                 .navigation_mobile_list_content{

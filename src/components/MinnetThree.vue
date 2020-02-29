@@ -161,7 +161,7 @@
                     {
                         isAandroid: true,
                         isiOS: true,
-                        require:require("../assets/irisnetThree/look.png"),
+                        require:require("../assets/irisnetThree/syncNode.png"),
                         name: "SyncNode",
                         href:"https://wallet.syncnode.ro/"
                     },
@@ -488,6 +488,9 @@
                         .miannet_tools_explorer_list{
                             display: flex;
                             margin-top: 0.5rem;
+                            .mainnet_tools_explorer_list_item:last-child{
+                                margin-right: 0;
+                            }
                             .mainnet_tools_explorer_list_item{
                                 flex: 1;
                                 min-width: 2.08rem;

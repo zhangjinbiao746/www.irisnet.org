@@ -184,11 +184,11 @@
                 </div>
                 <div class="home_irisnet_road_map_footer">
                     <div class="home_irisnet_road_map_footer_content">
-                        <span @click="prevpage()">
+                        <span @click="nextpage()">
                             <img v-show="!flShowNextPage" src="../assets/irisnetThree/prev.png" alt="">
                             <img v-show="flShowNextPage" src="../assets/irisnetThree/prev_light.png" alt="">
                         </span>
-                        <span @click="nextpage()">
+                        <span @click="prevpage()" >
                             <img v-show="!flShowNextPage" src="../assets/irisnetThree/next.png" alt="">
                             <img v-show="flShowNextPage" src="../assets/irisnetThree/next_light.png" alt="">
                         </span>

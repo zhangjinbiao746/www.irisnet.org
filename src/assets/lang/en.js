@@ -5,6 +5,7 @@ export const message = {
         aboutUs:'About Us',
         developer:'Developers',
         community:'Ecosystem',
+        language:'Language',
         forum:'Forum',
         blog:'Blog',
         lang:'中文',

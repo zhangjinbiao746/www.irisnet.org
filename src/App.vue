@@ -30,9 +30,9 @@
         },
         watch:{
             $route(){
-                this.$store.commit('hideHeaderBgColor',false)
-                this.$store.commit('showMobileMenu',false)
-                document.body.scrollTop = 0;
+                this.$store.commit('hideHeaderBgColor',false);
+                this.$store.commit('showMobileMenu',false);
+                window.scrollTo(0,0);
             }
         },
         methods: {
