@@ -164,6 +164,7 @@ export const message = {
         socialCommunityTitle : 'Community',
         validatorCommunityTitle : 'Validators',
         TechCommunityTitle : 'Developers',
+        submitBtn:'Join Now',
         errEmail:'Please enter a valid email address',
         socialCommunity : [
             {
@@ -302,11 +303,6 @@ export const message = {
         ],
         productsTitle : 'Products',
         resourcesTitle : 'Resources',
-        submitBtn : {
-            title : 'Newsletter',
-            subscribe : 'Subscribe',
-            success : "Success"
-        },
         errEmailAddress : {
             error : 'Please enter a valid email address'
         },
@@ -2810,3 +2806,4 @@ export const message = {
     ],
 }
 export default message
+

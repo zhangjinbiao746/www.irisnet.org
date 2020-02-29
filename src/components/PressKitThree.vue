@@ -4,7 +4,7 @@
             <div class="press_kit_header_wrap">
                 <h2 class="press_kit_header_title">{{$t('message.presskitThree.title')}}</h2>
                 <p class="press_kit_header_section">{{$t('message.presskitThree.secondTitle')}}</p>
-                <div class="press_kit_header_btn">{{$t('message.presskitThree.resources')}}</div>
+                <div class="press_kit_header_btn" @click="openUrl()">{{$t('message.presskitThree.resources')}}</div>
             </div>
         </div>
         <div class="press_kit_color_content">
@@ -127,6 +127,11 @@
                     },
                 ]
             }
+        },
+        methods:{
+            openUrl(){
+                window.open('https://www.irisnet.org/resources/')
+            }
         }
     }
 </script>
@@ -155,6 +160,7 @@
                     line-height: 0.34rem;
                 }
                 .press_kit_header_btn{
+                    cursor: pointer;
                     margin-top: 0.3rem;
                     width: 1.88rem;
                     height: 0.5rem;

@@ -63,6 +63,11 @@
         background: #f66;
         border-radius: 0% !important;
     }
+    @media screen and (max-width: 768px){
+        .right_menu_container{
+            display: none;
+        }
+    }
     @import "assets/style/reset.less";
 </style>
 
