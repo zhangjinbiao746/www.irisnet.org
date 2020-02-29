@@ -4,9 +4,7 @@
             <li v-for="item in menuList" class="right_menu_list_item"
                 :style="{display: item.isMedium && $i18n.locale === 'CN' ? 'none' : 'block'}"
                 :class="item.isWeChat && $i18n.locale === 'EN' ? 'show_we_chat' : 'show_qr_img'">
-                <a :href="item.href"
-
-
+                <a :href=" $i18n.locale === 'EN' ? item.enHref :item.cnHref"
                    :target="item.href === 'javascript:void(0);' ? '' : '_blank'">
                     <img :src="item.src" alt="">
                 </a>
@@ -25,28 +23,34 @@
             return {
                 menuList:[
                     {
-                        src: require("../assets/irisnetThree/rainbow.png"),
-                        href: "https://www.rainbow.one/",
+                        src: require("../assets/irisnetThree/irisplorer_right.png"),
+                        enHref:"https://www.irisplorer.io/",
+                        cnHref:"https://www.irisplorer.io/",
                     },
                     {
-                        src: require("../assets/irisnetThree/irisplorer_right.png"),
-                        href: "https://www.irisplorer.io/",
+                        src: require("../assets/irisnetThree/rainbow.png"),
+                        enHref:"https://www.rainbow.one/",
+                        cnHref:"https://www.rainbow.one/",
                     },
                     {
                         src: require("../assets/irisnetThree/tegegram.png"),
-                        href: "https://t.me/irisnetwork",
+                        enHref:"https://t.me/irisnetwork",
+                        cnHref:"https://t.me/irisnetworkcn",
                     },
                     {
                         src: require("../assets/irisnetThree/twitter.png"),
-                        href: "https://twitter.com/irisnetwork",
+                        enHref:"https://twitter.com/irisnetwork",
+                        cnHref:"https://twitter.com/irisnetwork",
                     },
                     {
                         src: require("../assets/irisnetThree/github.png"),
-                        href: "https://github.com/irisnet",
+                        enHref:"https://github.com/irisnet",
+                        cnHref:"https://github.com/irisnet",
                     },
                     {
                         src: require("../assets/irisnetThree/medium.png"),
-                        href: " https://medium.com/irisnet-blog",
+                        enHref:" https://medium.com/irisnet-blog",
+                        cnHref:" https://medium.com/irisnet-blog",
                         isMedium: true,
                     },
                     {
@@ -56,7 +60,8 @@
                     },
                     {
                         src: require("../assets/irisnetThree/forum.png"),
-                        href: "https://forum.irisnet.org/",
+                        enHref:"https://forum.irisnet.org/",
+                        cnHref:"https://forum.irisnet.org/",
                     },
 
                 ]

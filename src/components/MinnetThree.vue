@@ -161,7 +161,7 @@
                     {
                         isAandroid: true,
                         isiOS: true,
-                        require:require("../assets/irisnetThree/syncNode.png"),
+                        require:require("../assets/irisnetThree/syncnode.png"),
                         name: "SyncNode",
                         href:"https://wallet.syncnode.ro/"
                     },

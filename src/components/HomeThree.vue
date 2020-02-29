@@ -211,7 +211,7 @@
                 swiperOption:{
                     loop: true,
                     speed: 300,
-                    // autoplay: true,
+                    autoplay: true,
                     /*autoplay: {
                     delay: 0,
                     stopOnLastSlide: false,

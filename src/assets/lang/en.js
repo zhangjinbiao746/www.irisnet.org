@@ -162,12 +162,12 @@ export const message = {
     },
     footerThree:{
         newsLetter: 'Newsletter',
-        placeholder:'Enter your email to subscribe',
+        placeholder:'Please Enter your email to subscribe',
         socialCommunityTitle : 'Community',
         validatorCommunityTitle : 'Validators',
         TechCommunityTitle : 'Developers',
         submitBtn:'Join Now',
-        errEmail:'Please enter a valid email address',
+        errEmail:'Please enter a VALID email address',
         socialCommunity : [
             {
                 id : 0,
@@ -211,7 +211,7 @@ export const message = {
                 id : 0,
                 hoverSrc : "irisnet_qq_hover.png",
                 src : "irisnet_qq.png",
-                href : "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
+                href : "http://qm.qq.com/cgi-bin/qm/qr?group_code=795301695"
             },
             {
                 id : 1,

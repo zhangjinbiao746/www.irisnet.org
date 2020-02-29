@@ -209,7 +209,7 @@ export const message = {
                 id:0,
                 hoverSrc: "irisnet_qq_hover.png",
                 src: "irisnet_qq.png",
-                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
+                href: "http://qm.qq.com/cgi-bin/qm/qr?group_code=795301695"
             },
             {
                 id:1,
@@ -239,16 +239,23 @@ export const message = {
             },
             {
                 id:1,
+                hoverSrc: "irisnet_riot_hover.png",
+                src: "irisnet_riot.png",
+                href: "https://riot.im/app/#/room/#iris:matrix.org"
+            },
+            {
+                id:2,
                 hoverSrc: "irisnet_qq_hover.png",
                 src: "irisnet_qq.png",
                 href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
             },
             {
-                id:2,
+                id:3,
                 hoverSrc: "irisnet_riot_hover.png",
                 src: "irisnet_riot.png",
                 href: "https://riot.im/app/#/room/#iris:matrix.org"
             },
+
         ],
         productList: [
             {
