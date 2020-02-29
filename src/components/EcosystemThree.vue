@@ -143,7 +143,7 @@
                 </div>
             </div>
         </div>
-        <div class="ecosystem_common_wrap">
+        <div class="ecosystem_common_wrap" v-show="false">
             <div class="ecosystem_common_container">
                 <div class="ecosystem_item_content_container">
                     <p class="ecosystem_item_content_title">
