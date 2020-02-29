@@ -40,7 +40,8 @@
                                 </div>
                             </div>
                             <li class="community_link_item" v-for="item in $i18n.locake === 'EN' ? enMessage.footerThree.socialCommunity : cnMessage.footerThree.socialCommunity" :key="item.id">
-                                <a @click="jumpUrl($event, item.href)" :href="item.href" target="_blank">
+                                <a @click="jumpUrl($event, item.href)"
+                                   :href="item.href" target="_blank">
                                     <img :src='UrlSrc + item.src'>
                                 </a>
                             </li>
@@ -397,7 +398,7 @@
                             }
                             .community_link_item{
                                 cursor: pointer;
-                                opacity: 0.4;
+                                opacity: 0.6;
                                 padding-right: 0.25rem;
                                 padding-top: 0.27rem;
                                 &:hover{
@@ -427,7 +428,7 @@
                             .community_link_list{
                                 display: flex;
                                 .community_link_item{
-                                    opacity: 0.4;
+                                    opacity: 0.6;
                                     padding-right: 0.25rem;
                                     padding-top: 0.27rem;
                                     &:hover{

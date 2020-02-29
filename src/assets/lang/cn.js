@@ -1,6 +1,7 @@
 export const message = {
     //TODO
     navigation:{
+        home:'首页',
         aboutUs:'关于我们',
         developer:'开发者',
         community:'社区生态',
@@ -153,31 +154,37 @@ export const message = {
         socialCommunity:[
             {
                 id:0,
+                hoverSrc: "irisnet_telegram_hover.png",
                 src: "irisnet_telegram.png",
                 href: "https://t.me/irisnetworkcn"
             },
             {
                 id:1,
+                hoverSrc: "irisnet_twitter_hover.png",
                 src: "irisnet_twitter.png",
                 href: "https://twitter.com/irisnetwork"
             },
             {
                 id:2,
+                hoverSrc: "irisnet_mail_hover.png",
                 src: "irisnet_mail.png",
                 href: "mailto:contact@irisnet.org"
             },
             {
                 id:3,
+                hoverSrc: "irisnet_medium_hover.png",
                 src: "irisnet_medium.png",
                 href: "https://medium.com/irisnet-blog"
             },
             {
                 id:4,
+                hoverSrc: "irisnet_wechat_hover.png",
                 src: "irisnet_wechat.png",
                 "txt": "Wechat"
             },
             {
                 id:5,
+                hoverSrc: "irisnet_weibo_hover.png",
                 src: "irisnet_weibo.png",
                 href: "https://weibo.com/u/6455513027"
             },
@@ -185,38 +192,45 @@ export const message = {
         validatorCommunity:[
             {
                 id:0,
+                hoverSrc: "irisnet_qq_hover.png",
                 src: "irisnet_qq.png",
                 href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
             },
             {
                 id:1,
+                hoverSrc: "irisnet_riot_hover.png",
                 src: "irisnet_riot.png",
                 href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
             },
             {
                 id:2,
-                src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+                hoverSrc: "irisnet_monitor_hover.png",
+                src: "irisnet_monitor.png",
+                href: "https://www.irisnet.org/docs/tools/monitor.html"
             },
             {
                 id:3,
-                src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+                hoverSrc: "irisnet_daemon_hover.png",
+                src: "irisnet_daemon.png",
+                href: " https://www.irisnet.org/docs/daemon/intro.html"
             },
         ],
         techCommunity:[
             {
                 id:0,
+                hoverSrc: "irisnet_github_hover.png",
                 src: "irisnet_github.png",
                 href: "https://github.com/irisnet"
             },
             {
                 id:1,
+                hoverSrc: "irisnet_qq_hover.png",
                 src: "irisnet_qq.png",
                 href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
             },
             {
                 id:2,
+                hoverSrc: "irisnet_riot_hover.png",
                 src: "irisnet_riot.png",
                 href: "https://riot.im/app/#/room/#iris:matrix.org"
             },
@@ -277,7 +291,108 @@ export const message = {
         },
         irisnetInproduction:'IRISnet以希腊彩虹女神Iris命名，她是在人间和天堂之间传递信息的忠诚使者'
     },
+    cosmosNode:{
+        header:{
+            title:'Bianjie',
+            commission:'佣金率',
+            product:'由IRISnet核心开发团队维护的验证人节点',
+            validatorAddress:'验证人地址',
+            address:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
+            toastHint:'复制成功',
+            bondedAtoms:'ATOM总数',
+            votingPower:'权重',
+            commissionRate:'佣金率',
+            uptime:'活跃度',
+            guide:'Cosmos Hub 钱包',
+            guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
+        },
+        about:{
+            title:'关于IRISnet-Bianjie',
+            secondTitle:'IRISnet的核心开发者，Cosmos的开源社区贡献者',
+            irisnet:{
+                title:'IRISnet 核心开发者',
+                list:[
+                    {
+                        item:'在<a href="https://cosmos.network/about" target="_blank" style="color:rgba(77, 150, 223, 1)">Interchain Foundation (ICF)</a>的支持下构建IRISnet，这是一个用于构建分布式商业应用的Cosmos Hub'
+                    },
+                    {
+                        item:'<a href="https://www.irisnet.org/" target="_blank" style="color:rgba(77, 150, 223, 1)">IRISnet</a> - 自进化的BPoS区块链'
+                    },
+                ]
+            },
+            cosmos:{
+                title:'Cosmos的开源社区贡献者',
+                list:[
+                    {
+                        item:'2019年3月14日成为Cosmos Hub主网创世验证人'
+                    },
+                    {
+                        item:'从Gaia-1000直至主网上线成功参与Cosmos全部测试网'
+                    },
+                    {
+                        item:'自2017年8月起为Cosmos中国社区提供专业的技术支持'
+                    }
+                ]
+            }
 
+        },
+        bianjie:{
+            title:'安全的边界，放心的委托',
+            product:[
+                {
+                    src:require('../../assets/cosmosThree/service_room.png'),
+                    text:'安全可靠的企业级机房',
+                },
+                {
+                    src:require('../../assets/cosmosThree/net.png'),
+                    text:'高可用性网络',
+                },
+                {
+                    src:require('../../assets/cosmosThree/node.png'),
+                    text:'可扩展的哨兵节点',
+                },
+                {
+                    src:require('../../assets/cosmosThree/lock.png'),
+                    text:'硬件加密保证安全',
+                },
+                {
+                    src:require('../../assets/cosmosThree/hour.png'),
+                    text:'7*24小时专业监控',
+                },
+                {
+                    src:require('../../assets/cosmosThree/shield.png'),
+                    text:'商业DDos攻击防护',
+                }
+            ]
+        },
+        cosmosExplorerTitle:'Cosmos Hub 浏览器',
+        cosmosExplorer:[
+            {
+                active:false,
+                whiteImg:require('../../assets/cosmosThree/big_dipper_plorer.png'),
+                title:'Big Dipper',
+                href:'https://cosmos.bigdipper.live/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+            },
+            {
+                active:false,
+                whiteImg:require('../../assets/cosmosThree/hubble_plorer.png'),
+                title:'Hubble',
+                href:'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030'
+            },
+            {
+                active:false,
+                whiteImg:require('../../assets/cosmosThree/mintsacn_plorer.png'),
+                title:'Mintscan',
+                href:'https://www.mintscan.io/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+            },
+            {
+                active:false,
+                whiteImg:require('../../assets/cosmosThree/Stargazer_plorer.png'),
+                title:'Stargazer',
+                href:'https://stargazer.certus.one/accounts/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+            },
+        ]
+    },
 
 
 
@@ -394,61 +509,61 @@ export const message = {
         socialCommunity:[
             {
                 id:0,
-                src: "irisnet_telegram.png",
+                src: "irisnet_telegram_hover.png",
                 href: "https://t.me/irisnetworkcn"
             },
             {
                 id:1,
-                src: "irisnet_twitter.png",
+                src: "irisnet_twitter_hover.png",
                 href: "https://twitter.com/irisnetwork"
             },
             {
                 id:2,
-                src: "irisnet_mail.png",
+                src: "irisnet_mail_hover.png",
                 href: "mailto:contact@irisnet.org"
             },
             {
                 id:3,
-                src: "irisnet_medium.png",
+                src: "irisnet_medium_hover.png",
                 href: "https://medium.com/irisnet-blog"
             },
             {
                 id:4,
-                src: "irisnet_wechat.png",
+                src: "irisnet_wechat_hover.png",
                 "txt": "Wechat"
             },
             {
                 id:5,
-                src: "irisnet_weibo.png",
+                src: "irisnet_weibo_hover.png",
                 href: "https://weibo.com/u/6455513027"
             },
         ],
         validatorCommunity:[
             {
                 id:0,
-                src: "irisnet_qq.png",
+                src: "irisnet_qq_hover.png",
                 href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
             },
             {
                 id:1,
-                src: "irisnet_riot.png",
+                src: "irisnet_riot_hover.png",
                 href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
             },
         ],
         techCommunity:[
             {
                 id:0,
-                src: "irisnet_github.png",
+                src: "irisnet_github_hover.png",
                 href: "https://github.com/irisnet"
             },
             {
                 id:1,
-                src: "irisnet_qq.png",
+                src: "irisnet_qq_hover.png",
                 href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
             },
             {
                 id:2,
-                src: "irisnet_riot.png",
+                src: "irisnet_riot_hover.png",
                 href: "https://riot.im/app/#/room/#iris:matrix.org"
             },
         ],
@@ -633,17 +748,17 @@ export const message = {
                     {id:1, path: require('../logos/irisnet_Bibox.png'), url: 'https://www.bibox.com/'},
                     {id:2, path: require('../logos/irisnet_huobi.png'), url: 'https://www.hbg.com/en-us/capital/'},
                     {id:3, path: require('../logos/irisnet_GBIC.png'), url: 'https://gbic.io/'},
-                    {id:4, path: require('../logos/irisnet_8decim.png'), url: 'javascript:void(0)'},
+                    {id:4, path: require('../logos/irisnet_8decim.png'), url: ''},
                     {id:5, path: require('../logos/irisnet_bihu.png'), url: 'https://bihu.com/'},// 1
-                    {id:7, path: require('../logos/irisnet_BKfund.png'), url: 'javascript:void(0)'},
-                    {id:8, path: require('../logos/irisnet_byz.png'), url: 'javascript:void(0)'},
+                    {id:7, path: require('../logos/irisnet_BKfund.png'), url: ''},
+                    {id:8, path: require('../logos/irisnet_byz.png'), url: ''},
                     {id:9, path: require('../logos/irisnet_ChainPE.png'), url: 'http://www.chainpe.com/'},
                     {id:10, path: require('../logos/irisnet_CP.png'), url: 'https://chainpool.io/'},
                     {id:11, path: require('../logos/irisnet_COEFFICIENT.png'), url: 'http://coefficient.network/'},// 2
                     {id:12, path: require('../logos/irisnet_gongshi.png'), url: 'http://consensuscapital.ca/'},
-                    {id:13, path: require('../logos/irisnet_dushu.png'), url: 'javascript:void(0)'},
+                    {id:13, path: require('../logos/irisnet_dushu.png'), url: ''},
                     {id:14, path: require('../logos/irisnet_genblock.png'), url: 'https://genblock.capital/'},
-                    {id:15, path: require('../logos/irisnet_HAYEK.png'), url: 'javascript:void(0)'},
+                    {id:15, path: require('../logos/irisnet_HAYEK.png'), url: ''},
                     {id:16, path: require('../logos/irisnet_INK.png'), url: 'http://ink.one/'},
                     {id:17, path: require('../logos/irisnet_LINKVCcopy.png'), url: 'http://www.linkvc.com/'},// 3
                     {id:18, path: require('../logos/irisnet_MediSHares.png'), url: 'http://medishares.org/'},
@@ -654,12 +769,12 @@ export const message = {
                     {id:23, path: require('../logos/irisnet_SatoshiFUnd.png'), url: 'https://satoshi.fund/'},// 4
                     {id:24, path: require('../logos/irisnet_guigu.png'), url: 'http://www.svinsight.com/'},
                     {id:25, path: require('../logos/irisnet_shicuo.png'), url: 'http://www.8timescap.com/'},
-                    {id:26, path: require('../logos/irisnet_huixiang.png'), url: 'javascript:void(0)'},
+                    {id:26, path: require('../logos/irisnet_huixiang.png'), url: ''},
                     {id:27, path: require('../logos/irisnet_Unetwork.png'), url: 'https://u.network/'},
                     {id:28, path: require('../logos/irisnet_jiuhe.png'), url: 'http://www.unityvc.com/'},
-                    {id:29, path: require('../logos/irisnet_UA.png'), url: 'javascript:void(0)'},//5
+                    {id:29, path: require('../logos/irisnet_UA.png'), url: ''},//5
                     {id:30, path: require('../logos/irisnet_shuidi.png'), url: 'http://waterdrip.io/'},
-                    {id:31, path: require('../logos/irisnet_yidao.png'), url: 'javascript:void(0)'},
+                    {id:31, path: require('../logos/irisnet_yidao.png'), url: ''},
                     {id:32, path: require('../logos/irisnet_snz.png'), url: 'http://snzholding.com/'},
                 ]
             }
@@ -718,7 +833,7 @@ export const message = {
             },
             {
                 id:'4',
-                href:'https://forum.irisnet.org/t/irisnet-betanet-mainnet/263',
+                href:'https://forum.irisnet.org/t/irisnet/219',
                 date:'2019/7/29',
                 year:'2019',
                 month:'7',
@@ -728,7 +843,7 @@ export const message = {
             },
             {
                 id:'5',
-                href:'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
+                href:'https://forum.irisnet.org/t/iris/184',
                 date:'2019/6/28',
                 year:'2019',
                 month:'6',
@@ -736,6 +851,77 @@ export const message = {
                 title:'公告 | IRIS基金会第一次执行通证销毁计划',
                 content:'IRISnet主网IRIS Hub于北京时间2019年8月29日升级完成，这次升级是BPoS网络中首次对一个非兼容版本，在不硬分叉、不清空数据情况下的平滑升级。'
             },
+            {
+                id:'6',
+                href:'https://forum.irisnet.org/t/rainbow-v2-0-atom/166',
+                date:'2019/6/21',
+                year:'2019',
+                month:'6',
+                day:'21',
+                title:'Rainbow发布v2.0，新增支持ATOM钱包',
+                content:'Rainbow v2.0于2019年6月21日发布，接入第二条公链Cosmos Hub，新增ATOM钱包功能'
+            },
+            {
+                id:'7',
+                href:'https://forum.irisnet.org/t/irisnet-tendermint/44',
+                date:'2019/5/13',
+                year:'2019',
+                month:'5',
+                day:'13',
+                title:'IRISnet & Tendermint携手加速开源区块链技术发展',
+                content:'ICosmos 核心开发团队Tendermint 宣布IRISnet 为首要生态合作伙伴。'
+            },
+            {
+                id:'8',
+                href:'https://forum.irisnet.org/t/iris-foundation/37',
+                date:'2019/5/12',
+                year:'2019',
+                month:'5',
+                day:'12',
+                title:'IRIS Foundation 节点委托标准的说明',
+                content:'基金会选择验证人节点的标准做出如下公开说明：'
+            },
+            {
+                id:'9',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address.md',
+                date:'2019/3/2',
+                year:'2019',
+                month:'3',
+                day:'2',
+                title:'IRISnet的公开地址',
+                content:'IRIS基金会和开发团队的地址'
+            },
+            {
+                id:'10',
+                href:'',
+                date:'2019/2/1',
+                year:'2019',
+                month:'2',
+                day:'1',
+                title:'Betanet 工作计划',
+                content:'IRIS基金会非常高兴地宣布：IRIS主网启动的第一步，IRIS Betanet即将于2019年春节后（2月中旬）上线！'
+            },
+            {
+                id:'11',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-expectations_cn.md',
+                date:'2019/1/16',
+                year:'2019',
+                month:'1',
+                day:'16',
+                title:'对IRIS Betanet的期望',
+                content:'为了帮助社区更好的参与IRIS Betanet，特此向社区沟通明确Betanet的一些期望：'
+            },
+            {
+                id:'12',
+                href:'https://github.com/irisnet/iris-foundation/blob/master/iris-betanet-plan_cn.md',
+                date:'2019/1/16',
+                year:'2019',
+                month:'1',
+                day:'16',
+                title:'IRIS基金会宣布Betanet启动计划 - IRIS主网启动的第一步',
+                content:'新年伊始，IRIS基金会高兴地宣布，IRIS Betanet即将于2019年春节后（2月中旬）上线！'
+            },
+
 
         ]
     },

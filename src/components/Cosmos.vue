@@ -4,11 +4,11 @@
             <div class="banner_content_wrap">
                 <div class="content_left">
                     <div class="moniker_title">
-                        <span class="title">{{headerTitle}}</span>
-                        <span class="commission_content">{{rate}} {{commission}}</span>
+                        <span class="title">{{$t('message.cosmosNode.header.title')}}</span>
+                        <span class="commission_content">{{rate}} {{$t('message.cosmosNode.header.commission')}}</span>
                     </div>
-                    <p>{{headerProduct}}</p>
-                    <h2 class="cosmos_address">{{headerValidatorAddress}}</h2>
+                    <p>{{$t('message.cosmosNode.header.product')}}</p>
+                    <h2 class="cosmos_address">{{$t('message.cosmosNode.header.validatorAddress')}}</h2>
                     <p>
                         <a :href="cosmosExplorerHref" target="_blank">{{headerCosmosAddress}} </a>
                         <span @click="toCosmosBrowser" id="cosmosAddress" :data-clipboard-text="headerCosmosAddress">
@@ -24,33 +24,33 @@
                 </div>
             </div>
             <div class="toast_content" :style="{visibility:flShowToast?'visible':'hidden'}">
-                <span>{{toastHint}}</span>
+                <span>{{$t('message.cosmosNode.header.toastHint')}}</span>
             </div>
             <div class="guide_content">
                 <div class="bonded_voting_power_content">
                     <div class="common_style">
                         <span>{{bondedTokens}}</span>
-                        <span>{{bondedAtoms}}</span>
+                        <span>{{$t('message.cosmosNode.header.bondedAtoms')}}</span>
                     </div>
                     <div class="common_style">
                         <span>{{votingPowerNumber}}</span>
-                        <span>{{votingPower}}</span>
+                        <span>{{$t('message.cosmosNode.header.votingPower')}}</span>
                     </div>
                 </div>
                 <div class="rate_uptime_content">
                     <div class="common_style">
                         <span>{{rate}}</span>
-                        <span>{{commissionRate}}</span>
+                        <span>{{$t('message.cosmosNode.header.commissionRate')}}</span>
                     </div>
                     <div class="common_style">
                         <span>{{bianJieUpTime}}</span>
-                        <span>{{uptime}}</span>
+                        <span>{{$t('message.cosmosNode.header.uptime')}}</span>
                     </div>
                 </div>
             </div>
             <p class="guide_text_content">
                 <span class="guide_href">
-                    <a :href="guideHref" target="_blank">{{guide}}</a>
+                    <a :href="guideHref" target="_blank">{{$t('message.cosmosNode.header.guide')}}</a>
                     <i class="icon">
                         <img src="../assets/right_icon.png" alt="">
                     </i>
@@ -59,7 +59,7 @@
         </div>
         <div class="about_container">
             <div class="about_content_wrap">
-                <p class="about_title">{{aboutTitle}}</p>
+                <p class="about_title">{{$t('message.cosmosNode.about.title')}}</p>
                 <!--<p class="about_second_title">{{aboutSecondTitle}}</p>-->
                 <div class="about_content">
                     <div class="about_left_content_wrap">
@@ -67,11 +67,13 @@
                             <div class="about_irisnet_img">
                                 <img src="../assets/cosmosThree/node_irisnet_logo.png" alt="">
                             </div>
-                            <p class="about_irisnet_title">Core Development Team of IRISnet</p>
+                            <p class="about_irisnet_title">{{$t('message.cosmosNode.about.irisnet.title')}}</p>
                         </div>
                         <div class="about_irisnet_section">
-                            <p>Supported by Interchain Foundation (ICF) to build IRISnet, a Cosmos Hub that facilitates construction of distributed business applications.</p>
-                            <p>IRISnet - a BPoS blockchain that is Self-evolutionary.</p>
+                            <p v-if="$i18n.locale === 'EN'" v-html="enMessage.cosmosNode.about.irisnet.list[0].item"></p>
+                            <p v-if="$i18n.locale === 'CN'" v-html="cnMessage.cosmosNode.about.irisnet.list[0].item"></p>
+                            <p v-if="$i18n.locale === 'EN'" v-html="enMessage.cosmosNode.about.irisnet.list[1].item"></p>
+                            <p v-if="$i18n.locale === 'CN'" v-html="cnMessage.cosmosNode.about.irisnet.list[1].item"></p>
                         </div>
                     </div>
                     <div class="about_right_content_wrap">
@@ -79,10 +81,12 @@
                             <div class="about_cosmos_img">
                                 <img src="../assets/cosmosThree/cosmos_logo.png" alt="">
                             </div>
-                            <p class="about_cosmos_title">Open Source Contributor to Cosmos</p>
+                            <p class="about_cosmos_title">{{$t('message.cosmosNode.about.cosmos.title')}}</p>
                         </div>
                         <div class="about_cosmos_section">
-                            <p>Genesis validator on Cosmos since March 14th, 2019 Participant of Cosmos testnets from Gaia-1000 to mainnet launch Technical support team to Cosmos China community since August 2017</p>
+                            <p>{{$t('message.cosmosNode.about.cosmos.list[0].item')}}</p>
+                            <p>{{$t('message.cosmosNode.about.cosmos.list[1].item')}}</p>
+                            <p>{{$t('message.cosmosNode.about.cosmos.list[2].item')}}</p>
                         </div>
                     </div>
                <!--     <div class="developer_content">
@@ -131,9 +135,9 @@
 
         <div class="safe_container">
             <div class="safe_wrap">
-                <h2>{{bianJieTitle}}</h2>
+                <h2>{{$t('message.cosmosNode.bianjie.title')}}</h2>
                 <ul class="safe_content">
-                    <li class="safe_item" v-for="item in bianJieProductList">
+                    <li class="safe_item" v-for="item in $i18n.locale === 'EN' ? enMessage.cosmosNode.bianjie.product : cnMessage.cosmosNode.bianjie.product">
                         <div class="safe_img_content">
                             <img :src="item.src" alt="">
                         </div>
@@ -144,9 +148,9 @@
         </div>
         <div class="cosmos_explorer_container">
             <div class="cosmos_explorer_wrap">
-                <h5 class="cosmos_explorer_title">{{cosmosExplorerTitle}}</h5>
+                <h5 class="cosmos_explorer_title">{{$t('message.cosmosNode.cosmosExplorerTitle')}}</h5>
                 <ul class="cosmos_list_content">
-                    <li class="cosmos_item_content" v-for="(item,index) in cosmosExplorerArray"
+                    <li class="cosmos_item_content" v-for="(item,index) in $i18n.locale === 'EN' ? enMessage.cosmosNode.cosmosExplorer : cnMessage.cosmosNode.cosmosExplorer"
                         :class="item.active ? 'bg_blue_style' : 'bg_white_style'"
                         @click="toBrowser(index,item.href)">
                         <div class="cosmos_explorer_logo">
@@ -163,6 +167,8 @@
 <script>
 
     import message from '../common/message';
+    import enMessage from "../assets/lang/en"
+    import cnMessage from "../assets/lang/cn"
     import axios from 'axios';
     import clipboardJS from 'clipboard'
     import bigNumber from 'bignumber.js'
@@ -170,6 +176,8 @@
         name: "Validators",
         data() {
             return {
+                enMessage: enMessage,
+                cnMessage: cnMessage,
                 lang: '',
                 headerTitle: 'IRISnet-Bianjie',
                 headerProduct:'Maintained by the core development team of IRISnet',

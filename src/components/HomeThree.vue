@@ -3,25 +3,11 @@
         <div class="home_swiper_container">
             <swiper ref="mySwiper" class="my-swipe" :options="swiperOption">
                 <swiper-slide>
-                    <div style="width: 100%;min-height: 5rem">
+                    <div style="width: 100%;">
                         <img style="width: 100%;height:100%" src="../assets/irisnetThree/home_swiper_1.jpg" >
                     </div>
                 </swiper-slide>
-                <swiper-slide>
-                    <div style="width: 100%;">
-                        <img style="width: 100%;" src="../assets/irisnetThree/home_swiper_1.jpg" alt="">
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div style="width: 100%;">
-                        <img style="width: 100%;" src="../assets/irisnetThree/home_swiper_1.jpg" alt="">
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div style="width: 100%;">
-                        <img style="width: 100%;" src="../assets/irisnetThree/home_swiper_1.jpg" alt="">
-                    </div>
-                </swiper-slide>
+
             </swiper>
             <div class="swiper-pagination" @mouseenter="next()"></div>
           <!--  <div class="swiper-button-prev"></div>
