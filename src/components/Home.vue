@@ -179,7 +179,7 @@
 	            flShowSwiper: false,
 	            swiperOption:{
                 	loop:true,
-                    autoplay: 1000000,
+                    autoplay: 3000,
                     speed: 300,
 		            autoplayDisableOnInteraction:false,
 		            disableOnInteraction:false,
