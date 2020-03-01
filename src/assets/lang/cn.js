@@ -261,6 +261,13 @@ export const message = {
                 }
             }
         },
+        oneYear:{
+            title:"主网 IRIS Hub 上线一周年",
+            section:'下一代分布式应用的跨链服务枢纽',
+            date:"2020.3.1",
+            btnName:'查看更多',
+            href:'https://mp.weixin.qq.com/s/sGIO1HvVcYbXgkW3KD98HA'
+        },
         irisnetVote:{
             commission:'委托IRIS参与链上治理 ',
             development:'为提案投票',
