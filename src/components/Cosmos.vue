@@ -173,7 +173,7 @@
 	            commissionRate:'Commission Rate',
 	            uptime:'Uptime',
 	            guide:'Cosmos Hub Wallets',
-	            guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets',
+	            guideHref:'https://hub.cosmos.network/master/hub-overview/overview.html#cosmos-hub-wallets',
                 aboutIrisnetList: [
 	                {
 		                item:'Supported by <a href="https://cosmos.network/about" target="_blank" style="color:rgba(77, 150, 223, 1)">Interchain Foundation (ICF)</a> to build IRISnet, a Cosmos Hub that facilitates construction of distributed business applications.'
@@ -232,7 +232,7 @@
                 emailInfo:'',
                 flShowBoxShadow:false,
 	            flShowToast:false,
-	            cosmosExplorerHref:'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030',
+	            cosmosExplorerHref:'https://hubble.figment.network/cosmos/chains/cosmoshub-3/validators/696ABC95186FD65A07050C28AB00C9358A315030',
                 validatorIndicators:{},
                 bondedTokens:'',
 	            rate: '',

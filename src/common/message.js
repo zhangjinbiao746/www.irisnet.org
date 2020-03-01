@@ -1906,7 +1906,7 @@ export default {
                 commissionRate:'Commission Rate',
                 uptime:'Uptime',
                 guide:'Cosmos Hub Wallets',
-                guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
+                guideHref:'https://hub.cosmos.network/master/hub-overview/overview.html#cosmos-hub-wallets'
             },
             about:{
                 title:'About IRISnet-Bianjie',

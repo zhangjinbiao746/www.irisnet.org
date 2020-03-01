@@ -2,22 +2,23 @@
     <div class="content_wrap" @click="closeWeChat">
         <div @mouseenter="swiperStop" @mouseleave="swiperStart" style="position: relative;">
             <swiper ref="mySwiper" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper" >
-                <!--<swiper-slide>
+                <swiper-slide>
                     <section class="sectionOne2">
                         <div class="left">
-                            <div class="irisnet_bianjie_moniker">{{$store.state.messages.home.irisnetVote.commission}}</div>
-                            <div class="development_content">
-                                <p>{{$store.state.messages.home.irisnetVote.development}}</p>
-                            </div>
+                            <div>{{$store.state.messages.home.oneYear.title}}</div>
+                            <div>{{$store.state.messages.home.oneYear.section}}</div>
+                            <div>{{$store.state.messages.home.oneYear.date}}</div>
                             <div>
-                                <button @click="jumpUrl($store.state.messages.home.irisnetVote.button.buttonUrl.voteUrl)">{{$store.state.messages.home.irisnetVote.button.buttonName.voteName}}</button>
+                                <a :href="$store.state.messages.home.oneYear.href" target="_blank">
+                                    <button>{{$store.state.messages.home.oneYear.btnName}}</button>
+                                </a>
                             </div>
                         </div>
                         <div class="right">
-                            <img src="../assets/IRISnet_vote.png" alt="" class="banner">
+                            <img src="../assets/home_swiper_1.png" alt="" class="banner">
                         </div>
                     </section>
-                </swiper-slide>-->
+                </swiper-slide>
                 <swiper-slide>
                     <section class="sectionOne1">
                         <div class="left">
@@ -178,7 +179,7 @@
 	            flShowSwiper: false,
 	            swiperOption:{
                 	loop:true,
-                    autoplay: 3000,
+                    autoplay: 1000000,
                     speed: 300,
 		            autoplayDisableOnInteraction:false,
 		            disableOnInteraction:false,
