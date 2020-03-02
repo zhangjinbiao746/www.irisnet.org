@@ -708,7 +708,8 @@ export const message = {
                             itemName: ' SyncNode',
                             os:'(iOS)',
                             href: 'https://wallet.syncnode.ro/'
-                        }
+                        },
+
 
                     ],
                     content:'这些钱包支持IRIS及ATOM的转账和质押，请充分研究其安全性再使用。列示这些信息仅为方便下载，并不代表对钱包使用的安全性负责。',
@@ -737,7 +738,10 @@ export const message = {
                             production:'(Ledger)',
                             href: 'https://wallet.cosmostation.io/?network=iris'
                         },
-                       
+                        {
+                            itemName: 'Dokia',
+                            href: 'https://staking.dokia.cloud/'
+                        },
                     ],
                     content:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
                 },
