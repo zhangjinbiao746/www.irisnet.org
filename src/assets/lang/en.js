@@ -743,6 +743,10 @@ export const message = {
                             production:'(Ledger)',
                             href: 'https://wallet.cosmostation.io/?network=iris'
                         },
+                        {
+                            itemName: 'Dokia',
+                            href: 'https://staking.dokia.cloud/'
+                        },
                         
                     ],
                     content:'Those tools, contributed by IRISnet validators and developers, facilitates IRIS token holders to delegate via web wallets and Ledger hardware wallets, etc . Before using these tools, you need to assure their security.'

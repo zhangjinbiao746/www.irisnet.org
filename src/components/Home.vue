@@ -15,7 +15,7 @@
                             </div>
                         </div>
                         <div class="right">
-                            <img src="../assets/home_swiper_1.png" alt="" class="banner">
+                            <img src="../assets/home_swiper_1.jpg" alt="" class="banner">
                         </div>
                     </section>
                 </swiper-slide>
