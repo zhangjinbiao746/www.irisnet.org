@@ -187,12 +187,12 @@ export const message = {
             {
                 id: 2,
                 name:'Light Client',
-                href:'https://www.irisnet.org/docs/light-client/'
+                href:'https://www.irisnet.org/docs/light-client/intro.html'
             },
             {
                 id: 3,
                 name:'CLI Client',
-                href:'https://www.irisnet.org/docs/cli-client/'
+                href:' https://www.irisnet.org/docs/cli-client/intro.html'
             }
         ],
         resourceList: [
