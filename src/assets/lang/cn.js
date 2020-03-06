@@ -346,7 +346,7 @@ export const message = {
                     {id:1, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
                     {id:2, path: 'logos/irisnet_axonomy.png', url: 'https://www.axonomy.pro'},
                     {id:3, path: 'logos/irisnet_Gdex.png', url: 'https://www.gdex.io/'},
-                    {id:4, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
+                    // {id:4, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
                 ]
             },
             Institutional: {
