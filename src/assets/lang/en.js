@@ -730,17 +730,14 @@ export const message = {
                         },
                         {
                             itemName: 'Math Wallet',
-                            production:'(Browser Extension, Web Wallet)',
                             href: 'https://mathwallet.net/web/irisnet'
                         },
                         {
                             itemName: '01node.com',
-                            production:'(Ledger)',
                             href: 'https://iris-delegator.01node.com'
                         },
                         {
                             itemName: 'Cosmostation',
-                            production:'(Ledger)',
                             href: 'https://wallet.cosmostation.io/?network=iris'
                         },
                         {
