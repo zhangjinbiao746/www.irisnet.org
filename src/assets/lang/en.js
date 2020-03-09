@@ -747,7 +747,10 @@ export const message = {
                             itemName: 'Dokia',
                             href: 'https://staking.dokia.cloud/'
                         },
-                        
+                        {
+                            itemName: 'Union Market',
+                            href: 'https://union.market/token/irisnet'
+                        }
                     ],
                     content:'Those tools, contributed by IRISnet validators and developers, facilitates IRIS token holders to delegate via web wallets and Ledger hardware wallets, etc . Before using these tools, you need to assure their security.'
                 },
