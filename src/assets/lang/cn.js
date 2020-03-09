@@ -725,22 +725,23 @@ export const message = {
                         },
                         {
                             itemName: 'Math Wallet',
-                            production:'(Browser Extension, Web Wallet)',
                             href: 'https://mathwallet.net/web/irisnet'
                         },
                         {
                             itemName: '01node.com',
-                            production:'(Ledger)',
                             href: 'https://iris-delegator.01node.com'
                         },
                         {
                             itemName: 'Cosmostation',
-                            production:'(Ledger)',
                             href: 'https://wallet.cosmostation.io/?network=iris'
                         },
                         {
                             itemName: 'Dokia',
                             href: 'https://staking.dokia.cloud/'
+                        },
+                        {
+                            itemName: 'Union Market',
+                            href: 'https://union.market/token/irisnet'
                         },
                     ],
                     content:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
