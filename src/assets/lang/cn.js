@@ -607,17 +607,17 @@ export const message = {
         eventsTitle:'近期活动',
         events: {
             left: [
-              /*  {
-                    img:'irisnet_event_2019_11_07_proof.png',
-                    href:'https://www.chainnews.com/pov',
-                    address:'中国，上海',
-                    timestamp:'2019/12/06-/12/07',
-                    title:'价值共识大会 2019',
-                    signUp:'加入活动',
-                    signUpUrl:'http://www.huodongxing.com/event/9511834747000?td=9802436480216',
+                {
+                    img:'irisnet_event_2020.jpg',
+                    href:'javascript:void(0)',
+                    address:'',
+                    timestamp:'2020/3/19',
+                    title:'跨链时代真正来临 IBC & IRISnet',
+                    signUp:'',
+                    signUpUrl:'',
                     viewMore:'',
                     viewMoreUrl:'',
-                },*/
+                },
             ],
             right:[
             ]
