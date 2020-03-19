@@ -610,17 +610,28 @@ export const message = {
         eventsTitle:'Upcoming Events',
         events: {
             left: [
-              /*  {
-                    img:'irisnet_event_11_06.png',
-                    href:'https://www.8btc.com/wbc-2019/?lang=en',
-                    address:'Wuzhen, China',
-                    timestamp:'2019/11/08-/11/09',
-                    title:'World Blockchain Conference (Wuzhen)',
+                {
+                    img:'irisnet_event_russia.jpg',
+                    href:'http://t.me/BinanceRussian',
+                    address:'',
+                    timestamp:'2020/3/20',
+                    title:'IRISnet Binance AMA Series-Russia and Ukraine',
                     signUp:'Sign Up',
-                    signUpUrl:'https://www.huodongxing.com/event/8509682642600?layout=EN',
+                    signUpUrl:'http://t.me/BinanceRussian',
                     viewMore:'',
                     viewMoreUrl:'',
-                },*/
+                },
+                {
+                    img:'irisnet_event_korea.jpg',
+                    href:'http://t.me/BinanceKorean',
+                    address:'',
+                    timestamp:'2020/3/20',
+                    title:'IRISnet Binance AMA Series-Korea',
+                    signUp:'Sign Up',
+                    signUpUrl:'http://t.me/BinanceKorean',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                }
             ],
             right:[
 

@@ -618,8 +618,30 @@ export const message = {
                     viewMore:'',
                     viewMoreUrl:'',
                 },
+                {
+                    img:'irisnet_event_russia.jpg',
+                    href:'http://t.me/BinanceRussian',
+                    address:'',
+                    timestamp:'2020/3/20',
+                    title:'币安俄罗斯/乌克兰社区的 AMA',
+                    signUp:'加入活动',
+                    signUpUrl:'http://t.me/BinanceRussian',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                }
             ],
             right:[
+                {
+                    img:'irisnet_event_korea.jpg',
+                    href:'http://t.me/BinanceKorean',
+                    address:'',
+                    timestamp:'2020/3/20',
+                    title:'币安韩国社区的 AMA',
+                    signUp:'加入活动',
+                    signUpUrl:'http://t.me/BinanceKorean',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                }
             ]
         },
         faq:{
