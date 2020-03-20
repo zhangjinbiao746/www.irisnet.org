@@ -608,17 +608,6 @@ export const message = {
         events: {
             left: [
                 {
-                    img:'irisnet_event_2020.jpg',
-                    href:'javascript:void(0)',
-                    address:'',
-                    timestamp:'2020/3/19',
-                    title:'跨链时代真正来临 IBC & IRISnet',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
                     img:'irisnet_event_russia.jpg',
                     href:'http://t.me/BinanceRussian',
                     address:'',
@@ -628,9 +617,7 @@ export const message = {
                     signUpUrl:'http://t.me/BinanceRussian',
                     viewMore:'',
                     viewMoreUrl:'',
-                }
-            ],
-            right:[
+                },
                 {
                     img:'irisnet_event_korea.jpg',
                     href:'http://t.me/BinanceKorean',
@@ -639,6 +626,73 @@ export const message = {
                     title:'币安韩国社区的 AMA',
                     signUp:'加入活动',
                     signUpUrl:'http://t.me/BinanceKorean',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+               
+            ],
+            right:[
+                {
+                    img:'irisnet_event_turkish.jpg',
+                    href:'http://t.me/BinanceTurkish',
+                    address:'',
+                    timestamp:'2020/3/21',
+                    title:'币安土耳其社区的AMA',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+                {
+                    img:'irisnet_event_nigeria.jpg',
+                    href:'http://t.me/BinanceNigeria',
+                    address:'',
+                    timestamp:'2020/3/21',
+                    title:'币安尼日利亚社区的AMA',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+                
+               
+            ]
+        },
+        eventsBottom: {
+            left: [
+                {
+                    img:'irisnet_event_indonesian.jpg',
+                    href:'http://t.me/Binance_INDONESIAN',
+                    address:'',
+                    timestamp:'2020/3/21',
+                    title:'币安印度尼西亚社区的 AMA',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+                {
+                    img:'irisnet_event_vietanmese.jpg',
+                    href:'http://t.me/BinanceVietnamese',
+                    address:'',
+                    timestamp:'2020/3/21',
+                    title:'币安越南社区的 AMA',
+                    signUp:'',
+                    signUpUrl:'',
+                    viewMore:'',
+                    viewMoreUrl:'',
+                },
+        
+            ],
+            right:[
+                {
+                    img:'irisnet_event_spanish.jpg',
+                    href:'http://t.me/BinanceSpanish',
+                    address:'',
+                    timestamp:'2020/3/21',
+                    title:'币安委瑞内拉社区的AMA',
+                    signUp:'',
+                    signUpUrl:'',
                     viewMore:'',
                     viewMoreUrl:'',
                 }
