@@ -199,7 +199,7 @@ export const message = {
             {
                 id: 0,
                 name:'FAQ',
-                href:'https://www.irisnet.org/docs/resources/'
+                href:'https://medium.com/irisnet-blog/irisnet-faq-8793cf116c37'
             },
             {
                 id: 1,
