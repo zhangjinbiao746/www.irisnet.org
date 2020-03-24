@@ -607,95 +607,17 @@ export const message = {
         eventsTitle:'近期活动',
         events: {
             left: [
-                {
-                    img:'irisnet_event_russia.jpg',
-                    href:'http://t.me/BinanceRussian',
-                    address:'',
-                    timestamp:'2020/3/20',
-                    title:'币安俄罗斯/乌克兰社区的 AMA',
-                    signUp:'加入活动',
-                    signUpUrl:'http://t.me/BinanceRussian',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
-                    img:'irisnet_event_korea.jpg',
-                    href:'http://t.me/BinanceKorean',
-                    address:'',
-                    timestamp:'2020/3/20',
-                    title:'币安韩国社区的 AMA',
-                    signUp:'加入活动',
-                    signUpUrl:'http://t.me/BinanceKorean',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-               
             ],
             right:[
-                {
-                    img:'irisnet_event_turkish.jpg',
-                    href:'http://t.me/BinanceTurkish',
-                    address:'',
-                    timestamp:'2020/3/21',
-                    title:'币安土耳其社区的AMA',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
-                    img:'irisnet_event_nigeria.jpg',
-                    href:'http://t.me/BinanceNigeria',
-                    address:'',
-                    timestamp:'2020/3/21',
-                    title:'币安尼日利亚社区的AMA',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                
-               
+            
             ]
         },
         eventsBottom: {
             left: [
-                {
-                    img:'irisnet_event_indonesian.jpg',
-                    href:'http://t.me/Binance_INDONESIAN',
-                    address:'',
-                    timestamp:'2020/3/21',
-                    title:'币安印度尼西亚社区的 AMA',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
-                    img:'irisnet_event_vietanmese.jpg',
-                    href:'http://t.me/BinanceVietnamese',
-                    address:'',
-                    timestamp:'2020/3/21',
-                    title:'币安越南社区的 AMA',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-        
+            
             ],
             right:[
-                {
-                    img:'irisnet_event_spanish.jpg',
-                    href:'http://t.me/BinanceSpanish',
-                    address:'',
-                    timestamp:'2020/3/21',
-                    title:'币安委瑞内拉社区的AMA',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                }
+            
             ]
         },
         faq:{
@@ -724,31 +646,33 @@ export const message = {
                 title: '活动回顾',
                 leftList: [
                     {
+                        img:'irisnet_event_2020.jpg',
+                        href:'https://mp.weixin.qq.com/s/My7ODGrdjbupAWnjiaM0Cw',
+                        title:'无涯社区 AMA',
+                        content:'跨链时代真正来临 IBC & IRISnet'
+                    },
+                    {
                         img:'irisnet_event_2019_11_08_max.jpg',
                         href:'https://mp.weixin.qq.com/s/bdNvbZMA7NOKWyfx4FRfEw',
                         title:'抹茶AMA',
                         content:'开发跨链的IRISnet--如何打通数字经济和实体经济'
                     },
+                    
+                ],
+                rightList:[
                     {
                         img:'irisnet_event_2019_11_14.png',
                         href:'https://mp.weixin.qq.com/s/bQCfqkB5TJLzkAKmV-HwuA',
                         title:'2019世界区块链大会·乌镇',
                         content:'乌镇·一文读懂Web3.0的概念、推进与盈利模式'
                     },
-                ],
-                rightList:[
                     {
                         img:'irisnet_sacc.png',
                         href:'https://mp.weixin.qq.com/s/PSFWeqWXS3dcfhO5A22Gsg',
                         title:'中国系统架构师大会',
                         content:'2019中国系统架构师大会：数字转型架构演进'
                     },
-                    {
-                        img:'irisnet_event_10_25.png',
-                        href:'https://mp.weixin.qq.com/s/NV34GBOfapbXAJUs9GzXog',
-                        title:'助力赢50,000 IRIS大奖！',
-                        content:'IRISnet发起币安DEX上币提案，助力赢50,000 IRIS大奖！'
-                    },
+                   
                 ],
             }
         },
