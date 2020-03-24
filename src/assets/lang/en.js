@@ -610,93 +610,20 @@ export const message = {
         eventsTitle:'Upcoming Events',
         events: {
             left: [
-                {
-                    img:'irisnet_event_russia.jpg',
-                    href:'http://t.me/BinanceRussian',
-                    address:'',
-                    timestamp:'2020/3/20',
-                    title:'IRISnet Binance AMA Series-Russia and Ukraine',
-                    signUp:'Sign Up',
-                    signUpUrl:'http://t.me/BinanceRussian',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
-                    img:'irisnet_event_korea.jpg',
-                    href:'http://t.me/BinanceKorean',
-                    address:'',
-                    timestamp:'2020/3/20',
-                    title:'IRISnet Binance AMA Series-Korea',
-                    signUp:'Sign Up',
-                    signUpUrl:'http://t.me/BinanceKorean',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                
+            
+            
             ],
             right:[
-                {
-                    img:'irisnet_event_turkish.jpg',
-                    href:'http://t.me/BinanceTurkish',
-                    address:'',
-                    timestamp:'2020/3/21',
-                    title:'IRISnet Binance AMA Series-Russia and Ukraine',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
-                    img:'irisnet_event_nigeria.jpg',
-                    href:'http://t.me/BinanceNigeria',
-                    address:'',
-                    timestamp:'2020/3/21',
-                    title:'IRISnet Binance AMA Series-Russia and Ukraine',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                }
+            
             ]
         },
         eventsBottom:{
             left:[
-                {
-                    img:'irisnet_event_indonesian.jpg',
-                    href:'http://t.me/Binance_INDONESIAN',
-                    address:'',
-                    timestamp:'2020/3/21',
-                    title:'IRISnet Binance AMA Series-Russia and Ukraine',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
-                {
-                    img:'irisnet_event_vietanmese.jpg',
-                    href:'http://t.me/BinanceVietnamese',
-                    address:'',
-                    timestamp:'2020/3/21',
-                    title:'IRISnet Binance AMA Series-Russia and Ukraine',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                },
+            
             ],
             right:[
         
-                {
-                    img:'irisnet_event_spanish.jpg',
-                    href:'http://t.me/BinanceSpanish',
-                    address:'',
-                    timestamp:'2020/3/21',
-                    title:'IRISnet Binance AMA Series-Russia and Ukraine',
-                    signUp:'',
-                    signUpUrl:'',
-                    viewMore:'',
-                    viewMoreUrl:'',
-                }
+            
     
             ]
         },
