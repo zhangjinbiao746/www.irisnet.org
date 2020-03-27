@@ -646,33 +646,33 @@ export const message = {
                 title: '活动回顾',
                 leftList: [
                     {
+                        img:'itisnet_event_20200325.png',
+                        href:'https://m.jinse.com/blockchain/613755.html?source=m',
+                        title:'Biki 社区 AMA',
+                        content:'BiKi对话IRISnet 看新一代公链基础设施构建分布式商业应用'
+                    },
+                    {
                         img:'irisnet_event_2020.jpg',
                         href:'https://mp.weixin.qq.com/s/My7ODGrdjbupAWnjiaM0Cw',
                         title:'无涯社区 AMA',
                         content:'跨链时代真正来临 IBC & IRISnet'
                     },
+                    
+                    
+                ],
+                rightList:[
                     {
                         img:'irisnet_event_2019_11_08_max.jpg',
                         href:'https://mp.weixin.qq.com/s/bdNvbZMA7NOKWyfx4FRfEw',
                         title:'抹茶AMA',
                         content:'开发跨链的IRISnet--如何打通数字经济和实体经济'
                     },
-                    
-                ],
-                rightList:[
                     {
                         img:'irisnet_event_2019_11_14.png',
                         href:'https://mp.weixin.qq.com/s/bQCfqkB5TJLzkAKmV-HwuA',
                         title:'2019世界区块链大会·乌镇',
                         content:'乌镇·一文读懂Web3.0的概念、推进与盈利模式'
                     },
-                    {
-                        img:'irisnet_sacc.png',
-                        href:'https://mp.weixin.qq.com/s/PSFWeqWXS3dcfhO5A22Gsg',
-                        title:'中国系统架构师大会',
-                        content:'2019中国系统架构师大会：数字转型架构演进'
-                    },
-                   
                 ],
             }
         },
