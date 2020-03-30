@@ -134,7 +134,7 @@
                            :style="{cursor: n.url === 'javascript:void(0)' ? 'auto' :'pointer'}"
                            v-for="n of $store.state.messages.home.sectionFour.StrategicPartners.logos"
                            :key="n.id">
-                            <img :src='UrlSrc + n.path'>
+                            <img:src='UrlSrc + n.path'>
                         </a>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
                            :style="{cursor: n.url === 'javascript:void(0)' ? 'auto' :'pointer'}"
                            v-for="n of $store.state.messages.home.sectionFour.EcosystemPartners.logos"
                            :key="n.id">
-                            <img :src='UrlSrc + n.path'>
+                            <img  style="max-width: 2rem;"  :src='UrlSrc + n.path'>
                         </a>
                     </div>
                 </div>
