@@ -261,13 +261,6 @@ export const message = {
                 }
             }
         },
-        oneYear:{
-            title:"主网 IRIS Hub 上线一周年",
-            section:'下一代分布式应用的跨链服务枢纽',
-            date:"2020.3.1",
-            btnName:'查看更多',
-            href:'https://mp.weixin.qq.com/s/sGIO1HvVcYbXgkW3KD98HA'
-        },
         irisnetVote:{
             commission:'委托IRIS参与链上治理 ',
             development:'为提案投票',
@@ -335,19 +328,19 @@ export const message = {
                 title: '战略合作伙伴',
                 logos: [
                     {id:0, path: 'logos/irisnet_InTERCHAIN.png', url: 'https://cosmos.network/about'},
-                   
-                    {id:3, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'}
+                    {id:1, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'},
+                    {id:2, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
+
                 ]
             },
             EcosystemPartners: {
                 title: '生态合作伙伴',
                 logos: [
-                    {id:0, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
-                    {id:1, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
-                    {id:2, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
-                    {id:3, path: 'logos/IOV.png', url: 'https://iov.one/'},
-                    {id:4, path: 'logos/irisnet_axonomy.png', url: 'https://www.axonomy.pro'},
-                    {id:5, path: 'logos/irisnet_Gdex.png', url: 'https://www.gdex.io/'},
+                    {id:0, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
+                    {id:1, path: 'logos/IOV.png', url: 'https://iov.one/'},
+                    {id:2, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
+                    {id:3, path: 'logos/irisnet_axonomy.png', url: 'https://www.axonomy.pro'},
+                    {id:4, path: 'logos/irisnet_Gdex.png', url: 'https://www.gdex.io/'},
                     // {id:4, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
                 ]
             },
@@ -410,32 +403,32 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://forum.irisnet.org/t/iris/314',
-                date:'2019年12月31日',
-                title:'公告 | IRIS基金会第三次执行通证销毁计划，并宣布2020年延续该通证销毁计划',
-                content:'2019年12月31日，IRIS基金会根据为期一年的通证销毁计划，执行了第三次销毁，通过两笔交易共销毁了 15,029,472 个 IRIS 通证，目前 IRIS 通证的总量为20亿个。'
+                href:'https://forum.irisnet.org/t/iris/372',
+                date:'2020 年 03 月 31 日',
+                title:'公告 | IRIS 基金会执行第四次通证销毁并宣布将升级销毁计划',
+                content:'2020 年 3 月 31 日，IRIS 基金会根据为期<a href="https://mp.weixin.qq.com/s?__biz=MzU4NTQwODEwMg==&mid=2247485030&idx=1&sn=2eca9714007a8aa77af63ab760c58d18&chksm=fd8a4d6fcafdc479498296eada2804fc06c834ef5067b729e098f100e6726d3fa13107be7ed8&scene=21#wechat_redirect" target="_blank">一年的通证销毁计划</a>，执行了第四次销毁，通过两笔交易共销毁了 14,230,476 个 IRIS 通证，目前 IRIS 通证的总量为 20 亿。'
             },
             {
                 id:'1',
-                href:'https://forum.irisnet.org/t/iris/271',
-                date:'2019年9月27日',
-                title:'公告 | IRIS基金会第二次执行通证销毁计划',
-                content:'2019年9月27日，IRIS基金会根据为期一年的通证销毁计划，执行了第二次销毁，通过两笔交易共销毁了14,304,888 个 IRIS 通证，目前 IRIS  通证的总量为20亿个。'
+                href:'https://forum.irisnet.org/t/irisnet/349',
+                date:'2020 年 02 月 29 日',
+                title:'IRISnet 一周岁生日快乐！',
+                content:'2019 年 3 月 1 日 13:30，IRISnet <a href="https://mp.weixin.qq.com/s?__biz=MzU4NTQwODEwMg==&mid=2247484583&idx=1&sn=c9b0a5e420cf29ee3adb190a63e009d8&scene=21&token=781206695&lang=zh_CN#wechat_redirect" target="_blank">正式启动了主网 IRIS Hub</a>，这是 Cosmos 生态首个能通过在线治理升级完成自进化的跨链枢纽，与 3 月 14 日启动的 Cosmos Hub 一起，作为双枢纽宣布了 Cosmos 跨链大生态的正式启航。 紧张的开发迭代中，仿佛一眨眼 IRISnet 主网就一岁啦'
             },
             {
                 id:'2',
-                href:'https://forum.irisnet.org/t/irisnet-betanet-mainnet/263',
-                date:'2019年9月17日',
-                title:'IRIS Hub上线200天，Betanet正式升级为Mainnet',
-                content:'2019年3月1日，IRISHub的Betanet产出创世区块，网络正式启动。在上线200天之际正式宣布IRIS Hub开始以主网（Mainnet）身份运行。'
+                href:'https://forum.irisnet.org/t/iris/314',
+                date:'2019 年 12 月 31 日',
+                title:'公告 | IRIS基金会第三次执行通证销毁计划，并宣布2020年延续该通证销毁计划',
+                content:'2019 年 12 月 31 日，IRIS 基金会根据为期<a href="https://mp.weixin.qq.com/s?__biz=MzU4NTQwODEwMg==&mid=2247485030&idx=1&sn=2eca9714007a8aa77af63ab760c58d18&chksm=fd8a4d6fcafdc479498296eada2804fc06c834ef5067b729e098f100e6726d3fa13107be7ed8&scene=21#wechat_redirect" target="_blank">一年的通证销毁计划</a>，执行了第三次销毁，通过两笔交易共销毁了 15,029,472 个 IRIS 通证，目前 IRIS 通证的总量为 20 亿个。'
             },
             {
                 id:'3',
-                href:'https://forum.irisnet.org/t/iris-hub-v0-15-defi/254',
-                date:'2019年8月30日',
-                title:'BPoS区块链历史首次！IRIS Hub v0.15平滑升级成功，三大核心功能赋能DeFi',
-                content:'IRISnet主网IRIS Hub于北京时间2019年8月29日升级完成，这次升级是BPoS网络中首次对一个非兼容版本，在不硬分叉、不清空数据情况下的平滑升级。'
-            },
+                href:'https://forum.irisnet.org/t/irisnet/304',
+                date:'2019 年 11 月 30 日',
+                title:'IRISnet 第二次主网平滑升级成功！女娲阶段开启，DeFi 支持全面提升',
+                content:'IRISnet 主网 IRIS Hub 于北京时间 2019 年 11 月 29 日，完成第二次平滑升级，主网升级至 v0.16 版本。升级后的主网不仅新增原子交换（HTLC）、Coinswap 功能模块，DeFi 应用支持全面升级，还加入了大受技术社区欢迎的 Snapshot 功能。'
+            }
         ]
     },
     testnet:{

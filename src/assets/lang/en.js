@@ -265,13 +265,6 @@ export const message = {
                 }
             }
         },
-        oneYear:{
-            title:"IRIS Hub Launch 1st Anniversary",
-            section:'Interchain Service Hub for NextGen Distributed Applications',
-            date:"2020.3.1",
-            btnName:'View More',
-            href:' https://medium.com/irisnet-blog/happy-1st-birthday-irisnet-2343e02a9a81'
-        },
         irisnetVote:{
             commission:'Participate in On-Chain Governance',
             development:'Vote for Proposals',
@@ -339,18 +332,19 @@ export const message = {
                 title: 'Strategic Partners',
                 logos: [
                     {id:0, path: 'logos/irisnet_InTERCHAIN.png', url: 'https://cosmos.network/about'},
-                    {id:1, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'}
+                    {id:1, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'},
+                    {id:2, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
+
                 ]
             },
             EcosystemPartners: {
                 title: 'Ecosystem Partners',
                 logos: [
-                    {id:0, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
-                    {id:1, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
-                    {id:2, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
-                    {id:3, path: 'logos/IOV.png', url: 'https://iov.one/'},
-                    {id:4, path: 'logos/irisnet_axonomy.png', url: 'https://www.axonomy.pro'},
-                    {id:5, path: 'logos/irisnet_Gdex.png', url: 'https://www.gdex.io/'},
+                    {id:0, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
+                    {id:1, path: 'logos/IOV.png', url: 'https://iov.one/'},
+                    {id:2, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
+                    {id:3, path: 'logos/irisnet_axonomy.png', url: 'https://www.axonomy.pro'},
+                    {id:4, path: 'logos/irisnet_Gdex.png', url: 'https://www.gdex.io/'},
                     // {id:4, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
                 ]
             },
@@ -414,32 +408,33 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://medium.com/irisnet-blog/the-3rd-iris-token-burn-is-completed-token-burning-plan-continues-in-2020-46350337a5af',
-                date:'Dec 31, 2019',
-                title:'The 3rd IRIS Token Burn is Completed & Token Burning Plan Continues in 2020',
-                content:'On December 31st, 2019, the IRIS Foundation completed the 3rd IRIS token burn under a one-year token burning plan with 15,029,472 IRIS burned. The current total supply is 2 billion IRIS.'
+                href:'https://medium.com/irisnet-blog/the-4th-iris-token-burn-is-completed-1a234454f838',
+                date:'Mar 31, 2020',
+                title:'The 4th IRIS Token Burn is Completed',
+                content:'On March 31st, 2020, the IRIS Foundation completed the 4th IRIS token burn under a <a href="https://medium.com/irisnet-blog/iris-foundation-announced-a-one-year-token-burning-plan-e0637ea6f977" target="_blank">one-year token burning plan</a> with 14,230,476 IRIS burned. The current total supply is 2 billion IRIS.'
             },
             {
                 id:'1',
-                href:'https://medium.com/irisnet-blog/announcement-the-2rd-iris-token-burn-complete-5cff42eb44a0?source=---------5------------------',
-                date:'Sep 27, 2019',
-                title:'Announcement: the 2nd IRIS Token Burn Complete',
-                content:'On September 27th, 2019, the IRIS Foundation completed the 1st IRIS token burn under a one-year token burning plan with 14,304,888 IRIS burned. The current total supply is 2 billion IRIS.'
+                href:'https://medium.com/irisnet-blog/happy-1st-birthday-irisnet-2343e02a9a81',
+                date:'Feb 29 2020',
+                title:'Happy 1st Birthday , IRISnet!',
+                content:'On March 1st, 2019 at 5:30 UTC, IRIS Hub was launched and today is the first anniversary. At this special moment, we would like to first thank all the community members for this wonderful journey together.'
             },
             {
                 id:'2',
-                href:'https://medium.com/irisnet-blog/irisnet-mainnet-is-live-2f8db2c6fca8',
-                date:'Sep 17, 2019',
-                title:'IRISnet Mainnet is Live!',
-                content:'On March 1st, 2019, IRIS Hub\'s Betanet proposed the genesis block marking the official launch of the network.On the 200th day since the launch, we are very glad to announce that IRIS Hub will be officially running as the Mainnet.'
+                href:'https://medium.com/irisnet-blog/the-3rd-iris-token-burn-is-completed-token-burning-plan-continues-in-2020-46350337a5af',
+                date:'Dec 31, 2019',
+                title:'The 3rd IRIS Token Burn is Completed & Token Burning Plan Continues in 2020',
+                content:'On December 31st, 2019, the IRIS Foundation completed the 3rd IRIS token burn under a <a href="https://medium.com/irisnet-blog/iris-foundation-announced-a-one-year-token-burning-plan-e0637ea6f977" target="_blank">one-year token burning plan</a> with 15,029,472 IRIS burned. The current total supply is 2 billion IRIS.'
             },
             {
                 id:'3',
-                href:'https://medium.com/irisnet-blog/multi-asset-module-available-on-iris-hub-v0-15-with-defi-application-dev-support-coming-805ed0c8a304?source=---------15------------------',
-                date:'Aug 30, 2019',
-                title:'Multi-asset Module Available on IRIS Hub V0.15 with DeFi Application Dev Support Coming',
-                content:'IRISnet mainnet IRIS Hub has completed its upgrade on August 29, 2019. It is the first time for an incompatible version in BPoS network to complete a smooth upgrade without hard fork and data purge.'
+                href:'https://medium.com/irisnet-blog/irisnet-2nd-mainnet-upgrade-completed-with-nüwa-stage-live-defi-support-improved-e68839ac55b2',
+                date:'Nov 30, 2019',
+                title:'IRISnet 2nd Mainnet Upgrade Completed with NÜWA Stage LIVE & DeFi Support improved',
+                content:'Nov 29 UTC, IRISnet mainnet IRIS Hub has completed its second smooth upgrade. IRIS Hub has been updated to v0.16. New exciting modules, namely Atomic Swap (HTLC) and Coinswap, have been added to IRIS Hub. DeFi application development support has been improved. Also, snapshot, a new function that is very popular among our technical community, has also been added.'
             },
+           
         ]
     },
     testnet:{
