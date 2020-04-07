@@ -417,7 +417,7 @@ export const message = {
                 id:'1',
                 href:'https://medium.com/irisnet-blog/happy-1st-birthday-irisnet-2343e02a9a81',
                 date:'Feb 29 2020',
-                title:'Happy 1st birthday , IRISnet!',
+                title:'Happy 1st Birthday , IRISnet!',
                 content:'On March 1st, 2019 at 5:30 UTC, IRIS Hub was launched and today is the first anniversary. At this special moment, we would like to first thank all the community members for this wonderful journey together.'
             },
             {
