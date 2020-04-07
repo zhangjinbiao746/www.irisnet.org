@@ -42,7 +42,7 @@
                         <a :href="item.href" target="_blank">
                             <p class="foundation_item_date">{{item.date}}</p>
                             <p class="foundation_item_title">{{item.title}}</p>
-                            <p class="foundation_item_content">{{item.content}}</p>
+                            <p class="foundation_item_content" v-html="item.content"></p>
                         </a>
                     </li>
                 </ul>
