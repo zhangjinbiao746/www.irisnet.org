@@ -265,13 +265,6 @@ export const message = {
                 }
             }
         },
-        oneYear:{
-            title:"IRIS Hub Launch 1st Anniversary",
-            section:'Interchain Service Hub for NextGen Distributed Applications',
-            date:"2020.3.1",
-            btnName:'View More',
-            href:' https://medium.com/irisnet-blog/happy-1st-birthday-irisnet-2343e02a9a81'
-        },
         irisnetVote:{
             commission:'Participate in On-Chain Governance',
             development:'Vote for Proposals',

@@ -3,23 +3,6 @@
         <div @mouseenter="swiperStop" @mouseleave="swiperStart" style="position: relative;">
             <swiper ref="mySwiper" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper" >
                 <swiper-slide>
-                    <section class="sectionOne2">
-                        <div class="left">
-                            <div>{{$store.state.messages.home.oneYear.title}}</div>
-                            <div>{{$store.state.messages.home.oneYear.section}}</div>
-                            <div>{{$store.state.messages.home.oneYear.date}}</div>
-                            <div>
-                                <a :href="$store.state.messages.home.oneYear.href" target="_blank">
-                                    <button>{{$store.state.messages.home.oneYear.btnName}}</button>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <img src="../assets/home_swiper_1.jpg" alt="" class="banner">
-                        </div>
-                    </section>
-                </swiper-slide>
-                <swiper-slide>
                     <section class="sectionOne1">
                         <div class="left">
                             <div class="irisnet_bianjie_moniker">{{$store.state.messages.home.irisnetBianJie.commission}}</div>
