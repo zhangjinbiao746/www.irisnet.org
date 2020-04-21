@@ -233,7 +233,7 @@ export const message = {
             content:'IRIS 基金会推出委托促进计划暨第二期通证销毁计划：委托越多奖励越多！',
             button: {
                 buttonName: {
-                    rainbowName: 'Rainbow 钱包',
+                    rainbowName: '开始委托',
                     explorerName: '查看详情'
                 },
                 buttonUrl: {
