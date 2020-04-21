@@ -569,20 +569,21 @@ export const message = {
                     svgUrl: 'presskit/IRISnetlogo Vertical-white.svg',
                     svgTitle: 'svg'
                 },
+               
                 {
                     id: 4,
-                    imgUrl: 'presskit/iris_logo_black.png',
-                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-black.png',
-                    pngTitle: 'png',
-                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-black.svg',
-                    svgTitle: 'svg'
-                },
-                {
-                    id: 5,
                     imgUrl: 'presskit/iris_logo_white.png',
                     pngUrl: 'presskit/IRISnetRoundLogoWithoutText-white.png',
                     pngTitle: 'png',
                     svgUrl: 'presskit/IRISnetRoundLogoWithoutText-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 5,
+                    imgUrl: 'presskit/iris_logo_black.png',
+                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-black.svg',
                     svgTitle: 'svg'
                 },
                 {
