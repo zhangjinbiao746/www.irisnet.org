@@ -234,7 +234,7 @@ export const message = {
         delegationRewards:{
             title: 'Double Delegation Rewards and Keep Zero Inflation!',
             time: '2020.4.1 ~ 2021.4.1',
-            content:'IRIS Foundation to Roll Out a Community-Centric Delegation Campaign & the Second One-Year Token Burn Plan!',
+            content:'IRIS Foundation to Roll Out a Community-Centric Delegation Campaign & the Second One-Year Token Burn Plan：The more delegations, the more rewards!',
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetworkcn',
                 githubUrl: 'https://github.com/irisnet/irishub',
