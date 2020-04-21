@@ -242,8 +242,8 @@ export const message = {
             },
             button: {
                 buttonName: {
-                    rainbowName: 'Rainbow Wallet',
-                    explorerName: 'View More'
+                    rainbowName: 'Start Delegating',
+                    explorerName: 'More Info'
                 },
                 buttonUrl: {
                     rainbowUrl: 'https://www.rainbow.one/',
