@@ -229,7 +229,7 @@ export const message = {
         bannerHref:"https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg",
         delegationRewards:{
             title: '委托奖励翻倍，通胀保持为零！',
-            time: '2020.4.20',
+            time: '2020.4.1 ~ 2021.4.1',
             content:'IRIS 基金会推出委托促进计划暨第二期通证销毁计划：委托越多奖励越多！',
             button: {
                 buttonName: {

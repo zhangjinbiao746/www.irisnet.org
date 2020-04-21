@@ -233,7 +233,7 @@ export const message = {
         bannerHref:"https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe",
         delegationRewards:{
             title: 'Double Delegation Rewards and Keep Zero Inflation!',
-            time: '2020.4.20',
+            time: '2020.4.1 ~ 2021.4.1',
             content:'IRIS Foundation to Roll Out a Community-Centric Delegation Campaign & the Second One-Year Token Burn Plan!',
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetworkcn',
