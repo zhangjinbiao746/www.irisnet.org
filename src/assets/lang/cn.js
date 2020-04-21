@@ -227,6 +227,21 @@ export const message = {
     },
     home: {
         bannerHref:"https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg",
+        delegationRewards:{
+            title: '委托奖励翻倍，通胀保持为零！',
+            time: '2020.4.1 ~ 2021.4.1',
+            content:'IRIS 基金会推出委托促进计划暨第二期通证销毁计划：委托越多奖励越多！',
+            button: {
+                buttonName: {
+                    rainbowName: '开始委托',
+                    explorerName: '查看详情'
+                },
+                buttonUrl: {
+                    rainbowUrl: 'https://www.rainbow.one/',
+                    explorerUrl: ' https://mp.weixin.qq.com/s/n6q07fC9i-ulUUbErE8dpQ'
+                }
+            }
+        },
         sectionOne: {
             title: '多资产功能赋能DeFi',
             time: '2019.8.29',
@@ -522,14 +537,14 @@ export const message = {
         Standard:{
             title: '标志',
             StandardList:[
-                {
+              /*  {
                     id: 0,
                     imgUrl: 'presskit/irisnet_logo_black.png',
                     pngUrl: 'presskit/IRISNet rebrand Horizontal-black.png',
                     pngTitle: 'png',
                     svgUrl: 'presskit/IRISNet rebrand Horizontal-black.svg',
                     svgTitle: 'svg'
-                },
+                },*/
                 {
                     id: 1,
                     imgUrl: 'presskit/irisnet_logo_white.png',
@@ -538,14 +553,14 @@ export const message = {
                     svgUrl: 'presskit/IRISNet rebrand Horizontal-white.svg',
                     svgTitle: 'svg'
                 },
-                {
+              /*  {
                     id: 2,
                     imgUrl: 'presskit/irisnet_logo_column_black.png',
                     pngUrl: 'presskit/IRISnetlogo Vertical-black.png',
                     pngTitle: 'png',
                     svgUrl: 'presskit/IRISnetlogo Vertical-black.svg',
                     svgTitle: 'svg'
-                },
+                },*/
                 {
                     id: 3,
                     imgUrl: 'presskit/irisnet_logo_column_white.png',
@@ -554,20 +569,21 @@ export const message = {
                     svgUrl: 'presskit/IRISnetlogo Vertical-white.svg',
                     svgTitle: 'svg'
                 },
+               
                 {
                     id: 4,
-                    imgUrl: 'presskit/iris_logo_black.png',
-                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-black.png',
-                    pngTitle: 'png',
-                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-black.svg',
-                    svgTitle: 'svg'
-                },
-                {
-                    id: 5,
                     imgUrl: 'presskit/iris_logo_white.png',
                     pngUrl: 'presskit/IRISnetRoundLogoWithoutText-white.png',
                     pngTitle: 'png',
                     svgUrl: 'presskit/IRISnetRoundLogoWithoutText-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 5,
+                    imgUrl: 'presskit/iris_logo_black.png',
+                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-black.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-black.svg',
                     svgTitle: 'svg'
                 },
                 {
