@@ -231,6 +231,26 @@ export const message = {
     },
     home: {
         bannerHref:"https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe",
+        delegationRewards:{
+            title: 'Double Delegation Rewards and Keep Zero Inflation!',
+            time: '2020.4.20',
+            content:'IRIS Foundation to Roll Out a Community-Centric Delegation Campaign & the Second One-Year Token Burn Plan!',
+            shareUrl: {
+                telegramUrl: 'https://t.me/irisnetworkcn',
+                githubUrl: 'https://github.com/irisnet/irishub',
+                weChatUrl: ''
+            },
+            button: {
+                buttonName: {
+                    rainbowName: 'Rainbow Wallet',
+                    explorerName: 'View More'
+                },
+                buttonUrl: {
+                    rainbowUrl: 'https://www.rainbow.one/',
+                    explorerUrl: 'https://medium.com/irisnet-blog/iris-foundation-to-roll-out-a-community-centric-delegation-campaign-the-second-one-year-token-528876fa1083'
+                }
+            }
+        },
         sectionOne: {
             title: 'DeFi App Dev Support is coming',
             time: '2019.8.29',
@@ -527,14 +547,14 @@ export const message = {
         Standard:{
             title: 'Logo',
             StandardList:[
-                {
+              /*  {
                     id: 0,
                     imgUrl: 'presskit/irisnet_logo_black.png',
                     pngUrl: 'presskit/IRISNet rebrand Horizontal-black.png',
                     pngTitle: 'png',
                     svgUrl: 'presskit/IRISNet rebrand Horizontal-black.svg',
                     svgTitle: 'svg'
-                },
+                },*/
                 {
                     id: 1,
                     imgUrl: 'presskit/irisnet_logo_white.png',
@@ -543,14 +563,14 @@ export const message = {
                     svgUrl: 'presskit/IRISNet rebrand Horizontal-white.svg',
                     svgTitle: 'svg'
                 },
-                {
+               /* {
                     id: 2,
                     imgUrl: 'presskit/irisnet_logo_column_black.png',
                     pngUrl: 'presskit/IRISnetlogo Vertical-black.png',
                     pngTitle: 'png',
                     svgUrl: 'presskit/IRISnetlogo Vertical-black.svg',
                     svgTitle: 'svg'
-                },
+                },*/
                 {
                     id: 3,
                     imgUrl: 'presskit/irisnet_logo_column_white.png',
