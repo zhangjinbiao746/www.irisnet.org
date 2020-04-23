@@ -257,7 +257,7 @@ app.get('*', isProd ? render : (req, res) => {
 })
 
 
-const port = process.env.PORT || 3005
+const port = process.env.PORT || 3000
 app.listen(port, () => {
   console.log(`server started at localhost:${port}`)
 })
