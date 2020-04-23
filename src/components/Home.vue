@@ -3,26 +3,6 @@
         <div @mouseenter="swiperStop" @mouseleave="swiperStart" style="position: relative;">
             <swiper ref="mySwiper" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper" >
                 <swiper-slide>
-                    <section class="sectionOne">
-                        <div class="left">
-                            <div>{{$store.state.messages.home.delegationRewards.title}}</div>
-                            <div>{{$store.state.messages.home.delegationRewards.content}}</div>
-                            <div>{{$store.state.messages.home.delegationRewards.time}}</div>
-                            <div>
-                                <a :href="$store.state.messages.home.delegationRewards.button.buttonUrl.rainbowUrl" target="_blank">
-                                    <button>{{$store.state.messages.home.delegationRewards.button.buttonName.rainbowName}}</button>
-                                </a>
-                                <a :href="$store.state.messages.home.delegationRewards.button.buttonUrl.explorerUrl" target="_blank">
-                                    <button>{{$store.state.messages.home.delegationRewards.button.buttonName.explorerName}}</button>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <img src="../assets/irisnet_delegation_rewards.jpg" alt="" class="banner">
-                        </div>
-                    </section>
-                </swiper-slide>
-                <swiper-slide>
                     <section class="sectionOne1">
                         <div class="left">
                             <div class="irisnet_bianjie_moniker">{{$store.state.messages.home.irisnetBianJie.commission}}</div>
