@@ -231,26 +231,6 @@ export const message = {
     },
     home: {
         bannerHref:"https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe",
-        delegationRewards:{
-            title: 'Double Delegation Rewards and Keep Zero Inflation!',
-            time: '2020.4.1 ~ 2021.4.1',
-            content:'IRIS Foundation to Roll Out a Community-Centric Delegation Campaign & the Second One-Year Token Burn Plan：The more delegations, the more rewards!',
-            shareUrl: {
-                telegramUrl: 'https://t.me/irisnetworkcn',
-                githubUrl: 'https://github.com/irisnet/irishub',
-                weChatUrl: ''
-            },
-            button: {
-                buttonName: {
-                    rainbowName: 'Start Delegating',
-                    explorerName: 'More Info'
-                },
-                buttonUrl: {
-                    rainbowUrl: 'https://www.rainbow.one/',
-                    explorerUrl: 'https://medium.com/irisnet-blog/iris-foundation-to-roll-out-a-community-centric-delegation-campaign-the-second-one-year-token-528876fa1083'
-                }
-            }
-        },
         sectionOne: {
             title: 'DeFi App Dev Support is coming',
             time: '2019.8.29',
