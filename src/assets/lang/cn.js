@@ -227,21 +227,6 @@ export const message = {
     },
     home: {
         bannerHref:"https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg",
-        delegationRewards:{
-            title: '委托奖励翻倍，通胀保持为零！',
-            time: '2020.4.1 ~ 2021.4.1',
-            content:'IRIS 基金会推出委托促进计划暨第二期通证销毁计划：委托越多奖励越多！',
-            button: {
-                buttonName: {
-                    rainbowName: '开始委托',
-                    explorerName: '查看详情'
-                },
-                buttonUrl: {
-                    rainbowUrl: 'https://www.rainbow.one/',
-                    explorerUrl: ' https://mp.weixin.qq.com/s/n6q07fC9i-ulUUbErE8dpQ'
-                }
-            }
-        },
         sectionOne: {
             title: '多资产功能赋能DeFi',
             time: '2019.8.29',
