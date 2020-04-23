@@ -18,7 +18,14 @@ const serverInfo =
   `express/${require('express/package.json').version} ` +
   `vue-server-renderer/${require('vue-server-renderer/package.json').version}`
 
-const app = express()
+const app = express();
+app.all('*', function (req, res, next) {
+	res.header('Access-Control-Allow-Origin', '*');
+	res.header('Access-Control-Allow-Headers', 'Content-Type');
+	res.header('Access-Control-Allow-Methods', '*');
+	res.header('Content-Type', 'application/json;charset=utf-8');
+	next();
+});
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.route('/')
@@ -250,7 +257,7 @@ app.get('*', isProd ? render : (req, res) => {
 })
 
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3005
 app.listen(port, () => {
   console.log(`server started at localhost:${port}`)
 })
