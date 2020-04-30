@@ -227,6 +227,18 @@ export const message = {
     },
     home: {
         bannerHref:"https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg",
+        gozExplorer: {
+            title: 'GoZ Network State Visualization 炫酷上线',
+            content:'来感受未来，体验跨链世界！',
+            button: {
+                buttonName: {
+                    explorerName: '看看跨链世界'
+                },
+                buttonUrl: {
+                    explorerUrl: 'https://ibc-goz.irisplorer.io/#/'
+                }
+            }
+        },
         sectionOne: {
             title: '多资产功能赋能DeFi',
             time: '2019.8.29',
