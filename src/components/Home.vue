@@ -3,6 +3,23 @@
         <div @mouseenter="swiperStop" @mouseleave="swiperStart" style="position: relative;">
             <swiper ref="mySwiper" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper" >
                 <swiper-slide>
+                    <section class="sectionOne_goz">
+                        <div class="left">
+                            <div>{{$store.state.messages.home.gozExplorer.title}}</div>
+                            <div>{{$store.state.messages.home.gozExplorer.content}}</div>
+                            <div></div>
+                            <div>
+                                <a :href="$store.state.messages.home.gozExplorer.button.buttonUrl.explorerUrl" target="_blank">
+                                    <button>{{$store.state.messages.home.gozExplorer.button.buttonName.explorerName}}</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <img src="../assets/irisnet_goz_explorer.jpg" alt="" class="banner">
+                        </div>
+                    </section>
+                </swiper-slide>
+                <swiper-slide>
                     <section class="sectionOne1">
                         <div class="left">
                             <div class="irisnet_bianjie_moniker">{{$store.state.messages.home.irisnetBianJie.commission}}</div>

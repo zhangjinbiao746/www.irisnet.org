@@ -231,6 +231,18 @@ export const message = {
     },
     home: {
         bannerHref:"https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe",
+        gozExplorer: {
+            title: 'View GoZ competition as well as hands on IBC backed token transfer!',
+            content:"IRISnet Dev Team in Game of Zones GoZ Network State Visualizer is online",
+            button: {
+                buttonName: {
+                    explorerName: 'View Inter-blockchain world',
+                },
+                buttonUrl: {
+                    explorerUrl: 'https://ibc-goz.irisplorer.io/#/',
+                }
+            }
+        },
         sectionOne: {
             title: 'DeFi App Dev Support is coming',
             time: '2019.8.29',
