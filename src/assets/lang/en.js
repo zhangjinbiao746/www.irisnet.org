@@ -233,13 +233,16 @@ export const message = {
         bannerHref:"https://medium.com/irisnet-blog/irisnet-launches-bug-bounty-ii-join-and-win-the-prize-47845defc9fe",
         gozExplorer: {
             title: 'View GoZ competition as well as hands on IBC backed token transfer!',
-            content:"IRISnet Dev Team in Game of Zones GoZ Network State Visualizer is online",
+            content:"IRISnet Dev Team in Game of Zones GoZ Network State Visualizer & IBC-GoZ Rainbow Wallet",
+            time: ' is online',
             button: {
                 buttonName: {
                     explorerName: 'View Inter-blockchain world',
+                    rainbowName: 'Try Inter-blockchain token transfer',
                 },
                 buttonUrl: {
                     explorerUrl: 'https://ibc-goz.irisplorer.io/#/',
+                    rainbowUrl: 'https://ibc-goz.irisplorer.io/#/download-rainbowgoz',
                 }
             }
         },

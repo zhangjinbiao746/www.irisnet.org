@@ -5,12 +5,15 @@
                 <swiper-slide>
                     <section class="sectionOne_goz">
                         <div class="left">
-                            <div>{{$store.state.messages.home.gozExplorer.title}}</div>
-                            <div>{{$store.state.messages.home.gozExplorer.content}}</div>
-                            <div></div>
+                            <div style="line-height: 0.32rem;font-size: 0.22rem">{{$store.state.messages.home.gozExplorer.title}}</div>
+                            <div style="font-size: 0.32rem">{{$store.state.messages.home.gozExplorer.time}}</div>
+                            <div style="font-size: 0.18rem;line-height: 0.25rem">{{$store.state.messages.home.gozExplorer.content}}</div>
                             <div>
                                 <a :href="$store.state.messages.home.gozExplorer.button.buttonUrl.explorerUrl" target="_blank">
-                                    <button>{{$store.state.messages.home.gozExplorer.button.buttonName.explorerName}}</button>
+                                    <button><p style="padding: 0 0.2rem;font-size: 0.14rem;line-height: 0.15rem">{{$store.state.messages.home.gozExplorer.button.buttonName.explorerName}}</p></button>
+                                </a>
+                                <a :href="$store.state.messages.home.gozExplorer.button.buttonUrl.rainbowUrl" target="_blank">
+                                    <button><p style="padding: 0 0.2rem;font-size: 0.14rem;line-height: 0.15rem">{{$store.state.messages.home.gozExplorer.button.buttonName.rainbowName}}</p></button>
                                 </a>
                             </div>
                         </div>

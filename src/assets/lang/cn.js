@@ -228,14 +228,17 @@ export const message = {
     home: {
         bannerHref:"https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg",
         gozExplorer: {
-            title: 'GoZ Network State Visualization 炫酷上线',
+            title: 'GoZ Network State Visualization & IBC-GoZ Rainbow Wallet',
             content:'来感受未来，体验跨链世界！',
+            time: '炫酷上线',
             button: {
                 buttonName: {
-                    explorerName: '看看跨链世界'
+                    explorerName: '看看跨链世界',
+                    rainbowName: '体验跨链转账',
                 },
                 buttonUrl: {
-                    explorerUrl: 'https://ibc-goz.irisplorer.io/#/'
+                    explorerUrl: 'https://ibc-goz.irisplorer.io/#/',
+                    rainbowUrl: 'https://ibc-goz.irisplorer.io/#/download-rainbowgoz',
                 }
             }
         },
