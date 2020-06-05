@@ -355,14 +355,11 @@ export const message = {
             EcosystemPartners: {
                 title: 'Ecosystem Partners',
                 logos: [
-                    {id:0, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
-                    {id:1, path: 'logos/IOV.png', url: 'https://iov.one/'},
-                    {id:2, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
-                    {id:3, path: 'logos/irisnet_axonomy.png', url: 'https://www.axonomy.pro'},
-                    {id:4, path: 'logos/irisnet_Gdex.png', url: 'https://www.gdex.io/'},
-                    {id:5, path: 'logos/irisnet_ok_chain.png', url: 'https://www.okex.com/okchain'},
-                    {id:6, path: 'logos/irisnet_kava.png', url: 'https://www.kava.io'},
-                    // {id:4, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
+                    {id:0, path: 'logos/irisnet_ok_chain.png', url: 'https://www.okex.com/okchain'},
+                    {id:1, path: 'logos/irisnet_kava.png', url: 'https://www.kava.io'},
+                    {id:2, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
+                    {id:3, path: 'logos/IOV.png', url: 'https://iov.one/'},
+                    {id:4, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
                 ]
             },
             Institutional: {
