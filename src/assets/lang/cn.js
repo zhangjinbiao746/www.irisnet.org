@@ -357,6 +357,7 @@ export const message = {
                     {id:3, path: 'logos/irisnet_axonomy.png', url: 'https://www.axonomy.pro'},
                     {id:4, path: 'logos/irisnet_Gdex.png', url: 'https://www.gdex.io/'},
                     {id:5, path: 'logos/irisnet_ok_chain.png', url: 'https://www.okex.com/okchain'},
+                    {id:6, path: 'logos/irisnet_kava.png', url: 'https://www.kava.io'},
                     // {id:4, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
                 ]
             },
