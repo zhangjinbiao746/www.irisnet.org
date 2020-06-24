@@ -766,16 +766,16 @@ export const message = {
                             href: 'https://www.irisplorer.io/#/validators'
                         },
                         {
+                            itemName: 'Mintscan',
+                            href: 'https://irishub.mintscan.io/'
+                        },
+                        {
                             itemName: 'Big-Dipper',
                             href: 'https://iris.bigdipper.live/'
                         },
                         {
                             itemName: 'Hubble',
                             href: 'https://hubble.figment.network/iris/chains/irishub'
-                        },
-                        {
-                            itemName: 'Mintscan',
-                            href: 'https://irishub.mintscan.io/'
                         },
 	                    {
 		                    itemName: 'LOOK',
