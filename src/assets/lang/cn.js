@@ -417,31 +417,31 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://forum.irisnet.org/t/iris/372',
-                date:'2020 年 03 月 31 日',
-                title:'公告 | IRIS 基金会执行第四次通证销毁并宣布将升级销毁计划',
-                content:'2020 年 3 月 31 日，IRIS 基金会根据为期<a href="https://mp.weixin.qq.com/s?__biz=MzU4NTQwODEwMg==&mid=2247485030&idx=1&sn=2eca9714007a8aa77af63ab760c58d18&chksm=fd8a4d6fcafdc479498296eada2804fc06c834ef5067b729e098f100e6726d3fa13107be7ed8&scene=21#wechat_redirect" target="_blank">一年的通证销毁计划</a>，执行了第四次销毁，通过两笔交易共销毁了 14,230,476 个 IRIS 通证，目前 IRIS 通证的总量为 20 亿。'
+                href:'https://mp.weixin.qq.com/s/TsEnwgQrB1YqQAGp5mFvxA',
+                date:'2020 年 06 月 23 日',
+                title:'BSN、IRITA和Chainlink达成共同建立 BSN跨链和预言机服务的合作',
+                content:'IRISnet 将通过 IRITA 跨链服务枢纽支持 BSN 集成 Chainlink 预言机，共同为 BSN 的开发和发展做出重大贡献，推动区块链应用模式转型并在中国乃至世界范围更快增长与普及。'
             },
             {
                 id:'1',
-                href:'https://forum.irisnet.org/t/irisnet/349',
-                date:'2020 年 02 月 29 日',
-                title:'IRISnet 一周岁生日快乐！',
-                content:'2019 年 3 月 1 日 13:30，IRISnet <a href="https://mp.weixin.qq.com/s?__biz=MzU4NTQwODEwMg==&mid=2247484583&idx=1&sn=c9b0a5e420cf29ee3adb190a63e009d8&scene=21&token=781206695&lang=zh_CN#wechat_redirect" target="_blank">正式启动了主网 IRIS Hub</a>，这是 Cosmos 生态首个能通过在线治理升级完成自进化的跨链枢纽，与 3 月 14 日启动的 Cosmos Hub 一起，作为双枢纽宣布了 Cosmos 跨链大生态的正式启航。 紧张的开发迭代中，仿佛一眨眼 IRISnet 主网就一岁啦'
+                href:'https://mp.weixin.qq.com/s/R4pM10HAn6_VGWOMNnHV-A',
+                date:'2020 年 06 月 09 日',
+                title:'第 2 次执行丨IRIS 基金会首期委托促进计划暨第二期通证销毁计划',
+                content:'IRIS 基金会至此已累计销毁了 72,283,581 个 IRIS 通证。每一次销毁都维持了 IRIS 通证数量在 20 亿的初始水平，保持了实际通胀率为零。'
             },
             {
                 id:'2',
-                href:'https://forum.irisnet.org/t/iris/314',
-                date:'2019 年 12 月 31 日',
-                title:'公告 | IRIS基金会第三次执行通证销毁计划，并宣布2020年延续该通证销毁计划',
-                content:'2019 年 12 月 31 日，IRIS 基金会根据为期<a href="https://mp.weixin.qq.com/s?__biz=MzU4NTQwODEwMg==&mid=2247485030&idx=1&sn=2eca9714007a8aa77af63ab760c58d18&chksm=fd8a4d6fcafdc479498296eada2804fc06c834ef5067b729e098f100e6726d3fa13107be7ed8&scene=21#wechat_redirect" target="_blank">一年的通证销毁计划</a>，执行了第三次销毁，通过两笔交易共销毁了 15,029,472 个 IRIS 通证，目前 IRIS 通证的总量为 20 亿个。'
+                href:'https://mp.weixin.qq.com/s/fytaeyqtTsAwPIcn6KYPBQ',
+                date:'2020 年 06 月 05 日',
+                title:'IRISnet 与 Kava 达成合作，共同打造跨链生态里更强的 DeFi 服务',
+                content:'IRIS与 Kava DeFi 平台的创立公司 Kava Labs 建立了合作关系，计划将 Kava 的 DeFi 服务引入 IRISnet 的区块链互联网，为促进分布式商业应用的构建提供技术基础。'
             },
             {
                 id:'3',
-                href:'https://forum.irisnet.org/t/irisnet/304',
-                date:'2019 年 11 月 30 日',
-                title:'IRISnet 第二次主网平滑升级成功！女娲阶段开启，DeFi 支持全面提升',
-                content:'IRISnet 主网 IRIS Hub 于北京时间 2019 年 11 月 29 日，完成第二次平滑升级，主网升级至 v0.16 版本。升级后的主网不仅新增原子交换（HTLC）、Coinswap 功能模块，DeFi 应用支持全面升级，还加入了大受技术社区欢迎的 Snapshot 功能。'
+                href:'https://mp.weixin.qq.com/s/TbdUJz23155Z3hApiQG_Cw',
+                date:'2020 年 06 月 02 日',
+                title:'IRISnet 和 OKChain 合作支持 DeFi 应用链及跨链生态发展',
+                content:'IRISnet与 OKChain 展开深度技术合作，共同推进 DeFi 应用链及跨链生态发展。'
             }
         ]
     },
