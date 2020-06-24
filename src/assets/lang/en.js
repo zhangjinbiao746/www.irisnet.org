@@ -422,31 +422,31 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://medium.com/irisnet-blog/the-4th-iris-token-burn-is-completed-1a234454f838',
-                date:'Mar 31, 2020',
-                title:'The 4th IRIS Token Burn is Completed',
-                content:'On March 31st, 2020, the IRIS Foundation completed the 4th IRIS token burn under a <a href="https://medium.com/irisnet-blog/iris-foundation-announced-a-one-year-token-burning-plan-e0637ea6f977" target="_blank">one-year token burning plan</a> with 14,230,476 IRIS burned. The current total supply is 2 billion IRIS.'
+                href:'https://www.prnewswire.com/news-releases/bsn-integrates-chainlink-oracles-bringing-real-world-data-into-its-irita-powered-network-301081572.html',
+                date:'Jun 23, 2020',
+                title:'BSN Integrates Chainlink Oracles, Bringing Real-World Data Into Its IRITA Powered Network',
+                content:'IRISnet supports BSN and works on the integration of Chainlink via consortium IRITA interchain service hub, further contributing to the infrastructure development of BSN.'
             },
             {
                 id:'1',
-                href:'https://medium.com/irisnet-blog/happy-1st-birthday-irisnet-2343e02a9a81',
-                date:'Feb 29 2020',
-                title:'Happy 1st Birthday , IRISnet!',
-                content:'On March 1st, 2019 at 5:30 UTC, IRIS Hub was launched and today is the first anniversary. At this special moment, we would like to first thank all the community members for this wonderful journey together.'
+                href:'https://medium.com/irisnet-blog/the-second-implementation-of-the-community-centric-delegation-campaign-the-second-one-year-token-9c035a07b921',
+                date:'Jun 9 2020',
+                title:'The Second Implementation of the Community-centric Delegation Campaign & the Second One-year Token Burn Plan!',
+                content:'The IRIS Foundation has burned 72,283,581 IRIS in total until now. The current total supply is 2 billion IRIS to maintain the actual inflation rate as 0.'
             },
             {
                 id:'2',
-                href:'https://medium.com/irisnet-blog/the-3rd-iris-token-burn-is-completed-token-burning-plan-continues-in-2020-46350337a5af',
-                date:'Dec 31, 2019',
-                title:'The 3rd IRIS Token Burn is Completed & Token Burning Plan Continues in 2020',
-                content:'On December 31st, 2019, the IRIS Foundation completed the 3rd IRIS token burn under a <a href="https://medium.com/irisnet-blog/iris-foundation-announced-a-one-year-token-burning-plan-e0637ea6f977" target="_blank">one-year token burning plan</a> with 15,029,472 IRIS burned. The current total supply is 2 billion IRIS.'
+                href:'https://medium.com/irisnet-blog/irisnet-and-kava-plan-to-integrate-to-enable-greater-defi-services-for-interchain-ecosystem-6e6ae409c69',
+                date:'Jun 5, 2020',
+                title:'IRISnet and Kava Plan to Integrate to Enable Greater DeFi Services for Interchain Ecosystem',
+                content:'IRISnet is pleased to establish a partnership with Kava Labs to bring Kava’s DeFi services to IRISnet’s internet of blockchains.'
             },
             {
                 id:'3',
-                href:'https://medium.com/irisnet-blog/irisnet-2nd-mainnet-upgrade-completed-with-nüwa-stage-live-defi-support-improved-e68839ac55b2',
-                date:'Nov 30, 2019',
-                title:'IRISnet 2nd Mainnet Upgrade Completed with NÜWA Stage LIVE & DeFi Support improved',
-                content:'Nov 29 UTC, IRISnet mainnet IRIS Hub has completed its second smooth upgrade. IRIS Hub has been updated to v0.16. New exciting modules, namely Atomic Swap (HTLC) and Coinswap, have been added to IRIS Hub. DeFi application development support has been improved. Also, snapshot, a new function that is very popular among our technical community, has also been added.'
+                href:'https://medium.com/irisnet-blog/irisnet-and-okchain-collaborate-to-develop-defi-application-as-well-as-interchain-ecosystem-3c28d530525b',
+                date:'Jun 2, 2020',
+                title:'IRISnet and OKChain Collaborate to Develop DeFi Application as well as Interchain Ecosystem',
+                content:'IRISnet and OKChain have collaborated to develop the DeFi application blockchain as well as the interchain ecosystem.'
             },
            
         ]
@@ -774,16 +774,16 @@ export const message = {
                             href: 'https://www.irisplorer.io/#/validators'
                         },
                         {
+                            itemName: 'Mintscan',
+                            href: 'https://irishub.mintscan.io/'
+                        },
+                        {
                             itemName: 'Big-Dipper',
                             href: 'https://iris.bigdipper.live/'
                         },
                         {
                             itemName: 'Hubble',
                             href: 'https://hubble.figment.network/iris/chains/irishub'
-                        },
-                        {
-                            itemName: 'Mintscan',
-                            href: 'https://irishub.mintscan.io/'
                         },
 	                    {
 		                    itemName: 'LOOK',
