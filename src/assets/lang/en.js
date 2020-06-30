@@ -242,7 +242,7 @@ export const message = {
                 },
                 buttonUrl: {
                     explorerUrl: 'https://ibc-goz.irisplorer.io/#/',
-                    rainbowUrl: 'https://ibc-goz.irisplorer.io/#/download-rainbowgoz',
+                    rainbowUrl: 'https://medium.com/@irisnet/get-in-line-experience-crosschain-transfers-and-atomic-coinswaps-with-rainbow-goz-61cfc57365f9',
                 }
             }
         },
@@ -302,7 +302,7 @@ export const message = {
                 },
                 buttonUrl: {
                     eventDetail: 'https://medium.com/irisnet-blog/irisnet-iris-airdrop-on-binance-dex-win-500-000-iris-4e24be10a886',
-                    howIsDexUrl: 'https://medium.com/@irisnet/get-in-line-experience-crosschain-transfers-and-atomic-coinswaps-with-rainbow-goz-61cfc57365f9',
+                    howIsDexUrl: 'https://medium.com/irisnet-blog/why-are-we-connecting-iris-hub-with-binance-dex-5b02bff5753c',
                 }
             }
         },

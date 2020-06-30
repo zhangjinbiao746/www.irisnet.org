@@ -238,7 +238,7 @@ export const message = {
                 },
                 buttonUrl: {
                     explorerUrl: 'https://ibc-goz.irisplorer.io/#/',
-                    rainbowUrl: 'https://medium.com/@irisnet/get-in-line-experience-crosschain-transfers-and-atomic-coinswaps-with-rainbow-goz-61cfc57365f9',
+                    rainbowUrl: 'https://mp.weixin.qq.com/s/DguRzy8yilWWBBTJz5N7mw',
                 }
             }
         },
