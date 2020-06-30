@@ -238,7 +238,7 @@ export const message = {
                 },
                 buttonUrl: {
                     explorerUrl: 'https://ibc-goz.irisplorer.io/#/',
-                    rainbowUrl: 'https://ibc-goz.irisplorer.io/#/download-rainbowgoz',
+                    rainbowUrl: 'https://mp.weixin.qq.com/s/DguRzy8yilWWBBTJz5N7mw',
                 }
             }
         },
