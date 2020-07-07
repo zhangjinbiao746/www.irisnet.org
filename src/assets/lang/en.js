@@ -430,7 +430,7 @@ export const message = {
             {
                 id:'1',
                 href:'https://medium.com/irisnet-blog/bsn-integrates-chainlink-oracles-bringing-real-world-data-into-its-irita-powered-network-f87480ee33d',
-                date:'Jun 23, 2020',
+                date:'Jun 29, 2020',
                 title:'BSN Integrates Chainlink Oracles, Bringing Real-World Data Into Its IRITA Powered Network',
                 content:'IRISnet supports BSN and works on the integration of Chainlink via consortium IRITA interchain service hub, further contributing to the infrastructure development of BSN.'
             },
