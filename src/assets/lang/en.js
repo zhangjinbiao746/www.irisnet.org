@@ -422,17 +422,17 @@ export const message = {
         announcementList:[
             {
                 id:'0',
+                href:'https://medium.com/irisnet-blog/the-third-implementation-of-the-community-centric-delegation-campaign-the-second-one-year-token-6805de345ba1',
+                date:'Jul 6 2020',
+                title:'The Third Implementation of the Community-centric Delegation Campaign & the Second One-year Token Burn Plan!',
+                content:'The third implementation of community-centric delegation campaign has completed!'
+            },
+            {
+                id:'1',
                 href:'https://www.prnewswire.com/news-releases/bsn-integrates-chainlink-oracles-bringing-real-world-data-into-its-irita-powered-network-301081572.html',
                 date:'Jun 23, 2020',
                 title:'BSN Integrates Chainlink Oracles, Bringing Real-World Data Into Its IRITA Powered Network',
                 content:'IRISnet supports BSN and works on the integration of Chainlink via consortium IRITA interchain service hub, further contributing to the infrastructure development of BSN.'
-            },
-            {
-                id:'1',
-                href:'https://medium.com/irisnet-blog/the-second-implementation-of-the-community-centric-delegation-campaign-the-second-one-year-token-9c035a07b921',
-                date:'Jun 9 2020',
-                title:'The Second Implementation of the Community-centric Delegation Campaign & the Second One-year Token Burn Plan!',
-                content:'The IRIS Foundation has burned 72,283,581 IRIS in total until now. The current total supply is 2 billion IRIS to maintain the actual inflation rate as 0.'
             },
             {
                 id:'2',

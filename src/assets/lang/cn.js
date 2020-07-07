@@ -417,17 +417,17 @@ export const message = {
         announcementList:[
             {
                 id:'0',
+                href:'https://mp.weixin.qq.com/s/QpX1Uzm72FTZ0Uu93aunhw',
+                date:'2020 年 07 月 06 日',
+                title:'第 3 次执行丨IRIS 基金会首期委托促进计划暨第二期通证销毁计划',
+                content:'IRIS 基金会第三次执行首期委托促进计划暨第二期通证销毁计划。感谢委托人与验证人共建 IRISnet 健康生态！'
+            },
+            {
+                id:'1',
                 href:'https://mp.weixin.qq.com/s/TsEnwgQrB1YqQAGp5mFvxA',
                 date:'2020 年 06 月 23 日',
                 title:'BSN、IRITA和Chainlink达成共同建立 BSN跨链和预言机服务的合作',
                 content:'IRISnet 将通过 IRITA 跨链服务枢纽支持 BSN 集成 Chainlink 预言机，共同为 BSN 的开发和发展做出重大贡献，推动区块链应用模式转型并在中国乃至世界范围更快增长与普及。'
-            },
-            {
-                id:'1',
-                href:'https://mp.weixin.qq.com/s/R4pM10HAn6_VGWOMNnHV-A',
-                date:'2020 年 06 月 09 日',
-                title:'第 2 次执行丨IRIS 基金会首期委托促进计划暨第二期通证销毁计划',
-                content:'IRIS 基金会至此已累计销毁了 72,283,581 个 IRIS 通证。每一次销毁都维持了 IRIS 通证数量在 20 亿的初始水平，保持了实际通胀率为零。'
             },
             {
                 id:'2',
