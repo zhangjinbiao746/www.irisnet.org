@@ -426,7 +426,7 @@ export const message = {
                 id:'1',
                 href:'https://mp.weixin.qq.com/s/TsEnwgQrB1YqQAGp5mFvxA',
                 date:'2020 年 06 月 23 日',
-                title:'BSN、IRITA和Chainlink达成共同建立 BSN跨链和预言机服务的合作',
+                title:'BSN、IRITA 和 Chainlink 达成共同建立 BSN 跨链和预言机服务的合作',
                 content:'IRISnet 将通过 IRITA 跨链服务枢纽支持 BSN 集成 Chainlink 预言机，共同为 BSN 的开发和发展做出重大贡献，推动区块链应用模式转型并在中国乃至世界范围更快增长与普及。'
             },
             {
