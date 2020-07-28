@@ -246,6 +246,36 @@ export const message = {
                 }
             }
         },
+        bsn:{
+            content:{
+                title:'IRISnet',
+                title1:'Selected into first batch of public blockchains supported by BSN',
+                btn:'View Details',
+                btnHref:'https://medium.com/irisnet-blog/irisnet-is-selected-into-first-batch-of-public-blockchains-supported-by-bsn-1945aa2e2a0'
+            }
+        },
+        frost:{
+            content:{
+                title:'Bifröst',
+                content:'to a New Interchain Era',
+                btn1:'GoZ Network',
+                btn2:'Interchain Wallet',
+                btnHref1:'https://ibc-goz.irisplorer.io/#/',
+                btnHref2:'',
+                coming:'Coming Soon',
+            }
+        },
+        ecosystem:{
+            content:{
+                title:'IRISnet Ecosystem',
+                content:'Welcome to jointly promote the sustainable development',
+                btnHref1:'https://medium.com/irisnet-blog/iris-foundation-to-roll-out-a-community-centric-delegation-campaign-the-second-one-year-token-528876fa1083',
+                btn1:'View Details',
+                btnHref2:'https://www.coinmarketcap.com/zh/currencies/irisnet/',
+                btn2:'CoinMarketCap',
+
+            }
+        },
         sectionOne: {
             title: 'DeFi App Dev Support is coming',
             time: '2019.8.29',
@@ -272,7 +302,7 @@ export const message = {
             button:{
                 buttonName: {
                     rainbowName: 'Delegate ATOM',
-                    explorerName: 'View Validator Profile'
+                    explorerName: 'View Details'
                 },
                 buttonUrl: {
                     rainbowUrl: 'https://www.rainbow.one/',

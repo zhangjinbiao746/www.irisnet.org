@@ -242,6 +242,36 @@ export const message = {
                 }
             }
         },
+        bsn:{
+            content:{
+                title:'IRISnet',
+                title1:'入选BSN首批适配公链',
+                btn:'查看详情',
+                btnHref:'https://mp.weixin.qq.com/s/olSUm2qvlF6-V6K5mV1tKQ'
+            }
+        },
+        frost:{
+            content:{
+                title:'Bifröst',
+                content:'—— 通往跨链新时代',
+                btn1:'GoZ网络状态',
+                btn2:'跨链钱包',
+                btnHref1:'https://ibc-goz.irisplorer.io/#/',
+                btnHref2:'',
+                coming:'敬请期待',
+            }
+        },
+        ecosystem:{
+            content:{
+                title:'IRISnet 生态',
+                content:'欢迎共同促进可持续发展',
+                btnHref1:'https://www.rainbow.one/',
+                btn1:'Rainbow 钱包',
+                btnHref2:'https://www.coinmarketcap.com/zh/currencies/irisnet/',
+                btn2:'CoinMarketCap',
+
+            }
+        },
         sectionOne: {
             title: '多资产功能赋能DeFi',
             time: '2019.8.29',
@@ -265,14 +295,15 @@ export const message = {
         irisnetBianJie:{
             commission:'Cosmos Hub Validator',
             development:'由IRISnet核心开发团队维护的 Cosmos Hub 创世节点',
+            content:'由IRISnet核心开发团队维护的 Cosmos Hub 创世节点',
             button:{
                 buttonName: {
                     rainbowName: '委托ATOM',
-                    explorerName: '查看节点详情'
+                    explorerName: '更多介绍'
                 },
                 buttonUrl: {
                     rainbowUrl: 'https://www.rainbow.one/',
-                    explorerUrl: '/irisnet-bianjie'
+                    explorerUrl: 'https://www.irisnet.org/irisnet-bianjie'
                 }
             }
         },
