@@ -1,47 +1,42 @@
 <template>
     <div class="content_wrap" @click="closeWeChat">
-        <div @mouseenter="swiperStop" @mouseleave="swiperStart">
+        <div @mouseenter="swiperStop" @mouseleave="swiperStart" style="position: relative;">
             <swiper ref="mySwiper" :options="swiperOption"  class="my-swipe" v-if="flShowSwiper" >
                 <swiper-slide>
-                    <section class="sectionOne">
+                    <section class="sectionOne_goz">
                         <div class="left">
-                            <div>{{$store.state.messages.home.sectionOne.title}}</div>
-                            <div>{{$store.state.messages.home.sectionOne.time}}</div>
+                            <div style="line-height: 0.32rem;font-size: 0.22rem">{{$store.state.messages.home.gozExplorer.title}}</div>
+                            <div style="font-size: 0.32rem">{{$store.state.messages.home.gozExplorer.time}}</div>
+                            <div style="font-size: 0.18rem;line-height: 0.25rem">{{$store.state.messages.home.gozExplorer.content}}</div>
                             <div>
-                                <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_bank"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
-                                <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_bank"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
-                                <a @click="showWeChatPic">
-                                    <img src="../assets/hoverIcon/weChatIconHover.png" alt="">
-                                    <div v-show="showWeChat"  class="mobileBox" @touchmove.prevent>
-                                        <div class="qrcode" @touchmove.prevent>
-                                            <img src="../assets/wechat.jpg" alt="" @touchmove.prevent>
-                                            <div class="arrow"></div>
-                                            <img src="../assets/closeIcon.png" alt="" class="closeIcon" @touchmove.prevent>
-                                        </div>
-                                    </div>
+                                <a :href="$store.state.messages.home.gozExplorer.button.buttonUrl.explorerUrl" target="_blank">
+                                    <button><p style="padding: 0 0.2rem;font-size: 0.14rem;line-height: 0.15rem">{{$store.state.messages.home.gozExplorer.button.buttonName.explorerName}}</p></button>
                                 </a>
-                            </div>
-                            <div>
-                                <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button>
-                                <button @click="jumpUrl($store.state.messages.home.sectionOne.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
+                                <a :href="$store.state.messages.home.gozExplorer.button.buttonUrl.rainbowUrl" target="_blank">
+                                    <button><p style="padding: 0 0.2rem;font-size: 0.14rem;line-height: 0.15rem">{{$store.state.messages.home.gozExplorer.button.buttonName.rainbowName}}</p></button>
+                                </a>
                             </div>
                         </div>
                         <div class="right">
-                            <img src="../assets/banner.png" alt="" class="banner">
+                            <img src="../assets/irisnet_goz_explorer.jpg" alt="" class="banner">
                         </div>
                     </section>
                 </swiper-slide>
                 <swiper-slide>
                     <section class="sectionOne1">
                         <div class="left">
-                            <div class="irisnet_bianjie_moniker">{{bianJieMoniker}}</div>
-                            <div>{{rate}} {{$store.state.messages.home.irisnetBianJie.commission}}</div>
+                            <div class="irisnet_bianjie_moniker">{{$store.state.messages.home.irisnetBianJie.commission}}</div>
+                            <div>{{bianJieMoniker}}</div>
                             <div class="development_content">
                                 <p>{{$store.state.messages.home.irisnetBianJie.development}}</p>
                             </div>
                             <div>
-                                <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}</button>
-                                <button @click="jumpUrl($store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl)">{{$store.state.messages.home.irisnetBianJie.button.buttonName.explorerName}}</button>
+                                <a :href="$store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl" target="_blank">
+                                    <button>{{$store.state.messages.home.irisnetBianJie.button.buttonName.explorerName}}</button>
+                                </a>
+                                <a :href="$store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl" target="_blank">
+                                    <button>{{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}</button>
+                                </a>
                             </div>
                         </div>
                         <div class="right">
@@ -49,7 +44,29 @@
                         </div>
                     </section>
                 </swiper-slide>
+                <swiper-slide>
+                       <section class="sectionOne">
+                           <div class="left">
+                               <div>{{$store.state.messages.home.sectionOne.title}}</div>
+                               <div>{{$store.state.messages.home.sectionOne.content}}</div>
+                               <div>{{$store.state.messages.home.sectionOne.time}}</div>
+                               <div>
+                                   <a :href="$store.state.messages.home.sectionOne.button.buttonUrl.rainbowUrl" target="_blank">
+                                       <button>{{$store.state.messages.home.sectionOne.button.buttonName.rainbowName}}</button>
+                                   </a>
+                                   <a :href="$store.state.messages.home.sectionOne.button.buttonUrl.explorerUrl" target="_blank">
+                                       <button>{{$store.state.messages.home.sectionOne.button.buttonName.explorerName}}</button>
+                                   </a>
+                               </div>
+                           </div>
+                           <div class="right">
+                               <img src="../assets/banner.png" alt="" class="banner">
+                           </div>
+                       </section>
+                   </swiper-slide>
             </swiper>
+            <div class="swiper-button-prev"  @click="prev()"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+            <div class="swiper-button-next"  @click="next()"></div>
         </div>
         <section class="sectionTwo" ref="whitePaper">
             <div class="first">
@@ -103,7 +120,11 @@
                 <div class="logo">
                     <div class="title">{{$store.state.messages.home.sectionFour.CoreDevelopmentTeams.title}}</div>
                     <div class="logoIcon">
-                        <a :href="n.url" target="_blank" v-for="n of $store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos" :key="n.id">
+                        <a :href="n.url"
+                           :target="n.url === 'javascript:void(0)' ? '' : '_blank'"
+                           :style="{cursor: n.url === 'javascript:void(0)' ? 'auto' :'pointer'}"
+                           v-for="n of $store.state.messages.home.sectionFour.CoreDevelopmentTeams.logos"
+                           :key="n.id">
                             <img :src='UrlSrc + n.path'>
                         </a>
                     </div>
@@ -111,7 +132,11 @@
                 <div class="logo">
                     <div class="title">{{$store.state.messages.home.sectionFour.StrategicPartners.title}}</div>
                     <div class="logoIcon">
-                        <a :href="n.url" target="_blank" v-for="n of $store.state.messages.home.sectionFour.StrategicPartners.logos" :key="n.id">
+                        <a :href="n.url"
+                           :target="n.url === 'javascript:void(0)' ? '' : '_blank'"
+                           :style="{cursor: n.url === 'javascript:void(0)' ? 'auto' :'pointer'}"
+                           v-for="n of $store.state.messages.home.sectionFour.StrategicPartners.logos"
+                           :key="n.id">
                             <img :src='UrlSrc + n.path'>
                         </a>
                     </div>
@@ -119,15 +144,23 @@
                 <div class="logo">
                     <div class="title">{{$store.state.messages.home.sectionFour.EcosystemPartners.title}}</div>
                     <div class="logoIcon">
-                        <a :href="n.url" target="_blank" v-for="n of $store.state.messages.home.sectionFour.EcosystemPartners.logos" :key="n.id">
-                            <img :src='UrlSrc + n.path'>
+                        <a :href="n.url"
+                           :target="n.url === 'javascript:void(0)' ? '' : '_blank'"
+                           :style="{cursor: n.url === 'javascript:void(0)' ? 'auto' :'pointer'}"
+                           v-for="n of $store.state.messages.home.sectionFour.EcosystemPartners.logos"
+                           :key="n.id">
+                            <img  style="max-width: 2rem;"  :src='UrlSrc + n.path'>
                         </a>
                     </div>
                 </div>
                 <div class="logo">
                     <div class="title">{{$store.state.messages.home.sectionFour.Institutional.title.msg1}}<p>{{$store.state.messages.home.sectionFour.Institutional.title.msg2}}</p></div>
                     <div class="logoIcon supporters">
-                        <a :href="n.url" target="_blank" v-for="n of $store.state.messages.home.sectionFour.Institutional.logos" :key="n.id">
+                        <a :href="n.url"
+                           :target="n.url === 'javascript:void(0)' ? '' : '_blank'"
+                           :style="{cursor: n.url === 'javascript:void(0)' ? 'auto' :'pointer'}"
+                           v-for="n of $store.state.messages.home.sectionFour.Institutional.logos"
+                           :key="n.id">
                             <img :src='UrlSrc + n.path'>
                         </a>
                     </div>
@@ -143,6 +176,7 @@
         name: "Home",
         data () {
             return {
+            	bannerImgClass:'banner_img_container',
                 showWeChat: false,
                 timer: null,
 	            flShowSwiper: false,
@@ -158,6 +192,10 @@
 		            roundLengths: true,
                     autoHeight: true,
 		            // effect : 'coverflow',
+		            navigation:{
+			            nextEl: '.swiper-button-next',
+			            prevEl: '.swiper-button-prev',
+                    }
                 },
 	            bianJieMoniker:'',
 	            rate:''
@@ -177,7 +215,13 @@
 	         swiperStart() {
 		        this.mySwiper.startAutoplay()
 	        },
-
+	         next(){
+	         	this.mySwiper.slideNext();
+	         	console.log(this.mySwiper,"wwww")
+             },
+	         prev(){
+		         this.mySwiper.slidePrev();
+             },
             jumpUrl (url) {
                 window.open(url)
             },
@@ -222,9 +266,17 @@
 	        formatRate(rate){
 		        return `${(rate*100).toFixed(2)} %`
 	        },
+	         changLange(){
+		         if(this.$route.query.lang === 'EN'){
+			         this.bannerImgClass = 'banner_img_container'
+		         }else if(this.$route.query.lang === 'CN'){
+			         this.bannerImgClass = 'banner_img_container_cn'
+		         }
+	         }
         },
         mounted () {
-            this.onresize();
+            this.changLange();
+	        this.onresize();
             this.getCosmosBianJieValidator();
 	        this.flShowSwiper= true;
 	        this.bianJieMoniker= 'IRISnet-Bianjie';

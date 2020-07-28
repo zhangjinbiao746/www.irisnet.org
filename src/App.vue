@@ -25,22 +25,6 @@
                 document.body.scrollTop = 0;
             }
         },
-        mounted(){
-            const script = document.createElement('script')
-	        script.src = 'https://s5.cnzz.com/z_stat.php?id=1277830591&web_id=1277830591'
-            script.language = 'JavaScript'
-            document.body.appendChild(script)
-        },
-        watch: {
-        	'$route' () {
-        		if(window._czc){
-        			let localtion = window.location;
-        			let contentUrl = localtion.pathname + localtion.hash;
-                    let referUrl = '/';
-                    window._czc.push(['_trackPageview',contentUrl,referUrl])
-                }
-            }
-        },
         methods: {
             closeWeChatIcon () {
                 this.$store.commit('controlWeChat', false)

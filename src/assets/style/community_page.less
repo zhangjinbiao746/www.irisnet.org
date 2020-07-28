@@ -42,6 +42,7 @@
               max-width: 2.86rem;
               img{
                 width: 100%;
+                height: 1.8rem;
               }
               .community_events_timestamp{
                 font-size: 0.14rem;
@@ -87,6 +88,7 @@
               max-width: 2.86rem;
               img{
                 width: 100%;
+                height: 1.8rem;
               }
               .community_events_timestamp{
                 font-size: 0.14rem;
@@ -123,6 +125,9 @@
           }
         }
       }
+      .community_events_list_container:nth-of-type(2){
+        margin-top: 0.4rem;
+      }
     }
   }
   .community_faq_container{
@@ -137,19 +142,6 @@
         font-size: 0.32rem;
         line-height: 0.37rem;
         margin: 0 0 0.81rem 0;
-        display: flex;
-        align-items: center;
-        a{
-          padding-top: 0.09rem;
-          margin-left: 0.12rem;
-          font-size: 0.14rem;
-          line-height: 1.4;
-          color: #714BE3;
-          border-bottom:  0.01rem solid #714BE3;
-          i{
-            margin-left: 0.1rem;
-          }
-        }
       }
       .community_faq_content{
         box-sizing: border-box;
@@ -212,6 +204,7 @@
               .community_item_content{
                 min-height: 2.5rem;
                 .community_img{
+                  height:1.54rem;
                   width: 100%;
                 }
                 .community_ama_list_item_title{
@@ -252,93 +245,6 @@
             .community_list_content:last-child{
               .community_list_wrap:last-child{
                 padding-right: 0;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .community_resources_container{
-    background: #fff;
-    .community_resources_wrap{
-      max-width: 12rem;
-      width: 100%;
-      margin: 0 auto;
-      .community_resources_title{
-        font-size: 0.32rem;
-        color: #323C5A;
-        line-height: 0.37rem;
-        margin: 0.85rem 0 0.84rem 0;
-      }
-      .community_resources_list_content{
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        .community_list_item_content{
-          display: flex;
-          margin-bottom: 0.85rem;
-          .community_list_logo_content{
-            display: flex;
-            min-width: 2.12rem;
-            img{
-              width: 0.4rem;
-              height: 0.4rem;
-            }
-            .logo_name{
-              font-size: 0.24rem;
-              color: #323C5A;
-              line-height: 0.4rem;
-              font-weight: bolder;
-              padding-left: 0.2rem;
-            }
-          }
-          .community_resource_item_content{
-            flex: 1;
-            .community_item_top_container{
-              display: flex;
-              width: 100%;
-              border-bottom: 0.01rem solid #9BA5BE;
-              flex-wrap: wrap;
-              .community_item_top_content{
-                margin-right: 5%;
-                padding-bottom: 0.17rem;
-                display: flex;
-                a{
-                  display: inline-block;
-                  font-size: 0.16rem;
-                  line-height: 0.18rem;
-                  color: #323C5A;
-                  font-weight: bolder;
-                  :hover{
-                    color: #714BE3;
-                  }
-                  span{
-                    display: inline-block;
-                    white-space: nowrap;
-                  }
-                }
-                .os_content{
-                  white-space: nowrap;
-                  display: inline-block;
-                  padding-left: 0.1rem;
-                }
-              }
-            }
-            .community_item_bottom_content{
-              margin-top: 0.17rem;
-              a{
-                cursor: text;
-                color: #323C5A;
-              }
-            }
-            .hover_style{
-              a{
-                cursor: pointer;
-                color: #323C5A;
-                &:hover{
-                  color: #714BE3;
-                }
               }
             }
           }
@@ -417,45 +323,11 @@
   }
 }
 
-@media screen and (max-width: 1010px) and (max-width: 1280px){
+@media screen and (max-width: 1010px) and (min-width: 1280px){
   .community_page_container{
     .community_page_title_container{
       .community_page_title_wrap{
         padding-left: 0.2rem;
-      }
-    }
-    .community_events_container{
-      .community_events_wrap{
-        .community_events_list_container{
-          .community_events_left_content{
-            flex-direction: column;
-            align-items: center;
-            .community_events_item{
-              a{
-                .community_events_item_content{
-                  max-width: 4.86rem;
-                }
-              }
-            }
-            .community_events_item:nth-of-type(2){
-              margin-top: 0.6rem;
-            }
-          }
-          .community_events_right_content{
-            flex-direction: column;
-            align-items: center;
-            .community_events_item{
-              a{
-                .community_events_item_content{
-                  max-width: 4.86rem;
-                }
-              }
-            }
-            .community_events_item:nth-of-type(2){
-              margin-top: 0.6rem;
-            }
-          }
-        }
       }
     }
     .community_faq_container{
@@ -481,43 +353,39 @@
     }
   }
 }
-@media screen and (max-width: 768px) and (min-width: 1010px){
+@media  screen and (min-width: 768px) and (max-width: 1010px){
   .community_page_container{
     .community_page_title_container{
       .community_page_title_wrap{
         padding-left: 0.2rem;
       }
     }
-    .community_page_container {
-      .community_events_container{
-        margin: 0 0.2rem;
-        .community_events_wrap{
+    .community_events_container{
+      margin: 0 0.2rem;
+      .community_events_wrap{
+        width: 100%;
+        .community_events_title{
           width: 100%;
-          .community_events_title{
-            width: 100%;
-          }
-          .community_events_list_container{
-            flex-direction: column;
-            width: 100%;
-            .community_events_left_content{
-              margin: 0 8%;
-              display: flex;
-              background: #f66;
-              flex-direction: column;
-              justify-content: space-between;
-              .community_events_item{
-                .community_events_item_content{
-                  max-width: 3.86rem;
-                }
+        }
+        .community_events_list_container{
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          .community_events_left_content{
+            margin: 0 8%;
+            justify-content: space-between;
+            .community_events_item{
+              .community_events_item_content{
+                max-width: 3.86rem;
               }
             }
-            .community_events_right_content{
-              margin: 0.6rem 8% 0 8%;
-              justify-content: space-between;
-              .community_events_item{
-                .community_events_item_content{
-                  max-width: 3.86rem;
-                }
+          }
+          .community_events_right_content{
+            margin: 0.6rem 8% 0 8%;
+            justify-content: space-between;
+            .community_events_item{
+              .community_events_item_content{
+                max-width: 3.86rem;
               }
             }
           }
@@ -566,7 +434,7 @@
         width: 100%;
         .community_events_title{
           width: 100%;
-          text-align: left;
+          text-align: center;
         }
         .community_events_list_container{
           flex-direction: column;
@@ -660,7 +528,7 @@
       margin: 0 0.2rem;
       .community_resources_wrap{
         .community_resources_title{
-          text-align: left;
+          text-align: center;
         }
         .community_resources_list_content{
           padding-left: 0;
@@ -696,7 +564,7 @@
         width: 100%;
         .community_events_title{
           width: 100%;
-          text-align: left;
+          text-align: center;
         }
         .community_events_list_container{
           flex-direction: column;
@@ -707,6 +575,7 @@
             margin: 0;
             .community_events_item{
               margin-right: 0;
+              padding-top: 0.6rem;
               .community_events_item_content{
                 max-width: 3.86rem;
                 min-height: auto;
@@ -760,11 +629,6 @@
         .community_ama_content{
           .community_title{
             margin-bottom:0;
-            flex-direction: column;
-            align-items: flex-start;
-            a{
-              margin-left: 0;
-            }
           }
           .community_list_container{
             flex-direction: column;
@@ -799,7 +663,7 @@
       margin: 0 0.2rem;
       .community_resources_wrap{
         .community_resources_title{
-          text-align: left;
+          text-align: center;
         }
         .community_resources_list_content{
           padding-left: 0;

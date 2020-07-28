@@ -41,7 +41,7 @@
                                 <a :href="UrlSrc+item.pngUrl" :download="UrlSrc+item.pngUrl" class="community_png_img_download_content">
                                     <span class="community_png_img_format_title">{{item.pngTitle}}</span>
                                 </a>
-                                <a :href="UrlSrc+item.pngUrl" :download="UrlSrc+item.pngUrl" class="community_png_img_download_content">
+                                <a :href="UrlSrc+item.svgUrl" :download="UrlSrc+item.svgUrl" class="community_png_img_download_content">
                                     <span class="community_svg_img_format_title">{{item.svgTitle}}</span>
                                 </a>
                             </p>
@@ -56,7 +56,8 @@
                     <span class="community_about_irisnet_title">{{$store.state.messages.communityPage.aboutIrisnet.title}}</span>
                 </div>
                 <div class="community_about_irisnet_list_content">
-                    <p class="community_about_irisnet_list_item" v-for="content in $store.state.messages.communityPage.aboutIrisnet.content">{{content.item}}</p>
+                    <div class="community_about_irisnet_list_item" v-for="content in $store.state.messages.communityPage.aboutIrisnet.content" v-html="content.item"></div>
+                    <a class="read_more_link" :href="$store.state.messages.communityPage.aboutIrisnet.readMoreHref" target="_blank">{{$store.state.messages.communityPage.aboutIrisnet.readMoreText}}</a>
                 </div>
             </div>
         </div>

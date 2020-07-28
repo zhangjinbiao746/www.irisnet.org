@@ -90,7 +90,7 @@ export const message = {
             {
                 id: 0,
                 title:'文档',
-                href: "https://www.irisnet.org/docs/",
+                href: "https://www.irisnet.org/docs/zh/",
             },
             {
                 id:1,
@@ -183,19 +183,19 @@ export const message = {
             {
                 id:2,
                 name:'Light Client',
-                href:'https://www.irisnet.org/docs/zh/light-client/'
+                href:'https://www.irisnet.org/docs/light-client/intro.html'
             },
             {
                 id:3,
                 name:'CLI Client',
-                href:'https://www.irisnet.org/docs/zh/cli-client/'
+                href:' https://www.irisnet.org/docs/cli-client/intro.html'
             }
         ],
         resourceList: [
             {
                 id:0,
                 name:'FAQ',
-                href:'https://www.irisnet.org/docs/resources/'
+                href:'https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-cc7a59293823'
             },
             {
                 id:1,
@@ -226,9 +226,26 @@ export const message = {
         irisnetInproduction:'IRISnet以希腊彩虹女神Iris命名，她是在人间和天堂之间传递信息的忠诚使者'
     },
     home: {
+        bannerHref:"https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg",
+        gozExplorer: {
+            title: 'GoZ Network State Visualization & IBC-GoZ Rainbow Wallet',
+            content:'来感受未来，体验跨链世界！',
+            time: '炫酷上线',
+            button: {
+                buttonName: {
+                    explorerName: '看看跨链世界',
+                    rainbowName: '体验跨链转账',
+                },
+                buttonUrl: {
+                    explorerUrl: 'https://ibc-goz.irisplorer.io/#/',
+                    rainbowUrl: 'https://mp.weixin.qq.com/s/DguRzy8yilWWBBTJz5N7mw',
+                }
+            }
+        },
         sectionOne: {
-            title: 'IRIS Network',
-            time: '2019.03.01 主网启动',
+            title: '多资产功能赋能DeFi',
+            time: '2019.8.29',
+            content:'率先实现BPoS主网平滑升级',
             shareUrl: {
                 telegramUrl: 'https://t.me/irisnetworkcn',
                 githubUrl: 'https://github.com/irisnet/irishub',
@@ -246,16 +263,42 @@ export const message = {
             }
         },
         irisnetBianJie:{
-            commission:'佣金率',
+            commission:'Cosmos Hub Validator',
             development:'由IRISnet核心开发团队维护的 Cosmos Hub 创世节点',
             button:{
                 buttonName: {
-                    rainbowName: 'Rainbow 钱包',
-                    explorerName: '了解更多'
+                    rainbowName: '委托ATOM',
+                    explorerName: '查看节点详情'
                 },
                 buttonUrl: {
                     rainbowUrl: 'https://www.rainbow.one/',
                     explorerUrl: '/irisnet-bianjie'
+                }
+            }
+        },
+        irisnetVote:{
+            commission:'委托IRIS参与链上治理 ',
+            development:'为提案投票',
+            button:{
+                buttonName: {
+                    voteName: '如何投票',
+                },
+                buttonUrl: {
+                    voteUrl: 'https://mp.weixin.qq.com/s/3TqZr8GgySmzb8tWxo7GgQ',
+                }
+            }
+        },
+        bianDex:{
+            commission:'充值Binance DEX 领空投活动',
+            development:'500,000 IRIS 等你来拿',
+            button:{
+                buttonName: {
+                    eventDetail: '活动详情',
+                    howIsDex: '为何链接DEX',
+                },
+                buttonUrl: {
+                    eventDetail: 'https://mp.weixin.qq.com/s/LncVvKe3X8I7GAugYtwTZA',
+                    howIsDexUrl: 'https://mp.weixin.qq.com/s/RgyB7qBlwmc-VZyIqGv0sQ',
                 }
             }
         },
@@ -268,7 +311,7 @@ export const message = {
                     {id: 2, msg: '通过区块链互联网实现服务的互联互通'}
                 ],
                 buttonMsg: '白皮书',
-                WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md'
+                WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/白皮书.md'
             },
             NetworkDesign: {
                 title: '网络设计',
@@ -281,25 +324,10 @@ export const message = {
         sectionThree: {
             title: '路线图',
             road: [
-                {id: 0, caption: '后羿', time: '2020年1月之后', msg: '第四阶段，通过不懈的技术创新，完善的社区建设和开发者的积极参与，实现分布式的商业生态系统。'},
-                {
-                    id: 1,
-                    caption: '夸父',
-                    time: '2019年10月 - 2019年12月',
-                    msg: '第三阶段，主要专注于完成IRIS网络的增强功能，升级网络以支持复杂的IRIS服务管理功能，如分析和争议解决功能; 不断完善SDK和手机客户端; 加速拓展网络，连接更多分区，整合更多服务提供商。'
-                },
-                {
-                    id: 2,
-                    caption: '女娲',
-                    time: '2019年4月 - 2019年9月',
-                    msg: '第二阶段，我们为开发者准备了beta版的IRIS SDK，并会升级移动客户端以支持iServices；与应用专有链项目形成战略联盟，支持它们作为分区连接到IRIS Hub；IRISnet也将在第二阶段完成和Cosmos Hub的链接，打通和以太坊生态的链接。'
-                },
-                {
-                    id: 3,
-                    caption: '盘古',
-                    time: '2018年1月- 2019年3月',
-                    msg: 'IRISnet项目的第一阶段，我们专注于构建并启动IRIS Hub；发布一个初始版本的IRIS网络移动客户端，并建立IRISnet基本服务层：升级网络以实现服务定义、绑定、调用和查询；会与1-2两个生态伙伴展开合作，在跨链枢纽IRIS Hub上发布iServices。'
-                }
+                {id: 0, caption: '后羿', time: '2020年10月之后', msg: '第四阶段将专注通过技术创新，不断完善IRIS网络、SDK和手机客户端，吸引更多开发者参与。'},
+                {id: 1, caption: '夸父', time: '2019年11月 - 2020年9月', msg: '第三阶段主要专注于通过 IBC， 完成 IRIS Hub 与应用专有链网络的连接。我们还计划升级IRISnet移动客户端以支持这些应用。第三阶段还将重点实现IRIS网络的迭代升级，以支持复杂的IRIS服务管理功能。'},
+                {id: 2, caption: '女娲', time: '2019年4月 - 2019年10月', msg: '第二阶段我们将增加更多的基本模块以支持应用开发，特别是DeFi应用。这些新模块计划在本阶段发布，包括多资产管理、uni-swap、多签账户等。我们计划与1-2个生态伙伴合作，使用这些模块开发应用。我们还计划在此阶段完成与Cosmos Hub的测试连接。'},
+                {id: 3, caption: '盘古', time: '2018年1月- 2019年3月', msg: 'IRISnet项目的第一阶段，我们专注于构建并启动 IRISnet 主网（Hub）。 初始版本的IRIS网络移动客户端已在本阶段发布。同时，我们也专注于 IRISnet 基本服务层的建立，已将其发布在 IRIS Hub 上，实现：服务定义、绑定、调用和查询。'}
             ]
         },
         sectionFour: {
@@ -315,224 +343,181 @@ export const message = {
                 title: '战略合作伙伴',
                 logos: [
                     {id:0, path: 'logos/irisnet_InTERCHAIN.png', url: 'https://cosmos.network/about'},
-                   
-                    {id:3, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'}
+                    {id:1, path: 'logos/irisnet_HASHKEY.png', url: 'https://www.hashkey.com/#/'},
+                    {id:2, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
+
                 ]
             },
             EcosystemPartners: {
                 title: '生态合作伙伴',
                 logos: [
-                    {id: 0, path: 'logos/irisnet_Platonlogo.png', url: 'https://www.platon.network/#/index'},
-                    {id: 1, path: 'logos/irisnet_axonomy.png', url: 'https://www.axonomy.pro'},
-                    {id: 2, path: 'logos/irisnet_Gdex.png', url: 'https://www.gdex.io/'},
-                    {id: 3, path: 'logos/irisnet_hashgardhover.png', url: 'https://www.hashgard.io/#/'}
+                    {id:0, path: 'logos/irisnet_ok_chain.png', url: 'https://www.okex.com/okchain'},
+                    {id:1, path: 'logos/irisnet_kava.png', url: 'https://www.kava.io'},
+                    {id:2, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
+                    {id:3, path: 'logos/IOV.png', url: 'https://iov.one/'},
+                    {id:4, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
                 ]
             },
             Institutional: {
                 title: {msg1: '支持机构', msg2: '(排名不分先后)'},
                 logos: [
-                    {id: 0, path: 'logos/irisnet_AminoCapital.png', url: 'http://www.aminocapital.com/'},
-                    {id: 1, path: 'logos/irisnet_Bibox.png', url: 'https://www.bibox.com/'},
-                    {id: 2, path: 'logos/irisnet_huobi.png', url: 'https://www.hbg.com/en-us/capital/'},
-                    {id: 3, path: 'logos/irisnet_GBIC.png', url: 'https://gbic.io/'},
-                    {id: 4, path: 'logos/irisnet_8decim.png', url: 'javascript:void(0)'},
-                    {id: 5, path: 'logos/irisnet_bihu.png', url: 'https://bihu.com/'},// 1
-                    {id: 7, path: 'logos/irisnet_BKfund.png', url: 'javascript:void(0)'},
-                    {id: 8, path: 'logos/irisnet_byz.png', url: 'javascript:void(0)'},
-                    {id: 9, path: 'logos/irisnet_ChainPE.png', url: 'http://www.chainpe.com/'},
-                    {id: 10, path: 'logos/irisnet_CP.png', url: 'https://chainpool.io/'},
-                    {id: 11, path: 'logos/irisnet_COEFFICIENT.png', url: 'http://coefficient.network/'},// 2
-                    {id: 12, path: 'logos/irisnet_gongshi.png', url: 'http://consensuscapital.ca/'},
-                    {id: 13, path: 'logos/irisnet_dushu.png', url: 'javascript:void(0)'},
-                    {id: 14, path: 'logos/irisnet_genblock.png', url: 'https://genblock.capital/'},
-                    {id: 15, path: 'logos/irisnet_HAYEK.png', url: 'javascript:void(0)'},
-                    {id: 16, path: 'logos/irisnet_INK.png', url: 'http://ink.one/'},
-                    {id: 17, path: 'logos/irisnet_LINKVCcopy.png', url: 'http://www.linkvc.com/'},// 3
-                    {id: 18, path: 'logos/irisnet_MediSHares.png', url: 'http://medishares.org/'},
-                    {id: 19, path: 'logos/irisnet_jieshi.png', url: 'http://www.milestonevc.com/index.html'},
-                    {id: 20, path: 'logos/irisnet_nirvana-logo-white.png', url: 'http://nirvana.capital/'},
-                    {id: 21, path: 'logos/irisnet_NGC.png', url: 'http://ngc.fund/'},
-                    {id: 22, path: 'logos/irisnet_origin.png', url: 'http://www.theorigincapital.com/'},
-                    {id: 23, path: 'logos/irisnet_SatoshiFUnd.png', url: 'https://satoshi.fund/'},// 4
-                    {id: 24, path: 'logos/irisnet_guigu.png', url: 'http://www.svinsight.com/'},
-                    {id: 25, path: 'logos/irisnet_shicuo.png', url: 'javascript:void(0)'},
-                    {id: 26, path: 'logos/irisnet_huixiang.png', url: 'javascript:void(0)'},
-                    {id: 27, path: 'logos/irisnet_Unetwork.png', url: 'https://u.network/'},
-                    {id: 28, path: 'logos/irisnet_jiuhe.png', url: 'http://www.unityvc.com/'},
-                    {id: 29, path: 'logos/irisnet_UA.png', url: 'javascript:void(0)'},//5
-                    {id: 30, path: 'logos/irisnet_shuidi.png', url: 'http://waterdrip.io/'},
-                    {id: 31, path: 'logos/irisnet_yidao.png', url: 'javascript:void(0)'},
-                    {id: 32, path: 'logos/irisnet_snz.png', url: 'http://snzholding.com/'},
+                    {id:0, path: 'logos/irisnet_AminoCapital.png', url: 'http://www.aminocapital.com/'},
+                    {id:1, path: 'logos/irisnet_Bibox.png', url: 'https://www.bibox.com/'},
+                    {id:2, path: 'logos/irisnet_huobi.png', url: 'https://www.hbg.com/en-us/capital/'},
+                    {id:3, path: 'logos/irisnet_GBIC.png', url: 'https://gbic.io/'},
+                    {id:4, path: 'logos/irisnet_8decim.png', url: 'javascript:void(0)'},
+                    {id:5, path: 'logos/irisnet_bihu.png', url: 'https://bihu.com/'},// 1
+                    {id:7, path: 'logos/irisnet_BKfund.png', url: 'javascript:void(0)'},
+                    {id:8, path: 'logos/irisnet_byz.png', url: 'javascript:void(0)'},
+                    {id:9, path: 'logos/irisnet_ChainPE.png', url: 'http://www.chainpe.com/'},
+                    {id:10, path: 'logos/irisnet_CP.png', url: 'https://chainpool.io/'},
+                    {id:11, path: 'logos/irisnet_COEFFICIENT.png', url: 'http://coefficient.network/'},// 2
+                    {id:12, path: 'logos/irisnet_gongshi.png', url: 'http://consensuscapital.ca/'},
+                    {id:13, path: 'logos/irisnet_dushu.png', url: 'javascript:void(0)'},
+                    {id:14, path: 'logos/irisnet_genblock.png', url: 'https://genblock.capital/'},
+                    {id:15, path: 'logos/irisnet_HAYEK.png', url: 'javascript:void(0)'},
+                    {id:16, path: 'logos/irisnet_INK.png', url: 'http://ink.one/'},
+                    {id:17, path: 'logos/irisnet_LINKVCcopy.png', url: 'http://www.linkvc.com/'},// 3
+                    {id:18, path: 'logos/irisnet_MediSHares.png', url: 'http://medishares.org/'},
+                    {id:19, path: 'logos/irisnet_jieshi.png', url: 'http://www.milestonevc.com/index.html'},
+                    {id:20, path: 'logos/irisnet_nirvana-logo-white.png', url: 'http://nirvana.capital/'},
+                    {id:21, path: 'logos/irisnet_NGC.png', url: 'http://ngc.fund/'},
+                    {id:22, path: 'logos/irisnet_origin.png', url: 'http://www.theorigincapital.com/'},
+                    {id:23, path: 'logos/irisnet_SatoshiFUnd.png', url: 'https://satoshi.fund/'},// 4
+                    {id:24, path: 'logos/irisnet_guigu.png', url: 'http://www.svinsight.com/'},
+                    {id:25, path: 'logos/irisnet_shicuo.png', url: 'javascript:void(0)'},
+                    {id:26, path: 'logos/irisnet_huixiang.png', url: 'javascript:void(0)'},
+                    {id:27, path: 'logos/irisnet_Unetwork.png', url: 'https://u.network/'},
+                    {id:28, path: 'logos/irisnet_jiuhe.png', url: 'http://www.unityvc.com/'},
+                    {id:29, path: 'logos/irisnet_UA.png', url: 'javascript:void(0)'},//5
+                    {id:30, path: 'logos/irisnet_shuidi.png', url: 'http://waterdrip.io/'},
+                    {id:31, path: 'logos/irisnet_yidao.png', url: 'javascript:void(0)'},
+                    {id:32, path: 'logos/irisnet_snz.png', url: 'http://snzholding.com/'},
                 ]
             }
         }
     },
-    mainnet: {
-        title: 'IRIS Network',
-        production: '下一代分布式应用的跨链服务网络——自进化的BPoS区块链',
+    mainnet:{
+        title: 'IRIS Hub',
+        production: '下一代分布式应用的跨链服务枢纽——自进化的BPoS区块链',
         wallet: 'Rainbow 钱包',
-        walletHref: 'https://www.rainbow.one/',
+        walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS 浏览器',
-        explorerHref: 'https://www.irisplorer.io/',
-        leftContent: {
-            wallet: {
-                title: '钱包',
-                logo: 'IRISnet_mainnnet_wallet.png',
-                list: [
-                    {
-                        name: 'Math Wallet',
-                        href: 'http://www.mathwallet.org/cn/',
-                    },
-                    {
-                        name: 'Wetez',
-                        href: 'https://www.wetez.io/pc/homepage',
-                    }
-                ]
-            },
-            explorer: {
-                title: '浏览器',
-                logo: 'IRISnet_mainnet_explorer.png',
-                list: [
-                    {
-                        name: 'IRISnet-Overview',
-                        href: 'https://www.irisplorer.io/#/validators'
-                    },
-                    {
-                        name: 'Big-Dipper',
-                        href: 'https://iris.bigdipper.live/'
-                    },
-                    {
-                        name: 'IRISnet-P2P',
-                        href: 'https://irisnet.p2p.org'
-                    },
-                    {
-                        name: 'Hubble',
-                        href: 'https://hubble.figment.network/iris/chains/irishub'
-                    }
-                ]
-            }
-        }
+        explorerHref:'https://www.irisplorer.io/'
     },
-    announcements: {
+    announcements:{
         title: '公告',
         viewMore: '查看更多',
-        viewMoreHref: 'https://github.com/irisnet/iris-foundation/blob/master/README.md',
-        betaTitle: 'IRISnet的公开地址',
-        betaContent: 'IRIS基金会和开发团队的地址',
-        readMore: 'Read more',
-        readMoreHref: 'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address_cn.md',
-        betaDate: '2019年3月2日',
-        announcementList: [
+        viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
+        betaTitle:'IRISnet的公开地址',
+        betaContent:'IRIS基金会和开发团队的地址',
+        readMore:'Read more',
+        readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address_cn.md',
+        betaDate:'2019年3月2日',
+        announcementList:[
             {
-                id: '0',
-                href: 'https://forum.irisnet.org/t/iris/184',
-                date: '2019年6月28日',
-                title: '公告 | IRIS基金会第一次执行通证销毁计划',
-                content: '2019年6月28日，IRIS基金会通过两笔交易按计划执行了第一次销毁，共销毁了19,189,722 个 IRIS 通证，目前 IRIS 通证的总量为20亿个。'
+                id:'0',
+                href:'https://mp.weixin.qq.com/s/QpX1Uzm72FTZ0Uu93aunhw',
+                date:'2020 年 07 月 06 日',
+                title:'第 3 次执行丨IRIS 基金会首期委托促进计划暨第二期通证销毁计划',
+                content:'IRIS 基金会第三次执行首期委托促进计划暨第二期通证销毁计划。感谢委托人与验证人共建 IRISnet 健康生态！'
             },
             {
-                id: '1',
-                href: 'https://forum.irisnet.org/t/rainbow-v2-0-atom/166',
-                date: '2019年6月21日',
-                title: 'Rainbow发布v2.0，新增支持ATOM钱包',
-                content: 'Rainbow v2.0于2019年6月21日发布，接入第二条公链Cosmos Hub，新增ATOM钱包功能。'
+                id:'1',
+                href:'https://mp.weixin.qq.com/s/TsEnwgQrB1YqQAGp5mFvxA',
+                date:'2020 年 06 月 23 日',
+                title:'BSN、IRITA 和 Chainlink 达成共同建立 BSN 跨链和预言机服务的合作',
+                content:'IRISnet 将通过 IRITA 跨链服务枢纽支持 BSN 集成 Chainlink 预言机，共同为 BSN 的开发和发展做出重大贡献，推动区块链应用模式转型并在中国乃至世界范围更快增长与普及。'
             },
             {
-                id: '2',
-                href: 'https://forum.irisnet.org/t/irisnet-tendermint/44',
-                date: '2019年5月13日',
-                title: 'IRISnet & Tendermint携手加速开源区块链技术发展',
-                content: 'Cosmos 核心开发团队Tendermint 宣布IRISnet 为首要生态合作伙伴。'
+                id:'2',
+                href:'https://mp.weixin.qq.com/s/fytaeyqtTsAwPIcn6KYPBQ',
+                date:'2020 年 06 月 05 日',
+                title:'IRISnet 与 Kava 达成合作，共同打造跨链生态里更强的 DeFi 服务',
+                content:'IRIS与 Kava DeFi 平台的创立公司 Kava Labs 建立了合作关系，计划将 Kava 的 DeFi 服务引入 IRISnet 的区块链互联网，为促进分布式商业应用的构建提供技术基础。'
             },
             {
-                id: '3',
-                href: 'https://forum.irisnet.org/t/iris-foundation/37',
-                date: '2019年5月12日',
-                title: 'IRIS Foundation 节点委托标准的说明',
-                content: '基金会选择验证人节点的标准做出了公开说明。'
-            },
-        
+                id:'3',
+                href:'https://mp.weixin.qq.com/s/TbdUJz23155Z3hApiQG_Cw',
+                date:'2020 年 06 月 02 日',
+                title:'IRISnet 和 OKChain 合作支持 DeFi 应用链及跨链生态发展',
+                content:'IRISnet与 OKChain 展开深度技术合作，共同推进 DeFi 应用链及跨链生态发展。'
+            }
         ]
     },
-    testnet: {
-        fuxi: {
-            title: '伏羲测试网',
+    testnet:{
+        fuxi:{
+            title:'伏羲测试网',
             production: '伏羲测试网跟IRISnet主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。',
-            testnetLink: '使用伏羲测试网',
-            testnetExplorerTitle: '测试网浏览器',
-            testnetExplorerHref: 'https://testnet.irisplorer.io/',
-            href: 'https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html'
+            testnetLink:'使用伏羲测试网',
+            href:'https://www.irisnet.org/docs/zh/get-started/testnet.html#fuxi-%E6%B5%8B%E8%AF%95%E7%BD%91'
         },
-        nyancat: {
-            title: '彩虹猫测试网',
-            production: '彩虹猫测试网通常运行比IRISnet主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
-            testnetLink: '使用彩虹猫测试网',
-            testnetExplorerTitle: '彩虹猫浏览器',
-            testnetExplorerHref: 'http://nyancat.irisplorer.io/',
-            href: 'https://github.com/irisnet/testnets/tree/master/nyancat'
+        nyancat:{
+            title:'彩虹猫测试网',
+            production:'彩虹猫测试网通常运行比IRISnet主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
+            testnetLink:'使用彩虹猫测试网',
+            href:'https://www.irisnet.org/docs/zh/get-started/testnet.html#nyancat-%E6%B5%8B%E8%AF%95%E7%BD%91'
         }
     },
-    community: {
+    community:{
         title: '社区',
-        joinWay: [
+        joinWay:[
             {
-                id: '1',
-                src: 'irisnet_community_riot.png',
+                id:'1',
+                src:'irisnet_community_riot.png',
                 name: 'Riot聊天室',
-                linkName: '#iris:matrix.org',
+                linkName:'#iris:matrix.org',
                 href: 'https://riot.im/app/#/room/#iris:matrix.org'
             },
             {
-                id: '2',
-                src: 'irisnet_community_qq.png',
+                id:'2',
+                src:'irisnet_community_qq.png',
                 name: 'QQ 群',
-                linkName: '795301695',
+                linkName:'795301695',
                 href: 'https://jq.qq.com/?_wv=1027&k=51eKP77'
             }
         ]
     },
-    testnetPage: {
+    testnetPage:{
         title: '伏羲测试网',
-        section: [
+        section:[
             {
-                content: '伏羲测试网络经过数次迭代已经完成了使命。'
+                content:'伏羲测试网络经过数次迭代已经完成了使命。'
             },
             {
-                content: '2019年2月，IRISnet开发团队发布了irishub v0.12.0，并成功启动了新的测试网络 (chain-id : fuxi)。'
+                content:'2019年2月，IRISnet开发团队发布了irishub v0.12.0，并成功启动了新的测试网络 (chain-id : fuxi)。'
             },
             {
-                content: '伏羲测试网跟IRIS主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。'
+                content:'伏羲测试网跟IRIS主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。'
             }
         ],
-        joinTitle: '如何使用伏羲测试网',
-        joinHref: 'https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html',
-        faqTitle: 'IRIShub常见问题',
-        faqHref: 'https://www.irisnet.org/docs/zh/introduction/',
-        explorerTitle: '测试网浏览器 IRISplorer',
-        explorerHref: 'https://testnet.irisplorer.io',
-        walletTitle: '测试网钱包 Rainbow',
-        walletHref: 'https://testnet.rainbow.one/'
+        joinTitle:'测试网浏览器（FUXI）',
+        joinHref:'https://testnet.irisplorer.io/#/home',
+        // faqTitle:'IRIShub常见问题',
+        // faqHref:'https://www.irisnet.org/docs/zh/introduction/',
+        explorerTitle:'测试网浏览器（Nyancat）',
+        explorerHref:'https://nyancat.irisplorer.io/#/home',
     },
-    newsLetter: {
+    newsLetter:{
         successTitle: '欢迎订阅IRISnet通讯',
         failedTitle: '订阅失败。',
         successText: '感谢您并对我们的项目感兴趣并加入订阅。\n' +
-            '请检查您的收件箱，点击确认，开始接收我们的通讯和其他最新的更新。',
+        '请检查您的收件箱，点击确认，开始接收我们的通讯和其他最新的更新。',
         failedText: '也许您已经订阅过了?\n' +
-            '\n' +
-            '如果没有，请再试一次或通过电子邮件contact@irisnet.org联系我们。',
+        '\n' +
+        '如果没有，请再试一次或通过电子邮件contact@irisnet.org联系我们。',
         confirm: '确认'
     },
-    communityPage: {
-        pressKitContent: {
+    communityPage:{
+        pressKitContent:{
             title: '品牌资料',
             downloadTitle: '获取您可能需要的所有品牌资源和标志',
             downloadBtn: '资源目录',
-            downloadHref: 'https://www.irisnet.org/resources/'
+            downloadHref:'https://www.irisnet.org/resources/'
         },
-        ColorsContent: {
+        ColorsContent:{
             title: '标志用色',
-            colors: [
+            colors:[
                 {
                     color: '#009DDE'
                 },
@@ -547,17 +532,17 @@ export const message = {
                 }
             ]
         },
-        Standard: {
+        Standard:{
             title: '标志',
-            StandardList: [
-                {
+            StandardList:[
+              /*  {
                     id: 0,
                     imgUrl: 'presskit/irisnet_logo_black.png',
                     pngUrl: 'presskit/IRISNet rebrand Horizontal-black.png',
                     pngTitle: 'png',
                     svgUrl: 'presskit/IRISNet rebrand Horizontal-black.svg',
                     svgTitle: 'svg'
-                },
+                },*/
                 {
                     id: 1,
                     imgUrl: 'presskit/irisnet_logo_white.png',
@@ -566,40 +551,33 @@ export const message = {
                     svgUrl: 'presskit/IRISNet rebrand Horizontal-white.svg',
                     svgTitle: 'svg'
                 },
-                {
+              /*  {
                     id: 2,
-                    imgUrl: 'presskit/irisnet_logo_black_pure.png',
-                    pngUrl: 'presskit/IRISnet_rebrand_white.png',
-                    pngTitle: 'png',
-                    svgUrl: 'presskit/IRISnet_rebrand_white.svg',
-                    svgTitle: 'svg'
-                },
-                {
-                    id: 3,
-                    imgUrl: 'presskit/irisnet_logo_white_pure.png',
-                    pngUrl: 'presskit/IRISNet rebrand Horizontal Capital-white.png',
-                    pngTitle: 'png',
-                    svgUrl: 'presskit/IRISNet rebrand Horizontal Capital-white.svg',
-                    svgTitle: 'svg'
-                },
-                {
-                    id: 4,
                     imgUrl: 'presskit/irisnet_logo_column_black.png',
                     pngUrl: 'presskit/IRISnetlogo Vertical-black.png',
                     pngTitle: 'png',
                     svgUrl: 'presskit/IRISnetlogo Vertical-black.svg',
                     svgTitle: 'svg'
-                },
+                },*/
                 {
-                    id: 5,
+                    id: 3,
                     imgUrl: 'presskit/irisnet_logo_column_white.png',
                     pngUrl: 'presskit/IRISnetlogo Vertical-white.png',
                     pngTitle: 'png',
                     svgUrl: 'presskit/IRISnetlogo Vertical-white.svg',
                     svgTitle: 'svg'
                 },
+               
                 {
-                    id: 6,
+                    id: 4,
+                    imgUrl: 'presskit/iris_logo_white.png',
+                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-white.png',
+                    pngTitle: 'png',
+                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-white.svg',
+                    svgTitle: 'svg'
+                },
+                {
+                    id: 5,
                     imgUrl: 'presskit/iris_logo_black.png',
                     pngUrl: 'presskit/IRISnetRoundLogoWithoutText-black.png',
                     pngTitle: 'png',
@@ -607,127 +585,104 @@ export const message = {
                     svgTitle: 'svg'
                 },
                 {
-                    id: 7,
-                    imgUrl: 'presskit/iris_logo_white.png',
-                    pngUrl: 'presskit/IRISnetRoundLogoWithoutText-white.png',
+                    id: 6,
+                    imgUrl: 'presskit/irisnet-rebrand-capital-bg.png',
+                    pngUrl: 'presskit/IRISnet-Rebrand-Capital-Black.png',
                     pngTitle: 'png',
-                    svgUrl: 'presskit/IRISnetRoundLogoWithoutText-white.svg',
+                    svgUrl: 'presskit/IRISnet-Rebrand-Capital-Black.svg',
                     svgTitle: 'svg'
                 },
             ]
         },
-        aboutIrisnet: {
+        aboutIrisnet:{
             title: '关于IRISnet',
             content: [
                 {
                     id: 0,
-                    item: 'IRISnet:可以自进化的BPoS跨链服务枢纽——下一代分布式商业应用的基础设施'
+                    item:'IRISnet：可以自进化的BPoS跨链服务枢纽'
                 },
                 {
                     id: 1,
-                    item: '就像在人间和天堂之间忠实传递信息的希腊彩虹女神Iris，IRISnet的目标是成为链接数字经济和实体经济的可信“桥梁”，为构建复杂的分布式商业应用提供新一代公链基础设施。边界智能和Tendermint团队合作开发的IRISnet将支持公链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。'
+                    item:'IRISnet（主网 IRIS Hub）是支持DeFi等各种复杂分布式应用的跨链服务枢纽。IRIS Hub采用Cosmos SDK开发，是第一个可自进化的BPoS网络，其开发团队包括获得多个技术创新大奖的边界智能（<a href="https://www.bianjie.ai/" target="_blank">Bianjie</a>）以及Cosmos核心开发团队<a href="https://tendermint.com" target="_blank">Tendermint</a>。'
                 },
                 {
                     id: 2,
-                    item: 'IRISnet 是Cosmos 生态中除Cosmos Hub 外的另外一个Hub, 由边界智能（ Bianjie）和Tendermint团队合作开发，目标是成为链接数字经济和实体经济的可信“桥梁”，为构建复杂的分布式商业应用提供新一代面向服务的公链基础设施。IRISnet支持公链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。IRISnet 第一次实现了对BPoS 网络的自进化（通过在线治理实现网络升级）支持。'
-                }
-            ]
-        },
-        title: '社区',
-        eventsTitle: '活动预告',
-        events: {
-            left: [
-                {
-                    img: 'IRISnet_axonomy _defi.png',
-                    href: 'javascript:void(0);',
-                    address: '北京',
-                    timestamp: '2019年7月18日',
-                    title: 'AXONOMY DeFi 联盟战略发布会',
-                    signUp: '加入活动',
-                    signUpUrl: 'http://www.huodongxing.com/event/3501047431800?layout=CN',
-                    viewMore: '',
-                    viewMoreUrl: '',
-                },
-                {
-                    img: 'IRISnet_events_buidl.jpg',
-                    href: 'https://www.buidl.asia/',
-                    address: '韩国',
-                    timestamp: '2019年7月22日-23日',
-                    title: 'Korea BUIDL 主题演讲:基于BPoS区块链的DeFi应用支持',
-                    signUp: '加入活动',
-                    signUpUrl: 'https://www.buidl.asia/events/buidl-2019',
-                    viewMore: '',
-                    viewMoreUrl: '',
+                    item:'IRISnet提供支持DeFi应用开发的多种基础模块，并能支持公有链、联盟链以及传统商业系统之间的无缝集成，使得数据和复杂计算能够跨异构网络互联互通，实现服务的跨链调用。'
                 }
             ],
-            /*   right:[
-					{
-						img:'IRISnet_events_plat_on.jpg',
-						href:'javascript:void(0);',
-						address:'成都',
-						timestamp:'2019年7月19日',
-						title:'太古里的云图',
-						signUp:'',
-						signUpUrl:'',
-						viewMore:'',
-						viewMoreUrl:'',
-					},
-			   ]*/
+            readMoreText:'更多说明内容...',
+            readMoreHref:'https://github.com/irisnet/irisnet/blob/master/pressKit_CN.md',
         },
-        faq: {
-            faqTitle: '常见问题',
-            faqImg: '/IRISnet_community_faq.png',
-            faqList: {
+        title: '社区',
+        eventsTitle:'近期活动',
+        events: {
+            left: [
+            ],
+            right:[
+            
+            ]
+        },
+        eventsBottom: {
+            left: [
+            
+            ],
+            right:[
+            
+            ]
+        },
+        faq:{
+            faqTitle:'常见问题',
+            faqImg:'/IRISnet_community_faq.png',
+            faqList:{
                 title: 'FAQ',
-                list: [
+                list:[
                     {
-                        item: '1. 什么是IRISnet？',
+                        item:'1. 什么是IRISnet？',
                     },
                     {
-                        item: '2. IRIS的初始分配是怎样的？',
+                        item:'2. IRIS的初始分配是怎样的？',
                     },
                     {
-                        item: '3. IRISnet经济模型的架构是怎样的？',
+                        item:'3. IRISnet经济模型的架构是怎样的？',
                     },
                     {
-                        item: '4. IRISnet和Cosmos是什么关系？',
+                        item:'4. IRISnet和Cosmos是什么关系？',
                     },
                 ],
                 viewMore: '查看更多',
-                viewMoreLink: 'https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-cc7a59293823'
+                viewMoreLink:'https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-cc7a59293823'
             },
-            ama: {
+            ama:{
                 title: '活动回顾',
-                viewMore: '查看更多',
-                viewMoreLink: '/events',
                 leftList: [
                     {
-                        img:'IRISnet_events_staking.jpg',
-                        href:'https://mp.weixin.qq.com/s/bMvji4cmX2oupowO2EN_9A',
-                        title:'Staking Con',
-                        content:'StakingCon Staking生态大会',
+                        img:'itisnet_event_20200325.png',
+                        href:'https://m.jinse.com/blockchain/613755.html?source=m',
+                        title:'Biki 社区 AMA',
+                        content:'BiKi对话IRISnet 看新一代公链基础设施构建分布式商业应用'
                     },
                     {
-                        img:'IRISnet_events_global.jpg',
-                        href:'https://mp.weixin.qq.com/s/c6IR5bRregeavgEKt9BnNA',
-                        title:'GBAC',
-                        content:'2019年第二届全球石墨烯区块链开发者大会',
+                        img:'irisnet_event_2020.jpg',
+                        href:'https://mp.weixin.qq.com/s/My7ODGrdjbupAWnjiaM0Cw',
+                        title:'无涯社区 AMA',
+                        content:'跨链时代真正来临 IBC & IRISnet'
                     },
-                   
+                    
+                    
                 ],
                 rightList:[
-	                {
-		                img:'IRISnet_events_online.jpg',
-		                href:'https://mp.weixin.qq.com/s/HYigu8lG-Z9gI-X7Nya81Q',
-		                title:'区分FIND',
-		                content:'了不起的中国公链',
-	                },
-	                {
-		                img:'IRISnet_ama_jjs.jpg',
-		                href:'javascript:void(0)',
-		                title:'鲸交所',
-		                content:'IRISnet的自进化：链上治理和不分叉的网络升级',
-	                },
+                    {
+                        img:'irisnet_event_2019_11_08_max.jpg',
+                        href:'https://mp.weixin.qq.com/s/bdNvbZMA7NOKWyfx4FRfEw',
+                        title:'抹茶AMA',
+                        content:'开发跨链的IRISnet--如何打通数字经济和实体经济'
+                    },
+                    {
+                        img:'irisnet_event_2019_11_14.png',
+                        href:'https://mp.weixin.qq.com/s/bQCfqkB5TJLzkAKmV-HwuA',
+                        title:'2019世界区块链大会·乌镇',
+                        content:'乌镇·一文读懂Web3.0的概念、推进与盈利模式'
+                    },
                 ],
             }
         },
@@ -753,9 +708,53 @@ export const message = {
                             itemName: 'Wetez',
                             os:'(Android, iOS)',
                             href: 'https://www.wetez.io/pc/homepage'
-                        }
+                        },
+                        {
+                            itemName: 'Cosmostation',
+                            os:'(Android, iOS)',
+                            href: 'https://www.cosmostation.io/'
+                        },
+                        {
+                            itemName: ' SyncNode',
+                            os:'(iOS)',
+                            href: 'https://wallet.syncnode.ro/'
+                        },
+
+
                     ],
                     content:'这些钱包支持IRIS及ATOM的转账和质押，请充分研究其安全性再使用。列示这些信息仅为方便下载，并不代表对钱包使用的安全性负责。',
+                },
+                {
+                    img:'IRISnet_staking_tools.png',
+                    name:'委托工具箱',
+                    href:"javascript:void(0);",
+                    resourceList: [
+                        {
+                            itemName: 'HashKey Hub',
+                            href: 'https://hub.hashkey.com/#/'
+                        },
+                        {
+                            itemName: 'Math Wallet',
+                            href: 'https://mathwallet.net/web/irisnet'
+                        },
+                        {
+                            itemName: '01node.com',
+                            href: 'https://iris-delegator.01node.com'
+                        },
+                        {
+                            itemName: 'Cosmostation',
+                            href: 'https://wallet.cosmostation.io/?network=iris'
+                        },
+                        {
+                            itemName: 'Dokia',
+                            href: 'https://staking.dokia.cloud/'
+                        },
+                        {
+                            itemName: 'Union Market',
+                            href: 'https://union.market/token/irisnet'
+                        },
+                    ],
+                    content:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
                 },
                 {
                     img:'IRISnet_community_explorer.png',
@@ -767,21 +766,21 @@ export const message = {
                             href: 'https://www.irisplorer.io/#/validators'
                         },
                         {
-                            itemName: 'IRISnet-Overview',
-                            href: 'https://irisnet-overview.genesislab.net/'
+                            itemName: 'Mintscan',
+                            href: 'https://irishub.mintscan.io/'
                         },
                         {
                             itemName: 'Big-Dipper',
                             href: 'https://iris.bigdipper.live/'
                         },
                         {
-                            itemName: 'IRISnet-P2P',
-                            href: 'https://irisnet.p2p.org'
-                        },
-                        {
                             itemName: 'Hubble',
                             href: 'https://hubble.figment.network/iris/chains/irishub'
-                        }
+                        },
+	                    {
+		                    itemName: 'LOOK',
+		                    href: 'https://look.ping.pub/validator?chain=irishub'
+	                    }
                     ],
                     content:'您可通过以上区块链浏览器查询和分析 IRIS Hub 的区块、交易、验证人等信息。',
                 },
@@ -820,381 +819,123 @@ export const message = {
 	                ]
                 }
             ]
-        },
-	    pastEvents:{
-		    title: '活动回顾',
-		    subheading:'以下是往期活动的回顾',
-		    currentDate:'近期活动回顾',
-		    imgList:[
-			    {
-				    img:'IRISnet_events_staking.jpg',
-				    href:'https://mp.weixin.qq.com/s/bMvji4cmX2oupowO2EN_9A',
-				    timestamp:'2019/07/10',
-				    address:'北京',
-				    title:'StakingCon Staking生态大会',
-			    },
-			    {
-				    img: 'IRISnet_events_global.jpg',
-				    href:'https://mp.weixin.qq.com/s/c6IR5bRregeavgEKt9BnNA',
-				    timestamp: '2019/07/06-07/07',
-				    address:'上海',
-				    title: '2019年第二届全球石墨烯区块链开发者大会'
-			    },
-			    {
-				    img: 'IRISnet_events_online.jpg',
-				    href:'https://mp.weixin.qq.com/s/HYigu8lG-Z9gI-X7Nya81Q',
-				    timestamp: '2019/07/04',
-				    address:'',
-				    title: '了不起的中国公链'
-			    },
-			    {
-				    img: 'IRISnet_ama_jjs.jpg',
-				    href:'https://mp.weixin.qq.com/s/QYEGFaGNKDrwI7gUjsVeQA',
-				    timestamp: '2019/07/02',
-				    address:'',
-				    title: '鲸交所视频直播：IRISnet的自进化：链上治理和不分叉的网络升级'
-			    },
-			    {
-				    img: 'IRISnet_ama_zh_node.jpg',
-				    href:'https://mp.weixin.qq.com/s/e62Q_P0-yGJmSA84_ClEhA',
-				    timestamp: '2019/06/30',
-				    address:'',
-				    title: '链节点线下活动 | 跨链技术与新机遇'
-			    },
-			    {
-				    img: 'IRISnet_ama_zh_node.jpg',
-				    href:'https://mp.weixin.qq.com/s/CeUf2StlE6ux1xMBu-UFnQ',
-				    timestamp: '2019/06/30',
-				    address:'',
-				    title: '圆桌论坛 | 跨链能否打开应用新赛道？项目方透露了这些新进展'
-			    },
-			    {
-				    img: 'IRISnet_iservice.png',
-				    href:'https://mp.weixin.qq.com/s/hVVp75iHxTbHKhImReuBQQ',
-				    timestamp: '2019/06/30',
-				    address:'',
-				    title: 'IRISnet受邀深度剖析Cosmos跨链技术'
-			    },
-			    {
-				    img: 'IRISnet_ama_qurea.png',
-				    href:'https://mp.weixin.qq.com/s/gV8Zqqoz5-oRX9gZreBFNw',
-				    timestamp: '2019/06/11',
-				    address:'',
-				    title: 'IRISnet：可以自进化的BPoS跨链服务枢纽'
-			    },
-		    ],
-		    pastListTitle: '2019',
-		    list: [
-			    {
-				    href: 'https://mp.weixin.qq.com/s/9tTIpT0oUdbY4bNPOmieIA',
-				    timestamp: '2019/05/16',
-				    title: 'IRISnet BPoS：大道至简，共建跨链生态',
-				    type: '线上活动',
-				    address: ''
-			    },
-			    {
-				    href: 'https://mp.weixin.qq.com/s/6BVMy233L6xVWtLATCTWCw',
-				    timestamp: '2019/04/23',
-				    title: '第三代区块链技术落地 我们该期待些什么 | 跨链新时代',
-				    type: '线上活动',
-				    address: ''
-			    },
-			    {
-				    href: 'https://mp.weixin.qq.com/s/eTwV-zBccO4jKAQJZq0D8w',
-				    timestamp: '2019/03/31',
-				    title: 'Cosmos & IRISnet 主网上线庆祝活动精彩回顾',
-				    type: '线下活动',
-				    address: '上海'
-			    },
-			    {
-				    href: 'https://mp.weixin.qq.com/s/Ivw4pN_-l8G1yqfMCxTmPQ',
-				    timestamp: '2019/02/28',
-				    title: 'TokenGazer一问到底 | 第29期：研究员 vs IRISnet',
-				    type: '线上活动',
-				    address: ''
-			    },
-			    {
-				    href: 'https://mp.weixin.qq.com/s/FXpfyshFD6A2ATGI_PZgiA',
-				    timestamp: '2019/02/15',
-				    title: '【算力智库专访】曹恒：代码开源是优秀区块链项目的基本条件',
-				    type: '线上活动',
-				    address: ''
-			    },
-			    {
-				    href: 'https://mp.weixin.qq.com/s/laQM61DKvoYeR-Mvvlae1Q',
-				    timestamp: '2019/01/14',
-				    title: '巴比特报道 | 奚海峰：打造跨链服务网络，一位钻而不厌技术老兵的区块链进阶之旅',
-				    type: '线上活动',
-				    address: ''
-			    },
-		    ],
-		    pastListTwoTitle: '2018',
-		    pastListTwoList: [
-			    {
-				    href: 'https://mp.weixin.qq.com/s/m405arPrhZ6SoOwVRHMb_A',
-				    timestamp: '2018/09/11',
-				    title: '区块链3.0：共识算法、隐私保护丨IRISnet创始人奚海峰主持峰会讨论',
-				    type: '线下活动',
-				    address: '上海'
-			    },
-			    {
-				    href: 'https://mp.weixin.qq.com/s/eHUg6AaKadBt50v1H-GHXQ',
-				    timestamp: '2018/9/11',
-				    title: '【峰会演讲】COSMOS创始人 Jae Kwon：区块链生态新架构',
-				    type: '线下活动',
-				    address: '上海'
-			    },
-			    {
-				    href: 'https://mp.weixin.qq.com/s/Fxw3v8kr4CajKgr7WlMazw',
-				    timestamp: '2018/08/30',
-				    title: '跨链分享讨论——Cosmos中国&IRISnet研究员Suyu参与巴比特Chainge沙龙',
-				    type: '线下活动',
-				    address: '杭州'
-			    },
-			    {
-				    href: 'https://mp.weixin.qq.com/s/natjKrlGuJIvnVxnPe-s5A',
-				    timestamp: '2018/07/22',
-				    title: '与区块链行业先锋 Zaki Manian 的对话',
-				    type: '线上活动',
-				    address: ''
-			    },
-			    {
-				    href: 'https://mp.weixin.qq.com/s/Xdf_fGIa_5v0b3NvIDz8-w',
-				    timestamp: '2018/06/26',
-				    title: '快速实现分布式商业应用？这个下一代公链提供了可能',
-				    type: '线下活动',
-				    address: '美国'
-			    },
-			    {
-				    href: 'https://mp.weixin.qq.com/s/gRG0PPR8r-6c717XDZasmw',
-				    timestamp: '2018/05/23',
-				    title: 'Cosmos公开课：区块链互联网，internet of blockchain',
-				    type: '线上活动',
-				    address: ''
-			    },
-			    {
-				    href: 'https://mp.weixin.qq.com/s/FrcOrKN1ZEzAO07aeFPnvA',
-				    timestamp: '2018/05/10',
-				    title: 'Cosmos Reddit AMA回顾:Part 2',
-				    type: '线上活动',
-				    address: ''
-			    },
-			    {
-				    href: 'https://mp.weixin.qq.com/s/Cs4jFFVI9ZNwaECReL5bCw',
-				    timestamp: '2018/05/10',
-				    title: 'Cosmos Reddit AMA回顾:Part 1',
-				    type: '线上活动',
-				    address: ''
-			    },
-		    ]
-	    },
-	
+        }
     },
     cosmos:{
-	    cn:{
-		    header:{
-			    title:'Bianjie',
-			    commission:'佣金率',
-			    product:'由IRISnet核心开发团队维护的验证人节点',
-			    validatorAddress:'验证人地址',
-			    address:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
-			    toastHint:'复制成功',
-			    bondedAtoms:'ATOM总数',
-			    votingPower:'权重',
-			    commissionRate:'佣金率',
-			    uptime:'活跃度',
-			    guide:'Cosmos Hub 钱包',
-			    guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
-		    },
-		    about:{
-			    title:'关于IRISnet-Bianjie',
-			    secondTitle:'IRISnet的核心开发者，Cosmos的开源社区贡献者',
-			    irisnet:{
-				    title:'IRISnet 核心开发者',
-				    list:[
-					    {
-						    item:'在<a href="https://cosmos.network/about" target="_blank" style="color:rgba(77, 150, 223, 1)">Interchain Foundation (ICF)</a>的支持下构建IRISnet，这是一个用于构建分布式商业应用的Cosmos Hub'
-					    },
-					    {
-						    item:'<a href="https://www.irisnet.org/" target="_blank" style="color:rgba(77, 150, 223, 1)">IRISnet</a> - 自进化的BPoS区块链'
-					    },
-				    ]
-			    },
-			    cosmos:{
-				    title:'Cosmos的开源社区贡献者',
-				    list:[
-					    {
-						    item:'2019年3月14日成为Cosmos Hub主网创世验证人'
-					    },
-					    {
-						    item:'从Gaia-1000直至主网上线成功参与Cosmos全部测试网'
-					    },
-					    {
-						    item:'自2017年8月起为Cosmos中国社区提供专业的技术支持'
-					    }
-				    ]
-			    }
-			
-		    },
-		    bianjie:{
-			    title:'安全的边界，放心的委托',
-			    product:[
-				    {
-					    src:require('../../assets/cosmos/service_room.png'),
-					    text:'安全可靠的企业级机房',
-				    },
-				    {
-					    src:require('../../assets/cosmos/net.png'),
-					    text:'高可用性网络',
-				    },
-				    {
-					    src:require('../../assets/cosmos/node.png'),
-					    text:'可扩展的哨兵节点',
-				    },
-				    {
-					    src:require('../../assets/cosmos/lock.png'),
-					    text:'硬件加密保证安全',
-				    },
-				    {
-					    src:require('../../assets/cosmos/hour.png'),
-					    text:'7*24小时专业监控',
-				    },
-				    {
-					    src:require('../../assets/cosmos/shield.png'),
-					    text:'商业DDos攻击防护',
-				    }
-			    ]
-		    },
-		    cosmosExplorerTitle:'Cosmos Hub 浏览器',
-		    cosmosExplorer:[
-			    {
-				    active:false,
-				    whiteImg:require('../../assets/cosmos/big_dipper_white.png'),
-				    blueImg:require('../../assets/cosmos/big-dipper_blue.png'),
-				    title:'Big Dipper',
-				    href:'https://cosmos.bigdipper.live/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
-			    },
-			    {
-				    active:false,
-				    whiteImg:require('../../assets/cosmos/cosmos_white.png'),
-				    blueImg:require('../../assets/cosmos/cosmos_blue.png'),
-				    title:'Cosmos Overview',
-				    href:'https://cosmos-overview.genesislab.net/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
-			    },
-			    {
-				    active:false,
-				    whiteImg:require('../../assets/cosmos/hubble_white.png'),
-				    blueImg:require('../../assets/cosmos/hubble_blue.png'),
-				    title:'Hubble',
-				    href:'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030'
-			    },
-			    {
-				    active:false,
-				    whiteImg:require('../../assets/cosmos/Mintscan_white.png'),
-				    blueImg:require('../../assets/cosmos/Mintscan_blue.png'),
-				    title:'Mintscan',
-				    href:'https://www.mintscan.io/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
-			    },
-			    {
-				    active:false,
-				    whiteImg:require('../../assets/cosmos/Stargazer_white.png'),
-				    blueImg:require('../../assets/cosmos/Stargazer_blue.png'),
-				    title:'Stargazer',
-				    href:'https://stargazer.certus.one/accounts/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
-			    },
-		    ]
-	    }
+        cn:{
+            header:{
+                title:'Bianjie',
+                commission:'佣金率',
+                product:'由IRISnet核心开发团队维护的验证人节点',
+                validatorAddress:'验证人地址',
+                address:'cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em',
+                toastHint:'复制成功',
+                bondedAtoms:'ATOM总数',
+                votingPower:'权重',
+                commissionRate:'佣金率',
+                uptime:'活跃度',
+                guide:'Cosmos Hub 钱包',
+                guideHref:'https://hub.cosmos.network/#cosmos-hub-wallets'
+            },
+            about:{
+                title:'关于IRISnet-Bianjie',
+                secondTitle:'IRISnet的核心开发者，Cosmos的开源社区贡献者',
+                irisnet:{
+                    title:'IRISnet 核心开发者',
+                    list:[
+                        {
+                            item:'在<a href="https://cosmos.network/about" target="_blank" style="color:rgba(77, 150, 223, 1)">Interchain Foundation (ICF)</a>的支持下构建IRISnet，这是一个用于构建分布式商业应用的Cosmos Hub'
+                        },
+                        {
+                            item:'<a href="https://www.irisnet.org/" target="_blank" style="color:rgba(77, 150, 223, 1)">IRISnet</a> - 自进化的BPoS区块链'
+                        },
+                    ]
+                },
+                cosmos:{
+                    title:'Cosmos的开源社区贡献者',
+                    list:[
+                        {
+                            item:'2019年3月14日成为Cosmos Hub主网创世验证人'
+                        },
+                        {
+                            item:'从Gaia-1000直至主网上线成功参与Cosmos全部测试网'
+                        },
+                        {
+                            item:'自2017年8月起为Cosmos中国社区提供专业的技术支持'
+                        }
+                    ]
+                }
+                
+            },
+            bianjie:{
+                title:'安全的边界，放心的委托',
+                product:[
+                    {
+                        src:require('../../assets/cosmos/service_room.png'),
+                        text:'安全可靠的企业级机房',
+                    },
+                    {
+                        src:require('../../assets/cosmos/net.png'),
+                        text:'高可用性网络',
+                    },
+                    {
+                        src:require('../../assets/cosmos/node.png'),
+                        text:'可扩展的哨兵节点',
+                    },
+                    {
+                        src:require('../../assets/cosmos/lock.png'),
+                        text:'硬件加密保证安全',
+                    },
+                    {
+                        src:require('../../assets/cosmos/hour.png'),
+                        text:'7*24小时专业监控',
+                    },
+                    {
+                        src:require('../../assets/cosmos/shield.png'),
+                        text:'商业DDos攻击防护',
+                    }
+                ]
+            },
+            cosmosExplorerTitle:'Cosmos Hub 浏览器',
+            cosmosExplorer:[
+                {
+                    active:false,
+                    whiteImg:require('../../assets/cosmos/big_dipper_white.png'),
+                    blueImg:require('../../assets/cosmos/big-dipper_blue.png'),
+                    title:'Big Dipper',
+                    href:'https://cosmos.bigdipper.live/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../../assets/cosmos/cosmos_white.png'),
+                    blueImg:require('../../assets/cosmos/cosmos_blue.png'),
+                    title:'Cosmos Overview',
+                    href:'https://cosmos-overview.genesislab.net/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../../assets/cosmos/hubble_white.png'),
+                    blueImg:require('../../assets/cosmos/hubble_blue.png'),
+                    title:'Hubble',
+                    href:'https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../../assets/cosmos/Mintscan_white.png'),
+                    blueImg:require('../../assets/cosmos/Mintscan_blue.png'),
+                    title:'Mintscan',
+                    href:'https://www.mintscan.io/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+                },
+                {
+                    active:false,
+                    whiteImg:require('../../assets/cosmos/Stargazer_white.png'),
+                    blueImg:require('../../assets/cosmos/Stargazer_blue.png'),
+                    title:'Stargazer',
+                    href:'https://stargazer.certus.one/accounts/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
+                },
+            ]
+        }
     },
-	resources:{
-	 title:'资源',
-	 ResourceList:[
-		 {
-			 img:'IRISnet_wallet.png',
-			 name:'钱包',
-			 href:'javascript:void(0);',
-			 resourceList: [
-				 {
-					 itemName: 'Rainbow',
-					 os:'(Android, iOS)',
-					 href: 'https://www.rainbow.one/'
-				 },
-				 {
-					 itemName: 'Math wallet',
-					 os:'(Android, iOS)',
-					 href: 'http://www.mathwallet.org/cn/'
-				 },
-				 {
-					 itemName: 'Wetez',
-					 os:'(Android, iOS)',
-					 href: 'https://www.wetez.io/pc/homepage'
-				 }
-			 ],
-			 content:'这些钱包支持IRIS及ATOM的转账和质押，请充分研究其安全性再使用。列示这些信息仅为方便下载，并不代表对钱包使用的安全性负责。',
-		 },
-		 {
-			 img:'IRISnet_community_explorer.png',
-			 name:'浏览器',
-			 href:'javascript:void(0);',
-			 resourceList: [
-				 {
-					 itemName: 'IRISplorer',
-					 href: 'https://www.irisplorer.io/#/validators'
-				 },
-				 {
-					 itemName: 'IRISnet-Overview',
-					 href: 'https://irisnet-overview.genesislab.net/'
-				 },
-				 {
-					 itemName: 'Big-Dipper',
-					 href: 'https://iris.bigdipper.live/'
-				 },
-				 {
-					 itemName: 'IRISnet-P2P',
-					 href: 'https://irisnet.p2p.org'
-				 },
-				 {
-					 itemName: 'Hubble',
-					 href: 'https://hubble.figment.network/iris/chains/irishub'
-				 }
-			 ],
-			 content:'您可通过以上区块链浏览器查询和分析 IRIS Hub 的区块、交易、验证人等信息。',
-		 },
-		 {
-			 img:'IRISnet_press_kit.png',
-			 name:'品牌资料',
-			 content:'获取您可能需要的所有品牌资源和标志。',
-			 href:'/community/press-kit',
-		 },
-		 {
-			 img:'IRISnet_doc.png',
-			 name:'文档',
-			 content:'下一代分布式应用的跨链服务网络——自进化的BPoS区块链。',
-			 href:'javascript:void(0);',
-			 resourceList:[
-				 {
-					 itemName: '伏羲测试网',
-					 href: 'https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html'
-				 },
-				 {
-					 itemName: '彩虹猫测试网',
-					 href: 'https://github.com/irisnet/testnets/tree/master/nyancat'
-				 },
-				 {
-					 itemName: '加入主网',
-					 href: 'https://www.irisnet.org/docs/zh/get-started/Join-the-Mainnet.html'
-				 },
-				 {
-					 itemName: '命令行',
-					 href: 'https://www.irisnet.org/docs/zh/cli-client/'
-				 },
-				 {
-					 itemName: '轻客户端',
-					 href: 'https://www.irisnet.org/docs/zh/light-client/'
-				 },
-			 ]
-		 }
-	 ]
-	},
     "white":'public/whiteDwCn.png',
     "whiteHref":"https://github.com/irisnet/irisnet/blob/master/白皮书.md",
     "next": 'what_next.png',
@@ -2087,3 +1828,4 @@ export const message = {
 
     // ]
 };
+export default message

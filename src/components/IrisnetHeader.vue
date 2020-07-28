@@ -19,7 +19,7 @@
                                         {{item.title}}
                                     </a>
                                     <span v-show="index === 3" class="blog_img_content">
-                                    <img src="../assets/medium_white.png">
+                                    <img style="padding-bottom: 0.02rem" src="../assets/medium_white.png">
                                 </span>
                                     <span v-if="index === 4" class="lang_img_content">
                                     <img src="../../public/down.png">
@@ -31,7 +31,7 @@
                             <div class="english_content">
                                 <span v-if="$store.state.lang=='CN'" class="lang_english"><a href="?lang=EN">English</a></span>
                                 <span v-if="$store.state.lang=='EN'" class="lang_english"><a href="?lang=CN">中文</a></span>
-                                <span class="arrow_img">
+                                <span class="arrow_img" style="padding-left: 0.05rem">
                                     <img src="../../public/irisnet/IRISnet_chang_lang.png">
                                 </span>
                             </div>
@@ -151,13 +151,13 @@
                 }
             },
             mobileLink(title,index){
-                if(title === 'Mainnet'){
+                if(title === 'Mainnet' || title === '主网'){
                     this.$router.push({path:'/mainnet'})
-                }else if(title === 'Testnet'){
+                }else if(title === 'Testnet' || title === '测试网'){
                     this.$router.push({path:'/testnets'})
-                } else if(title === 'Community'){
+                } else if(title === 'Community' || title === '社区'){
 	                this.$router.push({path:'/community'})
-                }else if(title === 'WhitePaper' || title === 'Roadmap' || title === 'Collaboration'){
+                }else if(title === 'WhitePaper' || title === '白皮书' || title === 'Roadmap'  || title === '路线图' || title === 'Collaboration'|| title === '合作方'){
                     this.$router.push({path:'/'})
                 }
                 this.resetActiveIcon();

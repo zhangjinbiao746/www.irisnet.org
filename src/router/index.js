@@ -20,8 +20,7 @@ import NewTestnet from '../components/NewTestnet';
 import Home from "../components/Home";
 import Community from "../components/Community.vue";
 import Cosmos from "../components/Cosmos";
-import CommunityPage from "../components/CommunityPage";
-import CommunityPastEvents from "../components/EventsReview";
+import CommunityPage from "../components/CommunityPage"
 Vue.use(Router)
 
 export function createRouter() {
@@ -90,10 +89,6 @@ export function createRouter() {
             {
                 path: '/community',
                 component: CommunityPage
-            },
-            {
-                path: '/events',
-                component: CommunityPastEvents
             },
         ]
     })
