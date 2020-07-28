@@ -30,7 +30,7 @@
                 <swiper-slide>
                     <section class="sectionOne_goz">
                         <div class="left">
-                            <div style="font-size: 0.5rem;line-height: 0.4rem;">
+                            <div style="font-size: 0.4rem;line-height: 0.4rem;">
                                 {{$store.state.messages.home.frost.content.title}}
                             </div>
                             <div style="font-size: 0.18rem;margin:0.34rem 0 0.9rem 0;line-height: 0.4rem;">
@@ -71,21 +71,47 @@
                 <swiper-slide>
                     <section class="sectionOne_goz">
                         <div class="left">
-                            <div style="line-height: 0.4rem;font-size: 0.5rem;font-weight:600;">
+                            <div style="line-height: 0.4rem;font-size: 0.4rem;font-weight:600;">
                                 {{$store.state.messages.home.ecosystem.content.title}}
                             </div>
-                            <div style="line-height: 0.4rem;font-size: 0.18rem;margin:0.34rem 0 0.9rem 0;">
+                            <div style="line-height: 0.4rem;font-size: 0.18rem;margin:0.34rem 0 0 0;">
                                 {{$store.state.messages.home.ecosystem.content.content}}
                             </div>
-                            <div style="margin:0;"></div>
+                            <div style="margin:0.34rem 0 0.9rem 0;display:flex;" class="link_container">
+                                <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_blank">
+                                    <img src="../assets/github.png" alt=""
+                                         style="width:0.26rem;height:0.26rem;margin-right:0.26rem;">
+                                </a>
+                                <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_blank">
+                                    <img src="../assets/telegram.png" alt=""
+                                         style="width:0.26rem;height:0.26rem;margin-right:0.26rem;">
+                                </a>
+                                <a href="https://twitter.com/irisnetwork" target="_blank">
+                                    <img src="../assets/twitter.png" alt=""
+                                         style="width:0.26rem;height:0.26rem;margin-right:0.26rem;">
+                                </a>
+                                <a href="https://medium.com/irisnet-blog" target="_blank">
+                                    <img src="../assets/message.png"
+                                         style="width:0.26rem;height:0.26rem;margin-right:0;">
+                                </a>
+
+                            </div>
                             <div>
-                                <a :href="$store.state.messages.home.ecosystem.content.btnHref" target="_blank">
+                                <a :href="$store.state.messages.home.ecosystem.content.btnHref1" target="_blank">
                                     <button>
                                         <p style="padding: 0 0.2rem;font-size: 0.14rem;line-height: 0.15rem">
-                                            {{$store.state.messages.home.ecosystem.content.btn}}
+                                            {{$store.state.messages.home.ecosystem.content.btn1}}
                                         </p>
                                     </button>
                                 </a>
+                                <a :href="$store.state.messages.home.ecosystem.content.btnHref2" target="_blank">
+                                    <button>
+                                        <p style="padding: 0 0.2rem;font-size: 0.14rem;line-height: 0.15rem">
+                                            {{$store.state.messages.home.ecosystem.content.btn2}}
+                                        </p>
+                                    </button>
+                                </a>
+
                             </div>
                         </div>
                         <div class="right">

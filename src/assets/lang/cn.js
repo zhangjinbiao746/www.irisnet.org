@@ -265,8 +265,11 @@ export const message = {
             content:{
                 title:'IRISnet 生态',
                 content:'欢迎共同促进可持续发展',
-                btnHref:'https://mp.weixin.qq.com/s/n6q07fC9i-ulUUbErE8dpQ',
-                btn:'查看详情',
+                btnHref1:'https://www.rainbow.one/',
+                btn1:'Rainbow 钱包',
+                btnHref2:'https://www.coinmarketcap.com/zh/currencies/irisnet/',
+                btn2:'CoinMarketCap',
+
             }
         },
         sectionOne: {

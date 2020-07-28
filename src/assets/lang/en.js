@@ -269,8 +269,11 @@ export const message = {
             content:{
                 title:'IRISnet Ecosystem',
                 content:'Welcome to jointly promote the sustainable development',
-                btnHref:'https://medium.com/irisnet-blog/iris-foundation-to-roll-out-a-community-centric-delegation-campaign-the-second-one-year-token-528876fa1083',
-                btn:'View Details',
+                btnHref1:'https://medium.com/irisnet-blog/iris-foundation-to-roll-out-a-community-centric-delegation-campaign-the-second-one-year-token-528876fa1083',
+                btn1:'View Details',
+                btnHref2:'https://www.coinmarketcap.com/zh/currencies/irisnet/',
+                btn2:'CoinMarketCap',
+
             }
         },
         sectionOne: {
