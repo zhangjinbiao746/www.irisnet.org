@@ -499,8 +499,7 @@
                     padding: 0 0.15rem;
                     box-sizing: border-box;
                     .banner_item_img {
-                        width: 100%;
-                        //height:5.24rem;
+                        width: 65%;
                     }
                 }
             }
