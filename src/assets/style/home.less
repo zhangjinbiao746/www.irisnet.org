@@ -164,18 +164,35 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             height: 7.06rem;
             .left {
                   width: 3.35rem;
                   padding-top: 0.6rem;
                   text-align: center;
                   margin-bottom: 0.36rem;
+                  height:5.2rem;
+                  flex:0 0 5.2rem;
+                  justify-content: space-between;
+                  display:flex;
+                  flex-direction:column;
                   .link_container{
                         justify-content: center;
                         width:100%;
                         padding:0 0.1rem;
                         box-sizing:border-box;
+                  }
+                  .coming_soon{
+                        position:absolute;
+                        height:0.36rem;
+                        line-height: 0.36rem;
+                        left:0; right:0; bottom:-0.4rem;
+                        margin:auto;
+                        width:1.9rem;
+                        text-align: center;
+                        font-size:0.14rem;
+                        color:#ffffff;
+                        border-radius:0.18rem;background:rgba(0,0,0,.4);
                   }
                   div:nth-of-type(1) {
                         font-size: 0.24rem;
@@ -891,6 +908,24 @@
                   width: 4.5rem;
                   text-align: center;
                   margin-bottom: 0.49rem;
+                  .coming_soon{
+                        position:absolute;
+                        height:0.36rem;
+                        line-height: 0.36rem;
+                        right:1.4rem;
+                        bottom:-0.5rem;
+                        width:1.9rem;
+                        text-align: center;
+                        font-size:0.14rem;
+                        color:#ffffff;
+                        border-radius:0.18rem;background:rgba(0,0,0,.4);
+                  }
+                  .link_container{
+                        justify-content: center;
+                        width:100%;
+                        padding:0 0.1rem;
+                        box-sizing:border-box;
+                  }
                   div:nth-of-type(1) {
                         font-size: 0.28rem;
                         color: #fff;
@@ -1541,6 +1576,24 @@
             .left {
                   width: 4.6rem;
                   margin-right: @basicWidth*0.03125;
+                  .coming_soon{
+                        position:absolute;
+                        height:0.36rem;
+                        line-height: 0.36rem;
+                        right:1.4rem;
+                        bottom:-0.6rem;
+                        width:1.9rem;
+                        text-align: center;
+                        font-size:0.14rem;
+                        color:#ffffff;
+                        border-radius:0.18rem;background:rgba(0,0,0,.4);
+                  }
+                  .link_container{
+                        justify-content: center;
+                        width:100%;
+                        padding:0 0.1rem;
+                        box-sizing:border-box;
+                  }
                   div:nth-of-type(1) {
                         font-size: 0.28rem;
                         color: #fff;

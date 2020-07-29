@@ -246,8 +246,10 @@ export const message = {
             content:{
                 title:'IRISnet',
                 title1:'入选BSN首批适配公链',
-                btn:'查看详情',
-                btnHref:'https://mp.weixin.qq.com/s/olSUm2qvlF6-V6K5mV1tKQ'
+                btn1:'查看详情',
+                btnHref1:'https://mp.weixin.qq.com/s/olSUm2qvlF6-V6K5mV1tKQ',
+                btn2:'IRIS 浏览器',
+                btnHref2:'https://www.irisplorer.io'
             }
         },
         frost:{
