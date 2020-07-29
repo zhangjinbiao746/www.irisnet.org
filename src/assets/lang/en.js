@@ -250,8 +250,10 @@ export const message = {
             content:{
                 title:'IRISnet',
                 title1:'Selected into first batch of public blockchains supported by BSN',
-                btn:'View Details',
-                btnHref:'https://medium.com/irisnet-blog/irisnet-is-selected-into-first-batch-of-public-blockchains-supported-by-bsn-1945aa2e2a0'
+                btn1:'View Details',
+                btnHref1:'https://medium.com/irisnet-blog/irisnet-is-selected-into-first-batch-of-public-blockchains-supported-by-bsn-1945aa2e2a0',
+                btn2:'IRIS Explorer',
+                btnHref2:'https://www.irisplorer.io'
             }
         },
         frost:{
@@ -269,9 +271,9 @@ export const message = {
             content:{
                 title:'IRISnet Ecosystem',
                 content:'Welcome to jointly promote the sustainable development',
-                btnHref1:'https://medium.com/irisnet-blog/iris-foundation-to-roll-out-a-community-centric-delegation-campaign-the-second-one-year-token-528876fa1083',
-                btn1:'View Details',
-                btnHref2:'https://www.coinmarketcap.com/zh/currencies/irisnet/',
+                btnHref1:'https://www.rainbow.one/',
+                btn1:'Rainbow Wallet',
+                btnHref2:'https://www.coinmarketcap.com/currencies/irisnet/',
                 btn2:'CoinMarketCap',
 
             }
@@ -298,7 +300,7 @@ export const message = {
         },
         irisnetBianJie:{
             commission:'Cosmos Hub Validator',
-            development:'Maintained by the core development team of IRISnet',
+            development:' Maintained by the core development team of IRISnet',
             button:{
                 buttonName: {
                     rainbowName: 'Delegate ATOM',

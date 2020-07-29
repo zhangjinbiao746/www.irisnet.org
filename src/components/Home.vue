@@ -3,158 +3,145 @@
         <div @mouseenter="swiperStop" @mouseleave="swiperStart" style="position: relative;">
             <swiper ref="mySwiper" :options="swiperOption" class="my-swipe" v-if="flShowSwiper">
                 <swiper-slide>
-                    <section class="sectionOne_goz">
-                        <div class="left">
-                            <div style="margin:0;font-size:0.4rem;">
-                                {{$store.state.messages.home.bsn.content.title}}
-                            </div>
-                            <div style="font-size: 0.18rem;margin:0.34rem 0 0.9rem 0;line-height: 0.4rem;">
-                                <span>{{$store.state.messages.home.bsn.content.title1}}</span>
-                            </div>
-                            <div style="margin:0;"></div>
-                            <div>
-                                <a :href="$store.state.messages.home.bsn.content.btnHref" target="_blank">
-                                    <button>
-                                        <p style="padding: 0 0.2rem;font-size: 0.14rem;line-height: 0.15rem">
-                                            {{$store.state.messages.home.bsn.content.btn}}
-                                        </p>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <img src="../assets/bsn.png" alt="" class="banner">
-                        </div>
-                    </section>
-                </swiper-slide>
-                <swiper-slide>
-                    <section class="sectionOne_goz">
-                        <div class="left">
-                            <div style="font-size: 0.4rem;line-height: 0.4rem;">
-                                {{$store.state.messages.home.frost.content.title}}
-                            </div>
-                            <div style="font-size: 0.18rem;margin:0.34rem 0 0.9rem 0;line-height: 0.4rem;">
-                                {{$store.state.messages.home.frost.content.content}}
-                            </div>
-                            <div style="margin:0;"></div>
-                            <div style="position:relative;">
-                                <a :href="$store.state.messages.home.frost.content.btnHref1" target="_blank">
-                                    <button>
-                                        <p style="padding: 0 0.2rem;font-size: 0.14rem;line-height: 0.15rem">
-                                            {{$store.state.messages.home.frost.content.btn1}}
-                                        </p>
-                                    </button>
-                                </a>
-                                <button @click="handleBtnClick('wallet')">
-                                    <p style="padding: 0 0.2rem;font-size: 0.14rem;line-height: 0.15rem">
-                                        {{$store.state.messages.home.frost.content.btn2}}
-                                    </p>
-                                </button>
-                                <transition>
-                                    <span v-show="comingShow"
-                                          style="position:absolute; height:0.36rem;line-height: 0.36rem;
-                                right:1.4rem;bottom:-0.6rem;width:1.9rem;text-align: center; font-size:0.14rem;
-                                color:#ffffff;
-                                border-radius:0.18rem;background:rgba(0,0,0,.4);">
-                                    {{ $store.state.messages.home.frost.content.coming }}
+                    <div class="banner_item_container">
+                        <div class="banner_item_container_wrap">
+                            <div class="banner_item_content_container">
+                                <span class="banner_item_content_title">
+                                    {{$store.state.messages.home.bsn.content.title}}
                                 </span>
-                                </transition>
+                                <span class="banner_item_content_content">
+                                    {{$store.state.messages.home.bsn.content.title1}}
+                                </span>
+                                <div class="banner_item_content_link_container"></div>
+                                <div class="banner_item_content_btn_container">
+                                    <a :href="$store.state.messages.home.bsn.content.btnHref1"
+                                       class="banner_item_content_btn"
+                                       target="_blank">
+                                        {{$store.state.messages.home.bsn.content.btn1}}
+                                    </a>
+                                    <a :href="$store.state.messages.home.bsn.content.btnHref2"
+                                       class="banner_item_content_btn"
+                                       target="_blank">
+                                        {{$store.state.messages.home.bsn.content.btn2}}
+                                    </a>
 
+                                </div>
+                            </div>
+                            <div class="banner_item_img_container">
+                                <img src="../assets/bsn.png" alt="" class="banner_item_img">
                             </div>
                         </div>
-                        <div class="right">
-                            <img src="../assets/frost.png" alt="" class="banner">
-                        </div>
-                    </section>
+                    </div>
                 </swiper-slide>
-
                 <swiper-slide>
-                    <section class="sectionOne_goz">
-                        <div class="left">
-                            <div style="line-height: 0.4rem;font-size: 0.4rem;font-weight:600;">
-                                {{$store.state.messages.home.ecosystem.content.title}}
+                    <div class="banner_item_container">
+                        <div class="banner_item_container_wrap">
+                            <div class="banner_item_content_container">
+                                <span class="banner_item_content_title">
+                                    {{$store.state.messages.home.frost.content.title}}
+                                </span>
+                                <span class="banner_item_content_content">
+                                    {{$store.state.messages.home.frost.content.content}}
+                                </span>
+                                <div class="banner_item_content_link_container"></div>
+                                <div class="banner_item_content_btn_container">
+                                    <a :href="$store.state.messages.home.frost.content.btnHref1"
+                                       class="banner_item_content_btn"
+                                       target="_blank">
+                                        {{$store.state.messages.home.frost.content.btn1}}
+                                    </a>
+                                    <span class="banner_item_content_btn" @click="handleBtnClick('wallet')">
+                                        {{$store.state.messages.home.frost.content.btn2}}
+                                    </span>
+                                    <transition>
+                                        <span v-show="comingShow"
+                                              class="coming_soon">
+                                            {{ $store.state.messages.home.frost.content.coming }}
+                                        </span>
+                                    </transition>
+                                </div>
                             </div>
-                            <div style="line-height: 0.4rem;font-size: 0.18rem;margin:0.34rem 0 0 0;">
-                                {{$store.state.messages.home.ecosystem.content.content}}
-                            </div>
-                            <div style="margin:0.34rem 0 0.9rem 0;display:flex;" class="link_container">
-                                <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_blank">
-                                    <img src="../assets/github.png" alt=""
-                                         style="width:0.26rem;height:0.26rem;margin-right:0.26rem;">
-                                </a>
-                                <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_blank">
-                                    <img src="../assets/telegram.png" alt=""
-                                         style="width:0.26rem;height:0.26rem;margin-right:0.26rem;">
-                                </a>
-                                <a href="https://twitter.com/irisnetwork" target="_blank">
-                                    <img src="../assets/twitter.png" alt=""
-                                         style="width:0.26rem;height:0.26rem;margin-right:0.26rem;">
-                                </a>
-                                <a href="https://medium.com/irisnet-blog" target="_blank">
-                                    <img src="../assets/message.png"
-                                         style="width:0.26rem;height:0.26rem;margin-right:0;">
-                                </a>
-
-                            </div>
-                            <div>
-                                <a :href="$store.state.messages.home.ecosystem.content.btnHref1" target="_blank">
-                                    <button>
-                                        <p style="padding: 0 0.2rem;font-size: 0.14rem;line-height: 0.15rem">
-                                            {{$store.state.messages.home.ecosystem.content.btn1}}
-                                        </p>
-                                    </button>
-                                </a>
-                                <a :href="$store.state.messages.home.ecosystem.content.btnHref2" target="_blank">
-                                    <button>
-                                        <p style="padding: 0 0.2rem;font-size: 0.14rem;line-height: 0.15rem">
-                                            {{$store.state.messages.home.ecosystem.content.btn2}}
-                                        </p>
-                                    </button>
-                                </a>
-
+                            <div class="banner_item_img_container">
+                                <img src="../assets/frost.png" alt="" class="banner_item_img">
                             </div>
                         </div>
-                        <div class="right">
-                            <img src="../assets/ecosystem.png" alt="" class="banner">
-                        </div>
-                    </section>
+                    </div>
                 </swiper-slide>
-
                 <swiper-slide>
-                    <section class="sectionOne1">
-                        <div class="left">
-                            <div class="irisnet_bianjie_moniker" style="font-size:0.4rem;line-height: 0.4rem;">
-                                {{$store.state.messages.home.irisnetBianJie.commission}}
-                            </div>
-                            <div style="font-size:0.18rem;line-height: 0.28rem;margin:0.34rem 0 0 0;">
-                                {{bianJieMoniker}}
-                            </div>
-                            <div class="development_content"
-                                 :style="`font-size:${$store.state.lang==='CN' ? '0.28' : '0.18'}rem;line-height: 0.28rem;margin:0.34rem 0 0 0;`">
-                                <p style="margin-top:0.34rem;margin-bottom:0.9rem;">
-                                    {{$store.state.messages.home.irisnetBianJie.development}}
-                                </p>
+                    <div class="banner_item_container">
+                        <div class="banner_item_container_wrap">
+                            <div class="banner_item_content_container">
+                                <span class="banner_item_content_title">
+                                    {{$store.state.messages.home.ecosystem.content.title}}
+                                </span>
+                                <span class="banner_item_content_content">
+                                    {{$store.state.messages.home.ecosystem.content.content}}
+                                </span>
+                                <div class="banner_item_content_link_container">
+                                    <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_blank">
+                                        <img src="../assets/github.png" class="banner_item_link">
+                                    </a>
+                                    <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_blank" >
+                                        <img src="../assets/telegram.png" class="banner_item_link">
+                                    </a>
+                                    <a href="https://twitter.com/irisnetwork" target="_blank" >
+                                        <img src="../assets/twitter.png" class="banner_item_link">
+                                    </a>
+                                    <a href="https://medium.com/irisnet-blog" target="_blank" >
+                                        <img src="../assets/message.png" class="banner_item_link">
+                                    </a>
+                                </div>
+                                <div class="banner_item_content_btn_container">
+                                    <a :href="$store.state.messages.home.ecosystem.content.btnHref1"
+                                       class="banner_item_content_btn"
+                                       target="_blank">
+                                        {{$store.state.messages.home.ecosystem.content.btn1}}
+                                    </a>
+                                    <a :href="$store.state.messages.home.ecosystem.content.btnHref2"
+                                       class="banner_item_content_btn"
+                                       target="_blank">
+                                        {{$store.state.messages.home.ecosystem.content.btn2}}
+                                    </a>
 
+                                </div>
                             </div>
-                            <div>
-                                <a :href="$store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl"
-                                   target="_blank">
-                                    <button>
+                            <div class="banner_item_img_container">
+                                <img src="../assets/ecosystem.png" alt="" class="banner_item_img">
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="banner_item_container">
+                        <div class="banner_item_container_wrap">
+                            <div class="banner_item_content_container">
+                                <span class="banner_item_content_title">
+                                    {{$store.state.messages.home.irisnetBianJie.commission}}
+                                </span>
+                                <span class="banner_item_content_content">
+                                    {{bianJieMoniker}}{{$store.state.messages.home.irisnetBianJie.development}}
+                                </span>
+                                <div class="banner_item_content_link_container"></div>
+                                <div class="banner_item_content_btn_container">
+                                    <a :href="$store.state.messages.home.irisnetBianJie.button.buttonUrl.explorerUrl"
+                                       class="banner_item_content_btn"
+                                       target="_blank">
                                         {{$store.state.messages.home.irisnetBianJie.button.buttonName.explorerName}}
-                                    </button>
-                                </a>
-                                <a :href="$store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl"
-                                   target="_blank">
-                                    <button>
+                                    </a>
+                                    <a :href="$store.state.messages.home.irisnetBianJie.button.buttonUrl.rainbowUrl"
+                                       class="banner_item_content_btn"
+                                       target="_blank">
                                         {{$store.state.messages.home.irisnetBianJie.button.buttonName.rainbowName}}
-                                    </button>
-                                </a>
+                                    </a>
+
+
+                                </div>
+                            </div>
+                            <div class="banner_item_img_container">
+                                <img src="../assets/IRISnet_bianjie_node_logo.png" alt="" class="banner_item_img">
                             </div>
                         </div>
-                        <div class="right">
-                            <img src="../assets/IRISnet_bianjie_node_logo.png" alt="" class="banner">
-                        </div>
-                    </section>
+                    </div>
                 </swiper-slide>
             </swiper>
             <div class="swiper-button-prev" @click="prev()"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
@@ -299,8 +286,8 @@
                 },
                 bianJieMoniker : '',
                 rate : '',
-                comingShow:false,
-                timerout:null,
+                comingShow : false,
+                timerout : null,
 
             }
         },
@@ -321,9 +308,9 @@
             handleBtnClick(){
                 if(!this.comingShow){
                     this.comingShow = true;
-                    this.timerout = setTimeout(()=>{
+                    this.timerout = setTimeout(() =>{
                         this.comingShow = false;
-                    },2000)
+                    }, 2000)
                 }
 
             },
@@ -400,4 +387,261 @@
 
 <style scoped lang="less">
     @import "../assets/style/home.less";
+
+    @media screen and (min-width: 0) and  (max-width: 767px) {
+        .banner_item_container {
+
+            .banner_item_container_wrap {
+                flex-direction: column;
+                .banner_item_content_container {
+                    width: 100%;
+                    flex: 0 0 4rem;
+                    padding: 0.5rem 0.15rem 0 0.15rem;
+                    box-sizing: border-box;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .banner_item_content_title {
+                        margin-bottom:0.2rem;
+                        height:0.8rem;
+                        text-align: center;
+                    }
+                    .banner_item_content_content {
+                        margin-bottom:0.23rem;
+                        text-align: center;
+                        height:0.5rem;
+                    }
+                    .banner_item_content_link_container {
+                        margin-bottom:0.3rem;
+                        height:0.26rem;
+                        .banner_item_link{
+                            margin-right:0.26rem;
+                        }
+                    }
+                    .banner_item_content_btn_container {
+                        flex-direction: column;
+                        align-items: center;
+                        box-sizing: border-box;
+                        .banner_item_content_btn{
+                            width:100%;
+
+                            &:first-child{
+                                margin-bottom:0.2rem;
+                            }
+                        }
+                        .coming_soon{
+                            bottom:-0.4rem;
+                        }
+                    }
+                }
+                .banner_item_img_container {
+                    width: 100%;
+                    flex: 0 0 5rem;
+                    padding: 0 0.15rem;
+                    box-sizing: border-box;
+                    .banner_item_img {
+                        width: 100%;
+                        //height:5.24rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .banner_item_container {
+
+            .banner_item_container_wrap {
+                flex-direction: column;
+                .banner_item_content_container {
+                    width: 100%;
+                    flex: 0 0 4rem;
+                    padding: 0.5rem 0.15rem 0 0.15rem;
+                    box-sizing: border-box;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .banner_item_content_title {
+                        margin-bottom:0.3rem;
+                        height:0.4rem;
+                        text-align: center;
+                    }
+                    .banner_item_content_content {
+                        margin-bottom:0.33rem;
+                        text-align: center;
+                        height:0.25rem;
+                    }
+                    .banner_item_content_link_container {
+                        margin-bottom:0.3rem;
+                        height:0.26rem;
+                        .banner_item_link{
+                            margin-right:0.26rem;
+                        }
+                    }
+                    .banner_item_content_btn_container {
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        box-sizing: border-box;
+                        .banner_item_content_btn{
+                            width:2.2rem;
+                            &:first-child{
+                                margin-right:0.1rem;
+                            }
+                        }
+                        .coming_soon{
+                            bottom:-0.4rem;
+                        }
+                    }
+                }
+                .banner_item_img_container {
+                    width: 100%;
+                    flex: 0 0 5rem;
+                    padding: 0 0.15rem;
+                    box-sizing: border-box;
+                    .banner_item_img {
+                        width: 100%;
+                        //height:5.24rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (min-width: 1025px) {
+        .banner_item_container {
+            justify-content: center;
+            align-items: center;
+            height: 6.25rem;
+            .banner_item_container_wrap {
+                max-width: 12rem;
+                .banner_item_content_container {
+                    min-width:5.03rem;
+                    max-width:5.66rem;
+                    flex:1;
+                    height: 5rem;
+                    padding:1.5rem 1rem 0 1rem;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    .banner_item_content_title {
+                        margin-bottom:0.23rem;
+                        height:0.4rem;
+                    }
+                    .banner_item_content_content {
+                        margin-bottom:0.33rem;
+                        height:0.25rem;
+                    }
+                    .banner_item_content_link_container {
+                        margin-bottom:0.4rem;
+                        height:0.28rem;
+                        .banner_item_link{
+                            margin-right:0.26rem;
+                        }
+                    }
+                    .banner_item_content_btn_container {
+                        .banner_item_content_btn{
+                            width:2.2rem;
+                            &:first-child{
+                                margin-right:0.3rem;
+                            }
+                        }
+                        .coming_soon{
+                            bottom:-0.6rem;
+                        }
+                    }
+                }
+                .banner_item_img_container {
+                    flex: 1;
+                    min-width:5.03rem;
+                    max-width:5.66rem;
+                    .banner_item_img {
+                        width: 100%;
+                        //height: 5.24rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    //common
+    .banner_item_container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        box-sizing: border-box;
+        .banner_item_container_wrap {
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+
+            .banner_item_content_container {
+                display:flex;
+                flex-direction:column;
+
+
+                .banner_item_content_title {
+                    font-size:0.4rem;
+                    color:#ffffff;
+                    line-height: 0.4rem;
+
+                }
+                .banner_item_content_content {
+                    font-size:0.18rem;
+                    font-weight:600;
+                    color:#ffffff;
+                    line-height:0.25rem;
+
+                }
+                .banner_item_content_link_container {
+                    display:flex;
+                    .banner_item_link{
+                        width:0.26rem;
+                        height:0.26rem;
+                    }
+                }
+                .banner_item_content_btn_container {
+                    display:flex;
+                    width:100%;
+                    position:relative;
+                    .banner_item_content_btn{
+                        height:0.5rem;
+                        border-radius:0.25rem;
+                        cursor: pointer;
+                        line-height: 0.5rem;
+                        text-align: center;
+                        background: linear-gradient(145deg,rgba(122,65,255,1) 0%,rgba(101,39,222,1) 100%);
+                        color:#ffffff;
+                        font-size:0.16rem;
+                    }
+                    .coming_soon{
+                        position:absolute;
+                        height:0.36rem;
+                        line-height: 0.36rem;
+                        left:0; right:0;
+                        margin:auto;
+                        bottom:-0.6rem;
+                        width:1.9rem;
+                        text-align: center;
+                        font-size:0.14rem;
+                        color:#ffffff;
+                        border-radius:0.18rem;background:rgba(0,0,0,.4);
+
+                    }
+                }
+            }
+            .banner_item_img_container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .banner_item_img {
+
+                }
+            }
+        }
+
+    }
+
+
 </style>
