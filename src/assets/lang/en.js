@@ -113,31 +113,36 @@ export const message = {
         socialCommunity:[
             {
                 id:0,
+                src: "cmc.png",
+                href: "https://www.coinmarketcap.com/currencies/irisnet/"
+            },
+            {
+                id:1,
                 src: "irisnet_telegram.png",
                 href: "https://t.me/irisnetwork"
             },
             {
-                id:1,
+                id:2,
                 src: "irisnet_twitter.png",
                 href: "https://twitter.com/irisnetwork"
             },
             {
-                id:2,
+                id:3,
                 src: "irisnet_mail.png",
                 href: "mailto:contact@irisnet.org"
             },
             {
-                id:3,
+                id:4,
                 src: "irisnet_medium.png",
                 href: "https://medium.com/irisnet-blog"
             },
             {
-                id:4,
+                id:5,
                 src: "irisnet_wechat.png",
                 "txt": "Wechat"
             },
             {
-                id:5,
+                id:6,
                 src: "irisnet_weibo.png",
                 href: "https://weibo.com/u/6455513027"
             },
