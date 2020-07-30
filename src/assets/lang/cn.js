@@ -245,7 +245,7 @@ export const message = {
         bsn:{
             content:{
                 title:'IRISnet',
-                title1:'入选BSN首批适配公链',
+                title1:'入选 BSN 首批适配公链',
                 btn1:'查看详情',
                 btnHref1:'https://mp.weixin.qq.com/s/olSUm2qvlF6-V6K5mV1tKQ',
                 btn2:'IRIS 浏览器',
@@ -256,7 +256,7 @@ export const message = {
             content:{
                 title:'Bifröst',
                 content:'—— 通往跨链新时代',
-                btn1:'GoZ网络状态',
+                btn1:'GoZ 网络状态',
                 btn2:'跨链钱包',
                 btnHref1:'https://ibc-goz.irisplorer.io/#/',
                 btnHref2:'',
@@ -296,11 +296,11 @@ export const message = {
         },
         irisnetBianJie:{
             commission:'Cosmos Hub Validator',
-            development:'由IRISnet核心开发团队维护的 Cosmos Hub 创世节点',
+            development:' 由 IRISnet 核心开发团队维护的 Cosmos Hub 创世节点',
             content:'由IRISnet核心开发团队维护的 Cosmos Hub 创世节点',
             button:{
                 buttonName: {
-                    rainbowName: '委托ATOM',
+                    rainbowName: '委托 ATOM',
                     explorerName: '更多介绍'
                 },
                 buttonUrl: {
