@@ -113,31 +113,36 @@ export const message = {
         socialCommunity:[
             {
                 id:0,
+                src: "cmc.png",
+                href: "https://www.coinmarketcap.com/currencies/irisnet/"
+            },
+            {
+                id:1,
                 src: "irisnet_telegram.png",
                 href: "https://t.me/irisnetwork"
             },
             {
-                id:1,
+                id:2,
                 src: "irisnet_twitter.png",
                 href: "https://twitter.com/irisnetwork"
             },
             {
-                id:2,
+                id:3,
                 src: "irisnet_mail.png",
                 href: "mailto:contact@irisnet.org"
             },
             {
-                id:3,
+                id:4,
                 src: "irisnet_medium.png",
                 href: "https://medium.com/irisnet-blog"
             },
             {
-                id:4,
+                id:5,
                 src: "irisnet_wechat.png",
                 "txt": "Wechat"
             },
             {
-                id:5,
+                id:6,
                 src: "irisnet_weibo.png",
                 href: "https://weibo.com/u/6455513027"
             },
@@ -246,6 +251,38 @@ export const message = {
                 }
             }
         },
+        bsn:{
+            content:{
+                title:'IRISnet',
+                title1:'Selected into first batch of public blockchains supported by BSN',
+                btn1:'View Details',
+                btnHref1:'https://medium.com/irisnet-blog/irisnet-is-selected-into-first-batch-of-public-blockchains-supported-by-bsn-1945aa2e2a0',
+                btn2:'IRIS Explorer',
+                btnHref2:'https://www.irisplorer.io'
+            }
+        },
+        frost:{
+            content:{
+                title:'Bifröst',
+                content:'to a New Interchain Era',
+                btn1:'GoZ Network',
+                btn2:'Interchain Wallet',
+                btnHref1:'https://ibc-goz.irisplorer.io/#/',
+                btnHref2:'',
+                coming:'Coming Soon',
+            }
+        },
+        ecosystem:{
+            content:{
+                title:'IRISnet Ecosystem',
+                content:'Welcome to jointly promote the sustainable development',
+                btnHref1:'https://www.rainbow.one/',
+                btn1:'Rainbow Wallet',
+                btnHref2:'https://www.coinmarketcap.com/currencies/irisnet/',
+                btn2:'CoinMarketCap',
+
+            }
+        },
         sectionOne: {
             title: 'DeFi App Dev Support is coming',
             time: '2019.8.29',
@@ -268,11 +305,11 @@ export const message = {
         },
         irisnetBianJie:{
             commission:'Cosmos Hub Validator',
-            development:'Maintained by the core development team of IRISnet',
+            development:' Maintained by the core development team of IRISnet',
             button:{
                 buttonName: {
                     rainbowName: 'Delegate ATOM',
-                    explorerName: 'View Validator Profile'
+                    explorerName: 'View Details'
                 },
                 buttonUrl: {
                     rainbowUrl: 'https://www.rainbow.one/',
