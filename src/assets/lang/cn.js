@@ -395,6 +395,7 @@ export const message = {
                     {id:2, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
                     {id:3, path: 'logos/IOV.png', url: 'https://iov.one/'},
                     {id:4, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
+                    {id:5, path: 'logos/mykey_logo.png', url: 'https://mykey.org/'},
                 ]
             },
             Institutional: {
