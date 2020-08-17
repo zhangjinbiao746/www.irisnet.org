@@ -393,10 +393,12 @@ export const message = {
                 title: 'Ecosystem Partners',
                 logos: [
                     {id:0, path: 'logos/irisnet_ok_chain.png', url: 'https://www.okex.com/okchain'},
-                    {id:1, path: 'logos/irisnet_kava.png', url: 'https://www.kava.io'},
-                    {id:2, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
-                    {id:3, path: 'logos/IOV.png', url: 'https://iov.one/'},
-                    {id:4, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
+                    {id:1, path: 'logos/mykey_logo.png', url: 'https://mykey.org/'},
+                    {id:2, path: 'logos/irisnet_kava.png', url: 'https://www.kava.io'},
+                    {id:3, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
+                    {id:4, path: 'logos/IOV.png', url: 'https://iov.one/'},
+                    {id:5, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
+
                 ]
             },
             Institutional: {
