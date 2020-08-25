@@ -457,10 +457,10 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://mp.weixin.qq.com/s/QpX1Uzm72FTZ0Uu93aunhw',
-                date:'2020 年 07 月 06 日',
-                title:'第 3 次执行丨IRIS 基金会首期委托促进计划暨第二期通证销毁计划',
-                content:'IRIS 基金会第三次执行首期委托促进计划暨第二期通证销毁计划。感谢委托人与验证人共建 IRISnet 健康生态！'
+                href:'https://mp.weixin.qq.com/s/iOfXkawSnkbABcCNpc-hyQ',
+                date:'2020 年 08 月 17 日',
+                title:'IRISnet 与 MYKEY 正式建立战略合作伙伴关系。',
+                content:'IRISnet 与 MYKEY 正式建立战略合作伙伴关系，计划将 KEYID 产品和技术引入到 IRISnet 及 Cosmos 生态，在保护用户数据与隐私安全的同时，为用户提供流畅便捷的 DeFi 等区块链应用体验。'
             },
             {
                 id:'1',

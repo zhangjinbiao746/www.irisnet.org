@@ -461,10 +461,11 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://medium.com/irisnet-blog/the-third-implementation-of-the-community-centric-delegation-campaign-the-second-one-year-token-6805de345ba1',
-                date:'Jul 6 2020',
-                title:'The Third Implementation of the Community-centric Delegation Campaign & the Second One-year Token Burn Plan!',
-                content:'The third implementation of community-centric delegation campaign has completed!'
+                href:'https://medium.com/irisnet-blog/irisnet-and-mykey-established-a-strategic-partnership-4c9157fbb1c8',
+                date:'Aug 17 2020',
+                title:'IRISnet and MYKEY Established a Strategic Partnership',
+                content:'IRISnet has established a strategic partnership with\n' +
+                    'MYKEY, planning to bring KEYID products and technology into the IRISnet and Cosmos ecosystems to provide better user experience on applications like DeFi as well as further protect user data and privacy in the interchain ecosystem.'
             },
             {
                 id:'1',
