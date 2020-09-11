@@ -262,9 +262,9 @@ export const message = {
             content:{
                 title:'Bifröst',
                 content:'—— 通往跨链新时代',
-                btn1:'GoZ 网络状态',
+                btn1:'Bifrost-0 浏览器',
                 btn2:'跨链钱包',
-                btnHref1:'https://ibc-goz.irisplorer.io/#/',
+                btnHref1:' https://bifrost.irisplorer.io/#/home',
                 btnHref2:'',
                 coming:'敬请期待',
             }
