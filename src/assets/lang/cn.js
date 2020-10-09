@@ -390,12 +390,14 @@ export const message = {
             EcosystemPartners: {
                 title: '生态合作伙伴',
                 logos: [
-                    {id:0, path: 'logos/irisnet_ok_chain.png', url: 'https://www.okex.com/okchain'},
-                    {id:1, path: 'logos/mykey_logo.png', url: 'https://mykey.org/'},
-                    {id:2, path: 'logos/irisnet_kava.png', url: 'https://www.kava.io'},
-                    {id:3, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
-                    {id:4, path: 'logos/IOV.png', url: 'https://iov.one/'},
-                    {id:5, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
+                    {id:0, path: 'logos/irisnet_binance.png', url: 'https://www.binance.com'},
+                    {id:1, path: 'logos/irisnet_cmc.png', url: 'https://coinmarketcap.com'},
+                    {id:2, path: 'logos/irisnet_ok_chain.png', url: 'https://www.okex.com/okchain'},
+                    {id:3, path: 'logos/irisnet_kava.png', url: 'https://www.kava.io'},
+                    {id:4, path: 'logos/mykey_logo.png', url: 'https://mykey.org/'},
+                    {id:5, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
+                    {id:6, path: 'logos/IOV.png', url: 'https://iov.one/'},
+                    {id:7, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
                 ]
             },
             Institutional: {
