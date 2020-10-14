@@ -251,8 +251,8 @@ export const message = {
         bsn:{
             content:{
                 title:'IRISnet',
-                title1:'IRISnet 作为 BSN 公链服务门户接入相关服务',
-                btn1:'敬请期待',
+                title1:'IRISnet 作为 BSN 国际公链服务门户接入相关服务',
+                btn1:'开发者',
                 btnHref1:'',
                 btn2:'BSN 国际',
                 btnHref2:'https://bsnbase.io/'

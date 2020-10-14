@@ -254,8 +254,8 @@ export const message = {
         bsn:{
             content:{
                 title:'IRISnet',
-                title1:'IRISnet  Integrates related services as a BSN public chain service portal',
-                btn1:'Please stay tuned',
+                title1:'IRISnet integrates related services as a public chain service portal of BSN International ',
+                btn1:'Developers',
                 btnHref1:'',
                 btn2:'BSN Global',
                 btnHref2:'https://bsnbase.io/'
