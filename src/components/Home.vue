@@ -63,7 +63,13 @@
 <!--                                       target="_blank">-->
 <!--                                        -->
 <!--                                    </a>-->
-                                    <span class="banner_item_content_btn">{{$store.state.messages.home.bsn.content.btn1}}</span>
+                                    <span  @click="handleBtnClick('wallet')" class="banner_item_content_btn">{{$store.state.messages.home.bsn.content.btn1}}</span>
+                                    <transition>
+                                        <span v-show="comingShow"
+                                              class="coming_soon">
+                                            {{ $store.state.messages.home.frost.content.coming }}
+                                        </span>
+                                    </transition>
                                     <a :href="$store.state.messages.home.bsn.content.btnHref2"
                                        class="banner_item_content_btn"
                                        target="_blank">
