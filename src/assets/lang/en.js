@@ -254,11 +254,11 @@ export const message = {
         bsn:{
             content:{
                 title:'IRISnet',
-                title1:'Selected into first batch of public blockchains supported by BSN',
-                btn1:'View Details',
-                btnHref1:'https://medium.com/irisnet-blog/irisnet-is-selected-into-first-batch-of-public-blockchains-supported-by-bsn-1945aa2e2a0',
-                btn2:'IRIS Explorer',
-                btnHref2:'https://www.irisplorer.io'
+                title1:'IRISnet  Integrates related services as a BSN public chain service portal',
+                btn1:'Please stay tuned',
+                btnHref1:'',
+                btn2:'BSN Global',
+                btnHref2:'https://bsnbase.io/'
             }
         },
         frost:{
