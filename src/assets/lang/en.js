@@ -257,7 +257,7 @@ export const message = {
                 title1:'IRISnet integrates related services as a public chain service portal of BSN International ',
                 btn1:'Developers',
                 btnHref1:'',
-                btn2:'BSN Global',
+                btn2:'BSN International',
                 btnHref2:'https://bsnbase.io/'
             }
         },
