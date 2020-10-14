@@ -251,11 +251,11 @@ export const message = {
         bsn:{
             content:{
                 title:'IRISnet',
-                title1:'入选 BSN 首批适配公链',
-                btn1:'查看详情',
-                btnHref1:'https://mp.weixin.qq.com/s/olSUm2qvlF6-V6K5mV1tKQ',
-                btn2:'IRIS 浏览器',
-                btnHref2:'https://www.irisplorer.io'
+                title1:'IRISnet 作为 BSN 国际公链服务门户接入相关服务',
+                btn1:'开发者',
+                btnHref1:'',
+                btn2:'BSN 国际',
+                btnHref2:'https://bsnbase.io/'
             }
         },
         frost:{
