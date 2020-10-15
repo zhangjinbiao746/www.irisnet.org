@@ -13,14 +13,23 @@
 					<div class="developers_img_content">
 						<img src="../../assets/bsn/bsn_developer.png" alt="">
 					</div>
-					<ul class="developers_right_content">
-						<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent1"></li>
-						<li class="developers_right_content_item">{{$store.state.messages.developer.content.rightContent2}}</li>
-						<li class="developers_right_content_item">{{$store.state.messages.developer.content.rightContent3}}</li>
-						<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent4"></li>
-						<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent5"></li>
-						<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent6"></li>
-					</ul>
+					<div>
+						<ul class="developers_right_content">
+							<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent1"></li>
+							<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent2"></li>
+							<li class="developers_right_content_item">{{$store.state.messages.developer.content.rightContent3}}</li>
+<!--							<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent4"></li>-->
+<!--							<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent5"></li>-->
+<!--							<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent6"></li>-->
+						</ul>
+						<div class="developers_create_account_content">
+							<div class="developers_create_account_btn">
+								<button class="developers_create_btn_doc" @click="jumpUrl($store.state.messages.developer.content.createDeveloperHref)"><span>{{$store.state.messages.developer.content.createDeveloperBtnDoc}}<img src="../../assets/rightArrow.png" alt=""></span></button>
+							</div>
+							<a class="irisnet_doc_link" :href="$store.state.messages.developer.content.irisnetDocHref" target="_blank">{{$store.state.messages.developer.content.irisnetDoc}}</a>
+						</div>
+					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -30,7 +39,17 @@
 
 <script>
 	export default {
-		name: "Developers"
+		name: "Developers",
+		data () {
+			return {
+			
+			}
+		},
+		methods:{
+			jumpUrl(url){
+				window.open(url,'_blank')
+			},
+		}
 	}
 </script>
 
@@ -102,6 +121,41 @@
 						}
 						.developers_right_content_item:nth-child(6){
 							margin-top: 0;
+						}
+					}
+					.developers_create_account_content{
+						margin-top: 0.24rem;
+						.developers_create_account_btn{
+							margin-bottom: 0.24rem;
+							.developers_create_btn_doc{
+								border: 0;
+								font-size: 0.16rem;
+								color: #fff;
+								background: linear-gradient(to right, #714BE3, #653FD8);
+								box-shadow: 0 0 0.24rem 0 rgba(58, 5, 218, 0.3);
+								height: 0.5rem;
+								border-radius: 0.33rem;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								span{
+									padding: 0.16rem 0 0.16rem 0.24rem;
+									img{
+										position: relative;
+										top: 0.05rem;
+										height: 0.16rem;
+										margin-left: 0.12rem;
+										padding-right: 0.24rem;
+										transform: translateY(-8%)
+									}
+								}
+								
+							}
+						}
+						.irisnet_doc_link{
+							margin: 0 0 0 0.24rem;
+							color: #714BE3;
+							border-bottom: 0.01rem solid #714BE3;
 						}
 					}
 				}
