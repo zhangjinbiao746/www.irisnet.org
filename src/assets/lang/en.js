@@ -74,7 +74,7 @@ export const message = {
             {
                 id:3,
                 title:'Roadmap',
-                activeIndex: 3,
+                activeIndex: 7,
                 active:false,
             },
             {
@@ -87,6 +87,12 @@ export const message = {
                 id:5,
                 title:'Community',
                 activeIndex: 2,
+                active:false,
+            },
+            {
+                id:6,
+                title:'Developers',
+                activeIndex: 6,
                 active:false,
             },
         ],
@@ -461,11 +467,12 @@ export const message = {
         content:{
             title:'IRISnet plans to integrate related services as a public chain service portal of BSN International',
             rightContent1:'BSN is a cross-cloud, cross-portal, cross-framework blockchain-based global infrastructure network, supported by major Chinese entities and corporations, and its founding consortia partners include China’s State Information Center, China Mobile, China UnionPay and other organizations. IRISnet has previously joined the BSN ecosystem as <a style="color: #714BE3" href="https://medium.com/irisnet-blog/irisnet-is-selected-into-first-batch-of-public-blockchains-supported-by-bsn-1945aa2e2a0?source=collection_category---4------10-----------------------" target="_blank">the first batch of public blockchains</a> and is one of the first batch of public chains to join <a style="color: #714BE3" href="https://medium.com/bsnbase/major-breakthrough-in-chinas-blockchain-ecosystem-as-the-bsn-open-permissioned-blockchain-11e5fcae79de" target="_blank">BSN O. P. B. Initiative</a>.',
-            rightContent2:'Dedicated to provide a new low-threshold and convenient-access development environment for technology developers in the ecosystem, IRISnet plans to embed BSN International’s public chain services into the IRISnet web portal through BSN’s Empowerment Platform and developing a dedicated portal here developers can conveniently enjoy BSN public chain services, including user registrations, node building, node updates, information queries and other operations.',
+            rightContent2:'Dedicated to provide a new low-threshold and convenient-access development environment for technology developers in the ecosystem, IRISnet plans to embed <a style="color: #714BE3" href="https://bsnbase.io/" target="_blank">BSN International’s public chain services</a> into the IRISnet web portal through BSN’s Empowerment Platform and developing a dedicated portal here developers can conveniently enjoy BSN public chain services, including user registrations, node building, node updates, information queries and other operations.',
             rightContent3:'Developers, please stay tuned and welcome to reserve via leaving your contact information.',
-            rightContent4:'Developer Reservation（Link：<a style="color: #714BE3" href="https://forms.gle/dvgM2yBGzyZwDcxe9" target="_blank">https://forms.gle/dvgM2yBGzyZwDcxe9</a>）',
-            rightContent5:'BSN International （Link：<a style="color: #714BE3" href="https://bsnbase.io/" target="_blank">https://bsnbase.io/</a>）',
-            rightContent6:'IRISnet Docs （Link：<a style="color: #714BE3" href="https://www.irisnet.org/docs/" target="_blank">https://www.irisnet.org/docs/</a>）'
+            createDeveloperBtnDoc:'Developer Reservation',
+            createDeveloperHref:'https://www.wjx.top/jq/93954389.aspx',
+            irisnetDoc:'IRISnet Docs',
+            irisnetDocHref:'https://www.irisnet.org/docs/'
         }
     },
     announcements:{

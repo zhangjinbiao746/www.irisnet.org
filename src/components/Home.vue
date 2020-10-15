@@ -63,7 +63,7 @@
 <!--                                       target="_blank">-->
 <!--                                        -->
 <!--                                    </a>-->
-                                    <span  @click="handleBtnClick('wallet')" class="banner_item_content_btn">{{$store.state.messages.home.bsn.content.btn1}}</span>
+                                    <router-link class="banner_item_content_btn" :to="`/developers`">{{$store.state.messages.home.bsn.content.btn1}}</router-link>
                                     <transition>
                                         <span v-show="comingShow"
                                               class="coming_soon">

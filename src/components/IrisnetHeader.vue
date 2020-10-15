@@ -121,6 +121,7 @@
                 this.$store.state.messages.header.right[0].active = false;
                 this.saveActiveIconIndex(index);
                 this.getDomOffsetTop(index)
+                
             },
             getDomOffsetTop(index){
                 let activeDomOffsetTop = 0;
@@ -128,6 +129,8 @@
                     activeDomOffsetTop = this.$store.state.whitePaper;
                 }else if (index === 1) {
                     activeDomOffsetTop = this.$store.state.collaboration;
+                }else if (index === 7) {
+                    activeDomOffsetTop = this.$store.state.roadmap;
                 }else {
                     activeDomOffsetTop;
                 }
@@ -159,6 +162,8 @@
 	                this.$router.push({path:'/community'})
                 }else if(title === 'WhitePaper' || title === '白皮书' || title === 'Roadmap'  || title === '路线图' || title === 'Collaboration'|| title === '合作方'){
                     this.$router.push({path:'/'})
+                }else if(title === 'developers' || title === '开发者'){
+                    this.$router.push({path:'/developers'})
                 }
                 this.resetActiveIcon();
                 this.$store.state.messages.header.mobileNavigation.map( item => {
