@@ -470,7 +470,7 @@ export const message = {
             rightContent2:'Dedicated to provide a new low-threshold and convenient-access development environment for technology developers in the ecosystem, IRISnet plans to embed <a style="color: #714BE3" href="https://bsnbase.io/" target="_blank">BSN International’s public chain services</a> into the IRISnet web portal through BSN’s Empowerment Platform and developing a dedicated portal here developers can conveniently enjoy BSN public chain services, including user registrations, node building, node updates, information queries and other operations.',
             rightContent3:'Developers, please stay tuned and welcome to reserve via leaving your contact information.',
             createDeveloperBtnDoc:'Developer Reservation',
-            createDeveloperHref:'https://www.wjx.top/jq/93954389.aspx',
+            createDeveloperHref:'https://forms.gle/dvgM2yBGzyZwDcxe9',
             irisnetDoc:'IRISnet Docs',
             irisnetDocHref:'https://www.irisnet.org/docs/'
         }
