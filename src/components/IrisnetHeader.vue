@@ -113,6 +113,8 @@
                     }
                 }else if(index === 2) {
 	                this.$router.push({path:'/community'})
+                }else if(index === 3){
+                    this.$router.push({path:'/developers'})
                 }
                 this.resetActiveIcon();
                 this.$store.state.messages.header.left[index].active = true;
