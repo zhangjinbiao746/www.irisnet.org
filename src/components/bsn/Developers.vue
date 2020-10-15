@@ -1,0 +1,180 @@
+<template>
+	<div class="developers_container">
+		<div class="developers_title_container">
+			<div class="developers_title_wrap">
+				<div class="developers_title_content">{{$store.state.messages.developer.title}}</div>
+			</div>
+			
+		</div>
+		<div class="developers_content_wrap">
+			<div class="developers_content">
+				<div class="developers_content_title">{{$store.state.messages.developer.content.title}}</div>
+				<div class="developers_content_doc">
+					<div class="developers_img_content">
+						<img src="../../assets/bsn/bsn_developer.png" alt="">
+					</div>
+					<ul class="developers_right_content">
+						<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent1"></li>
+						<li class="developers_right_content_item">{{$store.state.messages.developer.content.rightContent2}}</li>
+						<li class="developers_right_content_item">{{$store.state.messages.developer.content.rightContent3}}</li>
+						<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent4"></li>
+						<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent5"></li>
+						<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent6"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</template>
+
+<script>
+	export default {
+		name: "Developers"
+	}
+</script>
+
+<style scoped lang="less">
+	.developers_container{
+		.developers_title_container{
+			width: 100%;
+			background: #2C2948;
+			padding-top: 0.6rem;
+			.developers_title_wrap{
+				margin: 0 auto;
+				max-width: 12rem;
+				font-size: 0.52rem;
+				height: 1.9rem;
+				line-height: 1.9rem;
+				display: flex;
+				justify-content: flex-start;
+				.developers_title_content{
+					color: #fff;
+					text-align: left;
+				}
+			}
+		}
+		.developers_content_wrap{
+			width: 100%;
+			background: #fff;
+			.developers_content{
+				max-width: 12rem;
+				margin: 0 auto;
+				.developers_content_title{
+					color:#323C5A;
+					font-size: 0.32rem;
+					font-weight: 600;
+					line-height: 0.45rem;
+					margin: 0.7rem 0 0.48rem 0;
+					max-width: 7.8rem;
+				}
+				.developers_content_doc{
+					display: flex;
+					flex-direction: row;
+					margin-bottom: 1.2rem;
+					.developers_img_content{
+						flex: 1;
+						margin-right: 1.2rem;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						margin-left: 0.96rem;
+						img{
+							width: 100%;
+						}
+					}
+					.developers_right_content{
+						flex: 1;
+						max-width: 4.8rem;
+						.developers_right_content_item{
+							color:#9BA5BE;
+							font-size: 0.14rem;
+							margin-top: 0.24rem;
+							line-height: 0.24rem;
+							word-wrap: break-word;
+							word-break: normal;
+						}
+						.developers_right_content_item:first-child{
+							margin-top: 0;
+						}
+						.developers_right_content_item:nth-child(5){
+							margin-top: 0;
+						}
+						.developers_right_content_item:nth-child(6){
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 1200px){
+		.developers_container{
+			.developers_title_container{
+				box-sizing: border-box;
+				padding-left: 0.2rem;
+				padding-right: 0.2rem;
+			}
+			.developers_content_wrap{
+				box-sizing: border-box;
+				padding-right: 0.2rem;
+				padding-left: 0.2rem;
+			}
+		}
+	}
+	@media screen and (max-width: 1000px){
+		.developers_container{
+			.developers_content_wrap{
+				.developers_content{
+					.developers_content_doc{
+						.developers_img_content{
+							margin-right: 0.7rem;
+							margin-left: 0.46rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.developers_container{
+			.developers_title_container{
+				padding-left: 0.3rem;
+				padding-right: 0.3rem;
+			}
+			.developers_content_wrap{
+				padding-right: 0.3rem;
+				padding-left: 0.3rem;
+				.developers_content{
+					.developers_content_doc{
+						flex-direction: column;
+						align-items: center;
+						.developers_img_content{
+							max-width: 4.2rem;
+							margin-left: 0;
+							margin-right: 0;
+						}
+						.developers_right_content{
+							margin-top: 0.48rem;
+							width: auto;
+							max-width: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 375px) {
+		.developers_container{
+			.developers_title_container{
+				padding-left: 0.2rem;
+				padding-right: 0.2rem;
+			}
+			.developers_content_wrap{
+				padding-right: 0.2rem;
+				padding-left: 0.2rem;
+				
+			}
+		}
+	}
+</style>
