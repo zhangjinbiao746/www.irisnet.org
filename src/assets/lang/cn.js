@@ -19,6 +19,11 @@ export const message = {
                 id:2,
                 title:'社区',
                 active:false,
+            },
+            {
+                id:4,
+                title:'开发者',
+                active:false,
             }
         ],
         right:[
@@ -69,7 +74,7 @@ export const message = {
             {
                 id:3,
                 title:'路线图',
-                activeIndex: 3,
+                activeIndex: 7,
                 active:false,
             },
             {
@@ -82,6 +87,12 @@ export const message = {
                 id:5,
                 title:'社区',
                 activeIndex: 2,
+                active:false,
+            },
+            {
+                id:6,
+                title:'开发者',
+                activeIndex: 6,
                 active:false,
             },
            
@@ -446,6 +457,19 @@ export const message = {
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS 浏览器',
         explorerHref:'https://www.irisplorer.io/'
+    },
+    developer:{
+        title:'开发者',
+        content:{
+            title:'IRISnet 将作为 BSN 国际公链服务门户接入相关服务',
+            rightContent1:'区块链服务网络（BSN）是由国家信息中心与中国移动、中国银联等单位联合发起，是一个跨云服务、跨门户、跨底层框架，用于部署和运行各类区块链应用的全球性基础设施网络。此前  IRISnet 已作为<a style="color: #714BE3" href="https://mp.weixin.qq.com/s/olSUm2qvlF6-V6K5mV1tKQ" target="_blank">首批公链</a>和<a style="color: #714BE3" href="https://mp.weixin.qq.com/s/7ezF3MDanZvuHbz6Exmb5w" target="_blank">首批开放联盟链项目</a>加入 BSN 生态。',
+            rightContent2:'为了给生态中的技术开发者提供一种新的低门槛、便捷接入的开发环境，IRISnet 将作为 <a style="color: #714BE3" href="https://bsnbase.io/" target="_blank">BSN 国际公链服务门户</a>，计划开发专用入口，通过 BSN 赋能平台将 BSN 国际的公有链服务嵌入到 IRISnet 门户网站。通过此专用入口，IRISnet 开发者可以完成 BSN 公链服务的用户注册、节点开通、节点更新、信息查询、付费等操作。',
+            rightContent3:'敬请各位开发者关注和参与，欢迎留下您的联系方式进行预约。',
+            createDeveloperBtnDoc:'开发者席位预约',
+            createDeveloperHref:'https://www.wjx.top/jq/93954389.aspx',
+            irisnetDoc:'IRISnet 文档',
+            irisnetDocHref:'https://www.irisnet.org/docs/zh/'
+        }
     },
     announcements:{
         title: '公告',
