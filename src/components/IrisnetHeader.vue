@@ -128,8 +128,6 @@
                     activeDomOffsetTop = this.$store.state.whitePaper;
                 }else if (index === 1) {
                     activeDomOffsetTop = this.$store.state.collaboration;
-                }else if (index === 3) {
-                    activeDomOffsetTop = this.$store.state.roadmap;
                 }else {
                     activeDomOffsetTop;
                 }
