@@ -6,6 +6,7 @@ import {createRouter} from './router/index.js'
 import {createStore} from './store'
 import VueI18n from 'vue-i18n'
 import 'babel-polyfill'
+import umeng  from "./umeng/umeng";
 require('reveal.js/css/reveal.css');
 require('swiper/dist/css/swiper.css');
 if (process.env.VUE_ENV === 'client') {
@@ -14,6 +15,7 @@ if (process.env.VUE_ENV === 'client') {
     const { Swipe, SwipeItem } = require('vue-awesome-swiper');
     Vue.component('swipe', Swipe);
     Vue.component('swipe-item', SwipeItem);
+    Vue.prototype.$umeng = umeng
 }
 Vue.mixin({
     beforeMount() {

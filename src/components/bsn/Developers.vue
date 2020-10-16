@@ -48,6 +48,7 @@
 		methods:{
 			jumpUrl(url){
 				window.open(url,'_blank')
+				this.$umeng.push('createDevelopersAccount',"click")
 			},
 		}
 	}
