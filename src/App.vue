@@ -25,6 +25,12 @@
                 document.body.scrollTop = 0;
             }
         },
+        mounted () {
+            const script = document.createElement('script');
+            script.src = `https://s95.cnzz.com/z_stat.php?id=1279351157&web_id=1279351157`;
+            script.language = 'JavaScript';
+            document.body.appendChild(script)
+        },
         methods: {
             closeWeChatIcon () {
                 this.$store.commit('controlWeChat', false)

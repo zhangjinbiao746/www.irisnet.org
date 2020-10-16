@@ -63,7 +63,7 @@
 <!--                                       target="_blank">-->
 <!--                                        -->
 <!--                                    </a>-->
-                                    <router-link class="banner_item_content_btn" :to="`/developers`">{{$store.state.messages.home.bsn.content.btn1}}</router-link>
+                                    <router-link @click.native="uMeng()" class="banner_item_content_btn" :to="`/developers`">{{$store.state.messages.home.bsn.content.btn1}}</router-link>
                                     <transition>
                                         <span v-show="comingShow"
                                               class="coming_soon">
@@ -308,6 +308,9 @@
 
         },
         methods : {
+            uMeng(){
+              this.$umeng.push('developers','click')
+            },
             swiperStop(){
                 this.mySwiper.stopAutoplay()
             },
