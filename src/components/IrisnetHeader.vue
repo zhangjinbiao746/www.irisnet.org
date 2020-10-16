@@ -115,6 +115,7 @@
 	                this.$router.push({path:'/community'})
                 }else if(index === 3){
                     this.$router.push({path:'/developers'})
+                    this.$umeng.push('developers','click')
                 }
                 this.resetActiveIcon();
                 this.$store.state.messages.header.left[index].active = true;
@@ -164,6 +165,7 @@
                     this.$router.push({path:'/'})
                 }else if(title === 'developers' || title === '开发者'){
                     this.$router.push({path:'/developers'})
+                    this.$umeng.push('developers','click')
                 }
                 this.resetActiveIcon();
                 this.$store.state.messages.header.mobileNavigation.map( item => {
