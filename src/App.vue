@@ -27,7 +27,7 @@
         },
         mounted () {
             const script = document.createElement('script');
-            script.src = `https://s95.cnzz.com/z_stat.php?id=1277830591&web_id=1277830591`;
+            script.src = `https://s95.cnzz.com/z_stat.php?id=1279351157&web_id=1279351157`;
             script.language = 'JavaScript';
             document.body.appendChild(script)
         },
