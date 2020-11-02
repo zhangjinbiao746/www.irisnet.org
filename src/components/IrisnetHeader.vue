@@ -114,7 +114,13 @@
                 }else if(index === 2) {
 	                this.$router.push({path:'/community'})
                 }else if(index === 3){
-                    this.$router.push({path:'/developers'})
+                    if(this.$route.query.lang && this.$route.query.lang === 'CN'){
+                        this.$router.push({path: '/developers/?lang=CN'});
+                    }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
+                        this.$router.push({path:'/developers/?lang=EN'})
+                    }else {
+                        this.$router.push({path:'/developers'})
+                    }
                     this.$umeng.push('developers','click')
                 }
                 this.resetActiveIcon();

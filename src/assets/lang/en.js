@@ -272,6 +272,16 @@ export const message = {
                 btnHref2:'https://bsnbase.io/'
             }
         },
+        techGrants:{
+            content:{
+                title:'Tech-Grants Program',
+                title1:'Accelerate the Development of the IRISnet Interchain Ecosystem',
+                btn1:'Apply',
+                btnHref1:'https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md',
+                btn2:'More details',
+                btnHref2:'https://medium.com/irisnet-blog/iris-foundation-launches-tech-grants-program-to-accelerate-the-development-of-the-irisnet-362ac7786c88'
+            }
+        },
         frost:{
             content:{
                 title:'Bifröst',
