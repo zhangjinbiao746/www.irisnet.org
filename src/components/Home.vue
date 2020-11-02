@@ -150,7 +150,37 @@
                         </div>
                     </div>
                 </swiper-slide>
-
+                <swiper-slide>
+                    <div class="banner_item_container">
+                        <div class="banner_item_container_wrap">
+                            <div class="banner_item_content_container">
+                                <span class="banner_item_content_title">
+                                    {{$store.state.messages.home.techGrants.content.title}}
+                                </span>
+                                <span class="banner_item_content_content">
+                                    {{$store.state.messages.home.techGrants.content.title1}}
+                                </span>
+                                <div class="banner_item_content_link_container"></div>
+                                <div class="banner_item_content_btn_container">
+                                    <a :href="$store.state.messages.home.techGrants.content.btnHref1"
+                                       class="banner_item_content_btn"
+                                       target="_blank">
+                                        {{$store.state.messages.home.techGrants.content.btn1}}
+                                    </a>
+                                    <a :href="$store.state.messages.home.techGrants.content.btnHref2"
+                                       class="banner_item_content_btn"
+                                       target="_blank">
+                                        {{$store.state.messages.home.techGrants.content.btn2}}
+                                    </a>
+                    
+                                </div>
+                            </div>
+                            <div class="banner_item_img_container">
+                                <img src="../assets/tech_grants.jpg" alt="" class="banner_item_img">
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
 
             </swiper>
             <div class="swiper-button-prev" @click="prev()"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
@@ -328,7 +358,6 @@
             },
             next(){
                 this.mySwiper.slideNext();
-                console.log(this.mySwiper, "wwww")
             },
             prev(){
                 this.mySwiper.slidePrev();
