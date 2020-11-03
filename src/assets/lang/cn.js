@@ -269,6 +269,16 @@ export const message = {
                 btnHref2:'https://bsnbase.io/'
             }
         },
+        techGrants:{
+            content:{
+                title:'Tech-Grants 计划',
+                title1:'加速推动 IRISnet 跨链生态发展',
+                btn1:'申请',
+                btnHref1:'https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md',
+                btn2:'查看详情',
+                btnHref2:'https://mp.weixin.qq.com/s/ynHtbye8XK-9DJQp7LoP4Q'
+            }
+        },
         frost:{
             content:{
                 title:'Bifröst',
