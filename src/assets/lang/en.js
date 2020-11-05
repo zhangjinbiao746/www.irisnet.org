@@ -500,7 +500,7 @@ export const message = {
                 href:'https://medium.com/irisnet-blog/kuchain-and-irisnet-team-up-to-establish-joint-labs-for-accelerating-the-development-of-the-cosmos-bec9d49c7557',
                 date:'Oct 30 2020',
                 title:'IRISnet and KuChain Team Up to Establish Joint Labs for Accelerating the Development of the Cosmos Ecosystem',
-                content:'IRISnet and KuChain established of Joint Labs — Ti-Labs. Running on the back of a think-tank that is fueled by the intelligence of the masterminds behind IRISnet and KuChain, the Labs will shoulder the responsibility of enlightening the whole Cosmos ecosystem.'
+                content:'IRISnet and KuChain established Joint Labs — Ti-Labs. Running on the back of a think-tank that is fueled by the intelligence of the masterminds behind IRISnet and KuChain, the Labs will shoulder the responsibility of enlightening the whole Cosmos ecosystem.'
             },
             {
                 id:'1',
