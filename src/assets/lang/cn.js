@@ -493,31 +493,31 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://mp.weixin.qq.com/s/iOfXkawSnkbABcCNpc-hyQ',
-                date:'2020 年 08 月 17 日',
-                title:'IRISnet 与 MYKEY 正式建立战略合作伙伴关系。',
-                content:'IRISnet 与 MYKEY 正式建立战略合作伙伴关系，计划将 KEYID 产品和技术引入到 IRISnet 及 Cosmos 生态，在保护用户数据与隐私安全的同时，为用户提供流畅便捷的 DeFi 等区块链应用体验。'
+                href:'https://mp.weixin.qq.com/s/zc8ZZDPiavxvszT15a-bug',
+                date:'2020 年 10 月 30 日',
+                title:'IRISnet 与 KuChain 成立联合实验室 Ti-Labs，将加速推动 Cosmos 生态发展。',
+                content:'IRISnet 与 KuChain 成立联合实验室 Ti-Labs。该实验室将充分调动两个项目背后的智囊资源，为整个 Cosmos 生态未来发展提供包括概念启发、技术支持、资源推介在内的协助与支持。'
             },
             {
                 id:'1',
-                href:'https://mp.weixin.qq.com/s/TsEnwgQrB1YqQAGp5mFvxA',
-                date:'2020 年 06 月 23 日',
-                title:'BSN、IRITA 和 Chainlink 达成共同建立 BSN 跨链和预言机服务的合作',
-                content:'IRISnet 将通过 IRITA 跨链服务枢纽支持 BSN 集成 Chainlink 预言机，共同为 BSN 的开发和发展做出重大贡献，推动区块链应用模式转型并在中国乃至世界范围更快增长与普及。'
+                href:'https://mp.weixin.qq.com/s/xJRWoBaIbLhJL0QcQCYwxQ',
+                date:'2020 年 10 月 29 日',
+                title:'IRISnet 助力生态发展，与 StarryMedia 共同打造跨链 NFT 生态。',
+                content:'IRIS 基金会启动了 Tech-Grants 计划，资助为 IRISnet 及整个生态的创新发展做出贡献的开发者、团队及项目。StarryMedia 作为首个申请 Tech-Grants 的项目，已成功获得了 IRIS 基金会提供的资金资助。'
             },
             {
                 id:'2',
-                href:'https://mp.weixin.qq.com/s/fytaeyqtTsAwPIcn6KYPBQ',
-                date:'2020 年 06 月 05 日',
-                title:'IRISnet 与 Kava 达成合作，共同打造跨链生态里更强的 DeFi 服务',
-                content:'IRIS与 Kava DeFi 平台的创立公司 Kava Labs 建立了合作关系，计划将 Kava 的 DeFi 服务引入 IRISnet 的区块链互联网，为促进分布式商业应用的构建提供技术基础。'
+                href:'https://mp.weixin.qq.com/s/N9SUKUTHLjNJQrA5kTKtEA',
+                date:'2020 年 10 月 19 日',
+                title:'DeFi 和跨链测试网 Bifrost 开启 Phase-1 阶段，激励任务启动。',
+                content:'IRISnet 的 DeFi 和跨链测试网 Bifrost 已于 10 月 19 日正式启动 Phase-1 阶段，相应激励任务随之开启。'
             },
             {
                 id:'3',
-                href:'https://mp.weixin.qq.com/s/TbdUJz23155Z3hApiQG_Cw',
-                date:'2020 年 06 月 02 日',
-                title:'IRISnet 和 OKChain 合作支持 DeFi 应用链及跨链生态发展',
-                content:'IRISnet与 OKChain 展开深度技术合作，共同推进 DeFi 应用链及跨链生态发展。'
+                href:'https://mp.weixin.qq.com/s/JCIHg7_uFhfuQNJ9B2rjAw',
+                date:'2020 年 10 月 14 日',
+                title:'IRISnet 将作为 BSN 国际公链服务门户接入相关服务。',
+                content:'IRISnet 将作为国际区块链服务网络 (BSN 国际) 公链服务门户集成其公链服务接入功能，为生态中的开发者提供一种新的低门槛、便捷接入的开发环境。'
             }
         ]
     },

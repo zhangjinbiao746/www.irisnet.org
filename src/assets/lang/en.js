@@ -497,32 +497,31 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://medium.com/irisnet-blog/irisnet-and-mykey-established-a-strategic-partnership-4c9157fbb1c8',
-                date:'Aug 17 2020',
-                title:'IRISnet and MYKEY Established a Strategic Partnership',
-                content:'IRISnet has established a strategic partnership with\n' +
-                    'MYKEY, planning to bring KEYID products and technology into the IRISnet and Cosmos ecosystems to provide better user experience on applications like DeFi as well as further protect user data and privacy in the interchain ecosystem.'
+                href:'https://medium.com/irisnet-blog/kuchain-and-irisnet-team-up-to-establish-joint-labs-for-accelerating-the-development-of-the-cosmos-bec9d49c7557',
+                date:'Oct 30 2020',
+                title:'IRISnet and KuChain Team Up to Establish Joint Labs for Accelerating the Development of the Cosmos Ecosystem',
+                content:'IRISnet and KuChain established of Joint Labs — Ti-Labs. Running on the back of a think-tank that is fueled by the intelligence of the masterminds behind IRISnet and KuChain, the Labs will shoulder the responsibility of enlightening the whole Cosmos ecosystem.'
             },
             {
                 id:'1',
-                href:'https://medium.com/irisnet-blog/bsn-integrates-chainlink-oracles-bringing-real-world-data-into-its-irita-powered-network-f87480ee33d',
-                date:'Jun 29, 2020',
-                title:'BSN Integrates Chainlink Oracles, Bringing Real-World Data Into Its IRITA Powered Network',
-                content:'IRISnet supports BSN and works on the integration of Chainlink via consortium IRITA interchain service hub, further contributing to the infrastructure development of BSN.'
+                href:'https://medium.com/irisnet-blog/to-prosper-the-ecosystem-irisnet-and-starrymedia-make-joint-efforts-to-build-the-interchain-nft-b4a38e05b3bf',
+                date:'Oct 29, 2020',
+                title:'To Prosper the Ecosystem, IRISnet and StarryMedia Make Joint Efforts to Build the Interchain NFT Ecosystem',
+                content:'IRIS Foundation has launched Tech-Grants Program to fund developers, teams and projects that contribute to IRISnet and the whole ecosystem. As the first project that applied for Tech-Grants, StarryMedia has successfully received grants from the IRIS Foundation.'
             },
             {
                 id:'2',
-                href:'https://medium.com/irisnet-blog/irisnet-and-kava-plan-to-integrate-to-enable-greater-defi-services-for-interchain-ecosystem-6e6ae409c69',
-                date:'Jun 5, 2020',
-                title:'IRISnet and Kava Plan to Integrate to Enable Greater DeFi Services for Interchain Ecosystem',
-                content:'IRISnet is pleased to establish a partnership with Kava Labs to bring Kava’s DeFi services to IRISnet’s internet of blockchains.'
+                href:'https://medium.com/irisnet-blog/bifrost-irisnets-defi-and-interchain-testnet-has-launched-phase-1-with-incentivized-tasks-bd1d5f2ff425',
+                date:'Oct 19, 2020',
+                title:'IRISnet’s DeFi and Interchain Testnet Bifrost has launched Phase-1 with incentivized tasks',
+                content:'IRISnet’s DeFi and interchain Testnet Bifrost has launched Phase-1 on October 19th along with incentivized tasks.'
             },
             {
                 id:'3',
-                href:'https://medium.com/irisnet-blog/irisnet-and-okchain-collaborate-to-develop-defi-application-as-well-as-interchain-ecosystem-3c28d530525b',
-                date:'Jun 2, 2020',
-                title:'IRISnet and OKChain Collaborate to Develop DeFi Application as well as Interchain Ecosystem',
-                content:'IRISnet and OKChain have collaborated to develop the DeFi application blockchain as well as the interchain ecosystem.'
+                href:'https://medium.com/irisnet-blog/irisnet-plans-to-integrate-related-services-as-a-public-chain-service-portal-of-bsn-international-b7a1bb38819b',
+                date:'Oct 14, 2020',
+                title:'IRISnet plans to integrate related services as a public chain service portal of BSN International',
+                content:'IRISnet will integrate related services as a public chain service portal of BSN International, providing a new low-threshold and convenient-access development environment for technology developers in the ecosystem.'
             },
            
         ]
