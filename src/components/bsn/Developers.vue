@@ -17,7 +17,7 @@
 						<ul class="developers_right_content">
 							<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent1"></li>
 							<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent2"></li>
-							<li class="developers_right_content_item">{{$store.state.messages.developer.content.rightContent3}}</li>
+							<li class="developers_right_content_item bond_style">{{$store.state.messages.developer.content.rightContent3}}</li>
 <!--							<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent4"></li>-->
 <!--							<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent5"></li>-->
 <!--							<li class="developers_right_content_item" v-html="$store.state.messages.developer.content.rightContent6"></li>-->
@@ -123,12 +123,17 @@
 						.developers_right_content_item:nth-child(6){
 							margin-top: 0;
 						}
+						.bond_style{
+							font-weight: bold;
+							color: #7987A8;
+						}
 					}
 					.developers_create_account_content{
-						margin-top: 0.24rem;
+						margin-top: 0.36rem;
 						.developers_create_account_btn{
 							margin-bottom: 0.24rem;
 							.developers_create_btn_doc{
+								width: 2rem;
 								border: 0;
 								font-size: 0.16rem;
 								color: #fff;

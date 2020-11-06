@@ -475,12 +475,12 @@ export const message = {
     developer:{
         title:'Developers',
         content:{
-            title:'IRISnet plans to integrate related services as a public chain service portal of BSN International',
+            title:'IRISnet-BSN Developer Portal is Live for Registrations',
             rightContent1:'BSN is a cross-cloud, cross-portal, cross-framework blockchain-based global infrastructure network, supported by major Chinese entities and corporations, and its founding consortia partners include China’s State Information Center, China Mobile, China UnionPay and other organizations. IRISnet has previously joined the BSN ecosystem as <a style="color: #714BE3" href="https://medium.com/irisnet-blog/irisnet-is-selected-into-first-batch-of-public-blockchains-supported-by-bsn-1945aa2e2a0?source=collection_category---4------10-----------------------" target="_blank">the first batch of public blockchains</a> and is one of the first batch of public chains to join <a style="color: #714BE3" href="https://medium.com/bsnbase/major-breakthrough-in-chinas-blockchain-ecosystem-as-the-bsn-open-permissioned-blockchain-11e5fcae79de" target="_blank">BSN O. P. B. Initiative</a>.',
-            rightContent2:'Dedicated to provide a new low-threshold and convenient-access development environment for technology developers in the ecosystem, IRISnet plans to embed <a style="color: #714BE3" href="https://bsnbase.io/" target="_blank">BSN International’s public chain services</a> into the IRISnet web portal through BSN’s Empowerment Platform and developing a dedicated portal here developers can conveniently enjoy BSN public chain services, including user registrations, node building, node updates, information queries and other operations.',
-            rightContent3:'Developers, please stay tuned and welcome to reserve via leaving your contact information.',
-            createDeveloperBtnDoc:'Developer Reservation',
-            createDeveloperHref:'https://forms.gle/dvgM2yBGzyZwDcxe9',
+            rightContent2:'IRISnet is developing a dedicated portal to embed <a style="color: #714BE3" href="https://bsnbase.io/g/main/index" target="_blank">BSN International</a>’s public chain services. Developers can conveniently complete user registrations, node building, node updates, information queries and other operations via this portal. ',
+            rightContent3:'Currently, developers are able to sign up. Developers who register now may have the chances to join the early bird event in the future. Come to join and sign up!',
+            createDeveloperBtnDoc:'Register',
+            createDeveloperHref:'https://bsn.irisnet.org',
             irisnetDoc:'IRISnet Docs',
             irisnetDocHref:'https://www.irisnet.org/docs/'
         }
