@@ -151,11 +151,6 @@ export const message = {
                 src: "irisnet_wechat.png",
                 "txt": "Wechat"
             },
-            {
-                id:6,
-                src: "irisnet_weibo.png",
-                href: "https://weibo.com/u/6455513027"
-            },
         ],
         validatorCommunity:[
             {

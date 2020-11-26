@@ -7,13 +7,16 @@
                 </div>
                 <div class="nav_content">
                     <ul class="nav_link_content">
-                        <li class="link_content" :class="item.active ? 'active_icon' : ' '" v-for="(item,index) in $store.state.messages.header.left" @click="activeIcon(index)" >
+                        <li class="link_content"
+                            v-for="(item,index) in navigationData.header.left"
+                            @click="activeIcon(index)"
+                            :class="item.active ? 'active_icon' : ' '"  >
                           {{item.title}}
                         </li>
                     </ul>
                     <div class="link_right_container">
                         <ul class="nav_link_content right_content">
-                            <li class="link_content" :class="item.active ? 'active_icon' : ''" v-for="(item,index) in $store.state.messages.header.right" :key="item.id">
+                            <li class="link_content" :class="item.active ? 'active_icon' : ''" v-for="(item,index) in navigationData.header.right" :key="item.id">
                                 <div class="link_img_content">
                                     <a :href="item.href" target="_blank" :target="item.href.indexOf('ttp')!== -1 ? '_blank' : ''" @click="toMainnet(item.href)">
                                         {{item.title}}
@@ -30,7 +33,7 @@
                         <div class="lang_content">
                             <div class="english_content">
                                 <span v-if="$store.state.lang=='CN'" class="lang_english"><a href="?lang=EN">English</a></span>
-                                <span v-if="$store.state.lang=='EN'" class="lang_english"><a href="?lang=CN">中文</a></span>
+                                <span v-if="$store.state.lang=='EN'" class="lang_english"><a href="/?lang=CN">中文</a></span>
                                 <span class="arrow_img" style="padding-left: 0.05rem">
                                     <img src="../../public/irisnet/IRISnet_chang_lang.png">
                                 </span>
@@ -48,7 +51,7 @@
                     <div class="menu_content">
                         <div class="lang_btn">
                             <span class="menu_lang">
-                                <a v-if="$store.state.lang!='CN'" href="?lang=CN">CN</a>
+                                <a v-if="$store.state.lang!='CN'" href="/?lang=CN">CN</a>
                                 <a v-if="$store.state.lang=='CN'" href="?lang=EN">EN</a>
                             </span>
                             <span class="arrow_img">
@@ -66,7 +69,7 @@
                     <span @click="mobileLink(item.title,item.activeIndex)" >{{item.title}}</span>
                 </li>
                 <li class="nav_link_content" v-for="item in $store.state.messages.header.mobileLinkHrefNavigation">
-                    <a :href="item.href" :target="item.href.indexOf('ttp')!== -1 ? '_blank' : ''" >{{item.title}}</a>
+                    <a @click="resetActiveIcon" :href="item.href" :target="item.href.indexOf('ttp')!== -1 ? '_blank' : ''" >{{item.title}}</a>
                 </li>
             </ul>
         </div>
@@ -79,6 +82,7 @@
         data () {
             return {
                 flShowMenu: false,
+                navigationData: this.$store.state.messages
             }
         },
         watch:{
@@ -88,10 +92,10 @@
                     that.getDomOffsetTop(that.$store.state.activeIconIndex)
                 },200);
                 if(this.$route.path === '/mainnet' || this.$route.path === '/testnets' || this.$route.path === '/testnets/'){
-                    this.$store.state.messages.header.right[0].active = true;
+                    this.navigationData.header.right[0].active = true;
                     this.resetActiveIcon();
                 }else {
-                    this.$store.state.messages.header.right[0].active = false;
+                    this.navigationData.header.right[0].active = false;
                 }
             }
         },
@@ -112,7 +116,14 @@
                         this.$router.push({path:'/'})
                     }
                 }else if(index === 2) {
-	                this.$router.push({path:'/community'})
+                    if(this.$route.query.lang && this.$route.query.lang === 'CN'){
+                        this.$router.push({path: '/community/?lang=CN'});
+                    }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
+                        this.$router.push({path:'/community/?lang=EN'})
+                    }else {
+                        this.$router.push({path:'/community'})
+                    }
+	                // this.$router.push({path:'/community'})
                 }else if(index === 3){
                     if(this.$route.query.lang && this.$route.query.lang === 'CN'){
                         this.$router.push({path: '/developers/?lang=CN'});
@@ -124,8 +135,8 @@
                     this.$umeng.push('developers','click')
                 }
                 this.resetActiveIcon();
-                this.$store.state.messages.header.left[index].active = true;
-                this.$store.state.messages.header.right[0].active = false;
+                this.navigationData.header.left[index].active = true;
+                this.navigationData.header.right[0].active = false;
                 this.saveActiveIconIndex(index);
                 this.getDomOffsetTop(index)
                 
@@ -161,20 +172,41 @@
                 }
             },
             mobileLink(title,index){
+                let mainnet,testnets,community,developers,home;
+                if(this.$route.query.lang && this.$route.query.lang === 'CN'){
+                    mainnet = '/mainnet/?lang=CN'
+                    testnets = '/testnets/?lang=CN'
+                    community = '/community/?lang=CN'
+                    developers = '/developers/?lang=CN'
+                    home = '/?lang=CN'
+                }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
+                    mainnet = '/mainnet/?lang=EN'
+                    testnets = '/testnets/?lang=EN'
+                    community = '/community/?lang=EN'
+                    developers = '/developers/?lang=EN'
+                    home = '/?lang=EN'
+                }else {
+                    mainnet = '/mainnet'
+                    testnets = '/testnets'
+                    community = '/community'
+                    developers = '/developers'
+                    home = '/'
+                }
                 if(title === 'Mainnet' || title === '主网'){
-                    this.$router.push({path:'/mainnet'})
+                    this.$router.push({path:mainnet})
                 }else if(title === 'Testnet' || title === '测试网'){
-                    this.$router.push({path:'/testnets'})
+                    this.$router.push({path:testnets})
                 } else if(title === 'Community' || title === '社区'){
-	                this.$router.push({path:'/community'})
+	                this.$router.push({path:community})
                 }else if(title === 'WhitePaper' || title === '白皮书' || title === 'Roadmap'  || title === '路线图' || title === 'Collaboration'|| title === '合作方'){
-                    this.$router.push({path:'/'})
-                }else if(title === 'developers' || title === '开发者'){
-                    this.$router.push({path:'/developers'})
+                    this.$router.push({path:home})
+                }else if(title === 'Developers' || title === '开发者'){
+                    this.$router.push({path:developers})
                     this.$umeng.push('developers','click')
                 }
                 this.resetActiveIcon();
-                this.$store.state.messages.header.mobileNavigation.map( item => {
+                console.log(title,"?????")
+                this.navigationData.header.mobileNavigation.map( item => {
                     if(item.title === title){
                         item.active = true
                     }
@@ -185,11 +217,15 @@
                 this.flShowMenu = false;
             },
             resetActiveIcon(){
-                this.$store.state.messages.header.mobileNavigation.map( item => {
+                this.navigationData.header.mobileNavigation.map( item => {
                     item.active = false;
                     return item
                 });
-                this.$store.state.messages.header.left.map( item => {
+                this.navigationData.header.left.map( item => {
+                    item.active = false;
+                    return item
+                });
+                this.navigationData.header.right.map( item => {
                     item.active = false;
                     return item
                 });
@@ -209,13 +245,17 @@
             }
         },
         mounted(){
+            this.navigationData = this.$store.state.messages
             let headerHeight = document.getElementsByClassName('header_wrap')[0].clientHeight;
             this.resetActiveIcon();
             this.$store.commit('headerHeight',headerHeight);
-            if(this.$route.path === '/mainnet' || this.$route.path === '/testnets'){
-                this.$store.state.messages.header.right[0].active = true;
+            if(this.$route.path === '/mainnet/'
+                    || this.$route.path === '/mainnet'
+                    || this.$route.path === '/testnets'
+                    || this.$route.path === '/testnets/'){
+                this.navigationData.header.right[0].active = true;
             }else {
-                this.$store.state.messages.header.right[0].active = false;
+                this.navigationData.header.right[0].active = false;
             }
         }
     }
