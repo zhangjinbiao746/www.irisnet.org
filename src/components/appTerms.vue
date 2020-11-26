@@ -5,7 +5,7 @@
             <div class="head">
                 <img src="../assets/app/irislogo.png" class="imglogo"  @click="goToHome">
                 <div class="div_en" >
-                    <a href="?lang=CN" v-if="$store.state.lang!='CN'">
+                    <a href="/?lang=CN" v-if="$store.state.lang!='CN'">
                         CN
                     </a>
                     <a href="?lang=EN" v-if="$store.state.lang=='CN'">

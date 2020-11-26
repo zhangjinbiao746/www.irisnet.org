@@ -44,7 +44,7 @@
                                     <div @mouseenter="downShow" @mouseleave="downHide" class="item">
                                         <img :src="UrlSrc+down"/> English
                                     </div>
-                                    <a class="item_cn" href="?lang=CN">
+                                    <a class="item_cn" href="/?lang=CN">
                                         中文
                                     </a>
                                 </div>
