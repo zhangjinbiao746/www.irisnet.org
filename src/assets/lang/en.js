@@ -408,7 +408,7 @@ export const message = {
             EcosystemPartners: {
                 title: 'Ecosystem Partners',
                 logos: [
-                    {id:0, path: 'logos/irisnet_binance.png', url: 'https://www.binance.com'},
+                    {id:0, path: 'logos/irisnet_binance.png', url: 'https://www.binance.com/en?utm_source=irisnet'},
                     {id:1, path: 'logos/irisnet_cmc.png', url: 'https://coinmarketcap.com'},
                     {id:2, path: 'logos/irisnet_ok_chain.png', url: 'https://www.okex.com/okchain'},
                     {id:3, path: 'logos/irisnet_kava.png', url: 'https://www.kava.io'},
