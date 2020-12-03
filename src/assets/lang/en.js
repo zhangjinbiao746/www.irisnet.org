@@ -798,7 +798,12 @@ export const message = {
                             itemName: ' SyncNode',
                             os:'(iOS)',
                             href: 'https://wallet.syncnode.ro/'
-                        }
+                        },
+                        {
+                            itemName: 'ViaWallet',
+                            os:'(Android, iOS)',
+                            href: 'https://viawallet.com/'
+                        },
                     ],
                     content:'These web and mobile wallets allow you to store & transfer IRIS, delegate IRIS to validators, and some of them also support ATOM. Note that we do not endorse any of the wallets, they are listed for your convenience.',
                 },
