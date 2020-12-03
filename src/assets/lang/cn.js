@@ -786,9 +786,14 @@ export const message = {
                             href: 'https://www.cosmostation.io/'
                         },
                         {
-                            itemName: ' SyncNode',
+                            itemName: 'SyncNode',
                             os:'(iOS)',
                             href: 'https://wallet.syncnode.ro/'
+                        },
+                        {
+                            itemName: 'ViaWallet',
+                            os:'(Android, iOS)',
+                            href: 'https://viawallet.com/'
                         },
 
 
