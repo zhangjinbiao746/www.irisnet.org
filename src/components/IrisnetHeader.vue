@@ -33,7 +33,7 @@
                         <div class="lang_content">
                             <div class="english_content">
                                 <span v-if="$store.state.lang=='CN'" class="lang_english"><a href="?lang=EN">English</a></span>
-                                <span v-if="$store.state.lang=='EN'" class="lang_english"><a href="/?lang=CN">中文</a></span>
+                                <span v-if="$store.state.lang=='EN'" class="lang_english"><a href="?lang=CN">中文</a></span>
                                 <span class="arrow_img" style="padding-left: 0.05rem">
                                     <img src="../../public/irisnet/IRISnet_chang_lang.png">
                                 </span>
