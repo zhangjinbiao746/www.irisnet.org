@@ -862,7 +862,7 @@ export const message = {
                         },
 	                    {
 		                    itemName: 'LOOK',
-		                    href: 'https://look.ping.pub/validator?chain=irishub'
+		                    href: 'https://iris.ping.pub/#/validator'
 	                    }
                     ],
                     content:'These block explorers allow you to search, view and analyze IRIS Hub data—like blocks, transactions, validators, governance including params or proposals, etc.',
