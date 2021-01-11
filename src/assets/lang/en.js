@@ -281,7 +281,7 @@ export const message = {
             content:{
                 title:'Bifröst',
                 content:'to a New Interchain Era',
-                btn1:'Bifrost-0 Explorer',
+                btn1:'Bifrost Explorer',
                 btn2:'Interchain Wallet',
                 btnHref1:' https://bifrost.irisplorer.io/#/home',
                 btnHref2:'',
