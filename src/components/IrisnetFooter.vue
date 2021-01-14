@@ -79,7 +79,7 @@
             <div class="copyright_container">
                 <div class="copyright_content">
                     <p class="irisnet">{{$store.state.messages.footer.irisnetInproduction}}</p>
-                    <p class="copyright_text"><span class="copyright">Copyright ©2019-2020 IRIS Foundation Ltd. All rights reserved.</span><span class="link_common_style" @click="toPrivacy"> Privacy</span> <span class="connector"> & </span> <span class="link_common_style" @click="toTerms">Terms</span></p>
+                    <p class="copyright_text"><span class="copyright">{{`Copyright ©2019-${new Date().getFullYear()} IRIS Foundation Ltd. All rights reserved.`}}</span><span class="link_common_style" @click="toPrivacy"> Privacy</span> <span class="connector"> & </span> <span class="link_common_style" @click="toTerms">Terms</span></p>
                 </div>
             </div>
         </div>

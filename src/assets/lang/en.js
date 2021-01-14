@@ -804,6 +804,11 @@ export const message = {
                             os:'(Android, iOS)',
                             href: 'https://viawallet.com/'
                         },
+                        {
+                            itemName: 'LoyToken',
+                            os:'(Android, iOS)',
+                            href: 'http://www.loytoken.com/'
+                        },
                     ],
                     content:'These web and mobile wallets allow you to store & transfer IRIS, delegate IRIS to validators, and some of them also support ATOM. Note that we do not endorse any of the wallets, they are listed for your convenience.',
                 },
