@@ -36,7 +36,7 @@
 								<span class="iconfont icon-IBCkualiantongxinxieyi"></span>
 								<p class="new_function_section_label">{{$store.state.messages.irishub.ibc.title}}</p>
 								<p class="new_function_section">{{$store.state.messages.irishub.ibc.description}}</p>
-								<span @click="toTestFunction()">{{$store.state.messages.irishub.ibc.test}}<i class="iconfont icon-qianwang"></i></span>
+								<span @click="toTestFunction()" style="cursor: pointer">{{$store.state.messages.irishub.ibc.test}}<i class="iconfont icon-qianwang"></i></span>
 							</div>
 						</div>
 						<div class="new_function_right_img_content">
