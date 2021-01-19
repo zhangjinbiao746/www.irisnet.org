@@ -10,12 +10,13 @@ import umeng  from "./umeng/umeng";
 require('reveal.js/css/reveal.css');
 require('swiper/dist/css/swiper.css');
 if (process.env.VUE_ENV === 'client') {
+    require('./assets/icon/iconfont')
     const VueAwesomeSwiper = require('vue-awesome-swiper');
     Vue.use(VueAwesomeSwiper);
     const { Swipe, SwipeItem } = require('vue-awesome-swiper');
     Vue.component('swipe', Swipe);
     Vue.component('swipe-item', SwipeItem);
-    Vue.prototype.$umeng = umeng
+    Vue.prototype.$umeng = umeng;
 }
 Vue.mixin({
     beforeMount() {

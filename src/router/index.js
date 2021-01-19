@@ -22,6 +22,7 @@ import Community from "../components/Community.vue";
 import Cosmos from "../components/Cosmos";
 import CommunityPage from "../components/CommunityPage"
 import Developers from "../components/bsn/Developers"
+import HouYiPage from "../components/HouYi";
 Vue.use(Router)
 
 export function createRouter() {
@@ -94,6 +95,10 @@ export function createRouter() {
             {
                 path: '/developers',
                 component: Developers
+            },
+            {
+                path: '/houyi',
+                component: HouYiPage
             },
         ]
     })

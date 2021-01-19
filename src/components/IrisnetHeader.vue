@@ -1,5 +1,5 @@
 <template>
-    <div class="header_container">
+    <div class="header_container" :class="flShowIrisHub? 'iris_hub_header_style' : 'common_header_style'">
         <div class="header_wrap">
             <div class="header_content">
                 <div class="irisnet_logo_content" @click="toHome">
@@ -18,7 +18,9 @@
                         <ul class="nav_link_content right_content">
                             <li class="link_content" :class="item.active ? 'active_icon' : ''" v-for="(item,index) in navigationData.header.right" :key="item.id">
                                 <div class="link_img_content">
-                                    <a :href="item.href" target="_blank" :target="item.href.indexOf('ttp')!== -1 ? '_blank' : ''" @click="toMainnet(item.href)">
+                                    <a :href="item.href" target="_blank"
+                                       :target="item.href.indexOf('ttp')!== -1 ? '_blank' : ''"
+                                       @click="toMainnet(item)">
                                         {{item.title}}
                                     </a>
                                     <span v-show="index === 3" class="blog_img_content">
@@ -51,7 +53,7 @@
                     <div class="menu_content">
                         <div class="lang_btn">
                             <span class="menu_lang">
-                                <a v-if="$store.state.lang!='CN'" href="/?lang=CN">CN</a>
+                                <a v-if="$store.state.lang!='CN'" href="?lang=CN">CN</a>
                                 <a v-if="$store.state.lang=='CN'" href="?lang=EN">EN</a>
                             </span>
                             <span class="arrow_img">
@@ -82,16 +84,25 @@
         data () {
             return {
                 flShowMenu: false,
+                flShowIrisHub: this.$route.path ? false : true,
                 navigationData: this.$store.state.messages
             }
         },
         watch:{
             $route (){
+                if(this.$route.path.includes('houyi')){
+                    this.flShowIrisHub = true
+                }else {
+                    this.flShowIrisHub = false
+                }
                 let that = this;
                 setTimeout(function () {
                     that.getDomOffsetTop(that.$store.state.activeIconIndex)
                 },200);
                 if(this.$route.path === '/mainnet' || this.$route.path === '/testnets' || this.$route.path === '/testnets/'){
+                    this.navigationData.header.right[1].active = true;
+                    this.resetActiveIcon();
+                }else if(this.$route.path.includes('houyi')){
                     this.navigationData.header.right[0].active = true;
                     this.resetActiveIcon();
                 }else {
@@ -161,7 +172,7 @@
                 );
             },
             toMainnet(href){
-                if(href === ""){
+                if(href.href === "" && !href.name){
                     if(this.$route.query.lang && this.$route.query.lang === 'CN'){
                         this.$router.push({path:'/mainnet/?lang=CN'})
                     }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
@@ -169,23 +180,34 @@
                     }else {
                         this.$router.push({path:'/mainnet'})
                     }
+                }else{
+                    if(this.$route.query.lang && this.$route.query.lang === 'CN'){
+                        this.$router.push({path:'/houyi/?lang=CN'})
+                    }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
+                        this.$router.push({path:'/houyi/?lang=EN'})
+                    }else {
+                        this.$router.push({path:'/houyi'})
+                    }
                 }
             },
             mobileLink(title,index){
-                let mainnet,testnets,community,developers,home;
+                let mainnet,testnets,community,developers,home,houyi;
                 if(this.$route.query.lang && this.$route.query.lang === 'CN'){
                     mainnet = '/mainnet/?lang=CN'
+                    houyi = '/houyi/?lang=CN'
                     testnets = '/testnets/?lang=CN'
                     community = '/community/?lang=CN'
                     developers = '/developers/?lang=CN'
                     home = '/?lang=CN'
                 }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
                     mainnet = '/mainnet/?lang=EN'
+                    houyi = '/houyi/?lang=EN'
                     testnets = '/testnets/?lang=EN'
                     community = '/community/?lang=EN'
                     developers = '/developers/?lang=EN'
                     home = '/?lang=EN'
                 }else {
+                    houyi = '/houyi'
                     mainnet = '/mainnet'
                     testnets = '/testnets'
                     community = '/community'
@@ -200,12 +222,13 @@
 	                this.$router.push({path:community})
                 }else if(title === 'WhitePaper' || title === '白皮书' || title === 'Roadmap'  || title === '路线图' || title === 'Collaboration'|| title === '合作方'){
                     this.$router.push({path:home})
+                }else if(title === 'HOUYI' || title === '后羿' ){
+                    this.$router.push({path:houyi})
                 }else if(title === 'Developers' || title === '开发者'){
                     this.$router.push({path:developers})
                     this.$umeng.push('developers','click')
                 }
                 this.resetActiveIcon();
-                console.log(title,"?????")
                 this.navigationData.header.mobileNavigation.map( item => {
                     if(item.title === title){
                         item.active = true
@@ -245,15 +268,22 @@
             }
         },
         mounted(){
+            if(this.$route.path.includes('houyi')){
+                this.flShowIrisHub = true
+            }else {
+                this.flShowIrisHub = false
+            }
             this.navigationData = this.$store.state.messages
             let headerHeight = document.getElementsByClassName('header_wrap')[0].clientHeight;
             this.resetActiveIcon();
             this.$store.commit('headerHeight',headerHeight);
-            if(this.$route.path === '/mainnet/'
+            if(this.$route.path.includes('houyi') ){
+                this.navigationData.header.right[0].active = true;
+            }else if(this.$route.path === '/mainnet/'
                     || this.$route.path === '/mainnet'
                     || this.$route.path === '/testnets'
                     || this.$route.path === '/testnets/'){
-                this.navigationData.header.right[0].active = true;
+                this.navigationData.header.right[1].active = true;
             }else {
                 this.navigationData.header.right[0].active = false;
             }
