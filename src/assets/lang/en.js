@@ -22,7 +22,7 @@ export const message = {
             {
                 iconName:'icon-Coinswap',
                 title: 'Coinswap',
-                section:'Cross-chain AMM, a vanguard innovation platform for DeFi applications in the Cosmos ecosystem'
+                section:'Cross-chain AMM, a vanguard innovation platform for DeFi applications in the Cosmos ecosystem.'
             },
             {
                 iconName: 'icon-Oracle',
@@ -39,7 +39,7 @@ export const message = {
             title: 'Bifrost Testnet',
             description: 'IRISnet\'s Bifrost is the testnet launched for IBC and AMM functions to give strong support to Cosmos\'s interchain vision. ',
             understand:'Learn More',
-            understandLink: 'https://medium.com/irisnet-blog/bifr%C3%B6st-irisnets-bridge-to-a-new-era-af32960dd88e'
+            understandLink: 'https://mp.weixin.qq.com/s/t5NXw7ZNWbllOymwqXRKHg'
         },
         setpList:{
             phase:'Phase',
@@ -72,7 +72,7 @@ export const message = {
             {
                 iconName:'icon-shengjimoni',
                 title:'Mainnet Upgrade Simulation',
-                subTitle:'An upgrade simulation environment psrovided for IRIS Hub mainnet validators.',
+                subTitle:'An upgrade simulation environment provided for IRIS Hub mainnet validators.',
                 list:[],
                 description:'This simulation helps validators familiarize with the upgrade workflow including exporting and migrating the mainnet state, upgrading and restarting their validator nodes etc.'
             },

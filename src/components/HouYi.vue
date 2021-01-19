@@ -309,7 +309,7 @@
 						.new_function_sub_title_content{
 							font-size: 0.16rem;
 							line-height: 0.32rem;
-							color: #fff;
+							color: rgba(255,255,255,0.65);
 							margin-top: 0.32rem;
 						}
 					}
@@ -446,6 +446,7 @@
 						margin-top: 0.32rem;
 						font-size: 0.16rem;
 						color: rgba(255,255,255,0.65);
+						line-height: 0.32rem;
 					}
 					.read_more_content{
 						display: inline-block;

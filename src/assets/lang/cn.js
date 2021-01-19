@@ -39,7 +39,7 @@ export const message = {
             title: 'Bifrost 测试网',
             description: '为支持 Cosmos 跨链愿景，为 IBC 和 AMM 等功能而启动的专有测试网络。',
             understand:'了解更多',
-            understandLink: 'https://mp.weixin.qq.com/s/Ie65oPemezszB41Lxj6P2w'
+            understandLink: 'https://mp.weixin.qq.com/s/t5NXw7ZNWbllOymwqXRKHg'
         },
         setpList:{
             phase:'Phase',
@@ -61,10 +61,10 @@ export const message = {
                 subTitle:'为交易所、钱包、浏览器、dApp 开发者提供用于功能测试的「准生产」环境。',
                 list:[
                     {
-                        content: 'IRISnet 特色功能：AMM、NFT、增强版 iService 等；'
+                        content: 'IRISnet 特色功能：AMM、NFT、增强版 iService 等'
                     },
                     {
-                        content: 'Cosmos SDK 基本功能：平滑升级、IBC、状态同步等。'
+                        content: 'Cosmos SDK 基本功能：平滑升级、IBC、状态同步等'
                     }
                 ],
                 description:''
@@ -81,7 +81,7 @@ export const message = {
                 title:'多网络 IBC 联合测试',
                 subTitle: 'IRISnet 团队主导发起多网络 IBC 联合测试。',
                 list:[],
-                description: '与 Confio（CosmWasm）、Tendermint、Regen Network、Chainapsis（Keplr） 等团队联合验证新版本主网的 IBC 跨链转账功能、完善 IBC 用户端体验、支持 IBC 相关 工具开发等。'
+                description: '与 Confio（CosmWasm）、Tendermint、Regen Network、Chainapsis（Keplr） 等团队联合验证新版本主网的 IBC 跨链转账功能、完善 IBC 用户端体验、支持 IBC 相关工具开发等。'
             }
         ],
         applicationShowList: {
