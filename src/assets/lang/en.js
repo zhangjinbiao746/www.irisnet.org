@@ -1,5 +1,114 @@
 export const message = {
     logo:'irisnet.png',
+    irishub:{
+        title: 'IRIS Hub 1.0',
+        secondTitle: 'Mainnet Upgrade Soon',
+        description:'Welcome to the New Connected Interchain World',
+        newFunction: {
+            title: 'New Features',
+            description: 'IRIS Hub 1.0 will enable IBC and support innovative DeFi functions like AMM, being about to achieve all the visions of roadmap in the whitepaper.'
+        },
+        iService:{
+            title:'iService',
+            description: 'Refactored and upgraded iService interchain service framework. The enhanced iService, as the application layer protocol, can support the connections between heterogeneous blockchains and centralized systems, and bridge the crypto world with the traditional business world.'
+        },
+        ibc: {
+            title:'Inter-Blockchain Communication (IBC)',
+            description: 'IBC + iService, as the TCP/IP + HTTP protocol of blockchains, can build and further broaden the Internet of Blockchains.',
+            test: 'Multi-Networks IBC Joint Tests',
+            link: ''
+        },
+        applicationList: [
+            {
+                iconName:'icon-Coinswap',
+                title: 'Coinswap',
+                section:'Cross-chain AMM, a vanguard innovation platform for DeFi applications in the Cosmos ecosystem'
+            },
+            {
+                iconName: 'icon-Oracle',
+                title: 'Oracle',
+                section: 'Supported oracle service based on iService, to impletment cross-platform data services from off-chain to on-chain/off-chain.'
+            },
+            {
+                iconName: 'icon-NFT',
+                title: 'NFT',
+                section:'Supported NFT, to achieve the digitization of assets on blockchains.'
+            }
+        ],
+        testnet:{
+            title: 'Bifrost Testnet',
+            description: 'IRISnet\'s Bifrost is the testnet launched for IBC and AMM functions to give strong support to Cosmos\'s interchain vision. ',
+            understand:'Learn More',
+            understandLink: 'https://medium.com/irisnet-blog/bifr%C3%B6st-irisnets-bridge-to-a-new-era-af32960dd88e'
+        },
+        setpList:{
+            phase:'Phase',
+            link0: 'https://medium.com/irisnet-blog/irisnet-launched-defi-and-interchain-testnet-bifrost-8ab43c38c55b',
+            link1: 'https://medium.com/irisnet-blog/phase-1-of-irisnets-defi-interchain-testnet-bifrost-has-successfully-ended-on-jan-6-bdee924dd93a',
+            link2: 'https://medium.com/irisnet-blog/phase-2-of-irisnets-defi-interchain-testnet-bifrost-launched-to-be-followed-by-mainnet-upgrade-211d69d0f828',
+            link3: '',
+            oneStepTitle: '',
+            end:'End',
+            ing:'Ongoing',
+            comeSoon:'Coming Soon',
+            irishub:'IRIS Hub',
+            hub1:'1.0'
+        },
+        functionList: [
+            {
+                iconName:'icon-gongnengceshi',
+                title:'Functional Tests',
+                subTitle:'A staging environment where exchanges, developers of wallets, explorers and dApps can verify their product upgrades.',
+                list:[
+                    {
+                        content: 'IRISnet\'s unique functions, including AMM, NFT, enhanced iService, etc.'
+                    },
+                    {
+                        content: 'Cosmos Stargate functions, including smooth upgrade, IBC, state sync, etc.'
+                    }
+                ],
+                description:''
+            },
+            {
+                iconName:'icon-shengjimoni',
+                title:'Mainnet Upgrade Simulation',
+                subTitle:'An upgrade simulation environment psrovided for IRIS Hub mainnet validators.',
+                list:[],
+                description:'This simulation helps validators familiarize with the upgrade workflow including exporting and migrating the mainnet state, upgrading and restarting their validator nodes etc.'
+            },
+            {
+                iconName: 'icon-duowangluoIBClianheceshi',
+                title:'Multi-Networks IBC Joint Tests',
+                subTitle: 'A multi-networks IBC joint testing initiated by IRISnet.',
+                list:[],
+                description: 'This effort aims to further validate the IBC cross-chain transfer function, improve the IBC user experience, support the IBC-related tools development and so on together with Confio (CosmWasm), Tendermint, Regen Network, Chainapsis (Keplr) and many other teams. '
+            }
+        ],
+        applicationShowList: {
+            title:'Application Ecosystem',
+            list:[
+                {
+                    scr:require('../irishub1/irishub_uptick.png'),
+                    title:'Uptick Ticket ',
+                    section:'Uptick Ticket focuses on NFT e-ticketing for the show and event industry and also provides open Uptick NFT protocol for developers.',
+                    link:''
+                },
+                {
+                    scr: require('../irishub1/irishub_chain_link.png'),
+                    title:'Chainlink',
+                    section:'With the flexible framework of iService, Chainlink\'s oracle is integrated to support the off-chain data secure and reliable transfer into distributed applications, and accordingly to cover more blockchain environments.',
+                    link:''
+                }
+            ],
+        },
+        bugBounty:{
+            title: 'IRISnet Bug Bounty',
+            subtitle: 'Program',
+            span:'III',
+            lookDetail:'Learn More',
+            lookDetailLink: ''
+        }
+    },
     floatWindow:{
         title:'FORUM',
     },
@@ -29,24 +138,31 @@ export const message = {
         right:[
             {
                 id:0,
+                title:'HOUYI',
+                href:'',
+                name:'houyi',
+                active: false,
+            },
+            {
+                id:1,
                 title:'Mainnet',
                 href:'',
                 active: false,
             },
             {
-                id:1,
+                id:2,
                 title:'Docs',
                 href:'https://www.irisnet.org/docs/',
                 active: false,
             },
             {
-                id:2,
+                id:3,
                 title:'Forum',
                 href:'https://forum.irisnet.org/',
                 active: false,
             },
             {
-                id:3,
+                id:4,
                 title:'Blog',
                 href:'https://medium.com/irisnet-blog',
                 active: false,
@@ -93,6 +209,12 @@ export const message = {
                 id:6,
                 title:'Developers',
                 activeIndex: 6,
+                active:false,
+            },
+            {
+                id:10,
+                title:'HOUYI',
+                activeIndex: 10,
                 active:false,
             },
         ],

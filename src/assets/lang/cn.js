@@ -1,5 +1,114 @@
 export const message = {
     logo: 'irisnet.png',
+    irishub:{
+        title: 'IRIS Hub 1.0',
+        secondTitle: '主网升级在即',
+        description:'欢 迎 迈 入 万 物 互 联 的 跨 链 新 时 代',
+        newFunction: {
+            title: '全新功能',
+            description: '全新主网将上线 IBC 并支持 AMM 等多项独特 DeFi 功能，即将实现白皮书中路线图的所有愿景。'
+        },
+        iService:{
+            title:'iService 跨链服务',
+            description: '重构升级 iService 跨链服务架构，增强版 iService 作为应用层协议，支持异构区块链和中心化系统的交互，架起区块链世界与常规业务应用世界的桥梁。'
+        },
+        ibc: {
+            title:'IBC 跨链通信协议',
+            description: 'IBC + iService，形成区块链的 TCP/IP + HTTP 协议，构建并扩展区块链互联网。',
+            test: '多网络 IBC 联合测试',
+            link: '#ibc'
+        },
+        applicationList: [
+            {
+                iconName:'icon-Coinswap',
+                title: 'Coinswap',
+                section:'跨链 AMM，为 Cosmos 生态的 DeFi 应用提供一个前卫的创新平台。'
+            },
+            {
+                iconName: 'icon-Oracle',
+                title: 'Oracle',
+                section: '基于 iService 支持预言机服务，实现链外到链上、链外到链外的跨平台数据服务。'
+            },
+            {
+                iconName: 'icon-NFT',
+                title: 'NFT',
+                section:'支持 NFT 功能，实现区块链上的资产数字化。'
+            }
+        ],
+        testnet:{
+            title: 'Bifrost 测试网',
+            description: '为支持 Cosmos 跨链愿景，为 IBC 和 AMM 等功能而启动的专有测试网络。',
+            understand:'了解更多',
+            understandLink: 'https://mp.weixin.qq.com/s/Ie65oPemezszB41Lxj6P2w'
+        },
+        setpList:{
+            phase:'Phase',
+            link0: 'https://mp.weixin.qq.com/s/9rncMa5YutXpfh1n8vw8lw',
+            link1: 'https://mp.weixin.qq.com/s/k9rW4ciUo8-eg74llEhMsw',
+            link2: 'https://mp.weixin.qq.com/s/Ie65oPemezszB41Lxj6P2w',
+            link3: '',
+            oneStepTitle: '',
+            end:'已结束',
+            ing:'进行中',
+            comeSoon:'即将上线',
+            irishub:'IRIS Hub',
+            hub1:'1.0'
+        },
+        functionList: [
+            {
+                iconName:'icon-gongnengceshi',
+                title:'功能测试',
+                subTitle:'为交易所、钱包、浏览器、dApp 开发者提供用于功能测试的「准生产」环境。',
+                list:[
+                    {
+                        content: 'IRISnet 特色功能：AMM、NFT、增强版 iService 等；'
+                    },
+                    {
+                        content: 'Cosmos SDK 基本功能：平滑升级、IBC、状态同步等。'
+                    }
+                ],
+                description:''
+            },
+            {
+                iconName:'icon-shengjimoni',
+                title:'升级模拟',
+                subTitle:'为主网验证人提供主网模拟升级的环境。',
+                list:[],
+                description:'帮助验证人熟悉升级过程，包括主网状态导出和迁移，节点升级和重启等步骤。'
+            },
+            {
+                iconName: 'icon-duowangluoIBClianheceshi',
+                title:'多网络 IBC 联合测试',
+                subTitle: 'IRISnet 团队主导发起多网络 IBC 联合测试。',
+                list:[],
+                description: '与 Confio（CosmWasm）、Tendermint、Regen Network、Chainapsis（Keplr） 等团队联合验证新版本主网的 IBC 跨链转账功能、完善 IBC 用户端体验、支持 IBC 相关 工具开发等。'
+            }
+        ],
+        applicationShowList: {
+            title:'应用生态',
+            list:[
+                {
+                    scr:require('../irishub1/irishub_uptick.png'),
+                    title:'Uptick Ticket',
+                    section:'Uptick Ticket 是专注于演出和活动行业的 NFT 数字票务应用，并提供开放的 Uptick NFT 协议供开发者使用。',
+                    link:'',
+                },
+                {
+                    scr: require('../irishub1/irishub_chain_link.png'),
+                    title:'Chainlink',
+                    section:'基于 iService 的灵活架构，支持 Chainlink 预言机集成，链下数据能安全可靠传输至分布式应用中，使其覆盖更多区块链环境。',
+                    link:'',
+                }
+            ],
+        },
+        bugBounty:{
+            title: 'IRISnet Bug Bounty',
+            subtitle: '漏洞赏金计划',
+            span:'III',
+            lookDetail:'查看详情',
+            lookDetailLink: ''
+        }
+    },
     floatWindow:{
       title:'论坛',
     },
@@ -29,24 +138,31 @@ export const message = {
         right:[
             {
                 id:0,
+                title:'后羿',
+                href:'',
+                name:'houyi',
+                active: false,
+            },
+            {
+                id:1,
                 title:'主网',
                 href:'',
                 active: false,
             },
             {
-                id:1,
+                id:2,
                 title:'文档',
                 href:'https://www.irisnet.org/docs/',
                 active: false,
             },
             {
-                id:2,
+                id:3,
                 title:'论坛',
                 href:'https://forum.irisnet.org/',
                 active: false,
             },
             {
-                id:3,
+                id:4,
                 title:'博客',
                 href:'https://medium.com/irisnet-blog',
                 active: false,
@@ -93,6 +209,12 @@ export const message = {
                 id:6,
                 title:'开发者',
                 activeIndex: 6,
+                active:false,
+            },
+            {
+                id:10,
+                title:'后羿',
+                activeIndex: 10,
                 active:false,
             },
            
@@ -235,7 +357,7 @@ export const message = {
         errEmailAddress:{
             error:'Please enter a valid email address'
         },
-        irisnetInproduction:'IRISnet以希腊彩虹女神Iris命名，她是在人间和天堂之间传递信息的忠诚使者'
+        irisnetInproduction:'IRISnet 以希腊彩虹女神Iris命名，她是在人间和天堂之间传递信息的忠诚使者'
     },
     home: {
         bannerHref:"https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg",
