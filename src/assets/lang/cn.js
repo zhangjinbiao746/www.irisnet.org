@@ -37,7 +37,7 @@ export const message = {
         ],
         testnet:{
             title: 'Bifrost 测试网',
-            description: '为支持 Cosmos 跨链愿景，为 IBC 和 AMM 等功能而启动的专有测试网络。',
+            description: '为支持 Cosmos 跨链愿景，为 IBC 和 AMM 等功能而启动的专有测试网络',
             understand:'了解更多',
             understandLink: 'https://mp.weixin.qq.com/s/t5NXw7ZNWbllOymwqXRKHg'
         },
@@ -58,7 +58,7 @@ export const message = {
             {
                 iconName:'icon-gongnengceshi',
                 title:'功能测试',
-                subTitle:'为交易所、钱包、浏览器、dApp 开发者提供用于功能测试的「准生产」环境。',
+                subTitle:'为交易所、钱包、浏览器、dApp 开发者提供用于功能测试的「准生产」环境',
                 list:[
                     {
                         content: 'IRISnet 特色功能（AMM、NFT、增强版 iService 等）'
@@ -72,16 +72,16 @@ export const message = {
             {
                 iconName:'icon-shengjimoni',
                 title:'升级模拟',
-                subTitle:'为主网验证人提供主网模拟升级的环境。',
+                subTitle:'为主网验证人提供主网模拟升级的环境',
                 list:[],
-                description:'帮助验证人熟悉升级过程，包括主网状态导出和迁移、节点升级和重启等步骤。'
+                description:'帮助验证人熟悉升级过程，包括主网状态导出和迁移、节点升级和重启等步骤'
             },
             {
                 iconName: 'icon-duowangluoIBClianheceshi',
                 title:'多网络 IBC 联合测试',
-                subTitle: 'IRISnet 团队主导发起多网络 IBC 联合测试。',
+                subTitle: 'IRISnet 团队主导发起多网络 IBC 联合测试',
                 list:[],
-                description: '与 Confio（CosmWasm）、Tendermint、Regen Network、Chainapsis（Keplr） 等团队联合验证新版本主网的 IBC 跨链转账功能、完善 IBC 用户端体验、支持 IBC 相关工具开发等。'
+                description: '与 Confio（CosmWasm）、Tendermint、Regen Network、Chainapsis（Keplr） 等团队联合验证新版本主网的 IBC 跨链转账功能、完善 IBC 用户端体验、支持 IBC 相关工具开发等'
             }
         ],
         applicationShowList: {
@@ -90,13 +90,13 @@ export const message = {
                 {
                     scr:require('../irishub1/irishub_uptick.png'),
                     title:'Uptick Ticket',
-                    section:'Uptick Ticket 是专注于演出和活动行业的 NFT 数字票务应用，并提供开放的 Uptick NFT 协议供开发者使用。',
+                    section:'Uptick Ticket 是专注于演出和活动行业的 NFT 数字票务应用，并提供开放的 Uptick NFT 协议供开发者使用',
                     link:'',
                 },
                 {
                     scr: require('../irishub1/irishub_chain_link.png'),
                     title:'Chainlink',
-                    section:'基于 iService 的灵活架构，支持 Chainlink 预言机集成，链下数据能安全可靠传输至分布式应用中，使其覆盖更多区块链环境。',
+                    section:'基于 iService 的灵活架构，支持 Chainlink 预言机集成，链下数据能安全可靠传输至分布式应用中，使其覆盖更多区块链环境',
                     link:'',
                 }
             ],

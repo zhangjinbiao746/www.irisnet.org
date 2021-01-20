@@ -335,6 +335,7 @@
 									display: inline-block;
 									margin-top: 0.89rem;
 									font-size: 0.8rem;
+									color: #fff;
 								}
 								
 								.new_function_section_label{
@@ -362,6 +363,7 @@
 									display: inline-block;
 									margin-top: 0.89rem;
 									font-size: 0.8rem;
+									color: #fff;
 								}
 								.new_function_section_label{
 									font-size: 0.32rem;
@@ -374,11 +376,12 @@
 									color: rgba(255,255,255,0.65);
 								}
 								span{
-									color: rgba(100, 141, 237, 1);
 									display: inline-block;
 									margin-top: 0.24rem;
 									font-size: 0.2rem;
+									color: rgba(100, 141, 237, 1);
 									.iconfont{
+										color: rgba(100, 141, 237, 1);
 										margin-top: 0;
 										font-size: 0.2rem;
 									}
@@ -451,8 +454,10 @@
 					.read_more_content{
 						display: inline-block;
 						margin-top: 0.2rem;
+						font-size: 0.2rem;
+						color: rgba(100, 141, 237, 1);
 						.iconfont{
-							font-size: 0.16rem;
+							font-size: 0.2rem;
 						}
 					}
 				}
@@ -1190,6 +1195,7 @@
 								.new_function_section_content{
 									max-width: 70%;
 									.iconfont{
+										color: rgba(255,255,255,1);
 										margin-top: 0.32rem;
 									}
 									.new_function_section_label{
@@ -1207,6 +1213,7 @@
 									margin-bottom: 0;
 									text-align: left;
 									.iconfont{
+										color: rgba(255,255,255,1);
 										margin-top: 0.24rem;
 									}
 									.new_function_section_label{
