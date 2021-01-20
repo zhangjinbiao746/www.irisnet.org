@@ -18,7 +18,7 @@
 					<div class="new_function_header_content">
 						<p class="new_function_line"></p>
 						<h1 class="new_function_title_content">{{$store.state.messages.irishub.newFunction.title}}</h1>
-						<p class="new_function_sub_title_content">{{$store.state.messages.irishub.newFunction.description}}</p>
+						<p class="new_function_sub_title_content" v-html="$store.state.messages.irishub.newFunction.description"></p>
 					</div>
 					<div class="new_function_section_container">
 						<div class="new_function_left_content">
@@ -35,7 +35,7 @@
 							<div class="new_function_section_content">
 								<span class="iconfont icon-IBCkualiantongxinxieyi"></span>
 								<p class="new_function_section_label">{{$store.state.messages.irishub.ibc.title}}</p>
-								<p class="new_function_section">{{$store.state.messages.irishub.ibc.description}}</p>
+								<p class="new_function_section" v-html="$store.state.messages.irishub.ibc.description"></p>
 								<span @click="toTestFunction()" style="cursor: pointer">{{$store.state.messages.irishub.ibc.test}}<i class="iconfont icon-qianwang"></i></span>
 							</div>
 						</div>
@@ -52,7 +52,7 @@
 				     :key="index">
 					<span :class="`iconfont ${item.iconName}`"></span>
 					<p class="new_function_application_title">{{item.title}}</p>
-					<p class="new_function_application_section">{{item.section }}</p>
+					<p class="new_function_application_section" v-html="item.section "></p>
 				</div>
 			</div>
 		</div>
@@ -61,7 +61,7 @@
 				<div class="test_net_content_title_content">
 					<p class="test_net_link"></p>
 					<h1 class="test_net_content_title">{{$store.state.messages.irishub.testnet.title}}</h1>
-					<p class="test_net_content_subtitle">{{$store.state.messages.irishub.testnet.description}}</p>
+					<p class="test_net_content_subtitle" v-html="$store.state.messages.irishub.testnet.description"></p>
 					<a :href="$store.state.messages.irishub.testnet.understandLink" class="read_more_content" target="_blank" rel="noreferrer noopener">{{$store.state.messages.irishub.testnet.understand}} <i class="iconfont icon-qianwang"></i></a>
 				</div>
 				<div class="test_net_time_line_content_container">
@@ -163,13 +163,11 @@
 					     :key="index" :id="index === 2 ? '#ibc' : ''">
 						<span :class="`iconfont ${item.iconName}`"></span>
 						<h2 class="test_net_application_title">{{item.title}}</h2>
-						<p class="test_net_application_subtitle">{{item.subTitle}}</p>
+						<p class="test_net_application_subtitle" v-html="item.subTitle"></p>
 						<ul class="test_net_application_section_list" v-if="item.list.length > 0">
-							<li class="test_net_application_section_item" v-for="(value,index) in item.list">
-								{{value.content}}
-							</li>
+							<li class="test_net_application_section_item" v-for="(value,index) in item.list" v-html="value.content"></li>
 						</ul>
-						<p class="test_net_application_section" v-if="item.description">{{item.description}}</p>
+						<p class="test_net_application_section" v-if="item.description" v-html="item.description"></p>
 					</div>
 				</div>
 			</div>
@@ -182,7 +180,7 @@
 					<div class="application_list_item_content"
 					     v-for="(item,index) in $store.state.messages.irishub.applicationShowList.list"
 					     :key="index">
-						<a :href="item.link ? item.link : 'javascript:void(0)'" :target="item.link ? _blank : ''" rel="noreferrer noopener">
+						<a :href="item.link ? item.link : 'javascript:void(0)'" :target="item.link ? '_blank' : ''" rel="noreferrer noopener">
 							<div class="application_list_item_img">
 								<img :src="item.scr" alt="">
 							</div>

@@ -6,7 +6,7 @@ export const message = {
         description:'欢 迎 迈 入 万 物 互 联 的 跨 链 新 时 代',
         newFunction: {
             title: '全新功能',
-            description: '全新主网将上线 IBC 并支持跨链 AMM 等多项独特 DeFi 功能，开启「夸父」阶段'
+            description: '全新主网将上线 <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> 并支持跨链 AMM 等多项独特 DeFi 功能，开启「夸父」阶段'
         },
         iService:{
             title:'iService 跨链服务',
@@ -14,7 +14,7 @@ export const message = {
         },
         ibc: {
             title:'IBC 跨链通信协议',
-            description: 'IBC + iService，形成区块链的 TCP/IP + HTTP 协议，构建并扩展区块链互联网',
+            description: '<a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> + iService，形成区块链的 TCP/IP + HTTP 协议，构建并扩展区块链互联网',
             test: '多网络 IBC 联合测试',
             link: '#ibc'
         },
@@ -22,7 +22,7 @@ export const message = {
             {
                 iconName:'icon-Coinswap',
                 title: 'Coinswap',
-                section:'跨链 AMM，为 Cosmos 生态的 DeFi 应用提供一个前卫的创新平台'
+                section:'跨链 AMM，为 <a href="https://cosmos.network/" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Cosmos</a> 生态的 DeFi 应用提供一个前卫的创新平台'
             },
             {
                 iconName: 'icon-Oracle',
@@ -37,7 +37,7 @@ export const message = {
         ],
         testnet:{
             title: 'Bifrost 测试网',
-            description: '为支持 Cosmos 跨链愿景，为 IBC 和 AMM 等功能而启动的专有测试网络',
+            description: '为支持 <a href="https://cosmos.network/" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Cosmos</a> 跨链愿景，为 <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> 和 AMM 等功能而启动的专有测试网络',
             understand:'了解更多',
             understandLink: 'https://mp.weixin.qq.com/s/t5NXw7ZNWbllOymwqXRKHg'
         },
@@ -64,7 +64,7 @@ export const message = {
                         content: 'IRISnet 特色功能（AMM、NFT、增强版 iService 等）'
                     },
                     {
-                        content: 'Cosmos SDK 基本功能（平滑升级、IBC、状态同步等）'
+                        content: 'Cosmos SDK 基本功能（平滑升级、<a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a>、状态同步等）'
                     }
                 ],
                 description:''
@@ -79,9 +79,9 @@ export const message = {
             {
                 iconName: 'icon-duowangluoIBClianheceshi',
                 title:'多网络 IBC 联合测试',
-                subTitle: 'IRISnet 团队主导发起多网络 IBC 联合测试',
+                subTitle: 'IRISnet 团队主导发起多网络 <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> 联合测试',
                 list:[],
-                description: '与 Confio（CosmWasm）、Tendermint、Regen Network、Chainapsis（Keplr） 等团队联合验证新版本主网的 IBC 跨链转账功能、完善 IBC 用户端体验、支持 IBC 相关工具开发等'
+                description: '与 <a href="https://cosmwasm.com" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Confio（CosmWasm）</a>、<a href="https://tendermint.com" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Tendermint</a>、<a href="https://www.regen.network" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Regen Network</a>、<a href="https://chainapsis.com" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Chainapsis（Keplr）</a> 等团队联合验证新版本主网的 <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> 跨链转账功能、完善 <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> 用户端体验、支持 <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> 相关工具开发等'
             }
         ],
         applicationShowList: {
@@ -91,13 +91,13 @@ export const message = {
                     scr:require('../irishub1/irishub_uptick.png'),
                     title:'Uptick Ticket',
                     section:'Uptick Ticket 是专注于演出和活动行业的 NFT 数字票务应用，并提供开放的 Uptick NFT 协议供开发者使用',
-                    link:'',
+                    link:'https://www.uptickproject.com',
                 },
                 {
                     scr: require('../irishub1/irishub_chain_link.png'),
                     title:'Chainlink',
                     section:'基于 iService 的灵活架构，支持 Chainlink 预言机集成，链下数据能安全可靠传输至分布式应用中，使其覆盖更多区块链环境',
-                    link:'',
+                    link:'https://chain.link',
                 }
             ],
         },
