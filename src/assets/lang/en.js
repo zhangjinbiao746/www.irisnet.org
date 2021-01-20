@@ -6,7 +6,7 @@ export const message = {
         description:'Welcome to the New Connected Interchain World',
         newFunction: {
             title: 'New Features',
-            description: 'IRIS Hub 1.0 will launch <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> and support innovative DeFi functions like crosschain AMM, and the KUAFU stage will begin.'
+            description: 'IRIS Hub 1.0 will launch <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> and support innovative DeFi functions like AMM, and the KUAFU stage will begin.'
         },
         iService:{
             title:'iService',
@@ -37,7 +37,7 @@ export const message = {
         ],
         testnet:{
             title: 'Bifrost Testnet',
-            description: 'IRISnet\'s Bifrost is the testnet launched for <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> and AMM functions to give strong support to <a href="https://cosmos.network/" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Cosmos</a>\'s interchain vision. ',
+            description: 'IRISnet\'s Bifrost is the testnet launched for <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> and innovative functions like AMM to give strong support to <a href="https://cosmos.network/" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Cosmos</a>\'s interchain vision.',
             understand:'Learn More',
             understandLink: 'https://medium.com/irisnet-blog/bifr%C3%B6st-irisnets-bridge-to-a-new-era-af32960dd88e'
         },
