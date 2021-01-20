@@ -712,6 +712,7 @@
 									text-align: center;
 									padding-top: 0.19rem;
 									.test_net_time_link{
+										cursor: default;
 										display: inline-block;
 										margin-top: 0.12rem;
 										padding: 0.15rem 0.1rem;
@@ -781,7 +782,7 @@
 							}
 						}
 						.test_net_application_section{
-							margin-top: 0.36rem;
+							margin-top: 0.16rem;
 							line-height: 0.32rem;
 							color: rgba(255,255,255,0.65);
 						}

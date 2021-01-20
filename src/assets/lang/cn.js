@@ -6,15 +6,15 @@ export const message = {
         description:'欢 迎 迈 入 万 物 互 联 的 跨 链 新 时 代',
         newFunction: {
             title: '全新功能',
-            description: '全新主网将上线 IBC 并支持 AMM 等多项独特 DeFi 功能，即将实现白皮书中路线图的所有愿景。'
+            description: '全新主网将上线 IBC 并支持 AMM 等多项独特 DeFi 功能，即将实现白皮书中路线图的所有愿景'
         },
         iService:{
             title:'iService 跨链服务',
-            description: '重构升级 iService 跨链服务架构，增强版 iService 作为应用层协议，支持异构区块链和中心化系统的交互，架起区块链世界与常规业务应用世界的桥梁。'
+            description: '重构升级 iService 跨链服务架构，增强版 iService 作为应用层协议，支持异构区块链和中心化系统的交互，架起区块链世界与常规业务应用世界的桥梁'
         },
         ibc: {
             title:'IBC 跨链通信协议',
-            description: 'IBC + iService，形成区块链的 TCP/IP + HTTP 协议，构建并扩展区块链互联网。',
+            description: 'IBC + iService，形成区块链的 TCP/IP + HTTP 协议，构建并扩展区块链互联网',
             test: '多网络 IBC 联合测试',
             link: '#ibc'
         },
@@ -22,17 +22,17 @@ export const message = {
             {
                 iconName:'icon-Coinswap',
                 title: 'Coinswap',
-                section:'跨链 AMM，为 Cosmos 生态的 DeFi 应用提供一个前卫的创新平台。'
+                section:'跨链 AMM，为 Cosmos 生态的 DeFi 应用提供一个前卫的创新平台'
             },
             {
                 iconName: 'icon-Oracle',
                 title: 'Oracle',
-                section: '基于 iService 支持预言机服务，实现链外到链上、链外到链外的跨平台数据服务。'
+                section: '基于 iService 支持预言机服务，实现链外到链上、链外到链外的跨平台数据服务'
             },
             {
                 iconName: 'icon-NFT',
                 title: 'NFT',
-                section:'支持 NFT 功能，实现区块链上的资产数字化。'
+                section:'支持 NFT 功能，实现区块链上的资产数字化'
             }
         ],
         testnet:{
@@ -61,10 +61,10 @@ export const message = {
                 subTitle:'为交易所、钱包、浏览器、dApp 开发者提供用于功能测试的「准生产」环境。',
                 list:[
                     {
-                        content: 'IRISnet 特色功能：AMM、NFT、增强版 iService 等'
+                        content: 'IRISnet 特色功能（AMM、NFT、增强版 iService 等）'
                     },
                     {
-                        content: 'Cosmos SDK 基本功能：平滑升级、IBC、状态同步等'
+                        content: 'Cosmos SDK 基本功能（平滑升级、IBC、状态同步等）'
                     }
                 ],
                 description:''
@@ -74,7 +74,7 @@ export const message = {
                 title:'升级模拟',
                 subTitle:'为主网验证人提供主网模拟升级的环境。',
                 list:[],
-                description:'帮助验证人熟悉升级过程，包括主网状态导出和迁移，节点升级和重启等步骤。'
+                description:'帮助验证人熟悉升级过程，包括主网状态导出和迁移、节点升级和重启等步骤。'
             },
             {
                 iconName: 'icon-duowangluoIBClianheceshi',
