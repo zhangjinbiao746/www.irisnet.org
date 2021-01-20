@@ -176,6 +176,12 @@ export const message = {
                 active:false,
             },
             {
+                id:10,
+                title:'后羿',
+                activeIndex: 10,
+                active:false,
+            },
+            {
                 id:1,
                 title:'测试网',
                 activeIndex: '',
@@ -211,12 +217,7 @@ export const message = {
                 activeIndex: 6,
                 active:false,
             },
-            {
-                id:10,
-                title:'后羿',
-                activeIndex: 10,
-                active:false,
-            },
+           
            
         ],
         mobileLinkHrefNavigation:[

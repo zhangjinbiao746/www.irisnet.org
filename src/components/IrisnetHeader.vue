@@ -67,7 +67,9 @@
                 </div>
             </div>
             <ul class="nav_link_container" :class="flShowMenu ? 'show_menu': ''">
-                <li class="nav_link_content" :class="item.active ? 'active_icon' : '' " v-for="item in $store.state.messages.header.mobileNavigation">
+                <li class="nav_link_content"
+                    v-for="item in $store.state.messages.header.mobileNavigation"
+                    :class="item.active ? 'active_icon' : '' " >
                     <span @click="mobileLink(item.title,item.activeIndex)" >{{item.title}}</span>
                 </li>
                 <li class="nav_link_content" v-for="item in $store.state.messages.header.mobileLinkHrefNavigation">
@@ -105,6 +107,7 @@
                 }else if(this.$route.path.includes('houyi')){
                     this.navigationData.header.right[0].active = true;
                     this.resetActiveIcon();
+                    this.navigationData.header.mobileNavigation[1].active = true;
                 }else {
                     this.navigationData.header.right[0].active = false;
                 }
