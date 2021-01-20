@@ -6,7 +6,7 @@ export const message = {
         description:'Welcome to the New Connected Interchain World',
         newFunction: {
             title: 'New Features',
-            description: 'IRIS Hub 1.0 will launch <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> and support innovative DeFi functions like crosschain AMM, and the KUAFU stage will begin.'
+            description: 'IRIS Hub 1.0 will launch <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> and support innovative DeFi functions like AMM, and the KUAFU stage will begin.'
         },
         iService:{
             title:'iService',

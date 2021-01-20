@@ -6,7 +6,7 @@ export const message = {
         description:'欢 迎 迈 入 万 物 互 联 的 跨 链 新 时 代',
         newFunction: {
             title: '全新功能',
-            description: '全新主网将上线 <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> 并支持跨链 AMM 等多项独特 DeFi 功能，开启「夸父」阶段'
+            description: '全新主网将上线 <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> 并支持 AMM 等多项独特 DeFi 功能，开启「夸父」阶段'
         },
         iService:{
             title:'iService 跨链服务',
