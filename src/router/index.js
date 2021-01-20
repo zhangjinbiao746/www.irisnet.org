@@ -19,6 +19,7 @@ import NewManinet from '../components/NewMainnet';
 import NewTestnet from '../components/NewTestnet';
 import Home from "../components/Home";
 import Community from "../components/Community.vue";
+import Developers from "../components/bsn/Developers"
 import Cosmos from "../components/Cosmos";
 import CommunityPage from "../components/CommunityPage"
 import KuaFuPage from "../components/KuaFu";
