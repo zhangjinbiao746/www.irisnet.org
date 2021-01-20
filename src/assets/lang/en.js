@@ -6,7 +6,7 @@ export const message = {
         description:'Welcome to the New Connected Interchain World',
         newFunction: {
             title: 'New Features',
-            description: 'IRIS Hub 1.0 will enable IBC and support innovative DeFi functions like AMM, being about to achieve all the visions of roadmap in the whitepaper.'
+            description: 'IRIS Hub 1.0 will launch IBC and support innovative DeFi functions like crosschain AMM, and the KUAFU stage will begin.'
         },
         iService:{
             title:'iService',
@@ -138,9 +138,9 @@ export const message = {
         right:[
             {
                 id:0,
-                title:'HOUYI',
+                title:'KUAFU',
                 href:'',
-                name:'houyi',
+                name:'kuafu',
                 active: false,
             },
             {
@@ -177,7 +177,7 @@ export const message = {
             },
             {
                 id:10,
-                title:'HOUYI',
+                title:'KUAFU',
                 activeIndex: 10,
                 active:false,
             },

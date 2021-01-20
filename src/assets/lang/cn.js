@@ -6,7 +6,7 @@ export const message = {
         description:'欢 迎 迈 入 万 物 互 联 的 跨 链 新 时 代',
         newFunction: {
             title: '全新功能',
-            description: '全新主网将上线 IBC 并支持 AMM 等多项独特 DeFi 功能，即将实现白皮书中路线图的所有愿景'
+            description: '全新主网将上线 IBC 并支持跨链 AMM 等多项独特 DeFi 功能，开启「夸父」阶段'
         },
         iService:{
             title:'iService 跨链服务',
@@ -138,9 +138,9 @@ export const message = {
         right:[
             {
                 id:0,
-                title:'后羿',
+                title:'夸父',
                 href:'',
-                name:'houyi',
+                name:'kuafu',
                 active: false,
             },
             {
@@ -177,7 +177,7 @@ export const message = {
             },
             {
                 id:10,
-                title:'后羿',
+                title:'夸父',
                 activeIndex: 10,
                 active:false,
             },

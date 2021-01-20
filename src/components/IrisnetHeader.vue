@@ -92,7 +92,7 @@
         },
         watch:{
             $route (){
-                if(this.$route.path.includes('houyi')){
+                if(this.$route.path.includes('kuafu')){
                     this.flShowIrisHub = true
                 }else {
                     this.flShowIrisHub = false
@@ -104,7 +104,7 @@
                 if(this.$route.path === '/mainnet' || this.$route.path === '/testnets' || this.$route.path === '/testnets/'){
                     this.navigationData.header.right[1].active = true;
                     this.resetActiveIcon();
-                }else if(this.$route.path.includes('houyi')){
+                }else if(this.$route.path.includes('kuafu')){
                     this.navigationData.header.right[0].active = true;
                     this.resetActiveIcon();
                     this.navigationData.header.mobileNavigation[1].active = true;
@@ -185,32 +185,32 @@
                     }
                 }else{
                     if(this.$route.query.lang && this.$route.query.lang === 'CN'){
-                        this.$router.push({path:'/houyi/?lang=CN'})
+                        this.$router.push({path:'/kuafu/?lang=CN'})
                     }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
-                        this.$router.push({path:'/houyi/?lang=EN'})
+                        this.$router.push({path:'/kuafu/?lang=EN'})
                     }else {
-                        this.$router.push({path:'/houyi'})
+                        this.$router.push({path:'/kuafu'})
                     }
                 }
             },
             mobileLink(title,index){
-                let mainnet,testnets,community,developers,home,houyi;
+                let mainnet,testnets,community,developers,home,kuafu;
                 if(this.$route.query.lang && this.$route.query.lang === 'CN'){
                     mainnet = '/mainnet/?lang=CN'
-                    houyi = '/houyi/?lang=CN'
+                    kuafu = '/kuafu/?lang=CN'
                     testnets = '/testnets/?lang=CN'
                     community = '/community/?lang=CN'
                     developers = '/developers/?lang=CN'
                     home = '/?lang=CN'
                 }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
                     mainnet = '/mainnet/?lang=EN'
-                    houyi = '/houyi/?lang=EN'
+                    kuafu = '/kuafu/?lang=EN'
                     testnets = '/testnets/?lang=EN'
                     community = '/community/?lang=EN'
                     developers = '/developers/?lang=EN'
                     home = '/?lang=EN'
                 }else {
-                    houyi = '/houyi'
+                    kuafu = '/kuafu'
                     mainnet = '/mainnet'
                     testnets = '/testnets'
                     community = '/community'
@@ -225,8 +225,8 @@
 	                this.$router.push({path:community})
                 }else if(title === 'WhitePaper' || title === '白皮书' || title === 'Roadmap'  || title === '路线图' || title === 'Collaboration'|| title === '合作方'){
                     this.$router.push({path:home})
-                }else if(title === 'HOUYI' || title === '后羿' ){
-                    this.$router.push({path:houyi})
+                }else if(title === 'KUAFU' || title === '夸父' ){
+                    this.$router.push({path:kuafu})
                 }else if(title === 'Developers' || title === '开发者'){
                     this.$router.push({path:developers})
                     this.$umeng.push('developers','click')
@@ -271,7 +271,7 @@
             }
         },
         mounted(){
-            if(this.$route.path.includes('houyi')){
+            if(this.$route.path.includes('kuafu')){
                 this.flShowIrisHub = true
             }else {
                 this.flShowIrisHub = false
@@ -280,7 +280,7 @@
             let headerHeight = document.getElementsByClassName('header_wrap')[0].clientHeight;
             this.resetActiveIcon();
             this.$store.commit('headerHeight',headerHeight);
-            if(this.$route.path.includes('houyi') ){
+            if(this.$route.path.includes('kuafu') ){
                 this.navigationData.header.right[0].active = true;
             }else if(this.$route.path === '/mainnet/'
                     || this.$route.path === '/mainnet'

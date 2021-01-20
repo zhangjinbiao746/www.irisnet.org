@@ -211,7 +211,7 @@
 <script>
 	import '../assets/icon/iconfont.css'
 	export default {
-		name: "houyi",
+		name: "kuafu",
 		data(){
 			return{
 				isChinese:false
