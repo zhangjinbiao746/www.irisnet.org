@@ -39,7 +39,7 @@ export const message = {
             title: 'Bifrost Testnet',
             description: 'IRISnet\'s Bifrost is the testnet launched for IBC and AMM functions to give strong support to Cosmos\'s interchain vision. ',
             understand:'Learn More',
-            understandLink: 'https://mp.weixin.qq.com/s/t5NXw7ZNWbllOymwqXRKHg'
+            understandLink: 'https://medium.com/irisnet-blog/bifr%C3%B6st-irisnets-bridge-to-a-new-era-af32960dd88e'
         },
         setpList:{
             phase:'Phase',
