@@ -176,6 +176,12 @@ export const message = {
                 active:false,
             },
             {
+                id:10,
+                title:'HOUYI',
+                activeIndex: 10,
+                active:false,
+            },
+            {
                 id:1,
                 title:'Testnet',
                 activeIndex: '',
@@ -211,12 +217,7 @@ export const message = {
                 activeIndex: 6,
                 active:false,
             },
-            {
-                id:10,
-                title:'HOUYI',
-                activeIndex: 10,
-                active:false,
-            },
+            
         ],
         mobileLinkHrefNavigation:[
             {
