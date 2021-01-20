@@ -6,7 +6,7 @@ export const message = {
         description:'Welcome to the New Connected Interchain World',
         newFunction: {
             title: 'New Features',
-            description: 'IRIS Hub 1.0 will launch IBC and support innovative DeFi functions like crosschain AMM, and the KUAFU stage will begin.'
+            description: 'IRIS Hub 1.0 will launch <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> and support innovative DeFi functions like crosschain AMM, and the KUAFU stage will begin.'
         },
         iService:{
             title:'iService',
@@ -14,7 +14,7 @@ export const message = {
         },
         ibc: {
             title:'Inter-Blockchain Communication (IBC)',
-            description: 'IBC + iService, as the TCP/IP + HTTP protocol of blockchains, can build and further broaden the Internet of Blockchains.',
+            description: '<a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> + iService, as the TCP/IP + HTTP protocol of blockchains, can build and further broaden the Internet of Blockchains.',
             test: 'Multi-Networks IBC Joint Tests',
             link: ''
         },
@@ -22,7 +22,7 @@ export const message = {
             {
                 iconName:'icon-Coinswap',
                 title: 'Coinswap',
-                section:'Cross-chain AMM, a vanguard innovation platform for DeFi applications in the Cosmos ecosystem.'
+                section:'Cross-chain AMM, a vanguard innovation platform for DeFi applications in the <a href="https://cosmos.network/" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Cosmos</a> ecosystem.'
             },
             {
                 iconName: 'icon-Oracle',
@@ -37,7 +37,7 @@ export const message = {
         ],
         testnet:{
             title: 'Bifrost Testnet',
-            description: 'IRISnet\'s Bifrost is the testnet launched for IBC and AMM functions to give strong support to Cosmos\'s interchain vision. ',
+            description: 'IRISnet\'s Bifrost is the testnet launched for <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> and AMM functions to give strong support to <a href="https://cosmos.network/" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Cosmos</a>\'s interchain vision. ',
             understand:'Learn More',
             understandLink: 'https://medium.com/irisnet-blog/bifr%C3%B6st-irisnets-bridge-to-a-new-era-af32960dd88e'
         },
@@ -64,7 +64,7 @@ export const message = {
                         content: 'IRISnet\'s unique functions, including AMM, NFT, enhanced iService, etc.'
                     },
                     {
-                        content: 'Cosmos Stargate functions, including smooth upgrade, IBC, state sync, etc.'
+                        content: '<a href="https://cosmos.network/" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Cosmos</a> Stargate functions, including smooth upgrade, <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a>, state sync, etc.'
                     }
                 ],
                 description:''
@@ -79,9 +79,9 @@ export const message = {
             {
                 iconName: 'icon-duowangluoIBClianheceshi',
                 title:'Multi-Networks IBC Joint Tests',
-                subTitle: 'A multi-networks IBC joint testing initiated by IRISnet.',
+                subTitle: 'A multi-networks <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> joint testing initiated by IRISnet.',
                 list:[],
-                description: 'This effort aims to further validate the IBC cross-chain transfer function, improve the IBC user experience, support the IBC-related tools development and so on together with Confio (CosmWasm), Tendermint, Regen Network, Chainapsis (Keplr) and many other teams. '
+                description: 'This effort aims to further validate the <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> cross-chain transfer function, improve the <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> user experience, support the IBC-related tools development and so on together with <a href="https://cosmwasm.com" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Confio（CosmWasm）</a>, <a href="https://tendermint.com" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Tendermint</a>, <a href="https://www.regen.network" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Regen Network</a>,<a href="https://chainapsis.com" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">Chainapsis（Keplr）</a>and many other teams. '
             }
         ],
         applicationShowList: {
@@ -91,13 +91,13 @@ export const message = {
                     scr:require('../irishub1/irishub_uptick.png'),
                     title:'Uptick Ticket ',
                     section:'Uptick Ticket focuses on NFT e-ticketing for the show and event industry and also provides open Uptick NFT protocol for developers.',
-                    link:''
+                    link:'https://www.uptickproject.com'
                 },
                 {
                     scr: require('../irishub1/irishub_chain_link.png'),
                     title:'Chainlink',
                     section:'With the flexible framework of iService, Chainlink\'s oracle is integrated to support the off-chain data secure and reliable transfer into distributed applications, and accordingly to cover more blockchain environments.',
-                    link:''
+                    link:'https://chain.link'
                 }
             ],
         },
