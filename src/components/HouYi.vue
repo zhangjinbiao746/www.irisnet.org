@@ -544,7 +544,7 @@
 										border: 0.01rem solid rgba(100, 141, 237, 1);
 										line-height: 1;
 										border-radius: 0.04rem;
-										
+										color: rgba(100, 141, 237, 1);
 									}
 								}
 								
@@ -994,6 +994,7 @@
 											text-align: center;
 										}
 										.test_net_time_link{
+											color: rgba(100, 141, 237, 1);
 											padding: 0.08rem 0.13rem;
 										}
 									}
@@ -1021,6 +1022,7 @@
 											text-align: center;
 										}
 										.test_net_time_link{
+											color: rgba(100, 141, 237, 1);
 											padding: 0.08rem 0.1rem;
 										}
 									}
