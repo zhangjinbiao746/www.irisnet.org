@@ -149,9 +149,10 @@
 							<div class="test_net_item_content_item_bottom">
 								<div class="test_net_item_step_content">
 									<p>{{$store.state.messages.irishub.setpList.irishub}} {{$store.state.messages.irishub.setpList.hub1}}</p>
-									<!--<a :href= "$store.state.messages.irishub.setpList.link3"  target="_blank" rel="noreferrer noopener">
-									</a>-->
-									<span class="test_net_time_link">{{$store.state.messages.irishub.setpList.comeSoon}}</span>
+									<a class="test_net_time_link" :href= "$store.state.messages.irishub.setpList.link3"  target="_blank" rel="noreferrer noopener">
+										{{$store.state.messages.irishub.setpList.comeSoon}}
+									</a>
+<!--									<span class="test_net_time_link">{{$store.state.messages.irishub.setpList.comeSoon}}</span>-->
 								</div>
 							</div>
 						</div>
@@ -716,7 +717,6 @@
 									text-align: center;
 									padding-top: 0.19rem;
 									.test_net_time_link{
-										cursor: default;
 										display: inline-block;
 										margin-top: 0.12rem;
 										padding: 0.15rem 0.1rem;
