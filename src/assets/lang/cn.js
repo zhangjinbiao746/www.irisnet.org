@@ -46,7 +46,7 @@ export const message = {
             link0: 'https://mp.weixin.qq.com/s/9rncMa5YutXpfh1n8vw8lw',
             link1: 'https://mp.weixin.qq.com/s/k9rW4ciUo8-eg74llEhMsw',
             link2: 'https://mp.weixin.qq.com/s/Ie65oPemezszB41Lxj6P2w',
-            link3: '',
+            link3: 'https://mp.weixin.qq.com/s/Ooe99CDtwIuQWt_nDfRqfQ',
             oneStepTitle: '',
             end:'已结束',
             ing:'进行中',
