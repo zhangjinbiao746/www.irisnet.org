@@ -383,7 +383,7 @@ export const message = {
                 title1:'主网升级在即',
                 content: '欢迎迈入万物互联的跨链新时代',
                 btn1:'了解更多',
-                btnHref1:'https://irisnet.org/kuafu/?lang=CN',
+                btnHref1:'/kuafu/?lang=CN',
                 btn2:'预告',
                 btnHref2:'https://mp.weixin.qq.com/s/Ooe99CDtwIuQWt_nDfRqfQ'
             }
