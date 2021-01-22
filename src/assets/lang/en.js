@@ -380,6 +380,17 @@ export const message = {
                 }
             }
         },
+        irishub1:{
+            content:{
+                title:'IRIS Hub 1.0',
+                title1:'Mainnet Upgrade Soon',
+                content: 'Welcome to the New Connected Interchain World',
+                btn1:'More details',
+                btnHref1:'/kuafu/?lang=EN',
+                btn2:'Pre-Announcement',
+                btnHref2:'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-upgrade-pre-announcement-99fd83a2bd19'
+            }
+        },
         bsn:{
             content:{
                 title:'IRISnet',
