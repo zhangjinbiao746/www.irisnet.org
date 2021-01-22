@@ -105,8 +105,8 @@
                     this.navigationData.header.right[1].active = true;
                     this.resetActiveIcon();
                 }else if(this.$route.path.includes('kuafu')){
-                    this.navigationData.header.right[0].active = true;
                     this.resetActiveIcon();
+                    this.navigationData.header.right[0].active = true;
                     this.navigationData.header.mobileNavigation[1].active = true;
                 }else {
                     this.navigationData.header.right[0].active = false;
