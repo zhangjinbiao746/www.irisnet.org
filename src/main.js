@@ -14,13 +14,14 @@ require('element-ui/lib/theme-chalk/index.css')
 if (process.env.VUE_ENV === 'client') {
     require('./assets/icon/iconfont')
     const VueAwesomeSwiper = require('vue-awesome-swiper');
-    const vuescroll  = require('vuescroll')
+    const vuescroll = require('vuescroll')
     Vue.use(VueAwesomeSwiper);
     Vue.use(vuescroll)
     const { Swipe, SwipeItem } = require('vue-awesome-swiper');
     const Message  = require('element-ui')
     Vue.component('swipe', Swipe);
     Vue.component('swipe-item', SwipeItem);
+    Vue.component('vue-scroll', vuescroll);
     Vue.prototype.$umeng = umeng;
     Vue.prototype.$Message = Message;
 }

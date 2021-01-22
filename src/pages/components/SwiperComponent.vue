@@ -1,29 +1,31 @@
 <template>
-	<div class="swiper_container" @mouseenter="swiperStop" @mouseleave="swiperStart">
-		<swiper ref="mySwiper" :options="swiperOption" class="my-swipe" v-if="flShowSwiper">
-			<swiper-slide v-for="(item,index) in $store.state.messages.homeBanner" :key="index">
-				<div class="banner_content_wrap" :style="{background:`url(${item.bgImage})`}">
-					<div class="banner_content_container">
-						<div class="banner_content">
-							<p class="banner_content_title">{{item.title}}</p>
-							<p class="banner_content_sub_title">{{item.subTitle}}</p>
-							<p class="banner_content_description">{{item.description}}</p>
-							<div class="banner_content_btn_content">
-								<a class="banner_content_left_btn"
-								   :href="item.leftBtnLink"
-								   target="_blank"
-								   rel="noreferrer noopener">{{item.leftBtnLabel}}</a>
-								<a class="banner_content_right_btn" :href="item.rightBtnLink"
-								   target="_blank"
-								   rel="noreferrer noopener">{{item.rightBtnLabel}}</a>
+	<div>
+		<div class="swiper_container" @mouseenter="swiperStop" @mouseleave="swiperStart">
+			<swiper ref="mySwiper" :options="swiperOption" class="my-swipe" v-show="flShowSwiper">
+				<swiper-slide v-for="(item,index) in $store.state.messages.homeBanner" :key="index">
+					<div class="banner_content_wrap" :style="{background:`url(${item.bgImage})`}">
+						<div class="banner_content_container">
+							<div class="banner_content">
+								<p class="banner_content_title">{{item.title}}</p>
+								<p class="banner_content_sub_title">{{item.subTitle}}</p>
+								<p class="banner_content_description">{{item.description}}</p>
+								<div class="banner_content_btn_content">
+									<a class="banner_content_left_btn"
+									   :href="item.leftBtnLink"
+									   target="_blank"
+									   rel="noreferrer noopener">{{item.leftBtnLabel}}</a>
+									<a class="banner_content_right_btn" :href="item.rightBtnLink"
+									   target="_blank"
+									   rel="noreferrer noopener">{{item.rightBtnLabel}}</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</swiper-slide>
-		</swiper>
-		<div class="swiper-button-prev" @click="prev()"></div>
-		<div class="swiper-button-next" @click="next()"></div>
+				</swiper-slide>
+			</swiper>
+			<div class="swiper-button-prev" @click="prev()"></div>
+			<div class="swiper-button-next" @click="next()"></div>
+		</div>
 	</div>
 </template>
 
@@ -46,8 +48,8 @@
 					autoHeight : true,
 					// effect : 'coverflow',
 					navigation : {
-						nextEl : '.swiper_container .swiper-button-next',
-						prevEl : '.swiper_container .swiper-button-prev',
+						nextEl : '.swiper-button-next',
+						prevEl : '.swiper-button-prev',
 					}
 				}
 			}
