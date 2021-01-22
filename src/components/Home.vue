@@ -14,7 +14,7 @@
                                 </span>-->
                                 <div class="banner_item_content_content" style="color: #fff;text-align:center;margin-top: 0.53rem;margin-bottom: 0.25rem">{{$store.state.messages.home.irishub1.content.content}}</div>
                                 <div class="banner_item_content_btn_container">
-                                    <router-link class="banner_item_content_btn" :to="`/kuafu`">{{$store.state.messages.home.irishub1.content.btn1}}</router-link>
+                                    <router-link class="banner_item_content_btn" :to="`${$store.state.messages.home.irishub1.content.btnHref1}`">{{$store.state.messages.home.irishub1.content.btn1}}</router-link>
                                     <a :href="$store.state.messages.home.irishub1.content.btnHref2"
                                        class="banner_item_content_btn"
                                        target="_blank">

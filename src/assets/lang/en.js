@@ -386,7 +386,7 @@ export const message = {
                 title1:'Mainnet Upgrade Soon',
                 content: 'Welcome to the New Connected Interchain World',
                 btn1:'More details',
-                btnHref1:'https://irisnet.org/kuafu/?lang=EN',
+                btnHref1:'/kuafu/?lang=EN',
                 btn2:'Pre-Announcement',
                 btnHref2:'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-upgrade-pre-announcement-99fd83a2bd19'
             }
