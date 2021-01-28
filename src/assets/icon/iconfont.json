@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "19676681",
+      "name": "IRIS Hub 用户",
+      "font_class": "IRISHubyonghu",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "19676589",
+      "name": "验证人",
+      "font_class": "yanzhengren",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "19676586",
+      "name": "钱包浏览器",
+      "font_class": "qianbaoliulanqi",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "19676585",
+      "name": "交易所",
+      "font_class": "jiaoyisuo",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
       "icon_id": "19487885",
       "name": "前往",
       "font_class": "qianwang",
