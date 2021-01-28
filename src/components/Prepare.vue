@@ -86,7 +86,7 @@
 		background: #0d0e2c;
 		.up_grade_maneuver{
 			background: url("../assets/irishub1/prepare_header_bg.png") no-repeat center center;
-			background-size: auto 100%;
+			background-size: auto 90%;
 			@media(max-width: 768px){
 				background-position: -2rem 1.8rem;
 				background-size: auto 85%;
