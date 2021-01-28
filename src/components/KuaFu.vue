@@ -362,9 +362,10 @@
 						.proposal_proposal_btn{
 							padding: 0.08rem 0.5rem;
 							margin-left: 0.32rem;
-							border: 0.01rem solid #648DED;
+							/*border: 0.01rem solid #648DED;*/
+							background: #121654 ;
 							border-radius: 0.04rem;
-							color: rgba(100, 141, 237, 1);
+							color: rgba(100, 141, 237, 0.65);
 							font-weight: 600;
 							font-size: 0.2rem;
 							line-height: 0.28rem;
@@ -952,7 +953,7 @@
 							margin-top: 0.24rem;
 							font-size: 0.32rem;
 							font-weight: 600;
-							line-height: 0.32rem;
+							line-height: 0.48rem;
 						}
 						.test_net_application_subtitle{
 							margin-top: 0.36rem;
@@ -1044,6 +1045,7 @@
 							margin-right: 0.6rem;
 							@media(max-width: 768px){
 								margin-right: 0;
+								text-align: center;
 							}
 							.up_grade_testnet_title{
 								margin-top: 0.28rem;
@@ -1063,6 +1065,8 @@
 								font-weight: 600;
 								@media(max-width: 768px){
 									font-size: 0.24rem;
+									text-align: center;
+									
 								}
 							}
 							.up_grade_join_testnet_btn{
@@ -1076,6 +1080,7 @@
 								border-radius: 0.04rem;
 								@media(max-width: 768px){
 									margin-top: 0.44rem;
+									text-align: center;
 								}
 							}
 						}
