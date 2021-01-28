@@ -6,7 +6,8 @@ export const message = {
         description:'Welcome to the New Connected Interchain World',
         btn:{
             prepare:'Prepare',
-            proposal:'Proposals'
+            proposal:'Proposals',
+            tooltip:'Coming Soon'
         },
         proposal:{
             title:'Proposals',
@@ -63,7 +64,7 @@ export const message = {
                         iconName:'icon-IRISHubyonghu',
                         title:'IRIS Hub Users',
                         description: 'IRIS Hub users should make sure to back up your wallet mnemonics or keystore files',
-                        linkLabel: 'Tutorial for Rainbow Wallet Uses',
+                        linkLabel: 'Tutorial for Rainbow Wallet Users',
                         link:'https://medium.com/irisnet-blog/much-safer-keystore-import-export-function-is-added-to-rainbow-v2-4-5e8d9e0723cc',
                         cliTitle:'Users of other wallets should follow their own manuals to perform similar operations',
                         cliLinkLabel:'Keys Migration Guide for CLI Users',

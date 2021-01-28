@@ -50,6 +50,20 @@
     #app{
         width: 100%;
     }
+    .el-message {
+        min-width: 1.8rem;
+        background: #fff;
+        padding-left: 0.15rem;
+        .el-message__icon {
+            display: none;
+        }
+        .el-message__content{
+            margin: 0 auto;
+            padding: 0 0.02rem;
+            color: #617088;
+            
+        }
+    }
     @import "assets/style/reset.less";
 </style>
 

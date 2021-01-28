@@ -12,7 +12,7 @@
 									{{$store.state.messages.irishub.btn.prepare}}
 							</div>
 						</router-link>
-						<div class="proposal_proposal_btn">
+						<div class="proposal_proposal_btn" @click="showTooltip()">
 							{{$store.state.messages.irishub.btn.proposal}}
 						</div>
 					</div>
@@ -79,7 +79,6 @@
 						<a class="proposal_item_btn"
 						   :href="!!item.link ? item.link : 'javascript:void(0)'"
 						   :target="!!item.link ? '_blank' :''"
-						   :style="{cursor: !!item.link ? 'pointer' : 'not-allowed'}"
 						   rel="noreferrer noopener">{{item.btnLabel}}</a>
 					</div>
 				</div>
@@ -248,6 +247,7 @@
 <script>
 	import '../assets/icon/iconfont.css'
 	import BugBountyComponent from "./modules/BugBountyComponent";
+	import {Message} from "element-ui"
 	export default {
 		name: "kuafu",
 		components: {BugBountyComponent},
@@ -258,6 +258,14 @@
 			}
 		},
 		methods:{
+			showTooltip(){
+				this.$Message.Message.closeAll()
+				this.$Message.Message({
+					message:this.$store.state.messages.irishub.btn.tooltip,
+					duration: 3000,
+					offset: 50
+				})
+			},
 			toTestFunction(){
 				let ibcDom = document.getElementById('#ibc')
 				console.log(ibcDom.offsetTop,"dom")
@@ -362,6 +370,7 @@
 						.proposal_proposal_btn{
 							padding: 0.08rem 0.5rem;
 							margin-left: 0.32rem;
+							background: #0d0e2c;
 							border: 0.01rem solid #648DED;
 							border-radius: 0.04rem;
 							color: rgba(100, 141, 237, 1);
@@ -369,8 +378,7 @@
 							font-size: 0.2rem;
 							line-height: 0.28rem;
 							text-align: center;
-							cursor: not-allowed;
-							cursor: no-drop;
+							cursor: pointer;
 							@media(max-width: 768px){
 								padding: 0.08rem 0.4rem;
 								margin-left: 0.2rem;
@@ -603,10 +611,9 @@
 							display: inline-block;
 							/*border: 0.01rem solid rgba(100, 141, 237, 1);*/
 							color: rgba(100, 141, 237, 0.65);
-							background: rgba(18, 22, 84, 1);
 							font-size: 0.2rem;
 							line-height: 0.2rem;
-							padding: 0.14rem 0.3rem;
+							padding: 0.14rem 0.3rem 0.14rem 0;
 							border-radius: 0.04rem;
 							cursor: default;
 							@media(max-width: 768px){
@@ -952,7 +959,7 @@
 							margin-top: 0.24rem;
 							font-size: 0.32rem;
 							font-weight: 600;
-							line-height: 0.32rem;
+							line-height: 0.48rem;
 						}
 						.test_net_application_subtitle{
 							margin-top: 0.36rem;
@@ -1044,6 +1051,7 @@
 							margin-right: 0.6rem;
 							@media(max-width: 768px){
 								margin-right: 0;
+								text-align: center;
 							}
 							.up_grade_testnet_title{
 								margin-top: 0.28rem;
@@ -1063,6 +1071,8 @@
 								font-weight: 600;
 								@media(max-width: 768px){
 									font-size: 0.24rem;
+									text-align: center;
+									
 								}
 							}
 							.up_grade_join_testnet_btn{
@@ -1076,6 +1086,7 @@
 								border-radius: 0.04rem;
 								@media(max-width: 768px){
 									margin-top: 0.44rem;
+									text-align: center;
 								}
 							}
 						}

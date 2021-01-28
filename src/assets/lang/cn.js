@@ -6,7 +6,8 @@ export const message = {
         description:'欢 迎 迈 入 万 物 互 联 的 跨 链 新 时 代',
         btn:{
             prepare:'升级准备',
-            proposal:'提案投票'
+            proposal:'提案投票',
+            tooltip:'敬请期待'
         },
         proposal:{
             title:'提案投票',
@@ -29,7 +30,7 @@ export const message = {
             title: '升级演练',
             testnetTitle:'参与主网升级前的测试网',
             testnetDescription:'迎 接 跨 链 新 时 代',
-            joinTestnet:'加入测试网',
+            joinTestnet:'升级准备',
             joinTestnetLink:''
         },
         prepare:{
