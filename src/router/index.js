@@ -23,6 +23,7 @@ import Developers from "../components/bsn/Developers"
 import Cosmos from "../components/Cosmos";
 import CommunityPage from "../components/CommunityPage"
 import KuaFuPage from "../components/KuaFu";
+import Prepare from "../components/Prepare"
 Vue.use(Router)
 
 export function createRouter() {
@@ -99,6 +100,10 @@ export function createRouter() {
             {
                 path: '/kuafu',
                 component: KuaFuPage
+            },
+            {
+                path: '/kuafu/testnet',
+                component: Prepare
             },
         ]
     })
