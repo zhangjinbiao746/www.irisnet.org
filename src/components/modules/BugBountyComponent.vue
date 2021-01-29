@@ -7,7 +7,7 @@
 						<p class="bug_bounty_line"></p>
 						<h3 class="bug_bounty_title">{{$store.state.messages.irishub.bugBounty.title}}</h3>
 						<p class="bug_bounty_title"><span>{{$store.state.messages.irishub.bugBounty.subtitle}}</span> <span class="bug_bounty_title_tag">{{$store.state.messages.irishub.bugBounty.span}}</span></p>
-						<!--						<a class="bug_bounty_btn" :href="$store.state.messages.irishub.bugBounty.lookDetailLink" target="_blank" rel="noreferrer noopener">{{$store.state.messages.irishub.bugBounty.lookDetail}}</a>-->
+						<a class="bug_bounty_btn" :href="$store.state.messages.irishub.bugBounty.lookDetailLink" target="_blank" rel="noreferrer noopener">{{$store.state.messages.irishub.bugBounty.lookDetail}}</a>
 					</div>
 				</div>
 			</div>
