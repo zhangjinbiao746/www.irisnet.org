@@ -189,7 +189,7 @@ export const message = {
             subtitle: 'Program',
             span:'III',
             lookDetail:'Learn More',
-            lookDetailLink: ''
+            lookDetailLink: 'https://medium.com/irisnet-blog/irisnet-bug-bounty-program-iii-e43769ed5571'
         }
     },
     floatWindow:{

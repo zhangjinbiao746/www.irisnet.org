@@ -189,7 +189,7 @@ export const message = {
             subtitle: '漏洞赏金计划',
             span:'III',
             lookDetail:'查看详情',
-            lookDetailLink: ''
+            lookDetailLink: 'https://mp.weixin.qq.com/s/4KovpznK8_6qFVT5PMvkNQ'
         }
     },
     floatWindow:{
