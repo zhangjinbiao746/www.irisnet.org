@@ -4,6 +4,89 @@ export const message = {
         title: 'IRIS Hub 1.0',
         secondTitle: 'Mainnet Upgrade Soon',
         description:'Welcome to the New Connected Interchain World',
+        btn:{
+            prepare:'Prepare',
+            proposal:'Proposals',
+            tooltip:'Coming Soon'
+        },
+        proposal:{
+            title:'Proposals',
+            list:[
+                {
+                    proposalId:'Proposal #',
+                    title:'IRIS Hub 1.0 Mainnet Upgrade',
+                    btnLabel:'Coming Soon',
+                    link:''
+                },
+                {
+                    proposalId:'Proposal #',
+                    title:'IBC Enabled',
+                    btnLabel:'Coming Soon',
+                    link:''
+                },
+            ]
+        },
+        upGrade: {
+            title: 'Prepare for Upgrade',
+            testnetTitle:'Participate in the Testnet',
+            testnetDescription:'For the Connected Interchain World',
+            joinTestnet:'Prepare',
+            joinTestnetLink:''
+        },
+        prepare:{
+            maneuverTitle:'Prepare for Upgrade',
+            maneuverDescription:'Get involved in Bifrost to test your services in this staging environment',
+            guide:{
+                title:'Upgrade Guides',
+                list:[
+                    {
+                        iconName:'icon-jiaoyisuo',
+                        title:'Exchanges',
+                        description:'Exchanges should test the applications/clients in this staging environment to familiarize with the migration process',
+                        linkLabel:'Migration Guide for Exchanges',
+                        link:'https://github.com/irisnet/mainnet/blob/master/upgrade/v1.0.0/Migration-Guide-For-Exchange.md'
+                    },
+                    {
+                        iconName:'icon-qianbaoliulanqi',
+                        title:'Wallets & Explorers',
+                        description:'Wallets and Explorers should fully test to ensure to provide stable services after the upgrade',
+                        linkLabel: 'Migration Guide for Wallets & Explorers',
+                        link:'https://github.com/irisnet/irishub/tree/master/docs/light-client'
+                    },
+                    {
+                        iconName:'icon-yanzhengren',
+                        title: 'Validators',
+                        description:'IRIS Hub mainnet validators are recommended to participate in the simulated upgrade and help run the Bifrost-2 to familiarize with the upgrade workflow',
+                        linkLabel: 'Upgrade Workflow for Validators',
+                        link:'https://github.com/irisnet/irishub/blob/master/migrate/README.md'
+                    },
+                    {
+                        iconName:'icon-IRISHubyonghu',
+                        title:'IRIS Hub Users',
+                        description: 'IRIS Hub users should make sure to back up your wallet mnemonics or keystore files',
+                        linkLabel: 'Tutorial for Rainbow Wallet Users',
+                        link:'https://medium.com/irisnet-blog/much-safer-keystore-import-export-function-is-added-to-rainbow-v2-4-5e8d9e0723cc',
+                        cliTitle:'Users of other wallets should follow their own manuals to perform similar operations',
+                        cliLinkLabel:'Keys Migration Guide for CLI Users',
+                        cliLink:'https://github.com/irisnet/irishub/blob/master/migrate/keys.md'
+                    }
+                ]
+            },
+            joinTestnet: {
+                title: 'Join the Testnet',
+                chainId: 'Chain-ID: bifrost-2',
+                section: 'IRIS Hub 1.0 as a Significant Milestone will be an incompatible upgrade including many important features',
+                sectionTwo: 'IRISnet\'s Bifrost is the specialized testnet where IBC and functions like AMM of IRIS Hub v1.0 can be tested out. Developers and mainnet validators are strongly recommended to treat Bifrost as the staging environment and use it for active testing',
+                joinLabel: 'Join Bifrost Testnet',
+                joinLink:'https://github.com/irisnet/testnets/blob/master/bifrost/phase-2/README.md',
+                rpcNodeLabel:'Public RPC Endpoints',
+                rpcNodeIp:'34.80.22.255:26657',
+                rpcNodeIpLink:'http://34.80.22.255:26657/',
+                restNodeLabel:'Public REST Endpoints',
+                restNodeIp:'34.80.22.255:1317',
+                restNodeIpLink:'http://34.80.22.255:1317/'
+            }
+        },
         newFunction: {
             title: 'New Features',
             description: 'IRIS Hub 1.0 will launch <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> and support innovative DeFi functions like crosschain AMM, and the KUAFU stage will begin.'
@@ -106,7 +189,7 @@ export const message = {
             subtitle: 'Program',
             span:'III',
             lookDetail:'Learn More',
-            lookDetailLink: ''
+            lookDetailLink: 'https://medium.com/irisnet-blog/irisnet-bug-bounty-program-iii-e43769ed5571'
         }
     },
     floatWindow:{
@@ -543,13 +626,14 @@ export const message = {
                 title: 'Ecosystem Partners',
                 logos: [
                     {id:0, path: 'logos/irisnet_binance.png', url: 'https://www.binance.com?ref=H2WOUINO'},
-                    {id:1, path: 'logos/irisnet_cmc.png', url: 'https://coinmarketcap.com'},
-                    {id:2, path: 'logos/irisnet_ok_chain.png', url: 'https://www.okex.com/okchain'},
-                    {id:3, path: 'logos/irisnet_kava.png', url: 'https://www.kava.io'},
-                    {id:4, path: 'logos/mykey_logo.png', url: 'https://mykey.org/'},
-                    {id:5, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
-                    {id:6, path: 'logos/IOV.png', url: 'https://iov.one/'},
-                    {id:7, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
+                    {id:1, path: 'logos/irisnet_Chainlink.png', url: 'https://chain.link/'},
+                    {id:2, path: 'logos/irisnet_cmc.png', url: 'https://coinmarketcap.com'},
+                    {id:3, path: 'logos/irisnet_ok_chain.png', url: 'https://www.okex.com/okchain'},
+                    {id:4, path: 'logos/irisnet_kava.png', url: 'https://www.kava.io'},
+                    {id:5, path: 'logos/mykey_logo.png', url: 'https://mykey.org/'},
+                    {id:6, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
+                    {id:7, path: 'logos/IOV.png', url: 'https://iov.one/'},
+                    {id:8, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
 
                 ]
             },

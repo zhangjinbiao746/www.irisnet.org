@@ -4,6 +4,89 @@ export const message = {
         title: 'IRIS Hub 1.0',
         secondTitle: '主网升级在即',
         description:'欢 迎 迈 入 万 物 互 联 的 跨 链 新 时 代',
+        btn:{
+            prepare:'升级准备',
+            proposal:'提案投票',
+            tooltip:'敬请期待'
+        },
+        proposal:{
+            title:'提案投票',
+            list:[
+                {
+                    proposalId:'提案 #',
+                    title:'IRIS Hub 1.0 主网升级',
+                    btnLabel:'即将开启',
+                    link:''
+                },
+                {
+                    proposalId:'提案 #',
+                    title:'IBC 功能启用',
+                    btnLabel:'即将开启',
+                    link:''
+                },
+            ]
+        },
+        upGrade: {
+            title: '升级演练',
+            testnetTitle:'参与主网升级前的测试网',
+            testnetDescription:'迎 接 跨 链 新 时 代',
+            joinTestnet:'升级准备',
+            joinTestnetLink:''
+        },
+        prepare:{
+            maneuverTitle:'升级演练',
+            maneuverDescription:'在 Bifrost 测试网的准生产环境中充分测试与验证',
+            guide:{
+                title:'升级指南',
+                list:[
+                    {
+                        iconName:'icon-jiaoyisuo',
+                        title:'交易所',
+                        description:'对应用、客户端的升级进行验证测试，以熟悉应用迁移过程',
+                        linkLabel:'交易所应用迁移指南',
+                        link:'https://github.com/irisnet/mainnet/blob/master/upgrade/v1.0.0/%E4%BA%A4%E6%98%93%E6%89%80%E5%BA%94%E7%94%A8%E8%BF%81%E7%A7%BB%E6%8C%87%E5%8D%97.md'
+                    },
+                    {
+                        iconName:'icon-qianbaoliulanqi',
+                        title:'钱包 & 浏览器',
+                        description:'对钱包和浏览器进行充分验证测试，以确保升级后可正常提供服务',
+                        linkLabel: '钱包 & 浏览器迁移指南',
+                        link:'https://github.com/irisnet/irishub/tree/master/docs/light-client'
+                    },
+                    {
+                        iconName:'icon-yanzhengren',
+                        title: '验证人',
+                        description:'参与主网模拟升级，协助运行 Bifrost 测试网，以熟悉完整升级过程',
+                        linkLabel: '验证人升级步骤',
+                        link:'https://github.com/irisnet/irishub/blob/master/migrate/README.md'
+                    },
+                    {
+                        iconName:'icon-IRISHubyonghu',
+                        title:'IRIS Hub 用户',
+                        description: '在主网升级前备份钱包助记词或 Keystore 文件',
+                        linkLabel: 'Rainbow 钱包用户指南',
+                        link:'https://mp.weixin.qq.com/s/RfkFS2FxO4zbfpvoWwY9sQ',
+                        cliTitle:'其它钱包的用户请遵循各自类似的操作指南',
+                        cliLinkLabel:'CLI 用户指南',
+                        cliLink:'https://github.com/irisnet/irishub/blob/master/migrate/keys.md'
+                    }
+                ]
+            },
+            joinTestnet: {
+                title: '参与测试网',
+                chainId: 'Chain-ID：bifrost-2',
+                section: '作为重要里程碑，IRIS Hub v1.0 将采用包含多项重要功能的非兼容重启方式进行升级。',
+                sectionTwo: 'Bifrost 是为验证 IRIS Hub v1.0 的 IBC 和  AMM 等功能而启动的专有测试网络。强烈建议开发者、主网验证人把 Bifrost 作为主网升级前的「准生产环境」用于测试和验证。',
+                joinLabel: '加入方法',
+                joinLink:'https://github.com/irisnet/testnets/blob/master/bifrost/phase-2/README.md',
+                rpcNodeLabel:'公共 RPC 端点',
+                rpcNodeIp:'34.80.22.255:26657',
+                rpcNodeIpLink:'http://34.80.22.255:26657/',
+                restNodeLabel:'公共 REST 端点',
+                restNodeIp:'34.80.22.255:1317',
+                restNodeIpLink:'http://34.80.22.255:1317/'
+            }
+        },
         newFunction: {
             title: '全新功能',
             description: '全新主网将上线 <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> 并支持跨链 AMM 等多项独特 DeFi 功能，开启「夸父」阶段'
@@ -106,7 +189,7 @@ export const message = {
             subtitle: '漏洞赏金计划',
             span:'III',
             lookDetail:'查看详情',
-            lookDetailLink: ''
+            lookDetailLink: 'https://mp.weixin.qq.com/s/4KovpznK8_6qFVT5PMvkNQ'
         }
     },
     floatWindow:{
@@ -541,13 +624,14 @@ export const message = {
                 title: '生态合作伙伴',
                 logos: [
                     {id:0, path: 'logos/irisnet_binance.png', url: 'https://www.binancezh.pro/'},
-                    {id:1, path: 'logos/irisnet_cmc.png', url: 'https://coinmarketcap.com'},
-                    {id:2, path: 'logos/irisnet_ok_chain.png', url: 'https://www.okex.com/okchain'},
-                    {id:3, path: 'logos/irisnet_kava.png', url: 'https://www.kava.io'},
-                    {id:4, path: 'logos/mykey_logo.png', url: 'https://mykey.org/'},
-                    {id:5, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
-                    {id:6, path: 'logos/IOV.png', url: 'https://iov.one/'},
-                    {id:7, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
+                    {id:1, path: 'logos/irisnet_Chainlink.png', url: 'https://chain.link/'},
+                    {id:2, path: 'logos/irisnet_cmc.png', url: 'https://coinmarketcap.com'},
+                    {id:3, path: 'logos/irisnet_ok_chain.png', url: 'https://www.okex.com/okchain'},
+                    {id:4, path: 'logos/irisnet_kava.png', url: 'https://www.kava.io'},
+                    {id:5, path: 'logos/mykey_logo.png', url: 'https://mykey.org/'},
+                    {id:6, path: 'logos/irisnet_eMoney.png', url: 'https://www.e-money.com/'},
+                    {id:7, path: 'logos/IOV.png', url: 'https://iov.one/'},
+                    {id:8, path: 'logos/irisnet_coirfan.png', url: 'http://iris.fan/#/'},
                 ]
             },
             Institutional: {

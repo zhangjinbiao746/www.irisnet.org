@@ -9,14 +9,17 @@ import 'babel-polyfill'
 import umeng  from "./umeng/umeng";
 require('reveal.js/css/reveal.css');
 require('swiper/dist/css/swiper.css');
+require('element-ui/lib/theme-chalk/index.css')
 if (process.env.VUE_ENV === 'client') {
     require('./assets/icon/iconfont')
     const VueAwesomeSwiper = require('vue-awesome-swiper');
     Vue.use(VueAwesomeSwiper);
     const { Swipe, SwipeItem } = require('vue-awesome-swiper');
+    const Message  = require('element-ui')
     Vue.component('swipe', Swipe);
     Vue.component('swipe-item', SwipeItem);
     Vue.prototype.$umeng = umeng;
+    Vue.prototype.$Message = Message;
 }
 Vue.mixin({
     beforeMount() {
@@ -68,7 +71,7 @@ export function createApp() {
         }
         next()
     })
-    Vue.prototype.UrlSrc='../public/irisnet/';
+    Vue.prototype.UrlSrc='/public/irisnet/';
     // Vue.prototype.UrlSrc = process.env.NODE_ENV == 'development' ? '../public/' : 'https://www.bianjie.ai/irisnet/public/';
     const app = new Vue({
         router,

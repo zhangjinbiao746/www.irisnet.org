@@ -50,6 +50,7 @@
     #app{
         width: 100%;
     }
+    
     @import "assets/style/reset.less";
 </style>
 

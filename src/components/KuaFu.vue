@@ -6,6 +6,16 @@
 					<div class="irishub_header_title">{{$store.state.messages.irishub.title}}</div>
 					<div class="irishub_header_title">{{$store.state.messages.irishub.secondTitle}}</div>
 					<p class="irishub_sub_title">{{$store.state.messages.irishub.description}}</p>
+					<div class="proposal_btn_container">
+						<router-link :to="prepareLink">
+							<div class="proposal_prepare_btn">
+									{{$store.state.messages.irishub.btn.prepare}}
+							</div>
+						</router-link>
+						<div class="proposal_proposal_btn" @click="showTooltip()">
+							{{$store.state.messages.irishub.btn.proposal}}
+						</div>
+					</div>
 					<div class="irishub_img_content">
 						<img src="../assets/irishub1/irishub_mobile_hot_bg.png" alt="">
 					</div>
@@ -53,6 +63,24 @@
 					<span :class="`iconfont ${item.iconName}`"></span>
 					<p class="new_function_application_title">{{item.title}}</p>
 					<p class="new_function_application_section" v-html="item.section "></p>
+				</div>
+			</div>
+		</div>
+		<div class="proposal_container">
+			<div class="proposal_content">
+				<div class="proposal_title_content">
+					<p class="proposal_link"></p>
+					<h1 class="proposal_title">{{$store.state.messages.irishub.proposal.title}}</h1>
+				</div>
+				<div class="proposal_list">
+					<div class="proposal_item" v-for="(item,index) in $store.state.messages.irishub.proposal.list">
+						<p class="propsal_item_id">{{item.proposalId}}</p>
+						<p class="propsal_item_title">{{item.title}}</p>
+						<a class="proposal_item_btn"
+						   :href="!!item.link ? item.link : 'javascript:void(0)'"
+						   :target="!!item.link ? '_blank' :''"
+						   rel="noreferrer noopener">{{item.btnLabel}}</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -173,6 +201,26 @@
 				</div>
 			</div>
 		</div>
+		<div class="up_grade_container">
+			<div class="up_grade_content_wrap">
+				<div class="up_grade_content">
+					<div class="up_grade_title_content">
+						<p class="up_grade_line"></p>
+						<h2 class="up_grade_title">{{$store.state.messages.irishub.upGrade.title}}</h2>
+					</div>
+					<div class="up_grade_testnet_content">
+						<div class="up_grade_test_wrap">
+							<p class="up_grade_testnet_title">{{$store.state.messages.irishub.upGrade.testnetTitle}}</p>
+							<p class="up_grade_testnet_description">{{$store.state.messages.irishub.upGrade.testnetDescription}}</p>
+							<router-link class="up_grade_join_testnet_btn"
+							   :to="prepareLink"
+							   :target="!!$store.state.messages.irishub.upGrade.joinTestnetLink ?'_blank' : ''"
+							   rel="noreferrer noopener">{{$store.state.messages.irishub.upGrade.joinTestnet}}</router-link>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="application_show_container">
 			<div class="application_show_content_wrap">
 				<p class="application_show_link"></p>
@@ -192,31 +240,32 @@
 				</div>
 			</div>
 		</div>
-		<div class="bug_bounty_container">
-			<div class="bug_bounty_bg_content">
-				<div class="bug_bounty_content_wrap">
-					<div class="bug_bounty_title_content">
-						<p class="bug_bounty_line"></p>
-						<h3 class="bug_bounty_title">{{$store.state.messages.irishub.bugBounty.title}}</h3>
-						<p class="bug_bounty_title"><span>{{$store.state.messages.irishub.bugBounty.subtitle}}</span> <span class="bug_bounty_title_tag">{{$store.state.messages.irishub.bugBounty.span}}</span></p>
-<!--						<a class="bug_bounty_btn" :href="$store.state.messages.irishub.bugBounty.lookDetailLink" target="_blank" rel="noreferrer noopener">{{$store.state.messages.irishub.bugBounty.lookDetail}}</a>-->
-					</div>
-				</div>
-			</div>
-		</div>
+		<BugBountyComponent></BugBountyComponent>
 	</div>
 </template>
 
 <script>
 	import '../assets/icon/iconfont.css'
+	import BugBountyComponent from "./modules/BugBountyComponent";
+	import {Message} from "element-ui"
 	export default {
 		name: "kuafu",
+		components: {BugBountyComponent},
 		data(){
 			return{
-				isChinese:false
+				isChinese:false,
+				prepareLink: `/kuafu/testnet`
 			}
 		},
 		methods:{
+			showTooltip(){
+				this.$Message.Message.closeAll()
+				this.$Message.Message({
+					message:this.$store.state.messages.irishub.btn.tooltip,
+					duration: 3000,
+					offset: 50
+				})
+			},
 			toTestFunction(){
 				let ibcDom = document.getElementById('#ibc')
 				console.log(ibcDom.offsetTop,"dom")
@@ -227,6 +276,13 @@
 			}
 		},
 		mounted(){
+			if(this.$route.query && this.$route.query.lang && this.$route.query.lang === 'EN'){
+				this.prepareLink = `/kuafu/testnet/?lang=EN`
+			}else if(this.$route.query && this.$route.query.lang && this.$route.query.lang === 'CN'){
+				this.prepareLink = `/kuafu/testnet/?lang=CN`
+			}else {
+				this.prepareLink = `/kuafu/testnet`
+			}
 			if(window.navigator.language === 'zh' || window.navigator.language === 'zh-CN'){
 				this.isChinese = true
 			}else {
@@ -271,10 +327,68 @@
 						line-height: 0.32rem;
 						font-size: 0.2rem;
 						margin-top: 0.57rem;
-						margin-bottom: 2.74rem;
+						margin-bottom:0.64rem;
 						box-sizing: border-box;
 						padding: 0.11rem 0.2rem;
 						background: linear-gradient(347deg, rgba(13, 17, 53, 0.06) 0%, #2344C2 100%);
+					}
+					.proposal_btn_container{
+						display: flex;
+						margin-bottom: 2.56rem;
+						@media(max-width: 880px){
+							margin-bottom: 5.25rem;
+							justify-content: center;
+						}
+						@media(max-width: 600px){
+							margin-bottom: 4rem;
+						}
+						@media(max-width: 440px){
+							margin-bottom: 2.71rem;
+						}
+						a{
+							color: #fff;
+							@media(max-width: 768px){
+								font-size: 0.18rem;
+							}
+							.proposal_prepare_btn{
+								padding: 0.08rem 0.5rem;
+								background: rgba(46, 69, 211, 1);
+								font-size: 0.2rem;
+								line-height: 0.28rem;
+								text-align: center;
+								border-radius: 0.04rem;
+								@media(max-width: 768px){
+									padding: 0.08rem 0.4rem;
+									font-size: 0.18rem;
+								}
+								@media(max-width: 375px){
+									padding: 0.08rem 0.24rem;
+								}
+								
+							}
+						}
+						
+						.proposal_proposal_btn{
+							padding: 0.08rem 0.5rem;
+							margin-left: 0.32rem;
+							background: #0d0e2c;
+							border: 0.01rem solid #648DED;
+							border-radius: 0.04rem;
+							color: rgba(100, 141, 237, 1);
+							font-size: 0.2rem;
+							line-height: 0.28rem;
+							text-align: center;
+							cursor: pointer;
+							@media(max-width: 768px){
+								padding: 0.08rem 0.4rem;
+								margin-left: 0.2rem;
+								font-size: 0.18rem;
+							}
+							@media(max-width: 375px){
+								padding: 0.08rem 0.24rem;
+								
+							}
+						}
 					}
 				}
 			}
@@ -422,6 +536,96 @@
 				}
 				.new_function_application_content:last-child{
 					margin-right: 0;
+				}
+			}
+		}
+		.proposal_container{
+			background: rgba(13,14,44,1);
+			.proposal_content{
+				max-width: 12rem;
+				margin: 0 auto;
+				@media(max-width: 1200px){
+					margin: 0 0.4rem;
+				}
+				@media(max-width: 768px){
+					margin: 0 0.2rem;
+				}
+				.proposal_title_content{
+					.proposal_link{
+						width: 1rem;
+						height: 0.08rem;
+						background: rgba(46, 69, 211, 1);
+					}
+					.proposal_title{
+						padding-top: 0.36rem;
+						font-size: 0.4rem;
+						font-weight: 600;
+						line-height: 0.36rem;
+						margin: 0;
+						color: #fff;
+						@media(max-width: 375px){
+							font-size: 0.32rem;
+						}
+					}
+				}
+				.proposal_list{
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					grid-column-gap: 0.4rem;
+					margin-top: 0.4rem;
+					padding-bottom: 1.17rem;
+					@media(max-width: 1200px){
+						grid-template-columns: 1fr;
+						grid-row-gap: 0.4rem;
+					}
+					@media(max-width: 768px){
+						padding-bottom: 0.6rem;
+					}
+					.proposal_item{
+						box-sizing: border-box;
+						padding: 0.56rem 0.48rem;
+						background: url("../assets/irishub1/proposal_item_left.png") no-repeat center center;
+						background-size: cover;
+						border-radius: 0.04rem;
+						@media(max-width: 768px){
+							padding: 0.24rem;
+						}
+						.propsal_item_id{
+							font-size: 0.2rem;
+							color: rgba(255, 255, 255, 0.65);
+							font-weight: 400;
+							line-height: 0.2rem;
+						}
+						.propsal_item_title{
+							margin-top: 0.16rem;
+							color: #fff;
+							font-size: 0.32rem;
+							line-height: 0.32rem;
+							font-weight: 600;
+							@media(max-width: 768px){
+								margin-top: 0.1rem;
+								font-size: 0.24rem;
+							}
+						}
+						.proposal_item_btn{
+							margin-top: 0.48rem;
+							display: inline-block;
+							/*border: 0.01rem solid rgba(100, 141, 237, 1);*/
+							color: rgba(100, 141, 237, 0.65);
+							font-size: 0.2rem;
+							line-height: 0.2rem;
+							padding: 0.14rem 0.3rem 0.14rem 0;
+							border-radius: 0.04rem;
+							cursor: default;
+							@media(max-width: 768px){
+								margin-top: 0.2rem;
+							}
+						}
+					}
+					.proposal_item:last-child{
+						background: url("../assets/irishub1/proposal_item_right.png") no-repeat center center;
+						background-size: cover;
+					}
 				}
 			}
 		}
@@ -756,7 +960,7 @@
 							margin-top: 0.24rem;
 							font-size: 0.32rem;
 							font-weight: 600;
-							line-height: 0.32rem;
+							line-height: 0.48rem;
 						}
 						.test_net_application_subtitle{
 							margin-top: 0.36rem;
@@ -791,6 +995,109 @@
 							line-height: 0.32rem;
 							color: rgba(255,255,255,0.65);
 						}
+					}
+				}
+			}
+		}
+		.up_grade_container{
+			background: rgba(13,14,44,1);
+			.up_grade_content_wrap{
+				max-width: 19.2rem;
+				margin: 0 auto;
+				background: url("../assets/irishub1/upgrade_bg.png") no-repeat center center;
+				background-size: auto 8rem;
+				@media(max-width: 768px){
+					background-position: center 0.4rem;
+				}
+				@media(max-width: 500px){
+					background-image: url("../assets/irishub1/upgrade_bg_mobile.png");
+					background-size: 100% auto ;
+					background-position: center bottom;
+				}
+				@media(max-width: 430px){
+					background-size:  auto 100% ;
+				}
+				.up_grade_content{
+					max-width: 12rem;
+					margin: 0 auto;
+					padding-bottom: 2.94rem;
+					@media(max-width: 1200px){
+						margin: 0 0.4rem;
+						padding-bottom: 3.54rem;
+					}
+					@media(max-width: 768px){
+						margin: 0 0.2rem;
+					}
+					.up_grade_title_content{
+						padding-top: 1rem;
+						@media(max-width: 768px){
+							padding-top:0.6rem;
+						}
+						.up_grade_line{
+							width: 1rem;
+							height: 0.08rem;
+							background: rgba(46, 69, 211, 1);
+						}
+						.up_grade_title{
+							margin-top: 0.36rem;
+							font-size: 0.4rem;
+							color: #fff;
+							font-weight: 600;
+							line-height: 0.4rem;
+						}
+					}
+					.up_grade_testnet_content{
+						display: flex;
+						justify-content: flex-end;
+						margin-top: 1.68rem;
+						@media(max-width: 768px){
+							margin-top: 0.89rem;
+							justify-content: center;
+						}
+						.up_grade_test_wrap{
+							margin-right: 0.6rem;
+							@media(max-width: 600px){
+								margin-right: 0;
+								text-align: center;
+							}
+							.up_grade_testnet_title{
+								margin-top: 0.28rem;
+								color: #ffffff;
+								font-size: 0.26rem;
+								line-height: 0.32rem;
+								font-weight: 600;
+								@media(max-width: 768px){
+									font-size: 0.17rem;
+								}
+							}
+							.up_grade_testnet_description{
+								margin-top: 0.24rem;
+								font-size: 0.4rem;
+								line-height: 0.4rem;
+								color: #fff;
+								font-weight: 600;
+								@media(max-width: 768px){
+									font-size: 0.24rem;
+									text-align: center;
+									
+								}
+							}
+							.up_grade_join_testnet_btn{
+								display: inline-block;
+								margin-top: 0.6rem;
+								font-size: 0.2rem;
+								line-height: 0.28rem;
+								padding: 0.1rem 0.4rem;
+								background: rgba(46, 69, 211, 1);
+								color: #fff;
+								border-radius: 0.04rem;
+								@media(max-width: 768px){
+									margin-top: 0.44rem;
+									text-align: center;
+								}
+							}
+						}
+						
 					}
 				}
 			}
@@ -856,54 +1163,7 @@
 				}
 			}
 		}
-		.bug_bounty_container{
-			background-color: rgba(22,24,57,1);
-			.bug_bounty_bg_content{
-				max-width: 19.2rem;
-				margin: 0 auto;
-				background: url("../assets/irishub1/irishub_bug_bounty.png") no-repeat center center;
-				background-size: auto 100%;
-				.bug_bounty_content_wrap{
-					max-width: 12rem;
-					margin: 0 auto;
-					display: flex;
-					justify-content: flex-end;
-					.bug_bounty_title_content{
-						padding: 1.59rem 0 2.73rem 0;
-						.bug_bounty_btn{
-							margin-top: 0.48rem;
-							display: inline-block;
-							padding: 0.14rem 0.34rem;
-							border: 0.01rem solid rgba(100, 141, 237, 1);
-							background: rgba(13,14,44,1);
-							border-radius: 0.04rem;
-						}
-						.bug_bounty_line{
-							max-width: 3.6rem;
-							height: 0.08rem;
-							background: linear-gradient(347deg, rgba(13, 17, 53, 0.06) 0%, #2344C2 100%);
-						}
-						.bug_bounty_title{
-							margin-top: 0.48rem;
-							font-size: 0.4rem;
-							font-weight: 600;
-							line-height: 0.4rem;
-							color: rgba(255,255,255,1);
-							.bug_bounty_title_tag{
-								position: relative;
-								left: 0.1rem;
-								top: 0.04rem;
-								font-size: 0.6rem;
-								line-height: 0.4rem;
-							}
-						}
-						.bug_bounty_title:last-child{
-							margin-top: 0.28rem;
-						}
-					}
-				}
-			}
-		}
+		
 	}
 	@media(max-width: 1200px){
 		.irishub_update_container{
@@ -1040,14 +1300,6 @@
 				padding-left: 0.4rem;
 				padding-right: 0.4rem;
 			}
-			.bug_bounty_container{
-				.bug_bounty_bg_content{
-					box-sizing: border-box;
-					padding-left: 0.4rem;
-					padding-right: 0.4rem;
-					background-position: 30% top;
-				}
-			}
 		}
 	}
 	@media (max-width: 1050px) {
@@ -1081,37 +1333,6 @@
 					}
 				}
 			}
-			.bug_bounty_container{
-				.bug_bounty_bg_content{
-					padding: 0;
-					background: url("../assets/irishub1/irishub_bug_bounty_mobile.png") no-repeat right bottom;
-					background-size: cover;
-					.bug_bounty_content_wrap{
-						padding-right: 0.4rem;
-						.bug_bounty_title_content{
-							padding-top: 0.84rem;
-							padding-bottom: 5rem;
-							.bug_bounty_btn{
-								margin-left: 0.2rem;
-							}
-							.bug_bounty_line{
-								margin-left: 0.2rem;
-							}
-							.bug_bounty_title{
-								margin-top: 0.24rem;
-								margin-left: 0.2rem;
-							}
-							.bug_mobile_bounty_img{
-								display: block;
-								img{
-									width: 100%;
-									height: 100%;
-								}
-							}
-						}
-					}
-				}
-			}
 		}
 	}
 	@media (max-width: 880px) {
@@ -1131,8 +1352,8 @@
 							max-width: 3.6rem;
 							margin-left: auto;
 							margin-right: auto;
-							margin-bottom: 5.53rem;
 							text-align: center;
+							margin-bottom: 0.36rem;
 						}
 					}
 				}
@@ -1174,7 +1395,6 @@
 						}
 						.irishub_sub_title{
 							font-size: 0.18rem;
-							margin-bottom: 5.6rem;
 						}
 					}
 				}
@@ -1320,44 +1540,10 @@
 					}
 				}
 			}
-			.bug_bounty_container{
-				.bug_bounty_bg_content{
-					padding: 0;
-					background: url("../assets/irishub1/irishub_bug_bounty_mobile.png") no-repeat left bottom;
-					background-size: 100% auto;
-				}
-			}
 		}
 	}
 	@media (max-width: 600px) {
 		.irishub_update_container{
-			.bug_bounty_container{
-				.bug_bounty_bg_content{
-					padding: 0;
-					background: url("../assets/irishub1/irishub_bug_bounty_mobile.png") no-repeat left bottom;
-					background-size: 100% auto;
-					.bug_bounty_content_wrap{
-						justify-content: flex-start;
-						.bug_bounty_title_content{
-							padding-top: 0.36rem;
-							.bug_bounty_line{
-								margin-left: 0.2rem;
-							}
-							.bug_bounty_title{
-								margin-top: 0.24rem;
-								margin-left: 0.2rem;
-							}
-							.bug_mobile_bounty_img{
-								display: block;
-								img{
-									width: 100%;
-									height: 100%;
-								}
-							}
-						}
-					}
-				}
-			}
 			.irishub_header_content{
 				.irtshub_header_title_wrap{
 					margin: 0 0.2rem;
@@ -1369,17 +1555,6 @@
 						}
 						.irishub_sub_title{
 							font-size: 0.18rem;
-							margin-bottom: 3.6rem;
-						}
-					}
-				}
-			}
-			.bug_bounty_container{
-				.bug_bounty_bg_content{
-					.bug_bounty_content_wrap{
-						.bug_bounty_title_content{
-							padding-bottom: 3rem;
-							
 						}
 					}
 				}
@@ -1399,7 +1574,6 @@
 						}
 						.irishub_sub_title{
 							font-size: 0.18rem;
-							margin-bottom: 2.91rem;
 						}
 					}
 				}
