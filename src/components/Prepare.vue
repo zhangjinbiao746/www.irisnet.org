@@ -88,8 +88,9 @@
 			background: url("../assets/irishub1/prepare_header_bg.png") no-repeat center center;
 			background-size: auto 90%;
 			@media(max-width: 768px){
-				background-position: -2rem 1.8rem;
-				background-size: auto 85%;
+				background-image: url("../assets/irishub1/prepare_header_ipad_bg.png");
+				background-position: center 70%;
+				background-size: 100% auto;
 			}
 			@media(max-width: 375px){
 				background-position: -0.7rem 1.8rem;
@@ -145,7 +146,7 @@
 						margin-bottom: 4.43rem;
 						@media(max-width: 768px){
 							margin-top: 0.24rem;
-							margin-bottom: 5.53rem;
+							margin-bottom: 4.53rem;
 						}
 						@media(max-width: 375px){
 							margin-top: 0.21rem;

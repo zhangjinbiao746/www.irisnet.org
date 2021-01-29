@@ -359,6 +359,7 @@
 								border-radius: 0.04rem;
 								@media(max-width: 768px){
 									padding: 0.08rem 0.4rem;
+									font-size: 0.18rem;
 								}
 								@media(max-width: 375px){
 									padding: 0.08rem 0.24rem;
@@ -374,7 +375,6 @@
 							border: 0.01rem solid #648DED;
 							border-radius: 0.04rem;
 							color: rgba(100, 141, 237, 1);
-							font-weight: 600;
 							font-size: 0.2rem;
 							line-height: 0.28rem;
 							text-align: center;
@@ -386,6 +386,7 @@
 							}
 							@media(max-width: 375px){
 								padding: 0.08rem 0.24rem;
+								
 							}
 						}
 					}
@@ -1006,9 +1007,15 @@
 				background: url("../assets/irishub1/upgrade_bg.png") no-repeat center center;
 				background-size: auto 8rem;
 				@media(max-width: 768px){
+					background-position: center 0.4rem;
+				}
+				@media(max-width: 500px){
 					background-image: url("../assets/irishub1/upgrade_bg_mobile.png");
-					background-size: auto 8rem;
+					background-size: 100% auto ;
 					background-position: center bottom;
+				}
+				@media(max-width: 430px){
+					background-size:  auto 100% ;
 				}
 				.up_grade_content{
 					max-width: 12rem;
@@ -1049,7 +1056,7 @@
 						}
 						.up_grade_test_wrap{
 							margin-right: 0.6rem;
-							@media(max-width: 768px){
+							@media(max-width: 600px){
 								margin-right: 0;
 								text-align: center;
 							}
