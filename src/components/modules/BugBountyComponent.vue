@@ -43,6 +43,7 @@
 						border: 0.01rem solid rgba(100, 141, 237, 1);
 						background: rgba(13,14,44,1);
 						border-radius: 0.04rem;
+						font-size: 0.2rem;
 					}
 					.bug_bounty_line{
 						max-width: 3.6rem;
@@ -149,6 +150,15 @@
 						}
 					}
 				}
+			}
+		}
+	}
+	@media (max-width: 375px) {
+		.bug_bounty_container{
+			.bug_bounty_bg_content{
+				padding: 0;
+				background: url("../../assets/irishub1/irishub_bug_bounty_mobile.png") no-repeat left 3.4rem;
+				background-size: 100% auto;
 			}
 		}
 	}
