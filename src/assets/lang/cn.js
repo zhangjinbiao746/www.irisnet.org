@@ -706,31 +706,31 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://mp.weixin.qq.com/s/zc8ZZDPiavxvszT15a-bug',
-                date:'2020 年 10 月 30 日',
-                title:'IRISnet 与 KuChain 成立联合实验室 Ti-Labs，将加速推动 Cosmos 生态发展。',
-                content:'IRISnet 与 KuChain 成立联合实验室 Ti-Labs。该实验室将充分调动两个项目背后的智囊资源，为整个 Cosmos 生态未来发展提供包括概念启发、技术支持、资源推介在内的协助与支持。'
+                href:'https://mp.weixin.qq.com/s/kppCBRJSfbfcd1CRURrZWg',
+                date:'2021 年 02 月 03 日',
+                title:'IRITA Hub 已成功将 Chainlink 预言机集成至 BSN',
+                content:'由 IRISnet 核心开发团队边界智能打造的 IRITA Hub 现已完成在区块链服务网络 BSN 上原生集成 Chainlink 预言机的工作。'
             },
             {
                 id:'1',
-                href:'https://mp.weixin.qq.com/s/xJRWoBaIbLhJL0QcQCYwxQ',
-                date:'2020 年 10 月 29 日',
-                title:'IRISnet 助力生态发展，与 StarryMedia 共同打造跨链 NFT 生态。',
-                content:'IRIS 基金会启动了 Tech-Grants 计划，资助为 IRISnet 及整个生态的创新发展做出贡献的开发者、团队及项目。StarryMedia 作为首个申请 Tech-Grants 的项目，已成功获得了 IRIS 基金会提供的资金资助。'
+                href:'https://mp.weixin.qq.com/s/J1z8_1JEoDbrBLKyuqALCw',
+                date:'2021 年 01 月 28 日',
+                title:'IRISnet 携手 WeTeam 打造 DAO 工具，助力 dApp 生态繁荣发展',
+                content:'IRIS 基金会授予 WeTeam 团队 Tech-Grants 支持，IRISnet 与 WeTeam 携手运用 iService + DAO 的模式，打造 DAO 工具，助力 dApp 生态繁荣发展。'
             },
             {
                 id:'2',
-                href:'https://mp.weixin.qq.com/s/N9SUKUTHLjNJQrA5kTKtEA',
-                date:'2020 年 10 月 19 日',
-                title:'DeFi 和跨链测试网 Bifrost 开启 Phase-1 阶段，激励任务启动。',
-                content:'IRISnet 的 DeFi 和跨链测试网 Bifrost 已于 10 月 19 日正式启动 Phase-1 阶段，相应激励任务随之开启。'
+                href:'https://mp.weixin.qq.com/s/Ooe99CDtwIuQWt_nDfRqfQ',
+                date:'2021 年 01 月 21 日',
+                title:'IRISnet 主网 1.0 升级预告',
+                content:'IRISnet 即将进行主网 1.0 升级，将上线 IBC、Coinswap（AMM）、增强版 iService、NFT 等全新功能。'
             },
             {
                 id:'3',
-                href:'https://mp.weixin.qq.com/s/JCIHg7_uFhfuQNJ9B2rjAw',
-                date:'2020 年 10 月 14 日',
-                title:'IRISnet 将作为 BSN 国际公链服务门户接入相关服务。',
-                content:'IRISnet 将作为国际区块链服务网络 (BSN 国际) 公链服务门户集成其公链服务接入功能，为生态中的开发者提供一种新的低门槛、便捷接入的开发环境。'
+                href:'https://mp.weixin.qq.com/s/1KUNOjBI0EYcR0xdP0izdw',
+                date:'2021 年 01 月 01 日',
+                title:'感恩 2020，IRISnet 跨链回顾与展望',
+                content:'2020 年 IRISnet 团队依旧坚持开拓创新，从联盟链产品 IRITA，到跨链 DeFi 测试网 Bifrost，从与 Kava、OKChain 等合作支持 DeFi 服务，到加入 BSN 生态，一步步朝着跨链愿景前进。'
             }
         ]
     },
