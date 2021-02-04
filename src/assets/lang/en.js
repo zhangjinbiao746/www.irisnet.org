@@ -710,31 +710,31 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                href:'https://medium.com/irisnet-blog/kuchain-and-irisnet-team-up-to-establish-joint-labs-for-accelerating-the-development-of-the-cosmos-bec9d49c7557',
-                date:'Oct 30 2020',
-                title:'IRISnet and KuChain Team Up to Establish Joint Labs for Accelerating the Development of the Cosmos Ecosystem',
-                content:'IRISnet and KuChain established Joint Labs — Ti-Labs. Running on the back of a think-tank that is fueled by the intelligence of the masterminds behind IRISnet and KuChain, the Labs will shoulder the responsibility of enlightening the whole Cosmos ecosystem.'
+                href:'https://medium.com/irisnet-blog/irita-hub-completes-the-mainnet-integration-of-chainlink-oracles-on-bsn-c66f4aa36abc',
+                date:'Feb 03 2021',
+                title:'IRITA Hub Completes the Mainnet Integration of Chainlink Oracles on BSN',
+                content:'IRITA Hub, developed by the IRISnet core development team Bianjie, has completed a native integration of Chainlink Oracles on the Blockchain-based Services Network (BSN).'
             },
             {
                 id:'1',
-                href:'https://medium.com/irisnet-blog/to-prosper-the-ecosystem-irisnet-and-starrymedia-make-joint-efforts-to-build-the-interchain-nft-b4a38e05b3bf',
-                date:'Oct 29, 2020',
-                title:'To Prosper the Ecosystem, IRISnet and StarryMedia Make Joint Efforts to Build the Interchain NFT Ecosystem',
-                content:'IRIS Foundation has launched Tech-Grants Program to fund developers, teams and projects that contribute to IRISnet and the whole ecosystem. As the first project that applied for Tech-Grants, StarryMedia has successfully received grants from the IRIS Foundation.'
+                href:'https://medium.com/irisnet-blog/irisnet-weteam-collaborates-to-build-dao-tools-to-flourish-the-dapp-ecosystem-2bce72a5f87a',
+                date:'Jan 28, 2021',
+                title:'IRISnet and WeTeam Collaborate to Build DAO Tools to Flourish the dApp Ecosystem',
+                content:'IRISnet has collaborated with Bi23 Labs to create the new generation team autonomous tool, WeTeam, based on IRISnet’s unique iService framework and robust interchain capability. '
             },
             {
                 id:'2',
-                href:'https://medium.com/irisnet-blog/bifrost-irisnets-defi-and-interchain-testnet-has-launched-phase-1-with-incentivized-tasks-bd1d5f2ff425',
-                date:'Oct 19, 2020',
-                title:'IRISnet’s DeFi and Interchain Testnet Bifrost has launched Phase-1 with incentivized tasks',
-                content:'IRISnet’s DeFi and interchain Testnet Bifrost has launched Phase-1 on October 19th along with incentivized tasks.'
+                href:'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-upgrade-pre-announcement-99fd83a2bd19',
+                date:'Jan 21, 2021',
+                title:'IRISnet Mainnet 1.0 Upgrade Pre-Announcement',
+                content:'IRISnet Mainnet 1.0 upgrade is on the horizon, and new functions including IBC, Coinswap (AMM), enhanced iService and NFT will go live accordingly.'
             },
             {
                 id:'3',
-                href:'https://medium.com/irisnet-blog/irisnet-plans-to-integrate-related-services-as-a-public-chain-service-portal-of-bsn-international-b7a1bb38819b',
-                date:'Oct 14, 2020',
-                title:'IRISnet plans to integrate related services as a public chain service portal of BSN International',
-                content:'IRISnet will integrate related services as a public chain service portal of BSN International, providing a new low-threshold and convenient-access development environment for technology developers in the ecosystem.'
+                href:'https://medium.com/irisnet-blog/2020-irisnet-annual-highlights-daab41fe7505',
+                date:'Jan 01, 2021',
+                title:'2020 IRISnet Annual Highlights',
+                content:'In 2020, IRISnet constantly innovated and developed, such as the launch of Bifrost tesnet, collaborations with Kava and OKChain to support DeFi, the involvement in BSN ecosystem, etc., constantly stepping to the interchain world.'
             },
            
         ]
