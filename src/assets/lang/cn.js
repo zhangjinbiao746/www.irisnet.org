@@ -716,7 +716,7 @@ export const message = {
                 href:'https://mp.weixin.qq.com/s/J1z8_1JEoDbrBLKyuqALCw',
                 date:'2021 年 01 月 28 日',
                 title:'IRISnet 携手 WeTeam 打造 DAO 工具，助力 dApp 生态繁荣发展',
-                content:'IRISnet 很高兴授予 WeTeam 团队 IRIS 基金会的 Tech-Grants 支持，携手运用 iService + DAO 的模式，打造 DAO 工具，助力 dApp 生态繁荣发展。'
+                content:'IRIS 基金会授予 WeTeam 团队 Tech-Grants 支持，IRISnet 与 WeTeam 携手运用 iService + DAO 的模式，打造 DAO 工具，助力 dApp 生态繁荣发展。'
             },
             {
                 id:'2',
@@ -727,7 +727,7 @@ export const message = {
             },
             {
                 id:'3',
-                href:'https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU4NTQwODEwMg==&scene=124&uin=&key=&devicetype=Windows+10+x64&version=63010043&lang=zh_CN&a8scene=7&fontgear=2',
+                href:'https://mp.weixin.qq.com/s/1KUNOjBI0EYcR0xdP0izdw',
                 date:'2021 年 01 月 01 日',
                 title:'感恩 2020，IRISnet 跨链回顾与展望',
                 content:'2020 年 IRISnet 团队依旧坚持开拓创新，从联盟链产品 IRITA，到跨链 DeFi 测试网 Bifrost，从与 Kava、OKChain 等合作支持 DeFi 服务，到加入 BSN 生态，一步步朝着跨链愿景前进。'
