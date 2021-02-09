@@ -467,8 +467,8 @@ export const message = {
                 content: '欢迎迈入万物互联的跨链新时代',
                 btn1:'了解更多',
                 btnHref1:'/kuafu/?lang=CN',
-                btn2:'预告',
-                btnHref2:'https://mp.weixin.qq.com/s/Ooe99CDtwIuQWt_nDfRqfQ'
+                btn2:'公告',
+                btnHref2:''
             }
         },
         bsn:{

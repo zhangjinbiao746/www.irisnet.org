@@ -470,8 +470,8 @@ export const message = {
                 content: 'Welcome to the New Connected Interchain World',
                 btn1:'More details',
                 btnHref1:'/kuafu/?lang=EN',
-                btn2:'Pre-Announcement',
-                btnHref2:'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-upgrade-pre-announcement-99fd83a2bd19'
+                btn2:'Announcement',
+                btnHref2:'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-upgrade-announcement-87374f6e3841'
             }
         },
         bsn:{
