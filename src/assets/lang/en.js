@@ -466,7 +466,7 @@ export const message = {
         irishub1:{
             content:{
                 title:'IRIS Hub 1.0',
-                title1:'Mainnet Upgrade Soon',
+                title1:'will Upgrade on Feb 25',
                 content: 'Welcome to the New Connected Interchain World',
                 btn1:'More details',
                 btnHref1:'/kuafu/?lang=EN',
