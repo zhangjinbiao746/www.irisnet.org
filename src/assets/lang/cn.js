@@ -468,7 +468,7 @@ export const message = {
                 btn1:'了解更多',
                 btnHref1:'/kuafu/?lang=CN',
                 btn2:'公告',
-                btnHref2:''
+                btnHref2:'https://mp.weixin.qq.com/s/rwq6Nj4On3rYzuq6a5_4rg'
             }
         },
         bsn:{
