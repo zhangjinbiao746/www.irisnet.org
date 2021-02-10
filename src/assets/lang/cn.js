@@ -463,7 +463,7 @@ export const message = {
         irishub1:{
             content:{
                 title:'IRIS Hub 1.0',
-                title1:'主网升级在即',
+                title1:'将于 2 月 25 日升级',
                 content: '欢迎迈入万物互联的跨链新时代',
                 btn1:'了解更多',
                 btnHref1:'/kuafu/?lang=CN',
