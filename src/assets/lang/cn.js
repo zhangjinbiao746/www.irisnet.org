@@ -361,13 +361,8 @@ export const message = {
         validatorCommunity:[
             {
                 id:0,
-                src: "irisnet_qq.png",
-                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
-            },
-            {
-                id:1,
-                src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+                src: "discord.png",
+                href: "https://discord.gg/bmhu9F9xbX"
             },
         ],
         techCommunity:[
