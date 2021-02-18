@@ -378,14 +378,9 @@ export const message = {
             },
             {
                 id:1,
-                src: "irisnet_qq.png",
-                href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
-            },
-            {
-                id:2,
-                src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/#iris:matrix.org"
-            },
+                src: "discord.png",
+                href: "https://discord.gg/bmhu9F9xbX"
+            }
         ],
         productList: [
             {
