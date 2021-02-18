@@ -13,10 +13,10 @@ export const message = {
             title:'提案投票',
             list:[
                 {
-                    proposalId:'提案 #',
+                    proposalId:'提案 #10',
                     title:'IRIS Hub 1.0 主网升级',
-                    btnLabel:'即将开启',
-                    link:''
+                    btnLabel:'投票',
+                    link:'https://www.irisplorer.io/#/ProposalsDetail/10'
                 },
                 {
                     proposalId:'提案 #',
@@ -361,13 +361,8 @@ export const message = {
         validatorCommunity:[
             {
                 id:0,
-                src: "irisnet_qq.png",
-                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
-            },
-            {
-                id:1,
-                src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+                src: "discord.png",
+                href: "https://discord.gg/bmhu9F9xbX"
             },
         ],
         techCommunity:[
@@ -378,14 +373,9 @@ export const message = {
             },
             {
                 id:1,
-                src: "irisnet_qq.png",
-                href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
-            },
-            {
-                id:2,
-                src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/#iris:matrix.org"
-            },
+                src: "discord.png",
+                href: "https://discord.gg/bmhu9F9xbX"
+            }
         ],
         productList: [
             {

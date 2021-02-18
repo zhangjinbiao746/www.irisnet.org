@@ -13,10 +13,10 @@ export const message = {
             title:'Proposals',
             list:[
                 {
-                    proposalId:'Proposal #',
+                    proposalId:'Proposal #10',
                     title:'IRIS Hub 1.0 Mainnet Upgrade',
-                    btnLabel:'Coming Soon',
-                    link:''
+                    btnLabel:'Vote',
+                    link:'https://www.irisplorer.io/#/ProposalsDetail/10'
                 },
                 {
                     proposalId:'Proposal #',
@@ -362,13 +362,8 @@ export const message = {
         validatorCommunity:[
             {
                 id:0,
-                src: "irisnet_qq.png",
-                href: "http://qm.qq.com/cgi-bin/qm/qr?k=95CgDIPMXy5ZLEPF1pvd9GEh7ldWRI32"
-            },
-            {
-                id:1,
-                src: "irisnet_riot.png",
-                href: "https://riot.im/app/#/room/#irisvalidators:matrix.org"
+                src: "discord.png",
+                href: "https://discord.gg/bmhu9F9xbX"
             },
         ],
         techCommunity:[
@@ -379,15 +374,8 @@ export const message = {
             },
             {
                 id:1,
-                src: "irisnet_qq.png",
-                "txt": "qq",
-                href: "https://jq.qq.com/?_wv=1027&k=51eKP77"
-            },
-            {
-                id:2,
-                src: "irisnet_riot.png",
-                "txt": "riot",
-                href: "https://riot.im/app/#/room/#iris:matrix.org"
+                src: "discord.png",
+                href: "https://discord.gg/bmhu9F9xbX"
             },
         ],
         productList: [
