@@ -13,10 +13,10 @@ export const message = {
             title:'Proposals',
             list:[
                 {
-                    proposalId:'Proposal #',
+                    proposalId:'Proposal #10',
                     title:'IRIS Hub 1.0 Mainnet Upgrade',
-                    btnLabel:'Coming Soon',
-                    link:''
+                    btnLabel:'Vote',
+                    link:'https://www.irisplorer.io/#/ProposalsDetail/10'
                 },
                 {
                     proposalId:'Proposal #',

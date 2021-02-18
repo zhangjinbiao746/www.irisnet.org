@@ -13,10 +13,10 @@ export const message = {
             title:'提案投票',
             list:[
                 {
-                    proposalId:'提案 #',
+                    proposalId:'提案 #10',
                     title:'IRIS Hub 1.0 主网升级',
-                    btnLabel:'即将开启',
-                    link:''
+                    btnLabel:'投票',
+                    link:'https://www.irisplorer.io/#/ProposalsDetail/10'
                 },
                 {
                     proposalId:'提案 #',

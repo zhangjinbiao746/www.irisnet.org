@@ -12,9 +12,9 @@
 									{{$store.state.messages.irishub.btn.prepare}}
 							</div>
 						</router-link>
-						<div class="proposal_proposal_btn" @click="showTooltip()">
+						<a class="proposal_proposal_btn" href="https://www.irisplorer.io/#/ProposalsDetail/10" target="_blank">
 							{{$store.state.messages.irishub.btn.proposal}}
-						</div>
+						</a>
 					</div>
 					<div class="irishub_img_content">
 						<img src="../assets/irishub1/irishub_mobile_hot_bg.png" alt="">
@@ -616,7 +616,6 @@
 							line-height: 0.2rem;
 							padding: 0.14rem 0.3rem 0.14rem 0;
 							border-radius: 0.04rem;
-							cursor: default;
 							@media(max-width: 768px){
 								margin-top: 0.2rem;
 							}
