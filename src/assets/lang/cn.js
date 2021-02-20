@@ -3,7 +3,7 @@ export const message = {
     irishub:{
         title: 'IRIS Hub 1.0',
         secondTitle: '主网升级在即',
-        description:'欢 迎 迈 入 万 物 互 联 的 跨 链 新 时 代',
+        description:'参与 <span style="font-size: 0.24rem;line-height: 0.32rem;letter-spacing: 0.01rem;color: #fff">#10 提案</span> 投票，迈向跨链新时代',
         btn:{
             prepare:'升级准备',
             proposal:'提案投票',
@@ -15,7 +15,7 @@ export const message = {
                 {
                     proposalId:'提案 #10',
                     title:'IRIS Hub 1.0 主网升级',
-                    btnLabel:'投票',
+                    btnLabel:'参与投票',
                     link:'https://www.irisplorer.io/#/ProposalsDetail/10'
                 },
                 {
@@ -51,14 +51,14 @@ export const message = {
                         title:'钱包 & 浏览器',
                         description:'对钱包和浏览器进行充分验证测试，以确保升级后可正常提供服务',
                         linkLabel: '钱包 & 浏览器迁移指南',
-                        link:'https://github.com/irisnet/irishub/tree/master/docs/light-client'
+                        link:'https://github.com/irisnet/irishub/tree/master/docs/endpoints'
                     },
                     {
                         iconName:'icon-yanzhengren',
                         title: '验证人',
                         description:'参与主网模拟升级，协助运行 Bifrost 测试网，以熟悉完整升级过程',
                         linkLabel: '验证人升级步骤',
-                        link:'https://github.com/irisnet/irishub/blob/master/migrate/README.md'
+                        link:'https://github.com/irisnet/irishub/blob/master/docs/migration/README.md'
                     },
                     {
                         iconName:'icon-IRISHubyonghu',
@@ -68,7 +68,7 @@ export const message = {
                         link:'https://mp.weixin.qq.com/s/RfkFS2FxO4zbfpvoWwY9sQ',
                         cliTitle:'其它钱包的用户请遵循各自类似的操作指南',
                         cliLinkLabel:'CLI 用户指南',
-                        cliLink:'https://github.com/irisnet/irishub/blob/master/migrate/keys.md'
+                        cliLink:'https://github.com/irisnet/irishub/blob/master/docs/migration/keys.md'
                     }
                 ]
             },
