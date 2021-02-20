@@ -5,16 +5,16 @@
 				<div class="irishub_header_title_content">
 					<div class="irishub_header_title">{{$store.state.messages.irishub.title}}</div>
 					<div class="irishub_header_title">{{$store.state.messages.irishub.secondTitle}}</div>
-					<p class="irishub_sub_title">{{$store.state.messages.irishub.description}}</p>
+					<p class="irishub_sub_title" v-html="$store.state.messages.irishub.description"></p>
 					<div class="proposal_btn_container">
+						<a class="proposal_proposal_btn" href="https://www.irisplorer.io/#/ProposalsDetail/10" target="_blank">
+							{{$store.state.messages.irishub.btn.proposal}}
+						</a>
 						<router-link :to="prepareLink">
 							<div class="proposal_prepare_btn">
 									{{$store.state.messages.irishub.btn.prepare}}
 							</div>
 						</router-link>
-						<a class="proposal_proposal_btn" href="https://www.irisplorer.io/#/ProposalsDetail/10" target="_blank">
-							{{$store.state.messages.irishub.btn.proposal}}
-						</a>
 					</div>
 					<div class="irishub_img_content">
 						<img src="../assets/irishub1/irishub_mobile_hot_bg.png" alt="">
@@ -323,7 +323,7 @@
 					}
 					.irishub_sub_title{
 						max-width: 5rem;
-						color: #fff;
+						color: rgba(255,255,255,0.75);
 						line-height: 0.32rem;
 						font-size: 0.2rem;
 						margin-top: 0.57rem;
@@ -351,6 +351,7 @@
 								font-size: 0.18rem;
 							}
 							.proposal_prepare_btn{
+								margin-left: 0.32rem;
 								padding: 0.08rem 0.5rem;
 								background: rgba(46, 69, 211, 1);
 								font-size: 0.2rem;
@@ -370,18 +371,16 @@
 						
 						.proposal_proposal_btn{
 							padding: 0.08rem 0.5rem;
-							margin-left: 0.32rem;
-							background: #0d0e2c;
-							border: 0.01rem solid #648DED;
+							background: linear-gradient(258deg, #A28BF6 0%, #2E45D3 100%);
+							/*border: 0.01rem solid #648DED;*/
 							border-radius: 0.04rem;
-							color: rgba(100, 141, 237, 1);
+							color: rgba(255, 255, 255, 1);
 							font-size: 0.2rem;
 							line-height: 0.28rem;
 							text-align: center;
 							cursor: pointer;
 							@media(max-width: 768px){
 								padding: 0.08rem 0.4rem;
-								margin-left: 0.2rem;
 								font-size: 0.18rem;
 							}
 							@media(max-width: 375px){
@@ -611,7 +610,7 @@
 							margin-top: 0.48rem;
 							display: inline-block;
 							/*border: 0.01rem solid rgba(100, 141, 237, 1);*/
-							color: rgba(100, 141, 237, 0.65);
+							color: rgba(100, 141, 237, 1);
 							font-size: 0.2rem;
 							line-height: 0.2rem;
 							padding: 0.14rem 0.3rem 0.14rem 0;
@@ -624,6 +623,9 @@
 					.proposal_item:last-child{
 						background: url("../assets/irishub1/proposal_item_right.png") no-repeat center center;
 						background-size: cover;
+						.proposal_item_btn{
+							color: rgba(255, 255, 255, 0.5);
+						}
 					}
 				}
 			}
@@ -1348,7 +1350,7 @@
 							text-align: center;
 						}
 						.irishub_sub_title{
-							max-width: 3.6rem;
+							max-width: 4rem;
 							margin-left: auto;
 							margin-right: auto;
 							text-align: center;

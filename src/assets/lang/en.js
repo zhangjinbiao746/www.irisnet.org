@@ -3,7 +3,7 @@ export const message = {
     irishub:{
         title: 'IRIS Hub 1.0',
         secondTitle: 'Mainnet Upgrade Soon',
-        description:'Welcome to the New Connected Interchain World',
+        description:'Vote on  <span style="font-size: 0.24rem;line-height: 0.32rem;letter-spacing: 0.01rem;color: #fff">Proposal #10</span> for the Interoperability',
         btn:{
             prepare:'Prepare',
             proposal:'Proposals',
@@ -51,14 +51,14 @@ export const message = {
                         title:'Wallets & Explorers',
                         description:'Wallets and Explorers should fully test to ensure to provide stable services after the upgrade',
                         linkLabel: 'Migration Guide for Wallets & Explorers',
-                        link:'https://github.com/irisnet/irishub/tree/master/docs/light-client'
+                        link:'https://github.com/irisnet/irishub/tree/master/docs/endpoints'
                     },
                     {
                         iconName:'icon-yanzhengren',
                         title: 'Validators',
                         description:'IRIS Hub mainnet validators are recommended to participate in the simulated upgrade and help run the Bifrost-2 to familiarize with the upgrade workflow',
                         linkLabel: 'Upgrade Workflow for Validators',
-                        link:'https://github.com/irisnet/irishub/blob/master/migrate/README.md'
+                        link:'https://github.com/irisnet/irishub/blob/master/docs/migration/README.md'
                     },
                     {
                         iconName:'icon-IRISHubyonghu',
@@ -68,7 +68,7 @@ export const message = {
                         link:'https://medium.com/irisnet-blog/much-safer-keystore-import-export-function-is-added-to-rainbow-v2-4-5e8d9e0723cc',
                         cliTitle:'Users of other wallets should follow their own manuals to perform similar operations',
                         cliLinkLabel:'Keys Migration Guide for CLI Users',
-                        cliLink:'https://github.com/irisnet/irishub/blob/master/migrate/keys.md'
+                        cliLink:'https://github.com/irisnet/irishub/blob/master/docs/migration/keys.md'
                     }
                 ]
             },
