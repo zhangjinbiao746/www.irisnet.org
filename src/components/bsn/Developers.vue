@@ -33,6 +33,21 @@
 				</div>
 			</div>
 		</div>
+		<div class="testnet_container">
+			<h3 class="testnet_title">{{$store.state.messages.developer.testnet.title}}</h3>
+			<div class="testnet_item_container">
+				<div class="testnet_item" v-for="(item,index) in $store.state.messages.developer.testnet.list" :key="index">
+					<div>
+						<div class="testnet_item_title">{{item.title}}</div>
+						<p class="testnet_item_content">{{item.content}}</p>
+					</div>
+					<a class="testnet_item_link" :href="item.link" rel="noreferrer noopener">
+						{{item.btnLabel}}
+					</a>
+					<router-link v-if="item.isRouterLink" class="testnet_item_link" :to="item.link">{{item.btnLabel}}</router-link>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </template>
@@ -167,6 +182,80 @@
 				}
 			}
 		}
+		.testnet_container{
+			max-width: 12rem;
+			margin: 0 auto;
+			.testnet_title{
+				font-size: 0.32rem;
+				color: rgba(50, 60, 90, 1);
+				line-height: 0.45rem;
+				@media(max-width: 1200px){
+					margin: 0 0.2rem;
+				}
+			}
+			.testnet_item_container{
+				margin-top: 0.24rem;
+				margin-bottom: 1.2rem;
+				display: flex;
+				justify-content: space-between;
+				@media(max-width: 1200px){
+					flex-direction: column;
+					margin-left: 0.2rem;
+					margin-right: 0.2rem;
+				}
+				@media(max-width: 768px){
+					margin-bottom: 0.6rem;
+				}
+				.testnet_item{
+					flex: 1;
+					box-sizing: border-box;
+					padding: 0.43rem 0.6rem;
+					box-shadow: 0 0.12rem 0.5rem 0.06rem rgba(26, 24, 44, 0.09);
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					border-radius: 0.12rem;
+					@media(max-width: 768px){
+						padding-left: 0.33rem;
+						padding-right: 0.33rem;
+					}
+					.testnet_item_title{
+						font-size: 0.32rem;
+						color: rgba(50, 60, 90, 1);
+						line-height: 0.45rem;
+						font-weight: 600;
+					}
+					.testnet_item_content{
+						margin-top: 0.23rem;
+						font-size: 0.22rem;
+						line-height: 0.36rem;
+						color: rgba(155, 165, 190, 1);
+					}
+					.testnet_item_link{
+						margin-top: 0.32rem;
+						width: 2rem;
+						text-align: center;
+						display: inline-block;
+						background: linear-gradient(95deg, #714BE3 0%, #653FD8 100%);
+						box-shadow: 0 0 0.1rem 0 rgba(152, 0, 255, 0.28);
+						font-size: 0.16rem;
+						font-weight: 600;
+						line-height: 0.22rem;
+						padding: 0.14rem ;
+						box-sizing: border-box;
+						color: #fff;
+						border-radius: 0.33rem;
+					}
+				}
+				.testnet_item:first-child{
+					margin-right: 0.6rem;
+					@media(max-width: 1200px){
+						margin-right: 0;
+						margin-bottom: 0.48rem;
+					}
+				}
+			}
+		}
 	}
 	@media screen and (max-width: 1200px){
 		.developers_container{
@@ -209,6 +298,7 @@
 					.developers_content_doc{
 						flex-direction: column;
 						align-items: center;
+						margin-bottom: 0.6rem;
 						.developers_img_content{
 							max-width: 4.2rem;
 							margin-left: 0;

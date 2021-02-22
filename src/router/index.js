@@ -102,7 +102,7 @@ export function createRouter() {
                 component: KuaFuPage
             },
             {
-                path: '/kuafu/testnet',
+                path: '/developers/testnet',
                 component: Prepare
             },
         ]

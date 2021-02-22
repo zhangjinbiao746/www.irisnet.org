@@ -34,10 +34,12 @@ export const message = {
             joinTestnetLink:''
         },
         prepare:{
-            maneuverTitle:'升级演练',
-            maneuverDescription:'在 Bifrost 测试网的准生产环境中充分测试与验证',
+            maneuverTitle:'Bifrost 测试网',
+            maneuverDescription:'为验证 IBC 及 AMM 等创新功能启动的专有测试网络',
+            learnBifrost:'了解 Bifrost',
+            link:'https://mp.weixin.qq.com/s/t5NXw7ZNWbllOymwqXRKHg',
             guide:{
-                title:'升级指南',
+                title:'指南文档',
                 list:[
                     {
                         iconName:'icon-jiaoyisuo',
@@ -682,6 +684,25 @@ export const message = {
             createDeveloperHref:'https://bsn.irisnet.org',
             irisnetDoc:'IRISnet 文档',
             irisnetDocHref:'https://www.irisnet.org/docs/zh/'
+        },
+        testnet:{
+            title:'测试网',
+            list:[
+                {
+                    title:'彩虹猫测试网',
+                    content:'彩虹猫测试网通常运行比IRISnet主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
+                    link:'https://www.irisnet.org/docs/zh/get-started/testnet.html#nyancat-%E6%B5%8B%E8%AF%95%E7%BD%91',
+                    btnLabel:"使用彩虹猫测试网",
+                    isRouterLink:false
+                },
+                {
+                    title:'Bifrost 测试网',
+                    content:'Bifrost 测试网是 IRISnet 为支持 Cosmos 跨链愿景，为验证 IBC 和 AMM 等功能而启动的专有测试网络。',
+                    link:"/developers/testnet/?lang=CN",
+                    btnLabel:"使用 Bifrost 测试网",
+                    isRouterLink:false
+                }
+            ]
         }
     },
     announcements:{

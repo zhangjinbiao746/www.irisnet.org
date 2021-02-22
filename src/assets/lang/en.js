@@ -34,10 +34,12 @@ export const message = {
             joinTestnetLink:''
         },
         prepare:{
-            maneuverTitle:'Prepare for Upgrade',
-            maneuverDescription:'Get involved in Bifrost to test your services in this staging environment',
+            maneuverTitle:'Bifrost Testnet',
+            maneuverDescription:'The specialized testnet dedicated to test IBC and functions like AMM',
+            learnBifrost:'Learn Bifrost',
+            link:'https://medium.com/irisnet-blog/bifr%C3%B6st-irisnets-bridge-to-a-new-era-af32960dd88e',
             guide:{
-                title:'Upgrade Guides',
+                title:'Documentations',
                 list:[
                     {
                         iconName:'icon-jiaoyisuo',
@@ -684,6 +686,25 @@ export const message = {
             createDeveloperHref:'https://bsn.irisnet.org',
             irisnetDoc:'IRISnet Docs',
             irisnetDocHref:'https://www.irisnet.org/docs/'
+        },
+        testnet:{
+            title:'Testnet',
+            list:[
+                {
+                    title:'Nyancat Testnet',
+                    content:'The Nyancat testnet runs a newer version of irishub, providing a test environment for validators to preview and test the new version before it is ready for deployment to mainnet.',
+                    link:'https://www.irisnet.org/docs/get-started/testnet.html#nyancat-testnet',
+                    btnLabel:'Use Nyancat Tensent',
+                    isRouterLink:false
+                },
+                {
+                    title:'Bifrost Testnet',
+                    content:'Bifrost Testnet is the specialized testnet dedicated to Cosmos interchain vision, where IBC and functions like AMM can be tested out',
+                    link:'/developers/testnet/?lang=EN',
+                    btnLabel:'Use Bifrost Testnet',
+                    isRouterLink:false
+                }
+            ]
         }
     },
     announcements:{
