@@ -69,6 +69,9 @@ export function createApp() {
             store.state.lang = to.query.lang;
             store.state.messages = i18n.messages[store.state.lang]['message']
         }
+        if(to.path.includes('/kuafu/testnet')){
+            next('/developers/testnet')
+        }
         next()
     })
     Vue.prototype.UrlSrc='/public/irisnet/';
