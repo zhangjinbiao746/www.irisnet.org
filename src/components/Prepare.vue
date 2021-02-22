@@ -75,7 +75,7 @@
 					<p class="test_net_link"></p>
 					<h1 class="test_net_content_title">{{$store.state.messages.irishub.testnet.title}}</h1>
 					<p class="test_net_content_subtitle" v-html="$store.state.messages.irishub.testnet.description"></p>
-					<a :href="$store.state.messages.irishub.testnet.understandLink" class="read_more_content" target="_blank" rel="noreferrer noopener">{{$store.state.messages.irishub.testnet.understand}} <i class="iconfont icon-qianwang"></i></a>
+<!--					<a :href="$store.state.messages.irishub.testnet.understandLink" class="read_more_content" target="_blank" rel="noreferrer noopener">{{$store.state.messages.irishub.testnet.understand}} <i class="iconfont icon-qianwang"></i></a>-->
 				</div>
 				<div class="test_net_time_line_content_container">
 					<div class="test_net_time_left_content">
