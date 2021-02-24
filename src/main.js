@@ -7,8 +7,7 @@ import {createStore} from './store'
 import VueI18n from 'vue-i18n'
 import 'babel-polyfill'
 import umeng  from "./umeng/umeng";
-import vuescroll from 'vuescroll'
-import 'vuescroll/dist/vuescroll.css';
+require("vuescroll/dist/vuescroll.css")
 require('reveal.js/css/reveal.css');
 require('swiper/dist/css/swiper.css');
 require('element-ui/lib/theme-chalk/index.css')
@@ -16,6 +15,7 @@ require('overlayscrollbars/css/OverlayScrollbars.min.css')
 if (process.env.VUE_ENV === 'client') {
     require('./assets/icon/iconfont')
     const VueAwesomeSwiper = require('vue-awesome-swiper');
+    const vuescroll  = require('vuescroll')
     Vue.use(VueAwesomeSwiper);
     Vue.use(vuescroll)
     const { Swipe, SwipeItem } = require('vue-awesome-swiper');
