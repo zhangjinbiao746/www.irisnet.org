@@ -73,7 +73,7 @@
 	.developers_container{
 		.developers_title_container{
 			width: 100%;
-			background: #2C2948;
+			background: rgba(13,14,44,1);
 			padding-top: 0.6rem;
 			.developers_title_wrap{
 				margin: 0 auto;

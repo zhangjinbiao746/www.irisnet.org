@@ -15,14 +15,13 @@ import TestNetApp from '../components/TestNetApp.vue';
 import HackathonApp from '../components/HackathonApp.vue';
 import MainNet from "../components/MainNet";
 import MainNetApp from "../components/MainNetApp";
-import NewManinet from '../components/NewMainnet';
+import NewManinet from '../components/KuaFu';
 import NewTestnet from '../components/NewTestnet';
-import Home from "../components/Home";
+import Home from "../pages/Home";
 import Community from "../components/Community.vue";
 import Developers from "../components/bsn/Developers"
 import Cosmos from "../components/Cosmos";
 import CommunityPage from "../components/CommunityPage"
-import KuaFuPage from "../components/KuaFu";
 import Prepare from "../components/Prepare"
 Vue.use(Router)
 
@@ -96,10 +95,6 @@ export function createRouter() {
             {
                 path: '/developers',
                 component: Developers
-            },
-            {
-                path: '/kuafu',
-                component: KuaFuPage
             },
             {
                 path: '/developers/testnet',

@@ -23,6 +23,7 @@ export function createStore () {
             flShowFooter: true,
             headerHeight:'',
             messages:null,
+            changeItemIsActive:2
         },
         mutations: {
             changeItemIs(state, payload) {
@@ -30,6 +31,14 @@ export function createStore () {
                 let obj = Object.assign({}, this.state.messages)
                 this.state.messages = obj
                 // this.$set(this.state.messages.head.txt,payload,true)
+            },
+            changeItemIsActive(state,payload){
+                this.state.messages.home.sectionThree.road.forEach(item => {
+                    item.isActive = false
+                })
+                this.state.messages.home.sectionThree.road[payload].isActive = true
+                let obj = Object.assign({}, this.state.messages)
+                this.state.messages = obj
             },
             lang(state,data){
                 state.lang = data;
