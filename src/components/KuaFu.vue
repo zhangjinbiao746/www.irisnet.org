@@ -7,14 +7,12 @@
 					<div class="irishub_header_title">{{$store.state.messages.irishub.secondTitle}}</div>
 					<p class="irishub_sub_title" v-html="$store.state.messages.irishub.description"></p>
 					<div class="proposal_btn_container">
-						<a class="proposal_proposal_btn" href="https://www.irisplorer.io/#/ProposalsDetail/10" target="_blank">
+						<a class="proposal_proposal_btn" href="https://www.rainbow.one/" target="_blank" rel="noreferrer nonpener">
+							{{$store.state.messages.irishub.btn.prepare}}
+						</a>
+						<a class="proposal_prepare_btn" href="https://www.irisplorer.io/#/home" target="_blank" rel="noreferrer nonpener">
 							{{$store.state.messages.irishub.btn.proposal}}
 						</a>
-						<router-link :to="prepareLink">
-							<div class="proposal_prepare_btn">
-									{{$store.state.messages.irishub.btn.prepare}}
-							</div>
-						</router-link>
 					</div>
 					<div class="irishub_img_content">
 						<img src="../assets/irishub1/irishub_mobile_hot_bg.png" alt="">
@@ -84,27 +82,6 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="up_grade_container">
-			<div class="up_grade_content_wrap">
-				<div class="up_grade_content">
-					<div class="up_grade_title_content">
-						<p class="up_grade_line"></p>
-						<h2 class="up_grade_title">{{$store.state.messages.irishub.upGrade.title}}</h2>
-					</div>
-					<div class="up_grade_testnet_content">
-						<div class="up_grade_test_wrap">
-							<p class="up_grade_testnet_title">{{$store.state.messages.irishub.upGrade.testnetTitle}}</p>
-							<p class="up_grade_testnet_description">{{$store.state.messages.irishub.upGrade.testnetDescription}}</p>
-							<router-link class="up_grade_join_testnet_btn"
-							   :to="prepareLink"
-							   :target="!!$store.state.messages.irishub.upGrade.joinTestnetLink ?'_blank' : ''"
-							   rel="noreferrer noopener">{{$store.state.messages.irishub.upGrade.joinTestnet}}</router-link>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="application_show_container">
 			<div class="application_show_content_wrap">
 				<p class="application_show_link"></p>
@@ -124,7 +101,28 @@
 				</div>
 			</div>
 		</div>
-		<BugBountyComponent></BugBountyComponent>
+		<div class="community_resources_container">
+			<div class="community_resources_wrap">
+				<navigation-line/>
+				<h2 class="community_resources_title">{{$store.state.messages.communityPage.resources.title}}</h2>
+				<div class="community_resources_list_content">
+					<div class="community_list_item_content" v-for="item in $store.state.messages.communityPage.resources.ResourceList">
+						<div class="community_list_logo_content">
+							<img :src="UrlSrc + item.img" alt="">
+							<span class="logo_name">{{item.name}}</span>
+						</div>
+						<div class="community_resource_item_content">
+							<div class="community_item_top_container" v-if="item.resourceList">
+								<div class="community_item_top_content" v-for="value in item.resourceList">
+									<a :href="value.href" :target="value.href === 'javascript:void(0);' ? '' : '_blank'"><span>{{value.itemName}}</span></a> <span class="os_content">{{value.os}}</span>
+								</div>
+							</div>
+							<div class="community_item_bottom_content" :class="item.href !=='javascript:void(0);' ? 'hover_style' : ''"><a :href="item.href" :target="item.href === 'javascript:void(0);' ? '' : '_blank'">{{item.content}}</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -132,9 +130,10 @@
 	import '../assets/icon/iconfont.css'
 	import BugBountyComponent from "./modules/BugBountyComponent";
 	import {Message} from "element-ui"
+	import NavigationLine from "../pages/components/NavigationLine";
 	export default {
 		name: "kuafu",
-		components: {BugBountyComponent},
+		components: {NavigationLine, BugBountyComponent},
 		data(){
 			return{
 				isChinese:false,
@@ -203,18 +202,19 @@
 						color: #fff;
 					}
 					.irishub_header_title:nth-of-type(2){
-						margin-top: 0.24rem;
+						margin-top: 0.48rem;
+						font-size: 0.2rem;
+						color: rgba(255,255,255,0.75);
+						line-height: 0.36rem;
+						font-weight: 400;
 					}
 					.irishub_sub_title{
-						max-width: 5rem;
-						color: rgba(255,255,255,0.75);
-						line-height: 0.32rem;
-						font-size: 0.2rem;
-						margin-top: 0.57rem;
-						margin-bottom:0.64rem;
+						color: rgba(255,255,255,1);
+						line-height: 0.36rem;
+						font-size: 0.28rem;
+						margin-top: 0.11rem;
+						margin-bottom:0.61rem;
 						box-sizing: border-box;
-						padding: 0.11rem 0.2rem;
-						background: linear-gradient(347deg, rgba(13, 17, 53, 0.06) 0%, #2344C2 100%);
 					}
 					.proposal_btn_container{
 						display: flex;
@@ -229,33 +229,27 @@
 						@media(max-width: 440px){
 							margin-bottom: 2.71rem;
 						}
-						a{
-							color: #fff;
+						.proposal_prepare_btn{
+							margin-left: 0.32rem;
+							padding: 0.08rem 0.5rem;
+							background: rgba(46, 69, 211, 1);
+							color: rgba(255, 255, 255, 1);
+							font-size: 0.2rem;
+							line-height: 0.28rem;
+							text-align: center;
+							border-radius: 0.04rem;
 							@media(max-width: 768px){
+								padding: 0.08rem 0.4rem;
 								font-size: 0.18rem;
 							}
-							.proposal_prepare_btn{
-								margin-left: 0.32rem;
-								padding: 0.08rem 0.5rem;
-								background: rgba(46, 69, 211, 1);
-								font-size: 0.2rem;
-								line-height: 0.28rem;
-								text-align: center;
-								border-radius: 0.04rem;
-								@media(max-width: 768px){
-									padding: 0.08rem 0.4rem;
-									font-size: 0.18rem;
-								}
-								@media(max-width: 375px){
-									padding: 0.08rem 0.24rem;
-								}
-								
+							@media(max-width: 375px){
+								padding: 0.08rem 0.24rem;
 							}
 						}
 						
 						.proposal_proposal_btn{
 							padding: 0.08rem 0.5rem;
-							background: linear-gradient(258deg, #A28BF6 0%, #2E45D3 100%);
+							background: rgba(46, 69, 211, 1);
 							/*border: 0.01rem solid #648DED;*/
 							border-radius: 0.04rem;
 							color: rgba(255, 255, 255, 1);
@@ -514,109 +508,6 @@
 				}
 			}
 		}
-		.up_grade_container{
-			background: rgba(13,14,44,1);
-			.up_grade_content_wrap{
-				max-width: 19.2rem;
-				margin: 0 auto;
-				background: url("../assets/irishub1/upgrade_bg.png") no-repeat center center;
-				background-size: auto 8rem;
-				@media(max-width: 768px){
-					background-position: center 0.4rem;
-				}
-				@media(max-width: 500px){
-					background-image: url("../assets/irishub1/upgrade_bg_mobile.png");
-					background-size: 100% auto ;
-					background-position: center bottom;
-				}
-				@media(max-width: 430px){
-					background-size:  auto 100% ;
-				}
-				.up_grade_content{
-					max-width: 12rem;
-					margin: 0 auto;
-					padding-bottom: 2.94rem;
-					@media(max-width: 1200px){
-						margin: 0 0.4rem;
-						padding-bottom: 3.54rem;
-					}
-					@media(max-width: 768px){
-						margin: 0 0.2rem;
-					}
-					.up_grade_title_content{
-						padding-top: 1rem;
-						@media(max-width: 768px){
-							padding-top:0.6rem;
-						}
-						.up_grade_line{
-							width: 1rem;
-							height: 0.08rem;
-							background: rgba(46, 69, 211, 1);
-						}
-						.up_grade_title{
-							margin-top: 0.36rem;
-							font-size: 0.4rem;
-							color: #fff;
-							font-weight: 600;
-							line-height: 0.4rem;
-						}
-					}
-					.up_grade_testnet_content{
-						display: flex;
-						justify-content: flex-end;
-						margin-top: 1.68rem;
-						@media(max-width: 768px){
-							margin-top: 0.89rem;
-							justify-content: center;
-						}
-						.up_grade_test_wrap{
-							margin-right: 0.6rem;
-							@media(max-width: 600px){
-								margin-right: 0;
-								text-align: center;
-							}
-							.up_grade_testnet_title{
-								margin-top: 0.28rem;
-								color: #ffffff;
-								font-size: 0.26rem;
-								line-height: 0.32rem;
-								font-weight: 600;
-								@media(max-width: 768px){
-									font-size: 0.17rem;
-								}
-							}
-							.up_grade_testnet_description{
-								margin-top: 0.24rem;
-								font-size: 0.4rem;
-								line-height: 0.4rem;
-								color: #fff;
-								font-weight: 600;
-								@media(max-width: 768px){
-									font-size: 0.24rem;
-									text-align: center;
-									
-								}
-							}
-							.up_grade_join_testnet_btn{
-								display: inline-block;
-								margin-top: 0.6rem;
-								font-size: 0.2rem;
-								line-height: 0.28rem;
-								padding: 0.1rem 0.4rem;
-								background: rgba(46, 69, 211, 1);
-								color: #fff;
-								border-radius: 0.04rem;
-								@media(max-width: 768px){
-									margin-top: 0.44rem;
-									text-align: center;
-								}
-							}
-						}
-						
-					}
-				}
-			}
-		}
 		.application_show_container{
 			background-color: rgba(13,14,44,1);
 			.application_show_content_wrap{
@@ -678,6 +569,135 @@
 				}
 			}
 		}
+		.community_resources_container{
+			background: rgba(13, 14, 44, 1);
+			@media(max-width: 1200px){
+				padding: 0 0.4rem;
+			}
+			@media(max-width: 768px){
+				padding: 0 0.2rem;
+			}
+			.community_resources_wrap{
+				max-width: 12rem;
+				width: 100%;
+				margin: 0 auto;
+				.community_resources_title{
+					font-size: 0.32rem;
+					color: rgba(255,255,255,1);
+					line-height: 0.37rem;
+					padding: 0.44rem 0 0.48rem 0;
+				}
+				.community_resources_list_content{
+					display: flex;
+					flex-direction: column;
+					box-sizing: border-box;
+					.community_list_item_content{
+						display: flex;
+						margin-bottom: 0.85rem;
+						@media(max-width: 1200px){
+							flex-direction: column;
+						}
+						@media(max-width: 768px){
+							margin-bottom: 0.36rem;
+						}
+						.community_list_logo_content{
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							min-width: 2.12rem;
+							padding-right: 0.2rem;
+							@media(max-width: 1200px){
+								flex-direction: row;
+								justify-content: flex-start;
+							}
+							img{
+								width:1rem;
+								height: 1rem;
+								@media(max-width: 768px){
+									width: 0.72rem;
+									height: 0.72rem;
+								}
+							}
+							.logo_name{
+								margin-top: 0.28rem;
+								font-size: 0.24rem;
+								color: rgba(255,255,255,1);
+								line-height: 0.4rem;
+								font-weight: bolder;
+								@media(max-width: 1200px){
+									margin-top: 0;
+									margin-left: 0.16rem;
+								}
+							}
+						}
+						.community_resource_item_content{
+							flex: 1;
+							.community_item_top_container{
+								display: flex;
+								width: 100%;
+								border-bottom: 0.01rem solid rgba(255,255,255,0.29);
+								flex-wrap: wrap;
+								@media(max-width: 1200px){
+									margin-top: 0.36rem;
+								}
+								.community_item_top_content{
+									margin-right: 0.6rem;
+									padding-bottom: 0.28rem;
+									display: flex;
+									.content_title{
+										font-size: 0.24rem;
+										line-height: 0.32rem;
+										color:rgba(255,255,255,1);
+										font-weight: 600;
+									}
+									a{
+										display: inline-block;
+										font-size: 0.24rem;
+										line-height: 0.32rem;
+										color:rgba(255,255,255,1);
+										font-weight: 600;
+										:hover{
+											color: rgba(100, 141, 237, 1);
+										}
+										span{
+											display: inline-block;
+											white-space: nowrap;
+										}
+									}
+									.os_content{
+										white-space: nowrap;
+										display: inline-block;
+										padding-left: 0.1rem;
+										font-size: 0.24rem;
+										line-height: 0.32rem;
+										color: rgba(255,255,255,0.64);
+									}
+								}
+							}
+							.community_item_bottom_content{
+								margin-top: 0.17rem;
+								a{
+									cursor: text;
+									color: rgba(255,255,255,0.64);
+									line-height: 0.21rem;
+								}
+							}
+							.hover_style{
+								a{
+									cursor: pointer;
+									color: #9BA5BE;
+									&:hover{
+										color: rgba(100, 141, 237, 1);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
 		
 	}
 	@media(max-width: 1200px){
