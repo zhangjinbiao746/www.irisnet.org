@@ -873,7 +873,7 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                img:require('../../assets/pages/announcements/newyear.png'),
+                    img:require('../../assets/pages/announcements/Mainnet1.0_Pass_CN.png'),
                 href:'https://mp.weixin.qq.com/s/Pjb76zucTdZoMCAcGj2igw',
                 date:'2021 年 02 月 24 日',
                 title:'IRISnet 主网 1.0 升级',
@@ -881,15 +881,15 @@ export const message = {
             },
             {
                 id:'1',
-                img:require('../../assets/pages/announcements/newyear.png'),
-                href:'https://mp.weixin.qq.com/s/rwq6Nj4On3rYzuq6a5_4rg\t',
+                img:require('../../assets/pages/announcements/Mainnet1.0_Submitted_CN.png'),
+                href:'https://mp.weixin.qq.com/s/rwq6Nj4On3rYzuq6a5_4rg',
                 date:'2021 年 02 月 10 日',
                 title:'IRISnet 主网 1.0 升级公告',
                 content:''
             },
             {
                 id:'2',
-                img:require('../../assets/pages/announcements/newyear.png'),
+                img:require('../../assets/pages/announcements/Chainlink.png'),
                 href:'https://mp.weixin.qq.com/s/kppCBRJSfbfcd1CRURrZWg',
                 date:'2021 年 02 月 03 日',
                 title:'IRITA Hub 已成功将 Chainlink 预言机集成至 BSN',
@@ -897,7 +897,7 @@ export const message = {
             },
             {
                 id:'3',
-                img:require('../../assets/pages/announcements/newyear.png'),
+                img:require('../../assets/pages/announcements/WeTeam_CN.png'),
                 href:'https://mp.weixin.qq.com/s/J1z8_1JEoDbrBLKyuqALCw',
                 date:'2021 年 01 月 28 日',
                 title:'IRISnet 携手 WeTeam 打造 DAO 工具，助力 dApp 生态繁荣发展',
