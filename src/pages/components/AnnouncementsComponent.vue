@@ -35,6 +35,12 @@
 					<p class="announcement_date_content">{{item.date}}</p>
 				</li>
 			</ul>
+			<div class="view_more_btn_content">
+				<a :href="$store.state.messages.announcements.viewMoreHref"
+				   target="_blank" class="view_more_btn" rel="noreferrer noopener">
+					{{$store.state.messages.announcements.viewMore}}
+				</a>
+			</div>
 		</div>
 	</div>
 </template>
@@ -234,6 +240,19 @@
 						font-size: 0.16rem;
 						font-weight: 400;
 					}
+				}
+			}
+			.view_more_btn_content{
+				margin-top: 0.59rem;
+				border-top:0.01rem solid rgba(255, 255, 255, 0.45);
+				.view_more_btn{
+					margin-top: 0.35rem;
+					display: inline-block;
+					border-radius: 0.04rem;
+					border: 0.01rem solid rgba(100, 141, 237, 1);
+					box-sizing: border-box;
+					padding: 0.14rem 0.4rem;
+					color: rgba(100, 141, 237, 1);
 				}
 			}
 		}
