@@ -1274,7 +1274,7 @@ export const message = {
 	                resourceList:[
 		                {
 			                itemName: '伏羲测试网',
-			                href: 'https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html'
+			                href: 'https://www.irisnet.org/docs/zh/get-started/testnet.html'
 		                },
 		                {
 			                itemName: '彩虹猫测试网',
@@ -1282,15 +1282,15 @@ export const message = {
 		                },
 		                {
 			                itemName: '加入主网',
-			                href: 'https://www.irisnet.org/docs/zh/get-started/Join-the-Mainnet.html'
+			                href: 'https://www.irisnet.org/docs/get-started/mainnet.html'
 		                },
 		                {
 			                itemName: '命令行',
-			                href: 'https://www.irisnet.org/docs/zh/cli-client/'
+			                href: 'https://www.irisnet.org/docs/cli-client/intro.html'
 		                },
 		                {
 			                itemName: '轻客户端',
-			                href: 'https://www.irisnet.org/docs/zh/light-client/'
+			                href: 'https://www.irisnet.org/docs/cli-client/intro.html'
 		                },
 	                ]
                 }
