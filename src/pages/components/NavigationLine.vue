@@ -1,5 +1,7 @@
 <template>
-	<div class="navigation_line"></div>
+	<div>
+		<div class="navigation_line"></div>
+	</div>
 </template>
 
 <script>

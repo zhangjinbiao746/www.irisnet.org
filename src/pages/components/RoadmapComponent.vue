@@ -64,7 +64,6 @@
 		},
 		mounted(){
 			this.$store.state.messages.home.sectionThree.road.forEach(item =>{
-				console.log(item)
 				if(item.isActive){
 					this.coptionText = item.msg
 				}
