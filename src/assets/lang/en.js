@@ -2,24 +2,39 @@ export const message = {
     logo:'irisnet.png',
     homeBanner:[
         {
-            title:'',
-            subTitle:'',
-            description:'',
-            leftBtnLabel:'',
-            leftBtnLink:'',
-            rightBtnLabel:'',
+            title:'IRISnet Mainnet 1.0',
+            subTitle:'Successfully Upgraded',
+            description:'Welcome to the New Connected Interchain World',
+            leftBtnLabel:'More details',
+            leftBtnLink:'/mainnet/',
+            rightBtnLabel:'Announcement',
             rightBtnLink:'',
-            bgImage:require('../../assets/pages/banner/banner_1.png')
+            bgImage:require('../../assets/pages/banner/IRISHub.png'),
+            padImage:require('../../assets/pages/banner/IRISHub_pad.png')
         },
         {
-            title:'IRISnet 1.0',
-            subTitle:'主网升级成功',
-            description:'欢迎迈入万物互联的跨链新时代',
-            leftBtnLabel:'了解更多',
-            leftBtnLink:'',
-            rightBtnLabel:'公告',
-            rightBtnLink:'',
-            bgImage:require('../../assets/pages/banner/banner_1.png')
+            title:'IRISnet',
+            subTitle:'',
+            description:'Selected into first batch of public blockchains supported by BSN',
+            leftBtnLabel:'View Details',
+            leftBtnLink:'https://medium.com/irisnet-blog/irisnet-is-selected-into-first-batch-of-public-blockchains-supported-by-bsn-1945aa2e2a0',
+            rightBtnLabel:'IRIS Explorer',
+            rightBtnLink:'https://www.irisplorer.io/',
+            bgImage:require('../../assets/pages/banner/BSN.png'),
+            padImage: require('../../assets/pages/banner/BSN_pad.png')
+    
+        },
+        {
+            title:'Tech-Grants Program',
+            subTitle:'',
+            description:'Accelerate the Development of the IRISnet Interchain Ecosystem',
+            leftBtnLabel:'Apply',
+            leftBtnLink:'https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md',
+            rightBtnLabel:'More details',
+            rightBtnLink:'https://medium.com/irisnet-blog/iris-foundation-launches-tech-grants-program-to-accelerate-the-development-of-the-irisnet-362ac7786c88',
+            bgImage:require('../../assets/pages/banner/Techgrant.png'),
+            padImage: require('../../assets/pages/banner/Techgrant_pad.png')
+    
         }
     ],
     irishub:{
@@ -243,33 +258,33 @@ export const message = {
             }
         ],
         right:[
-            {
+            /*{
                 id:0,
                 title:'KUAFU',
                 href:'',
                 name:'kuafu',
                 active: false,
-            },
+            },*/
             {
-                id:1,
+                id:0,
                 title:'Mainnet',
                 href:'',
                 active: false,
             },
             {
-                id:2,
+                id:1,
                 title:'Docs',
                 href:'https://www.irisnet.org/docs/',
                 active: false,
             },
             {
-                id:3,
+                id:2,
                 title:'Forum',
                 href:'https://forum.irisnet.org/',
                 active: false,
             },
             {
-                id:4,
+                id:3,
                 title:'Blog',
                 href:'https://medium.com/irisnet-blog',
                 active: false,
@@ -865,35 +880,36 @@ export const message = {
             {
                 id:'0',
                 img:require('../../assets/pages/announcements/newyear.png'),
+                href:'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-upgrade-pre-announcement-99fd83a2bd19',
+                date:'Feb 24, 2021',
+                title:'IRISnet Mainnet 1.0 Upgrade On-chain Governance Proposal has Passed, will Upgrade on Feb 25',
+                content:''
+            },
+            {
+                id:'1',
+                img:require('../../assets/pages/announcements/newyear.png'),
+                href:'https://medium.com/irisnet-blog/2020-irisnet-annual-highlights-daab41fe7505',
+                date:'Feb 10, 2021',
+                title:'IRISnet Mainnet 1.0 Upgrade Announcement',
+                content:''
+            },
+            {
+                id:'2',
+                img:require('../../assets/pages/announcements/newyear.png'),
                 href:'https://medium.com/irisnet-blog/irita-hub-completes-the-mainnet-integration-of-chainlink-oracles-on-bsn-c66f4aa36abc',
                 date:'Feb 03 2021',
                 title:'IRITA Hub Completes the Mainnet Integration of Chainlink Oracles on BSN',
                 content:'IRITA Hub, developed by the IRISnet core development team Bianjie, has completed a native integration of Chainlink Oracles on the Blockchain-based Services Network (BSN).'
             },
             {
-                id:'1',
+                id:'3',
                 img:require('../../assets/pages/announcements/newyear.png'),
                 href:'https://medium.com/irisnet-blog/irisnet-weteam-collaborates-to-build-dao-tools-to-flourish-the-dapp-ecosystem-2bce72a5f87a',
                 date:'Jan 28, 2021',
                 title:'IRISnet and WeTeam Collaborate to Build DAO Tools to Flourish the dApp Ecosystem',
                 content:'IRISnet has collaborated with Bi23 Labs to create the new generation team autonomous tool, WeTeam, based on IRISnet’s unique iService framework and robust interchain capability. '
             },
-            {
-                id:'2',
-                img:require('../../assets/pages/announcements/newyear.png'),
-                href:'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-upgrade-pre-announcement-99fd83a2bd19',
-                date:'Jan 21, 2021',
-                title:'IRISnet Mainnet 1.0 Upgrade Pre-Announcement',
-                content:'IRISnet Mainnet 1.0 upgrade is on the horizon, and new functions including IBC, Coinswap (AMM), enhanced iService and NFT will go live accordingly.'
-            },
-            {
-                id:'3',
-                img:require('../../assets/pages/announcements/newyear.png'),
-                href:'https://medium.com/irisnet-blog/2020-irisnet-annual-highlights-daab41fe7505',
-                date:'Jan 01, 2021',
-                title:'2020 IRISnet Annual Highlights',
-                content:'In 2020, IRISnet constantly innovated and developed, such as the launch of Bifrost tesnet, collaborations with Kava and OKChain to support DeFi, the involvement in BSN ecosystem, etc., constantly stepping to the interchain world.'
-            },
+            
            
         ]
     },
@@ -1255,7 +1271,7 @@ export const message = {
                     href:'javascript:void(0);',
                     resourceList:[
                         {
-                            itemName: '品牌资料',
+                            itemName: 'Press Kit',
                             href: 'https://www.irisnet.org/community/press-kit'
                         },
                     ]
