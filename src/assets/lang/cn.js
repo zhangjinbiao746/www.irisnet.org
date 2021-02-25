@@ -876,7 +876,7 @@ export const message = {
                     img:require('../../assets/pages/announcements/Mainnet1.0_Pass_CN.png'),
                 href:'https://mp.weixin.qq.com/s/Pjb76zucTdZoMCAcGj2igw',
                 date:'2021 年 02 月 24 日',
-                title:'IRISnet 主网 1.0 升级',
+                title:'IRISnet 主网 1.0 升级链上提案通过，将于 2 月 25 日升级',
                 content:''
             },
             {
