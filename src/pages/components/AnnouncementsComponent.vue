@@ -119,6 +119,8 @@
 					background-size: cover;
 					display: flex;
 					justify-content: flex-end;
+					border-radius: 0.04rem;
+					overflow: hidden;
 					@media(max-width: 1200px){
 						background: url("../../assets/pages/announcement_bg.png") no-repeat left center;
 						background-size: cover;
@@ -199,6 +201,7 @@
 							img{
 								width: 100%;
 								border-radius: 0.08rem;
+								border:0.01rem solid rgba(44,57,117,1);
 							}
 						}
 						.scale_item_image{

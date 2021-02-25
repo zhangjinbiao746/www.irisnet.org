@@ -78,6 +78,7 @@
 					font-size: 0.24rem;
 					line-height: 0.24rem;
 					color: rgba(255,255,255,0.65);
+					font-weight: normal;
 				}
 				.collboration_logo_list{
 					margin-top: 0.36rem;
