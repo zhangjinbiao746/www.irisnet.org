@@ -1284,7 +1284,7 @@ export const message = {
                     resourceList:[
                         {
                             itemName: 'FUXI',
-                            href: 'https://www.irisnet.org/docs/get-started/Join-the-Testnet.html'
+                            href: 'https://www.irisnet.org/docs/get-started/testnet.html'
                         },
                         {
                             itemName: 'Nyancat',
