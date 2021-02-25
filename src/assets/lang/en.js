@@ -8,7 +8,7 @@ export const message = {
             leftBtnLabel:'More details',
             leftBtnLink:'/mainnet/',
             rightBtnLabel:'Announcement',
-            rightBtnLink:'',
+            rightBtnLink:'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-5ce1c2643965',
             bgImage:require('../../assets/pages/banner/IRISHub.png'),
             padImage:require('../../assets/pages/banner/IRISHub_pad.png')
         },
