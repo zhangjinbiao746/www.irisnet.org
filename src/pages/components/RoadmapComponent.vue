@@ -121,6 +121,8 @@
 				display: flex;
 				color: rgba(255,255,255,1);
 				width: 12rem;
+				box-sizing: border-box;
+				padding-left: 0.33rem;
 				.roadmap_item{
 					flex: 1;
 					display: flex;

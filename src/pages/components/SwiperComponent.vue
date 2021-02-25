@@ -226,7 +226,7 @@
 							border-radius: 0.04rem;
 							font-size: 0.2rem;
 							@media(max-width: 768px){
-								width: 1.2rem;
+								width: 1.4rem;
 								font-size: 0.18rem;
 								padding: 0.12rem 0;
 							}
@@ -242,9 +242,10 @@
 							font-size: 0.2rem;
 							margin-left: 0.4rem;
 							@media(max-width: 768px){
-								width: 1.2rem;
+								width: 1.4rem;
 								font-size: 0.18rem;
 								padding: 0.12rem 0;
+								margin-left: 0.2rem;
 							}
 						}
 					}
