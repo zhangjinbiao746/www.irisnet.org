@@ -879,7 +879,7 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                img:require('../../assets/pages/announcements/newyear.png'),
+                img:require('../../assets/pages/announcements/Mainnet1.0_Pass_EN.png'),
                 href:'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-upgrade-pre-announcement-99fd83a2bd19',
                 date:'Feb 24, 2021',
                 title:'IRISnet Mainnet 1.0 Upgrade On-chain Governance Proposal has Passed, will Upgrade on Feb 25',
@@ -887,7 +887,7 @@ export const message = {
             },
             {
                 id:'1',
-                img:require('../../assets/pages/announcements/newyear.png'),
+                img:require('../../assets/pages/announcements/Mainnet1.0_Submitted_EN.png'),
                 href:'https://medium.com/irisnet-blog/2020-irisnet-annual-highlights-daab41fe7505',
                 date:'Feb 10, 2021',
                 title:'IRISnet Mainnet 1.0 Upgrade Announcement',
@@ -895,7 +895,7 @@ export const message = {
             },
             {
                 id:'2',
-                img:require('../../assets/pages/announcements/newyear.png'),
+                img:require('../../assets/pages/announcements/Chainlink.png'),
                 href:'https://medium.com/irisnet-blog/irita-hub-completes-the-mainnet-integration-of-chainlink-oracles-on-bsn-c66f4aa36abc',
                 date:'Feb 03 2021',
                 title:'IRITA Hub Completes the Mainnet Integration of Chainlink Oracles on BSN',
@@ -903,7 +903,7 @@ export const message = {
             },
             {
                 id:'3',
-                img:require('../../assets/pages/announcements/newyear.png'),
+                img:require('../../assets/pages/announcements/WeTeam_EN.png'),
                 href:'https://medium.com/irisnet-blog/irisnet-weteam-collaborates-to-build-dao-tools-to-flourish-the-dapp-ecosystem-2bce72a5f87a',
                 date:'Jan 28, 2021',
                 title:'IRISnet and WeTeam Collaborate to Build DAO Tools to Flourish the dApp Ecosystem',
