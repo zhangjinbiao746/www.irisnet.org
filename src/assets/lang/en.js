@@ -297,18 +297,18 @@ export const message = {
                 activeIndex: '',
                 active:false,
             },
-            {
+          /*  {
                 id:10,
                 title:'KUAFU',
                 activeIndex: 10,
                 active:false,
-            },
-            {
+            },*/
+           /* {
                 id:1,
                 title:'Testnet',
                 activeIndex: '',
                 active:false,
-            },
+            },*/
             {
                 id:2,
                 title:'WhitePaper',
@@ -698,7 +698,7 @@ export const message = {
                         {
                             name:'Chainlink',
                             link:'https://chain.link/',
-                            image:require('../../assets/pages/collaboration/Chainlink.png')
+                            image: require('../pages/collaboration/collaboration.png')
                         },
                         {
                             name:'CoinMarketCap',
@@ -838,7 +838,7 @@ export const message = {
     developer:{
         title:'Developers',
         content:{
-            title:'IRISnet-BSN Developer Portal is Live for Registrations',
+            title:'IRISnet-BSN Developer Portal',
             rightContent1:'BSN is a cross-cloud, cross-portal, cross-framework blockchain-based global infrastructure network, supported by major Chinese entities and corporations, and its founding consortia partners include China’s State Information Center, China Mobile, China UnionPay and other organizations. IRISnet has previously joined the BSN ecosystem as <a style="color: #714BE3" href="https://medium.com/irisnet-blog/irisnet-is-selected-into-first-batch-of-public-blockchains-supported-by-bsn-1945aa2e2a0?source=collection_category---4------10-----------------------" target="_blank">the first batch of public blockchains</a> and is one of the first batch of public chains to join <a style="color: #714BE3" href="https://medium.com/bsnbase/major-breakthrough-in-chinas-blockchain-ecosystem-as-the-bsn-open-permissioned-blockchain-11e5fcae79de" target="_blank">BSN O. P. B. Initiative</a>.',
             rightContent2:'IRISnet is developing a dedicated portal to embed <a style="color: #714BE3" href="https://bsnbase.io/g/main/index" target="_blank">BSN International</a>’s public chain services. Developers can conveniently complete user registrations, node building, node updates, information queries and other operations via this portal. ',
             rightContent3:'Currently, developers are able to sign up. Developers who register now may have the chances to join the early bird event in the future. Come to join and sign up!',
@@ -895,7 +895,7 @@ export const message = {
             },
             {
                 id:'2',
-                img:require('../../assets/pages/announcements/Chainlink.png'),
+                img:require('../pages/announcements/announcement_Chainlink.png'),
                 href:'https://medium.com/irisnet-blog/irita-hub-completes-the-mainnet-integration-of-chainlink-oracles-on-bsn-c66f4aa36abc',
                 date:'Feb 03 2021',
                 title:'IRITA Hub Completes the Mainnet Integration of Chainlink Oracles on BSN',
