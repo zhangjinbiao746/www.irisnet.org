@@ -8,7 +8,7 @@ export const message = {
             leftBtnLabel:'了解更多',
             leftBtnLink:'/mainnet/',
             rightBtnLabel:'公告',
-            rightBtnLink:'',
+            rightBtnLink:'https://mp.weixin.qq.com/s/OvE829S4lXLmXBX6HUH0Lg',
             bgImage:require('../../assets/pages/banner/IRISHub.png'),
             padImage:require('../../assets/pages/banner/IRISHub_pad.png')
         },
