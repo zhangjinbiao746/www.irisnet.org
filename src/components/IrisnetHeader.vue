@@ -286,7 +286,7 @@
                     || this.$route.path === '/mainnet'
                     || this.$route.path === '/testnets'
                     || this.$route.path === '/testnets/'){
-                this.navigationData.header.right[1].active = true;
+                this.navigationData.header.right[0].active = true;
             }else {
                 this.navigationData.header.right[0].active = false;
             }

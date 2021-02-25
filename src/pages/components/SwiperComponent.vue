@@ -3,9 +3,10 @@
 		<div class="swiper_container" @mouseenter="swiperStop" @mouseleave="swiperStart">
 			<swiper ref="mySwiper" :options="swiperOption" class="my-swipe" v-show="flShowSwiper">
 				<swiper-slide v-for="(item,index) in $store.state.messages.homeBanner" :key="index">
-					<div class="banner_content_wrap" :style="{background:`url(${item.bgImage})`}">
+					<div class="banner_content_wrap" :style="{background: `url(${item.padImage})`}">
 						<div class="banner_content_container">
 							<div class="banner_content">
+								<p class="is_hide_block" v-show="!item.subTitle"></p>
 								<p class="banner_content_title">{{item.title}}</p>
 								<p class="banner_content_sub_title">{{item.subTitle}}</p>
 								<p class="banner_content_description">{{item.description}}</p>
@@ -35,6 +36,7 @@
 		data() {
 			return {
 				flShowSwiper : false,
+				isChangeBgImg: false,
 				swiperOption:{
 					loop : true,
 					autoplay : 3000,
@@ -62,6 +64,13 @@
 			
 		},
 		methods:{
+			onresize(){
+				if(document.body.offsetWidth < 1100){
+					this.isChangeBgImg = true
+				}else {
+					this.isChangeBgImg = false
+				}
+			},
 			swiperStop(){
 				this.mySwiper.stopAutoplay()
 			},
@@ -75,8 +84,10 @@
 				this.mySwiper.slidePrev();
 			},
 		},
+		
 		mounted(){
 			this.flShowSwiper = true
+			window.addEventListener('resize',this.onresize)
 		}
 	}
 </script>
@@ -86,18 +97,42 @@
 	background: rgba(13, 14, 44, 1);
 	position: relative;
 	padding-bottom: 1rem;
+	.swiper-button-prev{
+		display: block;
+		background-image: url("../../assets/pages/left_arrow.png");
+		@media(max-width: 768px){
+			display: none;
+		}
+	}
+	.swiper-button-next{
+		display: block;
+		background-image: url("../../assets/pages/right_arrow.png");
+		@media(max-width: 768px){
+			display: none;
+		}
+	}
 	.my-swipe{
 		.banner_content_wrap{
 			height: 6.08rem;
 			max-width: 13.2rem;
 			margin: 0 auto;
-			background-size: auto 100% !important;
+			background-size: auto 90% !important;
 			background-repeat:no-repeat !important;
 			background-position: left center !important;
-			@media(max-width: 1200px){
+			@media(max-width: 1100px){
 				height: auto;
-				background-position: bottom -1rem center !important;
+				background-position: bottom center !important;
 				background-size: 70% auto !important;
+			}
+			@media(max-width: 400px){
+				height: auto;
+				background-position: bottom center !important;
+				background-size: 85% auto !important;
+			}
+			@media(max-width: 360px){
+				height: auto;
+				background-position: bottom center !important;
+				background-size: 100% auto !important;
 			}
 			.banner_content_container{
 				height: 100%;
@@ -108,32 +143,51 @@
 				justify-content: flex-end;
 				color: rgba(255,255,255,1);
 				@media(max-width: 1200px){
+					margin: 0 0.2rem;
+				}
+				@media(max-width: 1100px){
 					margin: 0 0.48rem;
 					justify-content: center;
 				}
 				.banner_content{
-					@media(max-width: 1200px){
+					max-width: 5.6rem;
+					.is_hide_block{
+						height: 0.6rem;
+						@media(max-width: 768px){
+							height: 0.48rem;
+						}
+					}
+					@media(max-width: 1100px){
 						margin-bottom: 5.4rem;
 						margin-top: 1rem;
 						text-align: center;
 					}
 					@media(max-width: 768px){
-						margin-bottom: 0.57rem;
+						margin-top: 0.6rem;
+						margin-bottom: 3.92rem;
+					}
+					@media(max-width: 500px){
+						margin-top: 0.6rem;
+						margin-bottom: 2.92rem;
 					}
 					.banner_content_title{
-						font-size: 0.6rem;
-						line-height: 0.6rem;
-						font-weight: normal;
+						font-size: 0.48rem;
+						line-height: 0.48rem;
+						font-weight: bold;
 						@media(max-width: 768px){
 							font-size: 0.4rem;
 							line-height: 0.4rem;
 						}
+						@media(max-width: 500px){
+							font-size: 0.28rem;
+							line-height: 0.28rem;
+						}
 					}
 					.banner_content_sub_title{
 						margin-top: 0.24rem;
-						font-size: 0.6rem;
-						line-height: 0.6rem;
-						font-weight: 600;
+						font-size: 0.48rem;
+						line-height: 0.48rem;
+						font-weight: bold;
 						@media(max-width: 768px){
 							font-size: 0.28rem;
 							line-height: 0.28rem;
@@ -153,10 +207,12 @@
 						}
 					}
 					.banner_content_btn_content{
-						display: grid;
-						grid-template-columns: repeat(2,1fr);
-						grid-column-gap: 0.32rem;
+						display: flex;
 						margin-top: 0.6rem;
+						/*justify-items: center;*/
+						@media(max-width: 1100px){
+							justify-content: center;
+						}
 						@media(max-width: 768px){
 							margin-top: 0.32rem;
 						}
@@ -165,18 +221,31 @@
 							display: inline-block;
 							background: rgba(46, 69, 211, 1);
 							color: rgba(255,255,255,1);
-							padding: 0.1rem 0;
+							padding: 0.14rem 0;
 							text-align: center;
 							border-radius: 0.04rem;
+							font-size: 0.2rem;
+							@media(max-width: 768px){
+								width: 1.2rem;
+								font-size: 0.18rem;
+								padding: 0.12rem 0;
+							}
 						}
 						.banner_content_right_btn{
 							width: 2rem;
 							display: inline-block;
 							background: rgba(46, 69, 211, 1);
 							color: rgba(255,255,255,1);
-							padding: 0.1rem 0;
+							padding: 0.14rem 0;
 							text-align: center;
 							border-radius: 0.04rem;
+							font-size: 0.2rem;
+							margin-left: 0.4rem;
+							@media(max-width: 768px){
+								width: 1.2rem;
+								font-size: 0.18rem;
+								padding: 0.12rem 0;
+							}
 						}
 					}
 				}

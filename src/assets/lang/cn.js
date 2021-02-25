@@ -6,20 +6,33 @@ export const message = {
             subTitle:'主网升级成功',
             description:'欢迎迈入万物互联的跨链新时代',
             leftBtnLabel:'了解更多',
-            leftBtnLink:'',
+            leftBtnLink:'/mainnet/',
             rightBtnLabel:'公告',
             rightBtnLink:'',
-            bgImage:require('../../assets/pages/banner/banner_1.png')
+            bgImage:require('../../assets/pages/banner/IRISHub.png'),
+            padImage:require('../../assets/pages/banner/IRISHub_pad.png')
         },
         {
-            title:'IRISnet 1.0',
-            subTitle:'主网升级成功',
-            description:'欢迎迈入万物互联的跨链新时代',
-            leftBtnLabel:'了解更多',
-            leftBtnLink:'',
-            rightBtnLabel:'公告',
-            rightBtnLink:'',
-            bgImage:require('../../assets/pages/banner/banner_tech_grant.png')
+            title:'IRISnet',
+            subTitle:'',
+            description:'入选 BSN 首批适配公链',
+            leftBtnLabel:'查看详情',
+            leftBtnLink:'https://mp.weixin.qq.com/s/olSUm2qvlF6-V6K5mV1tKQ',
+            rightBtnLabel:'IRIS 浏览器',
+            rightBtnLink:'https://www.irisplorer.io/',
+            bgImage:require('../../assets/pages/banner/BSN.png'),
+            padImage: require('../../assets/pages/banner/BSN_pad.png')
+        },
+        {
+            title:'Tech-Grants 计划',
+            subTitle:'',
+            description:'加速推动 IRISnet 跨链生态发展',
+            leftBtnLabel:'申请',
+            leftBtnLink:'https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md',
+            rightBtnLabel:'查看详情',
+            rightBtnLink:'https://mp.weixin.qq.com/s/ynHtbye8XK-9DJQp7LoP4Q',
+            bgImage:require('../../assets/pages/banner/Techgrant.png'),
+            padImage: require('../../assets/pages/banner/Techgrant_pad.png')
         }
     ],
     irishub:{
@@ -243,33 +256,33 @@ export const message = {
             }
         ],
         right:[
-            {
+            /*{
                 id:0,
                 title:'夸父',
                 href:'',
                 name:'kuafu',
                 active: false,
-            },
+            },*/
             {
-                id:1,
+                id:0,
                 title:'主网',
                 href:'',
                 active: false,
             },
             {
-                id:2,
+                id:1,
                 title:'文档',
                 href:'https://www.irisnet.org/docs/',
                 active: false,
             },
             {
-                id:3,
+                id:2,
                 title:'论坛',
                 href:'https://forum.irisnet.org/',
                 active: false,
             },
             {
-                id:4,
+                id:3,
                 title:'博客',
                 href:'https://medium.com/irisnet-blog',
                 active: false,
@@ -282,12 +295,12 @@ export const message = {
                 activeIndex: '',
                 active:false,
             },
-            {
-                id:10,
-                title:'夸父',
-                activeIndex: 10,
-                active:false,
-            },
+            // {
+            //     id:10,
+            //     title:'夸父',
+            //     activeIndex: 10,
+            //     active:false,
+            // },
             {
                 id:1,
                 title:'测试网',
@@ -861,35 +874,36 @@ export const message = {
             {
                 id:'0',
                 img:require('../../assets/pages/announcements/newyear.png'),
+                href:'https://mp.weixin.qq.com/s/Pjb76zucTdZoMCAcGj2igw',
+                date:'2021 年 02 月 24 日',
+                title:'IRISnet 主网 1.0 升级',
+                content:''
+            },
+            {
+                id:'1',
+                img:require('../../assets/pages/announcements/newyear.png'),
+                href:'https://mp.weixin.qq.com/s/rwq6Nj4On3rYzuq6a5_4rg\t',
+                date:'2021 年 02 月 10 日',
+                title:'IRISnet 主网 1.0 升级公告',
+                content:''
+            },
+            {
+                id:'2',
+                img:require('../../assets/pages/announcements/newyear.png'),
                 href:'https://mp.weixin.qq.com/s/kppCBRJSfbfcd1CRURrZWg',
                 date:'2021 年 02 月 03 日',
                 title:'IRITA Hub 已成功将 Chainlink 预言机集成至 BSN',
                 content:'由 IRISnet 核心开发团队边界智能打造的 IRITA Hub 现已完成在区块链服务网络 BSN 上原生集成 Chainlink 预言机的工作。'
             },
             {
-                id:'1',
+                id:'3',
                 img:require('../../assets/pages/announcements/newyear.png'),
                 href:'https://mp.weixin.qq.com/s/J1z8_1JEoDbrBLKyuqALCw',
                 date:'2021 年 01 月 28 日',
                 title:'IRISnet 携手 WeTeam 打造 DAO 工具，助力 dApp 生态繁荣发展',
                 content:'IRIS 基金会授予 WeTeam 团队 Tech-Grants 支持，IRISnet 与 WeTeam 携手运用 iService + DAO 的模式，打造 DAO 工具，助力 dApp 生态繁荣发展。'
             },
-            {
-                id:'2',
-                img:require('../../assets/pages/announcements/newyear.png'),
-                href:'https://mp.weixin.qq.com/s/Ooe99CDtwIuQWt_nDfRqfQ',
-                date:'2021 年 01 月 21 日',
-                title:'IRISnet 主网 1.0 升级预告',
-                content:'IRISnet 即将进行主网 1.0 升级，将上线 IBC、Coinswap（AMM）、增强版 iService、NFT 等全新功能。'
-            },
-            {
-                id:'3',
-                img:require('../../assets/pages/announcements/newyear.png'),
-                href:'https://mp.weixin.qq.com/s/1KUNOjBI0EYcR0xdP0izdw',
-                date:'2021 年 01 月 01 日',
-                title:'感恩 2020，IRISnet 跨链回顾与展望',
-                content:'2020 年 IRISnet 团队依旧坚持开拓创新，从联盟链产品 IRITA，到跨链 DeFi 测试网 Bifrost，从与 Kava、OKChain 等合作支持 DeFi 服务，到加入 BSN 生态，一步步朝着跨链愿景前进。'
-            }
+            
         ]
     },
     testnet:{

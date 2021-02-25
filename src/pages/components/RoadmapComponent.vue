@@ -1,5 +1,5 @@
 <template>
-	<div class="roadmap_container">
+	<div class="roadmap_container"  ref="roadmap">
 		<div class="roadmap_wrap">
 			<navigation-line/>
 			<h3 class="roadmap_title">{{$store.state.messages.home.sectionThree.title}}</h3>
@@ -68,8 +68,15 @@
 					this.coptionText = item.msg
 				}
 			})
+			this.onresize();
+			window.addEventListener('resize', this.onresize);
 		},
 		methods:{
+			onresize(){
+				setTimeout(() => {
+					this.$store.commit('roadmap', this.$refs.roadmap.offsetTop - this.$store.state.headerHeight);
+				},200)
+			},
 			choiceCaption(index){
 				this.$store.commit('changeItemIsActive',index)
 				this.$store.state.messages.home.sectionThree.road.forEach(item =>{
