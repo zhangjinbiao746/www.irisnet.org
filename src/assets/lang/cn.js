@@ -1,12 +1,47 @@
 export const message = {
     logo: 'irisnet.png',
+    homeBanner:[
+        {
+            title:'IRISnet 1.0',
+            subTitle:'主网升级成功',
+            description:'欢迎迈入万物互联的跨链新时代',
+            leftBtnLabel:'了解更多',
+            leftBtnLink:'/mainnet/',
+            rightBtnLabel:'公告',
+            rightBtnLink:'https://mp.weixin.qq.com/s/OvE829S4lXLmXBX6HUH0Lg',
+            bgImage:require('../../assets/pages/banner/IRISHub.png'),
+            padImage:require('../../assets/pages/banner/IRISHub_pad.png')
+        },
+        {
+            title:'IRISnet',
+            subTitle:'',
+            description:'入选 BSN 首批适配公链',
+            leftBtnLabel:'查看详情',
+            leftBtnLink:'https://mp.weixin.qq.com/s/olSUm2qvlF6-V6K5mV1tKQ',
+            rightBtnLabel:'IRIS 浏览器',
+            rightBtnLink:'https://www.irisplorer.io/',
+            bgImage:require('../../assets/pages/banner/BSN.png'),
+            padImage: require('../../assets/pages/banner/BSN_pad.png')
+        },
+        {
+            title:'Tech-Grants 计划',
+            subTitle:'',
+            description:'加速推动 IRISnet 跨链生态发展',
+            leftBtnLabel:'申请',
+            leftBtnLink:'https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md',
+            rightBtnLabel:'查看详情',
+            rightBtnLink:'https://mp.weixin.qq.com/s/ynHtbye8XK-9DJQp7LoP4Q',
+            bgImage:require('../../assets/pages/banner/Techgrant.png'),
+            padImage: require('../../assets/pages/banner/Techgrant_pad.png')
+        }
+    ],
     irishub:{
         title: 'IRIS Hub 1.0',
-        secondTitle: '主网升级在即',
-        description:'参与 <span style="font-size: 0.24rem;line-height: 0.32rem;letter-spacing: 0.01rem;color: #fff">#10 提案</span> 投票，迈向跨链新时代',
+        secondTitle: '下一代分布式应用的跨链服务枢纽',
+        description:'——自进化的 BPoS 区块链',
         btn:{
-            prepare:'升级准备',
-            proposal:'提案投票',
+            prepare:'Rainbow 钱包',
+            proposal:'IRIS 浏览器',
             tooltip:'敬请期待'
         },
         proposal:{
@@ -15,8 +50,8 @@ export const message = {
                 {
                     proposalId:'提案 #10',
                     title:'IRIS Hub 1.0 主网升级',
-                    btnLabel:'参与投票',
-                    link:'https://www.irisplorer.io/#/ProposalsDetail/10'
+                    btnLabel:'提案通过',
+                    link:'https://mp.weixin.qq.com/s/Pjb76zucTdZoMCAcGj2igw'
                 },
                 {
                     proposalId:'提案 #',
@@ -34,10 +69,12 @@ export const message = {
             joinTestnetLink:''
         },
         prepare:{
-            maneuverTitle:'升级演练',
-            maneuverDescription:'在 Bifrost 测试网的准生产环境中充分测试与验证',
+            maneuverTitle:'Bifrost 测试网',
+            maneuverDescription:'为验证 IBC 及 AMM 等创新功能启动的专有测试网络',
+            learnBifrost:'了解 Bifrost',
+            link:'https://mp.weixin.qq.com/s/t5NXw7ZNWbllOymwqXRKHg',
             guide:{
-                title:'升级指南',
+                title:'指南文档',
                 list:[
                     {
                         iconName:'icon-jiaoyisuo',
@@ -219,33 +256,33 @@ export const message = {
             }
         ],
         right:[
-            {
+            /*{
                 id:0,
                 title:'夸父',
                 href:'',
                 name:'kuafu',
                 active: false,
-            },
+            },*/
             {
-                id:1,
+                id:0,
                 title:'主网',
                 href:'',
                 active: false,
             },
             {
-                id:2,
+                id:1,
                 title:'文档',
                 href:'https://www.irisnet.org/docs/',
                 active: false,
             },
             {
-                id:3,
+                id:2,
                 title:'论坛',
                 href:'https://forum.irisnet.org/',
                 active: false,
             },
             {
-                id:4,
+                id:3,
                 title:'博客',
                 href:'https://medium.com/irisnet-blog',
                 active: false,
@@ -258,18 +295,18 @@ export const message = {
                 activeIndex: '',
                 active:false,
             },
-            {
-                id:10,
-                title:'夸父',
-                activeIndex: 10,
-                active:false,
-            },
-            {
+            // {
+            //     id:10,
+            //     title:'夸父',
+            //     activeIndex: 10,
+            //     active:false,
+            // },
+           /* {
                 id:1,
                 title:'测试网',
                 activeIndex: '',
                 active:false,
-            },
+            },*/
             {
                 id:2,
                 title:'白皮书',
@@ -564,17 +601,138 @@ export const message = {
                 }
             }
         },
+        KeyInnovations: {
+            title: '核心创新',
+            list: [
+                {id: 0, msg: '将面向服务的基础设施融入到 Cosmos 网络中',iconName:'icon-jichusheshi'},
+                {id: 1, msg: '整合由异构系统提供的商业服务，包括公共链、联盟链以及现有系统',iconName:'icon-shangyefuwu'},
+                {id: 2, msg: '通过区块链互联网实现服务的互联互通',iconName:'icon-hulianhutong'}
+            ],
+            buttonMsg: '白皮书',
+            WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/白皮书.md'
+        },
+        core:{
+            title:'核心功能',
+            list:[
+                {
+                    title:'IBC + iService',
+                    content:'区块链的 TCP/IP + HTTP 协议，构建并扩展区块链互联网'
+                },
+                {
+                    title:'Coinswap',
+                    content:'跨链 AMM，为 Cosmos 生态的 DeFi 应用提供一个前卫的创新平台'
+                },
+                {
+                    title:'预言机',
+                    content:'基于 iService 支持预言机服务，实现链外到链上、链外到链外的跨平台数据服务'
+                },
+                {
+                    title:'NFT',
+                    content:'支持 NFT 功能，实现区块链上的资产数字化'
+                },
+            ]
+        },
+        upcoming:{
+            title:'即将上线的功能',
+            list:[
+                {
+                    title:'以太坊桥接',
+                    content:'与以太坊的跨链桥，支持资产跨链转移与协议交互',
+                    image:require('../../assets/pages/eth_logo.png')
+                },
+                {
+                    title:'CosmWasm',
+                    content:'集成 CosmWasm 虚拟机，支持跨链智能合约开发',
+                    image:require('../../assets/pages/cosmWasm_logo.png')
+                }
+            ]
+        },
+        collborations:{
+            title:'合作方',
+            list:[
+                {
+                    title:'核心开发团队',
+                    list:[
+                        {
+                            name:'BIANJIE.AI',
+                            link:'https://www.bianjie.ai/',
+                            image:require('../../assets/pages/collaboration/bianjie.png')
+                        },
+                        {
+                            name:'Tendermint',
+                            link:'https://tendermint.com/',
+                            image:require('../../assets/pages/collaboration/tendermint.png')
+                        },
+                    ]
+                },
+                {
+                    title:'战略合作伙伴',
+                    list:[
+                        {
+                            name:'INTERCHAIN',
+                            link:'https://cosmos.network/about',
+                            image:require('../../assets/pages/collaboration/interchain.png')
+                        },
+                        {
+                            name:'HashKey',
+                            link:'https://www.hashkey.com/#/',
+                            image:require('../../assets/pages/collaboration/HashKey.png')
+                        },
+                        {
+                            name:'PlatON',
+                            link:'https://www.platon.network/#/index',
+                            image: require('../../assets/pages/collaboration/Platon.png')
+                        }
+                    ]
+                },
+                {
+                    title:'生态合作伙伴',
+                    list:[
+                        {
+                            name:'BINANCE',
+                            link:'https://www.binance.com/zh-CN',
+                            image: require('../../assets/pages/collaboration/BINANCE.png')
+                        },
+                        {
+                            name:'Chainlink',
+                            link:'https://chain.link/',
+                            image:require('../pages/collaboration/collaboration.png')
+                        },
+                        {
+                            name:'CoinMarketCap',
+                            link:'https://coinmarketcap.com/',
+                            image:require('../../assets/pages/collaboration/CMC.png')
+                        },
+                        {
+                            name:'KAVA',
+                            link:'https://www.kava.io/',
+                            image:require('../../assets/pages/collaboration/KAVA.png')
+                        },
+                        {
+                            name:'MYKEY',
+                            link:'https://mykey.org/',
+                            image:require('../../assets/pages/collaboration/MYKEY.png')
+                        },
+                        {
+                            name:'e-Money',
+                            link:'https://www.e-money.com/',
+                            image:require('../../assets/pages/collaboration/EM.png')
+                        },
+                        {
+                            name:'Starname',
+                            link:'https://www.starname.me/',
+                            image: require('../../assets/pages/collaboration/Starname.png')
+                        },
+                        {
+                            name:'COIRFAN',
+                            link:'http://iris.fan/#/',
+                            image: require('../../assets/pages/collaboration/COIRFAN.png')
+                        }
+                    ]
+                }
+            ]
+        },
         sectionTwo: {
-            KeyInnovations: {
-                title: '核心创新',
-                list: [
-                    {id: 0, msg: '将面向服务的基础设施融入到Cosmos网络中'},
-                    {id: 1, msg: '整合由异构系统提供的商业服务，包括公共链、联盟链以及现有系统'},
-                    {id: 2, msg: '通过区块链互联网实现服务的互联互通'}
-                ],
-                buttonMsg: '白皮书',
-                WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/白皮书.md'
-            },
             NetworkDesign: {
                 title: '网络设计',
                 list: [
@@ -586,10 +744,10 @@ export const message = {
         sectionThree: {
             title: '路线图',
             road: [
-                {id: 0, caption: '后羿', time: '2021年7月之后', msg: '第四阶段将专注通过技术创新，不断完善IRIS网络、SDK和手机客户端，吸引更多开发者参与。'},
-                {id: 1, caption: '夸父', time: '2019年11月 - 2021年6月', msg: '第三阶段主要专注于通过 IBC， 完成 IRIS Hub 与应用专有链网络的连接。我们还计划升级 IRISnet 移动客户端以支持这些应用。第三阶段还将重点实现 IRIS 网络的迭代升级，以支持复杂的 IRIS 服务管理功能。'},
-                {id: 2, caption: '女娲', time: '2019年4月 - 2019年10月', msg: '第二阶段我们将增加更多的基本模块以支持应用开发，特别是DeFi应用。这些新模块计划在本阶段发布，包括多资产管理、uni-swap、多签账户等。我们计划与1-2个生态伙伴合作，使用这些模块开发应用。我们还计划在此阶段完成与Cosmos Hub的测试连接。'},
-                {id: 3, caption: '盘古', time: '2018年1月- 2019年3月', msg: 'IRISnet项目的第一阶段，我们专注于构建并启动 IRISnet 主网（Hub）。 初始版本的IRIS网络移动客户端已在本阶段发布。同时，我们也专注于 IRISnet 基本服务层的建立，已将其发布在 IRIS Hub 上，实现：服务定义、绑定、调用和查询。'}
+                {id: 0,isActive:false, caption: '盘古', time: '2018年1月- 2019年3月', msg: 'IRISnet项目的第一阶段，我们专注于构建并启动 IRISnet 主网（Hub）。 初始版本的IRIS网络移动客户端已在本阶段发布。同时，我们也专注于 IRISnet 基本服务层的建立，已将其发布在 IRIS Hub 上，实现：服务定义、绑定、调用和查询。'},
+                {id: 1,isActive:false, caption: '女娲', time: '2019年4月 - 2019年10月', msg: '第二阶段我们将增加更多的基本模块以支持应用开发，特别是DeFi应用。这些新模块计划在本阶段发布，包括多资产管理、uni-swap、多签账户等。我们计划与1-2个生态伙伴合作，使用这些模块开发应用。我们还计划在此阶段完成与Cosmos Hub的测试连接。'},
+                {id: 2,isActive:true, caption: '夸父', time: '2019年11月 - 2021年6月', msg: '第三阶段主要专注于通过 IBC， 完成 IRIS Hub 与应用专有链网络的连接。我们还计划升级 IRISnet 移动客户端以支持这些应用。第三阶段还将重点实现 IRIS 网络的迭代升级，以支持复杂的 IRIS 服务管理功能。'},
+                {id: 3,isActive:false, caption: '后羿', time: '2021年7月之后', msg: '第四阶段将专注通过技术创新，不断完善IRIS网络、SDK和手机客户端，吸引更多开发者参与。'},
             ]
         },
         sectionFour: {
@@ -674,7 +832,7 @@ export const message = {
     developer:{
         title:'开发者',
         content:{
-            title:'IRISnet-BSN 开发者门户开放注册',
+            title:'IRISnet-BSN 开发者门户',
             rightContent1:'区块链服务网络（BSN）是由国家信息中心与中国移动、中国银联等单位联合发起，是一个跨云服务、跨门户、跨底层框架，用于部署和运行各类区块链应用的全球性基础设施网络。此前 IRISnet 已作为<a style="color: #714BE3" href="https://mp.weixin.qq.com/s/olSUm2qvlF6-V6K5mV1tKQ" target="_blank">首批公链</a>和<a style="color: #714BE3" href="https://mp.weixin.qq.com/s/7ezF3MDanZvuHbz6Exmb5w" target="_blank">首批开放联盟链项目</a>加入 BSN 生态。',
             rightContent2:'IRISnet 将开启专用入口嵌入 <a style="color: #714BE3" href="https://bsnbase.io/g/main/index" target="_blank" >BSN 国际</a>的公有链服务，通过此专用入口，IRISnet 开发者可以完成 BSN 国际公链服务的用户注册、节点开通、节点更新、信息查询、付费等操作。',
             rightContent3:'IRISnet-BSN 开发者门户现已开放注册，提前注册预约的开发者将有机会优先参与后续的早鸟活动。快来注册参与吧！',
@@ -682,6 +840,25 @@ export const message = {
             createDeveloperHref:'https://bsn.irisnet.org',
             irisnetDoc:'IRISnet 文档',
             irisnetDocHref:'https://www.irisnet.org/docs/zh/'
+        },
+        testnet:{
+            title:'测试网',
+            list:[
+                {
+                    title:'彩虹猫测试网',
+                    content:'彩虹猫测试网通常运行比IRISnet主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
+                    link:'https://www.irisnet.org/docs/zh/get-started/testnet.html#nyancat-%E6%B5%8B%E8%AF%95%E7%BD%91',
+                    btnLabel:"使用彩虹猫测试网",
+                    isRouterLink:false
+                },
+                {
+                    title:'Bifrost 测试网',
+                    content:'Bifrost 测试网是 IRISnet 为支持 Cosmos 跨链愿景，为验证 IBC 和 AMM 等功能而启动的专有测试网络。',
+                    link:"/developers/testnet/?lang=CN",
+                    btnLabel:"使用 Bifrost 测试网",
+                    isRouterLink:false
+                }
+            ]
         }
     },
     announcements:{
@@ -696,32 +873,37 @@ export const message = {
         announcementList:[
             {
                 id:'0',
+                    img:require('../../assets/pages/announcements/Mainnet1.0_Pass_CN.png'),
+                href:'https://mp.weixin.qq.com/s/Pjb76zucTdZoMCAcGj2igw',
+                date:'2021 年 02 月 24 日',
+                title:'IRISnet 主网 1.0 升级',
+                content:''
+            },
+            {
+                id:'1',
+                img:require('../../assets/pages/announcements/Mainnet1.0_Submitted_CN.png'),
+                href:'https://mp.weixin.qq.com/s/rwq6Nj4On3rYzuq6a5_4rg',
+                date:'2021 年 02 月 10 日',
+                title:'IRISnet 主网 1.0 升级公告',
+                content:''
+            },
+            {
+                id:'2',
+                img:require('../pages/announcements/announcement_Chainlink.png'),
                 href:'https://mp.weixin.qq.com/s/kppCBRJSfbfcd1CRURrZWg',
                 date:'2021 年 02 月 03 日',
                 title:'IRITA Hub 已成功将 Chainlink 预言机集成至 BSN',
                 content:'由 IRISnet 核心开发团队边界智能打造的 IRITA Hub 现已完成在区块链服务网络 BSN 上原生集成 Chainlink 预言机的工作。'
             },
             {
-                id:'1',
+                id:'3',
+                img:require('../../assets/pages/announcements/WeTeam_CN.png'),
                 href:'https://mp.weixin.qq.com/s/J1z8_1JEoDbrBLKyuqALCw',
                 date:'2021 年 01 月 28 日',
                 title:'IRISnet 携手 WeTeam 打造 DAO 工具，助力 dApp 生态繁荣发展',
                 content:'IRIS 基金会授予 WeTeam 团队 Tech-Grants 支持，IRISnet 与 WeTeam 携手运用 iService + DAO 的模式，打造 DAO 工具，助力 dApp 生态繁荣发展。'
             },
-            {
-                id:'2',
-                href:'https://mp.weixin.qq.com/s/Ooe99CDtwIuQWt_nDfRqfQ',
-                date:'2021 年 01 月 21 日',
-                title:'IRISnet 主网 1.0 升级预告',
-                content:'IRISnet 即将进行主网 1.0 升级，将上线 IBC、Coinswap（AMM）、增强版 iService、NFT 等全新功能。'
-            },
-            {
-                id:'3',
-                href:'https://mp.weixin.qq.com/s/1KUNOjBI0EYcR0xdP0izdw',
-                date:'2021 年 01 月 01 日',
-                title:'感恩 2020，IRISnet 跨链回顾与展望',
-                content:'2020 年 IRISnet 团队依旧坚持开拓创新，从联盟链产品 IRITA，到跨链 DeFi 测试网 Bifrost，从与 Kava、OKChain 等合作支持 DeFi 服务，到加入 BSN 生态，一步步朝着跨链愿景前进。'
-            }
+            
         ]
     },
     testnet:{
@@ -969,7 +1151,7 @@ export const message = {
             title:'资源',
             ResourceList:[
                 {
-                    img:'IRISnet_wallet.png',
+                    img:'wallet.png',
                     name:'钱包',
                     href:'javascript:void(0);',
                     resourceList: [
@@ -1013,7 +1195,7 @@ export const message = {
                     content:'这些钱包支持IRIS及ATOM的转账和质押，请充分研究其安全性再使用。列示这些信息仅为方便下载，并不代表对钱包使用的安全性负责。',
                 },
                 {
-                    img:'IRISnet_staking_tools.png',
+                    img:'Toolbox.png',
                     name:'委托工具箱',
                     href:"javascript:void(0);",
                     resourceList: [
@@ -1045,7 +1227,7 @@ export const message = {
                     content:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
                 },
                 {
-                    img:'IRISnet_community_explorer.png',
+                    img:'explorer.png',
                     name:'浏览器',
                     href:'javascript:void(0);',
                     resourceList: [
@@ -1073,20 +1255,26 @@ export const message = {
                     content:'您可通过以上区块链浏览器查询和分析 IRIS Hub 的区块、交易、验证人等信息。',
                 },
                 {
-                    img:'IRISnet_press_kit.png',
+                    img:'presskit.png',
                     name:'品牌资料',
                     content:'获取您可能需要的所有品牌资源和标志。',
-                    href:'/community/press-kit',
+                    href:'javascript:void(0);',
+                    resourceList:[
+                        {
+                            itemName: '品牌资料',
+                            href: 'https://www.irisnet.org/community/press-kit'
+                        },
+                    ]
                 },
                 {
-                    img:'IRISnet_doc.png',
+                    img:'doc.png',
                     name:'文档',
                     content:'下一代分布式应用的跨链服务网络——自进化的BPoS区块链。',
                     href:'javascript:void(0);',
 	                resourceList:[
 		                {
 			                itemName: '伏羲测试网',
-			                href: 'https://www.irisnet.org/docs/zh/get-started/Join-the-Testnet.html'
+			                href: 'https://www.irisnet.org/docs/zh/get-started/testnet.html'
 		                },
 		                {
 			                itemName: '彩虹猫测试网',
@@ -1094,15 +1282,15 @@ export const message = {
 		                },
 		                {
 			                itemName: '加入主网',
-			                href: 'https://www.irisnet.org/docs/zh/get-started/Join-the-Mainnet.html'
+			                href: 'https://www.irisnet.org/docs/get-started/mainnet.html'
 		                },
 		                {
 			                itemName: '命令行',
-			                href: 'https://www.irisnet.org/docs/zh/cli-client/'
+			                href: 'https://www.irisnet.org/docs/cli-client/intro.html'
 		                },
 		                {
 			                itemName: '轻客户端',
-			                href: 'https://www.irisnet.org/docs/zh/light-client/'
+			                href: 'https://www.irisnet.org/docs/cli-client/intro.html'
 		                },
 	                ]
                 }

@@ -7,17 +7,21 @@ import {createStore} from './store'
 import VueI18n from 'vue-i18n'
 import 'babel-polyfill'
 import umeng  from "./umeng/umeng";
+require("vuescroll/dist/vuescroll.css")
 require('reveal.js/css/reveal.css');
 require('swiper/dist/css/swiper.css');
 require('element-ui/lib/theme-chalk/index.css')
 if (process.env.VUE_ENV === 'client') {
     require('./assets/icon/iconfont')
     const VueAwesomeSwiper = require('vue-awesome-swiper');
+    const vuescroll = require('vuescroll')
     Vue.use(VueAwesomeSwiper);
+    Vue.use(vuescroll)
     const { Swipe, SwipeItem } = require('vue-awesome-swiper');
     const Message  = require('element-ui')
     Vue.component('swipe', Swipe);
     Vue.component('swipe-item', SwipeItem);
+    Vue.component('vue-scroll', vuescroll);
     Vue.prototype.$umeng = umeng;
     Vue.prototype.$Message = Message;
 }
@@ -68,6 +72,12 @@ export function createApp() {
         if ((to.query.lang) && (to.query.lang == 'EN' || to.query.lang == 'CN')) {
             store.state.lang = to.query.lang;
             store.state.messages = i18n.messages[store.state.lang]['message']
+        }
+        if(to.path.includes('/kuafu/testnet')){
+            next('/developers/testnet')
+        }
+        if(to.path.includes('/kuafu')){
+            next('/mainnet')
         }
         next()
     })

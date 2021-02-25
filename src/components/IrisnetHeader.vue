@@ -92,7 +92,7 @@
         },
         watch:{
             $route (){
-                if(this.$route.path.includes('kuafu')){
+                if(this.$route.path.includes('kuafu') || this.$route.path.includes('/developers/testnet')){
                     this.flShowIrisHub = true
                 }else {
                     this.flShowIrisHub = false
@@ -271,7 +271,7 @@
             }
         },
         mounted(){
-            if(this.$route.path.includes('kuafu')){
+            if(this.$route.path.includes('kuafu') || this.$route.path.includes('/developers/testnet')){
                 this.flShowIrisHub = true
             }else {
                 this.flShowIrisHub = false
@@ -280,13 +280,13 @@
             let headerHeight = document.getElementsByClassName('header_wrap')[0].clientHeight;
             this.resetActiveIcon();
             this.$store.commit('headerHeight',headerHeight);
-            if(this.$route.path.includes('kuafu') ){
+            if(this.$route.path.includes('kuafu') || this.$route.path.includes('/developers/testnet') ){
                 this.navigationData.header.right[0].active = true;
             }else if(this.$route.path === '/mainnet/'
                     || this.$route.path === '/mainnet'
                     || this.$route.path === '/testnets'
                     || this.$route.path === '/testnets/'){
-                this.navigationData.header.right[1].active = true;
+                this.navigationData.header.right[0].active = true;
             }else {
                 this.navigationData.header.right[0].active = false;
             }
