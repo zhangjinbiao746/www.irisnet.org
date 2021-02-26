@@ -842,7 +842,7 @@
 									.test_net_time_link{
 										display: inline-block;
 										margin-top: 0.12rem;
-										padding: 0.15rem 0.1rem;
+										padding: 0.15rem 0.3rem;
 										border: 0.01rem solid rgba(100, 141, 237, 1);
 										line-height: 1;
 										border-radius: 0.04rem;
