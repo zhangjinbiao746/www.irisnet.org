@@ -1272,10 +1272,10 @@ export const message = {
                     content:'下一代分布式应用的跨链服务网络 —— 自进化的 BPoS 区块链。',
                     href:'javascript:void(0);',
 	                resourceList:[
-		                {
+		                /*{
 			                itemName: '伏羲测试网',
 			                href: 'https://www.irisnet.org/docs/zh/get-started/testnet.html'
-		                },
+		                },*/
 		                {
 			                itemName: '彩虹猫测试网',
 			                href: 'https://github.com/irisnet/testnets/tree/master/nyancat'

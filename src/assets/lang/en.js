@@ -1282,10 +1282,10 @@ export const message = {
                     content:'Interchain Service Hub for NextGen Distributed Applications – A BPoS Blockchain That Is Self-evolutionary.',
                     href:'javascript:void(0);',
                     resourceList:[
-                        {
+                        /*{
                             itemName: 'FUXI',
                             href: 'https://www.irisnet.org/docs/get-started/testnet.html'
-                        },
+                        },*/
                         {
                             itemName: 'Nyancat',
                             href: 'https://github.com/irisnet/testnets/tree/master/nyancat'
