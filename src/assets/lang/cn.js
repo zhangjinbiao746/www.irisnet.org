@@ -468,7 +468,7 @@ export const message = {
         errEmailAddress:{
             error:'Please enter a valid email address'
         },
-        irisnetInproduction:'IRISnet 以希腊彩虹女神Iris命名，她是在人间和天堂之间传递信息的忠诚使者'
+        irisnetInproduction:'IRISnet 以希腊彩虹女神 Iris 命名，她是在人间和天堂之间传递信息的忠诚使者'
     },
     home: {
         bannerHref:"https://mp.weixin.qq.com/s/ybf5pt49dtVqRVYlVPuTNg",
@@ -744,10 +744,10 @@ export const message = {
         sectionThree: {
             title: '路线图',
             road: [
-                {id: 0,isActive:false, caption: '盘古', time: '2018年1月- 2019年3月', msg: 'IRISnet项目的第一阶段，我们专注于构建并启动 IRISnet 主网（Hub）。 初始版本的IRIS网络移动客户端已在本阶段发布。同时，我们也专注于 IRISnet 基本服务层的建立，已将其发布在 IRIS Hub 上，实现：服务定义、绑定、调用和查询。'},
-                {id: 1,isActive:false, caption: '女娲', time: '2019年4月 - 2019年10月', msg: '第二阶段我们将增加更多的基本模块以支持应用开发，特别是DeFi应用。这些新模块计划在本阶段发布，包括多资产管理、uni-swap、多签账户等。我们计划与1-2个生态伙伴合作，使用这些模块开发应用。我们还计划在此阶段完成与Cosmos Hub的测试连接。'},
-                {id: 2,isActive:true, caption: '夸父', time: '2019年11月 - 2021年6月', msg: '第三阶段主要专注于通过 IBC， 完成 IRIS Hub 与应用专有链网络的连接。我们还计划升级 IRISnet 移动客户端以支持这些应用。第三阶段还将重点实现 IRIS 网络的迭代升级，以支持复杂的 IRIS 服务管理功能。'},
-                {id: 3,isActive:false, caption: '后羿', time: '2021年7月之后', msg: '第四阶段将专注通过技术创新，不断完善IRIS网络、SDK和手机客户端，吸引更多开发者参与。'},
+                {id: 0,isActive:false, caption: '盘古', time: '2018 年 1 月- 2019 年 3 月', msg: 'IRISnet 项目的第一阶段，我们专注于构建并启动 IRISnet 主网（Hub）。 初始版本的 IRIS 网络移动客户端已在本阶段发布。同时，我们也专注于 IRISnet 基本服务层的建立，已将其发布在 IRIS Hub 上，实现：服务定义、绑定、调用和查询。'},
+                {id: 1,isActive:false, caption: '女娲', time: '2019 年 4 月 - 2019 年 10 月', msg: '第二阶段我们将增加更多的基本模块以支持应用开发，特别是 DeFi 应用。这些新模块计划在本阶段发布，包括多资产管理、uni-swap、多签账户等。我们计划与 1 - 2 个生态伙伴合作，使用这些模块开发应用。我们还计划在此阶段完成与 Cosmos Hub 的测试连接。'},
+                {id: 2,isActive:true, caption: '夸父', time: '2019 年 11 月 - 2021 年 6 月', msg: '第三阶段主要专注于通过 IBC， 完成 IRIS Hub 与应用专有链网络的连接。我们还计划升级 IRISnet 移动客户端以支持这些应用。第三阶段还将重点实现 IRIS 网络的迭代升级，以支持复杂的 IRIS 服务管理功能。'},
+                {id: 3,isActive:false, caption: '后羿', time: '2021 年 7 月之后', msg: '第四阶段将专注通过技术创新，不断完善 IRIS 网络、 SDK 和手机客户端，吸引更多开发者参与。'},
             ]
         },
         sectionFour: {
@@ -823,7 +823,7 @@ export const message = {
     },
     mainnet:{
         title: 'IRIS Hub',
-        production: '下一代分布式应用的跨链服务枢纽——自进化的BPoS区块链',
+        production: '下一代分布式应用的跨链服务枢纽——自进化的 BPoS 区块链',
         wallet: 'Rainbow 钱包',
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS 浏览器',
@@ -846,7 +846,7 @@ export const message = {
             list:[
                 {
                     title:'彩虹猫测试网',
-                    content:'彩虹猫测试网通常运行比IRISnet主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
+                    content:'彩虹猫测试网通常运行比 IRISnet 主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
                     link:'https://www.irisnet.org/docs/zh/get-started/testnet.html#nyancat-%E6%B5%8B%E8%AF%95%E7%BD%91',
                     btnLabel:"使用彩虹猫测试网",
                     isRouterLink:false
@@ -865,11 +865,11 @@ export const message = {
         title: '公告',
         viewMore: '查看更多',
         viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
-        betaTitle:'IRISnet的公开地址',
-        betaContent:'IRIS基金会和开发团队的地址',
+        betaTitle:'IRISnet 的公开地址',
+        betaContent:'IRIS 基金会和开发团队的地址',
         readMore:'Read more',
         readMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address_cn.md',
-        betaDate:'2019年3月2日',
+        betaDate:'2019 年 03 月 02 日',
         announcementList:[
             {
                 id:'0',
@@ -909,13 +909,13 @@ export const message = {
     testnet:{
         fuxi:{
             title:'伏羲测试网',
-            production: '伏羲测试网跟IRISnet主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。',
+            production: '伏羲测试网跟 IRISnet 主网运行相同的软件，为开发者社区提供稳定的测试环境（包括钱包、浏览器、服务提供者/消费者）。',
             testnetLink:'使用伏羲测试网',
             href:'https://www.irisnet.org/docs/zh/get-started/testnet.html#fuxi-%E6%B5%8B%E8%AF%95%E7%BD%91'
         },
         nyancat:{
             title:'彩虹猫测试网',
-            production:'彩虹猫测试网通常运行比IRISnet主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
+            production:'彩虹猫测试网通常运行比 IRISnet 主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
             testnetLink:'使用彩虹猫测试网',
             href:'https://www.irisnet.org/docs/zh/get-started/testnet.html#nyancat-%E6%B5%8B%E8%AF%95%E7%BD%91'
         }
@@ -1098,16 +1098,16 @@ export const message = {
                 title: 'FAQ',
                 list:[
                     {
-                        item:'1. 什么是IRISnet？',
+                        item:'1. 什么是 IRISnet ？',
                     },
                     {
-                        item:'2. IRIS的初始分配是怎样的？',
+                        item:'2. IRIS 的初始分配是怎样的 ？',
                     },
                     {
-                        item:'3. IRISnet经济模型的架构是怎样的？',
+                        item:'3. IRISnet 经济模型的架构是怎样的 ？',
                     },
                     {
-                        item:'4. IRISnet和Cosmos是什么关系？',
+                        item:'4. IRISnet 和 Cosmos 是什么关系？',
                     },
                 ],
                 viewMore: '查看更多',
@@ -1120,7 +1120,7 @@ export const message = {
                         img:'itisnet_event_20200325.png',
                         href:'https://m.jinse.com/blockchain/613755.html?source=m',
                         title:'Biki 社区 AMA',
-                        content:'BiKi对话IRISnet 看新一代公链基础设施构建分布式商业应用'
+                        content:'BiKi 对话 IRISnet 看新一代公链基础设施构建分布式商业应用'
                     },
                     {
                         img:'irisnet_event_2020.jpg',
@@ -1135,14 +1135,14 @@ export const message = {
                     {
                         img:'irisnet_event_2019_11_08_max.jpg',
                         href:'https://mp.weixin.qq.com/s/bdNvbZMA7NOKWyfx4FRfEw',
-                        title:'抹茶AMA',
-                        content:'开发跨链的IRISnet--如何打通数字经济和实体经济'
+                        title:'抹茶 AMA',
+                        content:'开发跨链的 IRISnet --如何打通数字经济和实体经济'
                     },
                     {
                         img:'irisnet_event_2019_11_14.png',
                         href:'https://mp.weixin.qq.com/s/bQCfqkB5TJLzkAKmV-HwuA',
-                        title:'2019世界区块链大会·乌镇',
-                        content:'乌镇·一文读懂Web3.0的概念、推进与盈利模式'
+                        title:'2019 世界区块链大会·乌镇',
+                        content:'乌镇·一文读懂 Web 3.0 的概念、推进与盈利模式'
                     },
                 ],
             }
@@ -1192,7 +1192,7 @@ export const message = {
                         },
 
                     ],
-                    content:'这些钱包支持IRIS及ATOM的转账和质押，请充分研究其安全性再使用。列示这些信息仅为方便下载，并不代表对钱包使用的安全性负责。',
+                    content:'这些钱包支持 IRIS 及 ATOM 的转账和质押，请充分研究其安全性再使用。列示这些信息仅为方便下载，并不代表对钱包使用的安全性负责。',
                 },
                 {
                     img:'Toolbox.png',
@@ -1224,7 +1224,7 @@ export const message = {
                             href: 'https://union.market/token/irisnet'
                         },
                     ],
-                    content:'这些工具由IRISnet的社区验证人或开发者贡献，方便IRIS的持有者通过网页钱包、Ledger硬件钱包等进行委托，请充分研究其安全性再使用。'
+                    content:'这些工具由 IRISnet 的社区验证人或开发者贡献，方便 IRIS 的持有者通过网页钱包、Ledger 硬件钱包等进行委托，请充分研究其安全性再使用。'
                 },
                 {
                     img:'explorer.png',
@@ -1269,7 +1269,7 @@ export const message = {
                 {
                     img:'doc.png',
                     name:'文档',
-                    content:'下一代分布式应用的跨链服务网络——自进化的BPoS区块链。',
+                    content:'下一代分布式应用的跨链服务网络 —— 自进化的 BPoS 区块链。',
                     href:'javascript:void(0);',
 	                resourceList:[
 		                {
