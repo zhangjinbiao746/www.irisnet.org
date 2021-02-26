@@ -4,7 +4,7 @@ export const message = {
         {
             title:'IRISnet 1.0',
             subTitle:'主网升级成功',
-            description:'欢迎迈入万物互联的跨链新时代',
+            description:'首个与 Cosmos Hub 建立 IBC 连接的主网',
             leftBtnLabel:'了解更多',
             leftBtnLink:'/mainnet/',
             rightBtnLabel:'公告',
@@ -166,11 +166,11 @@ export const message = {
             link0: 'https://mp.weixin.qq.com/s/9rncMa5YutXpfh1n8vw8lw',
             link1: 'https://mp.weixin.qq.com/s/k9rW4ciUo8-eg74llEhMsw',
             link2: 'https://mp.weixin.qq.com/s/Ie65oPemezszB41Lxj6P2w',
-            link3: 'https://mp.weixin.qq.com/s/Ooe99CDtwIuQWt_nDfRqfQ',
+            link3: 'https://mp.weixin.qq.com/s/OvE829S4lXLmXBX6HUH0Lg',
             oneStepTitle: '',
             end:'已结束',
-            ing:'进行中',
-            comeSoon:'即将上线',
+            ing:'已结束',
+            comeSoon:'已上线',
             irishub:'IRIS Hub',
             hub1:'1.0'
         },
@@ -873,7 +873,7 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                    img:require('../../assets/pages/announcements/Mainnet1.0_Pass_CN.png'),
+                img:require('../../assets/pages/announcements/Mainnet1.0_Pass_CN.png'),
                 href:'https://mp.weixin.qq.com/s/Pjb76zucTdZoMCAcGj2igw',
                 date:'2021 年 02 月 24 日',
                 title:'IRISnet 主网 1.0 升级链上提案通过，将于 2 月 25 日升级',

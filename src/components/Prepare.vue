@@ -127,9 +127,9 @@
 						</div>
 					</div>
 					<div class="test_net_time_right_content">
-						<div class="test_net_time_content_item">
+						<div class="test_net_time_last_content_item">
 							<div class="test_net_item_content_item_top">
-								<div class="test_net_item_block_big_img_content">
+								<div class="test_net_item_block_img_content">
 									<div class="test_net_item_block_content">
 										<span>{{$store.state.messages.irishub.setpList.phase}}</span>
 										<span>2</span>
@@ -142,30 +142,35 @@
 								</div>
 							</div>
 							<div class="test_net_item_content_item_bottom">
-								<div class="test_net_item_step_big_content">
+								<div class="test_net_item_step_content">
 									<p>{{$store.state.messages.irishub.setpList.phase}} 2</p>
-									<a :href="$store.state.messages.irishub.setpList.link2" class="test_net_time_link" target="_blank" rel="noreferrer noopener">
+									<a class="test_net_time_link" :href= "$store.state.messages.irishub.setpList.link2"  target="_blank" rel="noreferrer noopener">
 										{{$store.state.messages.irishub.setpList.ing}}
 									</a>
+									<!--									<span class="test_net_time_link">{{$store.state.messages.irishub.setpList.comeSoon}}</span>-->
 								</div>
 							</div>
 						</div>
-						<div class="test_net_time_last_content_item">
+						<div class="test_net_time_content_item">
 							<div class="test_net_item_content_item_top">
-								<div class="test_net_item_block_img_content">
+								<div class="test_net_item_block_big_img_content">
 									<div class="test_net_item_block_content">
 										<span>{{$store.state.messages.irishub.setpList.irishub}}</span>
 										<span>{{$store.state.messages.irishub.setpList.hub1}}</span>
 									</div>
 								</div>
+								<!--<div class="test_net_item_content_line">
+									<div class="test_net_item_dot"></div>
+									<div class="test_net_connecting_link"></div>
+									<div class="test_net_item_dot"></div>
+								</div>-->
 							</div>
 							<div class="test_net_item_content_item_bottom">
-								<div class="test_net_item_step_content">
+								<div class="test_net_item_step_big_content">
 									<p>{{$store.state.messages.irishub.setpList.irishub}} {{$store.state.messages.irishub.setpList.hub1}}</p>
-									<a class="test_net_time_link" :href= "$store.state.messages.irishub.setpList.link3"  target="_blank" rel="noreferrer noopener">
+									<a :href="$store.state.messages.irishub.setpList.link3" class="test_net_time_link" target="_blank" rel="noreferrer noopener">
 										{{$store.state.messages.irishub.setpList.comeSoon}}
 									</a>
-									<!--									<span class="test_net_time_link">{{$store.state.messages.irishub.setpList.comeSoon}}</span>-->
 								</div>
 							</div>
 						</div>
@@ -673,7 +678,6 @@
 						max-width: 5.34rem;
 						display: flex;
 						.test_net_time_content_item{
-							flex: 1;
 							.test_net_item_content_item_top{
 								display: flex;
 								align-items: center;
@@ -760,10 +764,9 @@
 									text-align: center;
 								}
 								.test_net_item_step_big_content{
-									max-width: 2.07rem;
+									max-width:2.07rem;
 									margin-top: 0.83rem;
 									text-align: center;
-									background: rgba(32, 34, 65, 1);
 									padding: 0.19rem 0 0.35rem 0;
 									.test_net_time_link{
 										display: inline-block;
@@ -778,7 +781,7 @@
 							}
 						}
 						.test_net_time_last_content_item{
-							width: 1.24rem;
+							flex: 1;
 							.test_net_item_content_item_top{
 								display: flex;
 								align-items: center;
@@ -834,6 +837,8 @@
 									margin-top: 0.83rem;
 									text-align: center;
 									padding-top: 0.19rem;
+									padding-bottom: 0.35rem;
+									background: rgba(32, 34, 65, 1);
 									.test_net_time_link{
 										display: inline-block;
 										margin-top: 0.12rem;
@@ -848,6 +853,7 @@
 									max-width: 2.07rem;
 									margin-top: 0.83rem;
 									text-align: center;
+									
 								}
 							}
 						}
