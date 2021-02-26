@@ -4,7 +4,7 @@ export const message = {
         {
             title:'IRISnet Mainnet 1.0',
             subTitle:'Successfully Upgraded',
-            description:'Welcome to the New Connected Interchain World',
+            description:'The 1st Mainnet Establishing the IBC Connection with Cosmos Hub',
             leftBtnLabel:'More details',
             leftBtnLink:'/mainnet/',
             rightBtnLabel:'Announcement',
@@ -168,11 +168,11 @@ export const message = {
             link0: 'https://medium.com/irisnet-blog/irisnet-launched-defi-and-interchain-testnet-bifrost-8ab43c38c55b',
             link1: 'https://medium.com/irisnet-blog/phase-1-of-irisnets-defi-interchain-testnet-bifrost-has-successfully-ended-on-jan-6-bdee924dd93a',
             link2: 'https://medium.com/irisnet-blog/phase-2-of-irisnets-defi-interchain-testnet-bifrost-launched-to-be-followed-by-mainnet-upgrade-211d69d0f828',
-            link3: 'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-upgrade-pre-announcement-99fd83a2bd19',
+            link3: 'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-5ce1c2643965',
             oneStepTitle: '',
             end:'End',
-            ing:'Ongoing',
-            comeSoon:'Coming Soon',
+            ing:'End',
+            comeSoon:'Live',
             irishub:'IRIS Hub',
             hub1:'1.0'
         },
