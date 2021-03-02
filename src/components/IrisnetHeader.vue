@@ -280,7 +280,6 @@
             let headerHeight = document.getElementsByClassName('header_wrap')[0].clientHeight;
             this.resetActiveIcon();
             this.$store.commit('headerHeight',headerHeight);
-            console.log(this.$store.state.activeIconIndex,"我是真的烦 ")
             if(this.$route.path.includes('kuafu')  ){
                 this.navigationData.header.right[0].active = true;
             }else if(this.$route.path.includes('/developers') || this.$route.path.includes('/developers/testnet')){

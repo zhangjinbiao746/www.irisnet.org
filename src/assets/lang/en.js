@@ -2,6 +2,17 @@ export const message = {
     logo:'irisnet.png',
     homeBanner:[
         {
+            title:'2nd Anniversary of Mainnet Launch',
+            subTitle:'',
+            description:'Happy 2nd birthday to IRISnet ',
+            leftBtnLabel:'More details',
+            leftBtnLink:'',
+            rightBtnLabel:'',
+            rightBtnLink:'',
+            bgImage:require('../../assets/pages/banner/2years.png'),
+            padImage:require('../../assets/pages/banner/2years.png')
+        },
+        {
             title:'IRISnet Mainnet 1.0',
             subTitle:'Successfully Upgraded',
             description:'The 1st Mainnet Establishing the IBC Connection with Cosmos Hub',
