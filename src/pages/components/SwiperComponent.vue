@@ -17,8 +17,10 @@
 									   :target="item.leftBtnLink ? '_blank':''"
 									   rel="noreferrer noopener"
 									   @click="showTooltip">{{item.leftBtnLabel}}</a>
-									<a v-show="item.rightBtnLabel" class="banner_content_right_btn" :href="item.rightBtnLink"
-									   target="_blank"
+									<a :style="{visibility:item.rightBtnLabel ? 'visible' :'hidden'}"
+									   class="banner_content_right_btn"
+									   :href="item.rightBtnLink"
+									   :target="item.leftBtnLink ? '_blank':''"
 									   rel="noreferrer noopener">{{item.rightBtnLabel}}</a>
 								</div>
 							</div>
