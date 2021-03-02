@@ -11,11 +11,13 @@
 								<p class="banner_content_sub_title">{{item.subTitle}}</p>
 								<p class="banner_content_description">{{item.description}}</p>
 								<div class="banner_content_btn_content">
-									<a class="banner_content_left_btn"
-									   :href="item.leftBtnLink"
-									   target="_blank"
-									   rel="noreferrer noopener">{{item.leftBtnLabel}}</a>
-									<a class="banner_content_right_btn" :href="item.rightBtnLink"
+									<a v-show="item.leftBtnLabel"
+									   class="banner_content_left_btn"
+									   :href="item.leftBtnLink ||'javascripd:void(0)'"
+									   :target="item.leftBtnLink ? '_blank':''"
+									   rel="noreferrer noopener"
+									   @click="showTooltip">{{item.leftBtnLabel}}</a>
+									<a v-show="item.rightBtnLabel" class="banner_content_right_btn" :href="item.rightBtnLink"
 									   target="_blank"
 									   rel="noreferrer noopener">{{item.rightBtnLabel}}</a>
 								</div>
@@ -64,6 +66,13 @@
 			
 		},
 		methods:{
+			showTooltip(){
+				this.$Message.Message({
+					message:this.$store.state.messages.irishub.btn.tooltip,
+					duration: 3000,
+					offset: 50
+				})
+			},
 			onresize(){
 				if(document.body.offsetWidth < 1100){
 					this.isChangeBgImg = true
@@ -172,7 +181,7 @@
 					}
 					.banner_content_title{
 						font-size: 0.48rem;
-						line-height: 0.48rem;
+						line-height: 0.6rem;
 						font-weight: bold;
 						@media(max-width: 768px){
 							font-size: 0.4rem;

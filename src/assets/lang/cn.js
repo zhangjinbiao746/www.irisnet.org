@@ -2,6 +2,17 @@ export const message = {
     logo: 'irisnet.png',
     homeBanner:[
         {
+            title:'主网上线两周年',
+            subTitle:'',
+            description:'IRISnet 2 周岁生日快乐',
+            leftBtnLabel:'周年回顾',
+            leftBtnLink:'',
+            rightBtnLabel:'',
+            rightBtnLink:'',
+            bgImage:require('../../assets/pages/banner/2years.png'),
+            padImage:require('../../assets/pages/banner/2years.png')
+        },
+        {
             title:'IRISnet 1.0',
             subTitle:'主网升级成功',
             description:'首个与 Cosmos Hub 建立 IBC 连接的主网',
