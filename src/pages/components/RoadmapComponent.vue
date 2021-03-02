@@ -1,10 +1,10 @@
 <template>
-	<div class="roadmap_container"  ref="roadmap">
+	<div class="roadmap_container" ref="roadmap">
 		<div class="roadmap_wrap">
 			<navigation-line/>
 			<h3 class="roadmap_title">{{$store.state.messages.home.sectionThree.title}}</h3>
 			<div class="roadmap_scroll_content">
-				<vue-scroll :ops="opsConfig">
+				<vue-scroll :ops="opsConfig" ref="vs">
 					<ul class="roadmap_list_content">
 						<li class="roadmap_item"
 						    v-for="item in $store.state.messages.home.sectionThree.road"
@@ -68,11 +68,20 @@
 					this.coptionText = item.msg
 				}
 			})
+			setTimeout(() => {
+				this.$refs['vs'].scrollTo({
+					x:'55%'
+				},500)
+			},200)
+		
 			this.onresize();
 			window.addEventListener('resize', this.onresize);
 		},
 		methods:{
 			onresize(){
+				this.$refs['vs'].scrollTo({
+					x:'55%'
+				},500)
 				setTimeout(() => {
 					this.$store.commit('roadmap', this.$refs.roadmap.offsetTop - this.$store.state.headerHeight);
 				},200)
