@@ -17,7 +17,7 @@
 									   :target="item.leftBtnLink ? '_blank':''"
 									   rel="noreferrer noopener"
 									   @click="showTooltip">{{item.leftBtnLabel}}</a>
-									<a :style="{visibility:item.rightBtnLabel ? 'visible' :'hidden'}"
+									<a v-show="item.rightBtnLink"
 									   class="banner_content_right_btn"
 									   :href="item.rightBtnLink"
 									   :target="item.leftBtnLink ? '_blank':''"
@@ -162,6 +162,7 @@
 				}
 				.banner_content{
 					max-width: 5.6rem;
+					min-width: 4.5rem;
 					.is_hide_block{
 						height: 0.6rem;
 						@media(max-width: 768px){
@@ -172,6 +173,7 @@
 						margin-bottom: 5.4rem;
 						margin-top: 1rem;
 						text-align: center;
+						min-width: auto;
 					}
 					@media(max-width: 768px){
 						margin-top: 0.6rem;
