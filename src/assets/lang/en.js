@@ -7,8 +7,8 @@ export const message = {
             description:'Happy 2nd birthday to IRISnet ',
             leftBtnLabel:'More details',
             leftBtnLink:'',
-            rightBtnLabel:'',
-            rightBtnLink:'',
+            rightBtnLabel:'CoinMarketCap',
+            rightBtnLink:'https://www.coinmarketcap.com/currencies/irisnet/',
             bgImage:require('../../assets/pages/banner/2years.png'),
             padImage:require('../../assets/pages/banner/2years.png')
         },
