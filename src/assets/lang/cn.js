@@ -5,7 +5,7 @@ export const message = {
             title:'主网上线两周年',
             subTitle:'',
             description:'IRISnet 2 周岁生日快乐',
-            leftBtnLabel:'周年回顾',
+            leftBtnLabel:'回顾展望',
             leftBtnLink:'',
             rightBtnLabel:'CoinMarketCap',
             rightBtnLink:'https://www.coinmarketcap.com/zh/currencies/irisnet/',
