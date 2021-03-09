@@ -1201,6 +1201,11 @@ export const message = {
                             os:'(Android, iOS)',
                             href: 'http://www.loytoken.com/'
                         },
+                        {
+                            itemName: 'Keplr',
+                            os:'(web)',
+                            href: 'https://keplr.app/'
+                        },
 
                     ],
                     content:'这些钱包支持 IRIS 及 ATOM 的转账和质押，请充分研究其安全性再使用。列示这些信息仅为方便下载，并不代表对钱包使用的安全性负责。',
