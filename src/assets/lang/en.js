@@ -1214,7 +1214,7 @@ export const message = {
                         },
                         {
                             itemName: 'Keplr',
-                            os:'(web)',
+                            os:'(Web)',
                             href: 'https://keplr.app/'
                         },
                     ],
