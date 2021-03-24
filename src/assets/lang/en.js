@@ -30,7 +30,7 @@ export const message = {
             leftBtnLabel:'View Details',
             leftBtnLink:'https://medium.com/irisnet-blog/irisnet-is-selected-into-first-batch-of-public-blockchains-supported-by-bsn-1945aa2e2a0',
             rightBtnLabel:'IRIS Explorer',
-            rightBtnLink:'https://www.irisplorer.io/',
+            rightBtnLink:'https://irishub.iobscan.io/',
             bgImage:require('../../assets/pages/banner/BSN.png'),
             padImage: require('../../assets/pages/banner/BSN_pad.png')
     
@@ -437,12 +437,12 @@ export const message = {
             {
                 id: 1,
                 name:'IRISplorer',
-                href:'https://www.irisplorer.io'
+                href:'https://irishub.iobscan.io'
             },
             {
                 id: 2,
-                name:'Light Client',
-                href:'https://www.irisnet.org/docs/light-client/intro.html'
+                name:'Endpoints & SDKs',
+                href:'https://www.irisnet.org/docs/endpoints/intro.html'
             },
             {
                 id: 3,
@@ -570,7 +570,7 @@ export const message = {
                 },
                 buttonUrl: {
                     rainbowUrl: 'https://www.rainbow.one/',
-                    explorerUrl: 'https://www.irisplorer.io'
+                    explorerUrl: 'https://irishub.iobscan.io'
                 }
             }
         },
@@ -844,7 +844,7 @@ export const message = {
         wallet: 'Rainbow Wallet',
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS Explorer',
-        explorerHref:'https://www.irisplorer.io/'
+        explorerHref:'https://irishub.iobscan.io/'
     },
     developer:{
         title:'Developers',
@@ -864,7 +864,7 @@ export const message = {
                 {
                     title:'Nyancat Testnet',
                     content:'The Nyancat testnet runs a newer version of irishub, providing a test environment for validators to preview and test the new version before it is ready for deployment to mainnet.',
-                    link:'https://www.irisnet.org/docs/get-started/testnet.html#nyancat-testnet',
+                    link:'https://nyancat.iobscan.io/',
                     btnLabel:'Use Nyancat Tensent',
                     isRouterLink:false
                 },
@@ -1258,8 +1258,8 @@ export const message = {
                     href:'javascript:void(0);',
                     resourceList: [
                         {
-                            itemName: 'IRISplorer',
-                            href: 'https://www.irisplorer.io/#/validators'
+                            itemName: 'IOBScan',
+                            href: 'https://irishub.iobscan.io/#/staking'
                         },
                         {
                             itemName: 'Mintscan',
@@ -1304,7 +1304,7 @@ export const message = {
                         },*/
                         {
                             itemName: 'Nyancat',
-                            href: 'https://github.com/irisnet/testnets/tree/master/nyancat'
+                            href: 'https://www.irisnet.org/docs/get-started/testnet.html'
                         },
                         {
                             itemName: 'Mainnet',
