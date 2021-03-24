@@ -30,7 +30,7 @@ export const message = {
             leftBtnLabel:'查看详情',
             leftBtnLink:'https://mp.weixin.qq.com/s/olSUm2qvlF6-V6K5mV1tKQ',
             rightBtnLabel:'IRIS 浏览器',
-            rightBtnLink:'https://www.irisplorer.io/',
+            rightBtnLink:'https://irishub.iobscan.io/',
             bgImage:require('../../assets/pages/banner/BSN.png'),
             padImage: require('../../assets/pages/banner/BSN_pad.png')
         },
@@ -433,13 +433,13 @@ export const message = {
             },
             {
                 id:1,
-                name:'IRISplorer',
-                href:'https://www.irisplorer.io'
+                name:'IOBScan',
+                href:'https://www.iobscan.io'
             },
             {
                 id:2,
-                name:'Light Client',
-                href:'https://www.irisnet.org/docs/light-client/intro.html'
+                name:'Endpoints & SDKs',
+                href:'https://www.irisnet.org/docs/zh/endpoints/intro.html'
             },
             {
                 id:3,
@@ -567,7 +567,7 @@ export const message = {
                 },
                 buttonUrl: {
                     rainbowUrl: 'https://www.rainbow.one/',
-                    explorerUrl: 'https://www.irisplorer.io'
+                    explorerUrl: 'https://irishub.iobscan.io'
                 }
             }
         },
@@ -838,7 +838,7 @@ export const message = {
         wallet: 'Rainbow 钱包',
         walletHref:'https://www.rainbow.one/',
         explorer: 'IRIS 浏览器',
-        explorerHref:'https://www.irisplorer.io/'
+        explorerHref:'https://irishub.iobscan.io/'
     },
     developer:{
         title:'开发者',
@@ -858,7 +858,7 @@ export const message = {
                 {
                     title:'彩虹猫测试网',
                     content:'彩虹猫测试网通常运行比 IRISnet 主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
-                    link:'https://www.irisnet.org/docs/zh/get-started/testnet.html#nyancat-%E6%B5%8B%E8%AF%95%E7%BD%91',
+                    link:'https://nyancat.iobscan.io/',
                     btnLabel:"使用彩虹猫测试网",
                     isRouterLink:false
                 },
@@ -1248,8 +1248,8 @@ export const message = {
                     href:'javascript:void(0);',
                     resourceList: [
                         {
-                            itemName: 'IRISplorer',
-                            href: 'https://www.irisplorer.io/#/validators'
+                            itemName: 'IOBScan',
+                            href:  'https://irishub.iobscan.io/#/staking'
                         },
                         {
                             itemName: 'Mintscan',
@@ -1294,7 +1294,7 @@ export const message = {
 		                },*/
 		                {
 			                itemName: '彩虹猫测试网',
-			                href: 'https://github.com/irisnet/testnets/tree/master/nyancat'
+			                href: 'https://www.irisnet.org/docs/zh/get-started/testnet.html'
 		                },
 		                {
 			                itemName: '加入主网',
