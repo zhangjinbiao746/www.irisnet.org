@@ -10,7 +10,7 @@
 						<a class="proposal_proposal_btn" href="https://www.rainbow.one/" target="_blank" rel="noreferrer nonpener">
 							{{$store.state.messages.irishub.btn.prepare}}
 						</a>
-						<a class="proposal_prepare_btn" href="https://www.irisplorer.io/#/home" target="_blank" rel="noreferrer nonpener">
+						<a class="proposal_prepare_btn" href="https://irishub.iobscan.io/#/home" target="_blank" rel="noreferrer nonpener">
 							{{$store.state.messages.irishub.btn.proposal}}
 						</a>
 					</div>
