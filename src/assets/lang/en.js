@@ -61,15 +61,15 @@ export const message = {
             title:'Proposals',
             list:[
                 {
-                    proposalId:'Proposal #10',
-                    title:'IRIS Hub 1.0 Mainnet Upgrade',
-                    btnLabel:'Passed',
-                    link:'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-upgrade-on-chain-governance-proposal-has-passed-will-upgrade-on-feb-25-2c5204621ae3'
+                    proposalId:'Proposal #1',
+                    title:'IRIS Hub 1.1 Mainnet Upgrade',
+                    btnLabel:'Vote',
+                    link:''
                 },
                 {
-                    proposalId:'Proposal #',
+                    proposalId:'Proposal #2',
                     title:'IBC Enabled',
-                    btnLabel:'Coming Soon',
+                    btnLabel:'Vote',
                     link:''
                 },
             ]
