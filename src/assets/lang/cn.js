@@ -59,16 +59,16 @@ export const message = {
             title:'提案投票',
             list:[
                 {
-                    proposalId:'提案 #10',
-                    title:'IRIS Hub 1.0 主网升级',
-                    btnLabel:'提案通过',
-                    link:'https://mp.weixin.qq.com/s/Pjb76zucTdZoMCAcGj2igw'
+                    proposalId:'提案 #1',
+                    title:'IRIS Hub 1.1 主网升级',
+                    btnLabel:'投票',
+                    link:'https://irishub.iobscan.io/#/ProposalsDetail/1'
                 },
                 {
-                    proposalId:'提案 #',
+                    proposalId:'提案 #2',
                     title:'IBC 功能启用',
-                    btnLabel:'即将开启',
-                    link:''
+                    btnLabel:'投票',
+                    link:'https://irishub.iobscan.io/#/ProposalsDetail/2'
                 },
             ]
         },
