@@ -884,35 +884,35 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                img:require('../../assets/pages/announcements/Mainnet1.0_Pass_CN.png'),
-                href:'https://mp.weixin.qq.com/s/Pjb76zucTdZoMCAcGj2igw',
-                date:'2021 年 02 月 24 日',
-                title:'IRISnet 主网 1.0 升级链上提案通过，将于 2 月 25 日升级',
-                content:''
+                img:require('../../assets/pages/announcements/ibc_zh.png'),
+                href:'https://mp.weixin.qq.com/s/K9DUKyrBR_wyJnRMMV9X4Q',
+                date:'2021 年 03 月 27 日',
+                title:'IRIS Hub 启用 IBC 转账功能链上提案发布',
+                content:'在 IRIS Hub 上启用 IBC 转账功能的链上提案已于 3 月 27 日发布。该治理提案一经通过，将于 4 月 1 日在 IRIS Hub 上开启基于 ICS20 标准的跨链资产转移，将实现与 Cosmos Hub 等网络的 IBC 跨链转账。'
             },
             {
                 id:'1',
-                img:require('../../assets/pages/announcements/Mainnet1.0_Submitted_CN.png'),
-                href:'https://mp.weixin.qq.com/s/rwq6Nj4On3rYzuq6a5_4rg',
-                date:'2021 年 02 月 10 日',
-                title:'IRISnet 主网 1.0 升级公告',
-                content:''
+                img:require('../pages/announcements/Support_Coinswap_CN.png'),
+                href:'https://mp.weixin.qq.com/s/bZRaCLqGxidrbrNxj8A5oA',
+                date:'2021 年 03 月 26 日',
+                title:'IRISnet 主网 1.1 升级公告：支持 Coinswap 等应用',
+                content:'IRISnet 主网计划于 3 月 31 日发起 IRISnet 主网 1.1 升级，以更好地支持 Coinswap 等应用。'
             },
             {
                 id:'2',
-                img:require('../pages/announcements/announcement_Chainlink.png'),
-                href:'https://mp.weixin.qq.com/s/kppCBRJSfbfcd1CRURrZWg',
-                date:'2021 年 02 月 03 日',
-                title:'IRITA Hub 已成功将 Chainlink 预言机集成至 BSN',
-                content:'由 IRISnet 核心开发团队边界智能打造的 IRITA Hub 现已完成在区块链服务网络 BSN 上原生集成 Chainlink 预言机的工作。'
+                img:require('../pages/announcements/Rainbow_ID.png'),
+                href:'https://mp.weixin.qq.com/s/y-zTSzH95oFmezdKEIL0Kw',
+                date:'2021 年 03 月 23 日',
+                title:'Rainbow 钱包新增 RainbowID，轻松掌管多链钱包',
+                content:'Rainbow 钱包发布了 v3.2.0 版本，本次版本新增升级了 RainbowID 钱包等功能，提供了多链钱包供用户选择，大大降低用户使用多链钱包的管理成本，提供了更加丰富和流畅的用户体验。'
             },
             {
                 id:'3',
-                img:require('../../assets/pages/announcements/WeTeam_CN.png'),
-                href:'https://mp.weixin.qq.com/s/J1z8_1JEoDbrBLKyuqALCw',
-                date:'2021 年 01 月 28 日',
-                title:'IRISnet 携手 WeTeam 打造 DAO 工具，助力 dApp 生态繁荣发展',
-                content:'IRIS 基金会授予 WeTeam 团队 Tech-Grants 支持，IRISnet 与 WeTeam 携手运用 iService + DAO 的模式，打造 DAO 工具，助力 dApp 生态繁荣发展。'
+                img:require('../../assets/pages/announcements/Rainbow_BinaceChain_CN.png'),
+                href:'https://mp.weixin.qq.com/s/gMP_5NzCaGbu8_wkJ1b6Bg',
+                date:'2021 年 03 月 23 日',
+                title:'Rainbow 钱包支持 Binance Chain，完善跨链网关转账',
+                content:'Rainbow 钱包发布了 v3.2.0 版本，本次版本新增升级了 Binance Chain 支持、多资产展示及管理等功能，完善了跨链网关转账功能。'
             },
             
         ]
@@ -1293,20 +1293,20 @@ export const message = {
 			                href: 'https://www.irisnet.org/docs/zh/get-started/testnet.html'
 		                },*/
 		                {
+			                itemName: '主网',
+			                href: 'https://www.irisnet.org/docs/zh/get-started/mainnet.html'
+		                },
+		                {
 			                itemName: '彩虹猫测试网',
 			                href: 'https://www.irisnet.org/docs/zh/get-started/testnet.html'
 		                },
 		                {
-			                itemName: '加入主网',
-			                href: 'https://www.irisnet.org/docs/get-started/mainnet.html'
-		                },
-		                {
 			                itemName: '命令行',
-			                href: 'https://www.irisnet.org/docs/cli-client/intro.html'
+			                href: 'https://www.irisnet.org/docs/zh/cli-client/intro.html'
 		                },
 		                {
 			                itemName: '轻客户端',
-			                href: 'https://www.irisnet.org/docs/cli-client/intro.html'
+			                href: 'https://www.irisnet.org/docs/zh/cli-client/intro.html'
 		                },
 	                ]
                 }

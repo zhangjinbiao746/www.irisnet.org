@@ -890,35 +890,35 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                img:require('../../assets/pages/announcements/Mainnet1.0_Pass_EN.png'),
-                href:'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-upgrade-pre-announcement-99fd83a2bd19',
-                date:'Feb 24, 2021',
-                title:'IRISnet Mainnet 1.0 Upgrade On-chain Governance Proposal has Passed, will Upgrade on Feb 25',
-                content:''
+                img:require('../../assets/pages/announcements/ibc_en.png'),
+                href:'https://medium.com/irisnet-blog/enable-ibc-transfers-on-iris-hub-on-chain-governance-proposal-has-been-submitted-88056e2bfbef',
+                date:'Mar 27, 2021',
+                title:'Enable IBC Transfers on IRIS Hub On-chain Governance Proposal has been submitted',
+                content:'The on-chain governance proposal about enabling IBC transfers on IRIS Hub has been submitted on March 27. Once proposals pass, IBC assets cross-chain transfers will be available between IRIS Hub and other networks like Cosmos Hub connected over IBC.'
             },
             {
                 id:'1',
-                img:require('../../assets/pages/announcements/Mainnet1.0_Submitted_EN.png'),
-                href:'https://medium.com/irisnet-blog/2020-irisnet-annual-highlights-daab41fe7505',
-                date:'Feb 10, 2021',
-                title:'IRISnet Mainnet 1.0 Upgrade Announcement',
-                content:''
+                img:require('../../assets/pages/announcements/Support_Coinswap_EN.png'),
+                href:'https://medium.com/irisnet-blog/irisnet-mainnet-1-1-upgrade-announcement-support-coinswap-and-other-apps-d2fb5b125a5b',
+                date:'Mar 26, 2021',
+                title:'IRISnet Mainnet 1.1 Upgrade Announcement: Support',
+                content:'IRISnet Mainnet 1.1 upgrade is expected to happen on March 31 to better support applications such as Coinswap.'
             },
             {
                 id:'2',
-                img:require('../pages/announcements/announcement_Chainlink.png'),
-                href:'https://medium.com/irisnet-blog/irita-hub-completes-the-mainnet-integration-of-chainlink-oracles-on-bsn-c66f4aa36abc',
-                date:'Feb 03 2021',
-                title:'IRITA Hub Completes the Mainnet Integration of Chainlink Oracles on BSN',
-                content:'IRITA Hub, developed by the IRISnet core development team Bianjie, has completed a native integration of Chainlink Oracles on the Blockchain-based Services Network (BSN).'
+                img:require('../pages/announcements/Rainbow_ID_EN.png'),
+                href:'https://medium.com/irisnet-blog/rainbow-app-added-rainbowid-easily-managing-your-multi-chain-wallets-677565d718fa',
+                date:'Mar 23 2021',
+                title:'Rainbow App Added RainbowID, Easily Managing Your Multi-Chain Wallets',
+                content:'Rainbow Wallet released v3.2.0, adding new functions like RainbowID, providing multi-chain wallets for users to conveniently manage multi-assets.'
             },
             {
                 id:'3',
-                img:require('../../assets/pages/announcements/WeTeam_EN.png'),
-                href:'https://medium.com/irisnet-blog/irisnet-weteam-collaborates-to-build-dao-tools-to-flourish-the-dapp-ecosystem-2bce72a5f87a',
-                date:'Jan 28, 2021',
-                title:'IRISnet and WeTeam Collaborate to Build DAO Tools to Flourish the dApp Ecosystem',
-                content:'IRISnet has collaborated with Bi23 Labs to create the new generation team autonomous tool, WeTeam, based on IRISnet’s unique iService framework and robust interchain capability. '
+                img:require('../../assets/pages/announcements/Rainbow_BinaceChain_EN.png'),
+                href:'https://medium.com/irisnet-blog/rainbow-app-supports-binance-chain-and-upgrades-interchain-gateway-transfer-feature-7641fab0dcb7',
+                date:'Mar 23, 2021',
+                title:'Rainbow App Supports Binance Chain and Upgrades Interchain Gateway Transfer Feature',
+                content:'Rainbow Wallet released v3.2.0, adding new functions like Binance Chain support, and multi-assets management, upgrading the interchain gateway transfer feature.'
             },
             
            
@@ -1302,21 +1302,21 @@ export const message = {
                             itemName: 'FUXI',
                             href: 'https://www.irisnet.org/docs/get-started/testnet.html'
                         },*/
+	                    {
+		                    itemName: 'Mainnet',
+		                    href: 'https://www.irisnet.org/docs/get-started/mainnet.html'
+	                    },
                         {
                             itemName: 'Nyancat',
                             href: 'https://www.irisnet.org/docs/get-started/testnet.html'
                         },
                         {
-                            itemName: 'Mainnet',
-                            href: 'https://www.irisnet.org/docs/get-started/Join-the-Mainnet.html'
-                        },
-                        {
                             itemName: 'Cli Client',
-                            href: 'https://www.irisnet.org/docs/cli-client/'
+                            href: 'https://www.irisnet.org/docs/cli-client/intro.html'
                         },
                         {
                             itemName: 'Light Client',
-                            href: 'https://www.irisnet.org/docs/light-client/'
+                            href: 'https://www.irisnet.org/docs/cli-client/intro.html'
                         },
                     ]
                 }
