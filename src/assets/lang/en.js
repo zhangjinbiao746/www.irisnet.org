@@ -1315,8 +1315,8 @@ export const message = {
 							href: 'https://www.irisnet.org/docs/cli-client/intro.html'
 						},
 						{
-							itemName: 'Light Client',
-							href: 'https://www.irisnet.org/docs/cli-client/intro.html'
+							itemName: 'API',
+							href: 'https://www.irisnet.org/docs/endpoints/intro.html'
 						},
 					]
 				}
