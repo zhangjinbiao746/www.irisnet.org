@@ -1305,8 +1305,8 @@ export const message = {
 							href: 'https://www.irisnet.org/docs/zh/cli-client/intro.html'
 						},
 						{
-							itemName: '轻客户端',
-							href: 'https://www.irisnet.org/docs/zh/cli-client/intro.html'
+							itemName: 'API',
+							href: 'https://www.irisnet.org/docs/zh/endpoints/intro.html'
 						},
 					]
 				}
