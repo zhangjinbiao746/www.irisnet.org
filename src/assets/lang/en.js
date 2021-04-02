@@ -70,7 +70,7 @@ export const message = {
 					proposalId:'Proposal #2',
 					title:'IBC Enabled',
 					btnLabel:'Passed',
-					link:'https://irishub.iobscan.io/#/ProposalsDetail/2'
+					link:'https://medium.com/irisnet-blog/irisnet-has-enabled-ibc-transfers-completed-the-1st-cross-mainnet-token-transfer-with-cosmos-hub-2480b3a56650'
 				},
 			]
 		},
