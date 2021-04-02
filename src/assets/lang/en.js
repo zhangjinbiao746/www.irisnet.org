@@ -63,14 +63,14 @@ export const message = {
 				{
 					proposalId:'Proposal #1',
 					title:'IRIS Hub 1.1 Mainnet Upgrade',
-					btnLabel:'Vote',
-					link:''
+					btnLabel:'Passed',
+					link:'https://medium.com/irisnet-blog/irisnet-mainnet-1-1-successfully-upgraded-within-around-40-minutes-65c3aa43d2d6'
 				},
 				{
 					proposalId:'Proposal #2',
 					title:'IBC Enabled',
-					btnLabel:'Vote',
-					link:''
+					btnLabel:'Passed',
+					link:'https://irishub.iobscan.io/#/ProposalsDetail/2'
 				},
 			]
 		},
