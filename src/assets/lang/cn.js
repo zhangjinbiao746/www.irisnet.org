@@ -68,7 +68,7 @@ export const message = {
 					proposalId:'提案 #2',
 					title:'IBC 功能启用',
 					btnLabel:'提案通过',
-					link:'https://irishub.iobscan.io/#/ProposalsDetail/2'
+					link:'https://mp.weixin.qq.com/s/mXM_igkUx4mQTS_xWeo6gw'
 				},
 			]
 		},
