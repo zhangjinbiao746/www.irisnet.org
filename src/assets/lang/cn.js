@@ -61,14 +61,14 @@ export const message = {
 				{
 					proposalId:'提案 #1',
 					title:'IRIS Hub 1.1 主网升级',
-					btnLabel:'投票',
-					link:''
+					btnLabel:'提案通过',
+					link:'https://mp.weixin.qq.com/s/HnrGzWfGr5MZLsySf6Jy0g'
 				},
 				{
 					proposalId:'提案 #2',
 					title:'IBC 功能启用',
-					btnLabel:'投票',
-					link:''
+					btnLabel:'提案通过',
+					link:'https://mp.weixin.qq.com/s/mXM_igkUx4mQTS_xWeo6gw'
 				},
 			]
 		},
