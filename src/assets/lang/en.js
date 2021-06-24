@@ -334,12 +334,6 @@ export const message = {
                 active:false,
             },
             {
-                id:5,
-                title:'Community',
-                activeIndex: 2,
-                active:false,
-            },
-            {
                 id:6,
                 title:'Developers',
                 activeIndex: 6,
