@@ -3,14 +3,6 @@
         <div class="float_content">
             <a :href="$store.state.messages.home.sectionOne.shareUrl.telegramUrl" target="_blank"><img src="../assets/hoverIcon/telegramIconHover.png" alt=""></a>
             <a :href="$store.state.messages.home.sectionOne.shareUrl.githubUrl" target="_blank"><img src="../assets/hoverIcon/githubIconHover.png" alt=""></a>
-            <a @mouseenter="showWeChat()"@mouseleave="hideWeChat()">
-                <img src="../assets/hoverIcon/weChatIconHover.png" alt="">
-                <div v-show="flShowWeChat"  class="mobileBox" @touchmove.prevent>
-                    <div class="qrcode" @touchmove.prevent>
-                        <img src="../assets/wechat.jpg" alt="" @touchmove.prevent>
-                    </div>
-                </div>
-            </a>
         </div>
         <div class="float_window_forum_container">
             <a href="https://forum.irisnet.org/" target="_blank">

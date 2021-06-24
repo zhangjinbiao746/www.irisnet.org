@@ -256,11 +256,6 @@ export const message = {
                 active:false,
             },
             {
-                id:2,
-                title:'社区',
-                active:false,
-            },
-            {
                 id:4,
                 title:'开发者',
                 active:false,
@@ -382,7 +377,7 @@ export const message = {
             {
                 id:1,
                 src: "irisnet_telegram.png",
-                href: "https://t.me/irisnetworkcn"
+                href: "https://t.me/irisnetwork"
             },
 
             {
@@ -399,11 +394,6 @@ export const message = {
                 id:4,
                 src: "irisnet_medium.png",
                 href: "https://medium.com/irisnet-blog"
-            },
-            {
-                id:5,
-                src: "irisnet_wechat.png",
-                "txt": "Wechat"
             },
         ],
         validatorCommunity:[
@@ -556,7 +546,7 @@ export const message = {
             time: '2019.8.29',
             content:'率先实现BPoS主网平滑升级',
             shareUrl: {
-                telegramUrl: 'https://t.me/irisnetworkcn',
+                telegramUrl: 'https://t.me/irisnetwork',
                 githubUrl: 'https://github.com/irisnet/irishub',
                 weChatUrl: ''
             },
@@ -1453,7 +1443,7 @@ export const message = {
                 "src": "telegram-default.png",
                 "src_selected": "telegram.png",
                 "txt": "Telegram",
-                "href": "https://t.me/irisnetworkcn"
+                "href": "https://t.me/irisnetwork"
             },
             {
                 "src": "twitter-default.png",
@@ -2228,7 +2218,7 @@ export const message = {
                 "src": "telegran.png",
                 "src_selected": "telegran_selected.png",
                 "txt": "Telegram",
-                "href": "https://t.me/irisnetworkcn"
+                "href": "https://t.me/irisnetwork"
             },
             {
                 "src": "twitter.png",

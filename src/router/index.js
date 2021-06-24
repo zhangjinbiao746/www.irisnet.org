@@ -89,10 +89,6 @@ export function createRouter() {
                 component: Cosmos
             },
             {
-                path: '/community',
-                component: CommunityPage
-            },
-            {
                 path: '/developers',
                 component: Developers
             },

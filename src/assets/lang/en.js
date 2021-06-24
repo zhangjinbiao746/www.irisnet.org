@@ -258,11 +258,6 @@ export const message = {
                 active:false,
             },
             {
-                id:2,
-                title:'Community',
-                active:false,
-            },
-            {
                 id:3,
                 title:'Developers',
                 active:false,
@@ -402,11 +397,6 @@ export const message = {
                 id:4,
                 src: "irisnet_medium.png",
                 href: "https://medium.com/irisnet-blog"
-            },
-            {
-                id:5,
-                src: "irisnet_wechat.png",
-                "txt": "Wechat"
             },
         ],
         validatorCommunity:[
