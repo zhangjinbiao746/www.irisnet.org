@@ -130,23 +130,15 @@
                         this.$router.push({path:'/'})
                     }
                 }else if(index === 2) {
-                    if(this.$route.query.lang && this.$route.query.lang === 'CN'){
-                        this.$router.push({path: '/community/?lang=CN'});
-                    }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
-                        this.$router.push({path:'/community/?lang=EN'})
-                    }else {
-                        this.$router.push({path:'/community'})
-                    }
+					if(this.$route.query.lang && this.$route.query.lang === 'CN'){
+						this.$router.push({path: '/developers/?lang=CN'});
+					}else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
+						this.$router.push({path:'/developers/?lang=EN'})
+					}else {
+						this.$router.push({path:'/developers'})
+					}
+					this.$umeng.push('developers','click')
 	                // this.$router.push({path:'/community'})
-                }else if(index === 3){
-                    if(this.$route.query.lang && this.$route.query.lang === 'CN'){
-                        this.$router.push({path: '/developers/?lang=CN'});
-                    }else if(this.$route.query.lang && this.$route.query.lang === 'EN'){
-                        this.$router.push({path:'/developers/?lang=EN'})
-                    }else {
-                        this.$router.push({path:'/developers'})
-                    }
-                    this.$umeng.push('developers','click')
                 }
                 this.resetActiveIcon();
                 this.navigationData.header.left[index].active = true;

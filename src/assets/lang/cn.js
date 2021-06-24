@@ -332,12 +332,6 @@ export const message = {
                 active:false,
             },
             {
-                id:5,
-                title:'社区',
-                activeIndex: 2,
-                active:false,
-            },
-            {
                 id:6,
                 title:'开发者',
                 activeIndex: 6,
