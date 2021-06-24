@@ -501,6 +501,9 @@
 					.proposal_item:last-child{
 						background: url("../assets/irishub1/proposal_item_right.png") no-repeat center center;
 						background-size: cover;
+						/*.proposal_item_btn{
+							color: rgba(255, 255, 255, 0.5);
+						}*/
 					}
 				}
 			}
