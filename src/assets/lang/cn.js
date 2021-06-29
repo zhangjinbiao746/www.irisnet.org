@@ -838,22 +838,13 @@ export const message = {
         },
         testnet:{
             title:'测试网',
-            list:[
-                {
-                    title:'彩虹猫测试网',
-                    content:'彩虹猫测试网通常运行比 IRISnet 主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
-                    link:'https://nyancat.iobscan.io/',
-                    btnLabel:"使用彩虹猫测试网",
-                    isRouterLink:false
-                },
-                {
-                    title:'Bifrost 测试网',
-                    content:'Bifrost 测试网是 IRISnet 为支持 Cosmos 跨链愿景，为验证 IBC 和 AMM 等功能而启动的专有测试网络。',
-                    link:"/developers/testnet/?lang=CN",
-                    btnLabel:"使用 Bifrost 测试网",
-                    isRouterLink:false
-                }
-            ]
+            content:{
+                title:'彩虹猫测试网',
+                content:'彩虹猫测试网通常运行比 IRISnet 主网更新版本，重点是在新版本发布到生产环境之前，为验证人提供参与网络共识、治理升级的验证测试环境。',
+                link:'https://nyancat.iobscan.io/',
+                btnLabel:"使用彩虹猫测试网",
+                isRouterLink:false
+            },
         }
     },
     announcements:{
