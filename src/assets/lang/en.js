@@ -844,22 +844,13 @@ export const message = {
         },
         testnet:{
             title:'Testnet',
-            list:[
-                {
-                    title:'Nyancat Testnet',
-                    content:'The Nyancat testnet runs a newer version of irishub, providing a test environment for validators to preview and test the new version before it is ready for deployment to mainnet.',
-                    link:'https://nyancat.iobscan.io/',
-                    btnLabel:'Use Nyancat Tensent',
-                    isRouterLink:false
-                },
-                {
-                    title:'Bifrost Testnet',
-                    content:'Bifrost Testnet is the specialized testnet dedicated to Cosmos interchain vision, where IBC and functions like AMM can be tested out',
-                    link:'/developers/testnet/?lang=EN',
-                    btnLabel:'Use Bifrost Testnet',
-                    isRouterLink:false
-                }
-            ]
+            content:{
+                title:'Nyancat Testnet',
+                content:'The Nyancat testnet runs a newer version of irishub, providing a test environment for validators to preview and test the new version before it is ready for deployment to mainnet.',
+                link:'https://nyancat.iobscan.io/',
+                btnLabel:'Use Nyancat Tensent',
+                isRouterLink:false
+            }
         }
     },
     announcements:{
