@@ -153,7 +153,7 @@
 								font-size: 0.16rem;
 								color: #fff;
 								background: linear-gradient(to right, #714BE3, #653FD8);
-								box-shadow: 0 0 0.24rem 0 rgba(58, 5, 218, 0.3);
+								box-shadow: 0 0 0.16rem 0 rgba(58, 5, 218, 0.3);
 								height: 0.5rem;
 								border-radius: 0.33rem;
 								display: flex;
@@ -234,6 +234,7 @@
 							height: 0.5rem;
 							border-radius: 0.25rem;
 							background: linear-gradient(95deg, #714BE3 0%, #653FD8 100%);
+							box-shadow: 0 0 0.16rem 0 rgba(58, 5, 218, 0.3);
 							color: rgba(255, 255, 255, 1);
 							line-height: 0.5rem;
 							text-align: center;

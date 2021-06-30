@@ -94,7 +94,7 @@ export function createRouter() {
             },
             {
                 path: '/developers/testnet',
-                component: Prepare
+                redirect:'/developers'
             },
         ]
     })
