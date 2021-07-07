@@ -646,23 +646,13 @@ export const message = {
             title:'合作方',
             list:[
                 {
-                    title:'核心开发团队',
+                    title:'战略合作伙伴',
                     list:[
-                        {
-                            name:'BIANJIE.AI',
-                            link:'https://www.bianjie.ai/',
-                            image:require('../../assets/pages/collaboration/bianjie.png')
-                        },
                         {
                             name:'Tendermint',
                             link:'https://tendermint.com/',
                             image:require('../../assets/pages/collaboration/tendermint.png')
                         },
-                    ]
-                },
-                {
-                    title:'战略合作伙伴',
-                    list:[
                         {
                             name:'INTERCHAIN',
                             link:'https://cosmos.network/about',
