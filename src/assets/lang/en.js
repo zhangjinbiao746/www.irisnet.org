@@ -648,23 +648,13 @@ export const message = {
             title:'Collaboration',
             list:[
                 {
-                    title:'Core Development Teams',
+                    title:'Strategic Partners',
                     list:[
-                        {
-                            name:'BIANJIE.AI',
-                            link:'https://www.bianjie.ai/',
-                            image:require('../../assets/pages/collaboration/bianjie.png')
-                        },
                         {
                             name:'Tendermint',
                             link:'https://tendermint.com/',
                             image:require('../../assets/pages/collaboration/tendermint.png')
                         },
-                    ]
-                },
-                {
-                    title:'Strategic Partners',
-                    list:[
                         {
                             name:'INTERCHAIN',
                             link:'https://cosmos.network/about',
@@ -1058,10 +1048,6 @@ export const message = {
                     id: 1,
                     item:'IRISnet (a.k.a IRIS Hub) is designed to be the foundation for the next generation distributed applications. Built with Cosmos-SDK, IRIS Hub enables cross-chain interoperability through a unified service model, while providing a variety of modules to support DeFi applications.'
                 },
-                {
-                    id: 2,
-                    item:'IRISnet dev teams include Bianjie (<a href="https://www.bianjie.ai" target="_blank">www.bianjie.ai</a>), a national award-winning blockchain technology team based in Shanghai, and Tendermint (<span><a href="https://tendermint.com" target="_blank">https://tendermint.com</a></span>), the world-famous team that created the Tendermint consensus engine and the Cosmos project.'
-                }
             ],
             readMoreText:'Other Related Information...',
             readMoreHref:'https://github.com/irisnet/irisnet/blob/master/pressKit.md',
