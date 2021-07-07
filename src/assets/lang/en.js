@@ -648,13 +648,23 @@ export const message = {
             title:'Collaboration',
             list:[
                 {
-                    title:'Strategic Partners',
+                    title:'Core Development Teams',
                     list:[
+                        {
+                            name:'BIANJIE.AI',
+                            link:'https://www.bianjie.ai/',
+                            image:require('../../assets/pages/collaboration/bianjie.png')
+                        },
                         {
                             name:'Tendermint',
                             link:'https://tendermint.com/',
                             image:require('../../assets/pages/collaboration/tendermint.png')
                         },
+                    ]
+                },
+                {
+                    title:'Strategic Partners',
+                    list:[
                         {
                             name:'INTERCHAIN',
                             link:'https://cosmos.network/about',
