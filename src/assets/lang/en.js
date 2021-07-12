@@ -848,7 +848,7 @@ export const message = {
                 title:'Nyancat Testnet',
                 content:'The Nyancat testnet runs a newer version of irishub, providing a test environment for validators to preview and test the new version before it is ready for deployment to mainnet.',
                 link:'https://nyancat.iobscan.io/',
-                btnLabel:'Use Nyancat Tensent',
+                btnLabel:'Use Nyancat Testnet',
                 isRouterLink:false
             }
         }
@@ -911,7 +911,7 @@ export const message = {
             explorerHref:'http://nyancat.irisplorer.io/#/home',
             title:'Nyancat Testnet',
             production:'The Nyancat testnet runs a newer version of irishub, providing a test environment for validators to preview and test the new version before it is ready for deployment to mainnet.',
-            testnetLink:'Use Nyancat Tensent',
+            testnetLink:'Use Nyancat Testnet',
             href:'https://www.irisnet.org/docs/get-started/testnet.html#nyancat-testnet'
         }
     },
