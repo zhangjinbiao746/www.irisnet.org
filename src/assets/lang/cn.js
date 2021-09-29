@@ -623,7 +623,7 @@ export const message = {
                 },
                 {
                     title:'Coinswap',
-                    content:'跨链 AMM，跨链 AMM，为 Cosmos 应用生态提供一个前卫的创新平台'
+                    content:'跨链 AMM，为 Cosmos 应用生态提供一个前卫的创新平台'
                 },
             ]
         },
@@ -741,7 +741,7 @@ export const message = {
             road: [
                 {id: 0,isActive:false, caption: '盘古', time: '2018 年 1 月- 2019 年 3 月', msg: 'IRISnet 项目的第一阶段，我们专注于构建并启动 IRISnet 主网（Hub）。 初始版本的 IRIS 网络移动客户端已在本阶段发布。同时，我们也专注于 IRISnet 基本服务层的建立，已将其发布在 IRIS Hub 上，实现：服务定义、绑定、调用和查询。'},
                 {id: 1,isActive:false, caption: '女娲', time: '2019 年 4 月 - 2019 年 10 月', msg: '第二阶段我们将增加更多的基本模块以支持应用开发，特别是 DeFi 应用。这些新模块计划在本阶段发布，包括多资产管理、uni-swap、多签账户等。我们计划与 1 - 2 个生态伙伴合作，使用这些模块开发应用。我们还计划在此阶段完成与 Cosmos Hub 的测试连接。'},
-                {id: 2,isActive:false, caption: '夸父', time: '2019 年 2 月 - 2021 年 6 月', msg: '第三阶段主要专注于通过 IBC， 完成 IRIS Hub 与应用专有链网络的连接。我们还计划升级 IRISnet 移动客户端以支持这些应用。第三阶段还将重点实现 IRIS 网络的迭代升级，以支持复杂的 IRIS 服务管理功能。'},
+                {id: 2,isActive:false, caption: '夸父', time: '2019 年 2 月 - 2021 年 2 月', msg: '第三阶段主要专注于通过 IBC， 完成 IRIS Hub 与应用专有链网络的连接。我们还计划升级 IRISnet 移动客户端以支持这些应用。第三阶段还将重点实现 IRIS 网络的迭代升级，以支持复杂的 IRIS 服务管理功能。'},
                 {id: 3,isActive:true, caption: '后羿', time: '2021 年 3 月之后', msg: '第四阶段将专注通过技术创新，包括 TIBC 精简跨链通信协议、跨链 NFT 功能应用等，不断完善 IRIS 网络、 SDK 和手机客户端，吸引更多开发者参与。'},
             ]
         },
