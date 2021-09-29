@@ -245,7 +245,7 @@
 									background: rgba(255,255,255,0.14);
 								}
 								.roadmap_link_right_img{
-									background-image: url("../../assets/pages/block_black.png");
+									visibility: hidden;
 								}
 							}
 						}
