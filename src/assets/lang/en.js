@@ -139,7 +139,7 @@ export const message = {
         },
         newFunction: {
             title: 'New Features',
-            description: 'IRIS Hub 1.0 will launch <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> and support innovative DeFi functions like crosschain AMM, and the KUAFU stage will begin.'
+            description: 'IRIS Hub 1.0 with IBC and innovative functions like cross-chain AMM protocol starts the KUAFU stage.'
         },
         iService:{
             title:'iService',
@@ -155,7 +155,7 @@ export const message = {
             {
                 iconName:'icon-Coinswap',
                 title: 'Coinswap',
-                section:'Cross-chain AMM, a vanguard innovation platform for DeFi applications in the Cosmos ecosystem.'
+                section:'Cross-chain AMM protocol, a vanguard innovation platform for the Cosmos application ecosystem.'
             },
             {
                 iconName: 'icon-Oracle',
