@@ -139,7 +139,7 @@ export const message = {
         },
         newFunction: {
             title: 'New Features',
-            description: 'IRIS Hub 1.0 will launch <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> and support innovative DeFi functions like crosschain AMM, and the KUAFU stage will begin.'
+            description: 'IRIS Hub 1.0 with IBC and innovative functions like cross-chain AMM protocol starts the KUAFU stage.'
         },
         iService:{
             title:'iService',
@@ -155,7 +155,7 @@ export const message = {
             {
                 iconName:'icon-Coinswap',
                 title: 'Coinswap',
-                section:'Cross-chain AMM, a vanguard innovation platform for DeFi applications in the Cosmos ecosystem.'
+                section:'Cross-chain AMM protocol, a vanguard innovation platform for the Cosmos application ecosystem.'
             },
             {
                 iconName: 'icon-Oracle',
@@ -613,19 +613,19 @@ export const message = {
             list:[
                 {
                     title:'IBC + iService',
-                    content:'TCP/IP + HTTP protocol of blockchains that can build and further broaden the Internet of Blockchains.'
+                    content:'TCP/IP + HTTP protocol of blockchains that can build and further broaden the Internet of Blockchains to support cross-platform data & application services between on-chain and off-chain.'
                 },
                 {
-                    title:'Coinswap',
-                    content:'Cross-chain AMM, a vanguard innovation platform for DeFi applications in the Cosmos ecosystem.'
-                },
-                {
-                    title:'Oracle',
-                    content:'Supported oracle service based on iService, to implement cross-platform data services from off-chain to on-chain/off-chain.'
+                    title:'TIBC',
+                    content:'Terse IBC protocol to accelerate heterogeneous interchain technology with NFT transfers,  smart contracts interactions and other cross-chain services enabled.'
                 },
                 {
                     title:'NFT',
-                    content:'Supported NFT, to achieve the digitization of assets on blockchains.'
+                    content:'Digitization of assets on blockchains to support efficient and reliable value transferring and distribution.'
+                },
+                {
+                    title:'Coinswap',
+                    content:'Cross-chain AMM protocol, a vanguard innovation platform for the Cosmos application ecosystem.'
                 },
             ]
         },
@@ -745,8 +745,8 @@ export const message = {
             road: [
                 {id: 0,isActive:false, caption: 'PANGU', time: 'JAN 2018 - MAR 2019', msg: 'The first stage of the IRIS project focused on having the IRIS Hub up and running. Initial version of the mobile client for the IRIS network was released. In this stage we also focused on building the fundamental IRIS Service Layer which was released to IRIS Hub. Which enables service definition, binding, invocation and query.'},
                 {id: 1,isActive:false, caption: 'NÜWA', time: 'APR 2019 - OCT 2019', msg: 'In this stage we are adding more fundamental modules to support application development especially DeFi applications. The new modules planned to release in this stage including multi-asset management, uniswap, multi-sig account etc. We plan to collaborate with 1-2 ecosystem partners to develop applications using those modules.We also plan to accomplish the test connection with Cosmos Hub through IBC at this stage.'},
-                {id: 2,isActive:true, caption: 'KUAFU', time: 'NOV 2019 - JUN 2021', msg: 'In this stage we are aiming to accomplish the connection of IRIS Hub with applications blockchains through IBC. We plan to upgrade IRISnet mobile client to support those applications. The third stage will also focus on upgrades to the IRIS network in order to support our planned advanced IRIS Service features.'},
-                {id: 3,isActive:false, caption: 'HOUYI', time: 'BEYOND JUL 2021', msg: 'The fourth stage will focus on further technology innovations to the IRIS network, SDK and mobile client, as well as developer engagement.'},
+                {id: 2,isActive:false, caption: 'KUAFU', time: 'NOV 2019 - FEB 2021', msg: 'In this stage we are aiming to accomplish the connection of IRIS Hub with applications blockchains through IBC. We plan to upgrade IRISnet mobile client to support those applications. The third stage will also focus on upgrades to the IRIS network in order to support our planned advanced IRIS Service features.'},
+                {id: 3,isActive:true, caption: 'HOUYI', time: 'BEYOND MAR 2021', msg: 'The fourth stage will focus on further technology innovations, including TIBC (Terse IBC) protocol, interchain NFT applications, to the IRIS network, SDK and mobile client, as well as developer engagement.'},
             ]
         },
         sectionFour: {
@@ -856,7 +856,7 @@ export const message = {
     announcements:{
         title: 'Announcements',
         viewMore: 'View More',
-        viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
+        viewMoreHref:'https://medium.com/irisnet-blog',
         betaTitle:'IRISnet Public Token Addresses',
         betaContent:'Foundation and Dev Team Token Addresses.',
         readMore:'Read more',
@@ -865,37 +865,36 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                img:require('../../assets/pages/announcements/ibc_en.png'),
-                href:'https://medium.com/irisnet-blog/enable-ibc-transfers-on-iris-hub-on-chain-governance-proposal-has-been-submitted-88056e2bfbef',
-                date:'Mar 27, 2021',
-                title:'Enable IBC Transfers on IRIS Hub On-chain Governance Proposal has been submitted',
-                content:'The on-chain governance proposal about enabling IBC transfers on IRIS Hub has been submitted on March 27. Once proposals pass, IBC assets cross-chain transfers will be available between IRIS Hub and other networks like Cosmos Hub connected over IBC.'
+                img:require('../../assets/pages/announcements/ixo.png'),
+                href:'https://medium.com/irisnet-blog/irisnet-ixo-collaborate-on-nft-implementations-and-applications-for-the-cosmos-ecosystem-as-a-202d1e13aeaa',
+                date:'Aug 26, 2021',
+                title:'IRISnet & ixo Collaborate on NFT Implementations and Applications for the Cosmos Ecosystem, as a Force for Transitioning to the Green Economy',
+                content:''
             },
             {
                 id:'1',
-                img:require('../../assets/pages/announcements/Support_Coinswap_EN.png'),
-                href:'https://medium.com/irisnet-blog/irisnet-mainnet-1-1-upgrade-announcement-support-coinswap-and-other-apps-d2fb5b125a5b',
-                date:'Mar 26, 2021',
-                title:'IRISnet Mainnet 1.1 Upgrade Announcement: Support',
-                content:'IRISnet Mainnet 1.1 upgrade is expected to happen on March 31 to better support applications such as Coinswap.'
+                img:require('../../assets/pages/announcements/development_program.png'),
+                href:'https://medium.com/irisnet-blog/announcing-iris-foundation-new-ecosystem-development-program-af79033fd200',
+                date:'Apr 30, 2021',
+                title:' Announcing IRIS Foundation New Ecosystem Development Program',
+                content:''
             },
             {
                 id:'2',
+                img:require('../../assets/pages/announcements/ibc_transfer.png'),
+                href:'https://medium.com/irisnet-blog/irisnet-has-enabled-ibc-transfers-completed-the-1st-cross-mainnet-token-transfer-with-cosmos-hub-2480b3a56650',
+                date:'Apr 02, 2021',
+                title:'IRISnet Has Enabled IBC Transfers & Completed the 1st Cross-Mainnet Token Transfer with Cosmos Hub',
+                content:''
+            },
+            {
+                id:'3',
                 img:require('../pages/announcements/Rainbow_ID_EN.png'),
                 href:'https://medium.com/irisnet-blog/rainbow-app-added-rainbowid-easily-managing-your-multi-chain-wallets-677565d718fa',
                 date:'Mar 23 2021',
                 title:'Rainbow App Added RainbowID, Easily Managing Your Multi-Chain Wallets',
-                content:'Rainbow Wallet released v3.2.0, adding new functions like RainbowID, providing multi-chain wallets for users to conveniently manage multi-assets.'
+                content:''
             },
-            {
-                id:'3',
-                img:require('../../assets/pages/announcements/Rainbow_BinaceChain_EN.png'),
-                href:'https://medium.com/irisnet-blog/rainbow-app-supports-binance-chain-and-upgrades-interchain-gateway-transfer-feature-7641fab0dcb7',
-                date:'Mar 23, 2021',
-                title:'Rainbow App Supports Binance Chain and Upgrades Interchain Gateway Transfer Feature',
-                content:'Rainbow Wallet released v3.2.0, adding new functions like Binance Chain support, and multi-assets management, upgrading the interchain gateway transfer feature.'
-            },
-            
            
         ]
     },

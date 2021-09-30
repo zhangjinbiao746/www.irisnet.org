@@ -64,7 +64,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="proposal_container">
+<!--		<div class="proposal_container">
 			<div class="proposal_content">
 				<div class="proposal_title_content">
 					<p class="proposal_link"></p>
@@ -81,7 +81,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<div class="application_show_container">
 			<div class="application_show_content_wrap">
 				<p class="application_show_link"></p>

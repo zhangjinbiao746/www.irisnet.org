@@ -137,7 +137,7 @@ export const message = {
         },
         newFunction: {
             title: '全新功能',
-            description: '全新主网将上线 <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> 并支持跨链 AMM 等多项独特 DeFi 功能，开启「夸父」阶段'
+            description: '启用 IBC 并支持跨链 AMM 协议等多项独特功能的全新主网开启了「夸父」阶段'
         },
         iService:{
             title:'iService 跨链服务',
@@ -153,7 +153,7 @@ export const message = {
             {
                 iconName:'icon-Coinswap',
                 title: 'Coinswap',
-                section:'跨链 AMM，为 Cosmos 生态的 DeFi 应用提供一个前卫的创新平台'
+                section:'跨链 AMM 协议，为 Cosmos 应用生态提供一个前卫的创新平台'
             },
             {
                 iconName: 'icon-Oracle',
@@ -601,7 +601,7 @@ export const message = {
             list: [
                 {id: 0, msg: '将面向服务的基础设施融入到 Cosmos 网络中',iconName:'icon-jichusheshi'},
                 {id: 1, msg: '整合由异构系统提供的商业服务，包括公共链、联盟链以及现有系统',iconName:'icon-shangyefuwu'},
-                {id: 2, msg: '通过区块链互联网实现服务的互联互通',iconName:'icon-hulianhutong'}
+                {id: 2, msg: '通过区块链互联网实现服务的互联互通',iconName:'icon-hulianhutong'},
             ],
             buttonMsg: '白皮书',
             WHITEPAPERUrl: 'https://github.com/irisnet/irisnet/blob/master/白皮书.md'
@@ -611,19 +611,19 @@ export const message = {
             list:[
                 {
                     title:'IBC + iService',
-                    content:'区块链的 TCP/IP + HTTP 协议，构建并扩展区块链互联网'
+                    content:'区块链的 TCP/IP + HTTP 协议，构建并扩展区块链互联网，支持链外到链上、链外到链外的跨平台数据与应用服务'
                 },
                 {
-                    title:'Coinswap',
-                    content:'跨链 AMM，为 Cosmos 生态的 DeFi 应用提供一个前卫的创新平台'
-                },
-                {
-                    title:'预言机',
-                    content:'基于 iService 支持预言机服务，实现链外到链上、链外到链外的跨平台数据服务'
+                    title:'TIBC',
+                    content:'精简跨链通信协议，为启用 NFT 跨链转移、智能合约交互和其他跨链服务提供平滑和便捷的渠道，加速跨链技术的运用'
                 },
                 {
                     title:'NFT',
-                    content:'支持 NFT 功能，实现区块链上的资产数字化'
+                    content:'区块链上的资产数字化，以支持高效、可靠的价值转移与分配'
+                },
+                {
+                    title:'Coinswap',
+                    content:'跨链 AMM 协议，为 Cosmos 应用生态提供一个前卫的创新平台'
                 },
             ]
         },
@@ -741,8 +741,8 @@ export const message = {
             road: [
                 {id: 0,isActive:false, caption: '盘古', time: '2018 年 1 月- 2019 年 3 月', msg: 'IRISnet 项目的第一阶段，我们专注于构建并启动 IRISnet 主网（Hub）。 初始版本的 IRIS 网络移动客户端已在本阶段发布。同时，我们也专注于 IRISnet 基本服务层的建立，已将其发布在 IRIS Hub 上，实现：服务定义、绑定、调用和查询。'},
                 {id: 1,isActive:false, caption: '女娲', time: '2019 年 4 月 - 2019 年 10 月', msg: '第二阶段我们将增加更多的基本模块以支持应用开发，特别是 DeFi 应用。这些新模块计划在本阶段发布，包括多资产管理、uni-swap、多签账户等。我们计划与 1 - 2 个生态伙伴合作，使用这些模块开发应用。我们还计划在此阶段完成与 Cosmos Hub 的测试连接。'},
-                {id: 2,isActive:true, caption: '夸父', time: '2019 年 11 月 - 2021 年 6 月', msg: '第三阶段主要专注于通过 IBC， 完成 IRIS Hub 与应用专有链网络的连接。我们还计划升级 IRISnet 移动客户端以支持这些应用。第三阶段还将重点实现 IRIS 网络的迭代升级，以支持复杂的 IRIS 服务管理功能。'},
-                {id: 3,isActive:false, caption: '后羿', time: '2021 年 7 月之后', msg: '第四阶段将专注通过技术创新，不断完善 IRIS 网络、 SDK 和手机客户端，吸引更多开发者参与。'},
+                {id: 2,isActive:false, caption: '夸父', time: '2019 年 11 月 - 2021 年 2 月', msg: '第三阶段主要专注于通过 IBC， 完成 IRIS Hub 与应用专有链网络的连接。我们还计划升级 IRISnet 移动客户端以支持这些应用。第三阶段还将重点实现 IRIS 网络的迭代升级，以支持复杂的 IRIS 服务管理功能。'},
+                {id: 3,isActive:true, caption: '后羿', time: '2021 年 3 月之后', msg: '第四阶段将专注通过技术创新，包括 TIBC 精简跨链通信协议、跨链 NFT 功能应用等，不断完善 IRIS 网络、 SDK 和手机客户端，吸引更多开发者参与。'},
             ]
         },
         sectionFour: {
@@ -850,7 +850,7 @@ export const message = {
     announcements:{
         title: '公告',
         viewMore: '查看更多',
-        viewMoreHref:'https://github.com/irisnet/iris-foundation/blob/master/README.md',
+        viewMoreHref:'https://medium.com/irisnet-blog',
         betaTitle:'IRISnet 的公开地址',
         betaContent:'IRIS 基金会和开发团队的地址',
         readMore:'Read more',
@@ -859,37 +859,36 @@ export const message = {
         announcementList:[
             {
                 id:'0',
-                img:require('../../assets/pages/announcements/ibc_zh.png'),
-                href:'https://mp.weixin.qq.com/s/K9DUKyrBR_wyJnRMMV9X4Q',
-                date:'2021 年 03 月 27 日',
-                title:'IRIS Hub 启用 IBC 转账功能链上提案发布',
-                content:'在 IRIS Hub 上启用 IBC 转账功能的链上提案已于 3 月 27 日发布。该治理提案一经通过，将于 4 月 1 日在 IRIS Hub 上开启基于 ICS20 标准的跨链资产转移，将实现与 Cosmos Hub 等网络的 IBC 跨链转账。'
+                img:require('../../assets/pages/announcements/ixo.png'),
+                href:'https://medium.com/irisnet-blog/irisnet-ixo-collaborate-on-nft-implementations-and-applications-for-the-cosmos-ecosystem-as-a-202d1e13aeaa',
+                date:'2021 年 08 月 26 日',
+                title:'IRISnet 与 ixo 合作助力 Cosmos NFT 应用生态发展，推进向绿色金融转型',
+                content:''
             },
             {
                 id:'1',
-                img:require('../pages/announcements/Support_Coinswap_CN.png'),
-                href:'https://mp.weixin.qq.com/s/bZRaCLqGxidrbrNxj8A5oA',
-                date:'2021 年 03 月 26 日',
-                title:'IRISnet 主网 1.1 升级公告：支持 Coinswap 等应用',
-                content:'IRISnet 主网计划于 3 月 31 日发起 IRISnet 主网 1.1 升级，以更好地支持 Coinswap 等应用。'
+                img:require('../pages/announcements/development_program_cn.png'),
+                href:'https://medium.com/irisnet-blog/announcing-iris-foundation-new-ecosystem-development-program-af79033fd200',
+                date:'2021 年 04 月 30 日',
+                title:'IRIS 基金会推出新一期生态促进计划',
+                content:''
             },
             {
                 id:'2',
-                img:require('../pages/announcements/Rainbow_ID.png'),
-                href:'https://mp.weixin.qq.com/s/y-zTSzH95oFmezdKEIL0Kw',
-                date:'2021 年 03 月 23 日',
-                title:'Rainbow 钱包新增 RainbowID，轻松掌管多链钱包',
-                content:'Rainbow 钱包发布了 v3.2.0 版本，本次版本新增升级了 RainbowID 钱包等功能，提供了多链钱包供用户选择，大大降低用户使用多链钱包的管理成本，提供了更加丰富和流畅的用户体验。'
+                img:require('../../assets/pages/announcements/ibc_transfer_cn.png'),
+                href:'https://medium.com/irisnet-blog/irisnet-has-enabled-ibc-transfers-completed-the-1st-cross-mainnet-token-transfer-with-cosmos-hub-2480b3a56650',
+                date:'2021 年 04 月 02 日',
+                title:'IRISnet 启用 IBC 转移功能，与 Cosmos Hub 完成第一笔主网间跨链转移',
+                content:''
             },
             {
                 id:'3',
-                img:require('../../assets/pages/announcements/Rainbow_BinaceChain_CN.png'),
-                href:'https://mp.weixin.qq.com/s/gMP_5NzCaGbu8_wkJ1b6Bg',
+                img:require('../pages/announcements/Rainbow_ID.png'),
+                href:'https://medium.com/irisnet-blog/rainbow-app-added-rainbowid-easily-managing-your-multi-chain-wallets-677565d718fa',
                 date:'2021 年 03 月 23 日',
-                title:'Rainbow 钱包支持 Binance Chain，完善跨链网关转账',
-                content:'Rainbow 钱包发布了 v3.2.0 版本，本次版本新增升级了 Binance Chain 支持、多资产展示及管理等功能，完善了跨链网关转账功能。'
-            },
-            
+                title:'Rainbow 应用新增 RainbowID，轻松掌管多链钱包',
+                content:''
+            }
         ]
     },
     testnet:{

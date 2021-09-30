@@ -70,7 +70,7 @@
 			})
 			setTimeout(() => {
 				this.$refs['vs'].scrollTo({
-					x:'55%'
+					x:'90%'
 				},500)
 			},200)
 		
@@ -80,7 +80,7 @@
 		methods:{
 			onresize(){
 				this.$refs['vs'].scrollTo({
-					x:'55%'
+					x:'90%'
 				},500)
 				setTimeout(() => {
 					this.$store.commit('roadmap', this.$refs.roadmap.offsetTop - this.$store.state.headerHeight);
@@ -217,7 +217,7 @@
 						}
 					}
 				}
-				.roadmap_item:nth-child(3){
+				.roadmap_item:nth-child(4){
 					.roadmap_date_content{
 						.roadmap_date_content_wrap{
 							.roadmap_date_bg_content{
@@ -245,38 +245,14 @@
 									background: rgba(255,255,255,0.14);
 								}
 								.roadmap_link_right_img{
-									background-image: url("../../assets/pages/block_black.png");
+									visibility: hidden;
 								}
 							}
 						}
 						.roadmap_date_text{
-							left: 0.08rem;
+							padding-left:0.55rem;
 							&:after{
-								left: 0.83rem;
-							}
-						}
-					}
-				}
-				.roadmap_item:nth-child(4){
-					.roadmap_date_content{
-						.roadmap_date_content_wrap{
-							.roadmap_line_content{
-								min-width: 1.66rem;
-								.roadmap_link_left_img{
-									background-image: url("../../assets/pages/block_black.png");
-								}
-								.roadmap_link{
-									background: rgba(255,255,255,0.14);
-								}
-								.roadmap_link_right_img{
-									background-image: none;
-								}
-							}
-						}
-						.roadmap_date_text{
-							left: -0.17rem;
-							&:after{
-								left: 0.63rem;
+								left: 1.21rem;
 							}
 						}
 					}
