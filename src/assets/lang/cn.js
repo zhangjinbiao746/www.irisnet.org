@@ -137,7 +137,7 @@ export const message = {
         },
         newFunction: {
             title: '全新功能',
-            description: '全新主网将上线 <a href="https://cosmos.network/ibc" target="_blank" rel="noreferrer noopener" style="color: rgba(100, 141, 237, 1)">IBC</a> 并支持跨链 AMM 等多项独特 DeFi 功能，开启「夸父」阶段'
+            description: '启用 IBC 并支持跨链 AMM 协议等多项独特功能的全新主网开启了「夸父」阶段'
         },
         iService:{
             title:'iService 跨链服务',
@@ -153,7 +153,7 @@ export const message = {
             {
                 iconName:'icon-Coinswap',
                 title: 'Coinswap',
-                section:'跨链 AMM，为 Cosmos 生态的 DeFi 应用提供一个前卫的创新平台'
+                section:'跨链 AMM 协议，为 Cosmos 应用生态提供一个前卫的创新平台'
             },
             {
                 iconName: 'icon-Oracle',
@@ -623,7 +623,7 @@ export const message = {
                 },
                 {
                     title:'Coinswap',
-                    content:'跨链 AMM，为 Cosmos 应用生态提供一个前卫的创新平台'
+                    content:'跨链 AMM 协议，为 Cosmos 应用生态提供一个前卫的创新平台'
                 },
             ]
         },
