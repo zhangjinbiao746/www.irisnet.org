@@ -141,7 +141,7 @@ export const message = {
         },
         iService:{
             title:'精简跨链通信协议 TIBC',
-            description: '可降低同构链和异构链的跨链对接复杂度，更易于跨链能力的扩展为启用跨链 NFT 转移、跨链智能合约交互和其他跨链服务提供平滑和便捷的渠道，加速跨链技术的运用'
+            description: '可降低同构链和异构链的跨链对接复杂度，更易于跨链能力的扩展，为启用跨链 NFT 转移、跨链智能合约交互和其他跨链服务提供平滑和便捷的渠道，加速跨链技术的运用'
         },
         ibc: {
             title:'IBC + iService',
@@ -222,7 +222,7 @@ export const message = {
                 {
                     scr:require('../irishub1/uptick-logo.png'),
                     title:'Uptick Marketplace',
-                    section:'Uptick 是全球首款手机原生全功能去中心化 NFT 应用，聚焦泛娱乐行业和生活服务行业，打造 Web3.0 时代的创意经济。',
+                    section:'Uptick 是全球首款手机原生全功能去中心化 NFT 应用，聚焦泛娱乐行业和生活服务行业，打造 Web3.0 时代的创意经济',
                     link:'https://www.uptickproject.com',
                 },
                 {
