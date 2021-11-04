@@ -5,13 +5,13 @@
 				<div class="irishub_header_title_content">
 					<div class="irishub_header_title">{{$store.state.messages.irishub.title}}</div>
 					<div class="irishub_header_title">{{$store.state.messages.irishub.secondTitle}}</div>
-					<p class="irishub_sub_title" v-html="$store.state.messages.irishub.description"></p>
+<!--					<p class="irishub_sub_title" v-html="$store.state.messages.irishub.description"></p>-->
 					<div class="proposal_btn_container">
-						<a class="proposal_proposal_btn" href="https://www.rainbow.one/" target="_blank" rel="noreferrer nonpener">
-							{{$store.state.messages.irishub.btn.prepare}}
-						</a>
-						<a class="proposal_prepare_btn" href="https://irishub.iobscan.io/#/home" target="_blank" rel="noreferrer nonpener">
+						<a class="proposal_proposal_btn" href="https://irishub.iobscan.io/#/home" target="_blank" rel="noreferrer nonpener">
 							{{$store.state.messages.irishub.btn.proposal}}
+						</a>
+						<a class="proposal_prepare_btn" href="https://www.rainbow.one/" target="_blank" rel="noreferrer nonpener">
+							{{$store.state.messages.irishub.btn.prepare}}
 						</a>
 					</div>
 					<div class="irishub_img_content">
@@ -44,7 +44,7 @@
 								<span class="iconfont icon-IBCkualiantongxinxieyi"></span>
 								<p class="new_function_section_label">{{$store.state.messages.irishub.ibc.title}}</p>
 								<p class="new_function_section" v-html="$store.state.messages.irishub.ibc.description"></p>
-								<span @click="toTestFunction()" style="cursor: pointer">{{$store.state.messages.irishub.ibc.test}}<i class="iconfont icon-qianwang"></i></span>
+<!--								<span @click="toTestFunction()" style="cursor: pointer">{{$store.state.messages.irishub.ibc.test}}<i class="iconfont icon-qianwang"></i></span>-->
 							</div>
 						</div>
 						<div class="new_function_right_img_content">
@@ -219,12 +219,16 @@
 					.proposal_btn_container{
 						display: flex;
 						margin-bottom: 2.56rem;
+						margin-top: 0.8rem;
 						@media(max-width: 880px){
 							margin-bottom: 5.25rem;
 							justify-content: center;
 						}
 						@media(max-width: 600px){
 							margin-bottom: 4rem;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
 						}
 						@media(max-width: 440px){
 							margin-bottom: 2.71rem;
@@ -241,6 +245,12 @@
 							@media(max-width: 768px){
 								padding: 0.08rem 0.4rem;
 								font-size: 0.18rem;
+							}
+							@media(max-width: 600px){
+								flex: 1;
+								margin-left: 0;
+								margin-top: 0.2rem;
+								width: 2rem;
 							}
 							@media(max-width: 375px){
 								padding: 0.08rem 0.24rem;
@@ -260,6 +270,10 @@
 							@media(max-width: 768px){
 								padding: 0.08rem 0.4rem;
 								font-size: 0.18rem;
+							}
+							@media(max-width: 600px){
+								width: 2rem;
+								flex: 1;
 							}
 							@media(max-width: 375px){
 								padding: 0.08rem 0.24rem;
@@ -331,6 +345,7 @@
 								.new_function_section_label{
 									font-size: 0.32rem;
 									margin-top: 0.24rem;
+									line-height: 0.48rem;
 								}
 								.new_function_section{
 									margin-top: 0.36rem;
@@ -550,6 +565,8 @@
 							img{
 								width: 1.4rem;
 								height: 1.4rem;
+								border-radius: 0.7rem;
+								overflow: hidden;
 							}
 						}
 						.application_list_item_title{
