@@ -13,26 +13,26 @@ export const message = {
             padImage:require('../../assets/pages/banner/2years.png')
         },
         {
-            title:'IRISnet Mainnet 1.0',
-            subTitle:'Successfully Upgraded',
-            description:'The 1st Mainnet Establishing the IBC Connection with Cosmos Hub',
+            title:'IRIS Hub 1.2',
+            subTitle:'Mainnet Upgrade Proposal',
+            description:'TIBC protocol will be officially enabled soon',
             leftBtnLabel:'More details',
-            leftBtnLink:'/mainnet/',
-            rightBtnLabel:'Announcement',
-            rightBtnLink:'https://medium.com/irisnet-blog/irisnet-mainnet-1-0-5ce1c2643965',
-            bgImage:require('../../assets/pages/banner/IRISHub.png'),
-            padImage:require('../../assets/pages/banner/IRISHub_pad.png')
+            leftBtnLink:'https://medium.com/irisnet-blog/iris-hub-1-2-mainnet-upgrade-pre-announcement-b09059c9cd06',
+            rightBtnLabel:'Voting Period',
+            rightBtnLink:'https://irishub.iobscan.io/#/ProposalsDetail/8',
+            bgImage:require('../../assets/pages/banner/tibc_image.png'),
+            padImage:require('../../assets/pages/banner/tibc_image.png')
         },
         {
-            title:'IRISnet',
+            title:'Bug Bounty Program IV',
             subTitle:'',
-            description:'Selected into first batch of public blockchains supported by BSN',
-            leftBtnLabel:'View Details',
-            leftBtnLink:'https://medium.com/irisnet-blog/irisnet-is-selected-into-first-batch-of-public-blockchains-supported-by-bsn-1945aa2e2a0',
-            rightBtnLabel:'IRIS Explorer',
-            rightBtnLink:'https://irishub.iobscan.io/',
-            bgImage:require('../../assets/pages/banner/BSN.png'),
-            padImage: require('../../assets/pages/banner/BSN_pad.png')
+            description:'Jointly make sure the upgraded mainnet with TIBC module integrated to remain robust',
+            leftBtnLabel:'Join Program',
+            leftBtnLink:'https://medium.com/irisnet-blog/announcing-irisnet-bug-bounty-program-iv-48e2ee885334',
+            rightBtnLabel:'About TIBC',
+            rightBtnLink:'https://medium.com/irisnet-blog/introducing-tibc-the-terse-inter-blockchain-communication-c88f73dbac75',
+            bgImage:require('../../assets/pages/banner/bugbounty_image.png'),
+            padImage: require('../../assets/pages/banner/bugbounty_image.png')
     
         },
         {
@@ -49,12 +49,12 @@ export const message = {
         }
     ],
     irishub:{
-        title: 'IRIS Hub 1.0',
-        secondTitle: 'Interchain Service Hub for NextGen Distributed Applications',
+        title: 'IRIS Hub 1.2',
+        secondTitle: 'Interchain Service Hub for NewGen Distributed Business Applications',
         description:'– A BPoS Blockchain That Is Self-evolutionary',
         btn:{
             prepare:'Rainbow Wallet',
-            proposal:'IRIS Explorer',
+            proposal:'IOBScan Explorer',
             tooltip:'Coming Soon'
         },
         proposal:{
@@ -142,20 +142,20 @@ export const message = {
             description: 'IRIS Hub 1.0 with IBC and innovative functions like cross-chain AMM protocol starts the KUAFU stage.'
         },
         iService:{
-            title:'iService',
-            description: 'Refactored and upgraded iService interchain service framework. The enhanced iService, as the application layer protocol, can support the connections between heterogeneous blockchains and centralized systems, and bridge the crypto world with the traditional business world.'
+            title:'Terse Inter-Blockchain Communication (TIBC)',
+            description: 'Facilitate the extension and adoption of heterogeneous cross-chain abilities with interchain NFT transfers, smart contracts interaction and other cross-chain services enabled.'
         },
         ibc: {
-            title:'Inter-Blockchain Communication (IBC)',
-            description: 'IBC + iService, as the TCP/IP + HTTP protocol of blockchains, can build and further broaden the Internet of Blockchains.',
+            title:'IBC + iService',
+            description: 'TCP/IP + HTTP protocol of blockchains that can build and further broaden the Internet of Blockchains to support cross-platform data and application services between on-chain and off-chain, bridging the blockchain world with traditional business systems.',
             test: 'Multi-Networks IBC Joint Tests',
             link: ''
         },
         applicationList: [
             {
-                iconName:'icon-Coinswap',
-                title: 'Coinswap',
-                section:'Cross-chain AMM protocol, a vanguard innovation platform for the Cosmos application ecosystem.'
+                iconName: 'icon-NFT',
+                title: 'NFT',
+                section:'Supported NFT, to achieve the digitization of assets on blockchains.'
             },
             {
                 iconName: 'icon-Oracle',
@@ -163,10 +163,11 @@ export const message = {
                 section: 'Supported oracle service based on iService, to impletment cross-platform data services from off-chain to on-chain/off-chain.'
             },
             {
-                iconName: 'icon-NFT',
-                title: 'NFT',
-                section:'Supported NFT, to achieve the digitization of assets on blockchains.'
+                iconName:'icon-Coinswap',
+                title: 'Coinswap',
+                section:'Cross-chain AMM protocol, a vanguard innovation platform for the Cosmos application ecosystem.'
             }
+
         ],
         testnet:{
             title: 'Bifrost Testnet',
@@ -221,9 +222,9 @@ export const message = {
             title:'Application Ecosystem',
             list:[
                 {
-                    scr:require('../irishub1/irishub_uptick.png'),
-                    title:'Uptick Ticket ',
-                    section:'Uptick Ticket focuses on NFT e-ticketing for the show and event industry and also provides open Uptick NFT protocol for developers.',
+                    scr:require('../irishub1/uptick-logo.png'),
+                    title:'Uptick Marketplace',
+                    section:'Uptick Marketplace app is the world’s first decentralized full-featured mobile NFT app, focusing on the pan-entertainment and life service industry, forming a new creative economy for the Web 3.0 era.',
                     link:'https://www.uptickproject.com'
                 },
                 {
@@ -633,8 +634,8 @@ export const message = {
             title:'Upcoming Features',
             list:[
                 {
-                    title:'Ethereum Peg',
-                    content:'A crosschain bridge with Ethereum that supports assets transfer & protocol interacting.',
+                    title:'Ethereum Interconnection',
+                    content:'Using TIBC module to connect with Ethereum, further supporting cross-chain NFT transfers and protocol interactions',
                     image:require('../../assets/pages/eth_logo.png')
                 },
                 {
