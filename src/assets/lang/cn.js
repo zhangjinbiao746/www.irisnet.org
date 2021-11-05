@@ -13,26 +13,26 @@ export const message = {
             padImage:require('../../assets/pages/banner/2years.png')
         },
         {
-            title:'IRISnet 1.0',
-            subTitle:'主网升级成功',
-            description:'首个与 Cosmos Hub 建立 IBC 连接的主网',
+            title:'IRIS Hub 1.2',
+            subTitle:'主网升级提案发布',
+            description:'TIBC 跨链协议即将正式启用',
             leftBtnLabel:'了解更多',
-            leftBtnLink:'/mainnet/',
-            rightBtnLabel:'公告',
-            rightBtnLink:'https://mp.weixin.qq.com/s/OvE829S4lXLmXBX6HUH0Lg',
-            bgImage:require('../../assets/pages/banner/IRISHub.png'),
-            padImage:require('../../assets/pages/banner/IRISHub_pad.png')
+            leftBtnLink:'https://medium.com/irisnet-blog/iris-hub-1-2-mainnet-upgrade-pre-announcement-b09059c9cd06',
+            rightBtnLabel:'参与投票',
+            rightBtnLink:'https://irishub.iobscan.io/#/ProposalsDetail/8',
+            bgImage:require('../../assets/pages/banner/tibc_image.png'),
+            padImage:require('../../assets/pages/banner/tibc_image.png')
         },
         {
-            title:'IRISnet',
+            title:'漏洞赏金计划 IV',
             subTitle:'',
-            description:'入选 BSN 首批适配公链',
-            leftBtnLabel:'查看详情',
-            leftBtnLink:'https://mp.weixin.qq.com/s/olSUm2qvlF6-V6K5mV1tKQ',
-            rightBtnLabel:'IRIS 浏览器',
-            rightBtnLink:'https://irishub.iobscan.io/',
-            bgImage:require('../../assets/pages/banner/BSN.png'),
-            padImage: require('../../assets/pages/banner/BSN_pad.png')
+            description:'携手为集成了 TIBC 模块的全新主网保驾护航',
+            leftBtnLabel:'参与计划',
+            leftBtnLink:'https://medium.com/irisnet-blog/announcing-irisnet-bug-bounty-program-iv-48e2ee885334',
+            rightBtnLabel:'了解 TIBC',
+            rightBtnLink:'https://medium.com/irisnet-blog/introducing-tibc-the-terse-inter-blockchain-communication-c88f73dbac75',
+            bgImage:require('../../assets/pages/banner/bugbounty_image.png'),
+            padImage: require('../../assets/pages/banner/bugbounty_image.png')
         },
         {
             title:'Tech-Grants 计划',
@@ -47,12 +47,12 @@ export const message = {
         }
     ],
     irishub:{
-        title: 'IRIS Hub 1.0',
-        secondTitle: '下一代分布式应用的跨链服务枢纽',
+        title: 'IRIS Hub 1.2',
+        secondTitle: '支持新一代分布式商业应用的跨链服务枢纽',
         description:'——自进化的 BPoS 区块链',
         btn:{
-            prepare:'Rainbow 钱包',
-            proposal:'IRIS 浏览器',
+            prepare:'Rainbow 应用',
+            proposal:'IOBScan 浏览器 ',
             tooltip:'敬请期待'
         },
         proposal:{
@@ -140,30 +140,31 @@ export const message = {
             description: '启用 IBC 并支持跨链 AMM 协议等多项独特功能的全新主网开启了「夸父」阶段'
         },
         iService:{
-            title:'iService 跨链服务',
-            description: '重构升级 iService 跨链服务架构，增强版 iService 作为应用层协议，支持异构区块链和中心化系统的交互，架起区块链世界与常规业务应用世界的桥梁'
+            title:'精简跨链通信协议 TIBC',
+            description: '可降低同构链和异构链的跨链对接复杂度，更易于跨链能力的扩展，为启用跨链 NFT 转移、跨链智能合约交互和其他跨链服务提供平滑和便捷的渠道，加速跨链技术的运用'
         },
         ibc: {
-            title:'IBC 跨链通信协议',
-            description: 'IBC + iService，形成区块链的 TCP/IP + HTTP 协议，构建并扩展区块链互联网',
-            test: '多网络 IBC 联合测试',
-            link: '#ibc'
+            title:'IBC + iService',
+            description: '跨链通信协议 IBC + 跨链服务 iService 共同形成区块链的 TCP/IP + HTTP 协议，构建并扩展区块链互联网，支持链外到链上、链外到链外的跨平台数据与应用服务，架起区块链世界与传统商业应用世界的桥梁',
+            // test: '多网络 IBC 联合测试',
+            // link: '#ibc'
         },
         applicationList: [
             {
-                iconName:'icon-Coinswap',
-                title: 'Coinswap',
-                section:'跨链 AMM 协议，为 Cosmos 应用生态提供一个前卫的创新平台'
+                iconName: 'icon-NFT',
+                title: 'NFT',
+                section:'支持 NFT 功能，实现区块链上的资产数字化'
             },
+
             {
                 iconName: 'icon-Oracle',
                 title: 'Oracle',
                 section: '基于 iService 支持预言机服务，实现链外到链上、链外到链外的跨平台数据服务'
             },
             {
-                iconName: 'icon-NFT',
-                title: 'NFT',
-                section:'支持 NFT 功能，实现区块链上的资产数字化'
+                iconName:'icon-Coinswap',
+                title: 'Coinswap',
+                section:'跨链 AMM 协议，为 Cosmos 应用生态提供一个前卫的创新平台'
             }
         ],
         testnet:{
@@ -219,9 +220,9 @@ export const message = {
             title:'应用生态',
             list:[
                 {
-                    scr:require('../irishub1/irishub_uptick.png'),
-                    title:'Uptick Ticket',
-                    section:'Uptick Ticket 是专注于演出和活动行业的 NFT 数字票务应用，并提供开放的 Uptick NFT 协议供开发者使用',
+                    scr:require('../irishub1/uptick-logo.png'),
+                    title:'Uptick Marketplace',
+                    section:'Uptick 是全球首款手机原生全功能去中心化 NFT 应用，聚焦泛娱乐行业和生活服务行业，打造 Web3.0 时代的创意经济',
                     link:'https://www.uptickproject.com',
                 },
                 {
@@ -631,8 +632,8 @@ export const message = {
             title:'即将上线的功能',
             list:[
                 {
-                    title:'以太坊桥接',
-                    content:'与以太坊的跨链桥，支持资产跨链转移与协议交互',
+                    title:'连接以太坊',
+                    content:'通过 TIBC 模块跨链连接以太坊，支持跨链 NFT 转移和协议交互',
                     image:require('../../assets/pages/eth_logo.png')
                 },
                 {
