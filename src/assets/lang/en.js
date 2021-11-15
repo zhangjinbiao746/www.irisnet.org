@@ -18,7 +18,7 @@ export const message = {
       subTitle: "Mainnet Upgraded",
       description: "Enabled TIBC protocol and enhanced NFT features",
       leftBtnLabel: "Announcement",
-      leftBtnLink: "/",
+      leftBtnLink: "https://medium.com/irisnet-blog/iris-hub-1-2-mainnet-has-been-successfully-upgraded-8f223216140",
       rightBtnLabel: "About TIBC",
       rightBtnLink:
         "https://medium.com/irisnet-blog/introducing-tibc-the-terse-inter-blockchain-communication-c88f73dbac75",
