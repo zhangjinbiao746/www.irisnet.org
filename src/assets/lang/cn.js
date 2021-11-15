@@ -17,7 +17,7 @@ export const message = {
       subTitle: "主网升级成功",
       description: "启用 TIBC 跨链协议并增强 NFT 功能",
       leftBtnLabel: "公告",
-      leftBtnLink: "/",
+      leftBtnLink: "https://medium.com/irisnet-blog/iris-hub-1-2-mainnet-has-been-successfully-upgraded-8f223216140",
       rightBtnLabel: "了解 TIBC",
       rightBtnLink:
         " https://medium.com/irisnet-blog/introducing-tibc-the-terse-inter-blockchain-communication-c88f73dbac75",
