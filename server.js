@@ -30,10 +30,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.route('/news_letter')
     .post((req, res, next) => {
         request({
-            url: 'http://admin-server.rainbow.one/news_letter/newsletter',
+            url: 'http://as-node.rainbow.one/news_letter/newsletter',
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
             json: {
                 'email': req.body.email,
