@@ -192,16 +192,15 @@ export default {
       ////////////////////////////////////////////////////////////////////
       axios({
         method: "POST",
-        url: "/",
+        url: "/news_letter",
         data: {
           email: this.mailAddress,
-        },
+        }
       })
         .then((data) => {
-          console.log(data);
           let that = this;
           that.$store.commit("showMask", true);
-          if (data.data.id) {
+          if (data.data.data.is_register) {
             that.$store.commit(
               "confirm",
               that.$store.state.messages.newsLetter.confirm

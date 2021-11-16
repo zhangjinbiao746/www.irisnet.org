@@ -27,18 +27,16 @@ app.all('*', function (req, res, next) {
 });
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.route('/')
+app.route('/news_letter')
     .post((req, res, next) => {
         request({
-            url: 'https://us18.api.mailchimp.com/3.0/lists/25c2f2356f/members',
+            url: 'http://as-node.rainbow.one/news_letter/newsletter',
             method: 'POST',
             headers: {
-                'Authorization': 'apikey 29da274284fa1bac35a47fc96bc05f04-us18',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
             json: {
-                'email_address': req.body.email,
-                'status': 'subscribed'
+                'email': req.body.email,
             }
         }, function(err, response, body) {
             if (err) {
