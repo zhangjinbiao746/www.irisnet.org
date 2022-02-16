@@ -249,11 +249,12 @@ export default {
               margin-top: 0.32rem;
             }
             .banner_content_left_btn {
-              width: 2rem;
+                box-sizing: border-box;
+              min-width: 2rem;
               display: inline-block;
               background: rgba(46, 69, 211, 1);
               color: rgba(255, 255, 255, 1);
-              padding: 0.14rem 0;
+              padding: 0.14rem 0.08rem;
               text-align: center;
               border-radius: 0.04rem;
               font-size: 0.2rem;

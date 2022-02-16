@@ -38,14 +38,14 @@ export const message = {
     //   padImage: require("../../assets/pages/banner/bugbounty_image.png"),
     // },
     {
-      title: "Tech-Grants 计划",
+      title: "加入跨链世界",
       subTitle: "",
       description: "加速推动 IRISnet 跨链生态发展",
-      leftBtnLabel: "申请",
+      leftBtnLabel: "申请 Tech-Grants",
       leftBtnLink:
         "https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md",
-      rightBtnLabel: "查看详情",
-      rightBtnLink: "https://mp.weixin.qq.com/s/ynHtbye8XK-9DJQp7LoP4Q",
+      rightBtnLabel: "主网水龙头",
+      rightBtnLink: "https://stakely.io/faucet/irisnet-iris",
       bgImage: require("../../assets/pages/banner/Techgrant.png"),
       padImage: require("../../assets/pages/banner/Techgrant_pad.png"),
     },

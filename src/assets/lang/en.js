@@ -40,16 +40,16 @@ export const message = {
     //   padImage: require("../../assets/pages/banner/bugbounty_image.png"),
     // },
     {
-      title: "Tech-Grants Program",
+      title: "Join Interchain Space",
       subTitle: "",
       description:
         "Accelerate the Development of the IRISnet Interchain Ecosystem",
-      leftBtnLabel: "Apply",
+      leftBtnLabel: "Apply for Tech-Grants",
       leftBtnLink:
-        "https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md",
-      rightBtnLabel: "More details",
+        " https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md",
+      rightBtnLabel: "Mainnet Faucet",
       rightBtnLink:
-        "https://medium.com/irisnet-blog/iris-foundation-launches-tech-grants-program-to-accelerate-the-development-of-the-irisnet-362ac7786c88",
+        "https://stakely.io/faucet/irisnet-iris",
       bgImage: require("../../assets/pages/banner/Techgrant.png"),
       padImage: require("../../assets/pages/banner/Techgrant_pad.png"),
     },
