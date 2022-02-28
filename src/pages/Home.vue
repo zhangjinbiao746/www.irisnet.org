@@ -5,6 +5,7 @@
         <white-paper-component />
         <core-features-component />
         <upcoming-feature-component />
+        <join-interchain-component/>
         <roadmap-component />
         <announcements-component />
         <collaboration-component />
@@ -18,6 +19,7 @@ import UpcomingFeatureComponent from "./components/UpcomingFeatureComponent";
 import AnnouncementsComponent from "./components/AnnouncementsComponent";
 import CollaborationComponent from "./components/CollaborationComponent";
 import RoadmapComponent from "./components/RoadmapComponent";
+import JoinInterchainComponent from "./components/JoinInterchainComponent";
 // import SwiperComponent from "./components/SwiperComponent";
 import HomeBanner from "./components/HomeBanner";
 export default {
@@ -31,6 +33,7 @@ export default {
         UpcomingFeatureComponent,
         CoreFeaturesComponent,
         WhitePaperComponent,
+        JoinInterchainComponent
     },
 };
 </script>
