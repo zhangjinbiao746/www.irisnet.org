@@ -11,7 +11,7 @@
                 <div class="join_chain_btn_content"
                     v-for="(item,index) in $store.state.messages.home.joinchain.list"
                     :key="index">
-                    <div class="chain_btn"><a :href="item.url">{{item.btn}}</a></div>
+                    <div class="chain_btn"><a :href="item.url" target="_blank"  rel="noreferrer noopener">{{item.btn}}</a></div>
 
                 </div>
             </div>
