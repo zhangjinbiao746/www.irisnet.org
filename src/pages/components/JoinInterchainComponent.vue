@@ -11,7 +11,9 @@
                 <div class="join_chain_btn_content"
                     v-for="(item,index) in $store.state.messages.home.joinchain.list"
                     :key="index">
-                    <div class="chain_btn"><a :href="item.url" target="_blank"  rel="noreferrer noopener">{{item.btn}}</a></div>
+                    <div class="chain_btn"><a :href="item.url"
+                            target="_blank"
+                            rel="noreferrer noopener">{{item.btn}}</a></div>
 
                 </div>
             </div>
@@ -32,8 +34,9 @@ export default {
 <style scoped lang="less">
 .join_chain_container {
     background: rgba(13, 14, 44, 1);
-    height: 667px;
-    padding-bottom: 100px;
+    height: 6.67rem;
+
+    padding-bottom: 1rem;
 
     .join_chain_wrap {
         height: 100%;
@@ -72,27 +75,26 @@ export default {
             }
         }
         .big_container {
-            margin-top: 375px;
+            margin-top: 3.75rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             .join_chain_content {
                 margin: 0 auto;
-                height: 32px;
-                font-size: 20px;
+                height: 0.32rem;
+                font-size: 0.2rem;
                 color: #ffffff;
-                line-height: 32px;
+                line-height: 0.32rem;
             }
         }
         .all {
             display: flex;
             justify-content: center;
-            margin-top: 60px;
+            margin-top: 0.6rem;
             @media (max-width: 400px) {
                 flex-direction: column;
             }
-            // margin-left: 380px;
 
             .join_chain_btn_content {
                 box-sizing: border-box;
@@ -104,7 +106,7 @@ export default {
                 text-align: center;
                 border-radius: 0.04rem;
                 font-size: 0.2rem;
-                margin-right: 32px;
+                margin-right: 0.32rem;
 
                 @media (max-width: 1100px) {
                     justify-content: center;
@@ -115,16 +117,15 @@ export default {
 
                 .chain_btn a {
                     margin: 0 auto;
-                    // margin-right: 32px;
-                    // display: block;
+
                     box-sizing: border-box;
-                    line-height: 28px;
-                    font-size: 20px;
-                    border-radius: 4px;
+                    line-height: 0.28rem;
+                    font-size: 0.2rem;
+                    border-radius: 0.04rem;
 
                     font-weight: 600;
                     color: #ffffff;
-                    line-height: 28px;
+                    line-height: 0.28rem;
                 }
             }
         }
