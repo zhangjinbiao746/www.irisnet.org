@@ -4,6 +4,7 @@
 		<white-paper-component/>
 		<core-features-component/>
 		<upcoming-feature-component/>
+    <join-interchain-component/>
 		<roadmap-component/>
 		<announcements-component/>
 		<collaboration-component/>
@@ -18,13 +19,14 @@
 	import CollaborationComponent from "./components/CollaborationComponent";
 	import RoadmapComponent from "./components/RoadmapComponent";
 	import SwiperComponent from "./components/SwiperComponent";
+  import JoinInterchainComponent from "./components/JoinInterchainComponent";
 	export default {
 		name: "home",
 		components: {
 			SwiperComponent,
 			RoadmapComponent,
 			CollaborationComponent,
-			AnnouncementsComponent, UpcomingFeatureComponent, CoreFeaturesComponent, WhitePaperComponent}
+			AnnouncementsComponent, UpcomingFeatureComponent, CoreFeaturesComponent, WhitePaperComponent,JoinInterchainComponent}
 	}
 </script>
 

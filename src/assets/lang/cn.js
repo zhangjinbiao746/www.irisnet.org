@@ -681,6 +681,22 @@ export const message = {
         },
       ],
     },
+    joinchain:{
+      title: "加入跨链世界",
+      content: "加速推动 IRISnet 跨链生态发展",
+      list:[
+        { btn:"申请 Tech-Grants",
+        url:" https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md"
+
+      },
+      {
+        btn:"主网水龙头",
+        url:" https://stakely.io/faucet/irisnet-iris"
+
+      }
+          ]
+
+    },
     collborations: {
       title: "合作方",
       list: [

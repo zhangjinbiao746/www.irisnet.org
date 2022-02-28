@@ -35,6 +35,7 @@ Vue.mixin({
         }
     },
     mounted () {
+      
         //根据用户浏览器语言偏好设置页面的中英文语言展示
         let langCNMessage = require('./assets/lang/cn').message,
             langENMessage = require('./assets/lang/en').message;

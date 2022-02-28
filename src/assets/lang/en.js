@@ -718,6 +718,22 @@ export const message = {
         },
       ],
     },
+    joinchain:{
+      title: "Join Interchain Space",
+      content: "Accelerate the Development of the IRISnet Interchain Ecosystem",
+      list:[
+        { btn:"Apply for Tech-Grants",
+        url:" https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md"
+
+      },
+      {
+        btn:"Mainnet Faucet",
+        url:" https://stakely.io/faucet/irisnet-iris"
+
+      }
+          ]
+
+    },
     collborations: {
       title: "Collaboration",
       list: [
