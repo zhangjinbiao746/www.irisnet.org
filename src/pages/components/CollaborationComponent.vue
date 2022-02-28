@@ -58,6 +58,7 @@
 			padding-bottom: 0.72rem;
 		}
 		.collboration_content_title{
+            font-family: ArialMT;
 			font-size: 0.4rem;
 			line-height: 0.4rem;
 			color: rgba(255,255,255,1);
@@ -75,6 +76,7 @@
 			.collboration_logo_content{
 				margin-top: 0.64rem;
 				.collboration_logo_title{
+                    font-family: ArialMT;
 					font-size: 0.24rem;
 					line-height: 0.24rem;
 					color: rgba(255,255,255,0.65);
@@ -110,6 +112,7 @@
 							}
 							.collboration_logo_name{
 								margin-top: 0.24rem;
+                                font-family: ArialMT;
 								font-size: 0.32rem;
 								line-height: 0.32rem;
 								font-weight: 600;

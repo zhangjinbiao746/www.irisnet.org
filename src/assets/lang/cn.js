@@ -50,6 +50,14 @@ export const message = {
       padImage: require("../../assets/pages/banner/Techgrant_pad.png"),
     },
   ],
+  thirdBanner: {
+    img: require("@/assets/third_zh.png"),  
+    description: "链接异构公链和联盟链的跨链 NFT 枢纽",
+    btnLabel: "CoinMarketCap",
+    btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
+    nyancatSayT: "？？？",
+    nyancatSayB: "我是谁",
+  },
   irishub: {
     title: "IRIS Hub 1.2",
     secondTitle: "支持新一代分布式商业应用的跨链服务枢纽",
