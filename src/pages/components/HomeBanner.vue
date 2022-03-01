@@ -175,7 +175,6 @@ export default {
             .banner_intro_content {
                 display: flex;
                 flex-direction: column;
-                width: 100%;
                 @media (max-width: 502px) {
                     align-items: center;
                 }
