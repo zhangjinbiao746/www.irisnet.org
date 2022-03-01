@@ -2,9 +2,10 @@
     <div class="home_banner_container">
         <div class="home_banner_wrap">
             <div class="home_banner_content">
-                <div class="nyancat_container">
-                    <div class="nyancat_wrap" @click="showNyancatSay" @mouseleave="hiddenNyancatSay">
-                        <img src="../../assets/nyancat_banner.png" alt="">
+                <div class="nyancat_container" @mouseenter="showLight" @mouseleave="hiddenNyancatSay">
+                    <div class="nyancat_wrap" @click.stop="showNyancatSay">
+                        <img v-show="!showLightNyancat" src="../../assets/nyancat_banner.png" alt="">
+                        <img v-show="showLightNyancat" src="../../assets/nyancat_banner_light.png" alt="">
                     </div>
                     <div class="nyancat_say" v-if="isShowSay">
                         <span class="say_top">{{$store.state.messages.thirdBanner.nyancatSayT}}</span>
@@ -12,8 +13,10 @@
                     </div>
                 </div>
                 <div class="banner_intro_content">
-                    <div class="banner_img" :class="$store.state.lang=='CN' ? 'transformImg' : ''">
-                        <img :src="$store.state.messages.thirdBanner.img" alt="">
+                    <div class="banner_img_wrap">
+                        <div class="banner_img" :class="$store.state.lang=='CN' ? 'transformImg' : ''">
+                            <img :src="$store.state.messages.thirdBanner.img" alt="">
+                        </div>
                     </div>
                     <div class="banner_description">{{$store.state.messages.thirdBanner.description}}</div>
                     <div class="banner_btn_wrap">
@@ -30,15 +33,21 @@ export default {
     name: "HomeBanner",
     data()  {
         return {
-            isShowSay: false
+            isShowSay: false,
+            showLightNyancat: false
         }
     },
     methods: {
-        showNyancatSay() {
+        showLight() {
             this.isShowSay = true;
+            this.showLightNyancat = true;
         },
         hiddenNyancatSay() {
             this.isShowSay = false;
+            this.showLightNyancat = false;
+        },
+        showNyancatSay() {
+            this.isShowSay = true;
         }
     }
 };
@@ -47,7 +56,7 @@ export default {
 <style scoped lang="less">
 .home_banner_container {
     width: 100%;
-    background: rgba(13,14,44,1);
+    background: url(../../assets/banner_other.png) no-repeat 100% 100%;
     .home_banner_wrap {
         margin: 0 auto;
         max-width: 19.2rem;
@@ -68,8 +77,10 @@ export default {
         @media (max-width: 1000px) {
             background: url(../../assets/third_banner_1000.png) no-repeat center / cover;
         }
-        @media (max-width: 400px) {
+        @media (max-width: 502px) {
             height: 7.21rem;
+        }
+        @media (max-width: 400px) {
             background: url(../../assets/third_banner_320.png) no-repeat center / cover;
         }
         .home_banner_content {
@@ -94,22 +105,24 @@ export default {
                 position: absolute;
                 top: 1.25rem;
                 cursor: pointer;
-                &:hover {
-                    .nyancat_wrap {
-                        transform: scale(1.02);
-                    }
-                }
                 .nyancat_wrap {
                     position: absolute;
-                    top: 0.23rem;
-                    right: 0.43rem;
-                    width: 0.8rem;
+                    top: 0.07rem;
+                    right: 0.2rem;
+                    width: 1.17rem;
                     @media (max-width: 1000px) {
+                        right: -1.5rem;
+                    }
+                    @media (max-width: 502px) {
+                        top: -0.1rem;
                         right: -1.3rem;
                     }
                     @media (max-width: 400px) {
-                        top: 0.4rem;
-                        right: -0.8rem;
+                        top: 0.1rem;
+                        right: -0.9rem;
+                    }
+                    @media (max-width: 375px) {
+                        top: 0.3rem;
                     }
                     img {
                         width: 100%;
@@ -118,7 +131,8 @@ export default {
                 }
                 .nyancat_say {
                     position: absolute;
-                    right: 1.23rem;
+                    top: -0.1rem;
+                    right: 1.1rem;
                     width: 1.62rem;
                     height: 0.64rem;
                     background: url(../../assets/nyancat_say.png) no-repeat center / cover;
@@ -131,10 +145,18 @@ export default {
                     letter-spacing: 4px;
                     text-shadow: 0px 0px 45px #000000;
                     @media (max-width: 1000px) {
-                        right: -0.5rem;
+                        right: -0.6rem;
+                    }
+                    @media (max-width: 502px) {
+                        top: -0.2rem;
+                        right: -0.3rem;
                     }
                     @media (max-width: 400px) {
+                        top: 0;
                         right: -0.15rem;
+                    }
+                    @media (max-width: 375px) {
+                        top: 0.2rem;
                     }
                     .say_top {
                         display: inline-block;
@@ -153,19 +175,23 @@ export default {
             .banner_intro_content {
                 display: flex;
                 flex-direction: column;
+                width: 100%;
                 @media (max-width: 502px) {
                     align-items: center;
                 }
-                .banner_img {
+                .banner_img_wrap {
                     max-width: 6.33rem;
-                    img {
-                        width: 100%;
-                        vertical-align: middle;
+                    overflow: hidden;
+                    .banner_img {
+                        img {
+                            width: 100%;
+                            vertical-align: middle;
+                        }
                     }
-                }
-                .transformImg {
-                    @media (max-width: 502px) {
-                        transform: translateX(20%);
+                    .transformImg {
+                        @media (max-width: 502px) {
+                            transform: translateX(20%);
+                        }
                     }
                 }
                 .banner_description {
@@ -205,8 +231,6 @@ export default {
                         justify-content: center;
                         align-items: center;
                         padding: 0.14rem 0.08rem;
-                        width: 100%;
-                        height: 100%;
                         font-size: 20px;
                         font-family: PingFangSC-Semibold, PingFang SC;
                         font-weight: 600;
