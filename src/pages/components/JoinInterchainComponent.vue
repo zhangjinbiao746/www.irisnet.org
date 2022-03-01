@@ -42,7 +42,7 @@ export default {
     background: rgba(13, 14, 44, 1);
     // height: 6.67rem;
 
-    padding-bottom: 1rem;
+    // padding-bottom: 1rem;
 
     .join_chain_wrap {
         height: 100%;
@@ -50,15 +50,24 @@ export default {
         background-size: cover;
         max-width: 12rem;
         margin: 0 auto;
-
+        @media (max-width: 1200px) {
+            margin: 0 0.48rem;
+        }
         @media (max-width: 1100px) {
             height: auto;
             background-position: bottom center !important;
+        }
+        @media (max-width: 596px) {
+            margin: 0 0.2rem;
         }
         @media (max-width: 400px) {
             height: auto;
             background-position: bottom center !important;
         }
+        @media (max-width: 375px) {
+            background: url("../../assets/join_chain_small.png") no-repeat center center;
+        }
+
         // @media (max-width: 360px) {
         //     height: auto;
         //     background-position: bottom center !important;
@@ -72,7 +81,7 @@ export default {
         // }
         .join_chain_title {
             font-family: ArialMT;
-            padding-top: 0.36rem;
+             margin-top: 0.36rem;
             font-weight: normal;
             font-size: 0.4rem;
             color: rgba(255, 255, 255, 1);
