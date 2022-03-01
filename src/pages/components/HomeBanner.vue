@@ -2,10 +2,10 @@
     <div class="home_banner_container">
         <div class="home_banner_wrap">
             <div class="home_banner_content">
-                <div class="nyancat_container" @mouseenter="showLight" @mouseleave="hiddenNyancatSay" @touchstart="showNyancatSay">
-                    <div class="nyancat_wrap">
-                        <img v-if="!showLightNyancat" src="../../assets/nyancat_banner.png" alt="">
-                        <img v-if="showLightNyancat" src="../../assets/nyancat_banner_light.png" alt="">
+                <div class="nyancat_container" @mouseenter="showLight" @mouseleave="hiddenNyancatSay">
+                    <div class="nyancat_wrap" @click.stop="showNyancatSay">
+                        <img v-show="!showLightNyancat" src="../../assets/nyancat_banner.png" alt="">
+                        <img v-show="showLightNyancat" src="../../assets/nyancat_banner_light.png" alt="">
                     </div>
                     <div class="nyancat_say" v-if="isShowSay">
                         <span class="say_top">{{$store.state.messages.thirdBanner.nyancatSayT}}</span>
@@ -13,8 +13,10 @@
                     </div>
                 </div>
                 <div class="banner_intro_content">
-                    <div class="banner_img" :class="$store.state.lang=='CN' ? 'transformImg' : ''">
-                        <img :src="$store.state.messages.thirdBanner.img" alt="">
+                    <div class="banner_img_wrap">
+                        <div class="banner_img" :class="$store.state.lang=='CN' ? 'transformImg' : ''">
+                            <img :src="$store.state.messages.thirdBanner.img" alt="">
+                        </div>
                     </div>
                     <div class="banner_description">{{$store.state.messages.thirdBanner.description}}</div>
                     <div class="banner_btn_wrap">
@@ -173,21 +175,23 @@ export default {
             .banner_intro_content {
                 display: flex;
                 flex-direction: column;
-                overflow: hidden;
+                width: 100%;
                 @media (max-width: 502px) {
                     align-items: center;
                 }
-                .banner_img {
+                .banner_img_wrap {
                     max-width: 6.33rem;
                     overflow: hidden;
-                    img {
-                        width: 100%;
-                        vertical-align: middle;
+                    .banner_img {
+                        img {
+                            width: 100%;
+                            vertical-align: middle;
+                        }
                     }
-                }
-                .transformImg {
-                    @media (max-width: 502px) {
-                        transform: translateX(20%);
+                    .transformImg {
+                        @media (max-width: 502px) {
+                            transform: translateX(20%);
+                        }
                     }
                 }
                 .banner_description {

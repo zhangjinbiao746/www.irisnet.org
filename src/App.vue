@@ -50,7 +50,6 @@
 
     #app{
         width: 100%;
-        overflow: hidden;
         background: rgba(13,14,44,1);
     }
     
