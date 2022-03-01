@@ -59,7 +59,7 @@ export const message = {
     description: "NFT Hub to Connect “Permissionless” with “Permissioned”",
     btnLabel: "CoinMarketCap",
     btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
-    nyancatSayT: "? ? ?",
+    nyancatSayT: "? ? ? ?",
     nyancatSayB: "WHO AM I",
   },
   irishub: {

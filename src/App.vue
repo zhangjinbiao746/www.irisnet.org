@@ -45,10 +45,13 @@
     }
     body{
         font-size:16px !important;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
 
     #app{
         width: 100%;
+        overflow: hidden;
+        background: rgba(13,14,44,1);
     }
     
     @import "assets/style/reset.less";
