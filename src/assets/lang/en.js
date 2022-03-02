@@ -6,7 +6,7 @@ export const message = {
       subTitle: "",
       description:
         "An Interchain NFT Hub between public blockchains and consortium blockchains ",
-      leftBtnLabel: "More details",
+      leftBtnLabel: "More Details",
       leftBtnLink: "https://twitter.com/irisnetwork",
       rightBtnLabel: "CoinMarketCap",
       rightBtnLink: "https://www.coinmarketcap.com/currencies/irisnet/",
@@ -40,20 +40,28 @@ export const message = {
     //   padImage: require("../../assets/pages/banner/bugbounty_image.png"),
     // },
     {
-      title: "Tech-Grants Program",
+      title: "Join Interchain Space",
       subTitle: "",
       description:
         "Accelerate the Development of the IRISnet Interchain Ecosystem",
-      leftBtnLabel: "Apply",
+      leftBtnLabel: "Apply for Tech-Grants",
       leftBtnLink:
-        "https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md",
-      rightBtnLabel: "More details",
+        " https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md",
+      rightBtnLabel: "Mainnet Faucet",
       rightBtnLink:
-        "https://medium.com/irisnet-blog/iris-foundation-launches-tech-grants-program-to-accelerate-the-development-of-the-irisnet-362ac7786c88",
+        "https://stakely.io/faucet/irisnet-iris",
       bgImage: require("../../assets/pages/banner/Techgrant.png"),
       padImage: require("../../assets/pages/banner/Techgrant_pad.png"),
     },
   ],
+  thirdBanner: {
+    // img: require("../third_en.png"),
+    description: "NFT Hub to Connect “Permissionless” with “Permissioned”",
+    btnLabel: "CoinMarketCap",
+    btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
+    nyancatSayT: "? ? ? ?",
+    nyancatSayB: "WHO AM I",
+  },
   irishub: {
     title: "IRIS Hub 1.2",
     secondTitle:
@@ -536,7 +544,7 @@ export const message = {
         title: "IRIS Hub 1.0",
         title1: "will Upgrade on Feb 25",
         content: "Welcome to the New Connected Interchain World",
-        btn1: "More details",
+        btn1: "More Details",
         btnHref1: "/kuafu/?lang=EN",
         btn2: "Announcement",
         btnHref2:
@@ -562,7 +570,7 @@ export const message = {
         btn1: "Apply",
         btnHref1:
           "https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md",
-        btn2: "More details",
+        btn2: "More Details",
         btnHref2:
           "https://medium.com/irisnet-blog/iris-foundation-launches-tech-grants-program-to-accelerate-the-development-of-the-irisnet-362ac7786c88",
       },
@@ -672,7 +680,7 @@ export const message = {
           iconName: "icon-hulianhutong",
         },
       ],
-      buttonMsg: "WHITE PAPER",
+      buttonMsg: "White Paper",
       WHITEPAPERUrl:
         "https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md",
     },
@@ -717,6 +725,21 @@ export const message = {
           image: require("../../assets/pages/cosmWasm_logo.png"),
         },
       ],
+    },
+    joinchain:{
+      title: "Join Interchain Space",
+      content: "Accelerate the Development of the IRISnet Interchain Ecosystem",
+      list:[
+        { btn:"Apply for Tech-Grants",
+        url:" https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md"
+      },
+      {
+        btn:"Mainnet Faucet",
+        url:" https://stakely.io/faucet/irisnet-iris"
+
+      }
+          ]
+
     },
     collborations: {
       title: "Collaboration",

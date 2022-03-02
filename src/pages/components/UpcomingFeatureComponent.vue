@@ -37,7 +37,8 @@
 				margin: 0 0.2rem;
 			}
 			.upcoming_title{
-				padding-top: 0.36rem;
+				margin-top: 0.36rem;
+                font-family: ArialMT;
 				font-weight: normal;
 				font-size: 0.4rem;
 				color: rgba(255,255,255,1);
