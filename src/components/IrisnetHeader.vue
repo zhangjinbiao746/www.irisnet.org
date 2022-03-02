@@ -312,9 +312,7 @@
             }else {
                 this.navigationData.header.right[0].active = false;
             }
-            if (process.env.VUE_ENV === 'client') {
-                window.addEventListener("scroll", this.scrollToTop);
-            }
+            window.addEventListener("scroll", this.scrollToTop);
         }
     }
 </script>
