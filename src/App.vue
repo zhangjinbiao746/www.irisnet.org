@@ -39,17 +39,16 @@
     }
 </script>
 <style lang="less">
-    @font-face {
-        font-family: PangMenZhengDao;
-        src: url("./assets/font/PangMenZhengDao.ttf") format('truetype');
-    }
+	@font-face {
+		font-family: 'test';
+		src: url("./assets/font/PangMenZhengDao.ttf") format("truetype");
+	}
     html {
         font-size: 625% !important;
         -webkit-text-size-adjust: none;
     }
     body{
         font-size:16px !important;
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
 
     #app{

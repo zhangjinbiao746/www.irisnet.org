@@ -2,15 +2,15 @@
     <div class="home_banner_container">
         <div class="home_banner_wrap">
             <div class="home_banner_content">
-                <div class="nyancat_container" @mouseenter="showLight" @mouseleave="hiddenNyancatSay">
-                    <div class="nyancat_wrap" @click.stop="showNyancatSay">
-                        <img v-show="!showLightNyancat" src="../../assets/nyancat_banner.png" alt="">
-                        <img v-show="showLightNyancat" src="../../assets/nyancat_banner_light.png" alt="">
+                <div class="nyancat_container">
+<!--                    <div class="nyancat_wrap" @click.stop="showNyancatSay">
+                        <img class="default_img"  src="../../assets/nyancat_banner.png" alt="">
+                        <img class="light_img" src="../../assets/nyancat_banner_light.png" alt="">
                     </div>
-                    <div class="nyancat_say" v-if="isShowSay">
+                    <div class="nyancat_say" v-show="isShowSay">
                         <span class="say_top">{{$store.state.messages.thirdBanner.nyancatSayT}}</span>
                         <span class="say_bottom">{{$store.state.messages.thirdBanner.nyancatSayB}}</span>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="banner_intro_content">
                     <div class="banner_img_wrap">
@@ -33,19 +33,10 @@ export default {
     name: "HomeBanner",
     data()  {
         return {
-            isShowSay: false,
-            showLightNyancat: false
+			isShowSay:false
         }
     },
     methods: {
-        showLight() {
-            this.isShowSay = true;
-            this.showLightNyancat = true;
-        },
-        hiddenNyancatSay() {
-            this.isShowSay = false;
-            this.showLightNyancat = false;
-        },
         showNyancatSay() {
             this.isShowSay = true;
         }
@@ -105,6 +96,10 @@ export default {
                 position: absolute;
                 top: 1.25rem;
                 cursor: pointer;
+				&:hover{
+					.nyancat_wrap{
+					}
+				}
                 .nyancat_wrap {
                     position: absolute;
                     top: 0.07rem;

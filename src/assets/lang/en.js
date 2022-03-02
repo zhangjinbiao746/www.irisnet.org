@@ -55,7 +55,7 @@ export const message = {
     },
   ],
   thirdBanner: {
-    img: require("../third_en.png"),  
+    // img: require("../third_en.png"),
     description: "NFT Hub to Connect “Permissionless” with “Permissioned”",
     btnLabel: "CoinMarketCap",
     btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
@@ -732,7 +732,6 @@ export const message = {
       list:[
         { btn:"Apply for Tech-Grants",
         url:" https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md"
-
       },
       {
         btn:"Mainnet Faucet",
