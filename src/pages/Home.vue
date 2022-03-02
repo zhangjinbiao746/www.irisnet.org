@@ -1,6 +1,6 @@
 <template>
     <div class="home_container">
-        <!-- <HomeBanner></HomeBanner> -->
+        <HomeBanner></HomeBanner>
         <!-- <swiper-component></swiper-component> -->
         <white-paper-component />
         <core-features-component />
