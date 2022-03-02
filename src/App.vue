@@ -50,7 +50,6 @@
 
     #app{
         width: 100%;
-        background: rgba(13,14,44,1);
     }
     
     @import "assets/style/reset.less";

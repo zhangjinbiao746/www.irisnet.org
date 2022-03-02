@@ -183,7 +183,11 @@
             scrollToTop() {
                 this.scrollTopHeight = document.documentElement.scrollTop || document.body.scrollTop;
                 const path = this.$route.path.split('.')[0].split('/')[1];
-                this.isBgColor = (path === 'mainnet' || this.scrollTopHeight > 60) ? true : false;
+                if(path === 'mainnet' || path === 'developers' || this.scrollTopHeight > 60) {
+                    this.isBgColor = true;
+                } else {
+                    this.isBgColor = false;
+                }
             },
             toMainnet(href){
                 if(href.href === "" && !href.name){
@@ -308,7 +312,9 @@
             }else {
                 this.navigationData.header.right[0].active = false;
             }
-            window.addEventListener("scroll", this.scrollToTop);
+            if (process.env.VUE_ENV === 'client') {
+                window.addEventListener("scroll", this.scrollToTop);
+            }
         }
     }
 </script>

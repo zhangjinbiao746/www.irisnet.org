@@ -55,7 +55,7 @@ export const message = {
     },
   ],
   thirdBanner: {
-    img: require("@/assets/third_en.png"),  
+    img: require("../third_en.png"),  
     description: "NFT Hub to Connect “Permissionless” with “Permissioned”",
     btnLabel: "CoinMarketCap",
     btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
