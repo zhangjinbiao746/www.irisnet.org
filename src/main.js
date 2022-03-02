@@ -11,7 +11,6 @@ require("vuescroll/dist/vuescroll.css")
 require('reveal.js/css/reveal.css');
 require('swiper/dist/css/swiper.css');
 require('element-ui/lib/theme-chalk/index.css')
-require('../font/font.css');
 if (process.env.VUE_ENV === 'client') {
     require('./assets/icon/iconfont')
     const VueAwesomeSwiper = require('vue-awesome-swiper');
