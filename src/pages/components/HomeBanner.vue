@@ -13,15 +13,15 @@
                     </div>-->
                 </div>
                 <div class="banner_intro_content">
-                    <div class="banner_img_wrap">
-                        <div class="banner_img" :class="$store.state.lang=='CN' ? 'transformImg' : ''">
-                            <img :src="$store.state.messages.thirdBanner.img" alt="">
-                        </div>
-                    </div>
-                    <div class="banner_description">{{$store.state.messages.thirdBanner.description}}</div>
-                    <div class="banner_btn_wrap">
-                        <a class="banner_btn" :href="$store.state.messages.thirdBanner.btnLink" target="_blank" rel="noopener noreferrer">{{$store.state.messages.thirdBanner.btnLabel}}</a>
-                    </div>
+<!--                    <div class="banner_img_wrap">-->
+<!--                        <div class="banner_img" :class="$store.state.lang=='CN' ? 'transformImg' : ''">-->
+<!--                            <img :src="$store.state.messages.thirdBanner.img" alt="">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="banner_description">{{$store.state.messages.thirdBanner.description}}</div>-->
+<!--                    <div class="banner_btn_wrap">-->
+<!--                        <a class="banner_btn" :href="$store.state.messages.thirdBanner.btnLink" target="_blank" rel="noopener noreferrer">{{$store.state.messages.thirdBanner.btnLabel}}</a>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>

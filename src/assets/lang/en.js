@@ -54,14 +54,14 @@ export const message = {
       padImage: require("../../assets/pages/banner/Techgrant_pad.png"),
     },
   ],
-  thirdBanner: {
-    // img: require("../third_en.png"),
-    description: "NFT Hub to Connect “Permissionless” with “Permissioned”",
-    btnLabel: "CoinMarketCap",
-    btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
-    nyancatSayT: "? ? ? ?",
-    nyancatSayB: "WHO AM I",
-  },
+  // thirdBanner: {
+  //   // img: require("../third_en.png"),
+  //   description: "NFT Hub to Connect “Permissionless” with “Permissioned”",
+  //   btnLabel: "CoinMarketCap",
+  //   btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
+  //   nyancatSayT: "? ? ? ?",
+  //   nyancatSayB: "WHO AM I",
+  // },
   irishub: {
     title: "IRIS Hub 1.2",
     secondTitle:
