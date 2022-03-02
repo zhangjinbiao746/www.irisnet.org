@@ -51,7 +51,7 @@ export const message = {
     },
   ],
   thirdBanner: {
-    img: require("@/assets/third_zh.png"),  
+    img: require("../third_zh.png"),  
     description: "链接异构公链和联盟链的跨链 NFT 枢纽",
     btnLabel: "CoinMarketCap",
     btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
