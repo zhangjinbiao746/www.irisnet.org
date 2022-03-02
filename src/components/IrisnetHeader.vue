@@ -270,7 +270,7 @@
                 this.$store.commit('activeIconIndex',' ');
                 this.scroll(defaultScrollTop);
                 this.resetActiveIcon()
-                this.isBgColor = false;
+                // this.isBgColor = false;
             },
             // judgePath() {
             //     const path = this.$route.path.split('/')[1];
