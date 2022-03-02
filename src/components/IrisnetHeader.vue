@@ -113,18 +113,12 @@
                 }else {
                     this.navigationData.header.right[0].active = false;
                 }
-            },
-            '$route.path': {
-                handler(newPath) {
-                    const path = newPath.split('/')[1];
-                    if(path === 'mainnet' || path === 'developers') {
-                        this.isBgColor = true;
-                    } else {
-                        this.isBgColor = false;
-                    }
-                },
-                immediate: true,
-                deep: true
+				const path = this.$route.path.split('/')[1];
+				if(path === 'mainnet' || path === 'developers') {
+					this.isBgColor = true;
+				} else {
+					this.isBgColor = false;
+				}
             },
         },
         methods:{
@@ -301,7 +295,7 @@
             if(this.$route.path.includes('kuafu')  ){
                 this.navigationData.header.right[0].active = true;
             }else if(this.$route.path.includes('/developers') || this.$route.path.includes('/developers/testnet')){
-                this.navigationData.header.left[3].active = true;
+                this.navigationData.header.left[2].active = true;
             }else if(this.$route.path.includes('/community')){
                 this.navigationData.header.left[2].active = true;
             }else if(this.$route.path === '/mainnet/'
@@ -312,6 +306,12 @@
             }else {
                 this.navigationData.header.right[0].active = false;
             }
+			const path = this.$route.path.split('/')[1];
+			if(path === 'mainnet' || path === 'developers') {
+				this.isBgColor = true;
+			} else {
+				this.isBgColor = false;
+			}
             window.addEventListener("scroll", this.scrollToTop);
         }
     }
