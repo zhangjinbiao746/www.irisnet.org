@@ -85,13 +85,15 @@
 					.upcoming_item_title{
 						text-align: center;
 						margin-top: 0.58rem;
+                        font-family: ArialMT;
 						font-size: 0.32rem;
 						line-height: 0.32rem;
 						font-weight: normal;
 						color: rgba(255,255,255,1);
 					}
 					.upcoming_item_content{
-						margin-top: 0.24rem;
+                        margin-top: 0.24rem;
+                        font-family: ArialMT;
 						font-size: 0.2rem;
 						line-height: 0.32rem;
 						color: rgba(255,255,255,0.65);

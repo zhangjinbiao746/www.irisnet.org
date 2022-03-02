@@ -198,6 +198,7 @@
 					}
 					.irishub_header_title{
 						margin-top: 1.85rem;
+                        font-family: ArialMT;
 						font-size: 0.6rem;
 						color: #fff;
 					}
@@ -238,6 +239,7 @@
 							padding: 0.08rem 0.5rem;
 							background: rgba(46, 69, 211, 1);
 							color: rgba(255, 255, 255, 1);
+                            font-family: ArialMT;
 							font-size: 0.2rem;
 							line-height: 0.28rem;
 							text-align: center;
@@ -263,6 +265,7 @@
 							/*border: 0.01rem solid #648DED;*/
 							border-radius: 0.04rem;
 							color: rgba(255, 255, 255, 1);
+                            font-family: ArialMT;
 							font-size: 0.2rem;
 							line-height: 0.28rem;
 							text-align: center;
@@ -305,12 +308,14 @@
 							background: rgba(46, 69, 211, 1);
 						}
 						.new_function_title_content{
+                            font-family: ArialMT;
 							font-size: 0.4rem;
 							color: #fff;
 							font-weight: 600;
 							margin-top: 0.36rem;
 						}
 						.new_function_sub_title_content{
+                            font-family: ArialMT;
 							font-size: 0.16rem;
 							line-height: 0.32rem;
 							color: rgba(255,255,255,0.65);
@@ -343,12 +348,14 @@
 								}
 								
 								.new_function_section_label{
+                                    font-family: ArialMT;
 									font-size: 0.32rem;
 									margin-top: 0.24rem;
 									line-height: 0.48rem;
 								}
 								.new_function_section{
 									margin-top: 0.36rem;
+                                    font-family: ArialMT;
 									font-size: 0.16rem;
 									line-height: 0.32rem;
 									color: rgba(255,255,255,0.65);
@@ -371,11 +378,13 @@
 									color: #fff;
 								}
 								.new_function_section_label{
+                                    font-family: ArialMT;
 									font-size: 0.32rem;
 									margin-top: 0.24rem;
 								}
 								.new_function_section{
 									margin-top: 0.36rem;
+                                    font-family: ArialMT;
 									font-size: 0.16rem;
 									line-height: 0.32rem;
 									color: rgba(255,255,255,0.65);
@@ -417,10 +426,12 @@
 					}
 					.new_function_application_title{
 						margin-top: 0.24rem;
+                        font-family: ArialMT;
 						font-size: 0.32rem;
 					}
 					.new_function_application_section{
 						margin-top: 0.36rem;
+                        font-family: ArialMT;
 						font-size: 0.16rem;
 						line-height: 0.32rem;
 						color: rgba(255,255,255,0.65);
@@ -535,6 +546,7 @@
 					background: rgba(49, 65, 201, 1);
 				}
 				.application_show_content_title{
+                    font-family: ArialMT;
 					font-size: 0.4rem;
 					margin-top: 0.36rem;
 					color: rgba(255,255,255,1);
@@ -570,6 +582,7 @@
 							}
 						}
 						.application_list_item_title{
+                            font-family: ArialMT;
 							font-size: 0.32rem;
 							font-weight: 600;
 							line-height: 0.32rem;
@@ -579,6 +592,7 @@
 						.application_list_item_section{
 							margin-top: 0.24rem;
 							color: rgba(255,255,255,0.65);
+                            font-family: ArialMT;
 							font-size: 0.16rem;
 							line-height: 0.32rem;
 						}
@@ -599,6 +613,7 @@
 				width: 100%;
 				margin: 0 auto;
 				.community_resources_title{
+                    font-family: ArialMT;
 					font-size: 0.32rem;
 					color: rgba(255,255,255,1);
 					line-height: 0.37rem;
@@ -638,6 +653,7 @@
 							}
 							.logo_name{
 								margin-top: 0.28rem;
+                                font-family: ArialMT;
 								font-size: 0.24rem;
 								color: rgba(255,255,255,1);
 								line-height: 0.4rem;
@@ -680,12 +696,14 @@
 										span{
 											display: inline-block;
 											white-space: nowrap;
+                                            font-family: ArialMT;
 										}
 									}
 									.os_content{
 										white-space: nowrap;
 										display: inline-block;
 										padding-left: 0.1rem;
+                                        font-family: ArialMT;
 										font-size: 0.24rem;
 										line-height: 0.32rem;
 										color: rgba(255,255,255,0.64);
@@ -696,6 +714,7 @@
 								margin-top: 0.17rem;
 								a{
 									cursor: text;
+                                    font-family: ArialMT;
 									color: rgba(255,255,255,0.64);
 									line-height: 0.21rem;
 								}

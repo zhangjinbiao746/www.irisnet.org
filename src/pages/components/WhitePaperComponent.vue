@@ -37,7 +37,6 @@
 				setTimeout(() => {
 					this.$store.commit('whitePaper', this.$refs.whitePaper.offsetTop - this.$store.state.headerHeight);
 				},200)
-				console.log(this.$refs.whitePaper.offsetTop )
 			}
 		}
 	}
@@ -67,12 +66,13 @@
 			}
 			.white_paper_title{
 				margin-top: 0.36rem;
+                font-family: ArialMT;
 				font-weight: normal;
 				font-size: 0.4rem;
 				color: rgba(255,255,255,1);
 				line-height: 0.4rem;
 				@media(max-width: 596px){
-					margin-top: 0.24rem;
+                    margin-top: 0.24rem;
 				}
 			}
 			.white_paper_list_content{
@@ -112,6 +112,7 @@
 					.white_paper_item_content{
 						margin-top: 0.44rem;
 						font-size: 0.2rem;
+                        font-family: ArialMT;
 						line-height: 0.32rem;
 						color: rgba(255,255,255,0.74);
 					}
@@ -131,6 +132,7 @@
 					margin: 0.6rem auto 1.68rem auto;
 					border-radius: 0.04rem;
 					padding: 0.1rem 0.31rem;
+                    font-family: ArialMT;
 					background: rgba(46, 69, 211, 1);
 					@media(max-width: 1000px){
 						margin: 0.36rem auto 1rem auto;

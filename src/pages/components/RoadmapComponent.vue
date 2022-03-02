@@ -114,6 +114,7 @@
 			padding-bottom: 0.72rem;
 		}
 		.roadmap_title{
+            font-family: ArialMT;
 			font-size: 0.4rem;
 			line-height: 0.4rem;
 			font-weight: normal;
@@ -147,6 +148,7 @@
 								height:1.23rem;
 								text-align: center;
 								line-height: 1.23rem;
+                                font-family: ArialMT;
 								font-size: 0.24rem;
 								font-weight: normal;
 								cursor: pointer;
@@ -189,6 +191,7 @@
 							font-size: 0.2rem;
 							color: rgba(255,255,255,0.65);
 							line-height: 0.2rem;
+                            font-family: ArialMT;
 							font-weight: 400;
 							position: relative;
 							left: -0.33rem;
@@ -226,6 +229,7 @@
 								width: 2.07rem;
 								height:2.02rem;
 								line-height: 2.02rem;
+                                font-family: ArialMT;
 								font-size: 0.24rem;
 								font-weight: normal;
 							}
@@ -265,6 +269,7 @@
 			box-sizing: border-box;
 			padding: 0.4rem;
 			background: rgba(32, 34, 65, 1);
+            font-family: ArialMT;
 			font-size: 0.16rem;
 			line-height: 0.32rem;
 			@media(max-width: 596px){
