@@ -1,6 +1,5 @@
 <template>
-    <div class="header_container" :class="[flShowIrisHub? 'iris_hub_header_style' : 'common_header_style']">
-    <!-- <div class="header_container" :class="[flShowIrisHub? 'iris_hub_header_style' : 'common_header_style', isBgColor ? 'is_color_bg' : '']"> -->
+    <div class="header_container" :class="[flShowIrisHub? 'iris_hub_header_style' : 'common_header_style', isBgColor ? 'is_color_bg' : '']">
         <div class="header_wrap">
             <div class="header_content">
                 <div class="irisnet_logo_content" @click="toHome">
@@ -89,8 +88,8 @@
                 flShowMenu: false,
                 flShowIrisHub: this.$route.path ? false : true,
                 navigationData: this.$store.state.messages,
-                // scrollTopHeight: '',
-                // isBgColor: false
+                scrollTopHeight: '',
+                isBgColor: false
             }
         },
         watch:{
@@ -114,6 +113,18 @@
                 }else {
                     this.navigationData.header.right[0].active = false;
                 }
+            },
+            '$route.path': {
+                handler(newPath) {
+                    const path = newPath.split('/')[1];
+                    if(path === 'mainnet' || path === 'developers') {
+                        this.isBgColor = true;
+                    } else {
+                        this.isBgColor = false;
+                    }
+                },
+                immediate: true,
+                deep: true
             },
         },
         methods:{
@@ -169,10 +180,15 @@
                     }, 500
                 );
             },
-            // scrollToTop() {
-            //     this.scrollTopHeight = document.documentElement.scrollTop || document.body.scrollTop;
-            //     this.judgePath();
-            // },
+            scrollToTop() {
+                this.scrollTopHeight = document.documentElement.scrollTop || document.body.scrollTop;
+                const path = this.$route.path.split('.')[0].split('/')[1];
+                if(path === 'mainnet' || path === 'developers' || this.scrollTopHeight > 60) {
+                    this.isBgColor = true;
+                } else {
+                    this.isBgColor = false;
+                }
+            },
             toMainnet(href){
                 if(href.href === "" && !href.name){
                     if(this.$route.query.lang && this.$route.query.lang === 'CN'){
@@ -270,16 +286,7 @@
                 this.$store.commit('activeIconIndex',' ');
                 this.scroll(defaultScrollTop);
                 this.resetActiveIcon()
-                // this.isBgColor = false;
-            },
-            // judgePath() {
-            //     const path = this.$route.path.split('/')[1];
-            //     if(path === 'mainnet' || path === 'developers' || this.scrollTopHeight > 60) {
-            //         this.isBgColor = true;
-            //     } else {
-            //         this.isBgColor = false;
-            //     }
-            // }
+            }
         },
         mounted(){
             if(this.$route.path.includes('kuafu') || this.$route.path.includes('/developers/testnet')){
@@ -305,8 +312,7 @@
             }else {
                 this.navigationData.header.right[0].active = false;
             }
-            // this.judgePath();
-            // window.addEventListener("scroll", this.scrollToTop);
+            window.addEventListener("scroll", this.scrollToTop);
         }
     }
 </script>

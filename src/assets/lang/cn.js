@@ -50,21 +50,13 @@ export const message = {
       padImage: require("../../assets/pages/banner/Techgrant_pad.png"),
     },
   ],
-/*  thirdBanner: {
-    // img: require("../third_zh.png"),
+  thirdBanner: {
+    img: require("../third_zh.png"),  
     description: "链接异构公链和联盟链的跨链 NFT 枢纽",
     btnLabel: "CoinMarketCap",
     btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
     nyancatSayT: "？？？？",
     nyancatSayB: "我是谁",
-  },*/
-  threeBanner:{
-    imgSrc: require('../../assets/third_zh.png'),
-    description: 'NFT Hub to Connect “Permissionless” with “Permissioned”',
-    btnLabel: "CoinMarketCap",
-    btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
-    nyancatSayT: "? ? ? ?",
-    nyancatSayB: "WHO AM I",
   },
   irishub: {
     title: "IRIS Hub 1.2",

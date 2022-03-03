@@ -54,17 +54,9 @@ export const message = {
       padImage: require("../../assets/pages/banner/Techgrant_pad.png"),
     },
   ],
-  // thirdBanner: {
-  //   // img: require("../third_en.png"),
-  //   description: "NFT Hub to Connect “Permissionless” with “Permissioned”",
-  //   btnLabel: "CoinMarketCap",
-  //   btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
-  //   nyancatSayT: "? ? ? ?",
-  //   nyancatSayB: "WHO AM I",
-  // },
-  threeBanner:{
-    imgSrc: require('../../assets/third_en.png'),
-    description: 'NFT Hub to Connect “Permissionless” with “Permissioned”',
+  thirdBanner: {
+    img: require("../third_en.png"),  
+    description: "NFT Hub to Connect “Permissionless” with “Permissioned”",
     btnLabel: "CoinMarketCap",
     btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
     nyancatSayT: "? ? ? ?",
@@ -740,6 +732,7 @@ export const message = {
       list:[
         { btn:"Apply for Tech-Grants",
         url:" https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md"
+
       },
       {
         btn:"Mainnet Faucet",
