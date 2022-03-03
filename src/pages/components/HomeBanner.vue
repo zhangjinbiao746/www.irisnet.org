@@ -2,12 +2,15 @@
     <div class="home_banner_container">
         <div class="home_banner_wrap">
             <div class="home_banner_content">
-                <div class="nyancat_container" @mouseenter="showLight" @mouseleave="hiddenNyancatSay">
-                    <div class="nyancat_wrap" @click.stop="showNyancatSay">
+                <div class="nyancat_container"
+					 @mouseenter="showLight"
+					 @mouseleave="hiddenNyancatSay">
+                    <div class="nyancat_wrap"
+						 @click.stop="showNyancatSay">
                         <img v-show="!showLightNyancat" src="../../assets/nyancat_banner.png" alt="">
                         <img v-show="showLightNyancat" src="../../assets/nyancat_banner_light.png" alt="">
                     </div>
-                    <div class="nyancat_say" v-if="isShowSay">
+                    <div class="nyancat_say" v-show="isShowSay">
                         <span class="say_top">{{$store.state.messages.thirdBanner.nyancatSayT}}</span>
                         <span class="say_bottom">{{$store.state.messages.thirdBanner.nyancatSayB}}</span>
                     </div>
