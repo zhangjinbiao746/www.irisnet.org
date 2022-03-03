@@ -301,7 +301,7 @@
             if(this.$route.path.includes('kuafu')  ){
                 this.navigationData.header.right[0].active = true;
             }else if(this.$route.path.includes('/developers') || this.$route.path.includes('/developers/testnet')){
-                this.navigationData.header.left[3].active = true;
+                this.navigationData.header.left[2].active = true;
             }else if(this.$route.path.includes('/community')){
                 this.navigationData.header.left[2].active = true;
             }else if(this.$route.path === '/mainnet/'
