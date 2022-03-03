@@ -49,7 +49,6 @@
     }
     body{
         font-size:16px !important;
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
 
     #app{
