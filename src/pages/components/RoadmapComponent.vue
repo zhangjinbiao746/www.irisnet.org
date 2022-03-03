@@ -34,6 +34,7 @@
 
 <script>
 	import NavigationLine from "./NavigationLine";
+	
 	export default {
 		name: "RoadmapComponent",
 		components: {NavigationLine},
@@ -72,7 +73,7 @@
 				this.$refs['vs'].scrollTo({
 					x:'90%'
 				},500)
-			},200)
+			},500)
 		
 			this.onresize();
 			window.addEventListener('resize', this.onresize);
@@ -84,7 +85,7 @@
 				},500)
 				setTimeout(() => {
 					this.$store.commit('roadmap', this.$refs.roadmap.offsetTop - this.$store.state.headerHeight);
-				},200)
+				},500)
 			},
 			choiceCaption(index){
 				this.$store.commit('changeItemIsActive',index)

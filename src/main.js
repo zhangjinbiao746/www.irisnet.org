@@ -22,6 +22,7 @@ if (process.env.VUE_ENV === 'client') {
     Vue.component('swipe', Swipe);
     Vue.component('swipe-item', SwipeItem);
     Vue.component('vue-scroll', vuescroll);
+    console.log( Vue)
     Vue.prototype.$umeng = umeng;
     Vue.prototype.$Message = Message;
 }
@@ -115,7 +116,12 @@ export function createApp() {
 
     return {app, router, store}
 }
-
+app.config.errorHandler = (err, instance, info) => {
+    // report error to tracking services
+    console.log(err,'err')
+    console.log(instance,'instance')
+    console.log(info,'info')
+}
 
 
 //兼容火狐 多行显示省略号...
