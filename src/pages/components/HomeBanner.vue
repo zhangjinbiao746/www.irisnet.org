@@ -164,7 +164,6 @@ export default {
                     .say_top {
                         display: inline-block;
                         width: 90%;
-                        font-family: PangMenZhengDao;
                         text-align: center;
                     }
                     .say_bottom {
