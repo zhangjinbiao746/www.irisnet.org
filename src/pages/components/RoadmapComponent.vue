@@ -70,22 +70,26 @@
 				}
 			})
 			setTimeout(() => {
-				this.$refs['vs'].scrollTo({
-					x:'90%'
-				},500)
-			},500)
+				if(this.$refs['vs']){
+					this.$refs['vs'].scrollTo({
+						x:'90%'
+					},500)
+				}
+			},200)
 		
 			this.onresize();
 			window.addEventListener('resize', this.onresize);
 		},
 		methods:{
 			onresize(){
-				this.$refs['vs'].scrollTo({
-					x:'90%'
-				},500)
-				setTimeout(() => {
-					this.$store.commit('roadmap', this.$refs.roadmap.offsetTop - this.$store.state.headerHeight);
-				},500)
+				if(this.$refs['vs']){
+					this.$refs['vs'].scrollTo({
+						x:'90%'
+					},500)
+					setTimeout(() => {
+						this.$store.commit('roadmap', this.$refs.roadmap.offsetTop - this.$store.state.headerHeight);
+					},200)
+				}
 			},
 			choiceCaption(index){
 				this.$store.commit('changeItemIsActive',index)
