@@ -1,8 +1,7 @@
 <template>
     <div class="home_container">
 <!--        <HomeBanner></HomeBanner>-->
-		<home-banner></home-banner>
-        <!-- <swiper-component></swiper-component> -->
+		<banner-component></banner-component>
         <white-paper-component />
         <core-features-component />
         <upcoming-feature-component />
@@ -20,16 +19,15 @@
 	import AnnouncementsComponent from "./components/AnnouncementsComponent";
 	import CollaborationComponent from "./components/CollaborationComponent";
 	import RoadmapComponent from "./components/RoadmapComponent";
-	import SwiperComponent from "./components/SwiperComponent";
 	import JoinInterchainComponent from "./components/JoinInterchainComponent";
-	import HomeBanner from "./components/HomeBanner";
+	import BannerComponent from "./components/BannerComponent";
 	export default {
 		name: "home",
 		components: {
-			SwiperComponent,
+			BannerComponent,
 			RoadmapComponent,
 			CollaborationComponent,
-			AnnouncementsComponent,HomeBanner,JoinInterchainComponent, UpcomingFeatureComponent, CoreFeaturesComponent, WhitePaperComponent}
+			AnnouncementsComponent,JoinInterchainComponent, UpcomingFeatureComponent, CoreFeaturesComponent, WhitePaperComponent}
 	}
 </script>
 

@@ -62,6 +62,14 @@ export const message = {
   //   nyancatSayT: "? ? ? ?",
   //   nyancatSayB: "WHO AM I",
   // },
+  threeBanner:{
+    imgSrc: require('../../assets/third_en.png'),
+    description: 'NFT Hub to Connect “Permissionless” with “Permissioned”',
+    btnLabel: "CoinMarketCap",
+    btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
+    nyancatSayT: "? ? ? ?",
+    nyancatSayB: "WHO AM I",
+  },
   irishub: {
     title: "IRIS Hub 1.2",
     secondTitle:
