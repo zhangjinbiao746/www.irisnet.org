@@ -7,11 +7,11 @@ import {createStore} from './store'
 import VueI18n from 'vue-i18n'
 import 'babel-polyfill'
 import umeng  from "./umeng/umeng";
-require("vuescroll/dist/vuescroll.css")
 require('reveal.js/css/reveal.css');
 require('swiper/dist/css/swiper.css');
 require('element-ui/lib/theme-chalk/index.css')
 if (process.env.VUE_ENV === 'client') {
+    require("vuescroll/dist/vuescroll.css")
     require('./assets/icon/iconfont')
     const VueAwesomeSwiper = require('vue-awesome-swiper');
     const vuescroll = require('vuescroll')
@@ -116,12 +116,7 @@ export function createApp() {
 
     return {app, router, store}
 }
-/*app.config.errorHandler = (err, instance, info) => {
-    // report error to tracking services
-    console.log(err,'err')
-    console.log(instance,'instance')
-    console.log(info,'info')
-}*/
+
 
 
 //兼容火狐 多行显示省略号...
