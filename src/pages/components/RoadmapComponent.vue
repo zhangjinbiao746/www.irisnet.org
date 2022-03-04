@@ -4,7 +4,7 @@
 			<navigation-line/>
 			<h3 class="roadmap_title">{{$store.state.messages.home.sectionThree.title}}</h3>
 			<div class="roadmap_scroll_content">
-				<vue-scroll :ops="opsConfig" ref="vs">
+<!--				<vue-scroll :ops="opsConfig" ref="vs">-->
 					<ul class="roadmap_list_content">
 						<li class="roadmap_item"
 						    v-for="item in $store.state.messages.home.sectionThree.road"
@@ -25,7 +25,7 @@
 							<div class="roadmap_date_link"></div>
 						</li>
 					</ul>
-				</vue-scroll>
+<!--				</vue-scroll>-->
 			</div>
 			<div class="roadmap_content_container">{{coptionText}}</div>
 		</div>
@@ -131,7 +131,25 @@
 		.roadmap_scroll_content{
 			width: 100%;
 			height: 3.06rem;
+			overflow-x: auto;
 			/*overflow-y: hidden;*/
+			scrollbar-width: thin;
+			&::-webkit-scrollbar{
+				width: 0.8rem;
+				height: 0.08rem;
+			}
+			&::-webkit-scrollbar-track {
+				// -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+				border-radius:0.8rem;
+				background-color: #141E3D;
+			}
+			&::-webkit-scrollbar-thumb {
+				border-radius:0.8rem;
+				// -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+				background-color: #434F82;
+			}
+			
+		
 			.roadmap_list_content{
 				display: flex;
 				color: rgba(255,255,255,1);
