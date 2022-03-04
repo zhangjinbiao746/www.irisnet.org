@@ -57,6 +57,7 @@
 				.core_feature_title{
 					padding-top: 0.36rem;
 					font-size: 0.4rem;
+                    font-family: ArialMT;
 					font-weight: normal;
 					color: rgba(255,255,255,1);
 					line-height: 0.4rem;
@@ -98,6 +99,7 @@
 							}
 							.core_feature_right_content_title{
 								font-size: 0.32rem;
+                                font-family: ArialMT;
 								line-height: 0.32rem;
 								font-weight: normal;
 								color: rgba(255,255,255,1);
@@ -107,6 +109,7 @@
 							}
 							.core_feature_right_text{
 								margin-top: 0.12rem;
+                                font-family: ArialMT;
 								font-size: 0.2rem;
 								color: rgba(255,255,255,0.65);
 								line-height: 0.32rem;

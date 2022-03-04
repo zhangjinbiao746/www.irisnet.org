@@ -98,6 +98,7 @@
 			}
 			.announcement_title{
 				padding-top: 0.36rem;
+                font-family: ArialMT;
 				font-size: 0.4rem;
 				line-height: 0.4rem;
 				font-weight: normal;
@@ -151,6 +152,7 @@
 						}
 						.announcement_top_content_title{
 							display: inline-block;
+                            font-family: ArialMT;
 							font-size: 0.32rem;
 							line-height: 0.4rem;
 							color: rgba(255,255,255,1);
@@ -158,6 +160,7 @@
 						}
 						.announcement_top_text{
 							display: inline-block;
+                            font-family: ArialMT;
 							font-size: 0.2rem;
 							line-height: 0.4rem;
 							color: rgba(255,255,255,0.64);
@@ -169,6 +172,7 @@
 						.announcement_date{
 							margin-top: 0.43rem;
 							display: inline-block;
+                            font-family: ArialMT;
 							font-size: 0.16rem;
 							color: rgba(255,255,255,1);
 							font-weight: 400;
@@ -219,6 +223,7 @@
 							animation-fill-mode: forwards;
 						}
 						.announcement_title{
+                            font-family: ArialMT;
 							font-size: 0.24rem;
 							line-height: 0.32rem;
 							color: rgba(255,255,255,1);
@@ -237,6 +242,7 @@
 					.announcement_date_content{
 						margin-top: 0.24rem;
 						color: rgba(255,255,255,0.75);
+                        font-family: ArialMT;
 						font-size: 0.16rem;
 						font-weight: 400;
 					}
@@ -253,6 +259,7 @@
 					box-sizing: border-box;
 					padding: 0.14rem 0.4rem;
 					color: rgba(100, 141, 237, 1);
+                    font-family: ArialMT;
 				}
 			}
 		}

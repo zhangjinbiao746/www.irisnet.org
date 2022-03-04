@@ -4,7 +4,7 @@
 			<navigation-line/>
 			<h3 class="roadmap_title">{{$store.state.messages.home.sectionThree.title}}</h3>
 			<div class="roadmap_scroll_content">
-				<vue-scroll :ops="opsConfig" ref="vs">
+<!--				<vue-scroll :ops="opsConfig" ref="vs">-->
 					<ul class="roadmap_list_content">
 						<li class="roadmap_item"
 						    v-for="item in $store.state.messages.home.sectionThree.road"
@@ -25,7 +25,7 @@
 							<div class="roadmap_date_link"></div>
 						</li>
 					</ul>
-				</vue-scroll>
+<!--				</vue-scroll>-->
 			</div>
 			<div class="roadmap_content_container">{{coptionText}}</div>
 		</div>
@@ -34,6 +34,7 @@
 
 <script>
 	import NavigationLine from "./NavigationLine";
+	
 	export default {
 		name: "RoadmapComponent",
 		components: {NavigationLine},
@@ -69,9 +70,11 @@
 				}
 			})
 			setTimeout(() => {
-				this.$refs['vs'].scrollTo({
-					x:'90%'
-				},500)
+				if(this.$refs['vs']){
+					this.$refs['vs'].scrollTo({
+						x:'90%'
+					},500)
+				}
 			},200)
 		
 			this.onresize();
@@ -79,12 +82,14 @@
 		},
 		methods:{
 			onresize(){
-				this.$refs['vs'].scrollTo({
-					x:'90%'
-				},500)
-				setTimeout(() => {
-					this.$store.commit('roadmap', this.$refs.roadmap.offsetTop - this.$store.state.headerHeight);
-				},200)
+				if(this.$refs['vs']){
+					this.$refs['vs'].scrollTo({
+						x:'90%'
+					},500)
+					setTimeout(() => {
+						this.$store.commit('roadmap', this.$refs.roadmap.offsetTop - this.$store.state.headerHeight);
+					},200)
+				}
 			},
 			choiceCaption(index){
 				this.$store.commit('changeItemIsActive',index)
@@ -114,6 +119,7 @@
 			padding-bottom: 0.72rem;
 		}
 		.roadmap_title{
+            font-family: ArialMT;
 			font-size: 0.4rem;
 			line-height: 0.4rem;
 			font-weight: normal;
@@ -125,7 +131,25 @@
 		.roadmap_scroll_content{
 			width: 100%;
 			height: 3.06rem;
+			overflow-x: auto;
 			/*overflow-y: hidden;*/
+			scrollbar-width: thin;
+			&::-webkit-scrollbar{
+				width: 0.8rem;
+				height: 0.08rem;
+			}
+			&::-webkit-scrollbar-track {
+				// -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+				border-radius:0.8rem;
+				background-color: #141E3D;
+			}
+			&::-webkit-scrollbar-thumb {
+				border-radius:0.8rem;
+				// -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+				background-color: #434F82;
+			}
+			
+		
 			.roadmap_list_content{
 				display: flex;
 				color: rgba(255,255,255,1);
@@ -147,6 +171,7 @@
 								height:1.23rem;
 								text-align: center;
 								line-height: 1.23rem;
+                                font-family: ArialMT;
 								font-size: 0.24rem;
 								font-weight: normal;
 								cursor: pointer;
@@ -189,6 +214,7 @@
 							font-size: 0.2rem;
 							color: rgba(255,255,255,0.65);
 							line-height: 0.2rem;
+                            font-family: ArialMT;
 							font-weight: 400;
 							position: relative;
 							left: -0.33rem;
@@ -226,6 +252,7 @@
 								width: 2.07rem;
 								height:2.02rem;
 								line-height: 2.02rem;
+                                font-family: ArialMT;
 								font-size: 0.24rem;
 								font-weight: normal;
 							}
@@ -265,6 +292,7 @@
 			box-sizing: border-box;
 			padding: 0.4rem;
 			background: rgba(32, 34, 65, 1);
+            font-family: ArialMT;
 			font-size: 0.16rem;
 			line-height: 0.32rem;
 			@media(max-width: 596px){

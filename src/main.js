@@ -7,11 +7,11 @@ import {createStore} from './store'
 import VueI18n from 'vue-i18n'
 import 'babel-polyfill'
 import umeng  from "./umeng/umeng";
-require("vuescroll/dist/vuescroll.css")
 require('reveal.js/css/reveal.css');
 require('swiper/dist/css/swiper.css');
 require('element-ui/lib/theme-chalk/index.css')
 if (process.env.VUE_ENV === 'client') {
+    require("vuescroll/dist/vuescroll.css")
     require('./assets/icon/iconfont')
     const VueAwesomeSwiper = require('vue-awesome-swiper');
     const vuescroll = require('vuescroll')
@@ -22,6 +22,7 @@ if (process.env.VUE_ENV === 'client') {
     Vue.component('swipe', Swipe);
     Vue.component('swipe-item', SwipeItem);
     Vue.component('vue-scroll', vuescroll);
+    console.log( Vue)
     Vue.prototype.$umeng = umeng;
     Vue.prototype.$Message = Message;
 }
@@ -35,6 +36,7 @@ Vue.mixin({
         }
     },
     mounted () {
+      
         //根据用户浏览器语言偏好设置页面的中英文语言展示
         let langCNMessage = require('./assets/lang/cn').message,
             langENMessage = require('./assets/lang/en').message;

@@ -50,6 +50,14 @@ export const message = {
       padImage: require("../../assets/pages/banner/Techgrant_pad.png"),
     },
   ],
+  thirdBanner: {
+    img: require("../third_zh.png"),  
+    description: "链接异构公链和联盟链的跨链 NFT 枢纽",
+    btnLabel: "CoinMarketCap",
+    btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
+    nyancatSayT: "？？？？",
+    nyancatSayB: "我是谁",
+  },
   irishub: {
     title: "IRIS Hub 1.2",
     secondTitle: "支持新一代分布式商业应用的跨链服务枢纽",
@@ -680,6 +688,22 @@ export const message = {
           image: require("../../assets/pages/cosmWasm_logo.png"),
         },
       ],
+    },
+    joinchain:{
+      title: "加入跨链世界",
+      content: "加速推动 IRISnet 跨链生态发展",
+      list:[
+        { btn:"申请 Tech-Grants",
+        url:" https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md"
+
+      },
+      {
+        btn:"主网水龙头",
+        url:" https://stakely.io/faucet/irisnet-iris"
+
+      }
+          ]
+
     },
     collborations: {
       title: "合作方",

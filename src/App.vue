@@ -26,7 +26,7 @@
             }
         },
         mounted () {
-           /* const script = document.createElement('script');
+         /*   const script = document.createElement('script');
             script.src = `https://s95.cnzz.com/z_stat.php?id=1278157493&web_id=1278157493`;
             script.language = 'JavaScript';
             document.body.appendChild(script)*/
@@ -39,6 +39,7 @@
     }
 </script>
 <style lang="less">
+  
     html {
         font-size: 625% !important;
         -webkit-text-size-adjust: none;
