@@ -66,6 +66,7 @@ export default {
         }
         @media (max-width: 375px) {
             background: url("../../assets/join_chain_small.png") no-repeat center center;
+			background-size: cover;
         }
 
         // @media (max-width: 360px) {
