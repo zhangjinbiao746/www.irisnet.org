@@ -26,7 +26,7 @@
 
 <style scoped lang="less">
 	.upcoming_container{
-		background: rgba(13, 14, 44, 1);
+		background: rgba(21, 12, 54, 1);
 		.upcoming_wrap{
 			max-width: 12rem;
 			margin: 0 auto;

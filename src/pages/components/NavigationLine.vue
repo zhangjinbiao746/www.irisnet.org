@@ -14,7 +14,7 @@
 	.navigation_line{
 		width: 1rem;
 		height: 0.08rem;
-		background: rgba(46, 69, 211, 1);
+		background: rgba(111, 33, 193, 1);
 	}
 
 </style>

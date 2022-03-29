@@ -105,7 +105,9 @@
 
 <style scoped lang="less">
 .roadmap_container{
-	background: rgba(13, 14, 44, 1);
+    box-sizing: border-box;
+    padding-top: 1.6rem;
+	background: rgba(21, 12, 54, 1);
 	.roadmap_wrap{
 		max-width: 12rem;
 		margin: 0 auto;
@@ -141,12 +143,12 @@
 			&::-webkit-scrollbar-track {
 				// -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 				border-radius:0.8rem;
-				background-color: #141E3D;
+				background-color: rgba(28, 20, 61, 1);
 			}
 			&::-webkit-scrollbar-thumb {
 				border-radius:0.8rem;
 				// -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-				background-color: #434F82;
+				background-color: rgba(81, 67, 130, 1);
 			}
 			
 		
@@ -291,7 +293,7 @@
 			color: rgba(255,255,255,0.65);
 			box-sizing: border-box;
 			padding: 0.4rem;
-			background: rgba(32, 34, 65, 1);
+			background: rgba(31, 26, 69, 1);
             font-family: ArialMT;
 			font-size: 0.16rem;
 			line-height: 0.32rem;

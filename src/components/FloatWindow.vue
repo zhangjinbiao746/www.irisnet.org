@@ -59,7 +59,7 @@ export default {
       display: inline-block;
       width: 0.5rem;
       height: 0.5rem;
-      background: rgba(49, 65, 201, 1);
+      background: rgba(111, 33, 193, 1);
       text-align: center;
       border-radius: 0.25rem;
       margin-top: 0.2rem;
@@ -110,7 +110,7 @@ export default {
     height: 0.5rem;
     border-radius: 0.45rem;
     margin-top: 0.2rem;
-    background: rgba(49, 65, 201, 1);
+    background: rgba(111, 33, 193, 1);
     box-shadow: 0 0.02rem 0.2rem 0 rgba(3, 0, 35, 0.25);
     &:hover {
       background: linear-gradient(147deg, #5f76e6 0%, #3141c9 100%);

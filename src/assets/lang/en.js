@@ -56,16 +56,15 @@ export const message = {
   ],
   thirdBanner: {
     img: require("../third_en.png"),  
-    description: "NFT Hub to Connect “Permissionless” with “Permissioned”",
+    descriptionF: "Enjoy Your Upgraded Interchain NFT",
+    descriptionT: "Tour with Evolved Nyan Cat Guide",
     btnLabel: "CoinMarketCap",
     btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
-    nyancatSayT: "? ? ? ?",
-    nyancatSayB: "WHO AM I",
   },
   irishub: {
-    title: "IRIS Hub 1.2",
+    title: "IRIS Hub 1.3",
     secondTitle:
-      "Interchain Service Hub for NewGen Distributed Business Applications",
+      "Interchain NFT Hub to Connect “Permissionless” and “Permissioned”",
     description: "– A BPoS Blockchain That Is Self-evolutionary",
     btn: {
       prepare: "Rainbow Wallet",
@@ -170,7 +169,7 @@ export const message = {
     newFunction: {
       title: "New Features",
       description:
-        "IRIS Hub 1.0 with IBC and innovative functions like cross-chain AMM protocol starts the KUAFU stage.",
+        "IRIS Hub 1.3 with enhanced cross-chain interoperability and NFT capabilty enables more interchain NFT features.",
     },
     iService: {
       title: "Terse Inter-Blockchain Communication (TIBC)",
@@ -665,19 +664,19 @@ export const message = {
         {
           id: 0,
           msg: "Incorporation of a service-oriented infrastructure into Cosmos",
-          iconName: "icon-jichusheshi",
+          imgName: require("../white_paper_first_icon.png"),
         },
         {
           id: 1,
           msg:
             "Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems",
-          iconName: "icon-shangyefuwu",
+            imgName: require("../white_paper_second_icon.png"),
         },
         {
           id: 2,
           msg:
             "Interoperability of those services across an internet of blockchains",
-          iconName: "icon-hulianhutong",
+          imgName: require("../white_paper_last_icon.png"),
         },
       ],
       buttonMsg: "White Paper",
