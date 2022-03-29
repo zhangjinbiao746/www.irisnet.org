@@ -39,11 +39,7 @@ export default {
 
 <style scoped lang="less">
 .join_chain_container {
-    background: rgba(13, 14, 44, 1);
-    // height: 6.67rem;
-
-    // padding-bottom: 1rem;
-
+    background: rgba(21, 12, 54, 1);
     .join_chain_wrap {
         height: 100%;
         background: url("../../assets/join_chain.png") no-repeat center center;
@@ -127,16 +123,22 @@ export default {
                 box-sizing: border-box;
                 width: 2.4rem;
                 height: 0.56rem;
-                // display: inline-block;
-                background: rgba(46, 69, 211, 1);
                 color: rgba(255, 255, 255, 1);
-                // padding: 0.14rem 0.08rem;
                 text-align: center;
                 border-radius: 0.04rem;
                 font-family: ArialMT;
                 font-size: 0.2rem;
                 margin-right: 0.16rem;
                 margin-left: 0.16rem;
+                &:first-child {
+                    background: rgba(111, 33, 193, 1);
+                }
+                &:last-child {
+                    border: 0.02rem solid rgba(155, 100, 237, 1);
+                    .join_btn {
+                        color: rgba(155, 100, 237, 1);
+                    }
+                }
 
                 // @media (max-width: 1100px) {
                 //     justify-content: center;

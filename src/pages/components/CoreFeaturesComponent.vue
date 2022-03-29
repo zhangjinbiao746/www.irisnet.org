@@ -30,21 +30,25 @@
 
 <style scoped lang="less">
 	.core_feature_container{
-		width: 100%;
-		background: rgba(13, 14, 44, 1);
+        width: 100%;
+        background: url("../../assets/pages/core_left.png") no-repeat left -0.7rem bottom 0.5rem,url("../../assets/pages/core_right.png") no-repeat right -3rem  top -1.5rem;
+        background-size: 7.43rem 7.43rem, 12.1rem 13.12rem;
+		background-color: rgba(21, 12, 54, 1);
+        @media(max-width: 1600px){
+            background: url("../../assets/pages/core_left.png") no-repeat left -0.7rem bottom 0.5rem,url("../../assets/pages/core_right.png") no-repeat right -3rem  top -1.5rem;
+            background-size: 7.43rem 7.43rem, 11.5rem 12.8rem;
+		    background-color: rgba(21, 12, 54, 1);
+        }
+        @media(max-width: 1400px){
+            background:url("../../assets/pages/core_right.png") no-repeat right -3rem  top -1.5rem;
+            background-size:10rem 11.6rem;
+            background-color: rgba(21, 12, 54, 1);
+        }
 		.core_feature_wrap{
-			max-width: 19.2rem;
+            box-sizing: border-box;
 			margin: 0 auto;
-			background: url("../../assets/pages/core_left.png") no-repeat left -1rem bottom -1rem,url("../../assets/pages/core_right.png") no-repeat right -1rem  top -1.5rem;
-			background-size: 7.43rem 7.43rem, 12.1rem 13.12rem;
-			@media(max-width: 1600px){
-				background: url("../../assets/pages/core_left.png") no-repeat left -1rem bottom -1rem,url("../../assets/pages/core_right.png") no-repeat right -1rem  top -1.5rem;
-				background-size: 7.43rem 7.43rem, 11.5rem 12.8rem;
-			}
-			@media(max-width: 1400px){
-				background:url("../../assets/pages/core_right.png") no-repeat right -1.5rem  top -1rem;
-				background-size:10rem 11.6rem;
-			}
+            padding-top: 1rem;
+			max-width: 12rem;
 			.core_feature_content{
 				margin: 0 auto;
 				max-width: 12rem;
@@ -83,7 +87,7 @@
 						display: flex;
 						.core_feature_left_block{
 							width: 0.16rem;
-							background: rgba(44, 41, 113, 1);
+							background: rgba(92, 74, 188, 0.5);
 							@media(max-width: 1200px){
 								width: 0.14rem;
 							}
@@ -91,7 +95,7 @@
 						.core_feature_right_content{
 							max-width: 7.36rem;
 							flex: 1;
-							background: linear-gradient(270deg, #1E225C 0%, #161839 100%);
+							background: linear-gradient(270deg, rgba(125, 76, 255, 0.2) 0%, rgba(30, 21, 64, 1) 100%);
 							box-sizing: border-box;
 							padding: 0.26rem 0.36rem;
 							@media(max-width: 596px){

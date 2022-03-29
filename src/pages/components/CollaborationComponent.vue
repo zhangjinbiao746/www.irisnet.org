@@ -44,7 +44,7 @@
 
 <style scoped lang="less">
 .collaboration_container{
-	background: rgba(13, 14, 44, 1);
+	background: rgba(21, 12, 54, 1);
 	.collboration_wrap{
 		margin: 0 auto;
 		max-width: 12rem;
