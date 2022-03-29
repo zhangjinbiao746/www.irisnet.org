@@ -55,7 +55,9 @@ export const message = {
     },
   ],
   thirdBanner: {
-    img: require("../third_en.png"),  
+    img: require("../third_en.png"),
+    img1000: require("../third_en_1000.png"),
+    img320: require("../third_zh_320.png"),
     descriptionF: "Enjoy Your Upgraded Interchain NFT",
     descriptionT: "Tour with Evolved Nyan Cat Guide",
     btnLabel: "CoinMarketCap",

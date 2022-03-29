@@ -51,7 +51,9 @@ export const message = {
     },
   ],
   thirdBanner: {
-    img: require("../third_zh.png"),  
+    img: require("../third_zh.png"),
+    img1000: require("../third_zh_1000.png"),
+    img320: require("../third_zh_320.png"),
     descriptionF: "Nyan Cat 全新进化",
     descriptionT: "带你探索跨链 NFT 新世界",
     btnLabel: "CoinMarketCap",

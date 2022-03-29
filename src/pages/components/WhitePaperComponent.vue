@@ -47,9 +47,6 @@
         box-sizing: border-box;
         padding-top: 0.8rem;
 		background: rgba(21, 12, 54, 1);
-        @media (max-width: 1000px) {
-            padding-top: 0;
-        }
 		.white_paper_wrap{
 			max-width: 12rem;
 			margin: 0 auto;
