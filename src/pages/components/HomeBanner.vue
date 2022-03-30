@@ -48,7 +48,7 @@ export default {
     .home_banner_wrap {
         margin: 0 auto;
         max-width: 19.2rem;
-        height: 10.8rem;
+        height: 9rem;
         background: url(../../assets/third_banner.png) no-repeat center / cover;
         @media(max-width: 1000px) {
             height: 9.24rem;
@@ -65,10 +65,13 @@ export default {
         }
         .home_banner_content {
             box-sizing: border-box;
-            padding: 2.18rem 0 2.6rem 0;
+            padding: 1.8rem 0 2.6rem 0.8rem;
             margin: 0 auto;
             max-width: 12rem;
             height: 100%;
+            @media(max-width: 1150px) {
+                padding: 1.8rem 0 2.6rem 0.3rem;
+            }
             @media(max-width: 1000px) {
                 padding: 1.38rem 0 0 0.8rem;
             }
@@ -107,7 +110,7 @@ export default {
             }
             .home_banner {
                 position: relative;
-                height: 6.02rem;
+                height: 5.02rem;
                 @media(max-width: 1000px) {
                     height: 7.27rem;
                 }
@@ -125,8 +128,8 @@ export default {
                 }
                 .description {
                     position: absolute;
-                    top: 3.66rem;
-                    left: 0.8rem;
+                    top: 3.06rem;
+                    left: 0.65rem;
                     @media(max-width: 1000px) {
                         left: 2.42rem;
                     }
@@ -144,13 +147,13 @@ export default {
                     }
                     .text {
                         box-sizing: border-box;
-                        margin-top: 0.21rem;
+                        margin-top: 0.16rem;
                         padding: 0 0.22rem;
-                        width: 5.05rem;
-                        font-size: 0.28rem;
+                        width: 4.22rem;
+                        font-size: 0.22rem;
                         font-weight: 400;
                         color: #FFFFFF;
-                        line-height: 0.48rem;
+                        line-height: 0.4rem;
                         background: rgba(76, 37, 154, 1);
                         @media (max-width: 1000px) {
                             margin-top: 0.13rem;
@@ -186,8 +189,8 @@ export default {
                     box-sizing: border-box;
                     padding: 0.53rem 0.66rem 0.77rem 0.66rem;
                     position: absolute;
-                    top: 4.93rem;
-                    left: 3.32rem;
+                    top: 4.03rem;
+                    left: 2.72rem;
                     width: 3.68rem;
                     height: 1.78rem;
                     font-size: 0.32rem;
