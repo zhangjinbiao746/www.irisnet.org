@@ -83,7 +83,7 @@
 
 <style scoped lang="less">
 	.announcement_container{
-		background: rgba(13, 14, 44, 1);
+		background: rgba(21, 12, 54, 1);
 		.announcement_wrap{
 			max-width: 12rem;
 			margin: 0 auto;
@@ -235,7 +235,7 @@
 								line-height: 0.32rem;
 							}
 							&:hover{
-								color: rgba(100, 141, 237, 1);
+								color: rgba(155, 100, 237, 1);
 							}
 						}
 					}
@@ -255,10 +255,10 @@
 					margin-top: 0.35rem;
 					display: inline-block;
 					border-radius: 0.04rem;
-					border: 0.01rem solid rgba(100, 141, 237, 1);
+					border: 0.02rem solid rgba(155, 100, 237, 1);
 					box-sizing: border-box;
 					padding: 0.14rem 0.4rem;
-					color: rgba(100, 141, 237, 1);
+					color: rgba(155, 100, 237, 1);
                     font-family: ArialMT;
 				}
 			}

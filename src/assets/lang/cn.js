@@ -51,16 +51,17 @@ export const message = {
     },
   ],
   thirdBanner: {
-    img: require("../third_zh.png"),  
-    description: "链接异构公链和联盟链的跨链 NFT 枢纽",
+    img: require("../third_zh.png"),
+    img1000: require("../third_zh_1000.png"),
+    img320: require("../third_zh_320.png"),
+    descriptionF: "Nyan Cat 全新进化",
+    descriptionT: "带你探索跨链 NFT 新世界",
     btnLabel: "CoinMarketCap",
     btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
-    nyancatSayT: "？？？？",
-    nyancatSayB: "我是谁",
   },
   irishub: {
-    title: "IRIS Hub 1.2",
-    secondTitle: "支持新一代分布式商业应用的跨链服务枢纽",
+    title: "IRIS Hub 1.3",
+    secondTitle: "链接异构系统的跨链 NFT 枢纽",
     description: "——自进化的 BPoS 区块链",
     btn: {
       prepare: "Rainbow 应用",
@@ -159,7 +160,7 @@ export const message = {
     newFunction: {
       title: "全新功能",
       description:
-        "启用 IBC 并支持跨链 AMM 协议等多项独特功能的全新主网开启了「夸父」阶段",
+        "增强跨链互操作和 NFT 能力的 IRIS Hub 1.3 启用更多跨链 NFT 创新功能",
     },
     iService: {
       title: "精简跨链通信协议 TIBC",
@@ -635,17 +636,17 @@ export const message = {
         {
           id: 0,
           msg: "将面向服务的基础设施融入到 Cosmos 网络中",
-          iconName: "icon-jichusheshi",
+          imgName: require("../white_paper_first_icon.png"),
         },
         {
           id: 1,
           msg: "整合由异构系统提供的商业服务，包括公共链、联盟链以及现有系统",
-          iconName: "icon-shangyefuwu",
+          imgName: require("../white_paper_second_icon.png"),
         },
         {
           id: 2,
           msg: "通过区块链互联网实现服务的互联互通",
-          iconName: "icon-hulianhutong",
+          imgName: require("../white_paper_last_icon.png"),
         },
       ],
       buttonMsg: "白皮书",

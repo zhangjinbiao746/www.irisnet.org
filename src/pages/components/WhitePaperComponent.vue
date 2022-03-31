@@ -8,7 +8,7 @@
 				     v-for="item in $store.state.messages.home.KeyInnovations.list"
 				     :key="item.id">
 					<div class="white_paper_item_image">
-						<span class="white_paper_item_icon" :class="`iconfont ${item.iconName}`"></span>
+                        <img class="white_paper_item_icon" :src="item.imgName" alt="">
 					</div>
 					<div class="white_paper_item_content">{{item.msg}}</div>
 				</div>
@@ -46,10 +46,7 @@
 	.white_paper_container{
         box-sizing: border-box;
         padding-top: 0.8rem;
-		background: rgba(13, 14, 44, 1);
-        @media (max-width: 1000px) {
-            padding-top: 0;
-        }
+		background: rgba(21, 12, 54, 1);
 		.white_paper_wrap{
 			max-width: 12rem;
 			margin: 0 auto;
@@ -93,7 +90,8 @@
 				.white_paper_item{
 					box-sizing: border-box;
 					padding: 0.64rem 0.3rem 0.36rem 0.3rem;
-					background: linear-gradient(358deg,rgba(76,88,255,0.15) 0%,#161839 100%);
+					background: url("../../assets/white_paper.png") no-repeat center / cover;
+                    border: 0.03rem solid rgba(111, 33, 193, 0.2);
 					border-radius: 0.04rem;
 					@media(max-width: 1000px){
 						width: 5rem;
@@ -102,26 +100,27 @@
 						width: 100%;
 					}
 					.white_paper_item_image{
-						text-align: center;
+                        margin: 0 auto;
+                        width: 1.5rem;
+                        height: 1.5rem;
 						.white_paper_item_icon{
-							font-size: 1.18rem;
-							color: rgba(255,255,255,1);
+                            width: 100%;
 						}
 					
 					}
 					.white_paper_item_content{
-						margin-top: 0.44rem;
+						margin-top: 0.4rem;
 						font-size: 0.2rem;
                         font-family: ArialMT;
 						line-height: 0.32rem;
-						color: rgba(255,255,255,0.74);
+						color: rgba(255,255,255, 0.74);
 					}
 				}
 				.white_paper_item:first-child{
-					background: linear-gradient(19deg,rgba(76,88,255,0.15) 0%,#161839 100%);
+					background: url("../../assets/white_paper_first.png") no-repeat center / cover;
 				}
 				.white_paper_item:last-child{
-					background: linear-gradient(19deg,rgba(76,88,255,0.15) 0%,#161839 100%);
+					background: url("../../assets/white_paper_last.png") no-repeat center / cover;
 				}
 			}
 			.white_paper_button_container{
@@ -129,11 +128,11 @@
 				.white_paper_button{
 					color: rgba(255,255,255,1);
 					display: inline-block;
-					margin: 0.6rem auto 1.68rem auto;
+					margin: 0.6rem auto;
 					border-radius: 0.04rem;
 					padding: 0.1rem 0.31rem;
                     font-family: ArialMT;
-					background: rgba(46, 69, 211, 1);
+					background: rgba(111, 33, 193, 1);
 					@media(max-width: 1000px){
 						margin: 0.36rem auto 1rem auto;
 					}
