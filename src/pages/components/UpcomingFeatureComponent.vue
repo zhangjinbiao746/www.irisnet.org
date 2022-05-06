@@ -43,8 +43,9 @@
 				font-size: 0.4rem;
 				color: rgba(255,255,255,1);
 				line-height: 0.4rem;
-				@media(max-width: 596px){
+				@media(max-width: 768px){
 					margin-top: 0.24rem;
+                    font-size: 0.32rem;
 				}
 			}
 			.upcoming_list_content{
