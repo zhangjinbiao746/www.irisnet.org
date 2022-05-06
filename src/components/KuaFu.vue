@@ -311,7 +311,7 @@
                             font-family: ArialMT;
 							font-size: 0.4rem;
 							color: #fff;
-							font-weight: 600;
+							font-weight: normal;
 							margin-top: 0.36rem;
 						}
 						.new_function_sub_title_content{
@@ -550,7 +550,7 @@
 					font-size: 0.4rem;
 					margin-top: 0.36rem;
 					color: rgba(255,255,255,1);
-					font-weight: 600;
+					font-weight: normal;
 				}
 				.application_list_show_content{
 					display: grid;
@@ -614,10 +614,15 @@
 				margin: 0 auto;
 				.community_resources_title{
                     font-family: ArialMT;
-					font-size: 0.32rem;
+					font-size: 0.4rem;
+                    font-weight: normal;
 					color: rgba(255,255,255,1);
 					line-height: 0.37rem;
-					padding: 0.44rem 0 0.48rem 0;
+					padding: 0.36rem 0 0.48rem 0;
+                    @media(max-width: 768px) {
+                        padding: 0.24rem 0 0.48rem 0;
+                        font-size: 0.32rem;
+                    }
 				}
 				.community_resources_list_content{
 					display: flex;
@@ -675,9 +680,12 @@
 									margin-top: 0.36rem;
 								}
 								.community_item_top_content{
-									margin-right: 0.6rem;
+									margin-right: 0.28rem;
 									padding-bottom: 0.28rem;
 									display: flex;
+                                    @media(max-width: 1050px) {
+                                        margin-right: 0.4rem;
+                                    }
 									.content_title{
 										font-size: 0.24rem;
 										line-height: 0.32rem;
@@ -850,6 +858,7 @@
 					.new_function_content_wrap{
 						.new_function_header_content{
 							.new_function_title_content{
+                                margin-top: 0.24rem;
 								font-size: 0.32rem;
 							}
 							.new_function_sub_title_content{
@@ -910,6 +919,7 @@
 					padding-top: 0.36rem;
 					.application_show_content_title{
 						margin-top: 0.24rem;
+                        font-size: 0.32rem;
 					}
 					.application_list_show_content{
 						padding: 0.24rem 0;

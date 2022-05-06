@@ -64,8 +64,9 @@
 			color: rgba(255,255,255,1);
 			font-weight: normal;
 			padding-top: 0.36rem;
-			@media(max-width: 596px){
+			@media(max-width: 768px){
 				padding-top: 0.24rem;
+                font-size: 0.32rem;
 			}
 		}
 		.collboration_container{

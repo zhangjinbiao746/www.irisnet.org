@@ -128,7 +128,10 @@
 			padding-top: 0.36rem;
 			color: rgba(255,255,255,1);
 			margin-bottom: 0.48rem;
-			
+			@media(max-width: 768px) {
+                padding-top: 0.24rem;
+                font-size: 0.32rem;
+            }
 		}
 		.roadmap_scroll_content{
 			width: 100%;
