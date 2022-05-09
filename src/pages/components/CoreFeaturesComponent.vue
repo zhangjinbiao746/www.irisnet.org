@@ -65,8 +65,9 @@
 					font-weight: normal;
 					color: rgba(255,255,255,1);
 					line-height: 0.4rem;
-					@media(max-width: 596px){
+					@media(max-width: 768px){
 						padding-top: 0.24rem;
+                        font-size: 0.32rem;
 					}
 				}
 				.core_feature_list{

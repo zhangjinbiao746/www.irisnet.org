@@ -114,7 +114,7 @@
 						<div class="community_resource_item_content">
 							<div class="community_item_top_container" v-if="item.resourceList">
 								<div class="community_item_top_content" v-for="value in item.resourceList">
-									<a :href="value.href" :target="value.href === 'javascript:void(0);' ? '' : '_blank'"><span>{{value.itemName}}</span></a> <span class="os_content">{{value.os}}</span>
+									<a :href="value.href" :target="value.href === 'javascript:void(0);' ? '' : '_blank'"><span>{{value.itemName}}</span></a> <span class="os_content"><i class="iconfont" v-for="os in value.osList" :class="os"></i></span>
 								</div>
 							</div>
 							<div class="community_item_bottom_content" :class="item.href !=='javascript:void(0);' ? 'hover_style' : ''"><a :href="item.href" :target="item.href === 'javascript:void(0);' ? '' : '_blank'">{{item.content}}</a></div>
@@ -311,7 +311,7 @@
                             font-family: ArialMT;
 							font-size: 0.4rem;
 							color: #fff;
-							font-weight: 600;
+							font-weight: normal;
 							margin-top: 0.36rem;
 						}
 						.new_function_sub_title_content{
@@ -550,7 +550,7 @@
 					font-size: 0.4rem;
 					margin-top: 0.36rem;
 					color: rgba(255,255,255,1);
-					font-weight: 600;
+					font-weight: normal;
 				}
 				.application_list_show_content{
 					display: grid;
@@ -614,10 +614,15 @@
 				margin: 0 auto;
 				.community_resources_title{
                     font-family: ArialMT;
-					font-size: 0.32rem;
+					font-size: 0.4rem;
+                    font-weight: normal;
 					color: rgba(255,255,255,1);
 					line-height: 0.37rem;
-					padding: 0.44rem 0 0.48rem 0;
+					padding: 0.36rem 0 0.48rem 0;
+                    @media(max-width: 768px) {
+                        padding: 0.24rem 0 0.48rem 0;
+                        font-size: 0.32rem;
+                    }
 				}
 				.community_resources_list_content{
 					display: flex;
@@ -626,6 +631,42 @@
 					.community_list_item_content{
 						display: flex;
 						margin-bottom: 0.85rem;
+                        &:nth-of-type(1) {
+                            .community_resource_item_content {
+                                .community_item_top_container {
+                                    grid-template-columns: repeat(3, 1fr);
+                                    @media(max-width: 880px) {
+                                        grid-template-columns: repeat(2, 1fr);
+                                    }
+                                    @media(max-width: 620px) {
+                                        grid-template-columns: repeat(1, 1fr);
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-of-type(5) {
+                            .community_resource_item_content {
+                                .community_item_top_container {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    @media(max-width: 440px) {
+                                        flex-direction: column;
+                                    }
+                                    .community_item_top_content {
+                                        margin-right: 0.8rem;
+                                        @media(max-width: 840px) {
+                                            margin-right: 0.48rem;
+                                        }
+                                        @media(max-width: 730px) {
+                                            margin-right: 0.24rem;
+                                        }
+                                        @media(max-width: 640px) {
+                                            margin-right: 0.6rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
 						@media(max-width: 1200px){
 							flex-direction: column;
 						}
@@ -667,15 +708,23 @@
 						.community_resource_item_content{
 							flex: 1;
 							.community_item_top_container{
-								display: flex;
+                                display: grid;
+                                grid-template-columns: repeat(5, 1fr);
 								width: 100%;
 								border-bottom: 0.01rem solid rgba(255,255,255,0.29);
-								flex-wrap: wrap;
 								@media(max-width: 1200px){
-									margin-top: 0.36rem;
+                                    margin-top: 0.36rem;
 								}
+                                @media(max-width: 930px) {
+                                    grid-template-columns: repeat(3, 1fr);
+                                }
+                                @media(max-width: 630px) {
+                                    grid-template-columns: repeat(2, 1fr);
+                                }
+                                @media(max-width: 375px) {
+                                    grid-template-columns: repeat(1, 1fr);
+                                }
 								.community_item_top_content{
-									margin-right: 0.6rem;
 									padding-bottom: 0.28rem;
 									display: flex;
 									.content_title{
@@ -702,11 +751,17 @@
 									.os_content{
 										white-space: nowrap;
 										display: inline-block;
-										padding-left: 0.1rem;
-                                        font-family: ArialMT;
-										font-size: 0.24rem;
+										padding-left: 0.15rem;
 										line-height: 0.32rem;
-										color: rgba(255,255,255,0.64);
+                                        .iconfont {
+                                            margin-left: 0.12rem;
+                                            font-family: ArialMT;
+                                            font-size: 0.24rem;
+                                            color: rgba(255,255,255,0.35);
+                                            &:first-child {
+                                                margin-left: 0;
+                                            }
+                                        }
 									}
 								}
 							}
@@ -850,6 +905,7 @@
 					.new_function_content_wrap{
 						.new_function_header_content{
 							.new_function_title_content{
+                                margin-top: 0.24rem;
 								font-size: 0.32rem;
 							}
 							.new_function_sub_title_content{
@@ -910,6 +966,7 @@
 					padding-top: 0.36rem;
 					.application_show_content_title{
 						margin-top: 0.24rem;
+                        font-size: 0.32rem;
 					}
 					.application_list_show_content{
 						padding: 0.24rem 0;

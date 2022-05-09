@@ -1485,44 +1485,85 @@ export const message = {
           href: "javascript:void(0);",
           resourceList: [
             {
-              itemName: "Rainbow",
-              os: "(Android, iOS)",
-              href: "https://www.rainbow.one",
+                itemName: "Rainbow",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS"
+                ],
+                href: "https://www.rainbow.one/",
             },
             {
-              itemName: "Math Wallet",
-              os: "(Android, iOS)",
-              href: "http://www.mathwallet.org/en/",
+                itemName: "Keplr",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                    "icon-PC"
+                ],
+                href: "https://www.keplr.app/",
             },
             {
-              itemName: "Wetez",
-              os: "(Android, iOS)",
-              href: "https://www.wetez.io/pc/homepage",
+                itemName: "Math Wallet",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                    "icon-PC"
+                ],
+                href: "https://mathwallet.org/zh-cn/",
             },
             {
-              itemName: "Cosmostation",
-              os: "(Android, iOS)",
-              href: "https://www.cosmostation.io/",
+                itemName: "Wetez",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                ],
+                href: "https://www.wetez.io/wallet",
             },
             {
-              itemName: " SyncNode",
-              os: "(iOS)",
-              href: "https://wallet.syncnode.ro/",
+                itemName: "Cosmostation",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                ],
+                href: "https://www.cosmostation.io/wallet/",
             },
             {
-              itemName: "ViaWallet",
-              os: "(Android, iOS)",
-              href: "https://viawallet.com/",
+                itemName: "ViaWallet",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                ],
+                href: "https://viawallet.com/",
             },
             {
-              itemName: "LoyToken",
-              os: "(Android, iOS)",
-              href: "http://www.loytoken.com/",
+                itemName: "LoyToken",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                ],
+                href: "http://www.loytoken.com/web.html",
             },
             {
-              itemName: "Keplr",
-              os: "(Web)",
-              href: "https://keplr.app/",
+                itemName: "HashKey Hub",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                ],
+                href: "https://hub.hashkey.com/",
+            },
+            {
+                itemName: "Moonstake",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                ],
+                href: "https://moonstake.io/wallets/",
+            },
+            {
+                itemName: "SyncNode",
+                osList: [
+                    "icon-iOS",
+                ],
+                href: "https://wallet.syncnode.ro/",
             },
           ],
           content:
@@ -1534,28 +1575,52 @@ export const message = {
           href: "javascript:void(0);",
           resourceList: [
             {
-              itemName: "HashKey Hub",
-              href: "https://hub.hashkey.com/#/",
+                itemName: "Keplr",
+                href: "https://wallet.keplr.app/#/dashboard",
             },
             {
-              itemName: "Math Wallet",
-              href: "https://mathwallet.net/web/irisnet",
+                itemName: "Math Wallet",
+                href: "https://mathwallet.org/web/irisnet",
             },
             {
-              itemName: "01node.com",
-              href: "https://iris-delegator.01node.com",
+                itemName: "Cosmostation",
+                href: "https://wallet.cosmostation.io/iris",
             },
             {
-              itemName: "Cosmostation",
-              href: "https://wallet.cosmostation.io/?network=iris",
+                itemName: "Citadel.one",
+                href: "https://app.citadel.one/login",
             },
             {
-              itemName: "Dokia",
-              href: "https://staking.dokia.cloud/",
+                itemName: "Union Market",
+                href: "https://union.market/token/irisnet",
             },
             {
-              itemName: "Union Market",
-              href: "https://union.market/token/irisnet",
+                itemName: "Ping.Pub",
+                href: "https://ping.pub/iris-network/staking",
+            },
+            {
+                itemName: "Skynet",
+                href: "https://skynetexplorers.com/iris-network/staking",
+            },
+            {
+                itemName: "Moonstake",
+                href: "https://wallet.moonstake.io/",
+            },
+            {
+                itemName: "01node",
+                href: "https://01node.com/iris-network/",
+            },
+            {
+                itemName: "Dokia",
+                href: "https://staking.dokia.cloud/",
+            },
+            {
+                itemName: "Allnode",
+                href: "https://www.allnodes.com/iris/stake",
+            },
+            {
+                itemName: "Stakewolle",
+                href: "https://stakewolle.com/",
             },
           ],
           content:
@@ -1568,23 +1633,23 @@ export const message = {
           resourceList: [
             {
               itemName: "IOBScan",
-              href: "https://irishub.iobscan.io/#/staking",
+              href: "https://irishub.iobscan.io/#/home",
             },
             {
               itemName: "Mintscan",
-              href: "https://irishub.mintscan.io/",
+              href: "https://www.mintscan.io/iris",
             },
             {
-              itemName: "Big-Dipper",
-              href: "https://iris.bigdipper.live/",
+              itemName: "Ping.Pub",
+              href: "https://ping.pub/iris-network",
             },
             {
-              itemName: "Hubble",
-              href: "https://hubble.figment.network/iris/chains/irishub",
+              itemName: "Skynet",
+              href: "https://skynetexplorers.com/iris-network",
             },
             {
-              itemName: "LOOK",
-              href: "https://iris.ping.pub/#/validator",
+              itemName: "ATOMScan",
+              href: "https://atomscan.com/iris-network",
             },
           ],
           content:
