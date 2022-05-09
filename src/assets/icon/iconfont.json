@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "29549531",
+      "name": "PC",
+      "font_class": "PC",
+      "unicode": "e778",
+      "unicode_decimal": 59256
+    },
+    {
+      "icon_id": "29549529",
+      "name": "iOS",
+      "font_class": "iOS",
+      "unicode": "e777",
+      "unicode_decimal": 59255
+    },
+    {
+      "icon_id": "29549528",
+      "name": "安卓",
+      "font_class": "anzhuo",
+      "unicode": "e776",
+      "unicode_decimal": 59254
+    },
+    {
       "icon_id": "19994257",
       "name": "互联互通",
       "font_class": "hulianhutong",
