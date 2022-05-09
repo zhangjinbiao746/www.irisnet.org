@@ -1439,52 +1439,83 @@ export const message = {
           resourceList: [
             {
                 itemName: "Rainbow",
-                os: "(Android, iOS)",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS"
+                ],
                 href: "https://www.rainbow.one/",
             },
             {
                 itemName: "Keplr",
-                os: "(Web)",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                    "icon-PC"
+                ],
                 href: "https://www.keplr.app/",
             },
             {
                 itemName: "Math Wallet",
-                os: "(Web)",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                    "icon-PC"
+                ],
                 href: "https://mathwallet.org/zh-cn/",
             },
             {
                 itemName: "Wetez",
-                os: "(Android, iOS)",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                ],
                 href: "https://www.wetez.io/wallet",
             },
             {
                 itemName: "Cosmostation",
-                os: "(Android, iOS)",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                ],
                 href: "https://www.cosmostation.io/wallet/",
             },
             {
                 itemName: "ViaWallet",
-                os: "(Android, iOS)",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                ],
                 href: "https://viawallet.com/",
             },
             {
                 itemName: "LoyToken",
-                os: "(Android, iOS)",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                ],
                 href: "http://www.loytoken.com/web.html",
             },
             {
                 itemName: "HashKey Hub",
-                os: "(Android, iOS)",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                ],
                 href: "https://hub.hashkey.com/",
             },
             {
                 itemName: "Moonstake",
-                os: "(Android, iOS)",
+                osList: [
+                    "icon-anzhuo",
+                    "icon-iOS",
+                ],
                 href: "https://moonstake.io/wallets/",
             },
             {
                 itemName: "SyncNode",
-                os: "(iOS)",
+                osList: [
+                    "icon-iOS",
+                ],
                 href: "https://wallet.syncnode.ro/",
             },
           ],
@@ -1530,15 +1561,11 @@ export const message = {
             },
             {
                 itemName: "01node",
-                href: "https://ping.pub/iris-network/staking",
+                href: "https://01node.com/iris-network/",
             },
             {
                 itemName: "Dokia",
                 href: "https://staking.dokia.cloud/",
-            },
-            {
-                itemName: "Ping.Pub",
-                href: "https://ping.pub/iris-network/staking",
             },
             {
                 itemName: "Allnode",

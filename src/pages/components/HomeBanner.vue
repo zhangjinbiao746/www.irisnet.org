@@ -48,18 +48,20 @@ export default {
         margin: 0 auto;
         max-width: 19.2rem;
         height: 8.1rem;
-        background: url(../../assets/third_banner.png) no-repeat center / cover;
+        background: url(../../assets/third_banner.png) no-repeat center -15px / cover;
+        // background-size: 100% 100%;
         @media(max-width: 1000px) {
-            background: url(../../assets/third_banner_1000.png) no-repeat center / cover;
+            background: url(../../assets/third_banner_1000.png) no-repeat center -15px / cover;
         }
         @media(max-width: 730px) {
             height: 7.2rem;
         }
-        @media(max-width: 610px) {
+        @media(max-width: 625px) {
             height: 6.3rem;
+            background: url(../../assets/third_banner_1000.png) no-repeat center -5px / cover;
         }
         @media(max-width: 530px) {
-            background: url(../../assets/third_banner_320.png) no-repeat center / cover;
+            background: url(../../assets/third_banner_320.png) no-repeat center -15px / cover;
         }
         @media(max-width: 400px) {
             height: 5.6rem;
@@ -91,7 +93,7 @@ export default {
             @media(max-width: 810px) {
                 padding: 1.08rem 0 0 0.3rem;
             }
-            @media(max-width: 750px) {
+            @media(max-width: 768px) {
                 padding: 1.08rem 0 0 0;
             }
             @media(max-width: 730px) {
@@ -100,10 +102,10 @@ export default {
             @media(max-width: 680px) {
                 padding: 1.08rem 0 0 0;
             }
-            @media(max-width: 610px) {
+            @media(max-width: 625px) {
                 padding: 0.8rem 0 0 0.2rem;
             }
-            @media(max-width: 570px) {
+            @media(max-width: 580px) {
                 padding: 0.8rem 0 0 0;
             }
             @media(max-width: 530px) {
@@ -133,7 +135,7 @@ export default {
                 @media(max-width: 730px) {
                     height: 5.6rem;
                 }
-                @media(max-width: 610px) {
+                @media(max-width: 625px) {
                     height: 5rem;
                 }
                 @media(max-width: 530px) {
@@ -157,7 +159,7 @@ export default {
                         top: 2.65rem;
                         left: 1.87rem;
                     }
-                    @media(max-width: 610px) {
+                    @media(max-width: 625px) {
                         top: 2.4rem;
                         left: 1.67rem;
                     }
@@ -242,13 +244,13 @@ export default {
                         padding: 0.28rem 0.75rem 0.28rem 0.51rem;
                         left: 3rem;
                     }
-                    @media (max-width: 610px) {
+                    @media (max-width: 625px) {
                         padding: 0.4rem 0.45rem 0.57rem 0.45rem;
                         top: 3.1rem;
                         left: 2.8rem;
                         width: 2.8rem;
                     }
-                    @media (max-width: 570px) {
+                    @media (max-width: 580px) {
                         padding: 0.4rem 0.45rem 0.57rem 0.45rem;
                         left: 2.6rem;
                         width: 2.8rem;
