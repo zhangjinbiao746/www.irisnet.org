@@ -187,19 +187,19 @@ export const message = {
     },
     applicationList: [
       {
-        iconName: "icon-NFT",
+        iconName: require('../irishub1/nft_kuafu.png'),
         title: "NFT",
         section:
           "Supported NFT, to achieve the digitization of assets on blockchains.",
       },
       {
-        iconName: "icon-Oracle",
+        iconName: require('../irishub1/oracle_kuafu.png'),
         title: "Oracle",
         section:
           "Supported oracle service based on iService, to impletment cross-platform data services from off-chain to on-chain/off-chain.",
       },
       {
-        iconName: "icon-Coinswap",
+        iconName: require('../irishub1/coinswap_kuafu.png'),
         title: "Coinswap",
         section:
           "Cross-chain AMM protocol, a vanguard innovation platform for the Cosmos application ecosystem.",

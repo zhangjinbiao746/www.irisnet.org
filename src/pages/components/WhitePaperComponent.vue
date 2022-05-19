@@ -133,7 +133,17 @@
 					border-radius: 0.04rem;
 					padding: 0.1rem 0.31rem;
                     font-family: ArialMT;
-					background: rgba(111, 33, 193, 1);
+                    font-size: 0.2rem;
+                    line-height: 0.28rem;
+					background: url(../../assets/btn.png) no-repeat center / cover;
+                    transition: all .2s linear;
+                    &:hover {
+                        background: url(../../assets/btn_active.png) no-repeat center / cover;
+                        box-shadow: 0px 0px 6px 3px #C965FF;
+                        border-color: #9B64ED;
+                        backdrop-filter: blur(0.05rem);
+                        transition: all .2s linear;
+                    }
 					@media(max-width: 1000px){
 						margin: 0.36rem auto 1rem auto;
 					}
