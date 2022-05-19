@@ -115,38 +115,28 @@ export default {
                 font-size: 0.2rem;
                 margin-right: 0.16rem;
                 margin-left: 0.16rem;
-                &:first-child {
-                    background: rgba(111, 33, 193, 1);
-                }
-                &:last-child {
-                    border: 0.02rem solid rgba(155, 100, 237, 1);
-                    .join_btn {
-                        color: rgba(155, 100, 237, 1);
-                    }
-                }
-
-                // @media (max-width: 1100px) {
-                //     justify-content: center;
-                // }
-                // @media (max-width: 768px) {
-                //     margin-top: 0.32rem;
-                // }
 
                 .join_btn {
                     display: block;
                     height: 0.56rem;
                     width: 100%;
                     padding: 0.14rem 0.08rem;
-
                     box-sizing: border-box;
-
                     font-size: 0.2rem;
                     border-radius: 0.04rem;
                     font-family: ArialMT;
-
                     font-weight: 600;
                     color: #ffffff;
                     line-height: 0.28rem;
+                    background: url(../../assets/btn.png) no-repeat center / cover;
+                    transition: all .2s linear;
+                    &:hover {
+                        background: url(../../assets/btn_active.png) no-repeat center / cover;
+                        box-shadow: 0px 0px 6px 3px #C965FF;
+                        border-color: #9B64ED;
+                        backdrop-filter: blur(0.05rem);
+                        transition: all .2s linear;
+                    }
                 }
             }
         }

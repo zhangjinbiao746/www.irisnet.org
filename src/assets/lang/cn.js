@@ -176,19 +176,19 @@ export const message = {
     },
     applicationList: [
       {
-        iconName: "icon-NFT",
+        iconName: require('../irishub1/nft_kuafu.png'),
         title: "NFT",
         section: "支持 NFT 功能，实现区块链上的资产数字化",
       },
 
       {
-        iconName: "icon-Oracle",
+        iconName: require('../irishub1/oracle_kuafu.png'),
         title: "Oracle",
         section:
           "基于 iService 支持预言机服务，实现链外到链上、链外到链外的跨平台数据服务",
       },
       {
-        iconName: "icon-Coinswap",
+        iconName: require('../irishub1/coinswap_kuafu.png'),
         title: "Coinswap",
         section: "跨链 AMM 协议，为 Cosmos 应用生态提供一个前卫的创新平台",
       },

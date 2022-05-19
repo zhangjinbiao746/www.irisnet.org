@@ -31,7 +31,9 @@
 					<div class="new_function_section_container">
 						<div class="new_function_left_content">
 							<div class="new_function_section_content">
-								<span class="iconfont  icon-iservicekualianfuwu"></span>
+                                <div class="iservice_icon">
+                                    <img src="../assets/irishub1/iservice_kuafu.png" alt="">
+                                </div>
 								<p class="new_function_section_label">{{$store.state.messages.irishub.iService.title}}</p>
 								<p class="new_function_section">{{$store.state.messages.irishub.iService.description}}</p>
 							</div>
@@ -41,7 +43,9 @@
 						</div>
 						<div class="new_function_right_content">
 							<div class="new_function_section_content">
-								<span class="iconfont icon-IBCkualiantongxinxieyi"></span>
+                                <div class="ibc_icon">
+                                    <img src="../assets/irishub1/ibc_kuafu.png" alt="">
+                                </div>
 								<p class="new_function_section_label">{{$store.state.messages.irishub.ibc.title}}</p>
 								<p class="new_function_section" v-html="$store.state.messages.irishub.ibc.description"></p>
 <!--								<span @click="toTestFunction()" style="cursor: pointer">{{$store.state.messages.irishub.ibc.test}}<i class="iconfont icon-qianwang"></i></span>-->
@@ -58,7 +62,9 @@
 				<div class="new_function_application_content"
 				     v-for="(item, index) in $store.state.messages.irishub.applicationList"
 				     :key="index">
-					<span :class="`iconfont ${item.iconName}`"></span>
+                    <div class="application_icon">
+                        <img :src="item.iconName" alt="">
+                    </div>
 					<p class="new_function_application_title">{{item.title}}</p>
 					<p class="new_function_application_section" v-html="item.section "></p>
 				</div>
@@ -235,15 +241,26 @@
 							margin-bottom: 2.71rem;
 						}
 						.proposal_prepare_btn{
+                            box-sizing: padding-box;
 							margin-left: 0.32rem;
-							padding: 0.08rem 0.5rem;
-							background: rgba(111, 33, 193, 1);
+							padding: 0.1rem 0.5rem;
+							background: url(../assets/btn.png) no-repeat center / cover;
 							color: rgba(255, 255, 255, 1);
                             font-family: ArialMT;
 							font-size: 0.2rem;
 							line-height: 0.28rem;
 							text-align: center;
+                            border: 0.02rem solid transparent;
 							border-radius: 0.04rem;
+                            backdrop-filter: blur(0.05rem);
+                            transition: all .2s linear;
+                            &:hover {
+							    background: url(../assets/btn_active.png) no-repeat center / cover;
+                                box-shadow: 0px 0px 6px 3px #C965FF;
+                                border-color: #9B64ED;
+                                backdrop-filter: blur(0.05rem);
+                                transition: all .2s linear;
+                            }
 							@media(max-width: 768px){
 								padding: 0.08rem 0.4rem;
 								font-size: 0.18rem;
@@ -260,8 +277,9 @@
 						}
 						
 						.proposal_proposal_btn{
-							padding: 0.08rem 0.5rem;
-							background: rgba(111, 33, 193, 1);
+                            box-sizing: padding-box;
+							padding: 0.1rem 0.5rem;
+							background: url(../assets/btn.png) no-repeat center / cover;
 							/*border: 0.01rem solid #648DED;*/
 							border-radius: 0.04rem;
 							color: rgba(255, 255, 255, 1);
@@ -269,7 +287,16 @@
 							font-size: 0.2rem;
 							line-height: 0.28rem;
 							text-align: center;
+                            border: 0.02rem solid transparent;
 							cursor: pointer;
+                            transition: all .2s linear;
+                            &:hover {
+							    background: url(../assets/btn_active.png) no-repeat center / cover;
+                                box-shadow: 0px 0px 6px 3px #C965FF;
+                                border-color: #9B64ED;
+                                backdrop-filter: blur(0.05rem);
+                                transition: all .2s linear;
+                            }
 							@media(max-width: 768px){
 								padding: 0.08rem 0.4rem;
 								font-size: 0.18rem;
@@ -295,7 +322,7 @@
 				background: url("../assets/irishub1/irishub_ibc.png") no-repeat right 1rem top 5.7rem,url("../assets/irishub1/irishub_iservice.png") no-repeat 1rem 1.8rem;
 				background-size: 8rem auto;
 				@media(max-width: 1500px){
-					background-size: 6rem auto;
+					background-size: 5.5rem auto;
 				}
 				.new_function_content_wrap{
 					max-width: 12rem;
@@ -340,12 +367,14 @@
 							.new_function_section_content{
 								max-width: 50%;
 								color: #fff;
-								.iconfont{
-									display: inline-block;
-									margin-top: 0.89rem;
-									font-size: 0.8rem;
-									color: #fff;
-								}
+                                .iservice_icon {
+                                    margin-top: 0.89rem;
+                                    width: 0.8rem;
+                                    height: 0.8rem;
+                                    img {
+                                        height: 100%;
+                                    }
+                                }
 								
 								.new_function_section_label{
                                     font-family: ArialMT;
@@ -367,16 +396,21 @@
 							display: flex;
 							flex-direction: row;
 							.new_function_section_content{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
 								max-width: 50%;
 								margin-bottom: 1.48rem ;
 								color: #fff;
 								text-align: right;
-								.iconfont{
-									display: inline-block;
-									margin-top: 0.89rem;
-									font-size: 0.8rem;
-									color: #fff;
-								}
+                                .ibc_icon {
+                                    margin-top: 0.89rem;
+                                    width: 0.8rem;
+                                    height: 0.8rem;
+                                    img {
+                                        height: 100%;
+                                    }
+                                }
 								.new_function_section_label{
                                     font-family: ArialMT;
 									font-size: 0.32rem;
@@ -421,9 +455,13 @@
 					box-sizing: border-box;
 					padding: 0.48rem;
 					background: rgba(22, 24, 57, 1);
-					.iconfont{
-						font-size: 0.8rem;
-					}
+                    .application_icon {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        img {
+                            height: 100%;
+                        }
+                    }
 					.new_function_application_title{
 						margin-top: 0.24rem;
                         font-family: ArialMT;
@@ -802,8 +840,8 @@
 				padding-left: 0.4rem;
 				padding-right: 0.4rem;
 				.bg_content{
-					background: url("../assets/irishub1/irishub_ibc.png") no-repeat bottom left,url("../assets/irishub1/irishub_iservice.png") no-repeat top 2rem right -1rem;
-					background-size: 6rem auto;
+					background: url("../assets/irishub1/irishub_ibc.png") no-repeat bottom left,url("../assets/irishub1/irishub_iservice.png") no-repeat top 2rem right 0;
+					background-size: 5.5rem auto;
 					.new_function_content_wrap{
 						.new_function_section_container{
 							.new_function_left_content{
@@ -917,10 +955,10 @@
 								margin-bottom: 0;
 								.new_function_section_content{
 									max-width: 70%;
-									.iconfont{
-										color: rgba(255,255,255,1);
-										margin-top: 0.32rem;
-									}
+                                    .iservice_icon {
+                                        margin-top: 0.32rem;
+                                    }
+
 									.new_function_section_label{
 										font-size: 0.24rem;
 									}
@@ -932,13 +970,13 @@
 							.new_function_right_content{
 								justify-content: flex-start;
 								.new_function_section_content{
+                                    align-items: flex-start;
 									max-width: 70%;
 									margin-bottom: 0;
 									text-align: left;
-									.iconfont{
-										color: rgba(255,255,255,1);
-										margin-top: 0.24rem;
-									}
+                                    .ibc_icon {
+                                        margin-top: 0.32rem;
+                                    }
 									.new_function_section_label{
 										margin-top: 0.24rem;
 										font-size: 0.24rem;
