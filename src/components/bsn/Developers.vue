@@ -25,7 +25,7 @@
 						</ul>
 						<div class="developers_create_account_content">
 							<div class="developers_create_account_btn">
-								<button class="developers_create_btn_doc" @click="jumpUrl($store.state.messages.developer.content.createDeveloperHref)">{{$store.state.messages.developer.content.createDeveloperBtnDoc}}</button>
+								<a class="developers_create_btn_doc" :href="$store.state.messages.developer.content.createDeveloperHref" target="_blank" rel="noopener noreferrer" @click="jumpUrl()">{{$store.state.messages.developer.content.createDeveloperBtnDoc}}</a>
 							</div>
 							<a class="irisnet_doc_link" :href="$store.state.messages.developer.content.irisnetDocHref" target="_blank">{{$store.state.messages.developer.content.irisnetDoc}}</a>
 						</div>
@@ -40,7 +40,7 @@
 			<div class="testnet_item_container">
                 <h3 class="testnet_content_title">{{$store.state.messages.developer.testnet.content.title}}</h3>
                 <p class="testnet_content">{{$store.state.messages.developer.testnet.content.content}}</p>
-                <a class="testnet_content_btn" rel="noreferrer noopener" :href="$store.state.messages.developer.testnet.content.link">{{$store.state.messages.developer.testnet.content.btnLabel}}</a>
+                <a class="testnet_content_btn" :href="$store.state.messages.developer.testnet.content.link" target="_blank" rel="noopener noreferrer">{{$store.state.messages.developer.testnet.content.btnLabel}}</a>
 			</div>
 		</div>
 	</div>
@@ -52,8 +52,7 @@
 	export default {
 		name: "Developers",
 		methods:{
-			jumpUrl(url){
-				window.open(url,'_blank')
+			jumpUrl(){
 				this.$umeng.push('reservation',"click")
 			},
 		},
@@ -151,21 +150,20 @@
                                 box-sizing: border-box;
                                 padding: 0.1rem 0.08rem;
 								width: 2rem;
-								font-size: 0.16rem;
-                                font-weight: 600;
+								font-size: 0.2rem;
 								color: #fff;
 								background: url(../../assets/btn.png) no-repeat center / cover;
 								height: 0.5rem;
-								border-radius: 0.04rem;
 								display: flex;
 								align-items: center;
 								justify-content: center;
-                                border: 0.02rem solid transparent;
+								border-radius: 0.04rem;
                                 transition: all .2s linear;
                                 &:hover {
                                     background: url(../../assets/btn_active.png) no-repeat center / cover;
                                     box-shadow: 0px 0px 6px 3px #C965FF;
-                                    border-color: #9B64ED;
+                                    border: 0.02rem solid #9B64ED;
+                                    border-radius: 0.06rem;
                                     backdrop-filter: blur(0.05rem);
                                     transition: all .2s linear;
                                 }
@@ -230,21 +228,23 @@
                 }
                 .testnet_content_btn {
                     box-sizing: border-box;
-                    display: inline-block;
                     margin-top: 0.32rem;
-                    padding: 0.1rem 0.24rem;
+                    padding: 0.1rem 0.08rem;
+                    width: 2.2rem;
                     font-size: 0.2rem;
-                    font-weight: 600;
-                    color: #FFFFFF;
-                    line-height: 0.28rem;
+                    color: #fff;
                     background: url(../../assets/btn.png) no-repeat center / cover;
-                    border: 2px solid transparent;
+                    height: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     border-radius: 0.04rem;
                     transition: all .2s linear;
                     &:hover {
                         background: url(../../assets/btn_active.png) no-repeat center / cover;
                         box-shadow: 0px 0px 6px 3px #C965FF;
-                        border-color: #9B64ED;
+                        border-radius: 0.06rem;
+                        border: 0.02rem solid #9B64ED;
                         backdrop-filter: blur(0.05rem);
                         transition: all .2s linear;
                     }

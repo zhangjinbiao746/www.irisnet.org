@@ -117,15 +117,15 @@ export default {
                 margin-left: 0.16rem;
 
                 .join_btn {
-                    display: block;
-                    height: 0.56rem;
-                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 0.5rem;
                     padding: 0.14rem 0.08rem;
                     box-sizing: border-box;
                     font-size: 0.2rem;
                     border-radius: 0.04rem;
                     font-family: ArialMT;
-                    font-weight: 600;
                     color: #ffffff;
                     line-height: 0.28rem;
                     background: url(../../assets/btn.png) no-repeat center / cover;
@@ -133,7 +133,8 @@ export default {
                     &:hover {
                         background: url(../../assets/btn_active.png) no-repeat center / cover;
                         box-shadow: 0px 0px 6px 3px #C965FF;
-                        border-color: #9B64ED;
+                        border: 0.02rem solid #9B64ED;
+                        border-radius: 0.06rem;
                         backdrop-filter: blur(0.05rem);
                         transition: all .2s linear;
                     }
