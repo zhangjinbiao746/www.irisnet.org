@@ -241,23 +241,26 @@
 							margin-bottom: 2.71rem;
 						}
 						.proposal_prepare_btn{
-                            box-sizing: padding-box;
+                            box-sizing: border-box;
 							margin-left: 0.32rem;
 							padding: 0.1rem 0.5rem;
+                            width: 2.7rem;
+                            height: 0.5rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
 							background: url(../assets/btn.png) no-repeat center / cover;
 							color: rgba(255, 255, 255, 1);
                             font-family: ArialMT;
 							font-size: 0.2rem;
-							line-height: 0.28rem;
 							text-align: center;
-                            border: 0.02rem solid transparent;
 							border-radius: 0.04rem;
-                            backdrop-filter: blur(0.05rem);
                             transition: all .2s linear;
                             &:hover {
 							    background: url(../assets/btn_active.png) no-repeat center / cover;
                                 box-shadow: 0px 0px 6px 3px #C965FF;
-                                border-color: #9B64ED;
+                                border: 0.02rem solid #9B64ED;
+                                border-radius: 0.06rem;
                                 backdrop-filter: blur(0.05rem);
                                 transition: all .2s linear;
                             }
@@ -277,23 +280,27 @@
 						}
 						
 						.proposal_proposal_btn{
-                            box-sizing: padding-box;
+                            box-sizing: border-box;
 							padding: 0.1rem 0.5rem;
+                            width: 2.7rem;
+                            height: 0.5rem;
 							background: url(../assets/btn.png) no-repeat center / cover;
 							/*border: 0.01rem solid #648DED;*/
 							border-radius: 0.04rem;
 							color: rgba(255, 255, 255, 1);
                             font-family: ArialMT;
 							font-size: 0.2rem;
-							line-height: 0.28rem;
 							text-align: center;
-                            border: 0.02rem solid transparent;
 							cursor: pointer;
                             transition: all .2s linear;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             &:hover {
 							    background: url(../assets/btn_active.png) no-repeat center / cover;
                                 box-shadow: 0px 0px 6px 3px #C965FF;
-                                border-color: #9B64ED;
+                                border: 0.02rem solid #9B64ED;
+                                border-radius: 0.06rem;
                                 backdrop-filter: blur(0.05rem);
                                 transition: all .2s linear;
                             }
@@ -319,10 +326,10 @@
 			.bg_content{
 				max-width: 19.2rem;
 				margin: 0 auto;
-				background: url("../assets/irishub1/irishub_ibc.png") no-repeat right 1rem top 5.7rem,url("../assets/irishub1/irishub_iservice.png") no-repeat 1rem 1.8rem;
-				background-size: 8rem auto;
+				background: url("../assets/irishub1/irishub_ibc.png") no-repeat right 1rem top 6.4rem,url("../assets/irishub1/irishub_iservice.png") no-repeat 1rem 1.5rem;
+				background-size: 7rem auto;
 				@media(max-width: 1500px){
-					background-size: 5.5rem auto;
+					background-size: 5rem auto;
 				}
 				.new_function_content_wrap{
 					max-width: 12rem;

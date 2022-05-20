@@ -45,7 +45,7 @@
 <style scoped lang="less">
 	.white_paper_container{
         box-sizing: border-box;
-        padding-top: 0.8rem;
+        padding: 0.8rem 0;
 		background: rgba(21, 12, 54, 1);
 		.white_paper_wrap{
 			max-width: 12rem;
@@ -125,13 +125,19 @@
 				}
 			}
 			.white_paper_button_container{
-				text-align: center;
+                display: flex;
+                justify-content: center;
 				.white_paper_button{
+                    box-sizing: border-box;
 					color: rgba(255,255,255,1);
-					display: inline-block;
-					margin: 0.6rem auto;
+					display: flex;
+                    justify-content: center;
+                    align-items: center;
 					border-radius: 0.04rem;
+                    margin-top: 0.6rem;
 					padding: 0.1rem 0.31rem;
+                    width: 2rem;
+                    height: 0.5rem;
                     font-family: ArialMT;
                     font-size: 0.2rem;
                     line-height: 0.28rem;
@@ -140,7 +146,8 @@
                     &:hover {
                         background: url(../../assets/btn_active.png) no-repeat center / cover;
                         box-shadow: 0px 0px 6px 3px #C965FF;
-                        border-color: #9B64ED;
+                        border: 0.02rem solid #9B64ED;
+                        border-radius: 0.06rem;
                         backdrop-filter: blur(0.05rem);
                         transition: all .2s linear;
                     }
