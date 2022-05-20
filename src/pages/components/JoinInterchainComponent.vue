@@ -117,6 +117,7 @@ export default {
                 margin-left: 0.16rem;
 
                 .join_btn {
+                    position: relative;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -128,19 +129,43 @@ export default {
                     font-family: ArialMT;
                     color: #ffffff;
                     line-height: 0.28rem;
-                    background: url(../../assets/btn.png) no-repeat center / cover;
-                    transition: all .2s linear;
+                    background: linear-gradient(90deg, #7EA4FF, #A845E2, #6F21C1, #7EA4FF);
+                    background-size: 400%;
+                    z-index: 1;
                     &:hover {
-                        background: url(../../assets/btn_active.png) no-repeat center / cover;
+                        animation: whitePaperAnimate 8s linear infinite;
                         box-shadow: 0px 0px 6px 3px #C965FF;
-                        border: 0.02rem solid #9B64ED;
+                        &::before {
+                            filter: blur(0.2rem);
+                            opacity: 1;
+                            animation: whitePaperAnimate 8s linear infinite;
+                        }
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: -0.01rem;
+                        left: -0.01rem;
+                        right: -0.01rem;
+                        bottom: -0.01rem;
+                        z-index: -1;
+                        background: linear-gradient(90deg, #7EA4FF, #A845E2, #6F21C1, #7EA4FF);
+                        background-size: 400%;
                         border-radius: 0.06rem;
-                        backdrop-filter: blur(0.05rem);
-                        transition: all .2s linear;
+                        opacity: 0;
+                        transition: all 0.5s linear;
                     }
                 }
             }
         }
+    }
+}
+@keyframes whitePaperAnimate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
     }
 }
 </style>
