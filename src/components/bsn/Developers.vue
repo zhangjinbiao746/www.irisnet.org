@@ -8,6 +8,7 @@
 		</div>
 		<div class="developers_content_wrap">
 			<div class="developers_content">
+                <NavigationLine class="nav_line" />
 				<div class="developers_content_title">{{$store.state.messages.developer.content.title}}</div>
 				<div class="developers_content_doc">
 					<div class="developers_img_content">
@@ -24,7 +25,7 @@
 						</ul>
 						<div class="developers_create_account_content">
 							<div class="developers_create_account_btn">
-								<button class="developers_create_btn_doc" @click="jumpUrl($store.state.messages.developer.content.createDeveloperHref)"><span>{{$store.state.messages.developer.content.createDeveloperBtnDoc}}<img src="../../assets/rightArrow.png" alt=""></span></button>
+								<a class="developers_create_btn_doc" :href="$store.state.messages.developer.content.createDeveloperHref" target="_blank" rel="noopener noreferrer" @click="jumpUrl()">{{$store.state.messages.developer.content.createDeveloperBtnDoc}}</a>
 							</div>
 							<a class="irisnet_doc_link" :href="$store.state.messages.developer.content.irisnetDocHref" target="_blank">{{$store.state.messages.developer.content.irisnetDoc}}</a>
 						</div>
@@ -34,18 +35,12 @@
 			</div>
 		</div>
 		<div class="testnet_container">
+            <NavigationLine />
 			<h3 class="testnet_title">{{$store.state.messages.developer.testnet.title}}</h3>
 			<div class="testnet_item_container">
-				<div class="testnet_card">
-					<div class="testnet_content_wrap">
-						<h3 class="testnet_content_title">{{$store.state.messages.developer.testnet.content.title}}</h3>
-						<p class="testnet_content">{{$store.state.messages.developer.testnet.content.content}}</p>
-						<a class="testnet_content_btn" rel="noreferrer noopener" :href="$store.state.messages.developer.testnet.content.link">{{$store.state.messages.developer.testnet.content.btnLabel}}</a>
-					</div>
-					<div class="bg_content">
-<!--						<img src="../../assets/testnet_image.png" alt="">-->
-					</div>
-				</div>
+                <h3 class="testnet_content_title">{{$store.state.messages.developer.testnet.content.title}}</h3>
+                <p class="testnet_content">{{$store.state.messages.developer.testnet.content.content}}</p>
+                <a class="testnet_content_btn" :href="$store.state.messages.developer.testnet.content.link" target="_blank" rel="noopener noreferrer">{{$store.state.messages.developer.testnet.content.btnLabel}}</a>
 			</div>
 		</div>
 	</div>
@@ -53,19 +48,17 @@
 </template>
 
 <script>
+    import NavigationLine from "../../pages/components/NavigationLine";
 	export default {
 		name: "Developers",
-		data () {
-			return {
-			
-			}
-		},
 		methods:{
-			jumpUrl(url){
-				window.open(url,'_blank')
+			jumpUrl(){
 				this.$umeng.push('reservation',"click")
 			},
-		}
+		},
+        components: {
+            NavigationLine
+        }
 	}
 </script>
 
@@ -73,14 +66,11 @@
 	.developers_container{
 		.developers_title_container{
 			width: 100%;
-			background: rgba(13,14,44,1);
 			padding-top: 0.6rem;
 			.developers_title_wrap{
-				margin: 0 auto;
+				margin: 0.7rem auto 0;
 				max-width: 12rem;
 				font-size: 0.52rem;
-				height: 1.9rem;
-				line-height: 1.9rem;
 				display: flex;
 				justify-content: flex-start;
 				.developers_title_content{
@@ -91,39 +81,48 @@
 		}
 		.developers_content_wrap{
 			width: 100%;
-			background: #fff;
 			.developers_content{
 				max-width: 12rem;
 				margin: 0 auto;
+                .nav_line {
+                    margin-top: 0.7rem;
+                }
 				.developers_content_title{
-					color:#323C5A;
-					font-size: 0.32rem;
-					font-weight: 600;
+					color:#fff;
+					font-size: 0.4rem;
 					line-height: 0.45rem;
-					margin: 0.7rem 0 0.48rem 0;
+					margin-top: 0.36rem;
 					max-width: 7.8rem;
+                    @media (max-width: 768px) {
+                        margin-top: 0.24rem;
+                        font-size: 0.32rem;
+                    }
 				}
 				.developers_content_doc{
 					display: flex;
-					flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 0.4rem;
 					margin-bottom: 1.2rem;
 					.developers_img_content{
-						flex: 1;
-						margin-right: 1.2rem;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						margin-left: 0.96rem;
+                        margin-left: 0.11rem;
+                        margin-right: 1.2rem;
+						max-width: 5.04rem;
+                        @media(max-width: 1200px) {
+                            margin-right: 0.8rem;
+                        }
+                        @media(max-width: 1000px) {
+                            margin-right: 0.48rem;
+                        }
 						img{
 							width: 100%;
 						}
 					}
 					.developers_right_content{
-						flex: 1;
 						max-width: 4.8rem;
 						.developers_right_content_item{
 							color:#9BA5BE;
-							font-size: 0.14rem;
+							font-size: 0.16rem;
 							margin-top: 0.24rem;
 							line-height: 0.24rem;
 							word-wrap: break-word;
@@ -144,33 +143,47 @@
 						}
 					}
 					.developers_create_account_content{
-						margin-top: 0.36rem;
+						margin-top: 0.24rem;
 						.developers_create_account_btn{
 							margin-bottom: 0.24rem;
 							.developers_create_btn_doc{
+                                position: relative;
+                                box-sizing: border-box;
+                                padding: 0.1rem 0.08rem;
 								width: 2rem;
-								border: 0;
-								font-size: 0.16rem;
+								font-size: 0.2rem;
 								color: #fff;
-								background: linear-gradient(to right, #714BE3, #653FD8);
-								box-shadow: 0 0 0.16rem 0 rgba(58, 5, 218, 0.3);
 								height: 0.5rem;
-								border-radius: 0.33rem;
 								display: flex;
 								align-items: center;
 								justify-content: center;
-								span{
-									padding: 0.16rem 0 0.16rem 0.24rem;
-									img{
-										position: relative;
-										top: 0.05rem;
-										height: 0.16rem;
-										margin-left: 0.12rem;
-										padding-right: 0.24rem;
-										transform: translateY(-8%)
-									}
-								}
-								
+								border-radius: 0.04rem;
+                                background: linear-gradient(90deg, #7EA4FF, #A845E2, #6F21C1, #7EA4FF);
+                                background-size: 400%;
+                                z-index: 1;
+                                &:hover {
+                                    animation: whitePaperAnimate 8s linear infinite;
+                                    box-shadow: 0px 0px 6px 3px #C965FF;
+                                    &::before {
+                                        filter: blur(0.2rem);
+                                        opacity: 1;
+                                        animation: whitePaperAnimate 8s linear infinite;
+                                    }
+                                }
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: -0.01rem;
+                                    left: -0.01rem;
+                                    right: -0.01rem;
+                                    bottom: -0.01rem;
+                                    z-index: -1;
+                                    background: linear-gradient(90deg, #7EA4FF, #A845E2, #6F21C1, #7EA4FF);
+                                    background-size: 400%;
+                                    border-radius: 0.06rem;
+                                    opacity: 0;
+                                    transition: all 0.5s linear;
+                                }
 							}
 						}
 						.irisnet_doc_link{
@@ -185,75 +198,91 @@
 		.testnet_container{
 			max-width: 12rem;
 			margin: 0 auto;
+            @media (max-width: 1200px) {
+                margin: 0 0.4rem;
+            }
+            @media (max-width: 596px) {
+                margin: 0 0.2rem;
+            }
 			.testnet_title{
-				font-size: 0.32rem;
-				color: rgba(50, 60, 90, 1);
+                margin-top: 0.36rem;
+				font-size: 0.4rem;
+                font-weight: normal;
+				color: #fff;
 				line-height: 0.45rem;
-				@media(max-width: 1200px){
-					margin: 0 0.2rem;
-				}
+                @media(max-width: 768px) {
+                    margin-top: 0.24rem;
+                    font-size: 0.32rem;
+                }
 			}
 			.testnet_item_container{
-				margin-top: 0.24rem;
+                box-sizing: border-box;
+				margin-top: 0.28rem;
 				margin-bottom: 1.2rem;
-				display: flex;
-				justify-content: space-between;
-				.testnet_card{
-					width: 100%;
-					box-shadow: 0 0.04rem 0.16rem 0 rgba(26, 24, 44, 0.09);
-					
-					border-radius: 0.08rem;
-					display: flex;
-					justify-content: space-between;
-					@media(max-width: 1200px){
-						margin: 0 0.2rem;
-					}
-					.testnet_content_wrap{
-						flex: 1;
-						box-sizing: border-box;
-						padding: 0.36rem 0.32rem;
-						@media(max-width: 460px){
-							padding: 0.24rem 0.16rem;
-						}
-						.testnet_content_title{
-							font-size: 0.24rem;
-							color: rgba(50, 60, 90, 1);
-							line-height: 0.24rem;
-							margin-bottom: 0.24rem;
-						}
-						.testnet_content{
-							font-size: 0.14rem;
-							color: rgba(155, 165, 190, 1);
-							line-height: 0.24rem;
-							max-width: 5.6rem;
-							margin-bottom: 0.24rem;
-						}
-						.testnet_content_btn{
-							display: inline-block;
-							width: 2rem;
-							height: 0.5rem;
-							border-radius: 0.25rem;
-							background: linear-gradient(95deg, #714BE3 0%, #653FD8 100%);
-							box-shadow: 0 0 0.16rem 0 rgba(58, 5, 218, 0.3);
-							color: rgba(255, 255, 255, 1);
-							line-height: 0.5rem;
-							text-align: center;
-						}
-					}
-					.bg_content{
-						flex: 1;
-						width: 100%;
-						height: 100%;
-						background: url("../../assets/testnet_image.png") no-repeat center center;
-						background-size: cover;
-						@media(max-width: 768px){
-							display: none;
-						}
-						img{
-							width: 100%;
-						}
-					}
-				}
+                padding: 0.4rem 0.44rem;
+                background: url(../../assets/testnet_image.png) no-repeat 100% / cover;
+                border-radius: 0.04rem;
+                @media (max-width: 1100px) {
+                    background-position: 70% center;
+                }
+                @media (max-width: 768px) {
+                    padding: 0.2rem 0.24rem;
+                    background: url(../../assets/testnet_mobile_image.png) no-repeat center / cover;
+                }
+                .testnet_content_title {
+                    font-size: 0.32rem;
+                    color: #FFFFFF;
+                    font-weight: normal;
+                    line-height: 0.45rem;
+                }
+                .testnet_content {
+                    margin-top: 0.16rem;
+                    max-width: 5.4rem;
+                    font-size: 0.14rem;
+                    font-weight: 400;
+                    color: rgba(255,255,255,0.65);
+                    line-height: 0.22rem;
+                }
+                .testnet_content_btn {
+                    position: relative;
+                    box-sizing: border-box;
+                    margin-top: 0.32rem;
+                    padding: 0.1rem 0.08rem;
+                    width: 2.2rem;
+                    font-size: 0.2rem;
+                    color: #fff;
+                    height: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0.04rem;
+                    background: linear-gradient(90deg, #7EA4FF, #A845E2, #6F21C1, #7EA4FF);
+                    background-size: 400%;
+                    z-index: 1;
+                    &:hover {
+                        animation: whitePaperAnimate 8s linear infinite;
+                        box-shadow: 0px 0px 6px 3px #C965FF;
+                        &::before {
+                            filter: blur(0.2rem);
+                            opacity: 1;
+                            animation: whitePaperAnimate 8s linear infinite;
+                        }
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: -0.01rem;
+                        left: -0.01rem;
+                        right: -0.01rem;
+                        bottom: -0.01rem;
+                        z-index: -1;
+                        background: linear-gradient(90deg, #7EA4FF, #A845E2, #6F21C1, #7EA4FF);
+                        background-size: 400%;
+                        border-radius: 0.06rem;
+                        opacity: 0;
+                        transition: all 0.5s linear;
+                    }
+                }
 			}
 		}
 	}
@@ -268,20 +297,6 @@
 				box-sizing: border-box;
 				padding-right: 0.2rem;
 				padding-left: 0.2rem;
-			}
-		}
-	}
-	@media screen and (max-width: 1000px){
-		.developers_container{
-			.developers_content_wrap{
-				.developers_content{
-					.developers_content_doc{
-						.developers_img_content{
-							margin-right: 0.7rem;
-							margin-left: 0.46rem;
-						}
-					}
-				}
 			}
 		}
 	}
@@ -300,9 +315,8 @@
 						align-items: center;
 						margin-bottom: 0.6rem;
 						.developers_img_content{
-							max-width: 4.2rem;
-							margin-left: 0;
-							margin-right: 0;
+                            margin-right: 0;
+							max-width: 5.04rem;
 						}
 						.developers_right_content{
 							margin-top: 0.48rem;
@@ -327,4 +341,12 @@
 			}
 		}
 	}
+    @keyframes whitePaperAnimate {
+        0% {
+            background-position: 0%;
+        }
+        100% {
+            background-position: 400%;
+        }
+    }
 </style>

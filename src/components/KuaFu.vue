@@ -31,7 +31,9 @@
 					<div class="new_function_section_container">
 						<div class="new_function_left_content">
 							<div class="new_function_section_content">
-								<span class="iconfont  icon-iservicekualianfuwu"></span>
+                                <div class="iservice_icon">
+                                    <img src="../assets/irishub1/iservice_kuafu.png" alt="">
+                                </div>
 								<p class="new_function_section_label">{{$store.state.messages.irishub.iService.title}}</p>
 								<p class="new_function_section">{{$store.state.messages.irishub.iService.description}}</p>
 							</div>
@@ -41,7 +43,9 @@
 						</div>
 						<div class="new_function_right_content">
 							<div class="new_function_section_content">
-								<span class="iconfont icon-IBCkualiantongxinxieyi"></span>
+                                <div class="ibc_icon">
+                                    <img src="../assets/irishub1/ibc_kuafu.png" alt="">
+                                </div>
 								<p class="new_function_section_label">{{$store.state.messages.irishub.ibc.title}}</p>
 								<p class="new_function_section" v-html="$store.state.messages.irishub.ibc.description"></p>
 <!--								<span @click="toTestFunction()" style="cursor: pointer">{{$store.state.messages.irishub.ibc.test}}<i class="iconfont icon-qianwang"></i></span>-->
@@ -58,7 +62,9 @@
 				<div class="new_function_application_content"
 				     v-for="(item, index) in $store.state.messages.irishub.applicationList"
 				     :key="index">
-					<span :class="`iconfont ${item.iconName}`"></span>
+                    <div class="application_icon">
+                        <img :src="item.iconName" alt="">
+                    </div>
 					<p class="new_function_application_title">{{item.title}}</p>
 					<p class="new_function_application_section" v-html="item.section "></p>
 				</div>
@@ -235,15 +241,46 @@
 							margin-bottom: 2.71rem;
 						}
 						.proposal_prepare_btn{
+                            position: relative;
+                            box-sizing: border-box;
 							margin-left: 0.32rem;
-							padding: 0.08rem 0.5rem;
-							background: rgba(111, 33, 193, 1);
+							padding: 0.1rem 0.5rem;
+                            width: 2.7rem;
+                            height: 0.5rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
 							color: rgba(255, 255, 255, 1);
                             font-family: ArialMT;
 							font-size: 0.2rem;
-							line-height: 0.28rem;
 							text-align: center;
 							border-radius: 0.04rem;
+                            background: linear-gradient(90deg, #7EA4FF, #A845E2, #6F21C1, #7EA4FF);
+                            background-size: 400%;
+                            z-index: 1;
+                            &:hover {
+                                animation: whitePaperAnimate 8s linear infinite;
+                                box-shadow: 0px 0px 6px 3px #C965FF;
+                                &::before {
+                                    filter: blur(0.2rem);
+                                    opacity: 1;
+                                    animation: whitePaperAnimate 8s linear infinite;
+                                }
+                            }
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: -0.01rem;
+                                left: -0.01rem;
+                                right: -0.01rem;
+                                bottom: -0.01rem;
+                                z-index: -1;
+                                background: linear-gradient(90deg, #7EA4FF, #A845E2, #6F21C1, #7EA4FF);
+                                background-size: 400%;
+                                border-radius: 0.06rem;
+                                opacity: 0;
+                                transition: all 0.5s linear;
+                            }
 							@media(max-width: 768px){
 								padding: 0.08rem 0.4rem;
 								font-size: 0.18rem;
@@ -260,16 +297,47 @@
 						}
 						
 						.proposal_proposal_btn{
-							padding: 0.08rem 0.5rem;
-							background: rgba(111, 33, 193, 1);
-							/*border: 0.01rem solid #648DED;*/
+                            position: relative;
+                            box-sizing: border-box;
+							padding: 0.1rem 0.5rem;
+                            width: 2.7rem;
+                            height: 0.5rem;
 							border-radius: 0.04rem;
 							color: rgba(255, 255, 255, 1);
                             font-family: ArialMT;
 							font-size: 0.2rem;
-							line-height: 0.28rem;
 							text-align: center;
 							cursor: pointer;
+                            transition: all .2s linear;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: linear-gradient(90deg, #7EA4FF, #A845E2, #6F21C1, #7EA4FF);
+                            background-size: 400%;
+                            z-index: 1;
+                            &:hover {
+                                animation: whitePaperAnimate 8s linear infinite;
+                                box-shadow: 0px 0px 6px 3px #C965FF;
+                                &::before {
+                                    filter: blur(0.2rem);
+                                    opacity: 1;
+                                    animation: whitePaperAnimate 8s linear infinite;
+                                }
+                            }
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: -0.01rem;
+                                left: -0.01rem;
+                                right: -0.01rem;
+                                bottom: -0.01rem;
+                                z-index: -1;
+                                background: linear-gradient(90deg, #7EA4FF, #A845E2, #6F21C1, #7EA4FF);
+                                background-size: 400%;
+                                border-radius: 0.06rem;
+                                opacity: 0;
+                                transition: all 0.5s linear;
+                            }
 							@media(max-width: 768px){
 								padding: 0.08rem 0.4rem;
 								font-size: 0.18rem;
@@ -292,10 +360,10 @@
 			.bg_content{
 				max-width: 19.2rem;
 				margin: 0 auto;
-				background: url("../assets/irishub1/irishub_ibc.png") no-repeat right 1rem top 5.7rem,url("../assets/irishub1/irishub_iservice.png") no-repeat 1rem 1.8rem;
-				background-size: 8rem auto;
+				background: url("../assets/irishub1/irishub_ibc.png") no-repeat right 1rem top 6.4rem,url("../assets/irishub1/irishub_iservice.png") no-repeat 1rem 1.5rem;
+				background-size: 7rem auto;
 				@media(max-width: 1500px){
-					background-size: 6rem auto;
+					background-size: 5rem auto;
 				}
 				.new_function_content_wrap{
 					max-width: 12rem;
@@ -340,12 +408,14 @@
 							.new_function_section_content{
 								max-width: 50%;
 								color: #fff;
-								.iconfont{
-									display: inline-block;
-									margin-top: 0.89rem;
-									font-size: 0.8rem;
-									color: #fff;
-								}
+                                .iservice_icon {
+                                    margin-top: 0.89rem;
+                                    width: 0.8rem;
+                                    height: 0.8rem;
+                                    img {
+                                        height: 100%;
+                                    }
+                                }
 								
 								.new_function_section_label{
                                     font-family: ArialMT;
@@ -367,16 +437,21 @@
 							display: flex;
 							flex-direction: row;
 							.new_function_section_content{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
 								max-width: 50%;
 								margin-bottom: 1.48rem ;
 								color: #fff;
 								text-align: right;
-								.iconfont{
-									display: inline-block;
-									margin-top: 0.89rem;
-									font-size: 0.8rem;
-									color: #fff;
-								}
+                                .ibc_icon {
+                                    margin-top: 0.89rem;
+                                    width: 0.8rem;
+                                    height: 0.8rem;
+                                    img {
+                                        height: 100%;
+                                    }
+                                }
 								.new_function_section_label{
                                     font-family: ArialMT;
 									font-size: 0.32rem;
@@ -421,9 +496,13 @@
 					box-sizing: border-box;
 					padding: 0.48rem;
 					background: rgba(22, 24, 57, 1);
-					.iconfont{
-						font-size: 0.8rem;
-					}
+                    .application_icon {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        img {
+                            height: 100%;
+                        }
+                    }
 					.new_function_application_title{
 						margin-top: 0.24rem;
                         font-family: ArialMT;
@@ -802,8 +881,8 @@
 				padding-left: 0.4rem;
 				padding-right: 0.4rem;
 				.bg_content{
-					background: url("../assets/irishub1/irishub_ibc.png") no-repeat bottom left,url("../assets/irishub1/irishub_iservice.png") no-repeat top 2rem right -1rem;
-					background-size: 6rem auto;
+					background: url("../assets/irishub1/irishub_ibc.png") no-repeat bottom left,url("../assets/irishub1/irishub_iservice.png") no-repeat top 2rem right 0;
+					background-size: 5.5rem auto;
 					.new_function_content_wrap{
 						.new_function_section_container{
 							.new_function_left_content{
@@ -917,10 +996,10 @@
 								margin-bottom: 0;
 								.new_function_section_content{
 									max-width: 70%;
-									.iconfont{
-										color: rgba(255,255,255,1);
-										margin-top: 0.32rem;
-									}
+                                    .iservice_icon {
+                                        margin-top: 0.32rem;
+                                    }
+
 									.new_function_section_label{
 										font-size: 0.24rem;
 									}
@@ -932,13 +1011,13 @@
 							.new_function_right_content{
 								justify-content: flex-start;
 								.new_function_section_content{
+                                    align-items: flex-start;
 									max-width: 70%;
 									margin-bottom: 0;
 									text-align: left;
-									.iconfont{
-										color: rgba(255,255,255,1);
-										margin-top: 0.24rem;
-									}
+                                    .ibc_icon {
+                                        margin-top: 0.32rem;
+                                    }
 									.new_function_section_label{
 										margin-top: 0.24rem;
 										font-size: 0.24rem;
@@ -1016,4 +1095,12 @@
 			}
 		}
 	}
+    @keyframes whitePaperAnimate {
+        0% {
+            background-position: 0%;
+        }
+        100% {
+            background-position: 400%;
+        }
+    }
 </style>

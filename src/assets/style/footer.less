@@ -179,12 +179,11 @@
             visibility: hidden;
           }
           .submit_btn{
+            position: relative;
             max-width: 52%;
             min-width: 2.6rem;
-            height: 0.45rem;
-            background: rgba(111, 33, 193, 1);
+            height: 0.5rem;
             text-align: center;
-            line-height: 0.45rem;
             border: none;
             margin-top: 0.2rem;
             border-radius: 0.04rem;
@@ -192,6 +191,32 @@
             font-size: 0.16rem;
             color: #FFF;
             outline: none;
+            background: linear-gradient(90deg, #7EA4FF, #A845E2, #6F21C1, #7EA4FF);
+            background-size: 400%;
+            z-index: 1;
+            &:hover {
+                animation: whitePaperAnimate 8s linear infinite;
+                box-shadow: 0px 0px 6px 3px #C965FF;
+                &::before {
+                    filter: blur(0.2rem);
+                    opacity: 1;
+                    animation: whitePaperAnimate 8s linear infinite;
+                }
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: -0.01rem;
+                left: -0.01rem;
+                right: -0.01rem;
+                bottom: -0.01rem;
+                z-index: -1;
+                background: linear-gradient(90deg, #7EA4FF, #A845E2, #6F21C1, #7EA4FF);
+                background-size: 400%;
+                border-radius: 0.06rem;
+                opacity: 0;
+                transition: all 0.5s linear;
+            }
           }
         }
       }
@@ -273,6 +298,14 @@
       }
     }
   }
+}
+@keyframes whitePaperAnimate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px){
   .footer_container{
@@ -413,7 +446,7 @@
               max-width: 100%;
               min-width: 2.6rem;
               height: 0.45rem;
-              background: rgba(111, 33, 193, 1);
+              background: url(../btn.png) no-repeat center / cover;
               text-align: center;
               line-height: 0.45rem;
               border: none;
@@ -624,7 +657,7 @@
               max-width: 100%;
               min-width: 2.6rem;
               height: 0.45rem;
-              background: rgba(111, 33, 193, 1);
+              background: url(../btn.png) no-repeat center / cover;
               text-align: center;
               line-height: 0.45rem;
               border: none;
