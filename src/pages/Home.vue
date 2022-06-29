@@ -6,7 +6,6 @@
         <core-features-component />
         <upcoming-feature-component />
         <join-interchain-component/>
-        <roadmap-component />
         <announcements-component />
         <collaboration-component />
     </div>

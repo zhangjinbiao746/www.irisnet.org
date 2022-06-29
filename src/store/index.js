@@ -41,7 +41,7 @@ export function createStore () {
                 this.state.messages = obj
             },
             lang(state,data){
-                state.lang = data;
+                state.lang = 'EN';
             },
             whitePaper(state,data){
                 state.whitePaper = data;

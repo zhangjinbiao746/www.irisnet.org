@@ -4,19 +4,6 @@
 			<navigation-line></navigation-line>
 			<h5 class="announcement_title ">{{$store.state.messages.announcements.title}}</h5>
 			<div class="announcement_top_content">
-				<a class="announcement_top_image_content"
-				   id="announcement_top_image_content"
-				   :href="$store.state.messages.announcements.readMoreHref"
-				   target="_blank"
-				   rel="noreferrer noopener"
-				   @mouseenter="scaleImage()"
-				   @mouseleave="hideImage()">
-					<div class="announcement_content_wrap">
-						<span class="announcement_top_content_title">{{$store.state.messages.announcements.betaTitle}}</span>
-						<span class="announcement_top_text">{{$store.state.messages.announcements.betaContent}}</span>
-						<span class="announcement_date">{{$store.state.messages.announcements.betaDate}}</span>
-					</div>
-				</a>
 			</div>
 			<ul class="announcement_list_content">
 				<li class="announcement_item_content" v-for="(item,index) in $store.state.messages.announcements.announcementList" :key="index">

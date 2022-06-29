@@ -299,11 +299,6 @@ export const message = {
   header: {
     left: [
       {
-        id: 0,
-        title: "Whitepaper",
-        active: false,
-      },
-      {
         id: 1,
         title: "Collaboration",
         active: false,
@@ -335,12 +330,6 @@ export const message = {
         active: false,
       },
       {
-        id: 2,
-        title: "Forum",
-        href: "https://forum.irisnet.org/",
-        active: false,
-      },
-      {
         id: 3,
         title: "Blog",
         href: "https://medium.com/irisnet-blog",
@@ -366,18 +355,8 @@ export const message = {
                 activeIndex: '',
                 active:false,
             },*/
-      {
-        id: 2,
-        title: "WhitePaper",
-        activeIndex: 0,
-        active: false,
-      },
-      {
-        id: 3,
-        title: "Roadmap",
-        activeIndex: 7,
-        active: false,
-      },
+
+
       {
         id: 4,
         title: "Collaboration",
@@ -396,12 +375,6 @@ export const message = {
         id: 0,
         title: "Docs",
         href: "https://www.irisnet.org/docs/",
-        activeIndex: "",
-      },
-      {
-        id: 1,
-        title: "Forum",
-        href: "https://forum.irisnet.org/",
         activeIndex: "",
       },
       {
@@ -432,15 +405,16 @@ export const message = {
         src: "irisnet_twitter.png",
         href: "https://twitter.com/irisnetwork",
       },
+
       {
         id: 3,
-        src: "irisnet_mail.png",
-        href: "mailto:contact@irisnet.org",
+        src: "irisnet_medium.png",
+        href: "https://medium.com/irisnet-blog",
       },
       {
         id: 4,
-        src: "irisnet_medium.png",
-        href: "https://medium.com/irisnet-blog",
+        src: "irisnet_mail.png",
+        href: "mailto:contact@irisnet.org",
       },
     ],
     validatorCommunity: [
@@ -747,11 +721,11 @@ export const message = {
       title: "Collaboration",
       list: [
         {
-          title: "Core Development Teams",
+          title: "Development Teams",
           list: [
             {
               name: "BIANJIE.AI",
-              link: "https://www.bianjie.ai/",
+              link: "",
               image: require("../../assets/pages/collaboration/bianjie.png"),
             },
             {
@@ -890,7 +864,7 @@ export const message = {
     sectionFour: {
       Collaboration: "Collaboration",
       CoreDevelopmentTeams: {
-        title: "Core Development Teams",
+        title: "Development Teams",
         logos: [
           {
             id: 0,
@@ -1694,6 +1668,10 @@ export const message = {
               itemName: "Light Client",
               href: "https://www.irisnet.org/docs/cli-client/intro.html",
             },
+            {
+              itemName: "Public Addresses",
+              href: "https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address_cn.md",
+            },
           ],
         },
       ],
@@ -1848,7 +1826,7 @@ export const message = {
     txt: ["Core Development Team", "Strategic Partners"],
 
     core: {
-      title: "Core Development Teams",
+      title: "Development Teams",
       list: [
         {
           img: "collaboration/bianjieai.png",

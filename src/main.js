@@ -35,24 +35,24 @@ Vue.mixin({
         }
     },
     mounted () {
-      
+        this.$store.commit('lang','EN')
         //根据用户浏览器语言偏好设置页面的中英文语言展示
-        let langCNMessage = require('./assets/lang/cn').message,
-            langENMessage = require('./assets/lang/en').message;
-        if(window.navigator.language === 'zh' || window.navigator.language === 'zh-CN'){
-            this.$store.commit('messages',langCNMessage)
-            this.$store.commit('lang','CN')
-        }else {
-            this.$store.commit('messages',langENMessage)
-            this.$store.commit('lang','EN')
-        }
-        if(this.$route.query && this.$route.query.lang === 'CN'){
-            this.$store.commit('lang','CN');
-            this.$store.commit('messages',langCNMessage)
-        }else if(this.$route.query && this.$route.query.lang === 'EN'){
-            this.$store.commit('lang','EN');
-            this.$store.commit('messages',langENMessage)
-        }
+        // let langCNMessage = require('./assets/lang/cn').message,
+        //     langENMessage = require('./assets/lang/en').message;
+        // if(window.navigator.language === 'zh' || window.navigator.language === 'zh-CN'){
+        //     this.$store.commit('messages',langCNMessage)
+        //     this.$store.commit('lang','CN')
+        // }else {
+        //     this.$store.commit('messages',langENMessage)
+        //     this.$store.commit('lang','EN')
+        // }
+        // if(this.$route.query && this.$route.query.lang === 'CN'){
+        //     this.$store.commit('lang','CN');
+        //     this.$store.commit('messages',langCNMessage)
+        // }else if(this.$route.query && this.$route.query.lang === 'EN'){
+        //     this.$store.commit('lang','EN');
+        //     this.$store.commit('messages',langENMessage)
+        // }
     }
 })
 
@@ -61,9 +61,8 @@ export function createApp() {
     const store = createStore()
     Vue.use(VueI18n)
     let i18n = new VueI18n({
-        locale: store.state.lang,    // 语言标识
+        locale: 'EN',    // 语言标识
         messages: {
-            'CN': require('./assets/lang/cn'),   // 中文语言包
             'EN': require('./assets/lang/en')    // 英文语言包
         }
     })
@@ -71,7 +70,7 @@ export function createApp() {
 
     router.beforeEach((to, from, next) => {
         if ((to.query.lang) && (to.query.lang == 'EN' || to.query.lang == 'CN')) {
-            store.state.lang = to.query.lang;
+            store.state.lang = 'EN';
             store.state.messages = i18n.messages[store.state.lang]['message']
         }
         if(to.path.includes('/kuafu/testnet')){

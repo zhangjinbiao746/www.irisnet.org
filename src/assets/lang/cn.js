@@ -279,11 +279,6 @@ export const message = {
   header: {
     left: [
       {
-        id: 0,
-        title: "白皮书",
-        active: false,
-      },
-      {
         id: 1,
         title: "合作方",
         active: false,
@@ -315,12 +310,6 @@ export const message = {
         active: false,
       },
       {
-        id: 2,
-        title: "论坛",
-        href: "https://forum.irisnet.org/",
-        active: false,
-      },
-      {
         id: 3,
         title: "博客",
         href: "https://medium.com/irisnet-blog",
@@ -346,18 +335,7 @@ export const message = {
                 activeIndex: '',
                 active:false,
             },*/
-      {
-        id: 2,
-        title: "白皮书",
-        activeIndex: 0,
-        active: false,
-      },
-      {
-        id: 3,
-        title: "路线图",
-        activeIndex: 7,
-        active: false,
-      },
+
       {
         id: 4,
         title: "合作方",
@@ -376,12 +354,6 @@ export const message = {
         id: 0,
         title: "文档",
         href: "https://www.irisnet.org/docs/zh/",
-      },
-      {
-        id: 1,
-        title: "论坛",
-        href: "https://forum.irisnet.org/",
-        activeIndex: "",
       },
       {
         id: 2,
@@ -413,13 +385,13 @@ export const message = {
       },
       {
         id: 3,
-        src: "irisnet_mail.png",
-        href: "mailto:contact@irisnet.org",
+        src: "irisnet_medium.png",
+        href: "https://medium.com/irisnet-blog",
       },
       {
         id: 4,
-        src: "irisnet_medium.png",
-        href: "https://medium.com/irisnet-blog",
+        src: "irisnet_mail.png",
+        href: "mailto:contact@irisnet.org",
       },
     ],
     validatorCommunity: [
@@ -714,7 +686,7 @@ export const message = {
           list: [
             {
               name: "BIANJIE.AI",
-              link: "https://www.bianjie.ai/",
+              link: "",
               image: require("../../assets/pages/collaboration/bianjie.png"),
             },
             {
@@ -1645,6 +1617,10 @@ export const message = {
             {
               itemName: "轻客户端",
               href: "https://www.irisnet.org/docs/zh/cli-client/intro.html",
+            },
+            {
+              itemName: "Public Addresses",
+              href: "https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address_cn.md",
             },
           ],
         },

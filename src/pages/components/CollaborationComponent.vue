@@ -10,10 +10,14 @@
 					<h5 class="collboration_logo_title">{{item.title}}</h5>
 					<ul class="collboration_logo_list">
 						<li class="collboration_logo_item" v-for="(item,index) in item.list" :key="index">
-							<a :href="item.link" target="_blank" rel="noreferrer noopener">
+							<a v-if="item.name !== 'BIANJIE.AI'" :href="item.link" target="_blank" rel="noreferrer noopener">
 								<img :src="item.image" alt="">
 								<p class="collboration_logo_name">{{item.name}}</p>
 							</a>
+							<span v-else class="not_link_content">
+								<img :src="item.image" alt="">
+								<p class="collboration_logo_name">{{item.name}}</p>
+							</span>
 						</li>
 					</ul>
 				</div>
@@ -101,6 +105,29 @@
 					}
 					.collboration_logo_item{
 						text-align: center;
+						.not_link_content {
+							display: inline-block;
+							img {
+								width: 1rem;
+								height: 1rem;
+								@media (max-width: 768px) {
+									width: 0.6rem;
+									height: 0.6rem;
+								}
+							}
+							.collboration_logo_name{
+								margin-top: 0.24rem;
+								font-family: ArialMT;
+								font-size: 0.32rem;
+								line-height: 0.32rem;
+								font-weight: 600;
+								color: rgba(255,255,255,1);
+								@media(max-width: 768px){
+									font-size: 0.2rem;
+									margin-top: 0.16rem;
+								}
+							}
+						}
 						a{
 							display: inline-block;
 							img{

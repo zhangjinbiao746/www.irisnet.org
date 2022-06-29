@@ -10,7 +10,7 @@
                         <p class="text">{{`${$store.state.messages.thirdBanner.descriptionF}`}}</p>
                         <p class="text">{{`${$store.state.messages.thirdBanner.descriptionT}`}}</p>
                     </div>
-                    <a class="btn" :href="$store.state.messages.thirdBanner.btnLink" target="_blank" rel="noopener noreferrer">{{`${$store.state.messages.thirdBanner.btnLabel}`}}</a>
+                    <span class="btn" ></span>
                 </div>
             </div>
         </div>
