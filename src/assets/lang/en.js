@@ -1668,10 +1668,6 @@ export const message = {
               itemName: "Light Client",
               href: "https://www.irisnet.org/docs/cli-client/intro.html",
             },
-            {
-              itemName: "Public Addresses",
-              href: "https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address_cn.md",
-            },
           ],
         },
       ],
