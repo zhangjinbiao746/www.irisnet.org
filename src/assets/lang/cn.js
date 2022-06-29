@@ -437,12 +437,6 @@ export const message = {
     ],
     resourceList: [
       {
-        id: 0,
-        name: "FAQ",
-        href:
-          "https://medium.com/irisnet-blog/irisnet-%E5%B8%B8%E8%A7%81%E9%97%AE%E7%AD%94-cc7a59293823",
-      },
-      {
         id: 1,
         name: "Blog",
         href: "https://medium.com/irisnet-blog",
