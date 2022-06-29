@@ -1618,10 +1618,6 @@ export const message = {
               itemName: "轻客户端",
               href: "https://www.irisnet.org/docs/zh/cli-client/intro.html",
             },
-            {
-              itemName: "Public Addresses",
-              href: "https://github.com/irisnet/iris-foundation/blob/master/iris-public-token-address_cn.md",
-            },
           ],
         },
       ],
