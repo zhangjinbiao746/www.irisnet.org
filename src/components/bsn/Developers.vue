@@ -223,11 +223,9 @@ export default {
 @keyframes whitePaperAnimate {
 	0% {
 		background-position: 0%;
-		opacity: 0;
 	}
 	100% {
 		background-position: 400%;
-		opacity: 1;
 	}
 }
 </style>
