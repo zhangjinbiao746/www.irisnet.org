@@ -15,7 +15,7 @@
     <div class="float_window_forum_container">
       <a href="https://twitter.com/irisnetwork" target="_blank">
         <div class="forum_img_content">
-          <img src="../../public/irisnet/irisnet_twitter.png" />
+          <img src="../../public/irisnet/irisnet_twitter_float.png" />
         </div>
       </a>
     </div>
