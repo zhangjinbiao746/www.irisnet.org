@@ -13,12 +13,6 @@
 					<div class="white_paper_item_content">{{item.msg}}</div>
 				</div>
 			</div>
-			<div class="white_paper_button_container">
-				<a class="white_paper_button"
-				   :href="$store.state.messages.home.KeyInnovations.WHITEPAPERUrl"
-				   target="_blank"
-				   rel="noreferrer noopener">{{$store.state.messages.home.KeyInnovations.buttonMsg}}</a>
-			</div>
 		</div>
 	</div>
 </template>

@@ -1034,7 +1034,7 @@ export default {
       txt: ["Core Development Team", "Strategic Partners"],
 
       core: {
-        title: "Core Development Teams",
+        title: "Development Teams",
         list: [
           {
             img: "collaboration/bianjieai.png",

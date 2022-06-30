@@ -197,7 +197,7 @@
             &:hover {
                 animation: whitePaperAnimate 8s linear infinite;
                 box-shadow: 0px 0px 6px 3px #C965FF;
-                &::before {
+              &::before {
                     filter: blur(0.2rem);
                     opacity: 1;
                     animation: whitePaperAnimate 8s linear infinite;
@@ -214,8 +214,6 @@
                 background: linear-gradient(90deg, #7EA4FF, #A845E2, #6F21C1, #7EA4FF);
                 background-size: 400%;
                 border-radius: 0.06rem;
-                opacity: 0;
-                transition: all 0.5s linear;
             }
           }
         }
@@ -301,7 +299,7 @@
 }
 @keyframes whitePaperAnimate {
     0% {
-        background-position: 0%;
+        background-position: -100%;
     }
     100% {
         background-position: 400%;
