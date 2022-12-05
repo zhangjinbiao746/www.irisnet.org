@@ -51,9 +51,9 @@
 								<span @click="toTestFunction()" style="cursor: pointer">{{$store.state.messages.irishub.ibc.test}}<i class="iconfont icon-qianwang"></i></span>
 							</div>
 						</div> -->
-						<div class="new_function_right_img_content">
+						<!-- <div class="new_function_right_img_content">
 							<img src="../assets/irishub1/irishub_ibc.png" alt="">
-						</div>
+						</div> -->
 					
 					</div>
 				</div>
@@ -882,12 +882,13 @@
 				padding-left: 0.4rem;
 				padding-right: 0.4rem;
 				.bg_content{
-					background: url("../assets/irishub1/irishub_ibc.png") no-repeat bottom left,url("../assets/irishub1/irishub_iservice.png") no-repeat top 2rem right 0;
+					// background: url("../assets/irishub1/irishub_ibc.png") no-repeat bottom left,url("../assets/irishub1/irishub_iservice.png") no-repeat top 2rem right 0;
+					background: url("../assets/irishub1/interchainaccount.png") no-repeat 0rem 1.5rem;
 					background-size: 5.5rem auto;
 					.new_function_content_wrap{
 						.new_function_section_container{
 							.new_function_left_content{
-								justify-content: flex-start;
+								justify-content: flex-end;
 							}
 							.new_function_left_img_content{
 								display: block;
@@ -995,6 +996,7 @@
 						.new_function_section_container{
 							.new_function_left_content{
 								margin-bottom: 0;
+								justify-content: flex-start;
 								.new_function_section_content{
 									max-width: 70%;
                                     .iservice_icon {
