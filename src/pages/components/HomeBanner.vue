@@ -10,7 +10,7 @@
                         <p class="text">{{`${$store.state.messages.thirdBanner.descriptionF}`}}</p>
                         <p class="text">{{`${$store.state.messages.thirdBanner.descriptionT}`}}</p>
                     </div> -->
-                    <a href="https://discord.gg/bmhu9F9xbX" target="_blank"><span class="btn" @click="gotoDiscord"></span></a>
+                    <a href="https://discord.gg/bmhu9F9xbX" target="_blank"><span class="btn"></span></a>
                 </div>
             </div>
         </div>
@@ -29,9 +29,6 @@ export default {
         resizeWidth() {
             this.clientWidth = +document.body.clientWidth;
         },
-        gotoDiscord() {
-            // window.open('https://discord.gg/bmhu9F9xbX')
-        }
     },
     mounted() {
         this.resizeWidth();
