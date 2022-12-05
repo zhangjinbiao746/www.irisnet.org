@@ -1174,7 +1174,7 @@ export const message = {
           "https://medium.com/irisnet-blog/iris-hub-1-4-mainnet-upgrade-has-been-successfully-completed-947b8b9f3357",
         date: "Dec 05 2022",
         title:
-          "IRISnet Mainnet 1.4 Upgrade Pre-Announcement",
+          "IRISnet Mainnet 1.4 Upgrade Announcement",
         content: "",
       },
       {

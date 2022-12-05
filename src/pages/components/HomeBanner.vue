@@ -46,7 +46,7 @@ export default {
     background: rgba(21, 12, 54, 1);
     .home_banner_wrap {
         margin: 0 auto;
-        // width: 100%;
+        width: 100%;
         // height: 10.8rem;
         background: url(../../assets/shouping_bg.jpg);
         background-repeat: no-repeat;
@@ -61,11 +61,12 @@ export default {
             // background: url(../../assets/shouping_1000.png) no-repeat center -15px / cover;
         }
         @media(max-width: 600px) {
-            background: url(../../assets/shouping_600.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            // background: url(../../assets/shouping_600.png) no-repeat center -5px / cover;
+            // background: url(../../assets/shouping_600.jpg);
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
+            height: 7.2rem;
+            background: url(../../assets/shouping_600.jpg) no-repeat center -5px / cover;
         }
         .home_banner_content {
             box-sizing: border-box;
@@ -215,7 +216,6 @@ export default {
                 .btn {
                     box-sizing: border-box;
                     cursor: pointer;
-                    padding: 0.43rem 0.7rem 0.77rem 0.6rem;
                     position: absolute;
                     top: 3.1rem;
                     left: 1.62rem;
@@ -226,42 +226,48 @@ export default {
                     color: #FFFFFF;
                     line-height: 0.48rem;
                     background: url(../../assets/discord.png) no-repeat center / 100% 100%;
-                    // @media (max-width: 1200px) {
-                    //     // left: 2.93rem;
-                    //     left: 0rem
-                    // }
                     @media (max-width: 1000px) {
-                        padding: 0.45rem 0.75rem 0.68rem 0.71rem;
                         left: 2.68rem;
                         width: 3.23rem;
                         height: 1.61rem;
                         font-size: 0.24rem;
                         background: url(../../assets/discord_1000.png) no-repeat center / 100% 100%;
                     }
-                    // @media (max-width: 680px) {
-                    //     padding: 0.28rem 0.75rem 0.28rem 0.51rem;
-                    //     left: 3rem;
-                    // }
+                    @media (max-width: 830px) {
+                        left: 1.98rem;
+                    }
                     @media (max-width: 750px) {
-                        left: 1.68rem;
+                        left: 1.48rem;
+                    }
+                    @media (max-width: 660px) {
+                        left: 1.18rem;
                     }
                     @media (max-width: 600px) {
-                        padding: 0.4rem 0.45rem 0.57rem 0.45rem;
-                        left: 1.1rem;
+                        top: 2.2rem;
+                        left: 1.28rem;
                         width: 2.8rem;
                         background: url(../../assets/discord_600.png) no-repeat center / 100% 100%;
                     }
-                    // @media (max-width: 530px) {
-                    //     padding: 0.23rem 0.45rem 0.57rem 0.45rem;
-                    //     top: 3.55rem;
-                    //     left: -0.4rem;
-                    //     width: 2.08rem;
-                    //     height: 1.16rem;
-                    //     font-size: 0.16rem;
-                    //     background: url(../../assets/market_text_320.png) no-repeat center / 100% 100%;
-                    // }
-                    @media (max-width: 500px) {
-                        left: 0.1rem
+                    @media (max-width: 540px) {
+                        left: 1.0rem;
+                    }
+                    @media (max-width: 510px) {
+                        left: 0.8rem;
+                    }
+                    @media (max-width: 480px) {
+                        left: 0.5rem;
+                    }
+                    @media (max-width: 470px) {
+                        left: 0.2rem;
+                    }
+                    @media (max-width: 440px) {
+                        left: 0rem;
+                    }
+                    @media (max-width: 400px) {
+                        left: -0.5rem;
+                    }
+                    @media (max-width: 360px) {
+                        left: -1.0rem;
                     }
                 }
             }
