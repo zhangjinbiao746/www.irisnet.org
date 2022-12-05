@@ -92,7 +92,7 @@
 					display: grid;
 					grid-template-columns: repeat(5,1fr);
 					grid-row-gap: 0.52rem;
-					@media(max-width: 768px){
+					@media(max-width: 940px){
 						margin-top: 0.24rem;
 						grid-template-columns: repeat(4,1fr);
 					}
