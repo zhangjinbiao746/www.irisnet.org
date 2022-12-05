@@ -58,19 +58,19 @@ export const message = {
     img: require("../third_en.png"),
     img1000: require("../third_en_1000.png"),
     img320: require("../third_zh_320.png"),
-    descriptionF: "Enjoy Your Upgraded Interchain NFT",
-    descriptionT: "Tour with Evolved Nyan Cat Guide",
+    descriptionF: "Cross-chain Manage your NFTs",
+    descriptionT: "through Interchain Accounts",
     btnLabel: "CoinMarketCap",
     btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
   },
   irishub: {
-    title: "IRIS Hub 1.3",
+    title: "IRIS Hub 1.4",
     secondTitle:
-      "Interchain NFT Hub to Connect “Permissionless” and “Permissioned”",
+      "Be the first to support IBC-managing NFT assets through ICA",
     description: "– A BPoS Blockchain That Is Self-evolutionary",
     btn: {
       prepare: "Rainbow Wallet",
-      proposal: "IOBScan Explorer",
+      proposal: "Explorer",
       tooltip: "Coming Soon",
     },
     proposal: {
@@ -171,40 +171,40 @@ export const message = {
     newFunction: {
       title: "New Features",
       description:
-        "IRIS Hub 1.3 with enhanced cross-chain interoperability and NFT capabilty enables more interchain NFT features.",
+        "IRIS Hub 1.4 with enabled Interchain Account feature enhances more cross-chain NFT functionalities.",
     },
     iService: {
-      title: "Terse Inter-Blockchain Communication (TIBC)",
+      title: "Interchain Account + NFT",
       description:
-        "Facilitate the extension and adoption of heterogeneous cross-chain abilities with interchain NFT transfers, smart contracts interaction and other cross-chain services enabled.",
+        "Enable the Interchain Account (ICA) feature as a Host Chain, granting users access to various native features on IRISnet from one account on the controller chain, allowing cross-chain management of NFT/MT on IRISnet via ICA.",
     },
     ibc: {
-      title: "IBC + iService",
-      description:
-        "TCP/IP + HTTP protocol of blockchains that can build and further broaden the Internet of Blockchains to support cross-platform data and application services between on-chain and off-chain, bridging the blockchain world with traditional business systems.",
-      test: "Multi-Networks IBC Joint Tests",
-      link: "",
+      // title: "IBC + iService",
+      // description:
+      //   "TCP/IP + HTTP protocol of blockchains that can build and further broaden the Internet of Blockchains to support cross-platform data and application services between on-chain and off-chain, bridging the blockchain world with traditional business systems.",
+      // test: "Multi-Networks IBC Joint Tests",
+      // link: "",
     },
-    applicationList: [
-      {
-        iconName: require('../irishub1/nft_kuafu.png'),
-        title: "NFT",
-        section:
-          "Supported NFT, to achieve the digitization of assets on blockchains.",
-      },
-      {
-        iconName: require('../irishub1/oracle_kuafu.png'),
-        title: "Oracle",
-        section:
-          "Supported oracle service based on iService, to impletment cross-platform data services from off-chain to on-chain/off-chain.",
-      },
-      {
-        iconName: require('../irishub1/coinswap_kuafu.png'),
-        title: "Coinswap",
-        section:
-          "Cross-chain AMM protocol, a vanguard innovation platform for the Cosmos application ecosystem.",
-      },
-    ],
+    // applicationList: [
+    //   {
+    //     iconName: require('../irishub1/nft_kuafu.png'),
+    //     title: "NFT",
+    //     section:
+    //       "Supported NFT, to achieve the digitization of assets on blockchains.",
+    //   },
+    //   {
+    //     iconName: require('../irishub1/oracle_kuafu.png'),
+    //     title: "Oracle",
+    //     section:
+    //       "Supported oracle service based on iService, to impletment cross-platform data services from off-chain to on-chain/off-chain.",
+    //   },
+    //   {
+    //     iconName: require('../irishub1/coinswap_kuafu.png'),
+    //     title: "Coinswap",
+    //     section:
+    //       "Cross-chain AMM protocol, a vanguard innovation platform for the Cosmos application ecosystem.",
+    //   },
+    // ],
     testnet: {
       title: "Bifrost Testnet",
       description:
@@ -444,8 +444,8 @@ export const message = {
       },
       {
         id: 1,
-        name: "IRISplorer",
-        href: "https://irishub.iobscan.io",
+        name: "IOBScan",
+        href: "https://ibc.iobscan.io/",
       },
       {
         id: 2,
@@ -474,6 +474,11 @@ export const message = {
         name: "Press Kit",
         href: "/community/press-kit",
       },
+      {
+        id: 4,
+        name: "Explorer",
+        href: "https://irishub.iobscan.io/"
+      }
     ],
     productsTitle: "Products",
     resourcesTitle: "Resources",
@@ -634,19 +639,19 @@ export const message = {
       list: [
         {
           id: 0,
-          msg: "Incorporation of a service-oriented infrastructure into Cosmos",
+          msg: "Incorporation of a service-oriented infrastructure into the Interchain",
           imgName: require("../white_paper_first_icon.png"),
         },
         {
           id: 1,
           msg:
-            "Integration of business services offered by heterogeneous systems,including public & consortium chains as well as legacy systems",
+            "Integration of business services offered by heterogeneous systems, including public and consortium chains as well as legacy systems",
             imgName: require("../white_paper_second_icon.png"),
         },
         {
           id: 2,
           msg:
-            "Interoperability of those services across an internet of blockchains",
+            "NFT Interoperability across the Internet of Blockchains and service interactions between on/off-chain systems",
           imgName: require("../white_paper_last_icon.png"),
         },
       ],
@@ -663,14 +668,14 @@ export const message = {
             "TCP/IP + HTTP protocol of blockchains that can build and further broaden the Internet of Blockchains to support cross-platform data & application services between on-chain and off-chain.",
         },
         {
+          title: "ICA + NFT",
+          content:
+            "Cross-chain management of NFT and MT assets through Interchain Account.",
+        },
+        {
           title: "TIBC",
           content:
             "Terse IBC protocol to accelerate heterogeneous interchain technology with NFT transfers,  smart contracts interactions and other cross-chain services enabled.",
-        },
-        {
-          title: "NFT",
-          content:
-            "Digitization of assets on blockchains to support efficient and reliable value transferring and distribution.",
         },
         {
           title: "Coinswap",
@@ -683,16 +688,16 @@ export const message = {
       title: "Upcoming Features",
       list: [
         {
-          title: "Ethereum Interconnection",
+          title: "EVM",
           content:
-            "Using TIBC module to connect with Ethereum, further supporting cross-chain NFT transfers and protocol interactions",
+            "Deploying EVM feature to enable interoperability with Ethereum",
           image: require("../../assets/pages/eth_logo.png"),
         },
         {
-          title: "CosmWasm",
+          title: "Interchain NFT",
           content:
-            "Integrating CosmWasm VM to enable crosschain smart contract development.",
-          image: require("../../assets/pages/cosmWasm_logo.png"),
+            "Deploying ICS721 standard to enable NFT assets interchain transfers",
+          image: require("../../assets/pages/interchain_nft_logo.png"),
         },
       ],
     },
@@ -793,6 +798,11 @@ export const message = {
               link: "http://iris.fan/#/",
               image: require("../../assets/pages/collaboration/COIRFAN.png"),
             },
+            {
+              name: "StaFiHub",
+              link: "https://www.stafihub.io/",
+              image: require("../../assets/pages/collaboration/StaFiHub.png")
+            }
           ],
         },
       ],
@@ -1159,41 +1169,21 @@ export const message = {
     announcementList: [
       {
         id: "0",
-        img: require("../../assets/pages/announcements/ixo.png"),
+        img: require("../../assets/pages/announcements/irisnet_01.jpg"),
         href:
-          "https://medium.com/irisnet-blog/irisnet-ixo-collaborate-on-nft-implementations-and-applications-for-the-cosmos-ecosystem-as-a-202d1e13aeaa",
-        date: "Aug 26, 2021",
+          "https://medium.com/irisnet-blog/iris-hub-1-4-mainnet-upgrade-has-been-successfully-completed-947b8b9f3357",
+        date: "Dec 05 2022",
         title:
-          "IRISnet & ixo Collaborate on NFT Implementations and Applications for the Cosmos Ecosystem, as a Force for Transitioning to the Green Economy",
+          "IRISnet Mainnet 1.4 Upgrade Pre-Announcement",
         content: "",
       },
       {
         id: "1",
-        img: require("../../assets/pages/announcements/development_program.png"),
+        img: require("../../assets/pages/announcements/irisnet_02.jpg"),
         href:
-          "https://medium.com/irisnet-blog/announcing-iris-foundation-new-ecosystem-development-program-af79033fd200",
-        date: "Apr 30, 2021",
-        title: " Announcing IRIS Foundation New Ecosystem Development Program",
-        content: "",
-      },
-      {
-        id: "2",
-        img: require("../../assets/pages/announcements/ibc_transfer.png"),
-        href:
-          "https://medium.com/irisnet-blog/irisnet-has-enabled-ibc-transfers-completed-the-1st-cross-mainnet-token-transfer-with-cosmos-hub-2480b3a56650",
-        date: "Apr 02, 2021",
-        title:
-          "IRISnet Has Enabled IBC Transfers & Completed the 1st Cross-Mainnet Token Transfer with Cosmos Hub",
-        content: "",
-      },
-      {
-        id: "3",
-        img: require("../pages/announcements/Rainbow_ID_EN.png"),
-        href:
-          "https://medium.com/irisnet-blog/rainbow-app-added-rainbowid-easily-managing-your-multi-chain-wallets-677565d718fa",
-        date: "Mar 23 2021",
-        title:
-          "Rainbow App Added RainbowID, Easily Managing Your Multi-Chain Wallets",
+          " https://medium.com/irisnet-blog/irisnet-monthly-update-2022-10-8e21813b2521",
+        date: "Nov 16 2022",
+        title: "IRISnet Monthly Update",
         content: "",
       },
     ],
@@ -1534,6 +1524,15 @@ export const message = {
                 ],
                 href: "https://wallet.syncnode.ro/",
             },
+            {
+              itemName: "Leap Wallet",
+              osList: [
+                "icon-anzhuo",
+                "icon-iOS",
+                "icon-PC"
+              ],
+              href: "https://www.leapwallet.io/",
+            }
           ],
           content:
             "These web and mobile wallets allow you to store & transfer IRIS, delegate IRIS to validators, and some of them also support ATOM. Note that we do not endorse any of the wallets, they are listed for your convenience.",
@@ -1620,6 +1619,10 @@ export const message = {
               itemName: "ATOMScan",
               href: "https://atomscan.com/iris-network",
             },
+            {
+              itemName: "MapofZones",
+              href: "https://mapofzones.com/zones/irishub-1/overview?period=24h"
+            }
           ],
           content:
             "These block explorers allow you to search, view and analyze IRIS Hub data—like blocks, transactions, validators, governance including params or proposals, etc.",

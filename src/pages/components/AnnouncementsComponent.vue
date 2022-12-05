@@ -175,7 +175,7 @@
 				margin: 0 auto;
 				display: grid;
 				grid-template-columns: repeat(2,1fr);
-				grid-template-rows: repeat(2,1fr);
+				// grid-template-rows: repeat(2,1fr);
 				grid-row-gap: 0.6rem;
 				grid-column-gap: 0.56rem;
 				@media(max-width: 1000px){

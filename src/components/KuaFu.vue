@@ -32,25 +32,25 @@
 						<div class="new_function_left_content">
 							<div class="new_function_section_content">
                                 <div class="iservice_icon">
-                                    <img src="../assets/irishub1/iservice_kuafu.png" alt="">
+                                    <img src="../assets/irishub1/interchain_account.png" alt="">
                                 </div>
 								<p class="new_function_section_label">{{$store.state.messages.irishub.iService.title}}</p>
 								<p class="new_function_section">{{$store.state.messages.irishub.iService.description}}</p>
 							</div>
 						</div>
-						<div class="new_function_left_img_content">
+						<!-- <div class="new_function_left_img_content">
 							<img src="" alt="">
-						</div>
-						<div class="new_function_right_content">
+						</div> -->
+						<!-- <div class="new_function_right_content">
 							<div class="new_function_section_content">
                                 <div class="ibc_icon">
                                     <img src="../assets/irishub1/ibc_kuafu.png" alt="">
                                 </div>
 								<p class="new_function_section_label">{{$store.state.messages.irishub.ibc.title}}</p>
 								<p class="new_function_section" v-html="$store.state.messages.irishub.ibc.description"></p>
-<!--								<span @click="toTestFunction()" style="cursor: pointer">{{$store.state.messages.irishub.ibc.test}}<i class="iconfont icon-qianwang"></i></span>-->
+								<span @click="toTestFunction()" style="cursor: pointer">{{$store.state.messages.irishub.ibc.test}}<i class="iconfont icon-qianwang"></i></span>
 							</div>
-						</div>
+						</div> -->
 						<div class="new_function_right_img_content">
 							<img src="../assets/irishub1/irishub_ibc.png" alt="">
 						</div>
@@ -58,7 +58,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="new_function_application_container">
+			<!-- <div class="new_function_application_container">
 				<div class="new_function_application_content"
 				     v-for="(item, index) in $store.state.messages.irishub.applicationList"
 				     :key="index">
@@ -68,7 +68,7 @@
 					<p class="new_function_application_title">{{item.title}}</p>
 					<p class="new_function_application_section" v-html="item.section "></p>
 				</div>
-			</div>
+			</div> -->
 		</div>
 <!--		<div class="proposal_container">
 			<div class="proposal_content">
@@ -360,7 +360,8 @@
 			.bg_content{
 				max-width: 19.2rem;
 				margin: 0 auto;
-				background: url("../assets/irishub1/irishub_ibc.png") no-repeat right 1rem top 6.4rem,url("../assets/irishub1/irishub_iservice.png") no-repeat 1rem 1.5rem;
+				// background: url("../assets/irishub1/irishub_ibc.png") no-repeat right 1rem top 6.4rem,url("../assets/irishub1/interchainaccount.png") no-repeat 1rem 1.5rem;
+				background: url("../assets/irishub1/interchainaccount.png") no-repeat 1rem 1.5rem;
 				background-size: 7rem auto;
 				@media(max-width: 1500px){
 					background-size: 5rem auto;
