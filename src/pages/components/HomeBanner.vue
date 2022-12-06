@@ -1,18 +1,7 @@
 <template>
     <div class="home_banner_container">
-        <div class="home_banner_wrap">
-            <div class="home_banner_content">
-                <div class="home_banner">
-                    <!-- <img v-show="clientWidth > 1000" :src="$store.state.messages.thirdBanner.img" class="img_normal" alt=""> -->
-                    <!-- <img v-show="clientWidth <= 1000 && clientWidth > 530" :src="$store.state.messages.thirdBanner.img1000" class="img_1000" alt=""> -->
-                    <!-- <img v-show="clientWidth <= 530" :src="$store.state.messages.thirdBanner.img320" class="img_320" alt=""> -->
-                    <!-- <div class="description">
-                        <p class="text">{{`${$store.state.messages.thirdBanner.descriptionF}`}}</p>
-                        <p class="text">{{`${$store.state.messages.thirdBanner.descriptionT}`}}</p>
-                    </div> -->
-                    <a href="https://discord.gg/bmhu9F9xbX" target="_blank"><span class="btn"></span></a>
-                </div>
-            </div>
+        <div class="home_banner_wrap" :style="{ 'height': `${curHeight}rem` }">
+            <a href="https://discord.gg/bmhu9F9xbX" target="_blank"><span class="btn"></span></a>
         </div>
     </div>
 </template>
@@ -23,6 +12,19 @@ export default {
     data() {
         return {
             clientWidth: null,
+        }
+    },
+    computed: {
+        curHeight() {
+            let ratio = 0.5625
+            if(this.clientWidth < 1000 && this.clientWidth > 600){
+                ratio = 0.768
+            } else if (this.clientWidth <= 600 && this.clientWidth > 375) {
+                ratio = 1.2
+            } else if (this.clientWidth <= 375){
+                ratio = 1.728
+            }
+            return (this.clientWidth * ratio) / 100
         }
     },
     methods: {
@@ -44,232 +46,106 @@ export default {
 .home_banner_container {
     width: 100%;
     background: rgba(21, 12, 54, 1);
+    position: relative;
     .home_banner_wrap {
         margin: 0 auto;
-        width: 100%;
-        // height: 10.8rem;
-        background: url(../../assets/shouping_bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        // background: url(../../assets/third_banner.png) no-repeat center 0 / cover;
+        height: 10.8rem;
+        background: url(../../assets/shouping_bg.jpg) no-repeat center center;
+        background-size: contain;
         @media(max-width: 1000px) {
-            background: url(../../assets/shouping_1000.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            // background: url(../../assets/shouping_1000.png) no-repeat center -15px / cover;
+            height: 7.68rem;
+            background: url(../../assets/shouping_1000.jpg) no-repeat center center;
+            background-size: contain;
+
         }
         @media(max-width: 600px) {
-            // background: url(../../assets/shouping_600.jpg);
-            // background-repeat: no-repeat;
-            // background-size: cover;
-            // background-position: center;
             height: 7.2rem;
-            background: url(../../assets/shouping_600.jpg) no-repeat center -5px / cover;
+            background: url(../../assets/shouping_600.jpg) no-repeat center center;
+            background-size: contain;
         }
-        .home_banner_content {
+
+        @media(max-width: 375px) {
+            height: 6.48rem;
+            background: url(../../assets/shouping_375.jpg) no-repeat center center;
+            background-size: 100%;
+        }
+
+        .btn {
             box-sizing: border-box;
-            padding: 1.4rem 0 2.6rem 1.4rem;
-            margin: 0 auto;
-            max-width: 12rem;
-            height: 100%;
-            // @media(max-width: 1200px) {
-            //     padding: 1.4rem 0 2.6rem 1.2rem;
-            // }
-            // @media(max-width: 1150px) {
-            //     padding: 1.4rem 0 2.6rem 1rem;
-            // }
-            // @media(max-width: 1100px) {
-            //     padding: 1.4rem 0 2.6rem 0.8rem;
-            // }
-            // @media(max-width: 1050px) {
-            //     padding: 1.4rem 0 2.6rem 0.6rem;
-            // }
-            // @media(max-width: 1000px) {
-            //     padding: 1.28rem 0 0 0.8rem;
-            // }
-            // @media(max-width: 880px) {
-            //     padding: 1.08rem 0 0 0.5rem;
-            // }
-            // @media(max-width: 810px) {
-            //     padding: 1.08rem 0 0 0.3rem;
-            // }
-            // @media(max-width: 768px) {
-            //     padding: 1.08rem 0 0 0;
-            // }
-            // @media(max-width: 730px) {
-            //     padding: 1.08rem 0 0 0.3rem;
-            // }
-            // @media(max-width: 680px) {
-            //     padding: 1.08rem 0 0 0;
-            // }
-            // @media(max-width: 625px) {
-            //     padding: 0.8rem 0 0 0.2rem;
-            // }
-            // @media(max-width: 580px) {
-            //     padding: 0.8rem 0 0 0;
-            // }
-            // @media(max-width: 530px) {
-            //     padding: 0.4rem 0 0 0.8rem;
-            // }
-            // @media(max-width: 470px) {
-            //     padding: 0.4rem 0 0 0.5rem;
-            // }
-            // @media(max-width: 410px) {
-            //     padding: 0.4rem 0 0 0.3rem;
-            // }
-            // @media(max-width: 400px) {
-            //     padding: 0.4rem 0 0 0.5rem;
-            // }
-            // @media(max-width: 360px) {
-            //     padding: 0.4rem 0 0 0.3rem;
-            // }
-            // @media(max-width: 335px) {
-            //     padding: 0.4rem 0 0 0.2rem;
-            // }
-            .home_banner {
-                position: relative;
-                height: 4.8rem;
-                // @media(max-width: 1000px) {
-                //     height: 6.6rem;
-                // }
-                // @media(max-width: 730px) {
-                //     height: 5.6rem;
-                // }
-                // @media(max-width: 625px) {
-                //     height: 5rem;
-                // }
-                // @media(max-width: 530px) {
-                //     height: 5.8rem;
-                // }
-                // @media(max-width: 400px) {
-                //     height: 5rem;
-                // }
-                img {
-                    height: 100%;
-                }
-                .description {
-                    position: absolute;
-                    top: 3.3rem;
-                    // @media(max-width: 1000px) {
-                    //     top: 3.15rem;
-                    //     left: 2.22rem;
-                    // }
-                    // @media(max-width: 730px) {
-                    //     top: 2.65rem;
-                    //     left: 1.87rem;
-                    // }
-                    // @media(max-width: 625px) {
-                    //     top: 2.4rem;
-                    //     left: 1.67rem;
-                    // }
-                    // @media(max-width: 530px) {
-                    //     top: 3rem;
-                    //     left: 0.4rem;
-                    // }
-                    // @media(max-width: 400px) {
-                    //     top: 2.6rem;
-                    //     left: 0.36rem;
-                    // }
-                    .text {
-                        box-sizing: border-box;
-                        padding: 0 0.08rem;
-                        font-size: 0.28rem;
-                        font-weight: 400;
-                        color: #FFFFFF;
-                        line-height: 0.44rem;
-                        // background: rgba(76, 37, 154, 1);
-                        @media (max-width: 1000px) {
-                            margin-top: 0.13rem;
-                            padding: 0 0.18rem;
-                            width: 4rem;
-                        }
-                        @media (max-width: 730px) {
-                            margin-top: 0.12rem;
-                            padding: 0 0.08rem;
-                            width: 3.38rem;
-                            font-size: 0.2rem;
-                            line-height: 0.36rem;
-                        }
-                        @media (max-width: 670px) {
-                            width: 3.02rem;
-                            font-size: 0.16rem;
-                            line-height: 0.32rem;
-                        }
-                        @media (max-width: 530px) {
-                            width: 2.58rem;
-                            font-size: 0.14rem;
-                            line-height: 0.26rem;
-                        }
-                        @media (max-width: 400px) {
-                            padding: 0 0.04rem;
-                            width: 2.22rem;
-                            font-size: 0.13rem;
-                            line-height: 0.2rem;
-                        }
-                        &:first-child {
-                            margin-top: 0;
-                        }
-                    }
-                }
-                .btn {
-                    box-sizing: border-box;
-                    cursor: pointer;
-                    position: absolute;
-                    top: 3.1rem;
-                    left: 1.62rem;
-                    width: 3.38rem;
-                    height: 1.68rem;
-                    font-size: 0.3rem;
-                    font-weight: normal;
-                    color: #FFFFFF;
-                    line-height: 0.48rem;
-                    background: url(../../assets/discord.png) no-repeat center / 100% 100%;
-                    @media (max-width: 1000px) {
-                        left: 2.68rem;
-                        width: 3.23rem;
-                        height: 1.61rem;
-                        font-size: 0.24rem;
-                        background: url(../../assets/discord_1000.png) no-repeat center / 100% 100%;
-                    }
-                    @media (max-width: 830px) {
-                        left: 1.98rem;
-                    }
-                    @media (max-width: 750px) {
-                        left: 1.48rem;
-                    }
-                    @media (max-width: 660px) {
-                        left: 1.18rem;
-                    }
-                    @media (max-width: 600px) {
-                        top: 2.2rem;
-                        left: 1.28rem;
-                        width: 2.8rem;
-                        background: url(../../assets/discord_600.png) no-repeat center / 100% 100%;
-                    }
-                    @media (max-width: 540px) {
-                        left: 1.0rem;
-                    }
-                    @media (max-width: 510px) {
-                        left: 0.8rem;
-                    }
-                    @media (max-width: 480px) {
-                        left: 0.5rem;
-                    }
-                    @media (max-width: 470px) {
-                        left: 0.2rem;
-                    }
-                    @media (max-width: 440px) {
-                        left: 0rem;
-                    }
-                    @media (max-width: 400px) {
-                        left: -0.5rem;
-                    }
-                    @media (max-width: 360px) {
-                        left: -1.0rem;
-                    }
-                }
+            cursor: pointer;
+            position: absolute;
+            top: 52%;
+            left: 40%;
+            width: 3.38rem;
+            height: 1.68rem;
+            font-size: 0.3rem;
+            font-weight: normal;
+            color: #FFFFFF;
+            line-height: 0.48rem;
+            background: url(../../assets/discord.png) no-repeat center;
+            background-size: 100%;
+            @media (max-width: 1600px) {
+                left: 31%;
+                background-size: 90%;
+            }
+            @media (max-width: 1350px) {
+                left: 28%;
+                top: 50%;
+                background-size: 80%;
+            }
+            @media (max-width: 1000px) {
+                top: 50%;
+                left: 38%;
+                width: 3.23rem;
+                height: 1.61rem;
+                font-size: 0.24rem;
+                background: url(../../assets/discord_1000.png) no-repeat center;
+                background-size: 100%;
+            }
+
+            @media (max-width: 900px) {
+                top: 48%;
+                left: 36%;
+                background-size: 90%;
+            }
+
+            @media (max-width: 800px) {
+                top: 47%;
+                left: 34%;
+                background-size: 80%;
+            }
+
+            @media (max-width: 700px) {
+                top: 46%;
+                left: 32%;
+                background-size: 70%;
+            }
+
+            @media (max-width: 600px) {
+                top: 50%;
+                left: 38%;
+                width: 2.8rem;
+                background: url(../../assets/discord_600.png) no-repeat center center;
+                background-size: 80%;
+            }
+
+            @media (max-width: 500px) {
+                top: 45%;
+                left: 36%;
+                background-size: 60%;
+            }
+
+            @media (max-width: 375px) {
+                top: 48%;
+                left: 22%;
+                background: url(../../assets/discord_375.png) no-repeat center center;
+                background-size: 100%;
+            }
+
+            @media (max-width: 350px) {
+                top: 45%;
+                left: 20%;
+                background-size: 80%;
             }
         }
     }
