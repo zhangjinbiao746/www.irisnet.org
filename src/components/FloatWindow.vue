@@ -65,7 +65,7 @@ export default {
       margin-top: 0.2rem;
       cursor: pointer;
       &:hover {
-        background: linear-gradient(147deg, #5f76e6 0%, #3141c9 100%);
+        background: linear-gradient(153deg, #9F48F9 0%, #7021C1 100%);
         box-shadow: 0 0.02rem 0.2rem 0 rgba(3, 0, 35, 0.25);
       }
       img {
@@ -113,7 +113,7 @@ export default {
     background: rgba(111, 33, 193, 1);
     box-shadow: 0 0.02rem 0.2rem 0 rgba(3, 0, 35, 0.25);
     &:hover {
-      background: linear-gradient(147deg, #5f76e6 0%, #3141c9 100%);
+      background: linear-gradient(153deg, #9F48F9 0%, #7021C1 100%);
       box-shadow: 0 0.02rem 0.2rem 0 rgba(3, 0, 35, 0.25);
     }
     a {

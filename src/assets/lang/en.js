@@ -360,7 +360,7 @@ export const message = {
       {
         id: 4,
         title: "Collaboration",
-        activeIndex: 1,
+        activeIndex: 0,
         active: false,
       },
       {
