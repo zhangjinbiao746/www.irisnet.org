@@ -1,7 +1,7 @@
 <template>
     <div class="home_banner_container">
         <div class="home_banner_wrap" :style="{ 'height': `${curHeight}rem` }">
-            <a href="https://discord.gg/bmhu9F9xbX" target="_blank"><span class="btn"></span></a>
+            <a href="https://discord.gg/bmhu9F9xbX" target="_blank" rel="noreferrer noopener"><span class="btn"></span></a>
         </div>
     </div>
 </template>
