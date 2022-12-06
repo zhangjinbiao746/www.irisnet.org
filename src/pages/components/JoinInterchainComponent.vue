@@ -137,7 +137,6 @@ export default {
                         box-shadow: 0px 0px 6px 3px #C965FF;
                         &::before {
                             filter: blur(0.2rem);
-                            opacity: 1;
                             animation: whitePaperAnimate 8s linear infinite;
                         }
                     }
