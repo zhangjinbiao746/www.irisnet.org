@@ -135,16 +135,26 @@ export default {
                 background-size: 60%;
             }
 
+            @media (max-width: 450px) {
+                left: 31%;
+                background-size: 60%;
+            }
+
+            @media (max-width: 410px) {
+                left: 25%;
+                background-size: 60%;
+            }
+
             @media (max-width: 375px) {
                 top: 48%;
-                left: 22%;
+                left: 20%;
                 background: url(../../assets/discord_375.png) no-repeat center center;
                 background-size: 100%;
             }
 
             @media (max-width: 350px) {
                 top: 45%;
-                left: 20%;
+                left: 14%;
                 background-size: 80%;
             }
         }
