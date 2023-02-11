@@ -1775,7 +1775,7 @@ export const message = {
           blueImg: require("../../assets/cosmos/cosmos_blue.png"),
           title: "Cosmos Overview",
           href:
-            "https://cosmos-overview.genesislab.net/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em",
+            "https://cosmos-overview.genesislab.net",
         },
         // {
         //   active: false,
