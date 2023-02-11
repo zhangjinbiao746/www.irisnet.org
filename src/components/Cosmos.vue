@@ -10,7 +10,7 @@
                     <p>{{headerProduct}}</p>
                     <h2 class="cosmos_address">{{headerValidatorAddress}}</h2>
                     <p>
-                        <a :href="cosmosExplorerHref" target="_blank">{{headerCosmosAddress}} </a>
+                        <span target="_blank">{{headerCosmosAddress}} </span>
                         <span @click="toCosmosBrowser" id="cosmosAddress" :data-clipboard-text="headerCosmosAddress">
                     <img src="../assets/cosmos/copy_logo.png" alt="">
                 </span>
@@ -173,7 +173,7 @@
 	            commissionRate:'Commission Rate',
 	            uptime:'Uptime',
 	            guide:'Cosmos Hub Wallets',
-	            guideHref:'https://hub.cosmos.network/master/hub-overview/overview.html#cosmos-hub-wallets',
+	            guideHref:'https://hub.cosmos.network/main/hub-overview/overview.html#cosmos-hub-wallets',
                 aboutIrisnetList: [
 	                {
 		                item:'Supported by <a href="https://cosmos.network/about" target="_blank" style="color:rgba(77, 150, 223, 1)">Interchain Foundation (ICF)</a> to build IRISnet, a Cosmos Hub that facilitates construction of distributed business applications.'

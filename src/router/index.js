@@ -84,7 +84,10 @@ export function createRouter() {
                 path: '/mainnet/app',
                 component: MainNetApp
             },
-
+            {
+                path: '/irisnet-bianjie',
+                component: Cosmos
+            },
             {
                 path: '/developers',
                 component: Developers

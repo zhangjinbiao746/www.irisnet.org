@@ -55,7 +55,7 @@ let cache = null;
 app.route('/validators')
 .get((req, res, next) => {
     request({
-        url: `http://cosmos-lcd.rainbow.one/staking/validators/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em`,
+        url: `https://cosmos-mainnet-rpc.allthatnode.com:1317/staking/validators/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em`,
         method: 'get',
         headers: {
             'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ let tokencache = null;
 app.route('/bondedTokens')
 .get((req, res, next) => {
     request({
-        url: `http://cosmos-lcd.rainbow.one/staking/pool`,
+        url: `https://cosmos-mainnet-rpc.allthatnode.com:1317/staking/pool`,
         method: 'get',
         headers: {
             'Content-Type': 'application/json'
@@ -94,7 +94,7 @@ let blockcache = null;
 app.route('/missedBlockCounter')
 .get((req, res, next) => {
     request({
-        url: `https://cosmos-lcd.rainbow.one/slashing/validators/cosmosvalconspub1zcjduepqrgyyjxpe0ujefxwnkpmqz9m0hj03y09tdz9lwc0s7mvy469hulfq69f8sd/signing_info`,
+        url: `https://cosmos-mainnet-rpc.allthatnode.com:1317/slashing/validators/cosmosvalconspub1zcjduepqrgyyjxpe0ujefxwnkpmqz9m0hj03y09tdz9lwc0s7mvy469hulfq69f8sd/signing_info`,
         method: 'get',
         headers: {
             'Content-Type': 'application/json'
@@ -113,7 +113,7 @@ let signedBlockscache = null;
 app.route('/signedBlocksWindow')
 .get((req, res, next) => {
     request({
-        url: `https://cosmos-lcd.rainbow.one/slashing/parameters`,
+        url: `https://cosmos-mainnet-rpc.allthatnode.com:1317/slashing/parameters`,
         method: 'get',
         headers: {
             'Content-Type': 'application/json'

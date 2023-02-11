@@ -1686,7 +1686,7 @@ export const message = {
         commissionRate: "Commission Rate",
         uptime: "Uptime",
         guide: "Cosmos Hub Wallets",
-        guideHref: "https://hub.cosmos.network/#cosmos-hub-wallets",
+        guideHref: "https://hub.cosmos.network/main/hub-overview/overview.html#cosmos-hub-wallets",
       },
       about: {
         title: "About IRISnet-Bianjie",
@@ -1755,6 +1755,14 @@ export const message = {
       cosmosExplorer: [
         {
           active: false,
+          whiteImg: require("../../assets/cosmos/Mintscan_white.png"),
+          blueImg: require("../../assets/cosmos/Mintscan_blue.png"),
+          title: "Mintscan",
+          href:
+              "https://www.mintscan.io/cosmos/validators/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g",
+        },
+        {
+          active: false,
           whiteImg: require("../../assets/cosmos/big_dipper_white.png"),
           blueImg: require("../../assets/cosmos/big-dipper_blue.png"),
           title: "Big Dipper",
@@ -1769,30 +1777,23 @@ export const message = {
           href:
             "https://cosmos-overview.genesislab.net/cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em",
         },
-        {
-          active: false,
-          whiteImg: require("../../assets/cosmos/hubble_white.png"),
-          blueImg: require("../../assets/cosmos/hubble_blue.png"),
-          title: "Hubble",
-          href:
-            "https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030",
-        },
-        {
-          active: false,
-          whiteImg: require("../../assets/cosmos/Mintscan_white.png"),
-          blueImg: require("../../assets/cosmos/Mintscan_blue.png"),
-          title: "Mintscan",
-          href:
-            "https://www.mintscan.io/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g",
-        },
-        {
-          active: false,
-          whiteImg: require("../../assets/cosmos/Stargazer_white.png"),
-          blueImg: require("../../assets/cosmos/Stargazer_blue.png"),
-          title: "Stargazer",
-          href:
-            "https://stargazer.certus.one/accounts/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g",
-        },
+        // {
+        //   active: false,
+        //   whiteImg: require("../../assets/cosmos/hubble_white.png"),
+        //   blueImg: require("../../assets/cosmos/hubble_blue.png"),
+        //   title: "Hubble",
+        //   href:
+        //     "https://hubble.figment.network/cosmos/chains/cosmoshub-2/validators/696ABC95186FD65A07050C28AB00C9358A315030",
+        // },
+        //
+        // {
+        //   active: false,
+        //   whiteImg: require("../../assets/cosmos/Stargazer_white.png"),
+        //   blueImg: require("../../assets/cosmos/Stargazer_blue.png"),
+        //   title: "Stargazer",
+        //   href:
+        //     "https://stargazer.certus.one/accounts/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g",
+        // },
       ],
     },
   },
