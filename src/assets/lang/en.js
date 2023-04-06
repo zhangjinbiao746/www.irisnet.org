@@ -64,9 +64,9 @@ export const message = {
     btnLink: "https://www.coinmarketcap.com/zh/currencies/irisnet/",
   },
   irishub: {
-    title: "IRIS Hub 1.4",
+    title: "IRISHUB 2.0",
     secondTitle:
-      "Be the first to support IBC-managing NFT assets through ICA",
+      "Unleash the power of EVM, build diverse NFT dApps and more",
     description: "– A BPoS Blockchain That Is Self-evolutionary",
     btn: {
       prepare: "Rainbow Wallet",
@@ -171,7 +171,7 @@ export const message = {
     newFunction: {
       title: "New Features",
       description:
-        "IRIS Hub 1.4 with enabled Interchain Account feature enhances more cross-chain NFT functionalities.",
+        "Discover diverse NFT dApps and use cases with EVM!",
     },
     iService: {
       title: "Interchain Account + NFT",
@@ -272,7 +272,7 @@ export const message = {
           scr: require("../irishub1/uptick-logo.png"),
           title: "Uptick Marketplace",
           section:
-            "Uptick Marketplace app is the world’s first decentralized full-featured mobile NFT app, focusing on the pan-entertainment and life service industry, forming a new creative economy for the Web 3.0 era.",
+            "Uptick NFT Marketplace is a platform that makes it incredibly easy for users to create, collect and trade NFTs. With a host of global creators and multiple NFT categories, including support for various media formats, Uptick NFT Marketplace caters to a wide audience.",
           link: "https://www.uptickproject.com",
         },
         {
@@ -491,7 +491,7 @@ export const message = {
       error: "Please enter a valid email address",
     },
     irisnetInproduction:
-      "IRISnet is named after Greek goddess Iris, said to be the personification of the rainbow and the faithful messenger between heaven and humanity",
+      "Named after the Greek goddess Iris, IRISHUB aspires to bridge the gap between blockchains and real-world business systems, much like Iris connects earth and the heavens.",
   },
   home: {
     bannerHref:
@@ -668,9 +668,9 @@ export const message = {
             "TCP/IP + HTTP protocol of blockchains that can build and further broaden the Internet of Blockchains to support cross-platform data & application services between on-chain and off-chain.",
         },
         {
-          title: "ICA + NFT",
+          title: "EVM Integration",
           content:
-            "Cross-chain management of NFT and MT assets through Interchain Account.",
+            "The EVM (Ethereum Virtual Machine) integration allows developers to seamlessly deploy EVM-based smart contracts and dApps on IRISHUB, and enabling compatibility with Ethereum.",
         },
         {
           title: "TIBC",
@@ -685,25 +685,19 @@ export const message = {
       ],
     },
     upcoming: {
-      title: "Upcoming Features",
+      title: "Upcoming Feature",
       list: [
         {
-          title: "EVM",
+          title: "Interchain NFTs",
           content:
-            "Deploying EVM feature to enable interoperability with Ethereum",
-          image: require("../../assets/pages/eth_logo.png"),
-        },
-        {
-          title: "Interchain NFT",
-          content:
-            "Deploying ICS721 standard to enable NFT assets interchain transfers",
+            "Deploying ICS-721 standard to enable interchain transfers of NFT assets.",
           image: require("../../assets/pages/interchain_nft_logo.png"),
         },
       ],
     },
     joinchain:{
       title: "Join Interchain Space",
-      content: "Accelerate the Development of the IRISnet Interchain Ecosystem",
+      content: "Accelerate the Development of the IRISHUB Interchain Ecosystem",
       list:[
         { btn:"Apply for Tech-Grants",
         url:" https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md"
@@ -1149,7 +1143,7 @@ export const message = {
       content: {
         title: "Nyancat Testnet",
         content:
-          "The Nyancat testnet runs a newer version of irishub, providing a test environment for validators to preview and test the new version before it is ready for deployment to mainnet.",
+          "The Nyancat testnet runs a version that precedes the existing IRISHUB mainnet release, enabling validators to test and preview the new features prior to their deployment on mainnet.",
         link: "https://nyancat.iobscan.io/",
         btnLabel: "Use Nyancat Testnet",
         isRouterLink: false,
@@ -1346,17 +1340,12 @@ export const message = {
       ],
     },
     aboutIrisnet: {
-      title: "About IRISnet",
+      title: "About IRISHUB",
       content: [
         {
           id: 0,
           item:
-            "IRISnet: Interchain Service Hub for NextGen Distributed Applications -- A BPoS Blockchain that is Self-evolutionary.",
-        },
-        {
-          id: 1,
-          item:
-            "IRISnet (a.k.a IRIS Hub) is designed to be the foundation for the next generation distributed applications. Built with Cosmos-SDK, IRIS Hub enables cross-chain interoperability through a unified service model, while providing a variety of modules to support DeFi applications.",
+            "IRISHUB (a.k.a IRISnet) is an Interchain NFT Hub tailored for next-generation dApps. Built with Cosmos-SDK, IRISHUB facilitates cross-chain interoperability of NFTs, services, and on/off-chain systems.",
         },
       ],
       readMoreText: "Other Related Information...",
