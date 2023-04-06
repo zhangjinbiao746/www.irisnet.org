@@ -1,0 +1,4 @@
+{
+  // 推荐的 VSCode 插件
+  "recommendations": ["octref.vetur", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+}
