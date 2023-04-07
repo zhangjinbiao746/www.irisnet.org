@@ -114,6 +114,102 @@
                         title: 'IRISnet Monthly Update'
                     }
                 ]
+        },
+    collaboration:
+        # todo shan 图片需放到文件服务器，并更新 image 链接
+        {
+            title: 'Collaboration',
+            list:
+                [
+                    {
+                        title: 'Development Teams',
+                        list:
+                            [
+                                {
+                                    name: 'BIANJIE.AI',
+                                    link: '',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                },
+                                {
+                                    name: 'Tendermint',
+                                    link: 'https://tendermint.com/',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                }
+                            ]
+                    },
+                    {
+                        title: 'Strategic Partners',
+                        list:
+                            [
+                                {
+                                    name: 'INTERCHAIN',
+                                    link: 'https://cosmos.network/about',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                },
+                                {
+                                    name: 'HashKey',
+                                    link: 'https://www.hashkey.com/#/',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                },
+                                {
+                                    name: 'PlatON',
+                                    link: 'https://www.platon.network/#/index',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                }
+                            ]
+                    },
+                    {
+                        title: 'Ecosystem Partners',
+                        list:
+                            [
+                                {
+                                    name: 'BINANCE',
+                                    link: 'https://www.binance.com/zh-CN',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                },
+                                {
+                                    name: 'Chainlink',
+                                    link: 'https://chain.link/',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                },
+                                {
+                                    name: 'CoinMarketCap',
+                                    link: 'https://coinmarketcap.com/',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                },
+                                {
+                                    name: 'KAVA',
+                                    link: 'https://www.kava.io/',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                },
+                                {
+                                    name: 'MYKEY',
+                                    link: 'https://mykey.org/',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                },
+                                {
+                                    name: 'e-Money',
+                                    link: 'https://www.e-money.com/',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                },
+                                {
+                                    name: 'Starname',
+                                    link: 'https://www.starname.me/',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                },
+                                {
+                                    name: 'COIRFAN',
+                                    link: 'http://iris.fan/#/',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                },
+                                {
+                                    name: 'StaFiHub',
+                                    link: 'https://www.stafihub.io/',
+                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                }
+                            ]
+                    }
+                ]
         }
 }
 ---

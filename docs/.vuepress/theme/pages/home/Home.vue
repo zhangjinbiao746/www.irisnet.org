@@ -5,6 +5,7 @@
         <upcoming-feature :upcoming="upcoming" />
         <join-interchain :joinInterchain="joinInterchain" />
         <announcements :announcements="announcements" />
+        <collaboration :collaboration="collaboration" />
     </div>
 </template>
 
@@ -14,6 +15,7 @@
     import UpcomingFeature from '@theme/pages/home/components/UpcomingFeature';
     import JoinInterchain from '@theme/pages/home/components/JoinInterchain';
     import Announcements from '@theme/pages/home/components/Announcements';
+    import Collaboration from '@theme/pages/home/components/Collaboration';
     import { getModuleContent } from '@theme/utils';
     export default {
         name: 'Home',
@@ -22,7 +24,8 @@
             CoreFeatures,
             UpcomingFeature,
             JoinInterchain,
-            Announcements
+            Announcements,
+            Collaboration
         },
         computed: {
             keyInnovations() {
@@ -39,6 +42,9 @@
             },
             announcements() {
                 return getModuleContent(this, 'announcements');
+            },
+            collaboration() {
+                return getModuleContent(this, 'collaboration');
             }
         }
     };
