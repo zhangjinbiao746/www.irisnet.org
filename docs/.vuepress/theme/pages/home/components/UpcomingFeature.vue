@@ -40,7 +40,7 @@
             flex-direction: column;
             align-items: center;
             padding: 0.74rem 0.5rem 0.72rem 0.5rem;
-            @media (max-width: 400px) {
+            @media (max-width: 500px) {
                 padding: 0.48rem 0.32rem;
             }
             img {

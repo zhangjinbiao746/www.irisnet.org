@@ -26,7 +26,7 @@
         @media (max-width: 1200px) {
             padding: 0.8rem 0.48rem;
         }
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
             padding: 0.8rem 0.16rem;
         }
         .title {

@@ -133,6 +133,9 @@
             @media (max-width: 1200px) {
                 padding: 0 0.2rem;
             }
+            @media (max-width: 768px) {
+                padding: 0 0.16rem;
+            }
             .logo_content {
                 width: 1.3rem;
                 cursor: pointer;
