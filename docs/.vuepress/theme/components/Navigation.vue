@@ -9,9 +9,8 @@
                     <li class="nav_item" v-for="(item, index) in navList.leftNav" :key="index">
                         <router-link
                             class="nav_link"
-                            :class="{ active_link: item.link === fullPath }"
+                            :class="{ active_link: handleActive(item.link) }"
                             :to="item.link"
-                            @click.native="handleActive(index)"
                             >{{ item.text }}</router-link
                         >
                     </li>
@@ -28,7 +27,7 @@
                         <router-link
                             v-else
                             class="nav_link"
-                            :class="{ active_link: item.link === fullPath }"
+                            :class="{ active_link: handleActive(item.link) }"
                             :to="item.link"
                             >{{ item.text }}</router-link
                         >
@@ -54,7 +53,7 @@
                 <router-link
                     v-else
                     class="mobile_nav_link"
-                    :class="{ mobile_active_link: item.link === fullPath }"
+                    :class="{ mobile_active_link: handleActive(item.link) }"
                     :to="item.link"
                     @click.native="closeMobileMenu"
                     >{{ item.text }}</router-link
