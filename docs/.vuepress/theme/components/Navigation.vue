@@ -1,9 +1,7 @@
 <template>
-    <div class="nav_container">
+    <div class="nav_container" :class="{ color_bg: isColor }">
         <div class="nav_wrap">
-            <div class="logo_content">
-                <img src="../assets/nav/irisnet_logo.png" alt="" />
-            </div>
+            <img class="logo_content" src="../assets/nav/irisnet_logo.png" alt="" @click="toHome" />
             <div class="nav_content">
                 <ul class="nav nav_content_left">
                     <li class="nav_item" v-for="(item, index) in navList.leftNav" :key="index">
@@ -70,6 +68,8 @@
         data() {
             return {
                 fullPath: '',
+                isColor: false,
+                scroll: 0,
                 showMobileMenu: false
             };
         },
@@ -87,6 +87,17 @@
             },
             closeMobileMenu() {
                 this.showMobileMenu = false;
+            },
+            scrollTop() {
+                this.scroll = document.documentElement.scrollTop || document.body.scrollTop;
+                if (this.scroll > 60) {
+                    this.isColor = true;
+                } else {
+                    this.isColor = false;
+                }
+            },
+            toHome() {
+                this.$router.push(this.$store.state.currentLang);
             }
         },
         watch: {
@@ -97,6 +108,12 @@
                 immediate: true,
                 deep: true
             }
+        },
+        mounted() {
+            window.addEventListener('scroll', this.scrollTop);
+        },
+        beforeDestroy() {
+            window.removeEventListener('scroll', this.scrollTop);
         }
     };
 </script>
@@ -117,12 +134,8 @@
                 padding: 0 0.2rem;
             }
             .logo_content {
-                display: flex;
-                align-items: center;
                 width: 1.3rem;
-                img {
-                    width: 100%;
-                }
+                cursor: pointer;
             }
             .nav_content {
                 flex: 1;
@@ -136,7 +149,7 @@
                     display: flex;
                     .nav_link {
                         padding: 0 0.18rem;
-                        color: #eee;
+                        color: rgba(255, 255, 255, 0.3);
                         &:hover {
                             color: #fff;
                         }
@@ -182,5 +195,8 @@
                 }
             }
         }
+    }
+    .color_bg {
+        background: #0d0e2c;
     }
 </style>

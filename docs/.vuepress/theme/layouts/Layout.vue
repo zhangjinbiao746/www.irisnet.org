@@ -18,7 +18,7 @@
 
 <script>
     import Navigation from '@theme/components/Navigation';
-    import Home from '@theme/pages/Home';
+    import Home from '@theme/pages/home/Home';
     import Markdown from '@theme/components/Markdown';
     import Footer from '@theme/components/Footer';
     import globalCommonStyles from '@theme/styles/common';
