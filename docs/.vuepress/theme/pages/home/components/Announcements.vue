@@ -107,7 +107,6 @@
                     display: inline-block;
                     margin-top: 0.36rem;
                     font-size: var(--font-24);
-                    font-weight: var(--font-weight-400);
                     color: #fff;
                     line-height: 0.4rem;
                     &:hover {
@@ -121,7 +120,6 @@
                 .announcement_date {
                     margin-top: 0.24rem;
                     font-size: var(--font-16);
-                    font-weight: var(--font-weight-400);
                     color: rgba(255, 255, 255, 0.75);
                 }
             }

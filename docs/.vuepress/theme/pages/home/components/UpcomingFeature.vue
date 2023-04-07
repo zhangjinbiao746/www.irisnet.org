@@ -49,7 +49,6 @@
             .upcoming_item_title {
                 margin-top: 0.58rem;
                 font-size: var(--font-32);
-                font-weight: var(--font-weight-400);
                 line-height: 0.32rem;
                 text-align: center;
                 color: #fff;

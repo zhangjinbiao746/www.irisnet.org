@@ -29,6 +29,40 @@
                     }
                 ]
         },
+    coreFeatures:
+        {
+            title: 'Core Features',
+            list:
+                [
+                    {
+                        title: 'IBC + iService',
+                        content:
+                            'TCP/IP + HTTP protocol of blockchains that can build and further
+                            broaden the Internet of Blockchains to support cross-platform data &
+                            application services between on-chain and off-chain.'
+                    },
+                    {
+                        title: 'EVM Integration',
+                        content:
+                            'The EVM (Ethereum Virtual Machine) integration allows developers to
+                            seamlessly deploy EVM-based smart contracts and dApps on IRISHUB, and
+                            enabling compatibility with Ethereum.'
+                    },
+                    {
+                        title: 'TIBC',
+                        content:
+                            'Terse IBC protocol to accelerate heterogeneous interchain technology
+                            with NFT transfers,  smart contracts interactions and other cross-chain
+                            services enabled.'
+                    },
+                    {
+                        title: 'Coinswap',
+                        content:
+                            'Cross-chain AMM protocol, a vanguard innovation platform for the Cosmos
+                            application ecosystem.'
+                    }
+                ]
+        },
     upcoming:
         {
             title: 'Upcoming Feature',
