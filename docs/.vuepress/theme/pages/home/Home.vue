@@ -3,6 +3,7 @@
         <key-innovations :keyInnovations="keyInnovations" />
         <upcoming-feature :upcoming="upcoming" />
         <join-interchain :joinInterchain="joinInterchain" />
+        <announcements :announcements="announcements" />
     </div>
 </template>
 
@@ -10,13 +11,15 @@
     import KeyInnovations from '@theme/pages/home/components/KeyInnovations';
     import UpcomingFeature from '@theme/pages/home/components/UpcomingFeature';
     import JoinInterchain from '@theme/pages/home/components/JoinInterchain';
+    import Announcements from '@theme/pages/home/components/Announcements';
     import { getModuleContent } from '@theme/utils';
     export default {
         name: 'Home',
         components: {
             KeyInnovations,
             UpcomingFeature,
-            JoinInterchain
+            JoinInterchain,
+            Announcements
         },
         computed: {
             keyInnovations() {
@@ -27,6 +30,9 @@
             },
             joinInterchain() {
                 return getModuleContent(this, 'joinInterchain');
+            },
+            announcements() {
+                return getModuleContent(this, 'announcements');
             }
         }
     };
