@@ -1,6 +1,6 @@
 <template>
     <div class="title_container">
-        <NavigationLine />
+        <navigation-line />
         <h2 class="title">{{ title }}</h2>
         <p v-if="subTitle" class="sub_title">{{ subTitle }}</p>
         <slot></slot>

@@ -1,12 +1,12 @@
 <template>
     <div class="theme-container">
         <ClientOnly>
-            <Navigation :navList="navList"></Navigation>
+            <navigation :navList="navList"></navigation>
         </ClientOnly>
         <ClientOnly>
             <div class="main_container">
-                <Home v-if="$page.frontmatter.isHome" />
-                <Markdown :showMd="showMd"></Markdown>
+                <home v-if="$page.frontmatter.isHome" />
+                <markdown :showMd="showMd"></markdown>
             </div>
         </ClientOnly>
 

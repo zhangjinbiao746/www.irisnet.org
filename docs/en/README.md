@@ -28,6 +28,20 @@
                             interactions between on/off-chain systems'
                     }
                 ]
+        },
+    upcoming:
+        {
+            title: 'Upcoming Feature',
+            list:
+                [
+                    {
+                        title: 'Interchain NFTs',
+                        content:
+                            'Deploying ICS-721 standard to enable interchain transfers of NFT
+                            assets.',
+                        imgName: interchain_nft_logo.png
+                    }
+                ]
         }
 }
 ---

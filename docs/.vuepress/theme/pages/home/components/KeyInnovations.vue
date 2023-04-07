@@ -1,12 +1,12 @@
 <template>
-    <TitleComponent :title="keyInnovations.title">
+    <title-component :title="keyInnovations.title">
         <ul class="innovations_list">
             <li class="innovation" v-for="item in keyInnovations.list" :key="item.id">
                 <img :src="getImageUrl(item.imgName)" alt="" />
                 <p class="innovation_info">{{ item.msg }}</p>
             </li>
         </ul>
-    </TitleComponent>
+    </title-component>
 </template>
 
 <script>

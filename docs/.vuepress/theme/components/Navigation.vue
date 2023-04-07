@@ -120,7 +120,7 @@
 
 <style lang="less" scoped>
     .nav_container {
-        position: relative;
+        position: fixed;
         width: 100%;
         height: 0.6rem;
         .nav_wrap {
