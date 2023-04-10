@@ -38,6 +38,183 @@
                         link: 'https://chain.link'
                     }
                 ]
+        },
+    resources:
+        {
+            title: Resources,
+            list:
+                [
+                    {
+                        img: 'wallet.png',
+                        name: 'Wallets',
+                        resourceList:
+                            [
+                                {
+                                    itemName: 'Rainbow',
+                                    osList: ['icon-anzhuo', 'icon-iOS'],
+                                    href: 'https://www.rainbow.one/'
+                                },
+                                {
+                                    itemName: 'Keplr',
+                                    osList: ['icon-anzhuo', 'icon-iOS', 'icon-PC'],
+                                    href: 'https://www.keplr.app/'
+                                },
+                                {
+                                    itemName: 'Math Wallet',
+                                    osList: ['icon-anzhuo', 'icon-iOS', 'icon-PC'],
+                                    href: 'https://mathwallet.org/zh-cn/'
+                                },
+                                {
+                                    itemName: 'Wetez',
+                                    osList: ['icon-anzhuo', 'icon-iOS'],
+                                    href: 'https://www.wetez.io/wallet'
+                                },
+                                {
+                                    itemName: 'Cosmostation',
+                                    osList: ['icon-anzhuo', 'icon-iOS'],
+                                    href: 'https://www.cosmostation.io/wallet/'
+                                },
+                                {
+                                    itemName: 'ViaWallet',
+                                    osList: ['icon-anzhuo', 'icon-iOS'],
+                                    href: 'https://viawallet.com/'
+                                },
+                                {
+                                    itemName: 'LoyToken',
+                                    osList: ['icon-anzhuo', 'icon-iOS'],
+                                    href: 'http://www.loytoken.com/web.html'
+                                },
+                                {
+                                    itemName: 'HashKey Hub',
+                                    osList: ['icon-anzhuo', 'icon-iOS'],
+                                    href: 'https://hub.hashkey.com/'
+                                },
+                                {
+                                    itemName: 'Moonstake',
+                                    osList: ['icon-anzhuo', 'icon-iOS'],
+                                    href: 'https://moonstake.io/wallets/'
+                                },
+                                {
+                                    itemName: 'SyncNode',
+                                    osList: ['icon-iOS'],
+                                    href: 'https://wallet.syncnode.ro/'
+                                },
+                                {
+                                    itemName: 'Leap Wallet',
+                                    osList: ['icon-anzhuo', 'icon-iOS', 'icon-PC'],
+                                    href: 'https://www.leapwallet.io/'
+                                }
+                            ],
+                        content:
+                            'These web and mobile wallets allow you to store & transfer IRIS,
+                            delegate IRIS to validators, and some of them also support ATOM. Note
+                            that we do not endorse any of the wallets, they are listed for your
+                            convenience.'
+                    },
+                    {
+                        img: 'Toolbox.png',
+                        name: 'Staking Tools',
+                        resourceList:
+                            [
+                                { itemName: 'Keplr', href: 'https://wallet.keplr.app/#/dashboard' },
+                                {
+                                    itemName: 'Math Wallet',
+                                    href: 'https://mathwallet.org/web/irisnet'
+                                },
+                                {
+                                    itemName: 'Cosmostation',
+                                    href: 'https://wallet.cosmostation.io/iris'
+                                },
+                                { itemName: 'Citadel.one', href: 'https://app.citadel.one/login' },
+                                {
+                                    itemName: 'Union Market',
+                                    href: 'https://union.market/token/irisnet'
+                                },
+                                {
+                                    itemName: 'Ping.Pub',
+                                    href: 'https://ping.pub/iris-network/staking'
+                                },
+                                {
+                                    itemName: 'Skynet',
+                                    href: 'https://skynetexplorers.com/iris-network/staking'
+                                },
+                                { itemName: 'Moonstake', href: 'https://wallet.moonstake.io/' },
+                                { itemName: '01node', href: 'https://01node.com/iris-network/' },
+                                { itemName: 'Dokia', href: 'https://staking.dokia.cloud/' },
+                                {
+                                    itemName: 'Allnode',
+                                    href: 'https://www.allnodes.com/iris/stake'
+                                },
+                                { itemName: 'Stakewolle', href: 'https://stakewolle.com/' }
+                            ],
+                        content:
+                            'Those tools, contributed by IRISnet validators and developers,
+                            facilitates IRIS token holders to delegate via web wallets and Ledger
+                            hardware wallets, etc . Before using these tools, you need to assure
+                            their security.'
+                    },
+                    {
+                        img: 'explorer.png',
+                        name: 'Explorers',
+                        resourceList:
+                            [
+                                { itemName: 'IOBScan', href: 'https://irishub.iobscan.io/#/home' },
+                                { itemName: 'Mintscan', href: 'https://www.mintscan.io/iris' },
+                                { itemName: 'Ping.Pub', href: 'https://ping.pub/iris-network' },
+                                {
+                                    itemName: 'Skynet',
+                                    href: 'https://skynetexplorers.com/iris-network'
+                                },
+                                { itemName: 'ATOMScan', href: 'https://atomscan.com/iris-network' },
+                                {
+                                    itemName: 'MapofZones',
+                                    href: 'https://mapofzones.com/zones/irishub-1/overview?period=24h'
+                                }
+                            ],
+                        content:
+                            'These block explorers allow you to search, view and analyze IRIS Hub
+                            data—like blocks, transactions, validators, governance including params
+                            or proposals, etc.'
+                    },
+                    {
+                        img: 'presskit.png',
+                        name: 'Press Kit',
+                        content: 'Get our press kit with all logo assets you might need.',
+                        resourceList:
+                            [
+                                {
+                                    itemName: 'Press Kit',
+                                    href: 'https://www.irisnet.org/community/press-kit'
+                                }
+                            ]
+                    },
+                    {
+                        img: 'doc.png',
+                        name: 'Docs',
+                        content:
+                            'Interchain Service Hub for NextGen Distributed Applications – A BPoS
+                            Blockchain That Is Self-evolutionary.',
+                        resourceList:
+                            [
+                                {
+                                    itemName: 'Mainnet',
+                                    href: 'https://www.irisnet.org/docs/get-started/mainnet.html'
+                                },
+                                {
+                                    itemName: 'Nyancat',
+                                    href: 'https://www.irisnet.org/docs/get-started/testnet.html'
+                                },
+                                {
+                                    itemName: 'Cli Client',
+                                    href: 'https://www.irisnet.org/docs/cli-client/intro.html'
+                                },
+                                {
+                                    itemName: 'Light Client',
+                                    href: 'https://www.irisnet.org/docs/cli-client/intro.html'
+                                }
+                            ]
+                    }
+                ]
         }
 }
 ---

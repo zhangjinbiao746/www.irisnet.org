@@ -1,5 +1,7 @@
 import Vuex from 'vuex';
 import store from './theme/store';
+import './theme/assets/iconfont/iconfont.css';
+import './theme/assets/iconfont/iconfont.js';
 
 export default async ({ Vue, options, router, siteData, isServer }) => {
     // 解决  Uncaught (in promise) Error: Redirected when going from "/xxx/xxx.html" to "/xxx/xxx" via a navigation guard 警告

@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2168921 */
+  src: url('iconfont.woff2?t=1681109549137') format('woff2'),
+       url('iconfont.woff?t=1681109549137') format('woff'),
+       url('iconfont.ttf?t=1681109549137') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-PC:before {
+  content: "\e778";
+}
+
+.icon-iOS:before {
+  content: "\e777";
+}
+
+.icon-anzhuo:before {
+  content: "\e776";
+}
+
+.icon-hulianhutong:before {
+  content: "\e699";
+}
+
+.icon-shangyefuwu:before {
+  content: "\e698";
+}
+
+.icon-jichusheshi:before {
+  content: "\e697";
+}
+
+.icon-IRISHubyonghu:before {
+  content: "\e691";
+}
+
+.icon-yanzhengren:before {
+  content: "\e690";
+}
+
+.icon-qianbaoliulanqi:before {
+  content: "\e68e";
+}
+
+.icon-jiaoyisuo:before {
+  content: "\e68d";
+}
+
+.icon-qianwang:before {
+  content: "\e689";
+}
+
+.icon-shengjimoni:before {
+  content: "\e688";
+}
+
+.icon-duowangluoIBClianheceshi:before {
+  content: "\e687";
+}
+
+.icon-gongnengceshi:before {
+  content: "\e685";
+}
+
+.icon-NFT:before {
+  content: "\e684";
+}
+
+.icon-Oracle:before {
+  content: "\e683";
+}
+
+.icon-Coinswap:before {
+  content: "\e682";
+}
+
+.icon-IBCkualiantongxinxieyi:before {
+  content: "\e681";
+}
+
+.icon-iservicekualianfuwu:before {
+  content: "\e680";
+}
+
+.icon-caidan:before {
+  content: "\e634";
+}
+
+.icon-goal:before {
+  content: "\e633";
+}
+
+.icon-e-mail:before {
+  content: "\e632";
+}
+
+.icon-connect:before {
+  content: "\e631";
+}
+
+.icon-GitHub:before {
+  content: "\e630";
+}
+
+.icon-name:before {
+  content: "\e62f";
+}
+
