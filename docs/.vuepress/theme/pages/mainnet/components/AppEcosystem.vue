@@ -79,7 +79,6 @@
                 }
                 .app_ecosystem_item_section {
                     margin-top: 0.24rem;
-                    font-size: var(--font-16);
                     color: rgba(255, 255, 255, 0.65);
                     line-height: 0.32rem;
                 }

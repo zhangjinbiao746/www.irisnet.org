@@ -7,6 +7,9 @@
 export const getLocalesNav = (vue, lang) => {
 	return vue.$site.themeConfig.locales[lang].nav;
 }
+export const getLocalesFooter = (vue, lang) => {
+	return vue.$site.themeConfig.locales[lang].footer;
+}
 
 /**
  * 

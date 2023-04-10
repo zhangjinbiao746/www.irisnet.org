@@ -41,7 +41,6 @@
         }
         .sub_title {
             margin-top: 0.32rem;
-            font-size: var(--font-16);
             line-height: 0.32rem;
         }
     }

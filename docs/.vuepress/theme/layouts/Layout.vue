@@ -11,9 +11,8 @@
                 <markdown :showMd="showMd"></markdown>
             </div>
         </ClientOnly>
-
         <ClientOnly>
-            <Footer></Footer>
+            <Footer :footer-info="footerInfo"></Footer>
         </ClientOnly>
     </div>
 </template>
@@ -26,7 +25,7 @@
     import Markdown from '@theme/components/Markdown';
     import Footer from '@theme/components/Footer';
     import globalCommonStyles from '@theme/styles/common';
-    import { getLocalesNav } from '@theme/utils';
+    import { getLocalesNav, getLocalesFooter } from '@theme/utils';
 
     export default {
         name: 'Layout',
@@ -40,7 +39,8 @@
         },
         data() {
             return {
-                navList: {}
+                navList: {},
+                footerInfo: {}
             };
         },
         computed: {
@@ -52,6 +52,7 @@
             '$store.state.currentLang': {
                 handler(newLang) {
                     this.navList = getLocalesNav(this, newLang);
+                    this.footerInfo = getLocalesFooter(this, newLang);
                 },
                 immediate: true,
                 deep: true
