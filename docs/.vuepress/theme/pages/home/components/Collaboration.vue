@@ -1,5 +1,5 @@
 <template>
-    <title-component :title="collaboration.title">
+    <title-component id="collaboration" :title="collaboration.title">
         <ul class="collaboration">
             <li class="collaboration_item" v-for="(item, index) in collaboration.list" :key="index">
                 <h5 class="collaboration_title">{{ item.title }}</h5>
