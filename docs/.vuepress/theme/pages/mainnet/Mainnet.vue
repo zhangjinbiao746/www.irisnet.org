@@ -1,22 +1,28 @@
 <template>
     <div class="mainnet">
         <mainnet-banner :irishub="irishub" />
+        <app-ecosystem :app-ecosystem="appEcosystem" />
     </div>
 </template>
 
 <script>
     import MainnetBanner from '@theme/pages/mainnet/components/MainnetBanner';
+    import AppEcosystem from '@theme/pages/mainnet/components/AppEcosystem';
     import { getModuleContent } from '@theme/utils';
 
     export default {
         name: 'Mainnet',
         components: {
-            MainnetBanner
+            MainnetBanner,
+            AppEcosystem
         },
         computed: {
             irishub() {
                 return getModuleContent(this, 'irishub');
-            }
+            },
+            appEcosystem() {
+                return getModuleContent(this, 'appEcosystem');
+            },
         }
     };
 </script>

@@ -23,10 +23,10 @@
 
     export default {
         name: 'MainnetBanner',
-        props: ['irishub'],
         components: {
             CustomButton
-        }
+        },
+        props: ['irishub']
     };
 </script>
 
