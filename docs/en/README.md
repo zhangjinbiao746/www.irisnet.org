@@ -108,8 +108,7 @@
                     {
                         id: '1',
                         img: https://www.irisnet.org/dist/irisnet_02.jpg?8ebd207017be94fa8b8797b81aa58c1c,
-                        href:
-                            ' https://medium.com/irisnet-blog/irisnet-monthly-update-2022-10-8e21813b2521',
+                        href: 'https://medium.com/irisnet-blog/irisnet-monthly-update-2022-10-8e21813b2521',
                         date: 'Nov 16 2022',
                         title: 'IRISnet Monthly Update'
                     }

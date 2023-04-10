@@ -52,7 +52,6 @@
             }
             .collaboration_title {
                 font-size: var(--font-24);
-                font-weight: var(--font-weight-400);
                 line-height: 0.24rem;
             }
             .collaboration_logo_list {

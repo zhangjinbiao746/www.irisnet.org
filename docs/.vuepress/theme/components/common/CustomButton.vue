@@ -1,11 +1,18 @@
 <template>
-    <a :href="link" class="custom_btn" target="_blank" rel="noreferrer noopener">{{ linkText }}</a>
+    <a :href="link" class="custom_btn" :target="target" rel="noreferrer noopener">{{ linkText }}</a>
 </template>
 
 <script>
     export default {
         name: 'CustomButton',
-        props: ['link', 'linkText']
+        props: {
+            link: String,
+            linkText: String,
+            target: {
+                type: String,
+                default: '_blank'
+            }
+        }
     };
 </script>
 

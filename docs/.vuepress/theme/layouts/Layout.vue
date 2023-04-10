@@ -6,6 +6,7 @@
         <ClientOnly>
             <div class="main_container">
                 <home v-if="$page.frontmatter.isHome" />
+                <developers v-if="$page.frontmatter.isDevelopers" />
                 <markdown :showMd="showMd"></markdown>
             </div>
         </ClientOnly>
@@ -19,6 +20,7 @@
 <script>
     import Navigation from '@theme/components/Navigation';
     import Home from '@theme/pages/home/Home';
+    import Developers from '@theme/pages/developers/Developers';
     import Markdown from '@theme/components/Markdown';
     import Footer from '@theme/components/Footer';
     import globalCommonStyles from '@theme/styles/common';
@@ -29,6 +31,7 @@
         components: {
             Navigation,
             Home,
+            Developers,
             Markdown,
             Footer
         },

@@ -150,15 +150,19 @@
                 }
                 .nav {
                     display: flex;
-                    .nav_link {
-                        padding: 0 0.18rem;
-                        color: rgba(255, 255, 255, 0.3);
-                        &:hover {
+                    .nav_item {
+                        .nav_link {
+                            display: inline-block;
+                            padding: 0 0.18rem;
+                            color: rgba(255, 255, 255, 0.3);
+                            line-height: 0.18rem;
+                            &:hover {
+                                color: #fff;
+                            }
+                        }
+                        .active_link {
                             color: #fff;
                         }
-                    }
-                    .active_link {
-                        color: #fff;
                     }
                 }
                 .nav_content_right {
@@ -169,7 +173,7 @@
                             }
                         }
                         .nav_link {
-                            border-right: 0.01rem solid #fff;
+                            border-right: 0.01rem solid rgba(255, 255, 255, 0.3);
                         }
                     }
                 }
