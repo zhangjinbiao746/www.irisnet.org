@@ -7,6 +7,7 @@
             <div class="main_container">
                 <home v-if="$page.frontmatter.isHome" />
                 <developers v-if="$page.frontmatter.isDevelopers" />
+                <mainnet v-if="$page.frontmatter.isMainnet" />
                 <markdown :showMd="showMd"></markdown>
             </div>
         </ClientOnly>
@@ -21,6 +22,7 @@
     import Navigation from '@theme/components/Navigation';
     import Home from '@theme/pages/home/Home';
     import Developers from '@theme/pages/developers/Developers';
+    import Mainnet from '@theme/pages/mainnet/Mainnet';
     import Markdown from '@theme/components/Markdown';
     import Footer from '@theme/components/Footer';
     import globalCommonStyles from '@theme/styles/common';
@@ -32,6 +34,7 @@
             Navigation,
             Home,
             Developers,
+            Mainnet,
             Markdown,
             Footer
         },
