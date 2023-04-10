@@ -39,7 +39,7 @@
                 padding-left: 4.8rem;
                 padding-right: 4.8rem;
             }
-            @media (max-width: 400px) {
+            @media (max-width: 500px) {
                 padding-left: 1.6rem;
                 padding-right: 1.6rem;
             }
@@ -110,7 +110,6 @@
                         .article_owner {
                             height: 16px;
                             font-size: 14px;
-                            font-weight: 400;
                             color: rgba(0, 0, 0, 0.75);
                             line-height: 16px;
                         }
@@ -120,7 +119,6 @@
                         height: 16px;
                         line-height: 16px;
                         font-size: 14px;
-                        font-weight: 400;
                         color: rgba(0, 0, 0, 0.64);
                     }
                 }

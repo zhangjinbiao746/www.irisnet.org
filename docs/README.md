@@ -1,0 +1,3 @@
+---
+{ layout: Layout, isHome: true }
+---
