@@ -145,7 +145,7 @@ module.exports = {
                                 },
                                 {
                                     name: 'Press Kit',
-                                    route: '/community/press-kit'
+                                    route: '/en/community/press-kit'
                                 },
                                 {
                                     name: 'Explorer',
@@ -181,11 +181,11 @@ module.exports = {
                         agreement: [
                             {
                                 name: 'Privacy',
-                                route: '/privacy'
+                                route: '/en/privacy'
                             },
                             {
                                 name: 'Terms',
-                                route: '/terms'
+                                route: '/en/terms'
                             }
                         ]
                     }

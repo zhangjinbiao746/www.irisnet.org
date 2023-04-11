@@ -3,7 +3,7 @@
         <div class="footer_content">
             <div class="footer_top">
                 <template v-for="(item, index) in footerInfo.topFooter">
-                    <footer-module :title="item.title" :key="index">
+                    <module :title="item.title" :key="index">
                         <template v-if="item.communityIcon" #icon>
                             <div class="community_icon_wrap">
                                 <a
@@ -34,13 +34,14 @@
                                         class="community_text"
                                         v-if="communityText.route"
                                         :key="tIndex"
+                                        target="_blank"
                                         :to="communityText.route"
                                         >{{ communityText.name }}</router-link
                                     >
                                 </template>
                             </div>
                         </template>
-                        <template v-if="item.inputBtn" #submit>
+                        <template v-if="item.inputBtn" #other>
                             <div class="newsletter">
                                 <input
                                     v-model="mailAddress"
@@ -59,7 +60,7 @@
                                 />
                             </div>
                         </template>
-                    </footer-module>
+                    </module>
                 </template>
             </div>
             <div class="footer_bottom">
@@ -86,12 +87,12 @@
 </template>
 
 <script>
-    import FooterModule from '@theme/components/common/FooterModule';
+    import Module from '@theme/components/common/Module';
     import CustomButton from '@theme/components/common/CustomButton';
     export default {
         name: 'Footer',
         components: {
-            FooterModule,
+            Module,
             CustomButton
         },
         props: ['footerInfo'],
@@ -187,7 +188,7 @@
                 grid-template-columns: repeat(3, 1fr);
                 gap: 1rem 0;
                 padding: 0.56rem 0 0.5rem;
-                .footer_module {
+                .module {
                     &:first-child {
                         @media (max-width: 900px) {
                             grid-column-start: span 3;

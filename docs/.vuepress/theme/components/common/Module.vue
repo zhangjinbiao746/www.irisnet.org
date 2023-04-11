@@ -1,9 +1,9 @@
 <template>
-    <div class="footer_module">
+    <div class="module">
         <h4 class="module_title">{{ title }}</h4>
         <slot name="icon"></slot>
         <slot name="text"></slot>
-        <slot name="submit"></slot>
+        <slot name="other"></slot>
     </div>
 </template>
 
@@ -15,7 +15,7 @@
 </script>
 
 <style lang="less" scoped>
-    .footer_module {
+    .module {
         .module_title {
             font-weight: var(--font-weight-600);
             color: #fff;
