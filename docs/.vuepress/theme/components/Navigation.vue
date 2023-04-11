@@ -123,6 +123,7 @@
         position: fixed;
         width: 100%;
         height: 0.6rem;
+        z-index: 100;
         .nav_wrap {
             display: flex;
             justify-content: space-between;

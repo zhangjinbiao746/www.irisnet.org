@@ -1,5 +1,6 @@
 <template>
     <div class="theme-container">
+        <email-mask v-if="$store.state.showMask" />
         <ClientOnly>
             <navigation :navList="navList"></navigation>
         </ClientOnly>
@@ -19,6 +20,7 @@
 
 <script>
     import Navigation from '@theme/components/Navigation';
+    import EmailMask from '@theme/components/common/EmailMask';
     import Home from '@theme/pages/home/Home';
     import Developers from '@theme/pages/developers/Developers';
     import Mainnet from '@theme/pages/mainnet/Mainnet';
@@ -31,6 +33,7 @@
         name: 'Layout',
         components: {
             Navigation,
+            EmailMask,
             Home,
             Developers,
             Mainnet,

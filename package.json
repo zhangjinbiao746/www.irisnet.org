@@ -5,12 +5,13 @@
     "author": "huasheng@bianjie.ai",
     "private": true,
     "scripts": {
-        "dev": "vuepress dev docs --temp .temp",
-        "build": "vuepress build docs && node ./readWriteSW.js",
+        "dev": "vuepress dev docs --temp .temp --no-cache",
+        "build": "vuepress build docs",
         "prettier": "prettier --write docs"
     },
     "dependencies": {
         "async-validator": "^4.2.5",
+        "axios": "^0.21.1",
         "less": "^4.1.3",
         "less-loader": "^7.3.0",
         "vuex": "^3.6.2"

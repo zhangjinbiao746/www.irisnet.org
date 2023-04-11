@@ -54,7 +54,7 @@
                                 </p>
                                 <custom-button
                                     class="submit_btn"
-                                    @click="commitMail"
+                                    @click.native="commitMail"
                                     :link-text="item.inputBtn.btn.subscribe"
                                 />
                             </div>
@@ -103,6 +103,15 @@
                 errorTimer: ''
             };
         },
+        computed: {
+            maskInfo() {
+                const inputBtnInfo = this.footerInfo.topFooter.filter(
+                    (item) => item.title === 'Newsletter'
+                );
+                const { inputBtn } = inputBtnInfo[0];
+                return inputBtn.dialogs;
+            }
+        },
         methods: {
             getImageUrl(img) {
                 return require(`../assets/footer/${img}`);
@@ -111,8 +120,8 @@
                 timer && clearTimeout(timer);
             },
             commitMail() {
-                clearTimeoutFn(this.submitTimer);
-                clearTimeoutFn(this.errorTimer);
+                this.clearTimeoutFn(this.submitTimer);
+                this.clearTimeoutFn(this.errorTimer);
                 let address =
                     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                 if (address.exec(this.mailAddress)) {
@@ -124,6 +133,37 @@
                     }, 2000);
                     return;
                 }
+                this.$axios
+                    .post('http://as-node.rainbow.one/news_letter/newsletter', {
+                        email: this.mailAddress
+                    })
+                    .then((res) => {
+                        const { data } = res;
+                        if (data.data.is_register) {
+                            this.$store.commit(
+                                'newsLetterTitle',
+                                this.maskInfo.subscribeStatusTip.success
+                            );
+                            this.$store.commit(
+                                'textContent',
+                                this.maskInfo.subscribeStatusTip.successTip
+                            );
+                        } else {
+                            this.$store.commit(
+                                'newsLetterTitle',
+                                this.maskInfo.subscribeStatusTip.failed
+                            );
+                            this.$store.commit(
+                                'textContent',
+                                this.maskInfo.subscribeStatusTip.failedTip
+                            );
+                        }
+                        this.$store.commit('confirm', this.maskInfo.confirm);
+                        this.$store.commit('showMask', true);
+                    })
+                    .catch((error) => {
+                        console.error(error);
+                    });
             }
         }
     };
@@ -240,13 +280,16 @@
                             color: #f5a623;
                             margin-top: 0.1rem;
                             font-size: var(--font-12);
+                            line-height: 0.12rem;
                         }
                         .hide_error {
                             margin-top: 0.1rem;
+                            line-height: 0.12rem;
                             visibility: hidden;
                         }
                         .submit_btn {
                             margin-top: 0.2rem;
+                            cursor: pointer;
                             :deep(.custom_btn_href) {
                                 margin: 0;
                                 max-width: 2.44rem;

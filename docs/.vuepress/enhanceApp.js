@@ -1,7 +1,6 @@
 import Vuex from 'vuex';
+import axios from 'axios';
 import store from './theme/store';
-import './theme/assets/iconfont/iconfont.css';
-import './theme/assets/iconfont/iconfont.js';
 
 export default async ({ Vue, options, router, siteData, isServer }) => {
     // 解决  Uncaught (in promise) Error: Redirected when going from "/xxx/xxx.html" to "/xxx/xxx" via a navigation guard 警告
@@ -20,5 +19,12 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
             if (to?.path === '/') next(`${store.state.currentLang}`);
             else next();
         });
+        await import("./theme/assets/iconfont/iconfont").then(module => {
+		})
+        await import('axios').then(module => {
+            Vue.prototype.$axios = module.default;
+		}).catch(e => {
+			console.log(e,'axios error ')
+		})
     }
 };
