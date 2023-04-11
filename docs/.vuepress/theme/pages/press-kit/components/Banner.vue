@@ -23,6 +23,9 @@
         margin: 0 auto;
         padding: 0.83rem 0 0.9rem;
         max-width: 12rem;
+        @media (max-width: 1200px) {
+            padding: 0.83rem 0.48rem 0.9rem;
+        }
         @media (max-width: 400px) {
             padding: 0.83rem 0.16rem 0.9rem;
         }
