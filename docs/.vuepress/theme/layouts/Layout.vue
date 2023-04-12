@@ -14,7 +14,7 @@
             </div>
         </ClientOnly>
         <ClientOnly>
-            <Footer :footer-info="footerInfo"></Footer>
+            <Footer v-show="!showMd" :footer-info="footerInfo"></Footer>
         </ClientOnly>
     </div>
 </template>
