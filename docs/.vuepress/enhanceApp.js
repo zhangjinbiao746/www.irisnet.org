@@ -16,12 +16,20 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
     Vue.mixin({ store: store });
     if (!isServer) {
         router.beforeEach((to, from, next) => {
-            if (to.path === '/testnets' || to.path === '/developers/testnet') {
+            if (
+                to.path === '/testnets' ||
+                to.path === '/developers/testnet' ||
+                to.path === 'developers'
+            ) {
                 next(`${store.state.currentLang}developers`);
-            } else if (to.path === '/appPrivacy') {
+            } else if (to.path === '/appPrivacy' || to.path === '/privacy') {
                 next(`${store.state.currentLang}privacy`);
-            } else if (to.path === '/appTerms') {
+            } else if (to.path === '/appTerms' || to.path === '/terms') {
                 next(`${store.state.currentLang}terms`);
+            } else if (to.path === '/mainnet') {
+                next(`${store.state.currentLang}mainnet`);
+            } else if (to.path === '/irisnet-bianjie') {
+                next(`${store.state.currentLang}irisnet-bianjie`);
             } else if (to?.path === '/') {
                 next(`${store.state.currentLang}`);
             } else next();

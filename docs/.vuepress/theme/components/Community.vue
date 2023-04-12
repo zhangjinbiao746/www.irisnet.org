@@ -21,9 +21,6 @@
             getImageUrl(img) {
                 return require(`../assets/footer/${img}`);
             }
-        },
-        mounted() {
-            console.log(this.communityInfo);
         }
     };
 </script>

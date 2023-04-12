@@ -10,6 +10,7 @@
                 <developers v-if="$page.frontmatter.isDevelopers" />
                 <mainnet v-if="$page.frontmatter.isMainnet" />
                 <press-kit v-if="$page.frontmatter.isPressKit" />
+                <irisnet-bianjie v-if="$page.frontmatter.isIrisnetBianjie" />
                 <community :community-info="footerInfo.communityInfo" />
                 <markdown :showMd="showMd"></markdown>
             </div>
@@ -27,6 +28,7 @@
     import Developers from '@theme/pages/developers/Developers';
     import Mainnet from '@theme/pages/mainnet/Mainnet';
     import PressKit from '@theme/pages/press-kit/PressKit';
+    import IrisnetBianjie from '@theme/pages/irisnet-bianjie/IrisnetBianjie';
     import Community from '@theme/components/Community';
     import Markdown from '@theme/components/Markdown';
     import Footer from '@theme/components/Footer';
@@ -42,6 +44,7 @@
             Developers,
             Mainnet,
             PressKit,
+            IrisnetBianjie,
             Community,
             Markdown,
             Footer

@@ -89,6 +89,7 @@
 <script>
     import Module from '@theme/components/common/Module';
     import CustomButton from '@theme/components/common/CustomButton';
+    import { SUCCESS_CODE } from '@theme/constant';
     export default {
         name: 'Footer',
         components: {
@@ -139,7 +140,11 @@
                         email: this.mailAddress
                     })
                     .then((res) => {
-                        const { data } = res;
+                        if (res.status === SUCCESS_CODE) {
+                            return res.data;
+                        }
+                    })
+                    .then((data) => {
                         if (data.data.is_register) {
                             this.$store.commit(
                                 'newsLetterTitle',
