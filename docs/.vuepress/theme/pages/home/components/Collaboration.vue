@@ -45,6 +45,7 @@
 <style lang="less" scoped>
     .collaboration {
         margin-top: 0.48rem;
+        padding-bottom: 0.8rem;
         .collaboration_item {
             margin-top: 0.64rem;
             &:first-child {

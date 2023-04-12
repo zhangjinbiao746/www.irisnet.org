@@ -188,7 +188,21 @@ module.exports = {
                                 route: '/en/terms'
                             }
                         ]
-                    }
+                    },
+                    communityInfo: [
+                        {
+                            img: 'irisnet_telegram.png',
+                            link: 'https://t.me/irisnetwork'
+                        },
+                        {
+                            img: 'irisnet_github.png',
+                            link: 'https://github.com/irisnet/irishub'
+                        },
+                        {
+                            img: 'irisnet_twitter.png',
+                            link: 'https://twitter.com/irisnetwork'
+                        },
+                    ]
                 }
             }
         }

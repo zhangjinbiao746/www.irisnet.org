@@ -172,7 +172,6 @@
 
 <style lang="less" scoped>
     .footer {
-        margin-top: 0.8rem;
         background: #1f1641;
         .footer_content {
             margin: 0 auto;

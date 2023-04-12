@@ -10,6 +10,7 @@
                 <developers v-if="$page.frontmatter.isDevelopers" />
                 <mainnet v-if="$page.frontmatter.isMainnet" />
                 <press-kit v-if="$page.frontmatter.isPressKit" />
+                <community :community-info="footerInfo.communityInfo" />
                 <markdown :showMd="showMd"></markdown>
             </div>
         </ClientOnly>
@@ -26,6 +27,7 @@
     import Developers from '@theme/pages/developers/Developers';
     import Mainnet from '@theme/pages/mainnet/Mainnet';
     import PressKit from '@theme/pages/press-kit/PressKit';
+    import Community from '@theme/components/Community';
     import Markdown from '@theme/components/Markdown';
     import Footer from '@theme/components/Footer';
     import globalCommonStyles from '@theme/styles/common';
@@ -40,6 +42,7 @@
             Developers,
             Mainnet,
             PressKit,
+            Community,
             Markdown,
             Footer
         },
