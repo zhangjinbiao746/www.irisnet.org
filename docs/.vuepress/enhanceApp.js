@@ -16,15 +16,23 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
     Vue.mixin({ store: store });
     if (!isServer) {
         router.beforeEach((to, from, next) => {
-            if (to?.path === '/') next(`${store.state.currentLang}`);
-            else next();
+            if (to.path === '/testnets' || to.path === '/developers/testnet') {
+                next(`${store.state.currentLang}developers`);
+            } else if (to.path === '/appPrivacy') {
+                next(`${store.state.currentLang}privacy`);
+            } else if (to.path === '/appTerms') {
+                next(`${store.state.currentLang}terms`);
+            } else if (to?.path === '/') {
+                next(`${store.state.currentLang}`);
+            } else next();
         });
-        await import("./theme/assets/iconfont/iconfont").then(module => {
-		})
-        await import('axios').then(module => {
-            Vue.prototype.$axios = module.default;
-		}).catch(e => {
-			console.log(e,'axios error ')
-		})
+        await import('./theme/assets/iconfont/iconfont').then((module) => {});
+        await import('axios')
+            .then((module) => {
+                Vue.prototype.$axios = module.default;
+            })
+            .catch((e) => {
+                console.log(e, 'axios error ');
+            });
     }
 };
