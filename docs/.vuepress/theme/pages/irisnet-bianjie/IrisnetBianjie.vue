@@ -1,17 +1,20 @@
 <template>
     <div class="irisnet">
         <irisnet-banner :banner-content="bannerContent" />
+        <about-irisnet :about-content="aboutContent" :logo="logo" />
     </div>
 </template>
 
 <script>
     import IrisnetBanner from '@theme/pages/irisnet-bianjie/components/IrisnetBanner';
+    import AboutIrisnet from '@theme/pages/irisnet-bianjie/components/AboutIrisnet';
     import { getModuleContent } from '@theme/utils';
 
     export default {
         name: 'IrisnetBianjie',
         components: {
-            IrisnetBanner
+            IrisnetBanner,
+            AboutIrisnet
         },
         computed: {
             bannerContent() {

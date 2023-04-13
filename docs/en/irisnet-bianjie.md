@@ -23,8 +23,16 @@
             title: 'About IRISnet-Bianjie',
             aboutInfo:
                 [
-                    { label: 'Core Development Team of IRISnet', img: about_irisnet_logo.png },
-                    { label: 'Open Source Contributor to Cosmos', img: about_cosmos_logo.png }
+                    {
+                        label: 'Core Development Team of IRISnet',
+                        img: about_irisnet_logo.png,
+                        color: '#da395e'
+                    },
+                    {
+                        label: 'Open Source Contributor to Cosmos',
+                        img: about_cosmos_logo.png,
+                        color: '#2d7bc2'
+                    }
                 ],
             aboutIntroList:
                 [

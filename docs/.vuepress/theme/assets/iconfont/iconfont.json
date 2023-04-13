@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "35036052",
+      "name": "cosmos",
+      "font_class": "cosmos",
+      "unicode": "e7d8",
+      "unicode_decimal": 59352
+    },
+    {
+      "icon_id": "35036184",
+      "name": "big dipper-copy",
+      "font_class": "a-bigdipper-copy",
+      "unicode": "e7d9",
+      "unicode_decimal": 59353
+    },
+    {
+      "icon_id": "35035993",
+      "name": "mintscan",
+      "font_class": "mintscan",
+      "unicode": "e7d6",
+      "unicode_decimal": 59350
+    },
+    {
+      "icon_id": "35036008",
+      "name": "big dipper",
+      "font_class": "a-bigdipper",
+      "unicode": "e7d7",
+      "unicode_decimal": 59351
+    },
+    {
       "icon_id": "29549531",
       "name": "PC",
       "font_class": "PC",
