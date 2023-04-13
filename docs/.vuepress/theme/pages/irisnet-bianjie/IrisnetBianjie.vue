@@ -2,19 +2,25 @@
     <div class="irisnet">
         <irisnet-banner :banner-content="bannerContent" />
         <about-irisnet :about-content="aboutContent" :logo="logo" />
+        <delegation :delegation="delegation" />
+        <explorer :cosmos-explorer="cosmosExplorer" />
     </div>
 </template>
 
 <script>
     import IrisnetBanner from '@theme/pages/irisnet-bianjie/components/IrisnetBanner';
     import AboutIrisnet from '@theme/pages/irisnet-bianjie/components/AboutIrisnet';
+    import Delegation from '@theme/pages/irisnet-bianjie/components/Delegation';
+    import Explorer from '@theme/pages/irisnet-bianjie/components/Explorer';
     import { getModuleContent } from '@theme/utils';
 
     export default {
         name: 'IrisnetBianjie',
         components: {
             IrisnetBanner,
-            AboutIrisnet
+            AboutIrisnet,
+            Delegation,
+            Explorer
         },
         computed: {
             bannerContent() {
@@ -26,8 +32,8 @@
             logo() {
                 return getModuleContent(this, 'logo');
             },
-            bianjie() {
-                return getModuleContent(this, 'bianjie');
+            delegation() {
+                return getModuleContent(this, 'delegation');
             },
             cosmosExplorer() {
                 return getModuleContent(this, 'cosmosExplorer');

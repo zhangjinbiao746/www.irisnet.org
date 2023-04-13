@@ -67,7 +67,7 @@
             { img: 'cosmos_page_irisnet_logo.png', link: 'https://www.irisnet.org/' },
             { img: 'cosmos_logo.png', link: 'https://cosmos.network/' }
         ],
-    bianjie:
+    delegation:
         {
             title: 'Safe Bianjie, Safe Delegation',
             product:
@@ -90,17 +90,18 @@
             list:
                 [
                     {
-                        icon: 'test',
+                        icon: icon-mintscan,
                         title: 'Mintscan',
                         href: 'https://www.mintscan.io/cosmos/validators/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                     },
                     {
-                        icon: 'test',
+                        icon: icon-a-bigdipper-copy,
+                        # icon: icon-a-bigdipper,
                         title: 'Big Dipper',
                         href: 'https://cosmos.bigdipper.live/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                     },
                     {
-                        icon: 'test',
+                        icon: icon-cosmos,
                         title: 'Cosmos Overview',
                         href: 'https://cosmos-overview.genesislab.net'
                     }

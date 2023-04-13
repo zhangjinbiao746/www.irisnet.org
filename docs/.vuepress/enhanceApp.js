@@ -34,7 +34,8 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
                 next(`${store.state.currentLang}`);
             } else next();
         });
-        await import('./theme/assets/iconfont/iconfont').then((module) => {});
+        await import('./theme/assets/iconfont/iconfont.css').then((module) => {});
+        await import('./theme/assets/iconfont/iconfont.js').then((module) => {});
         await import('axios')
             .then((module) => {
                 Vue.prototype.$axios = module.default;
