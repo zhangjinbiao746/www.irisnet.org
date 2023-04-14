@@ -77,7 +77,6 @@
                         }
                         .core_right_content_title {
                             font-size: var(--font-32);
-                            font-weight: var(--font-weight-400);
                             line-height: 0.32rem;
                             color: rgba(255, 255, 255, 1);
                             @media (max-width: 500px) {

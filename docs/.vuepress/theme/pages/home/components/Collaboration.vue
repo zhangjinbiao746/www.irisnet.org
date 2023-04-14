@@ -45,6 +45,7 @@
 <style lang="less" scoped>
     .collaboration {
         margin-top: 0.48rem;
+        padding-bottom: 0.8rem;
         .collaboration_item {
             margin-top: 0.64rem;
             &:first-child {
@@ -52,7 +53,6 @@
             }
             .collaboration_title {
                 font-size: var(--font-24);
-                font-weight: var(--font-weight-400);
                 line-height: 0.24rem;
             }
             .collaboration_logo_list {

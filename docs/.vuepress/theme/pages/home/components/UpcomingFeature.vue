@@ -1,8 +1,13 @@
 <template>
-    <title-component :title="upcoming.title">
-        <ul class="upcoming_list">
-            <li class="upcoming_item" v-for="(item, index) in upcoming.list" :key="index">
-                <img :src="getImageUrl(item.imgName)" alt="" />
+    <title-component :title="upcomingTitle">
+        <ul class="upcoming_list" :class="{upcoming_list_single: upcoming.list.length <= 1}">
+            <li
+                class="upcoming_item"
+                v-for="(item, index) in upcoming.list"
+                :key="index"
+                :style="{ background: `url(${item.bgImage}) no-repeat center / cover` }"
+            >
+                <img :src="item.imgName" alt="" />
                 <h5 class="upcoming_item_title">{{ item.title }}</h5>
                 <p class="upcoming_item_content">{{ item.content }}</p>
             </li>
@@ -18,9 +23,13 @@
             TitleComponent
         },
         props: ['upcoming'],
-        methods: {
-            getImageUrl(img) {
-                return require(`../../../assets/home/${img}`);
+        computed: {
+            upcomingTitle() {
+                if (this.upcoming.list.length > 1) {
+                    return `${this.upcoming.title}s`;
+                } else {
+                    return this.upcoming.title;
+                }
             }
         }
     };
@@ -36,10 +45,12 @@
             grid-template-columns: repeat(1, 1fr);
         }
         .upcoming_item {
+            justify-self: center;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 0.74rem 0.5rem 0.72rem 0.5rem;
+            max-width: 4.8rem;
             @media (max-width: 500px) {
                 padding: 0.48rem 0.32rem;
             }
@@ -59,8 +70,8 @@
                 line-height: 0.32rem;
             }
         }
-        .upcoming_item:first-child {
-            background: url('../../../assets/home/cosmwasm_bg.png') no-repeat center / cover;
-        }
+    }
+    .upcoming_list_single {
+        grid-template-columns: repeat(1, 1fr);
     }
 </style>

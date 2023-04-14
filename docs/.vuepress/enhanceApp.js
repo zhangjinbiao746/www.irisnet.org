@@ -1,4 +1,5 @@
 import Vuex from 'vuex';
+import axios from 'axios';
 import store from './theme/store';
 
 export default async ({ Vue, options, router, siteData, isServer }) => {
@@ -15,8 +16,32 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
     Vue.mixin({ store: store });
     if (!isServer) {
         router.beforeEach((to, from, next) => {
-            if (to?.path === '/') next(`${store.state.currentLang}`);
-            else next();
+            if (
+                to.path === '/testnets' ||
+                to.path === '/developers/testnet' ||
+                to.path === 'developers'
+            ) {
+                next(`${store.state.currentLang}developers`);
+            } else if (to.path === '/appPrivacy' || to.path === '/privacy') {
+                next(`${store.state.currentLang}privacy`);
+            } else if (to.path === '/appTerms' || to.path === '/terms') {
+                next(`${store.state.currentLang}terms`);
+            } else if (to.path === '/mainnet') {
+                next(`${store.state.currentLang}mainnet`);
+            } else if (to.path === '/irisnet-bianjie') {
+                next(`${store.state.currentLang}irisnet-bianjie`);
+            } else if (to?.path === '/') {
+                next(`${store.state.currentLang}`);
+            } else next();
         });
+        await import('./theme/assets/iconfont/iconfont.css').then((module) => {});
+        await import('./theme/assets/iconfont/iconfont.js').then((module) => {});
+        await import('axios')
+            .then((module) => {
+                Vue.prototype.$axios = module.default;
+            })
+            .catch((e) => {
+                console.log(e, 'axios error ');
+            });
     }
 };

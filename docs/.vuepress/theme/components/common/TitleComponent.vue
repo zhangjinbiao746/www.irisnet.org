@@ -32,7 +32,6 @@
         .title {
             margin-top: 0.36rem;
             font-size: var(--font-40);
-            font-weight: var(--font-weight-400);
             color: #fff;
             line-height: 0.4rem;
             @media (max-width: 768px) {
@@ -42,7 +41,6 @@
         }
         .sub_title {
             margin-top: 0.32rem;
-            font-size: var(--font-16);
             line-height: 0.32rem;
         }
     }

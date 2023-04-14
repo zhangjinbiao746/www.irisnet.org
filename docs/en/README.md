@@ -66,6 +66,7 @@
     upcoming:
         {
             title: 'Upcoming Feature',
+            # todo shan icon imgName 和 bgImage 链接需要替换文件服务器
             list:
                 [
                     {
@@ -73,7 +74,8 @@
                         content:
                             'Deploying ICS-721 standard to enable interchain transfers of NFT
                             assets.',
-                        imgName: interchain_nft_logo.png
+                        imgName: https://www.irisnet.org/dist/interchain_nft_logo.png?d78b8a2455922adfac9ed083c6ed58c7,
+                        bgImage: https://www.irisnet.org/dist/cosmwasm_bg.png?974290649904a22bed07261c51a3e8a2
                     }
                 ]
         },
@@ -91,7 +93,7 @@
                 ]
         },
     announcements:
-        # todo shan 内容待替换，目前暂未给到，图片需放到文件服务器
+        # todo shan img href 待替换，目前暂未给到，图片需放到文件服务器
         {
             title: 'Announcements',
             viewMore: 'View More',
@@ -108,8 +110,7 @@
                     {
                         id: '1',
                         img: https://www.irisnet.org/dist/irisnet_02.jpg?8ebd207017be94fa8b8797b81aa58c1c,
-                        href:
-                            ' https://medium.com/irisnet-blog/irisnet-monthly-update-2022-10-8e21813b2521',
+                        href: 'https://medium.com/irisnet-blog/irisnet-monthly-update-2022-10-8e21813b2521',
                         date: 'Nov 16 2022',
                         title: 'IRISnet Monthly Update'
                     }

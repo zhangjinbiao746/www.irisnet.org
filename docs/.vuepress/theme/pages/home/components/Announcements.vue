@@ -119,7 +119,6 @@
                 }
                 .announcement_date {
                     margin-top: 0.24rem;
-                    font-size: var(--font-16);
                     color: rgba(255, 255, 255, 0.75);
                 }
             }
