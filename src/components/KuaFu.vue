@@ -26,7 +26,6 @@
 					<div class="new_function_header_content">
 						<p class="new_function_line"></p>
 						<h1 class="new_function_title_content">{{$store.state.messages.irishub.newFunction.title}}</h1>
-						<p class="new_function_sub_title_content" v-html="$store.state.messages.irishub.newFunction.description"></p>
 					</div>
 					<div class="new_function_section_container">
 						<div class="new_function_section_item" v-for="(item, index) in $store.state.messages.irishub.featuresList" :key="index">
@@ -325,13 +324,6 @@
 							font-weight: normal;
 							margin-top: 0.36rem;
 						}
-						.new_function_sub_title_content{
-                            font-family: ArialMT;
-							font-size: 0.16rem;
-							line-height: 0.32rem;
-							color: rgba(255,255,255,0.65);
-							margin-top: 0.32rem;
-						}
 					}
 					.new_function_section_container{
 						margin: 0 auto;
@@ -587,9 +579,9 @@
 					padding: 0.36rem 0 1.2rem 0 ;
 					.application_list_item_content{
 						color: rgba(255,255,255,1);
-						max-width: 3.76rem;
+						max-width: 4rem;
 						box-sizing: border-box;
-						padding: 0.36rem 0.48rem;
+						padding: 0.36rem 0.24rem;
 						background: transparent;
 						cursor: pointer;
 						a{
@@ -916,9 +908,6 @@
 							.new_function_title_content{
                                 margin-top: 0.24rem;
 								font-size: 0.32rem;
-							}
-							.new_function_sub_title_content{
-								margin-top: 0.2rem;
 							}
 						}
 					}

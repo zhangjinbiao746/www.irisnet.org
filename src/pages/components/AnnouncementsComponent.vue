@@ -74,7 +74,7 @@
 		.announcement_wrap{
 			max-width: 12rem;
 			margin: 0 auto;
-			padding-bottom: 1.6rem;
+			padding: 1rem 0 1.6rem;
 			@media(max-width: 1200px){
 				margin: 0 0.48rem;
 				padding-bottom: 1rem;
