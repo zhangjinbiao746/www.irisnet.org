@@ -49,14 +49,11 @@
 				}
 			}
 			.upcoming_list_content{
+				display: flex;
+				justify-content: center;
 				margin-top: 0.48rem;
-				display: grid;
-				grid-template-columns: repeat(2,1fr);
-				grid-column-gap: 0.36rem;
 				padding-bottom: 1.6rem;
 				@media(max-width: 1200px){
-					grid-template-columns: repeat(1,1fr);
-					grid-row-gap: 0.4rem;
 					padding-bottom: 1rem;
 				}
 				@media(max-width: 596px){
@@ -66,6 +63,7 @@
 				.upcoming_item{
 					box-sizing: border-box;
 					padding: 0.74rem 0.5rem 0.72rem 0.5rem;
+					max-width: 5.8rem;
 					@media(max-width: 596px){
 						padding: 0.48rem 0.32rem;
 					}

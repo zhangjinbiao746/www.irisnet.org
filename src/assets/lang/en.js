@@ -173,11 +173,20 @@ export const message = {
       description:
         "Discover diverse NFT dApps and use cases with EVM!",
     },
-    iService: {
-      title: "Interchain Account + NFT",
-      description:
-        "Enable the Interchain Account (ICA) feature as a Host Chain, granting users access to various native features on IRISnet from one account on the controller chain, allowing cross-chain management of NFT/MT on IRISnet via ICA.",
-    },
+    featuresList: [
+      {
+        label: 'EVM Integration',
+        intro: 'Incorporates the EVM, allowing developers to seamlessly deploy EVM-based smart contracts and dApps on IRISHUB, and enabling compatibility with Ethereum.'
+      },
+      {
+        label: 'New Fee Token',
+        intro: 'Introduces a new fee token for EVM transactions, which is created by converting $IRIS at a 1:1 conversion rate.'
+      },
+      {
+        label: 'EIP-1559 Support',
+        intro: 'Supports EIP-1559 as a supplement to EVM, optimizing the burning and gas fee distribution mechanisms to promote mutual benefits and shared interests among IRISHUB community members.'
+      }
+    ],
     ibc: {
       // title: "IBC + iService",
       // description:
