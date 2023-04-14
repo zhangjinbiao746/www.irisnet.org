@@ -169,9 +169,7 @@ export const message = {
       },
     },
     newFunction: {
-      title: "New Features",
-      description:
-        "Discover diverse NFT dApps and use cases with EVM!",
+      title: "New Features"
     },
     featuresList: [
       {
