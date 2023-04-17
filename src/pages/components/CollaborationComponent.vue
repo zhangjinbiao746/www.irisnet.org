@@ -145,6 +145,9 @@
 								line-height: 0.32rem;
 								font-weight: 600;
 								color: rgba(255,255,255,1);
+								&:hover {
+									color: #9b64ed;
+								}
 								@media(max-width: 768px){
 									font-size: 0.2rem;
 									margin-top: 0.16rem;

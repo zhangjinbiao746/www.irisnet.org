@@ -26,68 +26,18 @@
 					<div class="new_function_header_content">
 						<p class="new_function_line"></p>
 						<h1 class="new_function_title_content">{{$store.state.messages.irishub.newFunction.title}}</h1>
-						<p class="new_function_sub_title_content" v-html="$store.state.messages.irishub.newFunction.description"></p>
 					</div>
 					<div class="new_function_section_container">
-						<div class="new_function_left_content">
-							<div class="new_function_section_content">
-                                <div class="iservice_icon">
-                                    <img src="../assets/irishub1/interchain_account.png" alt="">
-                                </div>
-								<p class="new_function_section_label">{{$store.state.messages.irishub.iService.title}}</p>
-								<p class="new_function_section">{{$store.state.messages.irishub.iService.description}}</p>
+						<div class="new_function_section_item" v-for="(item, index) in $store.state.messages.irishub.featuresList" :key="index">
+							<div class="new_function_section_item_info">
+								<p class="new_function_section_item_label">{{item.label}}</p>
+								<p class="new_function_section_item_intro">{{item.intro}}</p>
 							</div>
 						</div>
-						<!-- <div class="new_function_left_img_content">
-							<img src="" alt="">
-						</div> -->
-						<!-- <div class="new_function_right_content">
-							<div class="new_function_section_content">
-                                <div class="ibc_icon">
-                                    <img src="../assets/irishub1/ibc_kuafu.png" alt="">
-                                </div>
-								<p class="new_function_section_label">{{$store.state.messages.irishub.ibc.title}}</p>
-								<p class="new_function_section" v-html="$store.state.messages.irishub.ibc.description"></p>
-								<span @click="toTestFunction()" style="cursor: pointer">{{$store.state.messages.irishub.ibc.test}}<i class="iconfont icon-qianwang"></i></span>
-							</div>
-						</div> -->
-						<!-- <div class="new_function_right_img_content">
-							<img src="../assets/irishub1/irishub_ibc.png" alt="">
-						</div> -->
-					
 					</div>
 				</div>
 			</div>
-			<!-- <div class="new_function_application_container">
-				<div class="new_function_application_content"
-				     v-for="(item, index) in $store.state.messages.irishub.applicationList"
-				     :key="index">
-                    <div class="application_icon">
-                        <img :src="item.iconName" alt="">
-                    </div>
-					<p class="new_function_application_title">{{item.title}}</p>
-					<p class="new_function_application_section" v-html="item.section "></p>
-				</div>
-			</div> -->
 		</div>
-<!--		<div class="proposal_container">
-			<div class="proposal_content">
-				<div class="proposal_title_content">
-					<p class="proposal_link"></p>
-					<h1 class="proposal_title">{{$store.state.messages.irishub.proposal.title}}</h1>
-				</div>
-				<div class="proposal_list">
-					<div class="proposal_item" v-for="(item,index) in $store.state.messages.irishub.proposal.list">
-						<p class="propsal_item_id">{{item.proposalId}}</p>
-						<p class="propsal_item_title">{{item.title}}</p>
-						<a class="proposal_item_btn"
-						   :href="!!item.link ? item.link : 'javascript:void(0)'"
-						   :target="!!item.link ? '_blank' :''"
-						   rel="noreferrer noopener">{{item.btnLabel}}</a>
-					</div>
-				</div>
-			</div>
-		</div>-->
 		<div class="application_show_container">
 			<div class="application_show_content_wrap">
 				<p class="application_show_link"></p>
@@ -358,18 +308,11 @@
 			.bg_content{
 				max-width: 19.2rem;
 				margin: 0 auto;
-				// background: url("../assets/irishub1/irishub_ibc.png") no-repeat right 1rem top 6.4rem,url("../assets/irishub1/interchainaccount.png") no-repeat 1rem 1.5rem;
-				background: url("../assets/irishub1/interchainaccount.png") no-repeat 1rem 1.5rem;
-				background-size: 7rem auto;
-				@media(max-width: 1500px){
-					background-size: 5rem auto;
-				}
 				.new_function_content_wrap{
 					max-width: 12rem;
 					margin: 0 auto;
 					.new_function_header_content{
 						.new_function_line{
-							
 							width: 1rem;
 							height: 0.08rem;
 							background: rgba(111, 33, 193, 1);
@@ -381,104 +324,105 @@
 							font-weight: normal;
 							margin-top: 0.36rem;
 						}
-						.new_function_sub_title_content{
-                            font-family: ArialMT;
-							font-size: 0.16rem;
-							line-height: 0.32rem;
-							color: rgba(255,255,255,0.65);
-							margin-top: 0.32rem;
-						}
 					}
 					.new_function_section_container{
-						display: flex;
-						flex-direction: column;
-						.new_function_left_content{
+						margin: 0 auto;
+						max-width: 11.34rem;
+						.new_function_section_item {
 							display: flex;
-							justify-content: flex-end;
-							margin-bottom: 1.8rem;
-							.new_function_left_img_content{
-								display: none;
-								max-width: 3.58rem;
-								margin: 0.44rem auto 0.05rem auto;
-								img{
-									width: 100%;
+							align-items: center;
+							min-height: 4.68rem;
+							&:nth-of-type(odd) {
+								justify-content: flex-end;
+								margin-right: 0.4rem;
+							}
+							&:nth-of-type(even) {
+								margin-left: 0.4rem;
+							}
+							&:nth-of-type(1) {
+								background: url(../assets/irishub1/evm_integration.png) no-repeat;
+								background-size: 5.6rem auto;
+							}
+							&:nth-of-type(2) {
+								background: url(../assets/irishub1/new_fee_token.png) no-repeat;
+								background-size: 5.6rem auto;
+								background-position: 100% 100%;
+							}
+							&:nth-of-type(3) {
+								background: url(../assets/irishub1/eip-1559_support.png) no-repeat;
+								background-size: 5.6rem auto;
+							}
+							@media (max-width: 1200px) {
+								min-height: 3.51rem;
+								&:nth-of-type(1) {
+									background-size: 4.2rem auto;
+								}
+								&:nth-of-type(2) {
+									background-size: 4.2rem auto;
+								}
+								&:nth-of-type(3) {
+									background-size: 4.2rem auto;
 								}
 							}
-							.new_function_section_content{
-								max-width: 50%;
-								color: #fff;
-                                .iservice_icon {
-                                    margin-top: 0.89rem;
-                                    width: 0.8rem;
-                                    height: 0.8rem;
-                                    img {
-                                        height: 100%;
-                                    }
-                                }
-								
-								.new_function_section_label{
-                                    font-family: ArialMT;
+							@media (max-width: 1000px) {
+								min-height: 2.93rem;
+								&:nth-of-type(1) {
+									background-size: 3.5rem auto;
+								}
+								&:nth-of-type(2) {
+									background-size: 3.5rem auto;
+								}
+								&:nth-of-type(3) {
+									background-size: 3.5rem auto;
+								}
+							}
+							@media (max-width: 680px) {
+								margin-top: 0.24rem;
+								min-height: auto;
+								&:nth-of-type(odd) {
+									justify-content: flex-start;
+									margin-right: 0;
+								}
+								&:nth-of-type(even) {
+									margin-left: 0;
+								}
+								&:nth-of-type(1) {
+									margin-top: 0;
+									background-image: none;
+								}
+								&:nth-of-type(2) {
+									background-image: none;
+								}
+								&:nth-of-type(3) {
+									background-image: none;
+								}
+							}
+							.new_function_section_item_info {
+								max-width: 4.6rem;
+								@media (max-width: 1000px) {
+									max-width: 3.6rem;
+								}
+								@media (max-width: 830px) {
+									max-width: 2.6rem;
+								}
+								@media (max-width: 680px) {
+									max-width: 100%;
+								}
+								.new_function_section_item_label {
 									font-size: 0.32rem;
-									margin-top: 0.24rem;
+									color: #fff;
 									line-height: 0.48rem;
-								}
-								.new_function_section{
-									margin-top: 0.36rem;
-                                    font-family: ArialMT;
-									font-size: 0.16rem;
-									line-height: 0.32rem;
-									color: rgba(255,255,255,0.65);
-								}
-								
-							}
-						}
-						.new_function_right_content{
-							display: flex;
-							flex-direction: row;
-							.new_function_section_content{
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-end;
-								max-width: 50%;
-								margin-bottom: 1.48rem ;
-								color: #fff;
-								text-align: right;
-                                .ibc_icon {
-                                    margin-top: 0.89rem;
-                                    width: 0.8rem;
-                                    height: 0.8rem;
-                                    img {
-                                        height: 100%;
-                                    }
-                                }
-								.new_function_section_label{
-                                    font-family: ArialMT;
-									font-size: 0.32rem;
-									margin-top: 0.24rem;
-								}
-								.new_function_section{
-									margin-top: 0.36rem;
-                                    font-family: ArialMT;
-									font-size: 0.16rem;
-									line-height: 0.32rem;
-									color: rgba(255,255,255,0.65);
-								}
-								span{
-									display: inline-block;
-									margin-top: 0.24rem;
-									font-size: 0.2rem;
-									color: rgba(100, 141, 237, 1);
-									.iconfont{
-										color: rgba(155, 100, 237, 1);
-										margin-top: 0;
-										font-size: 0.2rem;
+									white-space: nowrap;
+									@media (max-width: 680px) {
+										font-size: 0.24rem;
 									}
 								}
+								.new_function_section_item_intro {
+									font-size: 0.16rem;
+									line-height: 0.32rem;
+									color: rgba(255,255,255,0.65);
+								}
 							}
-						}
-						.new_function_right_img_content{
-							display: none;
-							
 						}
 					}
 				}
@@ -617,7 +561,6 @@
 			.application_show_content_wrap{
 				max-width: 12rem;
 				margin: 0 auto;
-				padding-top: 1rem;
 				.application_show_link{
 					width: 1rem;
 					height: 0.08rem;
@@ -637,9 +580,9 @@
 					padding: 0.36rem 0 1.2rem 0 ;
 					.application_list_item_content{
 						color: rgba(255,255,255,1);
-						max-width: 3.76rem;
+						max-width: 4rem;
 						box-sizing: border-box;
-						padding: 0.36rem 0.48rem;
+						padding: 0.36rem 0.24rem;
 						background: transparent;
 						cursor: pointer;
 						a{
@@ -866,8 +809,6 @@
 				}
 			}
 		}
-		
-		
 	}
 	@media(max-width: 1200px){
 		.irishub_update_container{
@@ -879,24 +820,6 @@
 			.new_function_content{
 				padding-left: 0.4rem;
 				padding-right: 0.4rem;
-				.bg_content{
-					// background: url("../assets/irishub1/irishub_ibc.png") no-repeat bottom left,url("../assets/irishub1/irishub_iservice.png") no-repeat top 2rem right 0;
-					background: url("../assets/irishub1/interchainaccount.png") no-repeat 0rem 1.5rem;
-					background-size: 5.5rem auto;
-					.new_function_content_wrap{
-						.new_function_section_container{
-							.new_function_left_content{
-								justify-content: flex-end;
-							}
-							.new_function_left_img_content{
-								display: block;
-							}
-							.new_function_right_content{
-								justify-content: flex-end;
-							}
-						}
-					}
-				}
 				.new_function_application_container{
 					flex-direction: column;
 					.new_function_application_content{
@@ -986,47 +909,6 @@
 							.new_function_title_content{
                                 margin-top: 0.24rem;
 								font-size: 0.32rem;
-							}
-							.new_function_sub_title_content{
-								margin-top: 0.2rem;
-							}
-						}
-						.new_function_section_container{
-							.new_function_left_content{
-								margin-bottom: 0;
-								justify-content: flex-start;
-								.new_function_section_content{
-									max-width: 70%;
-                                    .iservice_icon {
-                                        margin-top: 0.32rem;
-                                    }
-
-									.new_function_section_label{
-										font-size: 0.24rem;
-									}
-									.new_function_section{
-										margin-top: 0.24rem;
-									}
-								}
-							}
-							.new_function_right_content{
-								justify-content: flex-start;
-								.new_function_section_content{
-                                    align-items: flex-start;
-									max-width: 70%;
-									margin-bottom: 0;
-									text-align: left;
-                                    .ibc_icon {
-                                        margin-top: 0.32rem;
-                                    }
-									.new_function_section_label{
-										margin-top: 0.24rem;
-										font-size: 0.24rem;
-									}
-									.new_function_section{
-										margin-top: 0.24rem;
-									}
-								}
 							}
 						}
 					}

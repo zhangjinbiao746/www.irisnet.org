@@ -1,5 +1,6 @@
 .DS_Store
 .idea/
+dist/
 !build/icons
 coverage
 node_modules/

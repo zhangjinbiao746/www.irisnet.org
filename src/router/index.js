@@ -36,7 +36,7 @@ export function createRouter() {
             },
             {
                 path: '/testnets',
-                component: NewTestnet,
+                redirect: '/developers'
             },
             {
                 path: '/testnets/app',
@@ -64,13 +64,13 @@ export function createRouter() {
             {
                 path: '/appPrivacy',
                 name: 'appPrivacy',
-                component: appPrivacy
+                redirect:'/privacy'
             },
 
             {
                 path: '/appTerms',
                 name: 'appTerms',
-                component: appTerms
+                redirect:'/terms'
             },
             {
                 path: '/mainnet',
