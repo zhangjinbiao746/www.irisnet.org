@@ -177,8 +177,8 @@ export const message = {
         intro: 'Incorporates the EVM, allowing developers to seamlessly deploy EVM-based smart contracts and dApps on IRISHUB, and enabling compatibility with Ethereum.'
       },
       {
-        label: 'New Fee Token',
-        intro: 'Introduces a new fee token for EVM transactions, which is created by converting $IRIS at a 1:1 conversion rate.'
+        label: 'New Fee Token ERIS',
+        intro: 'Introduces a new fee token ERIS for EVM transactions, which is created by converting $IRIS at a 1:1 conversion rate.'
       },
       {
         label: 'EIP-1559 Support',
@@ -1172,21 +1172,21 @@ export const message = {
         id: "0",
         img: require("../../assets/pages/announcements/irisnet_01.jpg"),
         href:
-          "https://medium.com/irisnet-blog/iris-hub-1-4-mainnet-upgrade-has-been-successfully-completed-947b8b9f3357",
-        date: "Dec 05 2022",
-        title:
-          "IRISnet Mainnet 1.4 Upgrade Announcement",
+          "https://medium.com/irisnet-blog/irishub-2-0-mainnet-upgrade-completed-cee011a16582",
+        date: "Apr 17 2023",
+        title: "IRISHUB 2.0 Mainnet Upgrade Completed",
         content: "",
       },
       {
         id: "1",
         img: require("../../assets/pages/announcements/irisnet_02.jpg"),
         href:
-          " https://medium.com/irisnet-blog/irisnet-monthly-update-2022-10-8e21813b2521",
-        date: "Nov 16 2022",
-        title: "IRISnet Monthly Update",
+          "https://medium.com/irisnet-blog/irishub-2-0-mainnet-upgrade-pre-announcement-243070e28d77",
+        date: "Apr 11 2023",
+        title:
+          "IRISHUB 2.0 Mainnet Upgrade | Pre-Announcement",
         content: "",
-      },
+      }
     ],
   },
   testnet: {

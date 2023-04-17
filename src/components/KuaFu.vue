@@ -412,6 +412,7 @@
 									font-size: 0.32rem;
 									color: #fff;
 									line-height: 0.48rem;
+									white-space: nowrap;
 									@media (max-width: 680px) {
 										font-size: 0.24rem;
 									}
