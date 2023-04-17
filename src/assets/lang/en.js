@@ -177,8 +177,8 @@ export const message = {
         intro: 'Incorporates the EVM, allowing developers to seamlessly deploy EVM-based smart contracts and dApps on IRISHUB, and enabling compatibility with Ethereum.'
       },
       {
-        label: 'New Fee Token',
-        intro: 'Introduces a new fee token for EVM transactions, which is created by converting $IRIS at a 1:1 conversion rate.'
+        label: 'New Fee Token ERIS',
+        intro: 'Introduces a new fee token ERIS for EVM transactions, which is created by converting $IRIS at a 1:1 conversion rate.'
       },
       {
         label: 'EIP-1559 Support',
