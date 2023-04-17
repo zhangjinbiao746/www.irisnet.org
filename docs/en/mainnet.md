@@ -12,6 +12,37 @@
                     { link: https://www.rainbow.one/, btnLabel: Rainbow Wallet }
                 ]
         },
+    features:
+        {
+            title: 'New Features',
+            # todo shan bgImage 需要更改为服务器中的链接
+            list:
+                [
+                    {
+                        bgImage: https://stage.irisnet.org/dist/evm_integration.png?aae35723b7430ee2373d562deda0db95,
+                        label: 'EVM Integration',
+                        intro:
+                            'Incorporates the EVM, allowing developers to seamlessly deploy
+                            EVM-based smart contracts and dApps on IRISHUB, and enabling
+                            compatibility with Ethereum.'
+                    },
+                    {
+                        bgImage: https://stage.irisnet.org/dist/new_fee_token.png?d8c743b20d16831c3250c918dcb5f9e4,
+                        label: 'New Fee Token',
+                        intro:
+                            'Introduces a new fee token for EVM transactions, which is created by
+                            converting $IRIS at a 1:1 conversion rate.'
+                    },
+                    {
+                        bgImage: https://stage.irisnet.org/dist/eip-1559_support.png?b8e63c62508f33befe9210efca5a4cf8,
+                        label: 'EIP-1559 Support',
+                        intro:
+                            'Supports EIP-1559 as a supplement to EVM, optimizing the burning and
+                            gas fee distribution mechanisms to promote mutual benefits and shared
+                            interests among IRISHUB community members.'
+                    }
+                ]
+        },
     appEcosystem:
         {
             title: 'Application Ecosystem',

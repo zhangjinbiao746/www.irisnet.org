@@ -59,8 +59,8 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 0.36rem 0.48rem;
-                max-width: 2.8rem;
+                padding: 0.36rem 0.24rem;
+                max-width: 3.52rem;
                 &:hover {
                     background: rgba(22, 24, 57, 1);
                 }

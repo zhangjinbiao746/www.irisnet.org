@@ -17,7 +17,9 @@
                             rel="noreferrer noopener"
                         >
                             <img :src="logoItem.image" alt="" />
-                            <p class="collaboration_logo_name">{{ logoItem.name }}</p>
+                            <p class="collaboration_logo_name collaboration_logo_link_name">{{
+                                logoItem.name
+                            }}</p>
                         </a>
                         <span v-else class="collaboration_logo_link">
                             <img :src="logoItem.image" alt="" />
@@ -92,6 +94,11 @@
                             @media (max-width: 768px) {
                                 margin-top: 0.16rem;
                                 font-size: var(--font-20);
+                            }
+                        }
+                        .collaboration_logo_link_name {
+                            &:hover {
+                                color: var(--hover-text-color);
                             }
                         }
                     }
