@@ -1170,7 +1170,7 @@ export const message = {
     announcementList: [
       {
         id: "0",
-        img: require("../../assets/pages/announcements/irisnet_02.jpg"),
+        img: require("../../assets/pages/announcements/irisnet_01.jpg"),
         href:
           "https://medium.com/irisnet-blog/irishub-2-0-mainnet-upgrade-completed-cee011a16582",
         date: "Apr 17 2023",
@@ -1179,7 +1179,7 @@ export const message = {
       },
       {
         id: "1",
-        img: require("../../assets/pages/announcements/irisnet_01.jpg"),
+        img: require("../../assets/pages/announcements/irisnet_02.jpg"),
         href:
           "https://medium.com/irisnet-blog/irishub-2-0-mainnet-upgrade-pre-announcement-243070e28d77",
         date: "Apr 11 2023",
