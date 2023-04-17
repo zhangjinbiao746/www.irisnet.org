@@ -707,7 +707,7 @@ export const message = {
       content: "Accelerate the Development of the IRISHUB Interchain Ecosystem",
       list:[
         { btn:"Apply for Tech-Grants",
-        url:" https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md"
+        url:"https://github.com/irisnet/foundation/blob/master/funding/tech-grants-program.md"
 
       },
       {
