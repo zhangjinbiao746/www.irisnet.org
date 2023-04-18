@@ -19,7 +19,7 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
             if (
                 to.path === '/testnets' ||
                 to.path === '/developers/testnet' ||
-                to.path === 'developers'
+                to.path === '/developers'
             ) {
                 next(`${store.state.currentLang}developers`);
             } else if (to.path === '/appPrivacy' || to.path === '/privacy') {
@@ -30,6 +30,8 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
                 next(`${store.state.currentLang}mainnet`);
             } else if (to.path === '/irisnet-bianjie') {
                 next(`${store.state.currentLang}irisnet-bianjie`);
+            } else if (to.path === '/community/press-kit') {
+                next(`${store.state.currentLang}community/press-kit`);
             } else if (to?.path === '/') {
                 next(`${store.state.currentLang}`);
             } else next();
