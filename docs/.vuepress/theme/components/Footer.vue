@@ -90,6 +90,7 @@
     import Module from '@theme/components/common/Module';
     import CustomButton from '@theme/components/common/CustomButton';
     import { SUCCESS_CODE } from '@theme/constant';
+    import cfg from '../../config.json';
     export default {
         name: 'Footer',
         components: {
@@ -136,7 +137,7 @@
                     return;
                 }
                 this.$axios
-                    .post('http://as-node.rainbow.one/news_letter/newsletter', {
+                    .post(`${cfg.adminServer}`, {
                         email: this.mailAddress
                     })
                     .then((res) => {

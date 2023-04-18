@@ -2,10 +2,11 @@
     "name": "www.irisnet.org",
     "version": "4.0.0",
     "description": "irisnet",
-    "author": "huasheng@bianjie.ai",
+    "author": "shan@bianjie.ai",
     "private": true,
     "scripts": {
         "dev": "vuepress dev docs --temp .temp --no-cache",
+        "build-params": "node ./script.js -p",
         "build": "vuepress build docs",
         "prettier": "prettier --write docs"
     },
@@ -22,8 +23,8 @@
         "vuepress": "^1.8.2"
     },
     "engines": {
-        "node": ">= 4.0.0",
-        "npm": ">= 3.0.0"
+        "node": ">= v16.15.1",
+        "npm": ">= 8.11.0"
     },
     "browserslist": [
         "> 1%",
