@@ -8,21 +8,21 @@
             list:
                 [
                     {
-                        id: 0,
-                        imgName: innovation_first.png,
+                        imgName: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/innovation_first.png,
+                        bgImage: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/innovation_bg_first.png,
                         msg:
                             'Incorporation of a service-oriented infrastructure into the Interchain'
                     },
                     {
-                        id: 1,
-                        imgName: innovation_second.png,
+                        imgName: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/innovation_second.png,
+                        bgImage: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/innovation_bg.png,
                         msg:
                             'Integration of business services offered by heterogeneous systems,
                             including public and consortium chains as well as legacy systems'
                     },
                     {
-                        id: 2,
-                        imgName: innovation_last.png,
+                        imgName: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/innovation_last.png,
+                        bgImage: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/innovation_bg_last.png,
                         msg:
                             'NFT Interoperability across the Internet of Blockchains and service
                             interactions between on/off-chain systems'
@@ -66,7 +66,6 @@
     upcoming:
         {
             title: 'Upcoming Feature',
-            # todo shan icon imgName 和 bgImage 链接需要替换文件服务器
             list:
                 [
                     {
@@ -74,8 +73,8 @@
                         content:
                             'Deploying ICS-721 standard to enable interchain transfers of NFT
                             assets.',
-                        imgName: https://www.irisnet.org/dist/interchain_nft_logo.png?d78b8a2455922adfac9ed083c6ed58c7,
-                        bgImage: https://www.irisnet.org/dist/cosmwasm_bg.png?974290649904a22bed07261c51a3e8a2
+                        imgName: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/interchain_nft_logo.png,
+                        bgImage: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/cosmwasm_bg.png
                     }
                 ]
         },
@@ -87,13 +86,12 @@
                 [
                     {
                         btn: 'Apply for Tech-Grants',
-                        url: 'https://github.com/irisnet/iris-foundation/blob/master/funding/iris-foundation-tech-grants-program.md'
+                        url: 'https://github.com/irisnet/foundation/blob/master/funding/tech-grants-program.md'
                     },
                     { btn: 'Mainnet Faucet', url: 'https://stakely.io/faucet/irisnet-iris' }
                 ]
         },
     announcements:
-        # todo shan img href 待替换，目前暂未给到，图片需放到文件服务器
         {
             title: 'Announcements',
             viewMore: 'View More',
@@ -101,23 +99,20 @@
             announcementList:
                 [
                     {
-                        id: '0',
-                        img: https://www.irisnet.org/dist/irisnet_01.jpg?b8f526a3db51568e6b116ff645efa31e,
-                        href: 'https://medium.com/irisnet-blog/iris-hub-1-4-mainnet-upgrade-has-been-successfully-completed-947b8b9f3357',
-                        date: 'Dec 05 2022',
-                        title: 'IRISnet Mainnet 1.4 Upgrade Announcement'
+                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/announcements/irisnet_01.jpg,
+                        href: https://medium.com/irisnet-blog/irishub-2-0-mainnet-upgrade-completed-cee011a16582,
+                        date: 'Apr 17 2023',
+                        title: 'IRISHUB 2.0 Mainnet Upgrade Completed'
                     },
                     {
-                        id: '1',
-                        img: https://www.irisnet.org/dist/irisnet_02.jpg?8ebd207017be94fa8b8797b81aa58c1c,
-                        href: 'https://medium.com/irisnet-blog/irisnet-monthly-update-2022-10-8e21813b2521',
-                        date: 'Nov 16 2022',
-                        title: 'IRISnet Monthly Update'
+                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/announcements/irisnet_02.jpg,
+                        href: https://medium.com/irisnet-blog/irishub-2-0-mainnet-upgrade-pre-announcement-243070e28d77,
+                        date: 'Apr 11 2023',
+                        title: 'IRISHUB 2.0 Mainnet Upgrade | Pre-Announcement'
                     }
                 ]
         },
     collaboration:
-        # todo shan 图片需放到文件服务器，并更新 image 链接
         {
             title: 'Collaboration',
             list:
@@ -129,12 +124,12 @@
                                 {
                                     name: 'BIANJIE.AI',
                                     link: '',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/bianjie.png
                                 },
                                 {
                                     name: 'Tendermint',
                                     link: 'https://tendermint.com/',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/tendermint.png
                                 }
                             ]
                     },
@@ -145,17 +140,17 @@
                                 {
                                     name: 'INTERCHAIN',
                                     link: 'https://cosmos.network/about',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/interchain.png
                                 },
                                 {
                                     name: 'HashKey',
                                     link: 'https://www.hashkey.com/#/',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/HashKey.png
                                 },
                                 {
                                     name: 'PlatON',
                                     link: 'https://www.platon.network/#/index',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/Platon.png
                                 }
                             ]
                     },
@@ -166,47 +161,47 @@
                                 {
                                     name: 'BINANCE',
                                     link: 'https://www.binance.com/zh-CN',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/BINANCE.png
                                 },
                                 {
                                     name: 'Chainlink',
                                     link: 'https://chain.link/',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/collaboration.png
                                 },
                                 {
                                     name: 'CoinMarketCap',
                                     link: 'https://coinmarketcap.com/',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/CMC.png
                                 },
                                 {
                                     name: 'KAVA',
                                     link: 'https://www.kava.io/',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/KAVA.png
                                 },
                                 {
                                     name: 'MYKEY',
                                     link: 'https://mykey.org/',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/MYKEY.png
                                 },
                                 {
                                     name: 'e-Money',
                                     link: 'https://www.e-money.com/',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/EM.png
                                 },
                                 {
                                     name: 'Starname',
                                     link: 'https://www.starname.me/',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/Starname.png
                                 },
                                 {
                                     name: 'COIRFAN',
                                     link: 'http://iris.fan/#/',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/COIRFAN.png
                                 },
                                 {
                                     name: 'StaFiHub',
                                     link: 'https://www.stafihub.io/',
-                                    image: https://www.irisnet.org/dist/bianjie.png?ca283fc15953cb21c232ed834650fbca
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/StaFiHub.png
                                 }
                             ]
                     }

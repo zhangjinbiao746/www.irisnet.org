@@ -1,5 +1,5 @@
 <template>
-    <div class="core_features">
+    <div class="core_features" :class="{ core_features_low2: coreFeatures.list.length <= 2 }">
         <title-component class="core_wrap" :title="coreFeatures.title">
             <ul class="core_list">
                 <li class="core_item" v-for="(item, index) in coreFeatures.list" :key="index">
@@ -31,17 +31,14 @@
         background: url('../../../assets/home/core_left.png') no-repeat left -0.7rem bottom 0.5rem,
             url('../../../assets/home/core_right.png') no-repeat right -3rem top -1.5rem;
         background-size: 7.43rem 7.43rem, 12.1rem 13.12rem;
-        background-color: rgba(21, 12, 54, 1);
         @media (max-width: 1600px) {
             background: url('../../../assets/home/core_left.png') no-repeat left -0.7rem bottom 0.5rem,
                 url('../../../assets/home/core_right.png') no-repeat right -3rem top -1.5rem;
             background-size: 7.43rem 7.43rem, 11.5rem 12.8rem;
-            background-color: rgba(21, 12, 54, 1);
         }
         @media (max-width: 1400px) {
             background: url('../../../assets/home/core_right.png') no-repeat right -3rem top -1.5rem;
             background-size: 10rem 11.6rem;
-            background-color: rgba(21, 12, 54, 1);
         }
         .core_wrap {
             padding: 0.8rem 0 1rem;
@@ -96,6 +93,16 @@
                     }
                 }
             }
+        }
+    }
+    .core_features_low2 {
+        min-height: 8.2rem;
+        background: url('../../../assets/home/core_left_low2.png') no-repeat left 0 bottom 0,
+            url('../../../assets/home/core_right_low2.png') no-repeat right 0 top -0.7rem;
+        background-size: 7.28rem 7.43rem, 8.42rem 9.49rem;
+        @media (max-width: 1500px) {
+            background: url('../../../assets/home/core_right_low2.png') no-repeat right 0 top -0.7rem;
+            background-size: 8.42rem 9.49rem;
         }
     }
 </style>

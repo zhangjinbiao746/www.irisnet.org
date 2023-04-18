@@ -170,7 +170,6 @@
                     });
             },
             getMissedBlocksCounter() {
-                // todo shan 检查该接口情况
                 this.$axios
                     .get(
                         'https://cosmos-mainnet-rpc.allthatnode.com:1317/slashing/validators/cosmosvalconspub1zcjduepqrgyyjxpe0ujefxwnkpmqz9m0hj03y09tdz9lwc0s7mvy469hulfq69f8sd/signing_info'

@@ -5,7 +5,7 @@
                 <li
                     class="announcement"
                     v-for="(item, index) in announcements.announcementList"
-                    :key="item.id"
+                    :key="index"
                 >
                     <a
                         class="announcement_link"

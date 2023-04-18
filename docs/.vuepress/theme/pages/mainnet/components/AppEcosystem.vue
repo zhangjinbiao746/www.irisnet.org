@@ -9,7 +9,7 @@
                 :target="item.link ? '_blank' : ''"
                 rel="noreferrer noopener"
             >
-                <img class="app_ecosystem_img" :src="getImageUrl(item.src)" alt="" />
+                <img class="app_ecosystem_img" :src="item.src" alt="" />
                 <h3 class="app_ecosystem_item_title">{{ item.title }}</h3>
                 <p class="app_ecosystem_item_section">{{ item.section }}</p>
             </a>
@@ -25,12 +25,7 @@
         components: {
             TitleComponent
         },
-        props: ['appEcosystem'],
-        methods: {
-            getImageUrl(img) {
-                return require(`../../../assets/mainnet/${img}`);
-            }
-        }
+        props: ['appEcosystem']
     };
 </script>
 
