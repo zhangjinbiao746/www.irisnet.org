@@ -12,13 +12,43 @@
                     { link: https://www.rainbow.one/, btnLabel: Rainbow Wallet }
                 ]
         },
+    features:
+        {
+            title: 'New Features',
+            list:
+                [
+                    {
+                        bgImage: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/evm_integration.png,
+                        label: 'EVM Integration',
+                        intro:
+                            'Incorporates the EVM, allowing developers to seamlessly deploy
+                            EVM-based smart contracts and dApps on IRISHUB, and enabling
+                            compatibility with Ethereum.'
+                    },
+                    {
+                        bgImage: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/new_fee_token.png,
+                        label: 'New Fee Token ERIS',
+                        intro:
+                            'Introduces a new fee token ERIS for EVM transactions, which is created
+                            by converting $IRIS at a 1:1 conversion rate.'
+                    },
+                    {
+                        bgImage: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/eip-1559_support.png,
+                        label: 'EIP-1559 Support',
+                        intro:
+                            'Supports EIP-1559 as a supplement to EVM, optimizing the burning and
+                            gas fee distribution mechanisms to promote mutual benefits and shared
+                            interests among IRISHUB community members.'
+                    }
+                ]
+        },
     appEcosystem:
         {
             title: 'Application Ecosystem',
             list:
                 [
                     {
-                        src: uptick-logo.png,
+                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/uptick-logo.png,
                         title: 'Uptick Marketplace',
                         section:
                             'Uptick NFT Marketplace is a platform that makes it incredibly easy for
@@ -28,7 +58,7 @@
                         link: 'https://www.uptickproject.com'
                     },
                     {
-                        src: irishub_chain_link.png,
+                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/irishub_chain_link.png,
                         title: 'Chainlink',
                         section:
                             "With the flexible framework of iService, Chainlink's oracle is
@@ -45,7 +75,7 @@
             list:
                 [
                     {
-                        img: 'wallet.png',
+                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/wallet.png,
                         name: 'Wallets',
                         resourceList:
                             [
@@ -112,7 +142,7 @@
                             convenience.'
                     },
                     {
-                        img: 'Toolbox.png',
+                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/Toolbox.png,
                         name: 'Staking Tools',
                         resourceList:
                             [
@@ -154,7 +184,7 @@
                             their security.'
                     },
                     {
-                        img: 'explorer.png',
+                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/explorer.png,
                         name: 'Explorers',
                         resourceList:
                             [
@@ -177,7 +207,7 @@
                             or proposals, etc.'
                     },
                     {
-                        img: 'presskit.png',
+                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/presskit.png,
                         name: 'Press Kit',
                         content: 'Get our press kit with all logo assets you might need.',
                         resourceList:
@@ -189,7 +219,7 @@
                             ]
                     },
                     {
-                        img: 'doc.png',
+                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/doc.png,
                         name: 'Docs',
                         content:
                             'Interchain Service Hub for NextGen Distributed Applications – A BPoS

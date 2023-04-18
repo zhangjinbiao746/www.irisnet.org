@@ -84,7 +84,6 @@
                 ]
         },
     cosmosExplorer:
-        # todo shan icon 待替换
         {
             title: 'Cosmos Hub Explorers',
             list:
@@ -95,8 +94,7 @@
                         href: 'https://www.mintscan.io/cosmos/validators/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                     },
                     {
-                        icon: icon-a-bigdipper-copy,
-                        # icon: icon-a-bigdipper,
+                        icon: icon-a-bigdipper,
                         title: 'Big Dipper',
                         href: 'https://cosmos.bigdipper.live/account/cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g'
                     },

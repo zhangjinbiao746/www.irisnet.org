@@ -3,7 +3,7 @@
         <ul class="resources_list">
             <li class="resource" v-for="(item, index) in resources.list" :key="index">
                 <div class="resource_left">
-                    <img class="resource_left_img" :src="getImageUrl(item.img)" alt="" />
+                    <img class="resource_left_img" :src="item.img" alt="" />
                     <span class="resource_left_name">{{ item.name }}</span>
                 </div>
                 <div class="resource_right">
@@ -46,12 +46,7 @@
         components: {
             TitleComponent
         },
-        props: ['resources'],
-        methods: {
-            getImageUrl(img) {
-                return require(`../../../assets/mainnet/${img}`);
-            }
-        }
+        props: ['resources']
     };
 </script>
 

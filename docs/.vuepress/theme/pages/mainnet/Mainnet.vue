@@ -1,6 +1,7 @@
 <template>
     <div class="mainnet">
         <mainnet-banner :irishub="irishub" />
+        <new-features :features="features" />
         <app-ecosystem :app-ecosystem="appEcosystem" />
         <resources :resources="resources" />
     </div>
@@ -8,6 +9,7 @@
 
 <script>
     import MainnetBanner from '@theme/pages/mainnet/components/MainnetBanner';
+    import NewFeatures from '@theme/pages/mainnet/components/NewFeatures';
     import AppEcosystem from '@theme/pages/mainnet/components/AppEcosystem';
     import Resources from '@theme/pages/mainnet/components/Resources';
     import { getModuleContent } from '@theme/utils';
@@ -16,6 +18,7 @@
         name: 'Mainnet',
         components: {
             MainnetBanner,
+            NewFeatures,
             AppEcosystem,
             Resources
         },
@@ -23,12 +26,15 @@
             irishub() {
                 return getModuleContent(this, 'irishub');
             },
+            features() {
+                return getModuleContent(this, 'features');
+            },
             appEcosystem() {
                 return getModuleContent(this, 'appEcosystem');
             },
             resources() {
                 return getModuleContent(this, 'resources');
-            },
+            }
         }
     };
 </script>

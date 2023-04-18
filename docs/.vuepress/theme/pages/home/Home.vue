@@ -1,5 +1,6 @@
 <template>
     <div class="home">
+        <home-banner :keyInnovations="keyInnovations" />
         <key-innovations :keyInnovations="keyInnovations" />
         <core-features :coreFeatures="coreFeatures" />
         <upcoming-feature :upcoming="upcoming" />
@@ -10,6 +11,7 @@
 </template>
 
 <script>
+    import HomeBanner from '@theme/pages/home/components/HomeBanner.vue';
     import KeyInnovations from '@theme/pages/home/components/KeyInnovations';
     import CoreFeatures from '@theme/pages/home/components/CoreFeatures';
     import UpcomingFeature from '@theme/pages/home/components/UpcomingFeature';
@@ -20,6 +22,7 @@
     export default {
         name: 'Home',
         components: {
+            HomeBanner,
             KeyInnovations,
             CoreFeatures,
             UpcomingFeature,
@@ -50,4 +53,6 @@
     };
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+
+</style>
