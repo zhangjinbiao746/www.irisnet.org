@@ -23,5 +23,10 @@ RUN echo -e 'server {\n\
             rewrite ^/(.*) /index.html last;\n\
         }\n\
     }\n\
-}' > /etc/nginx/conf.d/default.conf
+    # 开启gzip 动态压缩
+    gzip on;\n\
+    gzip_min_length 1k;\n\
+    gzip_comp_level 6;\n\
+    gzip_types application/javascript application/json application/xml text/css text/javascript text/plain text/xml text/html;\n\
+    }' > /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/docs/.vuepress/dist/ /usr/share/nginx/html/
