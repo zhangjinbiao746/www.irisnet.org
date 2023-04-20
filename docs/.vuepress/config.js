@@ -201,7 +201,7 @@ module.exports = {
                         {
                             img: 'irisnet_twitter.png',
                             link: 'https://twitter.com/irisnetwork'
-                        },
+                        }
                     ]
                 }
             }
