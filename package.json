@@ -6,7 +6,6 @@
     "private": true,
     "scripts": {
         "dev": "vuepress dev docs --temp .temp --no-cache",
-        "build-params": "node ./script.js -p",
         "build": "vuepress build docs",
         "prettier": "prettier --write docs"
     },
