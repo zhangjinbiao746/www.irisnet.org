@@ -11,14 +11,16 @@ RUN sed -i "s+http://dl-cdn.alpinelinux.org/alpine+${APKPROXY}+g" /etc/apk/repos
 
 FROM nginx:1.19-alpine
 RUN echo -e 'server {\n\
-    listen       80;\n\
-    server_name  localhost;\n\
+    root   /usr/share/nginx/html;\n\
     location / {\n\
-        root   /usr/share/nginx/html;\n\
-        index  index.html index.htm;\n\
         if ($request_filename ~* index.html|.*\.ico$)\n\
         {\n\
           add_header Cache-Control no-cache;\n\
+        }\n\
+        try_files $URI $URI/ /index.html;\n\
+        # 以下是针对 VuePress 路由的 Rewrite 规则
+        if (!-e $request_filename) {\n\
+            rewrite ^/(.*) /index.html last;\n\
         }\n\
     }\n\
 }' > /etc/nginx/conf.d/default.conf
