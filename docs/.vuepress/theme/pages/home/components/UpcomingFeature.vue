@@ -1,13 +1,15 @@
 <template>
     <title-component :title="upcomingTitle">
-        <ul class="upcoming_list" :class="{upcoming_list_single: upcoming.list.length <= 1}">
+        <ul class="upcoming_list" :class="{ upcoming_list_single: upcoming.list.length <= 1 }">
             <li
                 class="upcoming_item"
                 v-for="(item, index) in upcoming.list"
                 :key="index"
-                :style="{ background: `url(${item.bgImage}) no-repeat center / cover` }"
+                :style="{
+                    background: `url(${getImgRandom(item.bgImage)}) no-repeat center / cover`
+                }"
             >
-                <img :src="item.imgName" alt="" />
+                <img :src="getImgRandom(item.imgName)" alt="" />
                 <h5 class="upcoming_item_title">{{ item.title }}</h5>
                 <p class="upcoming_item_content">{{ item.content }}</p>
             </li>
@@ -17,12 +19,19 @@
 
 <script>
     import TitleComponent from '@theme/components/common/TitleComponent';
+    import { getImgRandom } from '@theme/utils';
+
     export default {
         name: 'UpcomingFeature',
         components: {
             TitleComponent
         },
         props: ['upcoming'],
+        data() {
+            return {
+                getImgRandom
+            };
+        },
         computed: {
             upcomingTitle() {
                 if (this.upcoming.list.length > 1) {

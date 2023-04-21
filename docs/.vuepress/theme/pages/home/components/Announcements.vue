@@ -15,7 +15,7 @@
                     >
                         <img
                             class="announcement_img"
-                            :src="item.img"
+                            :src="getImgRandom(item.img)"
                             alt=""
                             @mouseenter="scaleItemImage(index)"
                             @mouseleave="hideItemImage(index)"
@@ -46,6 +46,7 @@
 
 <script>
     import TitleComponent from '@theme/components/common/TitleComponent';
+    import { getImgRandom } from '@theme/utils';
 
     export default {
         name: 'Announcements',
@@ -55,7 +56,8 @@
         props: ['announcements'],
         data() {
             return {
-                announcementListItemImgDom: null
+                announcementListItemImgDom: null,
+                getImgRandom
             };
         },
         methods: {
