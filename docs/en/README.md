@@ -1,0 +1,211 @@
+---
+{
+    layout: Layout,
+    isHome: true,
+    keyInnovations:
+        {
+            title: 'Key Innovations',
+            list:
+                [
+                    {
+                        imgName: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/innovation_first.png,
+                        bgImage: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/innovation_bg_first.png,
+                        msg:
+                            'Incorporation of a service-oriented infrastructure into the Interchain'
+                    },
+                    {
+                        imgName: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/innovation_second.png,
+                        bgImage: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/innovation_bg.png,
+                        msg:
+                            'Integration of business services offered by heterogeneous systems,
+                            including public and consortium chains as well as legacy systems'
+                    },
+                    {
+                        imgName: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/innovation_last.png,
+                        bgImage: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/innovation_bg_last.png,
+                        msg:
+                            'NFT Interoperability across the Internet of Blockchains and service
+                            interactions between on/off-chain systems'
+                    }
+                ]
+        },
+    coreFeatures:
+        {
+            title: 'Core Features',
+            list:
+                [
+                    {
+                        title: 'IBC + iService',
+                        content:
+                            'TCP/IP + HTTP protocol of blockchains that can build and further
+                            broaden the Internet of Blockchains to support cross-platform data &
+                            application services between on-chain and off-chain.'
+                    },
+                    {
+                        title: 'EVM Integration',
+                        content:
+                            'The EVM (Ethereum Virtual Machine) integration allows developers to
+                            seamlessly deploy EVM-based smart contracts and dApps on IRISHUB, and
+                            enabling compatibility with Ethereum.'
+                    },
+                    {
+                        title: 'TIBC',
+                        content:
+                            'Terse IBC protocol to accelerate heterogeneous interchain technology
+                            with NFT transfers,  smart contracts interactions and other cross-chain
+                            services enabled.'
+                    },
+                    {
+                        title: 'Coinswap',
+                        content:
+                            'Cross-chain AMM protocol, a vanguard innovation platform for the Cosmos
+                            application ecosystem.'
+                    }
+                ]
+        },
+    upcoming:
+        {
+            title: 'Upcoming Feature',
+            list:
+                [
+                    {
+                        title: 'Interchain NFTs',
+                        content:
+                            'Deploying ICS-721 standard to enable interchain transfers of NFT
+                            assets.',
+                        imgName: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/interchain_nft_logo.png,
+                        bgImage: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/cosmwasm_bg.png
+                    }
+                ]
+        },
+    joinInterchain:
+        {
+            title: 'Join Interchain Space',
+            content: 'Accelerate the Development of the IRISHUB Interchain Ecosystem',
+            list:
+                [
+                    {
+                        btn: 'Apply for Tech-Grants',
+                        url: 'https://github.com/irisnet/foundation/blob/master/funding/tech-grants-program.md'
+                    },
+                    { btn: 'Mainnet Faucet', url: 'https://stakely.io/faucet/irisnet-iris' }
+                ]
+        },
+    announcements:
+        {
+            title: 'Announcements',
+            viewMore: 'View More',
+            viewMoreHref: 'https://medium.com/irisnet-blog',
+            announcementList:
+                [
+                    {
+                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/announcements/irisnet_01.jpg,
+                        href: https://medium.com/irisnet-blog/irishub-2-0-mainnet-upgrade-completed-cee011a16582,
+                        date: 'Apr 17 2023',
+                        title: 'IRISHUB 2.0 Mainnet Upgrade Completed'
+                    },
+                    {
+                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/announcements/irisnet_monthly_update_2303.png,
+                        href: https://medium.com/irisnet-blog/irisnet-monthly-update-c4464f50dd0c,
+                        date: 'Apr 20 2023',
+                        title: 'IRISnet Monthly Update'
+                    }
+                ]
+        },
+    collaboration:
+        {
+            title: 'Collaboration',
+            list:
+                [
+                    {
+                        title: 'Development Teams',
+                        list:
+                            [
+                                {
+                                    name: 'BIANJIE.AI',
+                                    link: '',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/bianjie.png
+                                },
+                                {
+                                    name: 'Tendermint',
+                                    link: 'https://tendermint.com/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/tendermint.png
+                                }
+                            ]
+                    },
+                    {
+                        title: 'Strategic Partners',
+                        list:
+                            [
+                                {
+                                    name: 'INTERCHAIN',
+                                    link: 'https://cosmos.network/about',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/interchain.png
+                                },
+                                {
+                                    name: 'HashKey',
+                                    link: 'https://www.hashkey.com/#/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/HashKey.png
+                                },
+                                {
+                                    name: 'PlatON',
+                                    link: 'https://www.platon.network/#/index',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/Platon.png
+                                }
+                            ]
+                    },
+                    {
+                        title: 'Ecosystem Partners',
+                        list:
+                            [
+                                {
+                                    name: 'BINANCE',
+                                    link: 'https://www.binance.com/zh-CN',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/BINANCE.png
+                                },
+                                {
+                                    name: 'Chainlink',
+                                    link: 'https://chain.link/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/collaboration.png
+                                },
+                                {
+                                    name: 'CoinMarketCap',
+                                    link: 'https://coinmarketcap.com/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/CMC.png
+                                },
+                                {
+                                    name: 'KAVA',
+                                    link: 'https://www.kava.io/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/KAVA.png
+                                },
+                                {
+                                    name: 'MYKEY',
+                                    link: 'https://mykey.org/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/MYKEY.png
+                                },
+                                {
+                                    name: 'e-Money',
+                                    link: 'https://www.e-money.com/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/EM.png
+                                },
+                                {
+                                    name: 'Starname',
+                                    link: 'https://www.starname.me/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/Starname.png
+                                },
+                                {
+                                    name: 'COIRFAN',
+                                    link: 'http://iris.fan/#/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/COIRFAN.png
+                                },
+                                {
+                                    name: 'StaFiHub',
+                                    link: 'https://www.stafihub.io/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/StaFiHub.png
+                                }
+                            ]
+                    }
+                ]
+        }
+}
+---
