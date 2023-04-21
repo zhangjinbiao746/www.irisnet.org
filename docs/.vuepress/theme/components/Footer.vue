@@ -247,7 +247,8 @@
                     }
                     .community_text_wrap {
                         display: flex;
-                        flex-direction: column;
+                        flex-flow: column wrap;
+                        align-content: flex-start;
                         margin-top: 0.27rem;
                         .community_text {
                             padding: 0.05rem 0;
