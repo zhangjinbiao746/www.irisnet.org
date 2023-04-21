@@ -105,10 +105,10 @@
                         title: 'IRISHUB 2.0 Mainnet Upgrade Completed'
                     },
                     {
-                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/announcements/irisnet_02.jpg,
-                        href: https://medium.com/irisnet-blog/irishub-2-0-mainnet-upgrade-pre-announcement-243070e28d77,
-                        date: 'Apr 11 2023',
-                        title: 'IRISHUB 2.0 Mainnet Upgrade | Pre-Announcement'
+                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/announcements/irisnet_monthly_update_2303.png,
+                        href: https://medium.com/irisnet-blog/irisnet-monthly-update-c4464f50dd0c,
+                        date: 'Apr 20 2023',
+                        title: 'IRISnet Monthly Update'
                     }
                 ]
         },

@@ -27,9 +27,9 @@
                     },
                     {
                         bgImage: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/new_fee_token.png,
-                        label: 'New Fee Token ERIS',
+                        label: 'New Fee Token $ERIS',
                         intro:
-                            'Introduces a new fee token ERIS for EVM transactions, which is created
+                            'Introduces a new fee token $ERIS for EVM transactions, which is created
                             by converting $IRIS at a 1:1 conversion rate.'
                     },
                     {
