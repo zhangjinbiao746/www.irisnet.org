@@ -16,13 +16,13 @@
                             target="_blank"
                             rel="noreferrer noopener"
                         >
-                            <img :src="logoItem.image" alt="" />
+                            <img :src="getImgRandom(logoItem.image)" alt="" />
                             <p class="collaboration_logo_name collaboration_logo_link_name">{{
                                 logoItem.name
                             }}</p>
                         </a>
                         <span v-else class="collaboration_logo_link">
-                            <img :src="logoItem.image" alt="" />
+                            <img :src="getImgRandom(logoItem.image)" alt="" />
                             <p class="collaboration_logo_name">{{ logoItem.name }}</p>
                         </span>
                     </li>
@@ -34,13 +34,19 @@
 
 <script>
     import TitleComponent from '@theme/components/common/TitleComponent';
+    import { getImgRandom } from '@theme/utils';
 
     export default {
         name: 'Collaboration',
         components: {
             TitleComponent
         },
-        props: ['collaboration']
+        props: ['collaboration'],
+        data() {
+            return {
+                getImgRandom
+            };
+        }
     };
 </script>
 

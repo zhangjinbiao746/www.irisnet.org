@@ -13,9 +13,11 @@
                 class="innovation"
                 v-for="(item, index) in keyInnovations.list"
                 :key="index"
-                :style="{ background: `url(${item.bgImage}) no-repeat center / cover` }"
+                :style="{
+                    background: `url(${getImgRandom(item.bgImage)}) no-repeat center / cover`
+                }"
             >
-                <img :src="item.imgName" alt="" />
+                <img :src="getImgRandom(item.imgName)" alt="" />
                 <p class="innovation_info">{{ item.msg }}</p>
             </li>
         </ul>
@@ -24,12 +26,19 @@
 
 <script>
     import TitleComponent from '@theme/components/common/TitleComponent';
+    import { getImgRandom } from '@theme/utils';
+
     export default {
         name: 'KeyInnovations',
         components: {
             TitleComponent
         },
-        props: ['keyInnovations']
+        props: ['keyInnovations'],
+        data() {
+            return {
+                getImgRandom
+            };
+        }
     };
 </script>
 

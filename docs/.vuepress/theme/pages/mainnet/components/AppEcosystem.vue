@@ -9,7 +9,7 @@
                 :target="item.link ? '_blank' : ''"
                 rel="noreferrer noopener"
             >
-                <img class="app_ecosystem_img" :src="item.src" alt="" />
+                <img class="app_ecosystem_img" :src="getImgRandom(item.src)" alt="" />
                 <h3 class="app_ecosystem_item_title">{{ item.title }}</h3>
                 <p class="app_ecosystem_item_section">{{ item.section }}</p>
             </a>
@@ -19,13 +19,19 @@
 
 <script>
     import TitleComponent from '@theme/components/common/TitleComponent';
+    import { getImgRandom } from '@theme/utils';
 
     export default {
         name: 'AppEcosystem',
         components: {
             TitleComponent
         },
-        props: ['appEcosystem']
+        props: ['appEcosystem'],
+        data() {
+            return {
+                getImgRandom
+            };
+        }
     };
 </script>
 

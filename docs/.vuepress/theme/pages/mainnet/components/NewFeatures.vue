@@ -5,7 +5,7 @@
                 class="feature_item"
                 v-for="(item, index) in features.list"
                 :key="index"
-                :style="{ background: `url(${item.bgImage}) no-repeat` }"
+                :style="{ background: `url(${getImgRandom(item.bgImage)}) no-repeat` }"
             >
                 <div class="feature_item_info">
                     <p class="feature_item_label">{{ item.label }}</p>
@@ -18,13 +18,19 @@
 
 <script>
     import TitleComponent from '@theme/components/common/TitleComponent';
+    import { getImgRandom } from '@theme/utils';
 
     export default {
         name: 'NewFeatures',
         components: {
             TitleComponent
         },
-        props: ['features']
+        props: ['features'],
+        data() {
+            return {
+                getImgRandom
+            };
+        }
     };
 </script>
 
