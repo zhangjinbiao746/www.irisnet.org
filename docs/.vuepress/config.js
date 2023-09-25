@@ -1,6 +1,6 @@
 module.exports = {
     title: 'IRIS Network',
-    description: 'irisnet.org',
+    description: 'IRISnet is an Interchain NFT Hub tailored for next-generation business dApps. Built using the Cosmos SDK, it facilitates cross-chain interoperability of NFTs, services, and on/off-chain systems. ',
     base: '/',
     head: [
         ['link', { rel: 'icon', href: '/images/favicon.ico' }],
@@ -9,7 +9,7 @@ module.exports = {
             {
                 name: 'keywords',
                 content:
-                    'IRIS,COSMOS,Tendermint,ABCI,blockchains,IBC protocl,IRIS HUB,Interoperability,Inter-blockchain Communication,InterBlockchain Communication'
+                    'IRISnet,irisnet,IRISHUB,IRIS HUB,IRIS hub'
             }
         ],
         [
@@ -18,6 +18,14 @@ module.exports = {
                 name: 'description',
                 content:
                     'Interchain Service Infrastructure and Protocol Technology Foundation for a Distributed Business Ecosystem'
+            }
+        ],
+        [
+            'meta',
+            {
+                name: 'google-site-verification',
+                content:
+                    'RHIq057T0RfccugQbApFIL2-0Jy4hHA6wGDBXQobLwc'
             }
         ],
         [
