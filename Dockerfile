@@ -1,4 +1,4 @@
-FROM node:16.15.1-alpine3.16 as builder
+FROM node:16.20.0-alpine3.18 as builder
 WORKDIR /app
 COPY . .
 ARG APKPROXY=http://mirrors.ustc.edu.cn/alpine
@@ -8,7 +8,7 @@ RUN sed -i "s+http://dl-cdn.alpinelinux.org/alpine+${APKPROXY}+g" /etc/apk/repos
     yarn install --registry http://registry.npmmirror.com  && \
     yarn build
 
-FROM nginx:1.19-alpine
+FROM nginx:1.24-alpine
 RUN echo -e 'server {\n\
     root   /usr/share/nginx/html;\n\
     location / {\n\
