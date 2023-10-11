@@ -2,8 +2,8 @@
     <div class="footer">
         <div class="footer_content">
             <div class="footer_top">
-                <template v-for="(item, index) in footerInfo.topFooter">
-                    <module :title="item.title" :key="index">
+                <template v-for="(item, index) in footerInfo.topFooter" :key="index">
+                    <module :title="item.title">
                         <template v-if="item.communityIcon" #icon>
                             <div class="community_icon_wrap">
                                 <a
@@ -253,6 +253,7 @@
                         .community_text {
                             padding: 0.05rem 0;
                             color: rgba(255, 255, 255, 0.2);
+                            white-space: nowrap;
                             &:hover {
                                 color: #fff;
                             }
