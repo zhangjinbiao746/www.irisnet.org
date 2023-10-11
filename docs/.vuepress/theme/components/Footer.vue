@@ -2,8 +2,8 @@
     <div class="footer">
         <div class="footer_content">
             <div class="footer_top">
-                <template v-for="(item, index) in footerInfo.topFooter" :key="index">
-                    <module :title="item.title">
+                <template v-for="(item, index) in footerInfo.topFooter">
+                    <module :title="item.title" :key="index">
                         <template v-if="item.communityIcon" #icon>
                             <div class="community_icon_wrap">
                                 <a
