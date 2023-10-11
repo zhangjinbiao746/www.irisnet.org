@@ -253,6 +253,7 @@
                         .community_text {
                             padding: 0.05rem 0;
                             color: rgba(255, 255, 255, 0.2);
+                            white-space: nowrap;
                             &:hover {
                                 color: #fff;
                             }

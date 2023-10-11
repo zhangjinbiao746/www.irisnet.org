@@ -179,6 +179,10 @@ module.exports = {
                                 {
                                     name: 'Explorer',
                                     href: 'https://irishub.iobscan.io/'
+                                },
+                                {
+                                    name: 'Awesome IRISnet',
+                                    href: 'https://github.com/irisnet/awesome'
                                 }
                             ]
                         },

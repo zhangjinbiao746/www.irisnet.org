@@ -3,7 +3,7 @@
         <mainnet-banner :irishub="irishub" />
         <new-features :features="features" />
         <app-ecosystem :app-ecosystem="appEcosystem" />
-        <resources :resources="resources" />
+        <resources :resources="resources" :more-resource="moreResource "/>
     </div>
 </template>
 
@@ -34,6 +34,9 @@
             },
             resources() {
                 return getModuleContent(this, 'resources');
+            },
+            moreResource() {
+                return getModuleContent(this, 'moreResource');
             }
         }
     };

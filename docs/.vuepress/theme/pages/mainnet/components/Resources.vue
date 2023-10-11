@@ -35,6 +35,14 @@
                 </div>
             </li>
         </ul>
+        <a
+            class="more_resource"
+            :href="moreResource.href"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            {{ moreResource.text }}
+        </a>
     </title-component>
 </template>
 
@@ -47,7 +55,7 @@
         components: {
             TitleComponent
         },
-        props: ['resources'],
+        props: ['resources', 'moreResource'],
         data() {
             return {
                 getImgRandom
@@ -164,6 +172,21 @@
                         margin-top: 0.17rem;
                     }
                 }
+            }
+        }
+        .more_resource {
+            display: inline-block;
+            margin-top: 0.8rem;
+            margin-left: 0.66rem;
+            padding: 0.14rem 0.16rem;
+            color: rgba(155, 100, 237, 1);
+            border: 0.02rem solid rgba(155, 100, 237, 1);
+            border-radius: 0.04rem;
+            @media (max-width: 1200px) {
+                margin-left: 0;
+            }
+            @media (max-width: 440px) {
+                margin-top: 0.36rem;
             }
         }
     }
