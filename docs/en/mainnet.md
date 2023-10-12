@@ -218,10 +218,6 @@
                                 {
                                     itemName: 'Light Client',
                                     href: 'https://www.irisnet.org/docs/cli-client/intro.html'
-                                },
-                                {
-                                    itemName: 'Awesome IRISnet',
-                                    href: 'https://github.com/irisnet/awesome'
                                 }
                             ]
                     }
