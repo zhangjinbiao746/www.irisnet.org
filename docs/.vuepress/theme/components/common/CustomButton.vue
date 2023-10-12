@@ -33,9 +33,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 0.16rem;
-            padding: 0.14rem 0.08rem;
-            min-width: 2.4rem;
+            margin: 0 0.08rem;
+            padding: 0.12rem 0.08rem;
+            min-width: 1.8rem;
             height: 0.24rem;
             font-size: var(--font-20);
             color: #fff;

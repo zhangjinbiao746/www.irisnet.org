@@ -84,10 +84,8 @@
             content: 'Accelerate the Development of the IRISHUB Interchain Ecosystem',
             list:
                 [
-                    {
-                        btn: 'Apply for Tech-Grants',
-                        url: 'https://github.com/irisnet/foundation/blob/master/funding/tech-grants-program.md'
-                    },
+                    { btn: 'Awesome IRISnet', url: 'https://github.com/irisnet/awesome' },
+                    { btn: 'Apply for Grants', url: 'https://form.jotform.com/232801980339055' },
                     { btn: 'Mainnet Faucet', url: 'https://stakely.io/faucet/irisnet-iris' }
                 ]
         },
