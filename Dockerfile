@@ -1,9 +1,8 @@
 FROM node:16.20.0-alpine3.18 as builder
 WORKDIR /app
 COPY . .
-ARG APKPROXY=http://mirrors.ustc.edu.cn/alpine
 
-RUN sed -i "s+http://dl-cdn.alpinelinux.org/alpine+${APKPROXY}+g" /etc/apk/repositories && \
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories && \
     apk add git && \
     yarn install --registry http://registry.npmmirror.com  && \
     yarn build
