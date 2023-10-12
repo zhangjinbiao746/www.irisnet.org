@@ -95,11 +95,6 @@
                                     href: 'https://mathwallet.org/zh-cn/'
                                 },
                                 {
-                                    itemName: 'Wetez',
-                                    osList: ['icon-anzhuo', 'icon-iOS'],
-                                    href: 'https://www.wetez.io/wallet'
-                                },
-                                {
                                     itemName: 'Cosmostation',
                                     osList: ['icon-anzhuo', 'icon-iOS'],
                                     href: 'https://www.cosmostation.io/wallet/'
@@ -113,11 +108,6 @@
                                     itemName: 'LoyToken',
                                     osList: ['icon-anzhuo', 'icon-iOS'],
                                     href: 'http://www.loytoken.com/web.html'
-                                },
-                                {
-                                    itemName: 'HashKey Hub',
-                                    osList: ['icon-anzhuo', 'icon-iOS'],
-                                    href: 'https://hub.hashkey.com/'
                                 },
                                 {
                                     itemName: 'Moonstake',
@@ -157,20 +147,11 @@
                                 },
                                 { itemName: 'Citadel.one', href: 'https://app.citadel.one/login' },
                                 {
-                                    itemName: 'Union Market',
-                                    href: 'https://union.market/token/irisnet'
-                                },
-                                {
                                     itemName: 'Ping.Pub',
                                     href: 'https://ping.pub/iris-network/staking'
                                 },
-                                {
-                                    itemName: 'Skynet',
-                                    href: 'https://skynetexplorers.com/iris-network/staking'
-                                },
                                 { itemName: 'Moonstake', href: 'https://wallet.moonstake.io/' },
                                 { itemName: '01node', href: 'https://01node.com/iris-network/' },
-                                { itemName: 'Dokia', href: 'https://staking.dokia.cloud/' },
                                 {
                                     itemName: 'Allnode',
                                     href: 'https://www.allnodes.com/iris/stake'
@@ -191,10 +172,6 @@
                                 { itemName: 'IOBScan', href: 'https://irishub.iobscan.io/#/home' },
                                 { itemName: 'Mintscan', href: 'https://www.mintscan.io/iris' },
                                 { itemName: 'Ping.Pub', href: 'https://ping.pub/iris-network' },
-                                {
-                                    itemName: 'Skynet',
-                                    href: 'https://skynetexplorers.com/iris-network'
-                                },
                                 { itemName: 'ATOMScan', href: 'https://atomscan.com/iris-network' },
                                 {
                                     itemName: 'MapofZones',
