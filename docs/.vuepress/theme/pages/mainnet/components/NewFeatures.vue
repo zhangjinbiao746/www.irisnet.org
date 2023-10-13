@@ -37,6 +37,12 @@
 <style lang="less" scoped>
     .title_container {
         padding: 0;
+        @media (max-width: 1200px) {
+            padding: 0 0.48rem;
+        }
+        @media (max-width: 440px) {
+            padding: 0 0.16rem;
+        }
         .features_list {
             margin: 0 auto;
             max-width: 11.34rem;
