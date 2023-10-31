@@ -97,16 +97,16 @@
             announcementList:
                 [
                     {
-                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/announcements/irisnet_01.jpg,
-                        href: https://medium.com/irisnet-blog/irishub-2-0-mainnet-upgrade-completed-cee011a16582,
-                        date: 'Apr 17 2023',
-                        title: 'IRISHUB 2.0 Mainnet Upgrade Completed'
+                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/announcements/understanding_rwa.png,
+                        href: https://medium.com/irisnet-blog/understanding-real-world-assets-shaping-the-future-of-rwa-on-irisnet-3929577b7dab,
+                        date: 'Sep 28 2023',
+                        title: 'Understanding Real World Assets: Shaping the Future of RWA on IRISnet'
                     },
                     {
-                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/announcements/irisnet_monthly_update_2303.png,
-                        href: https://medium.com/irisnet-blog/irisnet-monthly-update-c4464f50dd0c,
-                        date: 'Apr 20 2023',
-                        title: 'IRISnet Monthly Update'
+                        img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/announcements/irisnet_monthly_update_0809.png,
+                        href: https://medium.com/irisnet-blog/irisnet-updates-2023-08-09-60035ef71b91,
+                        date: 'Oct 16 2023',
+                        title: 'IRISnet Updates 2023.08&09'
                     }
                 ]
         },

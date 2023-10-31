@@ -34,6 +34,7 @@
             font-size: var(--font-40);
             color: #fff;
             line-height: 0.4rem;
+            white-space: nowrap;
             @media (max-width: 768px) {
                 margin-top: 0.24rem;
                 font-size: var(--font-32);

@@ -51,17 +51,31 @@
             @media (max-width: 992px) {
                 grid-template-columns: repeat(2, 1fr);
             }
-            @media (max-width: 700px) {
+            @media (max-width: 768px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            @media (max-width: 660px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width: 468px) {
                 grid-template-columns: repeat(1, 1fr);
             }
             .app_ecosystem_item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                max-width: 3rem;
+                @media (max-width: 768px) {
+                    max-width: 2rem;
+                }
                 .app_ecosystem_img {
                     width: 1.12rem;
                     height: 1.12rem;
                     border-radius: 0.16rem;
+                    @media (max-width: 768px) {
+                        width: 0.6rem;
+                        height: 0.6rem;
+                    }
                 }
                 .app_ecosystem_item_title {
                     margin-top: 0.2rem;
@@ -70,6 +84,10 @@
                     color: #fff;
                     text-align: center;
                     line-height: 0.32rem;
+                    @media (max-width: 768px) {
+                        font-size: var(--font-20);
+                        line-height: 0.24rem;
+                    }
                 }
             }
         }
