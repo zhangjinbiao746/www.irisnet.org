@@ -55,7 +55,7 @@
         margin-top: 0.48rem;
         padding-bottom: 0.8rem;
         .collaboration_item {
-            margin-top: 0.64rem;
+            margin-top: 0.96rem;
             &:first-child {
                 margin-top: 0;
             }
@@ -66,22 +66,39 @@
             .collaboration_logo_list {
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
-                grid-row-gap: 0.52rem;
+                gap: 1.11rem 1.36rem;
                 margin-top: 0.36rem;
-                @media (max-width: 940px) {
-                    margin-top: 0.24rem;
+                padding: 0 0.91rem;
+                @media (max-width: 1200px) {
                     grid-template-columns: repeat(4, 1fr);
                 }
-                @media (max-width: 540px) {
+                @media (max-width: 1080px) {
                     grid-template-columns: repeat(3, 1fr);
-                    grid-row-gap: 0.32rem;
                 }
-                @media (max-width: 440px) {
+                @media (max-width: 870px) {
+                    margin-top: 0.24rem;
                     grid-template-columns: repeat(2, 1fr);
+                }
+                @media (max-width: 768px) {
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 1.08rem 0.8rem;
+                    padding: 0 0.2rem;
+                }
+                @media (max-width: 620px) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+                @media (max-width: 500px) {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 1.08rem 0.4rem;
+                }
+                @media (max-width: 500px) {
+                    padding: 0;
+                    grid-template-columns: repeat(1, 1fr);
                 }
                 .collaboration_logo_item {
                     text-align: center;
                     .collaboration_logo_link {
+                        position: relative;
                         display: inline-block;
                         img {
                             width: 1rem;
@@ -92,11 +109,15 @@
                             }
                         }
                         .collaboration_logo_name {
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
                             margin-top: 0.24rem;
                             font-size: var(--font-32);
                             font-weight: var(--font-weight-600);
                             line-height: 0.32rem;
                             color: rgba(255, 255, 255, 1);
+                            white-space: nowrap;
                             @media (max-width: 768px) {
                                 margin-top: 0.16rem;
                                 font-size: var(--font-20);
