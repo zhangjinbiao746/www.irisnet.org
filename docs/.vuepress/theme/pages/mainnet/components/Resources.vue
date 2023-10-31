@@ -68,10 +68,10 @@
     .title_container {
         padding: 0 0 0.85rem;
         @media (max-width: 1200px) {
-            padding: 0 0.48rem 0.85rem;
+            padding: 0.36rem 0.48rem 0.85rem;
         }
         @media (max-width: 440px) {
-            padding: 0 0.16rem 0.85rem;
+            padding: 0.36rem 0.16rem 0.85rem;
         }
         .resources_list {
             margin-top: 0.48rem;
