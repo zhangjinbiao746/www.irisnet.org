@@ -177,11 +177,6 @@
                                     image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/KAVA.png
                                 },
                                 {
-                                    name: 'MYKEY',
-                                    link: 'https://mykey.org/',
-                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/MYKEY.png
-                                },
-                                {
                                     name: 'e-Money',
                                     link: 'https://www.e-money.com/',
                                     image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/EM.png
@@ -197,9 +192,34 @@
                                     image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/COIRFAN.png
                                 },
                                 {
-                                    name: 'StaFiHub',
-                                    link: 'https://www.stafihub.io/',
-                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/StaFiHub.png
+                                    name: 'StaFi',
+                                    link: 'https://www.stafi.io/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/StaFi.png
+                                },
+                                {
+                                    name: 'Babylon',
+                                    link: 'https://babylonchain.io/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/Babylon.png
+                                },
+                                {
+                                    name: 'Cronos',
+                                    link: 'https://cronos.org',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/Cronos.png
+                                },
+                                {
+                                    name: 'Uptick',
+                                    link: 'https://www.uptick.network/#/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/Uptick.png
+                                },
+                                {
+                                    name: 'Gravity Bridge',
+                                    link: 'https://www.gravitybridge.net/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/GravityBridge.png
+                                },
+                                {
+                                    name: 'CertiK',
+                                    link: 'https://www.certik.com/',
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/CertiK.png
                                 }
                             ]
                     }
