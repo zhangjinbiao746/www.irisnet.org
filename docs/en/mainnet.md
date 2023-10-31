@@ -48,24 +48,48 @@
             list:
                 [
                     {
-                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/uptick-logo.png,
-                        title: 'Uptick Marketplace',
-                        section:
-                            'Uptick NFT Marketplace is a platform that makes it incredibly easy for
-                            users to create, collect and trade NFTs. With a host of global creators
-                            and multiple NFT categories, including support for various media
-                            formats, Uptick NFT Marketplace caters to a wide audience.',
-                        link: 'https://www.uptickproject.com'
+                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/AVATA.png,
+                        title: 'AVATA'
                     },
                     {
-                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/irishub_chain_link.png,
-                        title: 'Chainlink',
-                        section:
-                            "With the flexible framework of iService, Chainlink's oracle is
-                            integrated to support the off-chain data secure and reliable transfer
-                            into distributed applications, and accordingly to cover more blockchain
-                            environments.",
-                        link: 'https://chain.link'
+                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/CoinSwap.png,
+                        title: 'CoinSwap'
+                    },
+                    {
+                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/EartLandHK.png,
+                        title: 'EartLandHK'
+                    },
+                    {
+                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/FirstPi.png,
+                        title: 'FirstPi'
+                    },
+                    {
+                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/NFTChina.hk.png,
+                        title: 'NFTChina.hk'
+                    },
+                    {
+                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/NFTWallet.png,
+                        title: 'NFT Wallet'
+                    },
+                    {
+                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/UptickMarketplace.png,
+                        title: 'Uptick Marketplace'
+                    },
+                    {
+                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/StaFiHub.png,
+                        title: 'StaFiHub'
+                    },
+                    {
+                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/StarNFT.png,
+                        title: 'StarNFT'
+                    },
+                    {
+                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/SuperDimensionalSpace.png,
+                        title: 'SuperDimensional Space'
+                    },
+                    {
+                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/WeTeam.png,
+                        title: 'WeTeam'
                     }
                 ]
         },
@@ -223,9 +247,6 @@
                     }
                 ]
         },
-        moreResource: {
-            text: 'More Resources',
-            href: 'https://github.com/irisnet/awesome'
-        }
+    moreResource: { text: 'More Resources', href: 'https://github.com/irisnet/awesome' }
 }
 ---
