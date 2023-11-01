@@ -1,18 +1,10 @@
 <template>
     <title-component :title="appEcosystem.title">
         <div class="app_ecosystem_list">
-            <a
-                class="app_ecosystem_item"
-                v-for="(item, index) in appEcosystem.list"
-                :key="index"
-                :href="item.link || ''"
-                :target="item.link ? '_blank' : ''"
-                rel="noreferrer noopener"
-            >
+            <div class="app_ecosystem_item" v-for="(item, index) in appEcosystem.list" :key="index">
                 <img class="app_ecosystem_img" :src="getImgRandom(item.src)" alt="" />
                 <h3 class="app_ecosystem_item_title">{{ item.title }}</h3>
-                <p class="app_ecosystem_item_section">{{ item.section }}</p>
-            </a>
+            </div>
         </div>
     </title-component>
 </template>
@@ -49,39 +41,53 @@
         }
         .app_ecosystem_list {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             justify-items: center;
-            gap: 0.16rem;
+            gap: 0.56rem 0;
             margin-top: 0.36rem;
-            @media (max-width: 880px) {
+            @media (max-width: 1200px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            @media (max-width: 992px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width: 768px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            @media (max-width: 660px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width: 468px) {
                 grid-template-columns: repeat(1, 1fr);
             }
             .app_ecosystem_item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 0.36rem 0.24rem;
-                max-width: 3.52rem;
-                &:hover {
-                    background: rgba(22, 24, 57, 1);
+                max-width: 3rem;
+                @media (max-width: 768px) {
+                    max-width: 2rem;
                 }
                 .app_ecosystem_img {
-                    width: 1.4rem;
-                    height: 1.4rem;
-                    border-radius: 50%;
+                    width: 1.12rem;
+                    height: 1.12rem;
+                    border-radius: 0.16rem;
+                    @media (max-width: 768px) {
+                        width: 0.6rem;
+                        height: 0.6rem;
+                    }
                 }
                 .app_ecosystem_item_title {
-                    margin-top: 0.3rem;
+                    margin-top: 0.2rem;
                     font-size: var(--font-32);
                     font-weight: var(--font-weight-600);
                     color: #fff;
                     text-align: center;
                     line-height: 0.32rem;
-                }
-                .app_ecosystem_item_section {
-                    margin-top: 0.24rem;
-                    color: rgba(255, 255, 255, 0.65);
-                    line-height: 0.32rem;
+                    @media (max-width: 768px) {
+                        font-size: var(--font-20);
+                        line-height: 0.24rem;
+                    }
                 }
             }
         }
