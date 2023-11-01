@@ -49,7 +49,7 @@
                 [
                     {
                         src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/AVATA.png,
-                        title: 'AVATA'
+                        title: 'AVATA Global'
                     },
                     {
                         src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/CoinSwap.png,
