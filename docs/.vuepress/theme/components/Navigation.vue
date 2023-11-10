@@ -20,6 +20,7 @@
                             class="nav_link"
                             :href="item.link"
                             :target="item.target"
+                            rel="noopener noreferrer"
                             >{{ item.text }}</a
                         >
                         <router-link
@@ -46,6 +47,7 @@
                     class="mobile_nav_link"
                     :href="item.link"
                     :target="item.target"
+                    rel="noopener noreferrer"
                     >{{ item.text }}</a
                 >
                 <router-link
