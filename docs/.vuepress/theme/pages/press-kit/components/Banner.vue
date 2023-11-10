@@ -2,7 +2,7 @@
     <div class="presskit_content">
         <h5 class="presskit_title">{{ pressKitContent.title }}</h5>
         <p class="presskit_download_title">{{ pressKitContent.downloadTitle }}</p>
-        <a :href="pressKitContent.downloadHref" target="_blank" class="presskit_download_btn">
+        <a :href="pressKitContent.downloadHref" target="_blank" class="presskit_download_btn" rel="noopener noreferrer">
             {{ pressKitContent.downloadBtn }}
         </a>
     </div>
