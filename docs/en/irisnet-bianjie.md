@@ -42,11 +42,11 @@
                         list:
                             [
                                 'Supported by <a href="https://cosmos.network/about" target="_blank"
-                                style="color:rgba(77, 150, 223, 1)">Interchain Foundation (ICF)</a>
+                                style="color:rgba(77, 150, 223, 1)" rel="noopener noreferrer">Interchain Foundation (ICF)</a>
                                 to build IRISnet, a Cosmos Hub that facilitates construction of
                                 distributed business applications.',
                                 '<a href="https://www.irisnet.org/" target="_blank"
-                                style="color:rgba(77, 150, 223, 1)">IRISnet</a> - a BPoS blockchain
+                                style="color:rgba(77, 150, 223, 1)" rel="noopener noreferrer">IRISnet</a> - a BPoS blockchain
                                 that is Self-evolutionary.'
                             ]
                     },

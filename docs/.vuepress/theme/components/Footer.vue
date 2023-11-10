@@ -87,6 +87,7 @@
 </template>
 
 <script>
+    import validator from 'validator';
     import Module from '@theme/components/common/Module';
     import CustomButton from '@theme/components/common/CustomButton';
     import { SUCCESS_CODE } from '@theme/constant';
@@ -125,9 +126,10 @@
             commitMail() {
                 this.clearTimeoutFn(this.submitTimer);
                 this.clearTimeoutFn(this.errorTimer);
-                let address =
-                    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                if (address.exec(this.mailAddress)) {
+                /**
+                 * 此处限制邮箱长度最长为 64 位
+                 */
+                if (validator.isEmail(this.mailAddress) && this.mailAddress.length <= 64) {
                     this.flShowError = false;
                 } else {
                     this.flShowError = true;

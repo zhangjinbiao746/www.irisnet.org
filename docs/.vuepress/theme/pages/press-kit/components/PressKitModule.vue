@@ -28,6 +28,7 @@
                                         :href="getImageUrl(standard.pngUrl)"
                                         :download="getImageUrl(standard.pngUrl)"
                                         class="standard_download"
+                                        rel="noopener noreferrer"
                                     >
                                         {{ standard.pngTitle }}
                                     </a>
@@ -35,6 +36,7 @@
                                         :href="getImageUrl(standard.svgUrl)"
                                         :download="getImageUrl(standard.svgUrl)"
                                         class="standard_download"
+                                        rel="noopener noreferrer"
                                     >
                                         {{ standard.svgTitle }}
                                     </a>
