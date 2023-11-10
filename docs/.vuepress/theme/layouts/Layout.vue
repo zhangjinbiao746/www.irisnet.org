@@ -34,6 +34,7 @@
     import Footer from '@theme/components/Footer';
     import globalCommonStyles from '@theme/styles/common';
     import { getLocalesNav, getLocalesFooter } from '@theme/utils';
+    import validator from 'validator';
 
     export default {
         name: 'Layout',

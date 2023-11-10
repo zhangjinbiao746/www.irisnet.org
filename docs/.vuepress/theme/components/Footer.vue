@@ -125,8 +125,7 @@
             commitMail() {
                 this.clearTimeoutFn(this.submitTimer);
                 this.clearTimeoutFn(this.errorTimer);
-                let address =
-                    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                let address = /^[a-zA-Z0-9._-]{1,64}@[a-zA-Z0-9.-]{1,255}\.[a-zA-Z]{2,}$/;
                 if (address.exec(this.mailAddress)) {
                     this.flShowError = false;
                 } else {
