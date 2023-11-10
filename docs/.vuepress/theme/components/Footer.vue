@@ -126,7 +126,10 @@
             commitMail() {
                 this.clearTimeoutFn(this.submitTimer);
                 this.clearTimeoutFn(this.errorTimer);
-                if (validator.isEmail(this.mailAddress)) {
+                /**
+                 * 此处限制邮箱长度最长为 64 位
+                 */
+                if (validator.isEmail(this.mailAddress) && this.mailAddress.length <= 64) {
                     this.flShowError = false;
                 } else {
                     this.flShowError = true;
