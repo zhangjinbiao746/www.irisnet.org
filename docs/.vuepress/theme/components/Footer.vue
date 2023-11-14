@@ -133,10 +133,6 @@
             clearTimeoutFn(timer) {
                 timer && clearTimeout(timer);
             },
-            setIFrameStyle() {
-                const iframeDom = document.querySelector ("iframe");
-                console.log(iframeDom);
-            },
             inputChange() {
                 this.$nextTick(() => {
                     this.showRobot && (this.showRobot = false);
@@ -193,7 +189,6 @@
             },
             verifySuccess(token) {
                 if (token) {
-                    this.setIFrameStyle();
                     this.commitMail(token);
                 }
             },
