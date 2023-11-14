@@ -187,9 +187,8 @@
             },
             expiredCallback() {
                 Message.closeAll()
-                Message.warning(GOOGLE_VERIFY_EXPIRE_AGAIN)
                 Message({
-                    message: warning,
+                    message: GOOGLE_VERIFY_EXPIRE_AGAIN,
                     type: 'warning'
                 });
                 grecaptcha.reset(this.googleVerifyId);
