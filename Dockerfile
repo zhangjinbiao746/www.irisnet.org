@@ -1,10 +1,12 @@
 FROM node:16.20.0-alpine3.18 as builder
 WORKDIR /app
 COPY . .
+ARG SITE_KEY=''
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories && \
     apk add git && \
     yarn install --registry http://registry.npmmirror.com  && \
+    yarn build-params $SITE_KEY && \
     yarn build
 
 FROM nginx:1.24-alpine

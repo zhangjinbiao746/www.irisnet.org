@@ -55,9 +55,10 @@
                                 </p>
                                 <custom-button
                                     class="submit_btn"
-                                    @click.native="commitMail"
+                                    @click.native="googleVerify"
                                     :link-text="item.inputBtn.btn.subscribe"
                                 />
+                                <div v-if="showRobot" id="robot" class="robot"></div>
                             </div>
                         </template>
                     </module>
@@ -88,9 +89,10 @@
 
 <script>
     import validator from 'validator';
+    import { Message } from 'element-ui';
     import Module from '@theme/components/common/Module';
     import CustomButton from '@theme/components/common/CustomButton';
-    import { SUCCESS_CODE } from '@theme/constant';
+    import { SUCCESS_CODE, SUCCESS_SIGN, GOOGLE_VERIFY_ERR_TRY_AGAIN, GOOGLE_VERIFY_EXPIRE_AGAIN, NETWORK_ERROR } from '@theme/constant';
     import cfg from '../../config.json';
     export default {
         name: 'Footer',
@@ -104,7 +106,9 @@
                 mailAddress: '',
                 flShowError: false,
                 submitTimer: '',
-                errorTimer: ''
+                errorTimer: '',
+                showRobot: true,
+                googleVerifyId: ''
             };
         },
         computed: {
@@ -125,21 +129,8 @@
             },
             commitMail() {
                 this.clearTimeoutFn(this.submitTimer);
-                this.clearTimeoutFn(this.errorTimer);
-                /**
-                 * 此处限制邮箱长度最长为 64 位
-                 */
-                if (validator.isEmail(this.mailAddress) && this.mailAddress.length <= 64) {
-                    this.flShowError = false;
-                } else {
-                    this.flShowError = true;
-                    this.errorTimer = setTimeout(() => {
-                        this.flShowError = false;
-                    }, 2000);
-                    return;
-                }
                 this.$axios
-                    .post(`${cfg.adminServer}`, {
+                    .post('/api/news_letter/newsletter', {
                         email: this.mailAddress
                     })
                     .then((res) => {
@@ -173,6 +164,83 @@
                     .catch((error) => {
                         console.error(error);
                     });
+            },
+            async verifySuccess(token) {
+                if(token) {
+                    const res = await this.$axios.post('/api/verify/google_verify', {
+                        token: token
+                    })
+                    if(res.status === SUCCESS_CODE) {
+                        if(res.data.status === SUCCESS_SIGN) {
+                            if(res.data.data?.invokeEmail) {
+                                this.commitMail();
+                                this.showRobot = false;
+                                grecaptcha.reset(this.googleVerifyId);
+                            }
+                        } else {
+                            this.errorCallback();
+                        }
+                    } else {
+                        this.errorCallback();
+                    }
+                }
+            },
+            expiredCallback() {
+                Message.closeAll()
+                Message.warning(GOOGLE_VERIFY_EXPIRE_AGAIN)
+                Message({
+                    message: warning,
+                    type: 'warning'
+                });
+                grecaptcha.reset(this.googleVerifyId);
+            },
+            errorCallback() {
+                Message.closeAll();
+                Message({
+                    message: GOOGLE_VERIFY_ERR_TRY_AGAIN,
+                    type: 'error'
+                });
+                grecaptcha.reset(this.googleVerifyId);
+            },
+            googleVerify() {
+                this.clearTimeoutFn(this.errorTimer);
+                this.showRobot = true;
+                /**
+                 * 此处限制邮箱长度最长为 64 位
+                 */
+                if (validator.isEmail(this.mailAddress) && this.mailAddress.length <= 64) {
+                    this.flShowError = false;
+                } else {
+                    this.flShowError = true;
+                    this.errorTimer = setTimeout(() => {
+                        this.flShowError = false;
+                    }, 2000);
+                    return;
+                }
+                if(!grecaptcha) {
+                    Message({
+                        message: NETWORK_ERROR,
+                        type: 'error',
+                    });
+                    return;
+                }
+                if(!grecaptcha.render) return;
+                this.googleVerifyId = grecaptcha && grecaptcha?.render('robot', {
+                    'sitekey': cfg.googleSiteKey,
+                    'callback': this.verifySuccess,
+                    'expired-callback': this.expiredCallback,
+                    'error-callback': this.errorCallback
+                });
+            },
+        },
+        watch: {
+            '$store.state.showMask': {
+                handler(newMask) {
+                    if(!newMask) {
+                        this.mailAddress = '';
+                    }
+                },
+                immediate: true,
             }
         }
     };
@@ -262,6 +330,7 @@
                         }
                     }
                     .newsletter {
+                        position: relative;
                         margin-top: 0.2rem;
                         .email_input {
                             max-width: 52%;
@@ -307,6 +376,11 @@
                                     max-width: 100%;
                                 }
                             }
+                        }
+                        .robot {
+                            position: absolute;
+                            top: 120%;
+                            z-index: 1;
                         }
                     }
                 }
