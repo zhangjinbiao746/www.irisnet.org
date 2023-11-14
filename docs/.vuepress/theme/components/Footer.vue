@@ -244,8 +244,7 @@
                     Message.closeAll();
                     Message({
                         message: NETWORK_ERROR,
-                        type: 'error',
-                        duration: 0
+                        type: 'error'
                     });
                 }
             }
