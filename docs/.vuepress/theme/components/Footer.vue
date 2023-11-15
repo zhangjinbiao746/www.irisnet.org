@@ -142,7 +142,7 @@
                 this.clearTimeoutFn(this.submitTimer);
                 const res = await this.$axios
                     .post(
-                        `${cfg.adminServer}/news_letter/newsletter`,
+                        `/api/news_letter/newsletter`,
                         {
                             email: this.mailAddress
                         },
