@@ -7,7 +7,7 @@
     "scripts": {
         "dev": "vuepress dev docs --temp .temp --no-cache",
         "build": "vuepress build docs",
-        "build-params": "node ./script.js -p",
+        "build-params": "node ./scripts.js -p",
         "prettier": "prettier --write docs"
     },
     "dependencies": {
