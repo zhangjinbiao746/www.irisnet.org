@@ -1,5 +1,7 @@
 import Vuex from 'vuex';
 import axios from 'axios';
+import Element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import store from './theme/store';
 
 export default async ({ Vue, options, router, siteData, isServer }) => {
@@ -14,6 +16,7 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
     Vue.use(router);
     Vue.use(Vuex);
     Vue.mixin({ store: store });
+    Vue.use(Element);
     if (!isServer) {
         router.beforeEach((to, from, next) => {
             if (
@@ -44,6 +47,13 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
             })
             .catch((e) => {
                 console.log(e, 'axios error ');
+            });
+        await import('element-ui')
+            .then((module) => {
+                Vue.use(module.default);
+            })
+            .catch((e) => {
+                console.log(e, 'element-ui error ');
             });
     }
 };

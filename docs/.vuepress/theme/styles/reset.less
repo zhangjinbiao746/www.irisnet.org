@@ -61,16 +61,23 @@ progress {
 }
 
 .el-message {
-    min-width: 1.8rem !important;
-    background: #fff !important;
-    padding-left: 0.15rem !important;
-    .el-message__icon {
-        display: none !important;
+    top: 0.73rem !important;
+    align-items: flex-start;
+    padding: 0.1rem 0.16rem;
+    min-width: auto;
+    white-space: nowrap;
+    background: linear-gradient(180deg, rgba(105, 25, 25, 0.5) 0%, rgba(21, 12, 54, 0.5) 100%);
+    box-shadow: 0 0 0.12rem 0 rgba(0, 0, 0, 0.5);
+    border-radius: 0.04rem;
+    border: 0.01rem solid rgba(118, 129, 247, 0.5);
+    @media (max-width: 500px) {
+        width: 80%;
+        white-space: wrap;
     }
     .el-message__content {
-        margin: 0 auto !important;
-        padding: 0 0.02rem !important;
-        color: #617088 !important;
+        font-size: 0.16rem;
+        color: #ffffff;
+        line-height: 0.2rem;
     }
 }
 li {
@@ -132,7 +139,12 @@ dfn {
     font-style: italic;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 400;
 }
 

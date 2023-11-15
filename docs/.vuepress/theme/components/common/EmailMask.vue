@@ -51,6 +51,7 @@
                 font-size: var(--font-20);
                 font-weight: var(--font-weight-600);
                 color: #323c5a;
+                text-align: center;
             }
             .mask_text_content {
                 margin-top: 0.24rem;
