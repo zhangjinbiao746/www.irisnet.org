@@ -49,13 +49,15 @@
                                     :class="flShowError ? 'error_style' : ' '"
                                     type="text"
                                     :placeholder="item.inputBtn.btn.placeholder"
+                                    @input="inputChange"
                                 />
                                 <p :class="flShowError ? 'show_error' : 'hide_error'">
                                     {{ item.inputBtn.btn.warningTip }}
                                 </p>
+                                <div v-if="showRobot" id="robot" class="robot"></div>
                                 <custom-button
                                     class="submit_btn"
-                                    @click.native="commitMail"
+                                    @click.native="googleVerify"
                                     :link-text="item.inputBtn.btn.subscribe"
                                 />
                             </div>
@@ -88,9 +90,15 @@
 
 <script>
     import validator from 'validator';
+    import { Message } from 'element-ui';
     import Module from '@theme/components/common/Module';
     import CustomButton from '@theme/components/common/CustomButton';
-    import { SUCCESS_CODE } from '@theme/constant';
+    import {
+        SUCCESS_CODE,
+        GOOGLE_VERIFY_ERR_TRY_AGAIN,
+        GOOGLE_VERIFY_EXPIRE_AGAIN,
+        NETWORK_ERROR
+    } from '@theme/constant';
     import cfg from '../../config.json';
     export default {
         name: 'Footer',
@@ -104,7 +112,9 @@
                 mailAddress: '',
                 flShowError: false,
                 submitTimer: '',
-                errorTimer: ''
+                errorTimer: '',
+                showRobot: true,
+                googleVerifyId: ''
             };
         },
         computed: {
@@ -123,9 +133,84 @@
             clearTimeoutFn(timer) {
                 timer && clearTimeout(timer);
             },
-            commitMail() {
+            inputChange() {
+                this.$nextTick(() => {
+                    this.showRobot && (this.showRobot = false);
+                })
+            },
+            async commitMail(token) {
                 this.clearTimeoutFn(this.submitTimer);
+                const res = await this.$axios
+                    .post(
+                        `/api/news_letter/newsletter`,
+                        {
+                            email: this.mailAddress
+                        },
+                        {
+                            headers: {
+                                Authorization: token
+                            }
+                        }
+                    )
+                    .catch(() => {
+                        this.showRobot = false;
+                        this.errorCallback();
+                    })
+                    .finally(() => {
+                        this.showRobot = false;
+                        grecaptcha.reset(this.googleVerifyId);
+                    });
+                if (res.status === SUCCESS_CODE) {
+                    if (res.data.data.is_register) {
+                        this.$store.commit(
+                            'newsLetterTitle',
+                            this.maskInfo.subscribeStatusTip.success
+                        );
+                        this.$store.commit(
+                            'textContent',
+                            this.maskInfo.subscribeStatusTip.successTip
+                        );
+                    } else {
+                        this.$store.commit(
+                            'newsLetterTitle',
+                            this.maskInfo.subscribeStatusTip.failed
+                        );
+                        this.$store.commit(
+                            'textContent',
+                            this.maskInfo.subscribeStatusTip.failedTip
+                        );
+                    }
+                    this.$store.commit('confirm', this.maskInfo.confirm);
+                    this.$store.commit('showMask', true);
+                } else {
+                    this.showRobot = false;
+                    this.errorCallback();
+                }
+            },
+            verifySuccess(token) {
+                if (token) {
+                    this.commitMail(token);
+                }
+            },
+            expiredCallback() {
+                Message.closeAll();
+                Message({
+                    message: GOOGLE_VERIFY_EXPIRE_AGAIN,
+                    type: 'warning'
+                });
+                grecaptcha.reset(this.googleVerifyId);
+            },
+            errorCallback() {
+                Message.closeAll();
+                Message({
+                    message: GOOGLE_VERIFY_ERR_TRY_AGAIN,
+                    type: 'error'
+                });
+                grecaptcha.reset(this.googleVerifyId);
+            },
+            googleVerify() {
                 this.clearTimeoutFn(this.errorTimer);
+                this.showRobot = true;
                 /**
                  * 此处限制邮箱长度最长为 64 位
                  */
@@ -138,41 +223,35 @@
                     }, 2000);
                     return;
                 }
-                this.$axios
-                    .post(`${cfg.adminServer}`, {
-                        email: this.mailAddress
-                    })
-                    .then((res) => {
-                        if (res.status === SUCCESS_CODE) {
-                            return res.data;
-                        }
-                    })
-                    .then((data) => {
-                        if (data.data.is_register) {
-                            this.$store.commit(
-                                'newsLetterTitle',
-                                this.maskInfo.subscribeStatusTip.success
-                            );
-                            this.$store.commit(
-                                'textContent',
-                                this.maskInfo.subscribeStatusTip.successTip
-                            );
-                        } else {
-                            this.$store.commit(
-                                'newsLetterTitle',
-                                this.maskInfo.subscribeStatusTip.failed
-                            );
-                            this.$store.commit(
-                                'textContent',
-                                this.maskInfo.subscribeStatusTip.failedTip
-                            );
-                        }
-                        this.$store.commit('confirm', this.maskInfo.confirm);
-                        this.$store.commit('showMask', true);
-                    })
-                    .catch((error) => {
-                        console.error(error);
+                try {
+                    grecaptcha &&
+                        grecaptcha?.ready(() => {
+                            this.googleVerifyId =
+                                grecaptcha &&
+                                grecaptcha?.render('robot', {
+                                    sitekey: cfg.googleSiteKey,
+                                    callback: this.verifySuccess,
+                                    'expired-callback': this.expiredCallback,
+                                    'error-callback': this.errorCallback
+                                });
+                        });
+                } catch (error) {
+                    Message.closeAll();
+                    Message({
+                        message: NETWORK_ERROR,
+                        type: 'error'
                     });
+                }
+            }
+        },
+        watch: {
+            '$store.state.showMask': {
+                handler(newMask) {
+                    if (!newMask) {
+                        this.mailAddress = '';
+                    }
+                },
+                immediate: true
             }
         }
     };
@@ -197,7 +276,7 @@
                 padding: 0.56rem 0 0.5rem;
                 .module {
                     &:first-child {
-                        @media (max-width: 900px) {
+                        @media (max-width: 940px) {
                             grid-column-start: span 3;
                         }
                         .community_icon_wrap {
@@ -210,27 +289,28 @@
                         }
                     }
                     &:nth-child(2) {
-                        @media (max-width: 900px) {
+                        @media (max-width: 940px) {
                             grid-column-start: span 3;
                         }
                     }
                     &:nth-child(3) {
-                        @media (max-width: 900px) {
+                        @media (max-width: 940px) {
                             grid-column-start: span 3;
                         }
                     }
                     &:nth-child(4) {
-                        @media (max-width: 670px) {
+                        @media (max-width: 720px) {
                             grid-column-start: span 2;
+                        }
+                        @media (max-width: 540px) {
+                            grid-column-start: span 3;
                         }
                     }
                     &:nth-child(5) {
-                        @media (max-width: 670px) {
+                        @media (max-width: 720px) {
                             grid-column-start: span 1;
                         }
-                    }
-                    &:nth-child(6) {
-                        @media (max-width: 670px) {
+                        @media (max-width: 540px) {
                             grid-column-start: span 3;
                         }
                     }
@@ -265,7 +345,7 @@
                         margin-top: 0.2rem;
                         .email_input {
                             max-width: 52%;
-                            min-width: 2.6rem;
+                            min-width: 3rem;
                             width: auto;
                             height: 0.45rem;
                             color: #fff;
@@ -273,10 +353,6 @@
                             background: rgba(22, 24, 57, 1);
                             border: 0.01rem solid #636084;
                             border-radius: 0.04rem;
-                            @media (max-width: 670px) {
-                                width: 100%;
-                                max-width: 100%;
-                            }
                         }
                         .error_style {
                             outline: none;
@@ -298,15 +374,20 @@
                             visibility: hidden;
                         }
                         .submit_btn {
-                            margin-top: 0.2rem;
+                            margin-top: 0.22rem;
                             cursor: pointer;
                             :deep(.custom_btn_href) {
                                 margin: 0;
-                                max-width: 2.44rem;
-                                @media (max-width: 670px) {
+                                max-width: 2.88rem;
+                                @media (max-width: 720px) {
                                     max-width: 100%;
                                 }
                             }
+                        }
+                        .robot {
+                            max-width: 52%;
+                            min-width: 3.04rem;
+                            transition: all 0.3s linear;
                         }
                     }
                 }
