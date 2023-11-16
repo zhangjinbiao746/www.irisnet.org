@@ -7,20 +7,22 @@
     "scripts": {
         "dev": "vuepress dev docs --temp .temp --no-cache",
         "build": "vuepress build docs",
+        "build-params": "node ./scripts.js -p",
         "prettier": "prettier --write docs"
     },
     "dependencies": {
         "async-validator": "^4.2.5",
-        "axios": "^0.21.1",
+        "axios": "^0.8.1",
         "bignumber.js": "^7.2.1",
         "clipboard": "^2.0.4",
+        "element-ui": "^2.15.14",
         "less": "^4.1.3",
         "less-loader": "^7.3.0",
         "validator": "^13.11.0",
         "vuex": "^3.6.2"
     },
     "devDependencies": {
-        "vuepress": "^1.8.2"
+        "vuepress": "^1.9.10"
     },
     "engines": {
         "node": ">= v16.15.1",
