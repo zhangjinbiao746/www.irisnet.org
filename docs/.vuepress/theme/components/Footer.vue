@@ -153,12 +153,7 @@
                         }
                     )
                     .catch(() => {
-                        this.showRobot = false;
                         this.errorCallback();
-                    })
-                    .finally(() => {
-                        this.showRobot = false;
-                        grecaptcha.reset(this.googleVerifyId);
                     });
                 if (res.status === SUCCESS_CODE) {
                     if (res.data.data.is_register) {
@@ -183,13 +178,14 @@
                     this.$store.commit('confirm', this.maskInfo.confirm);
                     this.$store.commit('showMask', true);
                 } else {
-                    this.showRobot = false;
                     this.errorCallback();
                 }
             },
             verifySuccess(token) {
                 if (token) {
+                    this.showRobot && (this.showRobot = false);
                     this.commitMail(token);
+                    grecaptcha.reset(this.googleVerifyId);
                 }
             },
             expiredCallback() {
@@ -198,6 +194,7 @@
                     message: GOOGLE_VERIFY_EXPIRE_AGAIN,
                     type: 'warning'
                 });
+                this.showRobot && (this.showRobot = false);
                 grecaptcha.reset(this.googleVerifyId);
             },
             errorCallback() {
@@ -206,7 +203,21 @@
                     message: GOOGLE_VERIFY_ERR_TRY_AGAIN,
                     type: 'error'
                 });
+                this.showRobot && (this.showRobot = false);
                 grecaptcha.reset(this.googleVerifyId);
+            },
+            renderReCaptcha() {
+                grecaptcha &&
+                    grecaptcha?.ready(() => {
+                        this.googleVerifyId =
+                            grecaptcha &&
+                            grecaptcha?.render('robot', {
+                                sitekey: cfg.googleSiteKey,
+                                callback: this.verifySuccess,
+                                'expired-callback': this.expiredCallback,
+                                'error-callback': this.errorCallback
+                            });
+                    });
             },
             googleVerify() {
                 this.clearTimeoutFn(this.errorTimer);
@@ -222,7 +233,33 @@
                     }, 2000);
                     return;
                 }
-                this.showRobot = true;
+                if (typeof this.googleVerifyId !== 'number') {
+                    const scriptDom = document.createElement('script');
+                    scriptDom.src = 'https://www.google.com/recaptcha/api.js?hl=en';
+                    scriptDom.async = true;
+                    scriptDom.defer = true;
+                    document.getElementsByTagName('head')[0].appendChild(scriptDom);
+                    scriptDom.onload = () => {
+                        try {
+                            this.renderReCaptcha();
+                            this.showRobot = true;
+                        } catch (error) {
+                            this.googleVerifyId = '';
+                            this.showRobot && (this.showRobot = false);
+                        }
+                    };
+                    scriptDom.onerror = () => {
+                        Message.closeAll();
+                        Message({
+                            message: NETWORK_ERROR,
+                            type: 'error'
+                        });
+                        this.showRobot && (this.showRobot = false);
+                    };
+                    document.head.removeChild(scriptDom);
+                } else {
+                    this.showRobot = true;
+                }
             }
         },
         watch: {
@@ -237,23 +274,9 @@
         },
         async mounted() {
             try {
-                (await grecaptcha) &&
-                    grecaptcha?.ready(() => {
-                        this.googleVerifyId =
-                            grecaptcha &&
-                            grecaptcha?.render('robot', {
-                                sitekey: cfg.googleSiteKey,
-                                callback: this.verifySuccess,
-                                'expired-callback': this.expiredCallback,
-                                'error-callback': this.errorCallback
-                            });
-                    });
+                await this.renderReCaptcha();
             } catch (error) {
-                Message.closeAll();
-                Message({
-                    message: NETWORK_ERROR,
-                    type: 'error'
-                });
+                console.log(error);
             }
         }
     };
