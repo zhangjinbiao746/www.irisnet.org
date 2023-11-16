@@ -54,7 +54,7 @@
                                 <p :class="flShowError ? 'show_error' : 'hide_error'">
                                     {{ item.inputBtn.btn.warningTip }}
                                 </p>
-                                <div v-if="showRobot" id="robot" class="robot"></div>
+                                <div v-show="showRobot" id="robot" class="robot"></div>
                                 <custom-button
                                     class="submit_btn"
                                     @click.native="googleVerify"
@@ -113,7 +113,7 @@
                 flShowError: false,
                 submitTimer: '',
                 errorTimer: '',
-                showRobot: true,
+                showRobot: false,
                 googleVerifyId: ''
             };
         },
@@ -136,7 +136,7 @@
             inputChange() {
                 this.$nextTick(() => {
                     this.showRobot && (this.showRobot = false);
-                })
+                });
             },
             async commitMail(token) {
                 this.clearTimeoutFn(this.submitTimer);
@@ -153,12 +153,7 @@
                         }
                     )
                     .catch(() => {
-                        this.showRobot = false;
                         this.errorCallback();
-                    })
-                    .finally(() => {
-                        this.showRobot = false;
-                        grecaptcha.reset(this.googleVerifyId);
                     });
                 if (res.status === SUCCESS_CODE) {
                     if (res.data.data.is_register) {
@@ -183,13 +178,14 @@
                     this.$store.commit('confirm', this.maskInfo.confirm);
                     this.$store.commit('showMask', true);
                 } else {
-                    this.showRobot = false;
                     this.errorCallback();
                 }
             },
             verifySuccess(token) {
                 if (token) {
+                    this.showRobot && (this.showRobot = false);
                     this.commitMail(token);
+                    grecaptcha.reset(this.googleVerifyId);
                 }
             },
             expiredCallback() {
@@ -198,6 +194,7 @@
                     message: GOOGLE_VERIFY_EXPIRE_AGAIN,
                     type: 'warning'
                 });
+                this.showRobot && (this.showRobot = false);
                 grecaptcha.reset(this.googleVerifyId);
             },
             errorCallback() {
@@ -206,11 +203,24 @@
                     message: GOOGLE_VERIFY_ERR_TRY_AGAIN,
                     type: 'error'
                 });
+                this.showRobot && (this.showRobot = false);
                 grecaptcha.reset(this.googleVerifyId);
+            },
+            renderReCaptcha() {
+                grecaptcha &&
+                    grecaptcha?.ready(() => {
+                        this.googleVerifyId =
+                            grecaptcha &&
+                            grecaptcha?.render('robot', {
+                                sitekey: cfg.googleSiteKey,
+                                callback: this.verifySuccess,
+                                'expired-callback': this.expiredCallback,
+                                'error-callback': this.errorCallback
+                            });
+                    });
             },
             googleVerify() {
                 this.clearTimeoutFn(this.errorTimer);
-                this.showRobot = true;
                 /**
                  * 此处限制邮箱长度最长为 64 位
                  */
@@ -223,24 +233,32 @@
                     }, 2000);
                     return;
                 }
-                try {
-                    grecaptcha &&
-                        grecaptcha?.ready(() => {
-                            this.googleVerifyId =
-                                grecaptcha &&
-                                grecaptcha?.render('robot', {
-                                    sitekey: cfg.googleSiteKey,
-                                    callback: this.verifySuccess,
-                                    'expired-callback': this.expiredCallback,
-                                    'error-callback': this.errorCallback
-                                });
+                if (typeof this.googleVerifyId !== 'number') {
+                    const scriptDom = document.createElement('script');
+                    scriptDom.src = 'https://www.google.com/recaptcha/api.js?hl=en';
+                    scriptDom.async = true;
+                    scriptDom.defer = true;
+                    document.getElementsByTagName('head')[0].appendChild(scriptDom);
+                    scriptDom.onload = () => {
+                        try {
+                            this.renderReCaptcha();
+                            this.showRobot = true;
+                        } catch (error) {
+                            this.googleVerifyId = '';
+                            this.showRobot && (this.showRobot = false);
+                        }
+                    };
+                    scriptDom.onerror = () => {
+                        Message.closeAll();
+                        Message({
+                            message: NETWORK_ERROR,
+                            type: 'error'
                         });
-                } catch (error) {
-                    Message.closeAll();
-                    Message({
-                        message: NETWORK_ERROR,
-                        type: 'error'
-                    });
+                        this.showRobot && (this.showRobot = false);
+                    };
+                    document.head.removeChild(scriptDom);
+                } else {
+                    this.showRobot = true;
                 }
             }
         },
@@ -253,6 +271,13 @@
                 },
                 immediate: true
             }
+        },
+        async mounted() {
+            try {
+                await this.renderReCaptcha();
+            } catch (error) {
+                console.log(error);
+            }
         }
     };
 </script>
@@ -260,25 +285,31 @@
 <style lang="less" scoped>
     .footer {
         background: #1f1641;
+
         .footer_content {
             margin: 0 auto;
             max-width: 12rem;
+
             @media (max-width: 1200px) {
                 padding: 0 0.48rem;
             }
+
             @media (max-width: 440px) {
                 padding: 0 0.16rem;
             }
+
             .footer_top {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 1rem 0;
                 padding: 0.56rem 0 0.5rem;
+
                 .module {
                     &:first-child {
                         @media (max-width: 940px) {
                             grid-column-start: span 3;
                         }
+
                         .community_icon_wrap {
                             .community_icon {
                                 img {
@@ -288,61 +319,76 @@
                             }
                         }
                     }
+
                     &:nth-child(2) {
                         @media (max-width: 940px) {
                             grid-column-start: span 3;
                         }
                     }
+
                     &:nth-child(3) {
                         @media (max-width: 940px) {
                             grid-column-start: span 3;
                         }
                     }
+
                     &:nth-child(4) {
                         @media (max-width: 720px) {
                             grid-column-start: span 2;
                         }
+
                         @media (max-width: 540px) {
                             grid-column-start: span 3;
                         }
                     }
+
                     &:nth-child(5) {
                         @media (max-width: 720px) {
                             grid-column-start: span 1;
                         }
+
                         @media (max-width: 540px) {
                             grid-column-start: span 3;
                         }
                     }
+
                     .community_icon_wrap {
                         margin-top: 0.27rem;
+
                         .community_icon {
                             margin-right: 0.25rem;
+
                             img {
                                 height: 0.24rem;
                                 opacity: 0.4;
+
                                 &:hover {
                                     opacity: 1;
                                 }
                             }
                         }
                     }
+
                     .community_text_wrap {
                         display: flex;
                         flex-flow: column wrap;
                         align-content: flex-start;
                         margin-top: 0.27rem;
+
                         .community_text {
                             padding: 0.05rem 0;
                             color: rgba(255, 255, 255, 0.2);
                             white-space: nowrap;
+
                             &:hover {
                                 color: #fff;
                             }
                         }
                     }
+
                     .newsletter {
                         margin-top: 0.2rem;
+
                         .email_input {
                             max-width: 52%;
                             min-width: 3rem;
@@ -354,36 +400,44 @@
                             border: 0.01rem solid #636084;
                             border-radius: 0.04rem;
                         }
+
                         .error_style {
                             outline: none;
                             border: 0.01rem solid #f5a623;
                         }
+
                         .email_input::placeholder {
                             color: #fff;
                             opacity: 0.2;
                         }
+
                         .show_error {
                             color: #f5a623;
                             margin-top: 0.1rem;
                             font-size: var(--font-12);
                             line-height: 0.12rem;
                         }
+
                         .hide_error {
                             margin-top: 0.1rem;
                             line-height: 0.12rem;
                             visibility: hidden;
                         }
+
                         .submit_btn {
                             margin-top: 0.22rem;
                             cursor: pointer;
+
                             :deep(.custom_btn_href) {
                                 margin: 0;
                                 max-width: 2.88rem;
+
                                 @media (max-width: 720px) {
                                     max-width: 100%;
                                 }
                             }
                         }
+
                         .robot {
                             max-width: 52%;
                             min-width: 3.04rem;
@@ -392,19 +446,25 @@
                     }
                 }
             }
+
             .footer_bottom {
                 padding: 0 0 0.56rem;
                 font-size: var(--font-12);
+
                 .community_intro {
                     opacity: 0.5;
                 }
+
                 .copyright_wrap {
                     margin-top: 0.12rem;
+
                     .copyright {
                         opacity: 0.5;
                     }
+
                     .agreement {
                         color: var(--hover-text-color);
+
                         .and {
                             color: rgba(255, 255, 255, 0.5);
                         }
