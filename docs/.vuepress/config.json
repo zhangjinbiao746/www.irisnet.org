@@ -1,5 +1,5 @@
 {
-    "googleSiteKey": "6LdkHw0pAAAAAOGtrTMzB4I4-XUFffdkTAL29jHJ",
+    "googleSiteKey": "${googleSiteKey}",
     "comment": "本地开发需要改成后端服务路径; 且代码中 /api/ 前需要拼上 adminServer，部署的话使用nginx 反向代理 stage 和 prod 后端服务数据一致,目前已写在dockerfile中",
     "adminServer": "/api/news_letter/newsletter"
 }
