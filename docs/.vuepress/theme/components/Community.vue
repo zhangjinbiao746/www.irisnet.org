@@ -19,7 +19,7 @@
         props: ['communityInfo'],
         methods: {
             getImageUrl(img) {
-                return require(`../assets/footer/${img}`);
+				return new URL(`../assets/footer/${img}`, import.meta.url)
             }
         }
     };

@@ -11,14 +11,14 @@
 </template>
 
 <script>
-    import HomeBanner from '@theme/pages/home/components/HomeBanner.vue';
-    import KeyInnovations from '@theme/pages/home/components/KeyInnovations';
-    import CoreFeatures from '@theme/pages/home/components/CoreFeatures';
-    import UpcomingFeature from '@theme/pages/home/components/UpcomingFeature';
-    import JoinInterchain from '@theme/pages/home/components/JoinInterchain';
-    import Announcements from '@theme/pages/home/components/Announcements';
-    import Collaboration from '@theme/pages/home/components/Collaboration';
-    import { getModuleContent } from '@theme/utils';
+    import HomeBanner from '../home/components/HomeBanner.vue';
+    import KeyInnovations from '../home/components/KeyInnovations.vue';
+    import CoreFeatures from '../home/components/CoreFeatures.vue';
+    import UpcomingFeature from '../home/components/UpcomingFeature.vue';
+    import JoinInterchain from '../home/components/JoinInterchain.vue';
+    import Announcements from '../home/components/Announcements.vue';
+    import Collaboration from '../home/components/Collaboration.vue';
+    import { getModuleContent } from '../../utils';
     export default {
         name: 'Home',
         components: {

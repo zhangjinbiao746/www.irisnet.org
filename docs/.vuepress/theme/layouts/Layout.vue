@@ -22,19 +22,18 @@
 </template>
 
 <script>
-    import Navigation from '@theme/components/Navigation';
-    import EmailMask from '@theme/components/common/EmailMask';
-    import Home from '@theme/pages/home/Home';
-    import Developers from '@theme/pages/developers/Developers';
-    import Mainnet from '@theme/pages/mainnet/Mainnet';
-    import PressKit from '@theme/pages/press-kit/PressKit';
-    import IrisnetBianjie from '@theme/pages/irisnet-bianjie/IrisnetBianjie';
-    import Community from '@theme/components/Community';
-    import Markdown from '@theme/components/Markdown';
-    import Footer from '@theme/components/Footer';
-    import globalCommonStyles from '@theme/styles/common';
-    import { getLocalesNav, getLocalesFooter } from '@theme/utils';
-
+    import Navigation from '../components/Navigation.vue';
+    import EmailMask from '../components/common/EmailMask.vue';
+    import Home from '../pages/home/Home.vue';
+    import Developers from '../pages/developers/Developers.vue';
+    import Mainnet from '../pages/mainnet/Mainnet.vue';
+    import PressKit from '../pages/press-kit/PressKit.vue';
+    import IrisnetBianjie from '../pages/irisnet-bianjie/IrisnetBianjie.vue';
+    import Community from '../components/Community.vue';
+    import Markdown from '../components/Markdown.vue';
+    import Footer from '../components/Footer.vue';
+    import globalCommonStyles from '../styles/common';
+    import { getLocalesNav, getLocalesFooter } from '../utils';
     export default {
         name: 'Layout',
         components: {

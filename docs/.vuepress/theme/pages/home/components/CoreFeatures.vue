@@ -15,7 +15,7 @@
 </template>
 
 <script>
-    import TitleComponent from '@theme/components/common/TitleComponent';
+    import TitleComponent from '../../../components/common/TitleComponent.vue';
     export default {
         name: 'CoreFeatures',
         components: {
