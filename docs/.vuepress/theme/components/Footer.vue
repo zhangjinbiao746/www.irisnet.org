@@ -91,7 +91,7 @@
 <script>
     import validator from 'validator';
 	import axios from "axios";
-    // import { Message } from 'element-ui';
+    import { ElMessage  } from 'element-plus';
     import Module from '../components/common/Module.vue';
     import CustomButton from '../components/common/CustomButton.vue';
     import {
@@ -193,19 +193,19 @@
                 }
             },
             expiredCallback() {
-                // Message.closeAll();
-                // Message({
-                //     message: GOOGLE_VERIFY_EXPIRE_AGAIN,
-                //     type: 'warning'
-                // });
+				ElMessage.closeAll();
+				ElMessage({
+                    message: GOOGLE_VERIFY_EXPIRE_AGAIN,
+                    type: 'warning'
+                });
                 grecaptcha.reset(this.googleVerifyId);
             },
             errorCallback() {
-                // Message.closeAll();
-                // Message({
-                //     message: GOOGLE_VERIFY_ERR_TRY_AGAIN,
-                //     type: 'error'
-                // });
+				ElMessage.closeAll();
+				ElMessage({
+                    message: GOOGLE_VERIFY_ERR_TRY_AGAIN,
+                    type: 'error'
+                });
                 grecaptcha.reset(this.googleVerifyId);
             },
             googleVerify() {
@@ -236,11 +236,11 @@
                                 });
                         });
                 } catch (error) {
-                    // Message.closeAll();
-                    // Message({
-                    //     message: NETWORK_ERROR,
-                    //     type: 'error'
-                    // });
+					ElMessage.closeAll();
+					ElMessage({
+                        message: NETWORK_ERROR,
+                        type: 'error'
+                    });
                 }
             }
         },
@@ -254,7 +254,7 @@
                 immediate: true
             }
         }
-    };
+	};
 </script>
 
 <style lang="less" scoped>
