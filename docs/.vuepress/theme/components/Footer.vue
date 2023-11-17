@@ -2,8 +2,8 @@
     <div class="footer">
         <div class="footer_content">
             <div class="footer_top">
-                <template v-for="(item, index) in footerInfo.topFooter">
-                    <module :title="item.title" :key="index">
+                <template v-for="(item, index) in footerInfo.topFooter" :key="index">
+                    <module :title="item.title" >
                         <template v-if="item.communityIcon" #icon>
                             <div class="community_icon_wrap">
                                 <a
@@ -90,15 +90,16 @@
 
 <script>
     import validator from 'validator';
-    import { Message } from 'element-ui';
-    import Module from '@theme/components/common/Module';
-    import CustomButton from '@theme/components/common/CustomButton';
+	import axios from "axios";
+    // import { Message } from 'element-ui';
+    import Module from '../components/common/Module.vue';
+    import CustomButton from '../components/common/CustomButton.vue';
     import {
         SUCCESS_CODE,
         GOOGLE_VERIFY_ERR_TRY_AGAIN,
         GOOGLE_VERIFY_EXPIRE_AGAIN,
         NETWORK_ERROR
-    } from '@theme/constant';
+    } from '../constant';
     import cfg from '../../config.json';
     export default {
         name: 'Footer',
@@ -128,7 +129,7 @@
         },
         methods: {
             getImageUrl(img) {
-                return require(`../assets/footer/${img}`);
+                return new URL(`../assets/footer/${img}`, import.meta.url);
             },
             clearTimeoutFn(timer) {
                 timer && clearTimeout(timer);
@@ -140,8 +141,7 @@
             },
             async commitMail(token) {
                 this.clearTimeoutFn(this.submitTimer);
-                const res = await this.$axios
-                    .post(
+                const res = await axios.post(
                         `/api/news_letter/newsletter`,
                         {
                             email: this.mailAddress
@@ -193,19 +193,19 @@
                 }
             },
             expiredCallback() {
-                Message.closeAll();
-                Message({
-                    message: GOOGLE_VERIFY_EXPIRE_AGAIN,
-                    type: 'warning'
-                });
+                // Message.closeAll();
+                // Message({
+                //     message: GOOGLE_VERIFY_EXPIRE_AGAIN,
+                //     type: 'warning'
+                // });
                 grecaptcha.reset(this.googleVerifyId);
             },
             errorCallback() {
-                Message.closeAll();
-                Message({
-                    message: GOOGLE_VERIFY_ERR_TRY_AGAIN,
-                    type: 'error'
-                });
+                // Message.closeAll();
+                // Message({
+                //     message: GOOGLE_VERIFY_ERR_TRY_AGAIN,
+                //     type: 'error'
+                // });
                 grecaptcha.reset(this.googleVerifyId);
             },
             googleVerify() {
@@ -236,11 +236,11 @@
                                 });
                         });
                 } catch (error) {
-                    Message.closeAll();
-                    Message({
-                        message: NETWORK_ERROR,
-                        type: 'error'
-                    });
+                    // Message.closeAll();
+                    // Message({
+                    //     message: NETWORK_ERROR,
+                    //     type: 'error'
+                    // });
                 }
             }
         },

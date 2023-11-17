@@ -58,7 +58,7 @@
 <script>
     import clipboardJS from 'clipboard';
     import bigNumber from 'bignumber.js';
-    import { SUCCESS_CODE } from '@theme/constant';
+    import { SUCCESS_CODE } from '../../../constant';
 
     export default {
         name: 'IrisnetBanner',
@@ -78,7 +78,7 @@
         },
         methods: {
             getImageUrl(img) {
-                return require(`../../../assets/irisnet-bianjie/${img}`);
+                return new URL(`../../../assets/irisnet-bianjie/${img}`,import.meta.url);
             },
             toCosmosBrowser() {
                 let clipboard = new clipboardJS('#cosmosAddress');

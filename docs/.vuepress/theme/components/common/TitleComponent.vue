@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import NavigationLine from '@theme/components/common/NavigationLine';
+    import NavigationLine from '../../components/common/NavigationLine.vue';
     export default {
         name: 'TitleComponent',
         components: {

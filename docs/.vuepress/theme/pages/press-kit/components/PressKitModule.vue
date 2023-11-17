@@ -54,7 +54,7 @@
 </template>
 
 <script>
-    import Module from '@theme/components/common/Module';
+    import Module from '../../../components/common/Module.vue';
     export default {
         name: 'PressKitModule',
         components: {
@@ -63,7 +63,7 @@
         props: ['moduleContents'],
         methods: {
             getImageUrl(img) {
-                return require(`../../../assets/press-kit/${img}`);
+                return new URL(`../../../assets/press-kit/${img}`,import.meta.url);
             }
         }
     };

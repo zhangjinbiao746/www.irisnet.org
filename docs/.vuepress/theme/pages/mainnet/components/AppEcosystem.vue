@@ -10,8 +10,8 @@
 </template>
 
 <script>
-    import TitleComponent from '@theme/components/common/TitleComponent';
-    import { getImgRandom } from '@theme/utils';
+    import TitleComponent from '../../../components/common/TitleComponent.vue';
+    import { getImgRandom } from '../../../utils';
 
     export default {
         name: 'AppEcosystem',
