@@ -8,11 +8,11 @@
 </template>
 
 <script>
-    import IrisnetBanner from '@theme/pages/irisnet-bianjie/components/IrisnetBanner';
-    import AboutIrisnet from '@theme/pages/irisnet-bianjie/components/AboutIrisnet';
-    import Delegation from '@theme/pages/irisnet-bianjie/components/Delegation';
-    import Explorer from '@theme/pages/irisnet-bianjie/components/Explorer';
-    import { getModuleContent } from '@theme/utils';
+    import IrisnetBanner from '../irisnet-bianjie/components/IrisnetBanner.vue';
+    import AboutIrisnet from '../irisnet-bianjie/components/AboutIrisnet.vue';
+    import Delegation from '../irisnet-bianjie/components/Delegation.vue';
+    import Explorer from '../irisnet-bianjie/components/Explorer.vue';
+    import { getModuleContent } from '../../utils';
 
     export default {
         name: 'IrisnetBianjie',

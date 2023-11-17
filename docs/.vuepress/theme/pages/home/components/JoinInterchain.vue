@@ -15,8 +15,8 @@
 </template>
 
 <script>
-    import TitleComponent from '@theme/components/common/TitleComponent';
-    import CustomButton from '@theme/components/common/CustomButton';
+    import TitleComponent from '../../../components/common/TitleComponent.vue';
+    import CustomButton from '../../../components/common/CustomButton.vue';
     export default {
         name: 'JoinInterchain',
         components: {

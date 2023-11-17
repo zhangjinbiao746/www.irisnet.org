@@ -19,9 +19,9 @@
 </template>
 
 <script>
-    import TitleComponent from '@theme/components/common/TitleComponent';
-    import CustomButton from '@theme/components/common/CustomButton';
-    import { getModuleContent } from '@theme/utils';
+    import TitleComponent from '../../components/common/TitleComponent.vue';
+    import CustomButton from '../../components/common/CustomButton.vue';
+    import { getModuleContent } from '../../utils';
 
     export default {
         name: 'Developers',

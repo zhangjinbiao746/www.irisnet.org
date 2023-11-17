@@ -54,7 +54,7 @@
         props: ['aboutContent', 'logo'],
         methods: {
             getImageUrl(img) {
-                return require(`../../../assets/irisnet-bianjie/${img}`);
+                return new URL(`../../../assets/irisnet-bianjie/${img}`,import.meta.url);
             }
         }
     };

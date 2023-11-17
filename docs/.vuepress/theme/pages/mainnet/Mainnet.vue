@@ -8,11 +8,11 @@
 </template>
 
 <script>
-    import MainnetBanner from '@theme/pages/mainnet/components/MainnetBanner';
-    import NewFeatures from '@theme/pages/mainnet/components/NewFeatures';
-    import AppEcosystem from '@theme/pages/mainnet/components/AppEcosystem';
-    import Resources from '@theme/pages/mainnet/components/Resources';
-    import { getModuleContent } from '@theme/utils';
+    import MainnetBanner from '../mainnet/components/MainnetBanner.vue';
+    import NewFeatures from '../mainnet/components/NewFeatures.vue';
+    import AppEcosystem from '../mainnet/components/AppEcosystem.vue';
+    import Resources from '../mainnet/components/Resources.vue';
+    import { getModuleContent } from '../../utils';
 
     export default {
         name: 'Mainnet',
