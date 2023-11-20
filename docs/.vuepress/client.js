@@ -3,7 +3,8 @@ import Layout from "./theme/layouts/Layout.vue";
 import store from "./theme/store";
 import 'element-plus/dist/index.css'
 import ElementPlus from 'element-plus'
-
+import './theme/assets/iconfont/iconfont.css'
+import './theme/assets/iconfont/iconfont'
 export default defineClientConfig({
 	layouts: {
 		Layout,
