@@ -3,14 +3,16 @@ import Layout from "./theme/layouts/Layout.vue";
 import store from "./theme/store";
 import 'element-plus/dist/index.css'
 import ElementPlus from 'element-plus'
-import './theme/assets/iconfont/iconfont.css'
-import './theme/assets/iconfont/iconfont'
 export default defineClientConfig({
 	layouts: {
 		Layout,
 	},
-	enhance({app, router, siteData}) {
+	async enhance({app, router, siteData}) {
 		app.use(store);
+		if(!__VUEPRESS_SSR__){
+			await import('./theme/assets/iconfont/iconfont.css').then((module) => {});
+			await import('./theme/assets/iconfont/iconfont.js').then((module) => {});
+		}
 		app.use(ElementPlus);
 		router.beforeEach((to, from, next) => {
 			if (
