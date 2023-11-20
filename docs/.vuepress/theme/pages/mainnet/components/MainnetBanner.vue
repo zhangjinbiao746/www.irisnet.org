@@ -19,7 +19,7 @@
 </template>
 
 <script>
-    import CustomButton from '@theme/components/common/CustomButton';
+    import CustomButton from '../../../components/common/CustomButton.vue';
 
     export default {
         name: 'MainnetBanner',

@@ -6,9 +6,9 @@
 </template>
 
 <script>
-    import Banner from '@theme/pages/press-kit/components/Banner';
-    import PressKitModule from '@theme/pages/press-kit/components/PressKitModule';
-    import { getModuleContent } from '@theme/utils';
+    import Banner from '../press-kit/components/Banner.vue';
+    import PressKitModule from '../press-kit/components/PressKitModule.vue';
+    import { getModuleContent } from '../../utils';
 
     export default {
         name: 'PressKit',

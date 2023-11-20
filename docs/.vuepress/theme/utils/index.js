@@ -5,10 +5,10 @@
  * @returns
  */
 export const getLocalesNav = (vue, lang) => {
-    return vue.$site.themeConfig.locales[lang].nav;
+    return vue.$site.locales[lang].nav;
 };
 export const getLocalesFooter = (vue, lang) => {
-    return vue.$site.themeConfig.locales[lang].footer;
+    return vue.$site.locales[lang].footer;
 };
 
 /**
