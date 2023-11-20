@@ -218,11 +218,11 @@ export default  defineUserConfig({
                     copyright: `Copyright ©2019-${new Date().getFullYear()} IRIS Foundation Ltd. All rights reserved.`,
                     agreement: [
                         {
-                            name: 'Privacy',
+                            name: ' Privacy',
                             route: '/en/privacy'
                         },
                         {
-                            name: 'Terms',
+                            name: ' Terms',
                             route: '/en/terms'
                         }
                     ]
