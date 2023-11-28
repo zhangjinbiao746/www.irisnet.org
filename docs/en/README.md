@@ -100,7 +100,8 @@
                         img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/announcements/understanding_rwa.png,
                         href: https://medium.com/irisnet-blog/understanding-real-world-assets-shaping-the-future-of-rwa-on-irisnet-3929577b7dab,
                         date: 'Sep 28 2023',
-                        title: 'Understanding Real World Assets: Shaping the Future of RWA on IRISnet'
+                        title:
+                            'Understanding Real World Assets: Shaping the Future of RWA on IRISnet'
                     },
                     {
                         img: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/announcements/irisnet_monthly_update_0809.png,
@@ -120,9 +121,9 @@
                         list:
                             [
                                 {
-                                    name: 'BIANJIE.AI',
+                                    name: 'BlockbeatHK',
                                     link: '',
-                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/bianjie.png
+                                    image: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/home/collaboration/blockbeathk.png
                                 },
                                 {
                                     name: 'Tendermint',
