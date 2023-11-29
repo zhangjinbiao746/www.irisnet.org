@@ -55,12 +55,6 @@
                             with NFT transfers,  smart contracts interactions and other cross-chain
                             services enabled.'
                     },
-                    {
-                        title: 'Coinswap',
-                        content:
-                            'Cross-chain AMM protocol, a vanguard innovation platform for the Cosmos
-                            application ecosystem.'
-                    }
                 ]
         },
     upcoming:

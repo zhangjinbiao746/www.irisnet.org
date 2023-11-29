@@ -11,33 +11,35 @@
                 </li>
             </ul>
         </title-component>
+        <upcoming-feature :upcoming="upcoming" />
     </div>
 </template>
 
 <script>
     import TitleComponent from '../../../components/common/TitleComponent.vue';
+    import UpcomingFeature from './UpcomingFeature.vue';
     export default {
         name: 'CoreFeatures',
         components: {
-            TitleComponent
+            TitleComponent,
+            UpcomingFeature
         },
-        props: ['coreFeatures']
+        props: ['coreFeatures', 'upcoming']
     };
 </script>
 
 <style lang="less" scoped>
     .core_features {
-        width: 100%;
-        background: url('../../../assets/home/core_left.png') no-repeat left -0.7rem bottom 0.5rem,
-            url('../../../assets/home/core_right.png') no-repeat right -3rem top -1.5rem;
-        background-size: 7.43rem 7.43rem, 12.1rem 13.12rem;
+        background: url('../../../assets/home/core_left.png') no-repeat left -0.7rem bottom 4.8rem,
+            url('../../../assets/home/core_right.png') no-repeat right -0.1rem top -0.6rem;
+        background-size: 7.99rem 7.43rem, 10.96rem 11.78rem;
         @media (max-width: 1600px) {
-            background: url('../../../assets/home/core_left.png') no-repeat left -0.7rem bottom 0.5rem,
-                url('../../../assets/home/core_right.png') no-repeat right -3rem top -1.5rem;
-            background-size: 7.43rem 7.43rem, 11.5rem 12.8rem;
+            background: url('../../../assets/home/core_left.png') no-repeat left -0.7rem bottom 4.8rem,
+                url('../../../assets/home/core_right.png') no-repeat right -3rem top -0.6rem;
+            background-size: 7.99rem 7.43rem, 10.96rem 11.78rem;
         }
         @media (max-width: 1400px) {
-            background: url('../../../assets/home/core_right.png') no-repeat right -3rem top -1.5rem;
+            background: url('../../../assets/home/core_right.png') no-repeat right -3rem top -0.5rem;
             background-size: 10rem 11.6rem;
         }
         .core_wrap {
