@@ -52,10 +52,6 @@
                         title: 'AVATA Global'
                     },
                     {
-                        src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/CoinSwap.png,
-                        title: 'CoinSwap'
-                    },
-                    {
                         src: https://storage.googleapis.com/irisnet_asia_resources/irisnet.org/mainnet/EartLandHK.png,
                         title: 'EartLandHK'
                     },
