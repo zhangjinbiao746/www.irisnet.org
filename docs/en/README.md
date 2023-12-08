@@ -79,7 +79,6 @@
             list:
                 [
                     { btn: 'Awesome IRISnet', url: 'https://github.com/irisnet/awesome' },
-                    { btn: 'Apply for Grants', url: 'https://form.jotform.com/232801980339055' },
                     { btn: 'Mainnet Faucet', url: 'https://stakely.io/faucet/irisnet-iris' }
                 ]
         },
