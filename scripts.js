@@ -7,7 +7,7 @@ function list(val) {
 program.option('-p, --params <items>', 'config list', list).parse(process.argv);
 
 replaceEnv(['docs/.vuepress/config.json'], {
-    googleSiteKey: program.params[0],
+    googleSiteKey: program._optionValues.params[0],
 });
 
 function replaceEnv(files, params) {

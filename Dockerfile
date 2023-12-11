@@ -1,4 +1,4 @@
-FROM node:16.20.0-alpine3.18 as builder
+FROM node:18.18.0-alpine3.18 as builder
 WORKDIR /app
 COPY . .
 ARG SITE_KEY=''

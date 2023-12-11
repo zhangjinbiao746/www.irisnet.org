@@ -2,8 +2,7 @@
     <div class="home">
         <home-banner :keyInnovations="keyInnovations" />
         <key-innovations :keyInnovations="keyInnovations" />
-        <core-features :coreFeatures="coreFeatures" />
-        <upcoming-feature :upcoming="upcoming" />
+        <core-features :coreFeatures="coreFeatures" :upcoming="upcoming"/>
         <join-interchain :joinInterchain="joinInterchain" />
         <announcements :announcements="announcements" />
         <collaboration :collaboration="collaboration" />
@@ -14,7 +13,6 @@
     import HomeBanner from '../home/components/HomeBanner.vue';
     import KeyInnovations from '../home/components/KeyInnovations.vue';
     import CoreFeatures from '../home/components/CoreFeatures.vue';
-    import UpcomingFeature from '../home/components/UpcomingFeature.vue';
     import JoinInterchain from '../home/components/JoinInterchain.vue';
     import Announcements from '../home/components/Announcements.vue';
     import Collaboration from '../home/components/Collaboration.vue';
@@ -25,7 +23,6 @@
             HomeBanner,
             KeyInnovations,
             CoreFeatures,
-            UpcomingFeature,
             JoinInterchain,
             Announcements,
             Collaboration
